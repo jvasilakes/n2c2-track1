@@ -1,0 +1,102 @@
+T1	NERPrediction 43 51	Medicine
+T2	NERPrediction 136 140	Date
+T3	NERPrediction 392 399	Insulin
+T4	NERPrediction 618 626	Fentanyl
+T5	NERPrediction 627 632	patch
+T6	NERPrediction 789 794	patch
+T7	NERPrediction 870 880	medication
+T8	NERPrediction 882 885	His
+T9	NERPrediction 886 889	PCP
+T10	NERPrediction 918 928	medication
+T11	NERPrediction 955 960	patch
+T12	NERPrediction 990 995	patch
+T13	NERPrediction 2066 2069	ASA
+T14	NERPrediction 2078 2085	Norvasc
+T15	NERPrediction 2095 2101	Nexium
+T16	NERPrediction 2112 2118	Toprol
+T17	NERPrediction 2130 2139	Lopressor
+T18	NERPrediction 2149 2157	Morphine
+T19	NERPrediction 2149 2165	Morphine sulfate
+T20	NERPrediction 2175 2179	MSO4
+T21	NERPrediction 2348 2355	Insulin
+T22	NERPrediction 2379 2386	for 1-2
+T23	NERPrediction 2481 2488	retinal
+T24	NERPrediction 2598 2601	SBP
+T25	NERPrediction 2689 2699	creatinine
+T26	NERPrediction 2823 2830	IV drug
+T27	NERPrediction 2826 2830	drug
+T28	NERPrediction 2850 2856	Reglan
+T29	NERPrediction 2870 2881	Medications
+T30	NERPrediction 2885 2889	HCTZ
+T31	NERPrediction 2902 2912	Lisinopril
+T32	NERPrediction 2925 2931	Toprol
+T33	NERPrediction 2925 2934	Toprol XL
+T34	NERPrediction 2948 2955	Norvasc
+T35	NERPrediction 2963 2966	BID
+T36	NERPrediction 2968 2977	Neurontin
+T37	NERPrediction 2991 2999	Protonix
+T38	NERPrediction 3013 3020	Insulin
+T39	NERPrediction 3050 3057	Insulin
+T40	NERPrediction 3322 3326	drug
+T41	NERPrediction 3347 3352	speed
+T42	NERPrediction 3847 3850	air
+T43	NERPrediction 4077 4084	various
+T44	NERPrediction 4415 4421	Plasma
+T45	NERPrediction 4422 4428	Sodium
+T46	NERPrediction 4499 4505	Plasma
+T47	NERPrediction 4506 4515	Potassium
+T48	NERPrediction 4583 4589	Plasma
+T49	NERPrediction 4667 4673	Plasma
+T50	NERPrediction 4674 4680	Carbon
+T51	NERPrediction 4674 4688	Carbon Dioxide
+T52	NERPrediction 4751 4757	Plasma
+T53	NERPrediction 4758 4762	Urea
+T54	NERPrediction 4758 4771	Urea Nitrogen
+T55	NERPrediction 4763 4771	Nitrogen
+T56	NERPrediction 4834 4840	Plasma
+T57	NERPrediction 4841 4851	Creatinine
+T58	NERPrediction 4927 4934	Enzymes
+T59	NERPrediction 6064 6069	Monos
+T60	NERPrediction 6478 6483	Monos
+T61	NERPrediction 7338 7341	SED
+T62	NERPrediction 8194 8201	insulin
+T63	NERPrediction 8356 8362	opioid
+T64	NERPrediction 8375 8378	His
+T65	NERPrediction 8674 8677	His
+T66	NERPrediction 8794 8797	His
+T67	NERPrediction 8907 8911	drug
+T68	NERPrediction 8922 8932	lisinopril
+T69	NERPrediction 8937 8943	NSAIDs
+T70	NERPrediction 9190 9195	Lasix
+T71	NERPrediction 9207 9218	Hydralazine
+T72	NERPrediction 9228 9250	& Isosorbide dinitrate
+T73	NERPrediction 9230 9240	Isosorbide
+T74	NERPrediction 9230 9250	Isosorbide dinitrate
+T75	NERPrediction 9270 9280	Lisinopril
+T76	NERPrediction 9292 9294	O2
+T77	NERPrediction 9310 9312	O2
+T78	NERPrediction 9418 9424	statin
+T79	NERPrediction 9461 9469	baseline
+T80	NERPrediction 9515 9522	protein
+T81	NERPrediction 9593 9605	electrolytes
+T82	NERPrediction 9628 9638	Lisinopril
+T83	NERPrediction 9646 9655	Neurontin
+T84	NERPrediction 9906 9909	SBP
+T85	NERPrediction 9957 9963	Toprol
+T86	NERPrediction 9957 9966	Toprol XL
+T87	NERPrediction 9977 9984	Norvasc
+T88	NERPrediction 9989 9992	BID
+T89	NERPrediction 9999 10010	Hydralazine
+T90	NERPrediction 10019 10041	, Isosorbide dinitrate
+T91	NERPrediction 10021 10031	Isosorbide
+T92	NERPrediction 10021 10041	Isosorbide dinitrate
+T93	NERPrediction 10121 10127	Opioid
+T94	NERPrediction 10159 10167	Morphine
+T95	NERPrediction 10218 10225	insulin
+T96	NERPrediction 10236 10243	Insulin
+T97	NERPrediction 10248 10257	C peptide
+T98	NERPrediction 10250 10257	peptide
+T99	NERPrediction 10301 10308	Insulin
+T100	NERPrediction 10331 10337	Nexium
+T101	NERPrediction 10347 10354	Heparin
+T102	NERPrediction 10369 10372	BID

@@ -1,0 +1,23 @@
+T1	NERPrediction 191 194	His
+T2	NERPrediction 195 201	sugars
+T3	NERPrediction 240 247	insulin
+T4	NERPrediction 271 278	insulin
+T5	NERPrediction 284 290	sugars
+T6	NERPrediction 359 362	His
+T7	NERPrediction 373 379	sugars
+T8	NERPrediction 420 432	hypoglycemic
+T9	NERPrediction 493 498	Other
+T10	NERPrediction 590 595	patch
+T11	NERPrediction 598 601	His
+T12	NERPrediction 669 678	Neurontin
+T13	NERPrediction 945 948	His
+T14	NERPrediction 1010 1013	His
+T15	NERPrediction 1121 1124	M/R
+T16	NERPrediction 1523 1533	hemoglobin
+T17	NERPrediction 1523 1537	hemoglobin A1c
+T18	NERPrediction 1693 1699	sugars
+T19	NERPrediction 1786 1792	sugars
+T20	NERPrediction 2065 2070	Mavik
+T21	NERPrediction 2181 2188	aspirin
+T22	NERPrediction 2206 2212	Plavix
+T23	NERPrediction 2271 2280	Pneumovax

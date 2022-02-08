@@ -1,0 +1,20 @@
+T1	NERPrediction 37 45	Medicine
+T2	NERPrediction 939 945	sugars
+T3	NERPrediction 1035 1046	NPH insulin
+T4	NERPrediction 1039 1046	insulin
+T5	NERPrediction 1073 1076	CGI
+T6	NERPrediction 1406 1417	medications
+T7	NERPrediction 1753 1764	NPH insulin
+T8	NERPrediction 1757 1764	insulin
+T9	NERPrediction 1788 1791	CGI
+T10	NERPrediction 1816 1823	Tylenol
+T11	NERPrediction 1832 1839	aspirin
+T12	NERPrediction 2747 2753	sugars
+T13	NERPrediction 2823 2826	BUN
+T14	NERPrediction 2831 2841	creatinine
+T15	NERPrediction 2905 2916	cholesterol
+T16	NERPrediction 2932 2943	cholesterol
+T17	NERPrediction 3018 3025	retinal
+T18	NERPrediction 3253 3261	atenolol
+T19	NERPrediction 3253 3267	atenolol 25 mg
+T20	NERPrediction 3501 3507	sugars

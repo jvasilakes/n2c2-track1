@@ -1,0 +1,188 @@
+T1	NERPrediction 115 118	PCP
+T2	NERPrediction 362 370	Medicine
+T3	NERPrediction 380 384	DATE
+T4	NERPrediction 883 886	EMS
+T5	NERPrediction 1059 1065	Celexa
+T6	NERPrediction 1301 1310	oxycodone
+T7	NERPrediction 1397 1406	oxycodone
+T8	NERPrediction 1407 1412	pills
+T9	NERPrediction 1952 1963	medications
+T10	NERPrediction 1978 1985	insulin
+T11	NERPrediction 2342 2348	age 18
+T12	NERPrediction 2366 2387	on oral hypoglycemics
+T13	NERPrediction 2369 2387	oral hypoglycemics
+T14	NERPrediction 2400 2407	insulin
+T15	NERPrediction 2474 2481	insulin
+T16	NERPrediction 2489 2492	Hgb
+T17	NERPrediction 2634 2644	Lisinopril
+T18	NERPrediction 2660 2668	Losartan
+T19	NERPrediction 2702 2705	ACE
+T20	NERPrediction 2719 2722	ARB
+T21	NERPrediction 2904 2915	Fenofibrate
+T22	NERPrediction 2970 2982	On Toprol XL
+T23	NERPrediction 2973 2979	Toprol
+T24	NERPrediction 2973 2982	Toprol XL
+T25	NERPrediction 3129 3140	antibiotics
+T26	NERPrediction 3390 3400	antibiotic
+T27	NERPrediction 3587 3590	S/p
+T28	NERPrediction 3610 3615	: S/p
+T29	NERPrediction 3612 3615	S/p
+T30	NERPrediction 3889 3892	S/p
+T31	NERPrediction 3953 3959	Toprol
+T32	NERPrediction 3953 3962	Toprol XL
+T33	NERPrediction 3995 4006	NPH Insulin
+T34	NERPrediction 3999 4006	Insulin
+T35	NERPrediction 4045 4056	NPH Insulin
+T36	NERPrediction 4049 4056	Insulin
+T37	NERPrediction 4092 4107	Regular Insulin
+T38	NERPrediction 4100 4107	Insulin
+T39	NERPrediction 4283 4289	Celexa
+T40	NERPrediction 4354 4362	Klonopin
+T41	NERPrediction 4482 4486	Zinc
+T42	NERPrediction 4482 4498	Zinc supplements
+T43	NERPrediction 4514 4518	HCTZ
+T44	NERPrediction 4632 4639	Vehicle
+T45	NERPrediction 4694 4701	Tobacco
+T46	NERPrediction 4710 4714	EtOH
+T47	NERPrediction 4785 4794	marijuana
+T48	NERPrediction 5170 5181	sore throat
+T49	NERPrediction 5648 5650	O2
+T50	NERPrediction 6039 6042	m/r
+T51	NERPrediction 6115 6118	H2O
+T52	NERPrediction 6545 6553	Dressing
+T53	NERPrediction 6803 6811	Medicine
+T54	NERPrediction 7868 7873	Monos
+T55	NERPrediction 8267 8272	Monos
+T56	NERPrediction 8777 8783	Sodium
+T57	NERPrediction 8858 8867	Potassium
+T58	NERPrediction 9020 9023	CO2
+T59	NERPrediction 9101 9104	BUN
+T60	NERPrediction 9181 9191	Creatinine
+T61	NERPrediction 9261 9268	Glucose
+T62	NERPrediction 9343 9350	Calcium
+T63	NERPrediction 9503 9512	Magnesium
+T64	NERPrediction 9589 9596	Protein
+T65	NERPrediction 9662 9669	Albumin
+T66	NERPrediction 9741 9749	Globulin
+T67	NERPrediction 9820 9836	Direct Bilirubin
+T68	NERPrediction 9827 9836	Bilirubin
+T69	NERPrediction 9900 9915	Total Bilirubin
+T70	NERPrediction 9906 9915	Bilirubin
+T71	NERPrediction 10333 10343	Clonazepam
+T72	NERPrediction 10457 10466	Ibuprofen
+T73	NERPrediction 10646 10651	Drugs
+T74	NERPrediction 10699 10706	Ethanol
+T75	NERPrediction 10720 10731	Isopropanol
+T76	NERPrediction 10739 10747	Methanol
+T77	NERPrediction 10817 10822	Drugs
+T78	NERPrediction 10876 10889	Acetaminophen
+T79	NERPrediction 10896 10907	Lamotrigine
+T80	NERPrediction 10913 10923	Salicylate
+T81	NERPrediction 11010 11015	Drugs
+T82	NERPrediction 11063 11073	Butalbital
+T83	NERPrediction 11086 11099	Carbamazepine
+T84	NERPrediction 11105 11114	Ibuprofen
+T85	NERPrediction 11121 11134	Pentobarbital
+T86	NERPrediction 11146 11159	Phenobarbital
+T87	NERPrediction 11166 11175	Phenytoin
+T88	NERPrediction 11181 11193	Secobarbital
+T89	NERPrediction 11277 11282	Drugs
+T90	NERPrediction 11342 11354	Glutethimide
+T91	NERPrediction 11363 11373	Alprazolam
+T92	NERPrediction 11380 11396	Chlordiazepoxide
+T93	NERPrediction 11410 11420	Clonazepam
+T94	NERPrediction 11427 11436	Demoxepam
+T95	NERPrediction 11476 11484	Diazepam
+T96	NERPrediction 11492 11502	Flurazepam
+T97	NERPrediction 11510 11522	Glutethimide
+T98	NERPrediction 11537 11546	Lidocaine
+T99	NERPrediction 11554 11563	Lorazepam
+T100	NERPrediction 11571 11583	Methaqualone
+T101	NERPrediction 11598 11617	Norchlordiazepoxide
+T102	NERPrediction 11625 11636	Nordiazepam
+T103	NERPrediction 11644 11652	Oxazepam
+T104	NERPrediction 11666 11675	Quinidine
+T105	NERPrediction 11684 11693	Temazepam
+T106	NERPrediction 11701 11710	Trazodone
+T107	NERPrediction 11779 11784	Drugs
+T108	NERPrediction 11839 11852	Amitriptyline
+T109	NERPrediction 11859 11875	Chlorpheniramine
+T110	NERPrediction 11888 11902	Chlorpromazine
+T111	NERPrediction 11909 11921	Clomipramine
+T112	NERPrediction 11928 11937	Clozapine
+T113	NERPrediction 11951 11963	Cocaethylene
+T114	NERPrediction 11970 11977	Cocaine
+T115	NERPrediction 11984 11999	Cyclobenzaprine
+T116	NERPrediction 12012 12027	Pseudoephedrine
+T117	NERPrediction 12035 12046	Desipramine
+T118	NERPrediction 12085 12101	Dextromethorphan
+T119	NERPrediction 12110 12125	Diphenhydramine
+T120	NERPrediction 12132 12144	Disopyramide
+T121	NERPrediction 12158 12165	Doxepin
+T122	NERPrediction 12172 12182	Doxylamine
+T123	NERPrediction 12189 12199	Fluoxetine
+T124	NERPrediction 12206 12217	Fluvoxamine
+T125	NERPrediction 12230 12240	Imipramine
+T126	NERPrediction 12253 12258	M-cPP
+T127	NERPrediction 12285 12295	Meperidine
+T128	NERPrediction 12303 12315	Mesoridazine
+T129	NERPrediction 12329 12338	Methadone
+T130	NERPrediction 12346 12361	Norclomipramine
+T131	NERPrediction 12368 12378	Nordoxepin
+T132	NERPrediction 12391 12404	Norfluoxetine
+T133	NERPrediction 12433 12446	Normeperidine
+T134	NERPrediction 12483 12496	Nortriptyline
+T135	NERPrediction 12503 12515	Norverapamil
+T136	NERPrediction 12528 12537	Oxycodone
+T137	NERPrediction 12544 12554	Paroxetine
+T138	NERPrediction 12561 12572	Pentazocine
+T139	NERPrediction 12587 12596	Promazine
+T140	NERPrediction 12603 12615	Propoxyphene
+T141	NERPrediction 12640 12650	Pyrilamine
+T142	NERPrediction 12663 12673	Sertraline
+T143	NERPrediction 12680 12692	Thioridazine
+T144	NERPrediction 12700 12715	Trifluoperazine
+T145	NERPrediction 12728 12740	Trimipramine
+T146	NERPrediction 12747 12758	Venlafaxine
+T147	NERPrediction 12765 12774	Verapamil
+T148	NERPrediction 12885 12897	Amphetamines
+T149	NERPrediction 13015 13027	Barbiturates
+T150	NERPrediction 13080 13095	Benzodiazepines
+T151	NERPrediction 13145 13152	Cocaine
+T152	NERPrediction 13210 13217	Opiates
+T153	NERPrediction 13275 13288	Phencyclidine
+T154	NERPrediction 13340 13352	Cannabinoids
+T155	NERPrediction 13470 13479	Methadone
+T156	NERPrediction 13535 13548	Acetaminophen
+T157	NERPrediction 13613 13618	Color
+T158	NERPrediction 13958 13965	Nitrite
+T159	NERPrediction 14023 14030	Albumin
+T160	NERPrediction 14088 14095	Glucose
+T161	NERPrediction 14215 14227	Urobilinogen
+T162	NERPrediction 14413 14416	SED
+T163	NERPrediction 14492 14495	SED
+T164	NERPrediction 14571 14574	SED
+T165	NERPrediction 15482 15486	HCTZ
+T166	NERPrediction 15576 15579	ACE
+T167	NERPrediction 15585 15588	ARB
+T168	NERPrediction 15591 15594	His
+T169	NERPrediction 15666 15673	insulin
+T170	NERPrediction 15771 15776	Lopid
+T171	NERPrediction 15779 15782	His
+T172	NERPrediction 15860 15867	insulin
+T173	NERPrediction 15968 15971	His
+T174	NERPrediction 16079 16082	BID
+T175	NERPrediction 16159 16165	Toprol
+T176	NERPrediction 16159 16168	Toprol XL
+T177	NERPrediction 16201 16212	NPH Insulin
+T178	NERPrediction 16205 16212	Insulin
+T179	NERPrediction 16356 16371	regular insulin
+T180	NERPrediction 16364 16371	insulin
+T181	NERPrediction 16404 16414	Medication
+T182	NERPrediction 16496 16506	Lisinopril
+T183	NERPrediction 16535 16540	Lopid
+T184	NERPrediction 16550 16553	BID
+T185	NERPrediction 16616 16626	hemoglobin
+T186	NERPrediction 16616 16630	hemoglobin A1c
+T187	NERPrediction 16678 16681	LDL
+T188	NERPrediction 16830 16840	medication

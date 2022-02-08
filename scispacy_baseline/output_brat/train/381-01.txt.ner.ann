@@ -1,0 +1,11 @@
+T0	NERPrediction 73 79	ANGELA
+T1	NERPrediction 2001 2008	codeine
+T2	NERPrediction 2010 2017	aspirin
+T3	NERPrediction 2019 2031	erythromycin
+T4	NERPrediction 2034 2043	oxycodone
+T5	NERPrediction 2165 2179	O2 saturations
+T6	NERPrediction 4000 4010	vancomycin
+T7	NERPrediction 4017 4027	gentamicin
+T8	NERPrediction 4215 4218	gas
+T9	NERPrediction 4525 4531	ANGELA
+T10	NERPrediction 4585 4591	ANGELA

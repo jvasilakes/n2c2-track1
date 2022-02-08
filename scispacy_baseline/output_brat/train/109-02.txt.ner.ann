@@ -1,0 +1,53 @@
+T0	NERPrediction 293 300	aspirin
+T1	NERPrediction 886 893	aspirin
+T2	NERPrediction 1059 1062	gas
+T3	NERPrediction 1494 1508	QD   Albuterol
+T4	NERPrediction 1524 1527	INH
+T5	NERPrediction 1558 1566	Premarin
+T6	NERPrediction 1623 1626	QOD
+T7	NERPrediction 1659 1665	Celexa
+T8	NERPrediction 1679 1683	40MG
+T9	NERPrediction 1711 1723	QD   Flonase
+T10	NERPrediction 1801 1805	Hctz
+T11	NERPrediction 1860 1872	QD   Lipitor
+T12	NERPrediction 1874 1886	ATORVASTATIN
+T13	NERPrediction 1888 1892	10MG
+T14	NERPrediction 1920 1925	QD   
+T15	NERPrediction 1958 1963	25MCG
+T16	NERPrediction 1991 2001	QD   K-dur
+T17	NERPrediction 2003 2006	KCL
+T18	NERPrediction 2018 2023	10MEQ
+T19	NERPrediction 2143 2152	Halothane
+T20	NERPrediction 2159 2171	Hepatoxicity
+T21	NERPrediction 2174 2182	liver   
+T22	NERPrediction 2236 2244	ETOH  FH
+T23	NERPrediction 2318 2324	145/69
+T24	NERPrediction 2385 2395	OP clear  
+T25	NERPrediction 2450 2452	ND
+T26	NERPrediction 2623 2638	K              
+T27	NERPrediction 2653 2670	CO2              
+T28	NERPrediction 2809 2826	GLU              
+T29	NERPrediction 2848 2849	H
+T30	NERPrediction 2879 2880	H
+T31	NERPrediction 2913 2914	H
+T32	NERPrediction 2944 2945	H
+T33	NERPrediction 2958 2976	Date/Time         
+T34	NERPrediction 3006 3021	MG             
+T35	NERPrediction 3129 3152	Date/Time         DBILI
+T36	NERPrediction 3577 3630	Date/Time         DBILI            04/27/2100        
+T37	NERPrediction 3745 3746	H
+T38	NERPrediction 3790 3801	L)         
+T39	NERPrediction 3825 3826	H
+T40	NERPrediction 3905 3906	H
+T41	NERPrediction 3950 3961	L)         
+T42	NERPrediction 3985 3986	H
+T43	NERPrediction 4030 4041	L)         
+T44	NERPrediction 4065 4066	H
+T45	NERPrediction 4118 4136	Date/Time         
+T46	NERPrediction 4632 4653	Date/Time         RDW
+T47	NERPrediction 4785 4786	H
+T48	NERPrediction 4813 4848	Date/Time         HPYAB            
+T49	NERPrediction 4935 4970	3/31/93 10:00:00 AM                
+T50	NERPrediction 5877 5886	CRYPTITIS
+T51	NERPrediction 6415 6422	aspirin
+T52	NERPrediction 6668 6675	aspirin

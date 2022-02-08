@@ -1,0 +1,13 @@
+T0	NERPrediction 1501 1507	Plavix
+T1	NERPrediction 1738 1749	cholesterol
+T2	NERPrediction 1811 1822	MCA  stroke
+T3	NERPrediction 2119 2123	ETOH
+T4	NERPrediction 2323 2331	Dilantin
+T5	NERPrediction 2333 2342	glipizide
+T6	NERPrediction 2344 2354	Glucophage
+T7	NERPrediction 2356 2362	Plavix
+T8	NERPrediction 2365 2373	atenolol
+T9	NERPrediction 2375 2381	Cozaar
+T10	NERPrediction 2387 2394	Lipitor
+T11	NERPrediction 2887 2895	Dilantin
+T12	NERPrediction 3589 3618	document:1-9359833 BFFocus   

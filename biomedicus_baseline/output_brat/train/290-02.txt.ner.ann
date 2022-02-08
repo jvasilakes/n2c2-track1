@@ -1,0 +1,30 @@
+T1	NERPrediction 216 221	POD 1
+T2	NERPrediction 221 226	, s/p
+T3	NERPrediction 223 226	s/p
+T4	NERPrediction 231 234	His
+T5	NERPrediction 323 340	a regular insulin
+T6	NERPrediction 325 340	regular insulin
+T7	NERPrediction 333 340	insulin
+T8	NERPrediction 341 344	gtt
+T9	NERPrediction 443 450	Insulin
+T10	NERPrediction 451 454	gtt
+T11	NERPrediction 506 509	s/p
+T12	NERPrediction 564 567	AAA
+T13	NERPrediction 1189 1192	His
+T14	NERPrediction 2091 2101	Creatinine
+T15	NERPrediction 2164 2167	s/p
+T16	NERPrediction 2300 2307	tobacco
+T17	NERPrediction 2326 2343	cigarette smoking
+T18	NERPrediction 2391 2398	alcohol
+T19	NERPrediction 2496 2507	Medications
+T20	NERPrediction 2509 2518	lopressor
+T21	NERPrediction 2530 2538	ramipril
+T22	NERPrediction 2552 2559	aspirin
+T23	NERPrediction 2574 2586	atorvastatin
+T24	NERPrediction 2885 2892	glucose
+T25	NERPrediction 3062 3069	Insulin
+T26	NERPrediction 3070 3073	gtt
+T27	NERPrediction 3137 3144	Novolog
+T28	NERPrediction 3167 3174	insulin
+T29	NERPrediction 3175 3178	gtt
+T30	NERPrediction 3204 3211	Novolog

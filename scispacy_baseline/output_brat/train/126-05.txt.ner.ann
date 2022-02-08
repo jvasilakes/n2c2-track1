@@ -1,0 +1,38 @@
+T0	NERPrediction 984 987	25u
+T1	NERPrediction 1149 1155	Epogen
+T2	NERPrediction 1372 1389	Occas orthostatic
+T3	NERPrediction 1394 1426	BPs lower    Sinus tachycardia  
+T4	NERPrediction 1864 1872	Fioricet
+T5	NERPrediction 2092 2103	Hydralazine
+T6	NERPrediction 2229 2236	aspirin
+T7	NERPrediction 2249 2264	calcium acetate
+T8	NERPrediction 2279 2285	Colace
+T9	NERPrediction 2341 2349	Fioricet
+T10	NERPrediction 2439 2446	lowdose
+T11	NERPrediction 2487 2494	Lipitor
+T12	NERPrediction 2507 2516	methadone
+T13	NERPrediction 2554 2563	Neurontin
+T14	NERPrediction 2580 2586	Nexium
+T15	NERPrediction 2619 2632	nortriptyline
+T16	NERPrediction 2642 2645	qhs
+T17	NERPrediction 2679 2686	humulin
+T18	NERPrediction 2777 2799	cut/crush/chew  Plavix
+T19	NERPrediction 2812 2822	prednisone
+T20	NERPrediction 2890 2901	simethicone
+T21	NERPrediction 2911 2914	QID
+T22	NERPrediction 2916 2926	tizanidine
+T23	NERPrediction 2939 2942	bid
+T24	NERPrediction 2944 2952	tramadol
+T25	NERPrediction 2962 2966	q12h
+T26	NERPrediction 3262 3269	Alcohol
+T27	NERPrediction 3360 3367	Alcohol
+T28	NERPrediction 3451 3458	Alcohol
+T29	NERPrediction 5013 5020	best=30
+T30	NERPrediction 5157 5165	02/25/64
+T31	NERPrediction 5178 5194	02/25/64 Glucose
+T32	NERPrediction 5210 5211	H
+T33	NERPrediction 5213 5232	02/25/64 Creatinine
+T34	NERPrediction 5248 5249	H
+T35	NERPrediction 5251 5259	02/25/64
+T36	NERPrediction 5278 5279	H
+T37	NERPrediction 5281 5299	02/25/64 Potassium

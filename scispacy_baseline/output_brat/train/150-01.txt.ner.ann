@@ -1,0 +1,11 @@
+T0	NERPrediction 458 468	furosemide
+T1	NERPrediction 479 482	q.d
+T2	NERPrediction 485 495	nifedipine
+T3	NERPrediction 510 513	q.d
+T4	NERPrediction 520 538	potassium chloride
+T5	NERPrediction 561 564	q.d
+T6	NERPrediction 820 835	salt-restricted
+T7	NERPrediction 1293 1303	nifedipine
+T8	NERPrediction 1332 1342	furosemide
+T9	NERPrediction 2389 2392	Pap
+T10	NERPrediction 2400 2411	cholesterol

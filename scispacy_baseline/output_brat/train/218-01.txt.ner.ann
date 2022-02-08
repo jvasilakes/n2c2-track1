@@ -1,0 +1,55 @@
+T0	NERPrediction 150 152	CC
+T1	NERPrediction 519 522	TNG
+T2	NERPrediction 732 735	TNG
+T3	NERPrediction 844 849	Aleve
+T4	NERPrediction 1206 1208	CP
+T5	NERPrediction 1489 1491	NG
+T6	NERPrediction 1613 1616	TNG
+T7	NERPrediction 1803 1827	lopressor 2.5 IV/12.5 PO
+T8	NERPrediction 1829 1836	isordil
+T9	NERPrediction 1847 1853	zantac
+T10	NERPrediction 2041 2046	OM2  
+T11	NERPrediction 2221 2223	LA
+T12	NERPrediction 2293 2311	2087 - hemorrhoids
+T13	NERPrediction 2524 2532	atenolol
+T14	NERPrediction 2537 2541	QD  
+T15	NERPrediction 2544 2551	isordil
+T16	NERPrediction 2555 2558	QID
+T17	NERPrediction 2570 2574	QD  
+T18	NERPrediction 2577 2587	lisinopril
+T19	NERPrediction 2591 2595	QD  
+T20	NERPrediction 2601 2604	TNG
+T21	NERPrediction 2621 2628	lipitor
+T22	NERPrediction 2632 2647	QD    Allergies
+T23	NERPrediction 2738 2767	EtOH - 2 mixed drinks (vodka)
+T24	NERPrediction 2927 2929	OP
+T25	NERPrediction 3062 3071	supraclav
+T26	NERPrediction 3394 3400	Sodium
+T27	NERPrediction 3472 3481	Potassium
+T28	NERPrediction 3750 3751	H
+T29	NERPrediction 3783 3793	Creatinine
+T30	NERPrediction 3904 3905	H
+T31	NERPrediction 3939 3946	Calcium
+T32	NERPrediction 4093 4102	Magnesium
+T33	NERPrediction 4405 4414	Bilirubin
+T34	NERPrediction 4481 4490	Bilirubin
+T35	NERPrediction 4934 4942	Creatine
+T36	NERPrediction 5056 5064	Creatine
+T37	NERPrediction 5100 5101	H
+T38	NERPrediction 5177 5178	H
+T39	NERPrediction 5283 5291	Creatine
+T40	NERPrediction 5416 5417	H
+T41	NERPrediction 5670 5679	mil/cmm  
+T42	NERPrediction 6030 6031	H
+T43	NERPrediction 6103 6104	H
+T44	NERPrediction 6751 6752	H
+T45	NERPrediction 7005 7014	mil/cmm  
+T46	NERPrediction 7365 7366	H
+T47	NERPrediction 7862 7881	coffee gound emesis
+T48	NERPrediction 7947 7954	alcohol
+T49	NERPrediction 8125 8127	Pt
+T50	NERPrediction 8488 8494	zantac
+T51	NERPrediction 8505 8512	aspirin
+T52	NERPrediction 8611 8618	aspirin
+T53	NERPrediction 8933 8941	telmetry
+T54	NERPrediction 9149 9158	92915    

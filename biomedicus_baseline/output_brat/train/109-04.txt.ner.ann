@@ -1,0 +1,17 @@
+T1	NERPrediction 222 225	ROS
+T2	NERPrediction 301 303	YO
+T3	NERPrediction 644 651	heparin
+T4	NERPrediction 765 773	coumadin
+T5	NERPrediction 818 824	Advair
+T6	NERPrediction 826 833	Lipitor
+T7	NERPrediction 835 839	HCTZ
+T8	NERPrediction 841 848	heparin
+T9	NERPrediction 978 984	, T 98
+T10	NERPrediction 980 984	T 98
+T11	NERPrediction 998 1003	/86 R
+T12	NERPrediction 999 1003	86 R
+T13	NERPrediction 2171 2202	to low molecular weight heparin
+T14	NERPrediction 2174 2202	low molecular weight heparin
+T15	NERPrediction 2195 2202	heparin
+T16	NERPrediction 2224 2231	spiriva
+T17	NERPrediction 2233 2242	albuterol

@@ -1,0 +1,39 @@
+T1	NERPrediction 151 154	PSA
+T2	NERPrediction 226 232	flomax
+T3	NERPrediction 289 296	lipitor
+T4	NERPrediction 332 335	His
+T5	NERPrediction 369 372	LDL
+T6	NERPrediction 457 462	sugar
+T7	NERPrediction 634 644	glucophage
+T8	NERPrediction 688 691	His
+T9	NERPrediction 733 742	glyburide
+T10	NERPrediction 733 747	glyburide 5 mg
+T11	NERPrediction 752 769	and glucophage XR
+T12	NERPrediction 756 766	glucophage
+T13	NERPrediction 756 769	glucophage XR
+T14	NERPrediction 876 879	inh
+T15	NERPrediction 882 885	His
+T16	NERPrediction 922 929	lipitor
+T17	NERPrediction 1040 1048	atenolol
+T18	NERPrediction 1040 1054	atenolol 50 mg
+T19	NERPrediction 1747 1756	injection
+T20	NERPrediction 2322 2333	Medications
+T21	NERPrediction 2343 2356	MULTIVITAMINS
+T22	NERPrediction 2375 2382	ASPIRIN
+T23	NERPrediction 2383 2404	(ACETYLSALICYLIC ACID
+T24	NERPrediction 2384 2404	ACETYLSALICYLIC ACID
+T25	NERPrediction 2427 2437	TAMSULOSIN
+T26	NERPrediction 2453 2481	LIPITOR (ATORVASTATIN)	 40MG
+T27	NERPrediction 2461 2481	(ATORVASTATIN)	 40MG
+T28	NERPrediction 2462 2474	ATORVASTATIN
+T29	NERPrediction 2462 2481	ATORVASTATIN)	 40MG
+T30	NERPrediction 2508 2518	LISINOPRIL
+T31	NERPrediction 2549 2562	GLUCOPHAGE XR
+T32	NERPrediction 2564 2573	METFORMIN
+T33	NERPrediction 2587 2593	Tablet
+T34	NERPrediction 2604 2612	Prilosec
+T35	NERPrediction 2629 2637	ATENOLOL
+T36	NERPrediction 2646 2652	Tablet
+T37	NERPrediction 2674 2683	GLYBURIDE
+T38	NERPrediction 2692 2698	Tablet
+T39	NERPrediction 2705 2708	BID

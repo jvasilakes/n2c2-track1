@@ -1,0 +1,5 @@
+T0	NERPrediction 1461 1467	sodium
+T1	NERPrediction 1473 1482	potassium
+T2	NERPrediction 1502 1505	CO2
+T3	NERPrediction 1518 1528	creatinine
+T4	NERPrediction 1534 1541	glucose

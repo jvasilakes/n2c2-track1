@@ -1,0 +1,29 @@
+T0	NERPrediction 237 239	DM
+T1	NERPrediction 1368 1371	TNG
+T2	NERPrediction 1712 1714	O2
+T3	NERPrediction 1778 1781	LAE
+T4	NERPrediction 1787 1795	V1-V2-no
+T5	NERPrediction 2067 2072	Imdur
+T6	NERPrediction 2073 2079	Plavix
+T7	NERPrediction 2092 2095	ASA
+T8	NERPrediction 2109 2118	Lopressor
+T9	NERPrediction 2131 2138	Lipitor
+T10	NERPrediction 2171 2178	Lexapro
+T11	NERPrediction 2179 2184	Lasix
+T12	NERPrediction 2211 2219	Protonix
+T13	NERPrediction 2231 2240	Glipizide
+T14	NERPrediction 2264 2267	TNG
+T15	NERPrediction 2429 2433	WMMC
+T16	NERPrediction 2560 2568	H pylori
+T17	NERPrediction 2854 2858	ETOH
+T18	NERPrediction 2888 2891	CVA
+T19	NERPrediction 3038 3046	Protonix
+T20	NERPrediction 3086 3091	Lasix
+T21	NERPrediction 3385 3388	NAD
+T22	NERPrediction 3905 3915	NA       K
+T23	NERPrediction 3941 3944	GLU
+T24	NERPrediction 4782 4788	Quijas
+T25	NERPrediction 4843 4846	ASA
+T26	NERPrediction 4848 4854	Plavix
+T27	NERPrediction 4856 4862	statin
+T28	NERPrediction 4864 4872	nitrates

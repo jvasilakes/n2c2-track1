@@ -1,0 +1,49 @@
+T0	NERPrediction 130 142	9/04/26  PCP
+T1	NERPrediction 279 289	COMPLAINT-
+T2	NERPrediction 1118 1132	nauseous&#8221
+T3	NERPrediction 1140 1146	8220;I
+T4	NERPrediction 1601 1613	wasn&#8217;t
+T5	NERPrediction 1633 1647	wouldn&#8217;t
+T6	NERPrediction 2073 2079	unasyn
+T7	NERPrediction 2561 2565	DMII
+T8	NERPrediction 2809 2813	iron
+T9	NERPrediction 2834 2837	bid
+T10	NERPrediction 2866 2888	Qty:180 Rf:3)- aspirin
+T11	NERPrediction 2905 2913	atenolol
+T12	NERPrediction 2947 2953	Colace
+T13	NERPrediction 2989 2999	Glucophage
+T14	NERPrediction 3025 3031	meals-
+T15	NERPrediction 3039 3051	SoloStar Pen
+T16	NERPrediction 3076 3083	Lipitor
+T17	NERPrediction 3092 3098	daily-
+T18	NERPrediction 3099 3112	multivitamins
+T19	NERPrediction 3129 3138	Neurontin
+T20	NERPrediction 3154 3159	Xanax
+T21	NERPrediction 3170 3173	bid
+T22	NERPrediction 3179 3186	Zestril
+T23	NERPrediction 3409 3438	alcoholic    SOCIAL HISTORY  
+T24	NERPrediction 3454 3456	Pt
+T25	NERPrediction 4089 4096	Alcohol
+T26	NERPrediction 4617 4620	RRR
+T27	NERPrediction 5089 5108	NA            132(L
+T28	NERPrediction 5335 5338	CO2
+T29	NERPrediction 5666 5669	GLU
+T30	NERPrediction 7232 7253	UR-SPGR       1.020(T
+T31	NERPrediction 7642 7648	UA-NIT
+T32	NERPrediction 7724 7730	UA-WBC
+T33	NERPrediction 8597 8599	DM
+T34	NERPrediction 8756 8768	LLE erythema
+T35	NERPrediction 9273 9283	Vancomycin
+T36	NERPrediction 9317 9323	Unasyn
+T37	NERPrediction 9478 9484	Flagyl
+T38	NERPrediction 9570 9579	metformin
+T39	NERPrediction 9585 9588	bid
+T40	NERPrediction 9593 9607	lantus 14 SC  
+T41	NERPrediction 9643 9647	FSBG
+T42	NERPrediction 9724 9734	lisinopril
+T43	NERPrediction 9748 9756	atenolol
+T44	NERPrediction 10002 10005	FEN
+T45	NERPrediction 10083 10093	omeprazole
+T46	NERPrediction 10100 10107	Fragmin
+T47	NERPrediction 10116 10122	Colace
+T48	NERPrediction 10130 10137	prn    

@@ -1,0 +1,49 @@
+T1	NERPrediction 205 211	Active
+T2	NERPrediction 374 383	glyburide
+T3	NERPrediction 374 388	glyburide 5 mg
+T4	NERPrediction 403 412	metformin
+T5	NERPrediction 606 609	RSC
+T6	NERPrediction 630 643	dicloxacillin
+T7	NERPrediction 664 667	RSC
+T8	NERPrediction 709 712	abx
+T9	NERPrediction 866 872	ultram
+T10	NERPrediction 878 887	neurontin
+T11	NERPrediction 891 896	Other
+T12	NERPrediction 970 973	ROS
+T13	NERPrediction 1004 1015	medications
+T14	NERPrediction 1016 1027	Medications
+T15	NERPrediction 1029 1038	Neurontin
+T16	NERPrediction 1029 1057	Neurontin (GABAPENTIN) 100MG
+T17	NERPrediction 1039 1057	(GABAPENTIN) 100MG
+T18	NERPrediction 1040 1050	GABAPENTIN
+T19	NERPrediction 1040 1057	GABAPENTIN) 100MG
+T20	NERPrediction 1061 1068	Capsule
+T21	NERPrediction 1131 1140	GLYBURIDE
+T22	NERPrediction 1148 1154	Tablet
+T23	NERPrediction 1165 1173	Percocet
+T24	NERPrediction 1165 1175	Percocet 5
+T25	NERPrediction 1183 1185	Mg
+T26	NERPrediction 1187 1196	OXYCODONE
+T27	NERPrediction 1212 1215	TAB
+T28	NERPrediction 1221 1224	-6H
+T29	NERPrediction 1222 1224	6H
+T30	NERPrediction 1283 1290	Codeine
+T31	NERPrediction 1601 1606	Smoke
+T32	NERPrediction 1645 1654	marijuana
+T33	NERPrediction 2693 2702	glyburide
+T34	NERPrediction 2693 2707	glyburide 5 mg
+T35	NERPrediction 2722 2731	metformin
+T36	NERPrediction 2761 2766	HbA1c
+T37	NERPrediction 3020 3023	RSC
+T38	NERPrediction 3044 3057	dicloxacillin
+T39	NERPrediction 3076 3079	RSC
+T40	NERPrediction 3121 3124	abx
+T41	NERPrediction 3380 3383	RSC
+T42	NERPrediction 3447 3453	ultram
+T43	NERPrediction 3528 3534	ultram
+T44	NERPrediction 3542 3551	neurontin
+T45	NERPrediction 3654 3665	Cholesterol
+T46	NERPrediction 3735 3742	glucose
+T47	NERPrediction 3953 3960	Protein
+T48	NERPrediction 4134 4137	Hgb
+T49	NERPrediction 4139 4149	Hemoglobin

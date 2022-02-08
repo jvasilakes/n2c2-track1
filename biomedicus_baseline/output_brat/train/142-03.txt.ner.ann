@@ -1,0 +1,43 @@
+T1	NERPrediction 154 160	Stress
+T2	NERPrediction 751 763	on Toprol XL
+T3	NERPrediction 754 760	Toprol
+T4	NERPrediction 754 763	Toprol XL
+T5	NERPrediction 774 781	aspirin
+T6	NERPrediction 1854 1865	Medications
+T7	NERPrediction 1882 1889	aspirin
+T8	NERPrediction 1882 1896	aspirin  81 mg
+T9	NERPrediction 2222 2234	street drugs
+T10	NERPrediction 2229 2234	drugs
+T11	NERPrediction 2248 2253	smoke
+T12	NERPrediction 2248 2261	smoke tobacco
+T13	NERPrediction 2254 2261	tobacco
+T14	NERPrediction 2281 2288	alcohol
+T15	NERPrediction 2941 2946	water
+T16	NERPrediction 3165 3170	92 ms
+T17	NERPrediction 3232 3236	Date
+T18	NERPrediction 3268 3271	CO2
+T19	NERPrediction 3277 3280	BUN
+T20	NERPrediction 3397 3402	Liver
+T21	NERPrediction 3407 3425	Pancreatic Enzymes
+T22	NERPrediction 3418 3425	Enzymes
+T23	NERPrediction 3426 3430	Date
+T24	NERPrediction 3462 3467	TBILI
+T25	NERPrediction 3569 3573	Date
+T26	NERPrediction 3578 3581	TSH
+T27	NERPrediction 3619 3623	Date
+T28	NERPrediction 3724 3728	Date
+T29	NERPrediction 3792 3796	Date
+T30	NERPrediction 3813 3816	APP
+T31	NERPrediction 4005 4009	Date
+T32	NERPrediction 4050 4054	Date
+T33	NERPrediction 4221 4226	Other
+T34	NERPrediction 4513 4516	MVP
+T35	NERPrediction 5480 5490	medication
+T36	NERPrediction 5535 5538	His
+T37	NERPrediction 5539 5549	medication
+T38	NERPrediction 5592 5599	Sotalol
+T39	NERPrediction 5738 5741	dye
+T40	NERPrediction 5795 5802	Sotalol
+T41	NERPrediction 6298 6309	Medications
+T42	NERPrediction 6323 6329	Toprol
+T43	NERPrediction 6323 6332	Toprol XL

@@ -1,0 +1,23 @@
+T1	NERPrediction 363 370	insulin
+T2	NERPrediction 1214 1225	medications
+T3	NERPrediction 1234 1241	Prograf
+T4	NERPrediction 1243 1253	prednisone
+T5	NERPrediction 1255 1263	Prilosec
+T6	NERPrediction 1268 1275	aspirin
+T7	NERPrediction 1283 1288	Imdur
+T8	NERPrediction 1288 1308	, calcium supplement
+T9	NERPrediction 1290 1297	calcium
+T10	NERPrediction 1290 1308	calcium supplement
+T11	NERPrediction 1318 1325	vitamin
+T12	NERPrediction 1327 1333	Lantus
+T13	NERPrediction 1334 1341	insulin
+T14	NERPrediction 1347 1354	Humalog
+T15	NERPrediction 1378 1384	Imuran
+T16	NERPrediction 1386 1394	Coumadin
+T17	NERPrediction 1394 1409	, and Toprol XL
+T18	NERPrediction 1396 1409	and Toprol XL
+T19	NERPrediction 1400 1406	Toprol
+T20	NERPrediction 1400 1409	Toprol XL
+T21	NERPrediction 1422 1429	Lipitor
+T22	NERPrediction 1694 1705	medications
+T23	NERPrediction 2087 2091	Date

@@ -1,0 +1,20 @@
+T1	NERPrediction 454 461	insulin
+T2	NERPrediction 1384 1392	Klonopin
+T3	NERPrediction 1394 1403	Glyburide
+T4	NERPrediction 1405 1413	Coumadin
+T5	NERPrediction 1415 1424	meclozine
+T6	NERPrediction 1426 1434	Timoptic
+T7	NERPrediction 1437 1453	ophthalmic drops
+T8	NERPrediction 1455 1462	Zestril
+T9	NERPrediction 1464 1472	Celebrex
+T10	NERPrediction 1478 1487	Synthroid
+T11	NERPrediction 1511 1515	drug
+T12	NERPrediction 1584 1591	tobacco
+T13	NERPrediction 1595 1602	alcohol
+T14	NERPrediction 1619 1634	of illicit drug
+T15	NERPrediction 1622 1634	illicit drug
+T16	NERPrediction 1630 1634	drug
+T17	NERPrediction 1941 1943	O2
+T18	NERPrediction 1969 1972	air
+T19	NERPrediction 2589 2596	glucose
+T20	NERPrediction 2964 2967	PCP

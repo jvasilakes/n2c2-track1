@@ -1,0 +1,17 @@
+T1	NERPrediction 214 222	Medicine
+T2	NERPrediction 356 367	cholesterol
+T3	NERPrediction 1134 1145	medications
+T4	NERPrediction 1162 1171	captopril
+T5	NERPrediction 1173 1186	levothyroxine
+T6	NERPrediction 1188 1197	clonidine
+T7	NERPrediction 1203 1210	aspirin
+T8	NERPrediction 1235 1242	insulin
+T9	NERPrediction 1254 1263	albuterol
+T10	NERPrediction 1269 1276	Lipitor
+T11	NERPrediction 2251 2259	Troponin
+T12	NERPrediction 2704 2711	aspirin
+T13	NERPrediction 2713 2726	nitroglycerin
+T14	NERPrediction 2728 2744	and beta-blocker
+T15	NERPrediction 2732 2744	beta-blocker
+T16	NERPrediction 2814 2822	morphine
+T17	NERPrediction 2814 2830	morphine sulfate

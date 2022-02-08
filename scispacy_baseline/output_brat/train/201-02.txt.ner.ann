@@ -1,0 +1,78 @@
+T0	NERPrediction 91 100	BRANDON  
+T1	NERPrediction 127 141	6/13/2082  PCP
+T2	NERPrediction 374 379	STEMI
+T3	NERPrediction 437 439	DM
+T4	NERPrediction 892 895	GNC
+T5	NERPrediction 1476 1483	digoxin
+T6	NERPrediction 1722 1724	EP
+T7	NERPrediction 1862 1866	amio
+T8	NERPrediction 1971 1988	calcium gluconate
+T9	NERPrediction 2020 2022	Mg
+T10	NERPrediction 2073 2075	EP
+T11	NERPrediction 2100 2107	heparin
+T12	NERPrediction 2182 2188	toprol
+T13	NERPrediction 2238 2249	admiodarone
+T14	NERPrediction 2251 2254	BPs
+T15	NERPrediction 2292 2295	BPs
+T16	NERPrediction 2498 2503	STEMI
+T17	NERPrediction 2785 2787	LA
+T18	NERPrediction 3602 3606	EtOH
+T19	NERPrediction 3662 3678	digoxin toxicity
+T20	NERPrediction 3724 3744	Acetylsalicylic Acid
+T21	NERPrediction 3746 3753	Aspirin
+T22	NERPrediction 3760 3762	MG
+T23	NERPrediction 3776 3788	Esomeprazole
+T24	NERPrediction 3790 3796	Nexium
+T25	NERPrediction 3802 3804	MG
+T26	NERPrediction 3817 3826	Glipizide
+T27	NERPrediction 3831 3833	MG
+T28	NERPrediction 3847 3856	Metformin
+T29	NERPrediction 3923 3925	MG
+T30	NERPrediction 3938 3948	Furosemide
+T31	NERPrediction 3950 3955	Lasix
+T32	NERPrediction 3961 3963	MG
+T33	NERPrediction 3967 3970	QOD
+T34	NERPrediction 4010 4016	Niacin
+T35	NERPrediction 4040 4042	MG
+T36	NERPrediction 4046 4053	QD    8
+T37	NERPrediction 4055 4065	Metoprolol
+T38	NERPrediction 4094 4100	Toprol
+T39	NERPrediction 4111 4113	MG
+T40	NERPrediction 4114 4125	PO QPM    9
+T41	NERPrediction 4127 4137	Lisinopril
+T42	NERPrediction 4142 4144	MG
+T43	NERPrediction 4158 4169	Simvastatin
+T44	NERPrediction 4174 4176	MG
+T45	NERPrediction 4257 4259	O2
+T46	NERPrediction 4284 4287	NAD
+T47	NERPrediction 4319 4324	NC/AT
+T48	NERPrediction 4358 4371	OP pink/moist
+T49	NERPrediction 4970 5071	NA            139                                                                 K             5.1(H
+T50	NERPrediction 5216 5219	CO2
+T51	NERPrediction 5544 5547	GLU
+T52	NERPrediction 5736 5792	3.0                                                   MG
+T53	NERPrediction 5928 5933	CK-MB
+T54	NERPrediction 6945 6950	STEMI
+T55	NERPrediction 7008 7010	DM
+T56	NERPrediction 7159 7162	RVR
+T57	NERPrediction 7193 7203	amiodarone
+T58	NERPrediction 7380 7389	CV/RHYTHM
+T59	NERPrediction 7391 7399	Afib/RVR
+T60	NERPrediction 7468 7478	amiodarone
+T61	NERPrediction 7592 7599	digoxin
+T62	NERPrediction 7637 7646	diltiazem
+T63	NERPrediction 7650 7662	metoprolol  
+T64	NERPrediction 7691 7696	BPs  
+T65	NERPrediction 7777 7779	DM
+T66	NERPrediction 7885 7896	CV/ISCHEMIA
+T67	NERPrediction 7967 7970	ASA
+T68	NERPrediction 8004 8010	statin
+T69	NERPrediction 8012 8018	niacin
+T70	NERPrediction 8084 8086	DM
+T71	NERPrediction 8203 8212	lasix QOD
+T72	NERPrediction 8256 8265	lasix QOD
+T73	NERPrediction 8378 8380	DM
+T74	NERPrediction 8387 8396	glipizide
+T75	NERPrediction 8431 8435	FSBG
+T76	NERPrediction 8445 8448	FEN
+T77	NERPrediction 8496 8503	heparin

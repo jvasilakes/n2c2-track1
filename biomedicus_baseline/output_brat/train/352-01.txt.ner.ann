@@ -1,0 +1,17 @@
+T1	NERPrediction 132 136	DATE
+T2	NERPrediction 601 607	Biaxin
+T3	NERPrediction 631 637	Biaxin
+T4	NERPrediction 787 793	Biaxin
+T5	NERPrediction 837 843	Biaxin
+T6	NERPrediction 1263 1268	waxes
+T7	NERPrediction 1931 1940	Albuterol
+T8	NERPrediction 1950 1960	glucophage
+T9	NERPrediction 1962 1969	insulin
+T10	NERPrediction 1971 1978	codeine
+T11	NERPrediction 2026 2033	tobacco
+T12	NERPrediction 2277 2279	O2
+T13	NERPrediction 2307 2310	air
+T14	NERPrediction 3630 3636	Maalox
+T15	NERPrediction 3651 3655	Axid
+T16	NERPrediction 4185 4189	Axid
+T17	NERPrediction 4198 4204	Maalox

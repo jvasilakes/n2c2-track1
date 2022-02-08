@@ -1,0 +1,22 @@
+T0	NERPrediction 147 149	FL
+T1	NERPrediction 326 330	9488
+T2	NERPrediction 339 341	FL
+T3	NERPrediction 786 788	EP
+T4	NERPrediction 1037 1044	Lipitor
+T5	NERPrediction 1056 1059	q.d
+T6	NERPrediction 1062 1069	digoxin
+T7	NERPrediction 1083 1086	q.d
+T8	NERPrediction 1089 1098	captopril
+T9	NERPrediction 1110 1115	t.i.d
+T10	NERPrediction 1118 1123	Lasix
+T11	NERPrediction 1135 1140	b.i.d
+T12	NERPrediction 1158 1165	aspirin
+T13	NERPrediction 1177 1180	q.d
+T14	NERPrediction 1183 1189	Nexium
+T15	NERPrediction 1201 1204	q.d
+T16	NERPrediction 1230 1233	q.d
+T17	NERPrediction 1257 1260	q.d
+T18	NERPrediction 1263 1268	Coreg
+T19	NERPrediction 1280 1285	b.i.d
+T20	NERPrediction 1310 1313	q.d
+T21	NERPrediction 1562 1603	eScription document:9-9294537 RFFocus    

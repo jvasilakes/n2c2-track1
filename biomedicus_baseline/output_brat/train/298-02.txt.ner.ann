@@ -1,0 +1,21 @@
+T1	NERPrediction 125 129	Date
+T2	NERPrediction 417 422	Lasix
+T3	NERPrediction 444 451	calcium
+T4	NERPrediction 452 458	tablet
+T5	NERPrediction 472 482	colchicine
+T6	NERPrediction 472 489	colchicine 0.6 mg
+T7	NERPrediction 498 505	digoxin
+T8	NERPrediction 498 514	digoxin 0.125 mg
+T9	NERPrediction 523 533	isosorbide
+T10	NERPrediction 548 559	Hydralazine
+T11	NERPrediction 574 584	Metoprolol
+T12	NERPrediction 599 609	Prednisone
+T13	NERPrediction 599 614	Prednisone 5 mg
+T14	NERPrediction 621 629	Coumadin
+T15	NERPrediction 1360 1363	BUN
+T16	NERPrediction 1368 1378	creatinine
+T17	NERPrediction 1777 1787	ranitidine
+T18	NERPrediction 1796 1806	Ranitidine
+T19	NERPrediction 1796 1813	Ranitidine 150 mg
+T20	NERPrediction 1822 1825	tab
+T21	NERPrediction 1943 1946	ANP

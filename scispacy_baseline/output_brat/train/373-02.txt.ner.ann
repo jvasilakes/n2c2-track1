@@ -1,0 +1,30 @@
+T0	NERPrediction 451 455	ABVD
+T1	NERPrediction 541 543	CP
+T2	NERPrediction 834 839	10/80
+T3	NERPrediction 856 860	ABVD
+T4	NERPrediction 1058 1066	coumadin
+T5	NERPrediction 1102 1114	R ICA  HTN  
+T6	NERPrediction 1202 1212	10/80 Chol
+T7	NERPrediction 1316 1326	QD  Folate
+T8	NERPrediction 1336 1342	Zantac
+T9	NERPrediction 1355 1364	Glyburide
+T10	NERPrediction 1477 1484	Alcohol
+T11	NERPrediction 1807 1810	NAD
+T12	NERPrediction 2247 2249	Na
+T13	NERPrediction 2255 2256	K
+T14	NERPrediction 2270 2274	HCO3
+T15	NERPrediction 2288 2290	Cr
+T16	NERPrediction 2296 2303	Glucose
+T17	NERPrediction 2309 2311	Ca
+T18	NERPrediction 2319 2323	Phos
+T19	NERPrediction 2329 2331	Mg
+T20	NERPrediction 2504 2511	nitrite
+T21	NERPrediction 2866 2870	ABVD
+T22	NERPrediction 3079 3098	adriamycin toxicity
+T23	NERPrediction 3276 3279	RVR
+T24	NERPrediction 3474 3481	chemo  
+T25	NERPrediction 3590 3599	diltiazem
+T26	NERPrediction 3604 3613	lopressor
+T27	NERPrediction 3636 3644	coumadin
+T28	NERPrediction 3679 3702	CVA  -continue coumadin
+T29	NERPrediction 3740 3750	coumadin  

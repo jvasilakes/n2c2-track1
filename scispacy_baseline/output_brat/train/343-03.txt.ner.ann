@@ -1,0 +1,21 @@
+T0	NERPrediction 118 120	CC
+T1	NERPrediction 130 149	RLE ulcerations    
+T2	NERPrediction 179 194	RLE ulcerations
+T3	NERPrediction 255 261	Keflex
+T4	NERPrediction 788 796	PO QAM  
+T5	NERPrediction 823 837	5MG 1 Tablet(s
+T6	NERPrediction 839 852	PO QPM  ECASA
+T7	NERPrediction 898 902	QD  
+T8	NERPrediction 983 1013	QD  LISINOPRIL 20MG 1 Tablet(s
+T9	NERPrediction 1018 1022	QD  
+T10	NERPrediction 1051 1069	325-5MG 1 Tablet(s
+T11	NERPrediction 1105 1120	15MG 1 Tablet(s
+T12	NERPrediction 1125 1128	QHS
+T13	NERPrediction 1295 1298	NAD
+T14	NERPrediction 1452 1455	RLE
+T15	NERPrediction 1593 1599	Keflex
+T16	NERPrediction 1607 1610	QID
+T17	NERPrediction 1636 1641	5/325
+T18	NERPrediction 1659 1669	PRN pain  
+T19	NERPrediction 1672 1674	DM
+T20	NERPrediction 1685 1694	Glyburide

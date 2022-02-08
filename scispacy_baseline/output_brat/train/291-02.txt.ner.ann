@@ -1,0 +1,103 @@
+T0	NERPrediction 123 131	12/11/95
+T1	NERPrediction 259 261	Pt
+T2	NERPrediction 539 541	Pt
+T3	NERPrediction 1099 1107	Morphine
+T4	NERPrediction 1224 1232	dopamine
+T5	NERPrediction 1765 1770	spine
+T6	NERPrediction 1969 1976	2/2 ASA
+T7	NERPrediction 1981 1987	plavix
+T8	NERPrediction 2223 2226	Abx
+T9	NERPrediction 2235 2241	flagyl
+T10	NERPrediction 2348 2357	Troponins
+T11	NERPrediction 2508 2518	Creatinine
+T12	NERPrediction 2863 2865	GU
+T13	NERPrediction 3002 3005	LLE
+T14	NERPrediction 3078 3089	Neuro/Psych
+T15	NERPrediction 3621 3635	methylene blue
+T16	NERPrediction 3756 3767	cholesterol
+T17	NERPrediction 3887 3889	Cr
+T18	NERPrediction 3906 3922	4.Abdominal pain
+T19	NERPrediction 4046 4057	lactic acid
+T20	NERPrediction 4256 4281	6.Coronary artery disease
+T21	NERPrediction 4409 4412	ASA
+T22	NERPrediction 4414 4420	plavix
+T23	NERPrediction 4478 4485	isordil
+T24	NERPrediction 4588 4598	metoprolol
+T25	NERPrediction 4603 4665	isordil/hydral 8.Diabetes mellitus - on MICU insulin protocol,
+T26	NERPrediction 4846 4855	Albuterol
+T27	NERPrediction 5053 5061	Ileoloop
+T28	NERPrediction 5077 5095	pyelo X7 2079-2082
+T29	NERPrediction 5616 5626	inhale gas
+T30	NERPrediction 5652 5667	antidepressants
+T31	NERPrediction 5936 5939	ASA
+T32	NERPrediction 5953 5959	Plavix
+T33	NERPrediction 5967 5976	Lopressor
+T34	NERPrediction 5986 5989	bid
+T35	NERPrediction 5990 5998	Losartan
+T36	NERPrediction 6011 6021	Furosemide
+T37	NERPrediction 6034 6037	NTG
+T38	NERPrediction 6045 6056	Fluvastatin
+T39	NERPrediction 6069 6073	APAP
+T40	NERPrediction 6094 6103	Glyburide
+T41	NERPrediction 6109 6112	qam
+T42	NERPrediction 6113 6116	qpm
+T43	NERPrediction 6133 6136	qam
+T44	NERPrediction 6143 6146	qpm
+T45	NERPrediction 6147 6162	Lortisone cream
+T46	NERPrediction 6180 6188	Atrovent
+T47	NERPrediction 6205 6214	Pulmicort
+T48	NERPrediction 6231 6240	Albuterol
+T49	NERPrediction 6263 6266	qid
+T50	NERPrediction 6369 6376	Smoking
+T51	NERPrediction 6405 6412	smoking
+T52	NERPrediction 6435 6442	Alcohol
+T53	NERPrediction 6457 6464	alcohol
+T54	NERPrediction 6574 6578	GA  
+T55	NERPrediction 6623 6652	HR=84   RR=28   O2=95%4L 	GEN
+T56	NERPrediction 6670 6673	NAD
+T57	NERPrediction 6826 6850	CTAB w/good air mvt 	CV:
+T58	NERPrediction 6851 6854	RRR
+T59	NERPrediction 6872 6876	LUSB
+T60	NERPrediction 6904 6906	ND
+T61	NERPrediction 7271 7281	3084A07688
+T62	NERPrediction 7282 7288	Sodium
+T63	NERPrediction 7359 7368	Potassium
+T64	NERPrediction 7513 7516	CO2
+T65	NERPrediction 7634 7635	H
+T66	NERPrediction 7666 7676	Creatinine
+T67	NERPrediction 7742 7749	Glucose
+T68	NERPrediction 7818 7825	Calcium
+T69	NERPrediction 7970 7979	Magnesium
+T70	NERPrediction 8278 8287	Bilirubin
+T71	NERPrediction 8353 8362	Bilirubin
+T72	NERPrediction 8724 8732	Creatine
+T73	NERPrediction 8930 8940	Troponin-T
+T74	NERPrediction 9080 9088	Creatine
+T75	NERPrediction 9154 9164	Vancomycin
+T76	NERPrediction 9391 9392	H
+T77	NERPrediction 10069 10070	H
+T78	NERPrediction 10175 10184	ANTI-COAG
+T79	NERPrediction 10376 10377	H
+T80	NERPrediction 10736 10737	H
+T81	NERPrediction 10890 10891	H
+T82	NERPrediction 10967 10968	H
+T83	NERPrediction 11077 11082	Aniso
+T84	NERPrediction 15945 15955	Gadolinium
+T85	NERPrediction 19675 19689	methylene blue
+T86	NERPrediction 19789 19797	-cont O2
+T87	NERPrediction 19902 19913	cholesterol
+T88	NERPrediction 20049 20054	FENa=
+T89	NERPrediction 20062 20064	Cr
+T90	NERPrediction 20090 20092	Cr
+T91	NERPrediction 20094 20110	4.Abdominal pain
+T92	NERPrediction 20234 20245	lactic acid
+T93	NERPrediction 20409 20415	plavix
+T94	NERPrediction 20417 20420	ASA
+T95	NERPrediction 20486 20492	plavix
+T96	NERPrediction 20521 20529	troponin
+T97	NERPrediction 20639 20642	ASA
+T98	NERPrediction 20644 20650	plavix
+T99	NERPrediction 20789 20799	metoprolol
+T100	NERPrediction 20882 20885	QID
+T101	NERPrediction 21002 21008	nexium
+T102	NERPrediction 21018 21025	fragmin

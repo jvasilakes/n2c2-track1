@@ -1,0 +1,156 @@
+T1	NERPrediction 39 47	Medicine
+T2	NERPrediction 134 138	DATE
+T3	NERPrediction 223 226	PCP
+T4	NERPrediction 651 656	Crest
+T5	NERPrediction 923 929	Ativan
+T6	NERPrediction 983 990	woke-up
+T7	NERPrediction 1115 1117	O2
+T8	NERPrediction 1123 1128	Lasix
+T9	NERPrediction 1290 1301	medications
+T10	NERPrediction 1745 1750	Lasix
+T11	NERPrediction 1789 1792	ASA
+T12	NERPrediction 1799 1808	Metformin
+T13	NERPrediction 1814 1825	Simvastatin
+T14	NERPrediction 1830 1838	Losartan
+T15	NERPrediction 1843 1853	Lisinopril
+T16	NERPrediction 1858 1864	Prozac
+T17	NERPrediction 1867 1886	, Calcium carbonate
+T18	NERPrediction 1869 1876	Calcium
+T19	NERPrediction 1869 1886	Calcium carbonate
+T20	NERPrediction 1877 1886	carbonate
+T21	NERPrediction 1892 1901	Lopressor
+T22	NERPrediction 1974 1976	O2
+T23	NERPrediction 2948 2957	Adenosine
+T24	NERPrediction 3138 3141	ACE
+T25	NERPrediction 3142 3145	ARB
+T26	NERPrediction 3347 3350	s/p
+T27	NERPrediction 3432 3435	s/p
+T28	NERPrediction 3500 3508	+, HER 2
+T29	NERPrediction 3501 3508	, HER 2
+T30	NERPrediction 3503 3508	HER 2
+T31	NERPrediction 3631 3634	s/p
+T32	NERPrediction 3752 3765	Acetaminophen
+T33	NERPrediction 3768 3775	Codeine
+T34	NERPrediction 3782 3789	Tylenol
+T35	NERPrediction 3798 3801	TAB
+T36	NERPrediction 3818 3827	Magnesium
+T37	NERPrediction 3818 3837	Magnesium Hydroxide
+T38	NERPrediction 3838 3855	(Milk Of Magnesia
+T39	NERPrediction 3839 3843	Milk
+T40	NERPrediction 3839 3855	Milk Of Magnesia
+T41	NERPrediction 3847 3855	Magnesia
+T42	NERPrediction 3892 3901	Bisacodyl
+T43	NERPrediction 3959 3962	TAB
+T44	NERPrediction 3974 3982	Docusate
+T45	NERPrediction 3974 3989	Docusate Sodium
+T46	NERPrediction 3983 3989	Sodium
+T47	NERPrediction 3991 3997	Colace
+T48	NERPrediction 4035 4055	Acetylsalicylic Acid
+T49	NERPrediction 4080 4091	Anastrozole
+T50	NERPrediction 4080 4109	Anastrozole (Arimidex)   1 MG
+T51	NERPrediction 4093 4101	Arimidex
+T52	NERPrediction 4150 4157	Calcium
+T53	NERPrediction 4150 4167	Calcium Carbonate
+T54	NERPrediction 4150 4175	Calcium Carbonate 1250 Mg
+T55	NERPrediction 4158 4167	Carbonate
+T56	NERPrediction 4173 4175	Mg
+T57	NERPrediction 4181 4183	Mg
+T58	NERPrediction 4197 4200	TAB
+T59	NERPrediction 4212 4222	Fluoxetine
+T60	NERPrediction 4212 4226	Fluoxetine Hcl
+T61	NERPrediction 4244 4251	Fosamax
+T62	NERPrediction 4253 4264	Alendronate
+T63	NERPrediction 4281 4300	Hydrochlorothiazide
+T64	NERPrediction 4354 4362	Losartan
+T65	NERPrediction 4373 4376	BID
+T66	NERPrediction 4381 4390	Metformin
+T67	NERPrediction 4406 4409	tab
+T68	NERPrediction 4447 4458	Simvastatin
+T69	NERPrediction 4447 4465	Simvastatin  40 MG
+T70	NERPrediction 4477 4486	Glipizide
+T71	NERPrediction 4488 4497	Glucotrol
+T72	NERPrediction 4509 4512	BID
+T73	NERPrediction 4552 4565	Acetaminophen
+T74	NERPrediction 4589 4598	Lorazepam
+T75	NERPrediction 4877 4884	Tobacco
+T76	NERPrediction 4918 4925	Alcohol
+T77	NERPrediction 4932 4945	Illicit drugs
+T78	NERPrediction 4940 4945	drugs
+T79	NERPrediction 4987 5003	of illicit drugs
+T80	NERPrediction 4990 5003	illicit drugs
+T81	NERPrediction 4998 5003	drugs
+T82	NERPrediction 5127 5130	NAD
+T83	NERPrediction 5323 5326	m/r
+T84	NERPrediction 5518 5524	Active
+T85	NERPrediction 5754 5760	Plasma
+T86	NERPrediction 5761 5767	Sodium
+T87	NERPrediction 5814 5820	Plasma
+T88	NERPrediction 5821 5830	Potassium
+T89	NERPrediction 5874 5880	Plasma
+T90	NERPrediction 5934 5940	Plasma
+T91	NERPrediction 5941 5947	Carbon
+T92	NERPrediction 5941 5955	Carbon Dioxide
+T93	NERPrediction 5994 6001	Calcium
+T94	NERPrediction 6114 6123	Magnesium
+T95	NERPrediction 6174 6180	Plasma
+T96	NERPrediction 6181 6185	Urea
+T97	NERPrediction 6181 6194	Urea Nitrogen
+T98	NERPrediction 6186 6194	Nitrogen
+T99	NERPrediction 6234 6240	Plasma
+T100	NERPrediction 6241 6251	Creatinine
+T101	NERPrediction 6294 6300	Plasma
+T102	NERPrediction 6301 6308	Glucose
+T103	NERPrediction 6354 6363	NT-proBNP
+T104	NERPrediction 6436 6443	ENZYMES
+T105	NERPrediction 6476 6484	Creatine
+T106	NERPrediction 6539 6547	Troponin
+T107	NERPrediction 6539 6549	Troponin-I
+T108	NERPrediction 7487 7492	Monos
+T109	NERPrediction 7796 7801	Monos
+T110	NERPrediction 8243 8248	Color
+T111	NERPrediction 8537 8544	Nitrite
+T112	NERPrediction 8596 8603	Glucose
+T113	NERPrediction 8711 8723	Urobilinogen
+T114	NERPrediction 8891 8894	SED
+T115	NERPrediction 8951 8954	SED
+T116	NERPrediction 9011 9014	SED
+T117	NERPrediction 9191 9198	Albumin
+T118	NERPrediction 10225 10228	amp
+T119	NERPrediction 10380 10385	Crest
+T120	NERPrediction 10585 10594	waking up
+T121	NERPrediction 11056 11061	Lasix
+T122	NERPrediction 11135 11137	O2
+T123	NERPrediction 11204 11207	ASA
+T124	NERPrediction 11228 11237	Lopressor
+T125	NERPrediction 11248 11257	Captopril
+T126	NERPrediction 11303 11305	BB
+T127	NERPrediction 11335 11344	Albuterol
+T128	NERPrediction 11349 11357	atrovent
+T129	NERPrediction 11392 11399	tobacco
+T130	NERPrediction 11727 11735	baseline
+T131	NERPrediction 11941 11944	abx
+T132	NERPrediction 11949 11952	HAP
+T133	NERPrediction 12078 12086	Atenolol
+T134	NERPrediction 12096 12100	HCTZ
+T135	NERPrediction 12110 12120	Lisinopril
+T136	NERPrediction 12130 12138	Losartan
+T137	NERPrediction 12142 12145	BID
+T138	NERPrediction 12177 12186	Lopressor
+T139	NERPrediction 12290 12299	Metformin
+T140	NERPrediction 12300 12309	Glucotrol
+T141	NERPrediction 12341 12348	Insulin
+T142	NERPrediction 12354 12357	BID
+T143	NERPrediction 12442 12450	Arimidex
+T144	NERPrediction 12478 12484	statin
+T145	NERPrediction 12507 12513	Prozac
+T146	NERPrediction 12519 12526	Tobacco
+T147	NERPrediction 12537 12544	Chantix
+T148	NERPrediction 12575 12581	Ativan
+T149	NERPrediction 12626 12629	fat
+T150	NERPrediction 12631 12634	ADA
+T151	NERPrediction 12665 12670	Vit D
+T152	NERPrediction 12672 12679	Calcium
+T153	NERPrediction 12726 12733	Heparin
+T154	NERPrediction 12748 12751	BID
+T155	NERPrediction 12763 12769	Colace
+T156	NERPrediction 12770 12775	Senna

@@ -1,0 +1,17 @@
+T0	NERPrediction 775 782	glucose
+T1	NERPrediction 1017 1025	atenolol
+T2	NERPrediction 1054 1060	Hyzaar
+T3	NERPrediction 2085 2091	Sodium
+T4	NERPrediction 2157 2166	Potassium
+T5	NERPrediction 2229 2246	Chloride         
+T6	NERPrediction 2301 2307	Carbon
+T7	NERPrediction 2366 2373	Calcium
+T8	NERPrediction 2444 2448	Urea
+T9	NERPrediction 2471 2508	H              8-25           mg/dl  
+T10	NERPrediction 2515 2525	Creatinine
+T11	NERPrediction 2586 2614	Glucose          244       H
+T12	NERPrediction 2650 2661	Cholesterol
+T13	NERPrediction 2882 2889	Glucose
+T14	NERPrediction 2954 2961	glucose
+T15	NERPrediction 3163 3172	glipizide
+T16	NERPrediction 3174 3183	Glucotrol

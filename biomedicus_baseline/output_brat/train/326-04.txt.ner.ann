@@ -1,0 +1,43 @@
+T1	NERPrediction 698 706	Medicine
+T2	NERPrediction 1102 1110	coumadin
+T3	NERPrediction 1156 1159	s/p
+T4	NERPrediction 1157 1161	/p 2
+T5	NERPrediction 1158 1161	p 2
+T6	NERPrediction 1240 1243	s/p
+T7	NERPrediction 1268 1271	S/p
+T8	NERPrediction 1377 1388	Medications
+T9	NERPrediction 1389 1399	Prednisone
+T10	NERPrediction 1427 1435	Protonix
+T11	NERPrediction 1443 1451	Dilantin
+T12	NERPrediction 1461 1469	Tegretol
+T13	NERPrediction 1479 1487	Atenolol
+T14	NERPrediction 1514 1523	Nifedical
+T15	NERPrediction 1550 1555	Paxil
+T16	NERPrediction 1563 1570	Doxepin
+T17	NERPrediction 1579 1585	Plavix
+T18	NERPrediction 1594 1602	Coumadin
+T19	NERPrediction 1610 1615	Xanax
+T20	NERPrediction 1617 1623	Phoslo
+T21	NERPrediction 1631 1639	Fosrenol
+T22	NERPrediction 1659 1666	Demerol
+T23	NERPrediction 1678 1689	Penicillins
+T24	NERPrediction 1720 1730	Vancomycin
+T25	NERPrediction 1960 1963	NAD
+T26	NERPrediction 2494 2497	BUN
+T27	NERPrediction 3237 3240	S/p
+T28	NERPrediction 3298 3301	Abx
+T29	NERPrediction 3362 3372	Vancomycin
+T30	NERPrediction 3362 3379	Vancomycin 750 mg
+T31	NERPrediction 3397 3406	Aztreonam
+T32	NERPrediction 3430 3433	PCN
+T33	NERPrediction 3586 3594	coumadin
+T34	NERPrediction 3744 3747	2 K
+T35	NERPrediction 3752 3754	Ca
+T36	NERPrediction 3788 3800	Electrolytes
+T37	NERPrediction 4010 4013	EPO
+T38	NERPrediction 4029 4036	Aranesp
+T39	NERPrediction 4049 4052	PTH
+T40	NERPrediction 4072 4075	PTH
+T41	NERPrediction 4100 4106	Phoslo
+T42	NERPrediction 4111 4119	Fosrenol
+T43	NERPrediction 4175 4185	Nephrocaps

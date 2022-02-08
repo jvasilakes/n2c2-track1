@@ -1,0 +1,41 @@
+T1	NERPrediction 592 595	Elm
+T2	NERPrediction 933 942	allograft
+T3	NERPrediction 1028 1034	Imuran
+T4	NERPrediction 1039 1049	Prednisone
+T5	NERPrediction 1285 1292	steroid
+T6	NERPrediction 1293 1302	injection
+T7	NERPrediction 1656 1659	Elm
+T8	NERPrediction 1827 1839	levofloxacin
+T9	NERPrediction 1869 1880	medications
+T10	NERPrediction 1921 1929	Premarin
+T11	NERPrediction 1936 1945	Neurontin
+T12	NERPrediction 1962 1971	Miacalcin
+T13	NERPrediction 1972 1983	nasal spray
+T14	NERPrediction 1978 1983	spray
+T15	NERPrediction 1986 1993	Provera
+T16	NERPrediction 2001 2010	Synthroid
+T17	NERPrediction 2018 2025	Digoxin
+T18	NERPrediction 2032 2045	, Cardizem CD
+T19	NERPrediction 2034 2042	Cardizem
+T20	NERPrediction 2034 2045	Cardizem CD
+T21	NERPrediction 2060 2066	Imuran
+T22	NERPrediction 2080 2089	Lopressor
+T23	NERPrediction 2106 2125	, calcium carbonate
+T24	NERPrediction 2108 2115	calcium
+T25	NERPrediction 2108 2125	calcium carbonate
+T26	NERPrediction 2116 2125	carbonate
+T27	NERPrediction 2152 2159	Isordil
+T28	NERPrediction 2185 2193	Coumadin
+T29	NERPrediction 2248 2258	penicillin
+T30	NERPrediction 2270 2276	sulfur
+T31	NERPrediction 2282 2296	cephalosporins
+T32	NERPrediction 2336 2346	Prednisone
+T33	NERPrediction 2421 2428	insulin
+T34	NERPrediction 2421 2440	insulin and Humulin
+T35	NERPrediction 2429 2442	and Humulin N
+T36	NERPrediction 2433 2440	Humulin
+T37	NERPrediction 2433 2442	Humulin N
+T38	NERPrediction 3090 3093	Elm
+T39	NERPrediction 3971 3974	Elm
+T40	NERPrediction 4372 4386	antidepressant
+T41	NERPrediction 4516 4520	SSRI

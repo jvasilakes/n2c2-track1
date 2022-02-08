@@ -1,0 +1,35 @@
+T1	NERPrediction 127 130	s/p
+T2	NERPrediction 183 186	CIA
+T3	NERPrediction 414 417	His
+T4	NERPrediction 559 562	CIA
+T5	NERPrediction 2389 2392	TPT
+T6	NERPrediction 3060 3063	PAD
+T7	NERPrediction 3454 3457	s/p
+T8	NERPrediction 3541 3551	antibiotic
+T9	NERPrediction 3644 3655	Medications
+T10	NERPrediction 3685 3686	u
+T11	NERPrediction 3702 3709	Atacand
+T12	NERPrediction 3723 3732	Glyburide
+T13	NERPrediction 3723 3737	Glyburide 3 mg
+T14	NERPrediction 3794 3801	Norvasc
+T15	NERPrediction 3814 3821	Januvia
+T16	NERPrediction 3836 3843	Bactrim
+T17	NERPrediction 3849 3852	tab
+T18	NERPrediction 3860 3867	Crestor
+T19	NERPrediction 3881 3888	Pristiq
+T20	NERPrediction 3902 3913	Mirtazapine
+T21	NERPrediction 3902 3920	Mirtazapine 7.5 mg
+T22	NERPrediction 3992 3995	Tob
+T23	NERPrediction 4137 4141	ETOH
+T24	NERPrediction 4167 4183	for illicit drug
+T25	NERPrediction 4171 4183	illicit drug
+T26	NERPrediction 4179 4183	drug
+T27	NERPrediction 4704 4707	M/R
+T28	NERPrediction 5100 5103	s/p
+T29	NERPrediction 5282 5285	ASA
+T30	NERPrediction 5290 5296	Plavix
+T31	NERPrediction 5313 5324	medications
+T32	NERPrediction 5413 5422	Glyburide
+T33	NERPrediction 5428 5435	Januvia
+T34	NERPrediction 5458 5465	Insulin
+T35	NERPrediction 5531 5538	Pristiq

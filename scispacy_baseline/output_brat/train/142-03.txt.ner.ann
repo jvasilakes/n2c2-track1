@@ -1,0 +1,19 @@
+T0	NERPrediction 754 760	Toprol
+T1	NERPrediction 774 781	aspirin
+T2	NERPrediction 1189 1191	LA
+T3	NERPrediction 1882 1889	aspirin
+T4	NERPrediction 2275 2288	beers/alcohol
+T5	NERPrediction 2507 2513	-Pulse
+T6	NERPrediction 2866 2870	rubs
+T7	NERPrediction 2915 2918	ICS
+T8	NERPrediction 3241 3251	NA       K
+T9	NERPrediction 3268 3271	CO2
+T10	NERPrediction 3480 3488	AST/SGOT
+T11	NERPrediction 3864 3871	UA-PROT
+T12	NERPrediction 3873 3928	UA-UROBI UA-NIT    01/20/79 Yellow   Clear    3+       
+T13	NERPrediction 4113 4140	UA-KET   UA-WBC    01/20/79
+T14	NERPrediction 4518 4520	LA
+T15	NERPrediction 4735 4737	LA
+T16	NERPrediction 5592 5599	Sotalol
+T17	NERPrediction 5795 5802	Sotalol
+T18	NERPrediction 6323 6329	Toprol

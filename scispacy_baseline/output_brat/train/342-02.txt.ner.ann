@@ -1,0 +1,28 @@
+T0	NERPrediction 416 423	smoking
+T1	NERPrediction 1627 1635	otherone
+T2	NERPrediction 2087 2093	AMbien
+T3	NERPrediction 2136 2142	Zoloft
+T4	NERPrediction 2260 2283	2087,2088,2089,2090    
+T5	NERPrediction 2362 2369	NKA    
+T6	NERPrediction 2413 2415	MG
+T7	NERPrediction 2419 2440	QD         Metoprolol
+T8	NERPrediction 3265 3268	Pap
+T9	NERPrediction 4660 4670	fundoscopy
+T10	NERPrediction 6819 6826	smoking
+T11	NERPrediction 6971 6976	SMA-7
+T12	NERPrediction 6978 6982	CBCm
+T13	NERPrediction 7040 7044	HCTZ
+T14	NERPrediction 7116 7127	Metroprolol
+T15	NERPrediction 7339 7342	ASA
+T16	NERPrediction 7360 7366	Plavix
+T17	NERPrediction 7439 7446	smoking
+T18	NERPrediction 8070 8082	Glucose    4
+T19	NERPrediction 8116 8125	smoking  
+T20	NERPrediction 8235 8243	Nicotine
+T21	NERPrediction 8251 8259	Nicotine
+T22	NERPrediction 8265 8270	Zyban
+T23	NERPrediction 8307 8320	Nicorette gum
+T24	NERPrediction 9083 9089	Ambien
+T25	NERPrediction 9095 9098	QHS
+T26	NERPrediction 9214 9221	Calcium
+T27	NERPrediction 9352 9359	Tylenol

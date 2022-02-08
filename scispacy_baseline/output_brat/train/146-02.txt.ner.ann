@@ -1,0 +1,9 @@
+T0	NERPrediction 109 112	PAH
+T1	NERPrediction 899 908	ibuprofen
+T2	NERPrediction 916 921	t.i.d
+T3	NERPrediction 934 942	Percocet
+T4	NERPrediction 975 984	Neurontin
+T5	NERPrediction 991 996	b.i.d
+T6	NERPrediction 1216 1223	FM:8558
+T7	NERPrediction 1228 1233	DD:11
+T8	NERPrediction 1244 1259	DT:12-2-89     

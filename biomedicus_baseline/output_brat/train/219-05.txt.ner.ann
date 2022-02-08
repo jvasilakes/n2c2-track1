@@ -1,0 +1,33 @@
+T1	NERPrediction 371 381	Creatinine
+T2	NERPrediction 411 414	ACE
+T3	NERPrediction 411 424	ACE inhibitor
+T4	NERPrediction 526 529	HDL
+T5	NERPrediction 575 586	cholesterol
+T6	NERPrediction 592 605	triglycerides
+T7	NERPrediction 610 613	LDL
+T8	NERPrediction 622 625	HDL
+T9	NERPrediction 663 666	PSA
+T10	NERPrediction 700 709	Albuterol
+T11	NERPrediction 725 733	atenolol
+T12	NERPrediction 725 739	atenolol 50 mg
+T13	NERPrediction 752 761	diltiazem
+T14	NERPrediction 781 787	Flomax
+T15	NERPrediction 802 809	Flonase
+T16	NERPrediction 825 837	, folic acid
+T17	NERPrediction 827 837	folic acid
+T18	NERPrediction 827 842	folic acid 2 mg
+T19	NERPrediction 851 858	Lipitor
+T20	NERPrediction 877 883	Plavix
+T21	NERPrediction 906 912	TriCor
+T22	NERPrediction 1513 1516	ACE
+T23	NERPrediction 1513 1526	ACE inhibitor
+T24	NERPrediction 1545 1555	lisinopril
+T25	NERPrediction 1545 1561	lisinopril 10 mg
+T26	NERPrediction 1590 1599	diltiazem
+T27	NERPrediction 1616 1623	glucose
+T28	NERPrediction 1671 1678	glucose
+T29	NERPrediction 1703 1706	HDL
+T30	NERPrediction 1806 1812	TriCor
+T31	NERPrediction 1919 1929	lisinopril
+T32	NERPrediction 1934 1943	diltiazem
+T33	NERPrediction 2071 2074	Tel

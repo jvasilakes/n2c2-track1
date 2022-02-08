@@ -1,0 +1,46 @@
+T1	NERPrediction 650 653	s/p
+T2	NERPrediction 932 943	Medications
+T3	NERPrediction 945 952	Fragmin
+T4	NERPrediction 953 971	(DALTEPARIN SODIUM
+T5	NERPrediction 954 964	DALTEPARIN
+T6	NERPrediction 954 971	DALTEPARIN SODIUM
+T7	NERPrediction 965 971	SODIUM
+T8	NERPrediction 1109 1116	Lipitor
+T9	NERPrediction 1109 1137	Lipitor (ATORVASTATIN) 20 MG
+T10	NERPrediction 1117 1137	(ATORVASTATIN) 20 MG
+T11	NERPrediction 1118 1130	ATORVASTATIN
+T12	NERPrediction 1118 1137	ATORVASTATIN) 20 MG
+T13	NERPrediction 1144 1150	TABLET
+T14	NERPrediction 1177 1188	cholesterol
+T15	NERPrediction 1194 1198	pill
+T16	NERPrediction 1213 1222	Glucotrol
+T17	NERPrediction 1224 1233	GLIPIZIDE
+T18	NERPrediction 1245 1251	TABLET
+T19	NERPrediction 1263 1266	BID
+T20	NERPrediction 1287 1291	pill
+T21	NERPrediction 1308 1318	Fluoxetine
+T22	NERPrediction 1308 1322	Fluoxetine HCL
+T23	NERPrediction 1319 1322	HCL
+T24	NERPrediction 1335 1341	TABLET
+T25	NERPrediction 1367 1371	pill
+T26	NERPrediction 1383 1392	Metformin
+T27	NERPrediction 1407 1413	TABLET
+T28	NERPrediction 1425 1428	BID
+T29	NERPrediction 1431 1444	Ciprofloxacin
+T30	NERPrediction 1431 1451	Ciprofloxacin 500 MG
+T31	NERPrediction 1459 1465	TABLET
+T32	NERPrediction 1484 1494	Lisinopril
+T33	NERPrediction 1484 1500	Lisinopril 20 MG
+T34	NERPrediction 1507 1513	TABLET
+T35	NERPrediction 1617 1624	tobacco
+T36	NERPrediction 1626 1633	alcohol
+T37	NERPrediction 1638 1642	drug
+T38	NERPrediction 1787 1796	injection
+T39	NERPrediction 2440 2450	fluoxetine
+T40	NERPrediction 2532 2535	S/p
+T41	NERPrediction 2607 2614	fragmin
+T42	NERPrediction 2616 2619	ASA
+T43	NERPrediction 2687 2694	) Hep B
+T44	NERPrediction 2689 2694	Hep B
+T45	NERPrediction 2695 2702	vaccine
+T46	NERPrediction 2739 2746	Tylenol

@@ -1,0 +1,22 @@
+T0	NERPrediction 39 44	HORNE
+T1	NERPrediction 1023 1030	Aspirin
+T2	NERPrediction 1057 1059	MG
+T3	NERPrediction 1084 1086	QD
+T4	NERPrediction 1088 1100	Atorvastatin
+T5	NERPrediction 1104 1106	MG
+T6	NERPrediction 1131 1134	QHS
+T7	NERPrediction 1248 1254	Nexium
+T8	NERPrediction 1273 1275	MG
+T9	NERPrediction 1277 1281	40MG
+T10	NERPrediction 1311 1320	Capsule(s
+T11	NERPrediction 1322 1331	Oxycodone
+T12	NERPrediction 1334 1336	MG
+T13	NERPrediction 1360 1363	Q4H
+T14	NERPrediction 1378 1385	Proscar
+T15	NERPrediction 1408 1410	MG
+T16	NERPrediction 1476 1478	MG
+T17	NERPrediction 1480 1484	10MG
+T18	NERPrediction 1534 1591	NKA    Vital Signs  BP 110/60  P 60  Wt. 216   EXAM Chest
+T19	NERPrediction 1859 1865	statin
+T20	NERPrediction 1910 1916	Nexium
+T21	NERPrediction 2026 2033	glucose

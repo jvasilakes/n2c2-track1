@@ -1,0 +1,46 @@
+T0	NERPrediction 254 256	VA
+T1	NERPrediction 850 852	DM
+T2	NERPrediction 1495 1506	allopurinol
+T3	NERPrediction 1724 1726	VA
+T4	NERPrediction 2233 2243	folic acid
+T5	NERPrediction 2250 2258	vitamins
+T6	NERPrediction 2392 2395	RAL
+T7	NERPrediction 2476 2478	VA
+T8	NERPrediction 2882 2893	allopurinol
+T9	NERPrediction 2914 2927	amitriptyline
+T10	NERPrediction 2938 2941	qhs
+T11	NERPrediction 2978 2985	aspirin
+T12	NERPrediction 3001 3005	QD  
+T13	NERPrediction 3024 3027	qpm
+T14	NERPrediction 3067 3074	digoxin
+T15	NERPrediction 3091 3097	Diovan
+T16	NERPrediction 3111 3122	fenofibrate
+T17	NERPrediction 3172 3182	folic acid
+T18	NERPrediction 3261 3266	Imdur
+T19	NERPrediction 3301 3304	qhs
+T20	NERPrediction 3327 3335	insulins
+T21	NERPrediction 3429 3443	QD  omeprazole
+T22	NERPrediction 3511 3520	potassium
+T23	NERPrediction 3563 3574	pravastatin
+T24	NERPrediction 3610 3616	Toprol
+T25	NERPrediction 3634 3639	Zetia
+T26	NERPrediction 3690 3708	potassium chloride
+T27	NERPrediction 3904 3911	Mirapex
+T28	NERPrediction 3956 3962	QTY:60
+T29	NERPrediction 4082 4093	6/28/2122  
+T30	NERPrediction 4112 4115	qhs
+T31	NERPrediction 4138 4146	insulins
+T32	NERPrediction 4199 4216	6/28/2122  Toprol
+T33	NERPrediction 4252 4262	omeprazole
+T34	NERPrediction 4360 4363	TCH
+T35	NERPrediction 4379 4382	TCH
+T36	NERPrediction 5199 5206	Smoking
+T37	NERPrediction 5231 5238	Alcohol
+T38	NERPrediction 5328 5331	qhs
+T39	NERPrediction 5770 5772	GU
+T40	NERPrediction 6092 6124	actinic keratoses  Heent   NC/AT
+T41	NERPrediction 6203 6255	cerumin bilaterally  Neck   supple; carotid upstroke
+T42	NERPrediction 6916 6918	VA
+T43	NERPrediction 6941 6943	K+
+T44	NERPrediction 7156 7168	homocysteine
+T45	NERPrediction 7258 7259	H

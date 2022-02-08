@@ -1,0 +1,79 @@
+T0	NERPrediction 33 40	3/08/72
+T1	NERPrediction 176 183	3/07/72
+T2	NERPrediction 305 310	56yoF
+T3	NERPrediction 315 317	DM
+T4	NERPrediction 524 551	nonbilious-nonbloody emesis
+T5	NERPrediction 957 959	w/
+T6	NERPrediction 1029 1039	O2sat99%RA
+T7	NERPrediction 1143 1150	glucose
+T8	NERPrediction 1588 1601	CONSTIUTIONAL
+T9	NERPrediction 1616 1651	h/a/ear pain/sore throat/rhinorrhea
+T10	NERPrediction 1671 1725	chest pain/palpitations/LH   dness/LOC/PND/LE swelling
+T11	NERPrediction 1780 1782	GU
+T12	NERPrediction 1784 1809	dysuria/frequency/urgency
+T13	NERPrediction 2167 2170	RAD
+T14	NERPrediction 2280 2283	ASA
+T15	NERPrediction 2290 2296	Reglan
+T16	NERPrediction 2300 2302	qd
+T17	NERPrediction 2303 2313	Amlodipine
+T18	NERPrediction 2317 2319	qd
+T19	NERPrediction 2320 2327	Lipitor
+T20	NERPrediction 2331 2334	qhs
+T21	NERPrediction 2335 2343	Atenolol
+T22	NERPrediction 2351 2361	Lisinopril
+T23	NERPrediction 2365 2367	qd
+T24	NERPrediction 2368 2372	HCTZ
+T25	NERPrediction 2376 2378	qd
+T26	NERPrediction 2379 2385	Folate
+T27	NERPrediction 2421 2431	qpm  Lasix
+T28	NERPrediction 2454 2455	K
+T29	NERPrediction 2463 2468	lasix
+T30	NERPrediction 2495 2516	Estherville w/ sister
+T31	NERPrediction 2531 2534	TOB
+T32	NERPrediction 2541 2545	ETOH
+T33	NERPrediction 2552 2560	ILLICITS
+T34	NERPrediction 2653 2656	GEN
+T35	NERPrediction 2698 2701	NAD
+T36	NERPrediction 2741 2746	98%RA
+T37	NERPrediction 2782 2786	CTAB
+T38	NERPrediction 2834 2837	RRR
+T39	NERPrediction 3520 3522	NA
+T40	NERPrediction 3586 3674	K         	3.1(L)    	2.8(L)    	          	          	           CL        	102       	
+T41	NERPrediction 3718 3729	CO2       	
+T42	NERPrediction 3916 3919	GLU
+T43	NERPrediction 3983 4115	MG        	          	          	1.3(L)    	          	           TBILI     	          	          	          	1.6(H)    	           
+T44	NERPrediction 4115 4164	DBILI     	          	          	          	0.7(H
+T45	NERPrediction 4644 4652	AST/SGOT
+T46	NERPrediction 4776 4842	TBILI     	1.6(H)    	          	          	          	           
+T47	NERPrediction 4842 4858	DBILI     	0.7(H
+T48	NERPrediction 5637 5654	HCT       	29.9(L
+T49	NERPrediction 5769 5780	MCH       	
+T50	NERPrediction 6495 6513	ANEUT     	16.57(H
+T51	NERPrediction 6693 6836	AEOSN     	0.00(L)   	          	          	          	           ABASOP    	0.02      	          	          	          	           ANISO     	
+T52	NERPrediction 7023 7168	MICRO     	1+(H)     	          	          	          	            ESR       	126(H)    	          	          	          	            UA-GLUC   	
+T53	NERPrediction 7487 7498	UA-PROT   	
+T54	NERPrediction 7553 7559	UA-NIT
+T55	NERPrediction 7685 7905	HCAST     	0-2       	0-2       	          	          	           UAS-RBC   	10-20     	5-10      	          	          	           UAS-WBC   	3-5       	0-2       	          	          	           UAS-BACT  	Few       	
+T56	NERPrediction 8082 8093	IGA       	
+T57	NERPrediction 8852 8855	q6h
+T58	NERPrediction 8960 8969	nafcillin
+T59	NERPrediction 9032 9046	LENIS of R leg
+T60	NERPrediction 9077 9082	coags
+T61	NERPrediction 9111 9120	adenosine
+T62	NERPrediction 9201 9214	beta-blockade
+T63	NERPrediction 9287 9292	1/2NS
+T64	NERPrediction 9295 9296	K
+T65	NERPrediction 9440 9444	-ASA
+T66	NERPrediction 9446 9454	atenolol
+T67	NERPrediction 9456 9466	lisinopril
+T68	NERPrediction 9468 9474	statin
+T69	NERPrediction 9493 9503	creatinine
+T70	NERPrediction 9505 9528	-avoid renal toxic meds
+T71	NERPrediction 9655 9664	-morphine
+T72	NERPrediction 9692 9694	Fe
+T73	NERPrediction 9838 9842	PHOS
+T74	NERPrediction 9900 9903	FEN
+T75	NERPrediction 9930 9934	salt
+T76	NERPrediction 9970 9976	nexium
+T77	NERPrediction 9978 9985	fragmin
+T78	NERPrediction 10010 10015	DISPO

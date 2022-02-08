@@ -1,0 +1,65 @@
+T1	NERPrediction 200 213	triglycerides
+T2	NERPrediction 260 271	Medications
+T3	NERPrediction 273 279	Motrin
+T4	NERPrediction 280 298	(IBUPROFEN) 800 MG
+T5	NERPrediction 281 290	IBUPROFEN
+T6	NERPrediction 281 298	IBUPROFEN) 800 MG
+T7	NERPrediction 306 312	TABLET
+T8	NERPrediction 338 347	Metformin
+T9	NERPrediction 362 368	TABLET
+T10	NERPrediction 387 397	Lisinopril
+T11	NERPrediction 387 403	Lisinopril 40 MG
+T12	NERPrediction 410 416	TABLET
+T13	NERPrediction 448 454	Prozac
+T14	NERPrediction 455 470	(FLUOXETINE HCL
+T15	NERPrediction 456 466	FLUOXETINE
+T16	NERPrediction 456 470	FLUOXETINE HCL
+T17	NERPrediction 467 470	HCL
+T18	NERPrediction 484 490	TABLET
+T19	NERPrediction 507 512	Zocor
+T20	NERPrediction 513 532	(SIMVASTATIN) 40 MG
+T21	NERPrediction 514 525	SIMVASTATIN
+T22	NERPrediction 514 532	SIMVASTATIN) 40 MG
+T23	NERPrediction 539 545	TABLET
+T24	NERPrediction 572 579	Lipitor
+T25	NERPrediction 593 612	Hydrochlorothiazide
+T26	NERPrediction 593 618	Hydrochlorothiazide 25 MG
+T27	NERPrediction 625 631	TABLET
+T28	NERPrediction 657 662	Serax
+T29	NERPrediction 664 672	OXAZEPAM
+T30	NERPrediction 686 692	TABLET
+T31	NERPrediction 732 740	Fioricet
+T32	NERPrediction 742 752	BUTALBITAL
+T33	NERPrediction 753 757	APAP
+T34	NERPrediction 758 766	CAFFEINE
+T35	NERPrediction 770 773	TAB
+T36	NERPrediction 785 792	CAPSULE
+T37	NERPrediction 831 834	PCP
+T38	NERPrediction 902 908	sugars
+T39	NERPrediction 961 970	Glyburide
+T40	NERPrediction 984 993	Metformin
+T41	NERPrediction 1042 1047	Today
+T42	NERPrediction 1072 1084	hypoglycemic
+T43	NERPrediction 1154 1159	sugar
+T44	NERPrediction 1473 1476	His
+T45	NERPrediction 1511 1514	His
+T46	NERPrediction 1735 1741	Prozac
+T47	NERPrediction 1745 1750	Serax
+T48	NERPrediction 1828 1834	Prozac
+T49	NERPrediction 1923 1933	Lisinopril
+T50	NERPrediction 1943 1947	HCTZ
+T51	NERPrediction 1994 1997	med
+T52	NERPrediction 2058 2063	Zocor
+T53	NERPrediction 2328 2331	NAD
+T54	NERPrediction 2703 2711	stopping
+T55	NERPrediction 2712 2721	Glyburide
+T56	NERPrediction 2736 2745	Metformin
+T57	NERPrediction 2936 2940	HCTZ
+T58	NERPrediction 2981 2984	PCP
+T59	NERPrediction 2990 2998	Atenolol
+T60	NERPrediction 3069 3074	Zocor
+T61	NERPrediction 3145 3148	PCP
+T62	NERPrediction 3149 3158	appt in 2
+T63	NERPrediction 3217 3223	Prozac
+T64	NERPrediction 3228 3233	Serax
+T65	NERPrediction 3393 3396	PCP

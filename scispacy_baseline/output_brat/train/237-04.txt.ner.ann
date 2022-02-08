@@ -1,0 +1,36 @@
+T0	NERPrediction 498 514	femoral/Profunda
+T1	NERPrediction 1610 1613	PAD
+T2	NERPrediction 2237 2240	qpm
+T3	NERPrediction 2252 2259	Atacand
+T4	NERPrediction 2273 2282	Glyburide
+T5	NERPrediction 2288 2291	bid
+T6	NERPrediction 2293 2304	Metroprolol
+T7	NERPrediction 2344 2351	Norvasc
+T8	NERPrediction 2386 2393	Bactrim
+T9	NERPrediction 2410 2417	Crestor
+T10	NERPrediction 2452 2463	Mirtazapine
+T11	NERPrediction 2471 2474	qhs
+T12	NERPrediction 2506 2514	Fentanyl
+T13	NERPrediction 2567 2577	11/23/2088
+T14	NERPrediction 2606 2609	NKA
+T15	NERPrediction 2688 2694	iodine
+T16	NERPrediction 2726 2737	Penicillins
+T17	NERPrediction 2809 2811	DM
+T18	NERPrediction 3023 3027	ETOH
+T19	NERPrediction 3908 3911	PAD
+T20	NERPrediction 4204 4213	Adenosine
+T21	NERPrediction 4455 4462	aspirin
+T22	NERPrediction 4482 4489	Bactrim
+T23	NERPrediction 4507 4516	bupropion
+T24	NERPrediction 4566 4572	Colace
+T25	NERPrediction 4590 4596	Colace
+T26	NERPrediction 4611 4618	Crestor
+T27	NERPrediction 4638 4645	doxepin
+T28	NERPrediction 4652 4663	gemfibrozil
+T29	NERPrediction 4681 4690	glyburide
+T30	NERPrediction 4724 4731	Lipitor
+T31	NERPrediction 4750 4769	metoprolol tartrate
+T32	NERPrediction 4788 4799	sitagliptin
+T33	NERPrediction 4836 4842	Toprol
+T34	NERPrediction 4942 4949	Avandia
+T35	NERPrediction 4967 4988	clopidogrel bisulfate

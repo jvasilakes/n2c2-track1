@@ -1,0 +1,5 @@
+T1	NERPrediction 134 138	DATE
+T2	NERPrediction 463 470	insulin
+T3	NERPrediction 679 687	Coumadin
+T4	NERPrediction 1945 1951	Nebcin
+T5	NERPrediction 2056 2067	antibiotics

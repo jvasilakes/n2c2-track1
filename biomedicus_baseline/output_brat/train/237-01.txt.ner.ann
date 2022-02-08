@@ -1,0 +1,32 @@
+T1	NERPrediction 2235 2238	PAD
+T2	NERPrediction 2247 2254	tobacco
+T3	NERPrediction 2446 2457	Medications
+T4	NERPrediction 2475 2482	aspirin
+T5	NERPrediction 2495 2502	Atacand
+T6	NERPrediction 2514 2521	doxepin
+T7	NERPrediction 2524 2533	glyburide
+T8	NERPrediction 2536 2543	Lipitor
+T9	NERPrediction 2555 2560	Lopid
+T10	NERPrediction 2569 2572	BID
+T11	NERPrediction 2574 2580	Toprol
+T12	NERPrediction 2574 2583	Toprol XL
+T13	NERPrediction 2595 2605	Wellbutrin
+T14	NERPrediction 3344 3349	Other
+T15	NERPrediction 4640 4645	favor
+T16	NERPrediction 5811 5830	and LDL cholesterol
+T17	NERPrediction 5815 5818	LDL
+T18	NERPrediction 5815 5830	LDL cholesterol
+T19	NERPrediction 5819 5830	cholesterol
+T20	NERPrediction 6028 6039	Medications
+T21	NERPrediction 6055 6064	glyburide
+T22	NERPrediction 6070 6076	Toprol
+T23	NERPrediction 6070 6079	Toprol XL
+T24	NERPrediction 6092 6099	Atacand
+T25	NERPrediction 6112 6119	Lipitor
+T26	NERPrediction 6132 6137	Lopid
+T27	NERPrediction 6147 6150	BID
+T28	NERPrediction 6152 6159	aspirin
+T29	NERPrediction 6152 6166	aspirin 325 mg
+T30	NERPrediction 6173 6183	Wellbutrin
+T31	NERPrediction 6189 6196	doxepin
+T32	NERPrediction 6545 6556	medications

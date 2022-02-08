@@ -1,0 +1,19 @@
+T1	NERPrediction 142 162	Pneumococcal vaccine
+T2	NERPrediction 155 162	vaccine
+T3	NERPrediction 246 252	sugars
+T4	NERPrediction 516 527	medications
+T5	NERPrediction 690 695	sugar
+T6	NERPrediction 712 718	Active
+T7	NERPrediction 719 730	Medications
+T8	NERPrediction 734 743	glyburide
+T9	NERPrediction 763 772	metformin
+T10	NERPrediction 763 786	metformin hydrochloride
+T11	NERPrediction 763 793	metformin hydrochloride 500 mg
+T12	NERPrediction 773 786	hydrochloride
+T13	NERPrediction 802 812	lisinopril
+T14	NERPrediction 802 818	lisinopril 20 mg
+T15	NERPrediction 826 834	atenolol
+T16	NERPrediction 848 855	Ecotrin
+T17	NERPrediction 870 889	hydrochlorothiazide
+T18	NERPrediction 870 895	hydrochlorothiazide 25 mg
+T19	NERPrediction 903 910	Norvasc

@@ -1,0 +1,39 @@
+T0	NERPrediction 36 43	Xan G  
+T1	NERPrediction 68 71	N  
+T2	NERPrediction 333 335	CC
+T3	NERPrediction 848 850	Pt
+T4	NERPrediction 917 919	UA
+T5	NERPrediction 971 975	Levo
+T6	NERPrediction 1098 1100	Pt
+T7	NERPrediction 1228 1244	Orthopnea/PND/LE
+T8	NERPrediction 1645 1658	vincristine  
+T9	NERPrediction 1766 1778	Zestril 40MG
+T10	NERPrediction 1807 1812	lasix
+T11	NERPrediction 1818 1832	qd  Omeprozole
+T12	NERPrediction 1842 1846	HCTZ
+T13	NERPrediction 1871 1874	HCL
+T14	NERPrediction 1889 1898	Proventil
+T15	NERPrediction 1921 1942	NIASPAN 500MG 1-2 QHS
+T16	NERPrediction 1998 2003	cream
+T17	NERPrediction 2014 2017	bid
+T18	NERPrediction 2026 2033	aspirin
+T19	NERPrediction 2052 2061	Demerol  
+T20	NERPrediction 2088 2092	ETOH
+T21	NERPrediction 2190 2192	O2
+T22	NERPrediction 2207 2210	AAO
+T23	NERPrediction 2471 2475	CTAB
+T24	NERPrediction 3706 3708	NA
+T25	NERPrediction 3768 3778	K         
+T26	NERPrediction 3892 3895	CO2
+T27	NERPrediction 4078 4081	GLU
+T28	NERPrediction 4709 4718	ACE, hctz
+T29	NERPrediction 4723 4728	lasix
+T30	NERPrediction 4782 4784	UA
+T31	NERPrediction 4792 4798	sodium
+T32	NERPrediction 4827 4839	levofloxicin
+T33	NERPrediction 5324 5328	Levo
+T34	NERPrediction 5410 5412	Pt
+T35	NERPrediction 5509 5511	Pt
+T36	NERPrediction 5634 5637	Xan
+T37	NERPrediction 5681 5689	#29827  
+T38	NERPrediction 5737 5752	Xan G on Jul 10

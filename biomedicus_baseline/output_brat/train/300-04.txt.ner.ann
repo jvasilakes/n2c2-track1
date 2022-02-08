@@ -1,0 +1,68 @@
+T1	NERPrediction 129 132	PCP
+T2	NERPrediction 155 159	Date
+T3	NERPrediction 323 328	, S/P
+T4	NERPrediction 325 328	S/P
+T5	NERPrediction 329 333	CHOP
+T6	NERPrediction 546 551	a 1-2
+T7	NERPrediction 649 657	baseline
+T8	NERPrediction 988 994	/10 CP
+T9	NERPrediction 989 994	10 CP
+T10	NERPrediction 1482 1486	/o 1
+T11	NERPrediction 1483 1486	o 1
+T12	NERPrediction 1519 1527	ferritin
+T13	NERPrediction 1985 1989	CHOP
+T14	NERPrediction 2064 2072	Neulasta
+T15	NERPrediction 2123 2131	Neulasta
+T16	NERPrediction 2162 2170	diflucan
+T17	NERPrediction 2233 2237	CHOP
+T18	NERPrediction 2237 2242	-R, c
+T19	NERPrediction 2237 2244	-R, c/b
+T20	NERPrediction 2238 2242	R, c
+T21	NERPrediction 2238 2244	R, c/b
+T22	NERPrediction 2287 2291	CHOP
+T23	NERPrediction 2387 2390	ASA
+T24	NERPrediction 2407 2412	Lasix
+T25	NERPrediction 2560 2563	S/p
+T26	NERPrediction 2561 2565	/p 6
+T27	NERPrediction 2562 2565	p 6
+T28	NERPrediction 2573 2577	CHOP
+T29	NERPrediction 3256 3263	Lipitor
+T30	NERPrediction 3318 3325	Demerol
+T31	NERPrediction 3337 3348	Fluconazole
+T32	NERPrediction 3363 3374	Medications
+T33	NERPrediction 3392 3402	Omeprazole
+T34	NERPrediction 3415 3425	Lisinopril
+T35	NERPrediction 3415 3431	Lisinopril 40 mg
+T36	NERPrediction 3439 3448	Lopressor
+T37	NERPrediction 3458 3461	BID
+T38	NERPrediction 3917 3920	SHx
+T39	NERPrediction 4092 4097	smoke
+T40	NERPrediction 4153 4165	illicit drug
+T41	NERPrediction 4161 4165	drug
+T42	NERPrediction 4299 4311	/sore throat
+T43	NERPrediction 4300 4311	sore throat
+T44	NERPrediction 4703 4706	m/r
+T45	NERPrediction 4784 4788	Extr
+T46	NERPrediction 4914 4917	DTR
+T47	NERPrediction 4991 4994	RAM
+T48	NERPrediction 5278 5281	CO2
+T49	NERPrediction 5345 5348	BUN
+T50	NERPrediction 7537 7540	s/p
+T51	NERPrediction 7541 7545	CHOP
+T52	NERPrediction 7715 7718	s/p
+T53	NERPrediction 7728 7733	lasix
+T54	NERPrediction 7753 7762	lopressor
+T55	NERPrediction 7874 7877	PTX
+T56	NERPrediction 8217 8220	s/p
+T57	NERPrediction 8310 8315	lasix
+T58	NERPrediction 8503 8506	ASA
+T59	NERPrediction 8517 8526	lopressor
+T60	NERPrediction 8538 8547	captopril
+T61	NERPrediction 8559 8569	lisinopril
+T62	NERPrediction 8670 8677	fragmin
+T63	NERPrediction 8709 8714	lasix
+T64	NERPrediction 8717 8726	lopressor
+T65	NERPrediction 8841 8851	Omeprazole
+T66	NERPrediction 8871 8880	uric acid
+T67	NERPrediction 8938 8950	electrolytes
+T68	NERPrediction 9141 9149	Medicine

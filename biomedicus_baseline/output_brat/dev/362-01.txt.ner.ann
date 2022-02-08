@@ -1,0 +1,12 @@
+T1	NERPrediction 130 134	DATE
+T2	NERPrediction 948 961	, hepatitis B
+T3	NERPrediction 950 961	hepatitis B
+T4	NERPrediction 986 996	Alprazolam
+T5	NERPrediction 1001 1009	Tolinase
+T6	NERPrediction 1763 1769	Guaiac
+T7	NERPrediction 2117 2125	Troponin
+T8	NERPrediction 2142 2154	Electrolytes
+T9	NERPrediction 2156 2159	BUN
+T10	NERPrediction 2161 2171	creatinine
+T11	NERPrediction 2182 2187	sugar
+T12	NERPrediction 2267 2274	glucose

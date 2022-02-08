@@ -1,0 +1,26 @@
+T0	NERPrediction 288 291	HPI
+T1	NERPrediction 537 540	RLE
+T2	NERPrediction 1487 1495	coumadin
+T3	NERPrediction 1572 1574	DM
+T4	NERPrediction 1575 1578	PVD
+T5	NERPrediction 1579 1582	LLE
+T6	NERPrediction 1647 1650	RLE
+T7	NERPrediction 1829 1836	Lipitor
+T8	NERPrediction 1840 1843	qpm
+T9	NERPrediction 1844 1849	Zetia
+T10	NERPrediction 1855 1858	qpm
+T11	NERPrediction 1859 1862	ASA
+T12	NERPrediction 1866 1869	qam
+T13	NERPrediction 1870 1876	Altace
+T14	NERPrediction 1880 1883	qam
+T15	NERPrediction 1884 1892	Atenolol
+T16	NERPrediction 1896 1899	qam
+T17	NERPrediction 1900 1909	Glyburide
+T18	NERPrediction 1920 1934	Nitrofurantoin
+T19	NERPrediction 1943 1951	coumadin
+T20	NERPrediction 1970 1979	NKDA   PE
+T21	NERPrediction 2050 2059	O2 Sat   
+T22	NERPrediction 2087 2090	NAD
+T23	NERPrediction 2097 2101	CTAB
+T24	NERPrediction 2123 2125	ND
+T25	NERPrediction 2735 2738	RLE

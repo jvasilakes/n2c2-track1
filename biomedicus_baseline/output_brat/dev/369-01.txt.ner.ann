@@ -1,0 +1,7 @@
+T1	NERPrediction 246 251	Other
+T2	NERPrediction 381 392	Medications
+T3	NERPrediction 399 407	ATENOLOL
+T4	NERPrediction 455 465	AMPICILLIN
+T5	NERPrediction 627 631	ETOH
+T6	NERPrediction 873 876	NAD
+T7	NERPrediction 1506 1509	PSA

@@ -1,0 +1,45 @@
+T1	NERPrediction 85 95	lisinopril
+T2	NERPrediction 85 101	lisinopril 20 mg
+T3	NERPrediction 105 109	HBPM
+T4	NERPrediction 229 240	Medications
+T5	NERPrediction 242 252	LISINOPRIL
+T6	NERPrediction 242 258	LISINOPRIL 20 MG
+T7	NERPrediction 262 268	Tablet
+T8	NERPrediction 321 328	CAPSULE
+T9	NERPrediction 362 375	Levothyroxine
+T10	NERPrediction 362 382	Levothyroxine Sodium
+T11	NERPrediction 376 382	Sodium
+T12	NERPrediction 392 398	Tablet
+T13	NERPrediction 429 436	Lipitor
+T14	NERPrediction 429 456	Lipitor (ATORVASTATIN) 20MG
+T15	NERPrediction 437 456	(ATORVASTATIN) 20MG
+T16	NERPrediction 438 450	ATORVASTATIN
+T17	NERPrediction 438 456	ATORVASTATIN) 20MG
+T18	NERPrediction 460 466	Tablet
+T19	NERPrediction 540 546	Tablet
+T20	NERPrediction 574 580	Toprol
+T21	NERPrediction 574 583	Toprol Xl
+T22	NERPrediction 584 605	(METOPROLOL Succinate
+T23	NERPrediction 585 595	METOPROLOL
+T24	NERPrediction 585 605	METOPROLOL Succinate
+T25	NERPrediction 596 605	Succinate
+T26	NERPrediction 635 641	Tablet
+T27	NERPrediction 762 765	SHx
+T28	NERPrediction 767 774	tobacco
+T29	NERPrediction 788 792	ETOH
+T30	NERPrediction 804 809	drugs
+T31	NERPrediction 1994 1997	MMR
+T32	NERPrediction 2010 2013	PPD
+T33	NERPrediction 2068 2071	HIV
+T34	NERPrediction 2175 2186	cholesterol
+T35	NERPrediction 2218 2222	HBPM
+T36	NERPrediction 2302 2306	gold
+T37	NERPrediction 2355 2358	DTR
+T38	NERPrediction 2536 2539	COR
+T39	NERPrediction 2685 2688	DTR
+T40	NERPrediction 2764 2768	HBPM
+T41	NERPrediction 2785 2795	lisinopril
+T42	NERPrediction 2785 2801	lisinopril 40 mg
+T43	NERPrediction 2861 2868	lipitor
+T44	NERPrediction 2932 2935	TSH
+T45	NERPrediction 2954 2967	levothyroxine

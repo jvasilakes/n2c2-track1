@@ -1,0 +1,46 @@
+T1	NERPrediction 70 73	s/p
+T2	NERPrediction 82 85	MCA
+T3	NERPrediction 328 331	MCA
+T4	NERPrediction 439 456	the morning after
+T5	NERPrediction 443 456	morning after
+T6	NERPrediction 511 514	MCA
+T7	NERPrediction 756 763	Aspirin
+T8	NERPrediction 864 867	His
+T9	NERPrediction 985 997	Homocysteine
+T10	NERPrediction 1183 1194	antibiotics
+T11	NERPrediction 1296 1299	His
+T12	NERPrediction 1393 1404	antibiotics
+T13	NERPrediction 2171 2174	His
+T14	NERPrediction 2215 2224	trazodone
+T15	NERPrediction 2303 2306	His
+T16	NERPrediction 2685 2688	His
+T17	NERPrediction 3145 3154	Neurontin
+T18	NERPrediction 3240 3244	lead
+T19	NERPrediction 3309 3317	Dilaudid
+T20	NERPrediction 3394 3401	Zestril
+T21	NERPrediction 3406 3415	trazodone
+T22	NERPrediction 3422 3429	Avandia
+T23	NERPrediction 3434 3444	Glucophage
+T24	NERPrediction 3456 3463	insulin
+T25	NERPrediction 3466 3475	Neurontin
+T26	NERPrediction 3486 3492	Zantac
+T27	NERPrediction 3495 3504	Lopressor
+T28	NERPrediction 3514 3522	Dilaudid
+T29	NERPrediction 3531 3539	Lidoderm
+T30	NERPrediction 3540 3545	patch
+T31	NERPrediction 3562 3571	Pravachol
+T32	NERPrediction 3577 3582	Paxil
+T33	NERPrediction 3588 3594	folate
+T34	NERPrediction 3594 3606	, B vitamins
+T35	NERPrediction 3596 3606	B vitamins
+T36	NERPrediction 3598 3606	vitamins
+T37	NERPrediction 3616 3623	Allegra
+T38	NERPrediction 4500 4503	Imp
+T39	NERPrediction 4512 4515	s/p
+T40	NERPrediction 4518 4521	MCA
+T41	NERPrediction 4903 4910	aspirin
+T42	NERPrediction 5087 5093	Elavil
+T43	NERPrediction 5121 5130	trazodone
+T44	NERPrediction 5136 5142	Elavil
+T45	NERPrediction 5211 5217	Elavil
+T46	NERPrediction 5251 5260	Neurontin

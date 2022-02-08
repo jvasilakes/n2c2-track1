@@ -1,0 +1,137 @@
+T1	NERPrediction 662 673	medications
+T2	NERPrediction 685 691	Reglan
+T3	NERPrediction 693 699	Ativan
+T4	NERPrediction 701 710	Compazine
+T5	NERPrediction 716 723	Zelnorm
+T6	NERPrediction 770 779	Neurontin
+T7	NERPrediction 784 792	Cymbalta
+T8	NERPrediction 828 831	PCP
+T9	NERPrediction 844 856	on MS Contin
+T10	NERPrediction 847 856	MS Contin
+T11	NERPrediction 930 943	the MS Contin
+T12	NERPrediction 934 943	MS Contin
+T13	NERPrediction 1318 1323	Today
+T14	NERPrediction 1371 1383	gastrografin
+T15	NERPrediction 1441 1449	morphine
+T16	NERPrediction 1514 1523	MS Contin
+T17	NERPrediction 1603 1612	clonidine
+T18	NERPrediction 1613 1616	BID
+T19	NERPrediction 1662 1665	AFP
+T20	NERPrediction 1798 1801	CEA
+T21	NERPrediction 1954 1959	, s/p
+T22	NERPrediction 1956 1959	s/p
+T23	NERPrediction 2059 2062	S/P
+T24	NERPrediction 2080 2083	S/P
+T25	NERPrediction 2088 2091	BSO
+T26	NERPrediction 2116 2127	Medications
+T27	NERPrediction 2142 2149	Heparin
+T28	NERPrediction 2155 2156	u
+T29	NERPrediction 2160 2163	BID
+T30	NERPrediction 2164 2170	Reglan
+T31	NERPrediction 2190 2209	Hydrochlorothiazide
+T32	NERPrediction 2190 2215	Hydrochlorothiazide 25 MG
+T33	NERPrediction 2222 2228	TABLET
+T34	NERPrediction 2270 2277	Insulin
+T35	NERPrediction 2270 2283	Insulin 70/30
+T36	NERPrediction 2306 2308	SC
+T37	NERPrediction 2370 2376	Nexium
+T38	NERPrediction 2389 2399	Lisinopril
+T39	NERPrediction 2405 2411	TABLET
+T40	NERPrediction 2421 2432	Medications
+T41	NERPrediction 2456 2477	(ACETYLSALICYLIC ACID
+T42	NERPrediction 2457 2477	ACETYLSALICYLIC ACID
+T43	NERPrediction 2493 2499	TABLET
+T44	NERPrediction 2515 2523	Cymbalta
+T45	NERPrediction 2515 2541	Cymbalta (DULOXETINE) 60MG
+T46	NERPrediction 2524 2541	(DULOXETINE) 60MG
+T47	NERPrediction 2525 2535	DULOXETINE
+T48	NERPrediction 2525 2541	DULOXETINE) 60MG
+T49	NERPrediction 2542 2549	CAPSULE
+T50	NERPrediction 2570 2589	Hydrochlorothiazide
+T51	NERPrediction 2570 2595	Hydrochlorothiazide 25 MG
+T52	NERPrediction 2602 2608	TABLET
+T53	NERPrediction 2650 2657	Insulin
+T54	NERPrediction 2650 2663	Insulin 70/30
+T55	NERPrediction 2686 2688	SC
+T56	NERPrediction 2750 2757	Lipitor
+T57	NERPrediction 2750 2777	Lipitor (ATORVASTATIN) 10MG
+T58	NERPrediction 2758 2777	(ATORVASTATIN) 10MG
+T59	NERPrediction 2759 2771	ATORVASTATIN
+T60	NERPrediction 2759 2777	ATORVASTATIN) 10MG
+T61	NERPrediction 2778 2784	TABLET
+T62	NERPrediction 2793 2803	Lisinopril
+T63	NERPrediction 2809 2815	TABLET
+T64	NERPrediction 2824 2833	Ms CONTIN
+T65	NERPrediction 2835 2843	MORPHINE
+T66	NERPrediction 2844 2862	CONTROLLED RELEASE
+T67	NERPrediction 2869 2875	TABLET
+T68	NERPrediction 2888 2897	Neurontin
+T69	NERPrediction 2888 2917	Neurontin (GABAPENTIN) 300 MG
+T70	NERPrediction 2898 2917	(GABAPENTIN) 300 MG
+T71	NERPrediction 2899 2909	GABAPENTIN
+T72	NERPrediction 2899 2917	GABAPENTIN) 300 MG
+T73	NERPrediction 2925 2932	CAPSULE
+T74	NERPrediction 2949 2958	Potassium
+T75	NERPrediction 2949 2967	Potassium CHLORIDE
+T76	NERPrediction 2979 2982	KCL
+T77	NERPrediction 3011 3018	CAPSULE
+T78	NERPrediction 3707 3710	COR
+T79	NERPrediction 3899 3905	Guaiac
+T80	NERPrediction 4004 4008	Date
+T81	NERPrediction 4067 4070	CO2
+T82	NERPrediction 4163 4167	Date
+T83	NERPrediction 4181 4184	BUN
+T84	NERPrediction 4292 4296	Date
+T85	NERPrediction 4340 4345	TBILI
+T86	NERPrediction 4451 4455	Date
+T87	NERPrediction 4689 4693	Date
+T88	NERPrediction 4788 4792	Date
+T89	NERPrediction 4851 4856	TBILI
+T90	NERPrediction 4947 4951	Date
+T91	NERPrediction 5016 5020	Date
+T92	NERPrediction 5175 5179	Date
+T93	NERPrediction 5334 5338	Date
+T94	NERPrediction 5403 5407	Date
+T95	NERPrediction 5562 5566	Date
+T96	NERPrediction 5808 5812	Date
+T97	NERPrediction 5924 5928	Date
+T98	NERPrediction 6425 6429	Date
+T99	NERPrediction 6541 6545	Date
+T100	NERPrediction 6933 6937	Date
+T101	NERPrediction 7581 7601	intravenous contrast
+T102	NERPrediction 7731 7736	Liver
+T103	NERPrediction 7915 7923	Pancreas
+T104	NERPrediction 8418 8421	air
+T105	NERPrediction 8813 8817	Date
+T106	NERPrediction 9032 9045	technetium 99
+T107	NERPrediction 9032 9046	technetium 99m
+T108	NERPrediction 9043 9046	99m
+T109	NERPrediction 9047 9053	sulfur
+T110	NERPrediction 9047 9061	sulfur colloid
+T111	NERPrediction 9054 9061	colloid
+T112	NERPrediction 9480 9484	Date
+T113	NERPrediction 10311 10319	morphine
+T114	NERPrediction 10336 10345	MS contin
+T115	NERPrediction 10364 10372	morphine
+T116	NERPrediction 10603 10608	Other
+T117	NERPrediction 10945 10956	-gliadin Ab
+T118	NERPrediction 10946 10953	gliadin
+T119	NERPrediction 10946 10956	gliadin Ab
+T120	NERPrediction 11006 11009	AFP
+T121	NERPrediction 11014 11017	CEA
+T122	NERPrediction 11170 11178	stopping
+T123	NERPrediction 11183 11192	clonidine
+T124	NERPrediction 11287 11297	Lisinopril
+T125	NERPrediction 11311 11315	HCTZ
+T126	NERPrediction 11354 11365	hydralazine
+T127	NERPrediction 11417 11433	with Insulin NPH
+T128	NERPrediction 11422 11429	Insulin
+T129	NERPrediction 11422 11433	Insulin NPH
+T130	NERPrediction 11478 11493	regular insulin
+T131	NERPrediction 11486 11493	insulin
+T132	NERPrediction 11549 11557	Cymbalta
+T133	NERPrediction 11562 11571	Neurontin
+T134	NERPrediction 11578 11595	the the MS Contin
+T135	NERPrediction 11582 11595	the MS Contin
+T136	NERPrediction 11586 11595	MS Contin
+T137	NERPrediction 11607 11615	morphine

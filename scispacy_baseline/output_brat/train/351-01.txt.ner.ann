@@ -1,0 +1,11 @@
+T0	NERPrediction 123 131	OLIVIA  
+T1	NERPrediction 986 993	Glucose
+T2	NERPrediction 1550 1559	glipizide
+T3	NERPrediction 1697 1707	creatinine
+T4	NERPrediction 1752 1762	creatinine
+T5	NERPrediction 2145 2154	lidocaine
+T6	NERPrediction 2176 2187	Depo-Medrol
+T7	NERPrediction 2570 2583	nonsteroidals
+T8	NERPrediction 2649 2656	Tylenol
+T9	NERPrediction 2662 2669	Codeine
+T10	NERPrediction 2939 2949	eScription

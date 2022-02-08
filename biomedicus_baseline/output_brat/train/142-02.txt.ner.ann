@@ -1,0 +1,21 @@
+T1	NERPrediction 887 898	medications
+T2	NERPrediction 921 929	Coumadin
+T3	NERPrediction 1159 1170	Medications
+T4	NERPrediction 1503 1515	street drugs
+T5	NERPrediction 1510 1515	drugs
+T6	NERPrediction 1529 1534	smoke
+T7	NERPrediction 1529 1542	smoke tobacco
+T8	NERPrediction 1535 1542	tobacco
+T9	NERPrediction 1562 1569	alcohol
+T10	NERPrediction 2281 2286	water
+T11	NERPrediction 3184 3196	on Toprol XL
+T12	NERPrediction 3187 3193	Toprol
+T13	NERPrediction 3187 3196	Toprol XL
+T14	NERPrediction 3300 3323	Class IC antiarrhythmic
+T15	NERPrediction 3309 3323	antiarrhythmic
+T16	NERPrediction 3526 3533	Aspirin
+T17	NERPrediction 3526 3540	Aspirin 325 mg
+T18	NERPrediction 3607 3615	coumadin
+T19	NERPrediction 4102 4113	Medications
+T20	NERPrediction 4127 4133	Toprol
+T21	NERPrediction 4127 4136	Toprol XL

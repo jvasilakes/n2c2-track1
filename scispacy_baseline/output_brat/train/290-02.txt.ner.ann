@@ -1,0 +1,15 @@
+T0	NERPrediction 157 159	DM
+T1	NERPrediction 574 581	smoking
+T2	NERPrediction 916 918	Pt
+T3	NERPrediction 938 942	BHCC
+T4	NERPrediction 2090 2101	/Creatinine
+T5	NERPrediction 2391 2398	alcohol
+T6	NERPrediction 2530 2538	ramipril
+T7	NERPrediction 2552 2559	aspirin
+T8	NERPrediction 2574 2586	atorvastatin
+T9	NERPrediction 2685 2698	A&O x3  Edema
+T10	NERPrediction 2701 2710	BLE edema
+T11	NERPrediction 2734 2736	Cr
+T12	NERPrediction 2865 2867	DM
+T13	NERPrediction 3204 3211	Novolog
+T14	NERPrediction 3410 3418	N.P.    

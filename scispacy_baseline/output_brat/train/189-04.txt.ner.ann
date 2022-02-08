@@ -1,0 +1,39 @@
+T0	NERPrediction 196 208	Ora-jordan  
+T1	NERPrediction 286 289	gas
+T2	NERPrediction 945 955	Creatinine
+T3	NERPrediction 1168 1177	(PVD)Left
+T4	NERPrediction 1259 1270	Vitamin B12
+T5	NERPrediction 1408 1411	NKA
+T6	NERPrediction 1481 1495	Acetylcysteine
+T7	NERPrediction 1515 1517	MG
+T8	NERPrediction 1525 1541	Cefazolin sodium
+T9	NERPrediction 1556 1558	MG
+T10	NERPrediction 1562 1565	Q8H
+T11	NERPrediction 1566 1589	Chlorhexidine(mouthwash
+T12	NERPrediction 1598 1605	peridex
+T13	NERPrediction 1646 1653	Heparin
+T14	NERPrediction 1672 1679	Heparin
+T15	NERPrediction 1701 1720	Metoprolol tartrate
+T16	NERPrediction 1739 1741	MG
+T17	NERPrediction 1745 1748	Q8H
+T18	NERPrediction 1749 1758	Mupirocin
+T19	NERPrediction 1760 1769	bactroban
+T20	NERPrediction 1794 1804	Omeprazole
+T21	NERPrediction 1808 1810	MG
+T22	NERPrediction 1820 1831	Simvastatin
+T23	NERPrediction 1835 1837	MG
+T24	NERPrediction 2010 2012	CX
+T25	NERPrediction 2215 2219	ETOH
+T26	NERPrediction 2500 2502	GU
+T27	NERPrediction 2933 2936	rub
+T28	NERPrediction 3413 3555	2097/04/30 15:58 - Hgb... 13.6 gm/dl 2097/04/30 15:58 - Hct... 36.5 % (L) 2097/04/30 15:58 - Plt... 151 th/cumm -- BMP -- 2097/04/30 16:04 - P
+T29	NERPrediction 3556 3558	Na
+T30	NERPrediction 3574 3671	2097/04/30 16:04 - P K... PEND mmol/L 2097/04/30 16:04 - P Cl... PEND mmol/L 2097/04/30 16:04 - P
+T31	NERPrediction 3672 3676	TCO2
+T32	NERPrediction 3692 3868	2097/04/30 16:04 - P BUN... PEND mg/dl 2097/04/30 16:04 - P Cre... PEND mg/dl 2097/04/30 16:04 - P Glu... PEND mg/dl 2097/04/30 16:04 - Phos... PEND mg/dl 2097/04/30 16:04 - Mg
+T33	NERPrediction 3883 4320	2097/04/30 16:04 - TSH... PEND uU/ml -- HFP -- 2097/04/30 16:04 - SGOT... PEND U/L 2097/04/30 16:04 - SGPT... PEND U/L 2097/04/30 16:04 - Alk Phos... PEND U/L 2097/04/30 16:04 - TBili... PEND mg/dl 2097/04/30 16:04 - DBili... PEND mg/dl 2097/04/30 16:04 - Alb... PEND g/dl -- CARDIAC -- 2097/04/30 16:04 - CPK... PEND U/L -- COAGS -- 2097/04/30 16:12 - PT... 13.1 sec 2097/04/30 16:12 - PT-INR... 1.1  2097/04/30 16:12 - APTT... 65.8 sec
+T34	NERPrediction 4322 4323	H
+T35	NERPrediction 4583 4586	ASA
+T36	NERPrediction 4592 4599	heparin
+T37	NERPrediction 4857 4867	Lisinopril
+T38	NERPrediction 4875 4877	Pt

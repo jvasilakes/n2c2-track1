@@ -1,0 +1,11 @@
+T1	NERPrediction 422 438	antihypertensive
+T2	NERPrediction 466 476	nifedipine
+T3	NERPrediction 487 506	hydrochlorothiazide
+T4	NERPrediction 921 931	furosemide
+T5	NERPrediction 1021 1031	furosemide
+T6	NERPrediction 1035 1054	hydrochlorothiazide
+T7	NERPrediction 1097 1105	diuretic
+T8	NERPrediction 1400 1439	, nonsteroidal anti-inflammatory agents
+T9	NERPrediction 1402 1439	nonsteroidal anti-inflammatory agents
+T10	NERPrediction 1415 1439	anti-inflammatory agents
+T11	NERPrediction 1852 1863	cholesterol

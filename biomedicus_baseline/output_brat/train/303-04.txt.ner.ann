@@ -1,0 +1,45 @@
+T1	NERPrediction 140 144	Date
+T2	NERPrediction 657 660	MCA
+T3	NERPrediction 690 693	RUE
+T4	NERPrediction 887 888	n
+T5	NERPrediction 1212 1215	PCP
+T6	NERPrediction 1355 1358	SBP
+T7	NERPrediction 1401 1408	aspirin
+T8	NERPrediction 1401 1415	aspirin  81 mg
+T9	NERPrediction 1494 1502	atenolol
+T10	NERPrediction 1526 1529	1/2
+T11	NERPrediction 1535 1540	pills
+T12	NERPrediction 1562 1572	calcitriol
+T13	NERPrediction 1607 1613	tablet
+T14	NERPrediction 1654 1660	Cozaar
+T15	NERPrediction 1714 1721	Humulin
+T16	NERPrediction 1762 1767	Imdur
+T17	NERPrediction 1775 1777	SR
+T18	NERPrediction 1780 1786	tablet
+T19	NERPrediction 1811 1816	Lasix
+T20	NERPrediction 1848 1861	multivitamins
+T21	NERPrediction 1865 1868	tab
+T22	NERPrediction 1885 1889	pill
+T23	NERPrediction 1920 1927	Norvasc
+T24	NERPrediction 1959 1966	Patanol
+T25	NERPrediction 1970 1981	% eye drops
+T26	NERPrediction 1972 1981	eye drops
+T27	NERPrediction 2077 2083	Plavix
+T28	NERPrediction 2104 2110	tablet
+T29	NERPrediction 2146 2154	Protonix
+T30	NERPrediction 2186 2194	Seroquel
+T31	NERPrediction 2222 2228	tablet
+T32	NERPrediction 2273 2284	simvastatin
+T33	NERPrediction 2313 2319	Zoloft
+T34	NERPrediction 2344 2351	Zestril
+T35	NERPrediction 3896 3898	PP
+T36	NERPrediction 5100 5103	BUN
+T37	NERPrediction 5115 5118	Glu
+T38	NERPrediction 5215 5223	baseline
+T39	NERPrediction 5360 5365	Other
+T40	NERPrediction 5528 5531	SBP
+T41	NERPrediction 5699 5704	favor
+T42	NERPrediction 5753 5761	steroids
+T43	NERPrediction 5766 5778	valacyclovir
+T44	NERPrediction 5811 5814	PCP
+T45	NERPrediction 5885 5893	Medicine

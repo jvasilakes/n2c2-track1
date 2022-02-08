@@ -1,0 +1,49 @@
+T1	NERPrediction 426 429	PPD
+T2	NERPrediction 717 720	PCP
+T3	NERPrediction 1070 1078	Coumadin
+T4	NERPrediction 1135 1138	PCP
+T5	NERPrediction 2136 2142	Zoloft
+T6	NERPrediction 2369 2380	Medications
+T7	NERPrediction 2388 2407	HYDROCHLOROTHIAZIDE
+T8	NERPrediction 2430 2440	Metoprolol
+T9	NERPrediction 2430 2449	Metoprolol Tartrate
+T10	NERPrediction 2441 2449	Tartrate
+T11	NERPrediction 2457 2463	TABLET
+T12	NERPrediction 2471 2477	Tablet
+T13	NERPrediction 2484 2487	BID
+T14	NERPrediction 2753 2756	PPD
+T15	NERPrediction 2769 2773	ETOH
+T16	NERPrediction 2812 2830	recreational drugs
+T17	NERPrediction 2825 2830	drugs
+T18	NERPrediction 2957 2959	MC
+T19	NERPrediction 4097 4105	Celebrex
+T20	NERPrediction 4864 4868	Oral
+T21	NERPrediction 6122 6128	Rectal
+T22	NERPrediction 6210 6216	Guaiac
+T23	NERPrediction 6500 6503	DTR
+T24	NERPrediction 6855 6858	fat
+T25	NERPrediction 6983 6986	TSH
+T26	NERPrediction 7040 7044	HCTZ
+T27	NERPrediction 7137 7140	BID
+T28	NERPrediction 7323 7331	Coumadin
+T29	NERPrediction 7339 7342	ASA
+T30	NERPrediction 7360 7366	Plavix
+T31	NERPrediction 7999 8004	sugar
+T32	NERPrediction 8031 8034	fat
+T33	NERPrediction 8047 8050	TSH
+T34	NERPrediction 8070 8077	Glucose
+T35	NERPrediction 8235 8243	Nicotine
+T36	NERPrediction 8235 8249	Nicotine patch
+T37	NERPrediction 8244 8249	patch
+T38	NERPrediction 8244 8259	patch, Nicotine
+T39	NERPrediction 8249 8263	, Nicotine gum
+T40	NERPrediction 8251 8259	Nicotine
+T41	NERPrediction 8251 8263	Nicotine gum
+T42	NERPrediction 8265 8270	Zyban
+T43	NERPrediction 8307 8316	Nicorette
+T44	NERPrediction 9042 9053	medications
+T45	NERPrediction 9083 9089	Ambien
+T46	NERPrediction 9214 9221	Calcium
+T47	NERPrediction 9352 9359	Tylenol
+T48	NERPrediction 9545 9552	a lipid
+T49	NERPrediction 9733 9736	fat

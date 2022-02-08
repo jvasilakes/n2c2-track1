@@ -1,0 +1,70 @@
+T1	NERPrediction 62 66	CAPE
+T2	NERPrediction 945 951	sugars
+T3	NERPrediction 976 983	Insulin
+T4	NERPrediction 1106 1109	ACD
+T5	NERPrediction 1149 1155	Epogen
+T6	NERPrediction 1864 1872	Fioricet
+T7	NERPrediction 2030 2034	drug
+T8	NERPrediction 2030 2042	drug allergy
+T9	NERPrediction 2058 2068	medication
+T10	NERPrediction 2076 2080	Drug
+T11	NERPrediction 2092 2103	Hydralazine
+T12	NERPrediction 2176 2182	Active
+T13	NERPrediction 2183 2194	Medications
+T14	NERPrediction 2229 2236	aspirin
+T15	NERPrediction 2229 2243	aspirin 325 mg
+T16	NERPrediction 2249 2256	calcium
+T17	NERPrediction 2249 2264	calcium acetate
+T18	NERPrediction 2257 2264	acetate
+T19	NERPrediction 2279 2285	Colace
+T20	NERPrediction 2294 2297	BID
+T21	NERPrediction 2299 2305	Cozaar
+T22	NERPrediction 2319 2325	Epogen
+T23	NERPrediction 2341 2349	Fioricet
+T24	NERPrediction 2373 2380	Humulin
+T25	NERPrediction 2373 2382	Humulin r
+T26	NERPrediction 2421 2428	Insulin
+T27	NERPrediction 2450 2459	labetalol
+T28	NERPrediction 2450 2463	labetalol hcl
+T29	NERPrediction 2472 2475	BID
+T30	NERPrediction 2487 2494	Lipitor
+T31	NERPrediction 2507 2516	methadone
+T32	NERPrediction 2524 2527	BID
+T33	NERPrediction 2529 2539	Nephrocaps
+T34	NERPrediction 2554 2563	Neurontin
+T35	NERPrediction 2575 2578	BID
+T36	NERPrediction 2580 2586	Nexium
+T37	NERPrediction 2619 2632	nortriptyline
+T38	NERPrediction 2619 2638	nortriptyline 10 mg
+T39	NERPrediction 2647 2654	Norvasc
+T40	NERPrediction 2667 2678	nph insulin
+T41	NERPrediction 2671 2678	insulin
+T42	NERPrediction 2671 2686	insulin humulin
+T43	NERPrediction 2679 2686	humulin
+T44	NERPrediction 2679 2688	humulin n
+T45	NERPrediction 2707 2708	u
+T46	NERPrediction 2731 2740	Oxycontin
+T47	NERPrediction 2793 2799	Plavix
+T48	NERPrediction 2812 2822	prednisone
+T49	NERPrediction 2853 2858	1 cap
+T50	NERPrediction 2855 2858	cap
+T51	NERPrediction 2866 2871	senna
+T52	NERPrediction 2885 2888	BID
+T53	NERPrediction 2890 2901	simethicone
+T54	NERPrediction 2916 2926	tizanidine
+T55	NERPrediction 2916 2930	tizanidine 2mg
+T56	NERPrediction 2944 2952	tramadol
+T57	NERPrediction 3262 3269	Alcohol
+T58	NERPrediction 3322 3334	illicit drug
+T59	NERPrediction 3330 3334	drug
+T60	NERPrediction 3360 3367	Alcohol
+T61	NERPrediction 3451 3458	Alcohol
+T62	NERPrediction 3520 3537	Influenza vaccine
+T63	NERPrediction 3530 3537	vaccine
+T64	NERPrediction 3548 3557	Pneumovax
+T65	NERPrediction 3669 3672	His
+T66	NERPrediction 5187 5194	Glucose
+T67	NERPrediction 5222 5232	Creatinine
+T68	NERPrediction 5260 5263	BUN
+T69	NERPrediction 5290 5299	Potassium
+T70	NERPrediction 5376 5379	ABx

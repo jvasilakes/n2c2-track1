@@ -1,0 +1,109 @@
+T0	NERPrediction 28 31	GSH
+T1	NERPrediction 1197 1210	PNA  -	Sepsis
+T2	NERPrediction 1259 1278	L lung  -	Pneumonia
+T3	NERPrediction 1634 1642	Rifampin
+T4	NERPrediction 1647 1654	Bactrim
+T5	NERPrediction 1750 1756	O2 sat
+T6	NERPrediction 1783 1785	O2
+T7	NERPrediction 1787 1797	Zofran  -	
+T8	NERPrediction 1935 1938	NRB
+T9	NERPrediction 1950 1955	vanco
+T10	NERPrediction 1999 2005	CP/SOB
+T11	NERPrediction 2430 2436	Q12H  
+T12	NERPrediction 2472 2489	Nystatin S/spit  
+T13	NERPrediction 2489 2507	Atrovent/Albuterol
+T14	NERPrediction 2522 2531	Lopressor
+T15	NERPrediction 2535 2538	Q6H
+T16	NERPrediction 2540 2552	Erythromycin
+T17	NERPrediction 2568 2576	Ointment
+T18	NERPrediction 2580 2591	Q12H  Lasix
+T19	NERPrediction 2600 2606	Colace
+T20	NERPrediction 2616 2631	Zaroxyln 5 QD  
+T21	NERPrediction 2657 2665	Protonix
+T22	NERPrediction 2669 2673	QD  
+T23	NERPrediction 2691 2699	Rifampin
+T24	NERPrediction 2704 2715	QD  Bactrim
+T25	NERPrediction 2724 2741	Zofran  Silvidine
+T26	NERPrediction 2743 2753	Bacitracin
+T27	NERPrediction 2769 2776	heparin
+T28	NERPrediction 2901 2905	EtOH
+T29	NERPrediction 3067 3072	NC/AT
+T30	NERPrediction 3506 3516	9027U41613
+T31	NERPrediction 3520 3526	Sodium
+T32	NERPrediction 3592 3601	Potassium
+T33	NERPrediction 3770 3771	H
+T34	NERPrediction 3842 3879	H              8-25           mg/dl  
+T35	NERPrediction 3879 3889	Creatinine
+T36	NERPrediction 3984 3985	H
+T37	NERPrediction 4074 4084	8663L14453
+T38	NERPrediction 4088 4095	Calcium
+T39	NERPrediction 4193 4208	H              
+T40	NERPrediction 4230 4239	Magnesium
+T41	NERPrediction 4475 4490	H              
+T42	NERPrediction 4518 4527	Bilirubin
+T43	NERPrediction 4545 4582	H              0-0.4          mg/dl  
+T44	NERPrediction 4588 4597	Bilirubin
+T45	NERPrediction 5104 5105	H
+T46	NERPrediction 5387 5426	H              150-350        th/cumm  
+T47	NERPrediction 5670 5671	H
+T48	NERPrediction 5737 5738	H
+T49	NERPrediction 5918 5948	H              22.1-35.1      
+T50	NERPrediction 6051 6082	H              40-70          %
+T51	NERPrediction 6386 6424	H              1.8-7.7        th/cmm  
+T52	NERPrediction 6955 6962	Calcium
+T53	NERPrediction 7097 7106	Magnesium
+T54	NERPrediction 7385 7394	Bilirubin
+T55	NERPrediction 7455 7464	Bilirubin
+T56	NERPrediction 7554 7555	H
+T57	NERPrediction 7727 7740	Carbamazepine
+T58	NERPrediction 7761 7801	H              4.0-12.0       mcg/ml    
+T59	NERPrediction 7810 7850	LAB         18-Mar-2094 16:06  Accession
+T60	NERPrediction 7852 7874	7607Z82720    Creatine
+T61	NERPrediction 8123 8138	16-Mar-94 16:35
+T62	NERPrediction 8153 8158	POLYS
+T63	NERPrediction 8248 8263	16-Mar-94 16:35
+T64	NERPrediction 8506 8515	15-Mar-94
+T65	NERPrediction 8684 8695	Clindamycin
+T66	NERPrediction 8792 8802	Gentamicin
+T67	NERPrediction 8846 8858	Levofloxacin
+T68	NERPrediction 8900 8909	Oxacillin
+T69	NERPrediction 8954 8964	Penicillin
+T70	NERPrediction 9008 9016	Rifampin
+T71	NERPrediction 9062 9074	Tetracycline
+T72	NERPrediction 9116 9145	Trimethoprim/Sulfamethoxazole
+T73	NERPrediction 9283 9293	8388H26401
+T74	NERPrediction 9340 9349	19-Feb-94
+T75	NERPrediction 9527 9535	Amikacin
+T76	NERPrediction 9581 9591	Ampicillin
+T77	NERPrediction 9689 9698	Cefazolin
+T78	NERPrediction 9743 9751	Cefepime
+T79	NERPrediction 9797 9808	Cefpodoxime
+T80	NERPrediction 9851 9862	Ceftriaxone
+T81	NERPrediction 9905 9915	Gentamicin
+T82	NERPrediction 9959 9971	Levofloxacin
+T83	NERPrediction 10121 10150	Trimethoprim/Sulfamethoxazole
+T84	NERPrediction 10309 10317	Amikacin
+T85	NERPrediction 10385 10393	Cefepime
+T86	NERPrediction 10423 10436	Ciprofloxacin
+T87	NERPrediction 10461 10471	Gentamicin
+T88	NERPrediction 10499 10507	Imipenem
+T89	NERPrediction 10537 10549	Levofloxacin
+T90	NERPrediction 10613 10624	Ticarcillin
+T91	NERPrediction 10651 10661	Tobramycin
+T92	NERPrediction 11238 11241	PNA
+T93	NERPrediction 11264 11267	PNA
+T94	NERPrediction 11269 11274	Vanco
+T95	NERPrediction 11303 11311	Amikacin
+T96	NERPrediction 11421 11429	Amikacin
+T97	NERPrediction 11447 11453	O2  -	
+T98	NERPrediction 11535 11538	FEN
+T99	NERPrediction 11716 11740	silvadine/bacitracin  -	
+T100	NERPrediction 11873 11876	QID
+T101	NERPrediction 11891 11893	SS
+T102	NERPrediction 11996 12007	cholesterol
+T103	NERPrediction 12107 12111	urea
+T104	NERPrediction 12270 12274	d/c=
+T105	NERPrediction 12310 12312	Fe
+T106	NERPrediction 12358 12370	erythromycin
+T107	NERPrediction 12482 12488	Nexium
+T108	NERPrediction 12490 12500	coumadin  

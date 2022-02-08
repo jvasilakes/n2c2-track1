@@ -1,0 +1,14 @@
+T1	NERPrediction 195 202	insulin
+T2	NERPrediction 508 514	sugars
+T3	NERPrediction 536 547	cholesterol
+T4	NERPrediction 1218 1226	estrogen
+T5	NERPrediction 1289 1299	medication
+T6	NERPrediction 1303 1316	lente insulin
+T7	NERPrediction 1309 1316	insulin
+T8	NERPrediction 2307 2314	insulin
+T9	NERPrediction 2631 2634	LDL
+T10	NERPrediction 2631 2646	LDL cholesterol
+T11	NERPrediction 2635 2646	cholesterol
+T12	NERPrediction 2697 2705	estrogen
+T13	NERPrediction 2733 2749	Low dose aspirin
+T14	NERPrediction 2742 2749	aspirin

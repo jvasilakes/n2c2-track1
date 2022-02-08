@@ -1,0 +1,65 @@
+T1	NERPrediction 225 230	, s/p
+T2	NERPrediction 227 230	s/p
+T3	NERPrediction 442 460	of glucose control
+T4	NERPrediction 445 452	glucose
+T5	NERPrediction 445 460	glucose control
+T6	NERPrediction 634 640	Keflex
+T7	NERPrediction 1456 1459	His
+T8	NERPrediction 1584 1587	air
+T9	NERPrediction 1735 1738	Abx
+T10	NERPrediction 2194 2201	insulin
+T11	NERPrediction 2214 2223	Metformin
+T12	NERPrediction 2244 2251	insulin
+T13	NERPrediction 2371 2377	Lantus
+T14	NERPrediction 2420 2429	Glipizide
+T15	NERPrediction 2441 2450	Metformin
+T16	NERPrediction 2479 2484	HbA1c
+T17	NERPrediction 2606 2613	insulin
+T18	NERPrediction 2889 2893	HCTZ
+T19	NERPrediction 2919 2922	ASA
+T20	NERPrediction 2935 2943	Atenolol
+T21	NERPrediction 2963 2969	Celexa
+T22	NERPrediction 2982 2993	Fenofibrate
+T23	NERPrediction 3007 3016	Glipizide
+T24	NERPrediction 3027 3035	Klonopin
+T25	NERPrediction 3045 3051	Lantus
+T26	NERPrediction 3052 3059	insulin
+T27	NERPrediction 3080 3087	Lipitor
+T28	NERPrediction 3100 3110	Lisinopril
+T29	NERPrediction 3124 3132	Losartan
+T30	NERPrediction 3146 3155	Metformin
+T31	NERPrediction 3184 3191	Insulin
+T32	NERPrediction 3192 3195	gtt
+T33	NERPrediction 3209 3218	Lopressor
+T34	NERPrediction 3229 3237	Seroquel
+T35	NERPrediction 3248 3254	Nexium
+T36	NERPrediction 3267 3273	Celexa
+T37	NERPrediction 3286 3296	Vancomycin
+T38	NERPrediction 3311 3319	Cefepime
+T39	NERPrediction 3334 3340	Ativan
+T40	NERPrediction 3356 3364	Dilaudid
+T41	NERPrediction 3381 3393	Levofloxacin
+T42	NERPrediction 3381 3400	Levofloxacin 750 mg
+T43	NERPrediction 3414 3421	Lovenox
+T44	NERPrediction 3458 3462	Iron
+T45	NERPrediction 3458 3470	Iron sulfate
+T46	NERPrediction 3486 3493	Tobacco
+T47	NERPrediction 3503 3507	EtOH
+T48	NERPrediction 3728 3731	NAD
+T49	NERPrediction 4034 4038	2+ B
+T50	NERPrediction 4136 4142	110 (H
+T51	NERPrediction 4146 4149	CO2
+T52	NERPrediction 4157 4160	BUN
+T53	NERPrediction 4421 4426	TBILI
+T54	NERPrediction 4551 4554	HDL
+T55	NERPrediction 4564 4567	LDL
+T56	NERPrediction 4578 4581	HDL
+T57	NERPrediction 4882 4889	insulin
+T58	NERPrediction 4981 4984	Abx
+T59	NERPrediction 5032 5039	insulin
+T60	NERPrediction 5062 5069	insulin
+T61	NERPrediction 5113 5120	insulin
+T62	NERPrediction 5235 5242	insulin
+T63	NERPrediction 6068 6072	ACEi
+T64	NERPrediction 6121 6131	Lisinopril
+T65	NERPrediction 6121 6137	Lisinopril 10 mg

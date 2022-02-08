@@ -1,0 +1,37 @@
+T0	NERPrediction 904 907	PLV
+T1	NERPrediction 1057 1067	Amiodarone
+T2	NERPrediction 1356 1358	OM
+T3	NERPrediction 1406 1409	PLV
+T4	NERPrediction 1930 1940	argatroban
+T5	NERPrediction 2039 2052	Fopndaparinux
+T6	NERPrediction 2396 2406	lisinopril
+T7	NERPrediction 2429 2434	Lasix
+T8	NERPrediction 2727 2732	Lasix
+T9	NERPrediction 2858 2862	WGCC
+T10	NERPrediction 3104 3115	Vitamin B12
+T11	NERPrediction 3268 3275	aspirin
+T12	NERPrediction 3308 3316	atenolol
+T13	NERPrediction 3326 3329	bid
+T14	NERPrediction 3330 3342	fondaparinux
+T15	NERPrediction 3357 3366	glyburide
+T16	NERPrediction 3381 3386	Lasix
+T17	NERPrediction 3396 3399	bid
+T18	NERPrediction 3400 3415	magnesium oxide
+T19	NERPrediction 3431 3444	multivitamins
+T20	NERPrediction 3461 3471	omeprazole
+T21	NERPrediction 3487 3493	Plavix
+T22	NERPrediction 3509 3593	potassium chloride  10mEq po daily regular insulin  sliding scale sc tid simvastatin
+T23	NERPrediction 3603 3606	qpm
+T24	NERPrediction 3607 3616	trazodone
+T25	NERPrediction 3647 3658	vitamin b12
+T26	NERPrediction 3894 3898	ETOH
+T27	NERPrediction 3906 3914	Caffeine
+T28	NERPrediction 3916 3929	1-2 cups/day;
+T29	NERPrediction 4391 4394	NAD
+T30	NERPrediction 5077 5087	NA       K
+T31	NERPrediction 5523 5529	CM/CAD
+T32	NERPrediction 5971 5975	ACEI
+T33	NERPrediction 6055 6062	aspirin
+T34	NERPrediction 6067 6073	Plavix
+T35	NERPrediction 6093 6105	Fondaparinux
+T36	NERPrediction 6703 6713	Ora-Jordan

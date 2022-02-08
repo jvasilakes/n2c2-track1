@@ -1,0 +1,10 @@
+T0	NERPrediction 376 384	atenolol
+T1	NERPrediction 396 399	q.d
+T2	NERPrediction 405 412	Zestril
+T3	NERPrediction 424 427	q.d
+T4	NERPrediction 441 451	Glucovance
+T5	NERPrediction 473 481	atenolol
+T6	NERPrediction 777 785	atenolol
+T7	NERPrediction 828 837	Lopressor
+T8	NERPrediction 868 871	q.d
+T9	NERPrediction 882 889	glucose

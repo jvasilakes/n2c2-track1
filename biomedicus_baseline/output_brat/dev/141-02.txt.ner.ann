@@ -1,0 +1,80 @@
+T1	NERPrediction 121 125	Date
+T2	NERPrediction 176 179	PCP
+T3	NERPrediction 428 434	Nexium
+T4	NERPrediction 618 621	PCP
+T5	NERPrediction 685 688	EMS
+T6	NERPrediction 702 705	ASA
+T7	NERPrediction 709 712	EMS
+T8	NERPrediction 832 840	Morphine
+T9	NERPrediction 867 874	heparin
+T10	NERPrediction 875 878	gtt
+T11	NERPrediction 886 895	lopressor
+T12	NERPrediction 907 919	, zantac 150
+T13	NERPrediction 909 915	zantac
+T14	NERPrediction 909 919	zantac 150
+T15	NERPrediction 934 940	Maalox
+T16	NERPrediction 977 983	statin
+T17	NERPrediction 1041 1048	heparin
+T18	NERPrediction 1118 1126	troponin
+T19	NERPrediction 1343 1346	OSA
+T20	NERPrediction 1588 1591	ROS
+T21	NERPrediction 1655 1658	OSA
+T22	NERPrediction 1761 1768	Proscar
+T23	NERPrediction 1773 1782	Uroxatral
+T24	NERPrediction 1801 1804	PPI
+T25	NERPrediction 1894 1899	; s/p
+T26	NERPrediction 1896 1899	s/p
+T27	NERPrediction 1930 1933	s/p
+T28	NERPrediction 1981 1992	Medications
+T29	NERPrediction 2017 2023	Nexium
+T30	NERPrediction 2049 2058	Uroxatral
+T31	NERPrediction 2083 2094	Finasteride
+T32	NERPrediction 2083 2099	Finasteride 5 mg
+T33	NERPrediction 2119 2127	Beconase
+T34	NERPrediction 2158 2165	Aspirin
+T35	NERPrediction 2158 2171	Aspirin 81 mg
+T36	NERPrediction 2518 2523	T  98
+T37	NERPrediction 2925 2928	amp
+T38	NERPrediction 2982 2989	Glucose
+T39	NERPrediction 2995 3001	Sodium
+T40	NERPrediction 3063 3072	Potassium
+T41	NERPrediction 3199 3205	Carbon
+T42	NERPrediction 3199 3213	Carbon Dioxide
+T43	NERPrediction 3267 3270	BUN
+T44	NERPrediction 3335 3345	Creatinine
+T45	NERPrediction 3474 3481	Glucose
+T46	NERPrediction 3638 3645	Calcium
+T47	NERPrediction 3774 3783	Magnesium
+T48	NERPrediction 3842 3851	Bilirubin
+T49	NERPrediction 3916 3923	Protein
+T50	NERPrediction 3978 3985	Albumin
+T51	NERPrediction 4046 4054	Globulin
+T52	NERPrediction 4273 4276	CRP
+T53	NERPrediction 4367 4373	H  110
+T54	NERPrediction 4413 4421	Troponin
+T55	NERPrediction 4481 4489	Troponin
+T56	NERPrediction 4481 4491	Troponin-T
+T57	NERPrediction 4570 4581	Cholesterol
+T58	NERPrediction 4638 4651	Triglycerides
+T59	NERPrediction 4706 4709	HDL
+T60	NERPrediction 4706 4721	HDL Cholesterol
+T61	NERPrediction 4710 4721	Cholesterol
+T62	NERPrediction 4774 4777	LDL
+T63	NERPrediction 4774 4789	LDL Cholesterol
+T64	NERPrediction 4778 4789	Cholesterol
+T65	NERPrediction 4847 4850	HDL
+T66	NERPrediction 4992 4995	Hgb
+T67	NERPrediction 5340 5345	Monos
+T68	NERPrediction 5794 5799	Color
+T69	NERPrediction 5998 6007	Bilirubin
+T70	NERPrediction 6338 6345	Protein
+T71	NERPrediction 6406 6418	Urobilinogen
+T72	NERPrediction 7081 7088	Heparin
+T73	NERPrediction 7164 7167	ASA
+T74	NERPrediction 7175 7181	Statin
+T75	NERPrediction 7202 7212	integrilin
+T76	NERPrediction 7343 7345	BB
+T77	NERPrediction 7448 7451	PPI
+T78	NERPrediction 7463 7470	Heparin
+T79	NERPrediction 7478 7481	PPI
+T80	NERPrediction 7686 7694	Medicine

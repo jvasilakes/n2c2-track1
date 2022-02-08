@@ -1,0 +1,46 @@
+T1	NERPrediction 353 359	sugars
+T2	NERPrediction 758 767	albuterol
+T3	NERPrediction 933 943	cephalexin
+T4	NERPrediction 1231 1244	levothyroxine
+T5	NERPrediction 1417 1426	Albuterol
+T6	NERPrediction 1439 1447	Atenolol
+T7	NERPrediction 1439 1453	Atenolol 50 mg
+T8	NERPrediction 1467 1482	) Clonidine HCL
+T9	NERPrediction 1469 1478	Clonidine
+T10	NERPrediction 1469 1482	Clonidine HCL
+T11	NERPrediction 1479 1482	HCL
+T12	NERPrediction 1504 1519	) Aspirin 81 mg
+T13	NERPrediction 1506 1513	Aspirin
+T14	NERPrediction 1506 1519	Aspirin 81 mg
+T15	NERPrediction 1535 1542	Flovent
+T16	NERPrediction 1562 1575	Levothyroxine
+T17	NERPrediction 1599 1609	Lisinopril
+T18	NERPrediction 1599 1615	Lisinopril 20 mg
+T19	NERPrediction 1631 1640	Singulair
+T20	NERPrediction 1664 1671	Lipitor
+T21	NERPrediction 1693 1708	) Humulin 70/30
+T22	NERPrediction 1695 1702	Humulin
+T23	NERPrediction 1695 1708	Humulin 70/30
+T24	NERPrediction 1710 1714	90 U
+T25	NERPrediction 1740 1749	Metformin
+T26	NERPrediction 1761 1764	BID
+T27	NERPrediction 1907 1914	tobacco
+T28	NERPrediction 1918 1925	alcohol
+T29	NERPrediction 1990 1993	SO2
+T30	NERPrediction 2328 2335	insulin
+T31	NERPrediction 2360 2370	hemoglobin
+T32	NERPrediction 2360 2374	hemoglobin A1c
+T33	NERPrediction 2689 2704	bronchodilators
+T34	NERPrediction 2821 2829	klonopin
+T35	NERPrediction 2841 2851	fluoxetine
+T36	NERPrediction 2841 2857	fluoxetine 10 mg
+T37	NERPrediction 2950 2957	glucose
+T38	NERPrediction 3144 3151	glucose
+T39	NERPrediction 3226 3233	to 90 U
+T40	NERPrediction 3229 3233	90 U
+T41	NERPrediction 3279 3286	insulin
+T42	NERPrediction 3303 3305	SC
+T43	NERPrediction 3571 3579	Medicine
+T44	NERPrediction 3770 3780	fluoxetine
+T45	NERPrediction 3785 3793	Klonopin
+T46	NERPrediction 3838 3845	insulin

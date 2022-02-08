@@ -1,0 +1,7 @@
+T1	NERPrediction 169 180	flu vaccine
+T2	NERPrediction 173 180	vaccine
+T3	NERPrediction 294 301	Aspirin
+T4	NERPrediction 315 322	calcium
+T5	NERPrediction 324 332	atenolol
+T6	NERPrediction 324 338	atenolol 25 mg
+T7	NERPrediction 764 772	atenolol

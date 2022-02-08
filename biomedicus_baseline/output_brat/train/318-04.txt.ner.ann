@@ -1,0 +1,15 @@
+T1	NERPrediction 531 543	levofloxacin
+T2	NERPrediction 613 624	cholesterol
+T3	NERPrediction 630 643	triglycerides
+T4	NERPrediction 649 652	HDL
+T5	NERPrediction 661 664	LDL
+T6	NERPrediction 690 697	Crestor
+T7	NERPrediction 803 806	PTH
+T8	NERPrediction 812 819	calcium
+T9	NERPrediction 1050 1057	Aspirin
+T10	NERPrediction 1050 1064	Aspirin 325 mg
+T11	NERPrediction 1076 1086	Nephrocaps
+T12	NERPrediction 1100 1106	Phoslo
+T13	NERPrediction 1800 1805	Zocor
+T14	NERPrediction 2030 2037	protein
+T15	NERPrediction 2042 2049	amylase

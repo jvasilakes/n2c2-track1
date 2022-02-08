@@ -1,0 +1,85 @@
+T1	NERPrediction 37 45	Medicine
+T2	NERPrediction 104 107	PCP
+T3	NERPrediction 154 158	Date
+T4	NERPrediction 212 217	, s/p
+T5	NERPrediction 214 217	s/p
+T6	NERPrediction 239 244	, s/p
+T7	NERPrediction 241 244	s/p
+T8	NERPrediction 428 431	s/p
+T9	NERPrediction 708 720	azithromycin
+T10	NERPrediction 805 810	lasix
+T11	NERPrediction 1510 1513	EMT
+T12	NERPrediction 1614 1621	aspirin
+T13	NERPrediction 1768 1771	s/p
+T14	NERPrediction 1824 1827	S/p
+T15	NERPrediction 1938 1941	s/p
+T16	NERPrediction 1944 1947	CEA
+T17	NERPrediction 2123 2130	Retinal
+T18	NERPrediction 2153 2156	s/p
+T19	NERPrediction 2468 2473	is 23
+T20	NERPrediction 3017 3024	Heparin
+T21	NERPrediction 3044 3047	PCN
+T22	NERPrediction 3062 3073	Amoxicillin
+T23	NERPrediction 3082 3089	Bactrim
+T24	NERPrediction 3098 3110	Erythromycin
+T25	NERPrediction 3119 3127	Percocet
+T26	NERPrediction 3141 3150	Compazine
+T27	NERPrediction 3159 3171	Erythromycin
+T28	NERPrediction 3203 3208	Lasix
+T29	NERPrediction 3219 3222	KCL
+T30	NERPrediction 3239 3245	Nexium
+T31	NERPrediction 3256 3265	Verapamil
+T32	NERPrediction 3256 3268	Verapamil SR
+T33	NERPrediction 3266 3268	SR
+T34	NERPrediction 3280 3286	Lescol
+T35	NERPrediction 3298 3306	Tegretol
+T36	NERPrediction 3348 3356	Baclofen
+T37	NERPrediction 3348 3361	Baclofen 5 mg
+T38	NERPrediction 3367 3373	Ultram
+T39	NERPrediction 3389 3399	Paroxetine
+T40	NERPrediction 3389 3403	Paroxetine HCL
+T41	NERPrediction 3400 3403	HCL
+T42	NERPrediction 3414 3424	Clonazepam
+T43	NERPrediction 3414 3431	Clonazepam 0.5 mg
+T44	NERPrediction 3445 3451	Colace
+T45	NERPrediction 3453 3458	Fiber
+T46	NERPrediction 3453 3467	Fiber laxative
+T47	NERPrediction 3459 3467	laxative
+T48	NERPrediction 3469 3478	Combivent
+T49	NERPrediction 3509 3515	Advair
+T50	NERPrediction 3535 3542	Fosamax
+T51	NERPrediction 3556 3562	Ambien
+T52	NERPrediction 3577 3584	Tylenol
+T53	NERPrediction 3590 3596	Zyrtec
+T54	NERPrediction 3695 3702	tobacco
+T55	NERPrediction 3725 3732	alcohol
+T56	NERPrediction 3736 3748	illicit drug
+T57	NERPrediction 3744 3748	drug
+T58	NERPrediction 4254 4258	Extr
+T59	NERPrediction 4333 4341	Creatine
+T60	NERPrediction 4393 4401	Troponin
+T61	NERPrediction 4455 4463	Troponin
+T62	NERPrediction 4455 4465	Troponin-T
+T63	NERPrediction 4534 4542	Creatine
+T64	NERPrediction 4594 4602	Troponin
+T65	NERPrediction 4656 4662	Sodium
+T66	NERPrediction 4890 4893	CO2
+T67	NERPrediction 4968 4971	BUN
+T68	NERPrediction 5045 5055	Creatinine
+T69	NERPrediction 5122 5129	Glucose
+T70	NERPrediction 5201 5208	Calcium
+T71	NERPrediction 5355 5364	Magnesium
+T72	NERPrediction 5437 5440	SED
+T73	NERPrediction 5513 5516	SED
+T74	NERPrediction 5589 5592	SED
+T75	NERPrediction 6030 6034	HEME
+T76	NERPrediction 6066 6073	Nitrite
+T77	NERPrediction 6126 6133	Albumin
+T78	NERPrediction 6186 6193	Glucose
+T79	NERPrediction 7282 7287	Monos
+T80	NERPrediction 7666 7671	Monos
+T81	NERPrediction 8576 8582	/2 her
+T82	NERPrediction 8577 8582	2 her
+T83	NERPrediction 9175 9178	ASA
+T84	NERPrediction 9397 9402	lasix
+T85	NERPrediction 9590 9596	nexium

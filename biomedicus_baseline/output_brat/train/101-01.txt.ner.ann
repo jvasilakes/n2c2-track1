@@ -1,0 +1,8 @@
+T1	NERPrediction 65 73	Medicine
+T2	NERPrediction 103 110	Terrell
+T3	NERPrediction 703 710	Lipitor
+T4	NERPrediction 1314 1320	sodium
+T5	NERPrediction 1321 1327	is 145
+T6	NERPrediction 1329 1341	electrolytes
+T7	NERPrediction 1384 1387	TSH
+T8	NERPrediction 2090 2099	Synthroid

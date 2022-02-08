@@ -1,0 +1,16 @@
+T1	NERPrediction 385 388	His
+T2	NERPrediction 504 514	dobutamine
+T3	NERPrediction 590 593	His
+T4	NERPrediction 1289 1297	Serevent
+T5	NERPrediction 1300 1307	Flovent
+T6	NERPrediction 1310 1319	Enalapril
+T7	NERPrediction 1322 1332	Colchicine
+T8	NERPrediction 1347 1356	Albuterol
+T9	NERPrediction 1359 1365	Viagra
+T10	NERPrediction 1521 1524	His
+T11	NERPrediction 1934 1945	cholesterol
+T12	NERPrediction 3316 3319	His
+T13	NERPrediction 3510 3516	Plavix
+T14	NERPrediction 3674 3680	Plavix
+T15	NERPrediction 3685 3692	aspirin
+T16	NERPrediction 4135 4141	Viagra

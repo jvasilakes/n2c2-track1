@@ -1,0 +1,12 @@
+T1	NERPrediction 458 468	furosemide
+T2	NERPrediction 458 474	furosemide 20 mg
+T3	NERPrediction 485 495	nifedipine
+T4	NERPrediction 514 538	, and potassium chloride
+T5	NERPrediction 516 538	and potassium chloride
+T6	NERPrediction 520 529	potassium
+T7	NERPrediction 520 538	potassium chloride
+T8	NERPrediction 658 666	baseline
+T9	NERPrediction 1084 1086	As
+T10	NERPrediction 1293 1303	nifedipine
+T11	NERPrediction 1332 1342	furosemide
+T12	NERPrediction 2400 2411	cholesterol

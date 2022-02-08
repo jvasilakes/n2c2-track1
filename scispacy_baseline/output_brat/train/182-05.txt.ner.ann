@@ -1,0 +1,58 @@
+T0	NERPrediction 158 160	CC
+T1	NERPrediction 341 343	Pt
+T2	NERPrediction 737 742	lasix
+T3	NERPrediction 1146 1168	Vitamin B12 deficiency
+T4	NERPrediction 1220 1230	seborrheic
+T5	NERPrediction 1448 1457	Trazodone
+T6	NERPrediction 1482 1492	Olanzapine
+T7	NERPrediction 1512 1519	Fragmin
+T8	NERPrediction 1550 1555	Lasix
+T9	NERPrediction 1625 1635	Olanzapine
+T10	NERPrediction 1689 1698	Lopressor
+T11	NERPrediction 1721 1729	Nystatin
+T12	NERPrediction 1783 1802	Ipratropium bromide
+T13	NERPrediction 1872 1881	Albuterol
+T14	NERPrediction 1938 1949	Vitamin B12
+T15	NERPrediction 1951 1965	cyanocobalamin
+T16	NERPrediction 1990 1997	Lipitor
+T17	NERPrediction 2019 2026	Tylenol
+T18	NERPrediction 2056 2075	Magnesium hydroxide
+T19	NERPrediction 2080 2099	aluminium hydroxide
+T20	NERPrediction 2186 2195	Bisacodyl
+T21	NERPrediction 2240 2246	Colace
+T22	NERPrediction 2267 2275	Psyllium
+T23	NERPrediction 2347 2350	AMI
+T24	NERPrediction 2370 2373	TOB
+T25	NERPrediction 2390 2394	ETOH
+T26	NERPrediction 2407 2415	ILLICITS
+T27	NERPrediction 2546 2549	NAD
+T28	NERPrediction 2658 2679	clear, OP clear 	Neck
+T29	NERPrediction 2760 2763	RRR
+T30	NERPrediction 4004 4005	H
+T31	NERPrediction 4106 4110	GRAN
+T32	NERPrediction 4993 5003	UA-Glucose
+T33	NERPrediction 5123 5133	UA-Ketones
+T34	NERPrediction 5261 5270	UA-Occult
+T35	NERPrediction 5525 5535	UA-Nitrite
+T36	NERPrediction 6129 6131	LA
+T37	NERPrediction 6256 6263	ant.sep
+T38	NERPrediction 6273 6275	VC
+T39	NERPrediction 6672 6673	H
+T40	NERPrediction 6818 6820	DZ
+T41	NERPrediction 8324 8326	Cx
+T42	NERPrediction 8351 8354	LCx
+T43	NERPrediction 9128 9134	statin
+T44	NERPrediction 9136 9138	Pt
+T45	NERPrediction 9146 9149	ASA
+T46	NERPrediction 9300 9305	Lasix
+T47	NERPrediction 9327 9332	Is/Os
+T48	NERPrediction 9518 9520	UA
+T49	NERPrediction 9576 9584	Nystatin
+T50	NERPrediction 9689 9698	Trazodone
+T51	NERPrediction 9703 9713	Olanzapine
+T52	NERPrediction 9719 9729	Olanzapine
+T53	NERPrediction 9762 9770	Darvocet
+T54	NERPrediction 9839 9842	FEN
+T55	NERPrediction 9843 9854	--Euvolemia
+T56	NERPrediction 9906 9915	--Lovenox
+T57	NERPrediction 10116 10127	Disposition

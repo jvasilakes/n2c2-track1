@@ -1,0 +1,41 @@
+T0	NERPrediction 158 164	Calvin
+T1	NERPrediction 189 191	CC
+T2	NERPrediction 613 621	gas pain
+T3	NERPrediction 1018 1020	Pt
+T4	NERPrediction 1044 1047	STE
+T5	NERPrediction 1068 1075	heparin
+T6	NERPrediction 1081 1084	ASA
+T7	NERPrediction 1400 1402	DM
+T8	NERPrediction 1453 1460	Norvasc
+T9	NERPrediction 1466 1478	QD  Atenolol
+T10	NERPrediction 1633 1643	ETOH    FH
+T11	NERPrediction 1823 1826	NAD
+T12	NERPrediction 1835 1840	NC/AT
+T13	NERPrediction 1884 1895	OP w/ MMM  
+T14	NERPrediction 2138 2209	Sodium            139                         (135-145)        mmol/L  
+T15	NERPrediction 2216 2225	Potassium
+T16	NERPrediction 2372 2378	Carbon
+T17	NERPrediction 2443 2450	Calcium
+T18	NERPrediction 2597 2606	Magnesium
+T19	NERPrediction 2681 2685	Urea
+T20	NERPrediction 2718 2719	H
+T21	NERPrediction 2758 2768	Creatinine
+T22	NERPrediction 2795 2796	H
+T23	NERPrediction 2835 2842	Glucose
+T24	NERPrediction 3060 3068	Creatine
+T25	NERPrediction 3104 3105	H
+T26	NERPrediction 3181 3182	H
+T27	NERPrediction 3254 3255	H
+T28	NERPrediction 3287 3295	Creatine
+T29	NERPrediction 3331 3332	H
+T30	NERPrediction 3672 3681	mil/cmm  
+T31	NERPrediction 4105 4106	H
+T32	NERPrediction 4522 4529	PVC    
+T33	NERPrediction 4545 4550	66BPM
+T34	NERPrediction 4765 4768	STE
+T35	NERPrediction 5023 5030	Heparin
+T36	NERPrediction 5032 5035	ASA
+T37	NERPrediction 5045 5056	betablocker
+T38	NERPrediction 5058 5064	statin
+T39	NERPrediction 5074 5078	ACEI
+T40	NERPrediction 5594 5602	Mucomyst

@@ -1,0 +1,32 @@
+T0	NERPrediction 120 125	MS/O2
+T1	NERPrediction 1124 1138	Lantus 10units
+T2	NERPrediction 1276 1285	glucotrol
+T3	NERPrediction 1868 1872	AICD
+T4	NERPrediction 2007 2037	9/12/84 135 1/22/85 138 2/6/85
+T5	NERPrediction 2131 2139	cortisol
+T6	NERPrediction 2345 2348	Flu
+T7	NERPrediction 2490 2497	6/04/84
+T8	NERPrediction 2846 2871	7/7/85    Stroke  lacunes
+T9	NERPrediction 2943 2951	whiskies
+T10	NERPrediction 3107 3114	aspirin
+T11	NERPrediction 3128 3134	Celexa
+T12	NERPrediction 3147 3161	cyanocobalamin
+T13	NERPrediction 3174 3184	folic acid
+T14	NERPrediction 3222 3225	qid
+T15	NERPrediction 3280 3283	qid
+T16	NERPrediction 3309 3318	glyburide
+T17	NERPrediction 3420 3425	Lasix
+T18	NERPrediction 3439 3446	Lipitor
+T19	NERPrediction 3459 3465	Megace
+T20	NERPrediction 3474 3477	qid
+T21	NERPrediction 3479 3489	metoprolol
+T22	NERPrediction 3503 3519	multivitamins   
+T23	NERPrediction 3613 3619	Plavix
+T24	NERPrediction 3892 3899	Alcohol
+T25	NERPrediction 4037 4040	Flu
+T26	NERPrediction 4669 4682	Glucose 172 H
+T27	NERPrediction 4700 4710	Creatinine
+T28	NERPrediction 4715 4716	H
+T29	NERPrediction 4751 4761	Troponin-I
+T30	NERPrediction 4781 4789	Creatine
+T31	NERPrediction 4886 4887	H

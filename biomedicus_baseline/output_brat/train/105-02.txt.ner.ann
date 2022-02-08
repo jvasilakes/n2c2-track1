@@ -1,0 +1,16 @@
+T1	NERPrediction 82 85	LBP
+T2	NERPrediction 374 377	LBP
+T3	NERPrediction 871 878	protein
+T4	NERPrediction 882 890	globulin
+T5	NERPrediction 901 904	His
+T6	NERPrediction 1890 1893	pyr
+T7	NERPrediction 1900 1907	tobacco
+T8	NERPrediction 1928 1932	ETOH
+T9	NERPrediction 2576 2579	Imp
+T10	NERPrediction 3142 3147	Other
+T11	NERPrediction 3265 3268	PPD
+T12	NERPrediction 3414 3434	bence jones proteins
+T13	NERPrediction 3426 3434	proteins
+T14	NERPrediction 3582 3589	tobacco
+T15	NERPrediction 3594 3600	guaiac
+T16	NERPrediction 3914 3917	Ivy

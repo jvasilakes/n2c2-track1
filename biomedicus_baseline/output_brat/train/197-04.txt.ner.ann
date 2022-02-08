@@ -1,0 +1,31 @@
+T1	NERPrediction 478 492	chlorpropamide
+T2	NERPrediction 540 549	metformin
+T3	NERPrediction 600 603	His
+T4	NERPrediction 681 684	His
+T5	NERPrediction 685 695	creatinine
+T6	NERPrediction 722 729	insulin
+T7	NERPrediction 790 796	Lantus
+T8	NERPrediction 1025 1028	BUN
+T9	NERPrediction 1305 1311	guaiac
+T10	NERPrediction 1728 1733	sulfa
+T11	NERPrediction 1836 1839	MGF
+T12	NERPrediction 1875 1878	His
+T13	NERPrediction 2618 2621	AAA
+T14	NERPrediction 2664 2670	, 1+ L
+T15	NERPrediction 2666 2670	1+ L
+T16	NERPrediction 3033 3036	His
+T17	NERPrediction 3100 3114	chlorpropamide
+T18	NERPrediction 3119 3128	metformin
+T19	NERPrediction 3228 3235	glucose
+T20	NERPrediction 3249 3258	Metformin
+T21	NERPrediction 3299 3302	GRF
+T22	NERPrediction 3332 3342	creatinine
+T23	NERPrediction 3363 3369	Lantus
+T24	NERPrediction 3402 3409	insulin
+T25	NERPrediction 3435 3440	favor
+T26	NERPrediction 3508 3514	Lantus
+T27	NERPrediction 3637 3644	insulin
+T28	NERPrediction 3806 3811	Other
+T29	NERPrediction 3834 3847	sulfonylureas
+T30	NERPrediction 3884 3895	glimepiride
+T31	NERPrediction 3925 3936	repaglinide

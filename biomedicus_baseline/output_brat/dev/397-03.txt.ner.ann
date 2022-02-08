@@ -1,0 +1,19 @@
+T1	NERPrediction 189 193	Date
+T2	NERPrediction 418 421	amp
+T3	NERPrediction 967 970	amp
+T4	NERPrediction 982 993	Medications
+T5	NERPrediction 997 1004	Lipitor
+T6	NERPrediction 1011 1020	Glyburide
+T7	NERPrediction 1027 1036	Neurontin
+T8	NERPrediction 1045 1051	Plavix
+T9	NERPrediction 1058 1065	Zestril
+T10	NERPrediction 1073 1082	MS Contin
+T11	NERPrediction 1090 1098	Atenolol
+T12	NERPrediction 1108 1116	Nicotine
+T13	NERPrediction 1108 1122	Nicotine patch
+T14	NERPrediction 1117 1122	patch
+T15	NERPrediction 1142 1149	Codeine
+T16	NERPrediction 1191 1194	Tob
+T17	NERPrediction 1196 1199	1/2
+T18	NERPrediction 2243 2249	Unasyn
+T19	NERPrediction 2355 2358	amp

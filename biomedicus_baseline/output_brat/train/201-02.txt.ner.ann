@@ -1,0 +1,72 @@
+T1	NERPrediction 121 125	DATE
+T2	NERPrediction 138 141	PCP
+T3	NERPrediction 1476 1483	digoxin
+T4	NERPrediction 1571 1581	medication
+T5	NERPrediction 1971 1978	calcium
+T6	NERPrediction 1971 1988	calcium gluconate
+T7	NERPrediction 1979 1988	gluconate
+T8	NERPrediction 1990 1997	insulin
+T9	NERPrediction 2020 2022	Mg
+T10	NERPrediction 2100 2107	heparin
+T11	NERPrediction 2151 2159	Coumadin
+T12	NERPrediction 2163 2171	baseline
+T13	NERPrediction 2182 2191	toprol XL
+T14	NERPrediction 2344 2352	baseline
+T15	NERPrediction 2367 2370	SBP
+T16	NERPrediction 2672 2675	DDD
+T17	NERPrediction 2729 2736	tobacco
+T18	NERPrediction 3602 3606	EtOH
+T19	NERPrediction 3662 3669	digoxin
+T20	NERPrediction 3724 3744	Acetylsalicylic Acid
+T21	NERPrediction 3746 3753	Aspirin
+T22	NERPrediction 3776 3788	Esomeprazole
+T23	NERPrediction 3776 3797	Esomeprazole (Nexium)
+T24	NERPrediction 3776 3804	Esomeprazole (Nexium)  40 MG
+T25	NERPrediction 3790 3796	Nexium
+T26	NERPrediction 3817 3826	Glipizide
+T27	NERPrediction 3817 3833	Glipizide  10 MG
+T28	NERPrediction 3837 3840	BID
+T29	NERPrediction 3847 3856	Metformin
+T30	NERPrediction 3868 3871	BID
+T31	NERPrediction 3878 3885	Omega-3
+T32	NERPrediction 3878 3897	Omega-3-Fatty Acids
+T33	NERPrediction 3898 3907	(Fish Oil
+T34	NERPrediction 3899 3907	Fish Oil
+T35	NERPrediction 3904 3907	Oil
+T36	NERPrediction 3908 3915	Capsule
+T37	NERPrediction 3938 3948	Furosemide
+T38	NERPrediction 3950 3955	Lasix
+T39	NERPrediction 3977 3991	Nicotinic Acid
+T40	NERPrediction 4010 4016	Niacin
+T41	NERPrediction 4055 4065	Metoprolol
+T42	NERPrediction 4055 4075	Metoprolol Succinate
+T43	NERPrediction 4066 4075	Succinate
+T44	NERPrediction 4093 4103	(Toprol Xl
+T45	NERPrediction 4094 4100	Toprol
+T46	NERPrediction 4094 4103	Toprol Xl
+T47	NERPrediction 4127 4137	Lisinopril
+T48	NERPrediction 4158 4169	Simvastatin
+T49	NERPrediction 4158 4176	Simvastatin  20 MG
+T50	NERPrediction 4257 4259	O2
+T51	NERPrediction 4284 4287	NAD
+T52	NERPrediction 4588 4591	m/r
+T53	NERPrediction 5216 5219	CO2
+T54	NERPrediction 5298 5301	BUN
+T55	NERPrediction 7193 7203	amiodarone
+T56	NERPrediction 7468 7478	amiodarone
+T57	NERPrediction 7515 7518	SBP
+T58	NERPrediction 7541 7549	baseline
+T59	NERPrediction 7592 7599	digoxin
+T60	NERPrediction 7637 7646	diltiazem
+T61	NERPrediction 7650 7660	metoprolol
+T62	NERPrediction 7810 7818	Coumadin
+T63	NERPrediction 7967 7970	ASA
+T64	NERPrediction 8004 8010	statin
+T65	NERPrediction 8012 8018	niacin
+T66	NERPrediction 8161 8168	Unknown
+T67	NERPrediction 8203 8208	lasix
+T68	NERPrediction 8256 8261	lasix
+T69	NERPrediction 8387 8396	glipizide
+T70	NERPrediction 8483 8486	PPI
+T71	NERPrediction 8496 8503	heparin
+T72	NERPrediction 8627 8635	Medicine

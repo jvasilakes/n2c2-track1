@@ -1,0 +1,40 @@
+T1	NERPrediction 76 80	DATE
+T2	NERPrediction 99 103	DATE
+T3	NERPrediction 182 189	sotalol
+T4	NERPrediction 312 315	s/p
+T5	NERPrediction 517 520	His
+T6	NERPrediction 567 570	BID
+T7	NERPrediction 619 622	TSH
+T8	NERPrediction 847 853	Toprol
+T9	NERPrediction 1013 1018	; s/p
+T10	NERPrediction 1015 1018	s/p
+T11	NERPrediction 1031 1040	bleomycin
+T12	NERPrediction 1042 1052	adriamycin
+T13	NERPrediction 1054 1065	vincristine
+T14	NERPrediction 1067 1071	DTIC
+T15	NERPrediction 1256 1259	PAF
+T16	NERPrediction 1302 1311	lopressor
+T17	NERPrediction 1328 1337	lopressor
+T18	NERPrediction 1440 1447	digoxin
+T19	NERPrediction 1495 1501	Toprol
+T20	NERPrediction 1508 1511	BID
+T21	NERPrediction 1516 1527	medications
+T22	NERPrediction 1545 1554	diltiazem
+T23	NERPrediction 1587 1591	drug
+T24	NERPrediction 1767 1774	sotalol
+T25	NERPrediction 1781 1784	BID
+T26	NERPrediction 1811 1818	sotalol
+T27	NERPrediction 1828 1831	BID
+T28	NERPrediction 1916 1923	sotalol
+T29	NERPrediction 2165 2168	His
+T30	NERPrediction 2268 2275	sotalol
+T31	NERPrediction 2286 2294	coumadin
+T32	NERPrediction 2367 2373	wright
+T33	NERPrediction 2541 2546	lasix
+T34	NERPrediction 2554 2560	gentle
+T35	NERPrediction 2571 2577	On 1 L
+T36	NERPrediction 2574 2577	1 L
+T37	NERPrediction 2578 2580	O2
+T38	NERPrediction 2599 2604	lasix
+T39	NERPrediction 2704 2711	xopenex
+T40	NERPrediction 2713 2720	flovent

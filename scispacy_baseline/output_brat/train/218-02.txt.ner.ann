@@ -1,0 +1,18 @@
+T0	NERPrediction 623 628	R/I'd
+T1	NERPrediction 665 677	4 U GI Bleed
+T2	NERPrediction 749 759	glucophage
+T3	NERPrediction 784 789	d/c'd
+T4	NERPrediction 1109 1117	atenolol
+T5	NERPrediction 1131 1138	aspirin
+T6	NERPrediction 1151 1161	furosemide
+T7	NERPrediction 1212 1225	nitroglycerin
+T8	NERPrediction 1245 1260	multivitamins  
+T9	NERPrediction 1260 1267	Lipitor
+T10	NERPrediction 1280 1289	lidocaine
+T11	NERPrediction 1593 1597	EtOH
+T12	NERPrediction 2181 2191	furosemide
+T13	NERPrediction 2249 2255	statin
+T14	NERPrediction 2257 2261	ACEI
+T15	NERPrediction 2266 2269	ASA
+T16	NERPrediction 2381 2383	DM
+T17	NERPrediction 2525 2543	CMP/Chol/CBC/HbA1C

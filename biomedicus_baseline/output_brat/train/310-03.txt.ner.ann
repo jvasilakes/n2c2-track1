@@ -1,0 +1,14 @@
+T1	NERPrediction 591 596	Lasix
+T2	NERPrediction 851 858	Insulin
+T3	NERPrediction 1033 1040	alcohol
+T4	NERPrediction 1054 1058	drug
+T5	NERPrediction 1079 1084	Lasix
+T6	NERPrediction 1084 1095	, vitamin D
+T7	NERPrediction 1086 1093	vitamin
+T8	NERPrediction 1086 1095	vitamin D
+T9	NERPrediction 1097 1103	Lantus
+T10	NERPrediction 1109 1118	acyclovir
+T11	NERPrediction 1142 1146	drug
+T12	NERPrediction 1427 1433	oxygen
+T13	NERPrediction 1951 1954	His
+T14	NERPrediction 2207 2215	Cardizem

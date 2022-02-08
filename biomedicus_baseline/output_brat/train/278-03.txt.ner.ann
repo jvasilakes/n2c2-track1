@@ -1,0 +1,65 @@
+T1	NERPrediction 41 49	Medicine
+T2	NERPrediction 168 171	s/p
+T3	NERPrediction 700 708	steroids
+T4	NERPrediction 889 898	glyburide
+T5	NERPrediction 1010 1013	His
+T6	NERPrediction 1143 1147	ACEi
+T7	NERPrediction 1149 1152	His
+T8	NERPrediction 1235 1244	glyburide
+T9	NERPrediction 1391 1394	s/p
+T10	NERPrediction 1795 1798	LDL
+T11	NERPrediction 1844 1847	ASA
+T12	NERPrediction 1849 1851	BB
+T13	NERPrediction 1853 1857	ACEi
+T14	NERPrediction 1859 1865	Statin
+T15	NERPrediction 2092 2095	Tob
+T16	NERPrediction 2116 2120	EtOH
+T17	NERPrediction 2442 2445	PSA
+T18	NERPrediction 2542 2550	Vaccines
+T19	NERPrediction 2584 2598	) and flu shot
+T20	NERPrediction 2586 2598	and flu shot
+T21	NERPrediction 2590 2598	flu shot
+T22	NERPrediction 2813 2826	acetaminophen
+T23	NERPrediction 2830 2836	Active
+T24	NERPrediction 2837 2848	Medications
+T25	NERPrediction 2852 2861	glipizide
+T26	NERPrediction 2892 2902	lisinopril
+T27	NERPrediction 2892 2907	lisinopril 5 mg
+T28	NERPrediction 3008 3018	metoprolol
+T29	NERPrediction 3050 3062	atorvastatin
+T30	NERPrediction 3050 3068	atorvastatin 10 mg
+T31	NERPrediction 3093 3101	psyllium
+T32	NERPrediction 3102 3108	powder
+T33	NERPrediction 3109 3114	1 tsp
+T34	NERPrediction 3134 3139	sugar
+T35	NERPrediction 3145 3153	psyllium
+T36	NERPrediction 3180 3187	aspirin
+T37	NERPrediction 3180 3193	aspirin 81 mg
+T38	NERPrediction 3221 3229	Muro 128
+T39	NERPrediction 3303 3309	sodium
+T40	NERPrediction 3404 3417	amitriptyline
+T41	NERPrediction 3485 3494	glipizide
+T42	NERPrediction 3543 3553	lisinopril
+T43	NERPrediction 3543 3558	lisinopril 5 mg
+T44	NERPrediction 3695 3705	metoprolol
+T45	NERPrediction 3755 3767	atorvastatin
+T46	NERPrediction 3755 3773	atorvastatin 10 mg
+T47	NERPrediction 3816 3824	psyllium
+T48	NERPrediction 3825 3831	powder
+T49	NERPrediction 3832 3837	1 tsp
+T50	NERPrediction 3900 3905	sugar
+T51	NERPrediction 3911 3919	psyllium
+T52	NERPrediction 3921 3928	aspirin
+T53	NERPrediction 3921 3934	aspirin 81 mg
+T54	NERPrediction 3980 3988	Muro 128
+T55	NERPrediction 4079 4085	sodium
+T56	NERPrediction 4197 4210	amitriptyline
+T57	NERPrediction 4260 4264	Iron
+T58	NERPrediction 4260 4272	Iron sulfate
+T59	NERPrediction 4345 4349	food
+T60	NERPrediction 4377 4383	Colace
+T61	NERPrediction 4606 4609	S/P
+T62	NERPrediction 5087 5091	EtOH
+T63	NERPrediction 5318 5320	BB
+T64	NERPrediction 5661 5664	m/r
+T65	NERPrediction 5770 5773	cap

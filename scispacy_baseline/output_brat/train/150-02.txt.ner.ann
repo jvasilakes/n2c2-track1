@@ -1,0 +1,9 @@
+T0	NERPrediction 383 387	fine
+T1	NERPrediction 466 476	nifedipine
+T2	NERPrediction 487 506	hydrochlorothiazide
+T3	NERPrediction 921 931	furosemide
+T4	NERPrediction 1021 1031	furosemide
+T5	NERPrediction 1035 1054	hydrochlorothiazide
+T6	NERPrediction 1852 1863	cholesterol
+T7	NERPrediction 1930 1933	Pap
+T8	NERPrediction 2399 2403	DT:8

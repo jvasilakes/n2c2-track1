@@ -1,0 +1,29 @@
+T0	NERPrediction 40 57	ELLEN  26659527  
+T1	NERPrediction 195 197	MT
+T2	NERPrediction 996 1003	Aspirin
+T3	NERPrediction 1036 1045	Diltiazem
+T4	NERPrediction 1058 1063	t.i.d
+T5	NERPrediction 1070 1080	Furosemide
+T6	NERPrediction 1134 1144	Metolazone
+T7	NERPrediction 1164 1170	Toprol
+T8	NERPrediction 1183 1188	b.i.d
+T9	NERPrediction 1195 1206	Pravastatin
+T10	NERPrediction 1230 1240	Furosemide
+T11	NERPrediction 1265 1271	Colace
+T12	NERPrediction 1273 1280	ferrous
+T13	NERPrediction 1290 1299	ibuprofen
+T14	NERPrediction 1301 1306	senna
+T15	NERPrediction 1346 1358	Azithromycin
+T16	NERPrediction 1776 1780	rubs
+T17	NERPrediction 1908 1918	05/28/2134
+T18	NERPrediction 1920 1929	potassium
+T19	NERPrediction 1935 1945	creatinine
+T20	NERPrediction 1973 1984	cholesterol
+T21	NERPrediction 2273 2280	aspirin
+T22	NERPrediction 2294 2303	potassium
+T23	NERPrediction 2318 2323	Lasix
+T24	NERPrediction 2335 2340	b.i.d
+T25	NERPrediction 2343 2353	metoprolol
+T26	NERPrediction 2387 2398	pravastatin
+T27	NERPrediction 2439 2444	Lasix
+T28	NERPrediction 2775 2825	eScription document:8-77995324 IFFocus            

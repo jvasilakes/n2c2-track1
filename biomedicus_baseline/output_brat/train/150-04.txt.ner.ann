@@ -1,0 +1,13 @@
+T1	NERPrediction 292 295	LDL
+T2	NERPrediction 496 507	medications
+T3	NERPrediction 634 645	medications
+T4	NERPrediction 654 661	aspirin
+T5	NERPrediction 681 688	Isordil
+T6	NERPrediction 704 713	Labetalol
+T7	NERPrediction 730 737	Norvasc
+T8	NERPrediction 752 759	Lipitor
+T9	NERPrediction 776 785	Glipizide
+T10	NERPrediction 816 829	Nitroglycerin
+T11	NERPrediction 1143 1146	LDL
+T12	NERPrediction 1305 1311	statin
+T13	NERPrediction 1474 1485	medications

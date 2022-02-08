@@ -1,0 +1,33 @@
+T0	NERPrediction 367 373	Hyzaar
+T1	NERPrediction 1719 1721	O2
+T2	NERPrediction 2313 2317	RUSB
+T3	NERPrediction 2886 2896	Creatinine
+T4	NERPrediction 2951 2961	06/03/2097
+T5	NERPrediction 2975 2976	H
+T6	NERPrediction 3024 3025	H
+T7	NERPrediction 3049 3059	05/28/2097
+T8	NERPrediction 3073 3074	H
+T9	NERPrediction 3178 3188	06/03/2097
+T10	NERPrediction 3200 3201	H
+T11	NERPrediction 3215 3216	H
+T12	NERPrediction 3390 3391	H
+T13	NERPrediction 3469 3470	H
+T14	NERPrediction 3484 3485	H
+T15	NERPrediction 3542 3547	(H)[1
+T16	NERPrediction 3678 3767	Date/Time         TROP-I         TROP-T          06/03/2097                       0.12 (H
+T17	NERPrediction 3815 3816	H
+T18	NERPrediction 3924 3957	Date/Time         FE             
+T19	NERPrediction 4080 4098	Date/Time         
+T20	NERPrediction 4228 4257	L)         Date/Time         
+T21	NERPrediction 4404 4452	Date/Time         DIFFR          METHOD         
+T22	NERPrediction 4483 4493	06/03/2097
+T23	NERPrediction 4535 4536	H
+T24	NERPrediction 4627 4637	06/03/2097
+T25	NERPrediction 4726 4736	06/03/2097
+T26	NERPrediction 4768 4779	angiotensin
+T27	NERPrediction 5306 5315	troponins
+T28	NERPrediction 6387 6396	troponins
+T29	NERPrediction 6524 6528	HCTZ
+T30	NERPrediction 6778 6787	vitamin D
+T31	NERPrediction 6814 6824	creatinine
+T32	NERPrediction 6826 6833	calcium

@@ -1,0 +1,75 @@
+T1	NERPrediction 28 31	JMH
+T2	NERPrediction 41 49	Medicine
+T3	NERPrediction 152 155	PCP
+T4	NERPrediction 225 229	Date
+T5	NERPrediction 749 753	Tums
+T6	NERPrediction 764 774	medication
+T7	NERPrediction 900 910	medication
+T8	NERPrediction 1106 1112	zofran
+T9	NERPrediction 1126 1130	MSO4
+T10	NERPrediction 1251 1257	Buspar
+T11	NERPrediction 1272 1282	Clonazepam
+T12	NERPrediction 1272 1287	Clonazepam 1 mg
+T13	NERPrediction 1291 1294	BID
+T14	NERPrediction 1296 1303	Effexor
+T15	NERPrediction 1316 1323	Humulin
+T16	NERPrediction 1335 1342	Humulin
+T17	NERPrediction 1354 1361	Humulin
+T18	NERPrediction 1373 1379	Lescol
+T19	NERPrediction 1394 1403	Metformin
+T20	NERPrediction 1414 1417	BID
+T21	NERPrediction 1419 1428	Tamoxifen
+T22	NERPrediction 1419 1434	Tamoxifen 20 mg
+T23	NERPrediction 1463 1467	DRUG
+T24	NERPrediction 1474 1479	sulfa
+T25	NERPrediction 1474 1485	sulfa drugs
+T26	NERPrediction 1480 1485	drugs
+T27	NERPrediction 1496 1523	, tricyclic antidepressants
+T28	NERPrediction 1498 1523	tricyclic antidepressants
+T29	NERPrediction 1508 1523	antidepressants
+T30	NERPrediction 1555 1558	Tob
+T31	NERPrediction 1604 1608	EtOH
+T32	NERPrediction 1774 1785	sore throat
+T33	NERPrediction 1872 1877	Other
+T34	NERPrediction 1967 1970	SO2
+T35	NERPrediction 2354 2358	Extr
+T36	NERPrediction 2506 2512	Guaiac
+T37	NERPrediction 2541 2547	Sodium
+T38	NERPrediction 2775 2778	CO2
+T39	NERPrediction 2853 2856	BUN
+T40	NERPrediction 2930 2940	Creatinine
+T41	NERPrediction 3007 3014	Glucose
+T42	NERPrediction 3032 3052	261                H
+T43	NERPrediction 3086 3093	Calcium
+T44	NERPrediction 3240 3249	Magnesium
+T45	NERPrediction 3323 3330	Protein
+T46	NERPrediction 3393 3400	Albumin
+T47	NERPrediction 3469 3477	Globulin
+T48	NERPrediction 3545 3561	Direct Bilirubin
+T49	NERPrediction 3552 3561	Bilirubin
+T50	NERPrediction 3622 3637	Total Bilirubin
+T51	NERPrediction 3628 3637	Bilirubin
+T52	NERPrediction 3849 3855	Lipase
+T53	NERPrediction 3969 3980	H        (9
+T54	NERPrediction 5046 5051	Monos
+T55	NERPrediction 5396 5399	Air
+T56	NERPrediction 6376 6379	air
+T57	NERPrediction 6731 6739	narcotic
+T58	NERPrediction 7133 7139	colace
+T59	NERPrediction 7141 7148	senokot
+T60	NERPrediction 7150 7157	miralax
+T61	NERPrediction 7162 7168	Reglan
+T62	NERPrediction 7223 7230	lactate
+T63	NERPrediction 7356 7366	Ranitidine
+T64	NERPrediction 7380 7386	zofran
+T65	NERPrediction 7421 7424	s/p
+T66	NERPrediction 7525 7534	tamoxifen
+T67	NERPrediction 7525 7540	tamoxifen 20 mg
+T68	NERPrediction 7593 7599	Buspar
+T69	NERPrediction 7604 7614	clonazepam
+T70	NERPrediction 7619 7626	effexor
+T71	NERPrediction 7659 7668	metformin
+T72	NERPrediction 7671 7678	insulin
+T73	NERPrediction 7785 7795	ranitidine
+T74	NERPrediction 7837 7840	JMH
+T75	NERPrediction 7850 7858	Medicine

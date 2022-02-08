@@ -1,0 +1,49 @@
+T1	NERPrediction 233 239	Flagyl
+T2	NERPrediction 298 307	Glyburide
+T3	NERPrediction 334 353	hydrochlorothiazide
+T4	NERPrediction 334 359	hydrochlorothiazide 25 mg
+T5	NERPrediction 366 376	Lovastatin
+T6	NERPrediction 389 399	fosinopril
+T7	NERPrediction 410 424	, verapamil SR
+T8	NERPrediction 412 421	verapamil
+T9	NERPrediction 412 424	verapamil SR
+T10	NERPrediction 422 424	SR
+T11	NERPrediction 438 441	ASA
+T12	NERPrediction 450 460	metoprolol
+T13	NERPrediction 489 499	Glucophage
+T14	NERPrediction 580 583	His
+T15	NERPrediction 683 694	antibiotics
+T16	NERPrediction 708 711	His
+T17	NERPrediction 1008 1018	antibiotic
+T18	NERPrediction 1041 1051	bright red
+T19	NERPrediction 1116 1119	ice
+T20	NERPrediction 1120 1125	cream
+T21	NERPrediction 1371 1381	antibiotic
+T22	NERPrediction 1391 1397	Guaiac
+T23	NERPrediction 1452 1455	His
+T24	NERPrediction 1804 1813	glyburide
+T25	NERPrediction 1858 1863	sugar
+T26	NERPrediction 1883 1886	His
+T27	NERPrediction 1905 1910	sugar
+T28	NERPrediction 2015 2024	glyburide
+T29	NERPrediction 2015 2029	glyburide 5 mg
+T30	NERPrediction 2050 2055	sugar
+T31	NERPrediction 2151 2154	His
+T32	NERPrediction 2890 2893	His
+T33	NERPrediction 2900 2910	creatinine
+T34	NERPrediction 2991 2998	albumin
+T35	NERPrediction 3076 3083	protein
+T36	NERPrediction 3088 3098	creatinine
+T37	NERPrediction 3107 3120	serum protein
+T38	NERPrediction 3113 3120	protein
+T39	NERPrediction 3230 3234	iron
+T40	NERPrediction 3252 3258	folate
+T41	NERPrediction 3280 3283	His
+T42	NERPrediction 3352 3365	serum protein
+T43	NERPrediction 3358 3365	protein
+T44	NERPrediction 3433 3436	HDL
+T45	NERPrediction 3471 3477	niacin
+T46	NERPrediction 3492 3498	statin
+T47	NERPrediction 3504 3511	Mevacor
+T48	NERPrediction 3515 3522	Lipitor
+T49	NERPrediction 3549 3552	HDL

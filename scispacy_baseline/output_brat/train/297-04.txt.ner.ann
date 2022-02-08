@@ -1,0 +1,24 @@
+T0	NERPrediction 900 908	thallium
+T1	NERPrediction 1058 1065	aspirin
+T2	NERPrediction 1067 1073	niacin
+T3	NERPrediction 1075 1084	vitamin E
+T4	NERPrediction 1086 1091	Lasix
+T5	NERPrediction 1093 1100	Zestril
+T6	NERPrediction 1102 1108	Zantac
+T7	NERPrediction 1110 1119	Minipress
+T8	NERPrediction 1121 1134	Amitriptyline
+T9	NERPrediction 1140 1147	Digoxin
+T10	NERPrediction 1747 1754	nitrate
+T11	NERPrediction 1910 1924	nitroglycerine
+T12	NERPrediction 2211 2217	Ambien
+T13	NERPrediction 2219 2224	Paxil
+T14	NERPrediction 2226 2233	Isordil
+T15	NERPrediction 2237 2242	t.i.d
+T16	NERPrediction 2245 2253	Atenolol
+T17	NERPrediction 2255 2262	Digoxin
+T18	NERPrediction 2264 2270	Zantac
+T19	NERPrediction 2275 2282	aspirin
+T20	NERPrediction 2760 2781	physiologically-split
+T21	NERPrediction 3991 3996	Imdur
+T22	NERPrediction 4042 4045	q.d
+T23	NERPrediction 4103 4109	statin

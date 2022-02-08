@@ -1,0 +1,11 @@
+T1	NERPrediction 318 325	insulin
+T2	NERPrediction 408 415	tobacco
+T3	NERPrediction 678 681	s/p
+T4	NERPrediction 2042 2053	medications
+T5	NERPrediction 2161 2171	medication
+T6	NERPrediction 2583 2586	s/p
+T7	NERPrediction 2686 2694	melanoma
+T8	NERPrediction 2722 2729	Calcium
+T9	NERPrediction 3243 3250	Tobacco
+T10	NERPrediction 3362 3372	bright red
+T11	NERPrediction 5020 5024	Date

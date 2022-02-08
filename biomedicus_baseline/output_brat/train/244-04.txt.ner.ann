@@ -1,0 +1,100 @@
+T1	NERPrediction 394 397	ANA
+T2	NERPrediction 498 501	S/p
+T3	NERPrediction 808 811	CBD
+T4	NERPrediction 1911 1919	baseline
+T5	NERPrediction 2097 2108	medications
+T6	NERPrediction 2130 2139	CELECOXIB
+T7	NERPrediction 2182 2193	Medications
+T8	NERPrediction 2201 2208	Aspirin
+T9	NERPrediction 2209 2230	(ACETYLSALICYLIC Acid
+T10	NERPrediction 2210 2230	ACETYLSALICYLIC Acid
+T11	NERPrediction 2248 2254	Tablet
+T12	NERPrediction 2272 2279	Calcium
+T13	NERPrediction 2272 2289	Calcium Gluconate
+T14	NERPrediction 2298 2304	TABLET
+T15	NERPrediction 2312 2318	Tablet
+T16	NERPrediction 2336 2343	Vitamin
+T17	NERPrediction 2336 2345	Vitamin D
+T18	NERPrediction 2347 2361	ERGOCALCIFEROL
+T19	NERPrediction 2379 2387	Protonix
+T20	NERPrediction 2379 2409	Protonix (PANTOPRAZOLE)   40MG
+T21	NERPrediction 2388 2409	(PANTOPRAZOLE)   40MG
+T22	NERPrediction 2389 2401	PANTOPRAZOLE
+T23	NERPrediction 2389 2409	PANTOPRAZOLE)   40MG
+T24	NERPrediction 2410 2416	TABLET
+T25	NERPrediction 2427 2433	Tablet
+T26	NERPrediction 2460 2467	Lipitor
+T27	NERPrediction 2460 2489	Lipitor (ATORVASTATIN)   20MG
+T28	NERPrediction 2468 2489	(ATORVASTATIN)   20MG
+T29	NERPrediction 2469 2481	ATORVASTATIN
+T30	NERPrediction 2469 2489	ATORVASTATIN)   20MG
+T31	NERPrediction 2490 2496	TABLET
+T32	NERPrediction 2504 2510	Tablet
+T33	NERPrediction 2537 2555	HYDROXYCHLOROQUINE
+T34	NERPrediction 2564 2570	TABLET
+T35	NERPrediction 2578 2584	Tablet
+T36	NERPrediction 2591 2594	BID
+T37	NERPrediction 2612 2625	Mycophenolate
+T38	NERPrediction 2612 2633	Mycophenolate Mofetil
+T39	NERPrediction 2651 2657	TABLET
+T40	NERPrediction 2669 2672	BID
+T41	NERPrediction 2690 2700	PREDNISONE
+T42	NERPrediction 2708 2714	TABLET
+T43	NERPrediction 2722 2728	Tablet
+T44	NERPrediction 2755 2764	GLIPIZIDE
+T45	NERPrediction 2777 2783	TABLET
+T46	NERPrediction 2795 2798	BID
+T47	NERPrediction 2807 2815	ATENOLOL
+T48	NERPrediction 2823 2829	TABLET
+T49	NERPrediction 2845 2855	Fluoxetine
+T50	NERPrediction 2845 2859	Fluoxetine Hcl
+T51	NERPrediction 2874 2880	TABLET
+T52	NERPrediction 2903 2907	Iron
+T53	NERPrediction 2903 2924	Iron (FERROUS Sulfate
+T54	NERPrediction 2908 2924	(FERROUS Sulfate
+T55	NERPrediction 2908 2934	(FERROUS Sulfate)   325 MG
+T56	NERPrediction 2909 2924	FERROUS Sulfate
+T57	NERPrediction 2909 2934	FERROUS Sulfate)   325 MG
+T58	NERPrediction 2946 2952	TABLET
+T59	NERPrediction 2975 2981	Colace
+T60	NERPrediction 2982 2998	(DOCUSATE Sodium
+T61	NERPrediction 2983 2991	DOCUSATE
+T62	NERPrediction 2983 2998	DOCUSATE Sodium
+T63	NERPrediction 2992 2998	Sodium
+T64	NERPrediction 2992 3008	Sodium)   100 MG
+T65	NERPrediction 3016 3022	TABLET
+T66	NERPrediction 3047 3057	LISINOPRIL
+T67	NERPrediction 3072 3078	TABLET
+T68	NERPrediction 3788 3791	COR
+T69	NERPrediction 3851 3854	TTP
+T70	NERPrediction 3984 3991	steroid
+T71	NERPrediction 4026 4043	Influenza Vaccine
+T72	NERPrediction 4036 4043	Vaccine
+T73	NERPrediction 4235 4246	Cholesterol
+T74	NERPrediction 4444 4451	Protein
+T75	NERPrediction 4484 4488	HEME
+T76	NERPrediction 4529 4536	Culture
+T77	NERPrediction 4638 4651	Triglycerides
+T78	NERPrediction 4677 4688	Cholesterol
+T79	NERPrediction 4677 4692	Cholesterol-LDL
+T80	NERPrediction 4689 4692	LDL
+T81	NERPrediction 4873 4884	Cholesterol
+T82	NERPrediction 4873 4888	Cholesterol-HDL
+T83	NERPrediction 4885 4888	HDL
+T84	NERPrediction 4961 4964	Hgb
+T85	NERPrediction 4966 4976	Hemoglobin
+T86	NERPrediction 5005 5010	HbA1c
+T87	NERPrediction 5429 5436	isordil
+T88	NERPrediction 5461 5471	lisinopril
+T89	NERPrediction 5522 5527	favor
+T90	NERPrediction 5540 5548	diuretic
+T91	NERPrediction 5550 5554	HCTZ
+T92	NERPrediction 6024 6027	ASA
+T93	NERPrediction 6029 6035	statin
+T94	NERPrediction 6037 6039	BB
+T95	NERPrediction 6041 6044	ACE
+T96	NERPrediction 6060 6069	glipizide
+T97	NERPrediction 6080 6083	ACE
+T98	NERPrediction 6173 6196	immunomodulatory agents
+T99	NERPrediction 6642 6650	diuretic
+T100	NERPrediction 6667 6670	ACE

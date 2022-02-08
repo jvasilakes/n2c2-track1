@@ -1,0 +1,17 @@
+T0	NERPrediction 65 72	MRN:146
+T1	NERPrediction 275 281	Motrin
+T2	NERPrediction 304 311	Tylenol
+T3	NERPrediction 661 670	Lopressor
+T4	NERPrediction 672 690	Hydochlorothiazide
+T5	NERPrediction 692 701	Procardia
+T6	NERPrediction 717 723	Motrin
+T7	NERPrediction 725 732	Aspirin
+T8	NERPrediction 747 757	Lisinopril
+T9	NERPrediction 908 915	alcohol
+T10	NERPrediction 1639 1647	Betadine
+T11	NERPrediction 1682 1691	Xylocaine
+T12	NERPrediction 1804 1813	Xylocaine
+T13	NERPrediction 1826 1837	Depo-Medrol
+T14	NERPrediction 1903 1910	MRN:146
+T15	NERPrediction 2130 2141	Cholesterol
+T16	NERPrediction 2147 2158	cholesterol

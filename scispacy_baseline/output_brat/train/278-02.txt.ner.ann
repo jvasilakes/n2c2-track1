@@ -1,0 +1,51 @@
+T0	NERPrediction 167 169	CC
+T1	NERPrediction 222 224	DM
+T2	NERPrediction 1039 1047	sorbitol
+T3	NERPrediction 1052 1057	cream
+T4	NERPrediction 1088 1097	Metamucil
+T5	NERPrediction 1660 1663	NTG
+T6	NERPrediction 1693 1696	gas
+T7	NERPrediction 1733 1736	NTG
+T8	NERPrediction 2122 2131	Glipizide
+T9	NERPrediction 2136 2140	QD  
+T10	NERPrediction 2153 2163	Lisinopril
+T11	NERPrediction 2168 2181	QD  Lopressor
+T12	NERPrediction 2194 2201	Lipitor
+T13	NERPrediction 2209 2227	QD  Amitryptilline
+T14	NERPrediction 2235 2238	QHS
+T15	NERPrediction 2240 2250	Prednisone
+T16	NERPrediction 2256 2264	Caltrate
+T17	NERPrediction 2278 2287	Carbonate
+T18	NERPrediction 2293 2295	Mg
+T19	NERPrediction 2301 2303	Mg
+T20	NERPrediction 2309 2317	Ca)/ Vit
+T21	NERPrediction 2360 2373	Acetaminophen
+T22	NERPrediction 2426 2430	EtOH
+T23	NERPrediction 2656 2668	appetite  -	
+T24	NERPrediction 3000 3003	LLE
+T25	NERPrediction 3363 3368	NC/AT
+T26	NERPrediction 3410 3413	MMM
+T27	NERPrediction 3575 3579	CTAB
+T28	NERPrediction 3807 3811	AOx3
+T29	NERPrediction 3980 3981	H
+T30	NERPrediction 4032 4040	Hip ext	
+T31	NERPrediction 4358 4377	Lytes/Renal/Glucose
+T32	NERPrediction 4383 4389	Sodium
+T33	NERPrediction 4455 4464	Potassium
+T34	NERPrediction 4748 4758	Creatinine
+T35	NERPrediction 4816 4864	Glucose                111H  70-110 mg/dl       
+T36	NERPrediction 5085 5096	Cholesterol
+T37	NERPrediction 5293 5304	Cholesterol
+T38	NERPrediction 5483 5513	11:31    6.50(H) 03/14/92     
+T39	NERPrediction 5610 5615	12:35
+T40	NERPrediction 5767 5772	12:35
+T41	NERPrediction 5856 5861	12:35
+T42	NERPrediction 6306 6311	12:35
+T43	NERPrediction 6606 6608	UA
+T44	NERPrediction 7253 7255	DM
+T45	NERPrediction 8106 8109	ASA
+T46	NERPrediction 8122 8131	Lopressor
+T47	NERPrediction 8205 8212	Lipitor
+T48	NERPrediction 8225 8239	lisinopril  -	
+T49	NERPrediction 8386 8387	K
+T50	NERPrediction 8393 8395	Mg

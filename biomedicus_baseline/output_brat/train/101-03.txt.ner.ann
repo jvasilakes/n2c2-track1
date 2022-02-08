@@ -1,0 +1,15 @@
+T1	NERPrediction 64 72	Medicine
+T2	NERPrediction 103 110	Terrell
+T3	NERPrediction 567 575	atenolol
+T4	NERPrediction 588 607	hydrochlorothiazide
+T5	NERPrediction 620 628	ramipril
+T6	NERPrediction 815 822	Lipitor
+T7	NERPrediction 872 875	HCL
+T8	NERPrediction 892 895	LDL
+T9	NERPrediction 1694 1702	ramipril
+T10	NERPrediction 1746 1760	nitroglycerine
+T11	NERPrediction 1780 1799	hydrochlorothiazide
+T12	NERPrediction 1818 1826	atenolol
+T13	NERPrediction 1848 1855	aspirin
+T14	NERPrediction 1874 1882	Premarin
+T15	NERPrediction 1887 1896	Synthroid

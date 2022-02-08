@@ -1,0 +1,11 @@
+T1	NERPrediction 49 52	FSH
+T2	NERPrediction 135 139	DATE
+T3	NERPrediction 698 703	Lasix
+T4	NERPrediction 705 713	Prilosec
+T5	NERPrediction 715 721	Cozaar
+T6	NERPrediction 723 730	aspirin
+T7	NERPrediction 732 737	Paxil
+T8	NERPrediction 739 746	Flovent
+T9	NERPrediction 749 758	albuterol
+T10	NERPrediction 763 773	Nephrocaps
+T11	NERPrediction 797 801	drug

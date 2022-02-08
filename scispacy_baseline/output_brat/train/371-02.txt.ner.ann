@@ -1,0 +1,32 @@
+T0	NERPrediction 1301 1312	cholesterol
+T1	NERPrediction 1425 1435	QD  Nexium
+T2	NERPrediction 1454 1456	MG
+T3	NERPrediction 1468 1473	day(s
+T4	NERPrediction 1517 1521	QD  
+T5	NERPrediction 1551 1560	Capsule(s
+T6	NERPrediction 1565 1590	bid  Levothyroxine Sodium
+T7	NERPrediction 1622 1627	day(s
+T8	NERPrediction 1630 1638	Caltrate
+T9	NERPrediction 1663 1668	day(s
+T10	NERPrediction 1671 1679	Percocet
+T11	NERPrediction 1681 1695	OXYCODONE+APAP
+T12	NERPrediction 1719 1722	Q6H
+T13	NERPrediction 1728 1733	day(s
+T14	NERPrediction 1736 1741	Lopid
+T15	NERPrediction 1743 1754	GEMFIBROZIL
+T16	NERPrediction 1756 1761	600MG
+T17	NERPrediction 1765 1773	Tablet(s
+T18	NERPrediction 1787 1792	day(s
+T19	NERPrediction 1795 1804	Lopressor
+T20	NERPrediction 1806 1825	METOPROLOL Tartrate
+T21	NERPrediction 1859 1864	day(s
+T22	NERPrediction 1890 1895	day(s
+T23	NERPrediction 2253 2266	glucose 148  
+T24	NERPrediction 2306 2317	cholesterol
+T25	NERPrediction 2322 2325	WNL
+T26	NERPrediction 3152 3157	lasix
+T27	NERPrediction 3241 3251	dobutamine
+T28	NERPrediction 3387 3389	DM
+T29	NERPrediction 3651 3653	DM
+T30	NERPrediction 3675 3684	Metformin
+T31	NERPrediction 4500 4510	dobutamine

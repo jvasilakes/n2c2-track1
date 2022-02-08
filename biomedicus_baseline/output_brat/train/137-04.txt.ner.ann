@@ -1,0 +1,99 @@
+T1	NERPrediction 474 487	nitroglycerin
+T2	NERPrediction 624 629	drugs
+T3	NERPrediction 640 652	beta blocker
+T4	NERPrediction 654 661	Vasotec
+T5	NERPrediction 663 670	Norvasc
+T6	NERPrediction 675 681	Plavix
+T7	NERPrediction 700 708	Prilosec
+T8	NERPrediction 734 742	troponin
+T9	NERPrediction 1036 1043	Lipitor
+T10	NERPrediction 1445 1451	sugars
+T11	NERPrediction 1559 1569	Glucophage
+T12	NERPrediction 1574 1583	glipizide
+T13	NERPrediction 1812 1823	cholesterol
+T14	NERPrediction 1841 1848	Lipitor
+T15	NERPrediction 1849 1852	LDL
+T16	NERPrediction 1877 1881	Iron
+T17	NERPrediction 1888 1894	folate
+T18	NERPrediction 2079 2089	creatinine
+T19	NERPrediction 2126 2136	creatinine
+T20	NERPrediction 2229 2250	(ACETYLSALICYLIC Acid
+T21	NERPrediction 2230 2250	ACETYLSALICYLIC Acid
+T22	NERPrediction 2258 2264	TABLET
+T23	NERPrediction 2272 2278	Tablet
+T24	NERPrediction 2293 2299	Tablet
+T25	NERPrediction 2302 2310	Atenolol
+T26	NERPrediction 2302 2316	Atenolol 50 MG
+T27	NERPrediction 2323 2329	TABLET
+T28	NERPrediction 2348 2354	Tablet
+T29	NERPrediction 2357 2363	Ativan
+T30	NERPrediction 2365 2374	LORAZEPAM
+T31	NERPrediction 2386 2392	TABLET
+T32	NERPrediction 2404 2407	BID
+T33	NERPrediction 2447 2453	Tablet
+T34	NERPrediction 2455 2473	)Clopidogrel 75 MG
+T35	NERPrediction 2456 2467	Clopidogrel
+T36	NERPrediction 2456 2473	Clopidogrel 75 MG
+T37	NERPrediction 2480 2486	TABLET
+T38	NERPrediction 2515 2521	Tablet
+T39	NERPrediction 2524 2530	Flomax
+T40	NERPrediction 2532 2542	TAMSULOSIN
+T41	NERPrediction 2632 2638	TABLET
+T42	NERPrediction 2650 2653	BID
+T43	NERPrediction 2669 2675	Tablet
+T44	NERPrediction 2677 2693	)Glipizide 10 MG
+T45	NERPrediction 2678 2687	Glipizide
+T46	NERPrediction 2678 2693	Glipizide 10 MG
+T47	NERPrediction 2701 2707	TABLET
+T48	NERPrediction 2719 2722	BID
+T49	NERPrediction 2739 2745	Tablet
+T50	NERPrediction 2748 2758	Glucophage
+T51	NERPrediction 2760 2769	METFORMIN
+T52	NERPrediction 2786 2792	TABLET
+T53	NERPrediction 2804 2807	BID
+T54	NERPrediction 2813 2819	Tablet
+T55	NERPrediction 2822 2841	Hydrochlorothiazide
+T56	NERPrediction 2822 2847	Hydrochlorothiazide 25 MG
+T57	NERPrediction 2854 2860	TABLET
+T58	NERPrediction 2879 2885	Tablet
+T59	NERPrediction 2888 2895	Lipitor
+T60	NERPrediction 2888 2916	Lipitor (ATORVASTATIN) 80 MG
+T61	NERPrediction 2896 2916	(ATORVASTATIN) 80 MG
+T62	NERPrediction 2897 2909	ATORVASTATIN
+T63	NERPrediction 2897 2916	ATORVASTATIN) 80 MG
+T64	NERPrediction 2924 2930	TABLET
+T65	NERPrediction 2983 2989	Tablet
+T66	NERPrediction 3008 3011	TAB
+T67	NERPrediction 3022 3028	tablet
+T68	NERPrediction 3031 3038	Norvasc
+T69	NERPrediction 3031 3056	Norvasc (AMLODIPINE) 10MG
+T70	NERPrediction 3039 3056	(AMLODIPINE) 10MG
+T71	NERPrediction 3040 3050	AMLODIPINE
+T72	NERPrediction 3040 3056	AMLODIPINE) 10MG
+T73	NERPrediction 3057 3063	TABLET
+T74	NERPrediction 3085 3091	Tablet
+T75	NERPrediction 3105 3118	NITROGLYCERIN
+T76	NERPrediction 3137 3140	TAB
+T77	NERPrediction 3137 3143	TAB SL
+T78	NERPrediction 3160 3166	tablet
+T79	NERPrediction 3182 3189	Vasotec
+T80	NERPrediction 3190 3208	(ENALAPRIL Maleate
+T81	NERPrediction 3191 3200	ENALAPRIL
+T82	NERPrediction 3191 3208	ENALAPRIL Maleate
+T83	NERPrediction 3222 3228	TABLET
+T84	NERPrediction 3247 3253	Tablet
+T85	NERPrediction 3256 3262	Zantac
+T86	NERPrediction 3263 3278	(RANITIDINE Hcl
+T87	NERPrediction 3264 3274	RANITIDINE
+T88	NERPrediction 3264 3278	RANITIDINE Hcl
+T89	NERPrediction 3294 3300	TABLET
+T90	NERPrediction 3312 3315	BID
+T91	NERPrediction 3326 3332	Tablet
+T92	NERPrediction 3342 3349	Tobacco
+T93	NERPrediction 4133 4136	amp
+T94	NERPrediction 4168 4171	air
+T95	NERPrediction 4622 4635	nitroglycerin
+T96	NERPrediction 4773 4778	sugar
+T97	NERPrediction 4827 4837	hemoglobin
+T98	NERPrediction 4827 4841	hemoglobin A1c
+T99	NERPrediction 4892 4902	Creatinine

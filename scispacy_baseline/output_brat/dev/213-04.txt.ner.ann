@@ -1,0 +1,5 @@
+T0	NERPrediction 87 93	LONNIE
+T1	NERPrediction 1400 1413	O2 saturation
+T2	NERPrediction 2485 2495	creatinine
+T3	NERPrediction 2504 2511	glucose
+T4	NERPrediction 3593 3601	OLMSTEAD

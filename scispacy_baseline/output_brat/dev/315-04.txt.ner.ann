@@ -1,0 +1,43 @@
+T0	NERPrediction 334 349	hemmorragic CVA
+T1	NERPrediction 359 361	Pt
+T2	NERPrediction 387 395	Dilantin
+T3	NERPrediction 650 656	Ativan
+T4	NERPrediction 793 803	gentamycin
+T5	NERPrediction 818 828	Vancomycin
+T6	NERPrediction 978 990	MCA aneurysm
+T7	NERPrediction 1020 1030	MCA stroke
+T8	NERPrediction 1185 1192	Steroid
+T9	NERPrediction 1560 1569	Lopressor
+T10	NERPrediction 1603 1606	bid
+T11	NERPrediction 1608 1618	Ranitidine
+T12	NERPrediction 1629 1635	Colace
+T13	NERPrediction 1646 1649	bid
+T14	NERPrediction 1651 1659	Aggrenox
+T15	NERPrediction 1688 1694	Celexa
+T16	NERPrediction 1724 1734	prednisone
+T17	NERPrediction 1743 1746	qam
+T18	NERPrediction 1748 1755	Lipitor
+T19	NERPrediction 1986 1989	NAD
+T20	NERPrediction 2272 2273	H
+T21	NERPrediction 2555 2585	H              150-350        
+T22	NERPrediction 2838 2839	H
+T23	NERPrediction 3698 3699	H
+T24	NERPrediction 4054 4060	Sodium
+T25	NERPrediction 4126 4135	Potassium
+T26	NERPrediction 4421 4458	H              8-25           mg/dl  
+T27	NERPrediction 4458 4468	Creatinine
+T28	NERPrediction 4492 4493	H
+T29	NERPrediction 4604 4611	Calcium
+T30	NERPrediction 4746 4755	Magnesium
+T31	NERPrediction 4817 4825	Dilantin
+T32	NERPrediction 5567 5577	MCA stroke
+T33	NERPrediction 5625 5646	MCA aneurysm         
+T34	NERPrediction 5661 5676	Assessment/Plan
+T35	NERPrediction 5728 5736	Dilantin
+T36	NERPrediction 5781 5789	dilantin
+T37	NERPrediction 5967 5973	Keppra
+T38	NERPrediction 6196 6206	Vancomycin
+T39	NERPrediction 6232 6243	ceftriaxone
+T40	NERPrediction 6512 6517	am-if
+T41	NERPrediction 6598 6608	Prednisone
+T42	NERPrediction 6631 6639	Aggrenox

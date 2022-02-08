@@ -1,0 +1,29 @@
+T0	NERPrediction 302 305	GCC
+T1	NERPrediction 588 590	CP
+T2	NERPrediction 819 822	GCC
+T3	NERPrediction 1090 1093	GCC
+T4	NERPrediction 1133 1142	Augmentin
+T5	NERPrediction 1162 1170	Prilosec
+T6	NERPrediction 1177 1180	bid
+T7	NERPrediction 1181 1189	estrogen
+T8	NERPrediction 1196 1199	TOP
+T9	NERPrediction 1229 1232	ASA
+T10	NERPrediction 1244 1252	Morphine
+T11	NERPrediction 1254 1264	Integrilin
+T12	NERPrediction 1269 1283	Nitroglycerine
+T13	NERPrediction 1288 1295	Heparin
+T14	NERPrediction 1656 1669	problems/nose
+T15	NERPrediction 1750 1752	CP
+T16	NERPrediction 1889 1917	ROM/joint aches/muscle aches
+T17	NERPrediction 1971 1975	Hemo
+T18	NERPrediction 1980 2000	anemia/easy bruising
+T19	NERPrediction 2287 2293	-Pulse
+T20	NERPrediction 2455 2461	-Chest
+T21	NERPrediction 2934 2935	K
+T22	NERPrediction 2949 2951	Cr
+T23	NERPrediction 2957 2960	Glu
+T24	NERPrediction 3155 3158	GCC
+T25	NERPrediction 3193 3198	STEMI
+T26	NERPrediction 3370 3382	Prehydration
+T27	NERPrediction 3417 3422	coags
+T28	NERPrediction 3626 3629	MPH

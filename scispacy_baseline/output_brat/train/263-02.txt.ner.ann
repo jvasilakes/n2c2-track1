@@ -1,0 +1,14 @@
+T0	NERPrediction 667 680	nitroglycerin
+T1	NERPrediction 893 899	oxygen
+T2	NERPrediction 1249 1257	Atenolol
+T3	NERPrediction 1259 1266	aspirin
+T4	NERPrediction 1268 1278	isosorbide
+T5	NERPrediction 1280 1285	Lasix
+T6	NERPrediction 1287 1296	Glyburide
+T7	NERPrediction 1300 1307	Lipitor
+T8	NERPrediction 1313 1322	Lorazepam
+T9	NERPrediction 1544 1557	O2 saturation
+T10	NERPrediction 1859 1869	creatinine
+T11	NERPrediction 2309 2316	aspirin
+T12	NERPrediction 2318 2327	Lopressor
+T13	NERPrediction 2607 2688	D:09/28/79                                                          T:09/28/79   

@@ -1,0 +1,41 @@
+T0	NERPrediction 34 38	NAME
+T1	NERPrediction 212 221	capsaicin
+T2	NERPrediction 277 285	atenolol
+T3	NERPrediction 400 459	interferon  Hypothyroidism   Hypertension   Bipolar disease
+T4	NERPrediction 605 607	QD
+T5	NERPrediction 652 660	Tegretol
+T6	NERPrediction 743 766	Tablets QPM  Wellbutrin
+T7	NERPrediction 778 781	HCL
+T8	NERPrediction 786 788	QD
+T9	NERPrediction 790 794	75MG
+T10	NERPrediction 821 827	Ativan
+T11	NERPrediction 880 886	Ativan
+T12	NERPrediction 902 905	QHS
+T13	NERPrediction 937 946	Triazolam
+T14	NERPrediction 950 953	QHS
+T15	NERPrediction 1014 1020	Ativan
+T16	NERPrediction 1037 1046	Neurontin
+T17	NERPrediction 1048 1058	GABAPENTIN
+T18	NERPrediction 1068 1073	600MG
+T19	NERPrediction 1123 1130	Xalatan
+T20	NERPrediction 1132 1167	LATANOPROST) 1DROP OU QAM   Flonase
+T21	NERPrediction 1212 1219	Humulin
+T22	NERPrediction 1262 1287	U QPM SC BID   Lisinopril
+T23	NERPrediction 1291 1293	QD
+T24	NERPrediction 1325 1332	Timolol
+T25	NERPrediction 1346 1370	1DROP OS QPM   Albuterol
+T26	NERPrediction 1385 1388	INH
+T27	NERPrediction 1397 1412	prn   Oxycodone
+T28	NERPrediction 1508 1517	duragesic
+T29	NERPrediction 1519 1528	oxycontin
+T30	NERPrediction 1586 1595	Albuterol
+T31	NERPrediction 1612 1640	NEB Q4-6H , premixed vials  
+T32	NERPrediction 1656 1663	HUMULIN
+T33	NERPrediction 1720 1727	Aspirin
+T34	NERPrediction 1756 1763	Codeine
+T35	NERPrediction 1786 1795	oxycodone
+T36	NERPrediction 1937 1953	clear,   Cor RRR
+T37	NERPrediction 1996 2004	cpasacin
+T38	NERPrediction 2006 2015	oxycodone
+T39	NERPrediction 2041 2051	lantus 46u
+T40	NERPrediction 2070 2073	QHS

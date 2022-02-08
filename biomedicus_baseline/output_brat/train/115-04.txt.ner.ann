@@ -1,0 +1,61 @@
+T1	NERPrediction 892 898	Lantus
+T2	NERPrediction 1309 1318	narcotics
+T3	NERPrediction 1495 1506	allopurinol
+T4	NERPrediction 1495 1513	allopurinol 200 mg
+T5	NERPrediction 2073 2085	beta blocker
+T6	NERPrediction 2233 2243	folic acid
+T7	NERPrediction 2244 2258	and b vitamins
+T8	NERPrediction 2248 2258	b vitamins
+T9	NERPrediction 2250 2258	vitamins
+T10	NERPrediction 2554 2559	Other
+T11	NERPrediction 2860 2866	Active
+T12	NERPrediction 2867 2878	Medications
+T13	NERPrediction 2882 2893	allopurinol
+T14	NERPrediction 2882 2900	allopurinol 100 mg
+T15	NERPrediction 2903 2906	tab
+T16	NERPrediction 2914 2927	amitriptyline
+T17	NERPrediction 2914 2933	amitriptyline 10 mg
+T18	NERPrediction 2978 2985	aspirin
+T19	NERPrediction 2978 2991	aspirin 81 mg
+T20	NERPrediction 2994 2997	tab
+T21	NERPrediction 3005 3013	Coumadin
+T22	NERPrediction 3045 3052	Demadex
+T23	NERPrediction 3067 3074	digoxin
+T24	NERPrediction 3067 3083	digoxin 0.125 mg
+T25	NERPrediction 3091 3097	Diovan
+T26	NERPrediction 3111 3122	fenofibrate
+T27	NERPrediction 3136 3144	Fish oil
+T28	NERPrediction 3141 3144	oil
+T29	NERPrediction 3172 3182	folic acid
+T30	NERPrediction 3172 3187	folic acid 1 mg
+T31	NERPrediction 3195 3203	glucagon
+T32	NERPrediction 3231 3238	Humalog
+T33	NERPrediction 3261 3266	Imdur
+T34	NERPrediction 3282 3288	Lantus
+T35	NERPrediction 3327 3335	insulins
+T36	NERPrediction 3353 3360	Mirapex
+T37	NERPrediction 3406 3419	multivitamins
+T38	NERPrediction 3422 3425	tab
+T39	NERPrediction 3433 3443	omeprazole
+T40	NERPrediction 3563 3574	pravastatin
+T41	NERPrediction 3610 3616	Toprol
+T42	NERPrediction 3610 3619	Toprol XL
+T43	NERPrediction 3634 3639	Zetia
+T44	NERPrediction 3776 3783	Demadex
+T45	NERPrediction 3904 3911	Mirapex
+T46	NERPrediction 3992 4000	Fish oil
+T47	NERPrediction 3997 4000	oil
+T48	NERPrediction 4046 4053	Humalog
+T49	NERPrediction 4093 4099	Lantus
+T50	NERPrediction 4138 4146	insulins
+T51	NERPrediction 4210 4216	Toprol
+T52	NERPrediction 4210 4219	Toprol XL
+T53	NERPrediction 4252 4262	omeprazole
+T54	NERPrediction 5231 5238	Alcohol
+T55	NERPrediction 5289 5293	Drug
+T56	NERPrediction 5306 5313	opiates
+T57	NERPrediction 5449 5452	His
+T58	NERPrediction 6709 6715	Rectal
+T59	NERPrediction 6922 6925	BUN
+T60	NERPrediction 7151 7154	TSH
+T61	NERPrediction 7156 7168	homocysteine

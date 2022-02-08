@@ -1,0 +1,49 @@
+T1	NERPrediction 52 60	Medicine
+T2	NERPrediction 294 297	PCP
+T3	NERPrediction 558 562	a 10
+T4	NERPrediction 720 723	PCP
+T5	NERPrediction 831 839	baseline
+T6	NERPrediction 1080 1088	stopping
+T7	NERPrediction 1297 1309	/sore throat
+T8	NERPrediction 1298 1309	sore throat
+T9	NERPrediction 1602 1606	CHOP
+T10	NERPrediction 1645 1656	vincristine
+T11	NERPrediction 1697 1700	inf
+T12	NERPrediction 1714 1725	Medications
+T13	NERPrediction 1766 1773	Zestril
+T14	NERPrediction 1787 1796	lopressor
+T15	NERPrediction 1807 1812	lasix
+T16	NERPrediction 1842 1846	HCTZ
+T17	NERPrediction 1860 1870	PYRIDOXINE
+T18	NERPrediction 1860 1874	PYRIDOXINE HCL
+T19	NERPrediction 1871 1874	HCL
+T20	NERPrediction 1889 1898	Proventil
+T21	NERPrediction 1945 1953	CETAPHIL
+T22	NERPrediction 1970 1980	CLOBETASOL
+T23	NERPrediction 1970 1991	CLOBETASOL PROPIONATE
+T24	NERPrediction 1970 2003	CLOBETASOL PROPIONATE 0.05% cream
+T25	NERPrediction 1998 2003	cream
+T26	NERPrediction 2026 2033	aspirin
+T27	NERPrediction 2026 2038	aspirin 81MG
+T28	NERPrediction 2052 2059	Demerol
+T29	NERPrediction 2088 2092	ETOH
+T30	NERPrediction 2095 2100	Drugs
+T31	NERPrediction 2190 2192	O2
+T32	NERPrediction 2214 2217	nad
+T33	NERPrediction 2445 2448	m/r
+T34	NERPrediction 2923 2928	color
+T35	NERPrediction 3892 3895	CO2
+T36	NERPrediction 3954 3957	BUN
+T37	NERPrediction 4709 4712	ACE
+T38	NERPrediction 4714 4718	hctz
+T39	NERPrediction 4723 4728	lasix
+T40	NERPrediction 4792 4798	sodium
+T41	NERPrediction 4905 4912	Culture
+T42	NERPrediction 4983 4986	PSA
+T43	NERPrediction 5153 5160	protein
+T44	NERPrediction 5162 5165	ANA
+T45	NERPrediction 5175 5178	ARF
+T46	NERPrediction 5238 5240	NS
+T47	NERPrediction 5270 5272	1L
+T48	NERPrediction 5406 5408	Am
+T49	NERPrediction 5466 5475	lopressor

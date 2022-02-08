@@ -1,0 +1,42 @@
+T1	NERPrediction 123 127	Date
+T2	NERPrediction 168 171	PCP
+T3	NERPrediction 1165 1168	PCP
+T4	NERPrediction 1222 1226	(s/p
+T5	NERPrediction 1223 1226	s/p
+T6	NERPrediction 1254 1259	; s/p
+T7	NERPrediction 1256 1259	s/p
+T8	NERPrediction 1310 1314	(s/p
+T9	NERPrediction 1311 1314	s/p
+T10	NERPrediction 1399 1409	suspension
+T11	NERPrediction 1466 1485	Hydrochlorothiazide
+T12	NERPrediction 1487 1497	furosemide
+T13	NERPrediction 1499 1510	gemfibrozil
+T14	NERPrediction 1512 1523	amoxicillin
+T15	NERPrediction 1525 1536	hydrocodone
+T16	NERPrediction 1538 1547	oxycodone
+T17	NERPrediction 1552 1561	Medicines
+T18	NERPrediction 1563 1573	Isosorbide
+T19	NERPrediction 1581 1589	Cardizem
+T20	NERPrediction 1602 1610	Atenolol
+T21	NERPrediction 1630 1642	Atorvastatin
+T22	NERPrediction 1649 1659	Glucophage
+T23	NERPrediction 1668 1674	Avapro
+T24	NERPrediction 1682 1692	Bumetanide
+T25	NERPrediction 1698 1706	Claritin
+T26	NERPrediction 1841 1845	EtOH
+T27	NERPrediction 2059 2062	NAD
+T28	NERPrediction 2917 2923	: 2+ B
+T29	NERPrediction 2919 2923	2+ B
+T30	NERPrediction 3533 3536	CO2
+T31	NERPrediction 3600 3603	BUN
+T32	NERPrediction 5203 5206	RUE
+T33	NERPrediction 5273 5276	MCA
+T34	NERPrediction 5344 5347	PCA
+T35	NERPrediction 5448 5458	creatinine
+T36	NERPrediction 5499 5502	MRA
+T37	NERPrediction 5607 5610	ASA
+T38	NERPrediction 5620 5627	heparin
+T39	NERPrediction 5648 5651	ASA
+T40	NERPrediction 5742 5758	antihypertensive
+T41	NERPrediction 5773 5783	isosorbide
+T42	NERPrediction 5955 5964	metformin

@@ -1,0 +1,13 @@
+T1	NERPrediction 45 49	DOSS
+T2	NERPrediction 1501 1507	Plavix
+T3	NERPrediction 1738 1749	cholesterol
+T4	NERPrediction 2119 2123	ETOH
+T5	NERPrediction 2141 2145	drug
+T6	NERPrediction 2323 2331	Dilantin
+T7	NERPrediction 2333 2342	glipizide
+T8	NERPrediction 2344 2354	Glucophage
+T9	NERPrediction 2356 2362	Plavix
+T10	NERPrediction 2365 2373	atenolol
+T11	NERPrediction 2375 2381	Cozaar
+T12	NERPrediction 2387 2394	Lipitor
+T13	NERPrediction 2887 2895	Dilantin

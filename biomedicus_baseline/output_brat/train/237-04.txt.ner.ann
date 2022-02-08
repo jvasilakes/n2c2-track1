@@ -1,0 +1,59 @@
+T1	NERPrediction 560 565	patch
+T2	NERPrediction 744 747	IMA
+T3	NERPrediction 1610 1613	PAD
+T4	NERPrediction 2004 2007	s/p
+T5	NERPrediction 2091 2101	antibiotic
+T6	NERPrediction 2194 2205	Medications
+T7	NERPrediction 2235 2236	u
+T8	NERPrediction 2252 2259	Atacand
+T9	NERPrediction 2273 2282	Glyburide
+T10	NERPrediction 2273 2287	Glyburide 3 mg
+T11	NERPrediction 2344 2351	Norvasc
+T12	NERPrediction 2364 2371	Januvia
+T13	NERPrediction 2386 2393	Bactrim
+T14	NERPrediction 2399 2402	tab
+T15	NERPrediction 2410 2417	Crestor
+T16	NERPrediction 2431 2438	Pristiq
+T17	NERPrediction 2452 2463	Mirtazapine
+T18	NERPrediction 2452 2470	Mirtazapine 7.5 mg
+T19	NERPrediction 2506 2514	Fentanyl
+T20	NERPrediction 2688 2694	iodine
+T21	NERPrediction 2699 2713	contrast media
+T22	NERPrediction 2726 2737	Penicillins
+T23	NERPrediction 2878 2881	Tob
+T24	NERPrediction 3023 3027	ETOH
+T25	NERPrediction 3053 3069	for illicit drug
+T26	NERPrediction 3057 3069	illicit drug
+T27	NERPrediction 3065 3069	drug
+T28	NERPrediction 3908 3911	PAD
+T29	NERPrediction 4165 4175	medication
+T30	NERPrediction 4204 4213	Adenosine
+T31	NERPrediction 4236 4239	PAD
+T32	NERPrediction 4416 4426	Medication
+T33	NERPrediction 4455 4462	aspirin
+T34	NERPrediction 4482 4489	Bactrim
+T35	NERPrediction 4507 4516	bupropion
+T36	NERPrediction 4536 4547	candesartan
+T37	NERPrediction 4566 4572	Colace
+T38	NERPrediction 4581 4584	BID
+T39	NERPrediction 4590 4596	Colace
+T40	NERPrediction 4598 4601	BID
+T41	NERPrediction 4611 4618	Crestor
+T42	NERPrediction 4638 4645	doxepin
+T43	NERPrediction 4652 4663	gemfibrozil
+T44	NERPrediction 4672 4675	BID
+T45	NERPrediction 4681 4690	glyburide
+T46	NERPrediction 4710 4717	insulin
+T47	NERPrediction 4724 4731	Lipitor
+T48	NERPrediction 4750 4760	metoprolol
+T49	NERPrediction 4750 4769	metoprolol tartrate
+T50	NERPrediction 4761 4769	tartrate
+T51	NERPrediction 4836 4842	Toprol
+T52	NERPrediction 4836 4845	Toprol XL
+T53	NERPrediction 4942 4949	Avandia
+T54	NERPrediction 4967 4978	clopidogrel
+T55	NERPrediction 4967 4988	clopidogrel bisulfate
+T56	NERPrediction 5186 5197	medications
+T57	NERPrediction 5645 5651	Stress
+T58	NERPrediction 5660 5663	PAD
+T59	NERPrediction 5873 5876	s/p

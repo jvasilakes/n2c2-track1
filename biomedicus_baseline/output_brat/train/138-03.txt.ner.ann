@@ -1,0 +1,19 @@
+T1	NERPrediction 40 46	Dental
+T2	NERPrediction 838 841	LDL
+T3	NERPrediction 868 873	Zocor
+T4	NERPrediction 1277 1284	Aspirin
+T5	NERPrediction 1277 1291	Aspirin 325 mg
+T6	NERPrediction 1308 1314	Plavix
+T7	NERPrediction 1337 1356	Hydrochlorothiazide
+T8	NERPrediction 1337 1362	Hydrochlorothiazide 25 mg
+T9	NERPrediction 1374 1379	Zocor
+T10	NERPrediction 1431 1438	Lipitor
+T11	NERPrediction 1470 1480	Lisinopril
+T12	NERPrediction 1470 1486	Lisinopril 20 mg
+T13	NERPrediction 1503 1512	Metformin
+T14	NERPrediction 1531 1538	Norvasc
+T15	NERPrediction 1556 1569	Nitroglycerin
+T16	NERPrediction 1556 1576	Nitroglycerin 0.4 mg
+T17	NERPrediction 2412 2427	on beta-blocker
+T18	NERPrediction 2415 2427	beta-blocker
+T19	NERPrediction 2756 2763	Lipitor

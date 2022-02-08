@@ -1,0 +1,18 @@
+T1	NERPrediction 129 133	DATE
+T2	NERPrediction 696 700	a 10
+T3	NERPrediction 1050 1057	insulin
+T4	NERPrediction 1156 1167	cholesterol
+T5	NERPrediction 1204 1214	Metoprolol
+T6	NERPrediction 1216 1226	lovastatin
+T7	NERPrediction 1228 1239	Macrodantin
+T8	NERPrediction 1241 1247	Motrin
+T9	NERPrediction 1247 1263	, insulin  70/30
+T10	NERPrediction 1249 1256	insulin
+T11	NERPrediction 1249 1263	insulin  70/30
+T12	NERPrediction 1265 1278	nitroglycerin
+T13	NERPrediction 1284 1291	aspirin
+T14	NERPrediction 1496 1498	O2
+T15	NERPrediction 1947 1953	guaiac
+T16	NERPrediction 2057 2062	exact
+T17	NERPrediction 2334 2341	Aspirin
+T18	NERPrediction 2391 2399	Medicine

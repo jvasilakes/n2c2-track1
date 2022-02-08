@@ -1,0 +1,17 @@
+T1	NERPrediction 76 81	Olive
+T2	NERPrediction 192 197	Olive
+T3	NERPrediction 546 554	steroids
+T4	NERPrediction 643 652	ibuprofen
+T5	NERPrediction 995 1003	steroids
+T6	NERPrediction 1117 1120	ROS
+T7	NERPrediction 1920 1931	Medications
+T8	NERPrediction 2098 2103	Bumex
+T9	NERPrediction 2113 2128	cyclobenzaprine
+T10	NERPrediction 2138 2146	Prilosec
+T11	NERPrediction 2160 2167	Allegra
+T12	NERPrediction 2481 2486	Olive
+T13	NERPrediction 3237 3245	steroids
+T14	NERPrediction 3319 3322	TSH
+T15	NERPrediction 3356 3359	ANA
+T16	NERPrediction 3361 3364	CRP
+T17	NERPrediction 3370 3372	RF

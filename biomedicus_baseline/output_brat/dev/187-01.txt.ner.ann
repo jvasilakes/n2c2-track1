@@ -1,0 +1,50 @@
+T1	NERPrediction 541 549	steroids
+T2	NERPrediction 805 814	estradiol
+T3	NERPrediction 837 840	His
+T4	NERPrediction 841 853	testosterone
+T5	NERPrediction 876 888	testosterone
+T6	NERPrediction 915 921	Clomid
+T7	NERPrediction 926 938	testolactone
+T8	NERPrediction 1129 1132	His
+T9	NERPrediction 1441 1456	, and  anti-DNA
+T10	NERPrediction 1443 1456	and  anti-DNA
+T11	NERPrediction 1448 1456	anti-DNA
+T12	NERPrediction 1453 1456	DNA
+T13	NERPrediction 1470 1473	ANA
+T14	NERPrediction 1843 1849	Altace
+T15	NERPrediction 2130 2133	PSA
+T16	NERPrediction 2200 2210	penicillin
+T17	NERPrediction 2212 2217	Lozol
+T18	NERPrediction 2219 2230	allopurinol
+T19	NERPrediction 2231 2244	and bee venom
+T20	NERPrediction 2235 2244	bee venom
+T21	NERPrediction 2239 2244	venom
+T22	NERPrediction 2679 2686	insulin
+T23	NERPrediction 2768 2773	smoke
+T24	NERPrediction 3672 3701	the antiphospholipid antibody
+T25	NERPrediction 3676 3701	antiphospholipid antibody
+T26	NERPrediction 3693 3701	antibody
+T27	NERPrediction 3765 3775	complement
+T28	NERPrediction 3850 3857	Flonase
+T29	NERPrediction 3889 3907	in the ear cleared
+T30	NERPrediction 3892 3907	the ear cleared
+T31	NERPrediction 3896 3907	ear cleared
+T32	NERPrediction 3978 3986	Lamictal
+T33	NERPrediction 4024 4033	Risperdal
+T34	NERPrediction 4077 4089	testolactone
+T35	NERPrediction 4077 4095	testolactone 50 mg
+T36	NERPrediction 4143 4155	testosterone
+T37	NERPrediction 4161 4167	Clomid
+T38	NERPrediction 4169 4179	clomiphene
+T39	NERPrediction 4169 4187	clomiphene citrate
+T40	NERPrediction 4180 4187	citrate
+T41	NERPrediction 4216 4225	estradiol
+T42	NERPrediction 4227 4234	Levoxyl
+T43	NERPrediction 4255 4261	Altace
+T44	NERPrediction 4303 4325	, and ibuprofen 800 mg
+T45	NERPrediction 4305 4325	and ibuprofen 800 mg
+T46	NERPrediction 4309 4318	ibuprofen
+T47	NERPrediction 4309 4325	ibuprofen 800 mg
+T48	NERPrediction 4376 4380	me 2
+T49	NERPrediction 4750 4761	cholinergic
+T50	NERPrediction 4858 4865	Aricept

@@ -1,0 +1,11 @@
+T0	NERPrediction 1316 1325	albuterol
+T1	NERPrediction 1331 1339	Azmacort
+T2	NERPrediction 1345 1351	adalat
+T3	NERPrediction 2077 2086	oxygen   
+T4	NERPrediction 2329 2333	rubs
+T5	NERPrediction 2603 2608	SMA-7
+T6	NERPrediction 2623 2629	bicarb
+T7	NERPrediction 3002 3009	aspirin
+T8	NERPrediction 3011 3024	nitroglycerin
+T9	NERPrediction 3029 3037	morphine
+T10	NERPrediction 3743 3852	MR75                        D:02/01/99                                                          T:02/01/99   

@@ -1,0 +1,38 @@
+T0	NERPrediction 202 207	Arval
+T1	NERPrediction 329 332	TGs
+T2	NERPrediction 362 375	diet/exercise
+T3	NERPrediction 479 492	diet/exercise
+T4	NERPrediction 583 589	viagra
+T5	NERPrediction 872 885	nitroglycerin
+T6	NERPrediction 887 897	Metoprolol
+T7	NERPrediction 945 950	Lopid
+T8	NERPrediction 952 963	GEMFIBROZIL
+T9	NERPrediction 965 970	600MG
+T10	NERPrediction 1004 1011	Lipitor
+T11	NERPrediction 1013 1025	ATORVASTATIN
+T12	NERPrediction 1094 1116	DICLOFENAC/MISOPROSTOL
+T13	NERPrediction 1121 1123	MG
+T14	NERPrediction 1157 1161	40MG
+T15	NERPrediction 1192 1202	QD   Folic
+T16	NERPrediction 1239 1280	QD     Allergies  Penicillins - Angiodema
+T17	NERPrediction 1319 1341	Contrast - convulsions
+T18	NERPrediction 1673 1676	Occ
+T19	NERPrediction 1684 1686	NO
+T20	NERPrediction 1839 1846	alcohol
+T21	NERPrediction 2024 2026	DM
+T22	NERPrediction 2183 2186	NAD
+T23	NERPrediction 2325 2327	NO
+T24	NERPrediction 2351 2355	CTAB
+T25	NERPrediction 2423 2425	ND
+T26	NERPrediction 2989 3002	diet/exercise
+T27	NERPrediction 3010 3017	glucose
+T28	NERPrediction 3167 3174	Vaccine
+T29	NERPrediction 3188 3199	Cholesterol
+T30	NERPrediction 3348 3427	01/11/2064 Done   Smoking status 01/13/2066 Past smoker   UA-Protein 04/08/2065
+T31	NERPrediction 3429 3433	N   
+T32	NERPrediction 3680 3697	04/08/2065 279   
+T33	NERPrediction 3701 3719	09/23/2065 1.65   
+T34	NERPrediction 3735 3745	04/08/2065
+T35	NERPrediction 3844 3879	Assessment/Counseling 01/11/2065   
+T36	NERPrediction 3931 3941	04/08/2065
+T37	NERPrediction 4008 4011	Flu

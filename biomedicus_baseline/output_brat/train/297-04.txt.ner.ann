@@ -1,0 +1,29 @@
+T1	NERPrediction 86 94	Medicine
+T2	NERPrediction 607 610	His
+T3	NERPrediction 1058 1065	aspirin
+T4	NERPrediction 1067 1073	niacin
+T5	NERPrediction 1073 1084	, vitamin E
+T6	NERPrediction 1075 1082	vitamin
+T7	NERPrediction 1075 1084	vitamin E
+T8	NERPrediction 1086 1091	Lasix
+T9	NERPrediction 1093 1100	Zestril
+T10	NERPrediction 1102 1108	Zantac
+T11	NERPrediction 1110 1119	Minipress
+T12	NERPrediction 1121 1134	Amitriptyline
+T13	NERPrediction 1140 1147	Digoxin
+T14	NERPrediction 1910 1924	nitroglycerine
+T15	NERPrediction 2211 2217	Ambien
+T16	NERPrediction 2219 2224	Paxil
+T17	NERPrediction 2226 2233	Isordil
+T18	NERPrediction 2245 2253	Atenolol
+T19	NERPrediction 2255 2262	Digoxin
+T20	NERPrediction 2264 2270	Zantac
+T21	NERPrediction 2275 2282	aspirin
+T22	NERPrediction 2301 2305	drug
+T23	NERPrediction 2301 2315	drug allergies
+T24	NERPrediction 2609 2612	His
+T25	NERPrediction 2643 2646	His
+T26	NERPrediction 3871 3895	increased blood pressure
+T27	NERPrediction 3991 3996	Imdur
+T28	NERPrediction 4094 4097	LDL
+T29	NERPrediction 4103 4109	statin

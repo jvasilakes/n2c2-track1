@@ -1,0 +1,15 @@
+T1	NERPrediction 128 132	DATE
+T2	NERPrediction 198 206	Medicine
+T3	NERPrediction 438 449	cholesterol
+T4	NERPrediction 469 476	insulin
+T5	NERPrediction 525 536	medications
+T6	NERPrediction 951 962	cholesterol
+T7	NERPrediction 999 1010	medications
+T8	NERPrediction 1033 1037	DRUG
+T9	NERPrediction 1223 1229	oxygen
+T10	NERPrediction 1531 1538	aspirin
+T11	NERPrediction 1555 1568	Nitroglycerin
+T12	NERPrediction 1573 1582	Lopressor
+T13	NERPrediction 1789 1801	, Troponin-I
+T14	NERPrediction 1791 1799	Troponin
+T15	NERPrediction 1791 1801	Troponin-I

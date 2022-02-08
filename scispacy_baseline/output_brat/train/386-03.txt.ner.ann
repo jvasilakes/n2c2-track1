@@ -1,0 +1,35 @@
+T0	NERPrediction 190 200	Lisinopril
+T1	NERPrediction 332 334	DM
+T2	NERPrediction 429 431	CP
+T3	NERPrediction 939 946	bosniak
+T4	NERPrediction 1127 1134	bosniak
+T5	NERPrediction 1799 1804	Paxil
+T6	NERPrediction 1808 1810	MG
+T7	NERPrediction 1814 1817	QHS
+T8	NERPrediction 1856 1858	MG
+T9	NERPrediction 1885 1891	Ativan
+T10	NERPrediction 1937 1945	Ventolin
+T11	NERPrediction 1953 1956	INH
+T12	NERPrediction 2005 2013	Vanceril
+T13	NERPrediction 2022 2025	INH
+T14	NERPrediction 2045 2054	Rhinocort
+T15	NERPrediction 2117 2124	Zyprexa
+T16	NERPrediction 2171 2174	QHS
+T17	NERPrediction 2177 2184	Serzone
+T18	NERPrediction 2231 2234	QHS
+T19	NERPrediction 2237 2244	Calcium
+T20	NERPrediction 2260 2262	MG
+T21	NERPrediction 2282 2287	QD   
+T22	NERPrediction 2399 2413	QD   Metformin
+T23	NERPrediction 2486 2499	QD   Atenolol
+T24	NERPrediction 2522 2527	QD   
+T25	NERPrediction 2527 2534	Lipitor
+T26	NERPrediction 2536 2548	ATORVASTATIN
+T27	NERPrediction 2550 2554	10MG
+T28	NERPrediction 3298 3306	Atenolol
+T29	NERPrediction 3336 3346	Lisinopril
+T30	NERPrediction 3536 3539	ASA
+T31	NERPrediction 3598 3607	Metformin
+T32	NERPrediction 3723 3727	QD  
+T33	NERPrediction 3765 3772	Lipitor
+T34	NERPrediction 3779 3782	QHS

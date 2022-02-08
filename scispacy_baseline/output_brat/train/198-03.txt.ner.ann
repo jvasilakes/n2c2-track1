@@ -1,0 +1,45 @@
+T0	NERPrediction 1110 1113	LCX
+T1	NERPrediction 1509 1513	LSAF
+T2	NERPrediction 1596 1600	Blue
+T3	NERPrediction 1690 1697	mod-sev
+T4	NERPrediction 1761 1775	proximal R SFA
+T5	NERPrediction 1873 1875	CP
+T6	NERPrediction 1902 1905	TNG
+T7	NERPrediction 2467 2475	Nitrodur
+T8	NERPrediction 2927 2930	NAD
+T9	NERPrediction 3011 3014	PAD
+T10	NERPrediction 3116 3125	Neurontin
+T11	NERPrediction 3182 3192	prednisone
+T12	NERPrediction 3275 3290	Terazosin   PSH
+T13	NERPrediction 3431 3439	Codeine-
+T14	NERPrediction 3511 3520	Metformin
+T15	NERPrediction 3532 3535	bid
+T16	NERPrediction 3537 3546	Neurontin
+T17	NERPrediction 3557 3560	bid
+T18	NERPrediction 3562 3571	Terazosin
+T19	NERPrediction 3587 3597	Lisinopril
+T20	NERPrediction 3608 3613	dialy
+T21	NERPrediction 3615 3621	toprol
+T22	NERPrediction 3634 3637	bid
+T23	NERPrediction 3639 3646	Effexor
+T24	NERPrediction 3661 3671	Clonazepam
+T25	NERPrediction 3680 3683	bid
+T26	NERPrediction 3685 3696	Simvastatin
+T27	NERPrediction 3706 3711	dialy
+T28	NERPrediction 3713 3719	Plavix
+T29	NERPrediction 3729 3734	dialy
+T30	NERPrediction 3736 3739	ASA
+T31	NERPrediction 3757 3766	Glipizide
+T32	NERPrediction 3785 3793	Protonix
+T33	NERPrediction 3811 3814	TNG
+T34	NERPrediction 3816 3823	Chantix
+T35	NERPrediction 4021 4023	DM
+T36	NERPrediction 4161 4168	1ppd/48
+T37	NERPrediction 4223 4230	Chantix
+T38	NERPrediction 4243 4247	ETOH
+T39	NERPrediction 4902 4913	D?P?PT 1+/1
+T40	NERPrediction 5027 5034	glucose
+T41	NERPrediction 5059 5061	NA
+T42	NERPrediction 5067 5068	K
+T43	NERPrediction 5299 5309	Glucophage
+T44	NERPrediction 5409 5416	Smoking

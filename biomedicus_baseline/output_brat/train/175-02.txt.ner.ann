@@ -1,0 +1,13 @@
+T1	NERPrediction 162 168	sugars
+T2	NERPrediction 316 319	PMC
+T3	NERPrediction 356 367	medications
+T4	NERPrediction 376 384	atenolol
+T5	NERPrediction 376 390	atenolol 25 mg
+T6	NERPrediction 405 412	Zestril
+T7	NERPrediction 441 451	Glucovance
+T8	NERPrediction 473 481	atenolol
+T9	NERPrediction 777 785	atenolol
+T10	NERPrediction 809 817	atenolol
+T11	NERPrediction 828 837	Lopressor
+T12	NERPrediction 882 889	glucose
+T13	NERPrediction 921 932	medications

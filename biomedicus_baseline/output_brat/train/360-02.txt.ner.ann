@@ -1,0 +1,44 @@
+T1	NERPrediction 62 70	Medicine
+T2	NERPrediction 332 342	medication
+T3	NERPrediction 358 369	cholesterol
+T4	NERPrediction 548 551	His
+T5	NERPrediction 588 592	HCTZ
+T6	NERPrediction 605 615	lisinopril
+T7	NERPrediction 631 639	atenolol
+T8	NERPrediction 808 816	atenolol
+T9	NERPrediction 1036 1047	cholesterol
+T10	NERPrediction 1105 1116	cholesterol
+T11	NERPrediction 1159 1162	His
+T12	NERPrediction 1172 1183	cholesterol
+T13	NERPrediction 1205 1208	HDL
+T14	NERPrediction 1213 1216	LDL
+T15	NERPrediction 1404 1407	His
+T16	NERPrediction 1435 1438	His
+T17	NERPrediction 1456 1459	His
+T18	NERPrediction 1725 1731	sodium
+T19	NERPrediction 1737 1746	potassium
+T20	NERPrediction 1767 1773	bicarb
+T21	NERPrediction 1778 1781	BUN
+T22	NERPrediction 1786 1796	creatinine
+T23	NERPrediction 1802 1809	glucose
+T24	NERPrediction 1864 1871	calcium
+T25	NERPrediction 1864 1885	calcium and magnesium
+T26	NERPrediction 1876 1885	magnesium
+T27	NERPrediction 1888 1891	His
+T28	NERPrediction 1892 1894	T4
+T29	NERPrediction 1916 1919	His
+T30	NERPrediction 2080 2084	HCTZ
+T31	NERPrediction 2089 2099	lisinopril
+T32	NERPrediction 2104 2112	atenolol
+T33	NERPrediction 2156 2164	atenolol
+T34	NERPrediction 2377 2388	Cholesterol
+T35	NERPrediction 2405 2416	cholesterol
+T36	NERPrediction 2495 2498	LDL
+T37	NERPrediction 2558 2570	atorvastatin
+T38	NERPrediction 2573 2576	His
+T39	NERPrediction 2657 2665	Medicine
+T40	NERPrediction 3177 3186	Pneumovax
+T41	NERPrediction 3187 3204	and a flu vaccine
+T42	NERPrediction 3191 3204	a flu vaccine
+T43	NERPrediction 3193 3204	flu vaccine
+T44	NERPrediction 3197 3204	vaccine

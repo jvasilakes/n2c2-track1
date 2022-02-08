@@ -1,0 +1,59 @@
+T1	NERPrediction 653 660	Alcohol
+T2	NERPrediction 777 780	His
+T3	NERPrediction 795 800	sugar
+T4	NERPrediction 999 1004	sugar
+T5	NERPrediction 1067 1073	Lantus
+T6	NERPrediction 1124 1130	Lantus
+T7	NERPrediction 1276 1285	glucotrol
+T8	NERPrediction 1440 1446	sugars
+T9	NERPrediction 1524 1531	insulin
+T10	NERPrediction 1585 1589	100s
+T11	NERPrediction 1786 1794	diuretic
+T12	NERPrediction 1855 1858	s/p
+T13	NERPrediction 2126 2129	TSH
+T14	NERPrediction 2131 2139	cortisol
+T15	NERPrediction 2360 2367	vaccine
+T16	NERPrediction 2584 2589	Other
+T17	NERPrediction 2923 2930	Alcohol
+T18	NERPrediction 3085 3091	Active
+T19	NERPrediction 3092 3103	Medications
+T20	NERPrediction 3107 3114	aspirin
+T21	NERPrediction 3107 3120	aspirin 81 mg
+T22	NERPrediction 3128 3134	Celexa
+T23	NERPrediction 3147 3161	cyanocobalamin
+T24	NERPrediction 3174 3184	folic acid
+T25	NERPrediction 3174 3189	folic acid 1 mg
+T26	NERPrediction 3207 3217	medication
+T27	NERPrediction 3265 3275	medication
+T28	NERPrediction 3309 3318	glyburide
+T29	NERPrediction 3364 3371	Insulin
+T30	NERPrediction 3383 3393	isosorbide
+T31	NERPrediction 3383 3403	isosorbide dinitrate
+T32	NERPrediction 3383 3409	isosorbide dinitrate 10 mg
+T33	NERPrediction 3420 3425	Lasix
+T34	NERPrediction 3439 3446	Lipitor
+T35	NERPrediction 3459 3465	Megace
+T36	NERPrediction 3479 3489	metoprolol
+T37	NERPrediction 3503 3516	multivitamins
+T38	NERPrediction 3519 3530	nph insulin
+T39	NERPrediction 3523 3530	insulin
+T40	NERPrediction 3613 3619	Plavix
+T41	NERPrediction 3632 3640	Prinivil
+T42	NERPrediction 3892 3899	Alcohol
+T43	NERPrediction 4006 4023	Influenza vaccine
+T44	NERPrediction 4016 4023	vaccine
+T45	NERPrediction 4037 4045	Flu Shot
+T46	NERPrediction 4046 4053	Program
+T47	NERPrediction 4099 4108	Pneumovax
+T48	NERPrediction 4315 4317	o2
+T49	NERPrediction 4637 4646	NT-proBNP
+T50	NERPrediction 4662 4668	Plasma
+T51	NERPrediction 4669 4676	Glucose
+T52	NERPrediction 4693 4699	Plasma
+T53	NERPrediction 4700 4710	Creatinine
+T54	NERPrediction 4727 4734	Albumin
+T55	NERPrediction 4751 4759	Troponin
+T56	NERPrediction 4751 4761	Troponin-I
+T57	NERPrediction 4781 4789	Creatine
+T58	NERPrediction 4840 4843	ATS
+T59	NERPrediction 4898 4925	Thyroid Stimulating Hormone

@@ -1,0 +1,21 @@
+T1	NERPrediction 608 615	tobacco
+T2	NERPrediction 1291 1296	smoke
+T3	NERPrediction 1417 1424	Program
+T4	NERPrediction 1439 1450	medications
+T5	NERPrediction 1467 1481	coated Aspirin
+T6	NERPrediction 1474 1481	Aspirin
+T7	NERPrediction 1474 1488	Aspirin 325 mg
+T8	NERPrediction 1495 1503	atenolol
+T9	NERPrediction 1495 1510	atenolol 100 mg
+T10	NERPrediction 1517 1527	lisinopril
+T11	NERPrediction 1517 1533	lisinopril 20 mg
+T12	NERPrediction 1540 1547	Lipitor
+T13	NERPrediction 1562 1571	metformin
+T14	NERPrediction 1588 1597	Micronase
+T15	NERPrediction 1599 1611	fluocinolone
+T16	NERPrediction 1613 1621	Protonix
+T17	NERPrediction 1627 1634	Allegra
+T18	NERPrediction 1902 1907	water
+T19	NERPrediction 2189 2192	LDL
+T20	NERPrediction 2979 2982	LDL
+T21	NERPrediction 3035 3042	Lipitor

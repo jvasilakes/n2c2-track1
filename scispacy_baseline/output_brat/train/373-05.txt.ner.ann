@@ -1,0 +1,76 @@
+T0	NERPrediction 259 261	CC
+T1	NERPrediction 272 275	HPI
+T2	NERPrediction 412 420	coumadin
+T3	NERPrediction 713 715	CP
+T4	NERPrediction 1294 1306	O2 sat of 99
+T5	NERPrediction 1556 1557	K
+T6	NERPrediction 1582 1595	Vanc/Cefepime
+T7	NERPrediction 1625 1630	Lasix
+T8	NERPrediction 1634 1637	ROS
+T9	NERPrediction 1883 1886	CVA
+T10	NERPrediction 2221 2228	alcohol
+T11	NERPrediction 2291 2306	Warfarin Sodium
+T12	NERPrediction 2311 2313	MG
+T13	NERPrediction 2326 2339	Acetaminophen
+T14	NERPrediction 2341 2348	Tylenol
+T15	NERPrediction 2361 2363	MG
+T16	NERPrediction 2367 2370	Q4H
+T17	NERPrediction 2380 2400	Acetylsalicylic Acid
+T18	NERPrediction 2402 2409	Aspirin
+T19	NERPrediction 2416 2418	MG
+T20	NERPrediction 2433 2443	Amlodipine
+T21	NERPrediction 2445 2452	Norvasc
+T22	NERPrediction 2461 2463	MG
+T23	NERPrediction 2478 2485	Calcium
+T24	NERPrediction 2501 2503	Mg
+T25	NERPrediction 2524 2531	Digoxin
+T26	NERPrediction 2556 2562	Folate
+T27	NERPrediction 2564 2574	Folic Acid
+T28	NERPrediction 2579 2581	MG
+T29	NERPrediction 2596 2607	Hydralazine
+T30	NERPrediction 2608 2611	Hcl
+T31	NERPrediction 2616 2618	MG
+T32	NERPrediction 2622 2625	QID
+T33	NERPrediction 2973 2976	QHS
+T34	NERPrediction 2981 3002	Labetalol Hcl  300 MG
+T35	NERPrediction 3014 3022	Prinivil
+T36	NERPrediction 3024 3034	Lisinopril
+T37	NERPrediction 3040 3042	MG
+T38	NERPrediction 3054 3092	Polyethylene Glycol  (Miralax)   17 GM
+T39	NERPrediction 3110 3121	Simvastatin
+T40	NERPrediction 3123 3128	Zocor
+T41	NERPrediction 3135 3137	MG
+T42	NERPrediction 3141 3144	QHS
+T43	NERPrediction 3149 3158	Magnesium
+T44	NERPrediction 3171 3173	MG
+T45	NERPrediction 3233 3239	161/77
+T46	NERPrediction 3251 3253	O2
+T47	NERPrediction 3297 3300	NAD
+T48	NERPrediction 5685 5690	AEOSN
+T49	NERPrediction 5846 5851	ANISO
+T50	NERPrediction 5927 5931	HYPO
+T51	NERPrediction 6252 6254	NA
+T52	NERPrediction 6333 6352	K             4.6(T
+T53	NERPrediction 6495 6498	CO2
+T54	NERPrediction 6819 6822	GLU
+T55	NERPrediction 7003 7007	PHOS
+T56	NERPrediction 7076 7078	MG
+T57	NERPrediction 7668 7673	DBILI
+T58	NERPrediction 8555 8561	PATCHY
+T59	NERPrediction 8639 8641	NO
+T60	NERPrediction 8843 8850	digoxin
+T61	NERPrediction 9038 9046	coumadin
+T62	NERPrediction 9384 9392	pulm htn
+T63	NERPrediction 9688 9693	lasix
+T64	NERPrediction 9728 9733	lasix
+T65	NERPrediction 9748 9753	I/O/s
+T66	NERPrediction 10234 10241	digoxin
+T67	NERPrediction 10243 10252	labetalol
+T68	NERPrediction 10327 10334	Norvasc
+T69	NERPrediction 10336 10345	labetalol
+T70	NERPrediction 10347 10357	hydralazin
+T71	NERPrediction 10359 10369	lisinopril
+T72	NERPrediction 10387 10393	statin
+T73	NERPrediction 10395 10398	ASA
+T74	NERPrediction 10538 10541	OBR
+T75	NERPrediction 10612 10622	MDMedicine

@@ -1,0 +1,68 @@
+T0	NERPrediction 46 48	DM
+T1	NERPrediction 652 657	shwed
+T2	NERPrediction 886 894	ischenia
+T3	NERPrediction 954 955	H
+T4	NERPrediction 1018 1021	CVA
+T5	NERPrediction 1038 1045	Humulin
+T6	NERPrediction 1061 1064	qpm
+T7	NERPrediction 1133 1141	scale-2U
+T8	NERPrediction 1217 1221	40MG
+T9	NERPrediction 1252 1266	QD   Trazodone
+T10	NERPrediction 1299 1302	qhs
+T11	NERPrediction 1307 1317	insomna   
+T12	NERPrediction 1327 1335	NAPROXEN
+T13	NERPrediction 1386 1410	TRIMETHOPRIM/POLYMYXIN B
+T14	NERPrediction 1456 1459	INH
+T15	NERPrediction 1468 1471	INH
+T16	NERPrediction 1476 1477	H
+T17	NERPrediction 1516 1519	INH
+T18	NERPrediction 1537 1547	Glucophage
+T19	NERPrediction 1552 1554	MG
+T20	NERPrediction 1564 1571	Lipitor
+T21	NERPrediction 1575 1577	MG
+T22	NERPrediction 1581 1586	QD   
+T23	NERPrediction 1663 1668	QD   
+T24	NERPrediction 1735 1748	QD   Clarinex
+T25	NERPrediction 1796 1807	QD   Plavix
+T26	NERPrediction 1825 1827	MG
+T27	NERPrediction 1831 1841	QD   Paxil
+T28	NERPrediction 1858 1860	MG
+T29	NERPrediction 1885 1898	QD   Atenolol
+T30	NERPrediction 1902 1904	MG
+T31	NERPrediction 1929 1946	QD   Flucoconzole
+T32	NERPrediction 1951 1953	MG
+T33	NERPrediction 2110 2125	U SC QAM/Qpm   
+T34	NERPrediction 2293 2299	RUSB  
+T35	NERPrediction 2611 2626	K              
+T36	NERPrediction 2641 2756	CO2              05/08/2066                       4.2                                            05/06/2066        
+T37	NERPrediction 2900 2918	Date/Time         
+T38	NERPrediction 2948 2951	GLU
+T39	NERPrediction 3222 3240	Date/Time         
+T40	NERPrediction 3698 3720	Date/Time         CHOL
+T41	NERPrediction 3778 3799	05/08/2066        272
+T42	NERPrediction 3860 3905	Date/Time         VLDL             05/08/2066
+T43	NERPrediction 4020 4025	(*)[1
+T44	NERPrediction 4106 4129	Date/Time         UTIME
+T45	NERPrediction 4532 4553	Date/Time         RDW
+T46	NERPrediction 4638 4652	LYMPH-A       
+T47	NERPrediction 4838 4871	Date/Time         ANEUT-A        
+T48	NERPrediction 5000 5053	Date/Time         ABASO-A          05/01/2066        
+T49	NERPrediction 5152 5154	DM
+T50	NERPrediction 5161 5165	chol
+T51	NERPrediction 5400 5407	Humulin
+T52	NERPrediction 5417 5422	70qam
+T53	NERPrediction 5430 5433	qpm
+T54	NERPrediction 5536 5546	glucophage
+T55	NERPrediction 5563 5566	ASA
+T56	NERPrediction 5568 5574	statin
+T57	NERPrediction 5739 5742	ASA
+T58	NERPrediction 6004 6012	Atenolol
+T59	NERPrediction 6082 6090	Atenolol
+T60	NERPrediction 6119 6126	Lipitor
+T61	NERPrediction 6203 6206	ASA
+T62	NERPrediction 6262 6268	Celexa
+T63	NERPrediction 6301 6310	albuterol
+T64	NERPrediction 6315 6338	asthmacort    7)GI-GERD
+T65	NERPrediction 6345 6353	Protonix
+T66	NERPrediction 6407 6415	Diflucan
+T67	NERPrediction 6785 6787	DM

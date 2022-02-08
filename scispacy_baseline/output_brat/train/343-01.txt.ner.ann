@@ -1,0 +1,10 @@
+T0	NERPrediction 139 146	Sulphur
+T1	NERPrediction 790 801	cholesterol
+T2	NERPrediction 821 833	triglyceride
+T3	NERPrediction 988 998	Penicillin
+T4	NERPrediction 1834 1837	q.d
+T5	NERPrediction 1922 1932	Glucophage
+T6	NERPrediction 1945 1950	q.a.m
+T7	NERPrediction 2168 2178	lisinopril
+T8	NERPrediction 2343 2350	QUEENAN
+T9	NERPrediction 2369 2391	document:2-320209     

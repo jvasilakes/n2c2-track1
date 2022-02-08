@@ -1,0 +1,15 @@
+T1	NERPrediction 1004 1015	medications
+T2	NERPrediction 1037 1044	Lipitor
+T3	NERPrediction 1062 1069	digoxin
+T4	NERPrediction 1062 1077	digoxin 0.25 mg
+T5	NERPrediction 1089 1098	captopril
+T6	NERPrediction 1089 1104	captopril 50 mg
+T7	NERPrediction 1118 1123	Lasix
+T8	NERPrediction 1151 1165	coated aspirin
+T9	NERPrediction 1158 1165	aspirin
+T10	NERPrediction 1158 1171	aspirin 81 mg
+T11	NERPrediction 1183 1189	Nexium
+T12	NERPrediction 1207 1216	Synthroid
+T13	NERPrediction 1236 1245	Aldactone
+T14	NERPrediction 1263 1268	Coreg
+T15	NERPrediction 1292 1299	Norvasc

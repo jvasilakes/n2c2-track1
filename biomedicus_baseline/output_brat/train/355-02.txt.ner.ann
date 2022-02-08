@@ -1,0 +1,29 @@
+T1	NERPrediction 191 195	Date
+T2	NERPrediction 261 264	PCP
+T3	NERPrediction 1133 1137	ATRA
+T4	NERPrediction 1142 1152	idarubicin
+T5	NERPrediction 1218 1228	idarubicin
+T6	NERPrediction 1233 1237	ATRA
+T7	NERPrediction 1445 1456	Medications
+T8	NERPrediction 1459 1468	Synthroid
+T9	NERPrediction 1477 1484	Zestril
+T10	NERPrediction 1493 1502	Lopressor
+T11	NERPrediction 1512 1522	Glucophage
+T12	NERPrediction 1793 1800	alcohol
+T13	NERPrediction 2137 2143	Rectal
+T14	NERPrediction 2446 2449	CO2
+T15	NERPrediction 2513 2516	BUN
+T16	NERPrediction 2850 2855	TBILI
+T17	NERPrediction 3388 3393	TBILI
+T18	NERPrediction 4364 4368	54 M
+T19	NERPrediction 4387 4392	, s/p
+T20	NERPrediction 4389 4392	s/p
+T21	NERPrediction 4667 4675	Cefepime
+T22	NERPrediction 4807 4830	with oral hypoglycemics
+T23	NERPrediction 4812 4830	oral hypoglycemics
+T24	NERPrediction 4839 4849	glucophage
+T25	NERPrediction 4878 4880	BB
+T26	NERPrediction 4885 4888	ACE
+T27	NERPrediction 4897 4906	lopressor
+T28	NERPrediction 4911 4918	zestril
+T29	NERPrediction 4987 4996	synthroid

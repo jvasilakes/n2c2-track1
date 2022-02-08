@@ -1,0 +1,13 @@
+T1	NERPrediction 138 142	DATE
+T2	NERPrediction 1323 1331	Atenolol
+T3	NERPrediction 1333 1339	Cozaar
+T4	NERPrediction 1341 1348	insulin
+T5	NERPrediction 1350 1357	aspirin
+T6	NERPrediction 1363 1368	Zocor
+T7	NERPrediction 1401 1405	drug
+T8	NERPrediction 1513 1517	drug
+T9	NERPrediction 1725 1731	Oxygen
+T10	NERPrediction 2156 2159	His
+T11	NERPrediction 2173 2176	His
+T12	NERPrediction 2333 2346	Nitroglycerin
+T13	NERPrediction 2393 2400	aspirin

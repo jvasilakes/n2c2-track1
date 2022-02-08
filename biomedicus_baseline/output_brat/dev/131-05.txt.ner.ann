@@ -1,0 +1,50 @@
+T1	NERPrediction 1240 1247	insulin
+T2	NERPrediction 1473 1484	Medications
+T3	NERPrediction 1489 1497	atenolol
+T4	NERPrediction 1489 1503	atenolol 25 mg
+T5	NERPrediction 1504 1507	BID
+T6	NERPrediction 1510 1518	Coumadin
+T7	NERPrediction 1539 1546	Ecotrin
+T8	NERPrediction 1559 1566	Lipitor
+T9	NERPrediction 1578 1583	Lasix
+T10	NERPrediction 1596 1602	folate
+T11	NERPrediction 1613 1624	allopurinol
+T12	NERPrediction 1613 1631	allopurinol 100 mg
+T13	NERPrediction 1637 1643	Ativan
+T14	NERPrediction 1646 1653	Proscar
+T15	NERPrediction 1666 1677	medications
+T16	NERPrediction 1684 1691	Insulin
+T17	NERPrediction 1694 1702	Protonix
+T18	NERPrediction 1727 1731	drug
+T19	NERPrediction 1727 1739	drug allergy
+T20	NERPrediction 1745 1756	IV contrast
+T21	NERPrediction 1748 1760	contrast dye
+T22	NERPrediction 1757 1760	dye
+T23	NERPrediction 2087 2094	alcohol
+T24	NERPrediction 2991 2996	water
+T25	NERPrediction 3568 3575	Tc MIBI
+T26	NERPrediction 3610 3619	adenosine
+T27	NERPrediction 3638 3641	His
+T28	NERPrediction 4228 4238	creatinine
+T29	NERPrediction 4247 4250	BUN
+T30	NERPrediction 4598 4601	His
+T31	NERPrediction 5222 5229	insulin
+T32	NERPrediction 5765 5771	Avapro
+T33	NERPrediction 6465 6479	antiarrhythmic
+T34	NERPrediction 6775 6786	Medications
+T35	NERPrediction 6799 6807	atenolol
+T36	NERPrediction 6799 6813	atenolol 25 mg
+T37	NERPrediction 6816 6819	BID
+T38	NERPrediction 6821 6829	Coumadin
+T39	NERPrediction 6847 6854	Ecotrin
+T40	NERPrediction 6868 6875	Lipitor
+T41	NERPrediction 6888 6893	Lasix
+T42	NERPrediction 6907 6913	folate
+T43	NERPrediction 6925 6936	allopurinol
+T44	NERPrediction 6925 6943	allopurinol 100 mg
+T45	NERPrediction 6950 6956	Ativan
+T46	NERPrediction 6962 6969	Proscar
+T47	NERPrediction 6985 6996	medications
+T48	NERPrediction 7001 7008	Insulin
+T49	NERPrediction 7010 7018	Protonix
+T50	NERPrediction 7098 7104	Dental

@@ -1,0 +1,27 @@
+T0	NERPrediction 333 353	1-2 minutes each and
+T1	NERPrediction 635 638	ASA
+T2	NERPrediction 640 650	metoprolol
+T3	NERPrediction 655 658	NTG
+T4	NERPrediction 1396 1404	3xCypher
+T5	NERPrediction 1904 1934	2  GERD  Pulmonary nodule    	
+T6	NERPrediction 1982 2000	atenolol   Indocin
+T7	NERPrediction 2032 2039	Lipitor
+T8	NERPrediction 2053 2076	lisinopril   omeprazole
+T9	NERPrediction 2079 2085	Plavix
+T10	NERPrediction 2120 2131	Allopurinol
+T11	NERPrediction 2373 2380	Alcohol
+T12	NERPrediction 3273 3283	NA       K
+T13	NERPrediction 3300 3303	CO2
+T14	NERPrediction 3345 3349	PHOS
+T15	NERPrediction 3354 3365	MG         
+T16	NERPrediction 3827 3834	UA-PROT
+T17	NERPrediction 3984 3992	MEAN-GLU
+T18	NERPrediction 4087 4090	UAP
+T19	NERPrediction 4533 4553	Refills:11  atenolol
+T20	NERPrediction 4585 4592	Lipitor
+T21	NERPrediction 4653 4659	Plavix
+T22	NERPrediction 4679 4701	Refills:11  omeprazole
+T23	NERPrediction 4721 4743	Refills:11  colchicine
+T24	NERPrediction 4796 4803	Indocin
+T25	NERPrediction 4853 4864	simvastatin
+T26	NERPrediction 4874 4877	qpm

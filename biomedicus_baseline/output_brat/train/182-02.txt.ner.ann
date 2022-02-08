@@ -1,0 +1,12 @@
+T1	NERPrediction 322 333	medications
+T2	NERPrediction 731 735	drug
+T3	NERPrediction 845 852	tobacco
+T4	NERPrediction 854 861	alcohol
+T5	NERPrediction 871 889	recreational drugs
+T6	NERPrediction 884 889	drugs
+T7	NERPrediction 920 927	tobacco
+T8	NERPrediction 1919 1924	color
+T9	NERPrediction 2097 2108	medications
+T10	NERPrediction 2116 2127	cholesterol
+T11	NERPrediction 2184 2195	cholesterol
+T12	NERPrediction 2455 2461	guaiac

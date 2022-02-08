@@ -1,0 +1,26 @@
+T0	NERPrediction 152 157	DM II
+T1	NERPrediction 204 213	GLYBURIDE
+T2	NERPrediction 264 268	40MG
+T3	NERPrediction 272 285	QD  DILTIAZEM
+T4	NERPrediction 290 295	180MG
+T5	NERPrediction 299 307	QD  HCTZ
+T6	NERPrediction 319 325	QD    
+T7	NERPrediction 413 415	MG
+T8	NERPrediction 423 434	QD   HYZAAR
+T9	NERPrediction 439 445	MG/100
+T10	NERPrediction 451 493	HCTZ 25MG   LOSART... 1 TAB     PO QD     
+T11	NERPrediction 550 559	glyburide
+T12	NERPrediction 777 779	MG
+T13	NERPrediction 787 798	QD   HYZAAR
+T14	NERPrediction 803 809	MG/100
+T15	NERPrediction 815 864	HCTZ 25MG   LOSART... 1 TAB     PO QD   GLYBURIDE
+T16	NERPrediction 867 869	MG
+T17	NERPrediction 1006 1013	alcohol
+T18	NERPrediction 1689 1691	DM
+T19	NERPrediction 1777 1786	glyburide
+T20	NERPrediction 1802 1811	metformin
+T21	NERPrediction 1845 1854	glyburide
+T22	NERPrediction 1920 1929	Diltiazem
+T23	NERPrediction 1983 1993	lisinopril
+T24	NERPrediction 2052 2061	Diltiazem
+T25	NERPrediction 2128 2130	DM

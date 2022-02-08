@@ -1,0 +1,45 @@
+T1	NERPrediction 429 432	MHC
+T2	NERPrediction 457 460	His
+T3	NERPrediction 691 694	His
+T4	NERPrediction 879 890	gemfibrozil
+T5	NERPrediction 895 901	niacin
+T6	NERPrediction 982 988	niacin
+T7	NERPrediction 992 1003	gemfibrozil
+T8	NERPrediction 1074 1085	Medications
+T9	NERPrediction 1091 1113	enteric coated aspirin
+T10	NERPrediction 1099 1113	coated aspirin
+T11	NERPrediction 1106 1113	aspirin
+T12	NERPrediction 1129 1138	lorazepam
+T13	NERPrediction 1217 1230	nitroglycerin
+T14	NERPrediction 1231 1238	tablets
+T15	NERPrediction 1269 1278	diltiazem
+T16	NERPrediction 2177 2190	nitroglycerin
+T17	NERPrediction 2191 2197	tablet
+T18	NERPrediction 2961 2964	MHC
+T19	NERPrediction 3485 3495	medication
+T20	NERPrediction 3507 3514	aspirin
+T21	NERPrediction 3561 3570	diltiazem
+T22	NERPrediction 3699 3706	aspirin
+T23	NERPrediction 3750 3763	nitroglycerin
+T24	NERPrediction 3764 3771	tablets
+T25	NERPrediction 3881 3890	diltiazem
+T26	NERPrediction 4520 4531	cholesterol
+T27	NERPrediction 4627 4638	gemfibrozil
+T28	NERPrediction 4643 4649	niacin
+T29	NERPrediction 4773 4784	cholesterol
+T30	NERPrediction 4789 4793	fats
+T31	NERPrediction 4832 4836	food
+T32	NERPrediction 4899 4913	with a HMG CoA
+T33	NERPrediction 4904 4913	a HMG CoA
+T34	NERPrediction 4906 4909	HMG
+T35	NERPrediction 4906 4913	HMG CoA
+T36	NERPrediction 4910 4913	CoA
+T37	NERPrediction 4961 4972	cholesterol
+T38	NERPrediction 4988 5001	triglycerides
+T39	NERPrediction 5032 5051	on simvastatin 20mg
+T40	NERPrediction 5035 5046	simvastatin
+T41	NERPrediction 5035 5051	simvastatin 20mg
+T42	NERPrediction 5128 5134	Ativan
+T43	NERPrediction 5231 5237	Ativan
+T44	NERPrediction 5473 5481	nitrogen
+T45	NERPrediction 5517 5520	MHC

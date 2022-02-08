@@ -1,0 +1,10 @@
+T1	NERPrediction 605 613	Coumadin
+T2	NERPrediction 965 971	Lantus
+T3	NERPrediction 972 979	insulin
+T4	NERPrediction 1081 1093	hypoglycemic
+T5	NERPrediction 1303 1306	BUN
+T6	NERPrediction 1921 1925	drug
+T7	NERPrediction 1969 1976	Alcohol
+T8	NERPrediction 2192 2199	insulin
+T9	NERPrediction 3227 3233	Lantus
+T10	NERPrediction 3339 3346	insulin

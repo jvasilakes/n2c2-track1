@@ -1,0 +1,33 @@
+T1	NERPrediction 37 45	Medicine
+T2	NERPrediction 114 125	Sore throat
+T3	NERPrediction 438 452	of sore throat
+T4	NERPrediction 441 452	sore throat
+T5	NERPrediction 510 517	Glucose
+T6	NERPrediction 630 633	DDD
+T7	NERPrediction 690 701	Medications
+T8	NERPrediction 703 713	Amlodipine
+T9	NERPrediction 703 718	Amlodipine 5 mg
+T10	NERPrediction 722 732	Metoprolol
+T11	NERPrediction 745 754	Valsartan
+T12	NERPrediction 755 759	HCTZ
+T13	NERPrediction 770 782	Atorvastatin
+T14	NERPrediction 770 788	Atorvastatin 20 mg
+T15	NERPrediction 789 796	Aspirin
+T16	NERPrediction 789 802	Aspirin 81 mg
+T17	NERPrediction 806 815	Metformin
+T18	NERPrediction 1444 1451	Alcohol
+T19	NERPrediction 1505 1513	caffeine
+T20	NERPrediction 1559 1565	toxins
+T21	NERPrediction 1730 1735	Smoke
+T22	NERPrediction 1786 1804	Recreational drugs
+T23	NERPrediction 1799 1804	drugs
+T24	NERPrediction 3156 3161	Nasal
+T25	NERPrediction 4743 4751	baseline
+T26	NERPrediction 4983 4990	Glucose
+T27	NERPrediction 5046 5055	metformin
+T28	NERPrediction 5073 5078	HbA1c
+T29	NERPrediction 5110 5122	atorvastatin
+T30	NERPrediction 5131 5134	LDL
+T31	NERPrediction 5205 5216	medications
+T32	NERPrediction 5323 5334	Amoxicillin
+T33	NERPrediction 5339 5350	fluticasone

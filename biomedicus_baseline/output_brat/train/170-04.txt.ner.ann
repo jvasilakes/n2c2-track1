@@ -1,0 +1,47 @@
+T1	NERPrediction 155 158	s/p
+T2	NERPrediction 635 638	ASA
+T3	NERPrediction 640 650	metoprolol
+T4	NERPrediction 863 871	Medicine
+T5	NERPrediction 1593 1609	on beta-blockers
+T6	NERPrediction 1596 1609	beta-blockers
+T7	NERPrediction 1650 1661	medications
+T8	NERPrediction 1934 1945	Medications
+T9	NERPrediction 1963 1966	ASA
+T10	NERPrediction 1982 1990	atenolol
+T11	NERPrediction 1993 2000	Indocin
+T12	NERPrediction 2032 2039	Lipitor
+T13	NERPrediction 2053 2063	lisinopril
+T14	NERPrediction 2066 2076	omeprazole
+T15	NERPrediction 2079 2085	Plavix
+T16	NERPrediction 2105 2109	Drug
+T17	NERPrediction 2105 2117	Drug allergy
+T18	NERPrediction 2120 2131	Allopurinol
+T19	NERPrediction 2357 2364	Tobacco
+T20	NERPrediction 2373 2380	Alcohol
+T21	NERPrediction 2395 2400	Drugs
+T22	NERPrediction 3202 3205	PVC
+T23	NERPrediction 3264 3268	Date
+T24	NERPrediction 3300 3303	CO2
+T25	NERPrediction 3309 3312	BUN
+T26	NERPrediction 3584 3588	Date
+T27	NERPrediction 3611 3614	HDL
+T28	NERPrediction 3620 3623	LDL
+T29	NERPrediction 3692 3696	Date
+T30	NERPrediction 3782 3786	Date
+T31	NERPrediction 3926 3930	Date
+T32	NERPrediction 3975 3979	Date
+T33	NERPrediction 4228 4231	His
+T34	NERPrediction 4475 4486	Medications
+T35	NERPrediction 4502 4512	lisinopril
+T36	NERPrediction 4502 4518	lisinopril 10 mg
+T37	NERPrediction 4545 4553	atenolol
+T38	NERPrediction 4585 4592	Lipitor
+T39	NERPrediction 4632 4637	Other
+T40	NERPrediction 4653 4659	Plavix
+T41	NERPrediction 4691 4701	omeprazole
+T42	NERPrediction 4733 4743	colchicine
+T43	NERPrediction 4733 4750	colchicine 0.6 mg
+T44	NERPrediction 4777 4780	ASA
+T45	NERPrediction 4796 4803	Indocin
+T46	NERPrediction 4853 4864	simvastatin
+T47	NERPrediction 4853 4869	simvastatin 40mg

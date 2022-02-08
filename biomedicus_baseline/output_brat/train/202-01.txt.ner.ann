@@ -1,0 +1,15 @@
+T1	NERPrediction 291 294	S/P
+T2	NERPrediction 624 628	drug
+T3	NERPrediction 854 857	His
+T4	NERPrediction 975 978	BUN
+T5	NERPrediction 986 996	creatinine
+T6	NERPrediction 1089 1095	Plavix
+T7	NERPrediction 1145 1159	coated aspirin
+T8	NERPrediction 1152 1159	aspirin
+T9	NERPrediction 1174 1181	digoxin
+T10	NERPrediction 1197 1206	glyburide
+T11	NERPrediction 1220 1230	metoprolol
+T12	NERPrediction 1245 1252	Lipitor
+T13	NERPrediction 1266 1273	Tikosyn
+T14	NERPrediction 1290 1300	Glucophage
+T15	NERPrediction 1349 1357	Coumadin

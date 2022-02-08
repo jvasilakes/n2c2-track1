@@ -1,0 +1,12 @@
+T0	NERPrediction 601 607	Biaxin
+T1	NERPrediction 631 637	Biaxin
+T2	NERPrediction 787 793	Biaxin
+T3	NERPrediction 837 843	Biaxin
+T4	NERPrediction 1931 1940	Albuterol
+T5	NERPrediction 1950 1960	glucophage
+T6	NERPrediction 1971 1978	codeine
+T7	NERPrediction 2277 2291	O2  saturation
+T8	NERPrediction 2682 2686	rubs
+T9	NERPrediction 3630 3636	Maalox
+T10	NERPrediction 3651 3655	Axid
+T11	NERPrediction 4185 4189	Axid

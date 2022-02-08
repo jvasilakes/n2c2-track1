@@ -1,0 +1,26 @@
+T1	NERPrediction 671 681	NT- proBNP
+T2	NERPrediction 684 687	His
+T3	NERPrediction 688 699	medications
+T4	NERPrediction 1172 1175	DDD
+T5	NERPrediction 1631 1638	alcohol
+T6	NERPrediction 1642 1654	illicit drug
+T7	NERPrediction 1650 1654	drug
+T8	NERPrediction 2102 2105	His
+T9	NERPrediction 2620 2623	His
+T10	NERPrediction 2624 2632	NTproBNP
+T11	NERPrediction 2721 2731	Medication
+T12	NERPrediction 2760 2780	ACETYLSALICYLIC ACID
+T13	NERPrediction 2782 2789	ASPIRIN
+T14	NERPrediction 2807 2816	Aldactone
+T15	NERPrediction 2874 2882	Fish oil
+T16	NERPrediction 2879 2882	oil
+T17	NERPrediction 2905 2914	glipizide
+T18	NERPrediction 2925 2928	BID
+T19	NERPrediction 2969 2974	Lasix
+T20	NERPrediction 2996 3006	lisinopril
+T21	NERPrediction 3026 3032	Toprol
+T22	NERPrediction 3026 3035	Toprol XL
+T23	NERPrediction 3059 3067	warfarin
+T24	NERPrediction 3183 3186	BID
+T25	NERPrediction 3196 3203	Crystal
+T26	NERPrediction 3282 3289	Crystal

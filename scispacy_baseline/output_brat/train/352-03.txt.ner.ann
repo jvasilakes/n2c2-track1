@@ -1,0 +1,35 @@
+T0	NERPrediction 28 30	CC
+T1	NERPrediction 681 684	NTG
+T2	NERPrediction 758 767	albuterol
+T3	NERPrediction 933 943	cephalexin
+T4	NERPrediction 968 971	Abx
+T5	NERPrediction 1231 1244	levothyroxine
+T6	NERPrediction 1417 1436	Albuterol inhaler  
+T7	NERPrediction 1439 1447	Atenolol
+T8	NERPrediction 1469 1478	Clonidine
+T9	NERPrediction 1495 1500	b.i.d
+T10	NERPrediction 1506 1513	Aspirin
+T11	NERPrediction 1535 1542	Flovent
+T12	NERPrediction 1562 1575	Levothyroxine
+T13	NERPrediction 1599 1609	Lisinopril
+T14	NERPrediction 1631 1640	Singulair
+T15	NERPrediction 1664 1671	Lipitor
+T16	NERPrediction 1683 1688	q.h.s
+T17	NERPrediction 1695 1702	Humulin
+T18	NERPrediction 1718 1721	qAM
+T19	NERPrediction 1728 1736	sc QPM  
+T20	NERPrediction 1740 1749	Metformin
+T21	NERPrediction 1773 1776	NTG
+T22	NERPrediction 1918 1925	alcohol
+T23	NERPrediction 2024 2031	Apperas
+T24	NERPrediction 2069 2072	MMM
+T25	NERPrediction 2111 2114	RRR
+T26	NERPrediction 2689 2704	bronchodilators
+T27	NERPrediction 2821 2829	klonopin
+T28	NERPrediction 2841 2851	fluoxetine
+T29	NERPrediction 2950 2957	glucose
+T30	NERPrediction 3144 3151	glucose
+T31	NERPrediction 3232 3237	U QPM
+T32	NERPrediction 3492 3494	DM
+T33	NERPrediction 3770 3780	fluoxetine
+T34	NERPrediction 3785 3793	Klonopin

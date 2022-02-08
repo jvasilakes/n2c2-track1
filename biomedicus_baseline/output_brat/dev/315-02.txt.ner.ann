@@ -1,0 +1,26 @@
+T1	NERPrediction 190 194	Date
+T2	NERPrediction 410 415	at 10
+T3	NERPrediction 582 587	at 10
+T4	NERPrediction 587 593	:40 pm
+T5	NERPrediction 588 593	40 pm
+T6	NERPrediction 614 617	SAH
+T7	NERPrediction 757 760	s/p
+T8	NERPrediction 791 794	s/p
+T9	NERPrediction 915 918	s/p
+T10	NERPrediction 1009 1012	BSO
+T11	NERPrediction 1089 1094	Lasix
+T12	NERPrediction 1103 1110	Norvasc
+T13	NERPrediction 1125 1132	Lipitor
+T14	NERPrediction 1148 1158	prednisone
+T15	NERPrediction 1148 1164	prednisone 10 mg
+T16	NERPrediction 1168 1174	Epogen
+T17	NERPrediction 1191 1198	Insulin
+T18	NERPrediction 1191 1202	Insulin NPH
+T19	NERPrediction 1390 1393	PRL
+T20	NERPrediction 1480 1483	RUE
+T21	NERPrediction 1614 1617	SAH
+T22	NERPrediction 1676 1679	SAH
+T23	NERPrediction 1704 1707	MCA
+T24	NERPrediction 1830 1833	BUN
+T25	NERPrediction 1930 1933	SAH
+T26	NERPrediction 1941 1944	MCA

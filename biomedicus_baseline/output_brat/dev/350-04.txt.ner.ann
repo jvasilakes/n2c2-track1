@@ -1,0 +1,37 @@
+T1	NERPrediction 766 774	Dilantin
+T2	NERPrediction 996 999	ACA
+T3	NERPrediction 1780 1787	calcium
+T4	NERPrediction 1804 1815	Medications
+T5	NERPrediction 1818 1826	atenolol
+T6	NERPrediction 1838 1842	hctz
+T7	NERPrediction 1856 1863	Lipitor
+T8	NERPrediction 1875 1886	clopidogrel
+T9	NERPrediction 1875 1891	clopidogrel 75mg
+T10	NERPrediction 1931 1941	citalopram
+T11	NERPrediction 1953 1962	glipizide
+T12	NERPrediction 1973 1979	Cozaar
+T13	NERPrediction 1992 2001	Metformin
+T14	NERPrediction 2013 2021	Dilantin
+T15	NERPrediction 2033 2039	Colace
+T16	NERPrediction 2041 2048	Calcium
+T17	NERPrediction 2050 2056	folate
+T18	NERPrediction 2058 2066	Percocet
+T19	NERPrediction 2058 2068	Percocet 5
+T20	NERPrediction 2072 2077	, 1/2
+T21	NERPrediction 2074 2077	1/2
+T22	NERPrediction 2078 2081	tab
+T23	NERPrediction 2112 2118	Valium
+T24	NERPrediction 2150 2160	Loratadine
+T25	NERPrediction 2150 2165	Loratadine 10mg
+T26	NERPrediction 2171 2180	Ibuprofen
+T27	NERPrediction 2183 2186	tab
+T28	NERPrediction 2193 2202	Trazodone
+T29	NERPrediction 3426 3433	Posture
+T30	NERPrediction 3874 3882	Dilantin
+T31	NERPrediction 4043 4046	AED
+T32	NERPrediction 4099 4107	baseline
+T33	NERPrediction 4280 4283	MEG
+T34	NERPrediction 4366 4374	Dilantin
+T35	NERPrediction 4437 4445	Dilantin
+T36	NERPrediction 4562 4570	Dilantin
+T37	NERPrediction 5268 5276	Dilantin

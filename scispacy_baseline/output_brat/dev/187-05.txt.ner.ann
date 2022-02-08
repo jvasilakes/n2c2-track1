@@ -1,0 +1,11 @@
+T0	NERPrediction 547 577	H/P/ROS/meds/exam/labs/studies
+T1	NERPrediction 1143 1158	time/date/place
+T2	NERPrediction 2198 2201	DTR
+T3	NERPrediction 2309 2318	mid-shins
+T4	NERPrediction 2721 2723	Cr
+T5	NERPrediction 2839 2851	infarct/mass
+T6	NERPrediction 3692 3709	photo-phonophobia
+T7	NERPrediction 3714 3749	f/c/ns/cp/sob/rash/weakness/changes
+T8	NERPrediction 5402 5414	homocysteine
+T9	NERPrediction 5677 5684	glucose
+T10	NERPrediction 5745 5752	sotalol

@@ -1,0 +1,38 @@
+T0	NERPrediction 1795 1805	metoprolol
+T1	NERPrediction 2119 2126	lipitor
+T2	NERPrediction 2128 2134	Diovan
+T3	NERPrediction 2136 2155	hydrochlorothiazide
+T4	NERPrediction 2157 2164	digoxin
+T5	NERPrediction 2170 2178	warfarin
+T6	NERPrediction 2200 2206	Plavix
+T7	NERPrediction 2219 2226	nitrate
+T8	NERPrediction 2580 2586	Diovan
+T9	NERPrediction 2588 2607	hydrochlorothiazide
+T10	NERPrediction 2613 2623	metoprolol
+T11	NERPrediction 2895 2902	lipitor
+T12	NERPrediction 3031 3035	Iron
+T13	NERPrediction 3358 3380	Seborrheic keratosis  
+T14	NERPrediction 3734 3741	steroid
+T15	NERPrediction 3844 3851	aspirin
+T16	NERPrediction 3865 3872	digoxin
+T17	NERPrediction 3889 3895	Diovan
+T18	NERPrediction 3953 3966	ascorbic acid
+T19	NERPrediction 3982 3989	Lipitor
+T20	NERPrediction 3997 4007	metoprolol
+T21	NERPrediction 4021 4072	Nasacort aq 55mcg/spray nasal qd 1-2 sprays/nostril
+T22	NERPrediction 4173 4179	area(s
+T23	NERPrediction 4182 4190	warfarin
+T24	NERPrediction 4267 4275	warfarin
+T25	NERPrediction 4333 4343	metoprolol
+T26	NERPrediction 4374 4381	Lipitor
+T27	NERPrediction 4397 4413	3/3/2070  Plavix
+T28	NERPrediction 4479 4489	ranitidine
+T29	NERPrediction 4560 4567	aspirin
+T30	NERPrediction 4587 4606	3/3/2070  valsartan
+T31	NERPrediction 4848 4851	qpm
+T32	NERPrediction 4937 4951	sprays/nostril
+T33	NERPrediction 5036 5043	digoxin
+T34	NERPrediction 5078 5084	Diovan
+T35	NERPrediction 6077 6112	seborrheic keratoses over the chest
+T36	NERPrediction 6280 6308	forehead  Heent   Oropharynx
+T37	NERPrediction 7098 7101	IMI

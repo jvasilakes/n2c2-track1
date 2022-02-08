@@ -1,0 +1,38 @@
+T1	NERPrediction 310 318	Medicine
+T2	NERPrediction 470 481	medications
+T3	NERPrediction 796 807	Medications
+T4	NERPrediction 809 819	Amlodipine
+T5	NERPrediction 809 825	Amlodipine 10 MG
+T6	NERPrediction 832 838	TABLET
+T7	NERPrediction 855 865	Lisinopril
+T8	NERPrediction 855 871	Lisinopril 40 MG
+T9	NERPrediction 878 884	TABLET
+T10	NERPrediction 950 959	Glipizide
+T11	NERPrediction 950 965	Glipizide 10 MG
+T12	NERPrediction 972 978	TABLET
+T13	NERPrediction 990 993	BID
+T14	NERPrediction 996 1008	Pioglitazone
+T15	NERPrediction 996 1014	Pioglitazone 15 MG
+T16	NERPrediction 1021 1027	TABLET
+T17	NERPrediction 1044 1055	Clopidogrel
+T18	NERPrediction 1044 1061	Clopidogrel 75 MG
+T19	NERPrediction 1068 1074	TABLET
+T20	NERPrediction 1091 1101	Furosemide
+T21	NERPrediction 1091 1107	Furosemide 20 MG
+T22	NERPrediction 1114 1120	TABLET
+T23	NERPrediction 1132 1135	BID
+T24	NERPrediction 1138 1146	Atenolol
+T25	NERPrediction 1138 1152	Atenolol 25 MG
+T26	NERPrediction 1159 1165	TABLET
+T27	NERPrediction 1182 1199	Ferrous GLUCONATE
+T28	NERPrediction 1182 1206	Ferrous GLUCONATE 300 MG
+T29	NERPrediction 1190 1199	GLUCONATE
+T30	NERPrediction 1210 1213	BID
+T31	NERPrediction 1229 1236	Aspirin
+T32	NERPrediction 1296 1301	drugs
+T33	NERPrediction 1305 1312	alcohol
+T34	NERPrediction 1804 1807	air
+T35	NERPrediction 2359 2368	pneumovax
+T36	NERPrediction 2369 2377	vaccines
+T37	NERPrediction 2397 2408	medications
+T38	NERPrediction 2429 2431	Be

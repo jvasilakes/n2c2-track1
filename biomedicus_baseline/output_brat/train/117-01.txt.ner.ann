@@ -1,0 +1,33 @@
+T1	NERPrediction 118 122	Date
+T2	NERPrediction 417 423	Flagyl
+T3	NERPrediction 439 453	Metoclopramide
+T4	NERPrediction 439 459	Metoclopramide 10 mg
+T5	NERPrediction 545 552	Lipitor
+T6	NERPrediction 567 575	atenolol
+T7	NERPrediction 567 581	atenolol 25 mg
+T8	NERPrediction 590 597	Zestril
+T9	NERPrediction 610 619	Glyburide
+T10	NERPrediction 626 633	tablets
+T11	NERPrediction 684 689	pills
+T12	NERPrediction 742 752	clonazepam
+T13	NERPrediction 742 757	clonazepam 1 mg
+T14	NERPrediction 776 791	, Bayer aspirin
+T15	NERPrediction 778 791	Bayer aspirin
+T16	NERPrediction 784 791	aspirin
+T17	NERPrediction 792 805	and eye drops
+T18	NERPrediction 796 805	eye drops
+T19	NERPrediction 941 944	FBS
+T20	NERPrediction 1125 1130	sugar
+T21	NERPrediction 1183 1188	pills
+T22	NERPrediction 1308 1313	pills
+T23	NERPrediction 1726 1742	: Hemoglobin A1C
+T24	NERPrediction 1728 1738	Hemoglobin
+T25	NERPrediction 1728 1742	Hemoglobin A1C
+T26	NERPrediction 1754 1757	BUN
+T27	NERPrediction 1762 1772	creatinine
+T28	NERPrediction 1912 1916	Date
+T29	NERPrediction 2087 2092	sugar
+T30	NERPrediction 2123 2128	sugar
+T31	NERPrediction 2164 2173	Glyburide
+T32	NERPrediction 2192 2197	sugar
+T33	NERPrediction 2505 2508	ANP

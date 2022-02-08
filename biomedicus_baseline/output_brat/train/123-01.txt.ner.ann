@@ -1,0 +1,8 @@
+T1	NERPrediction 247 255	ATENOLOL
+T2	NERPrediction 266 272	Tablet
+T3	NERPrediction 294 303	GLYBURIDE
+T4	NERPrediction 315 321	Tablet
+T5	NERPrediction 373 376	1/2
+T6	NERPrediction 432 435	FBS
+T7	NERPrediction 822 825	BUN
+T8	NERPrediction 881 884	ACE

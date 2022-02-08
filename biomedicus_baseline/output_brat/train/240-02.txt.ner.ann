@@ -1,0 +1,59 @@
+T1	NERPrediction 280 287	tobacco
+T2	NERPrediction 419 429	Lisinopril
+T3	NERPrediction 452 459	Lipitor
+T4	NERPrediction 487 492	lasix
+T5	NERPrediction 667 672	Other
+T6	NERPrediction 801 805	drug
+T7	NERPrediction 801 813	drug allergy
+T8	NERPrediction 820 826	Active
+T9	NERPrediction 827 838	Medications
+T10	NERPrediction 842 854	atorvastatin
+T11	NERPrediction 842 860	atorvastatin 10 mg
+T12	NERPrediction 869 879	furosemide
+T13	NERPrediction 892 902	isosorbide
+T14	NERPrediction 892 914	isosorbide mononitrate
+T15	NERPrediction 892 920	isosorbide mononitrate 30 mg
+T16	NERPrediction 931 936	K dur
+T17	NERPrediction 950 958	Levaquin
+T18	NERPrediction 973 983	lisinopril
+T19	NERPrediction 973 989	lisinopril 20 mg
+T20	NERPrediction 997 1003	Plavix
+T21	NERPrediction 1016 1025	Singulair
+T22	NERPrediction 1036 1045	terazosin
+T23	NERPrediction 1036 1051	terazosin 10 mg
+T24	NERPrediction 1066 1072	Toprol
+T25	NERPrediction 1066 1075	Toprol xl
+T26	NERPrediction 1089 1102	triamcinolone
+T27	NERPrediction 1109 1112	Top
+T28	NERPrediction 1113 1116	BID
+T29	NERPrediction 1156 1166	lisinopril
+T30	NERPrediction 1156 1172	lisinopril 20 mg
+T31	NERPrediction 1422 1429	Alcohol
+T32	NERPrediction 1847 1850	m/r
+T33	NERPrediction 2153 2160	Glucose
+T34	NERPrediction 2188 2198	Creatinine
+T35	NERPrediction 2224 2227	BUN
+T36	NERPrediction 2286 2294	Ferritin
+T37	NERPrediction 2308 2318	Folic Acid
+T38	NERPrediction 2334 2338	Iron
+T39	NERPrediction 2370 2374	Iron
+T40	NERPrediction 2375 2379	31 L
+T41	NERPrediction 2390 2393	PSA
+T42	NERPrediction 2395 2402	Monitor
+T43	NERPrediction 2418 2441	Low Density Lipoprotein
+T44	NERPrediction 2430 2441	Lipoprotein
+T45	NERPrediction 2455 2479	High Density Lipoprotein
+T46	NERPrediction 2468 2479	Lipoprotein
+T47	NERPrediction 2493 2506	Triglycerides
+T48	NERPrediction 2520 2531	Cholesterol
+T49	NERPrediction 2546 2573	Thyroid Stimulating Hormone
+T50	NERPrediction 2589 2592	PSA
+T51	NERPrediction 2594 2601	Monitor
+T52	NERPrediction 2711 2721	Lisinopril
+T53	NERPrediction 2726 2737	Cholesterol
+T54	NERPrediction 2759 2762	LDL
+T55	NERPrediction 2785 2794	Terazosin
+T56	NERPrediction 2805 2808	PSA
+T57	NERPrediction 2936 2941	Lasix
+T58	NERPrediction 2974 2977	PSA
+T59	NERPrediction 2992 3001	Pneumovax

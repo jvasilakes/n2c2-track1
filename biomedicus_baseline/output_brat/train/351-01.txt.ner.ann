@@ -1,0 +1,19 @@
+T1	NERPrediction 631 637	sugars
+T2	NERPrediction 730 736	sugars
+T3	NERPrediction 986 993	Glucose
+T4	NERPrediction 1492 1498	sugars
+T5	NERPrediction 1550 1559	glipizide
+T6	NERPrediction 1651 1661	hemoglobin
+T7	NERPrediction 1651 1665	hemoglobin A1c
+T8	NERPrediction 1697 1707	creatinine
+T9	NERPrediction 1752 1762	creatinine
+T10	NERPrediction 2145 2154	lidocaine
+T11	NERPrediction 2173 2187	of Depo-Medrol
+T12	NERPrediction 2176 2187	Depo-Medrol
+T13	NERPrediction 2181 2187	Medrol
+T14	NERPrediction 2645 2669	for Tylenol with Codeine
+T15	NERPrediction 2649 2656	Tylenol
+T16	NERPrediction 2649 2669	Tylenol with Codeine
+T17	NERPrediction 2662 2669	Codeine
+T18	NERPrediction 2709 2715	tablet
+T19	NERPrediction 2977 2980	Tel

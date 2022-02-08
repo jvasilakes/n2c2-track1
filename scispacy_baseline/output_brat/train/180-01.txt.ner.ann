@@ -1,0 +1,9 @@
+T0	NERPrediction 105 115	37523   RE
+T1	NERPrediction 640 644	Tums
+T2	NERPrediction 685 693	Premarin
+T3	NERPrediction 698 705	Provera
+T4	NERPrediction 827 837	Vancomycin
+T5	NERPrediction 1339 1346	glucose
+T6	NERPrediction 1691 1700	Cisapride
+T7	NERPrediction 1707 1710	qid
+T8	NERPrediction 1991 1999	07/23/83

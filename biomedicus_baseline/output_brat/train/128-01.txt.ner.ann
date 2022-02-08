@@ -1,0 +1,17 @@
+T1	NERPrediction 701 712	medications
+T2	NERPrediction 748 752	drug
+T3	NERPrediction 1035 1042	Norvasc
+T4	NERPrediction 1058 1068	Glucophage
+T5	NERPrediction 1090 1099	Glucotrol
+T6	NERPrediction 1119 1126	Avandia
+T7	NERPrediction 1208 1215	Lipitor
+T8	NERPrediction 1231 1238	Aspirin
+T9	NERPrediction 1231 1245	Aspirin 325 mg
+T10	NERPrediction 1271 1278	aspirin
+T11	NERPrediction 1962 1972	creatinine
+T12	NERPrediction 2003 2010	protein
+T13	NERPrediction 2069 2080	medications
+T14	NERPrediction 2104 2114	medication
+T15	NERPrediction 2357 2360	ARB
+T16	NERPrediction 2418 2425	aspirin
+T17	NERPrediction 2465 2472	aspirin

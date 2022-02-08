@@ -1,0 +1,116 @@
+T1	NERPrediction 39 47	Medicine
+T2	NERPrediction 119 123	DATE
+T3	NERPrediction 133 136	PCP
+T4	NERPrediction 203 206	s/p
+T5	NERPrediction 225 233	coumadin
+T6	NERPrediction 239 242	s/p
+T7	NERPrediction 753 756	CTX
+T8	NERPrediction 1363 1368	) s/p
+T9	NERPrediction 1365 1368	s/p
+T10	NERPrediction 1387 1395	coumadin
+T11	NERPrediction 1427 1430	s/p
+T12	NERPrediction 1626 1629	s/p
+T13	NERPrediction 1755 1765	hemoglobin
+T14	NERPrediction 1755 1767	hemoglobin S
+T15	NERPrediction 1766 1774	S - on 6
+T16	NERPrediction 1783 1785	Hb
+T17	NERPrediction 1818 1834	Artificial Tears
+T18	NERPrediction 1856 1865	Bisacodyl
+T19	NERPrediction 1867 1875	Dulcolax
+T20	NERPrediction 1912 1919	Calcium
+T21	NERPrediction 1912 1929	Calcium Carbonate
+T22	NERPrediction 1920 1929	Carbonate
+T23	NERPrediction 1942 1950	Ca++/125
+T24	NERPrediction 1961 1964	TAB
+T25	NERPrediction 1968 1971	BID
+T26	NERPrediction 1978 1988	Citalopram
+T27	NERPrediction 1990 1996	Celexa
+T28	NERPrediction 2017 2026	Clonidine
+T29	NERPrediction 2038 2041	BID
+T30	NERPrediction 2048 2056	Docusate
+T31	NERPrediction 2048 2063	Docusate Sodium
+T32	NERPrediction 2057 2063	Sodium
+T33	NERPrediction 2065 2071	Colace
+T34	NERPrediction 2085 2088	BID
+T35	NERPrediction 2095 2106	Hydralazine
+T36	NERPrediction 2095 2110	Hydralazine Hcl
+T37	NERPrediction 2132 2139	Insulin
+T38	NERPrediction 2132 2148	Insulin Glargine
+T39	NERPrediction 2140 2148	Glargine
+T40	NERPrediction 2150 2156	Lantus
+T41	NERPrediction 2182 2191	Megestrol
+T42	NERPrediction 2182 2199	Megestrol Acetate
+T43	NERPrediction 2192 2199	Acetate
+T44	NERPrediction 2200 2210	Suspension
+T45	NERPrediction 2212 2218	Megace
+T46	NERPrediction 2242 2251	Melatonin
+T47	NERPrediction 2271 2285	Metoclopramide
+T48	NERPrediction 2271 2289	Metoclopramide Hcl
+T49	NERPrediction 2291 2297	Reglan
+T50	NERPrediction 2342 2345	TAB
+T51	NERPrediction 2358 2365	Niferex
+T52	NERPrediction 2358 2369	Niferex 150
+T53	NERPrediction 2381 2384	BID
+T54	NERPrediction 2391 2401	Omeprazole
+T55	NERPrediction 2403 2411	Prilosec
+T56	NERPrediction 2432 2443	Ondansetron
+T57	NERPrediction 2444 2455	Odt (Zofran
+T58	NERPrediction 2448 2459	(Zofran Odt
+T59	NERPrediction 2449 2455	Zofran
+T60	NERPrediction 2449 2459	Zofran Odt
+T61	NERPrediction 2500 2514	Pentoxifylline
+T62	NERPrediction 2536 2548	Polyethylene
+T63	NERPrediction 2536 2555	Polyethylene Glycol
+T64	NERPrediction 2558 2565	Miralax
+T65	NERPrediction 2586 2596	Prednisone
+T66	NERPrediction 2616 2628	Propoxyphene
+T67	NERPrediction 2633 2646	Acetaminophen
+T68	NERPrediction 2655 2666	(Darvocet-N
+T69	NERPrediction 2655 2670	(Darvocet-N 100
+T70	NERPrediction 2656 2664	Darvocet
+T71	NERPrediction 2656 2666	Darvocet-N
+T72	NERPrediction 2656 2670	Darvocet-N 100
+T73	NERPrediction 2675 2678	TAB
+T74	NERPrediction 2697 2708	Propranolol
+T75	NERPrediction 2697 2712	Propranolol Hcl
+T76	NERPrediction 2714 2721	Inderal
+T77	NERPrediction 2744 2753	Verapamil
+T78	NERPrediction 2744 2757	Verapamil Hcl
+T79	NERPrediction 2779 2787	Warfarin
+T80	NERPrediction 2779 2794	Warfarin Sodium
+T81	NERPrediction 2788 2794	Sodium
+T82	NERPrediction 2796 2804	Coumadin
+T83	NERPrediction 2836 2847	Propranolol
+T84	NERPrediction 2950 2954	EtOH
+T85	NERPrediction 2956 2963	tobacco
+T86	NERPrediction 2963 2982	, and illicit drugs
+T87	NERPrediction 2965 2982	and illicit drugs
+T88	NERPrediction 2969 2982	illicit drugs
+T89	NERPrediction 2977 2982	drugs
+T90	NERPrediction 3337 3343	guaiac
+T91	NERPrediction 3406 3409	amp
+T92	NERPrediction 3547 3550	PO4
+T93	NERPrediction 3559 3561	Mg
+T94	NERPrediction 3662 3666	RBCs
+T95	NERPrediction 4029 4037	pancreas
+T96	NERPrediction 4412 4415	s/p
+T97	NERPrediction 4434 4442	coumadin
+T98	NERPrediction 4448 4451	s/p
+T99	NERPrediction 5004 5012	steroids
+T100	NERPrediction 5116 5119	UTI
+T101	NERPrediction 5405 5408	abx
+T102	NERPrediction 5450 5453	abx
+T103	NERPrediction 5495 5503	cefepime
+T104	NERPrediction 5528 5535	Culture
+T105	NERPrediction 5798 5804	guaiac
+T106	NERPrediction 5833 5839	guaiac
+T107	NERPrediction 6236 6253	anti-hypertensive
+T108	NERPrediction 6236 6260	anti-hypertensive agents
+T109	NERPrediction 6318 6329	propranolol
+T110	NERPrediction 6372 6381	clonidine
+T111	NERPrediction 6659 6666	Monitor
+T112	NERPrediction 6702 6710	warfarin
+T113	NERPrediction 6755 6757	Cr
+T114	NERPrediction 6770 6778	baseline
+T115	NERPrediction 6961 6967	Lantus
+T116	NERPrediction 7098 7106	Medicine

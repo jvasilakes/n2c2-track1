@@ -1,0 +1,60 @@
+T1	NERPrediction 28 32	Date
+T2	NERPrediction 62 70	Medicine
+T3	NERPrediction 157 161	Date
+T4	NERPrediction 510 514	food
+T5	NERPrediction 670 676	sugars
+T6	NERPrediction 1143 1150	glucose
+T7	NERPrediction 1290 1298	cefepime
+T8	NERPrediction 1300 1306	reglan
+T9	NERPrediction 1487 1496	diuretics
+T10	NERPrediction 1628 1640	/sore throat
+T11	NERPrediction 1629 1640	sore throat
+T12	NERPrediction 2167 2170	RAD
+T13	NERPrediction 2267 2278	Medications
+T14	NERPrediction 2280 2283	ASA
+T15	NERPrediction 2290 2296	Reglan
+T16	NERPrediction 2303 2313	Amlodipine
+T17	NERPrediction 2320 2327	Lipitor
+T18	NERPrediction 2335 2343	Atenolol
+T19	NERPrediction 2351 2361	Lisinopril
+T20	NERPrediction 2368 2372	HCTZ
+T21	NERPrediction 2379 2385	Folate
+T22	NERPrediction 2391 2398	Insulin
+T23	NERPrediction 2426 2431	Lasix
+T24	NERPrediction 2463 2468	lasix
+T25	NERPrediction 2531 2534	TOB
+T26	NERPrediction 2541 2545	ETOH
+T27	NERPrediction 3718 3721	CO2
+T28	NERPrediction 3784 3787	BUN
+T29	NERPrediction 4049 4054	TBILI
+T30	NERPrediction 4776 4781	TBILI
+T31	NERPrediction 7498 7510	2+        	1
+T32	NERPrediction 8281 8284	CRP
+T33	NERPrediction 8378 8390	: gram stain
+T34	NERPrediction 8380 8390	gram stain
+T35	NERPrediction 8385 8390	stain
+T36	NERPrediction 8452 8457	T   s
+T37	NERPrediction 8841 8847	zofran
+T38	NERPrediction 8880 8885	zosyn
+T39	NERPrediction 8960 8969	nafcillin
+T40	NERPrediction 9111 9120	adenosine
+T41	NERPrediction 9287 9290	1/2
+T42	NERPrediction 9309 9324	regular insulin
+T43	NERPrediction 9317 9324	insulin
+T44	NERPrediction 9373 9380	albumin
+T45	NERPrediction 9441 9444	ASA
+T46	NERPrediction 9446 9454	atenolol
+T47	NERPrediction 9456 9466	lisinopril
+T48	NERPrediction 9468 9474	statin
+T49	NERPrediction 9484 9492	baseline
+T50	NERPrediction 9493 9503	creatinine
+T51	NERPrediction 9533 9544	IV contrast
+T52	NERPrediction 9546 9552	NSAIDs
+T53	NERPrediction 9556 9566	lisinopril
+T54	NERPrediction 9637 9643	NSAIDs
+T55	NERPrediction 9656 9664	morphine
+T56	NERPrediction 9684 9687	ACD
+T57	NERPrediction 9710 9718	baseline
+T58	NERPrediction 9882 9889	5    NT
+T59	NERPrediction 9970 9976	nexium
+T60	NERPrediction 9978 9985	fragmin

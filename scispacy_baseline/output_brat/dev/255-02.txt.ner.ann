@@ -1,0 +1,58 @@
+T0	NERPrediction 51 53	DM
+T1	NERPrediction 281 283	CP
+T2	NERPrediction 323 344	radiation/diaphoresis
+T3	NERPrediction 702 707	shwed
+T4	NERPrediction 936 944	ischenia
+T5	NERPrediction 1004 1005	H
+T6	NERPrediction 1068 1071	CVA
+T7	NERPrediction 1088 1095	Humulin
+T8	NERPrediction 1111 1114	qpm
+T9	NERPrediction 1183 1191	scale-2U
+T10	NERPrediction 1267 1271	40MG
+T11	NERPrediction 1302 1316	QD   Trazodone
+T12	NERPrediction 1349 1352	qhs
+T13	NERPrediction 1357 1367	insomna   
+T14	NERPrediction 1377 1385	NAPROXEN
+T15	NERPrediction 1436 1460	TRIMETHOPRIM/POLYMYXIN B
+T16	NERPrediction 1506 1509	INH
+T17	NERPrediction 1518 1521	INH
+T18	NERPrediction 1526 1527	H
+T19	NERPrediction 1566 1569	INH
+T20	NERPrediction 1587 1597	Glucophage
+T21	NERPrediction 1602 1604	MG
+T22	NERPrediction 1614 1621	Lipitor
+T23	NERPrediction 1625 1627	MG
+T24	NERPrediction 1631 1636	QD   
+T25	NERPrediction 1713 1718	QD   
+T26	NERPrediction 1785 1798	QD   Clarinex
+T27	NERPrediction 1846 1857	QD   Plavix
+T28	NERPrediction 1875 1877	MG
+T29	NERPrediction 1881 1891	QD   Paxil
+T30	NERPrediction 1908 1910	MG
+T31	NERPrediction 1935 1948	QD   Atenolol
+T32	NERPrediction 1952 1954	MG
+T33	NERPrediction 1979 1996	QD   Flucoconzole
+T34	NERPrediction 2001 2003	MG
+T35	NERPrediction 2280 2286	RUSB  
+T36	NERPrediction 2557 2559	DM
+T37	NERPrediction 2566 2570	chol
+T38	NERPrediction 2742 2749	Humulin
+T39	NERPrediction 2772 2775	qpm
+T40	NERPrediction 2830 2840	glucophage
+T41	NERPrediction 2857 2860	ASA
+T42	NERPrediction 2862 2885	statin  --at next visit
+T43	NERPrediction 3001 3004	ASA
+T44	NERPrediction 3013 3019	Plavix
+T45	NERPrediction 3214 3222	Atenolol
+T46	NERPrediction 3285 3295	Lisinopril
+T47	NERPrediction 3320 3327	Lipitor
+T48	NERPrediction 3391 3394	ASA
+T49	NERPrediction 3427 3436	adenosine
+T50	NERPrediction 3551 3557	Celexa
+T51	NERPrediction 3590 3599	albuterol
+T52	NERPrediction 3604 3627	asthmacort    7)GI-GERD
+T53	NERPrediction 3634 3642	Protonix
+T54	NERPrediction 3874 3876	NA
+T55	NERPrediction 3883 3884	K
+T56	NERPrediction 3903 3906	CO2
+T57	NERPrediction 3931 3934	GLU

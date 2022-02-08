@@ -1,0 +1,64 @@
+T0	NERPrediction 210 225	C:516 532-0945)
+T1	NERPrediction 228 245	H:553 594-2217)  
+T2	NERPrediction 401 403	CC
+T3	NERPrediction 492 495	XRT
+T4	NERPrediction 499 527	chest for Hodgkin's lymphoma
+T5	NERPrediction 643 645	DM
+T6	NERPrediction 726 729	XRT
+T7	NERPrediction 733 761	chest for Hodgkin's lymphoma
+T8	NERPrediction 1630 1638	morphine
+T9	NERPrediction 1663 1666	TNG
+T10	NERPrediction 1672 1681	Lopressor
+T11	NERPrediction 1972 1979	heparin
+T12	NERPrediction 2086 2088	DM
+T13	NERPrediction 2097 2106	Metformin
+T14	NERPrediction 2188 2191	XRT
+T15	NERPrediction 2258 2263	chemo
+T16	NERPrediction 2624 2630	Zantac
+T17	NERPrediction 2734 2743	Metformin
+T18	NERPrediction 2764 2771	Lipitor
+T19	NERPrediction 2807 2810	PCN
+T20	NERPrediction 2837 2842	Ancef
+T21	NERPrediction 2941 2954	premedication
+T22	NERPrediction 3146 3162	coffee/day  EtOH
+T23	NERPrediction 3383 3386	HPI
+T24	NERPrediction 3724 3726	CP
+T25	NERPrediction 4182 4189	O2 Sat-
+T26	NERPrediction 4213 4216	NAD
+T27	NERPrediction 4296 4303	PERRL(A
+T28	NERPrediction 4335 4337	OP
+T29	NERPrediction 4553 4556	H2O
+T30	NERPrediction 5346 5355	mil/cmm  
+T31	NERPrediction 5405 5406	H
+T32	NERPrediction 6297 6298	H
+T33	NERPrediction 6783 6784	H
+T34	NERPrediction 6816 6820	PHOS
+T35	NERPrediction 6941 6942	H
+T36	NERPrediction 7621 7622	H
+T37	NERPrediction 7876 7877	H
+T38	NERPrediction 7956 7957	H
+T39	NERPrediction 8130 8131	H
+T40	NERPrediction 8210 8211	H
+T41	NERPrediction 8373 8393	7248B75977  Creatine
+T42	NERPrediction 8464 8472	Creatine
+T43	NERPrediction 8514 8515	H
+T44	NERPrediction 8578 8596	0.25             H
+T45	NERPrediction 8703 8706	XRT
+T46	NERPrediction 8710 8744	chest for Hodgkin's Lymphoma (2086
+T47	NERPrediction 8856 8859	ASA
+T48	NERPrediction 8861 8868	Heparin
+T49	NERPrediction 8877 8887	Integrilin
+T50	NERPrediction 9070 9073	ASA
+T51	NERPrediction 9075 9084	Lopressor
+T52	NERPrediction 9090 9097	Lipitor
+T53	NERPrediction 9110 9117	Lipitor
+T54	NERPrediction 9189 9196	Heparin
+T55	NERPrediction 9204 9214	Integrilin
+T56	NERPrediction 9232 9238	Plavix
+T57	NERPrediction 9440 9451	Lopressor  
+T58	NERPrediction 9471 9474	ARB
+T59	NERPrediction 9521 9528	Lipitor
+T60	NERPrediction 9534 9540	QD    
+T61	NERPrediction 9693 9699	Nexium
+T62	NERPrediction 9701 9708	Heparin
+T63	NERPrediction 9718 9723	DISPO

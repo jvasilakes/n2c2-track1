@@ -1,0 +1,67 @@
+T0	NERPrediction 184 186	DM
+T1	NERPrediction 200 205	Actos
+T2	NERPrediction 209 218	Metformin
+T3	NERPrediction 307 315	nitrates
+T4	NERPrediction 319 329	Lisinopril
+T5	NERPrediction 331 342	cholesterol
+T6	NERPrediction 470 481	better-less
+T7	NERPrediction 686 693	156-ate
+T8	NERPrediction 699 708	PM rice  
+T9	NERPrediction 733 742	Metformin
+T10	NERPrediction 848 859	Amoxicillin
+T11	NERPrediction 865 867	MG
+T12	NERPrediction 873 875	MG
+T13	NERPrediction 912 920	Tablet(s
+T14	NERPrediction 922 929	Aspirin
+T15	NERPrediction 956 958	MG
+T16	NERPrediction 963 965	MG
+T17	NERPrediction 1001 1009	Tablet(s
+T18	NERPrediction 1011 1019	Atenolol
+T19	NERPrediction 1023 1025	MG
+T20	NERPrediction 1067 1075	Tablet(s
+T21	NERPrediction 1077 1091	Ergocalciferol
+T22	NERPrediction 1165 1172	Lipitor
+T23	NERPrediction 1191 1193	MG
+T24	NERPrediction 1198 1200	MG
+T25	NERPrediction 1219 1222	QHS
+T26	NERPrediction 1237 1245	Tablet(s
+T27	NERPrediction 1247 1257	Lisinopril
+T28	NERPrediction 1260 1262	MG
+T29	NERPrediction 1266 1268	MG
+T30	NERPrediction 1304 1312	Tablet(s
+T31	NERPrediction 1314 1323	Metformin
+T32	NERPrediction 1328 1330	MG
+T33	NERPrediction 1336 1338	MG
+T34	NERPrediction 1385 1395	Omeprazole
+T35	NERPrediction 1399 1401	MG
+T36	NERPrediction 1406 1408	MG
+T37	NERPrediction 1448 1456	Tablet(s
+T38	NERPrediction 1594 1602	atenolol
+T39	NERPrediction 1604 1613	enalapril
+T40	NERPrediction 1618 1628	isosorbide
+T41	NERPrediction 1860 1862	Ag
+T42	NERPrediction 1914 1947	Vitamin D deficiency  Hepatitis B
+T43	NERPrediction 1982 1988	HbsAb+
+T44	NERPrediction 2034 2042	NKA    O
+T45	NERPrediction 2059 2065	160/80
+T46	NERPrediction 2110 2113	RRR
+T47	NERPrediction 2252 2255	NAD
+T48	NERPrediction 2263 2270	vaccine
+T49	NERPrediction 2374 2391	Results02/15/2080
+T50	NERPrediction 2489 2497	lt;200[2
+T51	NERPrediction 2594 2600	UCREAT
+T52	NERPrediction 2618 2619	H
+T53	NERPrediction 2799 2800	H
+T54	NERPrediction 2885 2892	HBV-SAB
+T55	NERPrediction 2904 2922	HBV-SAG Negative[1
+T56	NERPrediction 3162 3164	AK
+T57	NERPrediction 3241 3250	FinalType
+T58	NERPrediction 4380 4383	HAV
+T59	NERPrediction 4495 4505	Lisinopril
+T60	NERPrediction 4559 4569	Lisinopril
+T61	NERPrediction 4606 4624	treatment-schedule
+T62	NERPrediction 4699 4715	Vitamin D-taking
+T63	NERPrediction 4840 4861	Tdap-declined H 1 N 1
+T64	NERPrediction 4890 4891	H
+T65	NERPrediction 4921 4931	Lisinopril
+T66	NERPrediction 5225 5229	Tdap

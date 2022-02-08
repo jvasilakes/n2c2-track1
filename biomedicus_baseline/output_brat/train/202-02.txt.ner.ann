@@ -1,0 +1,38 @@
+T1	NERPrediction 482 490	Coumadin
+T2	NERPrediction 513 520	insulin
+T3	NERPrediction 722 726	drug
+T4	NERPrediction 1244 1248	drug
+T5	NERPrediction 1368 1381	nitroglycerin
+T6	NERPrediction 1652 1655	His
+T7	NERPrediction 1751 1754	His
+T8	NERPrediction 1811 1814	His
+T9	NERPrediction 1862 1865	His
+T10	NERPrediction 1986 1989	His
+T11	NERPrediction 2014 2020	sodium
+T12	NERPrediction 2029 2038	potassium
+T13	NERPrediction 2047 2050	BUN
+T14	NERPrediction 2058 2068	creatinine
+T15	NERPrediction 2078 2081	His
+T16	NERPrediction 2119 2122	His
+T17	NERPrediction 2192 2195	His
+T18	NERPrediction 2231 2242	cholesterol
+T19	NERPrediction 2255 2258	HDL
+T20	NERPrediction 2266 2269	LDL
+T21	NERPrediction 2281 2294	triglycerides
+T22	NERPrediction 2349 2360	medications
+T23	NERPrediction 2363 2369	Plavix
+T24	NERPrediction 2452 2459	aspirin
+T25	NERPrediction 2452 2466	aspirin 325 mg
+T26	NERPrediction 2547 2555	Coumadin
+T27	NERPrediction 2652 2659	Lipitor
+T28	NERPrediction 2678 2685	digoxin
+T29	NERPrediction 2678 2693	digoxin 0.25 mg
+T30	NERPrediction 2706 2713	Tikosyn
+T31	NERPrediction 2735 2744	glyburide
+T32	NERPrediction 2735 2749	glyburide 5 mg
+T33	NERPrediction 2762 2769	Avandia
+T34	NERPrediction 2787 2793	Diovan
+T35	NERPrediction 2810 2823	, NPH insulin
+T36	NERPrediction 2812 2823	NPH insulin
+T37	NERPrediction 2816 2823	insulin
+T38	NERPrediction 2861 2874	nitroglycerin

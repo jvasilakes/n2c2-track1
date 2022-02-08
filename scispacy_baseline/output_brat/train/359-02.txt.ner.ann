@@ -1,0 +1,27 @@
+T0	NERPrediction 40 42	CC
+T1	NERPrediction 64 70	toprol
+T2	NERPrediction 85 95	lisinopril
+T3	NERPrediction 187 189	DM
+T4	NERPrediction 256 258	MG
+T5	NERPrediction 275 277	QD
+T6	NERPrediction 362 382	Levothyroxine Sodium
+T7	NERPrediction 405 407	QD
+T8	NERPrediction 429 436	Lipitor
+T9	NERPrediction 438 450	ATORVASTATIN
+T10	NERPrediction 473 475	QD
+T11	NERPrediction 540 548	Tablet(s
+T12	NERPrediction 550 552	QD
+T13	NERPrediction 574 580	Toprol
+T14	NERPrediction 596 605	Succinate
+T15	NERPrediction 708 710	Ca
+T16	NERPrediction 756 762	DM    
+T17	NERPrediction 788 792	ETOH
+T18	NERPrediction 935 946	ROS  vision
+T19	NERPrediction 1419 1443	1-2              dysuria
+T20	NERPrediction 2175 2186	cholesterol
+T21	NERPrediction 2355 2358	DTR
+T22	NERPrediction 2685 2688	DTR
+T23	NERPrediction 2738 2748	A+P    HTN
+T24	NERPrediction 2785 2795	lisinopril
+T25	NERPrediction 2861 2868	lipitor
+T26	NERPrediction 2954 2967	levothyroxine

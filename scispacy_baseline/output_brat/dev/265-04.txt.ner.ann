@@ -1,0 +1,12 @@
+T0	NERPrediction 117 128	OH  49817  
+T1	NERPrediction 1265 1277	atorvastatin
+T2	NERPrediction 1308 1316	atenolol
+T3	NERPrediction 1328 1335	aspirin
+T4	NERPrediction 2226 2233	aspirin
+T5	NERPrediction 2489 2496	aspirin
+T6	NERPrediction 2498 2506	atenolol
+T7	NERPrediction 2532 2539	Lipitor
+T8	NERPrediction 3412 3420	atenolol
+T9	NERPrediction 3520 3531	cholesterol
+T10	NERPrediction 3834 3905	isenberg:74:585:40;00-10142.doc;DD:06/15/70;DT:06/16/70;DV:06/15/70    
+T11	NERPrediction 4169 4177	atenolol

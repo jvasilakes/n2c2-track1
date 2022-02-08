@@ -1,0 +1,41 @@
+T1	NERPrediction 110 114	Date
+T2	NERPrediction 341 344	s/p
+T3	NERPrediction 452 457	color
+T4	NERPrediction 595 598	His
+T5	NERPrediction 889 892	s/p
+T6	NERPrediction 978 981	abx
+T7	NERPrediction 993 998	, s/p
+T8	NERPrediction 995 998	s/p
+T9	NERPrediction 1058 1065	Lipitor
+T10	NERPrediction 1073 1078	Zetia
+T11	NERPrediction 1088 1091	ASA
+T12	NERPrediction 1099 1105	Altace
+T13	NERPrediction 1113 1121	Atenolol
+T14	NERPrediction 1129 1138	Glyburide
+T15	NERPrediction 1145 1148	BID
+T16	NERPrediction 1149 1163	Nitrofurantoin
+T17	NERPrediction 1172 1180	Taclonex
+T18	NERPrediction 1186 1191	cream
+T19	NERPrediction 1440 1445	color
+T20	NERPrediction 1494 1502	baseline
+T21	NERPrediction 1508 1511	cap
+T22	NERPrediction 2317 2323	Plasma
+T23	NERPrediction 2324 2330	Sodium
+T24	NERPrediction 2398 2404	Plasma
+T25	NERPrediction 2405 2414	Potassium
+T26	NERPrediction 2479 2485	Plasma
+T27	NERPrediction 2560 2566	Plasma
+T28	NERPrediction 2567 2573	Carbon
+T29	NERPrediction 2567 2581	Carbon Dioxide
+T30	NERPrediction 2641 2647	Plasma
+T31	NERPrediction 2648 2652	Urea
+T32	NERPrediction 2648 2661	Urea Nitrogen
+T33	NERPrediction 2653 2661	Nitrogen
+T34	NERPrediction 2721 2727	Plasma
+T35	NERPrediction 2728 2738	Creatinine
+T36	NERPrediction 2806 2812	Plasma
+T37	NERPrediction 2813 2820	Glucose
+T38	NERPrediction 2888 2895	Calcium
+T39	NERPrediction 3048 3057	Magnesium
+T40	NERPrediction 3352 3359	Heparin
+T41	NERPrediction 3360 3363	gtt

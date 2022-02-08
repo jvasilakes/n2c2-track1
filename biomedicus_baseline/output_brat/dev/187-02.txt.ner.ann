@@ -1,0 +1,36 @@
+T1	NERPrediction 164 169	Today
+T2	NERPrediction 242 267	of central nervous system
+T3	NERPrediction 245 267	central nervous system
+T4	NERPrediction 253 267	nervous system
+T5	NERPrediction 405 408	His
+T6	NERPrediction 692 712	double- stranded DNA
+T7	NERPrediction 709 712	DNA
+T8	NERPrediction 725 728	ANA
+T9	NERPrediction 875 885	prednisone
+T10	NERPrediction 911 922	medications
+T11	NERPrediction 1776 1778	As
+T12	NERPrediction 1969 1972	His
+T13	NERPrediction 1981 1992	medications
+T14	NERPrediction 2001 2009	Lamictal
+T15	NERPrediction 2011 2020	Risperdal
+T16	NERPrediction 2022 2034	testolactone
+T17	NERPrediction 2049 2056	Levoxyl
+T18	NERPrediction 2058 2064	Altace
+T19	NERPrediction 2083 2092	ibuprofen
+T20	NERPrediction 2105 2115	prednisone
+T21	NERPrediction 2145 2155	penicillin
+T22	NERPrediction 2157 2162	Lozol
+T23	NERPrediction 2179 2190	allopurinol
+T24	NERPrediction 2229 2236	Aricept
+T25	NERPrediction 2274 2284	medication
+T26	NERPrediction 2440 2447	insulin
+T27	NERPrediction 3428 3431	His
+T28	NERPrediction 3466 3485	double-stranded DNA
+T29	NERPrediction 3482 3485	DNA
+T30	NERPrediction 3717 3743	of  central nervous system
+T31	NERPrediction 3721 3743	central nervous system
+T32	NERPrediction 3729 3743	nervous system
+T33	NERPrediction 3888 3899	cholesterol
+T34	NERPrediction 3981 3992	cholesterol
+T35	NERPrediction 4069 4076	aspirin
+T36	NERPrediction 4069 4081	aspirin 81mg

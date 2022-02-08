@@ -1,0 +1,88 @@
+T1	NERPrediction 1128 1133	, s/p
+T2	NERPrediction 1130 1133	s/p
+T3	NERPrediction 1166 1169	PAF
+T4	NERPrediction 1248 1259	Medications
+T5	NERPrediction 1282 1295	acetaminophen
+T6	NERPrediction 1282 1307	acetaminophen and codeine
+T7	NERPrediction 1296 1316	and codeine (tylenol
+T8	NERPrediction 1300 1307	codeine
+T9	NERPrediction 1300 1316	codeine (tylenol
+T10	NERPrediction 1308 1329	(tylenol with codeine
+T11	NERPrediction 1309 1316	tylenol
+T12	NERPrediction 1309 1329	tylenol with codeine
+T13	NERPrediction 1309 1332	tylenol with codeine #3
+T14	NERPrediction 1322 1329	codeine
+T15	NERPrediction 1334 1341	tablets
+T16	NERPrediction 1343 1351	Alphagan
+T17	NERPrediction 1343 1353	Alphagan P
+T18	NERPrediction 1377 1384	aspirin
+T19	NERPrediction 1377 1391	aspirin  81 mg
+T20	NERPrediction 1395 1405	fosinopril
+T21	NERPrediction 1407 1417	Glucophage
+T22	NERPrediction 1430 1437	Isordil
+T23	NERPrediction 1459 1469	lisinopril
+T24	NERPrediction 1480 1489	Lopressor
+T25	NERPrediction 1497 1500	1/2
+T26	NERPrediction 1505 1518	nitroglycerin
+T27	NERPrediction 1520 1527	Norvasc
+T28	NERPrediction 1534 1537	1/2
+T29	NERPrediction 1541 1550	Pravachol
+T30	NERPrediction 1561 1568	Trusopt
+T31	NERPrediction 1586 1593	Tylenol
+T32	NERPrediction 1615 1618	-6h
+T33	NERPrediction 1616 1618	6h
+T34	NERPrediction 1657 1661	drug
+T35	NERPrediction 1657 1669	drug allergy
+T36	NERPrediction 1989 1994	smoke
+T37	NERPrediction 2004 2011	alcohol
+T38	NERPrediction 2948 2952	Date
+T39	NERPrediction 2984 2987	CO2
+T40	NERPrediction 2993 2996	BUN
+T41	NERPrediction 3350 3354	Date
+T42	NERPrediction 3442 3446	Date
+T43	NERPrediction 3469 3472	HDL
+T44	NERPrediction 3478 3481	LDL
+T45	NERPrediction 3487 3490	TSH
+T46	NERPrediction 3505 3507	T4
+T47	NERPrediction 3747 3751	Date
+T48	NERPrediction 3834 3838	Date
+T49	NERPrediction 4534 4543	adenosine
+T50	NERPrediction 4649 4659	H2 blocker
+T51	NERPrediction 4729 4732	PCP
+T52	NERPrediction 4803 4806	LDL
+T53	NERPrediction 5000 5006	statin
+T54	NERPrediction 5112 5123	Medications
+T55	NERPrediction 5142 5152	Glucophage
+T56	NERPrediction 5173 5176	tab
+T57	NERPrediction 5177 5187	lisinopril
+T58	NERPrediction 5177 5193	lisinopril 40 mg
+T59	NERPrediction 5228 5238	fosinopril
+T60	NERPrediction 5290 5297	Norvasc
+T61	NERPrediction 5303 5306	1/2
+T62	NERPrediction 5318 5321	tab
+T63	NERPrediction 5322 5335	nitroglycerin
+T64	NERPrediction 5322 5342	nitroglycerin 0.4 mg
+T65	NERPrediction 5387 5394	Isordil
+T66	NERPrediction 5407 5416	Lopressor
+T67	NERPrediction 5423 5426	1/2
+T68	NERPrediction 5439 5442	tab
+T69	NERPrediction 5443 5450	aspirin
+T70	NERPrediction 5443 5456	aspirin 81 mg
+T71	NERPrediction 5462 5475	acetaminophen
+T72	NERPrediction 5462 5487	acetaminophen and codeine
+T73	NERPrediction 5476 5496	and codeine (tylenol
+T74	NERPrediction 5480 5487	codeine
+T75	NERPrediction 5480 5496	codeine (tylenol
+T76	NERPrediction 5488 5509	(tylenol with codeine
+T77	NERPrediction 5489 5496	tylenol
+T78	NERPrediction 5489 5509	tylenol with codeine
+T79	NERPrediction 5489 5512	tylenol with codeine #3
+T80	NERPrediction 5502 5509	codeine
+T81	NERPrediction 5514 5521	tablets
+T82	NERPrediction 5592 5601	Pravachol
+T83	NERPrediction 5613 5620	Trusopt
+T84	NERPrediction 5638 5646	Alphagan
+T85	NERPrediction 5638 5648	Alphagan P
+T86	NERPrediction 5672 5679	Tylenol
+T87	NERPrediction 5701 5704	-6h
+T88	NERPrediction 5702 5704	6h

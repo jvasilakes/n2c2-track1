@@ -1,0 +1,77 @@
+T1	NERPrediction 314 319	lopid
+T2	NERPrediction 434 441	glucose
+T3	NERPrediction 677 688	medications
+T4	NERPrediction 689 700	Medications
+T5	NERPrediction 706 727	(ACETYLSALICYLIC ACID
+T6	NERPrediction 707 727	ACETYLSALICYLIC ACID
+T7	NERPrediction 735 741	TABLET
+T8	NERPrediction 749 755	Tablet
+T9	NERPrediction 786 792	Viagra
+T10	NERPrediction 786 811	Viagra (SILDENAFIL) 100MG
+T11	NERPrediction 793 811	(SILDENAFIL) 100MG
+T12	NERPrediction 794 804	SILDENAFIL
+T13	NERPrediction 794 811	SILDENAFIL) 100MG
+T14	NERPrediction 812 818	TABLET
+T15	NERPrediction 826 832	Tablet
+T16	NERPrediction 872 885	nitroglycerin
+T17	NERPrediction 887 897	Metoprolol
+T18	NERPrediction 887 906	Metoprolol TARTRATE
+T19	NERPrediction 912 918	TABLET
+T20	NERPrediction 926 932	Tablet
+T21	NERPrediction 939 942	BID
+T22	NERPrediction 945 950	Lopid
+T23	NERPrediction 952 963	GEMFIBROZIL
+T24	NERPrediction 971 977	TABLET
+T25	NERPrediction 985 991	Tablet
+T26	NERPrediction 998 1001	BID
+T27	NERPrediction 1004 1011	Lipitor
+T28	NERPrediction 1004 1031	Lipitor (ATORVASTATIN) 20MG
+T29	NERPrediction 1012 1031	(ATORVASTATIN) 20MG
+T30	NERPrediction 1013 1025	ATORVASTATIN
+T31	NERPrediction 1013 1031	ATORVASTATIN) 20MG
+T32	NERPrediction 1032 1038	TABLET
+T33	NERPrediction 1046 1052	Tablet
+T34	NERPrediction 1133 1141	Protonix
+T35	NERPrediction 1133 1161	Protonix (PANTOPRAZOLE) 40MG
+T36	NERPrediction 1142 1161	(PANTOPRAZOLE) 40MG
+T37	NERPrediction 1143 1155	PANTOPRAZOLE
+T38	NERPrediction 1143 1161	PANTOPRAZOLE) 40MG
+T39	NERPrediction 1162 1168	TABLET
+T40	NERPrediction 1179 1185	Tablet
+T41	NERPrediction 1197 1207	Folic ACID
+T42	NERPrediction 1212 1218	TABLET
+T43	NERPrediction 1226 1232	Tablet
+T44	NERPrediction 1257 1268	Penicillins
+T45	NERPrediction 1319 1327	Contrast
+T46	NERPrediction 1687 1700	illicit drugs
+T47	NERPrediction 1695 1700	drugs
+T48	NERPrediction 1839 1846	alcohol
+T49	NERPrediction 1919 1924	Other
+T50	NERPrediction 2578 2584	Rectal
+T51	NERPrediction 2587 2591	Heme
+T52	NERPrediction 2868 2873	lopid
+T53	NERPrediction 2957 2964	glucose
+T54	NERPrediction 3010 3017	glucose
+T55	NERPrediction 3121 3127	Guaiac
+T56	NERPrediction 3157 3174	Influenza Vaccine
+T57	NERPrediction 3167 3174	Vaccine
+T58	NERPrediction 3188 3199	Cholesterol
+T59	NERPrediction 3228 3234	Rectal
+T60	NERPrediction 3338 3347	Pneumovax
+T61	NERPrediction 3409 3416	Protein
+T62	NERPrediction 3546 3549	PSA
+T63	NERPrediction 3584 3591	Culture
+T64	NERPrediction 3666 3679	Triglycerides
+T65	NERPrediction 3697 3700	TSH
+T66	NERPrediction 3719 3730	Cholesterol
+T67	NERPrediction 3719 3734	Cholesterol-LDL
+T68	NERPrediction 3731 3734	LDL
+T69	NERPrediction 3915 3926	Cholesterol
+T70	NERPrediction 3915 3930	Cholesterol-HDL
+T71	NERPrediction 3927 3930	HDL
+T72	NERPrediction 3947 3950	Hgb
+T73	NERPrediction 3952 3962	Hemoglobin
+T74	NERPrediction 3982 3987	HbA1c
+T75	NERPrediction 4008 4019	Flu vaccine
+T76	NERPrediction 4012 4019	vaccine
+T77	NERPrediction 4033 4037	PE 1

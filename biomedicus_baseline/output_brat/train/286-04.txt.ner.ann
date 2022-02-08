@@ -1,0 +1,11 @@
+T1	NERPrediction 301 310	Procardia
+T2	NERPrediction 301 313	Procardia XL
+T3	NERPrediction 316 325	Lopressor
+T4	NERPrediction 328 337	Micronase
+T5	NERPrediction 340 347	Aspirin
+T6	NERPrediction 364 374	LISINOPRIL
+T7	NERPrediction 519 526	alcohol
+T8	NERPrediction 723 726	ROS
+T9	NERPrediction 966 969	S/p
+T10	NERPrediction 1519 1527	Ilotycin
+T11	NERPrediction 1841 1851	creatinine

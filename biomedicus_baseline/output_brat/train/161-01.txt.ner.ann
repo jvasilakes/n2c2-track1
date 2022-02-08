@@ -1,0 +1,28 @@
+T1	NERPrediction 1160 1167	insulin
+T2	NERPrediction 1271 1282	Medications
+T3	NERPrediction 1291 1301	Glucophage
+T4	NERPrediction 1303 1308	Lopid
+T5	NERPrediction 1310 1318	Prilosec
+T6	NERPrediction 1320 1327	Norvasc
+T7	NERPrediction 1329 1348	hydrochlorothiazide
+T8	NERPrediction 1350 1357	Lipitor
+T9	NERPrediction 1359 1366	Effexor
+T10	NERPrediction 1368 1374	Plavix
+T11	NERPrediction 1387 1394	aspirin
+T12	NERPrediction 1396 1405	albuterol
+T13	NERPrediction 1407 1415	Serevent
+T14	NERPrediction 1417 1425	Nasacort
+T15	NERPrediction 1430 1439	Pulmicort
+T16	NERPrediction 1453 1457	drug
+T17	NERPrediction 1626 1633	tobacco
+T18	NERPrediction 1653 1660	alcohol
+T19	NERPrediction 3049 3073	with intravenous heparin
+T20	NERPrediction 3054 3073	intravenous heparin
+T21	NERPrediction 3066 3073	heparin
+T22	NERPrediction 3361 3368	Tobacco
+T23	NERPrediction 3493 3504	medications
+T24	NERPrediction 3507 3510	His
+T25	NERPrediction 3688 3695	insulin
+T26	NERPrediction 3746 3752	sugars
+T27	NERPrediction 3789 3799	Glucophage
+T28	NERPrediction 4334 4337	PCP

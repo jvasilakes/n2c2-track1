@@ -1,0 +1,19 @@
+T1	NERPrediction 87 91	Date
+T2	NERPrediction 296 299	S/P
+T3	NERPrediction 976 979	S/P
+T4	NERPrediction 984 987	DES
+T5	NERPrediction 1053 1060	aspirin
+T6	NERPrediction 1069 1075	Plavix
+T7	NERPrediction 1083 1090	Lipitor
+T8	NERPrediction 1098 1103	Lopid
+T9	NERPrediction 1111 1122	, Toprol XL
+T10	NERPrediction 1113 1119	Toprol
+T11	NERPrediction 1113 1122	Toprol XL
+T12	NERPrediction 1132 1138	folate
+T13	NERPrediction 1177 1190	beta blockers
+T14	NERPrediction 1239 1246	tobacco
+T15	NERPrediction 1263 1270	alcohol
+T16	NERPrediction 1408 1410	O2
+T17	NERPrediction 1688 1691	BUN
+T18	NERPrediction 1722 1730	troponin
+T19	NERPrediction 2030 2033	S/P

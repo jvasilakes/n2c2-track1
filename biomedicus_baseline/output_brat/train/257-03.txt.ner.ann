@@ -1,0 +1,11 @@
+T1	NERPrediction 254 258	a 19
+T2	NERPrediction 900 911	medications
+T3	NERPrediction 928 935	Norvasc
+T4	NERPrediction 943 955	of Toprol-XL
+T5	NERPrediction 946 952	Toprol
+T6	NERPrediction 946 955	Toprol-XL
+T7	NERPrediction 955 977	, 20 mg of simvastatin
+T8	NERPrediction 957 977	20 mg of simvastatin
+T9	NERPrediction 966 977	simvastatin
+T10	NERPrediction 985 992	aspirin
+T11	NERPrediction 1001 1010	Plaquenil

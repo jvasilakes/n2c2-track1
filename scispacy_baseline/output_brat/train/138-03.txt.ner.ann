@@ -1,0 +1,14 @@
+T0	NERPrediction 588 591	IMI
+T1	NERPrediction 868 873	Zocor
+T2	NERPrediction 1277 1284	Aspirin
+T3	NERPrediction 1308 1314	Plavix
+T4	NERPrediction 1337 1356	Hydrochlorothiazide
+T5	NERPrediction 1374 1379	Zocor
+T6	NERPrediction 1431 1438	Lipitor
+T7	NERPrediction 1470 1480	Lisinopril
+T8	NERPrediction 1503 1512	Metformin
+T9	NERPrediction 1556 1569	Nitroglycerin
+T10	NERPrediction 2224 2230	Q-wave
+T11	NERPrediction 2415 2427	beta-blocker
+T12	NERPrediction 2756 2763	Lipitor
+T13	NERPrediction 2949 3013	eScription document:0-0320324 MEeScription       DD: 04/16/76 DT

@@ -1,0 +1,9 @@
+T1	NERPrediction 59 67	Medicine
+T2	NERPrediction 978 986	atenolol
+T3	NERPrediction 1002 1009	aspirin
+T4	NERPrediction 1025 1039	nitroglycerine
+T5	NERPrediction 1163 1171	atenolol
+T6	NERPrediction 1177 1182	Today
+T7	NERPrediction 1256 1264	atenolol
+T8	NERPrediction 1450 1461	cholesterol
+T9	NERPrediction 1497 1500	LDL

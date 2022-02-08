@@ -1,0 +1,89 @@
+T1	NERPrediction 94 98	Date
+T2	NERPrediction 126 129	PCP
+T3	NERPrediction 185 188	s/p
+T4	NERPrediction 335 338	EMS
+T5	NERPrediction 571 574	s/p
+T6	NERPrediction 712 721	diuretics
+T7	NERPrediction 737 742	lasix
+T8	NERPrediction 1146 1153	Vitamin
+T9	NERPrediction 1146 1157	Vitamin B12
+T10	NERPrediction 1283 1286	s/p
+T11	NERPrediction 1412 1415	S/P
+T12	NERPrediction 1428 1439	Medications
+T13	NERPrediction 1448 1457	Trazodone
+T14	NERPrediction 1482 1492	Olanzapine
+T15	NERPrediction 1482 1498	Olanzapine 10 mg
+T16	NERPrediction 1512 1519	Fragmin
+T17	NERPrediction 1550 1555	Lasix
+T18	NERPrediction 1574 1582	Darvocet
+T19	NERPrediction 1574 1584	Darvocet-N
+T20	NERPrediction 1574 1588	Darvocet-N 100
+T21	NERPrediction 1591 1597	tablet
+T22	NERPrediction 1625 1635	Olanzapine
+T23	NERPrediction 1636 1642	tablet
+T24	NERPrediction 1689 1698	Lopressor
+T25	NERPrediction 1721 1729	Nystatin
+T26	NERPrediction 1730 1736	powder
+T27	NERPrediction 1783 1794	Ipratropium
+T28	NERPrediction 1783 1802	Ipratropium bromide
+T29	NERPrediction 1810 1813	inh
+T30	NERPrediction 1872 1881	Albuterol
+T31	NERPrediction 1938 1945	Vitamin
+T32	NERPrediction 1938 1949	Vitamin B12
+T33	NERPrediction 1951 1965	cyanocobalamin
+T34	NERPrediction 1990 1997	Lipitor
+T35	NERPrediction 2019 2026	Tylenol
+T36	NERPrediction 2056 2065	Magnesium
+T37	NERPrediction 2056 2075	Magnesium hydroxide
+T38	NERPrediction 2066 2089	hydroxide and aluminium
+T39	NERPrediction 2076 2099	and aluminium hydroxide
+T40	NERPrediction 2080 2089	aluminium
+T41	NERPrediction 2080 2099	aluminium hydroxide
+T42	NERPrediction 2144 2149	Senna
+T43	NERPrediction 2152 2159	tablets
+T44	NERPrediction 2186 2195	Bisacodyl
+T45	NERPrediction 2196 2207	suppository
+T46	NERPrediction 2240 2246	Colace
+T47	NERPrediction 2267 2275	Psyllium
+T48	NERPrediction 2267 2281	Psyllium seeds
+T49	NERPrediction 2370 2373	TOB
+T50	NERPrediction 2390 2394	ETOH
+T51	NERPrediction 2546 2549	NAD
+T52	NERPrediction 4106 4110	GRAN
+T53	NERPrediction 4293 4296	BUN
+T54	NERPrediction 4373 4383	CREATININE
+T55	NERPrediction 4453 4459	SODIUM
+T56	NERPrediction 4533 4542	POTASSIUM
+T57	NERPrediction 4693 4707	CARBON DIOXIDE
+T58	NERPrediction 4861 4866	Color
+T59	NERPrediction 4996 5003	Glucose
+T60	NERPrediction 5398 5405	Albumin
+T61	NERPrediction 5463 5475	Urobilinogen
+T62	NERPrediction 5528 5535	Nitrite
+T63	NERPrediction 6752 6757	; S/P
+T64	NERPrediction 6754 6757	S/P
+T65	NERPrediction 6822 6826	Tape
+T66	NERPrediction 6827 6832	Color
+T67	NERPrediction 6896 6901	Color
+T68	NERPrediction 7156 7161	color
+T69	NERPrediction 7401 7406	color
+T70	NERPrediction 7703 7708	color
+T71	NERPrediction 9105 9107	BB
+T72	NERPrediction 9128 9134	statin
+T73	NERPrediction 9300 9305	Lasix
+T74	NERPrediction 9316 9318	BB
+T75	NERPrediction 9358 9360	BB
+T76	NERPrediction 9460 9469	Albuterol
+T77	NERPrediction 9470 9478	Atrovent
+T78	NERPrediction 9528 9535	Monitor
+T79	NERPrediction 9576 9584	Nystatin
+T80	NERPrediction 9585 9591	powder
+T81	NERPrediction 9619 9622	S/p
+T82	NERPrediction 9651 9654	BAD
+T83	NERPrediction 9689 9698	Trazodone
+T84	NERPrediction 9703 9713	Olanzapine
+T85	NERPrediction 9719 9729	Olanzapine
+T86	NERPrediction 9762 9770	Darvocet
+T87	NERPrediction 9857 9864	Monitor
+T88	NERPrediction 9908 9915	Lovenox
+T89	NERPrediction 9988 9991	PPI

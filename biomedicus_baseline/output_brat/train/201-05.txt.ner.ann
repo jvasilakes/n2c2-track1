@@ -1,0 +1,75 @@
+T1	NERPrediction 236 239	s/p
+T2	NERPrediction 251 254	s/p
+T3	NERPrediction 252 256	/p 8
+T4	NERPrediction 253 256	p 8
+T5	NERPrediction 311 316	% s/p
+T6	NERPrediction 313 316	s/p
+T7	NERPrediction 349 357	Coumadin
+T8	NERPrediction 362 365	ASA
+T9	NERPrediction 891 894	His
+T10	NERPrediction 1070 1073	EMS
+T11	NERPrediction 1198 1201	His
+T12	NERPrediction 1334 1337	air
+T13	NERPrediction 1637 1640	UTI
+T14	NERPrediction 1702 1705	s/p
+T15	NERPrediction 1720 1723	s/p
+T16	NERPrediction 1721 1725	/p 8
+T17	NERPrediction 1722 1725	p 8
+T18	NERPrediction 1779 1784	% s/p
+T19	NERPrediction 1781 1784	s/p
+T20	NERPrediction 1803 1806	DDD
+T21	NERPrediction 1862 1873	Medications
+T22	NERPrediction 1902 1905	ASA
+T23	NERPrediction 1918 1926	Coumadin
+T24	NERPrediction 1947 1952	Coreg
+T25	NERPrediction 1965 1977	Dipyridamole
+T26	NERPrediction 1965 1983	Dipyridamole 75 mg
+T27	NERPrediction 1988 1999	Doxycycline
+T28	NERPrediction 2036 2045	Glipizide
+T29	NERPrediction 2061 2072	Simvastatin
+T30	NERPrediction 2061 2078	Simvastatin 40 mg
+T31	NERPrediction 2085 2092	Lexapro
+T32	NERPrediction 2105 2114	Polymyxin
+T33	NERPrediction 2121 2128	Vitamin
+T34	NERPrediction 2148 2155	DIGOXIN
+T35	NERPrediction 2289 2294	smoke
+T36	NERPrediction 2297 2300	PPD
+T37	NERPrediction 2317 2324	alcohol
+T38	NERPrediction 2328 2332	drug
+T39	NERPrediction 2612 2615	air
+T40	NERPrediction 2987 2991	Extr
+T41	NERPrediction 3543 3547	Date
+T42	NERPrediction 3704 3708	Date
+T43	NERPrediction 4695 4698	RUE
+T44	NERPrediction 4731 4736	speed
+T45	NERPrediction 4793 4796	RUE
+T46	NERPrediction 5651 5657	tandem
+T47	NERPrediction 5772 5775	CO2
+T48	NERPrediction 5783 5786	BUN
+T49	NERPrediction 5893 5898	TBILI
+T50	NERPrediction 5994 5999	TBILI
+T51	NERPrediction 6027 6033	NT-BNP
+T52	NERPrediction 6482 6484	BB
+T53	NERPrediction 6539 6544	Today
+T54	NERPrediction 6761 6764	MCA
+T55	NERPrediction 6839 6844	Today
+T56	NERPrediction 6861 6866	Today
+T57	NERPrediction 6936 6939	s/p
+T58	NERPrediction 6951 6954	s/p
+T59	NERPrediction 6952 6956	/p 8
+T60	NERPrediction 6953 6956	p 8
+T61	NERPrediction 7011 7016	% s/p
+T62	NERPrediction 7013 7016	s/p
+T63	NERPrediction 7049 7057	Coumadin
+T64	NERPrediction 7062 7065	ASA
+T65	NERPrediction 7422 7427	speed
+T66	NERPrediction 7516 7519	RUE
+T67	NERPrediction 7655 7658	MCA
+T68	NERPrediction 7736 7739	MCA
+T69	NERPrediction 8159 8167	tomorrow
+T70	NERPrediction 8349 8357	baseline
+T71	NERPrediction 8459 8462	SBP
+T72	NERPrediction 8801 8804	CRP
+T73	NERPrediction 8855 8863	Factor X
+T74	NERPrediction 8923 8928	sugar
+T75	NERPrediction 8955 8962	glucose

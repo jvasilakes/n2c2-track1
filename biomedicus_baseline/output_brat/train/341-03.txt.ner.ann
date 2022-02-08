@@ -1,0 +1,66 @@
+T1	NERPrediction 36 44	Medicine
+T2	NERPrediction 112 116	DATE
+T3	NERPrediction 160 163	PCP
+T4	NERPrediction 942 945	FDG
+T5	NERPrediction 1249 1251	Ca
+T6	NERPrediction 1321 1324	ACE
+T7	NERPrediction 1339 1342	TSH
+T8	NERPrediction 1386 1400	gamma globulin
+T9	NERPrediction 1392 1400	globulin
+T10	NERPrediction 1420 1423	ANA
+T11	NERPrediction 1615 1618	HIV
+T12	NERPrediction 1672 1677	lasix
+T13	NERPrediction 1702 1716	bisphosphonate
+T14	NERPrediction 1983 1987	CD19
+T15	NERPrediction 1998 2001	CD4
+T16	NERPrediction 2007 2010	CD8
+T17	NERPrediction 2790 2807	Fungal antibodies
+T18	NERPrediction 2797 2807	antibodies
+T19	NERPrediction 2834 2842	steroids
+T20	NERPrediction 3050 3055	water
+T21	NERPrediction 3503 3514	medications
+T22	NERPrediction 4100 4102	O2
+T23	NERPrediction 4308 4311	TAB
+T24	NERPrediction 4318 4338	Acetylsalicylic Acid
+T25	NERPrediction 4340 4347	Aspirin
+T26	NERPrediction 4363 4375	Atorvastatin
+T27	NERPrediction 4363 4392	Atorvastatin (Lipitor ) 40 MG
+T28	NERPrediction 4377 4384	Lipitor
+T29	NERPrediction 4399 4409	Sennosides
+T30	NERPrediction 4411 4416	Senna
+T31	NERPrediction 4417 4424	Tablets
+T32	NERPrediction 4429 4432	TAB
+T33	NERPrediction 4436 4439	BID
+T34	NERPrediction 4459 4467	Docusate
+T35	NERPrediction 4459 4474	Docusate Sodium
+T36	NERPrediction 4468 4474	Sodium
+T37	NERPrediction 4476 4482	Colace
+T38	NERPrediction 4518 4528	Metoprolol
+T39	NERPrediction 4518 4537	Metoprolol Tartrate
+T40	NERPrediction 4529 4537	Tartrate
+T41	NERPrediction 4539 4548	Lopressor
+T42	NERPrediction 4564 4574	Omeprazole
+T43	NERPrediction 4576 4584	Prilosec
+T44	NERPrediction 4599 4608	Verapamil
+T45	NERPrediction 4599 4612	Verapamil Hcl
+T46	NERPrediction 4626 4636	Nifedipine
+T47	NERPrediction 4637 4655	(Sustained Release
+T48	NERPrediction 4638 4655	Sustained Release
+T49	NERPrediction 4694 4698	EtOH
+T50	NERPrediction 4705 4710	drugs
+T51	NERPrediction 5372 5376	Extr
+T52	NERPrediction 5846 5849	CO2
+T53	NERPrediction 5912 5915	BUN
+T54	NERPrediction 6111 6116	TBILI
+T55	NERPrediction 6718 6723	113(H
+T56	NERPrediction 6773 6778	TBILI
+T57	NERPrediction 8958 8961	APP
+T58	NERPrediction 10302 10314	in vitamin D
+T59	NERPrediction 10305 10312	vitamin
+T60	NERPrediction 10305 10314	vitamin D
+T61	NERPrediction 10596 10599	ARF
+T62	NERPrediction 10694 10699	) s/p
+T63	NERPrediction 10696 10699	s/p
+T64	NERPrediction 10717 10719	D5
+T65	NERPrediction 10723 10725	NS
+T66	NERPrediction 11005 11008	TSH

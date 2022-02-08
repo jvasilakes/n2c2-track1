@@ -1,0 +1,43 @@
+T0	NERPrediction 152 176	Dailey     ID/CC:75 YO M
+T1	NERPrediction 202 205	HPI
+T2	NERPrediction 580 583	gas
+T3	NERPrediction 599 606	aspirin
+T4	NERPrediction 621 635	nitroglycerine
+T5	NERPrediction 1316 1318	CP
+T6	NERPrediction 2121 2130	glipizide
+T7	NERPrediction 2144 2154	lisinopril
+T8	NERPrediction 2163 2180	QD  nitroglycerin
+T9	NERPrediction 2204 2214	metoprolol
+T10	NERPrediction 2223 2226	bid
+T11	NERPrediction 2229 2241	atorvastatin
+T12	NERPrediction 2256 2264	psyllium
+T13	NERPrediction 2287 2297	psyllium  
+T14	NERPrediction 2297 2304	aspirin
+T15	NERPrediction 2354 2369	sodium chloride
+T16	NERPrediction 2388 2391	qid
+T17	NERPrediction 2395 2408	amitriptyline
+T18	NERPrediction 2418 2421	qhs
+T19	NERPrediction 2424 2428	Iron
+T20	NERPrediction 2472 2478	Colace
+T21	NERPrediction 2516 2523	Tylenol
+T22	NERPrediction 2646 2650	EtOH
+T23	NERPrediction 2755 2757	FH
+T24	NERPrediction 2770 2772	DM
+T25	NERPrediction 2876 2880	96%=
+T26	NERPrediction 2895 2898	NAD
+T27	NERPrediction 2907 2912	NC/AT
+T28	NERPrediction 2940 2949	OP w/ MMM
+T29	NERPrediction 3381 3448	NA        	136       	          	          	          	            
+T30	NERPrediction 3448 3459	K         	
+T31	NERPrediction 3582 3593	CO2       	
+T32	NERPrediction 3783 3800	GLU       	156(H)
+T33	NERPrediction 3986 3992	CKMBRI
+T34	NERPrediction 4525 4536	MCH       	
+T35	NERPrediction 5109 5111	CP
+T36	NERPrediction 5127 5129	Pt
+T37	NERPrediction 5133 5135	CP
+T38	NERPrediction 5292 5294	DM
+T39	NERPrediction 5357 5360	ASA
+T40	NERPrediction 5505 5511	nexium
+T41	NERPrediction 5513 5520	fragmin
+T42	NERPrediction 5588 5598	#45803    

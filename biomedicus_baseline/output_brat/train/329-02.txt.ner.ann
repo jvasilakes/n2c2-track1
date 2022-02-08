@@ -1,0 +1,113 @@
+T1	NERPrediction 113 117	Date
+T2	NERPrediction 163 166	PCP
+T3	NERPrediction 199 207	Keystone
+T4	NERPrediction 812 827	to be in the 80
+T5	NERPrediction 815 827	be in the 80
+T6	NERPrediction 846 849	EMS
+T7	NERPrediction 1255 1266	Hydralazine
+T8	NERPrediction 1268 1272	HCTZ
+T9	NERPrediction 1274 1284	Lisinopril
+T10	NERPrediction 1290 1299	Labetalol
+T11	NERPrediction 1325 1333	Atenolol
+T12	NERPrediction 1338 1347	Terazosin
+T13	NERPrediction 1418 1426	Atenolol
+T14	NERPrediction 1428 1437	Terazosin
+T15	NERPrediction 1439 1443	HCTZ
+T16	NERPrediction 1449 1459	Lisinopril
+T17	NERPrediction 1558 1560	Na
+T18	NERPrediction 1587 1589	Cr
+T19	NERPrediction 1596 1604	baseline
+T20	NERPrediction 1745 1751	guaiac
+T21	NERPrediction 2003 2005	NS
+T22	NERPrediction 2038 2048	Vancomycin
+T23	NERPrediction 2053 2061	Cefepime
+T24	NERPrediction 2430 2442	Levofloxacin
+T25	NERPrediction 2522 2525	Abx
+T26	NERPrediction 2566 2569	med
+T27	NERPrediction 3023 3036	Acetaminophen
+T28	NERPrediction 3038 3045	Tylenol
+T29	NERPrediction 3077 3097	Acetylsalicylic Acid
+T30	NERPrediction 3098 3115	(Aspirin )  81 MG
+T31	NERPrediction 3099 3106	Aspirin
+T32	NERPrediction 3099 3115	Aspirin )  81 MG
+T33	NERPrediction 3127 3135	Atenolol
+T34	NERPrediction 3154 3168	Cyanocobalamin
+T35	NERPrediction 3169 3181	(Vitamin B12
+T36	NERPrediction 3170 3177	Vitamin
+T37	NERPrediction 3170 3181	Vitamin B12
+T38	NERPrediction 3205 3213	Docusate
+T39	NERPrediction 3205 3220	Docusate Sodium
+T40	NERPrediction 3214 3220	Sodium
+T41	NERPrediction 3222 3228	Colace
+T42	NERPrediction 3242 3245	BID
+T43	NERPrediction 3251 3270	Hydrochlorothiazide
+T44	NERPrediction 3289 3300	Ipratropium
+T45	NERPrediction 3312 3320	Atrovent
+T46	NERPrediction 3358 3368	Lisinopril
+T47	NERPrediction 3387 3396	Memantine
+T48	NERPrediction 3398 3405	Namenda
+T49	NERPrediction 3418 3421	BID
+T50	NERPrediction 3426 3437	Methimazole
+T51	NERPrediction 3454 3464	Miconazole
+T52	NERPrediction 3454 3472	Miconazole Nitrate
+T53	NERPrediction 3476 3482	Powder
+T54	NERPrediction 3531 3534	TAB
+T55	NERPrediction 3545 3555	Omeprazole
+T56	NERPrediction 3557 3565	Prilosec
+T57	NERPrediction 3578 3581	BID
+T58	NERPrediction 3586 3598	Polyethylene
+T59	NERPrediction 3586 3605	Polyethylene Glycol
+T60	NERPrediction 3608 3615	Miralax
+T61	NERPrediction 3639 3650	Simvastatin
+T62	NERPrediction 3639 3657	Simvastatin  80 MG
+T63	NERPrediction 3668 3677	Terazosin
+T64	NERPrediction 3668 3681	Terazosin Hcl
+T65	NERPrediction 3700 3709	Trazodone
+T66	NERPrediction 3931 3935	EtOH
+T67	NERPrediction 4328 4331	NAD
+T68	NERPrediction 4612 4615	m/r
+T69	NERPrediction 4682 4688	guaiac
+T70	NERPrediction 4699 4703	Extr
+T71	NERPrediction 4893 4896	DTR
+T72	NERPrediction 4982 4988	Plasma
+T73	NERPrediction 4989 4995	Sodium
+T74	NERPrediction 5063 5069	Plasma
+T75	NERPrediction 5070 5079	Potassium
+T76	NERPrediction 5144 5150	Plasma
+T77	NERPrediction 5177 5195	86               L
+T78	NERPrediction 5225 5231	Plasma
+T79	NERPrediction 5232 5238	Carbon
+T80	NERPrediction 5232 5246	Carbon Dioxide
+T81	NERPrediction 5306 5313	Calcium
+T82	NERPrediction 5466 5475	Magnesium
+T83	NERPrediction 5546 5552	Plasma
+T84	NERPrediction 5553 5557	Urea
+T85	NERPrediction 5553 5566	Urea Nitrogen
+T86	NERPrediction 5558 5566	Nitrogen
+T87	NERPrediction 5626 5632	Plasma
+T88	NERPrediction 5633 5643	Creatinine
+T89	NERPrediction 5798 5804	Plasma
+T90	NERPrediction 5805 5812	Glucose
+T91	NERPrediction 6857 6862	Monos
+T92	NERPrediction 7256 7261	Monos
+T93	NERPrediction 7874 7881	Brain 2
+T94	NERPrediction 9174 9177	med
+T95	NERPrediction 9841 9847	guaiac
+T96	NERPrediction 9914 9922	Cefepime
+T97	NERPrediction 10129 10138	Labetalol
+T98	NERPrediction 10143 10154	Hydralazine
+T99	NERPrediction 10172 10176	ACEi
+T100	NERPrediction 10178 10182	HCTZ
+T101	NERPrediction 10220 10228	baseline
+T102	NERPrediction 10240 10249	Terazosin
+T103	NERPrediction 10265 10271	gentle
+T104	NERPrediction 10400 10406	guaiac
+T105	NERPrediction 10428 10434	guaiac
+T106	NERPrediction 10486 10490	iron
+T107	NERPrediction 10592 10600	baseline
+T108	NERPrediction 10602 10605	BUN
+T109	NERPrediction 10758 10764	gentle
+T110	NERPrediction 10803 10808	Other
+T111	NERPrediction 10811 10818	heparin
+T112	NERPrediction 10823 10826	PPI
+T113	NERPrediction 10880 10888	tomorrow

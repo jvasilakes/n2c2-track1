@@ -1,0 +1,22 @@
+T1	NERPrediction 584 590	/10 CP
+T2	NERPrediction 585 590	10 CP
+T3	NERPrediction 1133 1142	Augmentin
+T4	NERPrediction 1162 1170	Prilosec
+T5	NERPrediction 1181 1189	estrogen
+T6	NERPrediction 1181 1195	estrogen patch
+T7	NERPrediction 1190 1195	patch
+T8	NERPrediction 1229 1232	ASA
+T9	NERPrediction 1244 1252	Morphine
+T10	NERPrediction 1254 1264	Integrilin
+T11	NERPrediction 1265 1268	gtt
+T12	NERPrediction 1284 1287	gtt
+T13	NERPrediction 1288 1295	Heparin
+T14	NERPrediction 1296 1299	gtt
+T15	NERPrediction 1529 1536	alcohol
+T16	NERPrediction 2861 2864	amp
+T17	NERPrediction 2941 2944	BUN
+T18	NERPrediction 2957 2960	Glu
+T19	NERPrediction 2984 2987	Hgb
+T20	NERPrediction 3119 3136	cigarette smoking
+T21	NERPrediction 3499 3510	medications
+T22	NERPrediction 3522 3532	Anxiolytic

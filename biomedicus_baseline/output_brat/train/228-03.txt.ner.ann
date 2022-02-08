@@ -1,0 +1,11 @@
+T1	NERPrediction 119 128	Procardia
+T2	NERPrediction 119 131	Procardia XL
+T3	NERPrediction 264 273	Procardia
+T4	NERPrediction 654 671	other medications
+T5	NERPrediction 660 671	medications
+T6	NERPrediction 733 750	immediate release
+T7	NERPrediction 751 761	Nifedipine
+T8	NERPrediction 766 779	Nitroglycerin
+T9	NERPrediction 1067 1076	Procardia
+T10	NERPrediction 1067 1079	Procardia XL
+T11	NERPrediction 1121 1132	medications

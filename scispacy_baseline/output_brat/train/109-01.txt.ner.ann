@@ -1,0 +1,22 @@
+T0	NERPrediction 341 362	QD  Albuterol Inhaler
+T1	NERPrediction 370 373	INH
+T2	NERPrediction 403 411	Premarin
+T3	NERPrediction 457 467	QOD  K-dur
+T4	NERPrediction 469 472	KCL
+T5	NERPrediction 484 489	10MEQ
+T6	NERPrediction 506 508	QD
+T7	NERPrediction 530 537	Lipitor
+T8	NERPrediction 539 551	ATORVASTATIN
+T9	NERPrediction 553 557	10MG
+T10	NERPrediction 574 582	QD  Hctz
+T11	NERPrediction 626 640	QD  LISINOPRIL
+T12	NERPrediction 662 664	QD
+T13	NERPrediction 711 717	Sodium
+T14	NERPrediction 719 724	25MCG
+T15	NERPrediction 741 751	QD  Celexa
+T16	NERPrediction 765 769	40MG
+T17	NERPrediction 806 815	Halothane
+T18	NERPrediction 1408 1411	qns
+T19	NERPrediction 1501 1507	Keflex
+T20	NERPrediction 1512 1515	qid
+T21	NERPrediction 1732 1742	lisinopril

@@ -1,0 +1,42 @@
+T1	NERPrediction 598 601	IgA
+T2	NERPrediction 602 613	paraprotein
+T3	NERPrediction 795 806	Medications
+T4	NERPrediction 817 827	lisinopril
+T5	NERPrediction 831 841	once a day
+T6	NERPrediction 843 850	Proscar
+T7	NERPrediction 853 863	once a day
+T8	NERPrediction 865 871	Flomax
+T9	NERPrediction 873 880	aspirin
+T10	NERPrediction 885 895	once a day
+T11	NERPrediction 897 905	atenolol
+T12	NERPrediction 909 919	once a day
+T13	NERPrediction 921 930	trazodone
+T14	NERPrediction 932 938	folate
+T15	NERPrediction 943 957	, saw palmetto
+T16	NERPrediction 945 957	saw palmetto
+T17	NERPrediction 959 970	glucosamine
+T18	NERPrediction 972 980	selenium
+T19	NERPrediction 980 991	, vitamin C
+T20	NERPrediction 980 1003	, vitamin C and vitamin
+T21	NERPrediction 982 989	vitamin
+T22	NERPrediction 982 991	vitamin C
+T23	NERPrediction 982 1003	vitamin C and vitamin
+T24	NERPrediction 990 1003	C and vitamin
+T25	NERPrediction 992 1005	and vitamin D
+T26	NERPrediction 996 1003	vitamin
+T27	NERPrediction 996 1005	vitamin D
+T28	NERPrediction 1007 1014	Lipitor
+T29	NERPrediction 1021 1031	once a day
+T30	NERPrediction 1037 1043	Plavix
+T31	NERPrediction 1047 1057	once a day
+T32	NERPrediction 1367 1370	BUN
+T33	NERPrediction 1375 1385	creatinine
+T34	NERPrediction 1727 1730	IgA
+T35	NERPrediction 1731 1742	paraprotein
+T36	NERPrediction 2203 2213	creatinine
+T37	NERPrediction 2239 2246	protein
+T38	NERPrediction 2482 2489	protein
+T39	NERPrediction 2494 2501	albumin
+T40	NERPrediction 2538 2549	angiotensin
+T41	NERPrediction 2574 2580	Cozaar
+T42	NERPrediction 2845 2848	Tel

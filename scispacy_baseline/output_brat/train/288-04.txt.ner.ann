@@ -1,0 +1,22 @@
+T0	NERPrediction 1028 1034	Imuran
+T1	NERPrediction 1039 1049	Prednisone
+T2	NERPrediction 1285 1292	steroid
+T3	NERPrediction 1827 1839	levofloxacin
+T4	NERPrediction 1921 1929	Premarin
+T5	NERPrediction 1936 1945	Neurontin
+T6	NERPrediction 1962 1971	Miacalcin
+T7	NERPrediction 1986 1993	Provera
+T8	NERPrediction 2011 2016	25mcg
+T9	NERPrediction 2018 2025	Digoxin
+T10	NERPrediction 2034 2042	Cardizem
+T11	NERPrediction 2060 2066	Imuran
+T12	NERPrediction 2080 2089	Lopressor
+T13	NERPrediction 2108 2125	calcium carbonate
+T14	NERPrediction 2152 2159	Isordil
+T15	NERPrediction 2248 2258	penicillin
+T16	NERPrediction 2270 2276	sulfur
+T17	NERPrediction 2282 2296	cephalosporins
+T18	NERPrediction 2336 2346	Prednisone
+T19	NERPrediction 2433 2442	Humulin N
+T20	NERPrediction 4372 4386	antidepressant
+T21	NERPrediction 4516 4520	SSRI

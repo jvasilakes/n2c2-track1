@@ -1,0 +1,36 @@
+T1	NERPrediction 348 351	s/p
+T2	NERPrediction 373 378	, s/p
+T3	NERPrediction 375 378	s/p
+T4	NERPrediction 443 446	s/p
+T5	NERPrediction 468 478	Medication
+T6	NERPrediction 479 489	Prednisone
+T7	NERPrediction 479 496	Prednisone 2.5 mg
+T8	NERPrediction 509 517	Dilantin
+T9	NERPrediction 538 546	Tegretol
+T10	NERPrediction 566 576	Nephrocaps
+T11	NERPrediction 579 585	tablet
+T12	NERPrediction 597 602	Paxil
+T13	NERPrediction 622 630	Percocet
+T14	NERPrediction 635 642	tablets
+T15	NERPrediction 681 688	demerol
+T16	NERPrediction 693 701	levaquin
+T17	NERPrediction 807 810	ROS
+T18	NERPrediction 987 996	SKIN: dry
+T19	NERPrediction 1445 1451	Plasma
+T20	NERPrediction 1452 1458	Sodium
+T21	NERPrediction 1529 1535	Plasma
+T22	NERPrediction 1536 1545	Potassium
+T23	NERPrediction 1613 1619	Plasma
+T24	NERPrediction 1697 1703	Plasma
+T25	NERPrediction 1704 1710	Carbon
+T26	NERPrediction 1704 1718	Carbon Dioxide
+T27	NERPrediction 1781 1787	Plasma
+T28	NERPrediction 1788 1792	Urea
+T29	NERPrediction 1788 1801	Urea Nitrogen
+T30	NERPrediction 1793 1801	Nitrogen
+T31	NERPrediction 1793 1816	Nitrogen             13
+T32	NERPrediction 1864 1870	Plasma
+T33	NERPrediction 1871 1881	Creatinine
+T34	NERPrediction 1947 1953	Plasma
+T35	NERPrediction 1954 1961	Glucose
+T36	NERPrediction 1980 1998	67               L

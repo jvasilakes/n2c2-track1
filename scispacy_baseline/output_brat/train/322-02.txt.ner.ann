@@ -1,0 +1,8 @@
+T0	NERPrediction 355 366	cholesterol
+T1	NERPrediction 1134 1143	glipizide
+T2	NERPrediction 1145 1150	Zocor
+T3	NERPrediction 1152 1160	atenolol
+T4	NERPrediction 1345 1358	O2 saturation
+T5	NERPrediction 1955 1964	troponins
+T6	NERPrediction 1970 1975	SMA-7
+T7	NERPrediction 1982 1991	magnesium

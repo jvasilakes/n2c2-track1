@@ -1,0 +1,33 @@
+T0	NERPrediction 290 303	5/22/80   HPI
+T1	NERPrediction 306 308	Pt
+T2	NERPrediction 428 436	RLE pain
+T3	NERPrediction 795 797	DM
+T4	NERPrediction 798 801	PVD
+T5	NERPrediction 802 805	LLE
+T6	NERPrediction 870 873	RLE
+T7	NERPrediction 1058 1065	Lipitor
+T8	NERPrediction 1069 1072	qpm
+T9	NERPrediction 1073 1078	Zetia
+T10	NERPrediction 1084 1087	qpm
+T11	NERPrediction 1088 1091	ASA
+T12	NERPrediction 1095 1098	qam
+T13	NERPrediction 1099 1105	Altace
+T14	NERPrediction 1109 1112	qam
+T15	NERPrediction 1113 1121	Atenolol
+T16	NERPrediction 1125 1128	qam
+T17	NERPrediction 1129 1138	Glyburide
+T18	NERPrediction 1149 1163	Nitrofurantoin
+T19	NERPrediction 1186 1191	cream
+T20	NERPrediction 1215 1218	NAD
+T21	NERPrediction 1219 1223	CTAB
+T22	NERPrediction 1234 1236	ND
+T23	NERPrediction 2324 2330	Sodium
+T24	NERPrediction 2405 2414	Potassium
+T25	NERPrediction 2567 2573	Carbon
+T26	NERPrediction 2648 2652	Urea
+T27	NERPrediction 2728 2738	Creatinine
+T28	NERPrediction 2813 2820	Glucose
+T29	NERPrediction 2856 2857	H
+T30	NERPrediction 2888 2895	Calcium
+T31	NERPrediction 3048 3057	Magnesium
+T32	NERPrediction 3352 3359	Heparin

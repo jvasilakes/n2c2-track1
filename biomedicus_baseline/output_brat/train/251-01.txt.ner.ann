@@ -1,0 +1,26 @@
+T1	NERPrediction 414 417	PCP
+T2	NERPrediction 929 935	proven
+T3	NERPrediction 1705 1709	food
+T4	NERPrediction 1963 1967	ETOH
+T5	NERPrediction 2882 2893	Medications
+T6	NERPrediction 2896 2904	Atenolol
+T7	NERPrediction 2896 2910	Atenolol 50 mg
+T8	NERPrediction 2915 2926	Triamterene
+T9	NERPrediction 2927 2931	HCTZ
+T10	NERPrediction 2942 2949	Vitamin
+T11	NERPrediction 2942 2951	Vitamin B
+T12	NERPrediction 2942 2959	Vitamin B Complex
+T13	NERPrediction 2950 2959	B Complex
+T14	NERPrediction 2950 2963	B Complex 100
+T15	NERPrediction 2970 2980	Folic Acid
+T16	NERPrediction 2970 2985	Folic Acid 1 mg
+T17	NERPrediction 2990 2994	Iron
+T18	NERPrediction 2990 3002	Iron Sulfate
+T19	NERPrediction 3005 3008	tab
+T20	NERPrediction 3009 3012	BID
+T21	NERPrediction 3014 3021	Lipitor
+T22	NERPrediction 3033 3042	Terazosin
+T23	NERPrediction 3033 3047	Terazosin 5 mg
+T24	NERPrediction 3052 3062	Lisinopril
+T25	NERPrediction 3052 3069	Lisinopril 2.5 mg
+T26	NERPrediction 3108 3115	Codeine

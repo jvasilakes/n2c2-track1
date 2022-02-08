@@ -1,0 +1,14 @@
+T0	NERPrediction 92 95	VIT
+T1	NERPrediction 136 139	VIT
+T2	NERPrediction 186 189	VIT
+T3	NERPrediction 256 259	HCL
+T4	NERPrediction 314 318	30MG
+T5	NERPrediction 335 340	QD   
+T6	NERPrediction 382 387	QD   
+T7	NERPrediction 423 428	QD   
+T8	NERPrediction 438 446	NAPROXEN
+T9	NERPrediction 487 496	ENALAPRIL
+T10	NERPrediction 661 665	40MG
+T11	NERPrediction 1610 1616	HGBAIC
+T12	NERPrediction 1731 1738	smoking
+T13	NERPrediction 1743 1750	alcohol

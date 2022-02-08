@@ -1,0 +1,71 @@
+T1	NERPrediction 50 58	Medicine
+T2	NERPrediction 373 376	TAB
+T3	NERPrediction 377 380	BSO
+T4	NERPrediction 1046 1053	Glucose
+T5	NERPrediction 1276 1280	Iron
+T6	NERPrediction 1313 1324	Medications
+T7	NERPrediction 1326 1333	vitamin
+T8	NERPrediction 1326 1335	vitamin d
+T9	NERPrediction 1334 1339	d 400
+T10	NERPrediction 1355 1367	tetracycline
+T11	NERPrediction 1383 1390	Nizoral
+T12	NERPrediction 1391 1396	cream
+T13	NERPrediction 1464 1474	lisinopril
+T14	NERPrediction 1464 1480	lisinopril 30 mg
+T15	NERPrediction 1490 1498	Prilosec
+T16	NERPrediction 1513 1522	potassium
+T17	NERPrediction 1513 1531	potassium chloride
+T18	NERPrediction 1547 1566	hydrochlorothiazide
+T19	NERPrediction 1547 1574	hydrochlorothiazide 12.5 mg
+T20	NERPrediction 1594 1605	medications
+T21	NERPrediction 1662 1673	simvastatin
+T22	NERPrediction 1662 1678	simvastatin 20mg
+T23	NERPrediction 1686 1694	Klonopin
+T24	NERPrediction 1708 1714	Celexa
+T25	NERPrediction 1729 1740	mirtazapine
+T26	NERPrediction 1760 1768	Seroquel
+T27	NERPrediction 1787 1795	Tegretol
+T28	NERPrediction 2048 2055	tobacco
+T29	NERPrediction 2061 2068	alcohol
+T30	NERPrediction 2208 2210	O2
+T31	NERPrediction 2463 2469	Plasma
+T32	NERPrediction 2470 2476	Sodium
+T33	NERPrediction 2491 2497	Plasma
+T34	NERPrediction 2498 2507	Potassium
+T35	NERPrediction 2522 2528	Plasma
+T36	NERPrediction 2553 2559	Plasma
+T37	NERPrediction 2560 2566	Carbon
+T38	NERPrediction 2560 2574	Carbon Dioxide
+T39	NERPrediction 2675 2680	104 H
+T40	NERPrediction 2691 2706	Total Bilirubin
+T41	NERPrediction 2697 2706	Bilirubin
+T42	NERPrediction 2721 2737	Direct Bilirubin
+T43	NERPrediction 2728 2737	Bilirubin
+T44	NERPrediction 2752 2767	5'-Nucleotidase
+T45	NERPrediction 2786 2793	Protein
+T46	NERPrediction 2808 2815	Albumin
+T47	NERPrediction 2830 2838	Globulin
+T48	NERPrediction 2853 2861	Creatine
+T49	NERPrediction 2883 2891	Creatine
+T50	NERPrediction 2929 2937	Troponin
+T51	NERPrediction 2929 2939	Troponin-I
+T52	NERPrediction 2959 2965	Plasma
+T53	NERPrediction 2966 2970	Urea
+T54	NERPrediction 2966 2979	Urea Nitrogen
+T55	NERPrediction 2971 2979	Nitrogen
+T56	NERPrediction 2995 3002	Calcium
+T57	NERPrediction 3017 3023	Plasma
+T58	NERPrediction 3024 3034	Creatinine
+T59	NERPrediction 3051 3057	Plasma
+T60	NERPrediction 3058 3065	Glucose
+T61	NERPrediction 3082 3088	Lipase
+T62	NERPrediction 3218 3225	Glucose
+T63	NERPrediction 3388 3395	Albumin
+T64	NERPrediction 3409 3421	Urobilinogen
+T65	NERPrediction 3444 3451	Nitrite
+T66	NERPrediction 3563 3566	SED
+T67	NERPrediction 3588 3591	SED
+T68	NERPrediction 3613 3616	SED
+T69	NERPrediction 4031 4035	HCTZ
+T70	NERPrediction 4037 4040	ACE
+T71	NERPrediction 4106 4114	tomorrow

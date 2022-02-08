@@ -1,0 +1,50 @@
+T1	NERPrediction 117 121	Date
+T2	NERPrediction 241 244	PCP
+T3	NERPrediction 447 450	s/p
+T4	NERPrediction 464 469	, s/p
+T5	NERPrediction 466 469	s/p
+T6	NERPrediction 840 843	s/P
+T7	NERPrediction 841 845	/P 6
+T8	NERPrediction 842 845	P 6
+T9	NERPrediction 905 910	) s/p
+T10	NERPrediction 907 910	s/p
+T11	NERPrediction 1058 1066	coumadin
+T12	NERPrediction 1225 1232	, HDL 3
+T13	NERPrediction 1227 1230	HDL
+T14	NERPrediction 1227 1232	HDL 3
+T15	NERPrediction 1234 1237	LDL
+T16	NERPrediction 1267 1271	Drug
+T17	NERPrediction 1285 1296	Medications
+T18	NERPrediction 1300 1308	Coumadin
+T19	NERPrediction 1320 1326	Folate
+T20	NERPrediction 1336 1342	Zantac
+T21	NERPrediction 1336 1346	Zantac 150
+T22	NERPrediction 1350 1353	BID
+T23	NERPrediction 1355 1364	Glyburide
+T24	NERPrediction 1365 1368	BID
+T25	NERPrediction 1428 1435	Tobacco
+T26	NERPrediction 1477 1484	Alcohol
+T27	NERPrediction 1504 1509	Drugs
+T28	NERPrediction 1807 1810	NAD
+T29	NERPrediction 2270 2274	HCO3
+T30	NERPrediction 2281 2284	BUN
+T31	NERPrediction 2296 2303	Glucose
+T32	NERPrediction 2329 2331	Mg
+T33	NERPrediction 2362 2367	Tbili
+T34	NERPrediction 2393 2400	Amylase
+T35	NERPrediction 2405 2411	Lipase
+T36	NERPrediction 2862 2865	s/p
+T37	NERPrediction 2879 2884	, s/p
+T38	NERPrediction 2881 2884	s/p
+T39	NERPrediction 3079 3089	adriamycin
+T40	NERPrediction 3128 3136	tomorrow
+T41	NERPrediction 3563 3566	TSH
+T42	NERPrediction 3590 3599	diltiazem
+T43	NERPrediction 3604 3613	lopressor
+T44	NERPrediction 3636 3644	coumadin
+T45	NERPrediction 3645 3648	s/p
+T46	NERPrediction 3675 3678	s/p
+T47	NERPrediction 3694 3702	coumadin
+T48	NERPrediction 3732 3738	nexium
+T49	NERPrediction 3740 3748	coumadin
+T50	NERPrediction 3913 3921	Medicine

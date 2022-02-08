@@ -1,0 +1,87 @@
+T1	NERPrediction 330 340	Anesthesia
+T2	NERPrediction 1023 1028	Diane
+T3	NERPrediction 1344 1348	Date
+T4	NERPrediction 2500 2509	Albuterol
+T5	NERPrediction 2500 2513	Albuterol MDI
+T6	NERPrediction 2523 2526	S/P
+T7	NERPrediction 2709 2712	S/P
+T8	NERPrediction 2717 2720	CEA
+T9	NERPrediction 2956 2963	PURPOSE
+T10	NERPrediction 3163 3172	Albuterol
+T11	NERPrediction 3181 3191	Furosemide
+T12	NERPrediction 3193 3202	Lopressor
+T13	NERPrediction 3204 3212	Losartan
+T14	NERPrediction 3250 3259	adenosine
+T15	NERPrediction 3295 3304	adenosine
+T16	NERPrediction 3401 3416	99mTc sestamibi
+T17	NERPrediction 3467 3476	adenosine
+T18	NERPrediction 3582 3591	injection
+T19	NERPrediction 3610 3625	99mTc sestamibi
+T20	NERPrediction 3775 3778	MAX
+T21	NERPrediction 3809 3812	MAX
+T22	NERPrediction 4281 4290	Adenosine
+T23	NERPrediction 4445 4451	tracer
+T24	NERPrediction 5038 5047	Glyburide
+T25	NERPrediction 5133 5139	sugars
+T26	NERPrediction 5190 5194	Disc
+T27	NERPrediction 5607 5614	various
+T28	NERPrediction 5615 5630	antidepressants
+T29	NERPrediction 5671 5681	medication
+T30	NERPrediction 5685 5688	His
+T31	NERPrediction 6135 6146	Medications
+T32	NERPrediction 6153 6156	ASA
+T33	NERPrediction 6175 6184	Lopressor
+T34	NERPrediction 6204 6211	Norvasc
+T35	NERPrediction 6230 6235	Lasix
+T36	NERPrediction 6254 6260	Lescol
+T37	NERPrediction 6286 6295	Albuterol
+T38	NERPrediction 6286 6299	Albuterol MDI
+T39	NERPrediction 6318 6327	Glyburide
+T40	NERPrediction 6346 6357	NPH Insulin
+T41	NERPrediction 6350 6357	Insulin
+T42	NERPrediction 6424 6428	drug
+T43	NERPrediction 6448 6465	"muscle relaxants
+T44	NERPrediction 6449 6465	muscle relaxants
+T45	NERPrediction 6471 6484	amitriptyline
+T46	NERPrediction 6522 6540	allergies to foods
+T47	NERPrediction 6559 6564	Latex
+T48	NERPrediction 6688 6695	Alcohol
+T49	NERPrediction 6734 6741	alcohol
+T50	NERPrediction 6766 6774	Allergen
+T51	NERPrediction 7562 7570	Dulcolax
+T52	NERPrediction 7562 7582	Dulcolax suppository
+T53	NERPrediction 7571 7582	suppository
+T54	NERPrediction 7678 7685	alcohol
+T55	NERPrediction 8087 8089	T4
+T56	NERPrediction 8201 8205	Heme
+T57	NERPrediction 8411 8432	" and "gas inhalation
+T58	NERPrediction 8413 8432	and "gas inhalation
+T59	NERPrediction 8417 8432	"gas inhalation
+T60	NERPrediction 8418 8432	gas inhalation
+T61	NERPrediction 8549 8558	lotrisone
+T62	NERPrediction 9588 9594	Rectal
+T63	NERPrediction 10232 10235	ASA
+T64	NERPrediction 10502 10505	His
+T65	NERPrediction 10881 10890	Albuterol
+T66	NERPrediction 11597 11603	Nexium
+T67	NERPrediction 11691 11701	medication
+T68	NERPrediction 11859 11864	sugar
+T69	NERPrediction 11895 11904	Glyburide
+T70	NERPrediction 11964 11967	1/2
+T71	NERPrediction 11976 11983	Insulin
+T72	NERPrediction 12030 12040	medication
+T73	NERPrediction 12066 12083	"muscle relaxants
+T74	NERPrediction 12067 12083	muscle relaxants
+T75	NERPrediction 12171 12181	Anesthetic
+T76	NERPrediction 12316 12326	Autologous
+T77	NERPrediction 12400 12411	Medications
+T78	NERPrediction 12413 12422	Lopressor
+T79	NERPrediction 12424 12431	Norvasc
+T80	NERPrediction 12450 12461	Medications
+T81	NERPrediction 12489 12498	Glyburide
+T82	NERPrediction 12526 12537	Medications
+T83	NERPrediction 12548 12562	of NPH Insulin
+T84	NERPrediction 12551 12562	NPH Insulin
+T85	NERPrediction 12555 12562	Insulin
+T86	NERPrediction 12600 12606	NSAIDS
+T87	NERPrediction 12665 12672	Aspirin

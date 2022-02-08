@@ -1,0 +1,22 @@
+T1	NERPrediction 483 496	nitroglycerin
+T2	NERPrediction 587 598	medications
+T3	NERPrediction 609 620	NPH insulin
+T4	NERPrediction 613 620	insulin
+T5	NERPrediction 702 724	enteric coated aspirin
+T6	NERPrediction 710 724	coated aspirin
+T7	NERPrediction 717 724	aspirin
+T8	NERPrediction 729 732	tab
+T9	NERPrediction 742 751	Captopril
+T10	NERPrediction 742 757	Captopril 25 mg
+T11	NERPrediction 769 774	Lasix
+T12	NERPrediction 792 803	simvastatin
+T13	NERPrediction 792 809	simvastatin 10 mg
+T14	NERPrediction 819 829	amlodipine
+T15	NERPrediction 819 834	amlodipine 5 mg
+T16	NERPrediction 844 853	Neurontin
+T17	NERPrediction 872 880	atenolol
+T18	NERPrediction 872 886	atenolol 50 mg
+T19	NERPrediction 896 904	estrogen
+T20	NERPrediction 2273 2282	adenosine
+T21	NERPrediction 2386 2409	glycosylated hemoglobin
+T22	NERPrediction 2399 2409	hemoglobin

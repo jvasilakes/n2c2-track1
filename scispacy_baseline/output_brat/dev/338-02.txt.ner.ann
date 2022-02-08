@@ -1,0 +1,13 @@
+T0	NERPrediction 143 145	NE
+T1	NERPrediction 147 189	73819                             97198841
+T2	NERPrediction 351 362	cholesterol
+T3	NERPrediction 818 828	Lisinopril
+T4	NERPrediction 830 839	metformin
+T5	NERPrediction 841 852	simvastatin
+T6	NERPrediction 854 863	Glyburide
+T7	NERPrediction 897 910	metronidazole
+T8	NERPrediction 954 965	cholesterol
+T9	NERPrediction 1144 1154	lisinopril
+T10	NERPrediction 1723 1728	lidex
+T11	NERPrediction 1744 1749	b.i.d
+T12	NERPrediction 1945 1950	DT:12

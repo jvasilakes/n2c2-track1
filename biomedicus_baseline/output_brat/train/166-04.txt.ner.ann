@@ -1,0 +1,49 @@
+T1	NERPrediction 98 101	s/p
+T2	NERPrediction 713 716	His
+T3	NERPrediction 1062 1065	His
+T4	NERPrediction 1611 1614	His
+T5	NERPrediction 1918 1926	Medicine
+T6	NERPrediction 2222 2228	Ambien
+T7	NERPrediction 2271 2274	ASA
+T8	NERPrediction 2288 2298	lisinopril
+T9	NERPrediction 2312 2320	atenolol
+T10	NERPrediction 2312 2326	atenolol 25 mg
+T11	NERPrediction 2378 2387	Glipizide
+T12	NERPrediction 2378 2392	Glipizide 5 mg
+T13	NERPrediction 2400 2409	Metformin
+T14	NERPrediction 2428 2435	1 in pm
+T15	NERPrediction 2474 2482	Prilosec
+T16	NERPrediction 2510 2517	Lipitor
+T17	NERPrediction 2530 2536	Viagra
+T18	NERPrediction 2789 2796	Tobacco
+T19	NERPrediction 2814 2818	ETOH
+T20	NERPrediction 2818 2823	: 1-2
+T21	NERPrediction 2836 2844	Caffeine
+T22	NERPrediction 2902 2920	Recreational Drugs
+T23	NERPrediction 2915 2920	Drugs
+T24	NERPrediction 2922 2928	Viagra
+T25	NERPrediction 3527 3535	baseline
+T26	NERPrediction 3577 3585	baseline
+T27	NERPrediction 3769 3773	Date
+T28	NERPrediction 3787 3790	BUN
+T29	NERPrediction 3922 3926	Date
+T30	NERPrediction 3949 3952	HDL
+T31	NERPrediction 3958 3961	LDL
+T32	NERPrediction 4026 4030	Date
+T33	NERPrediction 4131 4135	Date
+T34	NERPrediction 4218 4222	Date
+T35	NERPrediction 4368 4371	s/p
+T36	NERPrediction 4413 4416	med
+T37	NERPrediction 4432 4434	BB
+T38	NERPrediction 4516 4522	statin
+T39	NERPrediction 4524 4527	ASA
+T40	NERPrediction 4529 4532	ACE
+T41	NERPrediction 4580 4583	BUN
+T42	NERPrediction 4595 4602	Monitor
+T43	NERPrediction 4713 4716	med
+T44	NERPrediction 4844 4853	metformin
+T45	NERPrediction 4892 4901	Glipizide
+T46	NERPrediction 4903 4910	Monitor
+T47	NERPrediction 4929 4944	regular insulin
+T48	NERPrediction 4937 4944	insulin
+T49	NERPrediction 4955 4964	metformin

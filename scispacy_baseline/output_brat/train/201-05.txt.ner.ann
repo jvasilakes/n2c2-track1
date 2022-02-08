@@ -1,0 +1,53 @@
+T0	NERPrediction 112 121	BRANDON H
+T1	NERPrediction 240 245	STEMI
+T2	NERPrediction 362 365	ASA
+T3	NERPrediction 1568 1570	CP
+T4	NERPrediction 1601 1608	N/V/D/C
+T5	NERPrediction 1706 1711	STEMI
+T6	NERPrediction 1841 1850	glypizide
+T7	NERPrediction 1851 1859	HLP  HTN
+T8	NERPrediction 1893 1897	w/pt
+T9	NERPrediction 1902 1905	ASA
+T10	NERPrediction 1947 1952	Coreg
+T11	NERPrediction 1961 1964	bid
+T12	NERPrediction 1965 1977	Dipyridamole
+T13	NERPrediction 1988 1999	Doxycycline
+T14	NERPrediction 2007 2010	bid
+T15	NERPrediction 2011 2025	Esomesoprazole
+T16	NERPrediction 2032 2035	bid
+T17	NERPrediction 2036 2045	Glipizide
+T18	NERPrediction 2061 2072	Simvastatin
+T19	NERPrediction 2085 2092	Lexapro
+T20	NERPrediction 2105 2114	Polymyxin
+T21	NERPrediction 2121 2143	Vitamin D    Allergies
+T22	NERPrediction 2289 2294	smoke
+T23	NERPrediction 2317 2324	alcohol
+T24	NERPrediction 2618 2621	GEN
+T25	NERPrediction 2623 2626	NAD
+T26	NERPrediction 3250 3252	3-
+T27	NERPrediction 3408 3419	7- Ataxia  
+T28	NERPrediction 5746 5752	NA 140
+T29	NERPrediction 5755 5756	K
+T30	NERPrediction 5772 5775	CO2
+T31	NERPrediction 5817 5820	GLU
+T32	NERPrediction 5826 5827	H
+T33	NERPrediction 5869 5873	PHOS
+T34	NERPrediction 5884 5886	MG
+T35	NERPrediction 5905 5910	DBILI
+T36	NERPrediction 5970 5978	AST/SGOT
+T37	NERPrediction 6006 6011	DBILI
+T38	NERPrediction 6040 6041	H
+T39	NERPrediction 6197 6198	H
+T40	NERPrediction 6235 6236	H
+T41	NERPrediction 6337 6342	AEOSN
+T42	NERPrediction 6373 6378	ANISO
+T43	NERPrediction 6383 6384	H
+T44	NERPrediction 6444 6445	H
+T45	NERPrediction 6761 6764	MCA
+T46	NERPrediction 6940 6945	STEMI
+T47	NERPrediction 7062 7065	ASA
+T48	NERPrediction 7445 7449	fine
+T49	NERPrediction 7655 7658	MCA
+T50	NERPrediction 7736 7739	MCA
+T51	NERPrediction 8949 8974	blood glucose&lt;130     
+T52	NERPrediction 9160 9175	25539/69926    

@@ -1,0 +1,25 @@
+T1	NERPrediction 72 76	DATE
+T2	NERPrediction 223 226	s/p
+T3	NERPrediction 721 732	Medications
+T4	NERPrediction 738 745	Aspirin
+T5	NERPrediction 738 751	Aspirin 81 mg
+T6	NERPrediction 759 767	Atenolol
+T7	NERPrediction 759 773	Atenolol 50 mg
+T8	NERPrediction 814 820	Cozaar
+T9	NERPrediction 835 844	Metformin
+T10	NERPrediction 861 867	Hytrin
+T11	NERPrediction 881 886	Lasix
+T12	NERPrediction 900 907	Mevacor
+T13	NERPrediction 922 932	Loratadine
+T14	NERPrediction 922 938	Loratadine 10 mg
+T15	NERPrediction 947 958	Glucosamine
+T16	NERPrediction 983 987	Soma
+T17	NERPrediction 988 994	Ultram
+T18	NERPrediction 1101 1108	tobacco
+T19	NERPrediction 1116 1120	ETOH
+T20	NERPrediction 1218 1226	asbestos
+T21	NERPrediction 1637 1658	+            2+   		1
+T22	NERPrediction 1650 1658	2+   		1
+T23	NERPrediction 1700 1719	+             2+		1
+T24	NERPrediction 1714 1719	2+		1
+T25	NERPrediction 3484 3487	s/p

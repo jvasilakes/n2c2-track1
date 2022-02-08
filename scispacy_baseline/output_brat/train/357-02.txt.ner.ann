@@ -1,0 +1,12 @@
+T0	NERPrediction 77 82	ELIOT
+T1	NERPrediction 1142 1151	diltiazem
+T2	NERPrediction 1153 1175	Nephrocaps, methyldopa
+T3	NERPrediction 1178 1185	Flovent
+T4	NERPrediction 1191 1200	Pravachol
+T5	NERPrediction 1674 1684	creatinine
+T6	NERPrediction 1690 1700	sodium 140
+T7	NERPrediction 1706 1715	potassium
+T8	NERPrediction 2008 2013	ELIOT
+T9	NERPrediction 2059 2065	KEELER
+T10	NERPrediction 2067 2072	ELIOT
+T11	NERPrediction 2074 2117	eScription document:4-4697792 BFFocus      

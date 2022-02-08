@@ -1,0 +1,41 @@
+T0	NERPrediction 121 133	3/26/78   CC
+T1	NERPrediction 439 446	Bactrim
+T2	NERPrediction 836 841	DM II
+T3	NERPrediction 989 1004	perineum 2/6/77
+T4	NERPrediction 1094 1102	Glargine
+T5	NERPrediction 1115 1123	U SC QHS
+T6	NERPrediction 1124 1135	Simvastatin
+T7	NERPrediction 1139 1141	MG
+T8	NERPrediction 1145 1147	QD
+T9	NERPrediction 1148 1158	Metoprolol
+T10	NERPrediction 1187 1193	Toprol
+T11	NERPrediction 1203 1205	MG
+T12	NERPrediction 1209 1211	QD
+T13	NERPrediction 1212 1220	Nystatin
+T14	NERPrediction 1250 1279	Trimethoprim/sulfamethoxazole
+T15	NERPrediction 1297 1304	Bactrim
+T16	NERPrediction 1323 1332	Oxycodone
+T17	NERPrediction 1336 1338	MG
+T18	NERPrediction 1342 1345	Q6H
+T19	NERPrediction 1457 1461	EtOH
+T20	NERPrediction 1595 1598	NAD
+T21	NERPrediction 1613 1617	CTAB
+T22	NERPrediction 2983 2984	H
+T23	NERPrediction 3322 3328	Sodium
+T24	NERPrediction 3403 3412	Potassium
+T25	NERPrediction 3595 3601	Carbon
+T26	NERPrediction 3756 3760	Urea
+T27	NERPrediction 3836 3846	Creatinine
+T28	NERPrediction 4007 4051	Glucose                   236              H
+T29	NERPrediction 4082 4089	Calcium
+T30	NERPrediction 4242 4251	Magnesium
+T31	NERPrediction 4566 4575	Bilirubin
+T32	NERPrediction 4645 4654	Bilirubin
+T33	NERPrediction 4962 5006	Lactic Acid               2.5              H
+T34	NERPrediction 5975 5983	betadine
+T35	NERPrediction 5995 6004	lidocaine
+T36	NERPrediction 6013 6024	epinephrine
+T37	NERPrediction 6881 6906	Linezolid/Cefepime/Flagyl
+T38	NERPrediction 6957 6966	linezolid
+T39	NERPrediction 6992 7000	cefepime
+T40	NERPrediction 7217 7231	P26381        

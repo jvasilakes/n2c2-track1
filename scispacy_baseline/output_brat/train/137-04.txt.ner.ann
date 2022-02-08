@@ -1,0 +1,53 @@
+T0	NERPrediction 474 487	nitroglycerin
+T1	NERPrediction 654 661	Vasotec
+T2	NERPrediction 663 670	Norvasc
+T3	NERPrediction 675 681	Plavix
+T4	NERPrediction 700 708	Prilosec
+T5	NERPrediction 1036 1043	Lipitor
+T6	NERPrediction 1149 1193	patientCoronary artery disease-Dr GarzaRHN  
+T7	NERPrediction 1326 1382	pastDiabetes mellitus type 2-Dr Willis  : Eye appt-JHThe
+T8	NERPrediction 1559 1569	Glucophage
+T9	NERPrediction 1574 1583	glipizide
+T10	NERPrediction 1769 1775	CpapHe
+T11	NERPrediction 1812 1823	cholesterol
+T12	NERPrediction 1877 1881	Iron
+T13	NERPrediction 1883 1886	B12
+T14	NERPrediction 1888 1899	folate acid
+T15	NERPrediction 1999 2006	6/70-to
+T16	NERPrediction 2079 2089	creatinine
+T17	NERPrediction 2126 2136	creatinine
+T18	NERPrediction 2173 2192	specialistAllergies
+T19	NERPrediction 2194 2201	Vicodan
+T20	NERPrediction 2293 2310	Tablet(s)Atenolol
+T21	NERPrediction 2314 2316	MG
+T22	NERPrediction 2378 2380	MG
+T23	NERPrediction 2416 2428	sedating/may
+T24	NERPrediction 2447 2467	Tablet(s)Clopidogrel
+T25	NERPrediction 2471 2473	MG
+T26	NERPrediction 2475 2479	75MG
+T27	NERPrediction 2498 2500	QD
+T28	NERPrediction 2548 2550	MG
+T29	NERPrediction 2624 2626	MG
+T30	NERPrediction 2691 2693	MG
+T31	NERPrediction 2698 2700	MG
+T32	NERPrediction 2776 2778	MG
+T33	NERPrediction 2845 2847	MG
+T34	NERPrediction 2914 2916	MG
+T35	NERPrediction 2921 2923	MG
+T36	NERPrediction 2942 2945	QHS
+T37	NERPrediction 2983 3005	Tablet(s)Multivitamins
+T38	NERPrediction 3052 3056	10MG
+T39	NERPrediction 3130 3132	Mg
+T40	NERPrediction 3182 3189	Vasotec
+T41	NERPrediction 3191 3208	ENALAPRIL Maleate
+T42	NERPrediction 3213 3215	MG
+T43	NERPrediction 3247 3262	Tablet(s)Zantac
+T44	NERPrediction 3275 3278	Hcl
+T45	NERPrediction 3284 3286	MG
+T46	NERPrediction 3469 3471	CP
+T47	NERPrediction 3812 3815	NAD
+T48	NERPrediction 3925 3944	Sclerae non-icteric
+T49	NERPrediction 3973 3975	OP
+T50	NERPrediction 4255 4259	rubs
+T51	NERPrediction 4622 4635	nitroglycerin
+T52	NERPrediction 4892 4902	Creatinine

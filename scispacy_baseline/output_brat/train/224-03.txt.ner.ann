@@ -1,0 +1,10 @@
+T0	NERPrediction 346 349	TNG
+T1	NERPrediction 785 788	L-L
+T2	NERPrediction 802 805	Cfx
+T3	NERPrediction 3547 3551	HCTZ
+T4	NERPrediction 3757 3770	nitroglycerin
+T5	NERPrediction 3818 3824	Plavix
+T6	NERPrediction 3845 3856	simvastatin
+T7	NERPrediction 3866 3873	qpm  		
+T8	NERPrediction 3875 3881	Toprol
+T9	NERPrediction 3907 3913	Tricor

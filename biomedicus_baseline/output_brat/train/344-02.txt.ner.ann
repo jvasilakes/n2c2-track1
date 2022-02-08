@@ -1,0 +1,22 @@
+T1	NERPrediction 130 134	DATE
+T2	NERPrediction 953 956	His
+T3	NERPrediction 1316 1325	albuterol
+T4	NERPrediction 1316 1329	albuterol MDI
+T5	NERPrediction 1331 1339	Azmacort
+T6	NERPrediction 1345 1351	adalat
+T7	NERPrediction 1769 1784	of illicit drug
+T8	NERPrediction 1772 1784	illicit drug
+T9	NERPrediction 1780 1784	drug
+T10	NERPrediction 2077 2083	oxygen
+T11	NERPrediction 2109 2112	air
+T12	NERPrediction 2623 2629	bicarb
+T13	NERPrediction 2638 2645	D-dimer
+T14	NERPrediction 2668 2688	, cardiac troponin I
+T15	NERPrediction 2670 2688	cardiac troponin I
+T16	NERPrediction 2678 2686	troponin
+T17	NERPrediction 2678 2688	troponin I
+T18	NERPrediction 3127 3130	PCP
+T19	NERPrediction 3526 3536	of D-dimer
+T20	NERPrediction 3529 3536	D-dimer
+T21	NERPrediction 3720 3723	MAX
+T22	NERPrediction 3866 3869	MAX

@@ -1,0 +1,9 @@
+T1	NERPrediction 329 335	HB A1c
+T2	NERPrediction 386 393	lipitor
+T3	NERPrediction 452 457	Other
+T4	NERPrediction 612 615	air
+T5	NERPrediction 723 730	alupent
+T6	NERPrediction 1063 1068	drugs
+T7	NERPrediction 1069 1074	paxil
+T8	NERPrediction 1331 1340	Proventil
+T9	NERPrediction 1423 1430	Alcohol

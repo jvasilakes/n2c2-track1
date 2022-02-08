@@ -1,0 +1,17 @@
+T0	NERPrediction 1291 1296	smoke
+T1	NERPrediction 1399 1406	Smoking
+T2	NERPrediction 1474 1481	Aspirin
+T3	NERPrediction 1489 1492	q.d
+T4	NERPrediction 1495 1503	atenolol
+T5	NERPrediction 1511 1514	q.d
+T6	NERPrediction 1517 1527	lisinopril
+T7	NERPrediction 1534 1537	q.d
+T8	NERPrediction 1540 1547	Lipitor
+T9	NERPrediction 1562 1571	metformin
+T10	NERPrediction 1580 1585	b.i.d
+T11	NERPrediction 1599 1611	fluocinolone
+T12	NERPrediction 1613 1621	Protonix
+T13	NERPrediction 2378 2384	Q-wave
+T14	NERPrediction 3035 3042	Lipitor
+T15	NERPrediction 3052 3057	q.h.s
+T16	NERPrediction 3488 3529	eScription document:1-8289950 AFFocus    

@@ -1,0 +1,17 @@
+T0	NERPrediction 299 301	CP
+T1	NERPrediction 704 709	QD   
+T2	NERPrediction 755 761	TID   
+T3	NERPrediction 770 782	ATORVASTATIN
+T4	NERPrediction 786 790	10MG
+T5	NERPrediction 807 810	QHS
+T6	NERPrediction 815 820	day(s
+T7	NERPrediction 868 873	QWEEK
+T8	NERPrediction 878 883	day(s
+T9	NERPrediction 1408 1411	LLE
+T10	NERPrediction 1427 1430	RLE
+T11	NERPrediction 1858 1868	chem 7 WNL
+T12	NERPrediction 1870 1878	Dilantin
+T13	NERPrediction 2096 2099	ASA
+T14	NERPrediction 2155 2162	trental
+T15	NERPrediction 2263 2270	Lipitor
+T16	NERPrediction 2427 2434	Fosamax

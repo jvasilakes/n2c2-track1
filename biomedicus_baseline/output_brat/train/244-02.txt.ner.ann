@@ -1,0 +1,94 @@
+T1	NERPrediction 100 104	Date
+T2	NERPrediction 135 138	PCP
+T3	NERPrediction 200 205	Other
+T4	NERPrediction 398 401	s/p
+T5	NERPrediction 551 554	PCP
+T6	NERPrediction 1678 1686	wakes up
+T7	NERPrediction 1866 1874	Celebrex
+T8	NERPrediction 1917 1928	Medications
+T9	NERPrediction 1936 1943	Aspirin
+T10	NERPrediction 1944 1965	(ACETYLSALICYLIC Acid
+T11	NERPrediction 1945 1965	ACETYLSALICYLIC Acid
+T12	NERPrediction 1980 1986	Tablet
+T13	NERPrediction 2004 2011	Calcium
+T14	NERPrediction 2004 2021	Calcium Gluconate
+T15	NERPrediction 2035 2041	Tablet
+T16	NERPrediction 2059 2066	Vitamin
+T17	NERPrediction 2059 2068	Vitamin D
+T18	NERPrediction 2070 2084	ERGOCALCIFEROL
+T19	NERPrediction 2104 2117	Nitroglycerin
+T20	NERPrediction 2129 2131	Mg
+T21	NERPrediction 2138 2141	TAB
+T22	NERPrediction 2138 2144	TAB SL
+T23	NERPrediction 2159 2164	Vioxx
+T24	NERPrediction 2165 2184	(ROFECOXIB)    25MG
+T25	NERPrediction 2166 2175	ROFECOXIB
+T26	NERPrediction 2166 2184	ROFECOXIB)    25MG
+T27	NERPrediction 2189 2195	Tablet
+T28	NERPrediction 2226 2236	Nifedipine
+T29	NERPrediction 2268 2274	Tablet
+T30	NERPrediction 2292 2310	HYDROXYCHLOROQUINE
+T31	NERPrediction 2323 2329	Tablet
+T32	NERPrediction 2337 2340	BID
+T33	NERPrediction 2360 2368	ATENOLOL
+T34	NERPrediction 2380 2386	Tablet
+T35	NERPrediction 2404 2412	Protonix
+T36	NERPrediction 2404 2435	Protonix (PANTOPRAZOLE)    40MG
+T37	NERPrediction 2413 2435	(PANTOPRAZOLE)    40MG
+T38	NERPrediction 2414 2426	PANTOPRAZOLE
+T39	NERPrediction 2414 2435	PANTOPRAZOLE)    40MG
+T40	NERPrediction 2440 2446	Tablet
+T41	NERPrediction 2476 2486	PREDNISONE
+T42	NERPrediction 2498 2504	Tablet
+T43	NERPrediction 2534 2544	Isosorbide
+T44	NERPrediction 2534 2554	Isosorbide Dinitrate
+T45	NERPrediction 2567 2573	Tablet
+T46	NERPrediction 2792 2799	alcohol
+T47	NERPrediction 2803 2808	drugs
+T48	NERPrediction 3585 3587	O2
+T49	NERPrediction 3833 3836	air
+T50	NERPrediction 4665 4671	Plasma
+T51	NERPrediction 4672 4678	Sodium
+T52	NERPrediction 4743 4749	Plasma
+T53	NERPrediction 4750 4759	Potassium
+T54	NERPrediction 4821 4827	Plasma
+T55	NERPrediction 4899 4905	Plasma
+T56	NERPrediction 4906 4912	Carbon
+T57	NERPrediction 4906 4920	Carbon Dioxide
+T58	NERPrediction 4977 4984	Calcium
+T59	NERPrediction 5131 5140	Magnesium
+T60	NERPrediction 5208 5214	Plasma
+T61	NERPrediction 5215 5219	Urea
+T62	NERPrediction 5215 5228	Urea Nitrogen
+T63	NERPrediction 5220 5228	Nitrogen
+T64	NERPrediction 5285 5291	Plasma
+T65	NERPrediction 5292 5302	Creatinine
+T66	NERPrediction 5368 5375	Protein
+T67	NERPrediction 5438 5445	Albumin
+T68	NERPrediction 5514 5522	Globulin
+T69	NERPrediction 5590 5606	Direct Bilirubin
+T70	NERPrediction 5597 5606	Bilirubin
+T71	NERPrediction 5667 5682	Total Bilirubin
+T72	NERPrediction 5673 5682	Bilirubin
+T73	NERPrediction 5894 5902	Creatine
+T74	NERPrediction 6103 6111	Troponin
+T75	NERPrediction 6103 6113	Troponin-T
+T76	NERPrediction 6255 6263	Creatine
+T77	NERPrediction 6451 6459	Creatine
+T78	NERPrediction 6511 6519	Troponin
+T79	NERPrediction 6694 6701	Amylase
+T80	NERPrediction 6738 6749	H        (3
+T81	NERPrediction 6773 6779	Lipase
+T82	NERPrediction 7486 7495	Adenosine
+T83	NERPrediction 8567 8570	s/p
+T84	NERPrediction 8986 8995	Adenosine
+T85	NERPrediction 9093 9102	Lopressor
+T86	NERPrediction 9125 9134	Dilatrate
+T87	NERPrediction 9149 9156	Isordil
+T88	NERPrediction 9185 9195	Nifedipine
+T89	NERPrediction 9293 9303	prednisone
+T90	NERPrediction 9316 9324	Vitamins
+T91	NERPrediction 9390 9393	PCP
+T92	NERPrediction 9469 9476	amylase
+T93	NERPrediction 9481 9487	lipase
+T94	NERPrediction 9490 9500	Prednisone

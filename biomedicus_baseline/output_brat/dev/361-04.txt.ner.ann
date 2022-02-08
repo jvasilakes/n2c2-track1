@@ -1,0 +1,100 @@
+T1	NERPrediction 84 87	Foy
+T2	NERPrediction 94 98	Date
+T3	NERPrediction 1073 1083	medication
+T4	NERPrediction 1509 1517	morphine
+T5	NERPrediction 1796 1802	Rectal
+T6	NERPrediction 1982 1990	dulcolax
+T7	NERPrediction 2403 2406	S/p
+T8	NERPrediction 2498 2501	S/p
+T9	NERPrediction 2547 2558	medications
+T10	NERPrediction 2562 2582	Acetylsalicylic Acid
+T11	NERPrediction 2596 2602	TABLET
+T12	NERPrediction 2622 2628	Tablet
+T13	NERPrediction 2632 2642	Amlodipine
+T14	NERPrediction 2632 2648	Amlodipine 10 MG
+T15	NERPrediction 2656 2662	TABLET
+T16	NERPrediction 2691 2697	Tablet
+T17	NERPrediction 2699 2717	) Cinacalcet 30 MG
+T18	NERPrediction 2701 2711	Cinacalcet
+T19	NERPrediction 2701 2717	Cinacalcet 30 MG
+T20	NERPrediction 2729 2735	Tablet
+T21	NERPrediction 2739 2748	Clonidine
+T22	NERPrediction 2759 2762	BID
+T23	NERPrediction 2763 2771	Cymbalta
+T24	NERPrediction 2763 2790	Cymbalta (DULOXETINE) 20 MG
+T25	NERPrediction 2772 2790	(DULOXETINE) 20 MG
+T26	NERPrediction 2773 2783	DULOXETINE
+T27	NERPrediction 2773 2790	DULOXETINE) 20 MG
+T28	NERPrediction 2797 2804	CAPSULE
+T29	NERPrediction 2819 2822	BID
+T30	NERPrediction 2827 2834	Capsule
+T31	NERPrediction 2838 2853	Diphenhydramine
+T32	NERPrediction 2854 2858	Oral
+T33	NERPrediction 2968 2976	Docusate
+T34	NERPrediction 2968 2983	Docusate Sodium
+T35	NERPrediction 2968 2990	Docusate Sodium 100 MG
+T36	NERPrediction 2977 2983	Sodium
+T37	NERPrediction 2977 2990	Sodium 100 MG
+T38	NERPrediction 2994 2997	BID
+T39	NERPrediction 3003 3010	Capsule
+T40	NERPrediction 3014 3021	Epoetin
+T41	NERPrediction 3014 3026	Epoetin Alfa
+T42	NERPrediction 3201 3208	Insulin
+T43	NERPrediction 3201 3215	Insulin Lispro
+T44	NERPrediction 3209 3215	Lispro
+T45	NERPrediction 3261 3268	Insulin
+T46	NERPrediction 3261 3275	Insulin Lispro
+T47	NERPrediction 3269 3275	Lispro
+T48	NERPrediction 3321 3328	Insulin
+T49	NERPrediction 3469 3479	Lisinopril
+T50	NERPrediction 3469 3485	Lisinopril 40 MG
+T51	NERPrediction 3520 3527	Miralax
+T52	NERPrediction 3528 3548	(POLYETHYLENE Glycol
+T53	NERPrediction 3529 3541	POLYETHYLENE
+T54	NERPrediction 3529 3548	POLYETHYLENE Glycol
+T55	NERPrediction 3641 3646	water
+T56	NERPrediction 3683 3686	TAB
+T57	NERPrediction 3697 3703	Tablet
+T58	NERPrediction 3707 3717	Omeprazole
+T59	NERPrediction 3707 3723	Omeprazole 20 MG
+T60	NERPrediction 3731 3738	CAPSULE
+T61	NERPrediction 3760 3767	Capsule
+T62	NERPrediction 3771 3777	Reglan
+T63	NERPrediction 3779 3793	METOCLOPRAMIDE
+T64	NERPrediction 3779 3797	METOCLOPRAMIDE Hcl
+T65	NERPrediction 3810 3816	TABLET
+T66	NERPrediction 3870 3876	Tablet
+T67	NERPrediction 3880 3890	Sennosides
+T68	NERPrediction 3902 3905	BID
+T69	NERPrediction 3923 3932	Sevelamer
+T70	NERPrediction 3948 3954	TABLET
+T71	NERPrediction 3970 3981	Simvastatin
+T72	NERPrediction 3970 3987	Simvastatin 20 MG
+T73	NERPrediction 3994 4000	TABLET
+T74	NERPrediction 4020 4026	Tablet
+T75	NERPrediction 4028 4039	) Toprol Xl
+T76	NERPrediction 4030 4036	Toprol
+T77	NERPrediction 4030 4039	Toprol Xl
+T78	NERPrediction 4040 4061	(METOPROLOL Succinate
+T79	NERPrediction 4041 4051	METOPROLOL
+T80	NERPrediction 4041 4061	METOPROLOL Succinate
+T81	NERPrediction 4052 4061	Succinate
+T82	NERPrediction 4128 4132	pill
+T83	NERPrediction 4149 4153	pill
+T84	NERPrediction 4406 4413	Tobacco
+T85	NERPrediction 4441 4446	smoke
+T86	NERPrediction 4447 4450	1/2
+T87	NERPrediction 4451 4454	PPD
+T88	NERPrediction 4456 4460	EtOH
+T89	NERPrediction 5246 5249	CO2
+T90	NERPrediction 5255 5258	BUN
+T91	NERPrediction 5369 5374	TBILI
+T92	NERPrediction 5476 5481	TBILI
+T93	NERPrediction 6071 6091	intravenous contrast
+T94	NERPrediction 6386 6394	pancreas
+T95	NERPrediction 7574 7582	morphine
+T96	NERPrediction 7674 7682	Cymbalta
+T97	NERPrediction 7895 7901	Reglan
+T98	NERPrediction 7985 7995	medication
+T99	NERPrediction 8124 8131	Heparin
+T100	NERPrediction 8208 8216	Medicine

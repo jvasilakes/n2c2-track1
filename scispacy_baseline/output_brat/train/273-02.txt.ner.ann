@@ -1,0 +1,22 @@
+T0	NERPrediction 35 62	Novolog 3-7 tid	683-51-28  
+T1	NERPrediction 94 100	Neoral
+T2	NERPrediction 112 126	bid   CellCept
+T3	NERPrediction 135 138	bid
+T4	NERPrediction 141 150	Lopressor
+T5	NERPrediction 159 162	bid
+T6	NERPrediction 164 173	Captopril
+T7	NERPrediction 182 185	bid
+T8	NERPrediction 187 194	Lipitor
+T9	NERPrediction 205 214	Neurontin
+T10	NERPrediction 227 230	bid
+T11	NERPrediction 232 236	Tums
+T12	NERPrediction 247 250	bid
+T13	NERPrediction 268 276	Prilosec
+T14	NERPrediction 294 302	bid  ASA
+T15	NERPrediction 314 321	Quinine
+T16	NERPrediction 575 588	acetaminophen
+T17	NERPrediction 1064 1066	Cr
+T18	NERPrediction 1358 1367	Neurontin
+T19	NERPrediction 2235 2276	1-2+,=.  PT 2+,=.  No active foot lesions
+T20	NERPrediction 2562 2571	sestamibi
+T21	NERPrediction 2714 2728	BUN/Creatinine

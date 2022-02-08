@@ -1,0 +1,29 @@
+T1	NERPrediction 863 867	drug
+T2	NERPrediction 1113 1123	penicillin
+T3	NERPrediction 1137 1148	clindamycin
+T4	NERPrediction 1155 1161	Keflex
+T5	NERPrediction 1213 1224	medications
+T6	NERPrediction 1241 1251	lisinopril
+T7	NERPrediction 1253 1260	aspirin
+T8	NERPrediction 1262 1272	furosemide
+T9	NERPrediction 1274 1280	Detrol
+T10	NERPrediction 1293 1301	Percocet
+T11	NERPrediction 1303 1311	nystatin
+T12	NERPrediction 1312 1318	powder
+T13	NERPrediction 1318 1340	, metformin, glyburide
+T14	NERPrediction 1320 1329	metformin
+T15	NERPrediction 1320 1340	metformin, glyburide
+T16	NERPrediction 1331 1340	glyburide
+T17	NERPrediction 1342 1354	fluocinolone
+T18	NERPrediction 1357 1370	and vitamin D
+T19	NERPrediction 1361 1368	vitamin
+T20	NERPrediction 1361 1370	vitamin D
+T21	NERPrediction 1455 1461	oxygen
+T22	NERPrediction 1621 1624	air
+T23	NERPrediction 1899 1906	glucose
+T24	NERPrediction 1914 1917	BUN
+T25	NERPrediction 1926 1936	creatinine
+T26	NERPrediction 1943 1949	sodium
+T27	NERPrediction 1955 1964	potassium
+T28	NERPrediction 2003 2010	calcium
+T29	NERPrediction 2016 2024	troponin

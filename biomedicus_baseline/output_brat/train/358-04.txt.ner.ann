@@ -1,0 +1,95 @@
+T1	NERPrediction 236 240	kelp
+T2	NERPrediction 242 248	lotion
+T3	NERPrediction 296 301	water
+T4	NERPrediction 354 366	levofloxacin
+T5	NERPrediction 600 606	sugars
+T6	NERPrediction 642 651	metformin
+T7	NERPrediction 655 658	BID
+T8	NERPrediction 709 715	sugars
+T9	NERPrediction 1109 1136	--using topical antibiotics
+T10	NERPrediction 1110 1136	-using topical antibiotics
+T11	NERPrediction 1111 1136	using topical antibiotics
+T12	NERPrediction 1125 1136	antibiotics
+T13	NERPrediction 1175 1178	SHx
+T14	NERPrediction 1314 1325	Medications
+T15	NERPrediction 1326 1332	Colace
+T16	NERPrediction 1333 1349	(DOCUSATE Sodium
+T17	NERPrediction 1334 1342	DOCUSATE
+T18	NERPrediction 1334 1349	DOCUSATE Sodium
+T19	NERPrediction 1343 1349	Sodium
+T20	NERPrediction 1343 1357	Sodium) 100 MG
+T21	NERPrediction 1365 1371	TABLET
+T22	NERPrediction 1389 1398	Oxycontin
+T23	NERPrediction 1400 1409	OXYCODONE
+T24	NERPrediction 1410 1428	Controlled Release
+T25	NERPrediction 1464 1467	BID
+T26	NERPrediction 1479 1489	LISINOPRIL
+T27	NERPrediction 1479 1495	LISINOPRIL 40 MG
+T28	NERPrediction 1502 1508	TABLET
+T29	NERPrediction 1534 1539	Zocor
+T30	NERPrediction 1534 1559	Zocor (SIMVASTATIN) 80 MG
+T31	NERPrediction 1540 1559	(SIMVASTATIN) 80 MG
+T32	NERPrediction 1541 1552	SIMVASTATIN
+T33	NERPrediction 1541 1559	SIMVASTATIN) 80 MG
+T34	NERPrediction 1566 1572	TABLET
+T35	NERPrediction 1648 1652	drug
+T36	NERPrediction 1688 1697	Glucotrol
+T37	NERPrediction 1688 1700	Glucotrol Xl
+T38	NERPrediction 1702 1711	GLIPIZIDE
+T39	NERPrediction 1726 1729	TAB
+T40	NERPrediction 1726 1732	TAB SR
+T41	NERPrediction 1730 1732	SR
+T42	NERPrediction 1733 1736	OSM
+T43	NERPrediction 1753 1762	METFORMIN
+T44	NERPrediction 1777 1783	TABLET
+T45	NERPrediction 1801 1804	BID
+T46	NERPrediction 1805 1824	HYDROCHLOROTHIAZIDE
+T47	NERPrediction 1805 1830	HYDROCHLOROTHIAZIDE 25 MG
+T48	NERPrediction 1837 1843	TABLET
+T49	NERPrediction 1869 1875	Toprol
+T50	NERPrediction 1869 1878	Toprol Xl
+T51	NERPrediction 1879 1900	(METOPROLOL Succinate
+T52	NERPrediction 1880 1890	METOPROLOL
+T53	NERPrediction 1880 1900	METOPROLOL Succinate
+T54	NERPrediction 1891 1900	Succinate
+T55	NERPrediction 1967 1973	Celexa
+T56	NERPrediction 1975 1985	CITALOPRAM
+T57	NERPrediction 1999 2005	TABLET
+T58	NERPrediction 2036 2039	1/2
+T59	NERPrediction 2040 2043	tab
+T60	NERPrediction 2071 2077	tablet
+T61	NERPrediction 2085 2093	Percocet
+T62	NERPrediction 2085 2095	Percocet 5
+T63	NERPrediction 2103 2105	Mg
+T64	NERPrediction 2108 2117	OXYCODONE
+T65	NERPrediction 2123 2136	acetaminophen
+T66	NERPrediction 2123 2143	acetaminophen 325 Mg
+T67	NERPrediction 2141 2143	Mg
+T68	NERPrediction 2143 2148	) 1-2
+T69	NERPrediction 2149 2152	TAB
+T70	NERPrediction 2158 2161	-6H
+T71	NERPrediction 2159 2161	6H
+T72	NERPrediction 2173 2184	Clindamycin
+T73	NERPrediction 2188 2191	Gel
+T74	NERPrediction 2210 2213	GEL
+T75	NERPrediction 2220 2223	BID
+T76	NERPrediction 2280 2289	OXYCODONE
+T77	NERPrediction 2300 2306	TABLET
+T78	NERPrediction 2376 2383	tylenol
+T79	NERPrediction 2390 2396	Ativan
+T80	NERPrediction 2398 2407	LORAZEPAM
+T81	NERPrediction 2423 2429	TABLET
+T82	NERPrediction 2474 2480	tablet
+T83	NERPrediction 2940 2951	clindamycin
+T84	NERPrediction 2952 2955	gel
+T85	NERPrediction 2993 3004	antibiotics
+T86	NERPrediction 3082 3091	narcotics
+T87	NERPrediction 3109 3118	oxycodone
+T88	NERPrediction 3182 3187	pills
+T89	NERPrediction 3269 3275	sugars
+T90	NERPrediction 3286 3295	metformin
+T91	NERPrediction 3286 3309	metformin and glipizide
+T92	NERPrediction 3300 3309	glipizide
+T93	NERPrediction 3354 3363	metformin
+T94	NERPrediction 3408 3412	HCTZ
+T95	NERPrediction 3414 3424	lisinopril

@@ -1,0 +1,52 @@
+T0	NERPrediction 186 188	CC
+T1	NERPrediction 555 557	CP
+T2	NERPrediction 644 654	vancomycin
+T3	NERPrediction 666 674	cefepime
+T4	NERPrediction 795 797	TH
+T5	NERPrediction 1311 1321	migranes  
+T6	NERPrediction 1383 1392	labetalol
+T7	NERPrediction 1408 1417	neurontin
+T8	NERPrediction 1447 1450	qhs
+T9	NERPrediction 1459 1465	epogen
+T10	NERPrediction 1482 1490	losartan
+T11	NERPrediction 1508 1514	nexium
+T12	NERPrediction 1539 1546	senna  
+T13	NERPrediction 1586 1593	lipitor
+T14	NERPrediction 1605 1616	simethicone
+T15	NERPrediction 1623 1626	qid
+T16	NERPrediction 1650 1659	methadone
+T17	NERPrediction 1720 1723	q6h
+T18	NERPrediction 1756 1764	percocet
+T19	NERPrediction 1835 1839	ETOH
+T20	NERPrediction 1885 1888	NAD
+T21	NERPrediction 2077 2081	CTAB
+T22	NERPrediction 2210 2212	NA
+T23	NERPrediction 2277 2288	K         	
+T24	NERPrediction 2411 2414	CO2
+T25	NERPrediction 2612 2703	GLU       	          	          	          	254(H)    	              CA        	          	
+T26	NERPrediction 2748 2752	PHOS
+T27	NERPrediction 2815 2817	MG
+T28	NERPrediction 2949 2976	DBILI     	          	0.5(H
+T29	NERPrediction 3420 3428	AST/SGOT
+T30	NERPrediction 3431 3435	63(H
+T31	NERPrediction 3571 3708	TBILI     	1.0       	          	          	          	            DBILI     	0.5(H)    	          	          	          	               
+T32	NERPrediction 3978 4056	HCT       	37.6(L)   	          	          	          	            MCV       	
+T33	NERPrediction 4112 4123	MCH       	
+T34	NERPrediction 4849 4933	ANEUT     	5.14      	          	          	          	            ALYMP     	0.63(L
+T35	NERPrediction 4983 5000	AMONS     	0.53(H
+T36	NERPrediction 5050 5055	AEOSN
+T37	NERPrediction 5184 5189	ANISO
+T38	NERPrediction 6163 6168	4/day
+T39	NERPrediction 6433 6441	cefepime
+T40	NERPrediction 6554 6557	WNL
+T41	NERPrediction 6746 6756	vancomycin
+T42	NERPrediction 6799 6807	cefepime
+T43	NERPrediction 6836 6842	TTSa  
+T44	NERPrediction 6873 6882	labetalol
+T45	NERPrediction 6903 6912	Labetalol
+T46	NERPrediction 6997 7005	losartan
+T47	NERPrediction 7116 7122	epogen
+T48	NERPrediction 7143 7149	Nexium
+T49	NERPrediction 7151 7158	heparin
+T50	NERPrediction 7166 7169	FEN
+T51	NERPrediction 7239 7248	phenergan

@@ -1,0 +1,17 @@
+T1	NERPrediction 344 351	insulin
+T2	NERPrediction 474 482	Premarin
+T3	NERPrediction 543 551	Medicine
+T4	NERPrediction 842 851	Micronase
+T5	NERPrediction 870 877	aspirin
+T6	NERPrediction 889 897	Premarin
+T7	NERPrediction 1002 1008	sugars
+T8	NERPrediction 1212 1221	Synthroid
+T9	NERPrediction 1223 1233	medication
+T10	NERPrediction 1307 1317	medication
+T11	NERPrediction 1863 1871	stopping
+T12	NERPrediction 2462 2471	Micronase
+T13	NERPrediction 2492 2514	a       hemoglobin A1C
+T14	NERPrediction 2500 2510	hemoglobin
+T15	NERPrediction 2500 2514	hemoglobin A1C
+T16	NERPrediction 2708 2711	TSH
+T17	NERPrediction 2928 2937	Synthroid

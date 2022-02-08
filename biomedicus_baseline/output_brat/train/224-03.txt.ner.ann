@@ -1,0 +1,16 @@
+T1	NERPrediction 1195 1199	drug
+T2	NERPrediction 1447 1451	drug
+T3	NERPrediction 1452 1456	ETOH
+T4	NERPrediction 1528 1535	Tobacco
+T5	NERPrediction 2386 2391	color
+T6	NERPrediction 3530 3541	medications
+T7	NERPrediction 3547 3551	HCTZ
+T8	NERPrediction 3637 3647	Medication
+T9	NERPrediction 3685 3692	Ecotrin
+T10	NERPrediction 3715 3734	hydrochlorothiazide
+T11	NERPrediction 3757 3770	nitroglycerin
+T12	NERPrediction 3818 3824	Plavix
+T13	NERPrediction 3845 3856	simvastatin
+T14	NERPrediction 3875 3881	Toprol
+T15	NERPrediction 3875 3884	Toprol XL
+T16	NERPrediction 3907 3913	Tricor

@@ -1,0 +1,12 @@
+T0	NERPrediction 319 330	cholesterol
+T1	NERPrediction 1491 1502	cholesterol
+T2	NERPrediction 1532 1534	PE
+T3	NERPrediction 1556 1561	smoke
+T4	NERPrediction 1823 1830	Lipitor
+T5	NERPrediction 1971 1984	O2 saturation
+T6	NERPrediction 3595 3608	nitroglycerin
+T7	NERPrediction 3806 3813	aspirin
+T8	NERPrediction 3951 3961	creatinine
+T9	NERPrediction 5125 5134	Lopressor
+T10	NERPrediction 5190 5203	nitroglycerin
+T11	NERPrediction 5766 5774	MELENDEZ

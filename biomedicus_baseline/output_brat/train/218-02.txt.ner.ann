@@ -1,0 +1,31 @@
+T1	NERPrediction 142 145	s/p
+T2	NERPrediction 269 273	lot.
+T3	NERPrediction 383 391	wakes up
+T4	NERPrediction 491 494	s/p
+T5	NERPrediction 641 644	TnT
+T6	NERPrediction 749 759	glucophage
+T7	NERPrediction 951 954	ice
+T8	NERPrediction 955 960	cream
+T9	NERPrediction 977 982	Other
+T10	NERPrediction 1087 1093	Active
+T11	NERPrediction 1094 1105	Medications
+T12	NERPrediction 1109 1117	atenolol
+T13	NERPrediction 1131 1138	aspirin
+T14	NERPrediction 1131 1143	aspirin 81mg
+T15	NERPrediction 1151 1161	furosemide
+T16	NERPrediction 1151 1167	furosemide 20 mg
+T17	NERPrediction 1187 1197	lisinopril
+T18	NERPrediction 1187 1204	lisinopril 2.5 mg
+T19	NERPrediction 1212 1225	nitroglycerin
+T20	NERPrediction 1245 1258	multivitamins
+T21	NERPrediction 1260 1267	Lipitor
+T22	NERPrediction 1280 1289	lidocaine
+T23	NERPrediction 1293 1301	ointment
+T24	NERPrediction 1593 1597	EtOH
+T25	NERPrediction 2114 2117	s/p
+T26	NERPrediction 2181 2191	furosemide
+T27	NERPrediction 2245 2247	BB
+T28	NERPrediction 2249 2255	statin
+T29	NERPrediction 2276 2279	LDL
+T30	NERPrediction 2320 2323	s/p
+T31	NERPrediction 2363 2366	PPI

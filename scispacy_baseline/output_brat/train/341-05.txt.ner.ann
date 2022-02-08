@@ -1,0 +1,80 @@
+T0	NERPrediction 225 233	coumadin
+T1	NERPrediction 254 256	DM
+T2	NERPrediction 1387 1397	coumadin  
+T3	NERPrediction 1648 1658	w/Hartmann
+T4	NERPrediction 1846 1849	QID
+T5	NERPrediction 1856 1865	Bisacodyl
+T6	NERPrediction 1880 1882	MG
+T7	NERPrediction 1912 1919	Calcium
+T8	NERPrediction 1942 1951	Ca++/125u
+T9	NERPrediction 1978 1988	Citalopram
+T10	NERPrediction 1990 1996	Celexa
+T11	NERPrediction 2002 2004	MG
+T12	NERPrediction 2017 2026	Clonidine
+T13	NERPrediction 2032 2034	MG
+T14	NERPrediction 2048 2063	Docusate Sodium
+T15	NERPrediction 2065 2071	Colace
+T16	NERPrediction 2095 2106	Hydralazine
+T17	NERPrediction 2107 2110	Hcl
+T18	NERPrediction 2116 2118	MG
+T19	NERPrediction 2122 2125	QID
+T20	NERPrediction 2140 2148	Glargine
+T21	NERPrediction 2182 2199	Megestrol Acetate
+T22	NERPrediction 2212 2229	Megace  )  400 MG
+T23	NERPrediction 2242 2251	Melatonin
+T24	NERPrediction 2255 2257	MG
+T25	NERPrediction 2261 2264	QHS
+T26	NERPrediction 2271 2289	Metoclopramide Hcl
+T27	NERPrediction 2291 2297	Reglan
+T28	NERPrediction 2303 2305	MG
+T29	NERPrediction 2309 2312	Q6H
+T30	NERPrediction 2319 2332	Multivitamins
+T31	NERPrediction 2358 2365	Niferex
+T32	NERPrediction 2391 2401	Omeprazole
+T33	NERPrediction 2403 2411	Prilosec
+T34	NERPrediction 2417 2419	MG
+T35	NERPrediction 2432 2443	Ondansetron
+T36	NERPrediction 2449 2455	Zofran
+T37	NERPrediction 2464 2466	MG
+T38	NERPrediction 2470 2473	Q8H
+T39	NERPrediction 2500 2514	Pentoxifylline
+T40	NERPrediction 2536 2573	Polyethylene Glycol  (Miralax)  17 GM
+T41	NERPrediction 2586 2596	Prednisone
+T42	NERPrediction 2601 2603	MG
+T43	NERPrediction 2616 2628	Propoxyphene
+T44	NERPrediction 2682 2685	Q4H
+T45	NERPrediction 2697 2712	Propranolol Hcl
+T46	NERPrediction 2714 2721	Inderal
+T47	NERPrediction 2728 2730	MG
+T48	NERPrediction 2734 2737	QID
+T49	NERPrediction 2744 2753	Verapamil
+T50	NERPrediction 2754 2757	Hcl
+T51	NERPrediction 2763 2765	MG
+T52	NERPrediction 2779 2794	Warfarin Sodium
+T53	NERPrediction 2810 2812	MG
+T54	NERPrediction 2816 2832	QPM    Allergies
+T55	NERPrediction 2836 2847	Propranolol
+T56	NERPrediction 2950 2954	EtOH
+T57	NERPrediction 3046 3052	192/80
+T58	NERPrediction 3138 3141	NAD
+T59	NERPrediction 3157 3160	MMM
+T60	NERPrediction 3190 3200	JVP flat  
+T61	NERPrediction 3207 3211	CTAB
+T62	NERPrediction 3213 3222	Card: RRR
+T63	NERPrediction 3404 3413	A&amp;Ox3
+T64	NERPrediction 3525 3527	Cr
+T65	NERPrediction 3535 3537	Ca
+T66	NERPrediction 3547 3550	PO4
+T67	NERPrediction 3559 3561	Mg
+T68	NERPrediction 4191 4194	gas
+T69	NERPrediction 4434 4442	coumadin
+T70	NERPrediction 4463 4465	DM
+T71	NERPrediction 4627 4646	pt&#8217;s lethargy
+T72	NERPrediction 5004 5012	steroids
+T73	NERPrediction 6318 6329	propranolol
+T74	NERPrediction 6372 6381	clonidine
+T75	NERPrediction 6383 6392	verapimil
+T76	NERPrediction 6702 6710	warfarin
+T77	NERPrediction 6755 6757	Cr
+T78	NERPrediction 6981 6984	FEN
+T79	NERPrediction 7121 7131	47234     

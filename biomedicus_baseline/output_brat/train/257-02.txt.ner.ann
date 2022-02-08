@@ -1,0 +1,64 @@
+T1	NERPrediction 81 85	Date
+T2	NERPrediction 1776 1780	Oral
+T3	NERPrediction 1800 1810	Creatinine
+T4	NERPrediction 1956 1961	Other
+T5	NERPrediction 2290 2293	s/p
+T6	NERPrediction 2341 2346	patch
+T7	NERPrediction 2409 2412	s/p
+T8	NERPrediction 2678 2683	, s/p
+T9	NERPrediction 2680 2683	s/p
+T10	NERPrediction 2792 2803	medications
+T11	NERPrediction 2804 2811	Aspirin
+T12	NERPrediction 2812 2833	(acetylsalicylic acid
+T13	NERPrediction 2813 2833	acetylsalicylic acid
+T14	NERPrediction 2867 2886	Hydrochlorothiazide
+T15	NERPrediction 2867 2892	Hydrochlorothiazide 50 mg
+T16	NERPrediction 2902 2912	Lisinopril
+T17	NERPrediction 2902 2918	Lisinopril 40 mg
+T18	NERPrediction 2945 2954	Lopressor
+T19	NERPrediction 2955 2975	(metoprolol tartrate
+T20	NERPrediction 2956 2966	metoprolol
+T21	NERPrediction 2956 2975	metoprolol tartrate
+T22	NERPrediction 2967 2975	tartrate
+T23	NERPrediction 2992 3001	Metformin
+T24	NERPrediction 3043 3046	tab
+T25	NERPrediction 3050 3057	Norvasc
+T26	NERPrediction 3050 3076	Norvasc (amlodipine) 10 mg
+T27	NERPrediction 3058 3076	(amlodipine) 10 mg
+T28	NERPrediction 3059 3069	amlodipine
+T29	NERPrediction 3059 3076	amlodipine) 10 mg
+T30	NERPrediction 3086 3095	Plaquenil
+T31	NERPrediction 3086 3103	Plaquenil sulfate
+T32	NERPrediction 3096 3123	sulfate (hydroxychloroquine
+T33	NERPrediction 3105 3123	hydroxychloroquine
+T34	NERPrediction 3141 3149	Prilosec
+T35	NERPrediction 3151 3161	omeprazole
+T36	NERPrediction 3178 3183	Zocor
+T37	NERPrediction 3178 3203	Zocor (simvastatin) 20 mg
+T38	NERPrediction 3184 3203	(simvastatin) 20 mg
+T39	NERPrediction 3185 3196	simvastatin
+T40	NERPrediction 3185 3203	simvastatin) 20 mg
+T41	NERPrediction 3222 3233	Medications
+T42	NERPrediction 3402 3404	SR
+T43	NERPrediction 3412 3417	Block
+T44	NERPrediction 3549 3553	Date
+T45	NERPrediction 3796 3800	LMCA
+T46	NERPrediction 4240 4244	Date
+T47	NERPrediction 4482 4487	Other
+T48	NERPrediction 4634 4637	PPD
+T49	NERPrediction 4668 4680	illicit drug
+T50	NERPrediction 4676 4680	drug
+T51	NERPrediction 4702 4707	Other
+T52	NERPrediction 4976 4989	, sore throat
+T53	NERPrediction 4978 4989	sore throat
+T54	NERPrediction 6002 6010	melanoma
+T55	NERPrediction 6030 6033	PAD
+T56	NERPrediction 6115 6121	Rectal
+T57	NERPrediction 6124 6130	guaiac
+T58	NERPrediction 7100 7106	Dental
+T59	NERPrediction 7230 7240	Lisinopril
+T60	NERPrediction 7273 7276	ASA
+T61	NERPrediction 7302 7311	Lopressor
+T62	NERPrediction 7667 7676	Bactroban
+T63	NERPrediction 7723 7732	metformin
+T64	NERPrediction 7847 7857	Anesthesia

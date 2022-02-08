@@ -1,0 +1,47 @@
+T0	NERPrediction 781 792	barbiturate
+T1	NERPrediction 797 803	Ativan
+T2	NERPrediction 873 878	cream
+T3	NERPrediction 1871 1875	ETOH
+T4	NERPrediction 2216 2225	lorazepam
+T5	NERPrediction 2289 2297	appetite
+T6	NERPrediction 2695 2703	Tramadol
+T7	NERPrediction 2930 2940	prednisone
+T8	NERPrediction 3235 3245	Prednisone
+T9	NERPrediction 3845 3853	steroids
+T10	NERPrediction 3870 3880	Prednisone
+T11	NERPrediction 3905 3912	Lexapro
+T12	NERPrediction 3914 3921	Effexor
+T13	NERPrediction 3923 3931	Depakote
+T14	NERPrediction 3933 3941	Prozac)-
+T15	NERPrediction 4106 4114	Phen/Fen
+T16	NERPrediction 4346 4355	Metformin
+T17	NERPrediction 4429 4437	Accupril
+T18	NERPrediction 4521 4531	Clonazepam
+T19	NERPrediction 4559 4566	Lipitor
+T20	NERPrediction 4644 4653	Cortisone
+T21	NERPrediction 4831 4841	Ca oxalate
+T22	NERPrediction 4918 4927	Detrol LA
+T23	NERPrediction 4991 5004	Levothyroxine
+T24	NERPrediction 5093 5101	Lamictal
+T25	NERPrediction 5107 5117	Clonazepam
+T26	NERPrediction 5306 5314	Arimidex
+T27	NERPrediction 5344 5353	estradiol
+T28	NERPrediction 5410 5418	Arimidex
+T29	NERPrediction 5501 5508	Sotalol
+T30	NERPrediction 5596 5611	Vit C  lamictal
+T31	NERPrediction 5613 5621	arimidex
+T32	NERPrediction 5623 5644	levothyroxin  sotalol
+T33	NERPrediction 5646 5656	accupril  
+T34	NERPrediction 5684 5705	detrol LA  clonazepam
+T35	NERPrediction 5738 5751	acetaminophen
+T36	NERPrediction 5790 5798	37.5/325
+T37	NERPrediction 6247 6252	CP w/
+T38	NERPrediction 6789 6805	varicose veins  
+T39	NERPrediction 7045 7047	OP
+T40	NERPrediction 7425 7428	Glu
+T41	NERPrediction 7694 7704	prednisone
+T42	NERPrediction 7706 7721	antidepressants
+T43	NERPrediction 8081 8083	Ng
+T44	NERPrediction 8542 8550	orlistat
+T45	NERPrediction 8663 8667	ACEI
+T46	NERPrediction 8914 8916	CC

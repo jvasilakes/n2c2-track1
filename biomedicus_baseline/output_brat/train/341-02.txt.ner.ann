@@ -1,0 +1,36 @@
+T1	NERPrediction 367 373	Hyzaar
+T2	NERPrediction 1247 1250	PCP
+T3	NERPrediction 1719 1721	O2
+T4	NERPrediction 1738 1741	air
+T5	NERPrediction 2540 2545	Liver
+T6	NERPrediction 2886 2896	Creatinine
+T7	NERPrediction 2902 2906	Date
+T8	NERPrediction 3099 3103	Date
+T9	NERPrediction 3162 3167	TBILI
+T10	NERPrediction 3258 3262	Date
+T11	NERPrediction 3276 3282	NT-BNP
+T12	NERPrediction 3678 3682	Date
+T13	NERPrediction 3924 3928	Date
+T14	NERPrediction 4080 4084	Date
+T15	NERPrediction 4239 4243	Date
+T16	NERPrediction 4404 4408	Date
+T17	NERPrediction 4563 4567	Date
+T18	NERPrediction 4692 4696	Date
+T19	NERPrediction 4768 4779	angiotensin
+T20	NERPrediction 4768 4797	angiotensin converting enzyme
+T21	NERPrediction 5306 5315	troponins
+T22	NERPrediction 5528 5534	proven
+T23	NERPrediction 5809 5812	ACE
+T24	NERPrediction 5962 5971	diuretics
+T25	NERPrediction 6093 6108	corticosteroids
+T26	NERPrediction 6387 6396	troponins
+T27	NERPrediction 6524 6528	HCTZ
+T28	NERPrediction 6535 6544	diuretics
+T29	NERPrediction 6581 6594	normal saline
+T30	NERPrediction 6773 6776	PTH
+T31	NERPrediction 6776 6787	, vitamin D
+T32	NERPrediction 6778 6785	vitamin
+T33	NERPrediction 6778 6787	vitamin D
+T34	NERPrediction 6814 6824	creatinine
+T35	NERPrediction 6826 6833	calcium
+T36	NERPrediction 7150 7158	Medicine

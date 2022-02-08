@@ -1,0 +1,64 @@
+T1	NERPrediction 48 56	Medicine
+T2	NERPrediction 125 129	Date
+T3	NERPrediction 1113 1118	Other
+T4	NERPrediction 1879 1899	on oral hypoglycemic
+T5	NERPrediction 1879 1905	on oral hypoglycemic agent
+T6	NERPrediction 1882 1899	oral hypoglycemic
+T7	NERPrediction 1882 1905	oral hypoglycemic agent
+T8	NERPrediction 1887 1899	hypoglycemic
+T9	NERPrediction 1887 1905	hypoglycemic agent
+T10	NERPrediction 2088 2093	, s/p
+T11	NERPrediction 2090 2093	s/p
+T12	NERPrediction 2196 2201	, s/p
+T13	NERPrediction 2198 2201	s/p
+T14	NERPrediction 2318 2323	, s/p
+T15	NERPrediction 2320 2323	s/p
+T16	NERPrediction 2344 2355	Medications
+T17	NERPrediction 2366 2369	ASA
+T18	NERPrediction 2384 2394	Lisinopril
+T19	NERPrediction 2408 2412	HCTZ
+T20	NERPrediction 2425 2436	Simvastatin
+T21	NERPrediction 2449 2457	Prazosin
+T22	NERPrediction 2470 2476	Zantac
+T23	NERPrediction 2470 2480	Zantac 150
+T24	NERPrediction 2490 2501	Allopurinol
+T25	NERPrediction 2520 2536	Artificial tears
+T26	NERPrediction 2551 2560	eye drops
+T27	NERPrediction 2573 2578	Latex
+T28	NERPrediction 2580 2588	alphagan
+T29	NERPrediction 2785 2788	Tob
+T30	NERPrediction 2821 2826	smoke
+T31	NERPrediction 2912 2925	Illicit drugs
+T32	NERPrediction 2920 2925	drugs
+T33	NERPrediction 3009 3011	O2
+T34	NERPrediction 3079 3082	NAD
+T35	NERPrediction 3460 3466	Guaiac
+T36	NERPrediction 4760 4765	Monos
+T37	NERPrediction 5005 5011	Sodium
+T38	NERPrediction 5251 5254	CO2
+T39	NERPrediction 5333 5336	BUN
+T40	NERPrediction 5414 5424	Creatinine
+T41	NERPrediction 5495 5502	Glucose
+T42	NERPrediction 5576 5583	Calcium
+T43	NERPrediction 5738 5747	Magnesium
+T44	NERPrediction 5821 5829	Creatine
+T45	NERPrediction 5887 5895	Troponin
+T46	NERPrediction 5955 5963	Creatine
+T47	NERPrediction 6036 6044	Troponin
+T48	NERPrediction 6036 6046	Troponin-T
+T49	NERPrediction 6117 6125	Creatine
+T50	NERPrediction 6416 6423	Nitrite
+T51	NERPrediction 6482 6489	Albumin
+T52	NERPrediction 6548 6555	Glucose
+T53	NERPrediction 6955 6958	s/p
+T54	NERPrediction 7406 7413	for 1-2
+T55	NERPrediction 7676 7681	Other
+T56	NERPrediction 7887 7894	glucose
+T57	NERPrediction 7927 7935	baseline
+T58	NERPrediction 8823 8827	1)	L
+T59	NERPrediction 8899 8911	Electrolytes
+T60	NERPrediction 8957 8959	Mg
+T61	NERPrediction 9014 9016	Mg
+T62	NERPrediction 9021 9029	2)     K
+T63	NERPrediction 9137 9147	Ranitidine
+T64	NERPrediction 9149 9156	heparin

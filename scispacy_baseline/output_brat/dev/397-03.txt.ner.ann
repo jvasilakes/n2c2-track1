@@ -1,0 +1,13 @@
+T0	NERPrediction 97 105	GOLDBERG
+T1	NERPrediction 997 1004	Lipitor
+T2	NERPrediction 1011 1020	Glyburide
+T3	NERPrediction 1027 1036	Neurontin
+T4	NERPrediction 1045 1051	Plavix
+T5	NERPrediction 1058 1073	Zestril 2.5qd  
+T6	NERPrediction 1076 1082	Contin
+T7	NERPrediction 1090 1106	Atenolol 12.5bid
+T8	NERPrediction 1108 1116	Nicotine
+T9	NERPrediction 1142 1157	Codeine->GI    
+T10	NERPrediction 1459 1471	NAD  Neck   
+T11	NERPrediction 1570 1572	ND
+T12	NERPrediction 1919 1921	DP

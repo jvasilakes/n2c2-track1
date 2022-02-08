@@ -1,0 +1,27 @@
+T1	NERPrediction 347 350	His
+T2	NERPrediction 543 556	nitroglycerin
+T3	NERPrediction 1385 1388	His
+T4	NERPrediction 1443 1449	tracer
+T5	NERPrediction 1888 1891	His
+T6	NERPrediction 1925 1933	ramipril
+T7	NERPrediction 1925 1938	ramipril 5 mg
+T8	NERPrediction 1947 1954	aspirin
+T9	NERPrediction 1947 1961	aspirin 162 mg
+T10	NERPrediction 1969 1975	Cozaar
+T11	NERPrediction 1990 1997	Crestor
+T12	NERPrediction 2009 2019	, fish oil
+T13	NERPrediction 2011 2019	fish oil
+T14	NERPrediction 2016 2019	oil
+T15	NERPrediction 2035 2044	metformin
+T16	NERPrediction 2060 2073	multivitamins
+T17	NERPrediction 2075 2081	niacin
+T18	NERPrediction 2075 2088	niacin 500 mg
+T19	NERPrediction 2096 2102	Plavix
+T20	NERPrediction 2114 2125	, Toprol-XL
+T21	NERPrediction 2116 2122	Toprol
+T22	NERPrediction 2116 2125	Toprol-XL
+T23	NERPrediction 2141 2145	HCTZ
+T24	NERPrediction 2165 2171	Nexium
+T25	NERPrediction 2774 2777	His
+T26	NERPrediction 2789 2793	lead
+T27	NERPrediction 3145 3148	His

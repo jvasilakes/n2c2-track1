@@ -1,0 +1,15 @@
+T1	NERPrediction 309 312	MRA
+T2	NERPrediction 394 397	His
+T3	NERPrediction 433 436	His
+T4	NERPrediction 648 658	ampicillin
+T5	NERPrediction 771 782	antibiotics
+T6	NERPrediction 790 800	gadolinium
+T7	NERPrediction 846 856	creatinine
+T8	NERPrediction 926 929	His
+T9	NERPrediction 1074 1081	various
+T10	NERPrediction 1869 1875	Keflex
+T11	NERPrediction 2080 2097	hyperbaric oxygen
+T12	NERPrediction 2091 2097	oxygen
+T13	NERPrediction 2303 2313	gadolinium
+T14	NERPrediction 2329 2339	creatinine
+T15	NERPrediction 2379 2382	His

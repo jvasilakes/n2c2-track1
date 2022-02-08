@@ -1,0 +1,14 @@
+T1	NERPrediction 68 76	Medicine
+T2	NERPrediction 618 623	water
+T3	NERPrediction 991 1002	Medications
+T4	NERPrediction 1005 1011	Advair
+T5	NERPrediction 1076 1086	lisinopril
+T6	NERPrediction 1088 1096	atenolol
+T7	NERPrediction 1098 1106	Mestinon
+T8	NERPrediction 1108 1117	Metformin
+T9	NERPrediction 1122 1143	proton pump inhibitor
+T10	NERPrediction 1335 1340	Nasal
+T11	NERPrediction 2701 2710	Singulair
+T12	NERPrediction 2927 2933	Advair
+T13	NERPrediction 2967 2976	Singulair
+T14	NERPrediction 3067 3075	steroids

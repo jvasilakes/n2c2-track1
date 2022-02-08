@@ -1,0 +1,84 @@
+T1	NERPrediction 212 221	capsaicin
+T2	NERPrediction 277 285	atenolol
+T3	NERPrediction 400 410	interferon
+T4	NERPrediction 522 551	Obsessive compulsive disorder
+T5	NERPrediction 556 567	Medications
+T6	NERPrediction 569 578	Synthroid
+T7	NERPrediction 580 593	LEVOTHYROXINE
+T8	NERPrediction 580 600	LEVOTHYROXINE SODIUM
+T9	NERPrediction 594 600	SODIUM
+T10	NERPrediction 616 622	TABLET
+T11	NERPrediction 630 636	Tablet
+T12	NERPrediction 652 660	Tegretol
+T13	NERPrediction 662 675	CARBAMAZEPINE
+T14	NERPrediction 691 697	TABLET
+T15	NERPrediction 691 706	TABLET CHEWABLE
+T16	NERPrediction 714 720	Tablet
+T17	NERPrediction 728 735	Tablets
+T18	NERPrediction 743 750	Tablets
+T19	NERPrediction 756 766	Wellbutrin
+T20	NERPrediction 767 781	(BUPROPION HCL
+T21	NERPrediction 768 777	BUPROPION
+T22	NERPrediction 768 781	BUPROPION HCL
+T23	NERPrediction 778 781	HCL
+T24	NERPrediction 795 801	TABLET
+T25	NERPrediction 809 815	Tablet
+T26	NERPrediction 821 827	Ativan
+T27	NERPrediction 829 838	LORAZEPAM
+T28	NERPrediction 854 860	TABLET
+T29	NERPrediction 868 874	Tablet
+T30	NERPrediction 880 886	Ativan
+T31	NERPrediction 888 897	LORAZEPAM
+T32	NERPrediction 911 917	TABLET
+T33	NERPrediction 925 931	Tablet
+T34	NERPrediction 937 946	Triazolam
+T35	NERPrediction 962 968	TABLET
+T36	NERPrediction 981 987	Tablet
+T37	NERPrediction 1014 1020	Ativan
+T38	NERPrediction 1037 1046	Neurontin
+T39	NERPrediction 1048 1058	GABAPENTIN
+T40	NERPrediction 1074 1080	TABLET
+T41	NERPrediction 1088 1094	Tablet
+T42	NERPrediction 1107 1110	1/2
+T43	NERPrediction 1123 1130	Xalatan
+T44	NERPrediction 1132 1143	LATANOPROST
+T45	NERPrediction 1160 1167	Flonase
+T46	NERPrediction 1169 1180	FLUTICASONE
+T47	NERPrediction 1181 1192	NASAL SPRAY
+T48	NERPrediction 1187 1192	SPRAY
+T49	NERPrediction 1212 1219	Humulin
+T50	NERPrediction 1212 1225	Humulin 70/30
+T51	NERPrediction 1220 1234	70/30 (INSULIN
+T52	NERPrediction 1222 1237	/30 (INSULIN 70
+T53	NERPrediction 1223 1237	30 (INSULIN 70
+T54	NERPrediction 1226 1240	(INSULIN 70/30
+T55	NERPrediction 1227 1234	INSULIN
+T56	NERPrediction 1227 1240	INSULIN 70/30
+T57	NERPrediction 1257 1263	, 18 U
+T58	NERPrediction 1259 1263	18 U
+T59	NERPrediction 1271 1274	BID
+T60	NERPrediction 1277 1287	Lisinopril
+T61	NERPrediction 1299 1305	TABLET
+T62	NERPrediction 1313 1319	Tablet
+T63	NERPrediction 1325 1332	Timolol
+T64	NERPrediction 1325 1340	Timolol MALEATE
+T65	NERPrediction 1361 1370	Albuterol
+T66	NERPrediction 1385 1388	INH
+T67	NERPrediction 1403 1412	Oxycodone
+T68	NERPrediction 1458 1464	TABLET
+T69	NERPrediction 1472 1478	Tablet
+T70	NERPrediction 1508 1517	duragesic
+T71	NERPrediction 1586 1595	Albuterol
+T72	NERPrediction 1618 1621	-6H
+T73	NERPrediction 1619 1621	6H
+T74	NERPrediction 1640 1647	Insulin
+T75	NERPrediction 1640 1655	Insulin REGULAR
+T76	NERPrediction 1720 1727	Aspirin
+T77	NERPrediction 1730 1737	Unknown
+T78	NERPrediction 1747 1754	Unknown
+T79	NERPrediction 1756 1763	Codeine
+T80	NERPrediction 1766 1773	Unknown
+T81	NERPrediction 1786 1795	oxycodone
+T82	NERPrediction 1918 1924	BP 100
+T83	NERPrediction 2006 2015	oxycodone
+T84	NERPrediction 2041 2047	lantus

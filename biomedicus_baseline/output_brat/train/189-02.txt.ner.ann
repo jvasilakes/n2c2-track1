@@ -1,0 +1,27 @@
+T1	NERPrediction 59 67	Medicine
+T2	NERPrediction 857 874	oral hypoglycemic
+T3	NERPrediction 857 880	oral hypoglycemic agent
+T4	NERPrediction 862 874	hypoglycemic
+T5	NERPrediction 862 880	hypoglycemic agent
+T6	NERPrediction 897 904	glucose
+T7	NERPrediction 1005 1016	Medications
+T8	NERPrediction 1018 1028	Clobetasol
+T9	NERPrediction 1035 1040	CREAM
+T10	NERPrediction 1045 1048	BID
+T11	NERPrediction 1050 1058	ATENOLOL
+T12	NERPrediction 1067 1073	Tablet
+T13	NERPrediction 1084 1094	LISINOPRIL
+T14	NERPrediction 1103 1109	Tablet
+T15	NERPrediction 1120 1129	GLYBURIDE
+T16	NERPrediction 1137 1143	Tablet
+T17	NERPrediction 1158 1179	(ACETYLSALICYLIC Acid
+T18	NERPrediction 1159 1179	ACETYLSALICYLIC Acid
+T19	NERPrediction 1189 1195	Tablet
+T20	NERPrediction 1216 1223	CAPSULE
+T21	NERPrediction 1872 1879	Protein
+T22	NERPrediction 2209 2216	Dyazide
+T23	NERPrediction 2357 2362	HbA1c
+T24	NERPrediction 2468 2475	dyazide
+T25	NERPrediction 2492 2499	dyazide
+T26	NERPrediction 2520 2527	Monitor
+T27	NERPrediction 2682 2691	adenosine

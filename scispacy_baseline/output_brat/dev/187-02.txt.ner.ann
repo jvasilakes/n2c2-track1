@@ -1,0 +1,16 @@
+T0	NERPrediction 89 101	Lambertville
+T1	NERPrediction 875 885	prednisone
+T2	NERPrediction 2001 2009	Lamictal
+T3	NERPrediction 2011 2020	Risperdal
+T4	NERPrediction 2022 2034	testolactone
+T5	NERPrediction 2049 2056	Levoxyl
+T6	NERPrediction 2058 2064	Altace
+T7	NERPrediction 2083 2092	ibuprofen
+T8	NERPrediction 2105 2115	prednisone
+T9	NERPrediction 2145 2155	penicillin
+T10	NERPrediction 2157 2162	Lozol
+T11	NERPrediction 2179 2190	allopurinol
+T12	NERPrediction 2229 2236	Aricept
+T13	NERPrediction 3888 3899	cholesterol
+T14	NERPrediction 4069 4076	aspirin
+T15	NERPrediction 4085 4088	q.d

@@ -1,0 +1,66 @@
+T1	NERPrediction 28 32	Date
+T2	NERPrediction 145 149	Date
+T3	NERPrediction 799 802	SBP
+T4	NERPrediction 900 911	ceftriaxone
+T5	NERPrediction 913 925	azithromycin
+T6	NERPrediction 1286 1290	/c/r
+T7	NERPrediction 1287 1290	c/r
+T8	NERPrediction 1340 1352	/sore throat
+T9	NERPrediction 1341 1352	sore throat
+T10	NERPrediction 1646 1648	T4
+T11	NERPrediction 1723 1728	, S/p
+T12	NERPrediction 1725 1728	S/p
+T13	NERPrediction 1958 1969	cholesterol
+T14	NERPrediction 2071 2074	S/p
+T15	NERPrediction 2145 2148	CEA
+T16	NERPrediction 2442 2450	flu shot
+T17	NERPrediction 2473 2476	S/p
+T18	NERPrediction 2535 2545	Benzocaine
+T19	NERPrediction 2547 2558	Medications
+T20	NERPrediction 2560 2568	Percocet
+T21	NERPrediction 2697 2700	TOB
+T22	NERPrediction 2718 2722	ETOH
+T23	NERPrediction 2986 2989	air
+T24	NERPrediction 3042 3047	probe
+T25	NERPrediction 3266 3268	T4
+T26	NERPrediction 3331 3342	(L)    	134
+T27	NERPrediction 3332 3342	L)    	134
+T28	NERPrediction 3333 3344	)    	134(L
+T29	NERPrediction 3339 3344	134(L
+T30	NERPrediction 3515 3518	CO2
+T31	NERPrediction 3581 3584	BUN
+T32	NERPrediction 3738 3749	(H)    	106
+T33	NERPrediction 3739 3749	H)    	106
+T34	NERPrediction 3978 3983	TBILI
+T35	NERPrediction 4584 4589	142(H
+T36	NERPrediction 4639 4644	TBILI
+T37	NERPrediction 5851 5855	87(H
+T38	NERPrediction 7419 7422	SED
+T39	NERPrediction 8053 8064	antibiotics
+T40	NERPrediction 8171 8179	troponin
+T41	NERPrediction 8331 8338	norvasc
+T42	NERPrediction 8340 8345	imdur
+T43	NERPrediction 8356 8365	lopressor
+T44	NERPrediction 8533 8543	medication
+T45	NERPrediction 8584 8587	CAP
+T46	NERPrediction 8600 8611	ceftriaxone
+T47	NERPrediction 8612 8624	azithromycin
+T48	NERPrediction 8636 8646	prednisone
+T49	NERPrediction 8710 8718	troponin
+T50	NERPrediction 8785 8787	O2
+T51	NERPrediction 8806 8810	(T&S
+T52	NERPrediction 8807 8810	T&S
+T53	NERPrediction 8825 8828	ASA
+T54	NERPrediction 8830 8839	lopressor
+T55	NERPrediction 8841 8847	statin
+T56	NERPrediction 8849 8855	plavix
+T57	NERPrediction 8856 8859	ARF
+T58	NERPrediction 8861 8869	baseline
+T59	NERPrediction 9064 9072	baseline
+T60	NERPrediction 9135 9144	neurontin
+T61	NERPrediction 9223 9226	fat
+T62	NERPrediction 9227 9238	cholesterol
+T63	NERPrediction 9249 9264	salt, potassium
+T64	NERPrediction 9255 9264	potassium
+T65	NERPrediction 9277 9283	nexium
+T66	NERPrediction 9285 9292	heparin

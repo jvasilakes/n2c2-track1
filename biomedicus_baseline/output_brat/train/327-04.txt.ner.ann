@@ -1,0 +1,71 @@
+T1	NERPrediction 352 363	Medications
+T2	NERPrediction 365 371	Elavil
+T3	NERPrediction 372 390	(AMITRIPTYLINE HCL
+T4	NERPrediction 373 386	AMITRIPTYLINE
+T5	NERPrediction 373 390	AMITRIPTYLINE HCL
+T6	NERPrediction 387 390	HCL
+T7	NERPrediction 397 403	TABLET
+T8	NERPrediction 411 417	Tablet
+T9	NERPrediction 437 444	ASPIRIN
+T10	NERPrediction 437 459	ASPIRIN ENTERIC COATED
+T11	NERPrediction 475 481	TABLET
+T12	NERPrediction 498 506	Atenolol
+T13	NERPrediction 498 512	Atenolol 50 MG
+T14	NERPrediction 516 519	BID
+T15	NERPrediction 522 532	Lisinopril
+T16	NERPrediction 522 538	Lisinopril 40 MG
+T17	NERPrediction 545 551	TABLET
+T18	NERPrediction 568 577	Pravachol
+T19	NERPrediction 579 590	PRAVASTATIN
+T20	NERPrediction 597 603	TABLET
+T21	NERPrediction 611 617	Tablet
+T22	NERPrediction 630 636	Lantus
+T23	NERPrediction 637 654	(INSULIN GLARGINE
+T24	NERPrediction 638 645	INSULIN
+T25	NERPrediction 638 654	INSULIN GLARGINE
+T26	NERPrediction 674 682	Golytely
+T27	NERPrediction 739 745	Plavix
+T28	NERPrediction 739 759	Plavix (CLOPIDOGREL)
+T29	NERPrediction 739 765	Plavix (CLOPIDOGREL) 75 MG
+T30	NERPrediction 746 765	(CLOPIDOGREL) 75 MG
+T31	NERPrediction 747 758	CLOPIDOGREL
+T32	NERPrediction 747 765	CLOPIDOGREL) 75 MG
+T33	NERPrediction 772 778	TABLET
+T34	NERPrediction 795 806	Allopurinol
+T35	NERPrediction 795 813	Allopurinol 300 MG
+T36	NERPrediction 821 827	TABLET
+T37	NERPrediction 1215 1232	Influenza Vaccine
+T38	NERPrediction 1225 1232	Vaccine
+T39	NERPrediction 1246 1257	Cholesterol
+T40	NERPrediction 1279 1290	CHOLESTEROL
+T41	NERPrediction 1420 1426	Guaiac
+T42	NERPrediction 1436 1441	Other
+T43	NERPrediction 1455 1464	Pneumovax
+T44	NERPrediction 1610 1617	Protein
+T45	NERPrediction 1675 1680	Hep B
+T46	NERPrediction 1681 1688	Vaccine
+T47	NERPrediction 2263 2276	Triglycerides
+T48	NERPrediction 2292 2305	TRIGLYCERIDES
+T49	NERPrediction 2416 2427	Cholesterol
+T50	NERPrediction 2416 2431	Cholesterol-LDL
+T51	NERPrediction 2428 2431	LDL
+T52	NERPrediction 2446 2449	LDL
+T53	NERPrediction 2446 2461	LDL CHOLESTEROL
+T54	NERPrediction 2450 2461	CHOLESTEROL
+T55	NERPrediction 2707 2714	glucose
+T56	NERPrediction 2759 2762	BID
+T57	NERPrediction 3014 3025	Cholesterol
+T58	NERPrediction 3014 3029	Cholesterol-HDL
+T59	NERPrediction 3026 3029	HDL
+T60	NERPrediction 3046 3049	Hgb
+T61	NERPrediction 3051 3061	Hemoglobin
+T62	NERPrediction 3081 3086	HbA1c
+T63	NERPrediction 3181 3191	clear, ear
+T64	NERPrediction 3476 3480	Extr
+T65	NERPrediction 3681 3691	medication
+T66	NERPrediction 3710 3717	Meridia
+T67	NERPrediction 3760 3763	med
+T68	NERPrediction 3825 3836	NPH insulin
+T69	NERPrediction 3829 3836	insulin
+T70	NERPrediction 3969 3980	allopurinol
+T71	NERPrediction 3992 3997	Urate

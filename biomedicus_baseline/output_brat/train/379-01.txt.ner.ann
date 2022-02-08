@@ -1,0 +1,18 @@
+T1	NERPrediction 661 668	aspirin
+T2	NERPrediction 779 782	His
+T3	NERPrediction 1109 1120	cholesterol
+T4	NERPrediction 1199 1206	alcohol
+T5	NERPrediction 1240 1247	aspirin
+T6	NERPrediction 1249 1256	insulin
+T7	NERPrediction 1258 1274	antihypertensive
+T8	NERPrediction 1275 1285	medication
+T9	NERPrediction 1314 1325	cholesterol
+T10	NERPrediction 1921 1924	His
+T11	NERPrediction 2414 2417	RUE
+T12	NERPrediction 2623 2631	stand up
+T13	NERPrediction 2747 2750	His
+T14	NERPrediction 3176 3183	glucose
+T15	NERPrediction 3176 3191	glucose control
+T16	NERPrediction 3203 3213	medication
+T17	NERPrediction 3579 3595	antihypertensive
+T18	NERPrediction 3649 3652	PCP

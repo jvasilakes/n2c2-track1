@@ -1,0 +1,22 @@
+T0	NERPrediction 278 282	fine
+T1	NERPrediction 465 478	acetaminophen
+T2	NERPrediction 490 503	nitroglycerin
+T3	NERPrediction 957 962	R/I'd
+T4	NERPrediction 999 1011	4 U GI Bleed
+T5	NERPrediction 1056 1066	lovastatin
+T6	NERPrediction 1246 1256	glucophage
+T7	NERPrediction 1281 1286	d/c'd
+T8	NERPrediction 1380 1389	glyburide
+T9	NERPrediction 1432 1439	aspirin
+T10	NERPrediction 1452 1460	atenolol
+T11	NERPrediction 1474 1484	furosemide
+T12	NERPrediction 1510 1519	glyburide
+T13	NERPrediction 1593 1603	lovastatin
+T14	NERPrediction 1612 1615	qpm
+T15	NERPrediction 1632 1648	multivitamins   
+T16	NERPrediction 1648 1661	nitroglycerin
+T17	NERPrediction 1822 1826	EtOH
+T18	NERPrediction 2788 2802	anti-coagulate
+T19	NERPrediction 3100 3107	Stable-
+T20	NERPrediction 3149 3151	DM
+T21	NERPrediction 3178 3187	glyburide

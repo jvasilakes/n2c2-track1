@@ -1,0 +1,39 @@
+T1	NERPrediction 104 108	Date
+T2	NERPrediction 233 236	s/p
+T3	NERPrediction 962 973	antibiotics
+T4	NERPrediction 1451 1459	baseline
+T5	NERPrediction 1474 1477	s/p
+T6	NERPrediction 1542 1545	CAS
+T7	NERPrediction 1545 1550	, s/p
+T8	NERPrediction 1547 1550	s/p
+T9	NERPrediction 1647 1650	ASA
+T10	NERPrediction 1685 1692	Aspirin
+T11	NERPrediction 1685 1698	Aspirin 81 mg
+T12	NERPrediction 1718 1727	Albuterol
+T13	NERPrediction 1779 1786	Norvasc
+T14	NERPrediction 1806 1812	Colace
+T15	NERPrediction 1833 1842	Doxazosin
+T16	NERPrediction 1833 1847	Doxazosin 2 mg
+T17	NERPrediction 1861 1868	Lexapro
+T18	NERPrediction 1894 1900	Nexium
+T19	NERPrediction 1926 1935	Glyburide
+T20	NERPrediction 1926 1940	Glyburide 5 mg
+T21	NERPrediction 1989 1996	Vicodin
+T22	NERPrediction 1999 2002	tab
+T23	NERPrediction 2045 2052	insulin
+T24	NERPrediction 2058 2066	Atrovent
+T25	NERPrediction 2099 2105	Ativan
+T26	NERPrediction 2144 2153	Lopressor
+T27	NERPrediction 2176 2188	Multivitamin
+T28	NERPrediction 2191 2194	tab
+T29	NERPrediction 2215 2224	Nitro-Dur
+T30	NERPrediction 2225 2230	patch
+T31	NERPrediction 2274 2279	SENNA
+T32	NERPrediction 2301 2310	Silvadene
+T33	NERPrediction 2355 2360	Zocor
+T34	NERPrediction 2382 2390	Coumadin
+T35	NERPrediction 2453 2455	O2
+T36	NERPrediction 2518 2521	NAD
+T37	NERPrediction 3095 3102	various
+T38	NERPrediction 3425 3442	wound debridement
+T39	NERPrediction 3498 3502	Ring

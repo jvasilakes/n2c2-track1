@@ -1,0 +1,27 @@
+T0	NERPrediction 115 191	5694653MEDIQUIK ]                                                           
+T1	NERPrediction 1133 1137	ATRA
+T2	NERPrediction 1142 1152	idarubicin
+T3	NERPrediction 1218 1228	idarubicin
+T4	NERPrediction 1233 1237	ATRA
+T5	NERPrediction 1493 1502	Lopressor
+T6	NERPrediction 1512 1522	Glucophage
+T7	NERPrediction 1527 1530	QID
+T8	NERPrediction 1793 1800	alcohol
+T9	NERPrediction 1909 1912	NAD
+T10	NERPrediction 1950 1953	MMM
+T11	NERPrediction 2097 2101	CTAB
+T12	NERPrediction 2103 2120	Cor/Cardiac	  RRR
+T13	NERPrediction 2245 2259	NA        	140
+T14	NERPrediction 2312 2323	K         	
+T15	NERPrediction 2446 2457	CO2       	
+T16	NERPrediction 2647 2663	GLU       	145(H
+T17	NERPrediction 2783 2787	PHOS
+T18	NERPrediction 2850 2917	TBILI     	0.4       	          	          	          	            
+T19	NERPrediction 2917 2922	DBILI
+T20	NERPrediction 3254 3262	AST/SGOT
+T21	NERPrediction 3455 3460	DBILI
+T22	NERPrediction 3591 3608	HCT       	33.6(L
+T23	NERPrediction 4013 4096	EOS      	2         	          	          	          	            ANEUT     	1.36(L
+T24	NERPrediction 4226 4231	1.0(T
+T25	NERPrediction 4680 4685	Vanco
+T26	NERPrediction 4839 4849	glucophage

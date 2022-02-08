@@ -1,0 +1,59 @@
+T1	NERPrediction 71 74	MCC
+T2	NERPrediction 444 447	Tel
+T3	NERPrediction 520 524	Date
+T4	NERPrediction 667 673	guaiac
+T5	NERPrediction 872 876	food
+T6	NERPrediction 961 965	food
+T7	NERPrediction 1243 1248	water
+T8	NERPrediction 1411 1414	His
+T9	NERPrediction 1766 1771	NSAID
+T10	NERPrediction 2349 2352	His
+T11	NERPrediction 2483 2486	SBP
+T12	NERPrediction 2553 2561	pressors
+T13	NERPrediction 2563 2571	levophed
+T14	NERPrediction 2576 2587	vasopressin
+T15	NERPrediction 2974 2985	sore throat
+T16	NERPrediction 3636 3646	lisinopril
+T17	NERPrediction 3636 3653	lisinopril 2.5 mg
+T18	NERPrediction 3663 3671	atenolol
+T19	NERPrediction 3687 3697	lovastatin
+T20	NERPrediction 3720 3724	food
+T21	NERPrediction 3725 3735	omeprazole
+T22	NERPrediction 3725 3741	omeprazole 20 mg
+T23	NERPrediction 3751 3756	Lasix
+T24	NERPrediction 3787 3794	aspirin
+T25	NERPrediction 3787 3799	aspirin 81mg
+T26	NERPrediction 3819 3830	Medications
+T27	NERPrediction 3839 3845	Flagyl
+T28	NERPrediction 3846 3855	Meropenem
+T29	NERPrediction 3856 3865	Albuterol
+T30	NERPrediction 3866 3874	Atrovent
+T31	NERPrediction 3875 3886	Vasopressin
+T32	NERPrediction 3887 3901	norepinephrine
+T33	NERPrediction 3902 3909	Insulin
+T34	NERPrediction 3910 3916	Nexium
+T35	NERPrediction 4145 4152	Tobacco
+T36	NERPrediction 4145 4160	Tobacco: smoked
+T37	NERPrediction 4204 4208	EtOH
+T38	NERPrediction 4327 4335	pressors
+T39	NERPrediction 4345 4347	O2
+T40	NERPrediction 4596 4602	Rectal
+T41	NERPrediction 4604 4610	guaiac
+T42	NERPrediction 4621 4625	Date
+T43	NERPrediction 4684 4687	CO2
+T44	NERPrediction 4781 4785	Date
+T45	NERPrediction 4799 4802	BUN
+T46	NERPrediction 4912 4916	Date
+T47	NERPrediction 5101 5105	Date
+T48	NERPrediction 5164 5169	TBILI
+T49	NERPrediction 5257 5261	Date
+T50	NERPrediction 5323 5327	Date
+T51	NERPrediction 5519 5533	)       104 (H
+T52	NERPrediction 5527 5533	104 (H
+T53	NERPrediction 5531 5545	(H)        196
+T54	NERPrediction 5532 5545	H)        196
+T55	NERPrediction 5940 5946	guaiac
+T56	NERPrediction 6336 6342	Active
+T57	NERPrediction 6382 6385	PPI
+T58	NERPrediction 6484 6491	lactate
+T59	NERPrediction 6709 6712	MCC

@@ -1,0 +1,47 @@
+T1	NERPrediction 97 105	Medicine
+T2	NERPrediction 1288 1299	Medications
+T3	NERPrediction 1304 1309	Imdur
+T4	NERPrediction 1321 1326	Lasix
+T5	NERPrediction 1338 1345	Lipitor
+T6	NERPrediction 1357 1367	lisinopril
+T7	NERPrediction 1357 1373	lisinopril 40 mg
+T8	NERPrediction 1379 1385	Plavix
+T9	NERPrediction 1397 1404	aspirin
+T10	NERPrediction 1397 1411	aspirin 325 mg
+T11	NERPrediction 1417 1425	Prilosec
+T12	NERPrediction 1437 1443	Toprol
+T13	NERPrediction 1437 1446	Toprol XL
+T14	NERPrediction 1458 1471	nitroglycerin
+T15	NERPrediction 2179 2184	water
+T16	NERPrediction 2558 2561	His
+T17	NERPrediction 2760 2766	Stress
+T18	NERPrediction 3225 3228	BUN
+T19	NERPrediction 3236 3246	creatinine
+T20	NERPrediction 3252 3261	potassium
+T21	NERPrediction 3277 3284	glucose
+T22	NERPrediction 3290 3301	cholesterol
+T23	NERPrediction 3310 3323	triglycerides
+T24	NERPrediction 3328 3331	HDL
+T25	NERPrediction 3340 3343	LDL
+T26	NERPrediction 3673 3681	Coumadin
+T27	NERPrediction 3729 3736	aspirin
+T28	NERPrediction 3741 3747	Plavix
+T29	NERPrediction 3948 3951	His
+T30	NERPrediction 4013 4022	hip and I
+T31	NERPrediction 4139 4151	electrolytes
+T32	NERPrediction 4153 4163	creatinine
+T33	NERPrediction 4165 4168	BUN
+T34	NERPrediction 4334 4345	Cholesterol
+T35	NERPrediction 4430 4441	Medications
+T36	NERPrediction 4454 4459	Imdur
+T37	NERPrediction 4472 4477	Lasix
+T38	NERPrediction 4490 4497	Lipitor
+T39	NERPrediction 4510 4520	lisinopril
+T40	NERPrediction 4510 4526	lisinopril 40 mg
+T41	NERPrediction 4533 4539	Plavix
+T42	NERPrediction 4552 4559	aspirin
+T43	NERPrediction 4552 4566	aspirin 325 mg
+T44	NERPrediction 4573 4581	Prilosec
+T45	NERPrediction 4594 4600	Toprol
+T46	NERPrediction 4594 4603	Toprol XL
+T47	NERPrediction 4616 4629	nitroglycerin

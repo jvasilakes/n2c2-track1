@@ -1,0 +1,40 @@
+T1	NERPrediction 75 83	Medicine
+T2	NERPrediction 128 131	Foy
+T3	NERPrediction 375 380	sugar
+T4	NERPrediction 642 660	of insulin regular
+T5	NERPrediction 645 652	insulin
+T6	NERPrediction 645 660	insulin regular
+T7	NERPrediction 699 706	insulin
+T8	NERPrediction 731 738	insulin
+T9	NERPrediction 784 796	hypoglycemic
+T10	NERPrediction 1262 1283	on atorvastatin 20 mg
+T11	NERPrediction 1265 1277	atorvastatin
+T12	NERPrediction 1265 1283	atorvastatin 20 mg
+T13	NERPrediction 1308 1316	atenolol
+T14	NERPrediction 1308 1322	atenolol 25 mg
+T15	NERPrediction 1328 1335	aspirin
+T16	NERPrediction 1592 1600	Coumadin
+T17	NERPrediction 1670 1678	Coumadin
+T18	NERPrediction 2213 2221	Coumadin
+T19	NERPrediction 2226 2233	aspirin
+T20	NERPrediction 2382 2390	Coumadin
+T21	NERPrediction 2489 2496	aspirin
+T22	NERPrediction 2498 2506	atenolol
+T23	NERPrediction 2508 2515	insulin
+T24	NERPrediction 2517 2525	Coumadin
+T25	NERPrediction 2532 2539	Lipitor
+T26	NERPrediction 2549 2552	Foy
+T27	NERPrediction 2610 2613	His
+T28	NERPrediction 2841 2844	His
+T29	NERPrediction 2845 2854	injection
+T30	NERPrediction 3310 3317	insulin
+T31	NERPrediction 3412 3420	atenolol
+T32	NERPrediction 3520 3531	cholesterol
+T33	NERPrediction 3531 3547	, hemoglobin A1c
+T34	NERPrediction 3533 3543	hemoglobin
+T35	NERPrediction 3533 3547	hemoglobin A1c
+T36	NERPrediction 3776 3783	insulin
+T37	NERPrediction 3793 3799	others
+T38	NERPrediction 4100 4106	sugars
+T39	NERPrediction 4143 4150	insulin
+T40	NERPrediction 4169 4177	atenolol

@@ -1,0 +1,71 @@
+T1	NERPrediction 107 111	/o 2
+T2	NERPrediction 108 111	o 2
+T3	NERPrediction 189 197	/89, a h
+T4	NERPrediction 190 197	89, a h
+T5	NERPrediction 405 410	lasix
+T6	NERPrediction 592 599	woke up
+T7	NERPrediction 1227 1232	cipro
+T8	NERPrediction 1271 1280	quinolone
+T9	NERPrediction 1288 1295	calcium
+T10	NERPrediction 1288 1305	calcium carbonate
+T11	NERPrediction 1288 1319	calcium carbonate and vitamin d
+T12	NERPrediction 1296 1305	carbonate
+T13	NERPrediction 1306 1319	and vitamin d
+T14	NERPrediction 1310 1317	vitamin
+T15	NERPrediction 1310 1319	vitamin d
+T16	NERPrediction 1344 1352	Cellcept
+T17	NERPrediction 1368 1374	Diovan
+T18	NERPrediction 1391 1398	doxepin
+T19	NERPrediction 1420 1437	ferrous gluconate
+T20	NERPrediction 1428 1437	gluconate
+T21	NERPrediction 1439 1444	Lasix
+T22	NERPrediction 1455 1465	once a day
+T23	NERPrediction 1466 1475	metformin
+T24	NERPrediction 1466 1489	metformin hydrochloride
+T25	NERPrediction 1476 1489	hydrochloride
+T26	NERPrediction 1504 1509	Paxil
+T27	NERPrediction 1524 1534	prednisone
+T28	NERPrediction 1550 1558	Prilosec
+T29	NERPrediction 1575 1582	Prograf
+T30	NERPrediction 1594 1600	sodium
+T31	NERPrediction 1594 1612	sodium bicarbonate
+T32	NERPrediction 1594 1634	sodium bicarbonate tablets   650 mg oral
+T33	NERPrediction 1601 1612	bicarbonate
+T34	NERPrediction 1613 1620	tablets
+T35	NERPrediction 1647 1652	Xanax
+T36	NERPrediction 1713 1717	ETOH
+T37	NERPrediction 1732 1736	Drug
+T38	NERPrediction 2020 2023	air
+T39	NERPrediction 2074 2077	m/r
+T40	NERPrediction 2195 2199	HCO3
+T41	NERPrediction 2204 2207	BUN
+T42	NERPrediction 2254 2256	Mg
+T43	NERPrediction 2289 2292	Hgb
+T44	NERPrediction 2330 2342	+ protein, 1
+T45	NERPrediction 2332 2339	protein
+T46	NERPrediction 2332 2342	protein, 1
+T47	NERPrediction 3110 3113	air
+T48	NERPrediction 3261 3269	steroids
+T49	NERPrediction 3396 3401	lasix
+T50	NERPrediction 3411 3414	BID
+T51	NERPrediction 3578 3583	lasix
+T52	NERPrediction 3623 3634	IV contrast
+T53	NERPrediction 3813 3832	alpha-1-antitrypsin
+T54	NERPrediction 3923 3931	baseline
+T55	NERPrediction 3966 3971	lasix
+T56	NERPrediction 3985 3992	prograf
+T57	NERPrediction 4015 4022	prograf
+T58	NERPrediction 4024 4032	cellcept
+T59	NERPrediction 4034 4044	prednisone
+T60	NERPrediction 4224 4233	Labetolol
+T61	NERPrediction 4253 4262	labetolol
+T62	NERPrediction 4451 4458	Norvasc
+T63	NERPrediction 4513 4522	metformin
+T64	NERPrediction 4563 4572	Metformin
+T65	NERPrediction 4596 4598	Cr
+T66	NERPrediction 4654 4663	metformin
+T67	NERPrediction 4705 4711	bicarb
+T68	NERPrediction 4726 4734	baseline
+T69	NERPrediction 4740 4749	allograft
+T70	NERPrediction 4773 4779	sodium
+T71	NERPrediction 4830 4836	bicarb

@@ -1,0 +1,13 @@
+T0	NERPrediction 111 115	PE  
+T1	NERPrediction 432 434	CP
+T2	NERPrediction 602 605	LLE
+T3	NERPrediction 644 651	heparin
+T4	NERPrediction 818 824	Advair
+T5	NERPrediction 826 833	Lipitor
+T6	NERPrediction 835 839	HCTZ
+T7	NERPrediction 841 848	heparin
+T8	NERPrediction 2195 2202	heparin
+T9	NERPrediction 2204 2213	Hypercoag
+T10	NERPrediction 2224 2231	spiriva
+T11	NERPrediction 2233 2242	albuterol
+T12	NERPrediction 2357 2366	Vanwinkle

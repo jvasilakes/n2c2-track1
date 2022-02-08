@@ -1,0 +1,8 @@
+T0	NERPrediction 32 36	NAME
+T1	NERPrediction 193 212	hydrochlorothiazide
+T2	NERPrediction 284 291	alcohol
+T3	NERPrediction 697 704	Alcohol
+T4	NERPrediction 947 950	RPR
+T5	NERPrediction 1018 1025	Vicodin
+T6	NERPrediction 1077 1085	Percocet
+T7	NERPrediction 1221 1229	Percocet

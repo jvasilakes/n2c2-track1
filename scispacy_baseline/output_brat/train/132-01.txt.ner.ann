@@ -1,0 +1,18 @@
+T0	NERPrediction 161 163	FL
+T1	NERPrediction 165 177	76546     RE
+T2	NERPrediction 1016 1024	Thallium
+T3	NERPrediction 1909 1959	Lea  MR #471-90-84-7               -2-            
+T4	NERPrediction 2425 2432	alcohol
+T5	NERPrediction 2456 2463	cocaine
+T6	NERPrediction 2666 2675	Labetalol
+T7	NERPrediction 2690 2699	Captopril
+T8	NERPrediction 2712 2719	Digoxin
+T9	NERPrediction 2752 2759	Lipitor
+T10	NERPrediction 2771 2776	Lasix
+T11	NERPrediction 2787 2792	Coreg
+T12	NERPrediction 2806 2819	Nitroglycerin
+T13	NERPrediction 2837 2848	Gemfibrozil
+T14	NERPrediction 3638 3645	Digoxin
+T15	NERPrediction 4210 4260	Lea  MR #471-90-84-7               -3-            
+T16	NERPrediction 5201 5208	Heparin
+T17	NERPrediction 5783 5785	FL

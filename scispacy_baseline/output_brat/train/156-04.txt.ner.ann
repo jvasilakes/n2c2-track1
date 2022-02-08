@@ -1,0 +1,16 @@
+T0	NERPrediction 628 659	pain/back   pain/abdominal pain
+T1	NERPrediction 862 870	Atenolol
+T2	NERPrediction 872 877	Imdur
+T3	NERPrediction 879 884	Lasix
+T4	NERPrediction 886 893	Lipitor
+T5	NERPrediction 895 904	metformin
+T6	NERPrediction 919 925	Zantac
+T7	NERPrediction 927 932	Vioxx
+T8	NERPrediction 934 944	Lisinopril
+T9	NERPrediction 946 953	Ecotrin
+T10	NERPrediction 955 962	Avandia
+T11	NERPrediction 2027 2034	aspirin
+T12	NERPrediction 2036 2043	heparin
+T13	NERPrediction 2047 2052	Lasix
+T14	NERPrediction 2054 2064	Nitropaste
+T15	NERPrediction 2630 2742	BO907                          D:12/04/83                                                          T:12/04/83   

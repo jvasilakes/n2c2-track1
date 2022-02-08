@@ -1,0 +1,11 @@
+T0	NERPrediction 438 449	cholesterol
+T1	NERPrediction 951 962	cholesterol
+T2	NERPrediction 1024 1026	NO
+T3	NERPrediction 1223 1229	oxygen
+T4	NERPrediction 1531 1538	aspirin
+T5	NERPrediction 1555 1568	Nitroglycerin
+T6	NERPrediction 1573 1582	Lopressor
+T7	NERPrediction 1791 1801	Troponin-I
+T8	NERPrediction 2091 2098	HARRIET
+T9	NERPrediction 2145 2222	D:04/06/75                                                         T:04/07/75
+T10	NERPrediction 2238 2245	HARRIET

@@ -1,0 +1,67 @@
+T0	NERPrediction 211 213	CC
+T1	NERPrediction 283 290	3/22/64
+T2	NERPrediction 711 716	O2 of
+T3	NERPrediction 755 758	NTG
+T4	NERPrediction 783 796	O2 saturation
+T5	NERPrediction 899 906	aspirin
+T6	NERPrediction 908 917	lopressor
+T7	NERPrediction 919 924	lasix
+T8	NERPrediction 926 933	heparin
+T9	NERPrediction 939 949	integrelin
+T10	NERPrediction 1113 1118	lasix
+T11	NERPrediction 1393 1399	oxygen
+T12	NERPrediction 1607 1612	MgSO4
+T13	NERPrediction 1624 1627	KCL
+T14	NERPrediction 1694 1704	troponin-T
+T15	NERPrediction 1797 1801	CHF-
+T16	NERPrediction 1819 1846	3/24/64 HTN-Took Lisinopril
+T17	NERPrediction 1864 1884	DMII-Takes Glyburide
+T18	NERPrediction 1965 1974	Lopressor
+T19	NERPrediction 1990 1999	Captopril
+T20	NERPrediction 2015 2022	Lipitor
+T21	NERPrediction 2035 2041	Zantac
+T22	NERPrediction 2051 2055	q12h
+T23	NERPrediction 2056 2062	Colace
+T24	NERPrediction 2085 2087	SS
+T25	NERPrediction 2088 2091	ASA
+T26	NERPrediction 2105 2110	Lasix
+T27	NERPrediction 2123 2130	Heparin
+T28	NERPrediction 2290 2292	FH
+T29	NERPrediction 2468 2473	O2   
+T30	NERPrediction 2524 2527	NAD
+T31	NERPrediction 3176 3181	PERRL
+T32	NERPrediction 3644 3661	HCT       	38.1(L
+T33	NERPrediction 3776 3787	MCH       	
+T34	NERPrediction 4064 4119	03/24/64  	03/24/64             	10:44     	22:48     	
+T35	NERPrediction 4130 4132	NA
+T36	NERPrediction 4196 4207	K         	
+T37	NERPrediction 4328 4339	CO2       	
+T38	NERPrediction 4482 4487	1.9(H
+T39	NERPrediction 4526 4564	GLU       	293(H)    	          	181(H
+T40	NERPrediction 4726 4748	PHOS      	2.9       	
+T41	NERPrediction 4792 4794	MG
+T42	NERPrediction 4870 5008	03/24/64  	03/24/64             	10:40     	00:17      CK        	303       	420(H)    	          	          	           CK-MB     	16.2(H
+T43	NERPrediction 5057 5073	CKMBRI    	5.3(H
+T44	NERPrediction 5234 5250	CHOL      	178(T
+T45	NERPrediction 5588 5726	03/24/64  	03/24/64  	03/23/64             	10:29     	21:21     	10:28     	23:54      PT        	          	          	          	13.8(H
+T46	NERPrediction 7266 7278	beta-blocker
+T47	NERPrediction 7296 7299	q8h
+T48	NERPrediction 7373 7374	K
+T49	NERPrediction 7376 7378	Mg
+T50	NERPrediction 7476 7480	AICD
+T51	NERPrediction 7531 7541	amiodarone
+T52	NERPrediction 7636 7644	Troponin
+T53	NERPrediction 7773 7794	ASA/BB/Statin/Heparin
+T54	NERPrediction 7808 7814	Plavix
+T55	NERPrediction 8019 8024	Lasix
+T56	NERPrediction 8050 8058	low-dose
+T57	NERPrediction 8062 8071	captopril
+T58	NERPrediction 8085 8087	DM
+T59	NERPrediction 8261 8266	Lasix
+T60	NERPrediction 8319 8323	ACEi
+T61	NERPrediction 8411 8413	DM
+T62	NERPrediction 8531 8534	FEN
+T63	NERPrediction 8563 8565	DM
+T64	NERPrediction 8595 8601	Zantac
+T65	NERPrediction 8609 8615	Nexium
+T66	NERPrediction 8621 8628	Heparin

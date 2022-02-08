@@ -1,0 +1,65 @@
+T1	NERPrediction 618 626	Coumadin
+T2	NERPrediction 969 980	Medications
+T3	NERPrediction 1000 1005	Zosyn
+T4	NERPrediction 1015 1027	Levofloxacin
+T5	NERPrediction 1040 1050	Lisinopril
+T6	NERPrediction 1068 1078	Metoprolol
+T7	NERPrediction 1099 1107	Cardizem
+T8	NERPrediction 1127 1136	Doxazosin
+T9	NERPrediction 1154 1159	Lasix
+T10	NERPrediction 1168 1171	BID
+T11	NERPrediction 1181 1188	Digoxin
+T12	NERPrediction 1208 1215	Heparin
+T13	NERPrediction 1216 1219	gtt
+T14	NERPrediction 1227 1238	Simvastatin
+T15	NERPrediction 1227 1243	Simvastatin 80mg
+T16	NERPrediction 1255 1265	Glucovance
+T17	NERPrediction 1267 1276	Glipizide
+T18	NERPrediction 1281 1290	Metformin
+T19	NERPrediction 1298 1301	BID
+T20	NERPrediction 1309 1315	Folate
+T21	NERPrediction 1336 1343	+ Vit D
+T22	NERPrediction 1338 1343	Vit D
+T23	NERPrediction 1346 1349	tab
+T24	NERPrediction 1396 1413	Influenza Vaccine
+T25	NERPrediction 1406 1413	Vaccine
+T26	NERPrediction 1465 1476	Cholesterol
+T27	NERPrediction 1512 1518	Rectal
+T28	NERPrediction 1552 1556	heme
+T29	NERPrediction 1615 1621	Guaiac
+T30	NERPrediction 1694 1711	Cigarettes Smoked
+T31	NERPrediction 1727 1730	CIG
+T32	NERPrediction 1735 1739	(1/2
+T33	NERPrediction 1736 1739	1/2
+T34	NERPrediction 1737 1741	/2-1
+T35	NERPrediction 1738 1741	2-1
+T36	NERPrediction 1753 1757	Date
+T37	NERPrediction 1773 1780	Protein
+T38	NERPrediction 1842 1845	PSA
+T39	NERPrediction 1869 1876	Culture
+T40	NERPrediction 1911 1924	Triglycerides
+T41	NERPrediction 1940 1951	Cholesterol
+T42	NERPrediction 1940 1955	Cholesterol-LDL
+T43	NERPrediction 1952 1955	LDL
+T44	NERPrediction 2116 2127	Cholesterol
+T45	NERPrediction 2116 2131	Cholesterol-HDL
+T46	NERPrediction 2128 2131	HDL
+T47	NERPrediction 2147 2150	Hgb
+T48	NERPrediction 2152 2162	Hemoglobin
+T49	NERPrediction 2181 2186	HbA1c
+T50	NERPrediction 2802 2805	m/r
+T51	NERPrediction 2858 2861	air
+T52	NERPrediction 3009 3012	CO2
+T53	NERPrediction 3020 3023	BUN
+T54	NERPrediction 3226 3229	CO2
+T55	NERPrediction 3241 3244	BUN
+T56	NERPrediction 3451 3454	TSH
+T57	NERPrediction 4423 4426	APP
+T58	NERPrediction 4586 4589	SED
+T59	NERPrediction 6300 6303	CAP
+T60	NERPrediction 6328 6336	Coumadin
+T61	NERPrediction 6349 6356	Monitor
+T62	NERPrediction 6554 6562	Coumadin
+T63	NERPrediction 6609 6627	anti-hypertensives
+T64	NERPrediction 6629 6636	Monitor
+T65	NERPrediction 6723 6726	PCP

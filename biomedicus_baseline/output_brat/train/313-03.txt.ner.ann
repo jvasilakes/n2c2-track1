@@ -1,0 +1,76 @@
+T1	NERPrediction 61 68	insulin
+T2	NERPrediction 258 265	insulin
+T3	NERPrediction 289 298	glyburide
+T4	NERPrediction 299 301	bc
+T5	NERPrediction 422 430	Medicine
+T6	NERPrediction 465 468	PTH
+T7	NERPrediction 710 717	Lactose
+T8	NERPrediction 829 833	Iron
+T9	NERPrediction 930 941	Medications
+T10	NERPrediction 978 987	Procardia
+T11	NERPrediction 978 990	Procardia XL
+T12	NERPrediction 1003 1009	TABLET
+T13	NERPrediction 1034 1040	adalat
+T14	NERPrediction 1050 1060	Ranitidine
+T15	NERPrediction 1050 1064	Ranitidine HCL
+T16	NERPrediction 1061 1064	HCL
+T17	NERPrediction 1080 1088	Losartan
+T18	NERPrediction 1104 1113	Glyburide
+T19	NERPrediction 1118 1124	TABLET
+T20	NERPrediction 1132 1138	Tablet
+T21	NERPrediction 1150 1167	Ferrous GLUCONATE
+T22	NERPrediction 1150 1173	Ferrous GLUCONATE 325MG
+T23	NERPrediction 1158 1167	GLUCONATE
+T24	NERPrediction 1174 1180	TABLET
+T25	NERPrediction 1188 1194	Tablet
+T26	NERPrediction 1216 1222	tablet
+T27	NERPrediction 1243 1247	iron
+T28	NERPrediction 1260 1279	Hydrochlorothiazide
+T29	NERPrediction 1285 1291	TABLET
+T30	NERPrediction 1299 1305	Tablet
+T31	NERPrediction 1352 1358	Toprol
+T32	NERPrediction 1352 1361	Toprol XL
+T33	NERPrediction 1362 1383	(METOPROLOL SUCCINATE
+T34	NERPrediction 1363 1373	METOPROLOL
+T35	NERPrediction 1363 1383	METOPROLOL SUCCINATE
+T36	NERPrediction 1402 1408	TABLET
+T37	NERPrediction 1424 1430	Tablet
+T38	NERPrediction 1442 1452	Calcitriol
+T39	NERPrediction 1461 1468	CAPSULE
+T40	NERPrediction 1476 1483	Capsule
+T41	NERPrediction 1495 1500	Zocor
+T42	NERPrediction 1495 1520	Zocor (SIMVASTATIN) 20 MG
+T43	NERPrediction 1501 1520	(SIMVASTATIN) 20 MG
+T44	NERPrediction 1502 1513	SIMVASTATIN
+T45	NERPrediction 1502 1520	SIMVASTATIN) 20 MG
+T46	NERPrediction 1527 1533	TABLET
+T47	NERPrediction 1551 1557	Lantus
+T48	NERPrediction 1558 1575	(INSULIN GLARGINE
+T49	NERPrediction 1559 1566	INSULIN
+T50	NERPrediction 1559 1575	INSULIN GLARGINE
+T51	NERPrediction 1610 1617	Timolol
+T52	NERPrediction 1658 1665	Xalatan
+T53	NERPrediction 1667 1678	LATANOPROST
+T54	NERPrediction 2056 2063	insulin
+T55	NERPrediction 2075 2081	Lantus
+T56	NERPrediction 2093 2102	Glyburide
+T57	NERPrediction 2322 2328	statin
+T58	NERPrediction 2446 2449	PTH
+T59	NERPrediction 2463 2473	Calcitriol
+T60	NERPrediction 2484 2487	ARB
+T61	NERPrediction 2555 2559	supp
+T62	NERPrediction 2687 2690	ARB
+T63	NERPrediction 2692 2698	Toprol
+T64	NERPrediction 2700 2709	Procardia
+T65	NERPrediction 2711 2715	HCTZ
+T66	NERPrediction 2717 2722	Today
+T67	NERPrediction 2748 2757	Procardia
+T68	NERPrediction 2771 2774	ASA
+T69	NERPrediction 2802 2808	Statin
+T70	NERPrediction 2826 2832	Zantac
+T71	NERPrediction 2894 2903	eye drops
+T72	NERPrediction 2959 2965	statin
+T73	NERPrediction 2982 2985	HDL
+T74	NERPrediction 2990 2993	LDL
+T75	NERPrediction 3112 3115	PAP
+T76	NERPrediction 3143 3146	PAP

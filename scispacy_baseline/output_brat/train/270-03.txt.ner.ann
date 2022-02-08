@@ -1,0 +1,12 @@
+T0	NERPrediction 78 84	FREDDY
+T1	NERPrediction 616 618	PE
+T2	NERPrediction 1405 1415	creatinine
+T3	NERPrediction 1425 1431	sodium
+T4	NERPrediction 1440 1449	potassium
+T5	NERPrediction 1462 1473	bicarbonate
+T6	NERPrediction 1548 1556	Troponin
+T7	NERPrediction 1780 1790	vancomycin
+T8	NERPrediction 1792 1803	ceftazidime
+T9	NERPrediction 2068 2074	FREDDY
+T10	NERPrediction 2126 2132	FREDDY
+T11	NERPrediction 2134 2174	eScription document:1-0225776 BFFocus   

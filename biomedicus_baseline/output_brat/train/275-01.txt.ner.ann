@@ -1,0 +1,11 @@
+T1	NERPrediction 115 118	PCP
+T2	NERPrediction 304 309	lasix
+T3	NERPrediction 344 349	lasix
+T4	NERPrediction 379 384	lasix
+T5	NERPrediction 494 496	O2
+T6	NERPrediction 828 833	CHF 2
+T7	NERPrediction 983 991	troponin
+T8	NERPrediction 1310 1313	B 2
+T9	NERPrediction 1374 1377	amp
+T10	NERPrediction 1447 1452	lasix
+T11	NERPrediction 1616 1625	metformin

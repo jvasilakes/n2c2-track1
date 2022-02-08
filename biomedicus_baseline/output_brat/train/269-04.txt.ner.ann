@@ -1,0 +1,29 @@
+T1	NERPrediction 94 97	SAH
+T2	NERPrediction 132 135	s/p
+T3	NERPrediction 366 373	albumin
+T4	NERPrediction 435 445	creatinine
+T5	NERPrediction 696 704	troponin
+T6	NERPrediction 765 769	6)	S
+T7	NERPrediction 766 771	)	S/p
+T8	NERPrediction 768 771	S/p
+T9	NERPrediction 1071 1076	)	S/p
+T10	NERPrediction 1073 1076	S/p
+T11	NERPrediction 1103 1112	Albuterol
+T12	NERPrediction 1125 1131	Celexa
+T13	NERPrediction 1137 1143	Plavix
+T14	NERPrediction 1149 1155	Nexium
+T15	NERPrediction 1165 1175	Furosemide
+T16	NERPrediction 1185 1191	Motrin
+T17	NERPrediction 1226 1236	Metoprolol
+T18	NERPrediction 1248 1251	KCL
+T19	NERPrediction 1260 1265	Zocor
+T20	NERPrediction 1326 1330	EtOH
+T21	NERPrediction 2123 2127	HCO3
+T22	NERPrediction 2134 2137	BUN
+T23	NERPrediction 2154 2161	Amylase
+T24	NERPrediction 2222 2229	protein
+T25	NERPrediction 2687 2694	Amylase
+T26	NERPrediction 2883 2885	Na
+T27	NERPrediction 2901 2907	Flomax
+T28	NERPrediction 2975 2982	Amylase
+T29	NERPrediction 3014 3019	Lasix

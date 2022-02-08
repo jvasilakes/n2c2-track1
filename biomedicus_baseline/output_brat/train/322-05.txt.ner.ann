@@ -1,0 +1,81 @@
+T1	NERPrediction 115 119	Date
+T2	NERPrediction 255 258	s/p
+T3	NERPrediction 436 449	on Bactrim DS
+T4	NERPrediction 439 446	Bactrim
+T5	NERPrediction 439 449	Bactrim DS
+T6	NERPrediction 447 449	DS
+T7	NERPrediction 454 457	tab
+T8	NERPrediction 711 717	sugars
+T9	NERPrediction 862 865	s/p
+T10	NERPrediction 1070 1081	Medications
+T11	NERPrediction 1086 1093	Insulin
+T12	NERPrediction 1086 1102	Insulin Glargine
+T13	NERPrediction 1094 1102	Glargine
+T14	NERPrediction 1104 1110	Lantus
+T15	NERPrediction 1124 1135	Simvastatin
+T16	NERPrediction 1124 1141	Simvastatin 40 MG
+T17	NERPrediction 1148 1158	Metoprolol
+T18	NERPrediction 1148 1168	Metoprolol Succinate
+T19	NERPrediction 1159 1168	Succinate
+T20	NERPrediction 1186 1196	(Toprol Xl
+T21	NERPrediction 1187 1193	Toprol
+T22	NERPrediction 1187 1196	Toprol Xl
+T23	NERPrediction 1212 1220	Nystatin
+T24	NERPrediction 1221 1227	Powder
+T25	NERPrediction 1250 1262	Trimethoprim
+T26	NERPrediction 1250 1279	Trimethoprim/sulfamethoxazole
+T27	NERPrediction 1263 1279	sulfamethoxazole
+T28	NERPrediction 1296 1307	(Bactrim Ds
+T29	NERPrediction 1297 1304	Bactrim
+T30	NERPrediction 1297 1307	Bactrim Ds
+T31	NERPrediction 1312 1315	TAB
+T32	NERPrediction 1319 1322	BID
+T33	NERPrediction 1323 1332	Oxycodone
+T34	NERPrediction 1323 1338	Oxycodone 10 MG
+T35	NERPrediction 1365 1384	HYDROCHLOROTHIAZIDE
+T36	NERPrediction 1400 1409	IOPAMIDOL
+T37	NERPrediction 1423 1431	Contrast
+T38	NERPrediction 1445 1448	Tob
+T39	NERPrediction 1457 1461	EtOH
+T40	NERPrediction 3085 3090	Monos
+T41	NERPrediction 3315 3321	Plasma
+T42	NERPrediction 3322 3328	Sodium
+T43	NERPrediction 3396 3402	Plasma
+T44	NERPrediction 3403 3412	Potassium
+T45	NERPrediction 3507 3513	Plasma
+T46	NERPrediction 3588 3594	Plasma
+T47	NERPrediction 3595 3601	Carbon
+T48	NERPrediction 3595 3609	Carbon Dioxide
+T49	NERPrediction 3668 3674	Plasma
+T50	NERPrediction 3681 3684	GAP
+T51	NERPrediction 3749 3755	Plasma
+T52	NERPrediction 3756 3760	Urea
+T53	NERPrediction 3756 3769	Urea Nitrogen
+T54	NERPrediction 3761 3769	Nitrogen
+T55	NERPrediction 3829 3835	Plasma
+T56	NERPrediction 3836 3846	Creatinine
+T57	NERPrediction 4000 4006	Plasma
+T58	NERPrediction 4007 4014	Glucose
+T59	NERPrediction 4082 4089	Calcium
+T60	NERPrediction 4242 4251	Magnesium
+T61	NERPrediction 4328 4335	Protein
+T62	NERPrediction 4401 4408	Albumin
+T63	NERPrediction 4480 4488	Globulin
+T64	NERPrediction 4559 4575	Direct Bilirubin
+T65	NERPrediction 4566 4575	Bilirubin
+T66	NERPrediction 4639 4654	Total Bilirubin
+T67	NERPrediction 4645 4654	Bilirubin
+T68	NERPrediction 4955 4961	Plasma
+T69	NERPrediction 4962 4973	Lactic Acid
+T70	NERPrediction 5223 5226	fat
+T71	NERPrediction 5405 5408	air
+T72	NERPrediction 5975 5983	betadine
+T73	NERPrediction 5995 6004	lidocaine
+T74	NERPrediction 6013 6024	epinephrine
+T75	NERPrediction 6494 6497	s/p
+T76	NERPrediction 6705 6716	antibiotics
+T77	NERPrediction 6852 6855	BID
+T78	NERPrediction 6881 6890	Linezolid
+T79	NERPrediction 6891 6899	Cefepime
+T80	NERPrediction 6900 6906	Flagyl
+T81	NERPrediction 6957 6966	linezolid

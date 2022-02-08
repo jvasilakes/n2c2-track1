@@ -1,0 +1,29 @@
+T1	NERPrediction 103 107	Date
+T2	NERPrediction 161 164	MSH
+T3	NERPrediction 189 198	Ibuprofen
+T4	NERPrediction 189 205	Ibuprofen 800 mg
+T5	NERPrediction 253 262	meclizine
+T6	NERPrediction 279 292	on H2 blocker
+T7	NERPrediction 282 292	H2 blocker
+T8	NERPrediction 308 316	Percocet
+T9	NERPrediction 318 325	codeine
+T10	NERPrediction 327 332	sulfa
+T11	NERPrediction 762 765	PCP
+T12	NERPrediction 1531 1538	animals
+T13	NERPrediction 1584 1589	cream
+T14	NERPrediction 1635 1642	animals
+T15	NERPrediction 1678 1687	pesticide
+T16	NERPrediction 1714 1719	Kwell
+T17	NERPrediction 1889 1904	immune globulin
+T18	NERPrediction 1896 1904	globulin
+T19	NERPrediction 1932 1935	IgG
+T20	NERPrediction 1958 1961	ANA
+T21	NERPrediction 2561 2568	animals
+T22	NERPrediction 2735 2742	Vaginal
+T23	NERPrediction 3071 3080	meclizine
+T24	NERPrediction 3259 3264	NSAID
+T25	NERPrediction 3276 3286	ranitidine
+T26	NERPrediction 3276 3290	ranitidine HCL
+T27	NERPrediction 3287 3290	HCL
+T28	NERPrediction 3386 3389	PCP
+T29	NERPrediction 3415 3418	ANP

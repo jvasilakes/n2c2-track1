@@ -1,0 +1,15 @@
+T0	NERPrediction 161 164	MSH
+T1	NERPrediction 189 198	Ibuprofen
+T2	NERPrediction 213 218	b.i.d
+T3	NERPrediction 253 262	meclizine
+T4	NERPrediction 308 316	Percocet
+T5	NERPrediction 318 325	codeine
+T6	NERPrediction 1584 1589	cream
+T7	NERPrediction 1958 1961	ANA
+T8	NERPrediction 1987 1992	spine
+T9	NERPrediction 2632 2636	rubs
+T10	NERPrediction 2691 2694	Pap
+T11	NERPrediction 2927 2930	Pap
+T12	NERPrediction 3071 3080	meclizine
+T13	NERPrediction 3276 3290	ranitidine HCL
+T14	NERPrediction 3308 3313	q.h.s

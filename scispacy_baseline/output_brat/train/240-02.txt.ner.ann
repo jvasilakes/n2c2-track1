@@ -1,0 +1,27 @@
+T0	NERPrediction 365 387	pulm    Hypertension  
+T1	NERPrediction 419 449	Lisinopril    Hyperlipidemia  
+T2	NERPrediction 452 459	Lipitor
+T3	NERPrediction 487 492	lasix
+T4	NERPrediction 687 694	Smoking
+T5	NERPrediction 842 854	atorvastatin
+T6	NERPrediction 864 879	qhs  furosemide
+T7	NERPrediction 937 942	20meq
+T8	NERPrediction 950 958	Levaquin
+T9	NERPrediction 969 983	QD  lisinopril
+T10	NERPrediction 997 1003	Plavix
+T11	NERPrediction 1036 1045	terazosin
+T12	NERPrediction 1066 1072	Toprol
+T13	NERPrediction 1089 1102	triamcinolone
+T14	NERPrediction 1156 1166	lisinopril
+T15	NERPrediction 1966 1969	A&O
+T16	NERPrediction 2153 2160	Glucose
+T17	NERPrediction 2176 2177	H
+T18	NERPrediction 2188 2198	Creatinine
+T19	NERPrediction 2308 2318	Folic Acid
+T20	NERPrediction 2334 2338	Iron
+T21	NERPrediction 2370 2374	Iron
+T22	NERPrediction 2520 2531	Cholesterol
+T23	NERPrediction 2711 2725	Lisinopril  3)
+T24	NERPrediction 2726 2737	Cholesterol
+T25	NERPrediction 2785 2794	Terazosin
+T26	NERPrediction 2936 2941	Lasix

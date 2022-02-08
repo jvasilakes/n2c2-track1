@@ -1,0 +1,6 @@
+T1	NERPrediction 131 135	DATE
+T2	NERPrediction 265 273	atenolol
+T3	NERPrediction 273 308	,  hydrochlorothiazide, triamterene
+T4	NERPrediction 276 295	hydrochlorothiazide
+T5	NERPrediction 276 308	hydrochlorothiazide, triamterene
+T6	NERPrediction 297 308	triamterene

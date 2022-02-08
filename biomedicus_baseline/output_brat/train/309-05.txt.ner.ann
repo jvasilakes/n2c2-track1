@@ -1,0 +1,24 @@
+T1	NERPrediction 120 124	Date
+T2	NERPrediction 193 197	Date
+T3	NERPrediction 456 467	hepatitis B
+T4	NERPrediction 736 746	medication
+T5	NERPrediction 823 829	sugars
+T6	NERPrediction 928 947	hydrochlorothiazide
+T7	NERPrediction 952 962	nifedipine
+T8	NERPrediction 1038 1044	Cozaar
+T9	NERPrediction 1049 1055	Toprol
+T10	NERPrediction 1093 1100	insulin
+T11	NERPrediction 1093 1106	insulin/70/30
+T12	NERPrediction 1218 1224	sugars
+T13	NERPrediction 1312 1317	sugar
+T14	NERPrediction 1441 1447	sugars
+T15	NERPrediction 1497 1503	sugars
+T16	NERPrediction 1561 1567	sugars
+T17	NERPrediction 1616 1621	sugar
+T18	NERPrediction 1905 1919	to standing up
+T19	NERPrediction 1908 1919	standing up
+T20	NERPrediction 2806 2813	Aricept
+T21	NERPrediction 3962 3968	sugars
+T22	NERPrediction 4048 4053	sugar
+T23	NERPrediction 4144 4147	MRA
+T24	NERPrediction 4293 4296	MRA

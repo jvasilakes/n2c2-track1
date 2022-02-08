@@ -1,0 +1,21 @@
+T0	NERPrediction 53 76	INDIANA^12/15/90^MARTIN
+T1	NERPrediction 779 786	alcohol
+T2	NERPrediction 906 916	Metoprolol
+T3	NERPrediction 955 962	aspirin
+T4	NERPrediction 964 975	simvastatin
+T5	NERPrediction 977 986	glyburide
+T6	NERPrediction 991 998	NovoLog
+T7	NERPrediction 1013 1025	Erythromycin
+T8	NERPrediction 1139 1145	O2 100
+T9	NERPrediction 1502 1506	rubs
+T10	NERPrediction 2095 2104	adenosine
+T11	NERPrediction 2158 2167	adenosine
+T12	NERPrediction 2345 2355	metoprolol
+T13	NERPrediction 2427 2433	sodium
+T14	NERPrediction 2442 2451	potassium
+T15	NERPrediction 2472 2483	bicarbonate
+T16	NERPrediction 2496 2506	creatinine
+T17	NERPrediction 2585 2594	bilirubin
+T18	NERPrediction 2639 2646	calcium
+T19	NERPrediction 2745 2747	UA
+T20	NERPrediction 3590 3619	document:8-4109370 BFFocus   

@@ -1,0 +1,21 @@
+T1	NERPrediction 75 78	S/P
+T2	NERPrediction 90 97	capsule
+T3	NERPrediction 282 285	ASA
+T4	NERPrediction 732 735	His
+T5	NERPrediction 829 840	Medications
+T6	NERPrediction 845 856	PROPRANOLOL
+T7	NERPrediction 857 873	(PROPRANOLOL HCL
+T8	NERPrediction 858 869	PROPRANOLOL
+T9	NERPrediction 858 873	PROPRANOLOL HCL
+T10	NERPrediction 870 873	HCL
+T11	NERPrediction 884 887	BID
+T12	NERPrediction 904 908	Date
+T13	NERPrediction 923 927	Date
+T14	NERPrediction 939 947	ATENOLOL
+T15	NERPrediction 956 962	Tablet
+T16	NERPrediction 978 982	Date
+T17	NERPrediction 1003 1013	AMLODIPINE
+T18	NERPrediction 1024 1030	Tablet
+T19	NERPrediction 1046 1050	Date
+T20	NERPrediction 1422 1429	capsule
+T21	NERPrediction 1506 1509	ASA

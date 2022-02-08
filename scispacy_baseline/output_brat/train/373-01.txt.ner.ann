@@ -1,0 +1,26 @@
+T0	NERPrediction 127 131	ABVD
+T1	NERPrediction 301 309	10/11/80
+T2	NERPrediction 552 559	gallium
+T3	NERPrediction 640 644	ABVD
+T4	NERPrediction 860 871	F/C/N/V/SOB
+T5	NERPrediction 1220 1230	R ICA  HTN
+T6	NERPrediction 1284 1286	Ca
+T7	NERPrediction 1516 1524	Occ EtOH
+T8	NERPrediction 1609 1619	appetite  
+T9	NERPrediction 2198 2225	GLYBURIDE   5MG  1 Tablet(s
+T10	NERPrediction 2345 2354	PO QPM   
+T11	NERPrediction 2364 2374	LISINOPRIL
+T12	NERPrediction 2378 2382	10MG
+T13	NERPrediction 2399 2404	QD   
+T14	NERPrediction 2446 2458	QD   PROCRIT
+T15	NERPrediction 2460 2467	EPOETIN
+T16	NERPrediction 2516 2519	HCL
+T17	NERPrediction 2991 2995	ABVD
+T18	NERPrediction 3085 3095	Adriamycin
+T19	NERPrediction 3099 3104	mg/m2
+T20	NERPrediction 3106 3115	bleomycin
+T21	NERPrediction 3125 3136	vinblastine
+T22	NERPrediction 3139 3144	mg/m2
+T23	NERPrediction 3150 3161	dacarbazine
+T24	NERPrediction 3188 3196	neupogen
+T25	NERPrediction 3478 3485	glucose

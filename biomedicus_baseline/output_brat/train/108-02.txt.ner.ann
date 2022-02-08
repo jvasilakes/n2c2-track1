@@ -1,0 +1,51 @@
+T1	NERPrediction 317 326	albuterol
+T2	NERPrediction 328 334	advair
+T3	NERPrediction 692 699	aspirin
+T4	NERPrediction 701 712	clopidogrel
+T5	NERPrediction 727 732	lasix
+T6	NERPrediction 972 998	on glyburide and metformin
+T7	NERPrediction 975 984	glyburide
+T8	NERPrediction 975 998	glyburide and metformin
+T9	NERPrediction 989 998	metformin
+T10	NERPrediction 1036 1044	tegretol
+T11	NERPrediction 1062 1071	synthroid
+T12	NERPrediction 1110 1123	Levothyroxine
+T13	NERPrediction 1140 1146	Lyrica
+T14	NERPrediction 1189 1197	Tegretol
+T15	NERPrediction 1204 1207	BID
+T16	NERPrediction 1211 1220	Glyburide
+T17	NERPrediction 1234 1243	Metformin
+T18	NERPrediction 1250 1253	BID
+T19	NERPrediction 1280 1282	As
+T20	NERPrediction 1297 1304	Aspirin
+T21	NERPrediction 1297 1309	Aspirin 81mg
+T22	NERPrediction 1319 1325	Plavix
+T23	NERPrediction 1340 1352	Atorvastatin
+T24	NERPrediction 1340 1357	Atorvastatin 80mg
+T25	NERPrediction 1367 1377	Metoprolol
+T26	NERPrediction 1398 1408	medication
+T27	NERPrediction 1415 1435	ACETYLSALICYLIC ACID
+T28	NERPrediction 1437 1444	ASPIRIN
+T29	NERPrediction 1486 1499	CARBAMAZEPINE
+T30	NERPrediction 1521 1524	BID
+T31	NERPrediction 1550 1558	DOCUSATE
+T32	NERPrediction 1550 1565	DOCUSATE SODIUM
+T33	NERPrediction 1559 1565	SODIUM
+T34	NERPrediction 1590 1603	LEVOTHYROXINE
+T35	NERPrediction 1590 1610	LEVOTHYROXINE SODIUM
+T36	NERPrediction 1604 1610	SODIUM
+T37	NERPrediction 1638 1648	LISINOPRIL
+T38	NERPrediction 1638 1653	LISINOPRIL 5 MG
+T39	NERPrediction 1661 1671	METOPROLOL
+T40	NERPrediction 1689 1692	BID
+T41	NERPrediction 1694 1704	PREGABALIN
+T42	NERPrediction 1694 1720	PREGABALIN (LYRICA )150 MG
+T43	NERPrediction 1736 1746	PREGABALIN
+T44	NERPrediction 1736 1761	PREGABALIN (LYRICA )75 MG
+T45	NERPrediction 1772 1782	PREGABALIN
+T46	NERPrediction 1772 1797	PREGABALIN (LYRICA) 75 MG
+T47	NERPrediction 2084 2088	EtOH
+T48	NERPrediction 2113 2126	illicit drugs
+T49	NERPrediction 2121 2126	drugs
+T50	NERPrediction 2467 2470	H2O
+T51	NERPrediction 2872 2876	Date

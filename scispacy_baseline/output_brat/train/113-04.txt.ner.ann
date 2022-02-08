@@ -1,0 +1,9 @@
+T0	NERPrediction 821 828	Tylenol
+T1	NERPrediction 1703 1716	O2 saturation
+T2	NERPrediction 2803 2809	sodium
+T3	NERPrediction 2815 2816	K
+T4	NERPrediction 2837 2848	bicarbonate
+T5	NERPrediction 2861 2871	creatinine
+T6	NERPrediction 3038 3040	UA
+T7	NERPrediction 3557 3562	BOYER
+T8	NERPrediction 3581 3610	document:6-1950972 BFFocus   

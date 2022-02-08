@@ -1,0 +1,7 @@
+T0	NERPrediction 1558 1568	creatinine
+T1	NERPrediction 1607 1614	glucose
+T2	NERPrediction 1637 1643	sodium
+T3	NERPrediction 2050 2059	Lopressor
+T4	NERPrediction 2061 2068	heparin
+T5	NERPrediction 2075 2083	morphine
+T6	NERPrediction 2329 2357	document:7-5881990 BFFocus  

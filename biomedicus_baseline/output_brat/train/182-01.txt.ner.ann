@@ -1,0 +1,12 @@
+T1	NERPrediction 62 70	Medicine
+T2	NERPrediction 89 93	Date
+T3	NERPrediction 528 535	Lipitor
+T4	NERPrediction 780 790	medication
+T5	NERPrediction 861 863	As
+T6	NERPrediction 888 894	Prozac
+T7	NERPrediction 896 906	Lisinopril
+T8	NERPrediction 916 923	Zyprexa
+T9	NERPrediction 925 932	aspirin
+T10	NERPrediction 958 962	drug
+T11	NERPrediction 1366 1377	cholesterol
+T12	NERPrediction 1393 1401	tomorrow

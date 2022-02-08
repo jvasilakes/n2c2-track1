@@ -1,0 +1,65 @@
+T0	NERPrediction 65 66	H
+T1	NERPrediction 77 79	CC
+T2	NERPrediction 88 91	HPI
+T3	NERPrediction 354 357	RLE
+T4	NERPrediction 405 410	lasix
+T5	NERPrediction 743 749	156/86
+T6	NERPrediction 840 852	didn&#8217;t
+T7	NERPrediction 898 902	PMHX
+T8	NERPrediction 1227 1232	cipro
+T9	NERPrediction 1246 1251	vanco
+T10	NERPrediction 1271 1280	quinolone
+T11	NERPrediction 1288 1305	calcium carbonate
+T12	NERPrediction 1310 1343	vitamin d   500mg/200units po bid
+T13	NERPrediction 1344 1352	Cellcept
+T14	NERPrediction 1364 1367	bid
+T15	NERPrediction 1368 1374	Diovan
+T16	NERPrediction 1391 1398	doxepin
+T17	NERPrediction 1428 1437	gluconate
+T18	NERPrediction 1439 1444	Lasix
+T19	NERPrediction 1466 1489	metformin hydrochloride
+T20	NERPrediction 1500 1503	bid
+T21	NERPrediction 1504 1509	Paxil
+T22	NERPrediction 1520 1523	bid
+T23	NERPrediction 1524 1534	prednisone
+T24	NERPrediction 1550 1558	Prilosec
+T25	NERPrediction 1575 1582	Prograf
+T26	NERPrediction 1590 1593	bid
+T27	NERPrediction 1594 1612	sodium bicarbonate
+T28	NERPrediction 1647 1652	Xanax
+T29	NERPrediction 1713 1717	ETOH
+T30	NERPrediction 1751 1758	Smoking
+T31	NERPrediction 1855 1858	GEN
+T32	NERPrediction 1962 1976	Couldn&#8217;t
+T33	NERPrediction 2172 2178	Na 140
+T34	NERPrediction 2180 2181	K
+T35	NERPrediction 2212 2214	Cr
+T36	NERPrediction 2221 2224	Glu
+T37	NERPrediction 2236 2238	Ca
+T38	NERPrediction 2244 2248	Phos
+T39	NERPrediction 2254 2256	Mg
+T40	NERPrediction 2267 2270	WNL
+T41	NERPrediction 2326 2328	UA
+T42	NERPrediction 2433 2437	LAVF
+T43	NERPrediction 3261 3269	steroids
+T44	NERPrediction 3396 3401	lasix
+T45	NERPrediction 3514 3528	&#224;V/Q scan
+T46	NERPrediction 3578 3583	lasix
+T47	NERPrediction 3902 3904	Cr
+T48	NERPrediction 3944 3955	won&#8217;t
+T49	NERPrediction 3966 3971	lasix
+T50	NERPrediction 3985 3992	prograf
+T51	NERPrediction 4015 4022	prograf
+T52	NERPrediction 4024 4032	cellcept
+T53	NERPrediction 4034 4044	prednisone
+T54	NERPrediction 4131 4141	It&#8217;s
+T55	NERPrediction 4253 4262	labetolol
+T56	NERPrediction 4451 4458	Norvasc
+T57	NERPrediction 4502 4504	DM
+T58	NERPrediction 4513 4522	metformin
+T59	NERPrediction 4543 4560	prevention.&#8221
+T60	NERPrediction 4563 4572	Metformin
+T61	NERPrediction 4596 4598	Cr
+T62	NERPrediction 4654 4663	metformin
+T63	NERPrediction 4705 4711	bicarb
+T64	NERPrediction 4773 4779	sodium

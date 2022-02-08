@@ -1,0 +1,68 @@
+T1	NERPrediction 130 134	Date
+T2	NERPrediction 525 528	EMS
+T3	NERPrediction 547 550	SBP
+T4	NERPrediction 876 887	hydralazine
+T5	NERPrediction 896 899	SBP
+T6	NERPrediction 1280 1288	baseline
+T7	NERPrediction 1485 1488	AED
+T8	NERPrediction 1511 1516	, s/p
+T9	NERPrediction 1513 1516	s/p
+T10	NERPrediction 1801 1812	Mirtazapine
+T11	NERPrediction 1801 1818	Mirtazapine 15 mg
+T12	NERPrediction 1826 1833	Namenda
+T13	NERPrediction 1847 1856	Potassium
+T14	NERPrediction 1887 1900	Levothyroxine
+T15	NERPrediction 1916 1926	Metoprolol
+T16	NERPrediction 1939 1949	metoprolol
+T17	NERPrediction 1939 1959	metoprolol succinate
+T18	NERPrediction 1950 1959	succinate
+T19	NERPrediction 1963 1971	tartrate
+T20	NERPrediction 1986 1996	Prednisone
+T21	NERPrediction 1986 2003	Prednisone 2.5 mg
+T22	NERPrediction 2023 2031	Morphine
+T23	NERPrediction 2034 2041	Unknown
+T24	NERPrediction 2044 2051	Codeine
+T25	NERPrediction 2054 2061	Unknown
+T26	NERPrediction 2064 2067	ACE
+T27	NERPrediction 2064 2077	ACE Inhibitor
+T28	NERPrediction 2068 2077	Inhibitor
+T29	NERPrediction 2080 2087	Unknown
+T30	NERPrediction 2090 2100	LISINOPRIL
+T31	NERPrediction 2108 2127	) CIPROFLOXACIN HCL
+T32	NERPrediction 2110 2123	CIPROFLOXACIN
+T33	NERPrediction 2110 2127	CIPROFLOXACIN HCL
+T34	NERPrediction 2124 2127	HCL
+T35	NERPrediction 2147 2150	med
+T36	NERPrediction 2153 2165	ATORVASTATIN
+T37	NERPrediction 2425 2427	SR
+T38	NERPrediction 2428 2431	SBP
+T39	NERPrediction 2453 2456	MAP
+T40	NERPrediction 2464 2466	O2
+T41	NERPrediction 2499 2502	CPP
+T42	NERPrediction 2528 2536	propofol
+T43	NERPrediction 2578 2583	PC 12
+T44	NERPrediction 2717 2728	Medications
+T45	NERPrediction 2730 2738	propofol
+T46	NERPrediction 2747 2754	peridex
+T47	NERPrediction 2756 2765	synthroid
+T48	NERPrediction 2767 2776	lactulose
+T49	NERPrediction 4467 4471	h (6
+T50	NERPrediction 4497 4501	STAT
+T51	NERPrediction 4521 4524	SBP
+T52	NERPrediction 4556 4564	propofol
+T53	NERPrediction 4624 4638	anticoagulants
+T54	NERPrediction 4642 4651	labetalol
+T55	NERPrediction 4657 4668	nicardipine
+T56	NERPrediction 4765 4767	Sz
+T57	NERPrediction 4991 4994	SBP
+T58	NERPrediction 5189 5197	nystatin
+T59	NERPrediction 5272 5281	lactulose
+T60	NERPrediction 5324 5328	Heme
+T61	NERPrediction 5432 5441	synthroid
+T62	NERPrediction 5472 5480	Nystatin
+T63	NERPrediction 5546 5554	baseline
+T64	NERPrediction 5598 5601	amp
+T65	NERPrediction 5610 5617	fragmin
+T66	NERPrediction 5646 5648	Sz
+T67	NERPrediction 5655 5658	PPI
+T68	NERPrediction 5663 5670	peridex

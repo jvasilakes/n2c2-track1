@@ -1,0 +1,16 @@
+T0	NERPrediction 981 990	Pravachol
+T1	NERPrediction 997 1006	Pravachol
+T2	NERPrediction 1986 1993	Calcium
+T3	NERPrediction 2024 2031	Cardura
+T4	NERPrediction 2038 2046	CellCept
+T5	NERPrediction 2070 2079	diltiazem
+T6	NERPrediction 2162 2177	magnesium oxide
+T7	NERPrediction 2200 2207	vitamin
+T8	NERPrediction 2209 2221	cyclosporine
+T9	NERPrediction 2244 2253	Neurontin
+T10	NERPrediction 2276 2283	NovoLog
+T11	NERPrediction 2303 2313	prednisone
+T12	NERPrediction 2328 2338	vitamins C
+T13	NERPrediction 2365 2398	vitamin E 400 units twice per day
+T14	NERPrediction 2877 2919	eScription document:0-4411667 IFFocus   CC
+T15	NERPrediction 3014 3016	CC

@@ -1,0 +1,60 @@
+T1	NERPrediction 334 341	tobacco
+T2	NERPrediction 464 471	glucose
+T3	NERPrediction 784 794	prednisone
+T4	NERPrediction 816 825	albuterol
+T5	NERPrediction 851 860	albuterol
+T6	NERPrediction 939 947	steroids
+T7	NERPrediction 1205 1211	Nexium
+T8	NERPrediction 1786 1793	Glucose
+T9	NERPrediction 1929 1940	Medications
+T10	NERPrediction 1944 1954	prednisone
+T11	NERPrediction 1962 1981	hydrochlorothiazide
+T12	NERPrediction 1962 1987	hydrochlorothiazide 50 mg
+T13	NERPrediction 1992 2001	potassium
+T14	NERPrediction 1992 2010	potassium chloride
+T15	NERPrediction 1992 2017	potassium chloride 10 mEq
+T16	NERPrediction 2022 2032	lisinopril
+T17	NERPrediction 2022 2038	lisinopril 30 mg
+T18	NERPrediction 2043 2050	aspirin
+T19	NERPrediction 2043 2056	aspirin 81 mg
+T20	NERPrediction 2061 2068	calcium
+T21	NERPrediction 2061 2079	calcium supplement
+T22	NERPrediction 2091 2104	levothyroxine
+T23	NERPrediction 2116 2123	Lipitor
+T24	NERPrediction 2134 2140	Celexa
+T25	NERPrediction 2151 2160	albuterol
+T26	NERPrediction 2190 2203	multivitamins
+T27	NERPrediction 2256 2265	Halothane
+T28	NERPrediction 2346 2350	Drug
+T29	NERPrediction 2346 2358	Drug allergy
+T30	NERPrediction 2361 2370	Halothane
+T31	NERPrediction 2850 2855	Advil
+T32	NERPrediction 2923 2933	prednisone
+T33	NERPrediction 3123 3129	Nexium
+T34	NERPrediction 3201 3207	sugars
+T35	NERPrediction 4076 4083	tobacco
+T36	NERPrediction 4185 4195	prednisone
+T37	NERPrediction 4200 4209	albuterol
+T38	NERPrediction 4436 4445	adenosine
+T39	NERPrediction 4718 4727	Adenosine
+T40	NERPrediction 5159 5170	Medications
+T41	NERPrediction 5188 5198	prednisone
+T42	NERPrediction 5210 5229	hydrochlorothiazide
+T43	NERPrediction 5210 5235	hydrochlorothiazide 50 mg
+T44	NERPrediction 5242 5251	potassium
+T45	NERPrediction 5242 5260	potassium chloride
+T46	NERPrediction 5242 5267	potassium chloride 10 mEq
+T47	NERPrediction 5274 5284	lisinopril
+T48	NERPrediction 5274 5290	lisinopril 30 mg
+T49	NERPrediction 5297 5304	aspirin
+T50	NERPrediction 5297 5310	aspirin 81 mg
+T51	NERPrediction 5317 5324	calcium
+T52	NERPrediction 5317 5335	calcium supplement
+T53	NERPrediction 5349 5362	levothyroxine
+T54	NERPrediction 5376 5383	Lipitor
+T55	NERPrediction 5396 5402	Celexa
+T56	NERPrediction 5415 5424	albuterol
+T57	NERPrediction 5452 5465	multivitamins
+T58	NERPrediction 5471 5480	potassium
+T59	NERPrediction 5471 5491	potassium supplement
+T60	NERPrediction 5505 5514	Albuterol

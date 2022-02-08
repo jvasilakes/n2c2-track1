@@ -1,0 +1,83 @@
+T1	NERPrediction 206 213	+ Her 2
+T2	NERPrediction 208 213	Her 2
+T3	NERPrediction 301 318	endocrine therapy
+T4	NERPrediction 455 458	PCP
+T5	NERPrediction 934 942	sentinel
+T6	NERPrediction 1072 1080	sentinel
+T7	NERPrediction 1218 1235	endocrine therapy
+T8	NERPrediction 1349 1352	PCP
+T9	NERPrediction 1691 1699	arimidex
+T10	NERPrediction 1989 1992	s/p
+T11	NERPrediction 2263 2267	:s/p
+T12	NERPrediction 2264 2267	s/p
+T13	NERPrediction 2297 2300	S/p
+T14	NERPrediction 2321 2324	S/p
+T15	NERPrediction 2338 2341	S/P
+T16	NERPrediction 2411 2422	Medications
+T17	NERPrediction 2423 2433	Amlodipine
+T18	NERPrediction 2423 2438	Amlodipine 5 MG
+T19	NERPrediction 2444 2450	TABLET
+T20	NERPrediction 2465 2473	Arimidex
+T21	NERPrediction 2465 2492	Arimidex (ANASTROZOLE) 1 MG
+T22	NERPrediction 2474 2492	(ANASTROZOLE) 1 MG
+T23	NERPrediction 2475 2486	ANASTROZOLE
+T24	NERPrediction 2475 2492	ANASTROZOLE) 1 MG
+T25	NERPrediction 2498 2504	TABLET
+T26	NERPrediction 2523 2544	(ACETYLSALICYLIC Acid
+T27	NERPrediction 2524 2544	ACETYLSALICYLIC Acid
+T28	NERPrediction 2558 2564	TABLET
+T29	NERPrediction 2579 2587	Atenolol
+T30	NERPrediction 2579 2593	Atenolol 50 MG
+T31	NERPrediction 2600 2606	TABLET
+T32	NERPrediction 2621 2629	Atrovent
+T33	NERPrediction 2621 2635	Atrovent Nasal
+T34	NERPrediction 2630 2635	Nasal
+T35	NERPrediction 2643 2654	IPRATROPIUM
+T36	NERPrediction 2655 2660	Nasal
+T37	NERPrediction 2670 2675	SPRAY
+T38	NERPrediction 2680 2683	BID
+T39	NERPrediction 2689 2696	Calcium
+T40	NERPrediction 2689 2700	Calcium 600
+T41	NERPrediction 2703 2714	+ Vitamin D
+T42	NERPrediction 2705 2712	Vitamin
+T43	NERPrediction 2705 2714	Vitamin D
+T44	NERPrediction 2713 2718	D(400
+T45	NERPrediction 2724 2727	TAB
+T46	NERPrediction 2735 2745	Fluoxetine
+T47	NERPrediction 2735 2749	Fluoxetine Hcl
+T48	NERPrediction 2762 2769	CAPSULE
+T49	NERPrediction 2785 2790	pills
+T50	NERPrediction 2794 2801	Fosamax
+T51	NERPrediction 2803 2814	ALENDRONATE
+T52	NERPrediction 2821 2827	TABLET
+T53	NERPrediction 2835 2841	Tablet
+T54	NERPrediction 2854 2864	Furosemide
+T55	NERPrediction 2854 2870	Furosemide 80 MG
+T56	NERPrediction 2877 2883	TABLET
+T57	NERPrediction 2898 2907	Glucotrol
+T58	NERPrediction 2909 2918	GLIPIZIDE
+T59	NERPrediction 2930 2936	TABLET
+T60	NERPrediction 2948 2951	BID
+T61	NERPrediction 2952 2962	Lisinopril
+T62	NERPrediction 2952 2968	Lisinopril 40 MG
+T63	NERPrediction 2975 2981	TABLET
+T64	NERPrediction 2996 3005	Lorazepam
+T65	NERPrediction 2996 3010	Lorazepam 1 MG
+T66	NERPrediction 3016 3022	TABLET
+T67	NERPrediction 3051 3060	Metformin
+T68	NERPrediction 3075 3081	TABLET
+T69	NERPrediction 3097 3100	tab
+T70	NERPrediction 3150 3153	TAB
+T71	NERPrediction 3160 3170	Omeprazole
+T72	NERPrediction 3160 3176	Omeprazole 20 MG
+T73	NERPrediction 3184 3190	TABLET
+T74	NERPrediction 3208 3219	Simvastatin
+T75	NERPrediction 3208 3225	Simvastatin 40 MG
+T76	NERPrediction 3232 3238	TABLET
+T77	NERPrediction 3254 3261	Tylenol
+T78	NERPrediction 3254 3276	Tylenol Extra Strength
+T79	NERPrediction 3278 3291	ACETAMINOPHEN
+T80	NERPrediction 3322 3328	TABLET
+T81	NERPrediction 3683 3690	alcohol
+T82	NERPrediction 4668 4685	endocrine therapy
+T83	NERPrediction 4691 4702	anastrazole

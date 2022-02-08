@@ -1,0 +1,30 @@
+T0	NERPrediction 105 109	NOOR
+T1	NERPrediction 413 420	steroid
+T2	NERPrediction 558 565	glucose
+T3	NERPrediction 617 626	Metformin
+T4	NERPrediction 1483 1488	QD   
+T5	NERPrediction 1567 1569	MG
+T6	NERPrediction 1719 1724	QD   
+T7	NERPrediction 1738 1740	MG
+T8	NERPrediction 1778 1790	ATORVASTATIN
+T9	NERPrediction 1828 1850	QD   LISINOPRIL   40MG
+T10	NERPrediction 1871 1876	QD   
+T11	NERPrediction 1964 1969	QD   
+T12	NERPrediction 1986 1988	NA
+T13	NERPrediction 1990 1993	QHS
+T14	NERPrediction 2020 2023	QHS
+T15	NERPrediction 2034 2036	MG
+T16	NERPrediction 2042 2045	QHS
+T17	NERPrediction 2082 2084	GM
+T18	NERPrediction 2090 2094	Q72H
+T19	NERPrediction 2155 2169	QHS   VENTOLIN
+T20	NERPrediction 2178 2181	INH
+T21	NERPrediction 2183 2186	QID
+T22	NERPrediction 2275 2278	QHS
+T23	NERPrediction 3057 3065	Atenolol
+T24	NERPrediction 3099 3109	Lisinopril
+T25	NERPrediction 3166 3175	Metformin
+T26	NERPrediction 3207 3213	AllMed
+T27	NERPrediction 3245 3252	glucose
+T28	NERPrediction 3380 3387	Lipitor
+T29	NERPrediction 3394 3397	QHS

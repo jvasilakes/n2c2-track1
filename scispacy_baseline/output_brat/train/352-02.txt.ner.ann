@@ -1,0 +1,14 @@
+T0	NERPrediction 356 367	cholesterol
+T1	NERPrediction 1162 1171	captopril
+T2	NERPrediction 1173 1186	levothyroxine
+T3	NERPrediction 1188 1197	clonidine
+T4	NERPrediction 1203 1210	aspirin
+T5	NERPrediction 1222 1230	nitrates
+T6	NERPrediction 1254 1265	albuterol  
+T7	NERPrediction 1269 1276	Lipitor
+T8	NERPrediction 2251 2259	Troponin
+T9	NERPrediction 2704 2711	aspirin
+T10	NERPrediction 2713 2726	nitroglycerin
+T11	NERPrediction 2732 2744	beta-blocker
+T12	NERPrediction 2814 2822	morphine
+T13	NERPrediction 3177 3209	document:1-3286211 BFFocus      

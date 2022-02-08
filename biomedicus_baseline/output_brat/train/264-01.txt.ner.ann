@@ -1,0 +1,4 @@
+T1	NERPrediction 137 141	DATE
+T2	NERPrediction 926 934	Morphine
+T3	NERPrediction 926 942	Morphine sulfate
+T4	NERPrediction 1390 1402	Electrolytes

@@ -1,0 +1,30 @@
+T0	NERPrediction 126 135	Metformin
+T1	NERPrediction 149 158	glyburide
+T2	NERPrediction 443 452	glyburide
+T3	NERPrediction 461 479	albumin/creatinine
+T4	NERPrediction 900 908	Mestinon
+T5	NERPrediction 958 969	pravastatin
+T6	NERPrediction 978 989	cholesterol
+T7	NERPrediction 1389 1395	barium
+T8	NERPrediction 1512 1516	iron
+T9	NERPrediction 1545 1551	folate
+T10	NERPrediction 1658 1668	11/21/2077
+T11	NERPrediction 1807 1815	low-dose
+T12	NERPrediction 2197 2203	Advair
+T13	NERPrediction 2224 2227	bid
+T14	NERPrediction 2229 2246	albuterol inhaler
+T15	NERPrediction 2269 2276	aspirin
+T16	NERPrediction 2283 2291	atenolol
+T17	NERPrediction 2304 2310	Ativan
+T18	NERPrediction 2334 2341	Dalmane
+T19	NERPrediction 2412 2423	QHS quinine
+T20	NERPrediction 2425 2435	lisinopril
+T21	NERPrediction 2448 2456	Mestinon
+T22	NERPrediction 2504 2512	spansule
+T23	NERPrediction 2575 2591	multivitamins   
+T24	NERPrediction 2591 2599	Protonix
+T25	NERPrediction 2673 2681	atenolol
+T26	NERPrediction 2700 2722	9/18/2074  pravastatin
+T27	NERPrediction 3280 3287	alcohol
+T28	NERPrediction 4325 4329	rubs
+T29	NERPrediction 4565 4589	Musc skel   No spinal or

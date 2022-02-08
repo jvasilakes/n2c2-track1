@@ -1,0 +1,44 @@
+T0	NERPrediction 113 116	ASA
+T1	NERPrediction 375 384	abdo pain
+T2	NERPrediction 488 490	NO
+T3	NERPrediction 615 626	NO bleeding
+T4	NERPrediction 654 664	Alprazolam
+T5	NERPrediction 669 671	MG
+T6	NERPrediction 719 730	Clindamycin
+T7	NERPrediction 734 737	GEL
+T8	NERPrediction 896 899	qhs
+T9	NERPrediction 916 924	Bottle(s
+T10	NERPrediction 926 936	Furosemide
+T11	NERPrediction 940 942	MG
+T12	NERPrediction 984 994	Lisinopril
+T13	NERPrediction 998 1000	MG
+T14	NERPrediction 1002 1006	10MG
+T15	NERPrediction 1042 1051	Lopressor
+T16	NERPrediction 1053 1063	METOPROLOL
+T17	NERPrediction 1077 1079	MG
+T18	NERPrediction 1123 1132	Metformin
+T19	NERPrediction 1138 1140	MG
+T20	NERPrediction 1220 1231	Simvastatin
+T21	NERPrediction 1234 1236	MG
+T22	NERPrediction 1260 1263	QHS
+T23	NERPrediction 1277 1285	Tablet(s
+T24	NERPrediction 1287 1295	Warfarin
+T25	NERPrediction 1305 1307	MG
+T26	NERPrediction 1398 1406	Warfarin
+T27	NERPrediction 1440 1445	2=one
+T28	NERPrediction 1456 1458	w/
+T29	NERPrediction 1679 1707	C3-4;C5-6; C7-T1   Allergies
+T30	NERPrediction 1708 1773	NKA    Vital Signs BP 108/62, P 93, Temp 98.2 F, Wt 200 lb O2 SAT
+T31	NERPrediction 1784 1787	NAD
+T32	NERPrediction 2015 2017	NO
+T33	NERPrediction 2033 2035	NO
+T34	NERPrediction 2058 2069	Percussion-
+T35	NERPrediction 2195 2212	Results11/12/2082
+T36	NERPrediction 2217 2219	NA
+T37	NERPrediction 2230 2231	K
+T38	NERPrediction 2274 2277	GLU
+T39	NERPrediction 2654 2662	AST/SGOT
+T40	NERPrediction 2887 2891	78[1
+T41	NERPrediction 3599 3609	alprazolam
+T42	NERPrediction 3633 3639	Folate
+T43	NERPrediction 3648 3650	UA

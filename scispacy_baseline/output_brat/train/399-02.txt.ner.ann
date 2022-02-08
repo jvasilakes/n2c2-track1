@@ -1,0 +1,23 @@
+T0	NERPrediction 82 92	MCA stroke
+T1	NERPrediction 328 331	MCA
+T2	NERPrediction 360 375	R ICA occlusion
+T3	NERPrediction 502 514	entire R MCA
+T4	NERPrediction 756 763	Aspirin
+T5	NERPrediction 985 997	Homocysteine
+T6	NERPrediction 2215 2224	trazodone
+T7	NERPrediction 3145 3154	Neurontin
+T8	NERPrediction 3309 3317	Dilaudid
+T9	NERPrediction 3549 3576	L shoulder  -Pravachol 20  
+T10	NERPrediction 3598 3610	vitamins    
+T11	NERPrediction 4319 4324	DSS  
+T12	NERPrediction 4492 4500	cane    
+T13	NERPrediction 4518 4528	MCA stroke
+T14	NERPrediction 4903 4910	aspirin
+T15	NERPrediction 5087 5093	Elavil
+T16	NERPrediction 5097 5100	qhs
+T17	NERPrediction 5121 5130	trazodone
+T18	NERPrediction 5136 5142	Elavil
+T19	NERPrediction 5174 5177	qhs
+T20	NERPrediction 5211 5217	Elavil
+T21	NERPrediction 5227 5230	qhs
+T22	NERPrediction 5251 5260	Neurontin

@@ -1,0 +1,55 @@
+T1	NERPrediction 179 182	s/p
+T2	NERPrediction 481 484	PSA
+T3	NERPrediction 524 527	s/p
+T4	NERPrediction 561 564	OSA
+T5	NERPrediction 614 617	S/P
+T6	NERPrediction 696 716	the shingles vaccine
+T7	NERPrediction 700 716	shingles vaccine
+T8	NERPrediction 709 716	vaccine
+T9	NERPrediction 835 845	Medication
+T10	NERPrediction 1011 1022	Medications
+T11	NERPrediction 1023 1030	Aspirin
+T12	NERPrediction 1031 1052	(ACETYLSALICYLIC ACID
+T13	NERPrediction 1032 1052	ACETYLSALICYLIC ACID
+T14	NERPrediction 1066 1072	TABLET
+T15	NERPrediction 1088 1100	Atorvastatin
+T16	NERPrediction 1088 1106	Atorvastatin 80 MG
+T17	NERPrediction 1113 1119	TABLET
+T18	NERPrediction 1136 1144	Beconase
+T19	NERPrediction 1136 1147	Beconase AQ
+T20	NERPrediction 1148 1176	(BECLOMETHASONE DIPROPIONATE
+T21	NERPrediction 1149 1163	BECLOMETHASONE
+T22	NERPrediction 1149 1176	BECLOMETHASONE DIPROPIONATE
+T23	NERPrediction 1182 1187	) 1-2
+T24	NERPrediction 1188 1193	SPRAY
+T25	NERPrediction 1198 1201	BID
+T26	NERPrediction 1204 1209	Spray
+T27	NERPrediction 1248 1254	Nexium
+T28	NERPrediction 1248 1275	Nexium (ESOMEPRAZOLE) 40 MG
+T29	NERPrediction 1255 1275	(ESOMEPRAZOLE) 40 MG
+T30	NERPrediction 1256 1268	ESOMEPRAZOLE
+T31	NERPrediction 1256 1275	ESOMEPRAZOLE) 40 MG
+T32	NERPrediction 1282 1289	CAPSULE
+T33	NERPrediction 1311 1318	Capsule
+T34	NERPrediction 1322 1331	Oxycodone
+T35	NERPrediction 1342 1348	TABLET
+T36	NERPrediction 1368 1374	Tablet
+T37	NERPrediction 1378 1385	Proscar
+T38	NERPrediction 1387 1398	FINASTERIDE
+T39	NERPrediction 1416 1422	TABLET
+T40	NERPrediction 1441 1447	Tablet
+T41	NERPrediction 1451 1460	Uroxatral
+T42	NERPrediction 1462 1471	ALFUZOSIN
+T43	NERPrediction 1613 1616	amp
+T44	NERPrediction 1775 1780	, s/p
+T45	NERPrediction 1777 1780	s/p
+T46	NERPrediction 1859 1865	statin
+T47	NERPrediction 1871 1874	OSA
+T48	NERPrediction 1910 1916	Nexium
+T49	NERPrediction 1938 1947	Varicella
+T50	NERPrediction 1938 1956	Varicella antibody
+T51	NERPrediction 1948 1956	antibody
+T52	NERPrediction 1964 1972	Zostavax
+T53	NERPrediction 1987 1990	PSA
+T54	NERPrediction 1997 2000	PSA
+T55	NERPrediction 2026 2033	glucose

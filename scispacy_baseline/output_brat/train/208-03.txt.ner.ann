@@ -1,0 +1,25 @@
+T0	NERPrediction 289 291	DM
+T1	NERPrediction 357 359	DM
+T2	NERPrediction 770 772	Pt
+T3	NERPrediction 1071 1073	MG
+T4	NERPrediction 1077 1092	QD         HCTZ
+T5	NERPrediction 1098 1100	MG
+T6	NERPrediction 1104 1125	QD         LISINOPRIL
+T7	NERPrediction 1131 1133	MG
+T8	NERPrediction 1137 1153	QD         ZOCOR
+T9	NERPrediction 1159 1161	MG
+T10	NERPrediction 1165 1184	QHS         Norvasc
+T11	NERPrediction 1201 1205	10MG
+T12	NERPrediction 1233 1251	QD         Oscal+d
+T13	NERPrediction 1261 1270	Carbonate
+T14	NERPrediction 1273 1298	Vit D(1TABLE...    500 MG
+T15	NERPrediction 1314 1321	Tylenol
+T16	NERPrediction 1362 1371	Capsule(s
+T17	NERPrediction 1376 1379	Q4H
+T18	NERPrediction 1402 1405	Kcl
+T19	NERPrediction 1419 1424	10MEQ
+T20	NERPrediction 1455 1466	QD         
+T21	NERPrediction 1528 1535	QD     
+T22	NERPrediction 1564 1567	NAD
+T23	NERPrediction 1719 1722	RRR
+T24	NERPrediction 2144 2146	DM

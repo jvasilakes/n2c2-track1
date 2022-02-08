@@ -1,0 +1,71 @@
+T1	NERPrediction 136 140	Date
+T2	NERPrediction 164 167	PCP
+T3	NERPrediction 880 888	morphine
+T4	NERPrediction 913 919	zofran
+T5	NERPrediction 932 940	Dilaudid
+T6	NERPrediction 950 958	, and 1L
+T7	NERPrediction 952 958	and 1L
+T8	NERPrediction 956 958	1L
+T9	NERPrediction 959 961	NS
+T10	NERPrediction 1184 1195	sore throat
+T11	NERPrediction 1410 1418	baseline
+T12	NERPrediction 2007 2015	Coumadin
+T13	NERPrediction 2042 2045	s/p
+T14	NERPrediction 2119 2122	Hgb
+T15	NERPrediction 2183 2186	s/p
+T16	NERPrediction 2235 2238	s/p
+T17	NERPrediction 2428 2438	medication
+T18	NERPrediction 2451 2465	Spironolactone
+T19	NERPrediction 2467 2476	Aldactone
+T20	NERPrediction 2495 2508	Amitriptyline
+T21	NERPrediction 2495 2512	Amitriptyline Hcl
+T22	NERPrediction 2531 2539	Warfarin
+T23	NERPrediction 2531 2546	Warfarin Sodium
+T24	NERPrediction 2540 2546	Sodium
+T25	NERPrediction 2548 2556	Coumadin
+T26	NERPrediction 2642 2652	Gabapentin
+T27	NERPrediction 2642 2660	Gabapentin  300 MG
+T28	NERPrediction 2672 2684	Atorvastatin
+T29	NERPrediction 2672 2701	Atorvastatin (Lipitor)  20 MG
+T30	NERPrediction 2686 2693	Lipitor
+T31	NERPrediction 2712 2721	Metformin
+T32	NERPrediction 2740 2747	Nadolol
+T33	NERPrediction 2765 2775	Omeprazole
+T34	NERPrediction 2777 2785	Prilosec
+T35	NERPrediction 2804 2813	Verapamil
+T36	NERPrediction 2814 2831	Sustained Release
+T37	NERPrediction 2833 2842	Verapamil
+T38	NERPrediction 2843 2847	S.R.
+T39	NERPrediction 2880 2885	Latex
+T40	NERPrediction 2914 2927	erythromycins
+T41	NERPrediction 3037 3044	Alcohol
+T42	NERPrediction 3813 3816	amp
+T43	NERPrediction 4309 4312	CO2
+T44	NERPrediction 4352 4355	BUN
+T45	NERPrediction 4650 4655	TBILI
+T46	NERPrediction 5067 5072	TBILI
+T47	NERPrediction 6364 6370	lipase
+T48	NERPrediction 6492 6495	AAA
+T49	NERPrediction 6744 6746	NS
+T50	NERPrediction 6754 6756	1L
+T51	NERPrediction 6757 6759	NS
+T52	NERPrediction 6819 6821	1L
+T53	NERPrediction 6836 6842	at 125
+T54	NERPrediction 7004 7012	Dilaudid
+T55	NERPrediction 7095 7103	warfarin
+T56	NERPrediction 7190 7198	warfarin
+T57	NERPrediction 7211 7218	nadolol
+T58	NERPrediction 7231 7245	spironolactone
+T59	NERPrediction 7254 7263	verapamil
+T60	NERPrediction 7264 7281	sustained release
+T61	NERPrediction 7289 7298	verapamil
+T62	NERPrediction 7344 7351	Lipitor
+T63	NERPrediction 7398 7408	creatinine
+T64	NERPrediction 7509 7512	ARF
+T65	NERPrediction 7593 7602	metformin
+T66	NERPrediction 7612 7615	Hgb
+T67	NERPrediction 7670 7680	gabapentin
+T68	NERPrediction 7703 7716	amitriptyline
+T69	NERPrediction 7703 7722	amitriptyline 10 mg
+T70	NERPrediction 7745 7752	hydrate
+T71	NERPrediction 7786 7796	dalteparin
