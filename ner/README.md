@@ -9,7 +9,8 @@ The output is markdown formatted and can be copied directly into this file for k
 
 
 # Results
-All results are on the dev split unless otherwise specified
+All results are on the dev split unless otherwise specified.
+Lenient match means that >=1 characters overlap between the predicted and gold span.
 
 ## Biomedicus Baseline
 ### Exact match
@@ -25,7 +26,7 @@ All results are on the dev split unless otherwise specified
 |MACRO | 0.487 | 0.878 | 0.601 |
 
 
-## SciSpacy Baseline
+## Scispacy Baseline
 ### Exact match
 |      | prec  | rec   | f1    |
 |------|-------|-------|-------|
