@@ -75,11 +75,11 @@ def main(args):
     macro_r = sum(metrics["exact_recall"]) / denom
     macro_f1 = sum(metrics["exact_f1"]) / denom
 
-    print("----------- EXACT ---------------")
-    print(f"       {'prec': <4}  | {'rec': <3}   | {'f1': <4}")
-    print(f"MICRO: {micro_p:.3f} | {micro_r:.3f} | {micro_f1:.3f}")
-    print(f"MACRO: {macro_p:.3f} | {macro_r:.3f} | {macro_f1:.3f}")
-    print("---------------------------------")
+    print("### Exact match")
+    print(f"|      | {'prec': <4}  | {'rec': <3}   | {'f1': <4}  |")
+    print(f"|------|-------|-------|-------|")
+    print(f"|MICRO | {micro_p:.3f} | {micro_r:.3f} | {micro_f1:.3f} |")
+    print(f"|MACRO | {macro_p:.3f} | {macro_r:.3f} | {macro_f1:.3f} |")
 
     micro_p, micro_r, micro_f1 = precision_recall_f1(
             totals["lenient_tp"], totals["lenient_fp"], totals["lenient_fn"])
@@ -87,11 +87,12 @@ def main(args):
     macro_r = sum(metrics["lenient_recall"]) / denom
     macro_f1 = sum(metrics["lenient_f1"]) / denom
 
-    print("----------- LENIENT -------------")
-    print(f"       {'prec': <4}  | {'rec': <3}   | {'f1': <4}")
-    print(f"MICRO: {micro_p:.3f} | {micro_r:.3f} | {micro_f1:.3f}")
-    print(f"MACRO: {macro_p:.3f} | {macro_r:.3f} | {macro_f1:.3f}")
-    print("---------------------------------")
+    print()
+    print("### Lenient match")
+    print(f"|      | {'prec': <4}  | {'rec': <3}   | {'f1': <4}  |")
+    print(f"|------|-------|-------|-------|")
+    print(f"|MICRO | {micro_p:.3f} | {micro_r:.3f} | {micro_f1:.3f} |")
+    print(f"|MACRO | {macro_p:.3f} | {macro_r:.3f} | {macro_f1:.3f} |")
 
 
 def get_spans_from_anns(ann_file):
