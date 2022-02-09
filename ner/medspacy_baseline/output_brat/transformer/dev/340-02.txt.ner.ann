@@ -1,0 +1,15 @@
+T0	NERPrediction 558 565	Norvasc
+T1	NERPrediction 570 576	Cozaar
+T2	NERPrediction 609 618	Glucotrol
+T3	NERPrediction 623 633	Glucophage
+T4	NERPrediction 921 929	atenolol
+T5	NERPrediction 1325 1330	Aleve
+T6	NERPrediction 1670 1687	Cozaar (LOSARTAN)
+T7	NERPrediction 1733 1755	Glucophage (METFORMIN)
+T8	NERPrediction 1786 1806	Norvasc (AMLODIPINE)
+T9	NERPrediction 1897 1914	Ultram (TRAMADOL)
+T10	NERPrediction 1960 1981	Skelaxin (METAXALONE)
+T11	NERPrediction 2160 2167	Codeine
+T12	NERPrediction 3028 3035	Norvasc
+T13	NERPrediction 3040 3046	Cozaar
+T14	NERPrediction 3218 3228	Glucophage

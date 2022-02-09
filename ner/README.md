@@ -38,3 +38,28 @@ All results are on the dev split unless otherwise specified
 |MICRO | 0.469 | 0.684 | 0.556 |
 |MACRO | 0.459 | 0.663 | 0.519 |
 
+## Medspacy Baseline (vector model)
+### Exact match
+|      | prec  | rec   | f1    |
+|------|-------|-------|-------|
+|MICRO | 0.873 | 0.790 | 0.830 |
+|MACRO | 0.831 | 0.773 | 0.790 |
+
+### Lenient match
+|      | prec  | rec   | f1    |
+|------|-------|-------|-------|
+|MICRO | 0.934 | 0.842 | 0.886 |
+|MACRO | 0.883 | 0.817 | 0.837 |
+
+## Medspacy Baseline (transformer model)
+### Exact match
+|      | prec  | rec   | f1    |
+|------|-------|-------|-------|
+|MICRO | 0.836 | 0.762 | 0.798 |
+|MACRO | 0.826 | 0.790 | 0.798 |
+
+### Lenient match
+|      | prec  | rec   | f1    |
+|------|-------|-------|-------|
+|MICRO | 0.950 | 0.916 | 0.933 |
+|MACRO | 0.923 | 0.907 | 0.907 |

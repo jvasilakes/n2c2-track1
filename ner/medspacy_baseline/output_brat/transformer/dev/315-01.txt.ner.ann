@@ -1,0 +1,20 @@
+T0	NERPrediction 768 778	anesthesia
+T1	NERPrediction 885 895	anesthesia
+T2	NERPrediction 914 920	Neoral
+T3	NERPrediction 922 927	Lasix
+T4	NERPrediction 935 942	Norvasc
+T5	NERPrediction 956 963	Lipitor
+T6	NERPrediction 978 986	Cellcept
+T7	NERPrediction 1001 1008	Bactrim
+T8	NERPrediction 1010 1018	Estrotab
+T9	NERPrediction 1020 1030	prednisone
+T10	NERPrediction 1038 1044	Epogen
+T11	NERPrediction 1046 1050	iron
+T12	NERPrediction 1052 1063	insulin NPH
+T13	NERPrediction 1886 1905	insulin-blood sugar
+T14	NERPrediction 2971 2979	steroids
+T15	NERPrediction 3066 3073	Lipitor
+T16	NERPrediction 3111 3114	NPH
+T17	NERPrediction 3143 3150	insulin
+T18	NERPrediction 3153 3159	NSAIDS
+T19	NERPrediction 3170 3177	Aspirin

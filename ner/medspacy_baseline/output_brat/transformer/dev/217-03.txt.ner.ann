@@ -1,0 +1,16 @@
+T0	NERPrediction 297 306	lipitor20
+T1	NERPrediction 314 319	lopid
+T2	NERPrediction 583 589	viagra
+T3	NERPrediction 702 728	Asa (ACETYLSALICYLIC ACID)
+T4	NERPrediction 786 805	Viagra (SILDENAFIL)
+T5	NERPrediction 872 885	nitroglycerin
+T6	NERPrediction 887 906	Metoprolol TARTRATE
+T7	NERPrediction 945 964	Lopid (GEMFIBROZIL)
+T8	NERPrediction 1004 1026	Lipitor (ATORVASTATIN)
+T9	NERPrediction 1083 1117	Arthrotec (DICLOFENAC/MISOPROSTOL)
+T10	NERPrediction 1133 1156	Protonix (PANTOPRAZOLE)
+T11	NERPrediction 1197 1207	Folic ACID
+T12	NERPrediction 1257 1268	Penicillins
+T13	NERPrediction 2851 2860	lipitor20
+T14	NERPrediction 2868 2873	lopid
+T15	NERPrediction 3157 3174	Influenza Vaccine

@@ -1,0 +1,23 @@
+T0	NERPrediction 305 314	metformin
+T1	NERPrediction 374 383	glyburide
+T2	NERPrediction 403 412	metformin
+T3	NERPrediction 630 643	dicloxacillin
+T4	NERPrediction 788 797	Pain meds
+T5	NERPrediction 866 872	ultram
+T6	NERPrediction 878 887	neurontin
+T7	NERPrediction 928 934	viagra
+T8	NERPrediction 959 967	nitrates
+T9	NERPrediction 1029 1038	Neurontin
+T10	NERPrediction 1131 1140	GLYBURIDE
+T11	NERPrediction 1165 1173	Percocet
+T12	NERPrediction 1187 1196	OXYCODONE
+T13	NERPrediction 1283 1290	Codeine
+T14	NERPrediction 2624 2633	metformin
+T15	NERPrediction 2693 2702	glyburide
+T16	NERPrediction 2722 2731	metformin
+T17	NERPrediction 3044 3057	dicloxacillin
+T18	NERPrediction 3200 3209	Pain meds
+T19	NERPrediction 3447 3453	ultram
+T20	NERPrediction 3528 3534	ultram
+T21	NERPrediction 3542 3551	neurontin
+T22	NERPrediction 3582 3588	viagra

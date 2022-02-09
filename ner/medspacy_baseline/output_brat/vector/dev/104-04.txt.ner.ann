@@ -1,0 +1,30 @@
+T0	NERPrediction 277 285	atenolol
+T1	NERPrediction 569 578	Synthroid
+T2	NERPrediction 580 600	LEVOTHYROXINE SODIUM
+T3	NERPrediction 652 660	Tegretol
+T4	NERPrediction 662 675	CARBAMAZEPINE
+T5	NERPrediction 756 766	Wellbutrin
+T6	NERPrediction 821 827	Ativan
+T7	NERPrediction 829 838	LORAZEPAM
+T8	NERPrediction 880 886	Ativan
+T9	NERPrediction 888 897	LORAZEPAM
+T10	NERPrediction 937 946	Triazolam
+T11	NERPrediction 1014 1020	Ativan
+T12	NERPrediction 1037 1046	Neurontin
+T13	NERPrediction 1048 1058	GABAPENTIN
+T14	NERPrediction 1123 1130	Xalatan
+T15	NERPrediction 1212 1219	Humulin
+T16	NERPrediction 1277 1287	Lisinopril
+T17	NERPrediction 1325 1340	Timolol MALEATE
+T18	NERPrediction 1361 1370	Albuterol
+T19	NERPrediction 1403 1412	Oxycodone
+T20	NERPrediction 1508 1517	duragesic
+T21	NERPrediction 1519 1528	oxycontin
+T22	NERPrediction 1586 1595	Albuterol
+T23	NERPrediction 1640 1647	Insulin
+T24	NERPrediction 1656 1663	HUMULIN
+T25	NERPrediction 1720 1727	Aspirin
+T26	NERPrediction 1786 1795	oxycodone
+T27	NERPrediction 1800 1803	LMP
+T28	NERPrediction 2006 2015	oxycodone
+T29	NERPrediction 2041 2047	lantus
