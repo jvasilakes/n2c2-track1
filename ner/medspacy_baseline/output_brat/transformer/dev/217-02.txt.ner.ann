@@ -1,0 +1,20 @@
+T0	NERPrediction 228 235	lipitor
+T1	NERPrediction 391 397	Viagra
+T2	NERPrediction 697 704	toradol
+T3	NERPrediction 710 716	fluids
+T4	NERPrediction 983 1002	Metoprolol TARTRATE
+T5	NERPrediction 1054 1079	Asa (ACETYLSALICYLIC ACID
+T6	NERPrediction 1138 1148	Folic ACID
+T7	NERPrediction 1185 1204	Viagra (SILDENAFIL)
+T8	NERPrediction 1271 1284	nitroglycerin
+T9	NERPrediction 1286 1309	Protonix (PANTOPRAZOLE)
+T10	NERPrediction 1350 1372	Lipitor (ATORVASTATIN)
+T11	NERPrediction 1429 1436	Toradol
+T12	NERPrediction 1438 1461	KETOROLAC TROMETHAMINE)
+T13	NERPrediction 1529 1548	Lopid (GEMFIBROZIL)
+T14	NERPrediction 1601 1612	Penicillins
+T15	NERPrediction 1635 1648	Erythromycins
+T16	NERPrediction 1660 1662	Iv
+T17	NERPrediction 1663 1671	Contrast
+T18	NERPrediction 1957 1964	lipitor
+T19	NERPrediction 2087 2093	Viagra

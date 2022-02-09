@@ -1,0 +1,38 @@
+T0	NERPrediction 1038 1045	Humulin
+T1	NERPrediction 1076 1097	Insulin REGULAR HUMAN
+T2	NERPrediction 1109 1114	AC+HS
+T3	NERPrediction 1193 1216	Protonix (PANTOPRAZOLE)
+T4	NERPrediction 1257 1266	Trazodone
+T5	NERPrediction 1307 1314	insomna
+T6	NERPrediction 1317 1336	Naprosyn (NAPROXEN)
+T7	NERPrediction 1376 1419	Polytrim (TRIMETHOPRIM/POLYMYXIN B SULFATE)
+T8	NERPrediction 1446 1455	Proventil
+T9	NERPrediction 1507 1515	Azmacort
+T10	NERPrediction 1537 1547	Glucophage
+T11	NERPrediction 1564 1571	Lipitor
+T12	NERPrediction 1586 1629	Zestoretic (LISINOPRIL/HYDROCHLOROTHIAZIDE)
+T13	NERPrediction 1668 1698	Ecasa (ASPIRIN ENTERIC COATED)
+T14	NERPrediction 1740 1764	Clarinex (DESLORATADINE)
+T15	NERPrediction 1801 1821	Plavix (CLOPIDOGREL)
+T16	NERPrediction 1836 1854	Paxil (PAROXETINE)
+T17	NERPrediction 1890 1898	Atenolol
+T18	NERPrediction 1934 1946	Flucoconzole
+T19	NERPrediction 1969 1977	Lotrimin
+T20	NERPrediction 1988 2000	CLOTRIMAZOLE
+T21	NERPrediction 2080 2087	Insulin
+T22	NERPrediction 5400 5407	Humulin
+T23	NERPrediction 5509 5516	insulin
+T24	NERPrediction 5536 5546	glucophage
+T25	NERPrediction 5563 5566	ASA
+T26	NERPrediction 5568 5574	statin
+T27	NERPrediction 5739 5742	ASA
+T28	NERPrediction 6004 6012	Atenolol
+T29	NERPrediction 6082 6090	Atenolol
+T30	NERPrediction 6119 6126	Lipitor
+T31	NERPrediction 6203 6206	ASA
+T32	NERPrediction 6262 6268	Celexa
+T33	NERPrediction 6301 6310	albuterol
+T34	NERPrediction 6315 6325	asthmacort
+T35	NERPrediction 6345 6353	Protonix
+T36	NERPrediction 6407 6415	Diflucan
+T37	NERPrediction 6468 6473	Mammo

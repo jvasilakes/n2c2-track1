@@ -1,0 +1,5 @@
+T0	NERPrediction 294 301	Aspirin
+T1	NERPrediction 310 313	MVI
+T2	NERPrediction 315 322	calcium
+T3	NERPrediction 324 332	atenolol
+T4	NERPrediction 764 772	atenolol

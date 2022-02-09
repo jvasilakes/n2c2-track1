@@ -1,0 +1,9 @@
+T0	NERPrediction 1023 1030	Aspirin
+T1	NERPrediction 1032 1052	ACETYLSALICYLIC ACID
+T2	NERPrediction 1088 1100	Atorvastatin
+T3	NERPrediction 1136 1144	Beconase
+T4	NERPrediction 1248 1254	Nexium
+T5	NERPrediction 1322 1331	Oxycodone
+T6	NERPrediction 1378 1385	Proscar
+T7	NERPrediction 1859 1865	statin
+T8	NERPrediction 1910 1916	Nexium

@@ -1,0 +1,16 @@
+T0	NERPrediction 620 628	levaquin
+T1	NERPrediction 849 858	lopressor
+T2	NERPrediction 870 879	lopressor
+T3	NERPrediction 1934 1940	verigy
+T4	NERPrediction 1956 1965	Pravachol
+T5	NERPrediction 1982 1988	Phoslo
+T6	NERPrediction 1993 2003	Nephrocaps
+T7	NERPrediction 2008 2017	Neurontin
+T8	NERPrediction 2033 2040	Vasotec
+T9	NERPrediction 5536 5540	levo
+T10	NERPrediction 5754 5757	asa
+T11	NERPrediction 5759 5768	lopressor
+T12	NERPrediction 5770 5779	pravachol
+T13	NERPrediction 5805 5814	lopressor
+T14	NERPrediction 5881 5887	Nexium
+T15	NERPrediction 5889 5896	heparin

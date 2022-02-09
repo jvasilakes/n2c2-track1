@@ -1,0 +1,15 @@
+T0	NERPrediction 305 314	metformin
+T1	NERPrediction 374 383	glyburide
+T2	NERPrediction 403 412	metformin
+T3	NERPrediction 866 872	ultram
+T4	NERPrediction 878 887	neurontin
+T5	NERPrediction 1029 1038	Neurontin
+T6	NERPrediction 1040 1050	GABAPENTIN
+T7	NERPrediction 1165 1173	Percocet
+T8	NERPrediction 2624 2633	metformin
+T9	NERPrediction 2693 2702	glyburide
+T10	NERPrediction 2722 2731	metformin
+T11	NERPrediction 2794 2801	Reviewd
+T12	NERPrediction 3447 3453	ultram
+T13	NERPrediction 3528 3534	ultram
+T14	NERPrediction 3542 3551	neurontin
