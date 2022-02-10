@@ -1,6 +1,7 @@
 # General stuff
 
 .*.swp
+*.old
 
 
 # Byte-compiled / optimized / DLL files

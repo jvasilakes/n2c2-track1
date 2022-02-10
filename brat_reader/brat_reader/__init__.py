@@ -15,8 +15,8 @@ class BratAnnotations(object):
         self._resolve()
         self._sorted_events = None
 
-    def events_by_type(self, event_type):
-        raise NotImplementedError()
+    def get_events_by_type(self, event_type):
+        return [e for e in self.events if e.type == event_type]
 
     def attributes_by_type(self, attr_type):
         raise NotImplementedError()
