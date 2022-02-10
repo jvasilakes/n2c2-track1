@@ -64,3 +64,17 @@ Lenient match means that >=1 characters overlap between the predicted and gold s
 |------|-------|-------|-------|
 |MICRO | 0.950 | 0.916 | 0.933 |
 |MACRO | 0.923 | 0.907 | 0.907 |
+
+## BERT base cased (Span-based classifier)
+### Exact match
+|      | prec  | rec   | f1    |
+|------|-------|-------|-------|
+|MICRO | 0.912 | 0.721 | 0.805 |
+|MACRO | 0.838 | 0.693 | 0.747 |
+
+### Lenient match
+|      | prec  | rec   | f1    |
+|------|-------|-------|-------|
+|MICRO | 0.941 | 0.742 | 0.830 |
+|MACRO | 0.865 | 0.713 | 0.770 |
+
