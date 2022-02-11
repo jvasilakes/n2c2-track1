@@ -17,7 +17,7 @@ python main.py --config ../configs/local.yaml --mode train
 Results:
 
 
----------- Epoch: 09 ----------
+---------- Epoch: 09 ----------\
 TRAIN |  LOSS =     0.0202 | Time 0h 01m 06s   | Micro_F1  = 0.9928 <<< \
       | NoDisp_F1 = 0.9954 | Dispo_F1 = 0.9960 | Undet_F1  = 0.9608\
       |  Macro_Pr = 0.9832 | Macro_Re = 0.9848 | Macro_F1  = 0.9840\
