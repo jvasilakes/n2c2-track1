@@ -1,11 +1,51 @@
 from collections import namedtuple, defaultdict
 
 
+class Annotation(object):
+
+    def __init__(self):
+        pass
+
+    def update(self, key, value):
+        self.__dict__[key] = value
+
+    def __repr__(self):
+        class_name = str(self.__class__).split('.')[-1][:-2]
+        rep = f"{class_name}({str(self.__dict__)})"
+        return rep
+
+    def copy(self):
+        return self.__class__(**self.__dict__)
+
+
+class Span(Annotation):
+    def __init__(self, id, start_index, end_index, text):
+        self.id = id
+        self.start_index = start_index
+        self.end_index = end_index
+        self.text = text
+
+
+class Attribute(Annotation):
+    def __init__(self, id, type, value):
+        self.id = id
+        self.type = type
+        self.value = value
+
+
+class Event(Annotation):
+    def __init__(self, id, type, span, attributes=None):
+        self.id = id
+        self.type = type
+        self.span = span
+        self.attributes = attributes or {}
+
+
 class BratAnnotations(object):
 
-    Span = namedtuple("Span", ["id", "start_index", "end_index", "text"])
-    Attribute = namedtuple("Attribute", ["id", "type", "value"])
-    Event = namedtuple("Event", ["id", "type", "span", "attributes"])
+    # Span = namedtuple("Span", ["id", "start_index", "end_index", "text"])
+    # Attribute = namedtuple("Attribute", ["id", "type", "value"])
+    # Event = namedtuple("Event", ["id", "type", "span", "attributes"])
 
     def __init__(self, spans, events, attributes):
         self._raw_spans = spans
@@ -37,12 +77,12 @@ class BratAnnotations(object):
         attribute_lookup = defaultdict(list)
 
         for raw_span in self._raw_spans:
-            span_lookup[raw_span["id"]] = self.Span(**raw_span)
+            span_lookup[raw_span["id"]] = Span(**raw_span)
 
         for raw_attr in self._raw_attributes:
             ref_id = raw_attr["ref_event_id"]
             raw_attr.pop("ref_event_id")  # Won't use in the Attribute tuple
-            attribute_lookup[ref_id].append(self.Attribute(**raw_attr))
+            attribute_lookup[ref_id].append(Attribute(**raw_attr))
 
         for raw_event in self._raw_events:
             ref_id = raw_event["ref_span_id"]
@@ -50,7 +90,7 @@ class BratAnnotations(object):
             span = span_lookup[ref_id]
             attrs = attribute_lookup[raw_event["id"]]
             attrs_by_type = {attr.type: attr for attr in attrs}
-            event = self.Event(
+            event = Event(
                     **raw_event, span=span, attributes=attrs_by_type)
             self._events.append(event)
 
@@ -75,6 +115,19 @@ class BratAnnotations(object):
                 else:
                     raise ValueError(f"Unsupported ann_type '{ann_type}'.")
         annotations = cls(spans=spans, events=events, attributes=attributes)
+        return annotations
+
+    @classmethod
+    def from_events(cls, events_iter):
+        spans = []
+        attributes = []
+        for event in events_iter:
+            spans.append(event.span)
+            for attr in event.attributes.values():
+                attributes.append(attr)
+        annotations = cls(spans=spans,
+                          events=events_iter,
+                          attributes=attributes)
         return annotations
 
 
