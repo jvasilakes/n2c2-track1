@@ -69,12 +69,24 @@ Lenient match means that >=1 characters overlap between the predicted and gold s
 ### Exact match
 |      | prec  | rec   | f1    |
 |------|-------|-------|-------|
-|MICRO | 0.912 | 0.721 | 0.805 |
-|MACRO | 0.838 | 0.693 | 0.747 |
+|MICRO | 0.900 | 0.771 | 0.830 |
+|MACRO | 0.828 | 0.733 | 0.765 |
 
 ### Lenient match
 |      | prec  | rec   | f1    |
 |------|-------|-------|-------|
-|MICRO | 0.941 | 0.742 | 0.830 |
-|MACRO | 0.865 | 0.713 | 0.770 |
+|MICRO | 0.929 | 0.793 | 0.855 |
+|MACRO | 0.851 | 0.750 | 0.785 |
 
+## Clinical bert (Span-based classifier)
+### Exact match
+|      | prec  | rec   | f1    |
+|------|-------|-------|-------|
+|MICRO | 0.963 | 0.943 | 0.952 |
+|MACRO | 0.956 | 0.937 | 0.946 |
+
+### Lenient match
+|      | prec  | rec   | f1    |
+|------|-------|-------|-------|
+|MICRO | 0.978 | 0.951 | 0.964 |
+|MACRO | 0.965 | 0.942 | 0.952 |
