@@ -19,7 +19,16 @@
    ├─ eval_scripts/  Scripts for running NER evaluation
    │     └─ ner.py  Precision, recall, and F1 between two brat ann files.
    ├─ biomedicus_baseline/  NER baseline using the Biomedicus entity linker
-   └─ scispacy_baseline/ NER baseline using scispacy en_ner_bc5cdr_md model.
+   ├─ medspacy_baseline/ NER baselines using medspacy using both vector and transformer models.
+   ├─ scispacy_baseline/ NER baseline using scispacy en_ner_bc5cdr_md model.
+   ├─ bertbase_baseline/ NER baseline using a BERT-base span-prediction model.
+   └─ clinicalbert_baseline/ NER baseline using a ClinicalBERT span-prediction model.
 
 - ee/   Directory for the event extraction (EE) task
+
+- context/ Directory for the context classification task
+   ├─ eval_scripts/  Scripts for running NER evaluation
+   │     └─ eval_context.py  Precision, recall, and F1 between two brat ann files for each task.
+   └─ svm_baseline/ Classification baselines using SVMs.
+
 ```
