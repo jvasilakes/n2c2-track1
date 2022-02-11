@@ -4,7 +4,7 @@ A basic method based on Matching the Blanks and An Improved Baseline for Sentenc
 
 To test the dataset structure and see the returned batch run:
 ```
-python datasets_v1.py --config ../configs/local.yaml
+python datasets.py --config ../configs/local.yaml
 ```
 You can change the parameters on the config file. 
 
