@@ -1,0 +1,63 @@
+T24	Disposition 1278 1296	hypoglycemic agent
+E24	Disposition:T24
+A1	Certainity E24 Certain
+A2	Actor E24 Physician
+A3	Action E24 Start
+A4	Temporality E24 Past
+A_	Negation E24 NotNegated
+T2	Disposition 1571 1575	HCTZ
+E2	Disposition:T2
+A5	Certainity E2 Certain
+A6	Actor E2 Physician
+A7	Action E2 Stop
+A8	Temporality E2 Past
+A_	Negation E2 NotNegated
+T28	Disposition 2322 2329	Mucinex
+E28	Disposition:T28
+A9	Certainity E28 Conditional
+A10	Actor E28 Physician
+A11	Action E28 Stop
+A12	Temporality E28 Unknown
+A_	Negation E28 NotNegated
+T31	Disposition 2467 2473	Viagra
+E31	Disposition:T31
+A13	Certainity E31 Conditional
+A14	Actor E31 Physician
+A15	Action E31 Stop
+A16	Temporality E31 Unknown
+A_	Negation E31 NotNegated
+T29	Disposition 2475 2485	SILDENAFIL
+E29	Disposition:T29
+A17	Certainity E29 Conditional
+A18	Actor E29 Physician
+A19	Action E29 Stop
+A20	Temporality E29 Unknown
+A_	Negation E29 NotNegated
+T16	Disposition 2601 2610	Zithromax
+E16	Disposition:T16
+A21	Certainity E16 Certain
+A22	Actor E16 Physician
+A23	Action E16 Decrease
+A24	Temporality E16 Unknown
+A_	Negation E16 NotNegated
+T14	Disposition 2601 2610	Zithromax
+E14	Disposition:T14
+A25	Certainity E14 Certain
+A26	Actor E14 Physician
+A27	Action E14 Decrease
+A28	Temporality E14 Unknown
+A_	Negation E14 NotNegated
+T17	Disposition 2612 2624	AZITHROMYCIN
+E17	Disposition:T17
+A29	Certainity E17 Certain
+A30	Actor E17 Physician
+A31	Action E17 Decrease
+A32	Temporality E17 Unknown
+A_	Negation E17 NotNegated
+T30	Disposition 2612 2624	AZITHROMYCIN
+E30	Disposition:T30
+A33	Certainity E30 Certain
+A34	Actor E30 Physician
+A35	Action E30 Decrease
+A36	Temporality E30 Unknown
+A_	Negation E30 NotNegated

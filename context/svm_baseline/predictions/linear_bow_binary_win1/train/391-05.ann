@@ -1,0 +1,7 @@
+T37	Disposition 2999 3006	crestor
+E37	Disposition:T37
+A1	Certainity E37 Certain
+A2	Actor E37 Physician
+A3	Action E37 Start
+A4	Temporality E37 Present
+A_	Negation E37 NotNegated

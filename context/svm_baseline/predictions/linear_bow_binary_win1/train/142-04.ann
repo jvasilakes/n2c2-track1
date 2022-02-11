@@ -1,0 +1,7 @@
+T12	Disposition 3099 3105	statin
+E12	Disposition:T12
+A1	Certainity E12 Certain
+A2	Actor E12 Physician
+A3	Action E12 Start
+A4	Temporality E12 Present
+A_	Negation E12 NotNegated

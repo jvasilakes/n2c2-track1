@@ -1,0 +1,98 @@
+T2	Disposition 830 837	heparin
+E2	Disposition:T2
+A1	Certainity E2 Certain
+A2	Actor E2 Physician
+A3	Action E2 UniqueDose
+A4	Temporality E2 Past
+A_	Negation E2 NotNegated
+T3	Disposition 842 845	ASA
+E3	Disposition:T3
+A5	Certainity E3 Certain
+A6	Actor E3 Physician
+A7	Action E3 UniqueDose
+A8	Temporality E3 Past
+A_	Negation E3 NotNegated
+T5	Disposition 1105 1109	amio
+E5	Disposition:T5
+A13	Certainity E5 Hypothetical
+A14	Actor E5 Physician
+A15	Action E5 Start
+A16	Temporality E5 Past
+A_	Negation E5 NotNegated
+T50	Disposition 1469 1476	Avandia
+E50	Disposition:T50
+A45	Certainity E50 Certain
+A46	Actor E50 Physician
+A47	Action E50 UniqueDose
+A48	Temporality E50 Past
+A_	Negation E50 NotNegated
+T30	Disposition 2423 2430	esmolol
+E30	Disposition:T30
+A17	Certainity E30 Certain
+A18	Actor E30 Physician
+A19	Action E30 Stop
+A20	Temporality E30 Past
+A_	Negation E30 NotNegated
+T31	Disposition 2447 2451	amio
+E31	Disposition:T31
+A21	Certainity E31 Certain
+A22	Actor E31 Physician
+A23	Action E31 Stop
+A24	Temporality E31 Past
+A_	Negation E31 NotNegated
+T32	Disposition 2490 2497	Esmolol
+E32	Disposition:T32
+A25	Certainity E32 Certain
+A26	Actor E32 Physician
+A27	Action E32 Stop
+A28	Temporality E32 Past
+A_	Negation E32 NotNegated
+T33	Disposition 2514 2518	amio
+E33	Disposition:T33
+A29	Certainity E33 Certain
+A30	Actor E33 Physician
+A31	Action E33 Stop
+A32	Temporality E33 Past
+A_	Negation E33 NotNegated
+T34	Disposition 2535 2537	BB
+E34	Disposition:T34
+A33	Certainity E34 Certain
+A34	Actor E34 Physician
+A35	Action E34 Stop
+A36	Temporality E34 Past
+A_	Negation E34 NotNegated
+T35	Disposition 2597 2606	lopressor
+E35	Disposition:T35
+A37	Certainity E35 Certain
+A38	Actor E35 Physician
+A39	Action E35 Stop
+A40	Temporality E35 Past
+A_	Negation E35 NotNegated
+T59	Disposition 2780 2790	integrilin
+E59	Disposition:T59
+A50	Certainity E59 Certain
+A51	Actor E59 Physician
+A52	Action E59 Stop
+A53	Temporality E59 Past
+A_	Negation E59 NotNegated
+T37	Disposition 2825 2831	plavix
+E37	Disposition:T37
+A41	Certainity E37 Certain
+A42	Actor E37 Physician
+A43	Action E37 Stop
+A44	Temporality E37 Present
+A_	Negation E37 NotNegated
+T54	Disposition 3057 3065	depakote
+E54	Disposition:T54
+A49	Certainity E54 Certain
+A54	Actor E54 Physician
+A55	Action E54 Decrease
+A56	Temporality E54 Present
+A_	Negation E54 NotNegated
+T45	Disposition 3070 3077	lithium
+E45	Disposition:T45
+A57	Certainity E45 Certain
+A58	Actor E45 Physician
+A59	Action E45 Decrease
+A60	Temporality E45 Present
+A_	Negation E45 NotNegated

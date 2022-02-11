@@ -1,0 +1,35 @@
+T62	Disposition 2102 2109	lipitor
+E62	Disposition:T62
+A1	Certainity E62 Certain
+A2	Actor E62 Physician
+A3	Action E62 Stop
+A4	Temporality E62 Past
+A_	Negation E62 NotNegated
+T35	Disposition 4451 4459	estrogen
+E35	Disposition:T35
+A17	Certainity E35 Certain
+A18	Actor E35 Physician
+A19	Action E35 Start
+A20	Temporality E35 Past
+A_	Negation E35 NotNegated
+T37	Disposition 4723 4729	nexium
+E37	Disposition:T37
+A5	Certainity E37 Certain
+A6	Actor E37 Physician
+A7	Action E37 Increase
+A8	Temporality E37 Past
+A_	Negation E37 NotNegated
+T39	Disposition 5149 5158	oxycodone
+E39	Disposition:T39
+A9	Certainity E39 Hypothetical
+A10	Actor E39 Patient
+A11	Action E39 Start
+A12	Temporality E39 Present
+A_	Negation E39 NotNegated
+T42	Disposition 5361 5370	narcotics
+E42	Disposition:T42
+A13	Certainity E42 Hypothetical
+A14	Actor E42 Physician
+A15	Action E42 Start
+A16	Temporality E42 Future
+A_	Negation E42 NotNegated

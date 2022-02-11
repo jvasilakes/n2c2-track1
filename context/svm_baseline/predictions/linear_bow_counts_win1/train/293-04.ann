@@ -1,0 +1,7 @@
+T9	Disposition 3035 3042	Lipitor
+E9	Disposition:T9
+A1	Certainity E9 Certain
+A2	Actor E9 Physician
+A3	Action E9 Increase
+A4	Temporality E9 Present
+A_	Negation E9 NotNegated

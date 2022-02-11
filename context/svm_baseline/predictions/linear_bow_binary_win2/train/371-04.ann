@@ -1,0 +1,42 @@
+T1	Disposition 1039 1048	narcotics
+E1	Disposition:T1
+A1	Certainity E1 Hypothetical
+A2	Actor E1 Patient
+A3	Action E1 Start
+A4	Temporality E1 Present
+A_	Negation E1 NotNegated
+T36	Disposition 5267 5275	estrogen
+E36	Disposition:T36
+A21	Certainity E36 Certain
+A22	Actor E36 Physician
+A23	Action E36 Start
+A24	Temporality E36 Past
+A_	Negation E36 NotNegated
+T38	Disposition 5582 5588	nexium
+E38	Disposition:T38
+A5	Certainity E38 Certain
+A6	Actor E38 Physician
+A7	Action E38 Increase
+A8	Temporality E38 Past
+A_	Negation E38 NotNegated
+T40	Disposition 6008 6017	oxycodone
+E40	Disposition:T40
+A9	Certainity E40 Hypothetical
+A10	Actor E40 Patient
+A11	Action E40 Start
+A12	Temporality E40 Present
+A_	Negation E40 NotNegated
+T73	Disposition 6061 6070	oxycodone
+E73	Disposition:T73
+A17	Certainity E73 Certain
+A18	Actor E73 Physician
+A19	Action E73 Start
+A20	Temporality E73 Present
+A_	Negation E73 NotNegated
+T43	Disposition 6174 6183	narcotics
+E43	Disposition:T43
+A13	Certainity E43 Hypothetical
+A14	Actor E43 Physician
+A15	Action E43 Start
+A16	Temporality E43 Future
+A_	Negation E43 NotNegated

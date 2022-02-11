@@ -1,0 +1,119 @@
+T1	Disposition 634 640	Keflex
+E1	Disposition:T1
+A1	Certainity E1 Certain
+A2	Actor E1 Physician
+A3	Action E1 Start
+A4	Temporality E1 Past
+A_	Negation E1 NotNegated
+T2	Disposition 1735 1738	Abx
+E2	Disposition:T2
+A5	Certainity E2 Certain
+A6	Actor E2 Physician
+A7	Action E2 UniqueDose
+A8	Temporality E2 Past
+A_	Negation E2 NotNegated
+T3	Disposition 2194 2201	insulin
+E3	Disposition:T3
+A9	Certainity E3 Certain
+A10	Actor E3 Physician
+A11	Action E3 Start
+A12	Temporality E3 Past
+A_	Negation E3 NotNegated
+T4	Disposition 2214 2223	Metformin
+E4	Disposition:T4
+A13	Certainity E4 Certain
+A14	Actor E4 Physician
+A15	Action E4 Start
+A16	Temporality E4 Past
+A_	Negation E4 NotNegated
+T5	Disposition 2244 2251	insulin
+E5	Disposition:T5
+A17	Certainity E5 Certain
+A18	Actor E5 Physician
+A19	Action E5 Start
+A20	Temporality E5 Past
+A_	Negation E5 NotNegated
+T10	Disposition 2739 2742	NPH
+E10	Disposition:T10
+A21	Certainity E10 Certain
+A22	Actor E10 Physician
+A23	Action E10 Start
+A24	Temporality E10 Past
+A_	Negation E10 NotNegated
+T42	Disposition 5264 5267	NPH
+E42	Disposition:T42
+A25	Certainity E42 Conditional
+A26	Actor E42 Physician
+A27	Action E42 Increase
+A28	Temporality E42 Present
+A_	Negation E42 NotNegated
+T43	Disposition 5492 5495	NPH
+E43	Disposition:T43
+A29	Certainity E43 Certain
+A30	Actor E43 Physician
+A31	Action E43 Increase
+A32	Temporality E43 Present
+A_	Negation E43 NotNegated
+T50	Disposition 5597 5600	NPH
+E50	Disposition:T50
+A33	Certainity E50 Conditional
+A34	Actor E50 Physician
+A35	Action E50 Start
+A36	Temporality E50 Present
+A_	Negation E50 NotNegated
+T51	Disposition 5638 5642	D10W
+E51	Disposition:T51
+A37	Certainity E51 Conditional
+A38	Actor E51 Physician
+A39	Action E51 Start
+A40	Temporality E51 Present
+A_	Negation E51 NotNegated
+T45	Disposition 5727 5730	NPH
+E45	Disposition:T45
+A41	Certainity E45 Certain
+A42	Actor E45 Physician
+A43	Action E45 Increase
+A44	Temporality E45 Present
+A_	Negation E45 NotNegated
+T52	Disposition 5755 5758	NPH
+E52	Disposition:T52
+A45	Certainity E52 Conditional
+A46	Actor E52 Physician
+A47	Action E52 Increase
+A48	Temporality E52 Present
+A_	Negation E52 NotNegated
+T54	Disposition 5909 5912	NPH
+E54	Disposition:T54
+A49	Certainity E54 Conditional
+A50	Actor E54 Physician
+A51	Action E54 Start
+A52	Temporality E54 Future
+A_	Negation E54 NotNegated
+T55	Disposition 5950 5954	D10W
+E55	Disposition:T55
+A53	Certainity E55 Conditional
+A54	Actor E55 Physician
+A55	Action E55 Start
+A56	Temporality E55 Future
+A_	Negation E55 NotNegated
+T47	Disposition 6068 6072	ACEi
+E47	Disposition:T47
+A57	Certainity E47 Hypothetical
+A58	Actor E47 Physician
+A59	Action E47 Start
+A60	Temporality E47 Present
+A_	Negation E47 NotNegated
+T48	Disposition 6121 6131	Lisinopril
+E48	Disposition:T48
+A61	Certainity E48 Hypothetical
+A62	Actor E48 Physician
+A63	Action E48 Start
+A64	Temporality E48 Future
+A_	Negation E48 NotNegated
+T49	Disposition 6168 6175	fibrate
+E49	Disposition:T49
+A65	Certainity E49 Hypothetical
+A66	Actor E49 Physician
+A67	Action E49 Start
+A68	Temporality E49 Future
+A_	Negation E49 NotNegated

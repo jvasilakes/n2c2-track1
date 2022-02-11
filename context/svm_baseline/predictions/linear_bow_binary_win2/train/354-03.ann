@@ -1,0 +1,70 @@
+T1	Disposition 374 385	Amoxicillin
+E1	Disposition:T1
+A1	Certainity E1 Certain
+A2	Actor E1 Physician
+A3	Action E1 Stop
+A4	Temporality E1 Past
+A_	Negation E1 NotNegated
+T23	Disposition 374 385	Amoxicillin
+E23	Disposition:T23
+A9	Certainity E23 Certain
+A10	Actor E23 Physician
+A11	Action E23 Stop
+A12	Temporality E23 Past
+A_	Negation E23 NotNegated
+T2	Disposition 390 403	Metronidazole
+E2	Disposition:T2
+A5	Certainity E2 Certain
+A6	Actor E2 Physician
+A7	Action E2 Stop
+A8	Temporality E2 Past
+A_	Negation E2 NotNegated
+T24	Disposition 390 403	Metronidazole
+E24	Disposition:T24
+A13	Certainity E24 Certain
+A14	Actor E24 Physician
+A15	Action E24 Stop
+A16	Temporality E24 Past
+A_	Negation E24 NotNegated
+T4	Disposition 597 615	methylprednisolone
+E4	Disposition:T4
+A17	Certainity E4 Certain
+A18	Actor E4 Physician
+A19	Action E4 Stop
+A20	Temporality E4 Past
+A_	Negation E4 NotNegated
+T25	Disposition 597 615	methylprednisolone
+E25	Disposition:T25
+A21	Certainity E25 Certain
+A22	Actor E25 Physician
+A23	Action E25 Stop
+A24	Temporality E25 Past
+A_	Negation E25 NotNegated
+T27	Disposition 3254 3269	corticosteroids
+E27	Disposition:T27
+A25	Certainity E27 Certain
+A26	Actor E27 Patient
+A27	Action E27 Stop
+A28	Temporality E27 Past
+A_	Negation E27 NotNegated
+T13	Disposition 3571 3578	insulin
+E13	Disposition:T13
+A29	Certainity E13 Hypothetical
+A30	Actor E13 Physician
+A31	Action E13 Start
+A32	Temporality E13 Present
+A_	Negation E13 NotNegated
+T20	Disposition 4004 4011	insulin
+E20	Disposition:T20
+A33	Certainity E20 Hypothetical
+A34	Actor E20 Physician
+A35	Action E20 Start
+A36	Temporality E20 Present
+A_	Negation E20 NotNegated
+T22	Disposition 4214 4224	Enoxaparin
+E22	Disposition:T22
+A37	Certainity E22 Hypothetical
+A38	Actor E22 Physician
+A39	Action E22 Start
+A40	Temporality E22 Future
+A_	Negation E22 NotNegated

@@ -1,0 +1,168 @@
+T2	Disposition 1255 1266	Hydralazine
+E2	Disposition:T2
+A1	Certainity E2 Certain
+A2	Actor E2 Physician
+A3	Action E2 Stop
+A4	Temporality E2 Past
+A_	Negation E2 NotNegated
+T43	Disposition 1255 1266	Hydralazine
+E43	Disposition:T43
+A41	Certainity E43 Certain
+A42	Actor E43 Physician
+A43	Action E43 Stop
+A44	Temporality E43 Past
+A_	Negation E43 NotNegated
+T3	Disposition 1268 1272	HCTZ
+E3	Disposition:T3
+A5	Certainity E3 Certain
+A6	Actor E3 Physician
+A7	Action E3 Stop
+A8	Temporality E3 Past
+A_	Negation E3 NotNegated
+T44	Disposition 1268 1272	HCTZ
+E44	Disposition:T44
+A45	Certainity E44 Certain
+A46	Actor E44 Physician
+A47	Action E44 Stop
+A48	Temporality E44 Past
+A_	Negation E44 NotNegated
+T4	Disposition 1274 1284	Lisinopril
+E4	Disposition:T4
+A9	Certainity E4 Certain
+A10	Actor E4 Physician
+A11	Action E4 Stop
+A12	Temporality E4 Past
+A_	Negation E4 NotNegated
+T5	Disposition 1290 1299	Labetalol
+E5	Disposition:T5
+A13	Certainity E5 Certain
+A14	Actor E5 Physician
+A15	Action E5 Stop
+A16	Temporality E5 Past
+A_	Negation E5 NotNegated
+T46	Disposition 1290 1299	Labetalol
+E46	Disposition:T46
+A53	Certainity E46 Certain
+A54	Actor E46 Physician
+A55	Action E46 Stop
+A56	Temporality E46 Past
+A_	Negation E46 NotNegated
+T6	Disposition 1325 1333	Atenolol
+E6	Disposition:T6
+A17	Certainity E6 Certain
+A18	Actor E6 Physician
+A19	Action E6 Stop
+A20	Temporality E6 Past
+A_	Negation E6 NotNegated
+T7	Disposition 1338 1347	Terazosin
+E7	Disposition:T7
+A21	Certainity E7 Certain
+A22	Actor E7 Physician
+A23	Action E7 Stop
+A24	Temporality E7 Past
+A_	Negation E7 NotNegated
+T8	Disposition 1418 1426	Atenolol
+E8	Disposition:T8
+A25	Certainity E8 Certain
+A26	Actor E8 Physician
+A27	Action E8 Start
+A28	Temporality E8 Past
+A_	Negation E8 NotNegated
+T9	Disposition 1428 1437	Terazosin
+E9	Disposition:T9
+A29	Certainity E9 Certain
+A30	Actor E9 Physician
+A31	Action E9 Start
+A32	Temporality E9 Past
+A_	Negation E9 NotNegated
+T10	Disposition 1439 1443	HCTZ
+E10	Disposition:T10
+A33	Certainity E10 Certain
+A34	Actor E10 Physician
+A35	Action E10 Start
+A36	Temporality E10 Past
+A_	Negation E10 NotNegated
+T11	Disposition 1449 1459	Lisinopril
+E11	Disposition:T11
+A37	Certainity E11 Certain
+A38	Actor E11 Physician
+A39	Action E11 Start
+A40	Temporality E11 Past
+A_	Negation E11 NotNegated
+T12	Disposition 1998 2001	IVF
+E12	Disposition:T12
+A57	Certainity E12 Certain
+A58	Actor E12 Physician
+A59	Action E12 Start
+A60	Temporality E12 Past
+A_	Negation E12 NotNegated
+T13	Disposition 2003 2005	NS
+E13	Disposition:T13
+A61	Certainity E13 Certain
+A62	Actor E13 Physician
+A63	Action E13 Start
+A64	Temporality E13 Past
+A_	Negation E13 NotNegated
+T14	Disposition 2038 2048	Vancomycin
+E14	Disposition:T14
+A65	Certainity E14 Certain
+A66	Actor E14 Physician
+A67	Action E14 Start
+A68	Temporality E14 Past
+A_	Negation E14 NotNegated
+T15	Disposition 2053 2061	Cefepime
+E15	Disposition:T15
+A69	Certainity E15 Certain
+A70	Actor E15 Physician
+A71	Action E15 Start
+A72	Temporality E15 Past
+A_	Negation E15 NotNegated
+T16	Disposition 2430 2442	Levofloxacin
+E16	Disposition:T16
+A73	Certainity E16 Certain
+A74	Actor E16 Physician
+A75	Action E16 Stop
+A76	Temporality E16 Past
+A_	Negation E16 NotNegated
+T47	Disposition 2522 2525	Abx
+E47	Disposition:T47
+A77	Certainity E47 Certain
+A78	Actor E47 Physician
+A79	Action E47 Stop
+A80	Temporality E47 Past
+A_	Negation E47 NotNegated
+T37	Disposition 10172 10176	ACEi
+E37	Disposition:T37
+A81	Certainity E37 Certain
+A82	Actor E37 Physician
+A83	Action E37 Stop
+A84	Temporality E37 Present
+A_	Negation E37 NotNegated
+T38	Disposition 10178 10182	HCTZ
+E38	Disposition:T38
+A85	Certainity E38 Certain
+A86	Actor E38 Physician
+A87	Action E38 Stop
+A88	Temporality E38 Present
+A_	Negation E38 NotNegated
+T63	Disposition 10240 10249	Terazosin
+E63	Disposition:T63
+A89	Certainity E63 Certain
+A90	Actor E63 Physician
+A91	Action E63 Stop
+A92	Temporality E63 Present
+A_	Negation E63 NotNegated
+T64	Disposition 10272 10275	IVF
+E64	Disposition:T64
+A93	Certainity E64 Certain
+A94	Actor E64 Physician
+A95	Action E64 UniqueDose
+A96	Temporality E64 Present
+A_	Negation E64 NotNegated
+T40	Disposition 10765 10768	IVF
+E40	Disposition:T40
+A97	Certainity E40 Certain
+A98	Actor E40 Physician
+A99	Action E40 UniqueDose
+A100	Temporality E40 Present
+A_	Negation E40 NotNegated

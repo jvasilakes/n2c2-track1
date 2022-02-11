@@ -1,0 +1,28 @@
+T18	Disposition 915 921	Clomid
+E18	Disposition:T18
+A1	Certainity E18 Certain
+A2	Actor E18 Physician
+A3	Action E18 UniqueDose
+A4	Temporality E18 Past
+A_	Negation E18 NotNegated
+T3	Disposition 926 938	testolactone
+E3	Disposition:T3
+A5	Certainity E3 Certain
+A6	Actor E3 Physician
+A7	Action E3 UniqueDose
+A8	Temporality E3 Past
+A_	Negation E3 NotNegated
+T17	Disposition 4858 4865	Aricept
+E17	Disposition:T17
+A46	Certainity E17 Certain
+A47	Actor E17 Physician
+A48	Action E17 Start
+A49	Temporality E17 Past
+A_	Negation E17 NotNegated
+T21	Disposition 4858 4865	Aricept
+E21	Disposition:T21
+A50	Certainity E21 Certain
+A51	Actor E21 Physician
+A53	Action E21 Start
+A54	Temporality E21 Past
+A_	Negation E21 NotNegated

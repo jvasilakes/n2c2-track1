@@ -1,0 +1,35 @@
+T5	Disposition 2396 2406	lisinopril
+E5	Disposition:T5
+A1	Certainity E5 Certain
+A2	Actor E5 Physician
+A3	Action E5 Decrease
+A4	Temporality E5 Past
+A_	Negation E5 NotNegated
+T6	Disposition 2429 2434	Lasix
+E6	Disposition:T6
+A5	Certainity E6 Certain
+A6	Actor E6 Physician
+A7	Action E6 Decrease
+A8	Temporality E6 Past
+A_	Negation E6 NotNegated
+T7	Disposition 2727 2732	Lasix
+E7	Disposition:T7
+A9	Certainity E7 Certain
+A10	Actor E7 Physician
+A11	Action E7 Increase
+A12	Temporality E7 Past
+A_	Negation E7 NotNegated
+T31	Disposition 5759 5778	diuretic medication
+E31	Disposition:T31
+A13	Certainity E31 Certain
+A14	Actor E31 Patient
+A15	Action E31 Unknown
+A16	Temporality E31 Past
+A_	Negation E31 NotNegated
+T23	Disposition 5971 5975	ACEI
+E23	Disposition:T23
+A17	Certainity E23 Conditional
+A18	Actor E23 Physician
+A19	Action E23 Start
+A20	Temporality E23 Future
+A_	Negation E23 NotNegated

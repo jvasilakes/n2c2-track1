@@ -1,0 +1,49 @@
+T37	Disposition 9256 9265	toprol XL
+E37	Disposition:T37
+A1	Certainity E37 Hypothetical
+A2	Actor E37 Physician
+A3	Action E37 Increase
+A4	Temporality E37 Future
+A_	Negation E37 NotNegated
+T38	Disposition 9983 9993	Fluoxetine
+E38	Disposition:T38
+A5	Certainity E38 Certain
+A6	Actor E38 Physician
+A7	Action E38 Stop
+A8	Temporality E38 Present
+A_	Negation E38 NotNegated
+T44	Disposition 10063 10073	ranitidine
+E44	Disposition:T44
+A9	Certainity E44 Hypothetical
+A10	Actor E44 Physician
+A11	Action E44 Stop
+A12	Temporality E44 Present
+A_	Negation E44 NotNegated
+T39	Disposition 10084 10090	Haldol
+E39	Disposition:T39
+A13	Certainity E39 Certain
+A14	Actor E39 Physician
+A15	Action E39 Stop
+A16	Temporality E39 Present
+A_	Negation E39 NotNegated
+T45	Disposition 10149 10159	olanzapine
+E45	Disposition:T45
+A17	Certainity E45 Conditional
+A18	Actor E45 Physician
+A19	Action E45 Stop
+A20	Temporality E45 Future
+A_	Negation E45 NotNegated
+T41	Disposition 10385 10397	Levofloxacin
+E41	Disposition:T41
+A21	Certainity E41 Certain
+A22	Actor E41 Physician
+A23	Action E41 Stop
+A24	Temporality E41 Past
+A_	Negation E41 NotNegated
+T46	Disposition 10486 10495	aztreonam
+E46	Disposition:T46
+A25	Certainity E46 Hypothetical
+A26	Actor E46 Physician
+A27	Action E46 Start
+A28	Temporality E46 Present
+A_	Negation E46 NotNegated

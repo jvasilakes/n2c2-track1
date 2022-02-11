@@ -1,0 +1,14 @@
+T18	Disposition 3066 3073	Lipitor
+E18	Disposition:T18
+A1	Certainity E18 Certain
+A2	Actor E18 Physician
+A3	Action E18 Stop
+A4	Temporality E18 Present
+A_	Negation E18 NotNegated
+T19	Disposition 3153 3159	NSAIDS
+E19	Disposition:T19
+A5	Certainity E19 Certain
+A6	Actor E19 Physician
+A7	Action E19 Stop
+A8	Temporality E19 Present
+A_	Negation E19 NotNegated

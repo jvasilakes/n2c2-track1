@@ -1,0 +1,84 @@
+T19	Disposition 519 522	TNG
+E19	Disposition:T19
+A1	Certainity E19 Certain
+A2	Actor E19 Patient
+A3	Action E19 UniqueDose
+A4	Temporality E19 Past
+A_	Negation E19 NotNegated
+T21	Disposition 844 849	Aleve
+E21	Disposition:T21
+A5	Certainity E21 Certain
+A6	Actor E21 Patient
+A7	Action E21 UniqueDose
+A8	Temporality E21 Past
+A_	Negation E21 NotNegated
+T22	Disposition 1613 1616	TNG
+E22	Disposition:T22
+A9	Certainity E22 Certain
+A10	Actor E22 Physician
+A11	Action E22 UniqueDose
+A12	Temporality E22 Past
+A_	Negation E22 NotNegated
+T1	Disposition 1803 1812	lopressor
+E1	Disposition:T1
+A13	Certainity E1 Certain
+A14	Actor E1 Physician
+A15	Action E1 UniqueDose
+A16	Temporality E1 Past
+A_	Negation E1 NotNegated
+T2	Disposition 1829 1836	isordil
+E2	Disposition:T2
+A17	Certainity E2 Certain
+A18	Actor E2 Physician
+A19	Action E2 UniqueDose
+A20	Temporality E2 Past
+A_	Negation E2 NotNegated
+T3	Disposition 1847 1853	zantac
+E3	Disposition:T3
+A21	Certainity E3 Certain
+A22	Actor E3 Physician
+A23	Action E3 UniqueDose
+A24	Temporality E3 Past
+A_	Negation E3 NotNegated
+T11	Disposition 8332 8337	pRBCs
+E11	Disposition:T11
+A25	Certainity E11 Certain
+A26	Actor E11 Physician
+A27	Action E11 UniqueDose
+A28	Temporality E11 Past
+A_	Negation E11 NotNegated
+T25	Disposition 8332 8337	pRBCs
+E25	Disposition:T25
+A29	Certainity E25 Certain
+A30	Actor E25 Physician
+A31	Action E25 UniqueDose
+A32	Temporality E25 Past
+A_	Negation E25 NotNegated
+T13	Disposition 8505 8512	aspirin
+E13	Disposition:T13
+A33	Certainity E13 Certain
+A34	Actor E13 Physician
+A35	Action E13 Stop
+A36	Temporality E13 Present
+A_	Negation E13 NotNegated
+T14	Disposition 8611 8618	aspirin
+E14	Disposition:T14
+A37	Certainity E14 Certain
+A38	Actor E14 Physician
+A39	Action E14 Stop
+A40	Temporality E14 Present
+A_	Negation E14 NotNegated
+T16	Disposition 8727 8745	anti-hypertensives
+E16	Disposition:T16
+A41	Certainity E16 Certain
+A42	Actor E16 Physician
+A43	Action E16 Stop
+A44	Temporality E16 Present
+A_	Negation E16 NotNegated
+T18	Disposition 8900 8915	anticoagulation
+E18	Disposition:T18
+A45	Certainity E18 Certain
+A46	Negation E18 Negated
+A47	Actor E18 Physician
+A48	Action E18 Start
+A49	Temporality E18 Present

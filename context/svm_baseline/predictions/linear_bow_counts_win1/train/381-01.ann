@@ -1,0 +1,28 @@
+T7	Disposition 3987 3998	antibiotics
+E7	Disposition:T7
+A1	Certainity E7 Certain
+A2	Actor E7 Physician
+A3	Action E7 Start
+A4	Temporality E7 Past
+A_	Negation E7 NotNegated
+T8	Disposition 4000 4010	vancomycin
+E8	Disposition:T8
+A5	Certainity E8 Certain
+A6	Actor E8 Physician
+A7	Action E8 Start
+A8	Temporality E8 Past
+A_	Negation E8 NotNegated
+T9	Disposition 4017 4027	gentamicin
+E9	Disposition:T9
+A9	Certainity E9 Certain
+A10	Actor E9 Physician
+A11	Action E9 Start
+A12	Temporality E9 Past
+A_	Negation E9 NotNegated
+T10	Disposition 4304 4310	fluids
+E10	Disposition:T10
+A13	Certainity E10 Certain
+A14	Actor E10 Physician
+A15	Action E10 Start
+A16	Temporality E10 Past
+A_	Negation E10 NotNegated

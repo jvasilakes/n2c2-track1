@@ -1,0 +1,7 @@
+T16	Disposition 3619 3622	dig
+E16	Disposition:T16
+A1	Certainity E16 Certain
+A2	Actor E16 Physician
+A3	Action E16 Stop
+A4	Temporality E16 Unknown
+A_	Negation E16 NotNegated

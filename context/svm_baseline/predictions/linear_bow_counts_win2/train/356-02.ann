@@ -1,0 +1,14 @@
+T12	Disposition 989 993	HCTZ
+E12	Disposition:T12
+A1	Certainity E12 Certain
+A2	Actor E12 Patient
+A3	Action E12 Start
+A4	Temporality E12 Past
+A_	Negation E12 NotNegated
+T26	Disposition 989 993	HCTZ
+E26	Disposition:T26
+A5	Certainity E26 Certain
+A6	Negation E26 Negated
+A7	Actor E26 Patient
+A8	Action E26 Start
+A9	Temporality E26 Past

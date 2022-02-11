@@ -1,0 +1,98 @@
+T1	Disposition 1037 1047	amiodarone
+E1	Disposition:T1
+A75	Certainity E1 Certain
+A76	Actor E1 Physician
+A77	Action E1 UniqueDose
+A78	Temporality E1 Past
+A_	Negation E1 NotNegated
+T2	Disposition 1165 1170	Lasix
+E2	Disposition:T2
+A79	Certainity E2 Certain
+A80	Actor E2 Physician
+A81	Action E2 UniqueDose
+A82	Temporality E2 Past
+A_	Negation E2 NotNegated
+T3	Disposition 1498 1503	Lasix
+E3	Disposition:T3
+A83	Certainity E3 Certain
+A84	Actor E3 Physician
+A85	Action E3 UniqueDose
+A86	Temporality E3 Past
+A_	Negation E3 NotNegated
+T4	Disposition 1516 1529	nitroprusside
+E4	Disposition:T4
+A87	Certainity E4 Certain
+A88	Actor E4 Physician
+A89	Action E4 UniqueDose
+A90	Temporality E4 Past
+A_	Negation E4 NotNegated
+T5	Disposition 2320 2329	Toprol XL
+E5	Disposition:T5
+A1	Certainity E5 Certain
+A2	Actor E5 Physician
+A3	Action E5 Stop
+A4	Temporality E5 Past
+A_	Negation E5 NotNegated
+T38	Disposition 2333 2338	Coreg
+E38	Disposition:T38
+A5	Certainity E38 Certain
+A6	Actor E38 Physician
+A7	Action E38 Stop
+A8	Temporality E38 Past
+A_	Negation E38 NotNegated
+T7	Disposition 5075 5080	Nitro
+E7	Disposition:T7
+A91	Certainity E7 Certain
+A92	Actor E7 Physician
+A93	Action E7 UniqueDose
+A94	Temporality E7 Past
+A_	Negation E7 NotNegated
+T25	Disposition 8129 8137	Coumadin
+E25	Disposition:T25
+A9	Certainity E25 Certain
+A10	Actor E25 Physician
+A11	Action E25 Start
+A12	Temporality E25 Present
+A_	Negation E25 NotNegated
+T26	Disposition 8322 8327	Bumex
+E26	Disposition:T26
+A13	Certainity E26 Certain
+A14	Actor E26 Physician
+A15	Action E26 UniqueDose
+A16	Temporality E26 Future
+A_	Negation E26 NotNegated
+T43	Disposition 8322 8327	Bumex
+E43	Disposition:T43
+A17	Certainity E43 Certain
+A18	Actor E43 Physician
+A19	Action E43 UniqueDose
+A20	Temporality E43 Future
+A_	Negation E43 NotNegated
+T27	Disposition 8499 8509	lisinopril
+E27	Disposition:T27
+A21	Certainity E27 Certain
+A22	Actor E27 Physician
+A23	Action E27 Stop
+A24	Temporality E27 Present
+A_	Negation E27 NotNegated
+T28	Disposition 8520 8529	captopril
+E28	Disposition:T28
+A25	Certainity E28 Certain
+A26	Actor E28 Physician
+A27	Action E28 Stop
+A28	Temporality E28 Present
+A_	Negation E28 NotNegated
+T30	Disposition 9019 9030	simvastatin
+E30	Disposition:T30
+A37	Certainity E30 Certain
+A38	Actor E30 Physician
+A39	Action E30 Start
+A40	Temporality E30 Present
+A_	Negation E30 NotNegated
+T32	Disposition 9093 9104	simvastatin
+E32	Disposition:T32
+A49	Certainity E32 Certain
+A50	Actor E32 Physician
+A51	Action E32 Start
+A52	Temporality E32 Present
+A_	Negation E32 NotNegated

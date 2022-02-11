@@ -1,0 +1,35 @@
+T6	Disposition 2400 2409	Metformin
+E6	Disposition:T6
+A18	Certainity E6 Certain
+A19	Actor E6 Patient
+A20	Action E6 Unknown
+A21	Temporality E6 Past
+A_	Negation E6 NotNegated
+T11	Disposition 4432 4434	BB
+E11	Disposition:T11
+A1	Certainity E11 Certain
+A2	Actor E11 Patient
+A3	Action E11 Increase
+A4	Temporality E11 Present
+A_	Negation E11 NotNegated
+T23	Disposition 4432 4434	BB
+E23	Disposition:T23
+A5	Certainity E23 Certain
+A6	Negation E23 Negated
+A7	Actor E23 Patient
+A8	Action E23 Increase
+A9	Temporality E23 Present
+T16	Disposition 4844 4853	metformin
+E16	Disposition:T16
+A10	Certainity E16 Certain
+A11	Actor E16 Physician
+A12	Action E16 Stop
+A13	Temporality E16 Past
+A_	Negation E16 NotNegated
+T25	Disposition 4955 4964	metformin
+E25	Disposition:T25
+A14	Certainity E25 Certain
+A15	Actor E25 Physician
+A16	Action E25 Stop
+A17	Temporality E25 Past
+A_	Negation E25 NotNegated

@@ -1,0 +1,84 @@
+T1	Disposition 1722 1734	levofloxacin
+E1	Disposition:T1
+A41	Certainity E1 Certain
+A42	Actor E1 Physician
+A43	Action E1 UniqueDose
+A44	Temporality E1 Past
+A_	Negation E1 NotNegated
+T20	Disposition 1750 1752	NS
+E20	Disposition:T20
+A37	Certainity E20 Certain
+A38	Actor E20 Physician
+A39	Action E20 UniqueDose
+A40	Temporality E20 Past
+A_	Negation E20 NotNegated
+T10	Disposition 1896 1903	Aspirin
+E10	Disposition:T10
+A5	Certainity E10 Certain
+A6	Actor E10 Physician
+A7	Action E10 Stop
+A8	Temporality E10 Past
+A_	Negation E10 NotNegated
+T11	Disposition 1945 1950	PRBCs
+E11	Disposition:T11
+A1	Certainity E11 Certain
+A2	Actor E11 Physician
+A3	Action E11 UniqueDose
+A4	Temporality E11 Past
+A_	Negation E11 NotNegated
+T27	Disposition 7369 7374	fluid
+E27	Disposition:T27
+A45	Certainity E27 Certain
+A46	Actor E27 Physician
+A47	Action E27 UniqueDose
+A48	Temporality E27 Past
+A_	Negation E27 NotNegated
+T29	Disposition 7929 7940	antibiotics
+E29	Disposition:T29
+A9	Certainity E29 Certain
+A10	Actor E29 Physician
+A11	Action E29 Stop
+A12	Temporality E29 Present
+A_	Negation E29 NotNegated
+T45	Disposition 8070 8077	effexor
+E45	Disposition:T45
+A13	Certainity E45 Certain
+A14	Actor E45 Physician
+A15	Action E45 Decrease
+A16	Temporality E45 Present
+A_	Negation E45 NotNegated
+T34	Disposition 8277 8284	aspirin
+E34	Disposition:T34
+A17	Certainity E34 Certain
+A18	Actor E34 Physician
+A19	Action E34 Stop
+A20	Temporality E34 Present
+A_	Negation E34 NotNegated
+T46	Disposition 8347 8353	statin
+E46	Disposition:T46
+A21	Certainity E46 Certain
+A22	Actor E46 Physician
+A23	Action E46 Increase
+A24	Temporality E46 Past
+A_	Negation E46 NotNegated
+T35	Disposition 8421 8430	glyburide
+E35	Disposition:T35
+A25	Certainity E35 Certain
+A26	Actor E35 Physician
+A27	Action E35 Stop
+A28	Temporality E35 Past
+A_	Negation E35 NotNegated
+T47	Disposition 8421 8430	glyburide
+E47	Disposition:T47
+A29	Certainity E47 Certain
+A30	Actor E47 Physician
+A31	Action E47 Stop
+A32	Temporality E47 Past
+A_	Negation E47 NotNegated
+T48	Disposition 8542 8552	Prednisone
+E48	Disposition:T48
+A33	Certainity E48 Conditional
+A34	Actor E48 Physician
+A35	Action E48 Decrease
+A36	Temporality E48 Present
+A_	Negation E48 NotNegated

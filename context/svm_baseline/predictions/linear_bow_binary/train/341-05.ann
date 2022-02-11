@@ -1,0 +1,63 @@
+T2	Disposition 748 752	Vanc
+E2	Disposition:T2
+A1	Certainity E2 Certain
+A2	Actor E2 Physician
+A3	Action E2 Stop
+A4	Temporality E2 Past
+A_	Negation E2 NotNegated
+T3	Disposition 753 756	CTX
+E3	Disposition:T3
+A5	Certainity E3 Certain
+A6	Actor E3 Physician
+A7	Action E3 Stop
+A8	Temporality E3 Past
+A_	Negation E3 NotNegated
+T28	Disposition 5405 5408	abx
+E28	Disposition:T28
+A9	Certainity E28 Hypothetical
+A10	Negation E28 Negated
+A11	Actor E28 Physician
+A12	Action E28 Start
+A13	Temporality E28 Present
+T29	Disposition 5450 5453	abx
+E29	Disposition:T29
+A14	Certainity E29 Hypothetical
+A15	Actor E29 Physician
+A16	Action E29 Start
+A17	Temporality E29 Present
+A_	Negation E29 NotNegated
+T30	Disposition 5490 5494	vanc
+E30	Disposition:T30
+A18	Certainity E30 Hypothetical
+A19	Actor E30 Physician
+A20	Action E30 Start
+A21	Temporality E30 Present
+A_	Negation E30 NotNegated
+T31	Disposition 5495 5503	cefepime
+E31	Disposition:T31
+A22	Certainity E31 Hypothetical
+A23	Actor E31 Physician
+A24	Action E31 Start
+A25	Temporality E31 Present
+A_	Negation E31 NotNegated
+T32	Disposition 6066 6071	pRBCs
+E32	Disposition:T32
+A26	Certainity E32 Certain
+A27	Actor E32 Physician
+A28	Action E32 UniqueDose
+A29	Temporality E32 Present
+A_	Negation E32 NotNegated
+T33	Disposition 6318 6329	propranolol
+E33	Disposition:T33
+A31	Certainity E33 Certain
+A32	Actor E33 Physician
+A33	Action E33 Stop
+A34	Temporality E33 Present
+A_	Negation E33 NotNegated
+T35	Disposition 6702 6710	warfarin
+E35	Disposition:T35
+A35	Certainity E35 Certain
+A36	Actor E35 Physician
+A37	Action E35 Stop
+A38	Temporality E35 Present
+A_	Negation E35 NotNegated

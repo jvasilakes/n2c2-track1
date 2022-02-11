@@ -1,0 +1,14 @@
+T10	Disposition 1674 1680	Atican
+E10	Disposition:T10
+A1	Certainity E10 Certain
+A2	Actor E10 Physician
+A3	Action E10 Increase
+A4	Temporality E10 Present
+A_	Negation E10 NotNegated
+T9	Disposition 1688 1696	Accupril
+E9	Disposition:T9
+A5	Certainity E9 Certain
+A6	Actor E9 Physician
+A7	Action E9 Increase
+A8	Temporality E9 Present
+A_	Negation E9 NotNegated

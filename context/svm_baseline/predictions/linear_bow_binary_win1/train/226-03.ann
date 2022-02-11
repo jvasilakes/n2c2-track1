@@ -1,0 +1,42 @@
+T17	Disposition 2273 2280	aspirin
+E17	Disposition:T17
+A1	Certainity E17 Certain
+A2	Actor E17 Physician
+A3	Action E17 Unknown
+A4	Temporality E17 Present
+A_	Negation E17 NotNegated
+T18	Disposition 2294 2303	potassium
+E18	Disposition:T18
+A5	Certainity E18 Certain
+A6	Actor E18 Physician
+A7	Action E18 Unknown
+A8	Temporality E18 Present
+A_	Negation E18 NotNegated
+T19	Disposition 2318 2323	Lasix
+E19	Disposition:T19
+A9	Certainity E19 Certain
+A10	Actor E19 Physician
+A11	Action E19 Unknown
+A12	Temporality E19 Present
+A_	Negation E19 NotNegated
+T20	Disposition 2343 2363	metoprolol succinate
+E20	Disposition:T20
+A13	Certainity E20 Certain
+A14	Actor E20 Physician
+A15	Action E20 Unknown
+A16	Temporality E20 Present
+A_	Negation E20 NotNegated
+T21	Disposition 2387 2398	pravastatin
+E21	Disposition:T21
+A17	Certainity E21 Certain
+A18	Actor E21 Physician
+A19	Action E21 Unknown
+A20	Temporality E21 Present
+A_	Negation E21 NotNegated
+T22	Disposition 2439 2444	Lasix
+E22	Disposition:T22
+A21	Certainity E22 Certain
+A22	Actor E22 Physician
+A23	Action E22 Unknown
+A24	Temporality E22 Present
+A_	Negation E22 NotNegated

@@ -1,0 +1,35 @@
+T1	Disposition 405 410	lasix
+E1	Disposition:T1
+A1	Certainity E1 Certain
+A2	Actor E1 Physician
+A3	Action E1 Start
+A4	Temporality E1 Past
+A_	Negation E1 NotNegated
+T27	Disposition 4224 4233	Labetolol
+E27	Disposition:T27
+A27	Certainity E27 Certain
+A28	Actor E27 Physician
+A30	Action E27 Start
+A31	Temporality E27 Present
+A_	Negation E27 NotNegated
+T28	Disposition 4253 4262	labetolol
+E28	Disposition:T28
+A9	Certainity E28 Certain
+A10	Actor E28 Physician
+A11	Action E28 Start
+A12	Temporality E28 Present
+A_	Negation E28 NotNegated
+T33	Disposition 4654 4663	metformin
+E33	Disposition:T33
+A5	Certainity E33 Certain
+A6	Actor E33 Physician
+A7	Action E33 Stop
+A8	Temporality E33 Present
+A_	Negation E33 NotNegated
+T43	Disposition 4827 4836	Na bicarb
+E43	Disposition:T43
+A29	Certainity E43 Certain
+A32	Actor E43 Physician
+A33	Action E43 Stop
+A34	Temporality E43 Present
+A_	Negation E43 NotNegated

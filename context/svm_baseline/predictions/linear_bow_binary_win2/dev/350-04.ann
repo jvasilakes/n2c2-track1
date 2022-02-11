@@ -1,0 +1,63 @@
+T17	Disposition 3874 3882	Dilantin
+E17	Disposition:T17
+A1	Certainity E17 Certain
+A2	Actor E17 Physician
+A3	Action E17 Stop
+A4	Temporality E17 Past
+A_	Negation E17 NotNegated
+T28	Disposition 3874 3882	Dilantin
+E28	Disposition:T28
+A9	Certainity E28 Certain
+A10	Actor E28 Physician
+A11	Action E28 Stop
+A12	Temporality E28 Past
+A_	Negation E28 NotNegated
+T27	Disposition 4043 4046	AED
+E27	Disposition:T27
+A5	Certainity E27 Certain
+A6	Actor E27 Physician
+A7	Action E27 UniqueDose
+A8	Temporality E27 Past
+A_	Negation E27 NotNegated
+T18	Disposition 4366 4374	Dilantin
+E18	Disposition:T18
+A13	Certainity E18 Certain
+A14	Actor E18 Physician
+A15	Action E18 Decrease
+A16	Temporality E18 Present
+A_	Negation E18 NotNegated
+T29	Disposition 4366 4374	Dilantin
+E29	Disposition:T29
+A17	Certainity E29 Certain
+A18	Actor E29 Physician
+A19	Action E29 Decrease
+A20	Temporality E29 Present
+A_	Negation E29 NotNegated
+T19	Disposition 4437 4445	Dilantin
+E19	Disposition:T19
+A21	Certainity E19 Certain
+A22	Actor E19 Physician
+A23	Action E19 Decrease
+A24	Temporality E19 Past
+A_	Negation E19 NotNegated
+T20	Disposition 4562 4570	Dilantin
+E20	Disposition:T20
+A25	Certainity E20 Certain
+A26	Actor E20 Physician
+A27	Action E20 Decrease
+A28	Temporality E20 Present
+A_	Negation E20 NotNegated
+T21	Disposition 5268 5276	Dilantin
+E21	Disposition:T21
+A29	Certainity E21 Certain
+A30	Actor E21 Physician
+A31	Action E21 Start
+A32	Temporality E21 Present
+A_	Negation E21 NotNegated
+T30	Disposition 5268 5276	Dilantin
+E30	Disposition:T30
+A33	Certainity E30 Certain
+A34	Actor E30 Physician
+A35	Action E30 Start
+A36	Temporality E30 Present
+A_	Negation E30 NotNegated

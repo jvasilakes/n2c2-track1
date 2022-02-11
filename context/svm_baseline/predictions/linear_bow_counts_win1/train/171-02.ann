@@ -1,0 +1,7 @@
+T13	Disposition 2155 2162	trental
+E13	Disposition:T13
+A1	Certainity E13 Conditional
+A2	Actor E13 Physician
+A3	Action E13 Start
+A4	Temporality E13 Future
+A_	Negation E13 NotNegated

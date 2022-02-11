@@ -1,0 +1,14 @@
+T14	Disposition 749 759	glucophage
+E14	Disposition:T14
+A1	Certainity E14 Certain
+A2	Actor E14 Physician
+A3	Action E14 Stop
+A4	Temporality E14 Past
+A_	Negation E14 NotNegated
+T13	Disposition 2363 2366	PPI
+E13	Disposition:T13
+A5	Certainity E13 Certain
+A6	Actor E13 Physician
+A7	Action E13 Stop
+A8	Temporality E13 Past
+A_	Negation E13 NotNegated

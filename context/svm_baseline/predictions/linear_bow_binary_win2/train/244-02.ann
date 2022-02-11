@@ -1,0 +1,28 @@
+T14	Disposition 9071 9080	Atenenlol
+E14	Disposition:T14
+A1	Certainity E14 Certain
+A2	Actor E14 Physician
+A3	Action E14 Stop
+A4	Temporality E14 Past
+A_	Negation E14 NotNegated
+T15	Disposition 9093 9102	Lopressor
+E15	Disposition:T15
+A5	Certainity E15 Certain
+A6	Actor E15 Physician
+A7	Action E15 Stop
+A8	Temporality E15 Past
+A_	Negation E15 NotNegated
+T16	Disposition 9125 9137	Dilatrate-SR
+E16	Disposition:T16
+A9	Certainity E16 Certain
+A10	Actor E16 Physician
+A11	Action E16 Start
+A12	Temporality E16 Past
+A_	Negation E16 NotNegated
+T17	Disposition 9149 9156	Isordil
+E17	Disposition:T17
+A13	Certainity E17 Certain
+A14	Actor E17 Physician
+A15	Action E17 Start
+A16	Temporality E17 Past
+A_	Negation E17 NotNegated

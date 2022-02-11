@@ -1,0 +1,7 @@
+T3	Disposition 2355 2367	packed cells
+E3	Disposition:T3
+A1	Certainity E3 Certain
+A2	Actor E3 Physician
+A3	Action E3 UniqueDose
+A4	Temporality E3 Past
+A_	Negation E3 NotNegated

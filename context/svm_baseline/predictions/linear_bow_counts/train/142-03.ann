@@ -1,0 +1,7 @@
+T7	Disposition 5592 5599	Sotalol
+E7	Disposition:T7
+A1	Certainity E7 Hypothetical
+A2	Actor E7 Physician
+A3	Action E7 Start
+A4	Temporality E7 Present
+A_	Negation E7 NotNegated

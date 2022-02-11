@@ -1,0 +1,14 @@
+T1	Disposition 1043 1055	azithromycin
+E1	Disposition:T1
+A1	Certainity E1 Certain
+A2	Actor E1 Physician
+A3	Action E1 UniqueDose
+A4	Temporality E1 Past
+A_	Negation E1 NotNegated
+T42	Disposition 1330 1339	combivent
+E42	Disposition:T42
+A5	Certainity E42 Certain
+A6	Actor E42 Unknown
+A7	Action E42 UniqueDose
+A8	Temporality E42 Past
+A_	Negation E42 NotNegated

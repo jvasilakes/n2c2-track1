@@ -1,0 +1,21 @@
+T50	Disposition 5400 5413	Humulin 70/30
+E50	Disposition:T50
+A1	Certainity E50 Certain
+A2	Actor E50 Physician
+A3	Action E50 Increase
+A4	Temporality E50 Past
+A_	Negation E50 NotNegated
+T1	Disposition 5509 5516	insulin
+E1	Disposition:T1
+A9	Certainity E1 Certain
+A10	Actor E1 Physician
+A11	Action E1 Stop
+A12	Temporality E1 Present
+A_	Negation E1 NotNegated
+T24	Disposition 6082 6090	Atenolol
+E24	Disposition:T24
+A5	Certainity E24 Certain
+A6	Actor E24 Physician
+A7	Action E24 Increase
+A8	Temporality E24 Present
+A_	Negation E24 NotNegated

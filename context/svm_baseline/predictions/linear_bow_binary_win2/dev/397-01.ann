@@ -1,0 +1,70 @@
+T2	Disposition 374 383	glyburide
+E2	Disposition:T2
+A1	Certainity E2 Certain
+A2	Actor E2 Physician
+A3	Action E2 UniqueDose
+A4	Temporality E2 Past
+A_	Negation E2 NotNegated
+T3	Disposition 403 412	metformin
+E3	Disposition:T3
+A5	Certainity E3 Certain
+A6	Negation E3 NotNegated
+A7	Actor E3 Physician
+A8	Action E3 UniqueDose
+A9	Temporality E3 Past
+T16	Disposition 866 872	ultram
+E16	Disposition:T16
+A10	Certainity E16 Certain
+A11	Actor E16 Physician
+A12	Action E16 Stop
+A13	Temporality E16 Past
+A_	Negation E16 NotNegated
+T5	Disposition 878 887	neurontin
+E5	Disposition:T5
+A14	Certainity E5 Certain
+A15	Actor E5 Physician
+A16	Action E5 Stop
+A17	Temporality E5 Past
+A_	Negation E5 NotNegated
+T17	Disposition 928 934	viagra
+E17	Disposition:T17
+A18	Certainity E17 Certain
+A19	Actor E17 Physician
+A20	Action E17 Stop
+A21	Temporality E17 Past
+A_	Negation E17 NotNegated
+T10	Disposition 2693 2702	glyburide
+E10	Disposition:T10
+A22	Certainity E10 Conditional
+A23	Actor E10 Physician
+A24	Action E10 Increase
+A25	Temporality E10 Past
+A_	Negation E10 NotNegated
+T11	Disposition 2722 2731	metformin
+E11	Disposition:T11
+A26	Certainity E11 Conditional
+A27	Negation E11 NotNegated
+A28	Actor E11 Physician
+A29	Action E11 Increase
+A30	Temporality E11 Past
+T23	Disposition 3447 3453	ultram
+E23	Disposition:T23
+A31	Certainity E23 Certain
+A32	Actor E23 Physician
+A33	Action E23 Start
+A34	Temporality E23 Present
+A_	Negation E23 NotNegated
+T24	Disposition 3528 3534	ultram
+E24	Disposition:T24
+A35	Certainity E24 Certain
+A36	Actor E24 Physician
+A37	Action E24 Stop
+A38	Temporality E24 Present
+A_	Negation E24 NotNegated
+T14	Disposition 3582 3588	viagra
+E14	Disposition:T14
+A39	Certainity E14 Certain
+A40	Actor E14 Physician
+A41	Action E14 Start
+A42	Temporality E14 Past
+A_	Negation E14 NotNegated

@@ -1,0 +1,42 @@
+T1	Disposition 708 720	azithromycin
+E1	Disposition:T1
+A1	Certainity E1 Certain
+A2	Actor E1 Physician
+A3	Action E1 UniqueDose
+A4	Temporality E1 Past
+A_	Negation E1 NotNegated
+T2	Disposition 805 810	lasix
+E2	Disposition:T2
+A5	Certainity E2 Certain
+A6	Actor E2 Physician
+A7	Action E2 Increase
+A8	Temporality E2 Past
+A_	Negation E2 NotNegated
+T27	Disposition 805 810	lasix
+E27	Disposition:T27
+A9	Certainity E27 Certain
+A10	Actor E27 Physician
+A11	Action E27 Increase
+A12	Temporality E27 Past
+A_	Negation E27 NotNegated
+T3	Disposition 1614 1621	aspirin
+E3	Disposition:T3
+A13	Certainity E3 Certain
+A14	Actor E3 Physician
+A15	Action E3 UniqueDose
+A16	Temporality E3 Past
+A_	Negation E3 NotNegated
+T25	Disposition 9175 9178	ASA
+E25	Disposition:T25
+A17	Certainity E25 Certain
+A18	Actor E25 Unknown
+A19	Action E25 Start
+A20	Temporality E25 Present
+A_	Negation E25 NotNegated
+T38	Disposition 9175 9178	ASA
+E38	Disposition:T38
+A21	Certainity E38 Certain
+A22	Actor E38 Unknown
+A23	Action E38 Start
+A24	Temporality E38 Present
+A_	Negation E38 NotNegated

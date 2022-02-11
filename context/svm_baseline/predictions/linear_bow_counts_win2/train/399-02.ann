@@ -1,0 +1,70 @@
+T1	Disposition 756 763	Aspirin
+E1	Disposition:T1
+A5	Certainity E1 Certain
+A6	Actor E1 Physician
+A7	Action E1 Stop
+A8	Temporality E1 Past
+A_	Negation E1 NotNegated
+T17	Disposition 756 763	Aspirin
+E17	Disposition:T17
+A9	Certainity E17 Certain
+A10	Actor E17 Physician
+A11	Action E17 Stop
+A12	Temporality E17 Past
+A_	Negation E17 NotNegated
+T19	Disposition 1183 1194	antibiotics
+E19	Disposition:T19
+A17	Certainity E19 Certain
+A18	Actor E19 Physician
+A19	Action E19 Start
+A20	Temporality E19 Past
+A_	Negation E19 NotNegated
+T18	Disposition 1393 1404	antibiotics
+E18	Disposition:T18
+A13	Certainity E18 Certain
+A14	Actor E18 Physician
+A15	Action E18 Start
+A16	Temporality E18 Past
+A_	Negation E18 NotNegated
+T6	Disposition 3309 3317	Dilaudid
+E6	Disposition:T6
+A21	Certainity E6 Hypothetical
+A22	Actor E6 Patient
+A23	Action E6 Decrease
+A24	Temporality E6 Present
+A_	Negation E6 NotNegated
+T13	Disposition 4903 4910	aspirin
+E13	Disposition:T13
+A25	Certainity E13 Hypothetical
+A26	Actor E13 Physician
+A27	Action E13 Start
+A28	Temporality E13 Present
+A_	Negation E13 NotNegated
+T14	Disposition 5087 5093	Elavil
+E14	Disposition:T14
+A29	Certainity E14 Certain
+A30	Actor E14 Physician
+A31	Action E14 Start
+A32	Temporality E14 Present
+A_	Negation E14 NotNegated
+T9	Disposition 5121 5130	trazodone
+E9	Disposition:T9
+A1	Certainity E9 Certain
+A2	Actor E9 Physician
+A3	Action E9 Stop
+A4	Temporality E9 Present
+A_	Negation E9 NotNegated
+T35	Disposition 5136 5142	Elavil
+E35	Disposition:T35
+A33	Certainity E35 Conditional
+A34	Actor E35 Physician
+A35	Action E35 Increase
+A36	Temporality E35 Future
+A_	Negation E35 NotNegated
+T15	Disposition 5251 5260	Neurontin
+E15	Disposition:T15
+A37	Certainity E15 Conditional
+A38	Actor E15 Physician
+A39	Action E15 Decrease
+A40	Temporality E15 Future
+A_	Negation E15 NotNegated

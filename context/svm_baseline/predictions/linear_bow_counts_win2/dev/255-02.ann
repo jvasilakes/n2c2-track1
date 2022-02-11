@@ -1,0 +1,28 @@
+T51	Disposition 2742 2755	Humulin 70/30
+E51	Disposition:T51
+A1	Certainity E51 Certain
+A2	Actor E51 Physician
+A3	Action E51 Increase
+A4	Temporality E51 Past
+A_	Negation E51 NotNegated
+T22	Disposition 3214 3222	Atenolol
+E22	Disposition:T22
+A5	Certainity E22 Certain
+A6	Actor E22 Physician
+A7	Action E22 Stop
+A8	Temporality E22 Present
+A_	Negation E22 NotNegated
+T53	Disposition 3214 3222	Atenolol
+E53	Disposition:T53
+A9	Certainity E53 Certain
+A10	Actor E53 Physician
+A11	Action E53 Stop
+A12	Temporality E53 Present
+A_	Negation E53 NotNegated
+T27	Disposition 3515 3522	BP meds
+E27	Disposition:T27
+A13	Certainity E27 Certain
+A14	Actor E27 Physician
+A15	Action E27 Stop
+A16	Temporality E27 Present
+A_	Negation E27 NotNegated

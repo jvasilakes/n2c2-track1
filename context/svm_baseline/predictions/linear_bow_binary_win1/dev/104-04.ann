@@ -1,0 +1,21 @@
+T2	Disposition 277 285	atenolol
+E2	Disposition:T2
+A1	Certainity E2 Certain
+A2	Actor E2 Physician
+A3	Action E2 Stop
+A4	Temporality E2 Past
+A_	Negation E2 NotNegated
+T8	Disposition 1014 1020	Ativan
+E8	Disposition:T8
+A5	Certainity E8 Certain
+A6	Actor E8 Physician
+A7	Action E8 Stop
+A8	Temporality E8 Present
+A_	Negation E8 NotNegated
+T21	Disposition 2041 2047	lantus
+E21	Disposition:T21
+A9	Certainity E21 Certain
+A10	Actor E21 Physician
+A11	Action E21 Start
+A12	Temporality E21 Present
+A_	Negation E21 NotNegated

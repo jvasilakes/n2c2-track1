@@ -1,0 +1,21 @@
+T28	Disposition 2553 2566	70/30 regular
+E28	Disposition:T28
+A5	Certainity E28 Certain
+A6	Actor E28 Physician
+A7	Action E28 Stop
+A8	Temporality E28 Present
+A_	Negation E28 NotNegated
+T18	Disposition 2570 2583	70/30 Novolog
+E18	Disposition:T18
+A9	Certainity E18 Certain
+A10	Actor E18 Physician
+A11	Action E18 Stop
+A12	Temporality E18 Present
+A_	Negation E18 NotNegated
+T27	Disposition 3229 3242	levothyroxine
+E27	Disposition:T27
+A1	Certainity E27 Certain
+A2	Actor E27 Physician
+A3	Action E27 Decrease
+A4	Temporality E27 Present
+A_	Negation E27 NotNegated

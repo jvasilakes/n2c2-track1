@@ -1,0 +1,35 @@
+T8	Disposition 3136 3161	glucose-lowering medicine
+E8	Disposition:T8
+A17	Certainity E8 Certain
+A18	Actor E8 Physician
+A19	Action E8 Decrease
+A20	Temporality E8 Future
+A_	Negation E8 NotNegated
+T4	Disposition 3163 3172	glipizide
+E4	Disposition:T4
+A1	Certainity E4 Certain
+A2	Actor E4 Physician
+A3	Action E4 Decrease
+A4	Temporality E4 Future
+A_	Negation E4 NotNegated
+T6	Disposition 3163 3172	glipizide
+E6	Disposition:T6
+A9	Certainity E6 Certain
+A10	Actor E6 Physician
+A11	Action E6 Decrease
+A12	Temporality E6 Future
+A_	Negation E6 NotNegated
+T5	Disposition 3174 3183	Glucotrol
+E5	Disposition:T5
+A5	Certainity E5 Certain
+A6	Actor E5 Physician
+A7	Action E5 Decrease
+A8	Temporality E5 Future
+A_	Negation E5 NotNegated
+T7	Disposition 3174 3183	Glucotrol
+E7	Disposition:T7
+A13	Certainity E7 Certain
+A14	Actor E7 Physician
+A15	Action E7 Decrease
+A16	Temporality E7 Future
+A_	Negation E7 NotNegated

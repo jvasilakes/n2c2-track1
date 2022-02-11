@@ -1,0 +1,21 @@
+T17	Disposition 997 1006	Pravachol
+E17	Disposition:T17
+A1	Certainity E17 Certain
+A2	Actor E17 Physician
+A3	Action E17 Stop
+A4	Temporality E17 Past
+A_	Negation E17 NotNegated
+T18	Disposition 997 1006	Pravachol
+E18	Disposition:T18
+A5	Certainity E18 Certain
+A6	Actor E18 Physician
+A7	Action E18 Stop
+A8	Temporality E18 Past
+A_	Negation E18 NotNegated
+T19	Disposition 997 1006	Pravachol
+E19	Disposition:T19
+A9	Certainity E19 Certain
+A10	Actor E19 Physician
+A11	Action E19 Stop
+A12	Temporality E19 Past
+A_	Negation E19 NotNegated

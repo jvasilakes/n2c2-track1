@@ -1,0 +1,14 @@
+T44	Disposition 1685 1692	lipitor
+E44	Disposition:T44
+A1	Certainity E44 Certain
+A2	Actor E44 Physician
+A3	Action E44 Stop
+A4	Temporality E44 Past
+A_	Negation E44 NotNegated
+T29	Disposition 1878 1887	Lopressor
+E29	Disposition:T29
+A5	Certainity E29 Certain
+A6	Actor E29 Physician
+A7	Action E29 Stop
+A8	Temporality E29 Past
+A_	Negation E29 NotNegated

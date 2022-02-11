@@ -1,0 +1,70 @@
+T43	Disposition 618 626	Fentanyl
+E2	Disposition:T43
+A1	Certainity E2 Certain
+A2	Actor E2 Physician
+A3	Action E2 Decrease
+A4	Temporality E2 Past
+A_	Negation E2 NotNegated
+T53	Disposition 618 626	Fentanyl
+E43	Disposition:T53
+A5	Certainity E43 Certain
+A6	Negation E43 Negated
+A7	Actor E43 Physician
+A8	Action E43 Decrease
+A9	Temporality E43 Past
+T2	Disposition 618 626	Fentanyl
+E53	Disposition:T2
+A75	Certainity E53 Certain
+A76	Actor E53 Physician
+A77	Action E53 Decrease
+A78	Temporality E53 Past
+A_	Negation E53 NotNegated
+T20	Disposition 3050 3057	Insulin
+E20	Disposition:T20
+A12	Certainity E20 Certain
+A13	Actor E20 Unknown
+A15	Action E20 Stop
+A16	Temporality E20 Past
+A_	Negation E20 NotNegated
+T23	Disposition 9190 9195	Lasix
+E23	Disposition:T23
+A17	Certainity E23 Certain
+A18	Actor E23 Physician
+A19	Action E23 UniqueDose
+A20	Temporality E23 Present
+A_	Negation E23 NotNegated
+T26	Disposition 9270 9280	Lisinopril
+E26	Disposition:T26
+A22	Certainity E26 Certain
+A23	Actor E26 Physician
+A24	Action E26 Stop
+A25	Temporality E26 Present
+A_	Negation E26 NotNegated
+T28	Disposition 9418 9424	statin
+E28	Disposition:T28
+A26	Certainity E28 Hypothetical
+A27	Actor E28 Physician
+A28	Action E28 Start
+A29	Temporality E28 Present
+A_	Negation E28 NotNegated
+T30	Disposition 9628 9638	Lisinopril
+E30	Disposition:T30
+A30	Certainity E30 Certain
+A31	Actor E30 Physician
+A32	Action E30 Stop
+A33	Temporality E30 Present
+A_	Negation E30 NotNegated
+T34	Disposition 9999 10010	Hydralazine
+E34	Disposition:T34
+A38	Certainity E34 Certain
+A39	Actor E34 Physician
+A40	Action E34 Start
+A41	Temporality E34 Present
+A_	Negation E34 NotNegated
+T35	Disposition 10021 10041	Isosorbide dinitrate
+E35	Disposition:T35
+A42	Certainity E35 Certain
+A43	Actor E35 Physician
+A44	Action E35 Start
+A45	Temporality E35 Present
+A_	Negation E35 NotNegated

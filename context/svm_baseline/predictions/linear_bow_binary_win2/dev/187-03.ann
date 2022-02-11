@@ -1,0 +1,63 @@
+T1	Disposition 767 778	barbiturate
+E1	Disposition:T1
+A1	Certainity E1 Certain
+A2	Actor E1 Physician
+A3	Action E1 Stop
+A4	Temporality E1 Present
+A_	Negation E1 NotNegated
+T2	Disposition 783 789	Ativan
+E2	Disposition:T2
+A5	Certainity E2 Certain
+A6	Actor E2 Physician
+A7	Action E2 Stop
+A8	Temporality E2 Present
+A_	Negation E2 NotNegated
+T3	Disposition 1951 1959	Tramadol
+E3	Disposition:T3
+A9	Certainity E3 Certain
+A10	Actor E3 Physician
+A11	Action E3 Start
+A12	Temporality E3 Past
+A_	Negation E3 NotNegated
+T5	Disposition 2186 2196	prednisone
+E5	Disposition:T5
+A13	Certainity E5 Certain
+A14	Actor E5 Physician
+A15	Action E5 Stop
+A16	Temporality E5 Past
+A_	Negation E5 NotNegated
+T19	Disposition 3899 3908	Cortisone
+E19	Disposition:T19
+A33	Certainity E19 Certain
+A34	Actor E19 Physician
+A35	Action E19 UniqueDose
+A36	Temporality E19 Past
+A_	Negation E19 NotNegated
+T23	Disposition 4425 4435	Teslactone
+E23	Disposition:T23
+A17	Certainity E23 Certain
+A18	Actor E23 Physician
+A19	Action E23 Start
+A20	Temporality E23 Past
+A_	Negation E23 NotNegated
+T49	Disposition 4425 4435	Teslactone
+E49	Disposition:T49
+A25	Certainity E49 Certain
+A26	Actor E49 Physician
+A27	Action E49 Start
+A28	Temporality E49 Past
+A_	Negation E49 NotNegated
+T24	Disposition 4457 4465	Arimidex
+E24	Disposition:T24
+A21	Certainity E24 Certain
+A22	Actor E24 Physician
+A23	Action E24 Start
+A24	Temporality E24 Past
+A_	Negation E24 NotNegated
+T51	Disposition 7482 7490	orlistat
+E51	Disposition:T51
+A29	Certainity E51 Conditional
+A30	Actor E51 Physician
+A31	Action E51 Start
+A32	Temporality E51 Present
+A_	Negation E51 NotNegated

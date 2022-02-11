@@ -1,0 +1,98 @@
+T3	Disposition 1401 1404	ASA
+E3	Disposition:T3
+A1	Certainity E3 Certain
+A2	Actor E3 Patient
+A3	Action E3 UniqueDose
+A4	Temporality E3 Past
+A_	Negation E3 NotNegated
+T4	Disposition 1630 1638	morphine
+E4	Disposition:T4
+A5	Certainity E4 Certain
+A6	Actor E4 Physician
+A7	Action E4 UniqueDose
+A8	Temporality E4 Past
+A_	Negation E4 NotNegated
+T5	Disposition 1648 1651	ASA
+E5	Disposition:T5
+A9	Certainity E5 Certain
+A10	Actor E5 Physician
+A11	Action E5 UniqueDose
+A12	Temporality E5 Past
+A_	Negation E5 NotNegated
+T40	Disposition 1663 1666	TNG
+E41	Disposition:T40
+A53	Certainity E41 Certain
+A54	Actor E41 Physician
+A55	Action E41 UniqueDose
+A56	Temporality E41 Past
+A_	Negation E41 NotNegated
+T6	Disposition 1672 1681	Lopressor
+E6	Disposition:T6
+A13	Certainity E6 Certain
+A14	Actor E6 Physician
+A15	Action E6 UniqueDose
+A16	Temporality E6 Past
+A_	Negation E6 NotNegated
+T7	Disposition 1972 1979	heparin
+E7	Disposition:T7
+A17	Certainity E7 Certain
+A18	Actor E7 Physician
+A19	Action E7 Start
+A20	Temporality E7 Past
+A_	Negation E7 NotNegated
+T34	Disposition 1990 2005	2b/3a inhibitor
+E34	Disposition:T34
+A49	Certainity E34 Certain
+A50	Actor E34 Physician
+A51	Action E34 Start
+A52	Temporality E34 Past
+A_	Negation E34 NotNegated
+T35	Disposition 2097 2106	Metformin
+E35	Disposition:T35
+A21	Certainity E35 Certain
+A22	Actor E35 Physician
+A23	Action E35 Start
+A24	Temporality E35 Past
+A_	Negation E35 NotNegated
+T10	Disposition 2447 2455	coumadin
+E10	Disposition:T10
+A25	Certainity E10 Certain
+A26	Actor E10 Physician
+A27	Action E10 Stop
+A28	Temporality E10 Past
+A_	Negation E10 NotNegated
+T10	Disposition 2447 2455	coumadin
+E36	Disposition:T10
+A29	Certainity E36 Certain
+A30	Actor E36 Physician
+A31	Action E36 Stop
+A32	Temporality E36 Past
+A_	Negation E36 NotNegated
+T12	Disposition 2507 2515	Coumadin
+E12	Disposition:T12
+A33	Certainity E12 Certain
+A34	Actor E12 Physician
+A35	Action E12 Stop
+A36	Temporality E12 Past
+A_	Negation E12 NotNegated
+T26	Disposition 9232 9238	Plavix
+E26	Disposition:T26
+A37	Certainity E26 Certain
+A38	Actor E26 Physician
+A39	Action E26 Stop
+A40	Temporality E26 Present
+A_	Negation E26 NotNegated
+T38	Disposition 9462 9467	ACE-I
+E39	Disposition:T38
+A41	Certainity E39 Hypothetical
+A42	Actor E39 Physician
+A43	Action E39 Start
+A44	Temporality E39 Future
+A_	Negation E39 NotNegated
+T39	Disposition 9471 9474	ARB
+E40	Disposition:T39
+A45	Certainity E40 Hypothetical
+A46	Actor E40 Physician
+A47	Action E40 Start
+A48	Temporality E40 Future
+A_	Negation E40 NotNegated

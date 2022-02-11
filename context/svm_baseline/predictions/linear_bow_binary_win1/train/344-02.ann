@@ -1,0 +1,21 @@
+T4	Disposition 3002 3009	aspirin
+E4	Disposition:T4
+A1	Certainity E4 Certain
+A2	Actor E4 Physician
+A3	Action E4 UniqueDose
+A4	Temporality E4 Past
+A_	Negation E4 NotNegated
+T5	Disposition 3011 3024	nitroglycerin
+E5	Disposition:T5
+A5	Certainity E5 Certain
+A6	Actor E5 Physician
+A7	Action E5 UniqueDose
+A8	Temporality E5 Past
+A_	Negation E5 NotNegated
+T6	Disposition 3029 3037	morphine
+E6	Disposition:T6
+A9	Certainity E6 Certain
+A10	Actor E6 Physician
+A11	Action E6 UniqueDose
+A12	Temporality E6 Past
+A_	Negation E6 NotNegated

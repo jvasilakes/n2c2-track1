@@ -1,0 +1,63 @@
+T12	Disposition 210 214	Z-pk
+E12	Disposition:T12
+A9	Certainity E12 Certain
+A30	Actor E12 Physician
+A31	Action E12 Stop
+A32	Temporality E12 Present
+A_	Negation E12 NotNegated
+T26	Disposition 210 214	Z-pk
+E26	Disposition:T26
+A33	Certainity E26 Certain
+A34	Actor E26 Physician
+A35	Action E26 Stop
+A36	Temporality E26 Present
+A_	Negation E26 NotNegated
+T13	Disposition 557 561	Z-pk
+E13	Disposition:T13
+A5	Certainity E13 Certain
+A6	Actor E13 Physician
+A7	Action E13 Start
+A8	Temporality E13 Past
+A_	Negation E13 NotNegated
+T14	Disposition 557 561	Z-pk
+E14	Disposition:T14
+A10	Certainity E14 Certain
+A11	Actor E14 Physician
+A12	Action E14 Start
+A13	Temporality E14 Past
+A_	Negation E14 NotNegated
+T3	Disposition 620 628	levaquin
+E3	Disposition:T3
+A1	Certainity E3 Certain
+A2	Actor E3 Physician
+A3	Action E3 Start
+A4	Temporality E3 Past
+A_	Negation E3 NotNegated
+T4	Disposition 849 858	lopressor
+E4	Disposition:T4
+A14	Certainity E4 Certain
+A15	Actor E4 Physician
+A16	Action E4 Start
+A17	Temporality E4 Present
+A_	Negation E4 NotNegated
+T5	Disposition 870 879	lopressor
+E5	Disposition:T5
+A18	Certainity E5 Certain
+A19	Actor E5 Physician
+A20	Action E5 Start
+A21	Temporality E5 Present
+A_	Negation E5 NotNegated
+T15	Disposition 1277 1294	immunosuppressive
+E15	Disposition:T15
+A22	Certainity E15 Certain
+A23	Actor E15 Physician
+A24	Action E15 Start
+A25	Temporality E15 Present
+A_	Negation E15 NotNegated
+T25	Disposition 5843 5854	kayexcelate
+E25	Disposition:T25
+A26	Certainity E25 Certain
+A27	Actor E25 Physician
+A28	Action E25 Start
+A29	Temporality E25 Present
+A_	Negation E25 NotNegated

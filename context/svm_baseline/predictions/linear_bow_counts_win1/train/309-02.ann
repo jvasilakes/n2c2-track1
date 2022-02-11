@@ -1,0 +1,7 @@
+T4	Disposition 1797 1805	atenolol
+E4	Disposition:T4
+A1	Certainity E4 Certain
+A2	Actor E4 Physician
+A3	Action E4 Stop
+A4	Temporality E4 Present
+A_	Negation E4 NotNegated

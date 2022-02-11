@@ -1,0 +1,49 @@
+T13	Disposition 588 607	hydrochlorothiazide
+E13	Disposition:T13
+A1	Certainity E13 Certain
+A2	Actor E13 Physician
+A3	Action E13 Stop
+A4	Temporality E13 Present
+A_	Negation E13 NotNegated
+T3	Disposition 620 628	ramipril
+E3	Disposition:T3
+A5	Certainity E3 Certain
+A6	Actor E3 Physician
+A7	Action E3 Stop
+A8	Temporality E3 Present
+A_	Negation E3 NotNegated
+T14	Disposition 636 643	nitrate
+E14	Disposition:T14
+A9	Certainity E14 Certain
+A10	Actor E14 Physician
+A11	Action E14 Stop
+A12	Temporality E14 Present
+A_	Negation E14 NotNegated
+T4	Disposition 815 822	Lipitor
+E4	Disposition:T4
+A13	Certainity E4 Certain
+A14	Actor E4 Physician
+A15	Action E4 Start
+A16	Temporality E4 Past
+A_	Negation E4 NotNegated
+T15	Disposition 1694 1702	ramipril
+E15	Disposition:T15
+A17	Certainity E15 Certain
+A18	Actor E15 Physician
+A19	Action E15 Start
+A20	Temporality E15 Present
+A_	Negation E15 NotNegated
+T6	Disposition 1707 1726	long acting nitrate
+E6	Disposition:T6
+A21	Certainity E6 Certain
+A22	Actor E6 Physician
+A23	Action E6 Start
+A24	Temporality E6 Present
+A_	Negation E6 NotNegated
+T8	Disposition 1780 1799	hydrochlorothiazide
+E8	Disposition:T8
+A26	Certainity E8 Certain
+A27	Actor E8 Physician
+A28	Action E8 Stop
+A29	Temporality E8 Present
+A_	Negation E8 NotNegated

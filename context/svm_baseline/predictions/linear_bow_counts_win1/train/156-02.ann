@@ -1,0 +1,21 @@
+T9	Disposition 1212 1221	Synthroid
+E9	Disposition:T9
+A5	Certainity E9 Certain
+A6	Actor E9 Patient
+A7	Action E9 Stop
+A8	Temporality E9 Past
+A_	Negation E9 NotNegated
+T10	Disposition 1212 1221	Synthroid
+E10	Disposition:T10
+A9	Certainity E10 Certain
+A10	Actor E10 Patient
+A11	Action E10 Stop
+A12	Temporality E10 Past
+A_	Negation E10 NotNegated
+T7	Disposition 2928 2937	Synthroid
+E7	Disposition:T7
+A1	Certainity E7 Hypothetical
+A2	Actor E7 Physician
+A3	Action E7 Start
+A4	Temporality E7 Present
+A_	Negation E7 NotNegated

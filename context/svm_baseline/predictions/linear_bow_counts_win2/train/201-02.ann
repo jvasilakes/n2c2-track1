@@ -1,0 +1,133 @@
+T24	Disposition 1476 1483	digoxin
+E24	Disposition:T24
+A1	Certainity E24 Certain
+A2	Actor E24 Physician
+A3	Action E24 Stop
+A4	Temporality E24 Past
+A_	Negation E24 NotNegated
+T37	Disposition 1476 1483	digoxin
+E37	Disposition:T37
+A5	Certainity E37 Certain
+A6	Actor E37 Physician
+A7	Action E37 Stop
+A8	Temporality E37 Past
+A_	Negation E37 NotNegated
+T1	Disposition 1862 1866	amio
+E1	Disposition:T1
+A17	Certainity E1 Certain
+A18	Actor E1 Physician
+A19	Action E1 UniqueDose
+A20	Temporality E1 Past
+A_	Negation E1 NotNegated
+T2	Disposition 1971 1988	calcium gluconate
+E2	Disposition:T2
+A21	Certainity E2 Certain
+A22	Actor E2 Physician
+A23	Action E2 UniqueDose
+A24	Temporality E2 Past
+A_	Negation E2 NotNegated
+T3	Disposition 1990 1997	insulin
+E3	Disposition:T3
+A25	Certainity E3 Certain
+A26	Actor E3 Physician
+A27	Action E3 UniqueDose
+A28	Temporality E3 Past
+A_	Negation E3 NotNegated
+T52	Disposition 1999 2002	D50
+E52	Disposition:T52
+A87	Certainity E52 Certain
+A88	Actor E52 Physician
+A90	Action E52 UniqueDose
+A91	Temporality E52 Past
+A_	Negation E52 NotNegated
+T38	Disposition 2004 2010	bicard
+E38	Disposition:T38
+A36	Certainity E38 Certain
+A37	Actor E38 Physician
+A39	Action E38 UniqueDose
+A40	Temporality E38 Past
+A_	Negation E38 NotNegated
+T39	Disposition 2020 2022	Mg
+E39	Disposition:T39
+A29	Certainity E39 Certain
+A30	Actor E39 Physician
+A31	Action E39 UniqueDose
+A32	Temporality E39 Past
+A_	Negation E39 NotNegated
+T5	Disposition 2100 2107	heparin
+E5	Disposition:T5
+A9	Certainity E5 Certain
+A10	Actor E5 Physician
+A11	Action E5 Start
+A12	Temporality E5 Past
+A_	Negation E5 NotNegated
+T40	Disposition 2238 2249	admiodarone
+E40	Disposition:T40
+A13	Certainity E40 Certain
+A14	Actor E40 Physician
+A15	Action E40 Stop
+A16	Temporality E40 Past
+A_	Negation E40 NotNegated
+T49	Disposition 7592 7599	digoxin
+E49	Disposition:T49
+A42	Certainity E49 Hypothetical
+A43	Actor E49 Physician
+A44	Action E49 Start
+A45	Temporality E49 Present
+A_	Negation E49 NotNegated
+T23	Disposition 7637 7646	diltiazem
+E23	Disposition:T23
+A46	Certainity E23 Hypothetical
+A47	Actor E23 Physician
+A48	Action E23 Start
+A49	Temporality E23 Present
+A_	Negation E23 NotNegated
+T50	Disposition 7650 7660	metoprolol
+E50	Disposition:T50
+A50	Certainity E50 Hypothetical
+A51	Actor E50 Physician
+A52	Action E50 Start
+A53	Temporality E50 Present
+A_	Negation E50 NotNegated
+T4	Disposition 7670 7672	NS
+E4	Disposition:T4
+A33	Certainity E4 Certain
+A34	Actor E4 Physician
+A35	Action E4 UniqueDose
+A38	Temporality E4 Present
+A_	Negation E4 NotNegated
+T25	Disposition 7810 7818	Coumadin
+E25	Disposition:T25
+A54	Certainity E25 Certain
+A55	Negation E25 Negated
+A56	Actor E25 Physician
+A57	Action E25 Start
+A58	Temporality E25 Present
+T27	Disposition 7977 7979	BB
+E27	Disposition:T27
+A79	Certainity E27 Certain
+A80	Actor E27 Physician
+A81	Action E27 Stop
+A82	Temporality E27 Present
+A_	Negation E27 NotNegated
+T28	Disposition 7980 7984	ACEI
+E28	Disposition:T28
+A83	Certainity E28 Certain
+A84	Actor E28 Physician
+A85	Action E28 Stop
+A86	Temporality E28 Present
+A_	Negation E28 NotNegated
+T51	Disposition 8387 8396	glipizide
+E51	Disposition:T51
+A71	Certainity E51 Certain
+A72	Actor E51 Physician
+A73	Action E51 Stop
+A74	Temporality E51 Present
+A_	Negation E51 NotNegated
+T33	Disposition 8398 8407	metofrmin
+E33	Disposition:T33
+A75	Certainity E33 Certain
+A76	Actor E33 Physician
+A77	Action E33 Stop
+A78	Temporality E33 Present
+A_	Negation E33 NotNegated

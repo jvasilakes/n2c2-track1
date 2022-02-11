@@ -20,7 +20,7 @@ def parse_args():
                         help="Directory containing brat ann files.")
     parser.add_argument("out_dir", type=str,
                         help="Where to save the predictions.")
-    parser.add_argument("--feature_type", type=str, choices=["bow"],
+    parser.add_argument("--feature_type", type=str, choices=["bow", "bow_bin"],
                         default="bow")
     parser.add_argument("--window_size", type=int, default=0,
                         help="""Positive int of the number of sentences to use
@@ -75,6 +75,7 @@ def main(args):
                                      feature_type=args.feature_type,
                                      vectorizer_kwargs=kwargs,
                                      vectorizer=vectorizer)
+        print(vectorizer)
         all_X[dataset] = X
         # y_by_task: dict of task name (str) to encoded label (int)
         y_by_task, label_encoders = encode_all_labels(
@@ -165,6 +166,8 @@ def get_sentences_in_window(sent_idxs, tokenized_sents, window_size=0):
 def get_vectorizer_kwargs(args):
     if args.feature_type == "bow":
         return {}
+    elif args.feature_type == "bow_bin":
+        return {"binary": True}
     else:
         raise NotImplementedError(f"Unsupported feature type '{args.feature_type}'.")  # noqa
 
@@ -176,7 +179,7 @@ def dummy_tokenizer(doc):
 def get_features(tokenized_sentences, feature_type="bow",
                  vectorizer_kwargs={}, vectorizer=None):
     if vectorizer is None:
-        if feature_type == "bow":
+        if "bow" in feature_type:
             vectorizer = CountVectorizer(tokenizer=dummy_tokenizer,
                                          preprocessor=dummy_tokenizer,
                                          **vectorizer_kwargs)

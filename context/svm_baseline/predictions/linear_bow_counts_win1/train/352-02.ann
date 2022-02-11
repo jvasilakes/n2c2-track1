@@ -1,0 +1,28 @@
+T8	Disposition 2704 2711	aspirin
+E8	Disposition:T8
+A1	Certainity E8 Certain
+A2	Actor E8 Physician
+A3	Action E8 UniqueDose
+A4	Temporality E8 Past
+A_	Negation E8 NotNegated
+T9	Disposition 2713 2726	nitroglycerin
+E9	Disposition:T9
+A5	Certainity E9 Certain
+A6	Actor E9 Physician
+A7	Action E9 UniqueDose
+A8	Temporality E9 Past
+A_	Negation E9 NotNegated
+T10	Disposition 2732 2744	beta-blocker
+E10	Disposition:T10
+A9	Certainity E10 Certain
+A10	Actor E10 Physician
+A11	Action E10 UniqueDose
+A12	Temporality E10 Past
+A_	Negation E10 NotNegated
+T11	Disposition 2814 2830	morphine sulfate
+E11	Disposition:T11
+A13	Certainity E11 Certain
+A14	Actor E11 Physician
+A15	Action E11 UniqueDose
+A16	Temporality E11 Past
+A_	Negation E11 NotNegated

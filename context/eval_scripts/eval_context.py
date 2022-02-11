@@ -58,7 +58,7 @@ def main(args):
                     golds, preds, average="micro")
             macro_p, macro_r, macro_f, _ = precision_recall_fscore_support(
                     golds, preds, average="macro")
-        print(f"### {task}")
+        print(f"### {task}                     ")
         print(f"|      | {'prec': <4}  | {'rec': <3}   | {'f1': <4}  |")
         print("|------|-------|-------|-------|")
         print(f"|MICRO | {micro_p:.3f} | {micro_r:.3f} | {micro_f:.3f} |")

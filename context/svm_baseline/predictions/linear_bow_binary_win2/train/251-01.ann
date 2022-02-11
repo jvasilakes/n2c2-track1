@@ -1,0 +1,7 @@
+T11	Disposition 3836 3848	chemotherapy
+E11	Disposition:T11
+A1	Certainity E11 Hypothetical
+A2	Actor E11 Physician
+A3	Action E11 Start
+A4	Temporality E11 Future
+A_	Negation E11 NotNegated
