@@ -1,0 +1,22 @@
+T10922	MedicalMention 995 1013	hydrochlorthiazide
+T10923	MedicalMention 1209 1227	hydrochlorthiazide
+T10924	MedicalMention 1855 1861	Plavix
+T10925	MedicalMention 2162 2170	Dilantin
+T10927	MedicalMention 2954 2962	atenolol
+T10928	MedicalMention 2976 2983	Lipitor
+T10929	MedicalMention 2997 3008	Clopidogrel
+T10930	MedicalMention 3022 3031	Glipizide
+T10931	MedicalMention 3044 3050	Cozaar
+T10932	MedicalMention 3065 3074	Metformin
+T10933	MedicalMention 3088 3096	Dilantin
+T10934	MedicalMention 3119 3126	Valtrex
+T10935	MedicalMention 3131 3140	Acyclovir
+T10943	MedicalMention 4760 4766	Plavix
+T10944	MedicalMention 4920 4931	clopidogrel
+T10945	MedicalMention 4963 4986	antiplatelet medication
+T10946	MedicalMention 5042 5049	heparin
+T10947	MedicalMention 5053 5060	Lovenox
+T10948	MedicalMention 5375 5381	Plavix
+T10949	MedicalMention 5560 5567	Lipitor
+T10950	MedicalMention 5890 5898	Dilantin
+T10951	MedicalMention 6124 6148	antiepileptic medication
