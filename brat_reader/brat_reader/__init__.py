@@ -1,44 +1,73 @@
-from collections import namedtuple, defaultdict
+import os
+import pathlib
+from collections import defaultdict
 
 
 class Annotation(object):
 
-    def __init__(self):
-        pass
+    def __init__(self, id, _source_file):
+        self.id = id
+        self._source_file = self._resolve_file_path(_source_file)
 
     def update(self, key, value):
         self.__dict__[key] = value
 
     def __repr__(self):
         class_name = str(self.__class__).split('.')[-1][:-2]
-        rep = f"{class_name}({str(self.__dict__)})"
+        fields_str = ', '.join(f"{k}: {v}" for (k, v) in self.__dict__.items()
+                               if not k.startswith('_'))
+        rep = f"{class_name}({fields_str})"
         return rep
 
     def copy(self):
         return self.__class__(**self.__dict__)
 
+    @staticmethod
+    def _resolve_file_path(path):
+        here = pathlib.Path(path).resolve()
+        return str(here.absolute())
+
+    def to_brat_str(self):
+        raise NotImplementedError()
+
 
 class Span(Annotation):
-    def __init__(self, id, start_index, end_index, text):
-        self.id = id
+    def __init__(self, id, start_index, end_index, text, _source_file=None):
+        super().__init__(id=id, _source_file=_source_file)
         self.start_index = start_index
         self.end_index = end_index
         self.text = text
 
+    def to_brat_str(self, label=None):
+        if label is None:
+            label = "Default"
+        return f"{self.id}\t{label} {self.start_index} {self.end_index}\t{self.text}"  # noqa
+
 
 class Attribute(Annotation):
-    def __init__(self, id, type, value):
-        self.id = id
+    def __init__(self, id, type, value, _source_file=None):
+        super().__init__(id=id, _source_file=_source_file)
         self.type = type
         self.value = value
 
+    def to_brat_str(self, ref_id):
+        return f"{self.id}\t{self.type} {ref_id} {self.value}"
+
 
 class Event(Annotation):
-    def __init__(self, id, type, span, attributes=None):
-        self.id = id
+    def __init__(self, id, type, span, attributes=None, _source_file=None):
+        super().__init__(id=id, _source_file=_source_file)
         self.type = type
         self.span = span
         self.attributes = attributes or {}
+
+    def to_brat_str(self):
+        span_str = self.span.to_brat_str(label=self.type)
+        attr_strs = [a.to_brat_str(ref_id=self.id)
+                     for a in self.attributes.values()]
+        event_str = f"{self.id}\t{self.type}:{self.span.id}"
+        brat_str = '\n'.join([span_str, event_str, *attr_strs])
+        return brat_str
 
 
 class BratAnnotations(object):
@@ -105,12 +134,15 @@ class BratAnnotations(object):
                 ann_type = line[0]
                 if ann_type == 'T':
                     data = parse_brat_span(line)
+                    data["_source_file"] = fpath
                     spans.append(data)
                 elif ann_type == 'E':
                     data = parse_brat_event(line)
+                    data["_source_file"] = fpath
                     events.append(data)
                 elif ann_type == 'A':
                     data = parse_brat_attribute(line)
+                    data["_source_file"] = fpath
                     attributes.append(data)
                 else:
                     raise ValueError(f"Unsupported ann_type '{ann_type}'.")
@@ -119,16 +151,17 @@ class BratAnnotations(object):
 
     @classmethod
     def from_events(cls, events_iter):
-        spans = []
-        attributes = []
-        for event in events_iter:
-            spans.append(event.span)
-            for attr in event.attributes.values():
-                attributes.append(attr)
-        annotations = cls(spans=spans,
-                          events=events_iter,
-                          attributes=attributes)
+        annotations = cls(spans=[], events=[], attributes=[])
+        annotations._events = list(events_iter)
         return annotations
+
+    def save_brat(self, outdir):
+        for event in self.events:
+            brat_str = event.to_brat_str()
+            source_bn = os.path.basename(event._source_file)
+            outfile = os.path.join(outdir, source_bn)
+            with open(outfile, 'a') as outF:
+                outF.write(brat_str + '\n')
 
 
 def parse_brat_span(line):
@@ -170,7 +203,8 @@ def parse_brat_event(line):
 def parse_brat_attribute(line):
     fields = line.split()
     if fields[1] == "Negation":
-        fields.append(True)
+        if len(fields) == 3:
+            fields.append("Negated")
     assert len(fields) == 4
     uid, label, ref, value = fields
     return {"id": uid,
