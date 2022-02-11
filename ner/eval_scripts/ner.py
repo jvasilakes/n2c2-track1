@@ -5,7 +5,7 @@ from collections import defaultdict
 
 
 """
-Compute micro and macro-averaged precision, recall, and F1 score between 
+Compute micro and macro-averaged precision, recall, and F1 score between
 predicted NER character spans and gold-standard spans. Computes
 all metrics using both exact span matching and lenient matching (minimum
 1 character overlap). Assumes brat formatted files.
@@ -13,12 +13,12 @@ all metrics using both exact span matching and lenient matching (minimum
 Usage:
     python3 ner.py /path/to/predictions/dir /path/to/gold/dir
 
-Filenames in the predictions dir should match the pattern 
+Filenames in the predictions dir should match the pattern
     ([0-9a-zA-Z\-_]+)\.?.*\.ann
     where everything captured by the first group is a unique identifier
     that can be used to find the corresponding gold file, per below.
     E.g., 100-01.txt.ann
-Filenames in the gold dir should match 
+Filenames in the gold dir should match
     [0-9a-zA-Z\-_]+\.ann
     E.g., 100-01.ann
 """
@@ -38,6 +38,8 @@ def parse_args():
 def main(args):
     glob_path = os.path.join(args.predictions_dir, "*.ann")
     glob_files = glob(glob_path)
+    if len(glob_files) == 0:
+        raise OSError(f"No input files found at {glob_path}")
 
     totals = defaultdict(int)
     metrics = defaultdict(list)
@@ -77,7 +79,7 @@ def main(args):
 
     print("### Exact match")
     print(f"|      | {'prec': <4}  | {'rec': <3}   | {'f1': <4}  |")
-    print(f"|------|-------|-------|-------|")
+    print("|------|-------|-------|-------|")
     print(f"|MICRO | {micro_p:.3f} | {micro_r:.3f} | {micro_f1:.3f} |")
     print(f"|MACRO | {macro_p:.3f} | {macro_r:.3f} | {macro_f1:.3f} |")
 
@@ -90,7 +92,7 @@ def main(args):
     print()
     print("### Lenient match")
     print(f"|      | {'prec': <4}  | {'rec': <3}   | {'f1': <4}  |")
-    print(f"|------|-------|-------|-------|")
+    print("|------|-------|-------|-------|")
     print(f"|MICRO | {micro_p:.3f} | {micro_r:.3f} | {micro_f1:.3f} |")
     print(f"|MACRO | {macro_p:.3f} | {macro_r:.3f} | {macro_f1:.3f} |")
 
@@ -145,7 +147,7 @@ def precision_recall_f1(tp, fp, fn):
 def lenient_intersection(spans1, spans2):
     """
     Compute the size of the set intersection between
-    spans1 and spans2 where spans match if 
+    spans1 and spans2 where spans match if
     1 or more characters overlap.
     """
     total = 0
@@ -159,7 +161,7 @@ def lenient_intersection(spans1, spans2):
 def lenient_difference(spans1, spans2):
     """
     Compute the size of the set difference between
-    spans1 and spans2 where spans match if 
+    spans1 and spans2 where spans match if
     1 or more characters overlap.
     """
     total = 0
