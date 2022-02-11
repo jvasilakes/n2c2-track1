@@ -1,0 +1,91 @@
+T2	Disposition 923 929	Ativan
+E2	Disposition:T2
+A1	Certainity E2 Certain
+A2	Actor E2 Physician
+A3	Action E2 UniqueDose
+A4	Temporality E2 Past
+A_	Negation E2 NotNegated
+T3	Disposition 1110 1113	NTG
+E3	Disposition:T3
+A5	Certainity E3 Certain
+A6	Actor E3 Physician
+A7	Action E3 UniqueDose
+A8	Temporality E3 Past
+A_	Negation E3 NotNegated
+T4	Disposition 1123 1128	Lasix
+E4	Disposition:T4
+A9	Certainity E4 Certain
+A10	Actor E4 Physician
+A11	Action E4 UniqueDose
+A12	Temporality E4 Past
+A_	Negation E4 NotNegated
+T5	Disposition 1745 1750	Lasix
+E5	Disposition:T5
+A13	Certainity E5 Certain
+A14	Actor E5 Physician
+A15	Action E5 UniqueDose
+A16	Temporality E5 Past
+A_	Negation E5 NotNegated
+T36	Disposition 11056 11061	Lasix
+E36	Disposition:T36
+A29	Certainity E36 Certain
+A30	Actor E36 Physician
+A31	Action E36 UniqueDose
+A32	Temporality E36 Present
+A_	Negation E36 NotNegated
+T71	Disposition 11303 11305	BB
+E71	Disposition:T71
+A33	Certainity E71 Hypothetical
+A34	Actor E71 Physician
+A35	Action E71 Unknown
+A36	Temporality E71 Future
+A_	Negation E71 NotNegated
+T1	Disposition 11941 11944	abx
+E1	Disposition:T1
+A17	Certainity E1 Hypothetical
+A18	Actor E1 Physician
+A19	Action E1 Start
+A20	Temporality E1 Present
+A_	Negation E1 NotNegated
+T45	Disposition 12155 12163	Captoril
+E45	Disposition:T45
+A37	Certainity E45 Conditional
+A38	Actor E45 Physician
+A39	Action E45 Increase
+A40	Temporality E45 Present
+A_	Negation E45 NotNegated
+T80	Disposition 12155 12163	Captoril
+E80	Disposition:T80
+A53	Certainity E80 Conditional
+A54	Actor E80 Physician
+A55	Action E80 Increase
+A56	Temporality E80 Present
+A_	Negation E80 NotNegated
+T46	Disposition 12177 12186	Lopressor
+E46	Disposition:T46
+A41	Certainity E46 Conditional
+A42	Actor E46 Physician
+A43	Action E46 Increase
+A44	Temporality E46 Present
+A_	Negation E46 NotNegated
+T81	Disposition 12177 12186	Lopressor
+E81	Disposition:T81
+A57	Certainity E81 Conditional
+A58	Actor E81 Physician
+A59	Action E81 Increase
+A60	Temporality E81 Present
+A_	Negation E81 NotNegated
+T73	Disposition 12319 12330	oral agents
+E73	Disposition:T73
+A45	Certainity E73 Certain
+A46	Actor E73 Physician
+A47	Action E73 Start
+A48	Temporality E73 Present
+A_	Negation E73 NotNegated
+T49	Disposition 12341 12348	Insulin
+E49	Disposition:T49
+A49	Certainity E49 Certain
+A50	Actor E49 Physician
+A51	Action E49 Start
+A52	Temporality E49 Present
+A_	Negation E49 NotNegated

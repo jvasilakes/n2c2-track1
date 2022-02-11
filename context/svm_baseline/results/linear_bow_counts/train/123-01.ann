@@ -1,0 +1,7 @@
+T4	Disposition 881 886	ACE-I
+E4	Disposition:T4
+A1	Certainity E4 Hypothetical
+A2	Actor E4 Physician
+A3	Action E4 Start
+A4	Temporality E4 Future
+A_	Negation E4 NotNegated

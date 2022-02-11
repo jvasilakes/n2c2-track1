@@ -1,0 +1,21 @@
+T5	Disposition 897 910	metronidazole
+E5	Disposition:T5
+A1	Certainity E5 Certain
+A2	Actor E5 Unknown
+A3	Action E5 Stop
+A4	Temporality E5 Past
+A_	Negation E5 NotNegated
+T6	Disposition 1144 1154	lisinopril
+E6	Disposition:T6
+A5	Certainity E6 Certain
+A6	Actor E6 Physician
+A7	Action E6 Stop
+A8	Temporality E6 Past
+A_	Negation E6 NotNegated
+T9	Disposition 1723 1728	lidex
+E9	Disposition:T9
+A9	Certainity E9 Certain
+A10	Actor E9 Physician
+A11	Action E9 Start
+A12	Temporality E9 Present
+A_	Negation E9 NotNegated

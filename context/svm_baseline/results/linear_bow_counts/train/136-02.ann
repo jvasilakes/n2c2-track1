@@ -1,0 +1,28 @@
+T2	Disposition 1106 1112	zofran
+E2	Disposition:T2
+A1	Certainity E2 Certain
+A2	Actor E2 Physician
+A3	Action E2 UniqueDose
+A4	Temporality E2 Past
+A_	Negation E2 NotNegated
+T23	Disposition 1126 1130	MSO4
+E23	Disposition:T23
+A5	Certainity E23 Certain
+A6	Actor E23 Physician
+A7	Action E23 UniqueDose
+A8	Temporality E23 Past
+A_	Negation E23 NotNegated
+T36	Disposition 7659 7668	metformin
+E36	Disposition:T36
+A9	Certainity E36 Conditional
+A10	Actor E36 Physician
+A11	Action E36 Stop
+A12	Temporality E36 Present
+A_	Negation E36 NotNegated
+T37	Disposition 7671 7678	insulin
+E37	Disposition:T37
+A13	Certainity E37 Conditional
+A14	Actor E37 Physician
+A15	Action E37 Stop
+A16	Temporality E37 Present
+A_	Negation E37 NotNegated

@@ -1,0 +1,34 @@
+# Results
+
+## SVM
+
+Linear kernel, BOW counts features, single sentence window, no automatic feature selection.
+### Action
+|      | prec  | rec   | f1    |
+|------|-------|-------|-------|
+|MICRO | 0.552 | 0.552 | 0.552 |
+|MACRO | 0.537 | 0.427 | 0.413 |
+
+### Actor
+|      | prec  | rec   | f1    |
+|------|-------|-------|-------|
+|MICRO | 0.887 | 0.887 | 0.887 |
+|MACRO | 0.621 | 0.507 | 0.546 |
+
+### Certainity
+|      | prec  | rec   | f1    |
+|------|-------|-------|-------|
+|MICRO | 0.792 | 0.792 | 0.792 |
+|MACRO | 0.559 | 0.409 | 0.429 |
+
+### Negation
+|      | prec  | rec   | f1    |
+|------|-------|-------|-------|
+|MICRO | 0.986 | 0.986 | 0.986 |
+|MACRO | 0.993 | 0.625 | 0.697 |
+
+### Temporality
+|      | prec  | rec   | f1    |
+|------|-------|-------|-------|
+|MICRO | 0.670 | 0.670 | 0.670 |
+|MACRO | 0.463 | 0.423 | 0.424 |

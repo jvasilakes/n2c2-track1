@@ -1,0 +1,49 @@
+T40	Disposition 5429 5436	isordil
+E40	Disposition:T40
+A1	Certainity E40 Certain
+A2	Actor E40 Physician
+A3	Action E40 Stop
+A4	Temporality E40 Past
+A_	Negation E40 NotNegated
+T12	Disposition 5461 5471	lisinopril
+E12	Disposition:T12
+A5	Certainity E12 Certain
+A6	Actor E12 Physician
+A7	Action E12 Unknown
+A8	Temporality E12 Future
+A_	Negation E12 NotNegated
+T41	Disposition 5461 5471	lisinopril
+E41	Disposition:T41
+A9	Certainity E41 Certain
+A10	Actor E41 Physician
+A11	Action E41 Unknown
+A12	Temporality E41 Future
+A_	Negation E41 NotNegated
+T13	Disposition 5540 5548	diuretic
+E13	Disposition:T13
+A13	Certainity E13 Certain
+A14	Actor E13 Physician
+A15	Action E13 Start
+A16	Temporality E13 Present
+A_	Negation E13 NotNegated
+T14	Disposition 5550 5554	HCTZ
+E14	Disposition:T14
+A17	Certainity E14 Certain
+A18	Actor E14 Physician
+A19	Action E14 Start
+A20	Temporality E14 Present
+A_	Negation E14 NotNegated
+T46	Disposition 6642 6650	diuretic
+E46	Disposition:T46
+A30	Certainity E46 Certain
+A31	Actor E46 Physician
+A32	Action E46 Start
+A33	Temporality E46 Present
+A_	Negation E46 NotNegated
+T47	Disposition 6667 6672	ACE-I
+E47	Disposition:T47
+A34	Certainity E47 Certain
+A35	Actor E47 Physician
+A36	Action E47 Start
+A37	Temporality E47 Present
+A_	Negation E47 NotNegated

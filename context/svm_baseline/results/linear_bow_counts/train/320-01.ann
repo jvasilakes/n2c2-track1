@@ -1,0 +1,63 @@
+T1	Disposition 200 205	Actos
+E1	Disposition:T1
+A1	Certainity E1 Certain
+A2	Actor E1 Physician
+A3	Action E1 Stop
+A4	Temporality E1 Past
+A_	Negation E1 NotNegated
+T2	Disposition 209 218	Metformin
+E2	Disposition:T2
+A5	Certainity E2 Certain
+A6	Actor E2 Physician
+A7	Action E2 Stop
+A8	Temporality E2 Past
+A_	Negation E2 NotNegated
+T32	Disposition 307 315	nitrates
+E32	Disposition:T32
+A9	Certainity E32 Certain
+A10	Actor E32 Physician
+A11	Action E32 Stop
+A12	Temporality E32 Past
+A_	Negation E32 NotNegated
+T3	Disposition 319 329	Lisinopril
+E3	Disposition:T3
+A13	Certainity E3 Certain
+A14	Actor E3 Physician
+A15	Action E3 Stop
+A16	Temporality E3 Past
+A_	Negation E3 NotNegated
+T33	Disposition 716 721	Actos
+E33	Disposition:T33
+A17	Certainity E33 Certain
+A18	Actor E33 Physician
+A19	Action E33 Start
+A20	Temporality E33 Past
+A_	Negation E33 NotNegated
+T5	Disposition 733 742	Metformin
+E5	Disposition:T5
+A21	Certainity E5 Certain
+A22	Actor E5 Physician
+A23	Action E5 Start
+A24	Temporality E5 Past
+A_	Negation E5 NotNegated
+T6	Disposition 799 810	antibiotics
+E6	Disposition:T6
+A25	Certainity E6 Certain
+A26	Actor E6 Physician
+A27	Action E6 Stop
+A28	Temporality E6 Past
+A_	Negation E6 NotNegated
+T36	Disposition 4495 4505	Lisinopril
+E36	Disposition:T36
+A29	Certainity E36 Certain
+A30	Actor E36 Physician
+A31	Action E36 Start
+A32	Temporality E36 Past
+A_	Negation E36 NotNegated
+T27	Disposition 4559 4569	Lisinopril
+E27	Disposition:T27
+A33	Certainity E27 Certain
+A34	Actor E27 Physician
+A35	Action E27 Increase
+A36	Temporality E27 Present
+A_	Negation E27 NotNegated

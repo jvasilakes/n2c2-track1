@@ -1,0 +1,14 @@
+T77	Disposition 11578 11587	diuretics
+E77	Disposition:T77
+A1	Certainity E77 Certain
+A2	Actor E77 Physician
+A3	Action E77 Stop
+A4	Temporality E77 Present
+A_	Negation E77 NotNegated
+T78	Disposition 12132 12141	diuretics
+E78	Disposition:T78
+A5	Certainity E78 Certain
+A6	Actor E78 Physician
+A7	Action E78 Stop
+A8	Temporality E78 Present
+A_	Negation E78 NotNegated

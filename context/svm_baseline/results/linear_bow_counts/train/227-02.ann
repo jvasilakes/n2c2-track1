@@ -1,0 +1,28 @@
+T6	Disposition 785 791	niacin
+E6	Disposition:T6
+A1	Certainity E6 Certain
+A2	Negation E6 Negated
+A3	Actor E6 Physician
+A4	Action E6 Start
+A5	Temporality E6 Present
+T11	Disposition 1163 1168	Imdur
+E11	Disposition:T11
+A6	Certainity E11 Certain
+A7	Actor E11 Patient
+A8	Action E11 Start
+A9	Temporality E11 Past
+A_	Negation E11 NotNegated
+T35	Disposition 1163 1168	Imdur
+E35	Disposition:T35
+A10	Certainity E35 Certain
+A11	Negation E35 NotNegated
+A12	Actor E35 Patient
+A13	Action E35 Start
+A14	Temporality E35 Past
+T12	Disposition 1292 1297	Imdur
+E12	Disposition:T12
+A15	Certainity E12 Certain
+A16	Actor E12 Physician
+A17	Action E12 Start
+A18	Temporality E12 Present
+A_	Negation E12 NotNegated

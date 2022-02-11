@@ -1,0 +1,28 @@
+T1	Disposition 338 345	insulin
+E1	Disposition:T1
+A1	Certainity E1 Certain
+A2	Actor E1 Physician
+A3	Action E1 Increase
+A4	Temporality E1 Past
+A_	Negation E1 NotNegated
+T14	Disposition 2021 2034	Insulin 70/30
+E14	Disposition:T14
+A5	Certainity E14 Certain
+A6	Actor E14 Physician
+A7	Action E14 Increase
+A8	Temporality E14 Past
+A_	Negation E14 NotNegated
+T21	Disposition 3507 3514	insulin
+E21	Disposition:T21
+A9	Certainity E21 Certain
+A10	Actor E21 Physician
+A11	Action E21 Increase
+A12	Temporality E21 Past
+A_	Negation E21 NotNegated
+T23	Disposition 4432 4439	insulin
+E23	Disposition:T23
+A13	Certainity E23 Certain
+A14	Actor E23 Physician
+A15	Action E23 Decrease
+A16	Temporality E23 Present
+A_	Negation E23 NotNegated

@@ -1,0 +1,42 @@
+T13	Disposition 2474 2483	OxyContin
+E13	Disposition:T13
+A17	Certainity E13 Certain
+A18	Actor E13 Patient
+A19	Action E13 Stop
+A20	Temporality E13 Past
+A_	Negation E13 NotNegated
+T14	Disposition 2488 2497	methadone
+E14	Disposition:T14
+A21	Certainity E14 Certain
+A22	Actor E14 Patient
+A23	Action E14 Stop
+A24	Temporality E14 Past
+A_	Negation E14 NotNegated
+T15	Disposition 3052 3063	hydralazine
+E15	Disposition:T15
+A1	Certainity E15 Certain
+A2	Actor E15 Physician
+A3	Action E15 Stop
+A4	Temporality E15 Present
+A_	Negation E15 NotNegated
+T16	Disposition 3068 3075	Norvasc
+E16	Disposition:T16
+A5	Certainity E16 Certain
+A6	Actor E16 Physician
+A7	Action E16 Stop
+A8	Temporality E16 Present
+A_	Negation E16 NotNegated
+T17	Disposition 3105 3114	OxyContin
+E17	Disposition:T17
+A9	Certainity E17 Certain
+A10	Actor E17 Unknown
+A11	Action E17 Stop
+A12	Temporality E17 Past
+A_	Negation E17 NotNegated
+T18	Disposition 3119 3128	methadone
+E18	Disposition:T18
+A13	Certainity E18 Certain
+A14	Actor E18 Unknown
+A15	Action E18 Stop
+A16	Temporality E18 Past
+A_	Negation E18 NotNegated

@@ -1,0 +1,28 @@
+T6	Disposition 550 559	glyburide
+E6	Disposition:T6
+A1	Certainity E6 Certain
+A2	Actor E6 Physician
+A3	Action E6 Start
+A4	Temporality E6 Past
+A_	Negation E6 NotNegated
+T11	Disposition 1845 1854	glyburide
+E11	Disposition:T11
+A5	Certainity E11 Certain
+A6	Actor E11 Physician
+A7	Action E11 Increase
+A8	Temporality E11 Present
+A_	Negation E11 NotNegated
+T12	Disposition 1920 1929	Diltiazem
+E12	Disposition:T12
+A9	Certainity E12 Certain
+A10	Actor E12 Physician
+A11	Action E12 Increase
+A12	Temporality E12 Present
+A_	Negation E12 NotNegated
+T13	Disposition 1983 1993	lisinopril
+E13	Disposition:T13
+A13	Certainity E13 Certain
+A14	Actor E13 Physician
+A15	Action E13 Stop
+A16	Temporality E13 Past
+A_	Negation E13 NotNegated
