@@ -3,6 +3,7 @@ import json
 import warnings
 from glob import glob
 
+import torch
 import pytorch_lightning as pl
 from torch.utils.data import Dataset, DataLoader
 from transformers import AutoTokenizer
@@ -43,11 +44,43 @@ class n2c2RawTextDataset(Dataset):
 
 
 class n2c2SentencesDataset(Dataset):
-    def __init__(self, data_dir, sentences_dir, window_size=0):
+
+    ENCODINGS = {
+            'Action': {'Decrease': 0,
+                       'Increase': 1,
+                       'OtherChange': 2,
+                       'Start': 3,
+                       'Stop': 4,
+                       'UniqueDose': 5,
+                       'Unknown': 6},
+            'Actor': {'Patient': 0, 'Physician': 1, 'Unknown': 2},
+            'Certainity': {'Certain': 0,
+                           'Conditional': 1,
+                           'Hypothetical': 2,
+                           'Unknown': 3},
+            'Negation': {'Negated': 0, 'NotNegated': 1},
+            'Temporality': {'Future': 0,
+                            'Past': 1,
+                            'Present': 2,
+                            'Unknown': 3}
+            }
+    SORTED_ATTRIBUTES = ["Action", "Actor", "Certainity",
+                         "Negation", "Temporality"]
+
+    def __init__(self, data_dir, sentences_dir,
+                 label_names="all", window_size=0):
         self.data_dir = data_dir
         self.sentences_dir = sentences_dir
         self.window_size = window_size
+        self.label_names = label_names
         self.events, self.docids_to_texts = self._get_dispositions_and_texts()
+        if label_names == "all":
+            self.label_names = self.SORTED_ATTRIBUTES
+        else:
+            for name in self.label_names:
+                if name not in self.SORTED_ATTRIBUTES:
+                    raise ValueError(f"Unknown attribute {name}")
+            self.label_names = sorted(label_names)
 
     def __len__(self):
         return len(self.events)
@@ -73,11 +106,30 @@ class n2c2SentencesDataset(Dataset):
         entity_start = event.span.start_index - context[0]["start_index"]
         entity_end = event.span.end_index - context[0]["start_index"]
 
+        # Encode the labels
+        labels = []
+        for attr_name in self.SORTED_ATTRIBUTES:
+            if attr_name in self.label_names:
+                try:
+                    attr = event.attributes[attr_name]
+                    val = attr.value
+                except KeyError:
+                    if attr_name == "Negation":
+                        val = "NotNegated"
+                labels.append(self.ENCODINGS[attr_name][val])
+
         return {"text": text,
                 "entity_span": (entity_start, entity_end),
+                "label_names": self.label_names,
+                "labels": labels,
                 "docid": event.docid}
 
     def _get_dispositions_and_texts(self):
+        """
+        Pair each disposition event with a sentence
+        in a document. Adds the "docid" and "sent_index"
+        fields to the disposition.
+        """
         all_dispositions = []
         docids_to_texts = {}
         ann_glob = os.path.join(self.data_dir, "*.ann")
@@ -128,6 +180,7 @@ class n2c2SentencesDataModule(pl.LightningDataModule):
         self.sentences_dir = sentences_dir
         self.batch_size = batch_size
         self.model_name_or_path = model_name_or_path
+        self.max_seq_length = max_seq_length
         self.window_size = window_size
 
         self.tokenizer = AutoTokenizer.from_pretrained(
@@ -140,12 +193,12 @@ class n2c2SentencesDataModule(pl.LightningDataModule):
                 train_path, train_sent_path, window_size=self.window_size)
 
         val_path = os.path.join(self.data_dir, "dev")
-        val_sent_path = os.path.join(self.sentences_dir, "train")
+        val_sent_path = os.path.join(self.sentences_dir, "dev")
         self.val = n2c2SentencesDataset(
                 val_path, val_sent_path, window_size=self.window_size)
 
         test_path = os.path.join(self.data_dir, "test")
-        test_sent_path = os.path.join(self.sentences_dir, "train")
+        test_sent_path = os.path.join(self.sentences_dir, "test")
         if os.path.exists(test_path):
             self.test = n2c2SentencesDataset(
                     test_path, test_sent_path, window_size=self.window_size)
@@ -154,18 +207,42 @@ class n2c2SentencesDataModule(pl.LightningDataModule):
             self.test = None
 
     def train_dataloader(self):
-        return DataLoader(self.train, batch_size=self.batch_size)
+        return DataLoader(self.train, batch_size=self.batch_size, shuffle=True,
+                          collate_fn=self.encode_and_collate)
 
     def val_dataloader(self):
-        return DataLoader(self.val, batch_size=self.batch_size)
+        return DataLoader(self.val, batch_size=self.batch_size,
+                          collate_fn=self.encode_and_collate)
 
     def test_dataloader(self):
         if self.test is not None:
-            return DataLoader(self.test, batch_size=self.batch_size)
+            return DataLoader(self.test, batch_size=self.batch_size,
+                              collate_fn=self.encode_and_collate)
         return None
 
-    def encode(self, example):
-        if self.window_size == 0:
-            return example
-        else:
-            raise NotImplementedError()
+    def encode_and_collate(self, examples):
+        batch = {"encodings": None,
+                 "entity_spans": [],
+                 "texts": [],
+                 "label_names": None,
+                 "labels": [],
+                 "docids": []
+                 }
+
+        for ex in examples:
+            batch["entity_spans"].append(ex["entity_span"])
+            batch["texts"].append(ex["text"])
+            batch["labels"].append(ex["labels"])
+            batch["docids"].append(ex["docid"])
+
+        encodings = self.tokenizer(batch["texts"], truncation=True,
+                                   max_length=self.max_seq_length,
+                                   padding="max_length",
+                                   return_offsets_mapping=True,
+                                   return_tensors="pt")
+        batch["encodings"] = encodings
+        label_names = examples[0]["label_names"]
+        batch["label_names"] = label_names
+        batch["labels"] = torch.tensor(batch["labels"], dtype=torch.float)
+        batch["entity_spans"] = torch.tensor(batch["entity_spans"])
+        return batch
