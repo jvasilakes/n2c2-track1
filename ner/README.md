@@ -7,6 +7,12 @@ python eval_scripts/ner.py biomedicus_baseline/output_brat/dev ../n2c2Track1Trai
 
 The output is markdown formatted and can be copied directly into this file for keeping track of current progress.
 
+`eval_scripts/n2c2.py` is the evaluation script used by the N2C2 Shared Task 2018. In this script we've added more corpora so that we can use it with them. Similarly to `ner.py`, this script also compares results between two brat ann folders. E.g.,
+
+```bash
+python eval_scripts/n2c2.py biomedicus_baseline/output_brat/dev ../n2c2Track1TrainingData/data/dev/
+```
+
 
 # Results
 All results are on the dev split unless otherwise specified.
