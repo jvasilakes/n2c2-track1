@@ -1,0 +1,77 @@
+T1	Disposition 880 888	morphine
+E1	Disposition:T1
+A1	Certainity E1 Certain
+A2	Actor E1 Physician
+A3	Action E1 UniqueDose
+A4	Temporality E1 Past
+A_	Negation E1 NotNegated
+T2	Disposition 900 911	GI cocktail
+E2	Disposition:T2
+A5	Certainity E2 Certain
+A6	Actor E2 Physician
+A7	Action E2 UniqueDose
+A8	Temporality E2 Past
+A_	Negation E2 NotNegated
+T3	Disposition 913 919	zofran
+E3	Disposition:T3
+A9	Certainity E3 Certain
+A10	Actor E3 Physician
+A11	Action E3 UniqueDose
+A12	Temporality E3 Past
+A_	Negation E3 NotNegated
+T4	Disposition 932 940	Dilaudid
+E4	Disposition:T4
+A13	Certainity E4 Certain
+A14	Actor E4 Physician
+A15	Action E4 UniqueDose
+A16	Temporality E4 Past
+A_	Negation E4 NotNegated
+T6	Disposition 959 961	NS
+E6	Disposition:T6
+A17	Certainity E6 Certain
+A18	Actor E6 Physician
+A19	Action E6 UniqueDose
+A20	Temporality E6 Past
+A_	Negation E6 NotNegated
+T20	Disposition 6757 6759	NS
+E20	Disposition:T20
+A21	Certainity E20 Certain
+A22	Actor E20 Physician
+A23	Action E20 UniqueDose
+A24	Temporality E20 Past
+A_	Negation E20 NotNegated
+T21	Disposition 6829 6835	fluids
+E21	Disposition:T21
+A41	Certainity E21 Certain
+A42	Actor E21 Physician
+A43	Action E21 UniqueDose
+A44	Temporality E21 Present
+A_	Negation E21 NotNegated
+T22	Disposition 7004 7012	Dilaudid
+E22	Disposition:T22
+A25	Certainity E22 Certain
+A26	Actor E22 Physician
+A27	Action E22 UniqueDose
+A28	Temporality E22 Past
+A_	Negation E22 NotNegated
+T5	Disposition 7254 7281	verapamil sustained release
+E5	Disposition:T5
+A37	Certainity E5 Certain
+A38	Actor E5 Physician
+A39	Action E5 Stop
+A40	Temporality E5 Present
+A_	Negation E5 NotNegated
+T27	Disposition 7289 7298	verapamil
+E27	Disposition:T27
+A29	Certainity E27 Certain
+A30	Actor E27 Physician
+A31	Action E27 Stop
+A32	Temporality E27 Present
+A_	Negation E27 NotNegated
+T28	Disposition 7344 7351	Lipitor
+E28	Disposition:T28
+A33	Certainity E28 Certain
+A34	Actor E28 Physician
+A35	Action E28 Stop
+A36	Temporality E28 Present
+A_	Negation E28 NotNegated

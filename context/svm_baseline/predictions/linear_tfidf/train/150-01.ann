@@ -1,0 +1,14 @@
+T6	Disposition 1293 1307	nifedipine XL
+E6	Disposition:T6
+A5	Certainity E6 Hypothetical
+A6	Actor E6 Physician
+A7	Action E6 Increase
+A8	Temporality E6 Future
+A_	Negation E6 NotNegated
+T4	Disposition 1332 1342	furosemide
+E4	Disposition:T4
+A1	Certainity E4 Hypothetical
+A2	Actor E4 Physician
+A3	Action E4 Increase
+A4	Temporality E4 Future
+A_	Negation E4 NotNegated

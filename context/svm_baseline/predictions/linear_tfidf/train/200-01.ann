@@ -1,0 +1,42 @@
+T2	Disposition 693 705	chemotherapy
+E2	Disposition:T2
+A5	Certainity E2 Certain
+A6	Actor E2 Physician
+A7	Action E2 UniqueDose
+A8	Temporality E2 Past
+A_	Negation E2 NotNegated
+T18	Disposition 711 714	5FU
+E18	Disposition:T18
+A9	Certainity E18 Certain
+A10	Actor E18 Physician
+A11	Action E18 UniqueDose
+A12	Temporality E18 Past
+A_	Negation E18 NotNegated
+T35	Disposition 715 718	LCV
+E35	Disposition:T35
+A21	Certainity E35 Certain
+A22	Actor E35 Physician
+A23	Action E35 UniqueDose
+A24	Temporality E35 Past
+A_	Negation E35 NotNegated
+T19	Disposition 764 769	chemo
+E19	Disposition:T19
+A1	Certainity E19 Certain
+A2	Actor E19 Physician
+A3	Action E19 UniqueDose
+A4	Temporality E19 Past
+A_	Negation E19 NotNegated
+T34	Disposition 4566 4569	5FU
+E34	Disposition:T34
+A17	Certainity E34 Certain
+A18	Actor E34 Physician
+A19	Action E34 UniqueDose
+A20	Temporality E34 Present
+A_	Negation E34 NotNegated
+T17	Disposition 4571 4581	leukovorin
+E17	Disposition:T17
+A13	Certainity E17 Certain
+A14	Actor E17 Physician
+A15	Action E17 UniqueDose
+A16	Temporality E17 Present
+A_	Negation E17 NotNegated

@@ -1,0 +1,49 @@
+T2	Disposition 640 657	ABVD chemotherapy
+E2	Disposition:T2
+A1	Certainity E2 Certain
+A2	Actor E2 Physician
+A3	Action E2 Start
+A4	Temporality E2 Past
+A_	Negation E2 NotNegated
+T15	Disposition 3085 3095	Adriamycin
+E15	Disposition:T15
+A13	Certainity E15 Certain
+A14	Actor E15 Physician
+A15	Action E15 UniqueDose
+A16	Temporality E15 Present
+A_	Negation E15 NotNegated
+T16	Disposition 3106 3115	bleomycin
+E16	Disposition:T16
+A17	Certainity E16 Certain
+A18	Actor E16 Physician
+A19	Action E16 UniqueDose
+A20	Temporality E16 Present
+A_	Negation E16 NotNegated
+T17	Disposition 3125 3136	vinblastine
+E17	Disposition:T17
+A21	Certainity E17 Certain
+A22	Actor E17 Physician
+A23	Action E17 UniqueDose
+A24	Temporality E17 Present
+A_	Negation E17 NotNegated
+T29	Disposition 3150 3161	dacarbazine
+E29	Disposition:T29
+A25	Certainity E29 Certain
+A26	Actor E29 Physician
+A27	Action E29 UniqueDose
+A28	Temporality E29 Present
+A_	Negation E29 NotNegated
+T18	Disposition 3188 3196	neupogen
+E18	Disposition:T18
+A5	Certainity E18 Certain
+A6	Actor E18 Physician
+A7	Action E18 Stop
+A8	Temporality E18 Future
+A_	Negation E18 NotNegated
+T30	Disposition 3188 3196	neupogen
+E30	Disposition:T30
+A9	Certainity E30 Certain
+A10	Actor E30 Physician
+A11	Action E30 Stop
+A12	Temporality E30 Future
+A_	Negation E30 NotNegated

@@ -1,0 +1,14 @@
+T1	Disposition 591 596	Lasix
+E1	Disposition:T1
+A1	Certainity E1 Certain
+A2	Actor E1 Physician
+A3	Action E1 Start
+A4	Temporality E1 Past
+A_	Negation E1 NotNegated
+T7	Disposition 2207 2215	Cardizem
+E7	Disposition:T7
+A5	Certainity E7 Certain
+A6	Actor E7 Physician
+A7	Action E7 UniqueDose
+A8	Temporality E7 Past
+A_	Negation E7 NotNegated

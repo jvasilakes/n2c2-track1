@@ -1,0 +1,7 @@
+T5	Disposition 2134 2160	cholesterol-lowering agent
+E5	Disposition:T5
+A1	Certainity E5 Certain
+A2	Negation E5 Negated
+A3	Actor E5 Patient
+A4	Action E5 Start
+A5	Temporality E5 Present

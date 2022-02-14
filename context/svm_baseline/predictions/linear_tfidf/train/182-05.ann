@@ -1,0 +1,35 @@
+T1	Disposition 737 742	lasix
+E1	Disposition:T1
+A1	Certainity E1 Certain
+A2	Actor E1 Physician
+A3	Action E1 Increase
+A4	Temporality E1 Past
+A_	Negation E1 NotNegated
+T20	Disposition 9105 9107	BB
+E20	Disposition:T20
+A5	Certainity E20 Conditional
+A6	Actor E20 Physician
+A7	Action E20 Unknown
+A8	Temporality E20 Present
+A_	Negation E20 NotNegated
+T22	Disposition 9146 9149	ASA
+E22	Disposition:T22
+A9	Certainity E22 Certain
+A10	Actor E22 Physician
+A11	Action E22 Stop
+A12	Temporality E22 Past
+A_	Negation E22 NotNegated
+T32	Disposition 9762 9770	Darvocet
+E32	Disposition:T32
+A13	Certainity E32 Certain
+A14	Actor E32 Physician
+A15	Action E32 Stop
+A16	Temporality E32 Present
+A_	Negation E32 NotNegated
+T44	Disposition 9908 9915	Lovenox
+E44	Disposition:T44
+A17	Certainity E44 Certain
+A18	Actor E44 Physician
+A19	Action E44 Stop
+A20	Temporality E44 Future
+A_	Negation E44 NotNegated

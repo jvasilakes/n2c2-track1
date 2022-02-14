@@ -1,0 +1,154 @@
+T36	Disposition 329 335	CHOP-R
+E36	Disposition:T36
+A25	Certainity E36 Certain
+A26	Actor E36 Physician
+A27	Action E36 Stop
+A28	Temporality E36 Past
+A_	Negation E36 NotNegated
+T2	Disposition 1179 1182	NTG
+E2	Disposition:T2
+A1	Certainity E2 Certain
+A2	Actor E2 Physician
+A3	Action E2 UniqueDose
+A4	Temporality E2 Past
+A_	Negation E2 NotNegated
+T35	Disposition 1985 1991	CHOP-R
+E35	Disposition:T35
+A21	Certainity E35 Certain
+A22	Actor E35 Physician
+A23	Action E35 UniqueDose
+A24	Temporality E35 Past
+A_	Negation E35 NotNegated
+T5	Disposition 2039 2043	PRBC
+E5	Disposition:T5
+A5	Certainity E5 Certain
+A6	Actor E5 Physician
+A7	Action E5 UniqueDose
+A8	Temporality E5 Past
+A_	Negation E5 NotNegated
+T7	Disposition 2208 2212	PRBC
+E7	Disposition:T7
+A9	Certainity E7 Certain
+A10	Actor E7 Physician
+A11	Action E7 UniqueDose
+A12	Temporality E7 Past
+A_	Negation E7 NotNegated
+T34	Disposition 2233 2239	CHOP-R
+E34	Disposition:T34
+A17	Certainity E34 Certain
+A18	Actor E34 Physician
+A19	Action E34 UniqueDose
+A20	Temporality E34 Past
+A_	Negation E34 NotNegated
+T33	Disposition 2287 2293	CHOP/R
+E33	Disposition:T33
+A13	Certainity E33 Certain
+A14	Actor E33 Physician
+A15	Action E33 UniqueDose
+A16	Temporality E33 Past
+A_	Negation E33 NotNegated
+T8	Disposition 2387 2390	ASA
+E8	Disposition:T8
+A29	Certainity E8 Certain
+A30	Actor E8 Physician
+A31	Action E8 UniqueDose
+A32	Temporality E8 Past
+A_	Negation E8 NotNegated
+T37	Disposition 2399 2402	NTG
+E37	Disposition:T37
+A33	Certainity E37 Certain
+A34	Actor E37 Physician
+A35	Action E37 UniqueDose
+A36	Temporality E37 Past
+A_	Negation E37 NotNegated
+T9	Disposition 2407 2412	Lasix
+E9	Disposition:T9
+A37	Certainity E9 Certain
+A38	Actor E9 Physician
+A39	Action E9 UniqueDose
+A40	Temporality E9 Past
+A_	Negation E9 NotNegated
+T38	Disposition 2431 2433	NS
+E38	Disposition:T38
+A41	Certainity E38 Certain
+A42	Actor E38 Physician
+A43	Action E38 UniqueDose
+A44	Temporality E38 Past
+A_	Negation E38 NotNegated
+T39	Disposition 2573 2579	CHOP-R
+E39	Disposition:T39
+A65	Certainity E39 Certain
+A66	Actor E39 Physician
+A67	Action E39 UniqueDose
+A68	Temporality E39 Past
+A_	Negation E39 NotNegated
+T40	Disposition 3256 3263	Lipitor
+E40	Disposition:T40
+A49	Certainity E40 Certain
+A50	Actor E40 Physician
+A51	Action E40 Stop
+A52	Temporality E40 Past
+A_	Negation E40 NotNegated
+T42	Disposition 7541 7547	CHOP-R
+E42	Disposition:T42
+A61	Certainity E42 Certain
+A62	Actor E42 Physician
+A63	Action E42 UniqueDose
+A64	Temporality E42 Past
+A_	Negation E42 NotNegated
+T16	Disposition 7728 7733	lasix
+E16	Disposition:T16
+A45	Certainity E16 Certain
+A46	Actor E16 Physician
+A47	Action E16 UniqueDose
+A48	Temporality E16 Past
+A_	Negation E16 NotNegated
+T17	Disposition 7753 7762	lopressor
+E17	Disposition:T17
+A57	Certainity E17 Certain
+A58	Actor E17 Physician
+A59	Action E17 UniqueDose
+A60	Temporality E17 Past
+A_	Negation E17 NotNegated
+T43	Disposition 7768 7771	NTG
+E43	Disposition:T43
+A53	Certainity E43 Certain
+A54	Actor E43 Physician
+A55	Action E43 UniqueDose
+A56	Temporality E43 Past
+A_	Negation E43 NotNegated
+T45	Disposition 8310 8315	lasix
+E45	Disposition:T45
+A69	Certainity E45 Conditional
+A70	Actor E45 Physician
+A71	Action E45 UniqueDose
+A72	Temporality E45 Future
+A_	Negation E45 NotNegated
+T46	Disposition 8503 8506	ASA
+E46	Disposition:T46
+A73	Certainity E46 Certain
+A74	Actor E46 Physician
+A75	Action E46 Start
+A76	Temporality E46 Present
+A_	Negation E46 NotNegated
+T22	Disposition 8517 8526	lopressor
+E22	Disposition:T22
+A77	Certainity E22 Certain
+A78	Actor E22 Physician
+A79	Action E22 Start
+A80	Temporality E22 Present
+A_	Negation E22 NotNegated
+T23	Disposition 8538 8547	captopril
+E23	Disposition:T23
+A81	Certainity E23 Certain
+A82	Actor E23 Physician
+A83	Action E23 Start
+A84	Temporality E23 Present
+A_	Negation E23 NotNegated
+T24	Disposition 8559 8569	lisinopril
+E24	Disposition:T24
+A85	Certainity E24 Certain
+A86	Actor E24 Physician
+A87	Action E24 Start
+A88	Temporality E24 Present
+A_	Negation E24 NotNegated

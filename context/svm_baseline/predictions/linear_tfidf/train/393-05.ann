@@ -1,0 +1,49 @@
+T7	Disposition 847 856	MS Contin
+E7	Disposition:T7
+A1	Certainity E7 Certain
+A2	Actor E7 Physician
+A3	Action E7 Start
+A4	Temporality E7 Past
+A_	Negation E7 NotNegated
+T9	Disposition 1441 1449	morphine
+E9	Disposition:T9
+A5	Certainity E9 Certain
+A6	Actor E9 Physician
+A7	Action E9 UniqueDose
+A8	Temporality E9 Past
+A_	Negation E9 NotNegated
+T44	Disposition 1514 1523	MS Contin
+E44	Disposition:T44
+A9	Certainity E44 Certain
+A10	Actor E44 Physician
+A11	Action E44 Start
+A12	Temporality E44 Past
+A_	Negation E44 NotNegated
+T45	Disposition 1514 1523	MS Contin
+E45	Disposition:T45
+A13	Certainity E45 Certain
+A14	Actor E45 Physician
+A15	Action E45 Start
+A16	Temporality E45 Past
+A_	Negation E45 NotNegated
+T11	Disposition 1603 1612	clonidine
+E11	Disposition:T11
+A17	Certainity E11 Certain
+A18	Actor E11 Physician
+A19	Action E11 Start
+A20	Temporality E11 Past
+A_	Negation E11 NotNegated
+T32	Disposition 11183 11192	clonidine
+E32	Disposition:T32
+A21	Certainity E32 Certain
+A22	Actor E32 Unknown
+A23	Action E32 Stop
+A24	Temporality E32 Past
+A_	Negation E32 NotNegated
+T35	Disposition 11354 11365	hydralazine
+E35	Disposition:T35
+A25	Certainity E35 Certain
+A26	Actor E35 Physician
+A27	Action E35 Start
+A28	Temporality E35 Present
+A_	Negation E35 NotNegated

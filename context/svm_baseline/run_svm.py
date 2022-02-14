@@ -5,11 +5,14 @@ import warnings
 from glob import glob
 
 from sklearn.preprocessing import LabelEncoder, StandardScaler
-from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 from sklearn.pipeline import make_pipeline
 from sklearn.svm import LinearSVC
 
 from brat_reader import BratAnnotations, Attribute
+
+
+FEATURE_TYPES = ["bow", "bow_bin", "tfidf"]
 
 
 def parse_args():
@@ -20,8 +23,8 @@ def parse_args():
                         help="Directory containing brat ann files.")
     parser.add_argument("out_dir", type=str,
                         help="Where to save the predictions.")
-    parser.add_argument("--feature_type", type=str, choices=["bow", "bow_bin"],
-                        default="bow")
+    parser.add_argument("--feature_type", type=str,
+                        choices=FEATURE_TYPES, default="bow")
     parser.add_argument("--window_size", type=int, default=0,
                         help="""Positive int of the number of sentences to use
                                 +/- the sentence containing the target.""")
@@ -169,7 +172,7 @@ def get_vectorizer_kwargs(args):
     elif args.feature_type == "bow_bin":
         return {"binary": True}
     else:
-        raise NotImplementedError(f"Unsupported feature type '{args.feature_type}'.")  # noqa
+        return {}
 
 
 def dummy_tokenizer(doc):
@@ -183,6 +186,11 @@ def get_features(tokenized_sentences, feature_type="bow",
             vectorizer = CountVectorizer(tokenizer=dummy_tokenizer,
                                          preprocessor=dummy_tokenizer,
                                          **vectorizer_kwargs)
+        elif "tfidf" in feature_type:
+            vectorizer = TfidfVectorizer(tokenizer=dummy_tokenizer,
+                                         preprocessor=dummy_tokenizer,
+                                         **vectorizer_kwargs,
+                                         max_df=50)
         else:
             raise NotImplementedError(f"Unsupported feature_type '{feature_type}'")  # noqa
         # Suppresses a warning that token_filter wont be used since we have

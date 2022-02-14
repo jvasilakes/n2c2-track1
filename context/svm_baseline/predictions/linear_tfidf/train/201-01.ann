@@ -1,0 +1,63 @@
+T1	Disposition 567 572	advil
+E1	Disposition:T1
+A45	Certainity E1 Certain
+A46	Actor E1 Patient
+A47	Action E1 UniqueDose
+A48	Temporality E1 Past
+A_	Negation E1 NotNegated
+T21	Disposition 722 732	integrilin
+E21	Disposition:T21
+A37	Certainity E21 Certain
+A38	Actor E21 Physician
+A39	Action E21 Start
+A40	Temporality E21 Past
+A_	Negation E21 NotNegated
+T22	Disposition 744 753	reteplase
+E22	Disposition:T22
+A41	Certainity E22 Certain
+A42	Actor E22 Physician
+A43	Action E22 Start
+A44	Temporality E22 Past
+A_	Negation E22 NotNegated
+T3	Disposition 759 766	heparin
+E3	Disposition:T3
+A1	Certainity E3 Certain
+A2	Actor E3 Physician
+A3	Action E3 Start
+A4	Temporality E3 Past
+A_	Negation E3 NotNegated
+T13	Disposition 6115 6117	BB
+E13	Disposition:T13
+A5	Certainity E13 Certain
+A6	Actor E13 Physician
+A7	Action E13 Stop
+A8	Temporality E13 Present
+A_	Negation E13 NotNegated
+T14	Disposition 6171 6177	statin
+E14	Disposition:T14
+A9	Certainity E14 Certain
+A10	Actor E14 Physician
+A11	Action E14 Stop
+A12	Temporality E14 Present
+A_	Negation E14 NotNegated
+T15	Disposition 6253 6262	lidocaine
+E15	Disposition:T15
+A13	Certainity E15 Certain
+A14	Actor E15 Physician
+A15	Action E15 Stop
+A16	Temporality E15 Present
+A_	Negation E15 NotNegated
+T16	Disposition 6272 6274	BB
+E16	Disposition:T16
+A17	Certainity E16 Certain
+A18	Actor E16 Physician
+A19	Action E16 Stop
+A20	Temporality E16 Present
+A_	Negation E16 NotNegated
+T19	Disposition 6414 6427	hypoglycemics
+E19	Disposition:T19
+A21	Certainity E19 Certain
+A22	Actor E19 Physician
+A23	Action E19 Stop
+A24	Temporality E19 Present
+A_	Negation E19 NotNegated
