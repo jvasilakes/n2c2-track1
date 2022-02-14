@@ -1,0 +1,35 @@
+T14	Disposition 8618 8632	anti-coagulate
+E14	Disposition:T14
+A5	Certainity E14 Certain
+A6	Actor E14 Physician
+A7	Action E14 Increase
+A8	Temporality E14 Past
+A_	Negation E14 NotNegated
+T32	Disposition 8684 8697	anti-htn meds
+E32	Disposition:T32
+A1	Certainity E32 Certain
+A2	Actor E32 Physician
+A3	Action E32 Stop
+A4	Temporality E32 Present
+A_	Negation E32 NotNegated
+T33	Disposition 8903 8906	NPH
+E33	Disposition:T33
+A13	Certainity E33 Certain
+A14	Actor E33 Physician
+A15	Action E33 Unknown
+A16	Temporality E33 Present
+A_	Negation E33 NotNegated
+T35	Disposition 8982 8989	fragmin
+E35	Disposition:T35
+A17	Certainity E35 Certain
+A18	Actor E35 Physician
+A19	Action E35 Stop
+A20	Temporality E35 Past
+A_	Negation E35 NotNegated
+T36	Disposition 8991 8997	nexium
+E36	Disposition:T36
+A21	Certainity E36 Certain
+A22	Actor E36 Physician
+A23	Action E36 Stop
+A24	Temporality E36 Past
+A_	Negation E36 NotNegated

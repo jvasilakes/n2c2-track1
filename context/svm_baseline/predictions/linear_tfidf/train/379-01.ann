@@ -1,0 +1,7 @@
+T1	Disposition 3579 3603	antihypertensive regimen
+E1	Disposition:T1
+A1	Certainity E1 Certain
+A2	Actor E1 Physician
+A3	Action E1 Unknown
+A4	Temporality E1 Future
+A_	Negation E1 NotNegated

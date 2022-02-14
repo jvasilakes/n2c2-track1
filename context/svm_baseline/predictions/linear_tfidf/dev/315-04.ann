@@ -1,0 +1,49 @@
+T1	Disposition 387 395	Dilantin
+E1	Disposition:T1
+A1	Certainity E1 Certain
+A2	Actor E1 Physician
+A3	Action E1 Increase
+A4	Temporality E1 Past
+A_	Negation E1 NotNegated
+T2	Disposition 650 656	Ativan
+E2	Disposition:T2
+A5	Certainity E2 Certain
+A6	Actor E2 Physician
+A7	Action E2 UniqueDose
+A8	Temporality E2 Past
+A_	Negation E2 NotNegated
+T3	Disposition 793 803	gentamycin
+E3	Disposition:T3
+A9	Certainity E3 Certain
+A10	Actor E3 Physician
+A11	Action E3 Start
+A12	Temporality E3 Past
+A_	Negation E3 NotNegated
+T4	Disposition 818 828	Vancomycin
+E4	Disposition:T4
+A13	Certainity E4 Certain
+A14	Actor E4 Physician
+A15	Action E4 Start
+A16	Temporality E4 Past
+A_	Negation E4 NotNegated
+T16	Disposition 5781 5789	dilantin
+E16	Disposition:T16
+A17	Certainity E16 Certain
+A18	Actor E16 Physician
+A19	Action E16 Stop
+A20	Temporality E16 Present
+A_	Negation E16 NotNegated
+T17	Disposition 5967 5973	Keppra
+E17	Disposition:T17
+A21	Certainity E17 Conditional
+A22	Actor E17 Physician
+A23	Action E17 Stop
+A24	Temporality E17 Present
+A_	Negation E17 NotNegated
+T26	Disposition 6692 6705	lactobacillus
+E26	Disposition:T26
+A25	Certainity E26 Certain
+A26	Actor E26 Physician
+A27	Action E26 Start
+A28	Temporality E26 Present
+A_	Negation E26 NotNegated

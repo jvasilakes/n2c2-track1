@@ -1,0 +1,14 @@
+T10	Disposition 1777 1787	ranitidine
+E10	Disposition:T10
+A1	Certainity E10 Certain
+A2	Negation E10 Negated
+A3	Actor E10 Patient
+A4	Action E10 Start
+A5	Temporality E10 Past
+T11	Disposition 1796 1806	Ranitidine
+E11	Disposition:T11
+A6	Certainity E11 Certain
+A7	Actor E11 Physician
+A8	Action E11 Start
+A9	Temporality E11 Present
+A_	Negation E11 NotNegated

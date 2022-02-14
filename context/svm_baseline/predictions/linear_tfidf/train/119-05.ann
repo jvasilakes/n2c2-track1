@@ -1,0 +1,7 @@
+T6	Disposition 1338 1348	lisinopril
+E6	Disposition:T6
+A1	Certainity E6 Certain
+A2	Actor E6 Physician
+A3	Action E6 Increase
+A4	Temporality E6 Present
+A_	Negation E6 NotNegated

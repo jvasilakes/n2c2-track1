@@ -1,0 +1,21 @@
+T3	Disposition 1869 1875	Keflex
+E3	Disposition:T3
+A1	Certainity E3 Certain
+A2	Actor E3 Physician
+A3	Action E3 Stop
+A4	Temporality E3 Future
+A_	Negation E3 NotNegated
+T5	Disposition 1869 1875	Keflex
+E5	Disposition:T5
+A5	Certainity E5 Certain
+A6	Actor E5 Physician
+A7	Action E5 Stop
+A8	Temporality E5 Future
+A_	Negation E5 NotNegated
+T7	Disposition 2080 2105	hyperbaric oxygen therapy
+E7	Disposition:T7
+A9	Certainity E7 Hypothetical
+A10	Actor E7 Physician
+A11	Action E7 Start
+A12	Temporality E7 Future
+A_	Negation E7 NotNegated

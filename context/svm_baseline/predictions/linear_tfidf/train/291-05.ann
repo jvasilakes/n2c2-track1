@@ -1,0 +1,98 @@
+T2	Disposition 895 898	IVF
+E2	Disposition:T2
+A21	Certainity E2 Certain
+A22	Actor E2 Physician
+A23	Action E2 UniqueDose
+A24	Temporality E2 Past
+A_	Negation E2 NotNegated
+T3	Disposition 900 911	ceftriaxone
+E3	Disposition:T3
+A1	Certainity E3 Certain
+A2	Actor E3 Physician
+A3	Action E3 UniqueDose
+A4	Temporality E3 Past
+A_	Negation E3 NotNegated
+T4	Disposition 913 925	azithromycin
+E4	Disposition:T4
+A5	Certainity E4 Certain
+A6	Actor E4 Physician
+A7	Action E4 UniqueDose
+A8	Temporality E4 Past
+A_	Negation E4 NotNegated
+T7	Disposition 8053 8064	antibiotics
+E7	Disposition:T7
+A9	Certainity E7 Certain
+A10	Actor E7 Physician
+A11	Action E7 Start
+A12	Temporality E7 Present
+A_	Negation E7 NotNegated
+T9	Disposition 8331 8338	norvasc
+E9	Disposition:T9
+A13	Certainity E9 Certain
+A14	Actor E9 Physician
+A15	Action E9 Stop
+A16	Temporality E9 Present
+A_	Negation E9 NotNegated
+T26	Disposition 8340 8345	imdur
+E26	Disposition:T26
+A17	Certainity E26 Certain
+A18	Actor E26 Physician
+A19	Action E26 Stop
+A20	Temporality E26 Present
+A_	Negation E26 NotNegated
+T11	Disposition 8522 8543	anti-viral medication
+E11	Disposition:T11
+A25	Certainity E11 Certain
+A26	Negation E11 Negated
+A27	Actor E11 Physician
+A28	Action E11 Start
+A29	Temporality E11 Present
+T27	Disposition 8600 8611	ceftriaxone
+E27	Disposition:T27
+A30	Certainity E27 Certain
+A31	Actor E27 Physician
+A32	Action E27 Decrease
+A33	Temporality E27 Future
+A_	Negation E27 NotNegated
+T28	Disposition 8600 8611	ceftriaxone
+E28	Disposition:T28
+A34	Certainity E28 Certain
+A35	Actor E28 Physician
+A36	Action E28 Decrease
+A37	Temporality E28 Future
+A_	Negation E28 NotNegated
+T13	Disposition 8612 8624	azithromycin
+E13	Disposition:T13
+A38	Certainity E13 Certain
+A39	Actor E13 Physician
+A40	Action E13 Decrease
+A41	Temporality E13 Future
+A_	Negation E13 NotNegated
+T29	Disposition 8612 8624	azithromycin
+E29	Disposition:T29
+A42	Certainity E29 Certain
+A43	Actor E29 Physician
+A44	Action E29 Decrease
+A45	Temporality E29 Future
+A_	Negation E29 NotNegated
+T30	Disposition 8636 8646	prednisone
+E30	Disposition:T30
+A46	Certainity E30 Certain
+A47	Actor E30 Physician
+A48	Action E30 Decrease
+A49	Temporality E30 Future
+A_	Negation E30 NotNegated
+T31	Disposition 8636 8646	prednisone
+E31	Disposition:T31
+A50	Certainity E31 Certain
+A51	Actor E31 Physician
+A52	Action E31 Decrease
+A53	Temporality E31 Future
+A_	Negation E31 NotNegated
+T32	Disposition 8636 8646	prednisone
+E32	Disposition:T32
+A55	Certainity E32 Certain
+A56	Actor E32 Physician
+A57	Action E32 Decrease
+A58	Temporality E32 Future
+A_	Negation E32 NotNegated
