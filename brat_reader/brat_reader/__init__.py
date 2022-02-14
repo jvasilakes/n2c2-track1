@@ -101,7 +101,7 @@ class BratAnnotations(object):
 
     def _resolve(self):
         if self._events != []:
-            raise ValueError("Events have already by populated!")
+            raise ValueError("Events have already been populated!")
         span_lookup = {}
         attribute_lookup = defaultdict(list)
 
