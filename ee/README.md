@@ -29,11 +29,11 @@ DEV   |  LOSS =     0.6529 | Time 0h 00m 02s   | Micro_F1  = 0.9129 <<<\
 
 Running with the biomedicus:
 
----------- Epoch: 07 ----------
-TRAIN |  LOSS =     0.0477 | Time 0h 01m 12s   | Micro_F1  = 0.9833 <<<
-      | NoDisp_F1 = 0.9905 | Dispo_F1 = 0.9771 | Undet_F1  = 0.9283
-      |  Macro_Pr = 0.9680 | Macro_Re = 0.9627 | Macro_F1  = 0.9653
-DEV   |  LOSS =     0.6442 | Time 0h 00m 02s   | Micro_F1  = 0.8980 <<<
-      | NoDisp_F1 = 0.9375 | Dispo_F1 = 0.8636 | Undet_F1  = 0.5630
-      |  Macro_Pr = 0.8563 | Macro_Re = 0.7544 | Macro_F1  = 0.7880
+---------- Epoch: 07 ----------\
+TRAIN |  LOSS =     0.0477 | Time 0h 01m 12s   | Micro_F1  = 0.9833 <<<\
+      | NoDisp_F1 = 0.9905 | Dispo_F1 = 0.9771 | Undet_F1  = 0.9283\
+      |  Macro_Pr = 0.9680 | Macro_Re = 0.9627 | Macro_F1  = 0.9653\
+DEV   |  LOSS =     0.6442 | Time 0h 00m 02s   | Micro_F1  = 0.8980 <<<\
+      | NoDisp_F1 = 0.9375 | Dispo_F1 = 0.8636 | Undet_F1  = 0.5630\
+      |  Macro_Pr = 0.8563 | Macro_Re = 0.7544 | Macro_F1  = 0.7880\
  
