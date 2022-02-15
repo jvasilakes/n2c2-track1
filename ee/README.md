@@ -36,4 +36,15 @@ TRAIN |  LOSS =     0.0477 | Time 0h 01m 12s   | Micro_F1  = 0.9833 <<<\
 DEV   |  LOSS =     0.6442 | Time 0h 00m 02s   | Micro_F1  = 0.8980 <<<\
       | NoDisp_F1 = 0.9375 | Dispo_F1 = 0.8636 | Undet_F1  = 0.5630\
       |  Macro_Pr = 0.8563 | Macro_Re = 0.7544 | Macro_F1  = 0.7880
- 
+     
+Ruuning on scispacy seg:
+
+---------- Epoch: 07 ----------\
+TRAIN |  LOSS =     0.0311 | Time 0h 01m 07s   | Micro_F1  = 0.9910 <<<\
+      | NoDisp_F1 = 0.9955 | Dispo_F1 = 0.9816 | Undet_F1  = 0.9701\
+      |  Macro_Pr = 0.9840 | Macro_Re = 0.9808 | Macro_F1  = 0.9824\
+DEV   |  LOSS =     0.5436 | Time 0h 00m 02s   | Micro_F1  = 0.9158 <<<\
+      | NoDisp_F1 = 0.9504 | Dispo_F1 = 0.8657 | Undet_F1  = 0.7349\
+      |  Macro_Pr = 0.8581 | Macro_Re = 0.8439 | Macro_F1  = 0.8503
+
+Next step is introducing verbs to scispasy corpus and mark them with "#".
