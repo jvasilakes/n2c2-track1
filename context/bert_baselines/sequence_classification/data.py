@@ -2,6 +2,7 @@ import os
 import json
 import warnings
 from glob import glob
+from collections import defaultdict
 
 import torch
 import pytorch_lightning as pl
@@ -83,7 +84,9 @@ class n2c2SentencesDataset(Dataset):
             self.label_names = sorted(label_names)
 
     def __len__(self):
-        return len(self.events)
+        # TODO: does this need to account for batch_size?
+        #return len(self.events)
+        return 2
 
     def __getitem__(self, idx):
         # Get the sentences in the window
@@ -107,7 +110,7 @@ class n2c2SentencesDataset(Dataset):
         entity_end = event.span.end_index - context[0]["start_index"]
 
         # Encode the labels
-        labels = []
+        labels = {}
         for attr_name in self.SORTED_ATTRIBUTES:
             if attr_name in self.label_names:
                 try:
@@ -116,7 +119,8 @@ class n2c2SentencesDataset(Dataset):
                 except KeyError:
                     if attr_name == "Negation":
                         val = "NotNegated"
-                labels.append(self.ENCODINGS[attr_name][val])
+                # labels.append(self.ENCODINGS[attr_name][val])
+                labels[attr_name] = self.ENCODINGS[attr_name][val]
 
         return {"text": text,
                 "entity_span": (entity_start, entity_end),
@@ -174,66 +178,85 @@ class n2c2SentencesDataset(Dataset):
 class n2c2SentencesDataModule(pl.LightningDataModule):
 
     def __init__(self, data_dir, sentences_dir, batch_size,
-                 model_name_or_path, max_seq_length=128, window_size=0):
+                 model_name_or_path, tasks_to_load="all",
+                 max_seq_length=128, window_size=0):
         super().__init__()
         self.data_dir = data_dir
         self.sentences_dir = sentences_dir
         self.batch_size = batch_size
         self.model_name_or_path = model_name_or_path
+        self.tasks_to_load = tasks_to_load
         self.max_seq_length = max_seq_length
         self.window_size = window_size
 
         self.tokenizer = AutoTokenizer.from_pretrained(
                 self.model_name_or_path, use_fast=True)
+        self._ran_setup = False
 
     def setup(self, stage=None):
         train_path = os.path.join(self.data_dir, "train")
         train_sent_path = os.path.join(self.sentences_dir, "train")
         self.train = n2c2SentencesDataset(
-                train_path, train_sent_path, window_size=self.window_size)
+                train_path, train_sent_path, window_size=self.window_size,
+                label_names=self.tasks_to_load)
 
         val_path = os.path.join(self.data_dir, "dev")
         val_sent_path = os.path.join(self.sentences_dir, "dev")
         self.val = n2c2SentencesDataset(
-                val_path, val_sent_path, window_size=self.window_size)
+                val_path, val_sent_path, window_size=self.window_size,
+                label_names=self.tasks_to_load)
 
         test_path = os.path.join(self.data_dir, "test")
         test_sent_path = os.path.join(self.sentences_dir, "test")
         if os.path.exists(test_path):
             self.test = n2c2SentencesDataset(
-                    test_path, test_sent_path, window_size=self.window_size)
+                    test_path, test_sent_path, window_size=self.window_size,
+                    label_names=self.tasks_to_load)
         else:
             warnings.warn("No test set found.")
             self.test = None
+        self._ran_setup = True
+
+    @property
+    def label_spec(self):
+        if self._ran_setup is False:
+            raise ValueError("Run n2c2SentencesDataModule.setup() first!")
+        spec = {task: len(encs) for (task, encs)
+                in self.train.ENCODINGS.items()}
+        if self.tasks_to_load != "all":
+            spec = {task: n for (task, n) in spec.items()
+                    if task in self.tasks_to_load}
+        return spec
 
     def train_dataloader(self):
         return DataLoader(self.train, batch_size=self.batch_size, shuffle=True,
-                          collate_fn=self.encode_and_collate)
+                          collate_fn=self.encode_and_collate, num_workers=4)
 
     def val_dataloader(self):
         return DataLoader(self.val, batch_size=self.batch_size,
-                          collate_fn=self.encode_and_collate)
+                          collate_fn=self.encode_and_collate, num_workers=4)
 
     def test_dataloader(self):
         if self.test is not None:
             return DataLoader(self.test, batch_size=self.batch_size,
-                              collate_fn=self.encode_and_collate)
+                              collate_fn=self.encode_and_collate,
+                              num_workers=4)
         return None
 
     def encode_and_collate(self, examples):
         batch = {"encodings": None,
                  "entity_spans": [],
                  "texts": [],
-                 "label_names": None,
-                 "labels": [],
+                 "labels": defaultdict(list),
                  "docids": []
                  }
 
         for ex in examples:
             batch["entity_spans"].append(ex["entity_span"])
             batch["texts"].append(ex["text"])
-            batch["labels"].append(ex["labels"])
             batch["docids"].append(ex["docid"])
+            for (task, val) in ex["labels"].items():
+                batch["labels"][task].append(val)
 
         encodings = self.tokenizer(batch["texts"], truncation=True,
                                    max_length=self.max_seq_length,
@@ -241,8 +264,7 @@ class n2c2SentencesDataModule(pl.LightningDataModule):
                                    return_offsets_mapping=True,
                                    return_tensors="pt")
         batch["encodings"] = encodings
-        label_names = examples[0]["label_names"]
-        batch["label_names"] = label_names
-        batch["labels"] = torch.tensor(batch["labels"], dtype=torch.float)
         batch["entity_spans"] = torch.tensor(batch["entity_spans"])
+        for task in batch["labels"].keys():
+            batch["labels"][task] = torch.tensor(batch["labels"][task])
         return batch

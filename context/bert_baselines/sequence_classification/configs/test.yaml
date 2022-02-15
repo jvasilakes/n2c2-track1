@@ -1,0 +1,23 @@
+# Experiment
+name: "test"
+description: "test experiment"
+
+# Data
+data_dir: '/home/u14498jv/Documents/Projects/n2c2-track1/n2c2Track1TrainingData/data'
+sentences_dir: '/home/u14498jv/Documents/Projects/n2c2-track1/n2c2Track1TrainingData/segmented'
+tasks_to_load: all
+window_size: 0
+
+# Model
+model_name_or_path: 'bert-base-uncased'
+freeze_pretrained: false
+use_entity_spans: false
+max_seq_length: 128
+
+# Training
+batch_size: 2
+lr: 0.001
+weight_decay: 0.0
+gradient_clip_val: 10.0
+max_epochs: 1
+random_seed: 0
