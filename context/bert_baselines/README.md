@@ -9,6 +9,13 @@ python config.py --filepath configs/new.yaml
 A nicely formatted example is at `configs/test.yaml`.
 
 Edit this file to your liking. Some less obvious options are explained below.
+Then run
+
+```
+python3 run.py train /path/to/config.yaml
+python3 run.py validate /path/to/logs/experiment_name/version/config.yaml
+```
+
 
 ### Experiment options
 * `name`: The name of this experiment
