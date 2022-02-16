@@ -13,7 +13,7 @@ from sklearn.metrics import precision_recall_fscore_support
 
 class BertMultiHeadedSequenceClassifier(pl.LightningModule):
     """
-    model_name_or_path: e.g., 'bert-base-uncased'
+    trf_model_name_or_path: e.g., 'bert-base-uncased'
     label_spec: dict from task names to number of labels. Can be obtained
                 from data.n2c2SentencesDataModule.label_spec
     use_entity_spans: bool. Default False. If True, use only the pooled
@@ -23,22 +23,22 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
 
     def __init__(
             self,
-            model_name_or_path,
+            trf_model_name_or_path,
             label_spec,
             freeze_pretrained=False,
             use_entity_spans=False,
             lr=1e-3,
             weight_decay=0.0):
         super().__init__()
-        self.model_name_or_path = model_name_or_path
+        self.trf_model_name_or_path = trf_model_name_or_path
         self.label_spec = label_spec
         self.freeze_pretrained = freeze_pretrained
         self.use_entity_spans = use_entity_spans
         self.lr = lr
         self.weight_decay = weight_decay
 
-        self.config = BertConfig.from_pretrained(self.model_name_or_path)
-        self.bert = BertModel.from_pretrained(self.model_name_or_path,
+        self.config = BertConfig.from_pretrained(self.trf_model_name_or_path)
+        self.bert = BertModel.from_pretrained(self.trf_model_name_or_path,
                                               config=self.config)
         if self.freeze_pretrained is True:
             for param in self.bert.parameters():
@@ -142,7 +142,7 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
                 labels_by_task[task].extend(metrics["labels"].detach().cpu().numpy())  # noqa
 
         val_losses = []
-        micro_f1s = []
+        macro_f1s = []
         for task in losses_by_task.keys():
             losses_by_task[task] = np.array(losses_by_task[task]).mean()
             preds_by_task[task] = np.array(preds_by_task[task])
@@ -156,17 +156,22 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
                     p, r, f1, _ = precision_recall_fscore_support(
                             labels_by_task[task], preds_by_task[task],
                             average=avg_fn)
-                    if avg_fn == "micro":
-                        micro_f1s.append(f1)
+                    if avg_fn == "macro":
+                        macro_f1s.append(f1)
                 res = {f"{avg_fn}_{task}_precision": p,
                        f"{avg_fn}_{task}_recall": r,
                        f"{avg_fn}_{task}_F1": f1}
                 self.log_dict(res, prog_bar=False)
 
         self.log_dict({"avg_val_loss": np.mean(val_losses),
-                       "avg_micro_f1": np.mean(micro_f1s)}, prog_bar=True)
+                       "avg_macro_f1": np.mean(macro_f1s)}, prog_bar=True)
 
     def configure_optimizers(self):
         params = self.parameters()
         opt = AdamW(params, lr=self.lr, weight_decay=self.weight_decay)
         return opt
+
+
+MODEL_LOOKUP = {
+        "bert-sequence-classifier": BertMultiHeadedSequenceClassifier,
+        }

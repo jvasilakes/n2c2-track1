@@ -5,19 +5,22 @@ description: "test experiment"
 # Data
 data_dir: '/home/u14498jv/Documents/Projects/n2c2-track1/n2c2Track1TrainingData/data'
 sentences_dir: '/home/u14498jv/Documents/Projects/n2c2-track1/n2c2Track1TrainingData/segmented'
-tasks_to_load: all
+#tasks_to_load: all
+tasks_to_load: ["Negation", "Certainity"]
 window_size: 0
+max_train_examples: 50
 
 # Model
-model_name_or_path: 'bert-base-uncased'
+model_name: "bert-sequence-classifier"
+trf_model_name_or_path: 'bert-base-uncased'
 freeze_pretrained: false
 use_entity_spans: false
 max_seq_length: 128
 
 # Training
-batch_size: 2
+batch_size: 10
 lr: 0.001
 weight_decay: 0.0
 gradient_clip_val: 10.0
-max_epochs: 1
+max_epochs: 2
 random_seed: 0

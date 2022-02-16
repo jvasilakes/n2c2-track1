@@ -69,11 +69,14 @@ class n2c2SentencesDataset(Dataset):
                          "Negation", "Temporality"]
 
     def __init__(self, data_dir, sentences_dir,
-                 label_names="all", window_size=0):
+                 label_names="all", window_size=0,
+                 max_examples=None):
         self.data_dir = data_dir
         self.sentences_dir = sentences_dir
-        self.window_size = window_size
         self.label_names = label_names
+        self.window_size = window_size
+        self.max_examples = max_examples
+
         self.events, self.docids_to_texts = self._get_dispositions_and_texts()
         if label_names == "all":
             self.label_names = self.SORTED_ATTRIBUTES
@@ -84,9 +87,10 @@ class n2c2SentencesDataset(Dataset):
             self.label_names = sorted(label_names)
 
     def __len__(self):
-        # TODO: does this need to account for batch_size?
-        #return len(self.events)
-        return 2
+        if self.max_examples is None:
+            return len(self.events)
+        else:
+            return len(self.events[:self.max_examples])
 
     def __getitem__(self, idx):
         # Get the sentences in the window
@@ -179,7 +183,7 @@ class n2c2SentencesDataModule(pl.LightningDataModule):
 
     def __init__(self, data_dir, sentences_dir, batch_size,
                  model_name_or_path, tasks_to_load="all",
-                 max_seq_length=128, window_size=0):
+                 max_seq_length=128, window_size=0, max_train_examples=None):
         super().__init__()
         self.data_dir = data_dir
         self.sentences_dir = sentences_dir
@@ -188,6 +192,7 @@ class n2c2SentencesDataModule(pl.LightningDataModule):
         self.tasks_to_load = tasks_to_load
         self.max_seq_length = max_seq_length
         self.window_size = window_size
+        self.max_train_examples = max_train_examples
 
         self.tokenizer = AutoTokenizer.from_pretrained(
                 self.model_name_or_path, use_fast=True)
@@ -197,8 +202,10 @@ class n2c2SentencesDataModule(pl.LightningDataModule):
         train_path = os.path.join(self.data_dir, "train")
         train_sent_path = os.path.join(self.sentences_dir, "train")
         self.train = n2c2SentencesDataset(
-                train_path, train_sent_path, window_size=self.window_size,
-                label_names=self.tasks_to_load)
+                train_path, train_sent_path,
+                window_size=self.window_size,
+                label_names=self.tasks_to_load,
+                max_examples=self.max_train_examples)
 
         val_path = os.path.join(self.data_dir, "dev")
         val_sent_path = os.path.join(self.sentences_dir, "dev")
