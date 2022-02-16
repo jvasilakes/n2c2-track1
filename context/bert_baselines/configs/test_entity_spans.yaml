@@ -1,6 +1,6 @@
 # Experiment
-name: "test"
-description: "test experiment"
+name: "test_entity_spans"
+description: "test experiment using entity span max pooling"
 random_seed: 0
 
 # Data
@@ -15,7 +15,7 @@ max_train_examples: 50
 model_name: "bert-sequence-classifier"
 bert_model_name_or_path: 'bert-base-uncased'
 freeze_pretrained: false
-use_entity_spans: false
+use_entity_spans: true
 max_seq_length: 128
 
 # Training

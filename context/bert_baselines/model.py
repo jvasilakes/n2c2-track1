@@ -13,7 +13,7 @@ from sklearn.metrics import precision_recall_fscore_support
 
 class BertMultiHeadedSequenceClassifier(pl.LightningModule):
     """
-    trf_model_name_or_path: e.g., 'bert-base-uncased'
+    bert_model_name_or_path: e.g., 'bert-base-uncased'
     label_spec: dict from task names to number of labels. Can be obtained
                 from data.n2c2SentencesDataModule.label_spec
     use_entity_spans: bool. Default False. If True, use only the pooled
@@ -23,22 +23,22 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
 
     def __init__(
             self,
-            trf_model_name_or_path,
+            bert_model_name_or_path,
             label_spec,
             freeze_pretrained=False,
             use_entity_spans=False,
             lr=1e-3,
             weight_decay=0.0):
         super().__init__()
-        self.trf_model_name_or_path = trf_model_name_or_path
+        self.bert_model_name_or_path = bert_model_name_or_path
         self.label_spec = label_spec
         self.freeze_pretrained = freeze_pretrained
         self.use_entity_spans = use_entity_spans
         self.lr = lr
         self.weight_decay = weight_decay
 
-        self.config = BertConfig.from_pretrained(self.trf_model_name_or_path)
-        self.bert = BertModel.from_pretrained(self.trf_model_name_or_path,
+        self.config = BertConfig.from_pretrained(self.bert_model_name_or_path)
+        self.bert = BertModel.from_pretrained(self.bert_model_name_or_path,
                                               config=self.config)
         if self.freeze_pretrained is True:
             for param in self.bert.parameters():
@@ -49,6 +49,12 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
             self.classifier_heads[task] = nn.Sequential(
                     nn.Dropout(self.config.hidden_dropout_prob),
                     nn.Linear(self.config.hidden_size, num_labels)
+                    )
+        if self.use_entity_spans is True:
+            self.pooler = nn.Sequential(
+                    nn.Linear(self.config.hidden_size,
+                              self.config.hidden_size),
+                    nn.Tanh()
                     )
         # save __init__ arguments to self.hparams
         self.save_hyperparameters()
@@ -85,11 +91,27 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
                 return_dict=True
                 )
 
-        # TODO: add option to use pooled output of target mention only.
-        #  using offset_mapping and entity_spans
         if entity_spans is not None and self.use_entity_spans is True:
-            # pooled_output = self.get_entity_output(outputs)
-            pass
+            # We need to replace the (0, 0) spans in the offset mapping
+            # with other ints to avoid masking errors when the
+            # start of the span is 0.
+            offset_mask = offset_mapping == torch.tensor([0, 0])
+            offset_mask = offset_mask[:, :, 0] & offset_mask[:, :, 1]
+            offset_mapping[offset_mask, :] = torch.tensor([-1, -1])
+            # Keep all tokens whose start char is >= the entity start and
+            #   whose end char is <= the entity end.
+            start_spans = entity_spans[:, 0].unsqueeze(-1).expand(
+                    -1, offset_mapping.size(1))
+            end_spans = entity_spans[:, 1].unsqueeze(-1).expand(
+                    -1, offset_mapping.size(1))
+            token_mask = (offset_mapping[:, :, 0] >= start_spans) & \
+                         (offset_mapping[:, :, 1] <= end_spans)
+            # Duplicate the mask across the hidden dimension
+            h = outputs.last_hidden_state
+            token_mask_ = token_mask.unsqueeze(-1).expand(h.size())
+            # Average each hidden dimension across the entity tokens
+            meanpooled = torch.sum(h * token_mask_, axis=1) / token_mask_.sum(axis=1)  # noqa
+            pooled_output = self.pooler(meanpooled)
         else:
             pooled_output = outputs.pooler_output
 

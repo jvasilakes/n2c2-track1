@@ -10,7 +10,7 @@ from pytorch_lightning.callbacks import ModelCheckpoint
 
 from config import ExperimentConfig
 from data import n2c2SentencesDataModule
-from model import BertMultiHeadedSequenceClassifier
+from model import MODEL_LOOKUP
 
 
 def parse_args():
@@ -59,7 +59,7 @@ def main(config_path, stage, quiet=False):
             config.data_dir,
             config.sentences_dir,
             batch_size=config.batch_size,
-            model_name_or_path=config.model_name_or_path,
+            bert_model_name_or_path=config.bert_model_name_or_path,
             tasks_to_load=config.tasks_to_load,
             max_seq_length=config.max_seq_length,
             window_size=config.window_size,
@@ -120,8 +120,9 @@ def run_train(config, datamodule,
     os.makedirs(version_dir, exist_ok=False)
     config.save_to_yaml(os.path.join(version_dir, "config.yaml"))
 
-    model = BertMultiHeadedSequenceClassifier(
-            config.model_name_or_path,
+    model_class = MODEL_LOOKUP[config.model_name]
+    model = model_class(
+            config.bert_model_name_or_path,
             label_spec=datamodule.label_spec,
             freeze_pretrained=config.freeze_pretrained,
             use_entity_spans=config.use_entity_spans,
@@ -163,7 +164,8 @@ def run_validate(config, datamodule, dataset="validate",
         raise OSError(f"No checkpoints found in {checkpoint_dir}")
     hparams_file = os.path.join(checkpoint_dir, "../hparams.yaml")
 
-    model = BertMultiHeadedSequenceClassifier.load_from_checkpoint(
+    model_class = MODEL_LOOKUP[config.model_name]
+    model = model_class.load_from_checkpoint(
             checkpoint_path=checkpoint_file[0],
             hparams_file=hparams_file)
     model.eval()

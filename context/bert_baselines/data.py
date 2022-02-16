@@ -141,6 +141,9 @@ class n2c2SentencesDataset(Dataset):
         all_dispositions = []
         docids_to_texts = {}
         ann_glob = os.path.join(self.data_dir, "*.ann")
+        ann_files = glob(ann_glob)
+        if ann_files == []:
+            raise OSError(f"No annotations found at {ann_glob}")
         for ann_file in glob(ann_glob):
             anns = BratAnnotations.from_file(ann_file)
             dispositions = anns.get_events_by_type("Disposition")
@@ -182,20 +185,20 @@ class n2c2SentencesDataset(Dataset):
 class n2c2SentencesDataModule(pl.LightningDataModule):
 
     def __init__(self, data_dir, sentences_dir, batch_size,
-                 model_name_or_path, tasks_to_load="all",
+                 bert_model_name_or_path, tasks_to_load="all",
                  max_seq_length=128, window_size=0, max_train_examples=None):
         super().__init__()
         self.data_dir = data_dir
         self.sentences_dir = sentences_dir
         self.batch_size = batch_size
-        self.model_name_or_path = model_name_or_path
+        self.bert_model_name_or_path = bert_model_name_or_path
         self.tasks_to_load = tasks_to_load
         self.max_seq_length = max_seq_length
         self.window_size = window_size
         self.max_train_examples = max_train_examples
 
         self.tokenizer = AutoTokenizer.from_pretrained(
-                self.model_name_or_path, use_fast=True)
+                self.bert_model_name_or_path, use_fast=True)
         self._ran_setup = False
 
     def setup(self, stage=None):

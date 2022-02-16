@@ -11,7 +11,8 @@ class ExperimentConfig(object):
             description: str = '',
             data_dir: str = '',
             sentences_dir: str = '',
-            trf_model_name_or_path: str = '',
+            model_name: str = '',
+            bert_model_name_or_path: str = '',
             tasks_to_load: Union[List[str], str] = "all",
             max_train_examples: int = None,
             window_size: int = 0,
@@ -29,7 +30,8 @@ class ExperimentConfig(object):
         self.description = description
         self.data_dir = data_dir
         self.sentences_dir = sentences_dir
-        self.trf_model_name_or_path = trf_model_name_or_path
+        self.model_name = model_name
+        self.bert_model_name_or_path = bert_model_name_or_path
         self.tasks_to_load = tasks_to_load
         self.max_train_examples = max_train_examples
         self.window_size = window_size
