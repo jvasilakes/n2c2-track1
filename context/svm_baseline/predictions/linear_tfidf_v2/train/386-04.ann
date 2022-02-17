@@ -1,0 +1,21 @@
+T2	Disposition 465 471	NSAIDs
+E2	Disposition:T2
+A1	Certainty E2 Certain
+A2	Actor E2 Physician
+A3	Action E2 Start
+A4	Temporality E2 Past
+A14	Negation E2 NotNegated
+T3	Disposition 617 626	Metformin
+E3	Disposition:T3
+A5	Certainty E3 Certain
+A6	Actor E3 Patient
+A7	Action E3 Stop
+A8	Temporality E3 Past
+A13	Negation E3 NotNegated
+T24	Disposition 1876 1885	METFORMIN
+E24	Disposition:T24
+A9	Certainty E24 Certain
+A10	Actor E24 Patient
+A11	Action E24 Stop
+A12	Temporality E24 Past
+A15	Negation E24 NotNegated

@@ -1,0 +1,91 @@
+T1	Disposition 1059 1065	Celexa
+E1	Disposition:T1
+A1	Certainty E1 Certain
+A2	Actor E1 Patient
+A3	Action E1 Stop
+A4	Temporality E1 Past
+A62	Negation E1 NotNegated
+T4	Disposition 2374 2387	hypoglycemics
+E4	Disposition:T4
+A5	Certainty E4 Certain
+A6	Actor E4 Physician
+A7	Action E4 Start
+A8	Temporality E4 Past
+A57	Negation E4 NotNegated
+T5	Disposition 2400 2407	insulin
+E5	Disposition:T5
+A49	Certainty E5 Certain
+A50	Actor E5 Physician
+A51	Action E5 Start
+A52	Temporality E5 Past
+A63	Negation E5 NotNegated
+T7	Disposition 2634 2644	Lisinopril
+E7	Disposition:T7
+A13	Certainty E7 Certain
+A14	Actor E7 Unknown
+A15	Action E7 Stop
+A16	Temporality E7 Past
+A65	Negation E7 NotNegated
+T8	Disposition 2660 2668	Losartan
+E8	Disposition:T8
+A17	Certainty E8 Certain
+A18	Actor E8 Unknown
+A19	Action E8 Stop
+A20	Temporality E8 Past
+A56	Negation E8 NotNegated
+T10	Disposition 2904 2915	Fenofibrate
+E10	Disposition:T10
+A9	Certainty E10 Certain
+A10	Actor E10 Unknown
+A11	Action E10 Stop
+A12	Temporality E10 Past
+A59	Negation E10 NotNegated
+T18	Disposition 4283 4289	Celexa
+E18	Disposition:T18
+A21	Certainty E18 Certain
+A22	Actor E18 Patient
+A23	Action E18 Stop
+A24	Temporality E18 Past
+A64	Negation E18 NotNegated
+T110	Disposition 15576 15581	ACE-I
+E110	Disposition:T110
+A25	Certainty E110 Hypothetical
+A26	Actor E110 Physician
+A27	Action E110 Start
+A28	Temporality E110 Present
+A53	Negation E110 NotNegated
+T111	Disposition 15585 15588	ARB
+E111	Disposition:T111
+A29	Certainty E111 Hypothetical
+A30	Actor E111 Physician
+A31	Action E111 Start
+A32	Temporality E111 Present
+A60	Negation E111 NotNegated
+T112	Disposition 15754 15761	fibrate
+E112	Disposition:T112
+A41	Certainty E112 Hypothetical
+A42	Actor E112 Physician
+A43	Action E112 Start
+A44	Temporality E112 Present
+A55	Negation E112 NotNegated
+T113	Disposition 15771 15776	Lopid
+E113	Disposition:T113
+A45	Certainty E113 Hypothetical
+A46	Actor E113 Physician
+A47	Action E113 Start
+A48	Temporality E113 Present
+A61	Negation E113 NotNegated
+T103	Disposition 16496 16506	Lisinopril
+E103	Disposition:T103
+A33	Certainty E103 Certain
+A34	Actor E103 Physician
+A35	Action E103 Start
+A36	Temporality E103 Present
+A54	Negation E103 NotNegated
+T104	Disposition 16535 16540	Lopid
+E104	Disposition:T104
+A37	Certainty E104 Certain
+A38	Actor E104 Physician
+A39	Action E104 Start
+A40	Temporality E104 Present
+A58	Negation E104 NotNegated

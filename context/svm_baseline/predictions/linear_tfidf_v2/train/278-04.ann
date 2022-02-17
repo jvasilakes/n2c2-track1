@@ -1,0 +1,28 @@
+T2	Disposition 599 606	aspirin
+E2	Disposition:T2
+A21	Certainty E2 Certain
+A22	Actor E2 Patient
+A23	Action E2 UniqueDose
+A24	Temporality E2 Past
+A39	Negation E2 NotNegated
+T22	Disposition 621 635	nitroglycerine
+E22	Disposition:T22
+A25	Certainty E22 Certain
+A26	Actor E22 Patient
+A27	Action E22 UniqueDose
+A28	Temporality E22 Past
+A38	Negation E22 NotNegated
+T3	Disposition 954 959	nitro
+E3	Disposition:T3
+A29	Certainty E3 Certain
+A30	Actor E3 Physician
+A31	Action E3 UniqueDose
+A32	Temporality E3 Past
+A37	Negation E3 NotNegated
+T4	Disposition 1079 1091	beta blocker
+E4	Disposition:T4
+A33	Certainty E4 Certain
+A34	Actor E4 Physician
+A35	Action E4 UniqueDose
+A36	Temporality E4 Past
+A40	Negation E4 NotNegated

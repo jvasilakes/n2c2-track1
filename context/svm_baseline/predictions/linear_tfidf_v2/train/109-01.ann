@@ -1,0 +1,14 @@
+T8	Disposition 1501 1507	Keflex
+E8	Disposition:T8
+A1	Certainty E8 Certain
+A2	Actor E8 Physician
+A3	Action E8 Stop
+A4	Temporality E8 Present
+A10	Negation E8 NotNegated
+T24	Disposition 1501 1507	Keflex
+E24	Disposition:T24
+A5	Certainty E24 Certain
+A6	Actor E24 Physician
+A7	Action E24 Stop
+A8	Temporality E24 Present
+A9	Negation E24 NotNegated

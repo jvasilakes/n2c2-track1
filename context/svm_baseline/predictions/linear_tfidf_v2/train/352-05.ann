@@ -1,0 +1,35 @@
+T45	Disposition 3013 3019	Lantus
+E45	Disposition:T45
+A1	Certainty E45 Certain
+A2	Actor E45 Physician
+A3	Action E45 Increase
+A4	Temporality E45 Present
+A22	Negation E45 NotNegated
+T46	Disposition 3066 3073	Novolog
+E46	Disposition:T46
+A5	Certainty E46 Certain
+A6	Actor E46 Physician
+A7	Action E46 Increase
+A8	Temporality E46 Present
+A21	Negation E46 NotNegated
+T32	Disposition 3321 3330	clonidine
+E32	Disposition:T32
+A9	Certainty E32 Certain
+A10	Actor E32 Physician
+A11	Action E32 Decrease
+A12	Temporality E32 Past
+A25	Negation E32 NotNegated
+T47	Disposition 3321 3330	clonidine
+E47	Disposition:T47
+A13	Certainty E47 Certain
+A14	Actor E47 Physician
+A15	Action E47 Decrease
+A16	Temporality E47 Past
+A23	Negation E47 NotNegated
+T37	Disposition 3788 3795	Insulin
+E37	Disposition:T37
+A17	Certainty E37 Certain
+A18	Actor E37 Physician
+A19	Action E37 Increase
+A20	Temporality E37 Present
+A24	Negation E37 NotNegated

@@ -1,0 +1,21 @@
+T12	Disposition 7230 7240	Lisinopril
+E12	Disposition:T12
+A3	Certainty E12 Certain
+A4	Actor E12 Physician
+A5	Action E12 Stop
+A6	Temporality E12 Future
+A17	Negation E12 NotNegated
+T13	Disposition 7273 7276	ASA
+E13	Disposition:T13
+A7	Certainty E13 Certain
+A8	Actor E13 Physician
+A9	Action E13 Stop
+A10	Temporality E13 Future
+A16	Negation E13 NotNegated
+T16	Disposition 7723 7732	metformin
+E16	Disposition:T16
+A11	Certainty E16 Certain
+A12	Actor E16 Physician
+A13	Action E16 Stop
+A14	Temporality E16 Future
+A15	Negation E16 NotNegated

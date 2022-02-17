@@ -1,0 +1,35 @@
+T9	Disposition 855 864	Neurontin
+E9	Disposition:T9
+A17	Certainty E9 Certain
+A18	Actor E9 Physician
+A19	Action E9 Start
+A20	Temporality E9 Past
+A22	Negation E9 NotNegated
+T10	Disposition 925 933	Premarin
+E10	Disposition:T10
+A1	Certainty E10 Certain
+A2	Actor E10 Physician
+A3	Action E10 Stop
+A4	Temporality E10 Past
+A23	Negation E10 NotNegated
+T11	Disposition 938 945	Provera
+E11	Disposition:T11
+A5	Certainty E11 Certain
+A6	Actor E11 Physician
+A7	Action E11 Stop
+A8	Temporality E11 Past
+A24	Negation E11 NotNegated
+T16	Disposition 1735 1743	Dulcolax
+E16	Disposition:T16
+A9	Certainty E16 Hypothetical
+A10	Actor E16 Physician
+A11	Action E16 Start
+A12	Temporality E16 Past
+A21	Negation E16 NotNegated
+T17	Disposition 1762 1770	Dulcolax
+E17	Disposition:T17
+A13	Certainty E17 Hypothetical
+A14	Actor E17 Physician
+A15	Action E17 Start
+A16	Temporality E17 Past
+A25	Negation E17 NotNegated

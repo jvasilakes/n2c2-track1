@@ -1,0 +1,14 @@
+T12	Disposition 8122 8131	Lopressor
+E12	Disposition:T12
+A1	Certainty E12 Certain
+A2	Actor E12 Physician
+A3	Action E12 Increase
+A4	Temporality E12 Present
+A10	Negation E12 NotNegated
+T15	Disposition 8348 8350	BB
+E15	Disposition:T15
+A5	Certainty E15 Certain
+A6	Actor E15 Physician
+A7	Action E15 Increase
+A8	Temporality E15 Present
+A9	Negation E15 NotNegated

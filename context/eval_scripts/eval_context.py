@@ -40,11 +40,7 @@ def main(args):
             preds = [e.attributes[task].value for e in pred_anns.events]
             golds = []
             for e in gold_anns.get_events_by_type("Disposition"):
-                try:
-                    val = e.attributes[task].value
-                except KeyError:
-                    if task == "Negation":
-                        val = "NotNegated"
+                val = e.attributes[task].value
                 golds.append(val)
             all_preds_by_task[task].extend(preds)
             all_golds_by_task[task].extend(golds)

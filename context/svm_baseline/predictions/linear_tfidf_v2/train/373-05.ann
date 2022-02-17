@@ -1,0 +1,42 @@
+T3	Disposition 1582 1586	Vanc
+E3	Disposition:T3
+A25	Certainty E3 Certain
+A26	Actor E3 Physician
+A27	Action E3 UniqueDose
+A28	Temporality E3 Past
+A39	Negation E3 NotNegated
+T4	Disposition 1587 1595	Cefepime
+E4	Disposition:T4
+A29	Certainty E4 Certain
+A30	Actor E4 Physician
+A31	Action E4 UniqueDose
+A32	Temporality E4 Past
+A40	Negation E4 NotNegated
+T5	Disposition 1625 1630	Lasix
+E5	Disposition:T5
+A33	Certainty E5 Certain
+A34	Actor E5 Physician
+A35	Action E5 UniqueDose
+A36	Temporality E5 Past
+A42	Negation E5 NotNegated
+T55	Disposition 9728 9733	lasix
+E55	Disposition:T55
+A1	Certainty E55 Certain
+A2	Actor E55 Physician
+A3	Action E55 Start
+A4	Temporality E55 Present
+A38	Negation E55 NotNegated
+T31	Disposition 10061 10072	antibiotics
+E31	Disposition:T31
+A13	Certainty E31 Certain
+A14	Actor E31 Physician
+A15	Action E31 Stop
+A16	Temporality E31 Present
+A41	Negation E31 NotNegated
+T34	Disposition 10260 10268	coumadin
+E34	Disposition:T34
+A9	Certainty E34 Certain
+A10	Actor E34 Physician
+A11	Action E34 Stop
+A12	Temporality E34 Present
+A37	Negation E34 NotNegated

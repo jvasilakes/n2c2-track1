@@ -1,0 +1,14 @@
+T32	Disposition 4942 4949	Avandia
+E32	Disposition:T32
+A1	Certainty E32 Certain
+A2	Actor E32 Physician
+A3	Action E32 Stop
+A4	Temporality E32 Unknown
+A9	Negation E32 NotNegated
+T25	Disposition 4967 4988	clopidogrel bisulfate
+E25	Disposition:T25
+A5	Certainty E25 Certain
+A6	Actor E25 Physician
+A7	Action E25 Stop
+A8	Temporality E25 Unknown
+A10	Negation E25 NotNegated

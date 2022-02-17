@@ -1,0 +1,84 @@
+T3	Disposition 387 397	Lisinopril
+E3	Disposition:T3
+A1	Certainty E3 Certain
+A2	Actor E3 Physician
+A3	Action E3 Increase
+A4	Temporality E3 Unknown
+A52	Negation E3 NotNegated
+T6	Disposition 572 579	Lipitor
+E6	Disposition:T6
+A5	Certainty E6 Certain
+A6	Actor E6 Physician
+A7	Action E6 Stop
+A8	Temporality E6 Past
+A54	Negation E6 NotNegated
+T9	Disposition 961 970	Glyburide
+E9	Disposition:T9
+A9	Certainty E9 Certain
+A10	Actor E9 Physician
+A11	Action E9 Increase
+A12	Temporality E9 Past
+A58	Negation E9 NotNegated
+T10	Disposition 984 993	Metformin
+E10	Disposition:T10
+A13	Certainty E10 Certain
+A14	Actor E10 Physician
+A15	Action E10 Increase
+A16	Temporality E10 Past
+A56	Negation E10 NotNegated
+T35	Disposition 1828 1834	Prozac
+E35	Disposition:T35
+A45	Certainty E35 Hypothetical
+A46	Actor E35 Patient
+A47	Action E35 Stop
+A48	Temporality E35 Present
+A50	Negation E35 NotNegated
+T12	Disposition 1943 1947	HCTZ
+E12	Disposition:T12
+A21	Certainty E12 Certain
+A22	Actor E12 Physician
+A23	Action E12 Start
+A24	Temporality E12 Past
+A51	Negation E12 NotNegated
+T14	Disposition 2058 2063	Zocor
+E14	Disposition:T14
+A17	Certainty E14 Certain
+A18	Actor E14 Physician
+A19	Action E14 Increase
+A20	Temporality E14 Past
+A59	Negation E14 NotNegated
+T15	Disposition 2712 2721	Glyburide
+E15	Disposition:T15
+A25	Certainty E15 Certain
+A26	Actor E15 Physician
+A27	Action E15 Unknown
+A28	Temporality E15 Past
+A57	Negation E15 NotNegated
+T16	Disposition 2736 2745	Metformin
+E16	Disposition:T16
+A29	Certainty E16 Certain
+A30	Actor E16 Physician
+A31	Action E16 Unknown
+A32	Temporality E16 Past
+A53	Negation E16 NotNegated
+T17	Disposition 2936 2940	HCTZ
+E17	Disposition:T17
+A33	Certainty E17 Certain
+A34	Actor E17 Physician
+A35	Action E17 Start
+A36	Temporality E17 Past
+A60	Negation E17 NotNegated
+T19	Disposition 2990 2998	Atenolol
+E19	Disposition:T19
+A37	Certainty E19 Certain
+A38	Actor E19 Physician
+A39	Action E19 Start
+A40	Temporality E19 Present
+A49	Negation E19 NotNegated
+T33	Disposition 3069 3074	Zocor
+E33	Disposition:T33
+A41	Certainty E33 Certain
+A42	Actor E33 Physician
+A43	Action E33 Increase
+A44	Temporality E33 Past
+A55	Negation E33 NotNegated

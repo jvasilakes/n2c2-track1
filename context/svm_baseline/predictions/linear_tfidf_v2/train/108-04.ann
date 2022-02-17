@@ -1,0 +1,14 @@
+T26	Disposition 5123 5128	lasix
+E26	Disposition:T26
+A1	Certainty E26 Hypothetical
+A2	Actor E26 Physician
+A4	Temporality E26 Future
+A3	Action E26 Increase
+A9	Negation E26 NotNegated
+T28	Disposition 5217 5226	metformin
+E28	Disposition:T28
+A5	Certainty E28 Certain
+A6	Actor E28 Physician
+A7	Action E28 Stop
+A8	Temporality E28 Past
+A10	Negation E28 NotNegated

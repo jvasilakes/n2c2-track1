@@ -1,0 +1,7 @@
+T9	Disposition 1362 1370	nitrates
+E9	Disposition:T9
+A2	Certainty E9 Hypothetical
+A3	Actor E9 Physician
+A4	Action E9 Unknown
+A5	Temporality E9 Future
+A6	Negation E9 NotNegated

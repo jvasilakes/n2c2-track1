@@ -1,0 +1,133 @@
+T1	Disposition 1099 1107	Morphine
+E1	Disposition:T1
+A5	Certainty E1 Certain
+A6	Actor E1 Physician
+A7	Action E1 UniqueDose
+A8	Temporality E1 Past
+A103	Negation E1 NotNegated
+T2	Disposition 1224 1232	dopamine
+E2	Disposition:T2
+A1	Certainty E2 Certain
+A2	Actor E2 Physician
+A3	Action E2 UniqueDose
+A4	Temporality E2 Past
+A101	Negation E2 NotNegated
+T3	Disposition 1915 1919	pRBC
+E3	Disposition:T3
+A54	Certainty E3 Certain
+A55	Actor E3 Physician
+A56	Action E3 UniqueDose
+A57	Temporality E3 Past
+A99	Negation E3 NotNegated
+T5	Disposition 2223 2226	Abx
+E5	Disposition:T5
+A58	Certainty E5 Certain
+A59	Actor E5 Physician
+A60	Action E5 UniqueDose
+A61	Temporality E5 Past
+A104	Negation E5 NotNegated
+T6	Disposition 2228 2233	zosyn
+E6	Disposition:T6
+A62	Certainty E6 Certain
+A63	Actor E6 Physician
+A64	Action E6 UniqueDose
+A65	Temporality E6 Past
+A107	Negation E6 NotNegated
+T7	Disposition 2235 2241	flagyl
+E7	Disposition:T7
+A66	Certainty E7 Certain
+A67	Actor E7 Physician
+A68	Action E7 UniqueDose
+A69	Temporality E7 Past
+A93	Negation E7 NotNegated
+T53	Disposition 2246 2250	vanc
+E53	Disposition:T53
+A70	Certainty E53 Certain
+A71	Actor E53 Physician
+A72	Action E53 UniqueDose
+A73	Temporality E53 Past
+A94	Negation E53 NotNegated
+T54	Disposition 3621 3635	methylene blue
+E54	Disposition:T54
+A74	Certainty E54 Certain
+A75	Actor E54 Physician
+A76	Action E54 UniqueDose
+A77	Temporality E54 Past
+A108	Negation E54 NotNegated
+T10	Disposition 4409 4412	ASA
+E10	Disposition:T10
+A9	Certainty E10 Certain
+A10	Actor E10 Physician
+A11	Action E10 Stop
+A12	Temporality E10 Past
+A97	Negation E10 NotNegated
+T11	Disposition 4414 4420	plavix
+E11	Disposition:T11
+A13	Certainty E11 Certain
+A14	Actor E11 Physician
+A15	Action E11 Stop
+A16	Temporality E11 Past
+A109	Negation E11 NotNegated
+T8	Disposition 4681 4694	sliding scale
+E8	Disposition:T8
+A33	Certainty E8 Certain
+A34	Actor E8 Physician
+A35	Action E8 Unknown
+A36	Temporality E8 Unknown
+A96	Negation E8 NotNegated
+T63	Disposition 19675 19689	methylene blue
+E63	Disposition:T63
+A78	Certainty E63 Certain
+A79	Actor E63 Physician
+A80	Action E63 UniqueDose
+A81	Temporality E63 Past
+A95	Negation E63 NotNegated
+T44	Disposition 20481 20484	ASA
+E44	Disposition:T44
+A17	Certainty E44 Certain
+A18	Actor E44 Physician
+A19	Action E44 Stop
+A20	Temporality E44 Present
+A102	Negation E44 NotNegated
+T45	Disposition 20486 20492	plavix
+E45	Disposition:T45
+A21	Certainty E45 Certain
+A22	Actor E45 Physician
+A23	Action E45 Stop
+A24	Temporality E45 Present
+A106	Negation E45 NotNegated
+T46	Disposition 20639 20642	ASA
+E46	Disposition:T46
+A25	Certainty E46 Certain
+A26	Actor E46 Physician
+A27	Action E46 Stop
+A28	Temporality E46 Past
+A91	Negation E46 NotNegated
+T47	Disposition 20644 20650	plavix
+E47	Disposition:T47
+A29	Certainty E47 Certain
+A30	Actor E47 Physician
+A31	Action E47 Stop
+A32	Temporality E47 Past
+A105	Negation E47 NotNegated
+T71	Disposition 20868 20881	sliding scale
+E71	Disposition:T71
+A86	Certainty E71 Conditional
+A87	Actor E71 Physician
+A89	Action E71 Stop
+A90	Temporality E71 Future
+A100	Negation E71 NotNegated
+T50	Disposition 20904 20907	NPH
+E50	Disposition:T50
+A45	Certainty E50 Conditional
+A46	Actor E50 Physician
+A47	Action E50 Start
+A48	Temporality E50 Future
+A92	Negation E50 NotNegated
+T68	Disposition 21018 21025	fragmin
+E68	Disposition:T68
+A49	Certainty E68 Certain
+A50	Actor E68 Physician
+A51	Action E68 Stop
+A52	Temporality E68 Present
+A98	Negation E68 NotNegated

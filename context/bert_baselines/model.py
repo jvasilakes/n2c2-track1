@@ -51,7 +51,7 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
                     nn.Linear(self.config.hidden_size, num_labels)
                     )
         if self.use_entity_spans is True:
-            self.pooler = nn.Sequential(
+            self.entity_pooler = nn.Sequential(
                     nn.Linear(self.config.hidden_size,
                               self.config.hidden_size),
                     nn.Tanh()
@@ -111,7 +111,7 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
             token_mask_ = token_mask.unsqueeze(-1).expand(h.size())
             # Average each hidden dimension across the entity tokens
             meanpooled = torch.sum(h * token_mask_, axis=1) / token_mask_.sum(axis=1)  # noqa
-            pooled_output = self.pooler(meanpooled)
+            pooled_output = self.entity_pooler(meanpooled)
         else:
             pooled_output = outputs.pooler_output
 

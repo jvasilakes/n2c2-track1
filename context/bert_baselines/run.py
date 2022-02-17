@@ -1,6 +1,7 @@
 import os
 import argparse
 import datetime
+import warnings
 from glob import glob
 
 import torch
@@ -44,8 +45,8 @@ def parse_args():
     return parser.parse_args()
 
 
-def main(config_path, stage, quiet=False):
-    config = ExperimentConfig.from_yaml_file(config_path)
+def main(args):
+    config = ExperimentConfig.from_yaml_file(args.config_file)
     logdir = "logs"
     os.makedirs(logdir, exist_ok=True)
 
@@ -69,23 +70,25 @@ def main(config_path, stage, quiet=False):
 
     print("Label Spec")
     print('  ' + str(datamodule.label_spec))
-    args = [config, datamodule]
-    kwargs = {
+    run_args = [config, datamodule]
+    run_kwargs = {
             "logdir": logdir,
-            "quiet": quiet,
+            "quiet": args.quiet,
             }
-    if stage == "train":
+    if args.command == "train":
         version = get_next_experiment_version(logdir, config.name)
-        kwargs["version"] = version
+        run_kwargs["version"] = version
         run_fn = run_train
-    elif stage in ["validate", "test"]:
-        kwargs["dataset"] = stage
-        version = get_current_experiment_version(config_path)
-        kwargs["version"] = version
+    elif args.command in ["validate", "test"]:
+        run_kwargs["dataset"] = args.command
+        version = get_current_experiment_version(args.config_file)
+        run_kwargs["version"] = version
         run_fn = run_validate
+        if args.output_brat is True:
+            warnings.warn("--output_brat not yet implemented. No predictions will be saved.")  # noqa
     else:
-        raise argparse.ArgumentError(f"Unknown stage {stage}")
-    run_fn(*args, **kwargs)
+        raise argparse.ArgumentError(f"Unknown command {args.command}")
+    run_fn(*run_args, **run_kwargs)
 
     curr_time = datetime.datetime.now()
     print(f"End: {curr_time}")
@@ -202,7 +205,7 @@ def format_results_as_markdown_table(results, tasks):
     task_abbrevs = {
             "Action": "Action",
             "Actor": "Actor",
-            "Certainity": "Cert",
+            "Certainty": "Cert",
             "Negation": "Neg",
             "Temporality": "Temp"
             }
@@ -230,4 +233,4 @@ def format_results_as_markdown_table(results, tasks):
 
 if __name__ == "__main__":
     args = parse_args()
-    main(args.config_file, stage=args.command, quiet=args.quiet)
+    main(args)

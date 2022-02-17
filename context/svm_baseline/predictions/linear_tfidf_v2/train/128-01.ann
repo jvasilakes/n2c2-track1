@@ -1,0 +1,7 @@
+T11	Disposition 2357 2360	ARB
+E11	Disposition:T11
+A1	Certainty E11 Conditional
+A2	Actor E11 Physician
+A3	Action E11 Increase
+A4	Temporality E11 Future
+A5	Negation E11 NotNegated

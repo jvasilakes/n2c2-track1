@@ -1,0 +1,14 @@
+T13	Disposition 3066 3073	heparin
+E13	Disposition:T13
+A1	Certainty E13 Certain
+A2	Actor E13 Physician
+A3	Action E13 Start
+A4	Temporality E13 Present
+A10	Negation E13 NotNegated
+T18	Disposition 3789 3799	Glucophage
+E18	Disposition:T18
+A5	Certainty E18 Certain
+A6	Actor E18 Physician
+A7	Action E18 Stop
+A8	Temporality E18 Future
+A9	Negation E18 NotNegated

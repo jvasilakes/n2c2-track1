@@ -1,0 +1,28 @@
+T1	Disposition 474 487	nitroglycerin
+E1	Disposition:T1
+A1	Certainty E1 Certain
+A2	Actor E1 Physician
+A3	Action E1 UniqueDose
+A4	Temporality E1 Past
+A17	Negation E1 NotNegated
+T22	Disposition 1036 1043	Lipitor
+E22	Disposition:T22
+A5	Certainty E22 Certain
+A6	Actor E22 Physician
+A7	Action E22 Increase
+A8	Temporality E22 Past
+A20	Negation E22 NotNegated
+T23	Disposition 1559 1569	Glucophage
+E23	Disposition:T23
+A9	Certainty E23 Certain
+A10	Actor E23 Physician
+A11	Action E23 Start
+A12	Temporality E23 Past
+A19	Negation E23 NotNegated
+T6	Disposition 1574 1583	glipizide
+E6	Disposition:T6
+A13	Certainty E6 Certain
+A14	Actor E6 Physician
+A15	Action E6 Start
+A16	Temporality E6 Past
+A18	Negation E6 NotNegated

@@ -1,0 +1,7 @@
+T10	Disposition 3710 3717	Meridia
+E10	Disposition:T10
+A1	Certainty E10 Certain
+A2	Actor E10 Physician
+A3	Action E10 Start
+A4	Temporality E10 Present
+A5	Negation E10 NotNegated

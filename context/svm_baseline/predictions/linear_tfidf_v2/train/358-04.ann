@@ -1,0 +1,28 @@
+T1	Disposition 354 366	levofloxacin
+E1	Disposition:T1
+A1	Certainty E1 Certain
+A2	Actor E1 Unknown
+A3	Action E1 Stop
+A4	Temporality E1 Past
+A18	Negation E1 NotNegated
+T2	Disposition 642 651	metformin
+E2	Disposition:T2
+A5	Certainty E2 Certain
+A6	Actor E2 Patient
+A7	Action E2 Increase
+A8	Temporality E2 Past
+A19	Negation E2 NotNegated
+T3	Disposition 897 903	ativan
+E3	Disposition:T3
+A9	Certainty E3 Certain
+A10	Actor E3 Patient
+A11	Action E3 Stop
+A12	Temporality E3 Past
+A17	Negation E3 NotNegated
+T32	Disposition 3354 3363	metformin
+E32	Disposition:T32
+A13	Certainty E32 Hypothetical
+A14	Actor E32 Physician
+A15	Action E32 Increase
+A16	Temporality E32 Future
+A20	Negation E32 NotNegated

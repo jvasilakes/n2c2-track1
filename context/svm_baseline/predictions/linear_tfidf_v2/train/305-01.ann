@@ -1,0 +1,14 @@
+T5	Disposition 2836 2844	coumadin
+E5	Disposition:T5
+A5	Certainty E5 Conditional
+A6	Actor E5 Physician
+A7	Action E5 Unknown
+A8	Temporality E5 Present
+A10	Negation E5 NotNegated
+T6	Disposition 2861 2870	lopressor
+E6	Disposition:T6
+A1	Certainty E6 Certain
+A2	Actor E6 Physician
+A3	Action E6 Increase
+A4	Temporality E6 Present
+A9	Negation E6 NotNegated

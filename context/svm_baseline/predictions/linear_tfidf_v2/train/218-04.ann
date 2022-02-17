@@ -1,0 +1,42 @@
+T16	Disposition 542 557	anticoagulation
+E16	Disposition:T16
+A1	Certainty E16 Hypothetical
+A2	Actor E16 Physician
+A3	Action E16 Start
+A4	Temporality E16 Unknown
+A28	Negation E16 NotNegated
+T18	Disposition 991 994	TNG
+E18	Disposition:T18
+A5	Certainty E18 Certain
+A6	Actor E18 Patient
+A7	Action E18 UniqueDose
+A8	Temporality E18 Past
+A30	Negation E18 NotNegated
+T19	Disposition 1563 1573	glucophage
+E19	Disposition:T19
+A9	Certainty E19 Certain
+A10	Actor E19 Physician
+A11	Action E19 Stop
+A12	Temporality E19 Past
+A25	Negation E19 NotNegated
+T2	Disposition 1700 1709	glyburide
+E2	Disposition:T2
+A13	Certainty E2 Certain
+A14	Actor E2 Physician
+A15	Action E2 Start
+A16	Temporality E2 Past
+A29	Negation E2 NotNegated
+T12	Disposition 4478 4483	lasix
+E12	Disposition:T12
+A17	Certainty E12 Conditional
+A18	Actor E12 Physician
+A19	Action E12 Start
+A20	Temporality E12 Present
+A27	Negation E12 NotNegated
+T13	Disposition 4488 4492	ACEI
+E13	Disposition:T13
+A21	Certainty E13 Conditional
+A22	Actor E13 Physician
+A23	Action E13 Start
+A24	Temporality E13 Present
+A26	Negation E13 NotNegated

@@ -1,0 +1,28 @@
+T10	Disposition 223 229	Statin
+E10	Disposition:T10
+A1	Certainty E10 Certain
+A2	Actor E10 Physician
+A3	Action E10 Stop
+A4	Temporality E10 Past
+A17	Negation E10 NotNegated
+T1	Disposition 241 246	Zetia
+E1	Disposition:T1
+A5	Certainty E1 Certain
+A6	Actor E1 Physician
+A7	Action E1 Stop
+A8	Temporality E1 Past
+A18	Negation E1 NotNegated
+T13	Disposition 939 945	Zoloft
+E13	Disposition:T13
+A9	Certainty E13 Certain
+A10	Actor E13 Physician
+A11	Action E13 Increase
+A12	Temporality E13 Past
+A19	Negation E13 NotNegated
+T13	Disposition 939 945	Zoloft
+E12	Disposition:T13
+A13	Certainty E12 Certain
+A14	Actor E12 Physician
+A15	Action E12 Increase
+A16	Temporality E12 Past
+A20	Negation E12 NotNegated

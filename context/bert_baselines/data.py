@@ -55,17 +55,17 @@ class n2c2SentencesDataset(Dataset):
                        'UniqueDose': 5,
                        'Unknown': 6},
             'Actor': {'Patient': 0, 'Physician': 1, 'Unknown': 2},
-            'Certainity': {'Certain': 0,
-                           'Conditional': 1,
-                           'Hypothetical': 2,
-                           'Unknown': 3},
+            'Certainty': {'Certain': 0,
+                          'Conditional': 1,
+                          'Hypothetical': 2,
+                          'Unknown': 3},
             'Negation': {'Negated': 0, 'NotNegated': 1},
             'Temporality': {'Future': 0,
                             'Past': 1,
                             'Present': 2,
                             'Unknown': 3}
             }
-    SORTED_ATTRIBUTES = ["Action", "Actor", "Certainity",
+    SORTED_ATTRIBUTES = ["Action", "Actor", "Certainty",
                          "Negation", "Temporality"]
 
     def __init__(self, data_dir, sentences_dir,
@@ -117,13 +117,8 @@ class n2c2SentencesDataset(Dataset):
         labels = {}
         for attr_name in self.SORTED_ATTRIBUTES:
             if attr_name in self.label_names:
-                try:
-                    attr = event.attributes[attr_name]
-                    val = attr.value
-                except KeyError:
-                    if attr_name == "Negation":
-                        val = "NotNegated"
-                # labels.append(self.ENCODINGS[attr_name][val])
+                attr = event.attributes[attr_name]
+                val = attr.value
                 labels[attr_name] = self.ENCODINGS[attr_name][val]
 
         return {"text": text,

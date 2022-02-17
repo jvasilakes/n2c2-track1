@@ -1,0 +1,70 @@
+T1	Disposition 1033 1036	ASA
+E1	Disposition:T1
+A1	Certainty E1 Certain
+A2	Actor E1 Physician
+A3	Action E1 Stop
+A4	Temporality E1 Past
+A47	Negation E1 NotNegated
+T2	Disposition 1072 1080	celebrex
+E2	Disposition:T2
+A5	Certainty E2 Certain
+A6	Actor E2 Physician
+A7	Action E2 Stop
+A8	Temporality E2 Past
+A45	Negation E2 NotNegated
+T4	Disposition 1747 1754	insulin
+E4	Disposition:T4
+A9	Certainty E4 Certain
+A10	Actor E4 Physician
+A11	Action E4 Unknown
+A12	Temporality E4 Past
+A44	Negation E4 NotNegated
+T5	Disposition 2001 2011	Zestoretic
+E5	Disposition:T5
+A13	Certainty E5 Certain
+A14	Actor E5 Physician
+A15	Action E5 Increase
+A16	Temporality E5 Past
+A48	Negation E5 NotNegated
+T29	Disposition 2015 2023	Atenolol
+E29	Disposition:T29
+A17	Certainty E29 Certain
+A18	Actor E29 Physician
+A19	Action E29 Increase
+A20	Temporality E29 Past
+A43	Negation E29 NotNegated
+T17	Disposition 4786 4791	ECASA
+E17	Disposition:T17
+A21	Certainty E17 Certain
+A22	Actor E17 Physician
+A23	Action E17 Start
+A24	Temporality E17 Present
+A50	Negation E17 NotNegated
+T22	Disposition 4995 5002	insulin
+E22	Disposition:T22
+A25	Certainty E22 Certain
+A26	Actor E22 Physician
+A27	Action E22 Start
+A28	Temporality E22 Present
+A41	Negation E22 NotNegated
+T45	Disposition 5036 5049	Humulin 70/30
+E45	Disposition:T45
+A29	Certainty E45 Certain
+A30	Actor E45 Physician
+A31	Action E45 Unknown
+A32	Temporality E45 Present
+A42	Negation E45 NotNegated
+T24	Disposition 5210 5217	Humulin
+E24	Disposition:T24
+A33	Certainty E24 Certain
+A34	Actor E24 Physician
+A35	Action E24 Unknown
+A36	Temporality E24 Past
+A46	Negation E24 NotNegated
+T25	Disposition 5607 5613	Celexa
+E25	Disposition:T25
+A37	Certainty E25 Certain
+A38	Actor E25 Physician
+A39	Action E25 Increase
+A40	Temporality E25 Present
+A49	Negation E25 NotNegated
