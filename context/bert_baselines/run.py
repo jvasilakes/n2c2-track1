@@ -143,12 +143,15 @@ def run_train(config, datamodule,
 
     available_gpus = min(1, torch.cuda.device_count())
     enable_progress_bar = not quiet
+    # There is a bug with deterministic indexing on the gpu
+    #  in the current pytorch version, so we have to turn it off.
+    #  https://github.com/pytorch/pytorch/issues/61032
     trainer = pl.Trainer(
             logger=logger,
             max_epochs=config.max_epochs,
             gpus=available_gpus,
             gradient_clip_val=config.gradient_clip_val,
-            deterministic=True,
+            deterministic=False,
             callbacks=[checkpoint_cb],
             enable_progress_bar=enable_progress_bar,
             )
