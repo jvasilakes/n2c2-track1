@@ -95,9 +95,9 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
             # We need to replace the (0, 0) spans in the offset mapping
             # with other ints to avoid masking errors when the
             # start of the span is 0.
-            offset_mask = offset_mapping == torch.tensor([0, 0])
+            offset_mask = offset_mapping == torch.tensor([0, 0], device=self.device)
             offset_mask = offset_mask[:, :, 0] & offset_mask[:, :, 1]
-            offset_mapping[offset_mask, :] = torch.tensor([-1, -1])
+            offset_mapping[offset_mask, :] = torch.tensor([-1, -1]).type_as(offset_mapping)
             # Keep all tokens whose start char is >= the entity start and
             #   whose end char is <= the entity end.
             start_spans = entity_spans[:, 0].unsqueeze(-1).expand(
