@@ -9,7 +9,7 @@ from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 from sklearn.pipeline import make_pipeline
 from sklearn.svm import LinearSVC
 
-from brat_reader import BratAnnotations, Attribute
+from brat_reader import BratAnnotations
 
 
 FEATURE_TYPES = ["bow", "bow_bin", "tfidf"]
@@ -223,11 +223,8 @@ def encode_one_label(dispositions, attr_name, encoder=None):
     else:
         values = []
         for d in dispositions:
-            try:
-                attr = d.attributes[attr_name]
-                val = attr.value
-            except KeyError:
-                val = "NotNegated"
+            attr = d.attributes[attr_name]
+            val = attr.value
             values.append(val)
     if encoder is None:
         encoder = LabelEncoder()
@@ -248,14 +245,6 @@ def assign_predictions_to_events(dispositions, preds_by_task, label_encoders):
         for (attr_name, attr) in d.attributes.items():
             dec_pred = all_decoded_preds[attr_name][i]
             attr.update("value", dec_pred)
-        # The NotNegated case doesn't actually exist in the original data,
-        #  so we make our predictions match.
-        try:
-            attr = d.attributes["Negation"]
-        except KeyError:
-            neg = Attribute("A_", "Negation", "NotNegated",
-                            _source_file=d._source_file)
-            d.attributes["Negation"] = neg
 
     return dispositions_copy
 
