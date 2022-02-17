@@ -1,0 +1,26 @@
+# Experiment
+name: "bert/negation"
+description: "bert-base-uncased on the negation task only"
+logdir: "/mnt/iusers01/nactem01/u14498jv/scratch/n2c2_track1/context/bert_baseline_logs/"
+random_seed: 0
+
+# Data
+data_dir: "/mnt/iusers01/nactem01/u14498jv/Projects/n2c2-track1/n2c2Track1TrainingData-v2/data_v2/"
+sentences_dir: "/mnt/iusers01/nactem01/u14498jv/Projects/n2c2-track1/n2c2Track1TrainingData-v2/segmented"
+tasks_to_load: ["Negation"]
+window_size: 0
+max_train_examples: null
+
+# Model
+model_name: "bert-sequence-classifier"
+bert_model_name_or_path: 'bert-base-uncased'
+freeze_pretrained: false
+use_entity_spans: false
+max_seq_length: 128
+
+# Training
+batch_size: 64
+lr: 0.00003
+weight_decay: 0.0
+gradient_clip_val: 10.0
+max_epochs: 10
