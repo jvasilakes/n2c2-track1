@@ -47,7 +47,7 @@ def parse_args():
 
 def main(args):
     config = ExperimentConfig.from_yaml_file(args.config_file)
-    logdir = "logs"
+    logdir = config.logdir
     os.makedirs(logdir, exist_ok=True)
 
     curr_time = datetime.datetime.now()

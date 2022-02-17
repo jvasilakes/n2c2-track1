@@ -9,6 +9,7 @@ class ExperimentConfig(object):
             self,
             name: str = "default_experiment",
             description: str = '',
+            logdir: str = "logs/",
             data_dir: str = '',
             sentences_dir: str = '',
             model_name: str = '',
@@ -28,6 +29,7 @@ class ExperimentConfig(object):
             ):
         self.name = name
         self.description = description
+        self.logdir = logdir
         self.data_dir = data_dir
         self.sentences_dir = sentences_dir
         self.model_name = model_name

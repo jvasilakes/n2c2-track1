@@ -1,6 +1,7 @@
 # Experiment
 name: "test_clinical_bert"
 description: "test experiment with bio+clinical BERT"
+logdir: "logs/"
 random_seed: 0
 
 # Data
