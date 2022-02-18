@@ -98,6 +98,7 @@ Lenient match means that >=1 characters overlap between the predicted and gold s
 |MACRO | 0.965 | 0.942 | 0.952 |
 
 ## BioRoberta (Span-based classifier)
+This is the results by RoBERTa-large-PM-M3-Voc, pre-trained on PubMed and PMC and MIMIC-III: https://github.com/facebookresearch/bio-lm  
 ### Exact match
 |      | prec  | rec   | f1    |
 |------|-------|-------|-------|
