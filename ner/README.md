@@ -96,3 +96,16 @@ Lenient match means that >=1 characters overlap between the predicted and gold s
 |------|-------|-------|-------|
 |MICRO | 0.978 | 0.951 | 0.964 |
 |MACRO | 0.965 | 0.942 | 0.952 |
+
+## BioRoberta (Span-based classifier)
+### Exact match
+|      | prec  | rec   | f1    |
+|------|-------|-------|-------|
+|MICRO | 0.956 | 0.957 | 0.957 |
+|MACRO | 0.934 | 0.932 | 0.931 |
+
+### Lenient match
+|      | prec  | rec   | f1    |
+|------|-------|-------|-------|
+|MICRO | 0.982 | 0.974 | 0.978 |
+|MACRO | 0.967 | 0.955 | 0.960 |
