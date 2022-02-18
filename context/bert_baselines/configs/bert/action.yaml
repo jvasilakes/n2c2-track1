@@ -16,7 +16,7 @@ model_name: "bert-sequence-classifier"
 bert_model_name_or_path: 'bert-base-uncased'
 freeze_pretrained: false
 use_entity_spans: false
-max_seq_length: 128
+max_seq_length: 256
 
 # Training
 batch_size: 64
