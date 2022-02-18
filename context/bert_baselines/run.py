@@ -158,6 +158,13 @@ def run_train(config, datamodule,
             )
     trainer.fit(model, datamodule=datamodule)
 
+    model.eval()
+    results = trainer.validate(model, datamodule=datamodule, verbose=False)[0]
+    tasks = sorted(datamodule.label_spec.keys())
+    md = format_results_as_markdown_table(results, tasks)
+    print("\nValidation Results")
+    print(md)
+
 
 def run_validate(config, datamodule, dataset="validate",
                  logdir="logs/", version=None, quiet=False):
