@@ -21,13 +21,13 @@ def parse_args():
 def test_logger(func):
     def wrapper(*args, **kwargs):
         print(func.__name__, end='')
-        res = func(*args, **kwargs)
-        if res is True:
-            res_str = "Failed"
-            color = colorama.Fore.RED
-        else:
+        try:
+            func(*args, **kwargs)
             res_str = "Passed"
             color = colorama.Fore.GREEN
+        except AssertionError:
+            res_str = "Failed"
+            color = colorama.Fore.RED
         print(color + f" [{res_str}]")
     return wrapper
 
@@ -47,13 +47,9 @@ def run(config_file):
         max_train_examples=None)
     datamodule.setup()
 
-    results = {}
-    results["test_mask_hidden"] = test_mask_hidden(config, datamodule)
-    for (test, res) in results.items():
-        if res is True:
-            print(f"{test}: Failed")
-    if True not in results.values():
-        print("All tests passed")
+    test_mask_hidden(config, datamodule)
+    test_pool_entity_embeddings_max(config, datamodule)
+    test_pool_entity_embeddings_mean(config, datamodule)
 
 
 @test_logger
@@ -69,7 +65,6 @@ def test_mask_hidden(config, datamodule):
 
     h = torch.randn(config.batch_size, config.max_seq_length,
                     model.bert_config.hidden_size)
-    failed = False
     for dl in [datamodule.train_dataloader(), datamodule.val_dataloader()]:
         for batch in dl:
             offset_mapping = batch["encodings"]["offset_mapping"]
@@ -77,10 +72,55 @@ def test_mask_hidden(config, datamodule):
             try:
                 masked, token_mask = model.mask_hidden(
                     h, offset_mapping, entity_spans)
-            except ValueError as e:
-                print(e)
-                failed = True
-    return failed
+            except ValueError:
+                raise AssertionError()
+
+
+@test_logger
+def test_pool_entity_embeddings_max(config, datamodule):
+    model = BertMultiHeadedSequenceClassifier(
+        config.bert_model_name_or_path,
+        label_spec=datamodule.label_spec,
+        freeze_pretrained=True,
+        use_entity_spans=True,
+        entity_pool_fn="max",
+        lr=config.lr,
+        weight_decay=config.weight_decay)
+
+    h = torch.randn(config.batch_size, config.max_seq_length,
+                    model.bert_config.hidden_size)
+    for dl in [datamodule.train_dataloader(), datamodule.val_dataloader()]:
+        for batch in dl:
+            offset_mapping = batch["encodings"]["offset_mapping"]
+            entity_spans = batch["entity_spans"]
+            masked, token_mask = model.mask_hidden(
+                h, offset_mapping, entity_spans)
+            pooled = model.pool_entity_embeddings(masked, token_mask)
+            assert (pooled == torch.tensor(0.)).any() == torch.tensor(False)
+
+
+@test_logger
+def test_pool_entity_embeddings_mean(config, datamodule):
+    model = BertMultiHeadedSequenceClassifier(
+        config.bert_model_name_or_path,
+        label_spec=datamodule.label_spec,
+        freeze_pretrained=True,
+        use_entity_spans=True,
+        entity_pool_fn="mean",
+        lr=config.lr,
+        weight_decay=config.weight_decay)
+
+    h = torch.randn(config.batch_size, config.max_seq_length,
+                    model.bert_config.hidden_size)
+    for dl in [datamodule.train_dataloader(), datamodule.val_dataloader()]:
+        for batch in dl:
+            offset_mapping = batch["encodings"]["offset_mapping"]
+            entity_spans = batch["entity_spans"]
+            masked, token_mask = model.mask_hidden(
+                h, offset_mapping, entity_spans)
+            pooled = model.pool_entity_embeddings(masked, token_mask)
+            assert not torch.isnan(pooled).all()
+            assert not torch.isinf(pooled).all()
 
 
 if __name__ == "__main__":

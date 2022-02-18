@@ -100,8 +100,9 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
                 )
 
         if entity_spans is not None and self.use_entity_spans is True:
-            pooled = self.pool_entity_embeddings(
+            masked_hidden, token_mask = self.mask_hidden(
                 bert_outputs.last_hidden_state, offset_mapping, entity_spans)
+            pooled = self.pool_entity_embeddings(masked_hidden, token_mask)
             pooled_output = self.entity_pooler(pooled)
         else:
             pooled_output = bert_outputs.pooler_output
@@ -120,18 +121,16 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
                     attentions=bert_outputs.attentions)
         return clf_outputs
 
-    def pool_entity_embeddings(
-            self, hidden_states, offset_mapping, entity_spans):
-        h_masked, token_mask = self.mask_hidden(
-            hidden_states, offset_mapping, entity_spans)
-
+    def pool_entity_embeddings(self, masked_hidden, token_mask):
         if self.entity_pool_fn == "max":
-            pooled = torch.max(h_masked, axis=1)[0]
+            # Replace masked with -inf to avoid zeroing out
+            # hidden dimensions if the non-masked values are all negative.
+            masked_hidden[torch.logical_not(token_mask)] = -torch.inf
+            pooled = torch.max(masked_hidden, axis=1)[0]
         elif self.entity_pool_fn == "mean":
-            pooled = h_masked.sum(axis=1) / token_mask.sum(axis=1)
+            pooled = masked_hidden.sum(axis=1) / token_mask.sum(axis=1)
         else:
             raise ValueError(f"Unknown pool function {self.entity_pool_fn}")
-
         return pooled
 
     def mask_hidden(self, hidden_states, offset_mapping, entity_spans):
@@ -152,7 +151,7 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
         # Duplicate the mask across the hidden dimension
         token_mask_ = token_mask.unsqueeze(-1).expand(hidden_states.size())
         if len((token_mask.sum(axis=1) == torch.tensor(0.)).nonzero()) > 0:
-            raise ValueError("Entity span not found! Try increasing max_seq_length!")  # noqa
+            raise ValueError("Entity span not found! Try increasing max_seq_length.")  # noqa
         masked = hidden_states * token_mask_
         return masked, token_mask_
 
