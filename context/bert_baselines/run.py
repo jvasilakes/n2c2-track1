@@ -155,6 +155,7 @@ def run_train(config, datamodule,
             deterministic=False,
             callbacks=[checkpoint_cb],
             enable_progress_bar=enable_progress_bar,
+            log_every_n_steps=35,
             )
     trainer.fit(model, datamodule=datamodule)
 
