@@ -31,6 +31,7 @@ python3 run.py validate /path/to/logs/experiment_name/version/config.yaml
 * `model_name`: Model to run, corresponding to entries in `model.MODEL_LOOKUP.keys()`.
 * `bert_model_name_or_path`: BERT or BERT-derivative to load. E.g. `bert-base-uncased`.
 * `use_entity_spans`: If `true`, use the pooled embeddings from the target entity span for classification, rather than the full input.
+* `entity_pool_fn`: `"max"` or `"mean"`. If `use_entity_spans is True` how to pool the entity token embeddings before sending them to the classification head(s).
 
 
 # Results
