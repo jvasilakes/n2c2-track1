@@ -164,6 +164,26 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
             self.log(f"train_loss_{task}", outputs.loss)
         return outputs.loss
 
+    def predict_step(self, batch, batch_idx):
+        task_outputs = self(
+                **batch["encodings"],
+                labels=batch["labels"],
+                entity_spans=batch["entity_spans"])
+
+        tasks = list(task_outputs.keys())
+        inputs_with_predictions = {
+                "texts": batch["texts"],
+                "labels": batch["labels"],
+                "entity_spans": batch["entity_spans"],
+                "docids": batch["docids"],
+                "predictions": {task: [] for task in tasks}
+                }
+        for (task, outputs) in task_outputs.items():
+            softed = nn.functional.softmax(outputs.logits, dim=1)
+            preds = torch.argmax(softed, dim=1)
+            inputs_with_predictions["predictions"][task] = preds
+        return inputs_with_predictions
+
     def validation_step(self, batch, batch_idx, dataloader_idx=0):
         task_outputs = self(
                 **batch["encodings"],

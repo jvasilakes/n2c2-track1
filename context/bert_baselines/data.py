@@ -86,6 +86,12 @@ class n2c2SentencesDataset(Dataset):
                     raise ValueError(f"Unknown attribute {name}")
             self.label_names = sorted(label_names)
 
+        self._inverse_encodings = self._invert_encodings()
+
+    def inverse_transform(self, task, encoded_labels):
+        return [self._inverse_encodings[task][enc_lab]
+                for enc_lab in encoded_labels]
+
     def __len__(self):
         if self.max_examples is None:
             return len(self.events)
@@ -175,6 +181,14 @@ class n2c2SentencesDataset(Dataset):
                 continue
             sent_idxs.append(sent_i)
         return sent_idxs
+
+    def _invert_encodings(self):
+        inv_enc = {}
+        for (task, label_encs) in self.ENCODINGS.items():
+            inv_enc[task] = {}
+            for (label, enc) in label_encs.items():
+                inv_enc[task][enc] = label
+        return inv_enc
 
 
 class n2c2SentencesDataModule(pl.LightningDataModule):

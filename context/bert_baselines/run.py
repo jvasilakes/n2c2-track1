@@ -1,8 +1,8 @@
 import os
 import argparse
 import datetime
-import warnings
 from glob import glob
+from collections import defaultdict
 
 import torch
 import pytorch_lightning as pl
@@ -12,6 +12,8 @@ from pytorch_lightning.callbacks import ModelCheckpoint
 from config import ExperimentConfig
 from data import n2c2SentencesDataModule
 from model import MODEL_LOOKUP
+
+import brat_reader as br
 
 
 def parse_args():
@@ -80,12 +82,14 @@ def main(args):
         run_kwargs["version"] = version
         run_fn = run_train
     elif args.command in ["validate", "test"]:
-        run_kwargs["dataset"] = args.command
+        dataset = args.command
+        if args.command == "validate":
+            dataset = "dev"
+        run_kwargs["dataset"] = dataset
         version = get_current_experiment_version(args.config_file)
         run_kwargs["version"] = version
+        run_kwargs["output_brat"] = args.output_brat
         run_fn = run_validate
-        if args.output_brat is True:
-            warnings.warn("--output_brat not yet implemented. No predictions will be saved.")  # noqa
     else:
         raise argparse.ArgumentError(f"Unknown command {args.command}")
     run_fn(*run_args, **run_kwargs)
@@ -167,8 +171,9 @@ def run_train(config, datamodule,
     print(md)
 
 
-def run_validate(config, datamodule, dataset="validate",
-                 logdir="logs/", version=None, quiet=False):
+def run_validate(config, datamodule, dataset="dev",
+                 logdir="logs/", version=None, quiet=False,
+                 output_brat=False):
     # Find the checkpoint and hparams files.
     # Since we only checkpoint the best dev performance during training,
     #   there is only ever one checkpoint.
@@ -192,7 +197,7 @@ def run_validate(config, datamodule, dataset="validate",
             gpus=available_gpus,
             enable_progress_bar=enable_progress_bar
             )
-    if dataset == "validate":
+    if dataset == "dev":
         val_fn = trainer.validate
     elif dataset == "test":
         if datamodule.test_dataloader() is None:
@@ -201,10 +206,19 @@ def run_validate(config, datamodule, dataset="validate",
     else:
         raise ValueError(f"Unknown validation dataset '{dataset}'")
     results = val_fn(model, datamodule=datamodule, verbose=False)[0]
-
     tasks = sorted(datamodule.label_spec.keys())
     md = format_results_as_markdown_table(results, tasks)
     print(md)
+
+    if output_brat is True:
+        preds = trainer.predict(model, dataloaders=datamodule.val_dataloader())
+        train_dataset = datamodule.train
+        # List[BratAnnotations]
+        pred_anns_by_docid = batched_predictions_to_brat(preds, train_dataset)
+        preds_dir = os.path.join(checkpoint_dir, "../predictions", dataset)
+        os.makedirs(preds_dir, exist_ok=False)
+        for doc_preds in pred_anns_by_docid:
+            doc_preds.save_brat(preds_dir)
 
 
 def format_results_as_markdown_table(results, tasks):
@@ -241,6 +255,42 @@ def format_results_as_markdown_table(results, tasks):
             table += f" {avg_fn: <7} | {p:.3f} | {r:.3f} | {f:.3f} |"
     table += '\n'
     return table
+
+
+def batched_predictions_to_brat(preds, dataset):
+    """
+    Create a BratAnnotations instance for each grouped of predictions,
+    grouped by doc_id.
+    """
+    events_by_docid = defaultdict(list)
+    for batch in preds:
+        for (i, docid) in enumerate(batch["docids"]):
+            attrs = {}
+            for (task, task_preds) in batch["predictions"].items():
+                enc_pred = task_preds[i].int().item()
+                decoded_pred = dataset.inverse_transform(task, [enc_pred])[0]
+                num_attrs = len([attr for e in events_by_docid[docid]
+                                 for attr in e.attributes]) + len(attrs)
+                aid = f"A{num_attrs}"
+                attr = br.Attribute(id=aid, type=task, value=decoded_pred)
+                attrs[task] = attr
+
+            start, end = batch["entity_spans"][i]
+            num_spans = len(set([(e.span.start_index, e.span.end_index)
+                                 for e in events_by_docid[docid]]))
+            sid = f"T{num_spans}"
+            span = br.Span(id=sid, start_index=start, end_index=end,
+                           text=batch["texts"][i][start:end])
+
+            src_file_str = f"{docid}.ann"
+            eid = f"E{len(events_by_docid[docid])}"
+            event = br.Event(id=eid, type="Disposition", span=span,
+                             attributes=attrs, _source_file=src_file_str)
+            events_by_docid[docid].append(event)
+
+    anns_by_docid = [br.BratAnnotations.from_events(events)
+                     for events in events_by_docid.values()]
+    return anns_by_docid
 
 
 if __name__ == "__main__":

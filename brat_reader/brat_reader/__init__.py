@@ -24,8 +24,12 @@ class Annotation(object):
 
     @staticmethod
     def _resolve_file_path(path):
-        here = pathlib.Path(path).resolve()
-        return str(here.absolute())
+        try:
+            here = pathlib.Path(path).resolve()
+            abspath = str(here.absolute())
+        except TypeError:
+            abspath = path
+        return abspath
 
     def to_brat_str(self):
         raise NotImplementedError()
