@@ -123,6 +123,12 @@ def test_pool_entity_embeddings_mean(config, datamodule):
             assert not torch.isinf(pooled).all()
 
 
+# TODO: Test weight sampling.
+@test_logger
+def test_compute_sample_weights():
+    raise NotImplementedError()
+
+
 if __name__ == "__main__":
     args = parse_args()
     run(args.config_file)

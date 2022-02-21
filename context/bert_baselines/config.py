@@ -19,6 +19,7 @@ class ExperimentConfig(object):
             window_size: int = 0,
             max_seq_length: int = 128,
             batch_size: int = 1,
+            sample_strategy: str = None,
             use_entity_spans: bool = False,
             entity_pool_fn: str = "max",
             max_epochs: int = 1,
@@ -40,6 +41,7 @@ class ExperimentConfig(object):
         self.window_size = window_size
         self.max_seq_length = max_seq_length
         self.batch_size = batch_size
+        self.sample_strategy = sample_strategy
         self.use_entity_spans = use_entity_spans
         self.entity_pool_fn = entity_pool_fn
         self.max_epochs = max_epochs
