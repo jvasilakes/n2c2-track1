@@ -1,5 +1,5 @@
 # Experiment
-name: "test_v2"
+name: "test"
 description: "test experiment with v2 data release"
 logdir: "logs/"
 random_seed: 0
@@ -8,7 +8,7 @@ random_seed: 0
 data_dir: '/home/u14498jv/Documents/Projects/n2c2-track1/n2c2Track1TrainingData-v2/data_v2'
 sentences_dir: '/home/u14498jv/Documents/Projects/n2c2-track1/n2c2Track1TrainingData-v2/segmented'
 #tasks_to_load: all
-tasks_to_load: ["Negation", "Certainty"]
+tasks_to_load: ["Certainty"]
 window_size: 0
 max_train_examples: 50
 
