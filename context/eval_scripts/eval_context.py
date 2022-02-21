@@ -37,7 +37,10 @@ def main(args):
         tasklist = sorted(set([a["type"] for a in pred_anns._raw_attributes]))
         for task in tasklist:
             # We're only predicting over Disposition events
-            preds = [e.attributes[task].value for e in pred_anns.events]
+            preds = []
+            for e in pred_anns.get_events_by_type("Disposition"):
+                val = e.attributes[task].value
+                preds.append(val)
             golds = []
             for e in gold_anns.get_events_by_type("Disposition"):
                 val = e.attributes[task].value
