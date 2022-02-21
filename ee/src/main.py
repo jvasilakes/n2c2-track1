@@ -31,6 +31,7 @@ def set_seed(seed):
 def main(args):
     
     config = load_config(args.config)
+    setup(args, config)
     config['mode'] = args.mode
     print('Setting the seed to {}'.format(config['seed']))
     set_seed(config['seed'])
@@ -41,12 +42,17 @@ def main(args):
     train_loader, val_loader, train_data = load_data(config)
     trainer = load_trainer(train_loader, val_loader, train_data, config, device)
     _ = trainer.run()
+def setup(args, config):
+    
+    config['train_data'] = args.data + 'train_data.txt'
+    config['dev_data'] = args.data + 'dev_data.txt'
     
 def load_data(config):
 
 #     tokenizer = PreTrainedTokenizerFast.from_pretrained('bert-base-uncased') ##P
 #     tokenizer.pad_token = "[PAD]" ##P
     tokenizer = AutoTokenizer.from_pretrained('bert-base-uncased') ##P
+#     tokenizer = AutoTokenizer.from_pretrained('roberta-large')
     train_data_ = BertDataset(config['train_data'], config['max_sen_len'], mode='train', 
                      tokenizer = tokenizer, dummy = False)
     print('Train data:',len(train_data_))
@@ -67,7 +73,7 @@ def load_data(config):
 def load_trainer(train_loader_, dev_loader_, train_data_, config, device):
     trainer = Trainer(config, device,
                       iterators={'train': train_loader_, 'dev': dev_loader_},
-                      vocabs={ 'r_vocab': train_data_.ev_vocab})
+                      vocabs={'events': {v: k for k, v in train_data_.event_vocab.items()}, 'actions': {v: k for k, v in train_data_.action_vocab.items()}})
 
     trainer.model = trainer.init_model(target_model)
     trainer.optimizer = trainer.set_optimizer(trainer.model)
@@ -79,5 +85,6 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--config', type=str)
     parser.add_argument('--mode', type=str, choices=['train', 'test'])
+    parser.add_argument('--data', type=str)
     args = parser.parse_args()
     main(args)

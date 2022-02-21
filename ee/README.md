@@ -48,3 +48,4 @@ DEV   |  LOSS =     0.5436 | Time 0h 00m 02s   | Micro_F1  = 0.9158 <<<\
       |  Macro_Pr = 0.8581 | Macro_Re = 0.8439 | Macro_F1  = 0.8503
 
 Next step is introducing verbs to scispasy corpus and mark them with "#".
+

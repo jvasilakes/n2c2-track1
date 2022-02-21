@@ -53,16 +53,47 @@ def humanized_time(second):
     h, m = divmod(m, 60)
     return "%dh %02dm %02ds" % (h, m, s)
 
-def print_performance(epoch, state, monitor, secs, name='train'):
-    if name == 'train':
+def clean_tokenizer(tokens):
+    clean_tokens = []
+    cur_token = tokens[0]
+    for i in range(len(tokens)-1):
+        if len(tokens[i+1])>1 and tokens[i+1][0:2]=='##':
+            cur_token += tokens[i+1][2:]
+        else:
+            clean_tokens.append(cur_token)
+            cur_token = tokens[i+1]
+    clean_tokens.append(cur_token)
+    return clean_tokens
+
+def print_cases(samples, preds, dev_loader, config, epoch):
+    dataset = dev_loader.dataset
+    tokenizer = dataset.tokenizer
+    with open(config['dev_miss'],"w") as fout:
+        for i, s in enumerate(samples):
+            ids_tok = tokenizer.convert_ids_to_tokens(dataset[s][4])
+            toks = list(filter(lambda tok: tok not in ['[PAD]','[SEP]','[CLS]'], ids_tok))
+    #         print(toks)
+            sent = ' '.join(clean_tokenizer(toks))
+            pred_tuple = preds[i], dataset[s][1]
+            eid = dataset[s][2]
+            template = '{} {}| <<{}>>\n'
+            fout.write(template.format(eid, pred_tuple, sent))
+        fout.write("Epoch {}\n".format(epoch))
+    
+def print_performance(epoch, state, typ, mon, secs, name='train', disp_count = None):
+    if name == 'train' and typ== 'events':
         print('---------- Epoch: {:02d} ----------'.format(epoch))
-    template = '{:<5} |  LOSS = {:10.4f} | Time {}   | Micro_F1  = {:.04f} <<<'
-    print(template.format(name.upper(), state['total'] if state['total'] else 0.0,
-                          humanized_time(secs), monitor['micro_f1']))
-    template = '      | NoDisp_F1 = {:.04f} | Dispo_F1 = {:.04f} | Undet_F1  = {:.04f}'
-    print(template.format(monitor['NoDisp_f1'], monitor['Disp_f1'], monitor['Und_f1']))
-    template = '      |  Macro_Pr = {:.04f} | Macro_Re = {:.04f} | Macro_F1  = {:.04f}'
-    print(template.format(monitor['macro'][0],monitor['macro'][1], monitor['macro'][2]))
+    if typ== 'events':    
+        template = '\t{:<5} / LOSS = {:10.4f}  Time {}  Dispotion counts: {}/{}/{}/{}'
+        print(template.format(name.upper(), state['total'] if state['total'] else 0.0, 
+                              humanized_time(secs), disp_count[0], disp_count[1],
+                              disp_count[2], disp_count[3]))
+        template = 'Events : Macro_Pr = {:.04f} | Macro_Re = {:.04f} | Macro_F1  = {:.04f} | Micro_F1 = {:.04f} <<<'
+    else:
+        template = 'Actions: Macro_Pr = {:.04f} | Macro_Re = {:.04f} | Macro_F1  = {:.04f} | Micro_F1 = {:.04f}'
+    print(template.format(mon['macro_pr'],mon['macro_re'], mon['macro_f1'], mon['micro_f1']))
+#     template = '      | NoDisp_F1 = {:.04f} | Dispo_F1 = {:.04f} | Undet_F1  = {:.04f}'
+#     print(template.format(monitor['NoDisp_f1'], monitor['Disp_f1'], monitor['Und_f1']))
 
 class Tee(object):
     """

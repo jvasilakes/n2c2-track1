@@ -29,7 +29,7 @@ class Trainer(BaseTrainer):
         """
         self.config = config
         self.iterators = iterators
-        self.vocabs = vocabs
+        self.vocabs = vocabs #they are inversed
         self.device = device
 
         self.model = None  # self.init_model(target_model)
@@ -42,40 +42,68 @@ class Trainer(BaseTrainer):
         self.averaged_params = {}
         self.iterations = len(self.iterators['train'])
         self.save_path = os.path.join(self.config['model_folder'], 'bert.model')
-        ##P
         self.scaler = GradScaler()
-        ##E
-    def optimise(self):
-        """
-        what is the purpose
-        """
-        print('Why I am inside optimise?')
-        exit()
-        return 
-    
- 
 
+#     def optimise(self):
+#         """
+#         what is the purpose
+#         """
+#         print('Why I am inside optimise?')
+#         exit()
+#         return 
+
+        
+    def calculate_stats(self, y_true, y_sigmoid, typ):
+        y_pred =  np.array(y_sigmoid > self.config['threshold'], dtype=float)
+        if typ =='actions':
+            print(typ, 'y_pred size',y_pred.shape, 'y_pred sum', np.sum(y_pred))
+        mi_f1 = f1_score(y_true, y_pred, average='micro')
+#         res = classification_report(y_true, y_pred, output_dict=True, zero_division=1)
+#         perf = {self.vocab[typ]:res[str(i)]['f1-score'], for i in range(0, len(res))}
+        pr, re, f1, _ = precision_recall_fscore_support(y_true, y_pred, average='macro', zero_division=1)
+        return {'micro_f1':mi_f1, 'macro_pr':pr , 'macro_re':re, 'macro_f1':f1}
+        
     def calculate_performance(self, epoch, tracker, time_, mode='train'):
-        
-#         print(tracker['gtruth'])
-        y_true = np.concatenate(tracker['gtruth'])
-        y_logits = np.vstack(tracker['logits'])
-        y_pred = np.argmax(y_logits, axis=-1)
-#         nclasses = len(self.vocabs['r_vocab'])
-        micro_f1 = f1_score(y_true, y_pred, average='micro')
-        res = classification_report(y_true, y_pred, output_dict=True)
-        perf = {'micro_f1':micro_f1, 'NoDisp_f1': res['0']['f1-score'], 'Disp_f1': res['1']['f1-score'], 'Und_f1': res['2']['f1-score']}
-        pr, re, f1, _ = precision_recall_fscore_support(y_true, y_pred, average='macro')
-        perf['macro'] = (pr,re, f1)
         tracker['total'] = np.mean(tracker['total'])
-        print_performance(epoch, tracker, perf, time_, name=mode)
-        
+        perf = {}
+#         for typ in ['events', 'actions']:
+#             y_true = np.vstack([entry[1] for entry in tracker[typ]]) 
+#             y_sigmoid = np.vstack([entry[0] for entry in tracker[typ]])
+#             perf[typ] = self.calculate_stats(y_true, y_sigmoid, typ)
+#             print_performance(epoch, tracker, typ, perf[typ], time_, name=mode)
+        ## Events
+        y_true_ev = np.vstack([entry[1] for entry in tracker['events']]) 
+        y_sigmoid_ev = np.vstack([entry[0] for entry in tracker['events']])
+        perf['events'] = self.calculate_stats(y_true_ev, y_sigmoid_ev, 'events')
+        true_dispo = y_true_ev[:,1] == 1 
+        pred_dispo = y_sigmoid_ev[:,1] > self.config['threshold']
+        total_dispo = np.logical_or(true_dispo, pred_dispo)
+        disp_count=(np.sum(true_dispo),np.sum(pred_dispo),np.sum(total_dispo),len(true_dispo))
+        print_performance(epoch, tracker, 'events', perf['events'], time_, mode, disp_count)
+        ## Actions
+        y_true_ac = np.vstack([entry[1] for entry in tracker['actions']])[total_dispo] 
+        y_sigmoid_ac = np.vstack([entry[0] for entry in tracker['actions']])[total_dispo]
+        perf['actions'] = self.calculate_stats(y_true_ac, y_sigmoid_ac, 'actions')
+        print_performance(epoch, tracker, 'actions', perf['actions'], time_, mode)
+        ## All Actions
+        ##
+        y_true_ac = np.vstack([entry[1] for entry in tracker['actions']]) 
+        y_sigmoid_ac = np.vstack([entry[0] for entry in tracker['actions']])
+        perf['actions_all'] = self.calculate_stats(y_true_ac, y_sigmoid_ac, 'actions')
+        print_performance(epoch, tracker, 'actions', perf['actions_all'], time_, mode)
+#         tracker['preds'] = y_pred
+#         if mode!='train':
+#             wrong = np.sum(y_true,1)!=np.sum(y_pred,1)
+#             samples = np.concatenate(tracker['samples'])[wrong]
+#             tracker['samples'] = samples
+#             tracker['preds'] = y_pred[wrong]
+# #             print('Wrong samples', samples)
         return perf
 
 
     @staticmethod
     def init_tracker():
-        return {'total': [], 'logits': [], 'gtruth': [], 'total_samples': 0}
+        return {'total': [], 'events': [], 'actions': [], 'total_samples': 0, 'samples': [], 'preds': []}
 
     def run(self):
         """
@@ -89,14 +117,17 @@ class Trainer(BaseTrainer):
             train_tracker, time_ = self.train_epoch(epoch)
 
             _ = self.calculate_performance(epoch, train_tracker, time_, mode='train')
-
+            
             dev_tracker, time_ = self.eval_epoch(iter_name='dev')
             dev_perf = self.calculate_performance(epoch, dev_tracker, time_, mode='dev')
-
-            self.primary_metric += [dev_perf['micro_f1']]
-
+            self.primary_metric += [dev_perf['events']['micro_f1']]
+   
             stop = self.epoch_checking_larger(epoch, self.primary_metric[-1])
             print('current best epoch:', self.best_epoch)
+            ##
+#             if self.best_epoch == epoch:
+#                 print_cases(dev_tracker['samples'], dev_tracker['preds'], self.iterators['dev'], self.config, epoch)
+            ##
             if stop:
                 break
             print()
@@ -117,49 +148,32 @@ class Trainer(BaseTrainer):
         iterations = len(self.iterators['train'])
         for batch_idx, batch in enumerate(self.iterators['train']):
             step = ((epoch-1) * iterations) + batch_idx
-
             tracker['total_samples'] += len(batch['names'])
             
             for keys in batch.keys():
                 if keys != 'names':
                     batch[keys] = batch[keys].to(self.device)
 
-            ##P
-#             self.model.zero_grad()
-            if not self.config['autoscalling']:
-                loss, logits = self.model(batch)  # forward pass
+            with autocast():
+                eloss, aloss, esigmoid, asigmoid = self.model(batch)  # forward pass
+                loss = self.config['event_weight'] * eloss + \
+                           (1 - self.config['event_weight'])* aloss
                 loss = loss/ self.config['accumulate_batches']
-                
-                loss.backward()
 
-                # gradient clipping
-                if self.config['clip'] > 0:
+            self.scaler.scale(loss).backward()
+
+            if  (batch_idx + 1)%self.config['accumulate_batches']==0 or (batch_idx + 1) == len(self.iterators['train']):     
+                if self.config['clip'] > 0: # gradient clipping
+                    self.scaler.unscale_(self.optimizer)
                     nn.utils.clip_grad_norm_(self.model.parameters(), self.config['clip'])
+                self.scaler.step(self.optimizer)   # update
+                self.scaler.update()
+                self.scheduler.step()  ## questionable, may need scaler
+                self.model.zero_grad()  
 
-                if  (batch_idx + 1)%self.config['accumulate_batches']==0 or (batch_idx + 1) == len(self.iterators['train']):     
-                    self.optimizer.step()   # update
-                    self.scheduler.step()
-                    self.model.zero_grad()
-                    
-            else: ## Autoscalling
-                with autocast():
-                    loss, logits = self.model(batch)  # forward pass
-                    loss = loss/ self.config['accumulate_batches']
-                    
-                self.scaler.scale(loss).backward()
-
-                if  (batch_idx + 1)%self.config['accumulate_batches']==0 or (batch_idx + 1) == len(self.iterators['train']):     
-                    if self.config['clip'] > 0: # gradient clipping
-                        self.scaler.unscale_(self.optimizer)
-                        nn.utils.clip_grad_norm_(self.model.parameters(), self.config['clip'])
-                    self.scaler.step(self.optimizer)   # update
-                    self.scaler.update()
-                    self.scheduler.step()  ## questionable, may need scaler
-                    self.model.zero_grad()  
-
-
-            tracker['logits'] += [logits.cpu().data.numpy()]
-            tracker['gtruth'] += [batch['labels'].cpu().data.numpy()]
+            tracker['samples'] += [batch['indxs'].cpu().data.numpy()] 
+            tracker['events'] += [(esigmoid.cpu().data.numpy(), batch['elabels'].cpu().data.numpy())]
+            tracker['actions'] += [(asigmoid.cpu().data.numpy(), batch['alabels'].cpu().data.numpy())]
             tracker['total'] += [loss.item()]
 
 
@@ -186,18 +200,16 @@ class Trainer(BaseTrainer):
                     if keys != 'names':
                         batch[keys] = batch[keys].to(self.device)
                 
-                if not self.config['autoscalling']:
-                    loss, logits = self.model(batch)  # forward pass
+                with autocast():
+                    eloss, aloss, esigmoid, asigmoid  = self.model(batch)  # forward pass
+                    loss = self.config['event_weight'] * eloss + \
+                        (1 - self.config['event_weight'])* aloss
                     loss = loss/ self.config['accumulate_batches']
-                        
-                else: ## Autoscalling
-                    with autocast():
-                        loss, logits = self.model(batch)  # forward pass
-                        loss = loss/ self.config['accumulate_batches']
 
-                # collect logits & losses
-                tracker['logits'] += [logits.cpu().data.numpy()]
-                tracker['gtruth'] += [batch['labels'].cpu().data.numpy()]
+                # collect sigmoid & losses
+                tracker['samples'] += [batch['indxs'].cpu().data.numpy()] 
+                tracker['events'] += [(esigmoid.cpu().data.numpy(), batch['elabels'].cpu().data.numpy())]
+                tracker['actions'] += [(asigmoid.cpu().data.numpy(), batch['alabels'].cpu().data.numpy())]
                 tracker['total'] += [loss.item()]
 
         t2 = time()

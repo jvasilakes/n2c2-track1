@@ -1,0 +1,60 @@
+Step 1344      LOSS =     0.0197
+events y_pred size (6125, 3) y_pred sum 6120.0
+---------- Epoch: 08 ----------
+	TRAIN / LOSS =     0.0261  Time 0h 00m 52s  Dispotion counts: 1128/1117/1147/6125
+Events : Macro_Pr = 0.9757 | Macro_Re = 0.9723 | Macro_F1  = 0.9740 | Micro_F1 = 0.9883 <<<
+actions y_pred size (1147, 7) y_pred sum 1018.0
+Actions: Macro_Pr = 0.5150 | Macro_Re = 0.4698 | Macro_F1  = 0.4912 | Micro_F1 = 0.8492
+actions y_pred size (6125, 7) y_pred sum 1018.0
+Actions: Macro_Pr = 0.5150 | Macro_Re = 0.4698 | Macro_F1  = 0.4912 | Micro_F1 = 0.8492
+events y_pred size (1010, 3) y_pred sum 1012.0
+	DEV   / LOSS =     0.1934  Time 0h 00m 02s  Dispotion counts: 201/212/232/1010
+Events : Macro_Pr = 0.8442 | Macro_Re = 0.7727 | Macro_F1  = 0.7969 | Micro_F1 = 0.8968 <<<
+actions y_pred size (232, 7) y_pred sum 194.0
+Actions: Macro_Pr = 0.3910 | Macro_Re = 0.3778 | Macro_F1  = 0.3820 | Micro_F1 = 0.6812
+actions y_pred size (1010, 7) y_pred sum 194.0
+Actions: Macro_Pr = 0.3910 | Macro_Re = 0.3778 | Macro_F1  = 0.3820 | Micro_F1 = 0.6812
+Saving checkpoint
+current best epoch: 8
+
+Step 1536      LOSS =     0.0168
+events y_pred size (6125, 3) y_pred sum 6121.0
+---------- Epoch: 09 ----------
+	TRAIN / LOSS =     0.0225  Time 0h 00m 52s  Dispotion counts: 1128/1121/1143/6125
+Events : Macro_Pr = 0.9832 | Macro_Re = 0.9802 | Macro_F1  = 0.9817 | Micro_F1 = 0.9918 <<<
+actions y_pred size (1143, 7) y_pred sum 1042.0
+Actions: Macro_Pr = 0.5062 | Macro_Re = 0.4689 | Macro_F1  = 0.4864 | Micro_F1 = 0.8535
+actions y_pred size (6125, 7) y_pred sum 1042.0
+Actions: Macro_Pr = 0.5062 | Macro_Re = 0.4689 | Macro_F1  = 0.4864 | Micro_F1 = 0.8535
+events y_pred size (1010, 3) y_pred sum 1013.0
+	DEV   / LOSS =     0.1961  Time 0h 00m 02s  Dispotion counts: 201/203/229/1010
+Events : Macro_Pr = 0.8432 | Macro_Re = 0.7612 | Macro_F1  = 0.7901 | Micro_F1 = 0.8944 <<<
+actions y_pred size (229, 7) y_pred sum 185.0
+Actions: Macro_Pr = 0.3991 | Macro_Re = 0.3748 | Macro_F1  = 0.3841 | Micro_F1 = 0.6864
+actions y_pred size (1010, 7) y_pred sum 186.0
+Actions: Macro_Pr = 0.3977 | Macro_Re = 0.3748 | Macro_F1  = 0.3835 | Micro_F1 = 0.6847
+current best epoch: 8
+
+Step 1728      LOSS =     0.0307
+events y_pred size (6125, 3) y_pred sum 6125.0
+---------- Epoch: 10 ----------
+	TRAIN / LOSS =     0.0222  Time 0h 00m 52s  Dispotion counts: 1128/1126/1146/6125
+Events : Macro_Pr = 0.9801 | Macro_Re = 0.9803 | Macro_F1  = 0.9802 | Micro_F1 = 0.9909 <<<
+actions y_pred size (1146, 7) y_pred sum 1055.0
+Actions: Macro_Pr = 0.5174 | Macro_Re = 0.4931 | Macro_F1  = 0.5049 | Micro_F1 = 0.8692
+actions y_pred size (6125, 7) y_pred sum 1055.0
+Actions: Macro_Pr = 0.5174 | Macro_Re = 0.4931 | Macro_F1  = 0.5049 | Micro_F1 = 0.8692
+events y_pred size (1010, 3) y_pred sum 1011.0
+	DEV   / LOSS =     0.2046  Time 0h 00m 02s  Dispotion counts: 201/208/232/1010
+Events : Macro_Pr = 0.8505 | Macro_Re = 0.7636 | Macro_F1  = 0.7927 | Micro_F1 = 0.8953 <<<
+actions y_pred size (232, 7) y_pred sum 188.0
+Actions: Macro_Pr = 0.3971 | Macro_Re = 0.3813 | Macro_F1  = 0.3857 | Micro_F1 = 0.6863
+actions y_pred size (1010, 7) y_pred sum 189.0
+Actions: Macro_Pr = 0.3957 | Macro_Re = 0.3813 | Macro_F1  = 0.3851 | Micro_F1 = 0.6846
+current best epoch: 8
+
+
+======== END TRAINING: 21-02-22_14:28:02 ========
+
+Best epoch: 8
+

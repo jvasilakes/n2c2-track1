@@ -15,25 +15,9 @@ module load libs/cuda
 
 # Enable proxy connection
 #module load tools/env/proxy         # Uses proxy.man.ac.uk:3128
-module load tools/env/proxy2        # Uses http://proxy.man.ac.uk:3128
+#module load tools/env/proxy2        # Uses http://proxy.man.ac.uk:3128
 
-# Create conda env
-
-#conda update -n base -c defaults conda
-#yes | conda create -n dsre-vae2 python=3.9.7 
-conda activate dsre-vae2
-# Install cuda
-# yes | conda install pytorch torchvision cudatoolkit=10.2 -c pytorch
-pwd
-#pip install -r requirements.txt
-
-
-#Nvidia app for gpu stats
-#python3 test.py
-
-## Pretrained word-embeddings
-# Consider done
-
+conda activate dsre-vae
 # Training model
 cd src/
-python main.py --config ../configs/local.yaml --mode train
+python main.py --config ../configs/local.yaml --mode train --data ../data/spacy/
