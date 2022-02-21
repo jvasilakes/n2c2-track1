@@ -129,6 +129,7 @@ def run_train(config, datamodule,
             label_spec=datamodule.label_spec,
             freeze_pretrained=config.freeze_pretrained,
             use_entity_spans=config.use_entity_spans,
+            entity_pool_fn=config.entity_pool_fn,
             lr=config.lr,
             weight_decay=config.weight_decay,
             )
@@ -154,8 +155,16 @@ def run_train(config, datamodule,
             deterministic=False,
             callbacks=[checkpoint_cb],
             enable_progress_bar=enable_progress_bar,
+            log_every_n_steps=35,
             )
     trainer.fit(model, datamodule=datamodule)
+
+    model.eval()
+    results = trainer.validate(model, datamodule=datamodule, verbose=False)[0]
+    tasks = sorted(datamodule.label_spec.keys())
+    md = format_results_as_markdown_table(results, tasks)
+    print("\nValidation Results")
+    print(md)
 
 
 def run_validate(config, datamodule, dataset="validate",

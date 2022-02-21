@@ -16,9 +16,14 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
     bert_model_name_or_path: e.g., 'bert-base-uncased'
     label_spec: dict from task names to number of labels. Can be obtained
                 from data.n2c2SentencesDataModule.label_spec
+    freeze_pretrained: bool. Default False. If True, freeze the BERT layers.
     use_entity_spans: bool. Default False. If True, use only the pooled
                       entity embeddings as input to the classifier heads.
                       If False, use the pooled embeddings of the entire input.
+    entity_pool_fn: "max" or "mean". How to pool the token embeddings of
+                    the target entity_mention.
+    lr: learning rate
+    weight_decay: weight decay rate
     """
 
     def __init__(
@@ -27,6 +32,7 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
             label_spec,
             freeze_pretrained=False,
             use_entity_spans=False,
+            entity_pool_fn="max",
             lr=1e-3,
             weight_decay=0.0):
         super().__init__()
@@ -36,27 +42,29 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
         self.use_entity_spans = use_entity_spans
         self.lr = lr
         self.weight_decay = weight_decay
+        self.entity_pool_fn = entity_pool_fn
 
-        self.config = BertConfig.from_pretrained(self.bert_model_name_or_path)
-        self.bert = BertModel.from_pretrained(self.bert_model_name_or_path,
-                                              config=self.config)
+        self.bert_config = BertConfig.from_pretrained(
+            self.bert_model_name_or_path)
+        self.bert = BertModel.from_pretrained(
+            self.bert_model_name_or_path, config=self.bert_config)
         if self.freeze_pretrained is True:
             for param in self.bert.parameters():
                 param.requires_grad = False
 
+        if self.use_entity_spans is True:
+            self.entity_pooler = nn.Sequential(
+                    nn.Linear(self.bert_config.hidden_size,
+                              self.bert_config.hidden_size),
+                    nn.Tanh())
+
         self.classifier_heads = nn.ModuleDict()
         for (task, num_labels) in label_spec.items():
             self.classifier_heads[task] = nn.Sequential(
-                    nn.Dropout(self.config.hidden_dropout_prob),
-                    nn.Linear(self.config.hidden_size, num_labels)
+                    nn.Dropout(self.bert_config.hidden_dropout_prob),
+                    nn.Linear(self.bert_config.hidden_size, num_labels)
                     )
-        if self.use_entity_spans is True:
-            self.entity_pooler = nn.Sequential(
-                    nn.Linear(self.config.hidden_size,
-                              self.config.hidden_size),
-                    nn.Tanh()
-                    )
-        # save __init__ arguments to self.hparams
+        # save __init__ arguments to self.hparams, which is logged by pl
         self.save_hyperparameters()
 
     def forward(
@@ -79,7 +87,7 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
         entity_spans: torch.LongTensor of shape (batch_size, 2) indicating
                       the character offsets of the target entity in the input.
         """
-        outputs = self.bert(
+        bert_outputs = self.bert(
                 input_ids=input_ids,
                 attention_mask=attention_mask,
                 token_type_ids=token_type_ids,
@@ -92,28 +100,12 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
                 )
 
         if entity_spans is not None and self.use_entity_spans is True:
-            # We need to replace the (0, 0) spans in the offset mapping
-            # with other ints to avoid masking errors when the
-            # start of the span is 0.
-            offset_mask = offset_mapping == torch.tensor([0, 0], device=self.device)
-            offset_mask = offset_mask[:, :, 0] & offset_mask[:, :, 1]
-            offset_mapping[offset_mask, :] = torch.tensor([-1, -1]).type_as(offset_mapping)
-            # Keep all tokens whose start char is >= the entity start and
-            #   whose end char is <= the entity end.
-            start_spans = entity_spans[:, 0].unsqueeze(-1).expand(
-                    -1, offset_mapping.size(1))
-            end_spans = entity_spans[:, 1].unsqueeze(-1).expand(
-                    -1, offset_mapping.size(1))
-            token_mask = (offset_mapping[:, :, 0] >= start_spans) & \
-                         (offset_mapping[:, :, 1] <= end_spans)
-            # Duplicate the mask across the hidden dimension
-            h = outputs.last_hidden_state
-            token_mask_ = token_mask.unsqueeze(-1).expand(h.size())
-            # Average each hidden dimension across the entity tokens
-            meanpooled = torch.sum(h * token_mask_, axis=1) / token_mask_.sum(axis=1)  # noqa
-            pooled_output = self.entity_pooler(meanpooled)
+            masked_hidden, token_mask = self.mask_hidden(
+                bert_outputs.last_hidden_state, offset_mapping, entity_spans)
+            pooled = self.pool_entity_embeddings(masked_hidden, token_mask)
+            pooled_output = self.entity_pooler(pooled)
         else:
-            pooled_output = outputs.pooler_output
+            pooled_output = bert_outputs.pooler_output
 
         clf_outputs = {}
         for (task, clf_head) in self.classifier_heads.items():
@@ -125,9 +117,43 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
             clf_outputs[task] = SequenceClassifierOutput(
                     loss=loss,
                     logits=logits,
-                    hidden_states=outputs.hidden_states,
-                    attentions=outputs.attentions)
+                    hidden_states=bert_outputs.hidden_states,
+                    attentions=bert_outputs.attentions)
         return clf_outputs
+
+    def pool_entity_embeddings(self, masked_hidden, token_mask):
+        if self.entity_pool_fn == "max":
+            # Replace masked with -inf to avoid zeroing out
+            # hidden dimensions if the non-masked values are all negative.
+            masked_hidden[torch.logical_not(token_mask)] = -torch.inf
+            pooled = torch.max(masked_hidden, axis=1)[0]
+        elif self.entity_pool_fn == "mean":
+            pooled = masked_hidden.sum(axis=1) / token_mask.sum(axis=1)
+        else:
+            raise ValueError(f"Unknown pool function {self.entity_pool_fn}")
+        return pooled
+
+    def mask_hidden(self, hidden_states, offset_mapping, entity_spans):
+        # We need to replace the (0, 0) spans in the offset mapping
+        # with (-1, -1) to avoid masking errors when the
+        # start of the span is 0.
+        offset_mask = offset_mapping == torch.tensor([0, 0], device=self.device)  # noqa
+        offset_mask = offset_mask[:, :, 0] & offset_mask[:, :, 1]
+        offset_mapping[offset_mask, :] = torch.tensor([-1, -1]).type_as(offset_mapping)  # noqa
+        # Keep all tokens whose start char is >= the entity start and
+        #   whose end char is <= the entity end.
+        start_spans = entity_spans[:, 0].unsqueeze(-1).expand(
+                -1, offset_mapping.size(1))
+        end_spans = entity_spans[:, 1].unsqueeze(-1).expand(
+                -1, offset_mapping.size(1))
+        token_mask = (offset_mapping[:, :, 0] >= start_spans) & \
+                     (offset_mapping[:, :, 1] <= end_spans)
+        # Duplicate the mask across the hidden dimension
+        token_mask_ = token_mask.unsqueeze(-1).expand(hidden_states.size())
+        if len((token_mask.sum(axis=1) == torch.tensor(0.)).nonzero()) > 0:
+            raise ValueError("Entity span not found! Try increasing max_seq_length.")  # noqa
+        masked = hidden_states * token_mask_
+        return masked, token_mask_
 
     def training_step(self, batch, batch_idx):
         task_outputs = self(

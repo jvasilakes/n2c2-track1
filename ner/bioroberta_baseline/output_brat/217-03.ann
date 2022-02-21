@@ -1,0 +1,23 @@
+T10600	MedicalMention 295 302	lipitor
+T10601	MedicalMention 313 318	lopid
+T10602	MedicalMention 585 591	viagra
+T10604	MedicalMention 704 707	Asa
+T10605	MedicalMention 710 730	ACETYLSALICYLIC ACID
+T10606	MedicalMention 791 797	Viagra
+T10607	MedicalMention 800 810	SILDENAFIL
+T10608	MedicalMention 882 895	nitroglycerin
+T10609	MedicalMention 896 915	Metoprolol TARTRATE
+T10610	MedicalMention 955 960	Lopid
+T10611	MedicalMention 963 974	GEMFIBROZIL
+T10612	MedicalMention 1017 1024	Lipitor
+T10613	MedicalMention 1027 1039	ATORVASTATIN
+T10614	MedicalMention 1099 1108	Arthrotec
+T10615	MedicalMention 1111 1135	DICLOFENAC / MISOPROSTOL
+T10616	MedicalMention 1151 1159	Protonix
+T10617	MedicalMention 1162 1174	PANTOPRAZOLE
+T10618	MedicalMention 1218 1228	Folic ACID
+T10619	MedicalMention 1276 1287	Penicillins
+T10620	MedicalMention 1310 1323	Erythromycins
+T10621	MedicalMention 1337 1345	Contrast
+T10625	MedicalMention 2893 2900	lipitor
+T10626	MedicalMention 2911 2916	lopid

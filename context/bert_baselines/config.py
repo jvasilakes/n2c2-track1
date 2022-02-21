@@ -20,6 +20,7 @@ class ExperimentConfig(object):
             max_seq_length: int = 128,
             batch_size: int = 1,
             use_entity_spans: bool = False,
+            entity_pool_fn: str = "max",
             max_epochs: int = 1,
             lr: float = 1e-3,
             weight_decay: float = 0.0,
@@ -40,6 +41,7 @@ class ExperimentConfig(object):
         self.max_seq_length = max_seq_length
         self.batch_size = batch_size
         self.use_entity_spans = use_entity_spans
+        self.entity_pool_fn = entity_pool_fn
         self.max_epochs = max_epochs
         self.lr = lr
         self.weight_decay = weight_decay

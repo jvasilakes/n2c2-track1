@@ -1,0 +1,42 @@
+T10207	MedicalMention 153 161	atenolol
+T10208	MedicalMention 233 238	lasix
+T10211	MedicalMention 2187 2194	Cardura
+T10212	MedicalMention 2225 2237	Procardia XL
+T10213	MedicalMention 2241 2248	Norvasc
+T10215	MedicalMention 2371 2381	Lisinopril
+T10216	MedicalMention 2414 2419	lasix
+T10217	MedicalMention 2522 2532	lisinopril
+T10218	MedicalMention 2552 2562	Irbesartan
+T10220	MedicalMention 3436 3445	METFORMIN
+T10221	MedicalMention 3703 3712	METFORMIN
+T10223	MedicalMention 3835 3839	ACEI
+T10224	MedicalMention 3910 3919	Metformin
+T10225	MedicalMention 3995 4004	Metformin
+T10226	MedicalMention 4168 4177	glyburide
+T10227	MedicalMention 4297 4306	Glipizide
+T10228	MedicalMention 4326 4333	insulin
+T10230	MedicalMention 4713 4723	FUROSEMIDE
+T10231	MedicalMention 4802 4812	FUROSEMIDE
+T10232	MedicalMention 4932 4942	FUROSEMIDE
+T10233	MedicalMention 5270 5280	COLCHICINE
+T10234	MedicalMention 5330 5341	ALLOPURINOL
+T10236	MedicalMention 5469 5479	COLCHICINE
+T10237	MedicalMention 5557 5563	atorva
+T10238	MedicalMention 5789 5809	PROSCAR W SX BENEFIT
+T10240	MedicalMention 6059 6065	TOMLIN
+T10244	MedicalMention 7608 7615	Norvasc
+T10245	MedicalMention 7628 7650	enteric coated aspirin
+T10246	MedicalMention 7643 7650	aspirin
+T10248	MedicalMention 7661 7679	Potassium chloride
+T10249	MedicalMention 7693 7703	lisinopril
+T10250	MedicalMention 7715 7722	PROSCAR
+T10251	MedicalMention 7725 7736	FINASTERIDE
+T10252	MedicalMention 7764 7771	LIPITOR
+T10253	MedicalMention 7774 7786	ATORVASTATIN
+T10254	MedicalMention 7800 7810	colchicine
+T10255	MedicalMention 7827 7833	Avapro
+T10256	MedicalMention 7836 7846	IRBESARTAN
+T10257	MedicalMention 7882 7893	ALLOPURINOL
+T10258	MedicalMention 7923 7933	furosemide
+T10259	MedicalMention 7948 7955	Cardura
+T10260	MedicalMention 7967 7976	GLIPIZIDE
