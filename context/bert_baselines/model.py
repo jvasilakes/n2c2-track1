@@ -175,6 +175,7 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
                 "texts": batch["texts"],
                 "labels": batch["labels"],
                 "entity_spans": batch["entity_spans"],
+                "char_offsets": batch["char_offsets"],
                 "docids": batch["docids"],
                 "predictions": {task: [] for task in tasks}
                 }

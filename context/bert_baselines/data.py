@@ -129,6 +129,9 @@ class n2c2SentencesDataset(Dataset):
 
         return {"text": text,
                 "entity_span": (entity_start, entity_end),
+                # For reconstructing original entity span offsets
+                #  in the source document.
+                "char_offset": context[0]["start_index"],
                 "label_names": self.label_names,
                 "labels": labels,
                 "docid": event.docid}
@@ -265,6 +268,7 @@ class n2c2SentencesDataModule(pl.LightningDataModule):
     def encode_and_collate(self, examples):
         batch = {"encodings": None,
                  "entity_spans": [],
+                 "char_offsets": [],
                  "texts": [],
                  "labels": defaultdict(list),
                  "docids": []
@@ -272,6 +276,7 @@ class n2c2SentencesDataModule(pl.LightningDataModule):
 
         for ex in examples:
             batch["entity_spans"].append(ex["entity_span"])
+            batch["char_offsets"].append(ex["char_offset"])
             batch["texts"].append(ex["text"])
             batch["docids"].append(ex["docid"])
             for (task, val) in ex["labels"].items():
