@@ -1,0 +1,7 @@
+T20	Disposition 1355 1363	Metrogel
+E20	Disposition:T20
+A1	Certainty E20 Certain
+A2	Actor E20 Physician
+A3	Action E20 Start
+A4	Temporality E20 Past
+A5	Negation E20 NotNegated

@@ -1,0 +1,14 @@
+T17	Disposition 3554 3566	levofloxacin
+E17	Disposition:T17
+A1	Certainty E17 Certain
+A2	Actor E17 Physician
+A3	Action E17 Stop
+A4	Temporality E17 Present
+A10	Negation E17 NotNegated
+T18	Disposition 3568 3581	metronidazole
+E18	Disposition:T18
+A5	Certainty E18 Certain
+A6	Actor E18 Physician
+A7	Action E18 Stop
+A8	Temporality E18 Present
+A9	Negation E18 NotNegated

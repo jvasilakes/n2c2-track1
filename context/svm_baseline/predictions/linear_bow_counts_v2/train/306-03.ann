@@ -1,0 +1,7 @@
+T12	Disposition 2607 2614	fragmin
+E12	Disposition:T12
+A1	Certainty E12 Certain
+A2	Actor E12 Unknown
+A3	Action E12 Stop
+A4	Temporality E12 Past
+A5	Negation E12 NotNegated

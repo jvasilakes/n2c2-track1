@@ -1,0 +1,7 @@
+T25	Disposition 2087 2093	Viagra
+E25	Disposition:T25
+A1	Certainty E25 Certain
+A2	Actor E25 Physician
+A3	Action E25 UniqueDose
+A4	Temporality E25 Present
+A5	Negation E25 NotNegated

@@ -1,0 +1,7 @@
+T16	Disposition 5410 5423	alpha blocker
+E16	Disposition:T16
+A1	Certainty E16 Certain
+A2	Actor E16 Physician
+A3	Action E16 Start
+A4	Temporality E16 Present
+A5	Negation E16 NotNegated

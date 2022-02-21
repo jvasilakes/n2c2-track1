@@ -1,0 +1,84 @@
+T35	Disposition 1321 1328	proscar
+E35	Disposition:T35
+A1	Certainty E35 Certain
+A2	Actor E35 Physician
+A3	Action E35 Stop
+A4	Temporality E35 Past
+A56	Negation E35 NotNegated
+T36	Disposition 1321 1328	proscar
+E36	Disposition:T36
+A5	Certainty E36 Certain
+A6	Negation E36 NotNegated
+A7	Actor E36 Physician
+A8	Action E36 Stop
+A9	Temporality E36 Past
+T6	Disposition 1356 1362	flomax
+E6	Disposition:T6
+A10	Certainty E6 Certain
+A11	Actor E6 Physician
+A12	Action E6 Stop
+A13	Temporality E6 Past
+A59	Negation E6 NotNegated
+T7	Disposition 1575 1578	ASA
+E7	Disposition:T7
+A14	Action E7 Start
+A15	Certainty E7 Certain
+A16	Actor E7 Physician
+A17	Temporality E7 Past
+A64	Negation E7 NotNegated
+T8	Disposition 1633 1640	Zyprexa
+E8	Disposition:T8
+A18	Certainty E8 Certain
+A19	Actor E8 Patient
+A20	Action E8 Decrease
+A21	Temporality E8 Past
+A60	Negation E8 NotNegated
+T50	Disposition 4508 4515	Proscar
+E50	Disposition:T50
+A26	Certainty E50 Certain
+A27	Actor E50 Physician
+A28	Action E50 Stop
+A29	Temporality E50 Present
+A62	Negation E50 NotNegated
+T51	Disposition 4575 4581	FLomax
+E51	Disposition:T51
+A30	Certainty E51 Hypothetical
+A31	Actor E51 Physician
+A32	Action E51 Stop
+A33	Temporality E51 Present
+A57	Negation E51 NotNegated
+T28	Disposition 4892 4899	Zyprexa
+E28	Disposition:T28
+A34	Certainty E28 Certain
+A35	Actor E28 Patient
+A36	Action E28 Decrease
+A37	Temporality E28 Past
+A63	Negation E28 NotNegated
+T52	Disposition 4892 4899	Zyprexa
+E52	Disposition:T52
+A38	Certainty E52 Certain
+A39	Negation E52 NotNegated
+A40	Actor E52 Patient
+A41	Action E52 Decrease
+A42	Temporality E52 Past
+T53	Disposition 5116 5123	proscar
+E53	Disposition:T53
+A43	Certainty E53 Certain
+A44	Actor E53 Physician
+A45	Action E53 Stop
+A46	Temporality E53 Present
+A55	Negation E53 NotNegated
+T54	Disposition 5138 5144	FLomax
+E54	Disposition:T54
+A47	Certainty E54 Hypothetical
+A48	Actor E54 Physician
+A49	Action E54 Stop
+A50	Temporality E54 Future
+A61	Negation E54 NotNegated
+T55	Disposition 5189 5195	FLomax
+E55	Disposition:T55
+A51	Certainty E55 Hypothetical
+A52	Actor E55 Physician
+A53	Action E55 Stop
+A54	Temporality E55 Future
+A58	Negation E55 NotNegated

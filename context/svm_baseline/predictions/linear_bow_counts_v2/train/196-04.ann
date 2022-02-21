@@ -1,0 +1,7 @@
+T37	Disposition 2974 2980	Lantus
+E37	Disposition:T37
+A1	Certainty E37 Certain
+A2	Actor E37 Physician
+A3	Action E37 Increase
+A4	Temporality E37 Past
+A5	Negation E37 NotNegated

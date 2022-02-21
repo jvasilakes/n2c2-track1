@@ -1,0 +1,14 @@
+T19	Disposition 6328 6336	Coumadin
+E19	Disposition:T19
+A1	Certainty E19 Certain
+A2	Actor E19 Physician
+A3	Action E19 Stop
+A4	Temporality E19 Present
+A9	Negation E19 NotNegated
+T20	Disposition 6554 6562	Coumadin
+E20	Disposition:T20
+A5	Certainty E20 Certain
+A6	Actor E20 Physician
+A7	Action E20 Stop
+A8	Temporality E20 Present
+A10	Negation E20 NotNegated

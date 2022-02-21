@@ -1,0 +1,14 @@
+T12	Disposition 2415 2427	beta-blocker
+E12	Disposition:T12
+A5	Certainty E12 Certain
+A6	Negation E12 Negated
+A7	Actor E12 Physician
+A8	Action E12 Start
+A9	Temporality E12 Present
+T13	Disposition 2756 2763	Lipitor
+E13	Disposition:T13
+A1	Certainty E13 Certain
+A2	Actor E13 Physician
+A3	Action E13 Start
+A4	Temporality E13 Present
+A10	Negation E13 NotNegated

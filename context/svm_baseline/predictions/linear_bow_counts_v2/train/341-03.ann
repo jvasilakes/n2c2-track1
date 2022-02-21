@@ -1,0 +1,42 @@
+T1	Disposition 1667 1670	IVF
+E1	Disposition:T1
+A10	Certainty E1 Certain
+A11	Actor E1 Physician
+A12	Action E1 UniqueDose
+A13	Temporality E1 Past
+A30	Negation E1 NotNegated
+T2	Disposition 1672 1677	lasix
+E2	Disposition:T2
+A14	Certainty E2 Certain
+A15	Actor E2 Physician
+A16	Action E2 UniqueDose
+A17	Temporality E2 Past
+A29	Negation E2 NotNegated
+T3	Disposition 1702 1716	bisphosphonate
+E3	Disposition:T3
+A6	Certainty E3 Certain
+A7	Actor E3 Physician
+A8	Action E3 UniqueDose
+A9	Temporality E3 Past
+A27	Negation E3 NotNegated
+T5	Disposition 2834 2842	steroids
+E5	Disposition:T5
+A1	Certainty E5 Certain
+A2	Negation E5 Negated
+A3	Actor E5 Physician
+A4	Action E5 Start
+A5	Temporality E5 Past
+T6	Disposition 4126 4129	IVF
+E6	Disposition:T6
+A18	Certainty E6 Certain
+A19	Actor E6 Physician
+A20	Action E6 UniqueDose
+A21	Temporality E6 Past
+A28	Negation E6 NotNegated
+T19	Disposition 10700 10703	IVF
+E19	Disposition:T19
+A22	Certainty E19 Certain
+A23	Actor E19 Physician
+A24	Action E19 UniqueDose
+A25	Temporality E19 Past
+A26	Negation E19 NotNegated

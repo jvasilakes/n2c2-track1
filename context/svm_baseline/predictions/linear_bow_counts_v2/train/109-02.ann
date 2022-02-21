@@ -1,0 +1,14 @@
+T16	Disposition 501 512	peptobismol
+E16	Disposition:T16
+A1	Certainty E16 Certain
+A2	Actor E16 Patient
+A3	Action E16 Start
+A4	Temporality E16 Past
+A9	Negation E16 NotNegated
+T14	Disposition 6668 6675	aspirin
+E14	Disposition:T14
+A5	Certainty E14 Certain
+A6	Actor E14 Physician
+A7	Action E14 Stop
+A8	Temporality E14 Present
+A10	Negation E14 NotNegated

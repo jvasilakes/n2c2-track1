@@ -1,0 +1,35 @@
+T18	Disposition 2263 2272	micronase
+E18	Disposition:T18
+A5	Certainty E18 Hypothetical
+A6	Actor E18 Physician
+A7	Action E18 Unknown
+A8	Temporality E18 Future
+A24	Negation E18 NotNegated
+T17	Disposition 2373 2382	micronase
+E17	Disposition:T17
+A1	Certainty E17 Conditional
+A2	Actor E17 Physician
+A3	Action E17 Increase
+A4	Temporality E17 Future
+A25	Negation E17 NotNegated
+T5	Disposition 2581 2586	zocor
+E5	Disposition:T5
+A9	Certainty E5 Hypothetical
+A10	Actor E5 Physician
+A11	Action E5 Increase
+A12	Temporality E5 Future
+A23	Negation E5 NotNegated
+T19	Disposition 2837 2846	b-blocker
+E19	Disposition:T19
+A13	Certainty E19 Hypothetical
+A14	Actor E19 Physician
+A15	Action E19 Increase
+A16	Temporality E19 Present
+A21	Negation E19 NotNegated
+T6	Disposition 2919 2927	atenolol
+E6	Disposition:T6
+A17	Certainty E6 Certain
+A18	Actor E6 Physician
+A19	Action E6 Increase
+A20	Temporality E6 Present
+A22	Negation E6 NotNegated

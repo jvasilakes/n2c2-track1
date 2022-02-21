@@ -1,0 +1,84 @@
+T1	Disposition 1106 1114	Excedrin
+E1	Disposition:T1
+A1	Certainty E1 Certain
+A2	Actor E1 Patient
+A3	Action E1 UniqueDose
+A4	Temporality E1 Past
+A58	Negation E1 NotNegated
+T27	Disposition 1172 1175	NTG
+E27	Disposition:T27
+A5	Certainty E27 Certain
+A6	Actor E27 Physician
+A7	Action E27 UniqueDose
+A8	Temporality E27 Past
+A55	Negation E27 NotNegated
+T2	Disposition 1187 1190	ASA
+E2	Disposition:T2
+A9	Certainty E2 Certain
+A10	Actor E2 Physician
+A11	Action E2 UniqueDose
+A12	Temporality E2 Past
+A56	Negation E2 NotNegated
+T28	Disposition 1351 1354	TNG
+E28	Disposition:T28
+A13	Certainty E28 Certain
+A14	Actor E28 Physician
+A15	Action E28 Start
+A16	Temporality E28 Past
+A57	Negation E28 NotNegated
+T3	Disposition 1464 1471	heparin
+E3	Disposition:T3
+A17	Certainty E3 Certain
+A18	Actor E3 Physician
+A19	Action E3 Start
+A20	Temporality E3 Past
+A51	Negation E3 NotNegated
+T4	Disposition 1488 1496	fioricet
+E4	Disposition:T4
+A25	Certainty E4 Certain
+A26	Actor E4 Physician
+A27	Action E4 UniqueDose
+A28	Temporality E4 Past
+A54	Negation E4 NotNegated
+T5	Disposition 1498 1504	zofran
+E5	Disposition:T5
+A29	Certainty E5 Certain
+A30	Actor E5 Physician
+A31	Action E5 UniqueDose
+A32	Temporality E5 Past
+A59	Negation E5 NotNegated
+T6	Disposition 1510 1518	fentanyl
+E6	Disposition:T6
+A33	Certainty E6 Certain
+A34	Actor E6 Physician
+A35	Action E6 UniqueDose
+A36	Temporality E6 Past
+A53	Negation E6 NotNegated
+T7	Disposition 1574 1583	lopressor
+E7	Disposition:T7
+A21	Certainty E7 Certain
+A22	Actor E7 Physician
+A23	Action E7 UniqueDose
+A24	Temporality E7 Past
+A60	Negation E7 NotNegated
+T22	Disposition 9201 9207	statin
+E22	Disposition:T22
+A37	Certainty E22 Certain
+A38	Actor E22 Physician
+A39	Action E22 Start
+A40	Temporality E22 Present
+A49	Negation E22 NotNegated
+T47	Disposition 9231 9234	TNG
+E47	Disposition:T47
+A41	Certainty E47 Conditional
+A42	Actor E47 Physician
+A43	Action E47 Start
+A44	Temporality E47 Future
+A50	Negation E47 NotNegated
+T48	Disposition 9261 9268	IIbIIIa
+E48	Disposition:T48
+A45	Certainty E48 Conditional
+A46	Actor E48 Physician
+A47	Action E48 Start
+A48	Temporality E48 Future
+A52	Negation E48 NotNegated

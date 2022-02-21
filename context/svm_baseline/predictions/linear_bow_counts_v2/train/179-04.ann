@@ -1,0 +1,28 @@
+T1	Disposition 1795 1805	metoprolol
+E1	Disposition:T1
+A1	Certainty E1 Certain
+A2	Actor E1 Patient
+A3	Action E1 Decrease
+A4	Temporality E1 Past
+A17	Negation E1 NotNegated
+T8	Disposition 2200 2206	Plavix
+E8	Disposition:T8
+A5	Certainty E8 Certain
+A6	Actor E8 Unknown
+A7	Action E8 Stop
+A8	Temporality E8 Past
+A18	Negation E8 NotNegated
+T38	Disposition 4021 4032	Nasacort aq
+E38	Disposition:T38
+A9	Certainty E38 Conditional
+A10	Actor E38 Physician
+A11	Action E38 Stop
+A12	Temporality E38 Unknown
+A20	Negation E38 NotNegated
+T30	Disposition 4900 4911	Nasacort aq
+E30	Disposition:T30
+A13	Certainty E30 Conditional
+A14	Actor E30 Physician
+A15	Action E30 Stop
+A16	Temporality E30 Unknown
+A19	Negation E30 NotNegated

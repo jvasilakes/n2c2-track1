@@ -1,0 +1,49 @@
+T42	Disposition 5286 5292	PRBC's
+E42	Disposition:T42
+A12	Certainty E42 Certain
+A15	Actor E42 Physician
+A16	Action E42 UniqueDose
+A17	Temporality E42 Past
+A46	Negation E42 NotNegated
+T19	Disposition 7523 7529	PRBC's
+E19	Disposition:T19
+A39	Certainty E19 Certain
+A40	Actor E19 Physician
+A41	Action E19 UniqueDose
+A42	Temporality E19 Past
+A44	Negation E19 NotNegated
+T31	Disposition 11148 11151	NTG
+E31	Disposition:T31
+A1	Certainty E31 Certain
+A2	Actor E31 Unknown
+A3	Action E31 Stop
+A4	Temporality E31 Past
+A47	Negation E31 NotNegated
+T32	Disposition 11162 11171	Nitropace
+E32	Disposition:T32
+A5	Certainty E32 Certain
+A6	Actor E32 Unknown
+A7	Action E32 Stop
+A8	Temporality E32 Past
+A45	Negation E32 NotNegated
+T21	Disposition 11597 11603	Nexium
+E21	Disposition:T21
+A9	Certainty E21 Certain
+A10	Negation E21 Negated
+A11	Actor E21 Unknown
+A13	Action E21 Start
+A14	Temporality E21 Past
+T22	Disposition 11895 11904	Glyburide
+E22	Disposition:T22
+A35	Certainty E22 Certain
+A36	Actor E22 Physician
+A37	Action E22 Stop
+A38	Temporality E22 Future
+A43	Negation E22 NotNegated
+T25	Disposition 12489 12498	Glyburide
+E25	Disposition:T25
+A27	Certainty E25 Certain
+A28	Actor E25 Physician
+A29	Action E25 Stop
+A30	Temporality E25 Future
+A48	Negation E25 NotNegated

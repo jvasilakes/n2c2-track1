@@ -1,0 +1,7 @@
+T8	Disposition 743 758	anticoagulation
+E8	Disposition:T8
+A1	Certainty E8 Certain
+A2	Actor E8 Physician
+A3	Action E8 Start
+A4	Temporality E8 Present
+A5	Negation E8 NotNegated

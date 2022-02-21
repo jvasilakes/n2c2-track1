@@ -1,0 +1,7 @@
+T9	Disposition 2108 2117	metformin
+E9	Disposition:T9
+A1	Certainty E9 Certain
+A2	Actor E9 Physician
+A3	Action E9 Start
+A4	Temporality E9 Future
+A5	Negation E9 NotNegated

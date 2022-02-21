@@ -1,0 +1,7 @@
+T7	Disposition 2785 2795	lisinopril
+E7	Disposition:T7
+A1	Certainty E7 Certain
+A2	Actor E7 Physician
+A3	Action E7 Increase
+A4	Temporality E7 Present
+A5	Negation E7 NotNegated

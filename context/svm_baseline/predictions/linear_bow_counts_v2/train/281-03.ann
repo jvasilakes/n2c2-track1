@@ -1,0 +1,7 @@
+T18	Disposition 11669 11679	ampicillin
+E18	Disposition:T18
+A1	Certainty E18 Conditional
+A2	Actor E18 Physician
+A3	Action E18 Start
+A4	Temporality E18 Future
+A5	Negation E18 NotNegated

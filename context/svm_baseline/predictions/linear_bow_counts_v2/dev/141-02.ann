@@ -1,0 +1,84 @@
+T33	Disposition 428 434	Nexium
+E33	Disposition:T33
+A1	Certainty E33 Certain
+A2	Actor E33 Physician
+A3	Action E33 Increase
+A4	Temporality E33 Past
+A52	Negation E33 NotNegated
+T34	Disposition 702 705	ASA
+E34	Disposition:T34
+A5	Certainty E34 Certain
+A6	Actor E34 Physician
+A7	Action E34 UniqueDose
+A8	Temporality E34 Past
+A49	Negation E34 NotNegated
+T35	Disposition 800 805	Nitro
+E35	Disposition:T35
+A9	Certainty E35 Certain
+A10	Actor E35 Physician
+A11	Action E35 UniqueDose
+A12	Temporality E35 Past
+A50	Negation E35 NotNegated
+T3	Disposition 832 840	Morphine
+E3	Disposition:T3
+A13	Certainty E3 Certain
+A14	Actor E3 Physician
+A15	Action E3 UniqueDose
+A16	Temporality E3 Past
+A53	Negation E3 NotNegated
+T4	Disposition 867 874	heparin
+E4	Disposition:T4
+A17	Certainty E4 Certain
+A18	Actor E4 Physician
+A19	Action E4 Start
+A20	Temporality E4 Past
+A56	Negation E4 NotNegated
+T5	Disposition 886 895	lopressor
+E5	Disposition:T5
+A21	Certainty E5 Certain
+A22	Actor E5 Physician
+A23	Action E5 UniqueDose
+A24	Temporality E5 Past
+A59	Negation E5 NotNegated
+T7	Disposition 909 915	zantac
+E7	Disposition:T7
+A25	Certainty E7 Certain
+A26	Actor E7 Physician
+A27	Action E7 UniqueDose
+A28	Temporality E7 Past
+A60	Negation E7 NotNegated
+T9	Disposition 934 940	Maalox
+E9	Disposition:T9
+A29	Certainty E9 Certain
+A30	Actor E9 Physician
+A31	Action E9 UniqueDose
+A32	Temporality E9 Past
+A54	Negation E9 NotNegated
+T12	Disposition 1041 1048	heparin
+E12	Disposition:T12
+A33	Certainty E12 Certain
+A34	Actor E12 Physician
+A35	Action E12 Start
+A36	Temporality E12 Past
+A55	Negation E12 NotNegated
+T26	Disposition 7175 7181	Statin
+E26	Disposition:T26
+A37	Certainty E26 Certain
+A38	Actor E26 Physician
+A39	Action E26 Stop
+A40	Temporality E26 Future
+A58	Negation E26 NotNegated
+T27	Disposition 7202 7212	integrilin
+E27	Disposition:T27
+A41	Certainty E27 Hypothetical
+A42	Actor E27 Physician
+A43	Action E27 Increase
+A44	Temporality E27 Future
+A57	Negation E27 NotNegated
+T39	Disposition 7354 7358	acei
+E39	Disposition:T39
+A45	Certainty E39 Certain
+A46	Actor E39 Physician
+A47	Action E39 Start
+A48	Temporality E39 Future
+A51	Negation E39 NotNegated

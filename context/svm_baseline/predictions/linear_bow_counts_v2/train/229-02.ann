@@ -1,0 +1,7 @@
+T11	Disposition 3673 3681	Coumadin
+E11	Disposition:T11
+A1	Certainty E11 Certain
+A2	Negation E11 Negated
+A3	Actor E11 Physician
+A4	Action E11 Start
+A5	Temporality E11 Past

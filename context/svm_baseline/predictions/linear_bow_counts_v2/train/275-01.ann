@@ -1,0 +1,49 @@
+T1	Disposition 304 309	lasix
+E1	Disposition:T1
+A13	Certainty E1 Certain
+A14	Actor E1 Physician
+A15	Action E1 UniqueDose
+A16	Temporality E1 Past
+A33	Negation E1 NotNegated
+T2	Disposition 344 349	lasix
+E2	Disposition:T2
+A17	Certainty E2 Certain
+A18	Actor E2 Physician
+A19	Action E2 UniqueDose
+A20	Temporality E2 Past
+A32	Negation E2 NotNegated
+T3	Disposition 379 384	lasix
+E3	Disposition:T3
+A21	Certainty E3 Certain
+A22	Actor E3 Physician
+A23	Action E3 UniqueDose
+A24	Temporality E3 Past
+A29	Negation E3 NotNegated
+T10	Disposition 1081 1096	anticoagulation
+E10	Disposition:T10
+A25	Certainty E10 Certain
+A26	Actor E10 Physician
+A27	Action E10 Stop
+A28	Temporality E10 Present
+A31	Negation E10 NotNegated
+T5	Disposition 1447 1452	lasix
+E5	Disposition:T5
+A9	Certainty E5 Certain
+A10	Actor E5 Physician
+A11	Action E5 Unknown
+A12	Temporality E5 Present
+A34	Negation E5 NotNegated
+T6	Disposition 1616 1625	metformin
+E6	Disposition:T6
+A1	Certainty E6 Certain
+A2	Actor E6 Physician
+A3	Action E6 Stop
+A4	Temporality E6 Present
+A30	Negation E6 NotNegated
+T7	Disposition 1627 1631	RISS
+E7	Disposition:T7
+A5	Certainty E7 Certain
+A6	Actor E7 Physician
+A7	Action E7 Stop
+A8	Temporality E7 Present
+A35	Negation E7 NotNegated

@@ -1,0 +1,14 @@
+T28	Disposition 1953 1960	nasonex
+E28	Disposition:T28
+A1	Certainty E28 Certain
+A2	Actor E28 Physician
+A3	Action E28 Start
+A4	Temporality E28 Present
+A10	Negation E28 NotNegated
+T13	Disposition 2085 2091	plavix
+E13	Disposition:T13
+A5	Certainty E13 Hypothetical
+A6	Actor E13 Physician
+A7	Action E13 Stop
+A8	Temporality E13 Future
+A9	Negation E13 NotNegated

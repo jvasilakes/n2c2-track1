@@ -1,0 +1,7 @@
+T1	Disposition 399 404	Lasix
+E1	Disposition:T1
+A1	Certainty E1 Certain
+A2	Actor E1 Patient
+A3	Action E1 Stop
+A4	Temporality E1 Past
+A5	Negation E1 NotNegated

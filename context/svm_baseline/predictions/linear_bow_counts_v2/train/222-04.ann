@@ -1,0 +1,14 @@
+T7	Disposition 621 631	vancomycin
+E7	Disposition:T7
+A1	Certainty E7 Certain
+A2	Actor E7 Physician
+A3	Action E7 Stop
+A4	Temporality E7 Past
+A9	Negation E7 NotNegated
+T12	Disposition 1783 1788	Lasix
+E12	Disposition:T12
+A5	Certainty E12 Certain
+A6	Actor E12 Physician
+A7	Action E12 Increase
+A8	Temporality E12 Present
+A10	Negation E12 NotNegated

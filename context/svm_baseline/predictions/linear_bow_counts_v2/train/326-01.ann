@@ -1,0 +1,21 @@
+T1	Disposition 297 307	prednisone
+E1	Disposition:T1
+A1	Certainty E1 Certain
+A2	Actor E1 Physician
+A3	Action E1 Decrease
+A4	Temporality E1 Past
+A13	Negation E1 NotNegated
+T22	Disposition 1642 1651	Midodrine
+E22	Disposition:T22
+A5	Certainty E22 Certain
+A6	Actor E22 Physician
+A7	Action E22 Stop
+A8	Temporality E22 Present
+A15	Negation E22 NotNegated
+T23	Disposition 1738 1755	antihypertensives
+E23	Disposition:T23
+A9	Certainty E23 Hypothetical
+A10	Actor E23 Physician
+A11	Action E23 Start
+A12	Temporality E23 Future
+A14	Negation E23 NotNegated

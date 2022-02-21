@@ -1,0 +1,7 @@
+T7	Disposition 2333 2346	Nitroglycerin
+E7	Disposition:T7
+A1	Certainty E7 Certain
+A2	Actor E7 Physician
+A3	Action E7 UniqueDose
+A4	Temporality E7 Past
+A5	Negation E7 NotNegated

@@ -78,7 +78,6 @@ def main(args):
                                      feature_type=args.feature_type,
                                      vectorizer_kwargs=kwargs,
                                      vectorizer=vectorizer)
-        print(vectorizer)
         all_X[dataset] = X
         # y_by_task: dict of task name (str) to encoded label (int)
         y_by_task, label_encoders = encode_all_labels(
