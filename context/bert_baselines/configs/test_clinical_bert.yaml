@@ -1,28 +1,31 @@
 # Experiment
-name: "test_clinical_bert"
-description: "test experiment with bio+clinical BERT"
-logdir: "logs/"
+description: test experiment with bio+clinical BERT
+logdir: logs/
+name: test_clinical_bert
 random_seed: 0
 
 # Data
-data_dir: '/home/u14498jv/Documents/Projects/n2c2-track1/n2c2Track1TrainingData-v2/data_v2'
-sentences_dir: '/home/u14498jv/Documents/Projects/n2c2-track1/n2c2Track1TrainingData-v2/segmented'
-#tasks_to_load: all
-tasks_to_load: ["Negation", "Certainty"]
-window_size: 0
+data_dir: /home/u14498jv/Documents/Projects/n2c2-track1/n2c2Track1TrainingData-v2/data_v2
 max_train_examples: 50
+sentences_dir: /home/u14498jv/Documents/Projects/n2c2-track1/n2c2Track1TrainingData-v2/segmented
+tasks_to_load:
+- Negation
+- Certainty
+window_size: 0
 
 # Model
-model_name: "bert-sequence-classifier"
-bert_model_name_or_path: "emilyalsentzer/Bio_ClinicalBERT"
+bert_model_name_or_path: emilyalsentzer/Bio_ClinicalBERT
+entity_pool_fn: max
 freeze_pretrained: false
-use_entity_spans: false
-entity_pool_fn: "max"
 max_seq_length: 256
+model_name: bert-sequence-classifier
+use_entity_spans: false
 
 # Training
 batch_size: 10
-lr: 0.001
-weight_decay: 0.0
 gradient_clip_val: 10.0
+lr: 0.001
 max_epochs: 2
+sample_strategy: none
+weight_decay: 0.0
+

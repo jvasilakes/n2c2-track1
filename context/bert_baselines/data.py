@@ -38,7 +38,7 @@ class n2c2SentencesDataset(Dataset):
 
     def __init__(self, data_dir, sentences_dir,
                  label_names="all", window_size=0,
-                 max_examples=None):
+                 max_examples=-1):
         self.data_dir = data_dir
         self.sentences_dir = sentences_dir
         self.label_names = label_names
@@ -61,7 +61,7 @@ class n2c2SentencesDataset(Dataset):
                 for enc_lab in encoded_labels]
 
     def __len__(self):
-        if self.max_examples is None:
+        if self.max_examples == -1:
             return len(self.events)
         else:
             return len(self.events[:self.max_examples])
@@ -165,8 +165,8 @@ class n2c2SentencesDataModule(pl.LightningDataModule):
 
     def __init__(self, data_dir, sentences_dir, batch_size,
                  bert_model_name_or_path, tasks_to_load="all",
-                 max_seq_length=128, window_size=0, sample_strategy=None,
-                 max_train_examples=None):
+                 max_seq_length=128, window_size=0, sample_strategy="none",
+                 max_train_examples=-1):
         super().__init__()
         self.data_dir = data_dir
         self.sentences_dir = sentences_dir
@@ -207,7 +207,7 @@ class n2c2SentencesDataModule(pl.LightningDataModule):
             warnings.warn("No test set found.")
             self.test = None
 
-        if self.sample_strategy is None:
+        if self.sample_strategy == "none": 
             self.sampler = None
         elif self.sample_strategy == "weighted":
             # This should give a near-uniform distribution of task
