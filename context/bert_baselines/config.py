@@ -51,10 +51,16 @@ class ExperimentConfig(object):
         self.freeze_pretrained = freeze_pretrained
         self.random_seed = random_seed
 
+        self.validate()
+
     def __str__(self):
         yaml_str = yaml.dump(self.__dict__)
         yaml_str = '  ' + yaml_str.replace('\n', '\n  ')
         return "ExperimentConfig\n" + yaml_str
+
+    def validate(self):
+        assert self.entity_pool_fn in ["mean", "max"]
+        assert self.sample_strategy in [None, "weighted"]
 
     @classmethod
     def from_yaml_file(cls, filepath):
