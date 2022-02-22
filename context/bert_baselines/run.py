@@ -67,6 +67,7 @@ def main(args):
             max_seq_length=config.max_seq_length,
             window_size=config.window_size,
             max_train_examples=config.max_train_examples,
+            sample_strategy=config.sample_strategy,
             )
     datamodule.setup()
 
