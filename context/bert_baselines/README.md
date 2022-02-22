@@ -26,6 +26,7 @@ python3 run.py validate /path/to/logs/experiment_name/version/config.yaml
 * `sentences_dir`: `/path/to/n2c2Track1TrainingData/segmented` Assumes JSON lines format as output by `/path/to/n2c2Track1TrainingData/segmented/scripts/run_biomedicus_sentences.py`.
 * `tasks_to_load`: List of the context classification tasks to perform. Valid options are `"all"`, or any subset of `["Action", "Actor", "Certainity", "Negation", "Temporality"]`
 * `max_train_examples`: `null` or `int`. Limit the number of training examples. Useful for debugging.
+* `sample_strategy`: `null` or `"weighted"`. How to sample training examples. If `null`, use shuffled batch sampling. If `"weighted"`, sample according to inverse probability of the examples' label(s) in the train set using `torch.utils.data.WeightedRandomSampler`.
 
 ### Model options
 * `model_name`: Model to run, corresponding to entries in `model.MODEL_LOOKUP.keys()`.
