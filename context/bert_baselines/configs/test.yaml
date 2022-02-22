@@ -22,6 +22,7 @@ max_seq_length: 256
 
 # Training
 batch_size: 10
+sample_strategy: null
 lr: 0.001
 weight_decay: 0.0
 gradient_clip_val: 10.0
