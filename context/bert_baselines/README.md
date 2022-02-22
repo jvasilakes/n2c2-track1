@@ -2,11 +2,10 @@
 
 ## Usage
 
-Generate a default experiment config file.
+Generate a default experiment config file with
 ```
-python config.py --filepath configs/new.yaml
+python config.py new path/to/new.yaml
 ```
-A nicely formatted example is at `configs/test.yaml`.
 
 Edit this file to your liking. Some less obvious options are explained below.
 Then run
@@ -15,6 +14,10 @@ Then run
 python3 run.py train /path/to/config.yaml
 python3 run.py validate /path/to/logs/experiment_name/version/config.yaml
 ```
+
+`run.py train` will run validation of the current model after the last training epoch.
+`run.py validate` will run validation of the best model (in terms of average macro F1 over the tasks).
+These are not necessarily the same!
 
 
 ### Experiment options
