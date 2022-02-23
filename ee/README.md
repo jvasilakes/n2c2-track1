@@ -18,6 +18,13 @@ Results:
 
 Bert-base: entities marked with '@'
 
+
+### Lenient match
+| Task | Macro Pr | Macro Re | Macro f1 | Micro f1 |
+|------|----------|----------|----------|----------|
+|Event |  0.9904  |  0.9847  |  0.9875  |  0.9939  |
+|Action|  0.9828  |  0.7812  |  0.8074  |  0.9781  |
+
 ---------- Epoch: 06 ----------
 	TRAIN / LOSS =     0.0191  Time 0h 01m 05s  Dispotion counts: 1128/1117/1136/6125
 Events : Macro_Pr = 0.9904 | Macro_Re = 0.9847 | Macro_F1  = 0.9875 | Micro_F1 = 0.9939 <<<
