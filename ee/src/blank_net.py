@@ -27,21 +27,25 @@ class BlankNet(nn.Module):
         super().__init__()
         self.device = device
         self.config = config
-        self.lang_encoder = BertModel.from_pretrained('bert-base-uncased',
-                                                      hidden_dropout_prob=config['input_dropout']) 
+        self.lang_encoder = BertModel.from_pretrained('bert-base-uncased', hidden_dropout_prob=config['input_dropout']) 
         #attention_probs_dropout_prob =  config['output_dropout']  
         if config['freeze_pretrained']:
             for param in self.lang_encoder.parameters():
                 param.requires_grad = False
         
-        self.classifier = nn.Sequential(
+        self.shared = nn.Sequential(
             nn.Linear(2*config['enc_dim'], config['enc_dim']), ##This may change
             nn.ReLU(),
-            nn.Dropout(p=config['output_dropout']),
-            nn.Linear(config['enc_dim'], len(vocabs['r_vocab']))
-        )
+            nn.Dropout(p=config['output_dropout']))
+        self.event_classifier = nn.Linear(config['enc_dim'], len(vocabs['events']))
+        self.action_classifier = nn.Linear(config['enc_dim'], len(vocabs['actions']))
     # task loss
-        self.loss_fnt = nn.CrossEntropyLoss()
+        self.sigm = nn.Sigmoid()
+        self.loss_fnt = nn.BCEWithLogitsLoss()
+        
+#         self.loss_fnt = nn.BCELoss()
+        
+#         self.loss_fnt = nn.CrossEntropyLoss()
         
     def average_tokens(self, enc_seq, mentions):
         """
@@ -79,10 +83,21 @@ class BlankNet(nn.Module):
 #         enc_out = outputs['pooler_output'] ## [CLS] -> sentence encoding
 #         h = self.average_tokens(enc_out, tokens_ent)  # contextualised representations of args
         h = self.specific_tokens(enc_out, tokens_ent)
-        logits = self.classifier(h)
-        outputs = (logits,)
+        shared = self.shared(h) 
+        event_logits = self.event_classifier(shared) # float() ??
+        action_logits = self.action_classifier(shared)
+        outputs = (self.sigm(event_logits),self.sigm(action_logits),)
 #         if batch['labels'] is not None:
-        loss = self.loss_fnt(logits.float(), batch['labels'])
-        outputs = (loss,) + outputs
+        loss_event = self.loss_fnt(event_logits, batch['elabels'].float())
+        ## For action loss we have to think what negative samples to present
+        true_dispo = batch['elabels'][:, 1] ==1 ##Disposition
+        pred_dispo = outputs[0][:,1] > self.config['threshold'] ##Pred disposition
+        indxs = true_dispo
+#         loss_action = self.loss_fnt(action_logits, batch['alabels'].float())
+        if torch.sum(indxs) > 0 :
+            loss_action = self.loss_fnt(action_logits[indxs], batch['alabels'][indxs].float())
+        else:
+            loss_action = torch.zeros(1)[0].to(self.device)
+        outputs = (loss_event,loss_action,) + outputs
 
         return outputs

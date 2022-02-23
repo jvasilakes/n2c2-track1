@@ -1,0 +1,24 @@
+#!/bin/bash --login
+
+#$ -cwd
+
+# Number of GPU's to be used
+#$ -l nvidia_v100=1
+
+# Number of CPU cores to be used
+# 
+
+echo "Job is using $NGPUS GPU's with ID's $CUDA_VISIBLE_DEVICES and $NSLOTS CPU core's"
+
+# Load the latest CUDA library
+module load libs/cuda
+
+# Enable proxy connection
+#module load tools/env/proxy         # Uses proxy.man.ac.uk:3128
+module load tools/env/proxy2        # Uses http://proxy.man.ac.uk:3128
+
+conda activate dsre-vae
+#pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.4.0/en_core_sci_scibert-0.4.0.tar.gz
+# Training model
+cd src/
+python scispacy.py --config ../configs/local.yaml --outdir ../data/spacy/

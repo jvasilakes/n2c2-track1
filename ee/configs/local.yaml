@@ -3,8 +3,10 @@ seed: 2021
 log_interval: 300
 
 # DATA
-train_data: ../data/preprocessed/train_data.txt
-dev_data: ../data/preprocessed/dev_data.txt
+orig_dir: ../data/original_v2/
+biom_dir: ../data/segmented/
+spacy_dir: ../data/spacy/
+dev_miss: ../dev_miss.txt
 output_folder: ../saved_models/
 logs: ../logs/
 
@@ -12,7 +14,7 @@ exp_name: 'n2c2'
 model_name: 'bert'
 
 # Hyper-parameters
-batch_size: 10
+batch_size: 32
 epochs: 10
 warmup_epochs: 0
 
@@ -25,7 +27,7 @@ enc_dim: 768
 enc_layers: 12
 input_dropout: 0.3
 output_dropout: 0.3
-lr: 0.00005
+lr: 0.00004
 weight_decay: 0.000001
 clip: 10
 # max_vocab_size: 40000
@@ -33,6 +35,8 @@ clip: 10
 # lowercase: True
 patience: 5
 accumulate_batches: 1
+threshold: 0.5
+event_weight: 0.5
 
 # FLAGS
 early_stop: True

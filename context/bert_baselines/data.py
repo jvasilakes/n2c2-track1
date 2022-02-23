@@ -2,46 +2,14 @@ import os
 import json
 import warnings
 from glob import glob
-from collections import defaultdict
+from collections import Counter, defaultdict
 
 import torch
 import pytorch_lightning as pl
-from torch.utils.data import Dataset, DataLoader
+from torch.utils.data import Dataset, DataLoader, WeightedRandomSampler
 from transformers import AutoTokenizer
 
 from brat_reader import BratAnnotations
-
-
-class n2c2RawTextDataset(Dataset):
-    def __init__(self, data_dir):
-        raise NotImplementedError()
-        self.data_dir = data_dir
-        self.events, self.docids_to_texts = self._get_dispositions_and_texts()
-
-    def __len__(self):
-        return len(self.events)
-
-    def __getitem__(self, idx):
-        event = self.events[idx]
-        return (event, self.docids_to_texts[event.docid])
-
-    def _get_dispositions_and_texts(self):
-        all_dispositions = []
-        docids_to_texts = {}
-        ann_glob = os.path.join(self.data_dir, "*.ann")
-        for ann_file in glob(ann_glob):
-            anns = BratAnnotations.from_file(ann_file)
-            dispositions = anns.get_events_by_type("Disposition")
-            docid = os.path.basename(ann_file).strip(".ann")
-            for d in dispositions:
-                d.update("docid", docid)
-            all_dispositions.extend(dispositions)
-
-            txt_file = os.path.join(self.data_dir, f"{docid}.txt")
-            with open(txt_file, 'r') as inF:
-                text = inF.read()
-            docids_to_texts[docid] = text
-        return all_dispositions, docids_to_texts
 
 
 class n2c2SentencesDataset(Dataset):
@@ -70,7 +38,7 @@ class n2c2SentencesDataset(Dataset):
 
     def __init__(self, data_dir, sentences_dir,
                  label_names="all", window_size=0,
-                 max_examples=None):
+                 max_examples=-1):
         self.data_dir = data_dir
         self.sentences_dir = sentences_dir
         self.label_names = label_names
@@ -93,7 +61,7 @@ class n2c2SentencesDataset(Dataset):
                 for enc_lab in encoded_labels]
 
     def __len__(self):
-        if self.max_examples is None:
+        if self.max_examples == -1:
             return len(self.events)
         else:
             return len(self.events[:self.max_examples])
@@ -132,7 +100,6 @@ class n2c2SentencesDataset(Dataset):
                 # For reconstructing original entity span offsets
                 #  in the source document.
                 "char_offset": context[0]["start_index"],
-                "label_names": self.label_names,
                 "labels": labels,
                 "docid": event.docid}
 
@@ -198,7 +165,8 @@ class n2c2SentencesDataModule(pl.LightningDataModule):
 
     def __init__(self, data_dir, sentences_dir, batch_size,
                  bert_model_name_or_path, tasks_to_load="all",
-                 max_seq_length=128, window_size=0, max_train_examples=None):
+                 max_seq_length=128, window_size=0, sample_strategy="none",
+                 max_train_examples=-1):
         super().__init__()
         self.data_dir = data_dir
         self.sentences_dir = sentences_dir
@@ -207,6 +175,7 @@ class n2c2SentencesDataModule(pl.LightningDataModule):
         self.tasks_to_load = tasks_to_load
         self.max_seq_length = max_seq_length
         self.window_size = window_size
+        self.sample_strategy = sample_strategy
         self.max_train_examples = max_train_examples
 
         self.tokenizer = AutoTokenizer.from_pretrained(
@@ -237,6 +206,18 @@ class n2c2SentencesDataModule(pl.LightningDataModule):
         else:
             warnings.warn("No test set found.")
             self.test = None
+
+        if self.sample_strategy == "none": 
+            self.sampler = None
+        elif self.sample_strategy == "weighted":
+            # This should give a near-uniform distribution of task
+            # values across examples.
+            weights = self._compute_sample_weights(self.train)
+            self.sampler = WeightedRandomSampler(weights, len(weights))
+        else:
+            msg = f"Unknown sampling strategy {self.sample_strategy}"
+            raise ValueError(msg)
+
         self._ran_setup = True
 
     @property
@@ -251,8 +232,10 @@ class n2c2SentencesDataModule(pl.LightningDataModule):
         return spec
 
     def train_dataloader(self):
-        return DataLoader(self.train, batch_size=self.batch_size, shuffle=True,
-                          collate_fn=self.encode_and_collate, num_workers=4)
+        shuffle = True if self.sampler is None else False
+        return DataLoader(self.train, batch_size=self.batch_size,
+                          shuffle=shuffle, collate_fn=self.encode_and_collate,
+                          num_workers=4, sampler=self.sampler)
 
     def val_dataloader(self):
         return DataLoader(self.val, batch_size=self.batch_size,
@@ -292,3 +275,12 @@ class n2c2SentencesDataModule(pl.LightningDataModule):
         for task in batch["labels"].keys():
             batch["labels"][task] = torch.tensor(batch["labels"][task])
         return batch
+
+    def _compute_sample_weights(self, train_dataset):
+        task_vals = [tuple(ex["labels"][task]
+                           for task in train_dataset.label_names)
+                     for ex in train_dataset]
+        val_counts = Counter(task_vals)
+        val_weights = {val: 1. / val_counts[val] for val in val_counts.keys()}
+        sample_weights = [val_weights[task_val] for task_val in task_vals]
+        return sample_weights
