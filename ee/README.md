@@ -16,6 +16,29 @@ python main.py --config ../configs/local.yaml --mode train
 
 Results:
 
+### Clinical Bert: entities marked with '@', epoch: 04 (Best event f1)
+| Set | Task | Macro Pr | Macro Re | Macro f1 | Micro f1 |
+|-------|--------|----------|----------|----------|----------|
+| Train | Event  |  0.9754  |  0.9709  |  0.9731  |  0.9873  |
+| Train | Action |  0.9503  |  0.6560  |  0.6967  |  0.9355  |
+|  Dev  | Event  |  0.8881  |  0.9235  |  0.9021  |>>0.9397<<|
+|  Dev  | Action |  0.7032  |  0.6455  |  0.6626  |  0.7624  |
+
+<!-- ---------- Epoch: 04 ----------
+	TRAIN / LOSS =     0.0401  Time 0h 01m 35s  Dispotion counts: 1128/1127/1158/6125
+Events : Macro_Pr = 0.9754 | Macro_Re = 0.9709 | Macro_F1  = 0.9731 | Micro_F1 = 0.9873 <<<
+actions y_pred size (1158, 7) y_pred sum 1147.0
+Actions: Macro_Pr = 0.9503 | Macro_Re = 0.6560 | Macro_F1  = 0.6967 | Micro_F1 = 0.9355
+actions y_pred size (6125, 7) y_pred sum 3512.0
+Actions: Macro_Pr = 0.7311 | Macro_Re = 0.6560 | Macro_F1  = 0.5336 | Micro_F1 = 0.4636
+	DEV   / LOSS =     0.1628  Time 0h 00m 02s  Dispotion counts: 201/187/213/1010
+Events : Macro_Pr = 0.8881 | Macro_Re = 0.9235 | Macro_F1  = 0.9021 | Micro_F1 = 0.9397 <<<
+actions y_pred size (213, 7) y_pred sum 205.0
+Actions: Macro_Pr = 0.7032 | Macro_Re = 0.6455 | Macro_F1  = 0.6626 | Micro_F1 = 0.7624
+actions y_pred size (1010, 7) y_pred sum 844.0
+Actions: Macro_Pr = 0.5239 | Macro_Re = 0.6455 | Macro_F1  = 0.5211 | Micro_F1 = 0.3045
+ -->
+
 
 ### Bert-base: entities marked with '@', epoch: 06 (Best event f1)
 | Set | Task | Macro Pr | Macro Re | Macro f1 | Micro f1 |
