@@ -83,3 +83,25 @@ Actions: Macro_Pr = 0.7986 | Macro_Re = 0.7013 | Macro_F1  = 0.7033 | Micro_F1 =
 actions y_pred size (1010, 7) y_pred sum 326.0
 Actions: Macro_Pr = 0.6179 | Macro_Re = 0.7013 | Macro_F1  = 0.6275 | Micro_F1 = 0.6081
  -->
+ 
+ ### Bert-base: entities marked with '@', epoch: 04 (Best action f1)
+| Set | Task | Macro Pr | Macro Re | Macro f1 | Micro f1 |
+|-------|--------|----------|----------|----------|----------|
+| Train | Event  |  0.9658  |  0.9598  |  0.9628  |  0.9827 |
+| Train | Action |  0.9198  |  0.6517  |  0.6891  |  0.9323  |
+|  Dev  | Event  |  0.8608  |  0.7822  |  0.8161  |  0.9057  |
+|  Dev  | Action |  0.8512  |  0.6853  |  0.7122  |  0.7773  |
+ 
+<!--  ---------- Epoch: 04 ----------
+	TRAIN / LOSS =     0.0451  Time 0h 02m 37s  Dispotion counts: 1128/1119/1161/6125
+Events : Macro_Pr = 0.9658 | Macro_Re = 0.9598 | Macro_F1  = 0.9628 | Micro_F1 = 0.9827 <<<
+actions y_pred size (1161, 7) y_pred sum 1142.0
+Actions: Macro_Pr = 0.9198 | Macro_Re = 0.6517 | Macro_F1  = 0.6891 | Micro_F1 = 0.9323
+actions y_pred size (6125, 7) y_pred sum 1944.0
+Actions: Macro_Pr = 0.7532 | Macro_Re = 0.6517 | Macro_F1  = 0.5790 | Micro_F1 = 0.6927
+	DEV   / LOSS =     0.2188  Time 0h 00m 11s  Dispotion counts: 201/174/212/1010
+Events : Macro_Pr = 0.8608 | Macro_Re = 0.7822 | Macro_F1  = 0.8161 | Micro_F1 = 0.9057 <<<
+actions y_pred size (212, 7) y_pred sum 202.0
+Actions: Macro_Pr = 0.8512 | Macro_Re = 0.6853 | Macro_F1  = 0.7122 | Micro_F1 = 0.7773
+actions y_pred size (1010, 7) y_pred sum 298.0
+Actions: Macro_Pr = 0.7323 | Macro_Re = 0.6853 | Macro_F1  = 0.6362 | Micro_F1 = 0.6332 -->
