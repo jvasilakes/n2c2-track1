@@ -1,4 +1,4 @@
-EE task - 10/2/2022
+EE task - 23/2/2022
 
 A basic method based on Matching the Blanks and An Improved Baseline for Sentence-level Relation Extraction.
 
