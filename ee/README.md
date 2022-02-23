@@ -16,10 +16,8 @@ python main.py --config ../configs/local.yaml --mode train
 
 Results:
 
-Bert-base: entities marked with '@'
 
-
-### Lenient match
+### Bert-base: entities marked with '@', epoch: 06 (Best event f1)
 | Set | Task | Macro Pr | Macro Re | Macro f1 | Micro f1 |
 |-------|--------|----------|----------|----------|----------|
 | Train | Event  |  0.9904  |  0.9847  |  0.9875  |  0.9939  |
