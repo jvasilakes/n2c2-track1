@@ -39,6 +39,10 @@ Results:
                       Prec.   Rec.    F(b=1)    Prec.   Rec.    F(b=1)
               Action  0.8201  0.7014  0.7561    0.8201  0.7014  0.7561
 ```
+There is a discrepancy in the Action measures of the eval and my script.\
+The main reason is that for my script I also count the action predictions of the golden events.\
+But in an end-to-end setting that would be incorrect, since if we do not predict Disposition event, we wouldn't predict any actions.\
+
 <!-- We got you  330-04 ['E17', 'E18', 'E19'] ['Stop', 'Start', 'Stop'] -->
 ### Clinical Bert: entities marked with '@', epoch: 06 (Best event f1)
 | Set | Task | Macro Pr | Macro Re | Macro f1 | Micro f1 |
