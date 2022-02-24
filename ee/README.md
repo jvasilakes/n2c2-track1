@@ -42,6 +42,7 @@ Results:
 There is a discrepancy in the Action measures of the eval and my script.\
 The main reason is that for my script I also count the action predictions of the golden events.\
 But in an end-to-end setting that would be incorrect, since if we do not predict Disposition event, we wouldn't predict any actions.\
+Howeve, I will leave this score for my script, to have a measure for the action predicting capabilities of the model.
 
 <!-- We got you  330-04 ['E17', 'E18', 'E19'] ['Stop', 'Start', 'Stop'] -->
 ### Clinical Bert: entities marked with '@', epoch: 06 (Best event f1)
