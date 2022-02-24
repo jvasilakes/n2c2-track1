@@ -13,54 +13,81 @@ To run the model:
 ```
 python main.py --config ../configs/local.yaml --mode train --data ../data/spacy/
 ```
+### Clinical Bert: entities marked with '@', epoch: 06 (Best event f1)
 
 Results:
 
-### Clinical Bert: entities marked with '@', epoch: 04 (Best event f1)
+*********************** Medication Extraction ************************
+                      ------- strict -------    ------ lenient -------
+                      Prec.   Rec.    F(b=1)    Prec.   Rec.    F(b=1)
+                Drug  1.0000  0.9901  0.9950    1.0000  0.9901  0.9950
+
+
+************************ Event Classification ************************
+                      ------- strict -------    ------ lenient -------
+                      Prec.   Rec.    F(b=1)    Prec.   Rec.    F(b=1)
+         Disposition  0.9418  0.8856  0.9128    0.9418  0.8856  0.9128
+       Nodisposition  0.9658  0.9738  0.9698    0.9658  0.9738  0.9698
+        Undetermined  0.8256  0.8161  0.8208    0.8256  0.8161  0.8208
+                      ------------------------------------------------
+     Overall (micro)  0.9493  0.9427  0.9460    0.9493  0.9427  0.9460
+     Overall (macro)  0.9111  0.8918  0.9011    0.9111  0.8918  0.9011
+
+
+*********************** Context Classification ***********************
+                      ------- strict -------    ------ lenient -------
+                      Prec.   Rec.    F(b=1)    Prec.   Rec.    F(b=1)
+              Action  0.8201  0.7014  0.7561    0.8201  0.7014  0.7561
+
+### Clinical Bert: entities marked with '@', epoch: 06 (Best event f1)
 | Set | Task | Macro Pr | Macro Re | Macro f1 | Micro f1 |
 |-------|--------|----------|----------|----------|----------|
-| Train | Event  |  0.9754  |  0.9709  |  0.9731  |  0.9873  |
-| Train | Action |  0.9503  |  0.6560  |  0.6967  |  0.9355  |
-|  Dev  | Event  |  0.8881  |  0.9235  |  0.9021  |  0.9397<<|
-|  Dev  | Action |  0.7032  |  0.6455  |  0.6626  |  0.7624  |
+| Train | Event  |  0.9986  |  0.9939  |  0.9962  |  0.9981  |
+| Train | Action |  0.9947  |  0.7998  |  0.8223  |  0.9850  |
+|  Dev  | Event  |  0.9111  |  0.8918  |  0.9011  |  0.9460<<|
+|  Dev  | Action |  0.8445  |  0.6822  |  0.6845  |  0.7814  |
 
-<!-- ---------- Epoch: 04 ----------
-	TRAIN / LOSS =     0.0401  Time 0h 01m 35s  Dispotion counts: 1128/1127/1158/6125
-Events : Macro_Pr = 0.9754 | Macro_Re = 0.9709 | Macro_F1  = 0.9731 | Micro_F1 = 0.9873 <<<
-actions y_pred size (1158, 7) y_pred sum 1147.0
-Actions: Macro_Pr = 0.9503 | Macro_Re = 0.6560 | Macro_F1  = 0.6967 | Micro_F1 = 0.9355
-actions y_pred size (6125, 7) y_pred sum 3512.0
-Actions: Macro_Pr = 0.7311 | Macro_Re = 0.6560 | Macro_F1  = 0.5336 | Micro_F1 = 0.4636
-	DEV   / LOSS =     0.1628  Time 0h 00m 02s  Dispotion counts: 201/187/213/1010
-Events : Macro_Pr = 0.8881 | Macro_Re = 0.9235 | Macro_F1  = 0.9021 | Micro_F1 = 0.9397 <<<
-actions y_pred size (213, 7) y_pred sum 205.0
-Actions: Macro_Pr = 0.7032 | Macro_Re = 0.6455 | Macro_F1  = 0.6626 | Micro_F1 = 0.7624
-actions y_pred size (1010, 7) y_pred sum 844.0
-Actions: Macro_Pr = 0.5239 | Macro_Re = 0.6455 | Macro_F1  = 0.5211 | Micro_F1 = 0.3045
+<!-- ---------- Epoch: 06 ----------
+	TRAIN / LOSS =     0.0130  Time 0h 00m 51s  Dispotion counts: 1128/1127/1132/6125
+Events : Macro_Pr = 0.9986 | Macro_Re = 0.9939 | Macro_F1  = 0.9962 | Micro_F1 = 0.9981 <<<
+actions y_pred size (1132, 7) y_pred sum 1160.0
+Actions: Macro_Pr = 0.9947 | Macro_Re = 0.7998 | Macro_F1  = 0.8223 | Micro_F1 = 0.9850
+actions y_pred size (6125, 7) y_pred sum 4667.0
+Actions: Macro_Pr = 0.7856 | Macro_Re = 0.7998 | Macro_F1  = 0.6568 | Micro_F1 = 0.3939
+	DEV   / LOSS =     0.1705  Time 0h 00m 02s  Dispotion counts: 201/189/212/1010
+Events : Macro_Pr = 0.9111 | Macro_Re = 0.8918 | Macro_F1  = 0.9011 | Micro_F1 = 0.9460 <<<
+actions y_pred size (212, 7) y_pred sum 210.0
+Actions: Macro_Pr = 0.8445 | Macro_Re = 0.6822 | Macro_F1  = 0.6845 | Micro_F1 = 0.7814
+actions y_pred size (1010, 7) y_pred sum 881.0
+Actions: Macro_Pr = 0.6747 | Macro_Re = 0.6822 | Macro_F1  = 0.5506 | Micro_F1 = 0.3052
+Saving checkpoint
+current best epoch: 6
+-----Saving predictions for current epoch 6 -----
  -->
 
-### Clinical Bert: entities marked with '@', epoch: 08 (Best action f1)
+### Clinical Bert: entities marked with '@', epoch: 09 (Best action f1)
 | Set | Task | Macro Pr | Macro Re | Macro f1 | Micro f1 |
 |-------|--------|----------|----------|----------|----------|
-| Train | Event  |  0.9989  |  0.9958  |  0.9974  |  0.9989  |
-| Train | Action |  0.9989  |  0.8379  |  0.8467  |  0.9945  |
-|  Dev  | Event  |  0.8988  |  0.8802  |  0.8892  |  0.9376  |
-|  Dev  | Action |  0.7998  |  0.7132  |  0.7377  |  0.8073<<|
+| Train | Event  |  0.9997  |  0.9973  |  0.9985  |  0.9993  |
+| Train | Action |  0.9957  |  0.8474  |  0.8501  |  0.9966  |
+|  Dev  | Event  |  0.9182  |  0.8803  |  0.8984  |  0.9435  |
+|  Dev  | Action |  0.8741  |  0.7368  |  0.7736  |  0.8047<<|
 
-<!-- ---------- Epoch: 08 ----------
-	TRAIN / LOSS =     0.0074  Time 0h 00m 48s  Dispotion counts: 1128/1125/1129/6125
-Events : Macro_Pr = 0.9989 | Macro_Re = 0.9958 | Macro_F1  = 0.9974 | Micro_F1 = 0.9989 <<<
-actions y_pred size (1129, 7) y_pred sum 1168.0
-Actions: Macro_Pr = 0.9989 | Macro_Re = 0.8379 | Macro_F1  = 0.8467 | Micro_F1 = 0.9945
-actions y_pred size (6125, 7) y_pred sum 2507.0
-Actions: Macro_Pr = 0.7650 | Macro_Re = 0.8379 | Macro_F1  = 0.6869 | Micro_F1 = 0.6330
-	DEV   / LOSS =     0.2013  Time 0h 00m 02s  Dispotion counts: 201/189/213/1010
-Events : Macro_Pr = 0.8988 | Macro_Re = 0.8802 | Macro_F1  = 0.8892 | Micro_F1 = 0.9376 <<<
-actions y_pred size (213, 7) y_pred sum 216.0
-Actions: Macro_Pr = 0.7998 | Macro_Re = 0.7132 | Macro_F1  = 0.7377 | Micro_F1 = 0.8073
-actions y_pred size (1010, 7) y_pred sum 386.0
-Actions: Macro_Pr = 0.6109 | Macro_Re = 0.7132 | Macro_F1  = 0.6285 | Micro_F1 = 0.5809
- -->
+<!-- ---------- Epoch: 09 ----------
+	TRAIN / LOSS =     0.0061  Time 0h 00m 51s  Dispotion counts: 1128/1125/1129/6125
+Events : Macro_Pr = 0.9997 | Macro_Re = 0.9973 | Macro_F1  = 0.9985 | Micro_F1 = 0.9993 <<<
+actions y_pred size (1129, 7) y_pred sum 1173.0
+Actions: Macro_Pr = 0.9957 | Macro_Re = 0.8474 | Macro_F1  = 0.8501 | Micro_F1 = 0.9966
+actions y_pred size (6125, 7) y_pred sum 3259.0
+Actions: Macro_Pr = 0.7320 | Macro_Re = 0.8474 | Macro_F1  = 0.6602 | Micro_F1 = 0.5280
+	DEV   / LOSS =     0.1986  Time 0h 00m 02s  Dispotion counts: 201/188/211/1010
+Events : Macro_Pr = 0.9182 | Macro_Re = 0.8803 | Macro_F1  = 0.8984 | Micro_F1 = 0.9435 <<<
+actions y_pred size (211, 7) y_pred sum 210.0
+Actions: Macro_Pr = 0.8741 | Macro_Re = 0.7368 | Macro_F1  = 0.7736 | Micro_F1 = 0.8047
+actions y_pred size (1010, 7) y_pred sum 395.0
+Actions: Macro_Pr = 0.7266 | Macro_Re = 0.7368 | Macro_F1  = 0.6733 | Micro_F1 = 0.5626
+current best epoch: 6 -->
+
 ### Bert-base: entities marked with '@', epoch: 06 (Best event f1)
 | Set | Task | Macro Pr | Macro Re | Macro f1 | Micro f1 |
 |-------|--------|----------|----------|----------|----------|
