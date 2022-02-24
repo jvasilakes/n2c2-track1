@@ -16,7 +16,7 @@ python main.py --config ../configs/local.yaml --mode train --data ../data/spacy/
 ### Clinical Bert: entities marked with '@', epoch: 06 (Best event f1)
 
 Results:
-'''
+```
 *********************** Medication Extraction ************************
                       ------- strict -------    ------ lenient -------
                       Prec.   Rec.    F(b=1)    Prec.   Rec.    F(b=1)
@@ -38,7 +38,7 @@ Results:
                       ------- strict -------    ------ lenient -------
                       Prec.   Rec.    F(b=1)    Prec.   Rec.    F(b=1)
               Action  0.8201  0.7014  0.7561    0.8201  0.7014  0.7561
-'''
+```
 ### Clinical Bert: entities marked with '@', epoch: 06 (Best event f1)
 | Set | Task | Macro Pr | Macro Re | Macro f1 | Micro f1 |
 |-------|--------|----------|----------|----------|----------|
