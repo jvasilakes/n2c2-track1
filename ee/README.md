@@ -16,29 +16,29 @@ python main.py --config ../configs/local.yaml --mode train --data ../data/spacy/
 ### Clinical Bert: entities marked with '@', epoch: 06 (Best event f1)
 
 Results:
-
-*********************** Medication Extraction ************************\
-                      ------- strict -------    ------ lenient -------\
-                      Prec.   Rec.    F(b=1)    Prec.   Rec.    F(b=1)\
-                Drug  1.0000  0.9901  0.9950    1.0000  0.9901  0.9950\
-
-
-************************ Event Classification ************************\
-                      ------- strict -------    ------ lenient -------\
-                      Prec.   Rec.    F(b=1)    Prec.   Rec.    F(b=1)\
-         Disposition  0.9418  0.8856  0.9128    0.9418  0.8856  0.9128\
-       Nodisposition  0.9658  0.9738  0.9698    0.9658  0.9738  0.9698\
-        Undetermined  0.8256  0.8161  0.8208    0.8256  0.8161  0.8208\
-                      ------------------------------------------------\
-     Overall (micro)  0.9493  0.9427  0.9460    0.9493  0.9427  0.9460\
-     Overall (macro)  0.9111  0.8918  0.9011    0.9111  0.8918  0.9011\
+'''
+*********************** Medication Extraction ************************
+                      ------- strict -------    ------ lenient -------
+                      Prec.   Rec.    F(b=1)    Prec.   Rec.    F(b=1)
+                Drug  1.0000  0.9901  0.9950    1.0000  0.9901  0.9950
 
 
-*********************** Context Classification ***********************\
-                      ------- strict -------    ------ lenient -------\
-                      Prec.   Rec.    F(b=1)    Prec.   Rec.    F(b=1)\
-              Action  0.8201  0.7014  0.7561    0.8201  0.7014  0.7561\
+************************ Event Classification ************************
+                      ------- strict -------    ------ lenient -------
+                      Prec.   Rec.    F(b=1)    Prec.   Rec.    F(b=1)
+         Disposition  0.9418  0.8856  0.9128    0.9418  0.8856  0.9128
+       Nodisposition  0.9658  0.9738  0.9698    0.9658  0.9738  0.9698
+        Undetermined  0.8256  0.8161  0.8208    0.8256  0.8161  0.8208
+                      ------------------------------------------------
+     Overall (micro)  0.9493  0.9427  0.9460    0.9493  0.9427  0.9460
+     Overall (macro)  0.9111  0.8918  0.9011    0.9111  0.8918  0.9011
 
+
+*********************** Context Classification ***********************
+                      ------- strict -------    ------ lenient -------
+                      Prec.   Rec.    F(b=1)    Prec.   Rec.    F(b=1)
+              Action  0.8201  0.7014  0.7561    0.8201  0.7014  0.7561
+'''
 ### Clinical Bert: entities marked with '@', epoch: 06 (Best event f1)
 | Set | Task | Macro Pr | Macro Re | Macro f1 | Micro f1 |
 |-------|--------|----------|----------|----------|----------|
