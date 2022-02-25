@@ -49,8 +49,6 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
         self.entity_pool_fn = entity_pool_fn
         self._validate_class_weights(class_weights, self.label_spec)
         self.class_weights = class_weights
-        for (task, weights) in class_weights.items():
-            class_weights[task] = weights.to(self.device)
 
         self.bert_config = BertConfig.from_pretrained(
             self.bert_model_name_or_path)
@@ -119,7 +117,10 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
         for (task, clf_head) in self.classifier_heads.items():
             logits = clf_head(pooled_output)
             task_labels = labels[task]
-            loss_fn = CrossEntropyLoss(weight=self.class_weights[task])
+            # TODO: I don't like doing this op at every forward,
+            # but I can't do it in __init__ since self.device is still cpu.
+            weight = self.class_weights[task].to(self.device)
+            loss_fn = CrossEntropyLoss(weight=weight)
             loss = loss_fn(logits.view(-1, self.label_spec[task]),
                            task_labels.view(-1))
             clf_outputs[task] = SequenceClassifierOutput(
