@@ -49,8 +49,8 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
         self.entity_pool_fn = entity_pool_fn
         self._validate_class_weights(class_weights, self.label_spec)
         self.class_weights = class_weights
-        for weights in class_weights.values():
-            weights.to(self.device)
+        for (task, weights) in class_weights.items():
+            class_weights[task] = weights.to(self.device)
 
         self.bert_config = BertConfig.from_pretrained(
             self.bert_model_name_or_path)
