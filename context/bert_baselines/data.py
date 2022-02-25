@@ -8,6 +8,7 @@ import torch
 import pytorch_lightning as pl
 from torch.utils.data import Dataset, DataLoader, WeightedRandomSampler
 from transformers import AutoTokenizer
+from sklearn.utils.class_weight import compute_class_weight
 
 from brat_reader import BratAnnotations
 
@@ -166,7 +167,7 @@ class n2c2SentencesDataModule(pl.LightningDataModule):
     def __init__(self, data_dir, sentences_dir, batch_size,
                  bert_model_name_or_path, tasks_to_load="all",
                  max_seq_length=128, window_size=0, sample_strategy="none",
-                 max_train_examples=-1):
+                 max_train_examples=-1, compute_class_weights="none"):
         super().__init__()
         self.data_dir = data_dir
         self.sentences_dir = sentences_dir
@@ -177,6 +178,7 @@ class n2c2SentencesDataModule(pl.LightningDataModule):
         self.window_size = window_size
         self.sample_strategy = sample_strategy
         self.max_train_examples = max_train_examples
+        self.compute_class_weights = compute_class_weights
 
         self.tokenizer = AutoTokenizer.from_pretrained(
                 self.bert_model_name_or_path, use_fast=True)
@@ -223,13 +225,32 @@ class n2c2SentencesDataModule(pl.LightningDataModule):
     @property
     def label_spec(self):
         if self._ran_setup is False:
-            raise ValueError("Run n2c2SentencesDataModule.setup() first!")
+            raise ValueError("Run setup() first!")
+        if getattr(self, "_label_spec", None) is not None:
+            return self._label_spec
+
         spec = {task: len(encs) for (task, encs)
                 in self.train.ENCODINGS.items()}
         if self.tasks_to_load != "all":
             spec = {task: n for (task, n) in spec.items()
                     if task in self.tasks_to_load}
-        return spec
+        self._label_spec = spec
+        return self._label_spec
+
+    @property
+    def class_weights(self):
+        if self._ran_setup is False:
+            raise ValueError("Run setup() first!")
+        if getattr(self, "_class_weights", None) is not None:
+            return self._class_weights
+
+        if self.compute_class_weights == "none":
+            self._class_weights = None
+        elif self.compute_class_weights == "balanced":
+            self._class_weights = self._compute_class_weights(self.train)
+        else:
+            raise ValueError(f"Unsupported class weighting {self.compute_class_weights}")  # noqa
+        return self._class_weights
 
     def train_dataloader(self):
         shuffle = True if self.sampler is None else False
@@ -276,6 +297,7 @@ class n2c2SentencesDataModule(pl.LightningDataModule):
             batch["labels"][task] = torch.tensor(batch["labels"][task])
         return batch
 
+    # Used with WeightedRandomSampler in setup()
     def _compute_sample_weights(self, train_dataset):
         task_vals = [tuple(ex["labels"][task]
                            for task in train_dataset.label_names)
@@ -284,3 +306,18 @@ class n2c2SentencesDataModule(pl.LightningDataModule):
         val_weights = {val: 1. / val_counts[val] for val in val_counts.keys()}
         sample_weights = [val_weights[task_val] for task_val in task_vals]
         return sample_weights
+
+    # Weights for each task can be passed to CrossEntropyLoss in a model.
+    def _compute_class_weights(self, train_dataset):
+        y_per_task = defaultdict(list)
+        for ex in train_dataset:
+            for (task, val) in ex["labels"].items():
+                y_per_task[task].append(val)
+        class_weights_per_task = {}
+        for (task, task_y) in y_per_task.items():
+            classes = list(sorted(set(task_y)))
+            weights = compute_class_weight(
+                    "balanced", classes=classes, y=task_y)
+            class_weights_per_task[task] = torch.tensor(
+                    weights, dtype=torch.float)
+        return class_weights_per_task

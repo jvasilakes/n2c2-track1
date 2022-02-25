@@ -68,6 +68,7 @@ def main(args):
             window_size=config.window_size,
             max_train_examples=config.max_train_examples,
             sample_strategy=config.sample_strategy,
+            compute_class_weights=config.class_weights,
             )
     datamodule.setup()
 
@@ -132,6 +133,7 @@ def run_train(config, datamodule,
     model = model_class(
             config.bert_model_name_or_path,
             label_spec=datamodule.label_spec,
+            class_weights=datamodule.class_weights,
             freeze_pretrained=config.freeze_pretrained,
             use_entity_spans=config.use_entity_spans,
             entity_pool_fn=config.entity_pool_fn,

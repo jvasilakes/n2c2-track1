@@ -35,7 +35,8 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
             entity_pool_fn="max",
             dropout_prob=0.1,
             lr=1e-3,
-            weight_decay=0.0):
+            weight_decay=0.0,
+            class_weights=None):
         super().__init__()
         self.bert_model_name_or_path = bert_model_name_or_path
         self.label_spec = label_spec
@@ -45,6 +46,9 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
         self.dropout_prob = dropout_prob
         self.lr = lr
         self.weight_decay = weight_decay
+        self.entity_pool_fn = entity_pool_fn
+        self._validate_class_weights(class_weights, self.label_spec)
+        self.class_weights = class_weights
 
         self.bert_config = BertConfig.from_pretrained(
             self.bert_model_name_or_path)
@@ -112,8 +116,8 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
         clf_outputs = {}
         for (task, clf_head) in self.classifier_heads.items():
             logits = clf_head(pooled_output)
-            loss_fn = CrossEntropyLoss()
             task_labels = labels[task]
+            loss_fn = CrossEntropyLoss(weight=self.class_weights[task])
             loss = loss_fn(logits.view(-1, self.label_spec[task]),
                            task_labels.view(-1))
             clf_outputs[task] = SequenceClassifierOutput(
@@ -241,6 +245,16 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
         params = self.parameters()
         opt = AdamW(params, lr=self.lr, weight_decay=self.weight_decay)
         return opt
+
+    def _validate_class_weights(self, class_weights, label_spec):
+        if not isinstance(class_weights, (dict, type(None))):
+            raise ValueError(f"class_weights must be None or dict(). Got {type(class_weights)}.")  # noqa 
+        for (task, weights) in class_weights.items():
+            if not torch.is_tensor(weights):
+                raise TypeError(f"class weights must be torch.Tensor. Got {type(weights)}.")  # noqa
+            num_classes = label_spec[task]
+            if len(weights) != num_classes:
+                raise ValueError(f"Number of weights != number of classes for task {task}")  # noqa
 
 
 MODEL_LOOKUP = {

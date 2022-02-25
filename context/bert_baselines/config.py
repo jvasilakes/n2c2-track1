@@ -41,6 +41,7 @@ class ExperimentConfig(object):
             use_entity_spans: bool = False,
             entity_pool_fn: str = "max",
             max_epochs: int = 1,
+            class_weights: str = 'none',
             lr: float = 1e-3,
             weight_decay: float = 0.0,
             gradient_clip_val: float = 10.0,
@@ -65,6 +66,7 @@ class ExperimentConfig(object):
         self.use_entity_spans = use_entity_spans
         self.entity_pool_fn = entity_pool_fn
         self.max_epochs = max_epochs
+        self.class_weights = class_weights
         self.lr = lr
         self.weight_decay = weight_decay
         self.gradient_clip_val = gradient_clip_val
@@ -86,28 +88,31 @@ class ExperimentConfig(object):
         yaml_str = '  ' + yaml_str.replace('\n', '\n  ')
         return "ExperimentConfig\n----------------\n" + yaml_str
 
-    def validate(self, errors="raise"):
-        valid_entity_pool_fns = ["mean", "max"]
-        if self.entity_pool_fn not in valid_entity_pool_fns:
+    def _validate_param(self, param_name, valid_values,
+                        default_value, errors="raise"):
+        param_value = getattr(self, param_name)
+        if param_value not in valid_values:
             if errors == "raise":
                 raise ConfigError(
-                    f"Unsupported entity_pool_fn '{self.entity_pool_fn}'. Expected one of {valid_entity_pool_fns}.")  # noqa
+                    f"Unsupported {param_name} '{param_value}'. Expected one of {valid_values}.")  # noqa
             elif errors == "fix":
-                self.entity_pool_fn = "mean"
-                warnings.warn("entity_pool_fn set to default 'mean'")
+                setattr(param_name, default_value)
+                warnings.warn(f"{param_name} set to default `{default_value}`")
             else:
                 raise ValueError(f"Unknown errors value {errors}. Expected 'fix' or 'raise'.")  # noqa
 
+    def validate(self, errors="raise"):
+        valid_entity_pool_fns = ["mean", "max"]
+        self._validate_param("entity_pool_fn", valid_entity_pool_fns,
+                             default_value="mean", errors=errors)
+
         valid_sample_strategies = ["none", "weighted"]
-        if self.sample_strategy not in valid_sample_strategies:
-            if errors == "raise":
-                raise ConfigError(
-                    f"Unsupported sample_strategy '{self.sample_strategy}'. Expected one of {valid_sample_strategies}.")  # noqa
-            elif errors == "fix":
-                self.sample_strategy = "none"
-                warnings.warn("sample_strategy set to default 'none'")
-            else:
-                raise ValueError(f"Unknown errors value {errors}. Expected 'fix' or 'raise'.")  # noqa
+        self._validate_param("sample_strategy", valid_sample_strategies,
+                             default_value="none", errors=errors)
+
+        valid_class_weights = ["none", "balanced"]
+        self._validate_param("class_weights", valid_class_weights,
+                             default_value="none", errors=errors)
 
         used_params = set([key for key in self.__dict__.keys()
                            if not key.startswith('_')])
@@ -157,6 +162,7 @@ class ExperimentConfig(object):
                 "weight_decay",
                 "gradient_clip_val",
                 "max_epochs",
+                "class_weights",
             ]
         })
 

@@ -23,6 +23,7 @@ use_entity_spans: false
 
 # Training
 batch_size: 10
+class_weights: balanced
 gradient_clip_val: 10.0
 lr: 0.001
 max_epochs: 2
