@@ -1,6 +1,5 @@
-T10203	MedicalMention 153 161	atenolol
-T10204	MedicalMention 233 238	lasix
-T10207	MedicalMention 2077 2084	REGIMEN
+T10204	MedicalMention 153 161	atenolol
+T10205	MedicalMention 233 238	lasix
 T10208	MedicalMention 2187 2194	Cardura
 T10209	MedicalMention 2225 2237	Procardia XL
 T10210	MedicalMention 2241 2248	Norvasc
@@ -16,24 +15,20 @@ T10222	MedicalMention 3995 4004	Metformin
 T10223	MedicalMention 4168 4177	glyburide
 T10224	MedicalMention 4297 4306	Glipizide
 T10225	MedicalMention 4326 4333	insulin
-T10227	MedicalMention 4713 4723	FUROSEMIDE
-T10228	MedicalMention 4802 4812	FUROSEMIDE
-T10229	MedicalMention 4932 4942	FUROSEMIDE
-T10231	MedicalMention 5469 5479	COLCHICINE
-T10232	MedicalMention 5557 5563	atorva
-T10233	MedicalMention 5876 5885	QUINLIVAN
-T10238	MedicalMention 7608 7615	Norvasc
-T10239	MedicalMention 7643 7650	aspirin
-T10241	MedicalMention 7661 7679	Potassium chloride
-T10242	MedicalMention 7693 7703	lisinopril
-T10243	MedicalMention 7715 7722	PROSCAR
-T10244	MedicalMention 7725 7736	FINASTERIDE
-T10245	MedicalMention 7764 7771	LIPITOR
-T10246	MedicalMention 7774 7786	ATORVASTATIN
-T10247	MedicalMention 7800 7810	colchicine
-T10248	MedicalMention 7827 7833	Avapro
-T10249	MedicalMention 7836 7846	IRBESARTAN
-T10250	MedicalMention 7882 7893	ALLOPURINOL
-T10251	MedicalMention 7923 7933	furosemide
-T10252	MedicalMention 7948 7955	Cardura
-T10253	MedicalMention 7967 7976	GLIPIZIDE
+T10227	MedicalMention 4932 4942	FUROSEMIDE
+T10229	MedicalMention 5557 5563	atorva
+T10234	MedicalMention 7608 7615	Norvasc
+T10235	MedicalMention 7643 7650	aspirin
+T10237	MedicalMention 7661 7679	Potassium chloride
+T10238	MedicalMention 7693 7703	lisinopril
+T10239	MedicalMention 7715 7722	PROSCAR
+T10240	MedicalMention 7725 7736	FINASTERIDE
+T10241	MedicalMention 7764 7771	LIPITOR
+T10242	MedicalMention 7774 7786	ATORVASTATIN
+T10243	MedicalMention 7800 7810	colchicine
+T10244	MedicalMention 7827 7833	Avapro
+T10245	MedicalMention 7836 7846	IRBESARTAN
+T10246	MedicalMention 7882 7893	ALLOPURINOL
+T10247	MedicalMention 7923 7933	furosemide
+T10248	MedicalMention 7948 7955	Cardura
+T10249	MedicalMention 7967 7976	GLIPIZIDE

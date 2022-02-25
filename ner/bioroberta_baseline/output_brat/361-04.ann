@@ -1,38 +1,40 @@
-T11127	MedicalMention 1542 1550	morphine
-T11128	MedicalMention 1573 1581	benedryl
-T11129	MedicalMention 2023 2031	dulcolax
-T11131	MedicalMention 2591 2611	Acetylsalicylic Acid
-T11132	MedicalMention 2667 2677	Amlodipine
-T11133	MedicalMention 2742 2752	Cinacalcet
-T11134	MedicalMention 2784 2793	Clonidine
-T11135	MedicalMention 2810 2818	Cymbalta
-T11136	MedicalMention 2821 2831	DULOXETINE
-T11137	MedicalMention 2893 2908	Diphenhydramine
-T11138	MedicalMention 3030 3045	Docusate Sodium
-T11139	MedicalMention 3080 3092	Epoetin Alfa
-T11140	MedicalMention 3133 3141	Hecterol
-T11141	MedicalMention 3234 3242	Hecterol
-T11142	MedicalMention 3283 3301	Insulin Lispro Mix
-T11143	MedicalMention 3349 3367	Insulin Lispro Mix
-T11144	MedicalMention 3466 3474	Kexalate
-T11146	MedicalMention 3572 3582	Lisinopril
-T11147	MedicalMention 3625 3632	Miralax
-T11148	MedicalMention 3635 3654	POLYETHYLENE Glycol
-T11149	MedicalMention 3776 3791	Nephro - vit Rx
-T11150	MedicalMention 3822 3832	Omeprazole
-T11151	MedicalMention 3892 3898	Reglan
-T11152	MedicalMention 3901 3919	METOCLOPRAMIDE Hcl
-T11153	MedicalMention 4010 4020	Sennosides
-T11154	MedicalMention 4055 4064	Sevelamer
-T11155	MedicalMention 4104 4115	Simvastatin
-T11156	MedicalMention 4170 4179	Toprol Xl
-T11157	MedicalMention 4182 4219	METOPROLOL Succinate Extended Release
-T11159	MedicalMention 6418 6426	contrast
-T11162	MedicalMention 7852 7860	morphine
-T11163	MedicalMention 7954 7962	Cymbalta
-T11164	MedicalMention 8029 8036	70 / 30
-T11165	MedicalMention 8047 8050	NPH
-T11166	MedicalMention 8055 8061	aspart
-T11168	MedicalMention 8183 8192	Reglan AC
-T11169	MedicalMention 8202 8210	benadryl
-T11170	MedicalMention 8414 8421	Heparin
+T11136	MedicalMention 1090 1105	pain medication
+T11138	MedicalMention 1542 1550	morphine
+T11139	MedicalMention 1573 1581	benedryl
+T11140	MedicalMention 2023 2031	dulcolax
+T11142	MedicalMention 2591 2611	Acetylsalicylic Acid
+T11143	MedicalMention 2667 2677	Amlodipine
+T11144	MedicalMention 2742 2752	Cinacalcet
+T11145	MedicalMention 2784 2793	Clonidine
+T11146	MedicalMention 2810 2818	Cymbalta
+T11147	MedicalMention 2821 2831	DULOXETINE
+T11148	MedicalMention 2893 2908	Diphenhydramine
+T11149	MedicalMention 3030 3045	Docusate Sodium
+T11150	MedicalMention 3080 3092	Epoetin Alfa
+T11151	MedicalMention 3133 3141	Hecterol
+T11152	MedicalMention 3234 3242	Hecterol
+T11153	MedicalMention 3283 3297	Insulin Lispro
+T11154	MedicalMention 3283 3301	Insulin Lispro Mix
+T11155	MedicalMention 3349 3363	Insulin Lispro
+T11156	MedicalMention 3349 3367	Insulin Lispro Mix
+T11157	MedicalMention 3466 3474	Kexalate
+T11159	MedicalMention 3572 3582	Lisinopril
+T11160	MedicalMention 3625 3632	Miralax
+T11161	MedicalMention 3635 3654	POLYETHYLENE Glycol
+T11162	MedicalMention 3822 3832	Omeprazole
+T11163	MedicalMention 3892 3898	Reglan
+T11164	MedicalMention 3901 3919	METOCLOPRAMIDE Hcl
+T11165	MedicalMention 4010 4020	Sennosides
+T11166	MedicalMention 4055 4064	Sevelamer
+T11167	MedicalMention 4104 4115	Simvastatin
+T11168	MedicalMention 4170 4179	Toprol Xl
+T11169	MedicalMention 4182 4219	METOPROLOL Succinate Extended Release
+T11171	MedicalMention 6418 6426	contrast
+T11174	MedicalMention 7852 7860	morphine
+T11175	MedicalMention 7954 7962	Cymbalta
+T11176	MedicalMention 8029 8036	70 / 30
+T11177	MedicalMention 8047 8050	NPH
+T11178	MedicalMention 8055 8061	aspart
+T11180	MedicalMention 8183 8189	Reglan
+T11181	MedicalMention 8202 8210	benadryl
+T11182	MedicalMention 8414 8421	Heparin

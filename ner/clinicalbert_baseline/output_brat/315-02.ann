@@ -1,7 +1,8 @@
-T10892	MedicalMention 978 983	Lasix
-T10893	MedicalMention 990 997	Norvasc
-T10894	MedicalMention 1010 1017	Lipitor
-T10895	MedicalMention 1032 1042	prednisone
-T10897	MedicalMention 1051 1057	Epogen
-T10898	MedicalMention 1073 1084	Insulin NPH
-T10900	MedicalMention 2168 2172	Vanc
+T10895	MedicalMention 978 983	Lasix
+T10896	MedicalMention 990 997	Norvasc
+T10897	MedicalMention 1010 1017	Lipitor
+T10898	MedicalMention 1032 1042	prednisone
+T10900	MedicalMention 1051 1057	Epogen
+T10901	MedicalMention 1073 1084	Insulin NPH
+T10902	MedicalMention 1099 1106	regular
+T10904	MedicalMention 2168 2172	Vanc

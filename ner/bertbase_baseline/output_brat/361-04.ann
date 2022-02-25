@@ -1,0 +1,41 @@
+T11016	MedicalMention 1090 1105	pain medication
+T11018	MedicalMention 1542 1550	morphine
+T11019	MedicalMention 1573 1581	benedryl
+T11020	MedicalMention 2023 2031	dulcolax
+T11021	MedicalMention 2250 2252	HD
+T11022	MedicalMention 2263 2265	HD
+T11024	MedicalMention 2591 2611	Acetylsalicylic Acid
+T11025	MedicalMention 2667 2677	Amlodipine
+T11026	MedicalMention 2742 2752	Cinacalcet
+T11027	MedicalMention 2784 2793	Clonidine
+T11028	MedicalMention 2810 2818	Cymbalta
+T11029	MedicalMention 2821 2831	DULOXETINE
+T11030	MedicalMention 2893 2913	Diphenhydramine Oral
+T11031	MedicalMention 2979 2982	MWF
+T11032	MedicalMention 3015 3018	TID
+T11033	MedicalMention 3030 3045	Docusate Sodium
+T11034	MedicalMention 3080 3092	Epoetin Alfa
+T11035	MedicalMention 3095 3109	NON - ONCOLOGY
+T11036	MedicalMention 3283 3297	Insulin Lispro
+T11037	MedicalMention 3298 3301	Mix
+T11038	MedicalMention 3349 3367	Insulin Lispro Mix
+T11039	MedicalMention 3415 3438	Insulin Syringes ONE PO
+T11040	MedicalMention 3466 3474	Kexalate
+T11042	MedicalMention 3572 3582	Lisinopril
+T11043	MedicalMention 3625 3632	Miralax
+T11044	MedicalMention 3635 3654	POLYETHYLENE Glycol
+T11045	MedicalMention 3776 3788	Nephro - vit
+T11046	MedicalMention 3822 3832	Omeprazole
+T11047	MedicalMention 3892 3898	Reglan
+T11048	MedicalMention 3901 3919	METOCLOPRAMIDE Hcl
+T11049	MedicalMention 4010 4020	Sennosides
+T11050	MedicalMention 4055 4064	Sevelamer
+T11051	MedicalMention 4104 4115	Simvastatin
+T11052	MedicalMention 4170 4179	Toprol Xl
+T11053	MedicalMention 4182 4219	METOPROLOL Succinate Extended Release
+T11054	MedicalMention 4268 4272	Take
+T11056	MedicalMention 6418 6426	contrast
+T11059	MedicalMention 7852 7860	morphine
+T11060	MedicalMention 8047 8050	NPH
+T11061	MedicalMention 8055 8061	aspart
+T11063	MedicalMention 8202 8210	benadryl

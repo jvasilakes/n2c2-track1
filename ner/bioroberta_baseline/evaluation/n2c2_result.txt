@@ -1,0 +1,42 @@
+Files skipped in /mnt/disk/nhung/n2c2-2022/Jake_github/n2c2-track1/n2c2Track1TrainingData-v3/tokenised-all-ent/dev:
+100-02.ann
+
+******************** Evaluation n2c2 2022 Track 1 ********************
+************* Contextualized Medication Event Extraction *************
+
+*********************** Medication Extraction ************************
+                      ------- strict -------    ------ lenient -------
+                      Prec.   Rec.    F(b=1)    Prec.   Rec.    F(b=1)
+                Drug  0.9587  0.9653  0.9620    0.9676  0.9743  0.9709
+
+
+************************ Event Classification ************************
+                      ------- strict -------    ------ lenient -------
+                      Prec.   Rec.    F(b=1)    Prec.   Rec.    F(b=1)
+         Disposition  0.0000  0.0000  0.0000    0.0000  0.0000  0.0000
+       Nodisposition  0.0000  0.0000  0.0000    0.0000  0.0000  0.0000
+        Undetermined  0.0000  0.0000  0.0000    0.0000  0.0000  0.0000
+                      ------------------------------------------------
+     Overall (micro)  0.0000  0.0000  0.0000    0.0000  0.0000  0.0000
+     Overall (macro)  0.0000  0.0000  0.0000    0.0000  0.0000  0.0000
+
+
+*********************** Context Classification ***********************
+                      ------- strict -------    ------ lenient -------
+                      Prec.   Rec.    F(b=1)    Prec.   Rec.    F(b=1)
+              Action  0.0000  0.0000  0.0000    0.0000  0.0000  0.0000
+         Temporality  0.0000  0.0000  0.0000    0.0000  0.0000  0.0000
+           Certainty  0.0000  0.0000  0.0000    0.0000  0.0000  0.0000
+               Actor  0.0000  0.0000  0.0000    0.0000  0.0000  0.0000
+            Negation  0.0000  0.0000  0.0000    0.0000  0.0000  0.0000
+                      ------------------------------------------------
+     Overall (micro)  0.0000  0.0000  0.0000    0.0000  0.0000  0.0000
+     Overall (macro)  0.0000  0.0000  0.0000    0.0000  0.0000  0.0000
+
+
+                      ------- strict -------    ------ lenient -------
+                      Prec.   Rec.    F(b=1)    Prec.   Rec.    F(b=1)
+            Combined  0.0000  0.0000  0.0000    0.0000  0.0000  0.0000
+
+
+                                   49 files evaluated               

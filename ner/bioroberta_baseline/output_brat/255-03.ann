@@ -1,46 +1,46 @@
-T10750	MedicalMention 1067 1082	Humulin 70 / 30
-T10751	MedicalMention 1106 1127	Insulin REGULAR HUMAN
-T10753	MedicalMention 1237 1245	Protonix
-T10754	MedicalMention 1248 1260	PANTOPRAZOLE
-T10755	MedicalMention 1304 1313	Trazodone
-T10756	MedicalMention 1357 1364	insomna
-T10757	MedicalMention 1365 1373	Naprosyn
-T10758	MedicalMention 1376 1384	NAPROXEN
-T10759	MedicalMention 1427 1435	Polytrim
-T10760	MedicalMention 1453 1472	POLYMYXIN B SULFATE
-T10761	MedicalMention 1502 1511	Proventil
-T10762	MedicalMention 1502 1515	Proventil INH
-T10763	MedicalMention 1565 1577	Azmacort INH
-T10764	MedicalMention 1593 1603	Glucophage
-T10765	MedicalMention 1618 1625	Lipitor
-T10766	MedicalMention 1638 1648	Zestoretic
-T10767	MedicalMention 1727 1732	Ecasa
-T10768	MedicalMention 1735 1742	ASPIRIN
-T10769	MedicalMention 1802 1810	Clarinex
-T10770	MedicalMention 1813 1826	DESLORATADINE
-T10771	MedicalMention 1866 1872	Plavix
-T10772	MedicalMention 1875 1886	CLOPIDOGREL
-T10773	MedicalMention 1901 1906	Paxil
-T10774	MedicalMention 1909 1919	PAROXETINE
-T10775	MedicalMention 1957 1965	Atenolol
-T10776	MedicalMention 2001 2013	Flucoconzole
-T10777	MedicalMention 2035 2043	Lotrimin
-T10778	MedicalMention 2056 2068	CLOTRIMAZOLE
-T10780	MedicalMention 2151 2166	Insulin 70 / 30
-T10781	MedicalMention 2169 2174	HUMAN
-T10785	MedicalMention 4204 4219	Humulin 70 / 30
-T10787	MedicalMention 4322 4329	insulin
-T10788	MedicalMention 4351 4361	glucophage
-T10789	MedicalMention 4379 4382	ASA
-T10790	MedicalMention 4385 4391	statin
-T10791	MedicalMention 4565 4568	ASA
-T10792	MedicalMention 4839 4847	Atenolol
-T10793	MedicalMention 4856 4866	Zestoretic
-T10794	MedicalMention 4918 4926	Atenolol
-T10795	MedicalMention 4958 4965	Lipitor
-T10796	MedicalMention 5044 5047	ASA
-T10797	MedicalMention 5106 5112	Celexa
-T10799	MedicalMention 5147 5156	albuterol
-T10800	MedicalMention 5161 5171	asthmacort
-T10801	MedicalMention 5193 5201	Protonix
-T10802	MedicalMention 5254 5262	Diflucan
+T10757	MedicalMention 1067 1082	Humulin 70 / 30
+T10758	MedicalMention 1106 1127	Insulin REGULAR HUMAN
+T10759	MedicalMention 1157 1170	sliding scale
+T10761	MedicalMention 1237 1245	Protonix
+T10762	MedicalMention 1248 1260	PANTOPRAZOLE
+T10763	MedicalMention 1304 1313	Trazodone
+T10764	MedicalMention 1357 1364	insomna
+T10765	MedicalMention 1365 1373	Naprosyn
+T10766	MedicalMention 1376 1384	NAPROXEN
+T10767	MedicalMention 1427 1435	Polytrim
+T10768	MedicalMention 1453 1472	POLYMYXIN B SULFATE
+T10769	MedicalMention 1502 1511	Proventil
+T10770	MedicalMention 1565 1573	Azmacort
+T10771	MedicalMention 1593 1603	Glucophage
+T10772	MedicalMention 1618 1625	Lipitor
+T10773	MedicalMention 1638 1648	Zestoretic
+T10774	MedicalMention 1664 1683	HYDROCHLOROTHIAZIDE
+T10775	MedicalMention 1727 1732	Ecasa
+T10776	MedicalMention 1735 1742	ASPIRIN
+T10777	MedicalMention 1802 1810	Clarinex
+T10778	MedicalMention 1813 1826	DESLORATADINE
+T10779	MedicalMention 1866 1872	Plavix
+T10780	MedicalMention 1875 1886	CLOPIDOGREL
+T10781	MedicalMention 1901 1906	Paxil
+T10782	MedicalMention 1909 1919	PAROXETINE
+T10783	MedicalMention 1957 1965	Atenolol
+T10784	MedicalMention 2001 2013	Flucoconzole
+T10785	MedicalMention 2035 2043	Lotrimin
+T10786	MedicalMention 2056 2068	CLOTRIMAZOLE
+T10788	MedicalMention 2151 2166	Insulin 70 / 30
+T10789	MedicalMention 2169 2174	HUMAN
+T10793	MedicalMention 4204 4219	Humulin 70 / 30
+T10795	MedicalMention 4322 4329	insulin
+T10796	MedicalMention 4351 4361	glucophage
+T10797	MedicalMention 4379 4382	ASA
+T10798	MedicalMention 4385 4391	statin
+T10799	MedicalMention 4565 4568	ASA
+T10800	MedicalMention 4839 4847	Atenolol
+T10801	MedicalMention 4918 4926	Atenolol
+T10802	MedicalMention 4958 4965	Lipitor
+T10803	MedicalMention 5044 5047	ASA
+T10804	MedicalMention 5106 5112	Celexa
+T10806	MedicalMention 5147 5156	albuterol
+T10807	MedicalMention 5161 5171	asthmacort
+T10808	MedicalMention 5193 5201	Protonix
+T10809	MedicalMention 5254 5262	Diflucan

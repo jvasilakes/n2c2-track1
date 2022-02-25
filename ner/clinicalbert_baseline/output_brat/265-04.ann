@@ -1,23 +1,23 @@
-T10789	MedicalMention 651 666	insulin regular
-T10790	MedicalMention 706 713	insulin
-T10791	MedicalMention 738 745	insulin
-T10793	MedicalMention 1271 1283	atorvastatin
-T10794	MedicalMention 1314 1322	atenolol
-T10795	MedicalMention 1335 1342	aspirin
-T10797	MedicalMention 1597 1605	Coumadin
-T10798	MedicalMention 1675 1683	Coumadin
-T10799	MedicalMention 1995 2000	nitro
-T10801	MedicalMention 2216 2224	Coumadin
-T10802	MedicalMention 2229 2236	aspirin
-T10803	MedicalMention 2383 2391	Coumadin
-T10804	MedicalMention 2489 2496	aspirin
-T10805	MedicalMention 2499 2507	atenolol
-T10806	MedicalMention 2510 2517	insulin
-T10807	MedicalMention 2520 2528	Coumadin
-T10808	MedicalMention 2535 2542	Lipitor
-T10811	MedicalMention 3315 3322	insulin
-T10812	MedicalMention 3417 3425	atenolol
-T10814	MedicalMention 3789 3796	insulin
-T10815	MedicalMention 4241 4251	am insulin
-T10816	MedicalMention 4244 4251	insulin
-T10817	MedicalMention 4270 4278	atenolol
+T10791	MedicalMention 651 666	insulin regular
+T10792	MedicalMention 706 713	insulin
+T10793	MedicalMention 738 745	insulin
+T10795	MedicalMention 1271 1283	atorvastatin
+T10796	MedicalMention 1314 1322	atenolol
+T10797	MedicalMention 1335 1342	aspirin
+T10799	MedicalMention 1597 1605	Coumadin
+T10800	MedicalMention 1675 1683	Coumadin
+T10801	MedicalMention 1995 2000	nitro
+T10803	MedicalMention 2216 2224	Coumadin
+T10804	MedicalMention 2229 2236	aspirin
+T10805	MedicalMention 2383 2391	Coumadin
+T10806	MedicalMention 2489 2496	aspirin
+T10807	MedicalMention 2499 2507	atenolol
+T10808	MedicalMention 2510 2517	insulin
+T10809	MedicalMention 2520 2528	Coumadin
+T10810	MedicalMention 2535 2542	Lipitor
+T10813	MedicalMention 3315 3322	insulin
+T10814	MedicalMention 3417 3425	atenolol
+T10816	MedicalMention 3789 3796	insulin
+T10817	MedicalMention 4241 4251	am insulin
+T10818	MedicalMention 4244 4251	insulin
+T10819	MedicalMention 4270 4278	atenolol

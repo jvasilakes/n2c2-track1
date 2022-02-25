@@ -11,8 +11,8 @@ T10021	MedicalMention 5200 5206	Prozac
 T10023	MedicalMention 7045 7065	psychotropics agents
 T10024	MedicalMention 7106 7120	benzodiazepine
 T10025	MedicalMention 7124 7134	barbituate
-T10027	MedicalMention 8965 8986	PRN Zolpidem tartrate
-T10028	MedicalMention 8969 8986	Zolpidem tartrate
-T10029	MedicalMention 9157 9174	Zolpidem tartrate
-T10031	MedicalMention 9377 9394	Zolpidem tartrate
-T10032	MedicalMention 9540 9557	Zolpidem tartrate
+T10027	MedicalMention 8969 8986	Zolpidem tartrate
+T10028	MedicalMention 9157 9174	Zolpidem tartrate
+T10030	MedicalMention 9377 9394	Zolpidem tartrate
+T10031	MedicalMention 9540 9557	Zolpidem tartrate
+T10032	MedicalMention 9885 9887	O2

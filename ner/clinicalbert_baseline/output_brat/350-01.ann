@@ -1,12 +1,12 @@
-T11005	MedicalMention 749 755	Cozaar
-T11007	MedicalMention 766 773	Lipitor
-T11008	MedicalMention 783 791	Atenolol
-T11009	MedicalMention 801 811	Glucophage
-T11010	MedicalMention 823 827	HCTZ
-T11011	MedicalMention 841 850	Ibuprofen
-T11012	MedicalMention 862 865	ASA
-T11013	MedicalMention 875 883	Fish oil
-T11014	MedicalMention 895 909	Ca 600 / vit D
-T11024	MedicalMention 4921 4924	ASA
-T11025	MedicalMention 4928 4936	Aggrenox
-T11026	MedicalMention 4972 4978	statin
+T11012	MedicalMention 749 755	Cozaar
+T11014	MedicalMention 766 773	Lipitor
+T11015	MedicalMention 783 791	Atenolol
+T11016	MedicalMention 801 811	Glucophage
+T11017	MedicalMention 823 827	HCTZ
+T11018	MedicalMention 841 850	Ibuprofen
+T11019	MedicalMention 862 865	ASA
+T11020	MedicalMention 875 883	Fish oil
+T11021	MedicalMention 895 909	Ca 600 / vit D
+T11031	MedicalMention 4921 4924	ASA
+T11032	MedicalMention 4928 4936	Aggrenox
+T11033	MedicalMention 4972 4978	statin

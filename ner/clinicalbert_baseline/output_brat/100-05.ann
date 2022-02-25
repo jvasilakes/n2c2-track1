@@ -1,28 +1,29 @@
-T10095	MedicalMention 1485 1495	amiodarone
-T10097	MedicalMention 1842 1851	cortisone
-T10098	MedicalMention 2075 2082	insulin
-T10099	MedicalMention 2139 2146	lithium
-T10100	MedicalMention 2151 2159	depakote
-T10101	MedicalMention 2243 2258	Insulin 70 / 30
-T10102	MedicalMention 2272 2275	Asa
-T10103	MedicalMention 2279 2285	Plavix
-T10104	MedicalMention 2289 2296	Lithium
-T10106	MedicalMention 2330 2337	Norvasc
-T10107	MedicalMention 2365 2376	Mirtazapine
-T10108	MedicalMention 2405 2415	Naltrexone
-T10109	MedicalMention 2416 2422	Nexium
-T10110	MedicalMention 2444 2451	Lipitor
-T10111	MedicalMention 2473 2479	Cozaar
-T10112	MedicalMention 2487 2495	Depakote
-T10113	MedicalMention 2531 2540	Lopressor
-T10114	MedicalMention 2568 2574	Folate
-T10115	MedicalMention 2581 2591	Lisinopril
-T10123	MedicalMention 8406 8422	anti - coagulate
-T10124	MedicalMention 8504 8511	lipitor
-T10125	MedicalMention 8571 8579	depakote
-T10126	MedicalMention 8584 8591	lithium
-T10128	MedicalMention 8652 8655	IVF
-T10129	MedicalMention 8700 8703	NPH
-T10130	MedicalMention 8744 8748	RISS
+T10094	MedicalMention 1485 1495	amiodarone
+T10096	MedicalMention 1842 1851	cortisone
+T10097	MedicalMention 2075 2082	insulin
+T10098	MedicalMention 2139 2146	lithium
+T10099	MedicalMention 2151 2159	depakote
+T10100	MedicalMention 2243 2258	Insulin 70 / 30
+T10101	MedicalMention 2272 2275	Asa
+T10102	MedicalMention 2279 2285	Plavix
+T10103	MedicalMention 2289 2296	Lithium
+T10105	MedicalMention 2330 2337	Norvasc
+T10106	MedicalMention 2365 2376	Mirtazapine
+T10107	MedicalMention 2405 2415	Naltrexone
+T10108	MedicalMention 2416 2422	Nexium
+T10109	MedicalMention 2444 2451	Lipitor
+T10110	MedicalMention 2473 2479	Cozaar
+T10111	MedicalMention 2487 2495	Depakote
+T10112	MedicalMention 2531 2540	Lopressor
+T10113	MedicalMention 2581 2591	Lisinopril
+T10121	MedicalMention 8406 8422	anti - coagulate
+T10122	MedicalMention 8473 8488	anti - htn meds
+T10123	MedicalMention 8504 8511	lipitor
+T10124	MedicalMention 8571 8579	depakote
+T10125	MedicalMention 8584 8591	lithium
+T10127	MedicalMention 8652 8655	IVF
+T10128	MedicalMention 8700 8703	NPH
+T10129	MedicalMention 8744 8748	RISS
+T10130	MedicalMention 8779 8789	sc fragmin
 T10131	MedicalMention 8782 8789	fragmin
 T10132	MedicalMention 8792 8798	nexium

@@ -1,22 +1,23 @@
-T10865	MedicalMention 780 790	anesthesia
-T10866	MedicalMention 894 904	anesthesia
-T10867	MedicalMention 921 927	Neoral
-T10868	MedicalMention 930 935	Lasix
-T10869	MedicalMention 944 951	Norvasc
-T10870	MedicalMention 971 978	Lipitor
-T10871	MedicalMention 999 1007	Cellcept
-T10872	MedicalMention 1028 1035	Bactrim
-T10873	MedicalMention 1038 1046	Estrotab
-T10874	MedicalMention 1049 1059	prednisone
-T10875	MedicalMention 1068 1074	Epogen
-T10876	MedicalMention 1077 1081	iron
-T10877	MedicalMention 1084 1095	insulin NPH
-T10879	MedicalMention 1917 1924	insulin
-T10882	MedicalMention 2412 2415	ASA
-T10883	MedicalMention 2887 2897	anesthesia
-T10884	MedicalMention 2987 2995	steroids
-T10885	MedicalMention 3081 3088	Lipitor
-T10886	MedicalMention 3128 3131	NPH
-T10887	MedicalMention 3157 3172	regular insulin
-T10888	MedicalMention 3173 3179	NSAIDS
-T10889	MedicalMention 3192 3199	Aspirin
+T10867	MedicalMention 780 790	anesthesia
+T10868	MedicalMention 894 904	anesthesia
+T10869	MedicalMention 921 927	Neoral
+T10870	MedicalMention 930 935	Lasix
+T10871	MedicalMention 944 951	Norvasc
+T10872	MedicalMention 971 978	Lipitor
+T10873	MedicalMention 999 1007	Cellcept
+T10874	MedicalMention 1028 1035	Bactrim
+T10875	MedicalMention 1038 1046	Estrotab
+T10876	MedicalMention 1049 1059	prednisone
+T10877	MedicalMention 1068 1074	Epogen
+T10878	MedicalMention 1077 1081	iron
+T10879	MedicalMention 1084 1091	insulin
+T10880	MedicalMention 1084 1095	insulin NPH
+T10881	MedicalMention 1110 1117	regular
+T10883	MedicalMention 1917 1924	insulin
+T10886	MedicalMention 2412 2415	ASA
+T10887	MedicalMention 2987 2995	steroids
+T10888	MedicalMention 3081 3088	Lipitor
+T10889	MedicalMention 3128 3131	NPH
+T10890	MedicalMention 3157 3172	regular insulin
+T10891	MedicalMention 3173 3179	NSAIDS
+T10892	MedicalMention 3192 3199	Aspirin

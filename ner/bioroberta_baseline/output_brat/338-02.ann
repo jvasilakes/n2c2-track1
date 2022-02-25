@@ -1,8 +1,7 @@
-T10982	MedicalMention 703 713	Lisinopril
-T10983	MedicalMention 716 725	metformin
-T10984	MedicalMention 728 739	simvastatin
-T10985	MedicalMention 742 751	Glyburide
-T10986	MedicalMention 784 797	metronidazole
-T10987	MedicalMention 1030 1040	lisinopril
-T10990	MedicalMention 1600 1613	Topical lidex
-T10991	MedicalMention 1608 1613	lidex
+T10994	MedicalMention 703 713	Lisinopril
+T10995	MedicalMention 716 725	metformin
+T10996	MedicalMention 728 739	simvastatin
+T10997	MedicalMention 742 751	Glyburide
+T10998	MedicalMention 784 797	metronidazole
+T10999	MedicalMention 1030 1040	lisinopril
+T11002	MedicalMention 1608 1613	lidex

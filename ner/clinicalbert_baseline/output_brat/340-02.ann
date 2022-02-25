@@ -1,23 +1,23 @@
-T10977	MedicalMention 455 462	Norvasc
-T10978	MedicalMention 467 473	Cozaar
-T10979	MedicalMention 507 516	Glucotrol
-T10980	MedicalMention 521 531	Glucophage
-T10981	MedicalMention 825 833	atenolol
-T10983	MedicalMention 1230 1235	Aleve
-T10984	MedicalMention 1576 1582	Cozaar
-T10985	MedicalMention 1585 1593	LOSARTAN
-T10986	MedicalMention 1640 1650	Glucophage
-T10987	MedicalMention 1653 1662	METFORMIN
-T10988	MedicalMention 1693 1700	Norvasc
-T10989	MedicalMention 1703 1713	AMLODIPINE
-T10990	MedicalMention 1748 1760	Glucotrol XL
-T10991	MedicalMention 1763 1775	GLIPIZIDE XL
-T10992	MedicalMention 1810 1816	Ultram
-T10993	MedicalMention 1819 1827	TRAMADOL
-T10995	MedicalMention 1875 1883	Skelaxin
-T10996	MedicalMention 1886 1896	METAXALONE
-T10997	MedicalMention 2029 2042	Clonidine Hcl
-T10998	MedicalMention 2058 2065	Codeine
-T11000	MedicalMention 2928 2935	Norvasc
-T11001	MedicalMention 2940 2946	Cozaar
-T11003	MedicalMention 3120 3130	Glucophage
+T10984	MedicalMention 455 462	Norvasc
+T10985	MedicalMention 467 473	Cozaar
+T10986	MedicalMention 507 516	Glucotrol
+T10987	MedicalMention 521 531	Glucophage
+T10988	MedicalMention 825 833	atenolol
+T10990	MedicalMention 1230 1235	Aleve
+T10991	MedicalMention 1576 1582	Cozaar
+T10992	MedicalMention 1585 1593	LOSARTAN
+T10993	MedicalMention 1640 1650	Glucophage
+T10994	MedicalMention 1653 1662	METFORMIN
+T10995	MedicalMention 1693 1700	Norvasc
+T10996	MedicalMention 1703 1713	AMLODIPINE
+T10997	MedicalMention 1748 1760	Glucotrol XL
+T10998	MedicalMention 1763 1775	GLIPIZIDE XL
+T10999	MedicalMention 1810 1816	Ultram
+T11000	MedicalMention 1819 1827	TRAMADOL
+T11002	MedicalMention 1875 1883	Skelaxin
+T11003	MedicalMention 1886 1896	METAXALONE
+T11004	MedicalMention 2029 2042	Clonidine Hcl
+T11005	MedicalMention 2058 2065	Codeine
+T11007	MedicalMention 2928 2935	Norvasc
+T11008	MedicalMention 2940 2946	Cozaar
+T11010	MedicalMention 3120 3130	Glucophage

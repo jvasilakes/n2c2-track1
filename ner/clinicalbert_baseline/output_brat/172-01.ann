@@ -1,9 +1,7 @@
-T10367	MedicalMention 215 222	Insulin
-T10368	MedicalMention 225 234	estrogens
-T10369	MedicalMention 237 242	Tears
-T10370	MedicalMention 365 381	artificial tears
-T10371	MedicalMention 394 400	Saliva
-T10373	MedicalMention 849 854	Tears
-T10374	MedicalMention 859 865	Saliva
-T10376	MedicalMention 963 970	Calcium
-T10377	MedicalMention 975 984	estrogens
+T10365	MedicalMention 215 222	Insulin
+T10366	MedicalMention 225 234	estrogens
+T10367	MedicalMention 237 242	Tears
+T10368	MedicalMention 365 381	artificial tears
+T10369	MedicalMention 394 400	Saliva
+T10372	MedicalMention 963 970	Calcium
+T10373	MedicalMention 975 984	estrogens

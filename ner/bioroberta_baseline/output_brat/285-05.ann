@@ -1,6 +1,6 @@
-T10833	MedicalMention 862 873	ceftriaxone
-T10835	MedicalMention 1048 1057	diltiazem
-T10836	MedicalMention 1062 1071	Lopressor
-T10837	MedicalMention 1297 1304	aspirin
-T10838	MedicalMention 1334 1340	IV dye
-T10839	MedicalMention 1345 1354	Neurontin
+T10841	MedicalMention 862 873	ceftriaxone
+T10843	MedicalMention 1048 1057	diltiazem
+T10844	MedicalMention 1062 1071	Lopressor
+T10845	MedicalMention 1297 1304	aspirin
+T10846	MedicalMention 1337 1340	dye
+T10847	MedicalMention 1345 1354	Neurontin

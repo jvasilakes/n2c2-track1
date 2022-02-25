@@ -1,0 +1,50 @@
+T10618	MedicalMention 1035 1040	HX OF
+T10619	MedicalMention 1138 1153	Humulin 70 / 30
+T10620	MedicalMention 1177 1192	Insulin REGULAR
+T10621	MedicalMention 1262 1264	4U
+T10622	MedicalMention 1308 1316	Protonix
+T10623	MedicalMention 1319 1331	PANTOPRAZOLE
+T10624	MedicalMention 1375 1384	Trazodone
+T10626	MedicalMention 1436 1444	Naprosyn
+T10627	MedicalMention 1447 1455	NAPROXEN
+T10628	MedicalMention 1498 1506	Polytrim
+T10629	MedicalMention 1509 1543	TRIMETHOPRIM / POLYMYXIN B SULFATE
+T10630	MedicalMention 1573 1582	Proventil
+T10631	MedicalMention 1636 1644	Azmacort
+T10632	MedicalMention 1664 1674	Glucophage
+T10633	MedicalMention 1689 1696	Lipitor
+T10634	MedicalMention 1709 1719	Zestoretic
+T10635	MedicalMention 1722 1754	LISINOPRIL / HYDROCHLOROTHIAZIDE
+T10636	MedicalMention 1798 1803	Ecasa
+T10637	MedicalMention 1806 1813	ASPIRIN
+T10638	MedicalMention 1873 1881	Clarinex
+T10639	MedicalMention 1884 1897	DESLORATADINE
+T10640	MedicalMention 1937 1943	Plavix
+T10641	MedicalMention 1946 1957	CLOPIDOGREL
+T10642	MedicalMention 1972 1977	Paxil
+T10643	MedicalMention 1980 1990	PAROXETINE
+T10644	MedicalMention 2028 2036	Atenolol
+T10645	MedicalMention 2072 2084	Flucoconzole
+T10646	MedicalMention 2106 2114	Lotrimin
+T10647	MedicalMention 2127 2139	CLOTRIMAZOLE
+T10648	MedicalMention 2222 2237	Insulin 70 / 30
+T10649	MedicalMention 2240 2245	HUMAN
+T10651	MedicalMention 2865 2880	Humulin 70 / 30
+T10653	MedicalMention 2960 2970	glucophage
+T10654	MedicalMention 2988 2991	ASA
+T10655	MedicalMention 2994 3000	statin
+T10656	MedicalMention 3141 3144	ASA
+T10657	MedicalMention 3154 3160	Plavix
+T10658	MedicalMention 3359 3367	Atenolol
+T10659	MedicalMention 3427 3442	Cont Lisinopril
+T10660	MedicalMention 3470 3477	Lipitor
+T10661	MedicalMention 3545 3548	ASA
+T10662	MedicalMention 3566 3569	EKG
+T10663	MedicalMention 3582 3591	adenosine
+T10664	MedicalMention 3671 3678	BP meds
+T10665	MedicalMention 3691 3701	Depression
+T10666	MedicalMention 3709 3715	Celexa
+T10668	MedicalMention 3736 3742	Asthma
+T10669	MedicalMention 3750 3759	albuterol
+T10670	MedicalMention 3764 3774	asthmacort
+T10671	MedicalMention 3784 3788	GERD
