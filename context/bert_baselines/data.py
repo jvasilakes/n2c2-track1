@@ -207,7 +207,7 @@ class n2c2SentencesDataModule(pl.LightningDataModule):
             warnings.warn("No test set found.")
             self.test = None
 
-        if self.sample_strategy == "none": 
+        if self.sample_strategy == "none":
             self.sampler = None
         elif self.sample_strategy == "weighted":
             # This should give a near-uniform distribution of task

@@ -1,5 +1,6 @@
 # Experiment
-description: bert-base-uncased using max pooled entity spans on the Action task only on v3 data
+description: bert-base-uncased using max pooled entity spans on the Action task only
+  on v3 data
 logdir: /mnt/iusers01/nactem01/u14498jv/scratch/n2c2_track1/context/bert_baseline_logs/
 name: bert/action_entity
 random_seed: 0
@@ -14,6 +15,7 @@ window_size: 0
 
 # Model
 bert_model_name_or_path: bert-base-uncased
+dropout_prob: 0.1
 entity_pool_fn: max
 freeze_pretrained: false
 max_seq_length: 256

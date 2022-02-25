@@ -35,6 +35,7 @@ class ExperimentConfig(object):
             max_train_examples: int = -1,
             window_size: int = 0,
             max_seq_length: int = 128,
+            dropout_prob: float = 0.1,
             batch_size: int = 1,
             sample_strategy: str = 'none',
             use_entity_spans: bool = False,
@@ -58,6 +59,7 @@ class ExperimentConfig(object):
         self.max_train_examples = max_train_examples
         self.window_size = window_size
         self.max_seq_length = max_seq_length
+        self.dropout_prob = dropout_prob
         self.batch_size = batch_size
         self.sample_strategy = sample_strategy
         self.use_entity_spans = use_entity_spans
@@ -146,6 +148,7 @@ class ExperimentConfig(object):
                 "use_entity_spans",
                 "entity_pool_fn",
                 "max_seq_length",
+                "dropout_prob",
             ],
             "Training": [
                 "batch_size",

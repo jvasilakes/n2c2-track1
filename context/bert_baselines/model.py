@@ -33,6 +33,7 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
             freeze_pretrained=False,
             use_entity_spans=False,
             entity_pool_fn="max",
+            dropout_prob=0.1,
             lr=1e-3,
             weight_decay=0.0):
         super().__init__()
@@ -40,9 +41,10 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
         self.label_spec = label_spec
         self.freeze_pretrained = freeze_pretrained
         self.use_entity_spans = use_entity_spans
+        self.entity_pool_fn = entity_pool_fn
+        self.dropout_prob = dropout_prob
         self.lr = lr
         self.weight_decay = weight_decay
-        self.entity_pool_fn = entity_pool_fn
 
         self.bert_config = BertConfig.from_pretrained(
             self.bert_model_name_or_path)
@@ -61,7 +63,7 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
         self.classifier_heads = nn.ModuleDict()
         for (task, num_labels) in label_spec.items():
             self.classifier_heads[task] = nn.Sequential(
-                    nn.Dropout(self.bert_config.hidden_dropout_prob),
+                    nn.Dropout(self.dropout_prob),
                     nn.Linear(self.bert_config.hidden_size, num_labels)
                     )
         # save __init__ arguments to self.hparams, which is logged by pl

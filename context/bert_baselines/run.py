@@ -135,6 +135,7 @@ def run_train(config, datamodule,
             freeze_pretrained=config.freeze_pretrained,
             use_entity_spans=config.use_entity_spans,
             entity_pool_fn=config.entity_pool_fn,
+            dropout_prob=config.dropout_prob,
             lr=config.lr,
             weight_decay=config.weight_decay,
             )
