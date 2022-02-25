@@ -1,12 +1,12 @@
 # Experiment
 name: "clinical_bert/certainty"
-description: "Bio_ClinicalBERT on the Certainty task only"
+description: "Bio_ClinicalBERT on the Certainty task only on v3 data"
 logdir: "/mnt/iusers01/nactem01/u14498jv/scratch/n2c2_track1/context/bert_baseline_logs/"
 random_seed: 0
 
 # Data
-data_dir: "/mnt/iusers01/nactem01/u14498jv/Projects/n2c2-track1/n2c2Track1TrainingData-v2/data_v2/"
-sentences_dir: "/mnt/iusers01/nactem01/u14498jv/Projects/n2c2-track1/n2c2Track1TrainingData-v2/segmented"
+data_dir: "/mnt/iusers01/nactem01/u14498jv/Projects/n2c2-track1/n2c2Track1TrainingData-v3/data_v3/"
+sentences_dir: "/mnt/iusers01/nactem01/u14498jv/Projects/n2c2-track1/n2c2Track1TrainingData-v3/segmented"
 tasks_to_load: ["Certainty"]
 window_size: 0
 max_train_examples: null
