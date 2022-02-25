@@ -1,12 +1,14 @@
 import os
 import json
-import argparse
 import yaml
+import random
+import argparse
 from yaml import Loader
 from glob import glob
 from tqdm import tqdm
 
 import torch
+import numpy as np
 
 from biomedicus.sentences.input import InputMapping
 from biomedicus.sentences.vocabulary import n_chars
@@ -57,7 +59,19 @@ def parse_args():
     return parser.parse_args()
 
 
+def set_seed(seed):
+    torch.manual_seed(seed)
+    np.random.seed(seed)
+    random.seed(seed)
+    if torch.cuda.is_available():
+        torch.cuda.manual_seed(seed)
+        torch.backends.cudnn.benchmark = False
+        torch.backends.cudnn.deterministic = True
+
+
 def main(args):
+    set_seed(0)
+
     if args.infile is None and args.indir is None:
         raise argparse.ArgumentError(
                 args.infile, "Must specify --infile or --indir")
