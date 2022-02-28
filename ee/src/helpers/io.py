@@ -1,6 +1,7 @@
 import os
 import sys
 import yaml
+import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.pyplot import figure
 
@@ -65,6 +66,53 @@ def clean_tokenizer(tokens):
     clean_tokens.append(cur_token)
     return clean_tokens
 
+
+def print_single(f, no, category, pos, trig):
+    
+    f.write('T{}\t{} {}\t{}\n'.format(no, category, pos, trig))
+    f.write('E{}\t{}:T{}\n'.format(no, category, no))
+
+    return no + 1
+
+def print_preds(tracker, loader, config, epoch, mode='dev'):
+    print('-----Saving predictions for current epoch', epoch,'-----')
+    dataset = loader.dataset
+    samples = np.concatenate(tracker['samples'])
+    event_pred = tracker['event_preds']
+    action_pred = tracker['action_preds']
+    ievent= dataset.ievent_vocab
+    iaction = dataset.iaction_vocab
+    file_dict = {}
+    for i, s in enumerate(samples):
+        tmp = dataset[s][3].split('/')
+        trig, fname = tmp[0:len(tmp)-1],tmp[-1]
+        pos = dataset[s][4]
+        if fname in file_dict:
+            file_dict[fname].append((trig, pos, event_pred[i], action_pred[i]))
+            
+        else:
+            file_dict[fname] = [(trig,  pos, event_pred[i], action_pred[i])]      
+            
+    for fname, res_list in file_dict.items():
+        with open(config['pred_dir']+mode+'/'+fname+".ann", "w") as tmp_file:
+            # Move read cursor to the start of file.
+            count = 0
+            for trig, pos, e_preds, a_preds in res_list:
+                if e_preds[0] == 1:
+                    count = print_single(tmp_file, count, ievent[0], pos, trig) 
+                if e_preds[2] == 1:
+                    count = print_single(tmp_file, count, ievent[2], pos, trig)
+                if e_preds[1] == 1: #Disposition
+                    for j, pred in enumerate(a_preds):
+                        if pred == 1:
+                            _ = print_single(tmp_file, count, ievent[1], pos, trig)
+                            tmp_file.write('A{}\tAction E{} {}\n'.format(count, count,iaction[j]))
+                            count +=1
+                    if np.sum(a_preds) == 0: ## meaning no action identified
+                        count = print_single(tmp_file, count, ievent[1], pos, trig)
+#                         print(fname)
+
+                        
 def print_cases(samples, preds, dev_loader, config, epoch):
     dataset = dev_loader.dataset
     tokenizer = dataset.tokenizer
@@ -114,10 +162,11 @@ class Tee(object):
             
 def print_options(params):
     print('''\nParameters:
+            - Verbs             {}
             - batch_size        {}
             - grad accumulation {}
             - Learning rate     {}
-            - Dropout Input     {}\t Dropout Output {}
+            - Dropout           {}
             
             - Freeze Encoder    {}\tAutoscalling: {}  
             - Encoder Dim       {}\tLayers {}
@@ -130,8 +179,8 @@ def print_options(params):
             - Train/Dev         {}, {}
             - Save folder       {}
             '''.format(
-                    params['batch_size'],  params['accumulate_batches'],
-                    params['lr'], params['input_dropout'], params['output_dropout'], 
+                    params['verbs'], params['batch_size'],  params['accumulate_batches'],
+                    params['lr'],  params['dropout'], 
                     params['freeze_pretrained'], params['autoscalling'],
                     params['enc_dim'], params['enc_layers'], 
                     params['hidden_dim'], 

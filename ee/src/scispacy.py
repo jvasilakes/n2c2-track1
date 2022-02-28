@@ -40,8 +40,8 @@ def main(args):
                     for tok in clean_toks:
                         cl_tok = clean_token(tok.text)
                         end = curr + len(cl_tok)
-                        if tok.pos_ =='VERB' and tok.tag_=='VBP':
-                            print('cl tok <%s> is verb with tag <%s> ' % (cl_tok, tok.tag_))
+                        if tok.pos_ =='VERB':
+#                             print('cl tok <%s> is verb with tag <%s> ' % (cl_tok, tok.tag_))
                             Verbs.append({'t':cl_tok, 'st':curr, 'en':end})
                         curr = end + 1
                     for verb in Verbs:
@@ -57,7 +57,7 @@ def main(args):
                     
 #             print(data)
 
-spacy_ign = ["_","#","\n",'"',"@", '-']
+spacy_ign = ["_","#","\n",'"',"@", '-','\t']
 
 def clean_token(s_tok):
     cl = s_tok.replace(" ","")

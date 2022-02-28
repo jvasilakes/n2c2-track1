@@ -59,24 +59,30 @@ class BertDataset(Dataset):
     
  
     def __init__(self, path, max_sen_len=None, mode='train', 
-                 tokenizer = None, dummy = False):
+                 tokenizer = None, verbs = False, dummy = False):
         super().__init__()
         self.max_sen_len = max_sen_len
         self.mode = mode
         self.data = []
         self.tokenizer = tokenizer
         self.event_vocab = {'NoDisposition':0,'Disposition':1, 'Undetermined':2}
+        self.ievent_vocab = {v: k for k, v in self.event_vocab.items()}
         self.action_vocab = {'Start':0,'Stop':1,'Increase':2,'Decrease':3, 'OtherChange':4, 'UniqueDose':5, 'Unknown':6}
+        self.iaction_vocab = {v: k for k, v in self.action_vocab.items()}
         with open(path) as infile:
             for item in tqdm(infile, desc='Loading ' + self.mode.upper()):
                 sample = json.loads(item)
                 ## {text: ..., trig:{'s','e','name'}, events:[NoDispotion, Dispotition], fname,
                 ##  verbs: [{'t','st','en'}], action:{}}
                 sentences = sample['text']
+                orig_pos = sample['trig']['old_pos']
                 pos = (sample['trig']['s'], sample['trig']['e'])
                 ident =  sample['trig']['name'] +'/'+ sample['fname']
                 ## Adding special tokens
-                to_add = {} #(verb['st'],verb['en']): '#' for verb in sample['verbs']} # '#' for verbs
+                if verbs:
+                    to_add = { (verb['st'],verb['en']): '#' for verb in sample['verbs']} 
+                else: 
+                    to_add = {}
                 to_add[pos] = '@'
                 od = OrderedDict(sorted(to_add.items()))
                 sentences, pos = self.add_no_overlap(sentences, od, ident)
@@ -108,7 +114,7 @@ class BertDataset(Dataset):
                 offsets = tokenized["offset_mapping"].squeeze() 
                 m_tok = self.find_tokens(pos, offsets,sentences) #2 cases where it doesnt work. we should work with tokens
 #                 out_tok = [m_tok[0] - 1]
-                self.data.append([event_labels, action_labels,  ident,  m_tok, tokenized['input_ids'].squeeze(), tokenized['attention_mask'].squeeze(), tokenized['token_type_ids'].squeeze()])
+                self.data.append([event_labels, action_labels,  ident, orig_pos, m_tok, tokenized['input_ids'].squeeze(), tokenized['attention_mask'].squeeze(), tokenized['token_type_ids'].squeeze()])
 
     def sent_trunc(self, sentences, pos, per):
         sent_len = len(sentences)
@@ -154,16 +160,17 @@ class Collates():
         allow dynamic padding based on the current batch
         """
         data = list(zip(*data))
-        indx, elabel, alabel, names = data[:4]
+        indx, elabel, alabel, names, opos = data[:5]
         indx = torch.from_numpy(np.stack(indx)).long()
         elabels = torch.from_numpy(np.stack(elabel)).long()
         alabels = torch.from_numpy(np.stack(alabel)).long()
-        token_out = data[4]
+        token_out = data[5]
         token_out = torch.from_numpy(np.stack(token_out)).long()
-        bert_batch_seqs = pad_sequence(data[5], batch_first=True)
-        bert_batch_mask = pad_sequence(data[6], batch_first=True)
-        bert_batch_type = pad_sequence(data[7], batch_first=True)
-        output = {'indxs':indx, 'elabels':elabels, 'alabels':alabels, 'names':names, 'input_ids':bert_batch_seqs,
+        bert_batch_seqs = pad_sequence(data[6], batch_first=True)
+        bert_batch_mask = pad_sequence(data[7], batch_first=True)
+        bert_batch_type = pad_sequence(data[8], batch_first=True)
+        output = {'indxs':indx, 'elabels':elabels, 'alabels':alabels, 'names':names, 
+                  'old_pos':opos, 'input_ids':bert_batch_seqs,
                   'mask':bert_batch_mask, 'type':bert_batch_type, 'tok_out':token_out}
         return output
 
@@ -188,12 +195,12 @@ def main(args):
     tokenizer = AutoTokenizer.from_pretrained('bert-base-uncased') ##P
     
     train_data_ = BertDataset(config['train_data'], config['max_sen_len'], mode='train', 
-                 tokenizer = tokenizer, dummy = False)
+                 tokenizer = tokenizer, verbs=config['verbs'], dummy = False)
     print('Train data:',len(train_data_))
     train_loader_ = DataLoader(train_data_, batch_size=config['batch_size'], 
                                shuffle=True, collate_fn=Collates(), num_workers=0)
     dev_data_ = BertDataset(config['dev_data'], config['max_sen_len'], mode='dev',
-                          tokenizer = tokenizer, dummy = False)
+                          tokenizer = tokenizer,verbs=config['verbs'], dummy = False)
     print('Dev data:', len(dev_data_))
     dev_loader_ = DataLoader(dataset=dev_data_, batch_size=config['batch_size'],
                            shuffle=True, collate_fn=Collates(), num_workers=0)
@@ -204,7 +211,7 @@ def main(args):
 #     print(dev_loader_.dataset[1][3])
         
 def print_batch(batch, tokenizer):
-    print('Batch with {} samples \nNames of entities {}'.format(len(batch['names']), batch['names']))
+    print('Batch with {} samples \nNames of entities {} with opos {}'.format(len(batch['names']), batch['names'],batch['old_pos']))
     tokens, sentences = [], []
     for i in range(len(batch['names'])):
         ids = batch['input_ids'][i][batch['tok_out'][i][0]:batch['tok_out'][i][1]+1]
@@ -216,7 +223,7 @@ def print_batch(batch, tokenizer):
             print('Error, output token ', tok_out, ' != @')
         toks = tokenizer.convert_ids_to_tokens(batch['input_ids'][i])
         sentences.append(tok_to_sent(toks))
-    print('Reconstructed output tokens', tokens)
+#     print('Reconstructed output tokens', tokens)
     print('Reconstructed output sentences', '\n'.join(sentences))
     sleep(20)
     

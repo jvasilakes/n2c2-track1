@@ -51,17 +51,18 @@ def load_data(config):
 
 #     tokenizer = PreTrainedTokenizerFast.from_pretrained('bert-base-uncased') ##P
 #     tokenizer.pad_token = "[PAD]" ##P
-    tokenizer = AutoTokenizer.from_pretrained('bert-base-uncased') ##P
+#     tokenizer = AutoTokenizer.from_pretrained('bert-base-uncased') ##P
+    tokenizer = AutoTokenizer.from_pretrained("emilyalsentzer/Bio_ClinicalBERT")
 #     tokenizer = AutoTokenizer.from_pretrained('roberta-large')
     train_data_ = BertDataset(config['train_data'], config['max_sen_len'], mode='train', 
-                     tokenizer = tokenizer, dummy = False)
+                     tokenizer = tokenizer, verbs= config['verbs'], dummy = False)
     print('Train data:',len(train_data_))
     train_loader_ = DataLoader(train_data_, batch_size=config['batch_size'],
                            shuffle=True,
                            collate_fn=Collates(),
                            num_workers=0)
     dev_data_ = BertDataset(config['dev_data'], config['max_sen_len'], mode='dev',
-                          tokenizer = tokenizer, dummy = False)
+                          tokenizer = tokenizer, verbs= config['verbs'], dummy = False)
     print('Dev data:', len(dev_data_))
     
     dev_loader_ = DataLoader(dataset=dev_data_, batch_size=config['batch_size'],
