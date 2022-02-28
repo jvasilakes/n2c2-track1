@@ -78,11 +78,11 @@ def adjust_offsets(old_sents, new_sents, old_entities, f):
     for e in old_entities:
         start = e['st']
         end = e['end']
-
+        old_pos = str(start)+' '+str(end)
         if (start, end) not in terms:
-            terms[(start, end)] = [[start, end,  e['cl'], e['name'], e['id']]]
+            terms[(start, end)] = [[start, end,  e['cl'], e['name'], e['id'], old_pos]]
         else:
-            terms[(start, end)].append([start, end, e['cl'], e['name'], e['id']])
+            terms[(start, end)].append([start, end, e['cl'], e['name'], e['id'], old_pos])
 
     orgidx, newidx = 0, 0
     orglen, newlen = len(original), len(newtext)
@@ -174,7 +174,7 @@ def adjust_offsets(old_sents, new_sents, old_entities, f):
                                                                                new_sent_range,
                                                                                newtext_break[term[0]:term[1]], term[3])
             new_entity = {'id':term[4],'name': newtext[term[0]:term[1]],'st':int(term[0]), 
-                          'end':term[1], 'cl':term[2], 'sent_no': sent_no[0]}
+                          'end':int(term[1]), 'cl':term[2], 'sent_no': sent_no[0], 'old_pos': term[5]}
 
             new_entities.append(new_entity)
 
@@ -250,7 +250,7 @@ def preprocess_spacy(data_path,folder_path, window):
                     sent_range = np.arange(start=max(0,sent_no - window), stop=min(max_sent,sent_no + window + 1))
                     sample = {'text': ' '.join(list(split_sentences[i] for i in sent_range))}
                     offset = offsets[min(sent_range)]
-                    sample['trig'] = {'s': st - offset, 'e':end -offset, 'name': entries[0]['name']}
+                    sample['trig'] = {'s': st - offset, 'e':end -offset, 'name': entries[0]['name'], 'old_pos': entries[0]['old_pos']}
                     if sample['text'][sample['trig']['s']:sample['trig']['e']]!= entries[0]['name']:
                         print('Problem {}  <> {}'.format(sample['text'][sample['trig']['s']:sample['trig']['e']], entries[0]['name']))
                     ids = [entry['id'] for entry in entries]
@@ -259,8 +259,8 @@ def preprocess_spacy(data_path,folder_path, window):
                     ###
                     eids = [event['eid'] for event in data['events'] if event['tr'] in ids]
                     sample['actions'] =[action['cl'] for action in data['action'] if action['eid'] in eids]
-#                     if len(sample['actions'])> 1:
-#                         print('We got you ', f, eids, sample['actions'])
+                    if len(sample['actions'])> 1:
+                        print('We got you ', f, eids, sample['actions'])
                     ###
                     sample['verbs'] = []
                     curr = 0

@@ -10,8 +10,10 @@ import torch
 from torch import nn, torch
 import torch.nn.functional as F
 from torch.nn.utils.rnn import pad_sequence
-from transformers import BertModel
-
+from transformers import BertModel, AutoModel
+from transformers import logging
+# logging.set_verbosity_warning()
+# logging.set_verbosity_error()
 
 class BlankNet(nn.Module):
     """
@@ -27,7 +29,12 @@ class BlankNet(nn.Module):
         super().__init__()
         self.device = device
         self.config = config
-        self.lang_encoder = BertModel.from_pretrained('bert-base-uncased', hidden_dropout_prob=config['input_dropout']) 
+        logging.set_verbosity_warning()
+        logging.set_verbosity_error()
+#         self.lang_encoder = BertModel.from_pretrained('bert-base-uncased') # hidden_dropout_prob=config['input_dropout']) 
+
+        self.lang_encoder = AutoModel.from_pretrained("emilyalsentzer/Bio_ClinicalBERT")
+    
         #attention_probs_dropout_prob =  config['output_dropout']  
         if config['freeze_pretrained']:
             for param in self.lang_encoder.parameters():
@@ -36,33 +43,16 @@ class BlankNet(nn.Module):
         self.shared = nn.Sequential(
             nn.Linear(2*config['enc_dim'], config['enc_dim']), ##This may change
             nn.ReLU(),
-            nn.Dropout(p=config['output_dropout']))
+            nn.Dropout(p=config['dropout']))
         self.event_classifier = nn.Linear(config['enc_dim'], len(vocabs['events']))
         self.action_classifier = nn.Linear(config['enc_dim'], len(vocabs['actions']))
     # task loss
         self.sigm = nn.Sigmoid()
         self.loss_fnt = nn.BCEWithLogitsLoss()
-        
 #         self.loss_fnt = nn.BCELoss()
-        
 #         self.loss_fnt = nn.CrossEntropyLoss()
         
-    def average_tokens(self, enc_seq, mentions):
-        """
-        Merge tokens into mentions;
-        Find which tokens belong to a mention (based on start-end ids) and average them
-        """
-        start1, end1, w_ids1 = torch.broadcast_tensors(mentions[:, 0].unsqueeze(-1),
-                                                       mentions[:, 1].unsqueeze(-1),
-                                                       torch.arange(0, enc_seq.shape[1]).unsqueeze(0).to(self.device))
 
-        index_t1 = (torch.ge(w_ids1, start1) & torch.le(w_ids1, end1)).float().to(self.device).unsqueeze(1)
-
-        arg = torch.div(torch.matmul(index_t1, enc_seq), torch.sum(index_t1, dim=2).unsqueeze(-1)).squeeze(1)  # avg
-      
-        assert torch.sum(torch.isnan(arg)) ==0 , 'Problem locating tokens'
-        return arg
-    
     def specific_tokens(self, enc_seq, tokens_ent):
         idx = torch.arange(enc_seq.size(0)).to(self.device)
         st_token = tokens_ent[:,0] -1 #will it work?
