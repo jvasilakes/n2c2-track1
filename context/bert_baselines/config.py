@@ -102,7 +102,7 @@ class ExperimentConfig(object):
                 raise ValueError(f"Unknown errors value {errors}. Expected 'fix' or 'raise'.")  # noqa
 
     def validate(self, errors="raise"):
-        valid_entity_pool_fns = ["mean", "max"]
+        valid_entity_pool_fns = ["mean", "max", "first"]
         self._validate_param("entity_pool_fn", valid_entity_pool_fns,
                              default_value="mean", errors=errors)
 

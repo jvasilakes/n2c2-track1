@@ -50,6 +50,7 @@ def run(config_file):
     test_mask_hidden(config, datamodule)
     test_pool_entity_embeddings_max(config, datamodule)
     test_pool_entity_embeddings_mean(config, datamodule)
+    test_pool_entity_embeddings_first(config, datamodule)
 
 
 @test_logger
@@ -63,17 +64,18 @@ def test_mask_hidden(config, datamodule):
         lr=config.lr,
         weight_decay=config.weight_decay)
 
-    h = torch.randn(config.batch_size, config.max_seq_length,
-                    model.bert_config.hidden_size)
     for dl in [datamodule.train_dataloader(), datamodule.val_dataloader()]:
         for batch in dl:
+            h = torch.randn(config.batch_size, config.max_seq_length,
+                            model.bert_config.hidden_size)
             offset_mapping = batch["encodings"]["offset_mapping"]
             entity_spans = batch["entity_spans"]
             try:
                 masked, token_mask = model.mask_hidden(
                     h, offset_mapping, entity_spans)
+            # mask_hidden raises ValueError("Entity span not found!")
             except ValueError:
-                raise AssertionError()
+                raise AssertionError("Entity span not found.")
 
 
 @test_logger
@@ -87,10 +89,10 @@ def test_pool_entity_embeddings_max(config, datamodule):
         lr=config.lr,
         weight_decay=config.weight_decay)
 
-    h = torch.randn(config.batch_size, config.max_seq_length,
-                    model.bert_config.hidden_size)
     for dl in [datamodule.train_dataloader(), datamodule.val_dataloader()]:
         for batch in dl:
+            h = torch.randn(config.batch_size, config.max_seq_length,
+                            model.bert_config.hidden_size)
             offset_mapping = batch["encodings"]["offset_mapping"]
             entity_spans = batch["entity_spans"]
             masked, token_mask = model.mask_hidden(
@@ -110,10 +112,10 @@ def test_pool_entity_embeddings_mean(config, datamodule):
         lr=config.lr,
         weight_decay=config.weight_decay)
 
-    h = torch.randn(config.batch_size, config.max_seq_length,
-                    model.bert_config.hidden_size)
     for dl in [datamodule.train_dataloader(), datamodule.val_dataloader()]:
         for batch in dl:
+            h = torch.randn(config.batch_size, config.max_seq_length,
+                            model.bert_config.hidden_size)
             offset_mapping = batch["encodings"]["offset_mapping"]
             entity_spans = batch["entity_spans"]
             masked, token_mask = model.mask_hidden(
@@ -121,6 +123,31 @@ def test_pool_entity_embeddings_mean(config, datamodule):
             pooled = model.pool_entity_embeddings(masked, token_mask)
             assert not torch.isnan(pooled).all()
             assert not torch.isinf(pooled).all()
+
+
+@test_logger
+def test_pool_entity_embeddings_first(config, datamodule):
+    model = BertMultiHeadedSequenceClassifier(
+        config.bert_model_name_or_path,
+        label_spec=datamodule.label_spec,
+        freeze_pretrained=True,
+        use_entity_spans=True,
+        entity_pool_fn="first",
+        lr=config.lr,
+        weight_decay=config.weight_decay)
+
+    h = torch.arange(config.max_seq_length).unsqueeze(-1).expand(
+        -1, model.bert_config.hidden_size)
+    h = torch.stack([h] * config.batch_size)
+    for dl in [datamodule.train_dataloader(), datamodule.val_dataloader()]:
+        for batch in dl:
+            offset_mapping = batch["encodings"]["offset_mapping"]
+            entity_spans = batch["entity_spans"]
+            masked, token_mask = model.mask_hidden(
+                h, offset_mapping, entity_spans)
+            pooled = model.pool_entity_embeddings(masked, token_mask)
+            first_nonzero = token_mask.max(axis=1).indices[:, 0]
+            assert (pooled[:, 0] == first_nonzero).all()
 
 
 if __name__ == "__main__":

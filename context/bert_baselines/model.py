@@ -47,8 +47,8 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
         self.lr = lr
         self.weight_decay = weight_decay
         self.entity_pool_fn = entity_pool_fn
-        self._validate_class_weights(class_weights, self.label_spec)
-        self.class_weights = class_weights
+        self.class_weights = self._validate_class_weights(
+            class_weights, self.label_spec)
 
         self.bert_config = BertConfig.from_pretrained(
             self.bert_model_name_or_path)
@@ -117,10 +117,12 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
         for (task, clf_head) in self.classifier_heads.items():
             logits = clf_head(pooled_output)
             task_labels = labels[task]
-            # TODO: I don't like doing this op at every forward,
-            # but I can't do it in __init__ since self.device is still cpu.
-            weight = self.class_weights[task].to(self.device)
-            loss_fn = CrossEntropyLoss(weight=weight)
+            if self.class_weights[task] is not None:
+                # Only copy the weights to the model device once.
+                if self.class_weights[task].device != self.device:
+                    dev = self.device
+                    self.class_weights[task] = self.class_weights[task].to(dev)
+            loss_fn = CrossEntropyLoss(weight=self.class_weights[task])
             loss = loss_fn(logits.view(-1, self.label_spec[task]),
                            task_labels.view(-1))
             clf_outputs[task] = SequenceClassifierOutput(
@@ -138,6 +140,10 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
             pooled = torch.max(masked_hidden, axis=1)[0]
         elif self.entity_pool_fn == "mean":
             pooled = masked_hidden.sum(axis=1) / token_mask.sum(axis=1)
+        elif self.entity_pool_fn == "first":
+            first_nonzero_idxs = token_mask.max(axis=1).indices[:, 0]
+            batch_idxs = torch.arange(token_mask.size(0))
+            pooled = masked_hidden[batch_idxs, first_nonzero_idxs, :]
         else:
             raise ValueError(f"Unknown pool function {self.entity_pool_fn}")
         return pooled
@@ -252,12 +258,16 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
     def _validate_class_weights(self, class_weights, label_spec):
         if not isinstance(class_weights, (dict, type(None))):
             raise ValueError(f"class_weights must be None or dict(). Got {type(class_weights)}.")  # noqa 
-        for (task, weights) in class_weights.items():
-            if not torch.is_tensor(weights):
-                raise TypeError(f"class weights must be torch.Tensor. Got {type(weights)}.")  # noqa
-            num_classes = label_spec[task]
-            if len(weights) != num_classes:
-                raise ValueError(f"Number of weights != number of classes for task {task}")  # noqa
+        if class_weights is not None:
+            for (task, weights) in class_weights.items():
+                if not torch.is_tensor(weights):
+                    raise TypeError(f"class weights must be torch.Tensor. Got {type(weights)}.")  # noqa
+                num_classes = label_spec[task]
+                if len(weights) != num_classes:
+                    raise ValueError(f"Number of weights != number of classes for task {task}")  # noqa
+        elif class_weights is None:
+            class_weights = {task: None for task in label_spec.keys()}
+        return class_weights
 
 
 MODEL_LOOKUP = {
