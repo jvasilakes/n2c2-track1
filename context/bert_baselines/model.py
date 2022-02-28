@@ -10,6 +10,8 @@ from transformers import BertConfig, BertModel, AdamW
 from transformers.modeling_outputs import SequenceClassifierOutput
 from sklearn.metrics import precision_recall_fscore_support
 
+from layers import EntityPooler
+
 
 class BertMultiHeadedSequenceClassifier(pl.LightningModule):
     """
@@ -59,10 +61,11 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
                 param.requires_grad = False
 
         if self.use_entity_spans is True:
-            self.entity_pooler = nn.Sequential(
-                    nn.Linear(self.bert_config.hidden_size,
-                              self.bert_config.hidden_size),
-                    nn.Tanh())
+            insize = outsize = self.bert_config.hidden_size
+            if self.entity_pool_fn == "first-last":
+                insize = 2 * insize
+            self.entity_pooler = EntityPooler(
+                insize, outsize, self.entity_pool_fn)
 
         self.classifier_heads = nn.ModuleDict()
         for (task, num_labels) in label_spec.items():
@@ -106,10 +109,8 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
                 )
 
         if entity_spans is not None and self.use_entity_spans is True:
-            masked_hidden, token_mask = self.mask_hidden(
+            pooled_output = self.entity_pooler(
                 bert_outputs.last_hidden_state, offset_mapping, entity_spans)
-            pooled = self.pool_entity_embeddings(masked_hidden, token_mask)
-            pooled_output = self.entity_pooler(pooled)
         else:
             pooled_output = bert_outputs.pooler_output
 
@@ -131,44 +132,6 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
                     hidden_states=bert_outputs.hidden_states,
                     attentions=bert_outputs.attentions)
         return clf_outputs
-
-    def pool_entity_embeddings(self, masked_hidden, token_mask):
-        if self.entity_pool_fn == "max":
-            # Replace masked with -inf to avoid zeroing out
-            # hidden dimensions if the non-masked values are all negative.
-            masked_hidden[torch.logical_not(token_mask)] = -torch.inf
-            pooled = torch.max(masked_hidden, axis=1)[0]
-        elif self.entity_pool_fn == "mean":
-            pooled = masked_hidden.sum(axis=1) / token_mask.sum(axis=1)
-        elif self.entity_pool_fn == "first":
-            first_nonzero_idxs = token_mask.max(axis=1).indices[:, 0]
-            batch_idxs = torch.arange(token_mask.size(0))
-            pooled = masked_hidden[batch_idxs, first_nonzero_idxs, :]
-        else:
-            raise ValueError(f"Unknown pool function {self.entity_pool_fn}")
-        return pooled
-
-    def mask_hidden(self, hidden_states, offset_mapping, entity_spans):
-        # We need to replace the (0, 0) spans in the offset mapping
-        # with (-1, -1) to avoid masking errors when the
-        # start of the span is 0.
-        offset_mask = offset_mapping == torch.tensor([0, 0], device=self.device)  # noqa
-        offset_mask = offset_mask[:, :, 0] & offset_mask[:, :, 1]
-        offset_mapping[offset_mask, :] = torch.tensor([-1, -1]).type_as(offset_mapping)  # noqa
-        # Keep all tokens whose start char is >= the entity start and
-        #   whose end char is <= the entity end.
-        start_spans = entity_spans[:, 0].unsqueeze(-1).expand(
-                -1, offset_mapping.size(1))
-        end_spans = entity_spans[:, 1].unsqueeze(-1).expand(
-                -1, offset_mapping.size(1))
-        token_mask = (offset_mapping[:, :, 0] >= start_spans) & \
-                     (offset_mapping[:, :, 1] <= end_spans)
-        # Duplicate the mask across the hidden dimension
-        token_mask_ = token_mask.unsqueeze(-1).expand(hidden_states.size())
-        if len((token_mask.sum(axis=1) == torch.tensor(0.)).nonzero()) > 0:
-            raise ValueError("Entity span not found! Try increasing max_seq_length.")  # noqa
-        masked = hidden_states * token_mask_
-        return masked, token_mask_
 
     def training_step(self, batch, batch_idx):
         task_outputs = self(

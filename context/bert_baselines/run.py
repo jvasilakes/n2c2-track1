@@ -279,15 +279,22 @@ def batched_predictions_to_brat(preds, dataset):
                 attr = br.Attribute(id=aid, type=task, value=decoded_pred)
                 attrs[task] = attr
 
-            start, end = batch["entity_spans"][i]
-            text = batch["texts"][i][start:end]
             # Reconstruct original character offsets
+            start, end = batch["entity_spans"][i]
+            entity_text = batch["texts"][i][start:end]
             start += batch["char_offsets"][i]
             end += batch["char_offsets"][i]
+
+            # Remove the '@' entity markers if used.
+            if dataset.mark_entities is True:
+                entity_text = entity_text.strip('@')
+                end -= 2
+
             num_spans = len(set([(e.span.start_index, e.span.end_index)
                                  for e in events_by_docid[docid]]))
             sid = f"T{num_spans}"
-            span = br.Span(id=sid, start_index=start, end_index=end, text=text)
+            span = br.Span(id=sid, start_index=start, end_index=end,
+                           text=entity_text)
 
             src_file_str = f"{docid}.ann"
             eid = f"E{len(events_by_docid[docid])}"

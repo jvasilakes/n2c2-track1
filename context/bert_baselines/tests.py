@@ -7,6 +7,7 @@ import pytorch_lightning as pl
 from config import ExperimentConfig
 from data import n2c2SentencesDataModule
 from model import BertMultiHeadedSequenceClassifier
+from layers import TokenMask, EntityPooler
 
 
 colorama.init(autoreset=True)
@@ -51,6 +52,8 @@ def run(config_file):
     test_pool_entity_embeddings_max(config, datamodule)
     test_pool_entity_embeddings_mean(config, datamodule)
     test_pool_entity_embeddings_first(config, datamodule)
+    test_pool_entity_embeddings_last(config, datamodule)
+    test_pool_entity_embeddings_first_last(config, datamodule)
 
 
 @test_logger
@@ -64,6 +67,7 @@ def test_mask_hidden(config, datamodule):
         lr=config.lr,
         weight_decay=config.weight_decay)
 
+    masker = TokenMask()
     for dl in [datamodule.train_dataloader(), datamodule.val_dataloader()]:
         for batch in dl:
             h = torch.randn(config.batch_size, config.max_seq_length,
@@ -71,7 +75,7 @@ def test_mask_hidden(config, datamodule):
             offset_mapping = batch["encodings"]["offset_mapping"]
             entity_spans = batch["entity_spans"]
             try:
-                masked, token_mask = model.mask_hidden(
+                masked, token_mask = masker(
                     h, offset_mapping, entity_spans)
             # mask_hidden raises ValueError("Entity span not found!")
             except ValueError:
@@ -89,15 +93,17 @@ def test_pool_entity_embeddings_max(config, datamodule):
         lr=config.lr,
         weight_decay=config.weight_decay)
 
+    masker = TokenMask()
+    insize = outsize = model.bert_config.hidden_size
+    pooler = EntityPooler(insize, outsize, "max")
     for dl in [datamodule.train_dataloader(), datamodule.val_dataloader()]:
         for batch in dl:
             h = torch.randn(config.batch_size, config.max_seq_length,
                             model.bert_config.hidden_size)
             offset_mapping = batch["encodings"]["offset_mapping"]
             entity_spans = batch["entity_spans"]
-            masked, token_mask = model.mask_hidden(
-                h, offset_mapping, entity_spans)
-            pooled = model.pool_entity_embeddings(masked, token_mask)
+            masked, token_mask = masker(h, offset_mapping, entity_spans)
+            pooled = pooler.pooler(masked, token_mask)
             assert (pooled == torch.tensor(0.)).any() == torch.tensor(False)
 
 
@@ -112,15 +118,17 @@ def test_pool_entity_embeddings_mean(config, datamodule):
         lr=config.lr,
         weight_decay=config.weight_decay)
 
+    masker = TokenMask()
+    insize = outsize = model.bert_config.hidden_size
+    pooler = EntityPooler(insize, outsize, "mean")
     for dl in [datamodule.train_dataloader(), datamodule.val_dataloader()]:
         for batch in dl:
             h = torch.randn(config.batch_size, config.max_seq_length,
                             model.bert_config.hidden_size)
             offset_mapping = batch["encodings"]["offset_mapping"]
             entity_spans = batch["entity_spans"]
-            masked, token_mask = model.mask_hidden(
-                h, offset_mapping, entity_spans)
-            pooled = model.pool_entity_embeddings(masked, token_mask)
+            masked, token_mask = masker(h, offset_mapping, entity_spans)
+            pooled = pooler.pooler(masked, token_mask)
             assert not torch.isnan(pooled).all()
             assert not torch.isinf(pooled).all()
 
@@ -136,6 +144,10 @@ def test_pool_entity_embeddings_first(config, datamodule):
         lr=config.lr,
         weight_decay=config.weight_decay)
 
+    masker = TokenMask()
+    insize = outsize = model.bert_config.hidden_size
+    pooler = EntityPooler(insize, outsize, "first")
+
     h = torch.arange(config.max_seq_length).unsqueeze(-1).expand(
         -1, model.bert_config.hidden_size)
     h = torch.stack([h] * config.batch_size)
@@ -143,11 +155,66 @@ def test_pool_entity_embeddings_first(config, datamodule):
         for batch in dl:
             offset_mapping = batch["encodings"]["offset_mapping"]
             entity_spans = batch["entity_spans"]
-            masked, token_mask = model.mask_hidden(
-                h, offset_mapping, entity_spans)
-            pooled = model.pool_entity_embeddings(masked, token_mask)
-            first_nonzero = token_mask.max(axis=1).indices[:, 0]
-            assert (pooled[:, 0] == first_nonzero).all()
+            masked, token_mask = masker(h, offset_mapping, entity_spans)
+            pooled = pooler.pooler(masked, token_mask)
+            assert not torch.isnan(pooled).all()
+            assert not torch.isinf(pooled).all()
+
+
+@test_logger
+def test_pool_entity_embeddings_last(config, datamodule):
+    model = BertMultiHeadedSequenceClassifier(
+        config.bert_model_name_or_path,
+        label_spec=datamodule.label_spec,
+        freeze_pretrained=True,
+        use_entity_spans=True,
+        entity_pool_fn="last",
+        lr=config.lr,
+        weight_decay=config.weight_decay)
+
+    masker = TokenMask()
+    insize = outsize = model.bert_config.hidden_size
+    pooler = EntityPooler(insize, outsize, "last")
+
+    h = torch.arange(config.max_seq_length).unsqueeze(-1).expand(
+        -1, model.bert_config.hidden_size)
+    h = torch.stack([h] * config.batch_size)
+    for dl in [datamodule.train_dataloader(), datamodule.val_dataloader()]:
+        for batch in dl:
+            offset_mapping = batch["encodings"]["offset_mapping"]
+            entity_spans = batch["entity_spans"]
+            masked, token_mask = masker(h, offset_mapping, entity_spans)
+            pooled = pooler.pooler(masked, token_mask)
+            assert not torch.isnan(pooled).all()
+            assert not torch.isinf(pooled).all()
+
+
+@test_logger
+def test_pool_entity_embeddings_first_last(config, datamodule):
+    model = BertMultiHeadedSequenceClassifier(
+        config.bert_model_name_or_path,
+        label_spec=datamodule.label_spec,
+        freeze_pretrained=True,
+        use_entity_spans=True,
+        entity_pool_fn="first-last",
+        lr=config.lr,
+        weight_decay=config.weight_decay)
+
+    masker = TokenMask()
+    insize = outsize = model.bert_config.hidden_size
+    pooler = EntityPooler(insize, outsize, "first-last")
+
+    h = torch.arange(config.max_seq_length).unsqueeze(-1).expand(
+        -1, model.bert_config.hidden_size)
+    h = torch.stack([h] * config.batch_size)
+    for dl in [datamodule.train_dataloader(), datamodule.val_dataloader()]:
+        for batch in dl:
+            offset_mapping = batch["encodings"]["offset_mapping"]
+            entity_spans = batch["entity_spans"]
+            masked, token_mask = masker(h, offset_mapping, entity_spans)
+            pooled = pooler.pooler(masked, token_mask)
+            assert not torch.isnan(pooled).all()
+            assert not torch.isinf(pooled).all()
 
 
 if __name__ == "__main__":
