@@ -69,6 +69,7 @@ def main(args):
             max_train_examples=config.max_train_examples,
             sample_strategy=config.sample_strategy,
             compute_class_weights=config.class_weights,
+            mark_entities=config.mark_entities,
             )
     datamodule.setup()
 

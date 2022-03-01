@@ -40,6 +40,7 @@ class ExperimentConfig(object):
             sample_strategy: str = 'none',
             use_entity_spans: bool = False,
             entity_pool_fn: str = "max",
+            mark_entities: bool = False,
             max_epochs: int = 1,
             class_weights: str = 'none',
             lr: float = 1e-3,
@@ -65,6 +66,7 @@ class ExperimentConfig(object):
         self.sample_strategy = sample_strategy
         self.use_entity_spans = use_entity_spans
         self.entity_pool_fn = entity_pool_fn
+        self.mark_entities = mark_entities
         self.max_epochs = max_epochs
         self.class_weights = class_weights
         self.lr = lr
@@ -152,6 +154,7 @@ class ExperimentConfig(object):
                 "freeze_pretrained",
                 "use_entity_spans",
                 "entity_pool_fn",
+                "mark_entities",
                 "max_seq_length",
                 "dropout_prob",
             ],

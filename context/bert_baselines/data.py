@@ -39,12 +39,13 @@ class n2c2SentencesDataset(Dataset):
 
     def __init__(self, data_dir, sentences_dir,
                  label_names="all", window_size=0,
-                 max_examples=-1):
+                 max_examples=-1, mark_entities=False):
         self.data_dir = data_dir
         self.sentences_dir = sentences_dir
         self.label_names = label_names
         self.window_size = window_size
         self.max_examples = max_examples
+        self.mark_entities = mark_entities
 
         self.events, self.docids_to_texts = self._get_dispositions_and_texts()
         if label_names == "all":
@@ -87,6 +88,13 @@ class n2c2SentencesDataset(Dataset):
         # Compute the relative offset of the entity in the context
         entity_start = event.span.start_index - context[0]["start_index"]
         entity_end = event.span.end_index - context[0]["start_index"]
+        # Surround the entity spans with '@'. E.g., 'He took @Toradol@'.
+        if self.mark_entities is True:
+            marked_text = text[:entity_start]
+            marked_text += '@' + text[entity_start:entity_end] + '@'
+            marked_text += text[entity_end:]
+            text = marked_text
+            entity_end += 2
 
         # Encode the labels
         labels = {}
@@ -167,7 +175,8 @@ class n2c2SentencesDataModule(pl.LightningDataModule):
     def __init__(self, data_dir, sentences_dir, batch_size,
                  bert_model_name_or_path, tasks_to_load="all",
                  max_seq_length=128, window_size=0, sample_strategy="none",
-                 max_train_examples=-1, compute_class_weights="none"):
+                 max_train_examples=-1, compute_class_weights="none",
+                 mark_entities=False):
         super().__init__()
         self.data_dir = data_dir
         self.sentences_dir = sentences_dir
@@ -179,6 +188,7 @@ class n2c2SentencesDataModule(pl.LightningDataModule):
         self.sample_strategy = sample_strategy
         self.max_train_examples = max_train_examples
         self.compute_class_weights = compute_class_weights
+        self.mark_entities = mark_entities
 
         self.tokenizer = AutoTokenizer.from_pretrained(
                 self.bert_model_name_or_path, use_fast=True)
@@ -191,20 +201,25 @@ class n2c2SentencesDataModule(pl.LightningDataModule):
                 train_path, train_sent_path,
                 window_size=self.window_size,
                 label_names=self.tasks_to_load,
-                max_examples=self.max_train_examples)
+                max_examples=self.max_train_examples,
+                mark_entities=self.mark_entities)
 
         val_path = os.path.join(self.data_dir, "dev")
         val_sent_path = os.path.join(self.sentences_dir, "dev")
         self.val = n2c2SentencesDataset(
-                val_path, val_sent_path, window_size=self.window_size,
-                label_names=self.tasks_to_load)
+                val_path, val_sent_path,
+                window_size=self.window_size,
+                label_names=self.tasks_to_load,
+                mark_entities=self.mark_entities)
 
         test_path = os.path.join(self.data_dir, "test")
         test_sent_path = os.path.join(self.sentences_dir, "test")
         if os.path.exists(test_path):
             self.test = n2c2SentencesDataset(
-                    test_path, test_sent_path, window_size=self.window_size,
-                    label_names=self.tasks_to_load)
+                    test_path, test_sent_path,
+                    window_size=self.window_size,
+                    label_names=self.tasks_to_load,
+                    mark_entities=self.mark_entities)
         else:
             warnings.warn("No test set found.")
             self.test = None

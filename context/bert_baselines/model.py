@@ -12,6 +12,10 @@ from sklearn.metrics import precision_recall_fscore_support
 
 from layers import EntityPooler
 
+# Ignore warning that BertModel is not using some layer parameters.
+from transformers import logging
+logging.set_verbosity_error()
+
 
 class BertMultiHeadedSequenceClassifier(pl.LightningModule):
     """
@@ -22,8 +26,10 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
     use_entity_spans: bool. Default False. If True, use only the pooled
                       entity embeddings as input to the classifier heads.
                       If False, use the pooled embeddings of the entire input.
-    entity_pool_fn: "max" or "mean". How to pool the token embeddings of
-                    the target entity_mention.
+    entity_pool_fn: How to pool the token embeddings of
+                    the target entity_mention. Possible values are
+                    "max", "mean", "first", "last", "first-last".
+    dropout_prob: Dropout probability for the classification layer.
     lr: learning rate
     weight_decay: weight decay rate
     """
@@ -48,12 +54,12 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
         self.dropout_prob = dropout_prob
         self.lr = lr
         self.weight_decay = weight_decay
-        self.entity_pool_fn = entity_pool_fn
         self.class_weights = self._validate_class_weights(
             class_weights, self.label_spec)
 
         self.bert_config = BertConfig.from_pretrained(
             self.bert_model_name_or_path)
+        self.bert_config.hidden_dropout_prob = self.dropout_prob
         self.bert = BertModel.from_pretrained(
             self.bert_model_name_or_path, config=self.bert_config)
         if self.freeze_pretrained is True:

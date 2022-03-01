@@ -16,6 +16,7 @@ bert_model_name_or_path: bert-base-uncased
 dropout_prob: 0.1
 entity_pool_fn: mean
 freeze_pretrained: false
+mark_entities: false
 max_seq_length: 256
 model_name: bert-sequence-classifier
 use_entity_spans: true

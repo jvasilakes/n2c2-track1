@@ -5,9 +5,9 @@ name: clinical_bert/negation
 random_seed: 0
 
 # Data
-data_dir: /mnt/iusers01/nactem01/u14498jv/Projects/n2c2-track1/n2c2Track1TrainingData-v2/data_v2/
+data_dir: /mnt/iusers01/nactem01/u14498jv/Projects/n2c2-track1/n2c2Track1TrainingData-v3/data_v3/
 max_train_examples: null
-sentences_dir: /mnt/iusers01/nactem01/u14498jv/Projects/n2c2-track1/n2c2Track1TrainingData-v2/segmented
+sentences_dir: /mnt/iusers01/nactem01/u14498jv/Projects/n2c2-track1/n2c2Track1TrainingData-v3/segmented
 tasks_to_load:
 - Negation
 window_size: 0
@@ -17,7 +17,8 @@ bert_model_name_or_path: emilyalsentzer/Bio_ClinicalBERT
 dropout_prob: 0.1
 entity_pool_fn: max
 freeze_pretrained: false
-max_seq_length: 256
+mark_entities: false
+max_seq_length: 300
 model_name: bert-sequence-classifier
 use_entity_spans: false
 
