@@ -1,4 +1,5 @@
 import os
+import re
 import json
 import argparse
 import warnings
@@ -13,7 +14,7 @@ from tqdm import tqdm
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--indir", type=str, required=True,
-                        help="Directory containing .txt files.")
+                        help="Directory containing {train/dev/test}/*.txt files.")  # noqa
     parser.add_argument("--outdir", type=str, required=True,
                         help="Where to save the data.")
     parser.add_argument("--domain", type=str, required=True,
@@ -32,7 +33,7 @@ def main(args):
 
     os.makedirs(args.outdir, exist_ok=False)
 
-    #datasets = ["train", "dev", "test"]
+    # datasets = ["train", "dev", "test"]
     datasets = ["dev", "test"]
     lens = []
     for dataset in datasets:
@@ -45,21 +46,20 @@ def main(args):
         outdata = []
         for fpath in tqdm(fpaths):
             txt = open(fpath, 'r').read()
-            # TODO: preprocess to remove extra whitespace and punctuation.
-            txt = txt.strip().replace('\n', ' ')
+            txt = clean_text(txt)
             doc = nlp(txt)
             for sent in doc.sents:
-                sent_pos = []
                 sent_toks = []
+                sent_pos = []
                 lens.append(len(sent))
                 for tok in sent:
                     sent_toks.append(str(tok))
                     sent_pos.append(str(tok.pos_))
-            outdata.append(
+                outdata.append(
                     {"uid": md5(str(sent).encode()).hexdigest(),
                      "tokens": sent_toks,
                      "pos": sent_pos,
-                     "src_file": fpath
+                     "src_file": os.path.basename(fpath).strip(".txt")
                      }
                     )
 
@@ -70,6 +70,15 @@ def main(args):
             for line in outdata:
                 json.dump(line, outF)
                 outF.write('\n')
+
+
+def clean_text(text):
+    """
+    Remove section boundaries and normalize whitespace.
+    """
+    text = re.sub(r'[\-~=_\*]+', '', text)
+    text = re.sub(r'\s+', ' ', text).strip()
+    return text
 
 
 if __name__ == "__main__":
