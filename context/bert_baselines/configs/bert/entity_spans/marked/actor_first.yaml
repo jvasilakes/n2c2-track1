@@ -1,20 +1,21 @@
 # Experiment
-description: Bio_ClinicalBERT using entity spans on all tasks
+description: bert-base-uncased using marked entity spans
 logdir: /mnt/iusers01/nactem01/u14498jv/scratch/n2c2_track1/context/bert_baseline_logs/
-name: clinical_bert/all_entity_marked
+name: bert/actor_entity_marked
 random_seed: 0
 
 # Data
 data_dir: /mnt/iusers01/nactem01/u14498jv/Projects/n2c2-track1/n2c2Track1TrainingData-v3/data_v3/
 max_train_examples: null
 sentences_dir: /mnt/iusers01/nactem01/u14498jv/Projects/n2c2-track1/n2c2Track1TrainingData-v3/segmented
-tasks_to_load: all
+tasks_to_load:
+- Actor
 window_size: 0
 
 # Model
-bert_model_name_or_path: emilyalsentzer/Bio_ClinicalBERT
-dropout_prob: 0.1
-entity_pool_fn: last
+bert_model_name_or_path: bert-base-uncased
+dropout_prob: 0.2
+entity_pool_fn: first
 freeze_pretrained: false
 mark_entities: true
 max_seq_length: 300

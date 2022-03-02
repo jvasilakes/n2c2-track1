@@ -1,5 +1,5 @@
 # Experiment
-description: bert-base-uncased using entity spans on the Action task only on v3 data
+description: bert-base-uncased using entity spans on the Action task only on v3 data. Validation rerun.
 logdir: /mnt/iusers01/nactem01/u14498jv/scratch/n2c2_track1/context/bert_baseline_logs/
 name: bert/action_entity
 random_seed: 0
@@ -18,7 +18,7 @@ dropout_prob: 0.1
 entity_pool_fn: mean
 freeze_pretrained: false
 mark_entities: false
-max_seq_length: 300
+max_seq_length: 256
 model_name: bert-sequence-classifier
 use_entity_spans: true
 
