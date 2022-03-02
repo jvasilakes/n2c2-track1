@@ -17,7 +17,7 @@ def parse_args():
     parser.add_argument("gold_dir", type=str,
                         help="""Directory containing files with gold
                                 labels in brat format.""")
-    parser.add_argument("--log_file", type=str, default="eval.log",
+    parser.add_argument("--log_file", type=str, default=None,
                         help="Where to save detailed evaluation information.")
     return parser.parse_args()
 
@@ -60,18 +60,22 @@ def main(args):
                     golds, preds, average="macro")
             lab_p, lab_r, lab_f, lab_s = precision_recall_fscore_support(
                     golds, preds, average=None, labels=labels)
-            per_label_table = format_per_label_results(
-                    lab_p, lab_r, lab_f, lab_s, labels=labels)
-        print(f"### {task}                     ")
-        print(f"|      | {'prec': <4}  | {'rec': <3}   | {'f1': <4}  |")
-        print("|------|-------|-------|-------|")
-        print(f"|MICRO | {micro_p:.3f} | {micro_r:.3f} | {micro_f:.3f} |")
-        print(f"|MACRO | {macro_p:.3f} | {macro_r:.3f} | {macro_f:.3f} |")
-        print()
 
-        with open(args.log_file, 'a') as outF:
-            outF.write(f"### {task}\n")
-            outF.write(per_label_table)
+        avg_table = format_avg_results(micro_p, micro_r, micro_f,
+                                       macro_p, macro_r, macro_f)
+
+        per_label_table = format_per_label_results(
+                lab_p, lab_r, lab_f, lab_s, labels=labels)
+
+        if args.log_file is None:
+            print(f"### {task}")
+            print(avg_table, end='')
+            print(per_label_table)
+        else:
+            with open(args.log_file, 'a') as outF:
+                outF.write(f"### {task}\n")
+                outF.write(avg_table)
+                outF.write(per_label_table)
 
 
 def format_per_label_results(precs, recs, fs, supports, labels=[]):
@@ -85,6 +89,15 @@ def format_per_label_results(precs, recs, fs, supports, labels=[]):
     for (l, p, r, f, s) in zip(labels, precs, recs, fs, supports):
         tab += f"|{l: <{max_chars}}| {p:.3f} | {r:.3f} | {f:.3f} | {s: <4} |\n"
     tab += '\n'
+    return tab
+
+
+def format_avg_results(micro_p, micro_r, micro_f,
+                       macro_p, macro_r, macro_f):
+    tab = f"|      | {'prec': <4}  | {'rec': <3}   | {'f1': <4}  |\n"
+    tab += "|------|-------|-------|-------|\n"
+    tab += f"|MICRO | {micro_p:.3f} | {micro_r:.3f} | {micro_f:.3f} |\n"
+    tab += f"|MACRO | {macro_p:.3f} | {macro_r:.3f} | {macro_f:.3f} |\n\n"
     return tab
 
 
