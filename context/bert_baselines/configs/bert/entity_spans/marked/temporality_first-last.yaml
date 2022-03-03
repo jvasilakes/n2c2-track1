@@ -10,7 +10,7 @@ max_train_examples: null
 sentences_dir: /mnt/iusers01/nactem01/u14498jv/Projects/n2c2-track1/n2c2Track1TrainingData-v3/segmented
 tasks_to_load:
 - Temporality
-window_size: 0
+window_size: 1
 
 # Model
 bert_model_name_or_path: bert-base-uncased

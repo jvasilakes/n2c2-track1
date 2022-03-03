@@ -1,0 +1,8 @@
+1. symlink the config files of the best performing models into this directory, making sure to name the links something sensible.
+   Also make sure you're linking the logged config file that contains the version number in its path.
+   E.g., ln -s /mnt/iusers01/nactem01/u14498jv/scratch/n2c2_track1/context/bert_baseline_logs/clinical_bert/certainty_entity_marked/version_3/config.yaml certainty.yaml
+
+2. Run create_split_configs.sh. This will copy and modify the config files above to run over the CV splits, saving them to cv_split_configs/
+
+3. Run run_train_val_splits.sh. This will run training, prediction, and validation using each of the config files above. The models and predictions are saved under the version directory in the symlink from step 1.
+   E.g. /mnt/iusers01/nactem01/u14498jv/scratch/n2c2_track1/context/bert_baseline_logs/clinical_bert/certainty_entity_marked/version_3/cv_splits/
