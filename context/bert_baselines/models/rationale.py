@@ -8,28 +8,26 @@ import pytorch_lightning as pl
 from transformers import BertConfig, BertModel, AdamW
 from sklearn.metrics import precision_recall_fscore_support
 
-from .layers import EntityPooler, KumaGate
+from .layers import EntityPooler, KumaMask, RecurrentEncoder
+from .model_outputs import SequenceClassifierOutputWithTokenMask
 
 
-class BertRationaleModel(pl.LightningModule):
+class BertRationaleClassifier(pl.LightningModule):
 
     def __init__(
             self,
             bert_model_name_or_path,
             label_spec,
             freeze_pretrained=False,
-            use_entity_spans=False,
             entity_pool_fn="max",
             dropout_prob=0.1,
             lr=1e-3,
             weight_decay=0.0,
             class_weights=None):
-        raise NotImplementedError()
         super().__init__()
         self.bert_model_name_or_path = bert_model_name_or_path
         self.label_spec = label_spec
         self.freeze_pretrained = freeze_pretrained
-        self.use_entity_spans = use_entity_spans
         self.entity_pool_fn = entity_pool_fn
         self.dropout_prob = dropout_prob
         self.lr = lr
@@ -46,19 +44,27 @@ class BertRationaleModel(pl.LightningModule):
             for param in self.bert.parameters():
                 param.requires_grad = False
 
-        insize = outsize = self.bert_config.hidden_size
+        pooler_insize = pooler_outsize = self.bert_config.hidden_size
         if self.entity_pool_fn == "first-last":
-            insize = 2 * insize
+            pooler_insize = 2 * pooler_insize
         self.entity_pooler = EntityPooler(
-            insize, outsize, self.entity_pool_fn)
+            pooler_insize, pooler_outsize, self.entity_pool_fn)
 
-        self.kuma_gate = KumaGate()
-
+        self.kuma_masks = nn.ModuleDict()
+        self.encoders = nn.ModuleDict()
         self.classifier_heads = nn.ModuleDict()
         for (task, num_labels) in label_spec.items():
+            self.kuma_masks[task] = KumaMask(
+                    self.bert_config.hidden_size + pooler_outsize)  # noqa
+
+            self.encoders[task] = RecurrentEncoder(
+                    insize=pooler_outsize,
+                    hidden_size=200,
+                    cell="lstm")
+
             self.classifier_heads[task] = nn.Sequential(
                     nn.Dropout(self.dropout_prob),
-                    nn.Linear(self.bert_config.hidden_size, num_labels)
+                    nn.Linear(2 * self.encoders[task].hidden_size, num_labels)
                     )
         # save __init__ arguments to self.hparams, which is logged by pl
         self.save_hyperparameters()
@@ -71,8 +77,8 @@ class BertRationaleModel(pl.LightningModule):
             position_ids=None,
             head_mask=None,
             inputs_embeds=None,
-            labels=None,
             offset_mapping=None,
+            labels=None,
             entity_spans=None
             ):
         """
@@ -98,37 +104,35 @@ class BertRationaleModel(pl.LightningModule):
         h = bert_outputs.last_hidden_state
         pooled_entity_output = self.entity_pooler(
                 h, offset_mapping, entity_spans)
-        
-        # TODO: Pseudocode follows!
-        # Compute HardKuma gates
-        z = []
-        for h_t in h:
-            z_t_dist = self.kuma_gate([h_t, pooled_entity_output])
-            z_t = z_t_dist.sample()
-            z.append(z_t)
-       
-        # Embed the masked inputs
-        h_masked = self.bilstm(h * z)
 
         clf_outputs = {}
         for (task, clf_head) in self.classifier_heads.items():
-            logits = clf_head(h_masked)
+            # Compute HardKuma gates
+            entity_expanded = pooled_entity_output.unsqueeze(1).expand(h.size())  # noqa
+            h_with_entity = torch.cat([h, entity_expanded], dim=2)
+            z = self.kuma_masks[task](h_with_entity)
+
+            # Use the gates to mask the inputs and encode them.
+            lengths = attention_mask.sum(dim=1)
+            outputs, final = self.encoders[task](h * z, lengths)
+
+            logits = clf_head(final)
             task_labels = labels[task]
             if self.class_weights[task] is not None:
                 # Only copy the weights to the model device once.
                 if self.class_weights[task].device != self.device:
                     dev = self.device
                     self.class_weights[task] = self.class_weights[task].to(dev)
-            loss_fn = CrossEntropyLoss(weight=self.class_weights[task])
+            loss_fn = nn.CrossEntropyLoss(weight=self.class_weights[task])
             loss = loss_fn(logits.view(-1, self.label_spec[task]),
                            task_labels.view(-1))
-            clf_outputs[task] = SequenceClassifierOutput(
+            clf_outputs[task] = SequenceClassifierOutputWithTokenMask(
                     loss=loss,
                     logits=logits,
                     hidden_states=bert_outputs.hidden_states,
-                    attentions=bert_outputs.attentions)
+                    attentions=bert_outputs.attentions,
+                    mask=z.squeeze(-1))
         return clf_outputs
-
 
     def training_step(self, batch, batch_idx):
         task_outputs = self(
