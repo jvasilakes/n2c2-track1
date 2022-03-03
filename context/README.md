@@ -1,18 +1,48 @@
 # Current Best Dev Results
 
+Precision, recall, and F1 score are reported for the official dev set release.
+Avg F1 refers to the average computed on the dev set of the 5 alternative data splits.
+
 ## Majority Baseline
 
-|Action| prec  | rec   | f1    |Actor | prec  | rec   | f1    |Cert  | prec  | rec   | f1    |
-|------|-------|-------|-------|------|-------|-------|-------|------|-------|-------|-------|
-|MICRO | 0.439 | 0.439 | 0.439 |MICRO | 0.878 | 0.878 | 0.878 |MICRO | 0.792 | 0.792 | 0.792 |
-|MACRO | 0.073 | 0.167 | 0.102 |MACRO | 0.293 | 0.333 | 0.312 |MACRO | 0.264 | 0.333 | 0.295 |
+Generally, average performance of the majority baseline across dev sets is lower than the test set
+performance reported in CMED.pdf.
 
-|Neg   | prec  | rec   | f1    |Temp  | prec  | rec   | f1    |
-|------|-------|-------|-------|------|-------|-------|-------|
-|MICRO | 0.982 | 0.982 | 0.982 |MICRO | 0.593 | 0.593 | 0.593 |
-|MACRO | 0.491 | 0.500 | 0.495 |MACRO | 0.148 | 0.250 | 0.186 |
+### Action
 
+|      | prec  | rec   | f1    | Avg F1|
+|------|-------|-------|-------|-------|
+|MICRO | 0.439 | 0.439 | 0.439 | 0.427 |
+|MACRO | 0.073 | 0.167 | 0.102 | 0.097 |
 
+### Actor
+
+|      | prec  | rec   | f1    | Avg F1|
+|------|-------|-------|-------|-------|
+|MICRO | 0.878 | 0.878 | 0.878 | 0.884 |
+|MACRO | 0.293 | 0.333 | 0.312 | 0.313 |
+
+### Certainty
+
+|      | prec  | rec   | f1    | Avg F1|
+|------|-------|-------|-------|-------|
+|MICRO | 0.792 | 0.792 | 0.792 | 0.844 |
+|MACRO | 0.264 | 0.333 | 0.295 | 0.275 |
+
+### Negation
+
+|      | prec  | rec   | f1    | Avg F1|
+|------|-------|-------|-------|-------|
+|MICRO | 0.982 | 0.982 | 0.982 | 0.976 |
+|MACRO | 0.491 | 0.500 | 0.495 | 0.494 |
+
+### Temporality
+|      | prec  | rec   | f1    | Avg F1|
+|------|-------|-------|-------|-------|
+|MICRO | 0.593 | 0.593 | 0.593 | 0.533 |
+|MACRO | 0.148 | 0.250 | 0.186 | 0.197 |
+
+ 
 ## SVM Baseline
 |Action|prec   | rec   |f1     |Actor |prec   | rec   |f1     |Cert  |prec   | rec   |f1     |
 |------|-------|-------|-------|------|-------|-------|-------|------|-------|-------|-------|
@@ -26,16 +56,4 @@
 
 
 ## BERT Baselines
-See [bert\_baselines/Results.md](https://github.com/jvasilakes/n2c2-track1/blob/master/context/bert_baselines/Results.md) for details.
-
-
-|Action   | P     | R     | F1    |Actor    | P     | R     | F1    |Cert     | P     | R     | F1    |
-|---------|-------|-------|-------|---------|-------|-------|-------|---------|-------|-------|-------|
-| MICRO   | 0.747 | 0.747 | 0.747 | MICRO   | 0.887 | 0.887 | 0.887 | MICRO   | 0.891 | 0.891 | 0.891 |
-| MACRO   | 0.729 | 0.676 | 0.695 | MACRO   | 0.679 | 0.553 | 0.599 | MACRO   | 0.804 | 0.718 | 0.746 |
-
-
-|Neg      | P     | R     | F1    |Temp     | P     | R     | F1    |
-|---------|-------|-------|-------|---------|-------|-------|-------|
-| MICRO   | 0.982 | 0.982 | 0.982 | MICRO   | 0.814 | 0.814 | 0.814 |
-| MACRO   | 0.743 | 0.623 | 0.662 | MACRO   | 0.811 | 0.659 | 0.693 |
+See [bert\_baselines/Results.md](https://github.com/jvasilakes/n2c2-track1/blob/master/context/bert_baselines/Results.md).
