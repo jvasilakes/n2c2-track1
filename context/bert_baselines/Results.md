@@ -1,50 +1,57 @@
 # Best Overall Results
 As of 2/3/2022
 
+Precision, recall, and F1 score are reported for the official dev set release.
+Avg F1 refers to the average computed on the dev set of the 5 alternative data splits.
+
+There are large variations in performance on the Certainty and Negation tasks, suggesting 
+that these training examples do not necessarily generalize well.
+
 ## Action
 Bio\_ClinicalBERT
 +/- 1 sentence window
 Entity markers: use both
-|         | P     | R     | F1    |
-|---------|-------|-------|-------|
-|micro    | 0.814 | 0.814 | 0.814 |
-|macro    | 0.789 | 0.727 | 0.753 |
+|         | P     | R     | F1    | Avg F1|
+|---------|-------|-------|-------|-------|
+|micro    | 0.814 | 0.814 | 0.814 | 0.868 |
+|macro    | 0.789 | 0.727 | 0.753 | 0.796 |
 
 
 ## Actor
 bert-base-uncased
 0 sentence window
 Entity markers: use both
-|         | P     | R     | F1    |
-|---------|-------|-------|-------|
-|micro    | 0.923 | 0.923 | 0.923 |
-|macro    | 0.762 | 0.656 | 0.700 |
+|         | P     | R     | F1    | Avg F1|
+|---------|-------|-------|-------|-------|
+|micro    | 0.923 | 0.923 | 0.923 | 0.917 |
+|macro    | 0.762 | 0.656 | 0.700 | 0.696 |
 
 ## Certainty
 Bio\_ClinicalBERT
 +/- 1 sentence window
 Entity markers: use first only
-|         | P     | R     | F1    |
-|---------|-------|-------|-------|
-|micro    | 0.910 | 0.910 | 0.910 |
-|macro    | 0.854 | 0.779 | 0.808 |
+|         | P     | R     | F1    | Avg F1|
+|---------|-------|-------|-------|-------|
+|micro    | 0.910 | 0.910 | 0.910 | 0.921 |
+|macro    | 0.854 | 0.779 | 0.808 | 0.671 |
 
 ## Negation
 bert-base-uncased
+0 sentence window (same results with +/- 1 sentence window)
 pooled output
-|         | P     | R     | F1    |
-|---------|-------|-------|-------|
-| micro   | 0.982 | 0.982 | 0.982 |
-| macro   | 0.743 | 0.623 | 0.662 |
+|         | P     | R     | F1    | Avg F1|
+|---------|-------|-------|-------|-------|
+| micro   | 0.982 | 0.982 | 0.982 | 0.979 |
+| macro   | 0.743 | 0.623 | 0.662 | 0.531 |
 
 ## Temporality
 Bio\_ClinicalBERT
 +/- 1 sentence window
 Entity markers: use first only
-|         | P     | R     | F1    |
-|---------|-------|-------|-------|
-|micro    | 0.837 | 0.837 | 0.837 |
-|macro    | 0.830 | 0.662 | 0.704 |
+|         | P     | R     | F1    | Avg F1|
+|---------|-------|-------|-------|-------|
+|micro    | 0.837 | 0.837 | 0.837 | 0.872 |
+|macro    | 0.830 | 0.662 | 0.704 | 0.803 |
 
 
 # Pooled Output Results
