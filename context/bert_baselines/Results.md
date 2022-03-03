@@ -31,6 +31,7 @@ Entity markers: use first only
 
 ## Negation
 bert-base-uncased
+0 sentence window (same results with +/- 1 sentence window)
 pooled output
 |         | P     | R     | F1    |
 |---------|-------|-------|-------|
