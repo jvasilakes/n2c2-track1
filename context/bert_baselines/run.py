@@ -283,6 +283,8 @@ def batched_predictions_to_brat(preds, dataset):
             # Reconstruct original character offsets
             start, end = batch["entity_spans"][i]
             entity_text = batch["texts"][i][start:end]
+            # There's one entity mention that spans a newline
+            entity_text = entity_text.replace('\n', ' ')
             start += batch["char_offsets"][i]
             end += batch["char_offsets"][i]
 
