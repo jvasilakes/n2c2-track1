@@ -13,8 +13,8 @@ Bio\_ClinicalBERT
 Entity markers: use both
 |         | P     | R     | F1    | Avg F1|
 |---------|-------|-------|-------|-------|
-|micro    | 0.814 | 0.814 | 0.814 | 0.868 |
-|macro    | 0.789 | 0.727 | 0.753 | 0.796 |
+|micro    | 0.814 | 0.814 | 0.814 | 0.857 |
+|macro    | 0.789 | 0.727 | 0.753 | 0.776 |
 
 
 ## Actor
@@ -23,8 +23,8 @@ bert-base-uncased
 Entity markers: use both
 |         | P     | R     | F1    | Avg F1|
 |---------|-------|-------|-------|-------|
-|micro    | 0.923 | 0.923 | 0.923 | 0.917 |
-|macro    | 0.762 | 0.656 | 0.700 | 0.696 |
+|micro    | 0.923 | 0.923 | 0.923 | 0.918 |
+|macro    | 0.762 | 0.656 | 0.700 | 0.721 |
 
 ## Certainty
 Bio\_ClinicalBERT
@@ -32,8 +32,8 @@ Bio\_ClinicalBERT
 Entity markers: use first only
 |         | P     | R     | F1    | Avg F1|
 |---------|-------|-------|-------|-------|
-|micro    | 0.910 | 0.910 | 0.910 | 0.921 |
-|macro    | 0.854 | 0.779 | 0.808 | 0.671 |
+|micro    | 0.910 | 0.910 | 0.910 | 0.911 |
+|macro    | 0.854 | 0.779 | 0.808 | 0.655 |
 
 ## Negation
 bert-base-uncased
@@ -41,8 +41,8 @@ bert-base-uncased
 pooled output
 |         | P     | R     | F1    | Avg F1|
 |---------|-------|-------|-------|-------|
-| micro   | 0.982 | 0.982 | 0.982 | 0.979 |
-| macro   | 0.743 | 0.623 | 0.662 | 0.531 |
+| micro   | 0.982 | 0.982 | 0.982 | 0.977 |
+| macro   | 0.743 | 0.623 | 0.662 | 0.523 |
 
 ## Temporality
 Bio\_ClinicalBERT
@@ -50,8 +50,8 @@ Bio\_ClinicalBERT
 Entity markers: use first only
 |         | P     | R     | F1    | Avg F1|
 |---------|-------|-------|-------|-------|
-|micro    | 0.837 | 0.837 | 0.837 | 0.872 |
-|macro    | 0.830 | 0.662 | 0.704 | 0.803 |
+|micro    | 0.837 | 0.837 | 0.837 | 0.862 |
+|macro    | 0.830 | 0.662 | 0.704 | 0.785 |
 
 
 # Pooled Output Results
