@@ -1,0 +1,33 @@
+# Experiment
+description: Bio_ClinicalBERT using entity spans on the Temporality task only
+logdir: /mnt/iusers01/nactem01/u14498jv/scratch/n2c2_track1/context/bert_baseline_logs/
+name: clinical_bert/temporality_entity_marked/version_3/cv_split_runs/0
+random_seed: 0
+
+# Data
+data_dir: /mnt/iusers01/nactem01/u14498jv/Projects/n2c2-track1/n2c2Track1TrainingData-v3/cv_splits/0/
+max_train_examples: null
+sentences_dir: /mnt/iusers01/nactem01/u14498jv/Projects/n2c2-track1/n2c2Track1TrainingData-v3/cv_splits/0/segmented
+tasks_to_load:
+- Temporality
+window_size: 1
+
+# Model
+bert_model_name_or_path: emilyalsentzer/Bio_ClinicalBERT
+dropout_prob: 0.2
+entity_pool_fn: first
+freeze_pretrained: false
+mark_entities: true
+max_seq_length: 300
+model_name: bert-sequence-classifier
+use_entity_spans: true
+
+# Training
+batch_size: 32
+class_weights: none
+gradient_clip_val: 10.0
+lr: 3.0e-05
+max_epochs: 10
+sample_strategy: none
+weight_decay: 0.0
+
