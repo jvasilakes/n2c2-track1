@@ -200,14 +200,13 @@ def run_validate(config, datamodule, dataset="dev",
         val_fn = trainer.test
     else:
         raise ValueError(f"Unknown validation dataset '{dataset}'")
-    #results = val_fn(model, datamodule=datamodule, verbose=False)[0]
-    #tasks = sorted(datamodule.label_spec.keys())
-    #md = format_results_as_markdown_table(results, tasks)
-    #print(md)
+    results = val_fn(model, datamodule=datamodule, verbose=False)[0]
+    tasks = sorted(datamodule.label_spec.keys())
+    md = format_results_as_markdown_table(results, tasks)
+    print(md)
 
     if output_brat is True or output_token_masks is True:
-        #preds = trainer.predict(model, dataloaders=datamodule.val_dataloader())
-        preds = trainer.predict(model, dataloaders=datamodule.train_dataloader())
+        preds = trainer.predict(model, dataloaders=datamodule.val_dataloader())
     if output_brat is True:
         train_dataset = datamodule.train
         # List[BratAnnotations]
