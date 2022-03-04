@@ -1,3 +1,19 @@
+# NER results by 5-fold cross validation
+As of 4th March
+## Exact match
+|      | prec  | rec   | f1    |
+|------|-------|-------|-------|
+|BERT Base | 0.90178 | 0.83182 | 0.8651 |
+|ClinicalBERT|0.97096 | 0.95204 | 0.96132 |
+|BioRoBERTa	| 0.96822 | 0.95664 | 0.96236 |
+
+## Lenient match
+|      | prec  | rec   | f1    |
+|------|-------|-------|-------|
+|BERT Base | 0.92688 | 0.85498 | 0.88918 |
+|ClinicalBERT | 0.98094 | 0.96186 | 0.97128 |
+|BioRoBERTa | 0.97594 | 0.96426 | 0.97006 |
+
 # NER
 `eval_scripts/ner.py` will compute the precision, recall, and F1 score between two brat ann files. E.g.,
 
