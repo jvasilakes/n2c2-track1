@@ -3,16 +3,16 @@ As of 4th March
 ## Exact match
 |      | prec  | rec   | f1    |
 |------|-------|-------|-------|
-|BERT Base | 0.90178 | 0.83182 | 0.8651 |
-|ClinicalBERT|0.97096 | 0.95204 | 0.96132 |
-|BioRoBERTa	| 0.96822 | 0.95664 | 0.96236 |
+|BERT Base | 0.9018 | 0.8318 | 0.8651 |
+|ClinicalBERT|0.9710 | 0.9520 | 0.9613 |
+|BioRoBERTa	| 0.9682 | 0.9566 | 0.9624 |
 
 ## Lenient match
 |      | prec  | rec   | f1    |
 |------|-------|-------|-------|
-|BERT Base | 0.92688 | 0.85498 | 0.88918 |
-|ClinicalBERT | 0.98094 | 0.96186 | 0.97128 |
-|BioRoBERTa | 0.97594 | 0.96426 | 0.97006 |
+|BERT Base | 0.9269 | 0.8550 | 0.8892 |
+|ClinicalBERT | 0.9809 | 0.9619 | 0.9713 |
+|BioRoBERTa | 0.9759 | 0.9643 | 0.9701 |
 
 # NER
 `eval_scripts/ner.py` will compute the precision, recall, and F1 score between two brat ann files. E.g.,
