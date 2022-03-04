@@ -12,7 +12,46 @@ from .layers import EntityPooler, KumaMask, RecurrentEncoder
 from .model_outputs import SequenceClassifierOutputWithTokenMask
 
 
+def format_input_ids_and_masks(input_ids, masks, tokenizer):
+    """
+    Used with the output of BertRationaleClassifier.predict_step.
+    Outputs a nested list of (token, z) for each input example. E.g.,
+
+    dm = n2c2SentencesDataModule()
+    m = BertRationaleClassifer()
+    preds = m.predict_step(batch)
+    masked_inputs = format_input_ids_and_masks(
+                        preds["input_ids"],
+                        preds["zmask"][task],
+                        dm.tokenizer) -> List[List[Tuple]]
+    """
+    toks = tokenizer.convert_ids_to_tokens(input_ids)
+    toks = [tok for (tok, tid) in zip(toks, input_ids) if tid != 0]
+    mask = [z.item() for (z, tid)
+            in zip(masks, input_ids) if tid != 0]
+    assert len(toks) == len(mask)
+    masked_tokens = list(zip(toks, mask))
+    return masked_tokens
+
+
 class BertRationaleClassifier(pl.LightningModule):
+
+    @classmethod
+    def from_config(cls, config, datamodule):
+        """
+        :param config.ExperimentConfig config: config instance
+        :param data.n2c2SentencesDataModule datamodule: data module instance
+        """
+        return cls(
+                config.bert_model_name_or_path,
+                datamodule.label_spec,
+                config.freeze_pretrained,
+                config.entity_pool_fn,
+                config.dropout_prob,
+                config.lr,
+                config.weight_decay,
+                datamodule.class_weights,
+                )
 
     def __init__(
             self,
@@ -23,7 +62,8 @@ class BertRationaleClassifier(pl.LightningModule):
             dropout_prob=0.1,
             lr=1e-3,
             weight_decay=0.0,
-            class_weights=None):
+            class_weights=None,
+            ):
         super().__init__()
         self.bert_model_name_or_path = bert_model_name_or_path
         self.label_spec = label_spec
@@ -111,6 +151,7 @@ class BertRationaleClassifier(pl.LightningModule):
             entity_expanded = pooled_entity_output.unsqueeze(1).expand(h.size())  # noqa
             h_with_entity = torch.cat([h, entity_expanded], dim=2)
             z = self.kuma_masks[task](h_with_entity)
+            z = z * attention_mask.unsqueeze(-1)
 
             # Use the gates to mask the inputs and encode them.
             lengths = attention_mask.sum(dim=1)
@@ -134,6 +175,10 @@ class BertRationaleClassifier(pl.LightningModule):
                     mask=z.squeeze(-1))
         return clf_outputs
 
+    @staticmethod
+    def compute_mask_ratio(z, token_mask):
+        return z.sum(dim=1) / token_mask.sum(dim=1)
+
     def training_step(self, batch, batch_idx):
         task_outputs = self(
                 **batch["encodings"],
@@ -141,6 +186,9 @@ class BertRationaleClassifier(pl.LightningModule):
                 entity_spans=batch["entity_spans"])
         for (task, outputs) in task_outputs.items():
             self.log(f"train_loss_{task}", outputs.loss)
+            mask_ratio = self.compute_mask_ratio(
+                    outputs.mask, batch["encodings"]["attention_mask"])
+            self.log(f"mask_ratio_{task}", mask_ratio.mean())
         return outputs.loss
 
     def predict_step(self, batch, batch_idx):
@@ -152,16 +200,19 @@ class BertRationaleClassifier(pl.LightningModule):
         tasks = list(task_outputs.keys())
         inputs_with_predictions = {
                 "texts": batch["texts"],
+                "input_ids": batch["encodings"]["input_ids"],
                 "labels": batch["labels"],
                 "entity_spans": batch["entity_spans"],
                 "char_offsets": batch["char_offsets"],
                 "docids": batch["docids"],
-                "predictions": {task: [] for task in tasks}
+                "predictions": {task: [] for task in tasks},
+                "zmask": {task: [] for task in tasks},
                 }
         for (task, outputs) in task_outputs.items():
             softed = nn.functional.softmax(outputs.logits, dim=1)
             preds = torch.argmax(softed, dim=1)
             inputs_with_predictions["predictions"][task] = preds
+            inputs_with_predictions["zmask"][task] = outputs.mask
         return inputs_with_predictions
 
     def validation_step(self, batch, batch_idx, dataloader_idx=0):
@@ -173,21 +224,29 @@ class BertRationaleClassifier(pl.LightningModule):
         task_metrics = {}
         for (task, outputs) in task_outputs.items():
             preds = torch.argmax(outputs.logits, axis=1)
+            mask_ratios = self.compute_mask_ratio(
+                    outputs.mask, batch["encodings"]["attention_mask"])
             task_metrics[task] = {"loss": outputs.loss,
                                   "preds": preds,
-                                  "labels": batch["labels"][task]}
+                                  "labels": batch["labels"][task],
+                                  "mask_ratios": mask_ratios}
         return task_metrics
 
     def validation_epoch_end(self, task_metrics):
+        """
+        Flatten batched metrics and summarize.
+        """
         losses_by_task = defaultdict(list)
         preds_by_task = defaultdict(list)
         labels_by_task = defaultdict(list)
+        mask_ratios_by_task = defaultdict(list)
 
-        for example in task_metrics:
-            for (task, metrics) in example.items():
+        for batch in task_metrics:
+            for (task, metrics) in batch.items():
                 losses_by_task[task].append(metrics["loss"].detach().cpu().numpy())  # noqa
                 preds_by_task[task].extend(metrics["preds"].detach().cpu().numpy())  # noqa
                 labels_by_task[task].extend(metrics["labels"].detach().cpu().numpy())  # noqa
+                mask_ratios_by_task[task].extend(metrics["mask_ratios"].detach().cpu().numpy())  # noqa
 
         val_losses = []
         macro_f1s = []
@@ -195,8 +254,11 @@ class BertRationaleClassifier(pl.LightningModule):
             losses_by_task[task] = np.array(losses_by_task[task]).mean()
             preds_by_task[task] = np.array(preds_by_task[task])
             labels_by_task[task] = np.array(labels_by_task[task])
+            mask_ratios_by_task[task] = np.array(labels_by_task[task]).mean()
 
             self.log(f"val_loss_{task}", losses_by_task[task], prog_bar=False)
+            self.log(f"avg_mask_ratio_{task}",
+                     mask_ratios_by_task[task], prog_bar=False)
             val_losses.append(losses_by_task[task])
             for avg_fn in ["micro", "macro"]:
                 with warnings.catch_warnings():
