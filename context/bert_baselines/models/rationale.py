@@ -191,14 +191,14 @@ class BertRationaleClassifier(pl.LightningModule):
                 **batch["encodings"],
                 labels=batch["labels"],
                 entity_spans=batch["entity_spans"])
-        total_loss = torch.tensor(0.)
+        total_loss = torch.tensor(0.).to(self.device)
         for (task, outputs) in task_outputs.items():
             total_loss += outputs.loss + outputs.mask_loss
             self.log(f"train_loss_{task}", outputs.loss)
             mask_ratios = self.compute_mask_ratio(
                     outputs.mask, batch["encodings"]["attention_mask"])
             self.log(f"mask_ratio_{task}", mask_ratios.mean())
-        return outputs.loss
+        return total_loss
 
     def predict_step(self, batch, batch_idx):
         task_outputs = self(
