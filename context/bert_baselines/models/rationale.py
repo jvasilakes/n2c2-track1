@@ -43,7 +43,7 @@ class BertRationaleClassifier(pl.LightningModule):
         :param data.n2c2SentencesDataModule datamodule: data module instance
         """
         if config.use_entity_spans is False:
-            msg = """You specified use_entity_spans=False but BertRationaleClassifer always uses entity spans, so this has been ignored."""
+            msg = """You specified use_entity_spans=False but BertRationaleClassifer always uses entity spans, so this has been ignored."""  # noqa
             warnings.warn(msg)
         return cls(
                 config.bert_model_name_or_path,
@@ -170,8 +170,12 @@ class BertRationaleClassifier(pl.LightningModule):
             loss_fn = nn.CrossEntropyLoss(weight=self.class_weights[task])
             loss = loss_fn(logits.view(-1, self.label_spec[task]),
                            task_labels.view(-1))
+            mask_ratio = self.compute_mask_ratio(
+                    z.squeeze(-1), attention_mask).mean()
             clf_outputs[task] = SequenceClassifierOutputWithTokenMask(
                     loss=loss,
+                    # TODO: Implement a real loss function.
+                    mask_loss=torch.abs(mask_ratio - torch.tensor(0.3)),
                     logits=logits,
                     hidden_states=bert_outputs.hidden_states,
                     attentions=bert_outputs.attentions,
@@ -187,11 +191,13 @@ class BertRationaleClassifier(pl.LightningModule):
                 **batch["encodings"],
                 labels=batch["labels"],
                 entity_spans=batch["entity_spans"])
+        total_loss = torch.tensor(0.)
         for (task, outputs) in task_outputs.items():
+            total_loss += outputs.loss + outputs.mask_loss
             self.log(f"train_loss_{task}", outputs.loss)
-            mask_ratio = self.compute_mask_ratio(
+            mask_ratios = self.compute_mask_ratio(
                     outputs.mask, batch["encodings"]["attention_mask"])
-            self.log(f"mask_ratio_{task}", mask_ratio.mean())
+            self.log(f"mask_ratio_{task}", mask_ratios.mean())
         return outputs.loss
 
     def predict_step(self, batch, batch_idx):
