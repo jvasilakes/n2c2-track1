@@ -1,7 +1,9 @@
+import warnings
+
 import torch
 import torch.nn as nn
-from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence
 import probabll.distributions as probd
+from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence
 from probabll.distributions.stretchrectify import StretchedAndRectifiedDistribution  # noqa
 
 
@@ -175,7 +177,11 @@ class KumaGate(nn.Module):
         a = self.anet(hidden)
         b = self.bnet(hidden)
         kuma = probd.Kumaraswamy(a, b)
-        kuma = StretchedAndRectifiedDistribution(kuma, lower=-0.1, upper=1.1)
+        with warnings.catch_warnings():
+            warnings.simplefilter("ignore")
+            # Ignore torch.distributions warning about arg_constraints
+            kuma = StretchedAndRectifiedDistribution(
+                    kuma, lower=-0.1, upper=1.1)
         return kuma
 
 
