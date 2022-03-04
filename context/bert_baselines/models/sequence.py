@@ -34,6 +34,24 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
     weight_decay: weight decay rate
     """
 
+    @classmethod
+    def from_config(cls, config, datamodule):
+        """
+        :param config.ExperimentConfig config: config instance
+        :param data.n2c2SentencesDataModule datamodule: data module instance
+        """
+        return cls(
+                config.bert_model_name_or_path,
+                datamodule.label_spec,
+                config.freeze_pretrained,
+                config.use_entity_spans,
+                config.entity_pool_fn,
+                config.dropout_prob,
+                config.lr,
+                config.weight_decay,
+                datamodule.class_weights,
+                )
+
     def __init__(
             self,
             bert_model_name_or_path,
@@ -44,7 +62,8 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
             dropout_prob=0.1,
             lr=1e-3,
             weight_decay=0.0,
-            class_weights=None):
+            class_weights=None,
+            ):
         super().__init__()
         self.bert_model_name_or_path = bert_model_name_or_path
         self.label_spec = label_spec
