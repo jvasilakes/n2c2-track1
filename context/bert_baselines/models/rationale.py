@@ -42,6 +42,11 @@ class BertRationaleClassifier(pl.LightningModule):
         :param config.ExperimentConfig config: config instance
         :param data.n2c2SentencesDataModule datamodule: data module instance
         """
+        if config.use_entity_spans is False:
+            msg = """You specified use_entity_spans=False but
+            BertRationaleClassifer always uses entity spans,
+            so this has been ignored."""
+            warnings.warn(msg)
         return cls(
                 config.bert_model_name_or_path,
                 datamodule.label_spec,
