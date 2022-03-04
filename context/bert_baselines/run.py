@@ -1,4 +1,5 @@
 import os
+import json
 import argparse
 import datetime
 from glob import glob
@@ -11,7 +12,8 @@ from pytorch_lightning.callbacks import ModelCheckpoint
 
 from config import ExperimentConfig
 from data import n2c2SentencesDataModule
-from model import MODEL_LOOKUP
+from models import MODEL_LOOKUP
+from models.rationale import format_input_ids_and_masks
 
 import brat_reader as br
 
@@ -34,6 +36,10 @@ def parse_args():
             "--output_brat", action="store_true", default=False,
             help="""If set, save brat formatted predictions
                     to the predictions/ directory under the logdir.""")
+    val_parser.add_argument(
+            "--output_token_masks", action="store_true", default=False,
+            help="""If set, save tokens and stochastic masks to the
+                    token_masks/ directory under the logdir.""")
 
     test_parser = subparsers.add_parser(
             "test", help="Evaluate a trained model on the test set.")
@@ -92,6 +98,7 @@ def main(args):
         version = get_current_experiment_version(args.config_file)
         run_kwargs["version"] = version
         run_kwargs["output_brat"] = args.output_brat
+        run_kwargs["output_token_masks"] = args.output_token_masks
         run_fn = run_validate
     else:
         raise argparse.ArgumentError(f"Unknown command {args.command}")
@@ -131,17 +138,7 @@ def run_train(config, datamodule,
     config.save_to_yaml(os.path.join(version_dir, "config.yaml"))
 
     model_class = MODEL_LOOKUP[config.model_name]
-    model = model_class(
-            config.bert_model_name_or_path,
-            label_spec=datamodule.label_spec,
-            class_weights=datamodule.class_weights,
-            freeze_pretrained=config.freeze_pretrained,
-            use_entity_spans=config.use_entity_spans,
-            entity_pool_fn=config.entity_pool_fn,
-            dropout_prob=config.dropout_prob,
-            lr=config.lr,
-            weight_decay=config.weight_decay,
-            )
+    model = model_class.from_config(config, datamodule)
 
     logger = TensorBoardLogger(
             save_dir=logdir, version=version, name=config.name)
@@ -168,17 +165,10 @@ def run_train(config, datamodule,
             )
     trainer.fit(model, datamodule=datamodule)
 
-    model.eval()
-    results = trainer.validate(model, datamodule=datamodule, verbose=False)[0]
-    tasks = sorted(datamodule.label_spec.keys())
-    md = format_results_as_markdown_table(results, tasks)
-    print("\nValidation Results")
-    print(md)
-
 
 def run_validate(config, datamodule, dataset="dev",
                  logdir="logs/", version=None, quiet=False,
-                 output_brat=False):
+                 output_brat=False, output_token_masks=False):
     # Find the checkpoint and hparams files.
     # Since we only checkpoint the best dev performance during training,
     #   there is only ever one checkpoint.
@@ -215,8 +205,9 @@ def run_validate(config, datamodule, dataset="dev",
     md = format_results_as_markdown_table(results, tasks)
     print(md)
 
-    if output_brat is True:
+    if output_brat is True or output_token_masks is True:
         preds = trainer.predict(model, dataloaders=datamodule.val_dataloader())
+    if output_brat is True:
         train_dataset = datamodule.train
         # List[BratAnnotations]
         pred_anns_by_docid = batched_predictions_to_brat(preds, train_dataset)
@@ -224,6 +215,20 @@ def run_validate(config, datamodule, dataset="dev",
         os.makedirs(preds_dir, exist_ok=False)
         for doc_preds in pred_anns_by_docid:
             doc_preds.save_brat(preds_dir)
+
+    if output_token_masks is True:
+        if config.model_name != "bert-rationale-classifier":
+            raise ValueError("--output_token_masks only compatible with bert-rationale-classifier.")  # noqa
+        mask_dir = os.path.join(checkpoint_dir, "../token_masks", dataset)
+        os.makedirs(mask_dir, exist_ok=False)
+        masked_by_task = batched_predictions_to_masked_tokens(
+                preds, datamodule)
+        for (task, masked_examples) in masked_by_task.items():
+            outpath = os.path.join(mask_dir, f"{task}.jsonl")
+            with open(outpath, 'w') as outF:
+                for datum in masked_examples:
+                    json.dump(datum, outF)
+                    outF.write('\n')
 
 
 def format_results_as_markdown_table(results, tasks):
@@ -260,6 +265,26 @@ def format_results_as_markdown_table(results, tasks):
             table += f" {avg_fn: <7} | {p:.3f} | {r:.3f} | {f:.3f} |"
     table += '\n'
     return table
+
+
+def batched_predictions_to_masked_tokens(preds, datamodule):
+    masked_by_task = defaultdict(list)
+    for batch in preds:
+        for (i, docid) in enumerate(batch["docids"]):
+            for (task, zmasks) in batch["zmask"].items():
+                datum = {}
+                datum["docid"] = docid
+                input_ids = batch["input_ids"][i]
+                datum["tokens_with_masks"] = format_input_ids_and_masks(
+                        input_ids, zmasks[i], datamodule.tokenizer)
+                enc_pred = batch["predictions"][task][i].int().item()
+                enc_lab = batch["labels"][task][i].int().item()
+                datum["prediction"] = datamodule.train.inverse_transform(
+                        task, [enc_pred])[0]
+                datum["label"] = datamodule.train.inverse_transform(
+                        task, [enc_lab])[0]
+                masked_by_task[task].append(datum)
+    return masked_by_task
 
 
 def batched_predictions_to_brat(preds, dataset):
