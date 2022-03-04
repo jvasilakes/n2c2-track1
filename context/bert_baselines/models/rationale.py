@@ -257,7 +257,7 @@ class BertRationaleClassifier(pl.LightningModule):
             losses_by_task[task] = np.array(losses_by_task[task]).mean()
             preds_by_task[task] = np.array(preds_by_task[task])
             labels_by_task[task] = np.array(labels_by_task[task])
-            mask_ratios_by_task[task] = np.array(labels_by_task[task]).mean()
+            mask_ratios_by_task[task] = np.array(mask_ratios_by_task[task]).mean()  # noqa
 
             self.log(f"val_loss_{task}", losses_by_task[task], prog_bar=False)
             self.log(f"avg_mask_ratio_{task}",
