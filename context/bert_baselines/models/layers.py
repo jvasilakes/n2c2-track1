@@ -218,6 +218,7 @@ class RecurrentEncoder(nn.Module):
             raise ValueError(f"Unsupported cell type '{cell}'")
 
     def forward(self, x, lengths):
+        lengths = lengths.cpu()
         packed = pack_padded_sequence(
                 x, lengths, batch_first=True, enforce_sorted=False)
         outputs, (hidden, cell) = self.recurrent(packed)
