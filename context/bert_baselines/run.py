@@ -11,7 +11,7 @@ from pytorch_lightning.loggers import TensorBoardLogger
 from pytorch_lightning.callbacks import ModelCheckpoint
 
 from config import ExperimentConfig
-from data import n2c2SentencesDataModule
+from data import n2c2ContextDataModule
 from models import MODEL_LOOKUP
 from models.rationale import format_input_ids_and_masks
 
@@ -64,19 +64,7 @@ def main(args):
 
     pl.seed_everything(config.random_seed, workers=True)
 
-    datamodule = n2c2SentencesDataModule(
-            config.data_dir,
-            config.sentences_dir,
-            batch_size=config.batch_size,
-            bert_model_name_or_path=config.bert_model_name_or_path,
-            tasks_to_load=config.tasks_to_load,
-            max_seq_length=config.max_seq_length,
-            window_size=config.window_size,
-            max_train_examples=config.max_train_examples,
-            sample_strategy=config.sample_strategy,
-            compute_class_weights=config.class_weights,
-            mark_entities=config.mark_entities,
-            )
+    datamodule = n2c2ContextDataModule.from_config(config)
     datamodule.setup()
 
     print("Label Spec")

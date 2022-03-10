@@ -5,7 +5,7 @@ import torch
 import pytorch_lightning as pl
 
 from config import ExperimentConfig
-from data import n2c2SentencesDataModule
+from data import n2c2ContextDataModule
 from model import BertMultiHeadedSequenceClassifier
 from layers import TokenMask, EntityPooler
 
@@ -37,7 +37,7 @@ def run(config_file):
     config = ExperimentConfig.from_yaml_file(config_file)
     pl.seed_everything(config.random_seed)
 
-    datamodule = n2c2SentencesDataModule(
+    datamodule = n2c2ContextDataModule(
         config.data_dir,
         config.sentences_dir,
         batch_size=config.batch_size,
@@ -85,7 +85,7 @@ def test_mask_hidden(config, datamodule):
 
 @test_logger
 def test_mask_hidden_marked(config, datamodule):
-    datamodule = n2c2SentencesDataModule(
+    datamodule = n2c2ContextDataModule(
         config.data_dir,
         config.sentences_dir,
         batch_size=1,
