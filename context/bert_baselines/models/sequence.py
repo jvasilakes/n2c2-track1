@@ -5,11 +5,11 @@ import torch
 import torch.nn as nn
 import numpy as np
 import pytorch_lightning as pl
-from torch.nn import CrossEntropyLoss
 from transformers import BertConfig, BertModel, AdamW
 from transformers.modeling_outputs import SequenceClassifierOutput
 from sklearn.metrics import precision_recall_fscore_support
 
+from .losses import get_loss_function
 from .layers import EntityPooler
 
 # Ignore warning that BertModel is not using some layer parameters.
@@ -40,16 +40,28 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
         :param config.ExperimentConfig config: config instance
         :param data.n2c2SentencesDataModule datamodule: data module instance
         """
+        classifier_loss_kwargs = {}
+        for task in datamodule.label_spec.keys():
+            classifier_loss_kwargs[task] = {}
+            for (key, val) in config.classifier_loss_kwargs.items():
+                # TODO: I don't like how hard-coded this is.
+                if key == "class_weights":
+                    # Change to the much less clear name used by torch
+                    key = "weight"
+                    val = datamodule.class_weights[task]
+                classifier_loss_kwargs[task][key] = val
+
         return cls(
                 config.bert_model_name_or_path,
                 datamodule.label_spec,
-                config.freeze_pretrained,
-                config.use_entity_spans,
-                config.entity_pool_fn,
-                config.dropout_prob,
-                config.lr,
-                config.weight_decay,
-                datamodule.class_weights,
+                freeze_pretrained=config.freeze_pretrained,
+                use_entity_spans=config.use_entity_spans,
+                entity_pool_fn=config.entity_pool_fn,
+                dropout_prob=config.dropout_prob,
+                lr=config.lr,
+                weight_decay=config.weight_decay,
+                classifier_loss_fn=config.classifier_loss_fn,
+                classifier_loss_kwargs=classifier_loss_kwargs,
                 )
 
     def __init__(
@@ -62,7 +74,9 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
             dropout_prob=0.1,
             lr=1e-3,
             weight_decay=0.0,
-            class_weights=None,
+            # class_weights=None, Pass these in classifier_loss_kwargs now
+            classifier_loss_fn="cross-entropy",
+            classifier_loss_kwargs=None,
             ):
         super().__init__()
         self.bert_model_name_or_path = bert_model_name_or_path
@@ -73,8 +87,11 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
         self.dropout_prob = dropout_prob
         self.lr = lr
         self.weight_decay = weight_decay
-        self.class_weights = self._validate_class_weights(
-            class_weights, self.label_spec)
+        self.classifier_loss_fn = get_loss_function(classifier_loss_fn)
+        self.classifier_loss_kwargs = classifier_loss_kwargs or {}
+        if "class_weights" in classifier_loss_kwargs.keys():
+            self.class_weights = self._validate_class_weights(
+                classifier_loss_kwargs["class_weights"], self.label_spec)
 
         self.bert_config = BertConfig.from_pretrained(
             self.bert_model_name_or_path)
@@ -143,16 +160,14 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
         for (task, clf_head) in self.classifier_heads.items():
             logits = clf_head(pooled_output)
             task_labels = labels[task]
-            if self.class_weights[task] is not None:
-                # Only copy the weights to the model device once.
-                if self.class_weights[task].device != self.device:
-                    dev = self.device
-                    self.class_weights[task] = self.class_weights[task].to(dev)
-            loss_fn = CrossEntropyLoss(weight=self.class_weights[task])
-            loss = loss_fn(logits.view(-1, self.label_spec[task]),
-                           task_labels.view(-1))
+            self._maybe_kwargs_to_device(self.classifier_loss_kwargs[task])
+            clf_loss_fn = self.classifier_loss_fn(
+                    **self.classifier_loss_kwargs[task])
+            clf_loss = clf_loss_fn(
+                    logits.view(-1, self.label_spec[task]),
+                    task_labels.view(-1))
             clf_outputs[task] = SequenceClassifierOutput(
-                    loss=loss,
+                    loss=clf_loss,
                     logits=logits,
                     hidden_states=bert_outputs.hidden_states,
                     attentions=bert_outputs.attentions)
@@ -163,9 +178,11 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
                 **batch["encodings"],
                 labels=batch["labels"],
                 entity_spans=batch["entity_spans"])
+        total_loss = torch.tensor(0.).to(self.device)
         for (task, outputs) in task_outputs.items():
+            total_loss += outputs.loss
             self.log(f"train_loss_{task}", outputs.loss)
-        return outputs.loss
+        return total_loss
 
     def predict_step(self, batch, batch_idx):
         task_outputs = self(
@@ -256,3 +273,9 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
         elif class_weights is None:
             class_weights = {task: None for task in label_spec.keys()}
         return class_weights
+
+    def _maybe_kwargs_to_device(self, kwargs):
+        for (key, val) in kwargs.items():
+            if torch.is_tensor(val):
+                if val.device != self.device:
+                    kwargs[key] = val.to(self.device)
