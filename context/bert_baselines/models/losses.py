@@ -160,7 +160,7 @@ class ControlledSparsityLoss(torch.nn.Module):
         zero_tensor.requires_grad = False
         for z_dist in z_dists:
             # TODO: is log_prob.exp() stable?
-            p0 = z_dist.log_prob(torch.tensor(0.)).exp()
+            p0 = z_dist.log_prob(zero_tensor).exp()
             pdf0.append(p0)
         pdf0 = torch.stack(pdf0, dim=1).squeeze(-1)
         pdf_nonzero = 1. - pdf0
@@ -176,7 +176,7 @@ class ControlledSparsityLoss(torch.nn.Module):
         zero_tensor = torch.tensor(0.).to(token_mask.device)
         zero_tensor.requires_grad = False
         for z_dist in z_dists:
-            logp0 = z_dist.log_prob(torch.tensor(0.)).exp()
+            logp0 = z_dist.log_prob(zero_tensor).exp()
             pdf0.append(logp0)
         pdf0 = torch.stack(pdf0, dim=1).squeeze(-1)
         p_zi_0 = pdf0[:, :-1]  # P(z_i = 0)
