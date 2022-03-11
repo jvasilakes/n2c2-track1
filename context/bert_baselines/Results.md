@@ -1,3 +1,11 @@
+# Contents
+
+[Best Overall Results](#best-overall-results) 
+[Pooled Output Results](#pooled-output-results)
+[Entity Span Results](#entity-span-results)
+[DICE vs Cross Entropy Loss](#dice-vs-cross-entropy)
+
+
 # Best Overall Results
 As of 2/3/2022
 
@@ -162,8 +170,9 @@ Winner: ClinicalBERT with +/- 1 sentence window, using only first entity marker
 
 
 
-# Comparison of Self-Adjusted DICE loss vs cross entropy for classification
+# DICE vs Cross Entropy
 
+Below, I compare the performance of the current best models using self-adjusted DICE loss vs using standard cross entropy loss.
 
 ## Takeaways
 DICE *can* improve recall on some less frequent classes, but losses in precision mean that it ultimately performs worse than cross entropy.
