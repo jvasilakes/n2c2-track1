@@ -140,11 +140,7 @@ class ControlledSparsityLoss(torch.nn.Module):
                 "lasso": torch.tensor(lambda_init)}
         self.c_mas = [torch.tensor(0.)]
 
-    def forward(self, zs, z_dists, lengths):
-        token_mask = torch.ones(lengths.size(0), lengths.max())
-        for i in range(token_mask.size(0)):
-            token_mask[i, lengths[i]:] = torch.tensor(0.)
-
+    def forward(self, zs, z_dists, token_mask):
         l0 = self.L0(z_dists, token_mask)
         constrained_l0 = self.constrain(l0, self.selection_rate, "L0")
         lasso = self.lasso(z_dists, token_mask)
@@ -160,6 +156,8 @@ class ControlledSparsityLoss(torch.nn.Module):
         Penalizes for the number of selected tokens.
         """
         pdf0 = []
+        zero_tensor = torch.tensor(0.).to(token_mask.device)
+        zero_tensor.requires_grad = False
         for z_dist in z_dists:
             # TODO: is log_prob.exp() stable?
             p0 = z_dist.log_prob(torch.tensor(0.)).exp()
@@ -175,6 +173,8 @@ class ControlledSparsityLoss(torch.nn.Module):
         Penalizes for the number of transitions.
         """
         pdf0 = []
+        zero_tensor = torch.tensor(0.).to(token_mask.device)
+        zero_tensor.requires_grad = False
         for z_dist in z_dists:
             logp0 = z_dist.log_prob(torch.tensor(0.)).exp()
             pdf0.append(logp0)
