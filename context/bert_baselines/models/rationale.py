@@ -207,7 +207,7 @@ class BertRationaleClassifier(pl.LightningModule):
                     task_labels.view(-1))
             self._maybe_kwargs_to_device(self.mask_loss_kwargs[task])
             mask_loss_fn = self.mask_loss_fn(**self.mask_loss_kwargs[task])
-            mask_loss = mask_loss_fn(z.squeeze(-1), z_dists, lengths)
+            mask_loss = mask_loss_fn(z.squeeze(-1), z_dists, attention_mask)
             clf_outputs[task] = SequenceClassifierOutputWithTokenMask(
                     loss=clf_loss,
                     mask_loss=mask_loss,
