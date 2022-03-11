@@ -1,9 +1,12 @@
 # Contents
 
-[Best Overall Results](#best-overall-results) 
-[Pooled Output Results](#pooled-output-results)
-[Entity Span Results](#entity-span-results)
-[DICE vs Cross Entropy Loss](#dice-vs-cross-entropy)
+* [Best Overall Results](#best-overall-results) 
+
+* [Pooled Output Results](#pooled-output-results)
+
+* [Entity Span Results](#entity-span-results)
+
+* [DICE vs Cross Entropy Loss](#dice-vs-cross-entropy)
 
 
 # Best Overall Results
