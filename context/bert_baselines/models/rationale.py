@@ -189,7 +189,7 @@ class BertRationaleClassifier(pl.LightningModule):
             # Compute HardKuma gates
             entity_expanded = pooled_entity_output.unsqueeze(1).expand(h.size())  # noqa
             h_with_entity = torch.cat([h, entity_expanded], dim=2)
-            z = self.kuma_masks[task](h_with_entity)
+            z, z_dists = self.kuma_masks[task](h_with_entity)
             z = z * attention_mask.unsqueeze(-1)
 
             # Use the gates to mask the inputs and encode them.
@@ -207,7 +207,7 @@ class BertRationaleClassifier(pl.LightningModule):
                     task_labels.view(-1))
             self._maybe_kwargs_to_device(self.mask_loss_kwargs[task])
             mask_loss_fn = self.mask_loss_fn(**self.mask_loss_kwargs[task])
-            mask_loss = mask_loss_fn(z.squeeze(-1), lengths)
+            mask_loss = mask_loss_fn(z.squeeze(-1), z_dists, lengths)
             clf_outputs[task] = SequenceClassifierOutputWithTokenMask(
                     loss=clf_loss,
                     mask_loss=mask_loss,
@@ -230,6 +230,7 @@ class BertRationaleClassifier(pl.LightningModule):
         for (task, outputs) in task_outputs.items():
             total_loss += outputs.loss + outputs.mask_loss
             self.log(f"train_loss_{task}", outputs.loss)
+            self.log(f"mask_loss_{task}", outputs.mask_loss)
             mask_ratios = self.compute_mask_ratio(
                     outputs.mask, batch["encodings"]["attention_mask"])
             self.log(f"mask_ratio_{task}", mask_ratios.mean())

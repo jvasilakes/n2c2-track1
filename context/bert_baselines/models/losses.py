@@ -79,6 +79,11 @@ class LossLookup(object):
     def get_ratio_loss():
         return RatioLoss
 
+    @staticmethod
+    @loss_function("mask", "controlled-sparsity")
+    def get_controlled_sparsity_loss():
+        return ControlledSparsityLoss
+
 
 class RatioLoss(torch.nn.Module):
     """
@@ -88,8 +93,8 @@ class RatioLoss(torch.nn.Module):
         super().__init__()
         self.ratio = torch.tensor(ratio)
 
-    def forward(self, _inputs, lengths):
-        mask_ratio = _inputs.sum(dim=1) / lengths
+    def forward(self, zs, z_dists, lengths):
+        mask_ratio = zs.sum(dim=1) / lengths
         example_losses = torch.abs(mask_ratio - self.ratio)
         if self.reduction == "mean":
             return example_losses.mean()
@@ -106,8 +111,12 @@ class ControlledSparsityLoss(torch.nn.Module):
     "Interpretable Neural Predictions with Differentiable Binary Variables"
     https://aclanthology.org/P19-1284/
 
-    Default hyperparameters taken from accompanying code at
+    Default hyperparameters and compute code taken from accompanying code at
     https://github.com/bastings/interpretable_predictions/blob/master/latent_rationale/beer/models/latent.py#L17  # noqa
+    
+    Constrained optimization code based on Algorithm 1 of
+    "Taming VAEs"
+    https://arxiv.org/abs/1810.00597
     """
     def __init__(
             self,
@@ -128,50 +137,77 @@ class ControlledSparsityLoss(torch.nn.Module):
         self.lambda_max = lambda_max
         self.lambdas = {
                 "L0": torch.tensor(lambda_init),
-                "fused_lasso": torch.tensor(lambda_init)}
+                "lasso": torch.tensor(lambda_init)}
+        self.c_mas = [torch.tensor(0.)]
 
-    def forward(self, zs, z_dists):
-        l0 = self.L0(zs, z_dists)
+    def forward(self, zs, z_dists, lengths):
+        token_mask = torch.ones(lengths.size(0), lengths.max())
+        for i in range(token_mask.size(0)):
+            token_mask[i, lengths[i]:] = torch.tensor(0.)
+
+        l0 = self.L0(z_dists, token_mask)
         constrained_l0 = self.constrain(l0, self.selection_rate, "L0")
-        fused = self.fused_lasso(zs, z_dists)
-        constrained_fused = self.constrain(
-                fused, self.transition_rate, "fused_lasso")
-        return constrained_l0 + constrained_fused
+        lasso = self.lasso(z_dists, token_mask)
+        constrained_lasso = self.constrain(
+                lasso, self.transition_rate, "lasso")
+        return constrained_l0 + constrained_lasso
 
     def __repr__(self):
         return "ControlledSparsityLoss()"
 
-    def L0(self, zs, z_dists):
+    def L0(self, z_dists, token_mask):
         """
         Penalizes for the number of selected tokens.
         """
-        raise NotImplementedError()
+        pdf0 = []
+        for z_dist in z_dists:
+            # TODO: is log_prob.exp() stable?
+            p0 = z_dist.log_prob(torch.tensor(0.)).exp()
+            pdf0.append(p0)
+        pdf0 = torch.stack(pdf0, dim=1).squeeze(-1)
+        pdf_nonzero = 1. - pdf0
+        pdf_nonzero *= token_mask
+        l0 = pdf_nonzero.sum(dim=1) / token_mask.sum(dim=1)
+        return l0.mean()
 
-    def fused_lasso(self, zs, z_dists):
+    def lasso(self, z_dists, token_mask):
         """
         Penalizes for the number of transitions.
         """
-        raise NotImplementedError()
+        pdf0 = []
+        for z_dist in z_dists:
+            logp0 = z_dist.log_prob(torch.tensor(0.)).exp()
+            pdf0.append(logp0)
+        pdf0 = torch.stack(pdf0, dim=1).squeeze(-1)
+        p_zi_0 = pdf0[:, :-1]  # P(z_i = 0)
+        p_zi1_0 = pdf0[:, 1:]  # P(z_i+1 = 0)
+        p_zi_nonzero = 1. - p_zi_0  # 1 - P(z_i = 0)
+        p_zi1_nonzero = 1. - p_zi1_0  # 1 - P(z_i+1 = 0)
+        lasso = (p_zi_0 * p_zi1_nonzero) + (p_zi_nonzero * p_zi1_0)
+        lasso *= token_mask[:, :-1]
+        lasso = lasso.sum(dim=1) / token_mask.sum(dim=1)
+        return lasso.mean()
 
     def constrain(self, value, target, constraint_name):
         """
         Compute constraint of value to target using lagrange multiplier
         at self.lambdas[constraint_name]
         """
-        raise NotImplementedError()
-        dissatisfaction = value - target
-        # Moving average of the constraint
-        c_ma = self.lagrange_alpha * self.c_mas[-1] + (1 - self.lagrange_alpha) * dissatisfaction  # noqa
-        self.c_mas.append(c_ma)
-        # Original paper does this but I don't know why as it just
-        # equals c_ma...
-        c0 = dissatisfaction + (c_ma - dissatisfaction)
+        # ct_hat, using the notation from the paper, is the dissatisfaction
+        # of the constraint.
+        ct_hat = value - target
+        # Compute the moving average of the constraint
+        ct_ma = self.lagrange_alpha * self.c_mas[-1] + \
+                (1 - self.lagrange_alpha) * ct_hat  # noqa
+        self.c_mas.append(ct_ma)
+        # Don't backprop the difference from the moving average
+        ct = ct_hat + (ct_ma.detach() - ct_hat.detach())
         # Update the lagrangians
-        tmp_lambda = self.lambdas[constraint_name]
-        tmp_lambda = tmp_lambda * torch.exp(self.lagrange_lr * c0)
-        tmp_lambda = tmp_lambda.clamp(self.lambda_min, self.lambda_max)
-        self.lambdas[constraint_name] = tmp_lambda
-        constrained_value = tmp_lambda * c0
+        new_lambda = self.lambdas[constraint_name]
+        new_lambda = new_lambda * torch.exp(self.lagrange_lr * ct.detach())
+        new_lambda = new_lambda.clamp(self.lambda_min, self.lambda_max)
+        self.lambdas[constraint_name] = new_lambda
+        constrained_value = new_lambda.detach() * ct
         return constrained_value
 
 
