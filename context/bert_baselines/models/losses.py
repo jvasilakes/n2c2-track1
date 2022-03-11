@@ -11,17 +11,30 @@ def get_loss_function(function_name):
         raise KeyError(f"Unsupported loss function '{function_name}'")
 
 
+def get_supported_loss_functions():
+    lookup = LossLookup()
+    fns = lookup.losses.items()
+    # Sort by loss type
+    fns_by_type = {}
+    for (name, fn) in fns:
+        loss_type = fn._tagged[0]
+        if loss_type not in fns_by_type:
+            fns_by_type[loss_type] = []
+        fns_by_type[loss_type].append((name, fn()))
+    return fns_by_type
+
+
 class LossLookup(object):
     """
     Register lookups for your desired loss functions here.
     """
 
-    def loss_function(name):
+    def loss_function(loss_type, name):
         """
         Decorator for registering loss function getters.
         """
         def assign_tags(func):
-            func._tagged = name
+            func._tagged = (loss_type, name)
             return func
         return assign_tags
 
@@ -34,7 +47,7 @@ class LossLookup(object):
             for name in dir(self):
                 var = getattr(self, name)
                 if hasattr(var, "_tagged"):
-                    name = var._tagged
+                    loss_type, name = var._tagged
                     self._loss_registry[name] = var
             return self._loss_registry
 
@@ -43,12 +56,12 @@ class LossLookup(object):
 
     # === CLASSIFICATION ===
     @staticmethod
-    @loss_function("cross-entropy")
+    @loss_function("classification", "cross-entropy")
     def get_cross_entropy_loss():
         return torch.nn.CrossEntropyLoss
 
     @staticmethod
-    @loss_function("self-adj-dice")
+    @loss_function("classification", "self-adj-dice")
     def get_self_adj_dice_loss():
         """
         Dice Loss for Data-imbalanced NLP Tasks
@@ -62,7 +75,7 @@ class LossLookup(object):
 
     # === STOCHASTIC MASKS ===
     @staticmethod
-    @loss_function("ratio")
+    @loss_function("mask", "ratio")
     def get_ratio_loss():
         return RatioLoss
 
@@ -160,3 +173,11 @@ class ControlledSparsityLoss(torch.nn.Module):
         self.lambdas[constraint_name] = tmp_lambda
         constrained_value = tmp_lambda * c0
         return constrained_value
+
+
+if __name__ == "__main__":
+    fns_by_type = get_supported_loss_functions()
+    for (loss_type, fn_names_and_classes) in fns_by_type.items():
+        print(loss_type.title())
+        for (name, cls) in fn_names_and_classes:
+            print(f"  {name}: {cls}")
