@@ -152,15 +152,21 @@ class BertRationaleClassifier(pl.LightningModule):
         for (task, clf_head) in self.classifier_heads.items():
             # Compute HardKuma gates
             entity_expanded = pooled_entity_output.unsqueeze(1).expand(h.size())  # noqa
+            # TODO: Try just passing h.
             h_with_entity = torch.cat([h, entity_expanded], dim=2)
             z = self.kuma_masks[task](h_with_entity)
+            # Mask out PAD tokens.
             z = z * attention_mask.unsqueeze(-1)
+            # Mask out CLS and SEP too.
+            z[:, 0] = torch.tensor(0.)  # CLS
+            lengths = attention_mask.sum(dim=1)
+            z[torch.arange(z.size(0)), lengths - 1] = torch.tensor(0.)  # SEP
 
             # Use the gates to mask the inputs and encode them.
-            lengths = attention_mask.sum(dim=1)
             outputs, final = self.encoders[task](h * z, lengths)
-
             logits = clf_head(final)
+
+            # Compute the losses.
             task_labels = labels[task]
             if self.class_weights[task] is not None:
                 # Only copy the weights to the model device once.
