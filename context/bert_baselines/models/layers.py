@@ -196,13 +196,15 @@ class KumaMask(nn.Module):
 
     def forward(self, x):
         z = []
+        z_dists = []
         for t in range(x.size(1)):
             x_t = x[:, t, :]
             z_t_dist = self.gate(x_t)
             z_t = z_t_dist.rsample()
             z.append(z_t)
+            z_dists.append(z_t_dist)
         z = torch.stack(z, dim=1)
-        return z
+        return z, z_dists
 
 
 class RecurrentEncoder(nn.Module):
