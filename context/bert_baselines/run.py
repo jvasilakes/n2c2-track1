@@ -82,9 +82,6 @@ def main(args):
         run_kwargs["version"] = version
         run_fn = run_train
     elif args.command in ["validate", "test"]:
-        dataset = args.command
-        if args.command == "validate":
-            dataset = "dev"
         run_kwargs["dataset"] = args.dataset
         version = get_current_experiment_version(args.config_file)
         run_kwargs["version"] = version
@@ -152,7 +149,7 @@ def run_train(config, datamodule,
             deterministic=False,
             callbacks=[checkpoint_cb],
             enable_progress_bar=enable_progress_bar,
-            log_every_n_steps=35,
+            log_every_n_steps=32,
             )
     trainer.fit(model, datamodule=datamodule)
 
@@ -193,7 +190,6 @@ def run_validate(config, datamodule, dataset="dev",
         val_dataloader = datamodule.test_dataloader()
     else:
         raise ValueError(f"Unknown validation dataset '{dataset}'")
-    #results = val_fn(model, datamodule=datamodule, verbose=False)[0]
     results = trainer.validate(
         model, dataloaders=val_dataloader, verbose=False)[0]
     tasks = sorted(datamodule.label_spec.keys())
