@@ -124,7 +124,7 @@ class ControlledSparsityLoss(torch.nn.Module):
             transition_rate=0.0,  # target for fused lasso
             lagrange_alpha=0.5,
             lagrange_lr=0.05,
-            lambda_init=0.0015,
+            lambda_init=1.0,
             lambda_min=1e-12,
             lambda_max=5.0):
         super().__init__()
@@ -147,6 +147,7 @@ class ControlledSparsityLoss(torch.nn.Module):
         constrained_lasso = self.constrain(
                 lasso, self.transition_rate, "lasso")
         return constrained_l0 + constrained_lasso
+        return constrained_lasso
 
     def __repr__(self):
         return "ControlledSparsityLoss()"
@@ -172,16 +173,16 @@ class ControlledSparsityLoss(torch.nn.Module):
         """
         Penalizes for the number of transitions.
         """
-        pdf0 = []
+        pdf0 = []  # P(z_i = 0) forall i
         zero_tensor = torch.tensor(0.).to(token_mask.device)
         zero_tensor.requires_grad = False
         for z_dist in z_dists:
-            logp0 = z_dist.log_prob(zero_tensor).exp()
-            pdf0.append(logp0)
+            p0 = z_dist.log_prob(zero_tensor).exp()
+            pdf0.append(p0)
         pdf0 = torch.stack(pdf0, dim=1).squeeze(-1)
-        p_zi_0 = pdf0[:, :-1]  # P(z_i = 0)
-        p_zi1_0 = pdf0[:, 1:]  # P(z_i+1 = 0)
-        p_zi_nonzero = 1. - p_zi_0  # 1 - P(z_i = 0)
+        p_zi_0 = pdf0[:, :-1]         # P(z_i = 0)
+        p_zi1_0 = pdf0[:, 1:]         # P(z_i+1 = 0)
+        p_zi_nonzero = 1. - p_zi_0    # 1 - P(z_i = 0)
         p_zi1_nonzero = 1. - p_zi1_0  # 1 - P(z_i+1 = 0)
         lasso = (p_zi_0 * p_zi1_nonzero) + (p_zi_nonzero * p_zi1_0)
         lasso *= token_mask[:, :-1]
@@ -193,9 +194,8 @@ class ControlledSparsityLoss(torch.nn.Module):
         Compute constraint of value to target using lagrange multiplier
         at self.lambdas[constraint_name]
         """
-        # ct_hat, using the notation from the paper, is the dissatisfaction
-        # of the constraint.
-        ct_hat = value - target
+        # ct_hat, using the notation from the paper, is the constraint value.
+        ct_hat = torch.abs(value - target)
         # Compute the moving average of the constraint
         ct_ma = self.lagrange_alpha * self.c_mas[-1] + \
                 (1 - self.lagrange_alpha) * ct_hat  # noqa
