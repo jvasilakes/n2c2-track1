@@ -105,14 +105,16 @@ class BertRationaleClassifier(pl.LightningModule):
         self.dropout_prob = dropout_prob
         self.lr = lr
         self.weight_decay = weight_decay
-        self.classifier_loss_fn = get_loss_function(classifier_loss_fn)
-        self.classifier_loss_kwargs = classifier_loss_kwargs or {}
-        if "class_weights" in classifier_loss_kwargs.keys():
-            self.class_weights = self._validate_class_weights(
-                classifier_loss_kwargs["class_weights"], self.label_spec)
-        self.mask_loss_fn = get_loss_function(mask_loss_fn)
-        self.mask_loss_kwargs = mask_loss_kwargs or {}
+        # prepare loss function stuff
+        self.classifier_loss_fn = classifier_loss_fn
+        self.classifier_loss_kwargs = classifier_loss_kwargs
+        self.mask_loss_fn = mask_loss_fn
+        self.mask_loss_kwargs = mask_loss_kwargs
 
+        # save __init__ arguments to self.hparams, which is logged by pl
+        self.save_hyperparameters()
+
+        # build the BERT model.
         self.bert_config = BertConfig.from_pretrained(
             self.bert_model_name_or_path)
         self.bert_config.hidden_dropout_prob = self.dropout_prob
@@ -128,12 +130,19 @@ class BertRationaleClassifier(pl.LightningModule):
         self.entity_pooler = EntityPooler(
             pooler_insize, pooler_outsize, self.entity_pool_fn)
 
+        # Build the task-specific model components.
         self.kuma_masks = nn.ModuleDict()
+        self.mask_loss_fns = nn.ModuleDict()
         self.encoders = nn.ModuleDict()
         self.classifier_heads = nn.ModuleDict()
+        self.classifier_loss_fns = nn.ModuleDict()
         for (task, num_labels) in label_spec.items():
             self.kuma_masks[task] = KumaMask(
-                    self.bert_config.hidden_size + pooler_outsize)  # noqa
+                    self.bert_config.hidden_size + pooler_outsize)
+            # Mask loss function for this task
+            msk_loss_fn = get_loss_function(self.mask_loss_fn)
+            kwargs = self.mask_loss_kwargs[task]
+            self.mask_loss_fns[task] = msk_loss_fn(**kwargs)
 
             self.encoders[task] = RecurrentEncoder(
                     insize=pooler_outsize,
@@ -144,9 +153,11 @@ class BertRationaleClassifier(pl.LightningModule):
                     nn.Dropout(self.dropout_prob),
                     nn.Linear(2 * self.encoders[task].hidden_size, num_labels)
                     )
+            # Classifier loss function for this task
+            clf_loss_fn = get_loss_function(self.classifier_loss_fn)
+            kwargs = self.classifier_loss_kwargs[task]
+            self.classifier_loss_fns[task] = clf_loss_fn(**kwargs)
 
-        # save __init__ arguments to self.hparams, which is logged by pl
-        self.save_hyperparameters()
 
     def forward(
             self,
@@ -163,7 +174,7 @@ class BertRationaleClassifier(pl.LightningModule):
         """
         labels: dict from task names to torch.LongTensor labels of
                 shape (batch_size,).
-        offset_mapping: output from a transformers.PreTrainedTokenizer{Fast}
+        offset_mapping: output from a transformers.PreTrainedTokenizer(Fast)
                         with return_offsets_mapping=True
         entity_spans: torch.LongTensor of shape (batch_size, 2) indicating
                       the character offsets of the target entity in the input.
@@ -204,15 +215,11 @@ class BertRationaleClassifier(pl.LightningModule):
             # Compute the classifier and mask losses.
             logits = clf_head(final)
             task_labels = labels[task]
-            self._maybe_kwargs_to_device(self.classifier_loss_kwargs[task])
-            clf_loss_fn = self.classifier_loss_fn(
-                    **self.classifier_loss_kwargs[task])
-            clf_loss = clf_loss_fn(
+            clf_loss = self.classifier_loss_fns[task](
                     logits.view(-1, self.label_spec[task]),
                     task_labels.view(-1))
-            self._maybe_kwargs_to_device(self.mask_loss_kwargs[task])
-            mask_loss_fn = self.mask_loss_fn(**self.mask_loss_kwargs[task])
-            mask_loss = mask_loss_fn(z.squeeze(-1), z_dists, attention_mask)
+            mask_loss = self.mask_loss_fns[task](
+                z.squeeze(-1), z_dists, attention_mask)
             clf_outputs[task] = SequenceClassifierOutputWithTokenMask(
                     loss=clf_loss,
                     mask_loss=mask_loss,
@@ -226,20 +233,37 @@ class BertRationaleClassifier(pl.LightningModule):
     def compute_mask_ratio(z, token_mask):
         return z.sum(dim=1) / token_mask.sum(dim=1)
 
+    @staticmethod
+    def compute_transition_rate(z, token_mask):
+        total = torch.zeros(z.size(0)).type_as(z)
+        J = z.size(1)
+        I = J - 1
+        for (i, j) in zip(range(0, I), torch.arange(1, J)):
+            zi = z[:, i]
+            zj = z[:, j]
+            total += torch.abs(zi - zj)
+        return total / token_mask[:, :-1].sum(dim=1)
+
     def training_step(self, batch, batch_idx):
         task_outputs = self(
                 **batch["encodings"],
                 labels=batch["labels"],
                 entity_spans=batch["entity_spans"])
-        total_loss = torch.tensor(0.).to(self.device)
+        batch_loss = None
         for (task, outputs) in task_outputs.items():
-            total_loss += outputs.loss + outputs.mask_loss
+            if batch_loss is None:
+                # So it's on the right device
+                batch_loss = torch.tensor(0.).type_as(outputs.loss)
+            batch_loss += outputs.loss + outputs.mask_loss
             self.log(f"train_loss_{task}", outputs.loss)
             self.log(f"mask_loss_{task}", outputs.mask_loss)
             mask_ratios = self.compute_mask_ratio(
                     outputs.mask, batch["encodings"]["attention_mask"])
             self.log(f"mask_ratio_{task}", mask_ratios.mean())
-        return total_loss
+            trans_rates = self.compute_transition_rate(
+                outputs.mask, batch["encodings"]["attention_mask"])
+            self.log(f"transition_rate_{task}", trans_rates.mean())
+        return batch_loss
 
     def predict_step(self, batch, batch_idx):
         task_outputs = self(
@@ -330,23 +354,3 @@ class BertRationaleClassifier(pl.LightningModule):
         params = self.parameters()
         opt = AdamW(params, lr=self.lr, weight_decay=self.weight_decay)
         return opt
-
-    def _validate_class_weights(self, class_weights, label_spec):
-        if not isinstance(class_weights, (dict, type(None))):
-            raise ValueError(f"class_weights must be None or dict(). Got {type(class_weights)}.")  # noqa 
-        if class_weights is not None:
-            for (task, weights) in class_weights.items():
-                if not torch.is_tensor(weights):
-                    raise TypeError(f"class weights must be torch.Tensor. Got {type(weights)}.")  # noqa
-                num_classes = label_spec[task]
-                if len(weights) != num_classes:
-                    raise ValueError(f"Number of weights != number of classes for task {task}")  # noqa
-        elif class_weights is None:
-            class_weights = {task: None for task in label_spec.keys()}
-        return class_weights
-
-    def _maybe_kwargs_to_device(self, kwargs):
-        for (key, val) in kwargs.items():
-            if torch.is_tensor(val):
-                if val.device != self.device:
-                    kwargs[key] = val.to(self.device)
