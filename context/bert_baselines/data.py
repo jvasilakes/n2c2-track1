@@ -13,7 +13,7 @@ from sklearn.utils.class_weight import compute_class_weight
 from brat_reader import BratAnnotations
 
 
-class n2c2SentencesDataset(Dataset):
+class n2c2ContextDataset(Dataset):
 
     ENCODINGS = {
             'Action': {'Decrease': 0,
@@ -170,12 +170,29 @@ class n2c2SentencesDataset(Dataset):
         return inv_enc
 
 
-class n2c2SentencesDataModule(pl.LightningDataModule):
+class n2c2ContextDataModule(pl.LightningDataModule):
+
+    @classmethod
+    def from_config(cls, config):
+        compute_class_weights = config.classifier_loss_kwargs.get("class_weights", None)  # noqa
+        return cls(
+                config.data_dir,
+                config.sentences_dir,
+                batch_size=config.batch_size,
+                bert_model_name_or_path=config.bert_model_name_or_path,
+                tasks_to_load=config.tasks_to_load,
+                max_seq_length=config.max_seq_length,
+                window_size=config.window_size,
+                max_train_examples=config.max_train_examples,
+                sample_strategy=config.sample_strategy,
+                compute_class_weights=compute_class_weights,
+                mark_entities=config.mark_entities,
+                )
 
     def __init__(self, data_dir, sentences_dir, batch_size,
                  bert_model_name_or_path, tasks_to_load="all",
-                 max_seq_length=128, window_size=0, sample_strategy="none",
-                 max_train_examples=-1, compute_class_weights="none",
+                 max_seq_length=128, window_size=0, sample_strategy=None,
+                 max_train_examples=-1, compute_class_weights=None,
                  mark_entities=False):
         super().__init__()
         self.data_dir = data_dir
@@ -197,7 +214,7 @@ class n2c2SentencesDataModule(pl.LightningDataModule):
     def setup(self, stage=None):
         train_path = os.path.join(self.data_dir, "train")
         train_sent_path = os.path.join(self.sentences_dir, "train")
-        self.train = n2c2SentencesDataset(
+        self.train = n2c2ContextDataset(
                 train_path, train_sent_path,
                 window_size=self.window_size,
                 label_names=self.tasks_to_load,
@@ -206,7 +223,7 @@ class n2c2SentencesDataModule(pl.LightningDataModule):
 
         val_path = os.path.join(self.data_dir, "dev")
         val_sent_path = os.path.join(self.sentences_dir, "dev")
-        self.val = n2c2SentencesDataset(
+        self.val = n2c2ContextDataset(
                 val_path, val_sent_path,
                 window_size=self.window_size,
                 label_names=self.tasks_to_load,
@@ -215,7 +232,7 @@ class n2c2SentencesDataModule(pl.LightningDataModule):
         test_path = os.path.join(self.data_dir, "test")
         test_sent_path = os.path.join(self.sentences_dir, "test")
         if os.path.exists(test_path):
-            self.test = n2c2SentencesDataset(
+            self.test = n2c2ContextDataset(
                     test_path, test_sent_path,
                     window_size=self.window_size,
                     label_names=self.tasks_to_load,
@@ -224,7 +241,7 @@ class n2c2SentencesDataModule(pl.LightningDataModule):
             warnings.warn("No test set found.")
             self.test = None
 
-        if self.sample_strategy == "none":
+        if self.sample_strategy is None:
             self.sampler = None
         elif self.sample_strategy == "weighted":
             # This should give a near-uniform distribution of task
@@ -236,6 +253,20 @@ class n2c2SentencesDataModule(pl.LightningDataModule):
             raise ValueError(msg)
 
         self._ran_setup = True
+
+    def __str__(self):
+        return f"""{self.__class__}
+  data_dir: {self.data_dir},
+  sentences_dir: {self.sentences_dir},
+  batch_size: {self.batch_size},
+  bert_model_name_or_path: {self.bert_model_name_or_path},
+  tasks_to_load: {self.tasks_to_load},
+  max_seq_length: {self.max_seq_length},
+  window_size: {self.window_size},
+  max_train_examples: {self.max_train_examples},
+  sample_strategy: {self.sample_strategy},
+  class_weights: {self.class_weights},
+  mark_entities: {self.mark_entities}"""
 
     @property
     def label_spec(self):
@@ -259,7 +290,7 @@ class n2c2SentencesDataModule(pl.LightningDataModule):
         if getattr(self, "_class_weights", None) is not None:
             return self._class_weights
 
-        if self.compute_class_weights == "none":
+        if self.compute_class_weights is None:
             self._class_weights = None
         elif self.compute_class_weights == "balanced":
             self._class_weights = self._compute_class_weights(self.train)

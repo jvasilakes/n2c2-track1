@@ -1,3 +1,14 @@
+# Contents
+
+* [Best Overall Results](#best-overall-results) 
+
+* [Pooled Output Results](#pooled-output-results)
+
+* [Entity Span Results](#entity-span-results)
+
+* [DICE vs Cross Entropy Loss](#dice-vs-cross-entropy)
+
+
 # Best Overall Results
 As of 2/3/2022
 
@@ -79,31 +90,6 @@ Entity markers: use first only
 | micro   | 0.968 | 0.968 | 0.968 | micro   | 0.787 | 0.787 | 0.787 |
 | macro   | 0.593 | 0.616 | 0.603 | macro   | 0.555 | 0.574 | 0.558 |
 
-## Multi-task
-### bert-base-uncased
-
-| Action  | P     | R     | F1    | Actor   | P     | R     | F1    | Cert    | P     | R     | F1    |
-|---------|-------|-------|-------|---------|-------|-------|-------|---------|-------|-------|-------|
-| micro   | 0.122 | 0.122 | 0.122 | micro   | 0.357 | 0.357 | 0.357 | micro   | 0.665 | 0.665 | 0.665 |
-| macro   | 0.200 | 0.185 | 0.102 | macro   | 0.389 | 0.513 | 0.279 | macro   | 0.399 | 0.491 | 0.401 |
-
-| Neg     | P     | R     | F1    | Temp    | P     | R     | F1    |
-|---------|-------|-------|-------|---------|-------|-------|-------|
-| micro   | 0.697 | 0.697 | 0.697 | micro   | 0.747 | 0.747 | 0.747 |
-| macro   | 0.487 | 0.355 | 0.411 | macro   | 0.503 | 0.512 | 0.506 |
-
-### Bio\_ClinicalBERT
-
-| Action  | P     | R     | F1    | Actor   | P     | R     | F1    | Cert    | P     | R     | F1    |
-|---------|-------|-------|-------|---------|-------|-------|-------|---------|-------|-------|-------|
-| micro   | 0.086 | 0.086 | 0.086 | micro   | 0.235 | 0.235 | 0.235 | micro   | 0.353 | 0.353 | 0.353 |
-| macro   | 0.050 | 0.205 | 0.066 | macro   | 0.345 | 0.405 | 0.154 | macro   | 0.161 | 0.111 | 0.132 |
-
-| Neg     | P     | R     | F1    | Temp    | P     | R     | F1    |
-|---------|-------|-------|-------|---------|-------|-------|-------|
-| micro   | 0.172 | 0.172 | 0.172 | micro   | 0.787 | 0.787 | 0.787 |
-| macro   | 0.511 | 0.578 | 0.156 | macro   | 0.555 | 0.557 | 0.546 |
-
 
 
 # Entity Span Results
@@ -184,3 +170,113 @@ Winner: ClinicalBERT with +/- 1 sentence window, using only first entity marker
 |      |       |MACRO | 0.804 | 0.629 | 0.674 | | 0.830 | 0.662 | **0.704** |
 |      | both  |MICRO | 0.814 | 0.814 | 0.814 | | 0.801 | 0.801 | 0.801 |
 |      |       |MACRO | 0.558 | 0.569 | 0.563 | | 0.803 | 0.624 | 0.668 |
+
+
+
+# DICE vs Cross Entropy
+
+Below, I compare the performance of the current best models using self-adjusted DICE loss vs using standard cross entropy loss.
+
+## Takeaways
+DICE *can* improve recall on some less frequent classes, but losses in precision mean that it ultimately performs worse than cross entropy.
+
+I still think that there just isn't enough variety in the training data to learn a generalizable representations of most infrequent classes.
+
+### Action
+|Loss  |      | prec  | rec   | f1    |
+|------|------|-------|-------|-------|
+| DICE |MICRO | 0.769 | 0.769 | 0.769 |
+|      |MACRO | 0.734 | 0.719 | 0.722 |
+| CE   |MICRO | 0.814 | 0.814 | 0.814 |
+|      |MACRO | 0.789 | 0.727 | 0.753 |
+
+| Loss |           | prec  | rec   | f1    | supp |
+|------|-----------|-------|-------|-------|------|
+| DICE |Decrease   | 0.615 | 0.615 | 0.615 | 13   |
+|      |Increase   | 0.900 | 0.783 | 0.837 | 23   |
+|      |Start      | 0.769 | 0.825 | 0.796 | 97   |
+|      |Stop       | 0.804 | 0.683 | 0.739 | 60   |
+|      |UniqueDose | 0.714 | 0.909 | 0.800 | 22   |
+|      |Unknown    | 0.600 | 0.500 | 0.545 | 6    |
+|  CE  |Decrease   | 0.667 | 0.615 | 0.640 | 13   |
+|      |Increase   | 0.944 | 0.739 | 0.829 | 23   |
+|      |Start      | 0.783 | 0.928 | 0.849 | 97   |
+|      |Stop       | 0.878 | 0.717 | 0.789 | 60   |
+|      |UniqueDose | 0.864 | 0.864 | 0.864 | 22   |
+|      |Unknown    | 0.600 | 0.500 | 0.545 | 6    |
+
+
+### Actor
+|Loss  |      | prec  | rec   | f1    |
+|------|------|-------|-------|-------|
+| DICE |MICRO | 0.896 | 0.896 | 0.896 |
+|      |MACRO | 0.722 | 0.529 | 0.578 |
+| CE   |MICRO | 0.923 | 0.923 | 0.923 |
+|      |MACRO | 0.762 | 0.656 | 0.700 |
+
+| Loss |          | prec  | rec   | f1    | supp |
+|------|----------|-------|-------|-------|------|
+| DICE |Patient   | 0.583 | 0.412 | 0.483 | 17   |
+|      |Physician | 0.917 | 0.974 | 0.945 | 194  |
+|      |Unknown   | 0.667 | 0.200 | 0.308 | 10   |
+| CE   |Patient   | 0.769 | 0.588 | 0.667 | 17   |
+|      |Physician | 0.945 | 0.979 | 0.962 | 194  |
+|      |Unknown   | 0.571 | 0.400 | 0.471 | 10   |
+
+
+
+### Certainty
+|Loss  |      | prec  | rec   | f1    |
+|------|------|-------|-------|-------|
+| DICE |MICRO | 0.882 | 0.882 | 0.882 |
+|      |MACRO | 0.824 | 0.660 | 0.714 |
+| CE   |MICRO | 0.891 | 0.891 | 0.891 |
+|      |MACRO | 0.800 | 0.751 | 0.769 |
+
+
+| Loss |             | prec  | rec   | f1    | supp |
+|------|-------------|-------|-------|-------|------|
+| DICE |Certain      | 0.895 | 0.971 | 0.932 | 175  |
+|      |Conditional  | 0.750 | 0.353 | 0.480 | 17   |
+|      |Hypothetical | 0.826 | 0.655 | 0.731 | 29   |
+|  CE  |Certain      | 0.923 | 0.960 | 0.941 | 175  |
+|      |Conditional  | 0.667 | 0.706 | 0.686 | 17   |
+|      |Hypothetical | 0.810 | 0.586 | 0.680 | 29   |
+
+
+### Negation
+|Loss  |      | prec  | rec   | f1    |
+|------|------|-------|-------|-------|
+| DICE |MICRO | 0.869 | 0.869 | 0.869 |
+|      |MACRO | 0.529 | 0.688 | 0.525 |
+| CE   |MICRO | 0.982 | 0.982 | 0.982 |
+|      |MACRO | 0.743 | 0.623 | 0.662 |
+
+
+|Loss  |           | prec  | rec   | f1    | supp |
+|------|-----------|-------|-------|-------|------|
+| DICE |Negated    | 0.069 | 0.500 | 0.121 | 4    |
+|      |NotNegated | 0.990 | 0.876 | 0.929 | 217  |
+| CE   |Negated    | 0.500 | 0.250 | 0.333 | 4    |
+|      |NotNegated | 0.986 | 0.995 | 0.991 | 217  |
+
+
+
+### Temporality
+|Loss  |      | prec  | rec   | f1    |
+|------|------|-------|-------|-------|
+| DICE |MICRO | 0.787 | 0.787 | 0.787 |
+|      |MACRO | 0.869 | 0.559 | 0.579 |
+| CE   |MICRO | 0.837 | 0.837 | 0.837 |
+|      |MACRO | 0.830 | 0.662 | 0.704 |
+
+| Loss |        | prec  | rec   | f1    | supp |
+|------|--------|-------|-------|-------|------|
+| DICE |Future  | 1.000 | 0.121 | 0.216 | 33   |
+|      |Past    | 0.919 | 0.947 | 0.932 | 131  |
+|      |Present | 0.556 | 0.833 | 0.667 | 54   |
+|      |Unknown | 1.000 | 0.333 | 0.500 | 3    |
+|  CE  |Future  | 0.700 | 0.636 | 0.667 | 33   |
+|      |Past    | 0.932 | 0.939 | 0.935 | 131  |
+|      |Present | 0.690 | 0.741 | 0.714 | 54   |
+|      |Unknown | 1.000 | 0.333 | 0.500 | 3    |
