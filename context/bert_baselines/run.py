@@ -33,6 +33,9 @@ def parse_args():
     val_parser.add_argument(
             "config_file", type=str, help="Path to a yaml config file")
     val_parser.add_argument(
+            "--dataset", type=str, default="dev", choices=["train", "dev"],
+            help="Evaluate on this dataset. Default 'dev'.")
+    val_parser.add_argument(
             "--output_brat", action="store_true", default=False,
             help="""If set, save brat formatted predictions
                     to the predictions/ directory under the logdir.""")
@@ -94,7 +97,7 @@ def main(args):
         dataset = args.command
         if args.command == "validate":
             dataset = "dev"
-        run_kwargs["dataset"] = dataset
+        run_kwargs["dataset"] = args.dataset
         version = get_current_experiment_version(args.config_file)
         run_kwargs["version"] = version
         run_kwargs["output_brat"] = args.output_brat
@@ -192,21 +195,25 @@ def run_validate(config, datamodule, dataset="dev",
             gpus=available_gpus,
             enable_progress_bar=enable_progress_bar
             )
-    if dataset == "dev":
-        val_fn = trainer.validate
+    if dataset == "train":
+        val_dataloader = datamodule.train_dataloader()
+    elif dataset == "dev":
+        val_dataloader = datamodule.val_dataloader()
     elif dataset == "test":
         if datamodule.test_dataloader() is None:
             raise OSError("No test data found. Aborting.")
-        val_fn = trainer.test
+        val_dataloader = datamodule.test_dataloader()
     else:
         raise ValueError(f"Unknown validation dataset '{dataset}'")
-    results = val_fn(model, datamodule=datamodule, verbose=False)[0]
+    #results = val_fn(model, datamodule=datamodule, verbose=False)[0]
+    results = trainer.validate(
+        model, dataloaders=val_dataloader, verbose=False)[0]
     tasks = sorted(datamodule.label_spec.keys())
     md = format_results_as_markdown_table(results, tasks)
     print(md)
 
     if output_brat is True or output_token_masks is True:
-        preds = trainer.predict(model, dataloaders=datamodule.val_dataloader())
+        preds = trainer.predict(model, dataloaders=val_dataloader)
     if output_brat is True:
         train_dataset = datamodule.train
         # List[BratAnnotations]
