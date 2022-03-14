@@ -15,6 +15,30 @@ To run the model:
 ```
 python main.py --config ../configs/local.yaml --mode train --data ../data/spacy/ --bert clinical --use_verbs 
 ```
+### PL-marker with Clinical Bert: entities marked with 'unused0-1', epoch: 04 (Best event f1)
+#### using max-pooling (1 emb) for the levitated verb markers
+
+Results:
+```
+************************ Event Classification ************************
+                      ------- strict -------    ------ lenient -------
+                      Prec.   Rec.    F(b=1)    Prec.   Rec.    F(b=1)
+         Disposition  0.9505  0.8607  0.9034    0.9505  0.8607  0.9034
+       Nodisposition  0.9585  0.9876  0.9728    0.9585  0.9876  0.9728
+        Undetermined  0.8659  0.8161  0.8402    0.8659  0.8161  0.8402
+                      ------------------------------------------------
+     Overall (micro)  0.9496  0.9477  0.9486    0.9496  0.9477  0.9486
+     Overall (macro)  0.9250  0.8881  0.9055    0.9250  0.8881  0.9055
+
+
+```
+
+
+
+
+
+## Older results with solid markers
+
 ### Clinical Bert: entities marked with '@', epoch: 06 (Best event f1)
 
 Results:
