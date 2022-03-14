@@ -1,17 +1,19 @@
 EE task - 23/2/2022
 
-A basic method based on Matching the Blanks and An Improved Baseline for Sentence-level Relation Extraction.
+A basic method based on Matching the Blanks and An Improved Baseline for Sentence-level Relation Extraction.\
+The model is extend with PL-markers, and after experiment, max-pooling (1 emb) produces the best results.\
+Pl markers also has singificantly higher action performance.\
 
 To test the dataset structure and see the returned batch run:
 ```
-python datasets.py --config ../configs/local.yaml --data ../data/spacy/
+python datasets.py --config ../configs/local.yaml --data ../data/spacy/ --bert clinical --use_verbs 
 ```
 You can change the parameters on the config file. 
 
 To run the model:
 
 ```
-python main.py --config ../configs/local.yaml --mode train --data ../data/spacy/
+python main.py --config ../configs/local.yaml --mode train --data ../data/spacy/ --bert clinical --use_verbs 
 ```
 ### Clinical Bert: entities marked with '@', epoch: 06 (Best event f1)
 
