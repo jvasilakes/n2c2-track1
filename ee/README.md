@@ -1,4 +1,4 @@
-EE task - 23/2/2022
+EE task - 14/3/2022
 
 A basic method based on Matching the Blanks and An Improved Baseline for Sentence-level Relation Extraction.\
 The model is extend with PL-markers, and after experiment, max-pooling (1 emb) produces the best results.\
@@ -15,7 +15,7 @@ To run the model:
 ```
 python main.py --config ../configs/local.yaml --mode train --data ../data/spacy/ --bert clinical --use_verbs 
 ```
-### PL-marker with Clinical Bert: entities marked with 'unused0-1', epoch: 04 (Best event f1)
+### PL-marker with Clinical Bert: entities marked with 'unused0-1', verbs with 'unused3-4' epoch: 04 (Best event f1)
 #### using max-pooling (1 emb) for the levitated verb markers
 
 Results:
@@ -29,10 +29,9 @@ Results:
                       ------------------------------------------------
      Overall (micro)  0.9496  0.9477  0.9486    0.9496  0.9477  0.9486
      Overall (macro)  0.9250  0.8881  0.9055    0.9250  0.8881  0.9055
-
-
 ```
 
+Compared with mean-pool and also different embs (2) for start and end, but 1 emb with max performs best.
 
 
 
