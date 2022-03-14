@@ -15,7 +15,7 @@ To run the model:
 ```
 python main.py --config ../configs/local.yaml --mode train --data ../data/spacy/ --bert clinical --use_verbs 
 ```
-### PL-marker with Clinical Bert: entities marked with 'unused0-1', verbs with 'unused3-4' epoch: 04 (Best event f1)
+### PL-marker with Clinical Bert: entities marked with 'unused0-1', verbs with 'unused3-4' epoch: 05 (Best event and best action f1)
 #### using max-pooling (1 emb) for the levitated verb markers
 
 Results:
@@ -23,12 +23,18 @@ Results:
 ************************ Event Classification ************************
                       ------- strict -------    ------ lenient -------
                       Prec.   Rec.    F(b=1)    Prec.   Rec.    F(b=1)
-         Disposition  0.9505  0.8607  0.9034    0.9505  0.8607  0.9034
-       Nodisposition  0.9585  0.9876  0.9728    0.9585  0.9876  0.9728
-        Undetermined  0.8659  0.8161  0.8402    0.8659  0.8161  0.8402
+         Disposition  0.9727  0.8856  0.9271    0.9727  0.8856  0.9271
+       Nodisposition  0.9569  0.9793  0.9680    0.9569  0.9793  0.9680
+        Undetermined  0.8471  0.8276  0.8372    0.8471  0.8276  0.8372
                       ------------------------------------------------
-     Overall (micro)  0.9496  0.9477  0.9486    0.9496  0.9477  0.9486
-     Overall (macro)  0.9250  0.8881  0.9055    0.9250  0.8881  0.9055
+     Overall (micro)  0.9505  0.9477  0.9491    0.9505  0.9477  0.9491
+     Overall (macro)  0.9255  0.8975  0.9108    0.9255  0.8975  0.9108
+
+
+*********************** Context Classification ***********************
+                      ------- strict -------    ------ lenient -------
+                      Prec.   Rec.    F(b=1)    Prec.   Rec.    F(b=1)
+              Action  0.8796  0.7602  0.8155    0.8796  0.7602  0.8155
 ```
 
 Compared with mean-pool and also different embs (2) for start and end, but 1 emb with max performs best.
