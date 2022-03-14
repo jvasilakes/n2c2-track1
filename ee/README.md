@@ -15,7 +15,8 @@ To run the model:
 ```
 python main.py --config ../configs/local.yaml --mode train --data ../data/spacy/ --bert clinical --use_verbs 
 ```
-### PL-marker with Clinical Bert: entities marked with 'unused0-1', verbs with 'unused2-3' epoch: 05 (Best event and best action f1)
+### PL-marker with Clinical Bert: entities marked with 'unused0-1', verbs with 'unused2-3', max 10 verbs 
+#### epoch: 05 (Best event and best action f1)
 #### using max-pooling (1 emb) for the levitated verb markers
 
 Results:
