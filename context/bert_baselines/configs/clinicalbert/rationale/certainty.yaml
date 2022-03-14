@@ -1,0 +1,42 @@
+# Experiment
+description: Bio ClinicalBERT rationale model on the negation task only
+logdir: /home/jav/Documents/Projects/n2c2_2022/n2c2-track1/context/bert_baselines/logs/
+name: clinical_bert/certainty_rationale
+random_seed: 0
+
+# Data
+data_dir: /home/jav/Documents/Projects/n2c2_2022/n2c2-track1/n2c2Track1TrainingData-v3/data_v3/
+max_train_examples: null
+sentences_dir: /home/jav/Documents/Projects/n2c2_2022/n2c2-track1/n2c2Track1TrainingData-v3/segmented/
+tasks_to_load:
+- Certainty
+window_size: 0
+
+# Model
+bert_model_name_or_path: emilyalsentzer/Bio_ClinicalBERT 
+dropout_prob: 0.2
+entity_pool_fn: first-last
+freeze_pretrained: false
+mark_entities: true
+max_seq_length: 250
+model_name: bert-rationale-classifier
+use_entity_spans: true
+
+# Losses
+classifier_loss_fn: cross-entropy
+classifier_loss_kwargs: {}
+mask_loss_fn: controlled-sparsity
+mask_loss_kwargs:
+  selection_rate: 0.13
+  transition_rate: 0.05
+  lagrange_alpha: 0.5
+  lambda_init: 0.0015
+
+# Training
+batch_size: 16
+gradient_clip_val: 10.0
+lr: 3.0e-05
+max_epochs: 30
+sample_strategy: null
+weight_decay: 0.0
+

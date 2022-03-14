@@ -170,7 +170,7 @@ class ExperimentConfig(object):
                     f"Unsupported {param_name} '{param_value}'. Expected one of {valid_values}.")  # noqa
             elif errors == "fix":
                 setattr(self, param_name, default_value)
-                warnings.warn(f"{param_name} set to default `{default_value}`")
+                warnings.warn(f"{param_name} set to default `{default_value}` from unsupported value `{param_value}`.")  # noqa
             else:
                 raise ValueError(f"Unknown errors value {errors}. Expected 'fix' or 'raise'.")  # noqa
 
