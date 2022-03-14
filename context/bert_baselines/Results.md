@@ -55,6 +55,23 @@ pooled output
 | micro   | 0.982 | 0.982 | 0.982 | 0.977 |
 | macro   | 0.743 | 0.623 | 0.662 | 0.523 |
 
+#### Possible contender
+Multi-task learning alongside Action task
+Bio\_ClinicalBERT
++/- 1 sentence window
+Entity markers: use both 
+
+| Neg  | prec  | rec   | f1    |
+|------|-------|-------|-------|
+|MICRO | 0.986 | 0.986 | 0.986 |
+|MACRO | 0.993 | 0.625 | 0.697 |
+
+|Action| prec  | rec   | f1    |
+|------|-------|-------|-------|
+|MICRO | 0.796 | 0.796 | 0.796 |
+|MACRO | 0.768 | 0.680 | 0.711 |
+
+
 ## Temporality
 Bio\_ClinicalBERT
 +/- 1 sentence window
