@@ -34,8 +34,10 @@ def create_app(args):
     filters = Filters()
     labels = sorted(set([d["label"] for d in app.config["data"]]))
     for lab in labels:
-        filters.register_match_fn("label", lab)
-        app.config["state"][lab] = True
+        filters.register_match_fn("label", lab, name=f"label_{lab}")
+        filters.register_match_fn("prediction", lab, name=f"prediction_{lab}")
+        app.config["state"][f"label_{lab}"] = True
+        app.config["state"][f"prediction_{lab}"] = True
 
     # The main page
     @app.route("/", methods=("GET", "POST"))
@@ -198,7 +200,7 @@ class Filters(object):
                     self._filter_registry[group][fn_name] = var
             return self._filter_registry
 
-    def register_match_fn(self, key, label_to_match):
+    def register_match_fn(self, key, label_to_match, name=None):
         """
         `key` is a dict key in a datapoint.
         `label_to_match` is the desired value of datapoint[key].
@@ -207,9 +209,11 @@ class Filters(object):
         """
         reg_fn = register(key, label_to_match)
         match_fn = reg_fn(lambda example: example[key] == label_to_match)
+        if name is None:
+            name = label_to_match
         if key not in self._filter_registry.keys():
             self._filter_registry[key] = {}
-        self._filter_registry[key][label_to_match] = match_fn
+        self._filter_registry[key][name] = match_fn
 
     def __getitem__(self, group, fn_name):
         return self.filters[group][fn_name]
