@@ -100,17 +100,18 @@ def print_preds(tracker, loader, config, epoch, mode='dev'):
             for trig, pos, e_preds, a_preds in res_list:
                 if e_preds[0] == 1:
                     count = print_single(tmp_file, count, ievent[0], pos, trig) 
-                if e_preds[2] == 1:
-                    count = print_single(tmp_file, count, ievent[2], pos, trig)
-                if e_preds[1] == 1: #Disposition
+                if e_preds[1] == 1:
+                    count = print_single(tmp_file, count, ievent[1], pos, trig)
+                if e_preds[2] == 1: #Disposition
                     for j, pred in enumerate(a_preds):
                         if pred == 1:
-                            _ = print_single(tmp_file, count, ievent[1], pos, trig)
+                            _ = print_single(tmp_file, count, ievent[2], pos, trig)
                             tmp_file.write('A{}\tAction E{} {}\n'.format(count, count,iaction[j]))
                             count +=1
                     if np.sum(a_preds) == 0: ## meaning no action identified
-                        count = print_single(tmp_file, count, ievent[1], pos, trig)
+                        count = print_single(tmp_file, count, ievent[2], pos, trig)
 #                         print(fname)
+
 
                         
 def print_cases(samples, preds, dev_loader, config, epoch):
@@ -128,20 +129,21 @@ def print_cases(samples, preds, dev_loader, config, epoch):
             fout.write(template.format(eid, pred_tuple, sent))
         fout.write("Epoch {}\n".format(epoch))
     
+def print_start(epoch, state, mode, secs, disp_count):
+    if mode == 'train':
+        print('---------- Epoch: {:02d} ----------'.format(epoch))    
+    template = '\t{:<5} / LOSS = {:10.4f}  Time {}  Dispotion counts: {}/{}/{}/{}'
+    print(template.format(mode.upper(), state['total'] if state['total'] else 0.0, 
+                          humanized_time(secs), disp_count[0], disp_count[1],
+                          disp_count[2], disp_count[3]))
+    
 def print_performance(epoch, state, typ, mon, secs, name='train', disp_count = None):
-    if name == 'train' and typ== 'events':
-        print('---------- Epoch: {:02d} ----------'.format(epoch))
+
     if typ== 'events':    
-        template = '\t{:<5} / LOSS = {:10.4f}  Time {}  Dispotion counts: {}/{}/{}/{}'
-        print(template.format(name.upper(), state['total'] if state['total'] else 0.0, 
-                              humanized_time(secs), disp_count[0], disp_count[1],
-                              disp_count[2], disp_count[3]))
         template = 'Events : Macro_Pr = {:.04f} | Macro_Re = {:.04f} | Macro_F1  = {:.04f} | Micro_F1 = {:.04f} <<<'
     else:
         template = 'Actions: Macro_Pr = {:.04f} | Macro_Re = {:.04f} | Macro_F1  = {:.04f} | Micro_F1 = {:.04f}'
     print(template.format(mon['macro_pr'],mon['macro_re'], mon['macro_f1'], mon['micro_f1']))
-#     template = '      | NoDisp_F1 = {:.04f} | Dispo_F1 = {:.04f} | Undet_F1  = {:.04f}'
-#     print(template.format(monitor['NoDisp_f1'], monitor['Disp_f1'], monitor['Und_f1']))
 
 class Tee(object):
     """
@@ -163,29 +165,33 @@ class Tee(object):
 def print_options(params):
     print('''\nParameters:
             - Verbs             {}
+            - Bert model        {}
             - batch_size        {}
             - grad accumulation {}
             - Learning rate     {}
             - Dropout           {}
+            - Ent markers start {}\tend {} 
+            - Max seq len       {}\t Max verbs {}
             
             - Freeze Encoder    {}\tAutoscalling: {}  
             - Encoder Dim       {}\tLayers {}
             - Hidden dim        {}
             - Weight Decay      {}
             - Gradient Clip     {}
-            - Max sen len       {}
+            
             - Epoch             {}\tWarmup Epochs     {}
             - Early stop        {}\tPatience = {}
             - Train/Dev         {}, {}
             - Save folder       {}
             '''.format(
-                    params['verbs'], params['batch_size'],  params['accumulate_batches'],
-                    params['lr'],  params['dropout'], 
+                    params['use_verbs'], params['bert'], params['batch_size'],  
+                    params['accumulate_batches'], params['lr'],  params['dropout'],
+                    params['ent_tok0'],params['ent_tok1'], 
+                    params['max_tok_len'], params['max_pair_len'],
                     params['freeze_pretrained'], params['autoscalling'],
                     params['enc_dim'], params['enc_layers'], 
                     params['hidden_dim'], 
                     params['weight_decay'], params['clip'],
-                    params['max_sen_len'],
                     params['epochs'], params['warmup_epochs'], 
                     params['early_stop'], params['patience'],
                     params['train_data'], params['dev_data'], params['output_folder'],

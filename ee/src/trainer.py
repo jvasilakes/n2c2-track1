@@ -44,77 +44,45 @@ class Trainer(BaseTrainer):
         self.save_path = os.path.join(self.config['model_folder'], 'bert.model')
         self.scaler = GradScaler()
 
-#     def optimise(self):
-#         """
-#         what is the purpose
-#         """
-#         print('Why I am inside optimise?')
-#         exit()
-#         return 
 
         
     def calculate_stats(self, y_true, y_sigmoid, typ, keyword=''):
         y_pred =  np.array(y_sigmoid > self.config['threshold'], dtype=float)
-        if typ =='actions':
-            print('\t{} eval: y_pred size {} y_pred sum {}'.format(keyword, y_pred.shape, np.sum(y_pred)))
-#             print(typ, 'y_pred size',y_pred.shape, 'y_pred sum', np.sum(y_pred))
         mi_f1 = f1_score(y_true, y_pred, average='micro')
-#         res = classification_report(y_true, y_pred, output_dict=True, zero_division=1)
-#         perf = {self.vocab[typ]:res[str(i)]['f1-score'], for i in range(0, len(res))}
         pr, re, f1, _ = precision_recall_fscore_support(y_true, y_pred, average='macro', zero_division=1)
         return {'micro_f1':mi_f1, 'macro_pr':pr , 'macro_re':re, 'macro_f1':f1,'pred':y_pred}
-        
+
+
     def calculate_performance(self, epoch, tracker, time_, mode='train'):
         tracker['total'] = np.mean(tracker['total'])
         perf = {}
-#         for typ in ['events', 'actions']:
-#             y_true = np.vstack([entry[1] for entry in tracker[typ]]) 
-#             y_sigmoid = np.vstack([entry[0] for entry in tracker[typ]])
-#             perf[typ] = self.calculate_stats(y_true, y_sigmoid, typ)
-#             print_performance(epoch, tracker, typ, perf[typ], time_, name=mode)
-        ## Events
-        y_true_ev = np.vstack([entry[1] for entry in tracker['events']]) 
+        ##Disp counting
+        y_true_ev = np.vstack([entry[1] for entry in tracker['events']])
+        y_true_ac = np.vstack([entry[1] for entry in tracker['actions']])
+        y_sigmoid_ac = np.vstack([entry[0] for entry in tracker['actions']])
         y_sigmoid_ev = np.vstack([entry[0] for entry in tracker['events']])
+        true_dispo = y_true_ev[:,2] == 1
+#         pred_dispo1 = np.sum(y_sigmoid_ac > self.config['threshold'], 1) > 0 #based on actions
+        pred_dispo2 = y_sigmoid_ev[:,2] > self.config['threshold']
+#         pred_dispo = np.logical_or(pred_dispo1, pred_dispo2) # they have sthe same shape but...
+        total_dispo = np.logical_or(true_dispo, pred_dispo2)
+        disp_count=(np.sum(true_dispo),np.sum(pred_dispo2),np.sum(total_dispo),len(true_dispo))
+        print_start(epoch, tracker, mode, time_, disp_count)
+                ##  Events
         perf['events'] = self.calculate_stats(y_true_ev, y_sigmoid_ev, 'events')
-        true_dispo = y_true_ev[:,1] == 1 
-        pred_dispo = y_sigmoid_ev[:,1] > self.config['threshold']
-        fail_dispo =  np.logical_and(y_true_ev[:,1] == 1,y_sigmoid_ev[:,1] < self.config['threshold'])
-        total_dispo = np.logical_or(true_dispo, pred_dispo)
-        disp_count=(np.sum(true_dispo),np.sum(pred_dispo),np.sum(total_dispo),len(true_dispo))
-        print_performance(epoch, tracker, 'events', perf['events'], time_, mode, disp_count)
-        ## Pred + True
+        print_performance(epoch, tracker, 'events', perf['events'], time_, mode)
+                ## Actions All
+        perf['actions_all'] = self.calculate_stats(y_true_ac, y_sigmoid_ac, 'actions','All')
+        print_performance(epoch, tracker, 'actions', perf['actions_all'], time_, mode)
+                ## Pred + True
         y_true_ac = np.vstack([entry[1] for entry in tracker['actions']])[total_dispo] 
         y_sigmoid_ac = np.vstack([entry[0] for entry in tracker['actions']])[total_dispo]
         perf['actions'] = self.calculate_stats(y_true_ac, y_sigmoid_ac, 'actions', 'Pred+True')
         print_performance(epoch, tracker, 'actions', perf['actions'], time_, mode)
-        ## All events
-        y_true_ac = np.vstack([entry[1] for entry in tracker['actions']]) 
-        y_sigmoid_ac = np.vstack([entry[0] for entry in tracker['actions']])
-        perf['actions_all'] = self.calculate_stats(y_true_ac, y_sigmoid_ac, 'actions','All')
-        print_performance(epoch, tracker, 'actions', perf['actions_all'], time_, mode)
-        # Pred Disposition
-        y_true_ac = np.vstack([entry[1] for entry in tracker['actions']])[total_dispo] 
-        y_sigmoid_ac = np.vstack([entry[0] for entry in tracker['actions']])
-        y_sigmoid_ac[fail_dispo] -= 1
-        y_sigmoid_ac = y_sigmoid_ac[total_dispo] 
-        perf['actions_script'] = self.calculate_stats(y_true_ac, y_sigmoid_ac, 'actions','Script')
-        print_performance(epoch, tracker, 'actions', perf['actions_script'], time_, mode)
-        ## True disposition
-        y_true_ac = np.vstack([entry[1] for entry in tracker['actions']])[true_dispo] 
-        y_sigmoid_ac = np.vstack([entry[0] for entry in tracker['actions']])[true_dispo]
-        perf['actions_true'] = self.calculate_stats(y_true_ac, y_sigmoid_ac, 'actions', 'True')
-        print_performance(epoch, tracker, 'actions', perf['actions_true'], time_, mode)
-        ##
+                ####
         tracker['event_preds'] = perf['events']['pred']
         tracker['action_preds'] = perf['actions_all']['pred']
-#         if mode!='train':
-#             wrong = np.sum(y_true,1)!=np.sum(y_pred,1)
-#             samples = np.concatenate(tracker['samples'])[wrong]
-#             tracker['samples'] = samples
-#             tracker['preds'] = y_pred[wrong]
-# #             print('Wrong samples', samples)
         return perf['events']
-
 
     @staticmethod
     def init_tracker():
