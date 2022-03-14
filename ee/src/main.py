@@ -32,7 +32,7 @@ def main(args):
     
     config = load_config(args.config)
     setup(args, config)
-    config['mode'] = args.mode
+    
     print('Setting the seed to {}'.format(config['seed']))
     set_seed(config['seed'])
     config['model_folder'], config['exp'] = setup_log(config, mode=config['mode'], 
@@ -43,26 +43,32 @@ def main(args):
     trainer = load_trainer(train_loader, val_loader, train_data, config, device)
     _ = trainer.run()
 def setup(args, config):
-    
+    config['mode'] = args.mode
+    config['bert'] = args.bert
+    config['use_verbs'] = args.use_verbs
     config['train_data'] = args.data + 'train_data.txt'
     config['dev_data'] = args.data + 'dev_data.txt'
     
 def load_data(config):
 
-#     tokenizer = PreTrainedTokenizerFast.from_pretrained('bert-base-uncased') ##P
-#     tokenizer.pad_token = "[PAD]" ##P
-#     tokenizer = AutoTokenizer.from_pretrained('bert-base-uncased') ##P
-    tokenizer = AutoTokenizer.from_pretrained("emilyalsentzer/Bio_ClinicalBERT")
 #     tokenizer = AutoTokenizer.from_pretrained('roberta-large')
-    train_data_ = BertDataset(config['train_data'], config['max_sen_len'], mode='train', 
-                     tokenizer = tokenizer, verbs= config['verbs'], dummy = False)
+    if config['bert'] == 'base':
+        tokenizer = AutoTokenizer.from_pretrained('bert-base-uncased') ##P
+    elif config['bert'] =='clinical':
+        tokenizer = AutoTokenizer.from_pretrained("emilyalsentzer/Bio_ClinicalBERT")
+    else:
+        print('Invalid BERT tokenizer')
+        exit(1)
+
+    train_data_ = BertDataset(config['train_data'],mode='train',tokenizer = tokenizer,
+                              use_verbs= config['use_verbs'], config=config)
     print('Train data:',len(train_data_))
     train_loader_ = DataLoader(train_data_, batch_size=config['batch_size'],
                            shuffle=True,
                            collate_fn=Collates(),
                            num_workers=0)
-    dev_data_ = BertDataset(config['dev_data'], config['max_sen_len'], mode='dev',
-                          tokenizer = tokenizer, verbs= config['verbs'], dummy = False)
+    dev_data_ = BertDataset(config['dev_data'],mode='dev',tokenizer = tokenizer, 
+                            use_verbs= config['use_verbs'], config=config)
     print('Dev data:', len(dev_data_))
     
     dev_loader_ = DataLoader(dataset=dev_data_, batch_size=config['batch_size'],
@@ -87,5 +93,7 @@ if __name__ == "__main__":
     parser.add_argument('--config', type=str)
     parser.add_argument('--mode', type=str, choices=['train', 'test'])
     parser.add_argument('--data', type=str)
+    parser.add_argument('--bert', type=str, choices=['base', 'clinical'])
+    parser.add_argument('--use_verbs', action='store_true', help='Use verbs')
     args = parser.parse_args()
     main(args)

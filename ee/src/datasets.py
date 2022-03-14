@@ -17,58 +17,25 @@ import heapq
 from tqdm import tqdm
 import numpy as np
 from collections import OrderedDict
+import itertools
 
-max_tok_len = 300
 class BertDataset(Dataset):
-    
-    def add_no_overlap(self, sents, ord_dict, idx):
-        keys = list(ord_dict.keys())
-        new_sents = sents
-        offset = 0
-        cur_st, cur_en = keys[0]
-        cur_symb = ord_dict[(cur_st, cur_en)]
-        for i in range(1, len(ord_dict)):
-            st , en = keys[i]
-            symb = ord_dict[(st,en)]
-            if st < cur_en: #There is overlap with next
-                if symb=='@': #keep next
-#                     print('Overlap between verb:<%s> and ent:<%s> id:%s' % (sents[cur_st:cur_en], sents[st:en], idx))
-                    cur_st, cur_en, cur_symb = st, en, symb
-                elif cur_symb!='@': #keep next
-                    print('Overlap between verbs?')
-            elif st == cur_en + 1 and symb!='@' and cur_symb!='@':
-                cur_en = en
-                
-            else: ## add to sent
-                new_st, new_en = cur_st+offset, cur_en+offset
-                new_sents = new_sents[:new_st] + cur_symb+ ' '+ \
-                        new_sents[new_st:new_en] + ' '+cur_symb + new_sents[new_en:]
-                if cur_symb =='@':
-                    new_pos = (new_st+2, new_en+2)
-                cur_st, cur_en, cur_symb = st, en, symb
-                offset +=4
-                
-        new_st, new_en = cur_st+offset, cur_en+offset
-        new_sents = new_sents[:new_st] + cur_symb+ ' '+ \
-                new_sents[new_st:new_en] + ' '+cur_symb + new_sents[new_en:]
-        if cur_symb =='@':
-            new_pos = (new_st+2, new_en+2)
-        return new_sents, new_pos
-                
-                   
+
     
  
-    def __init__(self, path, max_sen_len=None, mode='train', 
-                 tokenizer = None, verbs = False, dummy = False):
+    def __init__(self, path, mode='train', tokenizer = None, use_verbs = False, config=None):
         super().__init__()
-        self.max_sen_len = max_sen_len
         self.mode = mode
         self.data = []
         self.tokenizer = tokenizer
-        self.event_vocab = {'NoDisposition':0,'Disposition':1, 'Undetermined':2}
+        self.event_vocab = {'NoDisposition':0, 'Undetermined':1, 'Disposition':2}
         self.ievent_vocab = {v: k for k, v in self.event_vocab.items()}
         self.action_vocab = {'Start':0,'Stop':1,'Increase':2,'Decrease':3, 'OtherChange':4, 'UniqueDose':5, 'Unknown':6}
         self.iaction_vocab = {v: k for k, v in self.action_vocab.items()}
+        #
+        self.max_seq_len = config['max_tok_len']
+        self.max_pair_len = config['max_pair_len'] if use_verbs else 0
+        self.max_ent_len = self.max_pair_len*2
         with open(path) as infile:
             for item in tqdm(infile, desc='Loading ' + self.mode.upper()):
                 sample = json.loads(item)
@@ -79,13 +46,10 @@ class BertDataset(Dataset):
                 pos = (sample['trig']['s'], sample['trig']['e'])
                 ident =  sample['trig']['name'] +'/'+ sample['fname']
                 ## Adding special tokens
-                if verbs:
-                    to_add = { (verb['st'],verb['en']): '#' for verb in sample['verbs']} 
-                else: 
-                    to_add = {}
-                to_add[pos] = '@'
+                to_add = {(verb['st'],verb['en']): verb['t'] for verb in sample['verbs']} if use_verbs else {}
+#                 to_add[pos] = '@'
                 od = OrderedDict(sorted(to_add.items()))
-                sentences, pos = self.add_no_overlap(sentences, od, ident)
+                #sentences, pos = self.add_no_overlap(sentences, od, ident)
                 event_labels = np.zeros((len(self.event_vocab),), 'i')
                 for ev in sample['events']: # Multi label
                     event_labels[self.event_vocab[ev]] = 1
@@ -98,50 +62,83 @@ class BertDataset(Dataset):
                     print('Big error, we have action label but no Disposition event', ident)
                 elif np.sum(action_labels)==0 and event_labels[self.event_vocab['Disposition']]==1:
                     print('Big error, we have Disposition but no action label', ident)
-                tokenized = self.tokenizer.encode_plus(sentences, add_special_tokens = True, truncation= False, return_offsets_mapping=True, 
-                                                       padding="max_length", max_length=max_tok_len, return_attention_mask=True, return_tensors='pt')
-                tok_len = tokenized['input_ids'].size()[1]
-                count = 0
-                while tok_len > max_tok_len: 
-#                     print('Unacceptable token length {} > {}.\n File {}, text {}'.format(tok_len, max_tok_len, sample['fname'], sample['text']))
-                    per_throw = min(1 - max_tok_len/tok_len + 0.2, 0.8)
-                    sentences, pos = self.sent_trunc(sentences, pos, per_throw) 
-                    tokenized = self.tokenizer.encode_plus(sentences, add_special_tokens = True, truncation= False, return_offsets_mapping=True, 
-                                                           padding="max_length", max_length=max_tok_len, return_attention_mask=True, return_tensors='pt')
-                    tok_len = tokenized['input_ids'].size()[1]
-                    count +=1
-#                     print('tok_len: ',tok_len, 'count:', count)
-                offsets = tokenized["offset_mapping"].squeeze() 
-                m_tok = self.find_tokens(pos, offsets,sentences) #2 cases where it doesnt work. we should work with tokens
-#                 out_tok = [m_tok[0] - 1]
-                self.data.append([event_labels, action_labels,  ident, orig_pos, m_tok, tokenized['input_ids'].squeeze(), tokenized['attention_mask'].squeeze(), tokenized['token_type_ids'].squeeze()])
+                ## Tokenizing
+                words = sentences.split(' ')
+                tokens = [self.tokenizer.tokenize(w) for w in words]
+                subwords = [w for li in tokens for w in li]
+                # maxL = max(maxL, len(subwords))
+                subword2token = list(itertools.chain(*[[i] * len(li) for i, li in enumerate(tokens)])) # [0, 1, 1, 2, 3, 3, ..]
+                token2subword = [0] + list(itertools.accumulate(len(li) for li in tokens)) # [0, 1, 3, 4,..] caution error if sents start with ' '
+                st_ent = token2subword[pos[0]] 
+                en_ent = token2subword[pos[1]] 
+                ent_len = en_ent - st_ent
+                left_len = st_ent
+                right_len = len(subwords) - en_ent 
+                sent_len = right_len + left_len + ent_len
+                if sent_len > self.max_seq_len -4:
+                    to_cut = sent_len - self.max_seq_len +4 
+                    left_len, right_len = per_split(left_len, right_len, to_cut)
+                offset_left = st_ent-left_len ## offset in sub tokens
+                offset_right = en_ent+right_len
+#                 target_tokens = subwords[st_ent-left_len:st_ent] + ['[unused0]'] + subwords[st_ent:en_ent] + ['[unused1]'] + subwords[en_ent:en_ent+right_len]
+                target_tokens = subwords[st_ent-left_len:st_ent] + [config['ent_tok0']] + subwords[st_ent:en_ent] + [config['ent_tok1']] + subwords[en_ent:en_ent+right_len]
+                target_tokens = [self.tokenizer.cls_token] + target_tokens[:self.max_seq_len-4] + [self.tokenizer.sep_token]
+                assert(len(target_tokens) <= self.max_seq_len)
+                verbs, filtered = [], 0
+                for st, en in to_add.keys():
+                    tok_st = token2subword[st] 
+                    tok_en = token2subword[en]
+                    if tok_st < offset_left or tok_en > offset_right :
+                        filtered +=1
+                        continue
+                    mini_offset = 1
+                    if tok_st >= en_ent:
+                        mini_offset +=2
+                    elif tok_en <= en_ent:
+                        mini_offset +=0
+                    else:   # there is overlap with entity
+                        print('Verb {} is overlapping with entity fname {}'.format(to_add[(st,en)], ident))
+                        continue 
+                    new_st = tok_st - offset_left + mini_offset
+                    new_en = tok_en -offset_left + mini_offset
+                    verbs.append((new_st,new_en))
+#                     verbs.append(target_tokens[new_st:new_en])
+                m_tok = (left_len+2, left_len+2+ent_len)
+#                 if target_tokens[m_tok[0]:m_tok[1]] != sample['trig']['name']:
+#                     print('Ent {} != name {}'.format(target_tokens[m_tok[0]:m_tok[1]], sample['trig']['name']))
+                ## Converting to ids
+                input_ids = self.tokenizer.convert_tokens_to_ids(target_tokens)
+                L = len(input_ids)
+                input_ids += [self.tokenizer.pad_token_id] * (self.max_seq_len - len(input_ids))
 
-    def sent_trunc(self, sentences, pos, per):
-        sent_len = len(sentences)
-        win = math.ceil(((1- per) * sent_len)/2)
-        st = max(pos[0] - win,0)
-        en = min(pos[1]+win,sent_len)
-        return sentences[st:en], (pos[0] - st, pos[1] - st)
-        
-    def find_tokens(self, pos, offsets,sentences):
-        i, first, last = 0, -1, -1
-        error = False
-        while i<max_tok_len:
-            if offsets[i][0] >= pos[0]:
-                first = i
-                break
-            else:
-                i +=1
-        while i<max_tok_len:
-            if offsets[i][1] >= pos[1]:
-                last = i
-                break
-            else:
-                i +=1
-        if first ==-1 or last==-1 or i>=max_tok_len:
-            print("Error first=%d last=%d i=%d",first,last,i)
-        return first,last
-    ## ~  
+                attention_mask = torch.zeros((self.max_ent_len+self.max_seq_len, self.max_ent_len+self.max_seq_len), dtype=torch.int64)
+                attention_mask[:L, :L] = 1
+                ## maybe shuffle verbs before
+                verbs = verbs[:self.max_pair_len]  ## will be 0 if verbs not allowed
+                verb_count = len(verbs)
+                input_ids = input_ids + [3] * (len(verbs)) + [self.tokenizer.pad_token_id] * (self.max_pair_len - len(verbs))
+                input_ids = input_ids + [4] * (len(verbs)) + [self.tokenizer.pad_token_id] * (self.max_pair_len - len(verbs)) # for debug 
+                
+                position_ids = list(range(self.max_seq_len)) + [0] * self.max_ent_len 
+                token_type_ids = [0] * self.max_seq_len  + [0] * self.max_ent_len 
+                
+                for i, pos in enumerate(verbs):
+                    w1 = i + self.max_seq_len
+                    w2 = w1 + self.max_pair_len
+                    position_ids[w1] = pos[0]
+                    position_ids[w2] = pos[1] -1 # I think -1 necessary to point to true end
+                    
+                    for xx in [w1,w2]:
+                        for yy in [w1,w2]:
+                            attention_mask[xx,yy] =1
+                        attention_mask[xx, :L] = 1
+                    
+                ## check if you need att_left or att_right
+                
+                self.data.append([event_labels, action_labels,  ident, orig_pos, m_tok, 
+                                  verb_count, torch.tensor(input_ids), attention_mask,
+                                  torch.tensor(token_type_ids), torch.tensor(position_ids)])
+
  
     def __len__(self):
         return len(self.data)
@@ -149,7 +146,26 @@ class BertDataset(Dataset):
     def __getitem__(self, index):
         return_list = [index] + self.data[index]
         return return_list
+    
 
+def per_split(left_len, right_len, to_cut):
+    orig_left, orig_right =  left_len, right_len
+    if right_len>0 and left_len>0:
+        per = right_len / (right_len+left_len) 
+        right_cut = math.ceil(per*to_cut)
+        left_cut = math.ceil((1-per)*to_cut)
+    elif right_len==0:
+        left_cut, right_cut = to_cut, 0
+    else:
+        right_cut, left_cut = to_cut, 0
+    
+    right_len -= right_cut
+    left_len -= left_cut
+    if right_len<0 or left_len<0:
+        print('Huge error during split, (orig, cut, after) left ({},{},{}), right ({},{},{})'.format(
+            orig_left, left_cut, left_len, orig_right, right_cut, right_len ))
+        exit()
+    return left_len, right_len
 
 class Collates():
     def __init__(self, batch_first=True):
@@ -160,18 +176,20 @@ class Collates():
         allow dynamic padding based on the current batch
         """
         data = list(zip(*data))
-        indx, elabel, alabel, names, opos = data[:5]
+        indx, elabel, alabel, names, opos, token_out, verb_counts  = data[:7]
         indx = torch.from_numpy(np.stack(indx)).long()
         elabels = torch.from_numpy(np.stack(elabel)).long()
         alabels = torch.from_numpy(np.stack(alabel)).long()
-        token_out = data[5]
         token_out = torch.from_numpy(np.stack(token_out)).long()
-        bert_batch_seqs = pad_sequence(data[6], batch_first=True)
-        bert_batch_mask = pad_sequence(data[7], batch_first=True)
-        bert_batch_type = pad_sequence(data[8], batch_first=True)
+        verb_counts = torch.from_numpy(np.stack(verb_counts)).long()
+        bert_batch_seqs = pad_sequence(data[7], batch_first=True)
+        bert_batch_mask = pad_sequence(data[8], batch_first=True)
+        bert_batch_type = pad_sequence(data[9], batch_first=True)
+        bert_batch_pos = pad_sequence(data[10], batch_first=True)
         output = {'indxs':indx, 'elabels':elabels, 'alabels':alabels, 'names':names, 
-                  'old_pos':opos, 'input_ids':bert_batch_seqs,
-                  'mask':bert_batch_mask, 'type':bert_batch_type, 'tok_out':token_out}
+                  'old_pos':opos, 'verb_counts': verb_counts, 
+                  'input_ids':bert_batch_seqs,'mask':bert_batch_mask,
+                  'type':bert_batch_type, 'tok_out':token_out, 'pos_ids':bert_batch_pos}
         return output
 
     def __call__(self, batch):
@@ -192,15 +210,24 @@ def main(args):
 #     tokenizer.pad_token = "[PAD]" ##P
     config['train_data'] = args.data + 'train_data.txt'
     config['dev_data'] = args.data + 'dev_data.txt'
-    tokenizer = AutoTokenizer.from_pretrained('bert-base-uncased') ##P
+    config['bert'] = args.bert
+    config['use_verbs'] = args.use_verbs
     
-    train_data_ = BertDataset(config['train_data'], config['max_sen_len'], mode='train', 
-                 tokenizer = tokenizer, verbs=config['verbs'], dummy = False)
+    if config['bert'] == 'base':
+        tokenizer = AutoTokenizer.from_pretrained('bert-base-uncased') ##P
+    elif config['bert'] =='clinical':
+        tokenizer = AutoTokenizer.from_pretrained("emilyalsentzer/Bio_ClinicalBERT")
+    else:
+        print('Invalid bert model')
+        exit(1)
+    
+    train_data_ = BertDataset(config['train_data'], mode='train', tokenizer = tokenizer, 
+                              use_verbs=config['use_verbs'], config=config)
     print('Train data:',len(train_data_))
     train_loader_ = DataLoader(train_data_, batch_size=config['batch_size'], 
                                shuffle=True, collate_fn=Collates(), num_workers=0)
-    dev_data_ = BertDataset(config['dev_data'], config['max_sen_len'], mode='dev',
-                          tokenizer = tokenizer,verbs=config['verbs'], dummy = False)
+    dev_data_ = BertDataset(config['dev_data'],  mode='dev',tokenizer = tokenizer, 
+                            use_verbs=config['use_verbs'], config=config)
     print('Dev data:', len(dev_data_))
     dev_loader_ = DataLoader(dataset=dev_data_, batch_size=config['batch_size'],
                            shuffle=True, collate_fn=Collates(), num_workers=0)
@@ -217,9 +244,9 @@ def print_batch(batch, tokenizer):
         ids = batch['input_ids'][i][batch['tok_out'][i][0]:batch['tok_out'][i][1]+1]
         tokens.append(tokenizer.convert_ids_to_tokens(ids))
         st_id = batch['input_ids'][i][batch['tok_out'][i][0] -1]
-        en_id = batch['input_ids'][i][batch['tok_out'][i][1] +1]
+        en_id = batch['input_ids'][i][batch['tok_out'][i][1] ]
         tok_out = tokenizer.convert_ids_to_tokens([st_id, en_id])
-        if (tok_out[0] != '@' or tok_out[1] != '@'):
+        if (tok_out[0] != '[unused0]' or tok_out[1] != '[unused1]'):
             print('Error, output token ', tok_out, ' != @')
         toks = tokenizer.convert_ids_to_tokens(batch['input_ids'][i])
         sentences.append(tok_to_sent(toks))
@@ -228,7 +255,7 @@ def print_batch(batch, tokenizer):
     sleep(20)
     
 def tok_to_sent(tokens):
-    cl_tok = list(filter(lambda tok: tok not in ['[PAD]', '[CLS]','[SEP]'], tokens))
+    cl_tok = list(filter(lambda tok: tok not in [ '[PAD]','[CLS]','[SEP]'], tokens))
     new_tok, cur_tok = [], cl_tok[0]
     for tok in cl_tok[1:]:
         if len(tok)>1 and tok[0:2]=='##':
@@ -246,6 +273,8 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--config', type=str)
     parser.add_argument('--data', type=str)
+    parser.add_argument('--bert', type=str, choices=['base', 'clinical'])
+    parser.add_argument('--use_verbs', action='store_true', help='Use verbs')
     args = parser.parse_args()
     main(args)
 
