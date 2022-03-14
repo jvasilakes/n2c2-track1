@@ -107,7 +107,7 @@ class RatioLoss(torch.nn.Module):
 
 class ControlledSparsityLoss(torch.nn.Module):
     """
-    Stochasitic Mask Loss
+    Stochastic Mask Loss
     "Interpretable Neural Predictions with Differentiable Binary Variables"
     https://aclanthology.org/P19-1284/
 
@@ -149,12 +149,11 @@ class ControlledSparsityLoss(torch.nn.Module):
 
     def forward(self, zs, z_dists, token_mask):
         l0 = self.L0(z_dists, token_mask)
-        constrained_l0 = self.constrain(l0, self.selection_rate, "L0")
+        C_l0 = self.constraint_loss(l0, self.selection_rate, "L0")
         lasso = self.lasso(z_dists, token_mask)
-        constrained_lasso = self.constrain(
+        C_lasso = self.constraint_loss(
                 lasso, self.transition_rate, "lasso")
-        return (self.gamma * constrained_l0) + \
-                ((1 - self.gamma) * constrained_lasso)  # noqa: E127
+        return (self.gamma * C_l0) + ((1 - self.gamma) * C_lasso)
         return constrained_lasso
 
     def __repr__(self):
@@ -197,7 +196,7 @@ class ControlledSparsityLoss(torch.nn.Module):
         lasso = lasso.sum(dim=1) / token_mask.sum(dim=1)
         return lasso.mean()
 
-    def constrain(self, value, target, constraint_name):
+    def constraint_loss(self, value, target, constraint_name):
         """
         Compute constraint of value to target using lagrange multiplier
         at self.lambdas[constraint_name]
@@ -208,7 +207,7 @@ class ControlledSparsityLoss(torch.nn.Module):
         ct_ma = self.lagrange_alpha * self.c_mas[-1] + \
                 (1 - self.lagrange_alpha) * ct_hat  # noqa
         self.c_mas.append(ct_ma)
-        # Don't backprop the difference from the moving average
+        # Don't backprop through the moving average.
         ct = ct_hat + (ct_ma.detach() - ct_hat.detach())
         # Update the lagrangians
         new_lambda = self.lambdas[constraint_name]
