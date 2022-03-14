@@ -1,13 +1,13 @@
 # Experiment
-description: rationale model test experiment with v2 data release
+description: rationale model test experiment with v3 data release
 logdir: logs/
-name: test_rationale
+name: test_rationale_loss
 random_seed: 0
 
 # Data
-data_dir: /home/u14498jv/Documents/Projects/n2c2-track1/n2c2Track1TrainingData-v2/data_v2
+data_dir: /home/u14498jv/Documents/Projects/n2c2-track1/n2c2Track1TrainingData-v3/data_v3
 max_train_examples: 10
-sentences_dir: /home/u14498jv/Documents/Projects/n2c2-track1/n2c2Track1TrainingData-v2/segmented
+sentences_dir: /home/u14498jv/Documents/Projects/n2c2-track1/n2c2Track1TrainingData-v3/segmented
 tasks_to_load:
 - Certainty
 window_size: 0
@@ -22,11 +22,17 @@ max_seq_length: 256
 model_name: bert-rationale-classifier
 use_entity_spans: true
 
+# Losses
+classifier_loss_fn: cross-entropy
+classifier_loss_kwargs: {}
+mask_loss_fn: controlled-sparsity
+mask_loss_kwargs: {}
+
 # Training
-batch_size: 2 
-class_weights: balanced
+batch_size: 2
 gradient_clip_val: 10.0
 lr: 0.001
 max_epochs: 2
-sample_strategy: none
+sample_strategy: null
 weight_decay: 0.0
+

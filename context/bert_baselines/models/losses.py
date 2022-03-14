@@ -113,7 +113,7 @@ class ControlledSparsityLoss(torch.nn.Module):
 
     Default hyperparameters and compute code taken from accompanying code at
     https://github.com/bastings/interpretable_predictions/blob/master/latent_rationale/beer/models/latent.py#L17  # noqa
-    
+
     Constrained optimization code based on Algorithm 1 of
     "Taming VAEs"
     https://arxiv.org/abs/1810.00597
@@ -126,15 +126,22 @@ class ControlledSparsityLoss(torch.nn.Module):
             lagrange_lr=0.05,
             lambda_init=1.0,
             lambda_min=1e-12,
-            lambda_max=5.0):
+            lambda_max=5.0,
+            gamma=0.5):
         super().__init__()
+        # Average % of words in input to select
         self.selection_rate = selection_rate
+        # Average % of transitions from masked to/from unmasked
         self.transition_rate = transition_rate
+        # How much weight to give the current moving average when adding
+        #   the constraint from a new batch.
         self.lagrange_alpha = lagrange_alpha
         self.lagrange_lr = lagrange_lr
         self.lambda_init = lambda_init
         self.lambda_min = lambda_min
         self.lambda_max = lambda_max
+        # total_loss = (gamma * L0) + ((1-gamma) * lasso)
+        self.gamma = gamma
         self.lambdas = {
                 "L0": torch.tensor(lambda_init),
                 "lasso": torch.tensor(lambda_init)}
@@ -146,7 +153,8 @@ class ControlledSparsityLoss(torch.nn.Module):
         lasso = self.lasso(z_dists, token_mask)
         constrained_lasso = self.constrain(
                 lasso, self.transition_rate, "lasso")
-        return constrained_l0 + constrained_lasso
+        return (self.gamma * constrained_l0) + \
+                ((1 - self.gamma) * constrained_lasso)  # noqa: E127
         return constrained_lasso
 
     def __repr__(self):
