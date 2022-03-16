@@ -1,0 +1,56 @@
+T0	problem 873 892	flaccid bilaterally
+A0	Assertion T0 present
+T1	problem 1879 1923	previous right middle cerebral artery stroke
+A1	Assertion T1 present
+T2	problem 785 807	poor airway protection
+A2	Assertion T2 present
+T3	problem 530 542	unresponsive
+A3	Assertion T3 present
+T4	problem 1404 1415	paresthetic
+A4	Assertion T4 present
+T5	problem 1230 1276	positional tremors of the left upper extremity
+A5	Assertion T5 present
+T6	problem 1634 1647	carotid pulse
+A6	Assertion T6 absent
+T7	problem 678 686	seizures
+A7	Assertion T7 present
+T8	problem 1183 1197	carotid bruits
+A8	Assertion T8 absent
+T9	problem 1392 1399	flaccid
+A9	Assertion T9 present
+T10	problem 767 779	unresponsive
+A10	Assertion T10 present
+T11	problem 905 927	oculocephalic reflexes
+A11	Assertion T11 absent
+T12	problem 290 306	unresponsiveness
+A12	Assertion T12 present
+T13	problem 392 412	mild aortic stenosis
+A13	Assertion T13 present
+T14	problem 548 575	left tonic-clonic movements
+A14	Assertion T14 present
+T15	problem 983 995	unresponsive
+A15	Assertion T15 present
+T16	problem 1598 1610	unresponsive
+A16	Assertion T16 present
+T17	problem 1619 1631	heart sounds
+A17	Assertion T17 absent
+T18	problem 1650 1672	respiratory excursions
+A18	Assertion T18 absent
+T19	problem 1678 1697	pupillary reactions
+A19	Assertion T19 absent
+T20	problem 334 357	ischemic cardiomyopathy
+A20	Assertion T20 present
+T21	problem 1130 1170	generalized slowing without ictal events
+A21	Assertion T21 present
+T22	problem 1207 1227	stertorous breathing
+A22	Assertion T22 present
+T23	problem 1784 1841	Left middle cerebral artery territory cerebral infarction
+A23	Assertion T23 present
+T24	problem 261 285	focal left-sided seizure
+A24	Assertion T24 present
+T25	problem 1847 1861	Cardiomyopathy
+A25	Assertion T25 present
+T26	problem 417 464	a right middle cerebral artery territory stroke
+A26	Assertion T26 present
+T27	problem 1279 1316	a spastic left hemiparesis in flexion
+A27	Assertion T27 present

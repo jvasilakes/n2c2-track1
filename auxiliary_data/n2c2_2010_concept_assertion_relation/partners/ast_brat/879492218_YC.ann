@@ -1,0 +1,102 @@
+T0	problem 3236 3253	Sinus tachycardia
+A0	Assertion T0 present
+T1	problem 868 876	vomiting
+A1	Assertion T1 absent
+T2	problem 3504 3507	PCP
+A2	Assertion T2 possible
+T3	problem 1423 1442	withdrawal symptoms
+A3	Assertion T3 absent
+T4	problem 820 826	fevers
+A4	Assertion T4 absent
+T5	problem 3726 3755	bibasilar diffuse infiltrates
+A5	Assertion T5 present
+T6	problem 52 61	PNEUMONIA
+A6	Assertion T6 present
+T7	problem 2601 2615	coarse rhonchi
+A7	Assertion T7 present
+T8	problem 4732 4735	CHF
+A8	Assertion T8 possible
+T9	problem 905 921	some weight loss
+A9	Assertion T9 present
+T10	problem 2153 2164	bone cancer
+A10	Assertion T10 associated_with_someone_else
+T11	problem 4801 4823	pulmonary hypertension
+A11	Assertion T11 absent
+T12	problem 2621 2644	some bibasilar crackles
+A12	Assertion T12 present
+T13	problem 573 592	shortness of breath
+A13	Assertion T13 conditional
+T14	problem 4374 4401	chronic inhalational injury
+A14	Assertion T14 possible
+T15	problem 4317 4337	organizing pneumonia
+A15	Assertion T15 present
+T16	problem 4365 4369	BOOP
+A16	Assertion T16 possible
+T17	problem 703 718	short of breath
+A17	Assertion T17 conditional
+T18	problem 4753 4761	trace TR
+A18	Assertion T18 present
+T19	problem 2864 2869	edema
+A19	Assertion T19 absent
+T20	problem 859 865	nausea
+A20	Assertion T20 absent
+T21	problem 3704 3707	AFB
+A21	Assertion T21 absent
+T22	problem 3646 3658	tuberculosis
+A22	Assertion T22 absent
+T23	problem 2922 2940	hepatosplenomegaly
+A23	Assertion T23 absent
+T24	problem 2901 2907	rashes
+A24	Assertion T24 absent
+T25	problem 1646 1666	known drug allergies
+A25	Assertion T25 absent
+T26	problem 5476 5486	chest pain
+A26	Assertion T26 hypothetical
+T27	problem 829 835	chills
+A27	Assertion T27 absent
+T28	problem 2850 2858	clubbing
+A28	Assertion T28 absent
+T29	problem 3479 3500	an atypical pneumonia
+A29	Assertion T29 possible
+T30	problem 4745 4748	LVH
+A30	Assertion T30 present
+T31	problem 402 421	shortness of breath
+A31	Assertion T31 present
+T32	problem 5441 5461	any further troubles
+A32	Assertion T32 hypothetical
+T33	problem 2410 2417	sclerae
+A33	Assertion T33 present
+T34	problem 205 224	Shortness of breath
+A34	Assertion T34 present
+T35	problem 760 789	a dry and nonproductive cough
+A35	Assertion T35 present
+T36	problem 841 853	night sweats
+A36	Assertion T36 absent
+T37	problem 2777 2807	a flat jugular venous pressure
+A37	Assertion T37 present
+T38	problem 2758 2769	tachycardic
+A38	Assertion T38 present
+T39	problem 4066 4069	HIV
+A39	Assertion T39 absent
+T40	problem 4607 4616	his cough
+A40	Assertion T40 present
+T41	problem 5492 5498	fevers
+A41	Assertion T41 hypothetical
+T42	problem 2373 2387	acute distress
+A42	Assertion T42 absent
+T43	problem 2549 2579	right axillary lymphadenopathy
+A43	Assertion T43 possible
+T44	problem 2839 2847	cyanosis
+A44	Assertion T44 absent
+T45	problem 3323 3336	consolidation
+A45	Assertion T45 present
+T46	problem 2485 2500	lymphadenopathy
+A46	Assertion T46 absent
+T47	problem 4257 4262	Micro
+A47	Assertion T47 absent
+T48	problem 444 455	a dry cough
+A48	Assertion T48 present
+T49	problem 882 890	diarrhea
+A49	Assertion T49 absent
+T50	problem 3292 3320	Diffuse interstitial process
+A50	Assertion T50 present

@@ -1,0 +1,62 @@
+T0	problem 1911 1937	bradycardia of prematurity
+A0	Assertion T0 present
+T1	problem 492 508	demise of twin A
+A1	Assertion T1 associated_with_someone_else
+T2	problem 5032 5050	Hyperbilirubinemia
+A2	Assertion T2 present
+T3	problem 5063 5068	Apnea
+A3	Assertion T3 present
+T4	problem 5073 5099	bradycardia of prematurity
+A4	Assertion T4 present
+T5	problem 868 877	Abruption
+A5	Assertion T5 present
+T6	problem 4535 4555	weight abnormalities
+A6	Assertion T6 hypothetical
+T7	problem 1901 1906	apnea
+A7	Assertion T7 present
+T8	problem 431 444	2 vessel cord
+A8	Assertion T8 present
+T9	problem 395 408	IVF pregnancy
+A9	Assertion T9 present
+T10	problem 424 428	IUGR
+A10	Assertion T10 present
+T11	problem 4509 4530	neuromuscular disease
+A11	Assertion T11 hypothetical
+T12	problem 801 806	PPROM
+A12	Assertion T12 present
+T13	problem 812 820	bleeding
+A13	Assertion T13 present
+T14	problem 825 839	transverse lie
+A14	Assertion T14 present
+T15	problem 4584 4604	chronic lung disease
+A15	Assertion T15 associated_with_someone_else
+T16	problem 621 635	IUGR of twin A
+A16	Assertion T16 associated_with_someone_else
+T17	problem 5007 5013	sepsis
+A17	Assertion T17 possible
+T18	problem 1395 1404	hip click
+A18	Assertion T18 absent
+T19	problem 4903 4919	Premature infant
+A19	Assertion T19 present
+T20	problem 1410 1423	sacral dimple
+A20	Assertion T20 absent
+T21	problem 4803 4812	influenza
+A21	Assertion T21 hypothetical
+T22	problem 1364 1375	vaginal tag
+A22	Assertion T22 present
+T23	problem 1691 1725	mild respiratory distress syndrome
+A23	Assertion T23 present
+T24	problem 669 682	preterm labor
+A24	Assertion T24 present
+T25	problem 1249 1255	murmur
+A25	Assertion T25 absent
+T26	problem 4966 4995	respiratory distress syndrome
+A26	Assertion T26 absent
+T27	problem 1308 1326	hepatosplenomegaly
+A27	Assertion T27 absent
+T28	problem 1119 1132	Nondysmorphic
+A28	Assertion T28 absent
+T29	problem 1450 1463	Decrease tone
+A29	Assertion T29 present
+T30	problem 1620 1649	moderate respiratory distress
+A30	Assertion T30 present

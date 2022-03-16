@@ -1,0 +1,106 @@
+T0	problem 2197 2198	m
+A0	Assertion T0 absent
+T1	problem 4805 4829	any compartment syndrome
+A1	Assertion T1 absent
+T2	problem 2091 2095	ATNC
+A2	Assertion T2 absent
+T3	problem 4201 4204	DVT
+A3	Assertion T3 absent
+T4	problem 2247 2250	WWP
+A4	Assertion T4 present
+T5	problem 2212 2214	nd
+A5	Assertion T5 absent
+T6	problem 4314 4345	painful bullae on hands and arm
+A6	Assertion T6 present
+T7	problem 2146 2155	anicteric
+A7	Assertion T7 absent
+T8	problem 2279 2302	burns on hands and arms
+A8	Assertion T8 present
+T9	problem 4067 4096	bilateral pulmonary embolisms
+A9	Assertion T9 present
+T10	problem 2217 2240	hypoactive bowel sounds
+A10	Assertion T10 present
+T11	problem 2253 2274	multiple linear scars
+A11	Assertion T11 present
+T12	problem 4492 4512	compartment syndrome
+A12	Assertion T12 absent
+T13	problem 887 902	self mutilation
+A13	Assertion T13 present
+T14	problem 1171 1175	GERD
+A14	Assertion T14 present
+T15	problem 3653 3663	flat T aVL
+A15	Assertion T15 present
+T16	problem 429 457	apparent alprazolam overdose
+A16	Assertion T16 possible
+T17	problem 864 882	suicidal ideations
+A17	Assertion T17 present
+T18	problem 528 537	lethargic
+A18	Assertion T18 present
+T19	problem 4357 4365	swelling
+A19	Assertion T19 present
+T20	problem 4429 4437	symptoms
+A20	Assertion T20 present
+T21	problem 4450 4456	trauma
+A21	Assertion T21 present
+T22	problem 2125 2143	minimally reactive
+A22	Assertion T22 present
+T23	problem 1124 1130	Asthma
+A23	Assertion T23 present
+T24	problem 3695 3733	bilateral segmental , subsegmental PEs
+A24	Assertion T24 present
+T25	problem 1136 1165	Posttraumatic stress disorder
+A25	Assertion T25 present
+T26	problem 717 729	unresponsive
+A26	Assertion T26 present
+T27	problem 1102 1118	Bipolar disorder
+A27	Assertion T27 present
+T28	problem 3635 3650	incomplete RBBB
+A28	Assertion T28 present
+T29	problem 3542 3563	ateletasis of lingula
+A29	Assertion T29 possible
+T30	problem 3582 3593	pneumonitis
+A30	Assertion T30 possible
+T31	problem 1985 1996	suicidality
+A31	Assertion T31 associated_with_someone_else
+T32	problem 4027 4035	elevated
+A32	Assertion T32 present
+T33	problem 1205 1219	laxative abuse
+A33	Assertion T33 present
+T34	problem 1179 1199	Chronic constipation
+A34	Assertion T34 present
+T35	problem 2338 2344	rashes
+A35	Assertion T35 absent
+T36	problem 1970 1980	depression
+A36	Assertion T36 associated_with_someone_else
+T37	problem 3944 3958	benzo overdose
+A37	Assertion T37 present
+T38	problem 5414 5417	UTI
+A38	Assertion T38 possible
+T39	problem 3974 3994	widened A-a gradient
+A39	Assertion T39 present
+T40	problem 2360 2381	linear and burn scars
+A40	Assertion T40 present
+T41	problem 2348 2357	petechiae
+A41	Assertion T41 absent
+T42	problem 366 382	Bipolar disorder
+A42	Assertion T42 present
+T43	problem 201 215	Benzo overdose
+A43	Assertion T43 present
+T44	problem 7400 7423	urinary tract infection
+A44	Assertion T44 present
+T45	problem 7320 7325	clots
+A45	Assertion T45 present
+T46	problem 7143 7160	Swelling in hands
+A46	Assertion T46 present
+T47	problem 7095 7111	Bipolar Disorder
+A47	Assertion T47 present
+T48	problem 5007 5032	some poor range of motion
+A48	Assertion T48 present
+T49	problem 7043 7066	Benzodiazapine Overdose
+A49	Assertion T49 present
+T50	problem 3671 3677	TWI V1
+A50	Assertion T50 present
+T51	problem 5305 5307	SI
+A51	Assertion T51 present
+T52	problem 7067 7094	Traumatic / pressure bullae
+A52	Assertion T52 present

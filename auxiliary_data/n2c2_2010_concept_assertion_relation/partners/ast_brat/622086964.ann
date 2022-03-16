@@ -1,0 +1,124 @@
+T0	problem 3938 3965	persistent pleural effusion
+A0	Assertion T0 present
+T1	problem 3990 3999	pneumonia
+A1	Assertion T1 possible
+T2	problem 4812 4818	nausea
+A2	Assertion T2 hypothetical
+T3	problem 952 968	urinary symptoms
+A3	Assertion T3 present
+T4	problem 4537 4549	complication
+A4	Assertion T4 absent
+T5	problem 1172 1182	clear mass
+A5	Assertion T5 present
+T6	problem 3045 3061	moderate E. coli
+A6	Assertion T6 present
+T7	problem 1152 1167	extensive fluid
+A7	Assertion T7 present
+T8	problem 314 321	obesity
+A8	Assertion T8 present
+T9	problem 1981 1991	ulceration
+A9	Assertion T9 present
+T10	problem 1659 1675	a renal calculus
+A10	Assertion T10 present
+T11	problem 4095 4109	high residuals
+A11	Assertion T11 present
+T12	problem 564 568	mass
+A12	Assertion T12 present
+T13	problem 1358 1372	an elevated CA
+A13	Assertion T13 present
+T14	problem 290 302	Hypertension
+A14	Assertion T14 present
+T15	problem 3673 3684	some emesis
+A15	Assertion T15 present
+T16	problem 3661 3667	nausea
+A16	Assertion T16 present
+T17	problem 3724 3733	no relief
+A17	Assertion T17 present
+T18	problem 3485 3500	pulmonary edema
+A18	Assertion T18 absent
+T19	problem 2099 2118	throat constriction
+A19	Assertion T19 conditional
+T20	problem 541 550	adhesions
+A20	Assertion T20 present
+T21	problem 4848 4854	nausea
+A21	Assertion T21 hypothetical
+T22	problem 933 947	abdominal GERD
+A22	Assertion T22 present
+T23	problem 2070 2094	some shortness of breath
+A23	Assertion T23 conditional
+T24	problem 4779 4786	anxiety
+A24	Assertion T24 hypothetical
+T25	problem 3923 3930	dyspnea
+A25	Assertion T25 present
+T26	problem 3424 3445	left pleural effusion
+A26	Assertion T26 present
+T27	problem 745 777	progressive abdominal distention
+A27	Assertion T27 present
+T28	problem 1461 1473	Hypertension
+A28	Assertion T28 present
+T29	problem 2026 2040	food allergies
+A29	Assertion T29 conditional
+T30	problem 3364 3383	shortness of breath
+A30	Assertion T30 present
+T31	problem 2165 2177	colon cancer
+A31	Assertion T31 associated_with_someone_else
+T32	problem 1476 1482	asthma
+A32	Assertion T32 present
+T33	problem 3450 3478	small right pleural effusion
+A33	Assertion T33 present
+T34	problem 4748 4752	pain
+A34	Assertion T34 hypothetical
+T35	problem 3971 3982	atelectasis
+A35	Assertion T35 possible
+T36	problem 2471 2480	adhesions
+A36	Assertion T36 present
+T37	problem 1572 1586	whooping cough
+A37	Assertion T37 present
+T38	problem 1520 1527	obesity
+A38	Assertion T38 present
+T39	problem 2761 2777	low urine output
+A39	Assertion T39 present
+T40	problem 2604 2640	poorly differentiated adenocarcinoma
+A40	Assertion T40 present
+T41	problem 1541 1553	heart murmur
+A41	Assertion T41 present
+T42	problem 804 821	urinary frequency
+A42	Assertion T42 present
+T43	problem 2652 2681	serous carcinoma of the ovary
+A43	Assertion T43 possible
+T44	problem 2494 2498	mass
+A44	Assertion T44 present
+T45	problem 3554 3562	afebrile
+A45	Assertion T45 absent
+T46	problem 350 361	hemorrhoids
+A46	Assertion T46 present
+T47	problem 364 378	whooping cough
+A47	Assertion T47 present
+T48	problem 1556 1567	hemorrhoids
+A48	Assertion T48 present
+T49	problem 2919 2936	any complications
+A49	Assertion T49 absent
+T50	problem 780 801	crampy abdominal pain
+A50	Assertion T50 present
+T51	problem 335 347	heart murmur
+A51	Assertion T51 present
+T52	problem 3505 3535	left lower lobe consolidations
+A52	Assertion T52 present
+T53	problem 5103 5118	asthma symptoms
+A53	Assertion T53 hypothetical
+T54	problem 1779 1790	dyspareunia
+A54	Assertion T54 absent
+T55	problem 250 264	Ovarian cancer
+A55	Assertion T55 present
+T56	problem 826 834	diarrhea
+A56	Assertion T56 present
+T57	problem 5090 5098	wheezing
+A57	Assertion T57 hypothetical
+T58	problem 1264 1287	a relatively small mass
+A58	Assertion T58 present
+T59	problem 305 311	asthma
+A59	Assertion T59 present
+T60	problem 3791 3804	bilious fluid
+A60	Assertion T60 present
+T61	problem 1230 1258	a large fluid filled abdomen
+A61	Assertion T61 present

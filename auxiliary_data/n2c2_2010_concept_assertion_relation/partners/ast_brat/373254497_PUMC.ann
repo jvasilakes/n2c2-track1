@@ -1,0 +1,18 @@
+T0	problem 680 692	ovarian cyst
+A0	Assertion T0 present
+T1	problem 492 503	PELVIC PAIN
+A1	Assertion T1 present
+T2	problem 854 878	worsening abdominal pain
+A2	Assertion T2 hypothetical
+T3	problem 894 918	other worrisome symptoms
+A3	Assertion T3 hypothetical
+T4	problem 630 644	Abdominal pain
+A4	Assertion T4 present
+T5	problem 881 890	discharge
+A5	Assertion T5 hypothetical
+T6	problem 589 603	abdominal pain
+A6	Assertion T6 present
+T7	problem 482 491	ABD PAIN/
+A7	Assertion T7 present
+T8	problem 845 851	fevers
+A8	Assertion T8 hypothetical

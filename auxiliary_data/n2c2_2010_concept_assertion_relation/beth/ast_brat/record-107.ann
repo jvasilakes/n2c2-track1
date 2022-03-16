@@ -1,0 +1,74 @@
+T0	problem 2613 2637	his respiratory distress
+A0	Assertion T0 present
+T1	problem 5024 5035	prematurity
+A1	Assertion T1 present
+T2	problem 5009 5020	bradycardia
+A2	Assertion T2 present
+T3	problem 4999 5004	Apnea
+A3	Assertion T3 present
+T4	problem 4969 4975	sepsis
+A4	Assertion T4 possible
+T5	problem 4868 4877	influenza
+A5	Assertion T5 associated_with_someone_else
+T6	problem 4927 4938	Prematurity
+A6	Assertion T6 present
+T7	problem 3553 3582	an erythematous perianal rash
+A7	Assertion T7 present
+T8	problem 2213 2218	apnea
+A8	Assertion T8 absent
+T9	problem 4715 4735	chronic lung disease
+A9	Assertion T9 present
+T10	problem 2222 2240	bradycardic events
+A10	Assertion T10 absent
+T11	problem 2056 2066	some apnea
+A11	Assertion T11 present
+T12	problem 1550 1559	nontender
+A12	Assertion T12 absent
+T13	problem 4603 4623	chronic lung disease
+A13	Assertion T13 present
+T14	problem 2071 2104	bradycardic spells of prematurity
+A14	Assertion T14 present
+T15	problem 1562 1574	nondistended
+A15	Assertion T15 absent
+T16	problem 3119 3149	physiologic hyperbilirubinemia
+A16	Assertion T16 present
+T17	problem 609 625	vaginal bleeding
+A17	Assertion T17 present
+T18	problem 1732 1737	clunk
+A18	Assertion T18 absent
+T19	problem 1805 1812	lesions
+A19	Assertion T19 absent
+T20	problem 3057 3062	bands
+A20	Assertion T20 absent
+T21	problem 748 778	spontaneous respiratory effort
+A21	Assertion T21 absent
+T22	problem 1456 1463	murmurs
+A22	Assertion T22 absent
+T23	problem 5065 5083	Feeding immaturity
+A23	Assertion T23 present
+T24	problem 1580 1598	hepatosplenomegaly
+A24	Assertion T24 absent
+T25	problem 415 439	increased blood pressure
+A25	Assertion T25 present
+T26	problem 5041 5059	Hyperbilirubinemia
+A26	Assertion T26 present
+T27	problem 1321 1328	defects
+A27	Assertion T27 absent
+T28	problem 731 735	limp
+A28	Assertion T28 present
+T29	problem 197 214	fetal bradycardia
+A29	Assertion T29 present
+T30	problem 1346 1364	coarse bilaterally
+A30	Assertion T30 present
+T31	problem 1370 1390	moderate retractions
+A31	Assertion T31 present
+T32	problem 444 455	proteinuria
+A32	Assertion T32 present
+T33	problem 975 982	rubella
+A33	Assertion T33 absent
+T34	problem 1079 1116	mild to moderate respiratory distress
+A34	Assertion T34 present
+T35	problem 630 647	fetal bradycardia
+A35	Assertion T35 present
+T36	problem 1311 1317	masses
+A36	Assertion T36 absent

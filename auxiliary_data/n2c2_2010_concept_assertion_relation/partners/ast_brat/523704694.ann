@@ -1,0 +1,144 @@
+T0	problem 4676 4710	positive tremor reflex on the left
+A0	Assertion T0 present
+T1	problem 4715 4734	absent on the right
+A1	Assertion T1 present
+T2	problem 3178 3186	allergic
+A2	Assertion T2 present
+T3	problem 512 516	pain
+A3	Assertion T3 present
+T4	problem 3483 3490	reduced
+A4	Assertion T4 present
+T5	problem 572 586	abdominal pain
+A5	Assertion T5 present
+T6	problem 3515 3524	nontender
+A6	Assertion T6 absent
+T7	problem 5753 5764	Citrobacter
+A7	Assertion T7 present
+T8	problem 6496 6532	enhancing lesions of the spinal cord
+A8	Assertion T8 absent
+T9	problem 2294 2303	This pain
+A9	Assertion T9 present
+T10	problem 3755 3764	nystagmus
+A10	Assertion T10 absent
+T11	problem 815 835	abnormal vasculature
+A11	Assertion T11 present
+T12	problem 838 857	hemosiderin deposit
+A12	Assertion T12 present
+T13	problem 896 930	a dural arteriovenous malformation
+A13	Assertion T13 present
+T14	problem 6930 6942	muscle spasm
+A14	Assertion T14 present
+T15	problem 1091 1108	urinary retention
+A15	Assertion T15 present
+T16	problem 756 791	intermedullary lesion at C1-2 level
+A16	Assertion T16 present
+T17	problem 6238 6270	her former vascular malformation
+A17	Assertion T17 absent
+T18	problem 3336 3342	murmur
+A18	Assertion T18 absent
+T19	problem 4250 4283	generalized reduction in strength
+A19	Assertion T19 present
+T20	problem 7549 7559	spasticity
+A20	Assertion T20 present
+T21	problem 1966 1973	dysuria
+A21	Assertion T21 absent
+T22	problem 6276 6295	intraspinal lesions
+A22	Assertion T22 absent
+T23	problem 477 507	increasing left sided weakness
+A23	Assertion T23 present
+T24	problem 522 532	spasticity
+A24	Assertion T24 present
+T25	problem 546 567	difficulty swallowing
+A25	Assertion T25 present
+T26	problem 2058 2092	severe intermittent abdominal pain
+A26	Assertion T26 present
+T27	problem 2480 2492	hypertension
+A27	Assertion T27 present
+T28	problem 5309 5328	an intention tremor
+A28	Assertion T28 present
+T29	problem 3880 3910	markedly increased in bot legs
+A29	Assertion T29 present
+T30	problem 721 731	spasticity
+A30	Assertion T30 present
+T31	problem 3447 3467	reduced bowel sounds
+A31	Assertion T31 present
+T32	problem 5232 5268	a high cervical spinal sensory level
+A32	Assertion T32 present
+T33	problem 3052 3064	muscle spasm
+A33	Assertion T33 hypothetical
+T34	problem 7480 7499	functional capacity
+A34	Assertion T34 present
+T35	problem 1363 1374	problematic
+A35	Assertion T35 present
+T36	problem 2508 2541	frequent urinary tract infections
+A36	Assertion T36 present
+T37	problem 5880 5887	P-waves
+A37	Assertion T37 present
+T38	problem 2544 2569	neuropathic pain syndrome
+A38	Assertion T38 present
+T39	problem 2574 2586	osteoporosis
+A39	Assertion T39 present
+T40	problem 4863 4882	clonus on the right
+A40	Assertion T40 absent
+T41	problem 6433 6462	extrinsic compressive lesions
+A41	Assertion T41 absent
+T42	problem 7003 7024	left arm and leg pain
+A42	Assertion T42 present
+T43	problem 6224 6234	recurrence
+A43	Assertion T43 absent
+T44	problem 4887 4931	sustained clonus ( 10-12 beats ) on the left
+A44	Assertion T44 present
+T45	problem 1527 1547	her functional level
+A45	Assertion T45 present
+T46	problem 6024 6055	a missing posterior arch at C-1
+A46	Assertion T46 present
+T47	problem 697 716	left sided weakness
+A47	Assertion T47 present
+T48	problem 2463 2477	hypothyroidism
+A48	Assertion T48 present
+T49	problem 3982 4005	markedly increased tone
+A49	Assertion T49 present
+T50	problem 1022 1053	transient swallowing difficulty
+A50	Assertion T50 present
+T51	problem 4093 4117	reduction in motor power
+A51	Assertion T51 present
+T52	problem 3957 3977	a flexor contracture
+A52	Assertion T52 present
+T53	problem 5118 5139	decreased temperature
+A53	Assertion T53 present
+T54	problem 1668 1689	a flexure contraction
+A54	Assertion T54 present
+T55	problem 2441 2460	atrial fibrillation
+A55	Assertion T55 present
+T56	problem 6155 6182	arteriovenous malformations
+A56	Assertion T56 absent
+T57	problem 184 214	Left sided spastic hemiparesis
+A57	Assertion T57 present
+T58	problem 6601 6650	normal vascular distribution of the head and neck
+A58	Assertion T58 absent
+T59	problem 6659 6699	recurrence of arteriovenous malformation
+A59	Assertion T59 absent
+T60	problem 1839 1864	new swallowing difficulty
+A60	Assertion T60 present
+T61	problem 5393 5397	slow
+A61	Assertion T61 present
+T62	problem 5037 5113	diminished vibration and propioception in the left upper and lower extremity
+A62	Assertion T62 present
+T63	problem 1706 1748	intermitttent pain in the left arm and leg
+A63	Assertion T63 present
+T64	problem 1056 1086	increasing left sided weakness
+A64	Assertion T64 present
+T65	problem 2495 2505	depression
+A65	Assertion T65 present
+T66	problem 2403 2438	Insulin dependent diabetes mellitus
+A66	Assertion T66 present
+T67	problem 6784 6794	spasticity
+A67	Assertion T67 present
+T68	problem 4028 4051	moderate increased tone
+A68	Assertion T68 present
+T69	problem 3414 3442	marked suprapubic tenderness
+A69	Assertion T69 present
+T70	problem 1977 2004	excessive urinary frequency
+A70	Assertion T70 absent
+T71	problem 2222 2237	her hemorrhoids
+A71	Assertion T71 present

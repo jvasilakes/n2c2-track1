@@ -1,0 +1,62 @@
+T0	problem 794 808	abdominal pain
+A0	Assertion T0 absent
+T1	problem 781 787	nausea
+A1	Assertion T1 absent
+T2	problem 1979 2012	primary colorectal adenocarcinoma
+A2	Assertion T2 possible
+T3	problem 2018 2043	multiple liver metastases
+A3	Assertion T3 possible
+T4	problem 1245 1248	AVN
+A4	Assertion T4 possible
+T5	problem 757 763	melena
+A5	Assertion T5 absent
+T6	problem 1427 1432	hives
+A6	Assertion T6 conditional
+T7	problem 243 260	painless jaundice
+A7	Assertion T7 present
+T8	problem 1868 1885	painless jaundice
+A8	Assertion T8 present
+T9	problem 880 888	tenesmus
+A9	Assertion T9 absent
+T10	problem 529 550	an increased appetite
+A10	Assertion T10 present
+T11	problem 766 778	hematochezia
+A11	Assertion T11 absent
+T12	problem 469 491	a 23 pound weight loss
+A12	Assertion T12 present
+T13	problem 705 717	night sweats
+A13	Assertion T13 absent
+T14	problem 640 659	personality changes
+A14	Assertion T14 present
+T15	problem 665 687	increased irritability
+A15	Assertion T15 present
+T16	problem 1906 1913	fatigue
+A16	Assertion T16 present
+T17	problem 596 622	&quot; feeling down &quot;
+A17	Assertion T17 present
+T18	problem 841 865	occasionally constipated
+A18	Assertion T18 present
+T19	problem 1201 1218	Vocal cord polyps
+A19	Assertion T19 present
+T20	problem 1283 1295	hyperkalemia
+A20	Assertion T20 present
+T21	problem 365 403	noninsulin dependent diabetes mellitus
+A21	Assertion T21 present
+T22	problem 1392 1400	allergic
+A22	Assertion T22 present
+T23	problem 1109 1134	Type II diabetes mellitus
+A23	Assertion T23 present
+T24	problem 1252 1268	osseous necrosis
+A24	Assertion T24 possible
+T25	problem 978 984	yellow
+A25	Assertion T25 present
+T26	problem 1639 1642	CHF
+A26	Assertion T26 associated_with_someone_else
+T27	problem 584 591	fatigue
+A27	Assertion T27 present
+T28	problem 1888 1899	weight loss
+A28	Assertion T28 present
+T29	problem 427 444	painless jaundice
+A29	Assertion T29 present
+T30	problem 1307 1317	RTA type 4
+A30	Assertion T30 possible

@@ -1,0 +1,16 @@
+T0	problem 852 868	pregnancy , term
+A0	Assertion T0 present
+T1	problem 488 500	Constipation
+A1	Assertion T1 hypothetical
+T2	problem 1130 1151	Perineal , 1st degree
+A2	Assertion T2 present
+T3	problem 700 713	Upset Stomach
+A3	Assertion T3 hypothetical
+T4	problem 1465 1487	observed abnormalities
+A4	Assertion T4 absent
+T5	problem 533 537	Pain
+A5	Assertion T5 hypothetical
+T6	problem 1309 1341	first degree perineal laceration
+A6	Assertion T6 present
+T7	problem 1117 1127	Laceration
+A7	Assertion T7 present

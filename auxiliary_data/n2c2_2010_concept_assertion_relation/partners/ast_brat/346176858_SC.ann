@@ -1,0 +1,14 @@
+T0	problem 530 534	Pain
+A0	Assertion T0 hypothetical
+T1	problem 893 896	NKA
+A1	Assertion T1 absent
+T2	problem 766 770	Pain
+A2	Assertion T2 hypothetical
+T3	problem 614 618	Pain
+A3	Assertion T3 hypothetical
+T4	problem 569 581	Constipation
+A4	Assertion T4 hypothetical
+T5	problem 915 928	labor at term
+A5	Assertion T5 present
+T6	problem 1516 1538	observed abnormalities
+A6	Assertion T6 absent

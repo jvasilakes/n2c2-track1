@@ -1,0 +1,66 @@
+T0	problem 3029 3037	Her pain
+A0	Assertion T0 present
+T1	problem 3182 3191	gastritis
+A1	Assertion T1 absent
+T2	problem 2338 2346	ischemia
+A2	Assertion T2 present
+T3	problem 3992 4000	vomiting
+A3	Assertion T3 hypothetical
+T4	problem 2837 2880	intermittent post-prandial nausea / satiety
+A4	Assertion T4 present
+T5	problem 3778 3796	post prandial pain
+A5	Assertion T5 present
+T6	problem 4014 4039	increasing pain with food
+A6	Assertion T6 hypothetical
+T7	problem 4305 4314	H. Pylori
+A7	Assertion T7 present
+T8	problem 3965 3971	fevers
+A8	Assertion T8 hypothetical
+T9	problem 3194 3203	stricture
+A9	Assertion T9 absent
+T10	problem 3092 3104	fever/chills
+A10	Assertion T10 present
+T11	problem 2318 2321	CAD
+A11	Assertion T11 associated_with_someone_else
+T12	problem 52 61	gastritis
+A12	Assertion T12 present
+T13	problem 2286 2302	High Cholesterol
+A13	Assertion T13 present
+T14	problem 2385 2393	ND ische
+A14	Assertion T14 present
+T15	problem 520 528	H.Pylori
+A15	Assertion T15 present
+T16	problem 3983 3989	nausea
+A16	Assertion T16 hypothetical
+T17	problem 2282 2285	HTN
+A17	Assertion T17 present
+T18	problem 3234 3252	H. Pylori positive
+A18	Assertion T18 present
+T19	problem 2726 2735	this pain
+A19	Assertion T19 present
+T20	problem 2667 2696	mod severe midepigastric pain
+A20	Assertion T20 present
+T21	problem 2962 2970	the pain
+A21	Assertion T21 present
+T22	problem 3450 3461	obstruction
+A22	Assertion T22 absent
+T23	problem 2087 2096	Gastritis
+A23	Assertion T23 present
+T24	problem 3077 3089	BRBPR/melena
+A24	Assertion T24 present
+T25	problem 2177 2186	gastritis
+A25	Assertion T25 present
+T26	problem 3207 3212	ulcer
+A26	Assertion T26 absent
+T27	problem 2274 2281	Obesity
+A27	Assertion T27 present
+T28	problem 3068 3074	emesis
+A28	Assertion T28 present
+T29	problem 3107 3110	sob
+A29	Assertion T29 present
+T30	problem 4003 4011	diarrhea
+A30	Assertion T30 hypothetical
+T31	problem 3849 3867	biliary dyskinesia
+A31	Assertion T31 present
+T32	problem 3974 3980	chills
+A32	Assertion T32 hypothetical

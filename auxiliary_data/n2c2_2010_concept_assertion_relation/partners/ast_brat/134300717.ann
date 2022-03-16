@@ -1,0 +1,64 @@
+T0	problem 613 636	left upper lobe nodules
+A0	Assertion T0 present
+T1	problem 1671 1689	vasovagal activity
+A1	Assertion T1 possible
+T2	problem 1566 1592	potential seizure activity
+A2	Assertion T2 present
+T3	problem 1214 1244	right lower extremity swelling
+A3	Assertion T3 present
+T4	problem 1305 1337	a femoral deep venous thrombosis
+A4	Assertion T4 present
+T5	problem 3119 3137	a neurologic event
+A5	Assertion T5 present
+T6	problem 708 721	L5 metastasis
+A6	Assertion T6 present
+T7	problem 2007 2021	acute distress
+A7	Assertion T7 absent
+T8	problem 557 588	lesions in the liver and spleen
+A8	Assertion T8 present
+T9	problem 1894 1914	known drug allergies
+A9	Assertion T9 absent
+T10	problem 3599 3611	complication
+A10	Assertion T10 absent
+T11	problem 833 849	cord compression
+A11	Assertion T11 present
+T12	problem 751 784	epidural and paraspinal extension
+A12	Assertion T12 present
+T13	problem 3493 3512	metastatic melanoma
+A13	Assertion T13 present
+T14	problem 62 109	DEEP VENOUS THROMBOSIS OF RIGHT LOWER EXTREMITY
+A14	Assertion T14 present
+T15	problem 2699 2744	2+ pitting edema in the right lower extremity
+A15	Assertion T15 present
+T16	problem 2282 2307	jugular venous distention
+A16	Assertion T16 absent
+T17	problem 222 269	Deep venous thrombosis of right lower extremity
+A17	Assertion T17 present
+T18	problem 1453 1474	some seizure activity
+A18	Assertion T18 present
+T19	problem 727 737	a fracture
+A19	Assertion T19 present
+T20	problem 3533 3547	CNS metastases
+A20	Assertion T20 possible
+T21	problem 1534 1548	CNS metastases
+A21	Assertion T21 absent
+T22	problem 295 314	Metastatic melanoma
+A22	Assertion T22 present
+T23	problem 1356 1375	a witnessed episode
+A23	Assertion T23 present
+T24	problem 811 827	a T11 metastasis
+A24	Assertion T24 present
+T25	problem 2352 2426	appreciable cervical , supraclavicular , axillary , or inguinal adenopathy
+A25	Assertion T25 present
+T26	problem 2311 2328	increased thyroid
+A26	Assertion T26 absent
+T27	problem 2523 2556	a I / VI systolic ejection murmur
+A27	Assertion T27 present
+T28	problem 486 498	His melanoma
+A28	Assertion T28 present
+T29	problem 464 483	metastatic melanoma
+A29	Assertion T29 present
+T30	problem 3217 3248	any further neurologic activity
+A30	Assertion T30 absent
+T31	problem 1178 1196	two major symptoms
+A31	Assertion T31 present

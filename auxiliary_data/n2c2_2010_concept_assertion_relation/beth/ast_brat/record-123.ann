@@ -1,0 +1,80 @@
+T0	problem 507 518	postop Afib
+A0	Assertion T0 present
+T1	problem 863 874	sleep apnea
+A1	Assertion T1 possible
+T2	problem 911 923	spermatocele
+A2	Assertion T2 present
+T3	problem 280 287	dyspnea
+A3	Assertion T3 present
+T4	problem 1310 1316	murmur
+A4	Assertion T4 absent
+T5	problem 843 846	HTN
+A5	Assertion T5 present
+T6	problem 1541 1544	MRG
+A6	Assertion T6 absent
+T7	problem 830 842	post-op Afib
+A7	Assertion T7 present
+T8	problem 1346 1348	NT
+A8	Assertion T8 absent
+T9	problem 1613 1616	CCE
+A9	Assertion T9 absent
+T10	problem 1574 1584	NT/ND/NABS
+A10	Assertion T10 absent
+T11	problem 1351 1353	ND
+A11	Assertion T11 absent
+T12	problem 875 893	seasonal allergies
+A12	Assertion T12 present
+T13	problem 847 860	renal calculi
+A13	Assertion T13 present
+T14	problem 1388 1393	edema
+A14	Assertion T14 absent
+T15	problem 1115 1117	MI
+A15	Assertion T15 associated_with_someone_else
+T16	problem 239 245	UE DVT
+A16	Assertion T16 present
+T17	problem 2840 2853	platelet drop
+A17	Assertion T17 present
+T18	problem 4308 4326	pulmonary embolism
+A18	Assertion T18 present
+T19	problem 4358 4361	HTN
+A19	Assertion T19 present
+T20	problem 4364 4377	Renal calculi
+A20	Assertion T20 present
+T21	problem 4380 4391	sleep apnea
+A21	Assertion T21 present
+T22	problem 4451 4457	wounds
+A22	Assertion T22 present
+T23	problem 310 331	mental status changes
+A23	Assertion T23 present
+T24	problem 2456 2477	mental status changes
+A24	Assertion T24 present
+T25	problem 2490 2515	loss of short term memory
+A25	Assertion T25 present
+T26	problem 2520 2545	brief unresponsive period
+A26	Assertion T26 present
+T27	problem 2437 2444	dyspnea
+A27	Assertion T27 present
+T28	problem 2337 2353	positive RUE DVT
+A28	Assertion T28 present
+T29	problem 2652 2670	Pulmonary embolism
+A29	Assertion T29 present
+T30	problem 2631 2634	CVA
+A30	Assertion T30 absent
+T31	problem 1232 1249	slightly confused
+A31	Assertion T31 present
+T32	problem 1274 1277	JVD
+A32	Assertion T32 absent
+T33	problem 677 684	RUE DVT
+A33	Assertion T33 present
+T34	problem 477 502	right upper extremity DVT
+A34	Assertion T34 present
+T35	problem 2966 2974	positive
+A35	Assertion T35 present
+T36	problem 3028 3053	all mental status changes
+A36	Assertion T36 absent
+T37	problem 4329 4336	RUE DVT
+A37	Assertion T37 present
+T38	problem 4339 4351	HIT positive
+A38	Assertion T38 present
+T39	problem 1088 1101	premature CAD
+A39	Assertion T39 associated_with_someone_else

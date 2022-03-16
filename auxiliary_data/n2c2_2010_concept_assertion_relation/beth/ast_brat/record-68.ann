@@ -1,0 +1,56 @@
+T0	problem 722 742	distant heart sounds
+A0	Assertion T0 present
+T1	problem 2686 2690	pain
+A1	Assertion T1 hypothetical
+T2	problem 396 406	severe 3VD
+A2	Assertion T2 present
+T3	problem 370 382	positive ETT
+A3	Assertion T3 present
+T4	problem 3434 3437	TIA
+A4	Assertion T4 possible
+T5	problem 498 518	urinary incontinence
+A5	Assertion T5 present
+T6	problem 764 775	extrem warm
+A6	Assertion T6 present
+T7	problem 1685 1700	his loose teeth
+A7	Assertion T7 present
+T8	problem 781 786	edema
+A8	Assertion T8 absent
+T9	problem 158 182	Known Allergies to Drugs
+A9	Assertion T9 absent
+T10	problem 235 252	exertional angina
+A10	Assertion T10 conditional
+T11	problem 434 436	DM
+A11	Assertion T11 present
+T12	problem 3547 3558	weight gain
+A12	Assertion T12 hypothetical
+T13	problem 3665 3674	incisions
+A13	Assertion T13 present
+T14	problem 349 366	exertional angina
+A14	Assertion T14 conditional
+T15	problem 3521 3543	drainage from incision
+A15	Assertion T15 hypothetical
+T16	problem 3348 3351	CAD
+A16	Assertion T16 present
+T17	problem 629 631	Mi
+A17	Assertion T17 associated_with_someone_else
+T18	problem 792 804	varicosities
+A18	Assertion T18 absent
+T19	problem 3356 3358	DM
+A19	Assertion T19 present
+T20	problem 680 700	Teeth in poor repair
+A20	Assertion T20 present
+T21	problem 3359 3368	cataracts
+A21	Assertion T21 present
+T22	problem 3411 3431	urinary incontinence
+A22	Assertion T22 present
+T23	problem 437 446	cataracts
+A23	Assertion T23 present
+T24	problem 3510 3517	redness
+A24	Assertion T24 hypothetical
+T25	problem 3502 3507	fever
+A25	Assertion T25 hypothetical
+T26	problem 430 433	HTN
+A26	Assertion T26 present
+T27	problem 3352 3355	HTN
+A27	Assertion T27 present

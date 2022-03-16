@@ -1,0 +1,126 @@
+T0	problem 2735 2756	Sclera mildly icteric
+A0	Assertion T0 present
+T1	problem 2623 2637	acute distress
+A1	Assertion T1 absent
+T2	problem 2640 2649	Lethargic
+A2	Assertion T2 present
+T3	problem 2956 2968	nondistended
+A3	Assertion T3 absent
+T4	problem 3642 3668	severe portal hypertension
+A4	Assertion T4 present
+T5	problem 3674 3702	massive peri splenic varices
+A5	Assertion T5 present
+T6	problem 7541 7547	chills
+A6	Assertion T6 hypothetical
+T7	problem 7532 7538	fevers
+A7	Assertion T7 hypothetical
+T8	problem 2502 2525	end stage renal disease
+A8	Assertion T8 associated_with_someone_else
+T9	problem 7572 7586	abdominal pain
+A9	Assertion T9 hypothetical
+T10	problem 3758 3784	Repeat hepato fungal flare
+A10	Assertion T10 present
+T11	problem 7561 7569	vomiting
+A11	Assertion T11 hypothetical
+T12	problem 2461 2484	metastatic colon cancer
+A12	Assertion T12 associated_with_someone_else
+T13	problem 7550 7556	nausea
+A13	Assertion T13 hypothetical
+T14	problem 1744 1765	peripheral neuropathy
+A14	Assertion T14 present
+T15	problem 3001 3021	1+ edema bilaterally
+A15	Assertion T15 present
+T16	problem 3476 3486	discomfort
+A16	Assertion T16 absent
+T17	problem 3116 3130	mild asterixis
+A17	Assertion T17 present
+T18	problem 1722 1741	glucose intolerance
+A18	Assertion T18 present
+T19	problem 1707 1719	hypertension
+A19	Assertion T19 present
+T20	problem 1542 1560	5 cores of varices
+A20	Assertion T20 present
+T21	problem 3520 3529	nontender
+A21	Assertion T21 absent
+T22	problem 2873 2880	murmurs
+A22	Assertion T22 absent
+T23	problem 364 372	lethargy
+A23	Assertion T23 present
+T24	problem 340 359	worsening confusion
+A24	Assertion T24 present
+T25	problem 1271 1277	fevers
+A25	Assertion T25 absent
+T26	problem 2884 2888	rubs
+A26	Assertion T26 absent
+T27	problem 1341 1354	HCV cirrhosis
+A27	Assertion T27 present
+T28	problem 1219 1237	any abdominal pain
+A28	Assertion T28 absent
+T29	problem 7621 7646	inability to eat or drink
+A29	Assertion T29 hypothetical
+T30	problem 247 268	hepatitis C cirrhosis
+A30	Assertion T30 present
+T31	problem 7589 7618	inability to take medications
+A31	Assertion T31 hypothetical
+T32	problem 301 328	positive esophageal varices
+A32	Assertion T32 present
+T33	problem 2983 2998	Obvious ascites
+A33	Assertion T33 present
+T34	problem 1173 1185	night sweats
+A34	Assertion T34 present
+T35	problem 952 966	yellowish eyes
+A35	Assertion T35 present
+T36	problem 2115 2135	known drug allergies
+A36	Assertion T36 absent
+T37	problem 3417 3445	Difficulty with word finding
+A37	Assertion T37 present
+T38	problem 814 822	lethargy
+A38	Assertion T38 present
+T39	problem 827 836	confusion
+A39	Assertion T39 present
+T40	problem 5185 5233	thrombus within the left and right hepatic veins
+A40	Assertion T40 possible
+T41	problem 3464 3472	any pain
+A41	Assertion T41 absent
+T42	problem 969 981	some shaking
+A42	Assertion T42 present
+T43	problem 5097 5118	diminished color flow
+A43	Assertion T43 present
+T44	problem 5236 5251	Caval narrowing
+A44	Assertion T44 present
+T45	problem 2384 2387	HCV
+A45	Assertion T45 present
+T46	problem 850 862	the symptoms
+A46	Assertion T46 present
+T47	problem 734 752	increased lethargy
+A47	Assertion T47 present
+T48	problem 1465 1487	hepatic encephalopathy
+A48	Assertion T48 present
+T49	problem 755 764	confusion
+A49	Assertion T49 present
+T50	problem 1490 1508	Esophageal varices
+A50	Assertion T50 present
+T51	problem 4991 5070	loss of normal respiratory variations , wave forms and the intrahepatic portion
+A51	Assertion T51 present
+T52	problem 3499 3517	Slightly distended
+A52	Assertion T52 present
+T53	problem 156 177	Hepatitis C cirrhosis
+A53	Assertion T53 present
+T54	problem 1432 1451	aggressive behavior
+A54	Assertion T54 present
+T55	problem 2891 2912	Positive gynecomastia
+A55	Assertion T55 present
+T56	problem 284 298	encephalopathy
+A56	Assertion T56 present
+T57	problem 6362 6372	difficulty
+A57	Assertion T57 absent
+T58	problem 2769 2772	LAD
+A58	Assertion T58 absent
+T59	problem 467 481	encephalopathy
+A59	Assertion T59 present
+T60	problem 4916 4985	a decreased and sluggish flow within the right and left hepatic veins
+A60	Assertion T60 possible
+T61	problem 2971 2980	nontender
+A61	Assertion T61 absent
+T62	problem 1248 1252	cold
+A62	Assertion T62 present

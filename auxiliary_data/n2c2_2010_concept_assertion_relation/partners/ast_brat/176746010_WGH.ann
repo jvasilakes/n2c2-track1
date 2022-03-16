@@ -1,0 +1,16 @@
+T0	problem 446 449	URI
+A0	Assertion T0 possible
+T1	problem 1044 1062	uncontrolled pains
+A1	Assertion T1 hypothetical
+T2	problem 589 612	Urinary Tract Infection
+A2	Assertion T2 present
+T3	problem 1019 1030	high fevers
+A3	Assertion T3 hypothetical
+T4	problem 435 445	FLANK PAIN
+A4	Assertion T4 present
+T5	problem 1066 1080	other concerns
+A5	Assertion T5 hypothetical
+T6	problem 1033 1041	vomiting
+A6	Assertion T6 hypothetical
+T7	problem 537 560	urinary tract infection
+A7	Assertion T7 present

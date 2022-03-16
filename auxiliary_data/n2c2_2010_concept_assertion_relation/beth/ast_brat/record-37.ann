@@ -1,0 +1,282 @@
+T0	problem 11226 11229	MMP
+A0	Assertion T0 present
+T1	problem 11287 11309	a hip and arm fracture
+A1	Assertion T1 present
+T2	problem 8853 8880	bilateral pleural effusions
+A2	Assertion T2 present
+T3	problem 8917 8962	compressive atelectasis at the left lung base
+A3	Assertion T3 present
+T4	problem 8604 8618	abdominal pain
+A4	Assertion T4 present
+T5	problem 8623 8635	hypertension
+A5	Assertion T5 present
+T6	problem 8571 8592	mental status changes
+A6	Assertion T6 present
+T7	problem 8521 8534	renal failure
+A7	Assertion T7 present
+T8	problem 11833 11853	right wrist fracture
+A8	Assertion T8 present
+T9	problem 9925 9953	a small amount of free fluid
+A9	Assertion T9 present
+T10	problem 9842 9852	nondilated
+A10	Assertion T10 absent
+T11	problem 10456 10496	a fracture of the proximal right humerus
+A11	Assertion T11 present
+T12	problem 2483 2497	edema to knees
+A12	Assertion T12 present
+T13	problem 10894 10921	Bilateral pleural effusions
+A13	Assertion T13 present
+T14	problem 10955 10989	left-sided compressive atelectasis
+A14	Assertion T14 present
+T15	problem 1912 1940	lower gastrointestinal bleed
+A15	Assertion T15 present
+T16	problem 8350 8360	MS changes
+A16	Assertion T16 present
+T17	problem 8388 8401	bloody lavage
+A17	Assertion T17 present
+T18	problem 1961 1976	spinal stenosis
+A18	Assertion T18 present
+T19	problem 8363 8371	abd pain
+A19	Assertion T19 present
+T20	problem 3245 3248	LAD
+A20	Assertion T20 present
+T21	problem 1066 1069	SOB
+A21	Assertion T21 absent
+T22	problem 9698 9737	A small amount of nondependent free air
+A22	Assertion T22 present
+T23	problem 1061 1063	CP
+A23	Assertion T23 absent
+T24	problem 8975 9007	coronary vascular calcifications
+A24	Assertion T24 present
+T25	problem 4688 4699	underfilled
+A25	Assertion T25 present
+T26	problem 12890 12908	MULTIORGAN FAILURE
+A26	Assertion T26 present
+T27	problem 523 546	intra-abdominal abscess
+A27	Assertion T27 present
+T28	problem 568 612	gross soilage with bile and gastric contents
+A28	Assertion T28 present
+T29	problem 551 562	peritonitis
+A29	Assertion T29 present
+T30	problem 12909 12929	DUODENAL PERFORATION
+A30	Assertion T30 present
+T31	problem 1015 1018	LOC
+A31	Assertion T31 absent
+T32	problem 934 956	a hip and arm fracture
+A32	Assertion T32 present
+T33	problem 1024 1043	head or neck trauma
+A33	Assertion T33 absent
+T34	problem 1072 1088	light headedness
+A34	Assertion T34 absent
+T35	problem 992 1009	Nicholas seizures
+A35	Assertion T35 present
+T36	problem 1632 1653	transfusion dependent
+A36	Assertion T36 present
+T37	problem 1623 1629	Anemia
+A37	Assertion T37 present
+T38	problem 648 683	perforated posterior duodenal ulcer
+A38	Assertion T38 present
+T39	problem 1755 1782	Chronic renal insufficiency
+A39	Assertion T39 present
+T40	problem 1840 1868	first degree A-V heart block
+A40	Assertion T40 present
+T41	problem 11991 12014	worsening mental status
+A41	Assertion T41 present
+T42	problem 11933 11947	abdominal pain
+A42	Assertion T42 present
+T43	problem 2049 2072	symptomatic bradycardia
+A43	Assertion T43 present
+T44	problem 11950 11960	distention
+A44	Assertion T44 present
+T45	problem 12074 12082	free air
+A45	Assertion T45 present
+T46	problem 12019 12032	renal failure
+A46	Assertion T46 present
+T47	problem 11448 11457	a low hct
+A47	Assertion T47 present
+T48	problem 2357 2366	somnolent
+A48	Assertion T48 present
+T49	problem 2369 2377	confused
+A49	Assertion T49 present
+T50	problem 11543 11549	Anemia
+A50	Assertion T50 present
+T51	problem 11560 11581	transfusion dependant
+A51	Assertion T51 present
+T52	problem 11662 11664	DM
+A52	Assertion T52 present
+T53	problem 2518 2541	pain in R arm and R hip
+A53	Assertion T53 present
+T54	problem 11648 11652	GERD
+A54	Assertion T54 present
+T55	problem 11686 11689	PMR
+A55	Assertion T55 present
+T56	problem 12303 12338	perforated posterior duodenal ulcer
+A56	Assertion T56 present
+T57	problem 230 242	Hip fracture
+A57	Assertion T57 present
+T58	problem 152 176	Known Allergies to Drugs
+A58	Assertion T58 absent
+T59	problem 1689 1711	Polymyalgia rheumatica
+A59	Assertion T59 present
+T60	problem 1305 1310	bleed
+A60	Assertion T60 absent
+T61	problem 12448 12462	spiking fevers
+A61	Assertion T61 present
+T62	problem 1247 1269	R humerus and R hip fx
+A62	Assertion T62 present
+T63	problem 1300 1302	fx
+A63	Assertion T63 absent
+T64	problem 12087 12102	massive ascites
+A64	Assertion T64 present
+T65	problem 1357 1380	Coronary artery disease
+A65	Assertion T65 present
+T66	problem 1393 1431	non-ST-elevation myocardial infarction
+A66	Assertion T66 present
+T67	problem 12178 12201	intra-abdominal abscess
+A67	Assertion T67 present
+T68	problem 12206 12217	peritonitis
+A68	Assertion T68 present
+T69	problem 12223 12267	gross soilage with bile and gastric contents
+A69	Assertion T69 present
+T70	problem 1553 1556	CHF
+A70	Assertion T70 present
+T71	problem 4347 4379	more severe mitral regurgitation
+A71	Assertion T71 present
+T72	problem 1828 1835	syncope
+A72	Assertion T72 present
+T73	problem 4285 4341	New inferior and inferolateral wall motion abnormalities
+A73	Assertion T73 present
+T74	problem 3662 3713	inferolateral , inferior and mid septal hypokinesis
+A74	Assertion T74 present
+T75	problem 4437 4485	single vessel disease in a right dominant system
+A75	Assertion T75 present
+T76	problem 3611 3653	Resting regional wall motion abnormalities
+A76	Assertion T76 present
+T77	problem 3372 3381	elongated
+A77	Assertion T77 present
+T78	problem 3229 3242	1st deg block
+A78	Assertion T78 present
+T79	problem 1717 1729	Hypertension
+A79	Assertion T79 present
+T80	problem 5427 5437	dissection
+A80	Assertion T80 absent
+T81	problem 5498 5532	One vessel coronary artery disease
+A81	Assertion T81 present
+T82	problem 3935 3951	mildly thickened
+A82	Assertion T82 present
+T83	problem 1735 1749	Hypothyroidism
+A83	Assertion T83 present
+T84	problem 3251 3272	new TWI inf/lat leads
+A84	Assertion T84 present
+T85	problem 3849 3865	mildly thickened
+A85	Assertion T85 present
+T86	problem 859 862	MMP
+A86	Assertion T86 present
+T87	problem 1602 1617	Diabetes type 2
+A87	Assertion T87 present
+T88	problem 5538 5596	Moderately elevated right and left sided filling pressures
+A88	Assertion T88 present
+T89	problem 4873 4892	significant disease
+A89	Assertion T89 absent
+T90	problem 5234 5262	moderate renal insufficiency
+A90	Assertion T90 present
+T91	problem 5406 5423	residual stenosis
+A91	Assertion T91 absent
+T92	problem 5049 5080	Moderate pulmonary hypertension
+A92	Assertion T92 present
+T93	problem 4726 4745	obstructive disease
+A93	Assertion T93 absent
+T94	problem 4614 4622	occluded
+A94	Assertion T94 present
+T95	problem 4527 4556	serial 90% lesions proximally
+A95	Assertion T95 present
+T96	problem 4790 4826	hemodynamically significant stenoses
+A96	Assertion T96 absent
+T97	problem 4928 4975	elevated right and left sided filling pressures
+A97	Assertion T97 present
+T98	problem 891 908	a mechanical fall
+A98	Assertion T98 present
+T99	problem 959 963	Fall
+A99	Assertion T99 present
+T100	problem 3332 3350	moderately dilated
+A100	Assertion T100 present
+T101	problem 3275 3298	new ST depressions V4-6
+A101	Assertion T101 present
+T102	problem 3492 3543	mild regional left ventricular systolic dysfunction
+A102	Assertion T102 present
+T103	problem 11965 11985	coffee ground emesis
+A103	Assertion T103 present
+T104	problem 3592 3608	mildly depressed
+A104	Assertion T104 present
+T105	problem 1180 1205	pain in her R arm and hip
+A105	Assertion T105 present
+T106	problem 1122 1130	the fall
+A106	Assertion T106 present
+T107	problem 12930 12945	MULTIPLE TRAUMA
+A107	Assertion T107 present
+T108	problem 6987 6995	ACUTE MI
+A108	Assertion T108 possible
+T109	problem 1317 1328	dislocation
+A109	Assertion T109 absent
+T110	problem 10737 10748	perforation
+A110	Assertion T110 present
+T111	problem 10592 10641	free air and free fluid in the pelvis and abdomen
+A111	Assertion T111 present
+T112	problem 10532 10555	beam hardening artifact
+A112	Assertion T112 present
+T113	problem 10995 11026	Right proximal humeral fracture
+A113	Assertion T113 present
+T114	problem 11462 11474	major trauma
+A114	Assertion T114 present
+T115	problem 10035 10061	A small amount of free air
+A115	Assertion T115 present
+T116	problem 11490 11508	new changes on EKG
+A116	Assertion T116 present
+T117	problem 10114 10137	Vascular calcifications
+A117	Assertion T117 present
+T118	problem 2425 2430	m/r/g
+A118	Assertion T118 absent
+T119	problem 4078 4098	pericardial effusion
+A119	Assertion T119 absent
+T120	problem 10191 10209	Subcutaneous edema
+A120	Assertion T120 present
+T121	problem 10416 10449	degenerative changes of the spine
+A121	Assertion T121 present
+T122	problem 11376 11408	injuries to her shoulder and hip
+A122	Assertion T122 present
+T123	problem 1094 1103	dizziness
+A123	Assertion T123 absent
+T124	problem 11319 11323	Fall
+A124	Assertion T124 present
+T125	problem 11244 11261	a mechanical fall
+A125	Assertion T125 present
+T126	problem 11431 11434	CAD
+A126	Assertion T126 present
+T127	problem 9358 9387	A 1.8 cm exophytic renal cyst
+A127	Assertion T127 present
+T128	problem 9410 9426	A similar lesion
+A128	Assertion T128 present
+T129	problem 11439 11442	CHF
+A129	Assertion T129 present
+T130	problem 9507 9530	vascular calcifications
+A130	Assertion T130 present
+T131	problem 9533 9561	A small amount of free fluid
+A131	Assertion T131 present
+T132	problem 3871 3891	aortic regurgitation
+A132	Assertion T132 absent
+T133	problem 2461 2468	s/nt/nd
+A133	Assertion T133 absent
+T134	problem 12860 12867	Expired
+A134	Assertion T134 present
+T135	problem 4013 4060	moderate pulmonary artery systolic hypertension
+A135	Assertion T135 present
+T136	problem 8274 8295	perf / ischemic bowel
+A136	Assertion T136 possible
+T137	problem 8372 8383	hypotension
+A137	Assertion T137 present
+T138	problem 3954 3990	Moderate ( 2 +) mitral regurgitation
+A138	Assertion T138 present
+T139	problem 8463 8484	perf / ischemic bowel
+A139	Assertion T139 possible
+T140	problem 11779 11792	a recent fall
+A140	Assertion T140 present

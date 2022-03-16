@@ -1,0 +1,368 @@
+T0	problem 7741 7766	occasional irregularities
+A0	Assertion T0 present
+T1	problem 8104 8115	hypotension
+A1	Assertion T1 present
+T2	problem 2662 2665	+S3
+A2	Assertion T2 present
+T3	problem 2726 2731	NT/ND
+A3	Assertion T3 absent
+T4	problem 11199 11225	his massive fluid overload
+A4	Assertion T4 present
+T5	problem 11818 11827	agitation
+A5	Assertion T5 present
+T6	problem 15434 15446	Constipation
+A6	Assertion T6 hypothetical
+T7	problem 10946 10962	CHF exacerbation
+A7	Assertion T7 present
+T8	problem 11679 11700	mental status changes
+A8	Assertion T8 present
+T9	problem 1089 1110	several complications
+A9	Assertion T9 present
+T10	problem 1149 1173	an AICD pocket infection
+A10	Assertion T10 present
+T11	problem 11838 11861	a preexisting alkalosis
+A11	Assertion T11 present
+T12	problem 11480 11499	Metabolic Alkalosis
+A12	Assertion T12 present
+T13	problem 1057 1075	very deconditioned
+A13	Assertion T13 present
+T14	problem 11502 11515	Hypochloremia
+A14	Assertion T14 present
+T15	problem 16516 16520	pain
+A15	Assertion T15 hypothetical
+T16	problem 2447 2464	Slight confustion
+A16	Assertion T16 present
+T17	problem 2046 2060	Hyperlipidemia
+A17	Assertion T17 present
+T18	problem 1994 1998	COPD
+A18	Assertion T18 present
+T19	problem 1980 1991	nephropathy
+A19	Assertion T19 present
+T20	problem 2320 2328	diabetes
+A20	Assertion T20 associated_with_someone_else
+T21	problem 2084 2104	Lumbar sympathectomy
+A21	Assertion T21 present
+T22	problem 2070 2081	Chronic LBP
+A22	Assertion T22 present
+T23	problem 9110 9127	volume overloaded
+A23	Assertion T23 present
+T24	problem 9169 9181	elevated CVP
+A24	Assertion T24 present
+T25	problem 9149 9164	an elevated PAD
+A25	Assertion T25 present
+T26	problem 9233 9242	a high CO
+A26	Assertion T26 present
+T27	problem 9269 9275	sepsis
+A27	Assertion T27 possible
+T28	problem 9247 9254	low SVR
+A28	Assertion T28 present
+T29	problem 18604 18641	Congestive Heart Failure exacerbation
+A29	Assertion T29 present
+T30	problem 2018 2021	CVA
+A30	Assertion T30 present
+T31	problem 2063 2067	GERD
+A31	Assertion T31 present
+T32	problem 18654 18677	Coronary Artery Disease
+A32	Assertion T32 present
+T33	problem 1924 1927	CAD
+A33	Assertion T33 present
+T34	problem 9295 9310	an elevated WBC
+A34	Assertion T34 absent
+T35	problem 9319 9327	afebrile
+A35	Assertion T35 absent
+T36	problem 13219 13238	mild encephalopathy
+A36	Assertion T36 present
+T37	problem 8186 8202	fluid overloaded
+A37	Assertion T37 present
+T38	problem 8369 8385	CHF exacerbation
+A38	Assertion T38 possible
+T39	problem 5383 5397	mildly dilated
+A39	Assertion T39 present
+T40	problem 13386 13400	Hypothyroidism
+A40	Assertion T40 present
+T41	problem 8961 8978	volume overloaded
+A41	Assertion T41 present
+T42	problem 7872 7876	COPD
+A42	Assertion T42 present
+T43	problem 13570 13573	UTI
+A43	Assertion T43 possible
+T44	problem 9007 9029	his oxygen requirement
+A44	Assertion T44 present
+T45	problem 13477 13480	UTI
+A45	Assertion T45 present
+T46	problem 12318 12344	The right pleural effusion
+A46	Assertion T46 present
+T47	problem 1415 1424	back pain
+A47	Assertion T47 present
+T48	problem 7579 7588	infection
+A48	Assertion T48 present
+T49	problem 7550 7572	metabolic disturbances
+A49	Assertion T49 present
+T50	problem 13686 13709	Chronic lower back pain
+A50	Assertion T50 present
+T51	problem 13816 13826	somnolence
+A51	Assertion T51 present
+T52	problem 1819 1835	Ischemic colitis
+A52	Assertion T52 present
+T53	problem 7332 7372	the moderately slow posterior background
+A53	Assertion T53 present
+T54	problem 7398 7417	generalized slowing
+A54	Assertion T54 present
+T55	problem 13831 13841	MS changes
+A55	Assertion T55 present
+T56	problem 7312 7324	Abnormal EEG
+A56	Assertion T56 present
+T57	problem 12527 12540	complications
+A57	Assertion T57 absent
+T58	problem 7851 7865	hyperlipidemia
+A58	Assertion T58 present
+T59	problem 12544 12548	T2DM
+A59	Assertion T59 present
+T60	problem 7844 7848	T2DM
+A60	Assertion T60 present
+T61	problem 12450 12462	the effusion
+A61	Assertion T61 present
+T62	problem 13877 13893	left chest wound
+A62	Assertion T62 present
+T63	problem 10230 10256	completely pacer-dependent
+A63	Assertion T63 present
+T64	problem 7838 7841	CAD
+A64	Assertion T64 present
+T65	problem 14011 14042	the left gluteal pressure ulcer
+A65	Assertion T65 present
+T66	problem 7690 7711	epileptiform features
+A66	Assertion T66 absent
+T67	problem 5553 5569	mildly thickened
+A67	Assertion T67 present
+T68	problem 13898 13925	left gluteal pressure ulcer
+A68	Assertion T68 present
+T69	problem 7627 7656	prominent focal abnormalities
+A69	Assertion T69 absent
+T70	problem 6587 6623	shift of normally midline structures
+A70	Assertion T70 absent
+T71	problem 10614 10630	supratherapeutic
+A71	Assertion T71 present
+T72	problem 6629 6681	acute major or minor vascular territorial infarction
+A72	Assertion T72 absent
+T73	problem 6836 6896	subtle hypodensities within the periventricular white matter
+A73	Assertion T73 present
+T74	problem 6923 6961	chronic microvascular ischemic changes
+A74	Assertion T74 present
+T75	problem 6573 6584	mass effect
+A75	Assertion T75 absent
+T76	problem 14241 14261	the left chest wound
+A76	Assertion T76 present
+T77	problem 7203 7276	Stable microvascular ischemic changes in the periventricular white matter
+A77	Assertion T77 present
+T78	problem 11301 11326	medication non-compliance
+A78	Assertion T78 present
+T79	problem 6973 7012	Extensive carotid artery calcifications
+A79	Assertion T79 present
+T80	problem 8651 8662	hypotensive
+A80	Assertion T80 present
+T81	problem 7173 7200	acute or chronic infarction
+A81	Assertion T81 absent
+T82	problem 5602 5618	mildly thickened
+A82	Assertion T82 present
+T83	problem 6275 6292	Mild cardiomegaly
+A83	Assertion T83 present
+T84	problem 6220 6250	A small right pleural effusion
+A84	Assertion T84 present
+T85	problem 6202 6217	pulmonary edema
+A85	Assertion T85 present
+T86	problem 6458 6473	pulmonary edema
+A86	Assertion T86 present
+T87	problem 6535 6570	intraaxial or extraaxial hemorrhage
+A87	Assertion T87 absent
+T88	problem 6317 6329	pneumothorax
+A88	Assertion T88 absent
+T89	problem 10913 10916	SOB
+A89	Assertion T89 present
+T90	problem 5960 6014	Scattered parenchymal opacities in the left lower lobe
+A90	Assertion T90 present
+T91	problem 6025 6047	superimposed infection
+A91	Assertion T91 possible
+T92	problem 6051 6062	atelectasis
+A92	Assertion T92 possible
+T93	problem 4818 4834	mildly thickened
+A93	Assertion T93 present
+T94	problem 4046 4105	Underlying infectious consolidation in the right lower lobe
+A94	Assertion T94 possible
+T95	problem 10038 10062	an initial troponin bump
+A95	Assertion T95 present
+T96	problem 10111 10127	CHF exacerbation
+A96	Assertion T96 present
+T97	problem 5942 5957	pulmonary edema
+A97	Assertion T97 present
+T98	problem 10013 10021	Ischemia
+A98	Assertion T98 present
+T99	problem 6089 6096	abscess
+A99	Assertion T99 absent
+T100	problem 9966 9982	peripheral edema
+A100	Assertion T100 absent
+T101	problem 4882 4915	a restrictive filling abnormality
+A101	Assertion T101 present
+T102	problem 4923 4952	elevated left atrial pressure
+A102	Assertion T102 present
+T103	problem 5892 5937	Increasing large right-sided pleural effusion
+A103	Assertion T103 present
+T104	problem 9768 9806	inferior and inferolateral hypokinesis
+A104	Assertion T104 present
+T105	problem 11587 11603	post-hypercapnia
+A105	Assertion T105 possible
+T106	problem 11556 11577	contraction alkalosis
+A106	Assertion T106 possible
+T107	problem 5633 5653	pericardial effusion
+A107	Assertion T107 absent
+T108	problem 4185 4228	mild symmetric left ventricular hypertrophy
+A108	Assertion T108 present
+T109	problem 10401 10415	atrial flutter
+A109	Assertion T109 present
+T110	problem 10191 10205	further issues
+A110	Assertion T110 absent
+T111	problem 967 973	cloudy
+A111	Assertion T111 present
+T112	problem 1009 1026	his worsening SOB
+A112	Assertion T112 present
+T113	problem 4368 4406	inferior and inferolateral hypokinesis
+A113	Assertion T113 present
+T114	problem 4317 4359	Resting regional wall motion abnormalities
+A114	Assertion T114 present
+T115	problem 12198 12218	serosanguinous fluid
+A115	Assertion T115 present
+T116	problem 3825 3842	markedly enlarged
+A116	Assertion T116 present
+T117	problem 12098 12121	the metabolic alkalosis
+A117	Assertion T117 present
+T118	problem 12127 12144	Pleural effusions
+A118	Assertion T118 present
+T119	problem 1840 1854	ischemic liver
+A119	Assertion T119 present
+T120	problem 3859 3904	a large right and small left pleural effusion
+A120	Assertion T120 present
+T121	problem 4305 4314	depressed
+A121	Assertion T121 present
+T122	problem 3954 3978	congestive heart failure
+A122	Assertion T122 present
+T123	problem 3534 3558	Congestive heart failure
+A123	Assertion T123 present
+T124	problem 3564 3583	bilateral effusions
+A124	Assertion T124 present
+T125	problem 3610 3645	underlying consolidation in the RLL
+A125	Assertion T125 possible
+T126	problem 11755 11784	a depressed respiratory drive
+A126	Assertion T126 present
+T127	problem 10316 10328	post-op afib
+A127	Assertion T127 present
+T128	problem 6713 6729	mildly prominent
+A128	Assertion T128 present
+T129	problem 13177 13202	a change in mental status
+A129	Assertion T129 absent
+T130	problem 13132 13152	old lacunar infarcts
+A130	Assertion T130 present
+T131	problem 12947 12955	delerium
+A131	Assertion T131 present
+T132	problem 12971 12994	metabolic abnormalities
+A132	Assertion T132 present
+T133	problem 4478 4493	mildly impaired
+A133	Assertion T133 possible
+T134	problem 12905 12922	baseline dementia
+A134	Assertion T134 present
+T135	problem 12863 12873	MS changes
+A135	Assertion T135 present
+T136	problem 12757 12771	Hyperlipidemia
+A136	Assertion T136 present
+T137	problem 12819 12823	COPD
+A137	Assertion T137 present
+T138	problem 4159 4173	mildly dilated
+A138	Assertion T138 present
+T139	problem 470 473	CAD
+A139	Assertion T139 present
+T140	problem 500 504	COPD
+A140	Assertion T140 present
+T141	problem 507 511	T2DM
+A141	Assertion T141 present
+T142	problem 1965 1975	neuropathy
+A142	Assertion T142 present
+T143	problem 2001 2015	Hypothyroidism
+A143	Assertion T143 present
+T144	problem 1195 1200	N/V/D
+A144	Assertion T144 absent
+T145	problem 1203 1217	abdominal pain
+A145	Assertion T145 absent
+T146	problem 230 249	Shortness of Breath
+A146	Assertion T146 present
+T147	problem 2763 2789	pitting edema to knees B/L
+A147	Assertion T147 present
+T148	problem 152 176	Known Allergies to Drugs
+A148	Assertion T148 absent
+T149	problem 2675 2710	Crackles halfway up lung fields B/L
+A149	Assertion T149 present
+T150	problem 1223 1225	HA
+A150	Assertion T150 absent
+T151	problem 2603 2623	increased neck girth
+A151	Assertion T151 present
+T152	problem 2644 2659	Grade II/VI SEM
+A152	Assertion T152 present
+T153	problem 708 721	worsening SOB
+A153	Assertion T153 present
+T154	problem 2573 2576	JVD
+A154	Assertion T154 possible
+T155	problem 585 598	worsening SOB
+A155	Assertion T155 present
+T156	problem 1956 1960	T2DM
+A156	Assertion T156 present
+T157	problem 518 539	AICD pocket infection
+A157	Assertion T157 present
+T158	problem 5023 5085	Grade III/IV ( severe ) left ventricular diastolic dysfunction
+A158	Assertion T158 present
+T159	problem 1770 1790	pericardial effusion
+A159	Assertion T159 present
+T160	problem 1793 1801	hematoma
+A160	Assertion T160 present
+T161	problem 1705 1725	pericardial effusion
+A161	Assertion T161 present
+T162	problem 1661 1682	AICD Pocket infection
+A162	Assertion T162 present
+T163	problem 1687 1702	MSSA bacteremia
+A163	Assertion T163 present
+T164	problem 1873 1885	air embolism
+A164	Assertion T164 present
+T165	problem 19355 19383	any other concerning symptom
+A165	Assertion T165 hypothetical
+T166	problem 7444 7482	a widespread encephalopathic condition
+A166	Assertion T166 present
+T167	problem 19313 19323	chest pain
+A167	Assertion T167 hypothetical
+T168	problem 19326 19335	dizziness
+A168	Assertion T168 hypothetical
+T169	problem 4515 4529	mildly dilated
+A169	Assertion T169 present
+T170	problem 19338 19349	passing out
+A170	Assertion T170 hypothetical
+T171	problem 4602 4618	mildly thickened
+A171	Assertion T171 present
+T172	problem 18940 18958	a CHF exacerbation
+A172	Assertion T172 present
+T173	problem 19281 19310	worsening shortness of breath
+A173	Assertion T173 hypothetical
+T174	problem 4555 4569	mildly dilated
+A174	Assertion T174 present
+T175	problem 5149 5192	mild pulmonary artery systolic hypertension
+A175	Assertion T175 present
+T176	problem 18829 18837	afebrile
+A176	Assertion T176 absent
+T177	problem 5121 5137	mildly thickened
+A177	Assertion T177 present
+T178	problem 1186 1192	any CP
+A178	Assertion T178 absent
+T179	problem 5207 5227	pericardial effusion
+A179	Assertion T179 absent
+T180	problem 18678 18690	Hypertension
+A180	Assertion T180 present
+T181	problem 18691 18715	Type 2 Diabetes Mellitus
+A181	Assertion T181 present
+T182	problem 18716 18753	Chronic Obstructive Pulmonary Disease
+A182	Assertion T182 present
+T183	problem 7922 7935	worsening SOB
+A183	Assertion T183 present

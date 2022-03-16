@@ -1,0 +1,32 @@
+T0	problem 2922 2940	sepsis risk factor
+A0	Assertion T0 present
+T1	problem 4594 4614	chronic lung disease
+A1	Assertion T1 hypothetical
+T2	problem 953 977	some occasional grunting
+A2	Assertion T2 present
+T3	problem 4478 4498	chronic lung disease
+A3	Assertion T3 hypothetical
+T4	problem 5032 5043	Prematurity
+A4	Assertion T4 present
+T5	problem 918 948	moderate subcostal retractions
+A5	Assertion T5 present
+T6	problem 1013 1019	murmur
+A6	Assertion T6 absent
+T7	problem 218 238	rupture of membranes
+A7	Assertion T7 present
+T8	problem 260 285	progressive preterm labor
+A8	Assertion T8 present
+T9	problem 1797 1803	murmur
+A9	Assertion T9 absent
+T10	problem 5124 5153	respiratory distress syndrome
+A10	Assertion T10 present
+T11	problem 1649 1661	desaturation
+A11	Assertion T11 absent
+T12	problem 5088 5094	Sepsis
+A12	Assertion T12 absent
+T13	problem 4748 4757	influenza
+A13	Assertion T13 hypothetical
+T14	problem 1626 1631	apnea
+A14	Assertion T14 absent
+T15	problem 1634 1645	bradycardia
+A15	Assertion T15 absent

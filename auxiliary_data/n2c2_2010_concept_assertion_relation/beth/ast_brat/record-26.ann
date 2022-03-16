@@ -1,0 +1,180 @@
+T0	problem 6409 6440	gastroesophageal reflux disease
+A0	Assertion T0 present
+T1	problem 5519 5551	distinctive psychiatric disorder
+A1	Assertion T1 absent
+T2	problem 1138 1158	stroke like symptoms
+A2	Assertion T2 absent
+T3	problem 6624 6644	a little bit icteric
+A3	Assertion T3 present
+T4	problem 6696 6734	slightly elevated liver function tests
+A4	Assertion T4 present
+T5	problem 2683 2711	his critical aortic stenosis
+A5	Assertion T5 present
+T6	problem 252 259	dyspnea
+A6	Assertion T6 conditional
+T7	problem 2714 2741	his coronary artery disease
+A7	Assertion T7 present
+T8	problem 275 296	exertional chest pain
+A8	Assertion T8 present
+T9	problem 197 222	type II diabetes mellitus
+A9	Assertion T9 present
+T10	problem 973 990	clotting problems
+A10	Assertion T10 absent
+T11	problem 1062 1074	claudication
+A11	Assertion T11 absent
+T12	problem 961 969	bleeding
+A12	Assertion T12 absent
+T13	problem 1226 1242	Recent pneumonia
+A13	Assertion T13 present
+T14	problem 4751 4768	somewhat confused
+A14	Assertion T14 present
+T15	problem 1698 1706	afebrile
+A15	Assertion T15 absent
+T16	problem 1366 1386	known drug allergies
+A16	Assertion T16 absent
+T17	problem 1184 1204	Hypercholesterolemia
+A17	Assertion T17 present
+T18	problem 5573 5595	postoperative delirium
+A18	Assertion T18 possible
+T19	problem 9543 9568	Chronic blood loss anemia
+A19	Assertion T19 present
+T20	problem 9520 9540	Perioperative stroke
+A20	Assertion T20 present
+T21	problem 4607 4623	an acute infarct
+A21	Assertion T21 possible
+T22	problem 4362 4416	chronic appearing infarcts in the right occipital lobe
+A22	Assertion T22 present
+T23	problem 4472 4493	more chronic infarcts
+A23	Assertion T23 possible
+T24	problem 4268 4281	his confusion
+A24	Assertion T24 present
+T25	problem 7851 7861	his stroke
+A25	Assertion T25 present
+T26	problem 7819 7839	his inability to eat
+A26	Assertion T26 present
+T27	problem 9625 9645	Hypercholesterolemia
+A27	Assertion T27 present
+T28	problem 1847 1853	bruits
+A28	Assertion T28 absent
+T29	problem 9599 9622	Urinary tract infection
+A29	Assertion T29 present
+T30	problem 8021 8039	his initial stroke
+A30	Assertion T30 present
+T31	problem 710 757	90% stenosis of the posterior descending artery
+A31	Assertion T31 present
+T32	problem 2746 2797	his significantly dilated ascending aortic aneurysm
+A32	Assertion T32 present
+T33	problem 4833 4857	a right sided hemiplegia
+A33	Assertion T33 present
+T34	problem 920 948	paroxysmal nocturnal dyspnea
+A34	Assertion T34 absent
+T35	problem 9648 9664	Type II diabetes
+A35	Assertion T35 present
+T36	problem 904 917	any orthopnea
+A36	Assertion T36 absent
+T37	problem 8497 8505	this bug
+A37	Assertion T37 present
+T38	problem 1015 1031	any palpitations
+A38	Assertion T38 absent
+T39	problem 8611 8619	Serratia
+A39	Assertion T39 present
+T40	problem 5407 5416	confusion
+A40	Assertion T40 present
+T41	problem 1317 1348	Gastroesophageal reflux disease
+A41	Assertion T41 present
+T42	problem 8715 8722	E. coli
+A42	Assertion T42 present
+T43	problem 9667 9698	Gastroesophageal reflux disease
+A43	Assertion T43 present
+T44	problem 9299 9322	Coronary artery disease
+A44	Assertion T44 present
+T45	problem 2071 2089	hepatosplenomegaly
+A45	Assertion T45 absent
+T46	problem 7060 7090	slightly elevated blood sugars
+A46	Assertion T46 present
+T47	problem 9434 9454	Aortic arch aneurysm
+A47	Assertion T47 present
+T48	problem 9489 9517	Acute postoperative delirium
+A48	Assertion T48 present
+T49	problem 8997 9021	the E. coli in his urine
+A49	Assertion T49 present
+T50	problem 6991 7004	cholecystitis
+A50	Assertion T50 possible
+T51	problem 7008 7022	cholelithiasis
+A51	Assertion T51 possible
+T52	problem 1207 1223	Type II diabetes
+A52	Assertion T52 present
+T53	problem 4200 4213	slow to awake
+A53	Assertion T53 present
+T54	problem 4124 4150	The major neurologic event
+A54	Assertion T54 present
+T55	problem 8733 8757	intermittently resistant
+A55	Assertion T55 present
+T56	problem 1078 1103	gastrointestinal bleeding
+A56	Assertion T56 absent
+T57	problem 2097 2111	CVA tenderness
+A57	Assertion T57 absent
+T58	problem 1051 1059	wheezing
+A58	Assertion T58 absent
+T59	problem 9368 9392	Critical aortic stenosis
+A59	Assertion T59 present
+T60	problem 8082 8100	an aspiration risk
+A60	Assertion T60 present
+T61	problem 5482 5504	his neurologic insults
+A61	Assertion T61 present
+T62	problem 1962 1990	3/6 systolic ejection murmur
+A62	Assertion T62 present
+T63	problem 2041 2050	nontender
+A63	Assertion T63 absent
+T64	problem 642 705	70% stenoses of the left circumflex and oblique marginal artery
+A64	Assertion T64 present
+T65	problem 7966 7984	an aspiration risk
+A65	Assertion T65 present
+T66	problem 3751 3780	major problems with his lungs
+A66	Assertion T66 absent
+T67	problem 506 527	a dilated aortic root
+A67	Assertion T67 present
+T68	problem 542 590	80% stenosis of the mid left anterior descending
+A68	Assertion T68 present
+T69	problem 6949 6976	common bile duct dilatation
+A69	Assertion T69 absent
+T70	problem 2053 2065	nondistended
+A70	Assertion T70 absent
+T71	problem 8871 8896	his blood borne infection
+A71	Assertion T71 present
+T72	problem 6931 6945	any gallstones
+A72	Assertion T72 absent
+T73	problem 2223 2235	varicosities
+A73	Assertion T73 absent
+T74	problem 5437 5459	his psychiatric issues
+A74	Assertion T74 present
+T75	problem 172 192	hypercholesterolemia
+A75	Assertion T75 present
+T76	problem 6007 6024	his sternal wound
+A76	Assertion T76 present
+T77	problem 8337 8370	positive blood and urine cultures
+A77	Assertion T77 present
+T78	problem 8395 8438	Methicillin resistant Staphylococcus aureus
+A78	Assertion T78 present
+T79	problem 10156 10168	loose stools
+A79	Assertion T79 hypothetical
+T80	problem 6102 6114	hypertension
+A80	Assertion T80 present
+T81	problem 2167 2175	clubbing
+A81	Assertion T81 absent
+T82	problem 2156 2164	cyanosis
+A82	Assertion T82 absent
+T83	problem 5963 5977	any chest pain
+A83	Assertion T83 absent
+T84	problem 6161 6181	hypercholesterolemia
+A84	Assertion T84 present
+T85	problem 414 448	a positive exercise tolerance test
+A85	Assertion T85 present
+T86	problem 1266 1284	Recent weight loss
+A86	Assertion T86 present
+T87	problem 4773 4795	a little bit out of it
+A87	Assertion T87 present
+T88	problem 2179 2184	edema
+A88	Assertion T88 absent
+T89	problem 1301 1314	the pneumonia
+A89	Assertion T89 present

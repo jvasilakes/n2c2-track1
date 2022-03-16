@@ -1,0 +1,26 @@
+T0	problem 351 368	Abnormal Pap Test
+A0	Assertion T0 present
+T1	problem 970 994	white d / c at introitus
+A1	Assertion T1 present
+T2	problem 780 795	distinct masses
+A2	Assertion T2 absent
+T3	problem 811 819	inverted
+A3	Assertion T3 present
+T4	problem 303 327	Second Degree Laceration
+A4	Assertion T4 present
+T5	problem 960 967	lesions
+A5	Assertion T5 absent
+T6	problem 696 701	Labor
+A6	Assertion T6 present
+T7	problem 1454 1458	srom
+A7	Assertion T7 present
+T8	problem 688 692	Srom
+A8	Assertion T8 present
+T9	problem 1462 1467	labor
+A9	Assertion T9 present
+T12	problem 384 403	Bacterial Vaginitis
+A10	Assertion T12 present
+T13	problem 1009 1033	sml amt thin white d / c
+A11	Assertion T13 present
+T14	problem 1734 1738	srom
+A12	Assertion T14 present

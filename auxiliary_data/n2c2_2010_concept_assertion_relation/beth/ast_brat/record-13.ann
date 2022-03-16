@@ -1,0 +1,106 @@
+T0	problem 6214 6237	Coronary artery disease
+A0	Assertion T0 present
+T1	problem 3428 3456	burst of atrial fibrillation
+A1	Assertion T1 present
+T2	problem 3862 3880	left arm phlebitis
+A2	Assertion T2 present
+T3	problem 3772 3796	further episodes of AFIB
+A3	Assertion T3 absent
+T4	problem 1916 1932	mildly thickened
+A4	Assertion T4 present
+T5	problem 630 653	severe 3 vessel disease
+A5	Assertion T5 present
+T6	problem 1698 1712	mildly dilated
+A6	Assertion T6 present
+T7	problem 6305 6317	Hypertension
+A7	Assertion T7 present
+T8	problem 6280 6302	Carpal tunnel syndrome
+A8	Assertion T8 present
+T9	problem 6488 6502	increased pain
+A9	Assertion T9 hypothetical
+T10	problem 6544 6559	any weight gain
+A10	Assertion T10 hypothetical
+T11	problem 6510 6536	any fever greater than 101
+A11	Assertion T11 hypothetical
+T12	problem 7156 7173	surgical incision
+A12	Assertion T12 present
+T13	problem 6667 6676	incisions
+A13	Assertion T13 present
+T14	problem 579 591	abnormal ETT
+A14	Assertion T14 present
+T15	problem 4752 4756	pain
+A15	Assertion T15 hypothetical
+T16	problem 6464 6471	redness
+A16	Assertion T16 hypothetical
+T17	problem 6474 6482	drainage
+A17	Assertion T17 hypothetical
+T18	problem 778 787	Arthritis
+A18	Assertion T18 present
+T19	problem 1214 1226	varicosities
+A19	Assertion T19 absent
+T20	problem 544 574	worsening shortness of breath.
+A20	Assertion T20 present
+T21	problem 761 775	Hyperlipidemia
+A21	Assertion T21 present
+T22	problem 1204 1209	edema
+A22	Assertion T22 absent
+T23	problem 746 758	Hypertension
+A23	Assertion T23 present
+T24	problem 159 174	Known Allergies
+A24	Assertion T24 absent
+T25	problem 1725 1773	simple atheroma in the descending thoracic aorta
+A25	Assertion T25 present
+T26	problem 721 743	Carpal tunnel syndrome
+A26	Assertion T26 present
+T27	problem 794 806	Bell's Palsy
+A27	Assertion T27 present
+T28	problem 1406 1436	mild inferior wall hypokinesis
+A28	Assertion T28 present
+T29	problem 1855 1875	aortic regurgitation
+A29	Assertion T29 absent
+T30	problem 1828 1849	aortic valve stenosis
+A30	Assertion T30 absent
+T31	problem 244 263	Shortness of Breath
+A31	Assertion T31 present
+T32	problem 2241 2253	pneumothorax
+A32	Assertion T32 absent
+T33	problem 2086 2113	Left lower lobe atelectasis
+A33	Assertion T33 present
+T34	problem 1935 1963	Trivial mitral regurgitation
+A34	Assertion T34 present
+T35	problem 2162 2225	Mild postoperative widening of the cardiomediastinal silhouette
+A35	Assertion T35 present
+T36	problem 922 924	MI
+A36	Assertion T36 associated_with_someone_else
+T37	problem 1124 1129	w/r/r
+A37	Assertion T37 absent
+T38	problem 1474 1519	thinning of the mid to distal inferior septum
+A38	Assertion T38 present
+T39	problem 1055 1060	NC/AT
+A39	Assertion T39 absent
+T40	problem 1448 1456	akinesis
+A40	Assertion T40 present
+T41	problem 1094 1108	carotid bruits
+A41	Assertion T41 absent
+T42	problem 1581 1597	mildly depressed
+A42	Assertion T42 present
+T43	problem 1459 1469	dyskinesis
+A43	Assertion T43 present
+T44	problem 1144 1151	c/r/m/g
+A44	Assertion T44 absent
+T45	problem 6441 6447	wounds
+A45	Assertion T45 present
+T46	problem 6452 6461	infection
+A46	Assertion T46 hypothetical
+T47	problem 809 812	HOH
+A47	Assertion T47 present
+T48	problem 6337 6346	Arthritis
+A48	Assertion T48 present
+T49	problem 6320 6334	Hyperlipidemia
+A49	Assertion T49 present
+T50	problem 1086 1089	JVD
+A50	Assertion T50 absent
+T51	problem 1165 1170	NT/ND
+A51	Assertion T51 absent
+T52	problem 1028 1031	NAD
+A52	Assertion T52 absent

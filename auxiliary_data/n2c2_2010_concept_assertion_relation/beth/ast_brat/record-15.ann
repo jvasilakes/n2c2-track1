@@ -1,0 +1,18 @@
+T0	problem 598 633	very mild left lower extremity pain
+A0	Assertion T0 present
+T1	problem 748 772	Congestive heart failure
+A1	Assertion T1 present
+T2	problem 855 872	Diabetes mellitus
+A2	Assertion T2 present
+T3	problem 778 797	Acute renal failure
+A3	Assertion T3 present
+T4	problem 1250 1263	osteomyelitis
+A4	Assertion T4 present
+T5	problem 1177 1190	osteomyelitis
+A5	Assertion T5 present
+T6	problem 836 849	Osteomyelitis
+A6	Assertion T6 present
+T7	problem 803 830	Acute myocardial infarction
+A7	Assertion T7 present
+T8	problem 719 742	Coronary artery disease
+A8	Assertion T8 present

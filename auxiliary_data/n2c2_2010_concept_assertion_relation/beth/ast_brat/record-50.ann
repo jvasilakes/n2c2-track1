@@ -1,0 +1,106 @@
+T0	problem 2142 2165	poor R-wave progression
+A0	Assertion T0 present
+T1	problem 2181 2194	acute changes
+A1	Assertion T1 absent
+T2	problem 742 747	fever
+A2	Assertion T2 absent
+T3	problem 2775 2802	her current cardiac failure
+A3	Assertion T3 present
+T4	problem 751 757	chills
+A4	Assertion T4 absent
+T5	problem 344 361	increased dyspnea
+A5	Assertion T5 conditional
+T6	problem 2675 2704	the wall motion abnormalities
+A6	Assertion T6 present
+T7	problem 2719 2753	a non-Q wave myocardial infarction
+A7	Assertion T7 present
+T8	problem 1775 1788	non-distended
+A8	Assertion T8 absent
+T9	problem 2015 2039	congestive heart failure
+A9	Assertion T9 present
+T10	problem 1805 1829	1+ lower extremity edema
+A10	Assertion T10 present
+T11	problem 309 326	easy fatigability
+A11	Assertion T11 present
+T12	problem 2118 2137	left axis deviation
+A12	Assertion T12 present
+T13	problem 3110 3125	the renal issue
+A13	Assertion T13 present
+T14	problem 1447 1461	acute distress
+A14	Assertion T14 absent
+T15	problem 2524 2559	the distal lateral wall hypokinesis
+A15	Assertion T15 present
+T16	problem 2456 2504	hypokinesis of the lower half of septum and apex
+A16	Assertion T16 present
+T17	problem 2389 2444	moderately depressed left ventricular systolic function
+A17	Assertion T17 present
+T18	problem 1665 1685	Crackles bilaterally
+A18	Assertion T18 present
+T19	problem 2311 2345	diastolic and systolic dysfunction
+A19	Assertion T19 possible
+T20	problem 3031 3062	her renal functioning worsening
+A20	Assertion T20 present
+T21	problem 1623 1650	a 1-2/6 holosystolic murmur
+A21	Assertion T21 present
+T22	problem 1762 1772	non-tender
+A22	Assertion T22 absent
+T23	problem 1293 1316	coronary artery disease
+A23	Assertion T23 associated_with_someone_else
+T24	problem 1279 1287	diabetes
+A24	Assertion T24 associated_with_someone_else
+T25	problem 3614 3672	moderate to severe focal stenosis of the left renal artery
+A25	Assertion T25 present
+T26	problem 3548 3596	severe right renal artery stenosis at its origin
+A26	Assertion T26 present
+T27	problem 2562 2591	The wall motion abnormalities
+A27	Assertion T27 present
+T28	problem 987 1007	known drug allergies
+A28	Assertion T28 absent
+T29	problem 446 456	chest pain
+A29	Assertion T29 absent
+T30	problem 3472 3493	renal artery stenosis
+A30	Assertion T30 possible
+T31	problem 3392 3408	her hypertension
+A31	Assertion T31 present
+T32	problem 3971 3991	the coronary disease
+A32	Assertion T32 present
+T33	problem 4086 4094	worsened
+A33	Assertion T33 present
+T34	problem 4342 4374	Non-Q wave myocardial infarction
+A34	Assertion T34 present
+T35	problem 4506 4525	Acute renal failure
+A35	Assertion T35 present
+T36	problem 534 553	some abdominal pain
+A36	Assertion T36 present
+T37	problem 459 468	orthopnea
+A37	Assertion T37 absent
+T38	problem 4380 4427	Systolic and diastolic congestive heart failure
+A38	Assertion T38 present
+T39	problem 4433 4464	Bilateral renal artery stenosis
+A39	Assertion T39 present
+T40	problem 285 304	shortness of breath
+A40	Assertion T40 present
+T41	problem 4531 4543	Hypertension
+A41	Assertion T41 present
+T42	problem 191 199	diabetes
+A42	Assertion T42 present
+T43	problem 632 638	nausea
+A43	Assertion T43 absent
+T44	problem 666 688	bowel movement changes
+A44	Assertion T44 absent
+T45	problem 936 950	Osteoarthritis
+A45	Assertion T45 present
+T46	problem 652 663	diaphoresis
+A46	Assertion T46 absent
+T47	problem 641 649	vomiting
+A47	Assertion T47 absent
+T48	problem 918 930	Hypertension
+A48	Assertion T48 present
+T49	problem 705 732	increased urinary frequency
+A49	Assertion T49 present
+T50	problem 204 216	hypertension
+A50	Assertion T50 present
+T51	problem 895 912	Diabetes mellitus
+A51	Assertion T51 present
+T52	problem 471 499	paroxysmal nocturnal dyspnea
+A52	Assertion T52 absent

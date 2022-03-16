@@ -1,0 +1,28 @@
+T0	problem 364 390	diagnosed liver laceration
+A0	Assertion T0 present
+T1	problem 770 791	peritoneal irritation
+A1	Assertion T1 absent
+T2	problem 586 622	Left forarm and right knee abrasions
+A2	Assertion T2 present
+T3	problem 2558 2567	dizziness
+A3	Assertion T3 hypothetical
+T4	problem 1743 1757	biliary stasis
+A4	Assertion T4 absent
+T5	problem 2148 2152	Pain
+A5	Assertion T5 hypothetical
+T6	problem 1525 1529	pain
+A6	Assertion T6 present
+T7	problem 2528 2546	any abdominal pain
+A7	Assertion T7 hypothetical
+T8	problem 1584 1604	The liver laceration
+A8	Assertion T8 present
+T9	problem 1640 1660	further complication
+A9	Assertion T9 absent
+T10	problem 1629 1636	rupture
+A10	Assertion T10 absent
+T11	problem 2549 2554	fever
+A11	Assertion T11 hypothetical
+T12	problem 690 697	murmors
+A12	Assertion T12 absent
+T13	problem 700 714	Abdominal pain
+A13	Assertion T13 present

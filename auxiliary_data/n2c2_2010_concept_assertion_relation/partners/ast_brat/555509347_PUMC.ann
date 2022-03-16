@@ -1,0 +1,14 @@
+T0	problem 351 369	Low Lying Placenta
+A0	Assertion T0 present
+T1	problem 730 742	Active Labor
+A1	Assertion T1 present
+T2	problem 303 327	Second Degree Laceration
+A2	Assertion T2 present
+T3	problem 1500 1516	chorioamnionitis
+A3	Assertion T3 present
+T4	problem 408 431	Urinary Tract Infection
+A4	Assertion T4 present
+T5	problem 1590 1601	nuchal cord
+A5	Assertion T5 present
+T6	problem 1221 1233	active labor
+A6	Assertion T6 present

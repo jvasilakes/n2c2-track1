@@ -1,0 +1,120 @@
+T0	problem 1314 1346	progressive abdominal discomfort
+A0	Assertion T0 present
+T1	problem 1349 1370	decreased oral intake
+A1	Assertion T1 present
+T2	problem 1377 1385	weakness
+A2	Assertion T2 present
+T3	problem 1057 1080	coronary artery disease
+A3	Assertion T3 associated_with_someone_else
+T4	problem 1029 1043	adrenal cancer
+A4	Assertion T4 associated_with_someone_else
+T5	problem 978 998	known drug allergies
+A5	Assertion T5 absent
+T6	problem 3419 3428	pneumonia
+A6	Assertion T6 present
+T7	problem 4185 4190	fluid
+A7	Assertion T7 present
+T8	problem 4251 4256	fluid
+A8	Assertion T8 present
+T9	problem 1965 1988	decreased breath sounds
+A9	Assertion T9 present
+T10	problem 1920 1927	murmurs
+A10	Assertion T10 absent
+T11	problem 1993 2001	dullness
+A11	Assertion T11 present
+T12	problem 1862 1914	tachycardic first heart sound and second heart sound
+A12	Assertion T12 present
+T13	problem 2056 2065	distended
+A13	Assertion T13 present
+T14	problem 1784 1793	anicteric
+A14	Assertion T14 absent
+T15	problem 2279 2303	increased abdominal pain
+A15	Assertion T15 present
+T16	problem 1654 1681	acutely and chronically ill
+A16	Assertion T16 present
+T17	problem 2221 2264	recently diagnosed abdominal carcinomatosis
+A17	Assertion T17 present
+T18	problem 2146 2154	cyanosis
+A18	Assertion T18 absent
+T19	problem 2135 2143	clubbing
+A19	Assertion T19 absent
+T20	problem 3476 3496	the pulmonary emboli
+A20	Assertion T20 present
+T21	problem 2160 2165	edema
+A21	Assertion T21 absent
+T22	problem 182 225	recently diagnosed abdominal carcinomatosis
+A22	Assertion T22 present
+T23	problem 2694 2723	increased shortness of breath
+A23	Assertion T23 present
+T24	problem 2070 2074	firm
+A24	Assertion T24 present
+T25	problem 255 269	abdominal pain
+A25	Assertion T25 present
+T26	problem 274 282	bloating
+A26	Assertion T26 present
+T27	problem 2730 2760	difficulty catching his breath
+A27	Assertion T27 present
+T28	problem 344 358	adenocarcinoma
+A28	Assertion T28 present
+T29	problem 2898 2921	a left pleural effusion
+A29	Assertion T29 present
+T30	problem 305 325	a large omental mass
+A30	Assertion T30 present
+T31	problem 3245 3293	subsegmental pulmonary emboli of the upper lobes
+A31	Assertion T31 possible
+T32	problem 3305 3316	infiltrates
+A32	Assertion T32 possible
+T33	problem 3333 3353	aspiration pneumonia
+A33	Assertion T33 possible
+T34	problem 3689 3694	fluid
+A34	Assertion T34 present
+T35	problem 462 502	an extrinsic mass present on the stomach
+A35	Assertion T35 present
+T36	problem 531 555	increased abdominal pain
+A36	Assertion T36 present
+T37	problem 2992 3010	pulmonary embolism
+A37	Assertion T37 possible
+T38	problem 560 576	poor oral intake
+A38	Assertion T38 present
+T39	problem 3564 3595	increasing abdominal distention
+A39	Assertion T39 present
+T40	problem 1940 1947	gallops
+A40	Assertion T40 absent
+T41	problem 648 658	chest pain
+A41	Assertion T41 absent
+T42	problem 588 608	generalized weakness
+A42	Assertion T42 present
+T43	problem 1930 1934	rubs
+A43	Assertion T43 absent
+T44	problem 3975 3997	the gastric secretions
+A44	Assertion T44 present
+T45	problem 2308 2324	poor oral intake
+A45	Assertion T45 present
+T46	problem 661 680	shortness of breath
+A46	Assertion T46 absent
+T47	problem 687 692	cough
+A47	Assertion T47 absent
+T48	problem 4086 4127	an increasing left-sided pleural effusion
+A48	Assertion T48 present
+T49	problem 3790 3819	persistent gastric secretions
+A49	Assertion T49 present
+T50	problem 721 749	Benign prostatic hypertrophy
+A50	Assertion T50 present
+T51	problem 755 769	Osteoarthritis
+A51	Assertion T51 present
+T52	problem 2651 2669	increased vomiting
+A52	Assertion T52 present
+T53	problem 775 806	Gastrointestinal adenocarcinoma
+A53	Assertion T53 present
+T54	problem 4623 4630	Hypoxia
+A54	Assertion T54 present
+T55	problem 4636 4647	Dehydration
+A55	Assertion T55 present
+T56	problem 4495 4526	Gastrointestinal adenocarcinoma
+A56	Assertion T56 present
+T57	problem 4653 4658	Ileus
+A57	Assertion T57 present
+T58	problem 4575 4595	Aspiration pneumonia
+A58	Assertion T58 present
+T59	problem 4601 4617	Pulmonary emboli
+A59	Assertion T59 present

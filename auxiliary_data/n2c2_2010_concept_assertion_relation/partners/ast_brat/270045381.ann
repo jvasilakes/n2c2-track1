@@ -1,0 +1,284 @@
+T0	problem 51 81	LEFT PROXIMAL HUMERUS FRACTURE
+A0	Assertion T0 present
+T1	problem 563 587	congestive heart failure
+A1	Assertion T1 present
+T2	problem 6263 6322	a severely comminuted fracture of the proximal left humerus
+A2	Assertion T2 present
+T3	problem 6328 6348	proximal distraction
+A3	Assertion T3 present
+T4	problem 6568 6629	the severely comminuted fracture of the proximal left humerus
+A4	Assertion T4 present
+T5	problem 8860 8889	thickening of the aortic wall
+A5	Assertion T5 present
+T6	problem 8906 8929	atherosclerotic changes
+A6	Assertion T6 present
+T7	problem 2566 2590	slightly short of breath
+A7	Assertion T7 conditional
+T8	problem 11022 11033	atelectasis
+A8	Assertion T8 possible
+T9	problem 5559 5602	the patient &apos;s broken humeral fracture
+A9	Assertion T9 present
+T10	problem 5262 5279	Abdomen distended
+A10	Assertion T10 present
+T11	problem 5282 5309	mild tenderness on the left
+A11	Assertion T11 present
+T12	problem 3010 3020	hemoptysis
+A12	Assertion T12 absent
+T13	problem 677 703	blindness in the right eye
+A13	Assertion T13 present
+T14	problem 651 671	diabetic retinopathy
+A14	Assertion T14 present
+T15	problem 471 503	chronic , stable angina pectoris
+A15	Assertion T15 present
+T16	problem 11550 11571	moderate occult blood
+A16	Assertion T16 present
+T17	problem 6021 6048	Elevated left hemidiaphragm
+A17	Assertion T17 present
+T18	problem 9620 9640	decreased hematocrit
+A18	Assertion T18 present
+T19	problem 1194 1244	a comminuted fracture of the proximal left humerus
+A19	Assertion T19 present
+T20	problem 2194 2202	glaucoma
+A20	Assertion T20 present
+T21	problem 1534 1553	shortness of breath
+A21	Assertion T21 absent
+T22	problem 2689 2699	chest pain
+A22	Assertion T22 absent
+T23	problem 2169 2189	diabetic retinopathy
+A23	Assertion T23 present
+T24	problem 13656 13669	affected area
+A24	Assertion T24 present
+T25	problem 6885 6906	the fracture fragment
+A25	Assertion T25 present
+T26	problem 13868 13872	pain
+A26	Assertion T26 hypothetical
+T27	problem 7850 7868	right facial droop
+A27	Assertion T27 present
+T28	problem 506 531	Fournier &apos;s gangrene
+A28	Assertion T28 possible
+T29	problem 9833 9857	old blood in the stomach
+A29	Assertion T29 present
+T30	problem 7956 7966	chest pain
+A30	Assertion T30 absent
+T31	problem 3693 3713	Diabetic retinopathy
+A31	Assertion T31 present
+T32	problem 3731 3749	blind in right eye
+A32	Assertion T32 present
+T33	problem 262 292	Left proximal humerus fracture
+A33	Assertion T33 present
+T34	problem 640 648	glaucoma
+A34	Assertion T34 present
+T35	problem 4871 4888	blind in that eye
+A35	Assertion T35 present
+T36	problem 9382 9399	MB fractionations
+A36	Assertion T36 absent
+T37	problem 6417 6427	a fracture
+A37	Assertion T37 possible
+T38	problem 6731 6753	The fracture fragments
+A38	Assertion T38 present
+T39	problem 4258 4278	known drug allergies
+A39	Assertion T39 absent
+T40	problem 3825 3842	Left rib fracture
+A40	Assertion T40 present
+T41	problem 5335 5355	nohepatosplenomegaly
+A41	Assertion T41 absent
+T42	problem 3578 3595	Diabetes mellitus
+A42	Assertion T42 present
+T43	problem 10975 11005	an elevated left hemidiaphragm
+A43	Assertion T43 present
+T44	problem 11041 11063	splinting on that side
+A44	Assertion T44 possible
+T45	problem 372 400	silent myocardial infarction
+A45	Assertion T45 present
+T46	problem 8716 8740	mild / moderate ischemia
+A46	Assertion T46 present
+T47	problem 2765 2786	head trauma with fall
+A47	Assertion T47 absent
+T48	problem 1931 1941	arrhythmia
+A48	Assertion T48 present
+T49	problem 8101 8109	bigeminy
+A49	Assertion T49 present
+T50	problem 4789 4807	Right-sided ptosis
+A50	Assertion T50 present
+T51	problem 4920 4928	cataract
+A51	Assertion T51 present
+T52	problem 3252 3280	silent myocardial infarction
+A52	Assertion T52 present
+T53	problem 2705 2724	shortness of breath
+A53	Assertion T53 absent
+T54	problem 539 560	necrotizing fasciitis
+A54	Assertion T54 possible
+T55	problem 968 985	diabetes mellitus
+A55	Assertion T55 present
+T56	problem 1731 1739	ischemia
+A56	Assertion T56 present
+T57	problem 3216 3239	coronary artery disease
+A57	Assertion T57 present
+T58	problem 12817 12838	slightly hyponatremic
+A58	Assertion T58 present
+T60	problem 11689 11722	moderate bladder epithelial cells
+A59	Assertion T60 present
+T61	problem 10036 10051	a gastric ulcer
+A60	Assertion T61 possible
+T62	problem 8606 8685	A small / moderate-sized , mild-intensity , reversible posterior lateral defect
+A61	Assertion T62 present
+T63	problem 6632 6660	Two major fracture fragments
+A62	Assertion T63 present
+T64	problem 318 347	Adult-onset diabetes mellitus
+A63	Assertion T64 present
+T65	problem 9880 9906	the blood in the esophagus
+A64	Assertion T65 present
+T66	problem 9935 9953	Mallory-Weiss tear
+A65	Assertion T66 possible
+T67	problem 2533 2548	short of breath
+A66	Assertion T67 conditional
+T68	problem 5225 5241	diffusely wheezy
+A67	Assertion T68 present
+T69	problem 1676 1699	a myocardial infarction
+A68	Assertion T69 present
+T70	problem 6156 6179	acute pulmonary disease
+A69	Assertion T70 absent
+T71	problem 7871 7883	right ptosis
+A70	Assertion T71 present
+T72	problem 6085 6138	Postoperative changes of the sternum and media stinum
+A71	Assertion T72 present
+T73	problem 3916 3924	glaucoma
+A72	Assertion T73 present
+T74	problem 9754 9784	clotted blood in the esophagus
+A73	Assertion T74 present
+T75	problem 3023 3034	hematemesis
+A74	Assertion T75 absent
+T76	problem 6351 6392	A lucency and irregularity of the glenoid
+A75	Assertion T76 present
+T77	problem 5098 5112	slurred speech
+A76	Assertion T77 absent
+T78	problem 2888 2917	stable three-pillow orthopnea
+A77	Assertion T78 present
+T79	problem 2992 3004	clear sputum
+A78	Assertion T79 present
+T80	problem 2368 2374	stress
+A79	Assertion T80 conditional
+T81	problem 11981 11998	volume overloaded
+A80	Assertion T81 present
+T82	problem 12926 12967	elevated glucose fingerstick blood sugars
+A81	Assertion T82 present
+T83	problem 1365 1377	The fracture
+A82	Assertion T83 present
+T84	problem 9049 9061	the bigeminy
+A83	Assertion T84 present
+T85	problem 2301 2329	chest tightness ( pressure )
+A84	Assertion T85 conditional
+T86	problem 1470 1478	bigeminy
+A85	Assertion T86 present
+T87	problem 5040 5047	lesions
+A86	Assertion T87 absent
+T88	problem 3054 3075	black or tarry stools
+A87	Assertion T88 absent
+T89	problem 1031 1055	congestive heart failure
+A88	Assertion T89 present
+T90	problem 8073 8081	his fall
+A89	Assertion T90 present
+T91	problem 8599 8603	scar
+A90	Assertion T91 present
+T92	problem 4568 4581	renal failure
+A91	Assertion T92 associated_with_someone_else
+T93	problem 4661 4686	his left humeral fracture
+A92	Assertion T93 present
+T94	problem 8041 8064	a myocardial infarction
+A93	Assertion T94 absent
+T95	problem 10119 10134	A gastric ulcer
+A94	Assertion T95 present
+T96	problem 2822 2828	chills
+A95	Assertion T96 absent
+T97	problem 6822 6860	Innumerable smaller fracture fragments
+A96	Assertion T97 present
+T98	problem 2971 2986	a chronic cough
+A97	Assertion T98 present
+T99	problem 7337 7396	a severely comminuted fracture of the proximal left humerus
+A98	Assertion T99 present
+T100	problem 5372 5394	1+ edema of the ankles
+A99	Assertion T100 present
+T101	problem 1520 1530	chest pain
+A100	Assertion T101 absent
+T102	problem 10110 10116	melena
+A101	Assertion T102 present
+T103	problem 8834 8857	left atrial enlargement
+A102	Assertion T103 present
+T104	problem 8492 8500	ischemia
+A103	Assertion T104 absent
+T105	problem 9269 9282	elevated CPKs
+A104	Assertion T105 present
+T106	problem 5050 5073	Mild right facial droop
+A105	Assertion T106 present
+T107	problem 3954 3965	retinopathy
+A106	Assertion T107 present
+T108	problem 2812 2818	fevers
+A107	Assertion T108 absent
+T109	problem 2922 2961	occasional paroxysmal nocturnal dyspnea
+A108	Assertion T109 present
+T110	problem 7142 7176	old inferior myocardial infarction
+A109	Assertion T110 possible
+T111	problem 3509 3533	congestive heart failure
+A110	Assertion T111 present
+T112	problem 3037 3051	abdominal pain
+A111	Assertion T112 absent
+T113	problem 2230 2240	chest pain
+A112	Assertion T113 absent
+T114	problem 3088 3105	frequency/urgency
+A113	Assertion T114 absent
+T115	problem 7972 7991	shortness of breath
+A114	Assertion T115 absent
+T116	problem 2738 2759	loss of consciousness
+A115	Assertion T116 absent
+T117	problem 12127 12147	slightly hypotensive
+A116	Assertion T117 present
+T118	problem 2396 2406	chest pain
+A117	Assertion T118 conditional
+T119	problem 3383 3415	chronic , stable angina pectoris
+A118	Assertion T119 present
+T120	problem 1076 1094	a humeral fracture
+A119	Assertion T120 present
+T121	problem 7994 8008	1+ ankle edema
+A120	Assertion T121 present
+T122	problem 8536 8584	a moderate-sized , dense , fixed inferior defect
+A121	Assertion T122 present
+T123	problem 2057 2067	arrhythmia
+A122	Assertion T123 present
+T124	problem 3144 3162	cardiac arrhythmia
+A123	Assertion T124 present
+T125	problem 7680 7693	Brittle bones
+A124	Assertion T125 present
+T126	problem 9088 9109	myocardial infarction
+A125	Assertion T126 absent
+T127	problem 7055 7088	intraventricular conduction delay
+A126	Assertion T127 present
+T128	problem 2850 2869	shortness of breath
+A127	Assertion T128 absent
+T129	problem 5429 5444	calf tenderness
+A128	Assertion T129 absent
+T130	problem 3625 3650	Fournier &apos;s gangrene
+A129	Assertion T130 possible
+T131	problem 6972 6990	scapular fractures
+A130	Assertion T131 absent
+T132	problem 7235 7255	Ventricular bigeminy
+A131	Assertion T132 present
+T133	problem 3658 3679	necrotizing fasciitis
+A132	Assertion T133 possible
+T134	problem 3078 3085	dysuria
+A133	Assertion T134 absent
+T135	problem 736 753	left rib fracture
+A134	Assertion T135 present
+T136	problem 9611 9617	melena
+A135	Assertion T136 present
+T137	problem 623 637	a rib fracture
+A136	Assertion T137 present
+T138	problem 3682 3690	Glaucoma
+A137	Assertion T138 present
+T139	problem 4547 4563	multiple myeloma
+A138	Assertion T139 associated_with_someone_else
+T140	problem 2834 2844	chest pain
+A139	Assertion T140 absent
+T141	problem 5154 5160	murmur
+A140	Assertion T141 absent
+T142	problem 4844 4852	cataract
+A141	Assertion T142 present

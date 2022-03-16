@@ -1,0 +1,196 @@
+T0	problem 6208 6214	Anemia
+A0	Assertion T0 present
+T1	problem 239 255	epidural abscess
+A1	Assertion T1 present
+T2	problem 7278 7283	fever
+A2	Assertion T2 hypothetical
+T3	problem 818 827	back pain
+A3	Assertion T3 present
+T4	problem 698 714	serosal implants
+A4	Assertion T4 present
+T5	problem 7287 7291	pain
+A5	Assertion T5 hypothetical
+T6	problem 662 680	colon can to liver
+A6	Assertion T6 present
+T7	problem 632 648	epidural abscess
+A7	Assertion T7 present
+T8	problem 7702 7706	pain
+A8	Assertion T8 hypothetical
+T9	problem 2076 2079	CAD
+A9	Assertion T9 present
+T10	problem 2135 2145	neuropathy
+A10	Assertion T10 present
+T11	problem 9510 9543	loss of bowel or bladder function
+A11	Assertion T11 hypothetical
+T12	problem 8932 8948	Epidural abscess
+A12	Assertion T12 present
+T13	problem 2127 2129	DM
+A13	Assertion T13 present
+T14	problem 970 992	a signal abno in L3 L4
+A14	Assertion T14 present
+T15	problem 995 1004	disciitis
+A15	Assertion T15 possible
+T16	problem 1008 1013	osteo
+A16	Assertion T16 possible
+T17	problem 1022 1051	a definitive epidural abscess
+A17	Assertion T17 absent
+T18	problem 2150 2173	persistent R foot ulcer
+A18	Assertion T18 present
+T19	problem 9080 9082	DM
+A19	Assertion T19 present
+T20	problem 9088 9098	neuropathy
+A20	Assertion T20 present
+T21	problem 2717 2728	MM very dry
+A21	Assertion T21 present
+T22	problem 2759 2762	JVD
+A22	Assertion T22 absent
+T23	problem 9057 9077	hypercholesterolemia
+A23	Assertion T23 present
+T24	problem 2750 2753	LAD
+A24	Assertion T24 absent
+T25	problem 9029 9032	CAD
+A25	Assertion T25 present
+T26	problem 9547 9576	any other concerning symptoms
+A26	Assertion T26 hypothetical
+T27	problem 8973 8985	colon cancer
+A27	Assertion T27 present
+T28	problem 8991 9004	mets to liver
+A28	Assertion T28 present
+T29	problem 2104 2124	hypercholesterolemia
+A29	Assertion T29 present
+T30	problem 1993 2005	colon cancer
+A30	Assertion T30 present
+T31	problem 2011 2024	mets to liver
+A31	Assertion T31 present
+T32	problem 1790 1798	weakness
+A32	Assertion T32 absent
+T33	problem 1842 1853	severe pain
+A33	Assertion T33 present
+T34	problem 2644 2647	NAD
+A34	Assertion T34 absent
+T35	problem 1424 1446	small pleural effusion
+A35	Assertion T35 present
+T36	problem 9103 9126	persistent R foot ulcer
+A36	Assertion T36 present
+T37	problem 1917 1946	bowel or bladder incontinence
+A37	Assertion T37 absent
+T38	problem 9158 9166	afebrile
+A38	Assertion T38 absent
+T39	problem 9216 9235	an epidural abscess
+A39	Assertion T39 present
+T40	problem 1863 1867	pain
+A40	Assertion T40 present
+T41	problem 1974 1990	epidural abscess
+A41	Assertion T41 present
+T42	problem 9432 9442	chest pain
+A42	Assertion T42 hypothetical
+T43	problem 9486 9507	weakness in your legs
+A43	Assertion T43 hypothetical
+T44	problem 1341 1356	Corynebacterium
+A44	Assertion T44 present
+T45	problem 9418 9423	fever
+A45	Assertion T45 hypothetical
+T46	problem 9446 9465	shortness of breath
+A46	Assertion T46 hypothetical
+T47	problem 9468 9482	worsening pain
+A47	Assertion T47 hypothetical
+T48	problem 1770 1786	sensory deficits
+A48	Assertion T48 absent
+T49	problem 3026 3050	Well healed midline scar
+A49	Assertion T49 present
+T50	problem 3096 3101	edema
+A50	Assertion T50 absent
+T51	problem 3081 3084	HSM
+A51	Assertion T51 absent
+T52	problem 2857 2873	II/VI SEM at LSB
+A52	Assertion T52 present
+T53	problem 2879 2896	radiation to apex
+A53	Assertion T53 present
+T54	problem 2948 2969	very tense in abdomen
+A54	Assertion T54 present
+T55	problem 2664 2668	pain
+A55	Assertion T55 conditional
+T56	problem 3376 3384	swelling
+A56	Assertion T56 absent
+T57	problem 3124 3134	R LE ulcer
+A57	Assertion T57 present
+T58	problem 2811 2821	tenderness
+A58	Assertion T58 absent
+T59	problem 3364 3372	erythema
+A59	Assertion T59 absent
+T60	problem 2799 2807	erythema
+A60	Assertion T60 absent
+T61	problem 3308 3350	ttp of lumbar spine and paraspinal muscles
+A61	Assertion T61 present
+T62	problem 2909 2927	crackles at L base
+A62	Assertion T62 present
+T63	problem 4191 4218	moderate L pleural effusion
+A63	Assertion T63 present
+T64	problem 3740 3756	epidural abscess
+A64	Assertion T64 present
+T65	problem 3725 3733	discitis
+A65	Assertion T65 present
+T66	problem 3704 3722	L3-4 osteomyelitis
+A66	Assertion T66 present
+T67	problem 5345 5371	Corynebacterium bacteremia
+A67	Assertion T67 present
+T68	problem 3759 3779	Degenerative changes
+A68	Assertion T68 present
+T69	problem 3790 3824	multilevel central spinal stenosis
+A69	Assertion T69 present
+T70	problem 3899 3909	disc bulge
+A70	Assertion T70 present
+T71	problem 3940 3974	paraspinous extension of infection
+A71	Assertion T71 present
+T72	problem 3827 3895	Impression on the anterior aspect of the lower spinal cord at T11-12
+A72	Assertion T72 present
+T73	problem 4362 4388	corynebacterium bacteremia
+A73	Assertion T73 present
+T74	problem 4341 4357	epidural abscess
+A74	Assertion T74 present
+T75	problem 4121 4185	Persistent unchanged L mid and lower lung field airspace disease
+A75	Assertion T75 present
+T76	problem 5558 5569	an effusion
+A76	Assertion T76 present
+T77	problem 4297 4309	colon cancer
+A77	Assertion T77 present
+T78	problem 4315 4331	known liver mets
+A78	Assertion T78 present
+T79	problem 5512 5528	Pleural effusion
+A79	Assertion T79 present
+T80	problem 4393 4409	Epidural abscess
+A80	Assertion T80 present
+T81	problem 5473 5488	corynebacterium
+A81	Assertion T81 possible
+T82	problem 4740 4754	low hematocrit
+A82	Assertion T82 present
+T83	problem 5031 5041	Candidemia
+A83	Assertion T83 present
+T84	problem 4759 4771	hyponatremia
+A84	Assertion T84 present
+T85	problem 5770 5797	intrapleural tumor implants
+A85	Assertion T85 present
+T86	problem 5647 5662	malignant cells
+A86	Assertion T86 absent
+T87	problem 5193 5206	ocular spread
+A87	Assertion T87 possible
+T88	problem 5928 5939	symptomatic
+A88	Assertion T88 hypothetical
+T89	problem 5385 5400	Corynebacterium
+A89	Assertion T89 possible
+T90	problem 5404 5420	epidural abscess
+A90	Assertion T90 present
+T91	problem 1253 1261	discitis
+A91	Assertion T91 present
+T92	problem 1266 1285	an epidural abscess
+A92	Assertion T92 present
+T93	problem 1230 1248	L3-4 osteomyelitis
+A93	Assertion T93 present
+T94	problem 5694 5712	nodular thickening
+A94	Assertion T94 present
+T95	problem 6031 6045	diabetic ulcer
+A95	Assertion T95 present
+T96	problem 6018 6028	Foot ulcer
+A96	Assertion T96 present
+T97	problem 5946 5964	fluid accumulation
+A97	Assertion T97 present

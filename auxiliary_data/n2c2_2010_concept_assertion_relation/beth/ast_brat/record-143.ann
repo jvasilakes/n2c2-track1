@@ -1,0 +1,262 @@
+T0	problem 3309 3311	NT
+A0	Assertion T0 absent
+T1	problem 7802 7821	associated symptoms
+A1	Assertion T1 absent
+T2	problem 6410 6419	influenza
+A2	Assertion T2 absent
+T3	problem 3294 3299	Obese
+A3	Assertion T3 present
+T4	problem 2720 2744	a left humeral fracuture
+A4	Assertion T4 present
+T5	problem 7602 7625	change in mental status
+A5	Assertion T5 present
+T6	problem 1577 1597	initial hypertensive
+A6	Assertion T6 present
+T7	problem 3314 3316	ND
+A7	Assertion T7 absent
+T8	problem 2221 2229	bedbound
+A8	Assertion T8 present
+T9	problem 1542 1553	tachycardia
+A9	Assertion T9 present
+T10	problem 1523 1530	a fever
+A10	Assertion T10 present
+T11	problem 3357 3373	Feet mildly cool
+A11	Assertion T11 present
+T12	problem 2631 2643	Hypertension
+A12	Assertion T12 present
+T13	problem 8337 8382	a new humerus fracture distal to the hardware
+A13	Assertion T13 present
+T14	problem 2648 2673	Anemia of chronic disease
+A14	Assertion T14 present
+T15	problem 6669 6691	empiric line infection
+A15	Assertion T15 present
+T16	problem 3577 3594	warmth of left LE
+A16	Assertion T16 possible
+T17	problem 795 814	C diff in her stool
+A17	Assertion T17 present
+T18	problem 5207 5210	VRE
+A18	Assertion T18 present
+T19	problem 3199 3215	Anicteric sclera
+A19	Assertion T19 absent
+T20	problem 12635 12649	s/p PEA arrest
+A20	Assertion T20 present
+T21	problem 2371 2375	ESRD
+A21	Assertion T21 present
+T22	problem 7943 7946	WMA
+A22	Assertion T22 present
+T23	problem 3251 3256	m,r,g
+A23	Assertion T23 absent
+T24	problem 2618 2627	Back pain
+A24	Assertion T24 present
+T25	problem 12600 12625	anemia of chornic disease
+A25	Assertion T25 present
+T26	problem 5718 5726	headache
+A26	Assertion T26 present
+T27	problem 7143 7169	VRE infection in the urine
+A27	Assertion T27 possible
+T28	problem 2785 2797	a PEA arrest
+A28	Assertion T28 present
+T29	problem 2811 2813	PE
+A29	Assertion T29 present
+T30	problem 7029 7034	spike
+A30	Assertion T30 hypothetical
+T31	problem 6731 6734	VRE
+A31	Assertion T31 present
+T32	problem 2820 2822	PE
+A32	Assertion T32 present
+T33	problem 2845 2855	PEA arrest
+A33	Assertion T33 present
+T34	problem 13104 13114	chest pain
+A34	Assertion T34 hypothetical
+T35	problem 6308 6329	slightly erythematous
+A35	Assertion T35 present
+T36	problem 7077 7088	hypotensive
+A36	Assertion T36 present
+T37	problem 2513 2544	Status post left femur fracture
+A37	Assertion T37 present
+T38	problem 8761 8765	ESRD
+A38	Assertion T38 present
+T39	problem 2548 2560	Hyponatremia
+A39	Assertion T39 present
+T40	problem 8846 8862	slightly limited
+A40	Assertion T40 present
+T41	problem 8866 8877	hypotension
+A41	Assertion T41 present
+T42	problem 7258 7276	yeast in the urine
+A42	Assertion T42 present
+T43	problem 2564 2584	Hypercholesterolemia
+A43	Assertion T43 present
+T44	problem 8628 8637	Type 2 DM
+A44	Assertion T44 present
+T45	problem 766 790	citrobacter in her urine
+A45	Assertion T45 present
+T46	problem 2588 2601	Unsteady gait
+A46	Assertion T46 present
+T47	problem 6279 6288	infection
+A47	Assertion T47 absent
+T48	problem 7052 7065	a temperature
+A48	Assertion T48 present
+T49	problem 7706 7716	chest pain
+A49	Assertion T49 present
+T50	problem 2605 2614	Cataracts
+A50	Assertion T50 present
+T51	problem 6205 6225	Patient 's LE ulcers
+A51	Assertion T51 present
+T52	problem 8697 8703	septic
+A52	Assertion T52 present
+T53	problem 2337 2357	Diabetic nephropathy
+A53	Assertion T53 present
+T54	problem 13117 13136	shortness of breath
+A54	Assertion T54 hypothetical
+T55	problem 7363 7379	C. Diff. Colitis
+A55	Assertion T55 possible
+T56	problem 2309 2333	Type 2 diabetes mellitus
+A56	Assertion T56 present
+T57	problem 1392 1406	abdominal pain
+A57	Assertion T57 absent
+T58	problem 2446 2457	her illness
+A58	Assertion T58 present
+T59	problem 12506 12512	Sepsis
+A59	Assertion T59 present
+T60	problem 1383 1385	CP
+A60	Assertion T60 absent
+T61	problem 7666 7677	ECG changes
+A61	Assertion T61 present
+T62	problem 12564 12579	type 2 diabetes
+A62	Assertion T62 present
+T63	problem 12523 12545	Chronic Kidney disease
+A63	Assertion T63 present
+T64	problem 2249 2280	her multiple LE femur fractures
+A64	Assertion T64 present
+T65	problem 12862 12888	some bacteria in the urine
+A65	Assertion T65 present
+T66	problem 1687 1695	obtunded
+A66	Assertion T66 present
+T67	problem 1660 1670	tachypneic
+A67	Assertion T67 present
+T68	problem 1000 1006	fevers
+A68	Assertion T68 present
+T69	problem 985 995	a headache
+A69	Assertion T69 present
+T70	problem 7835 7863	new diffuse TWI in all leads
+A70	Assertion T70 present
+T71	problem 13139 13147	diahrrea
+A71	Assertion T71 hypothetical
+T72	problem 1449 1472	a left frontal headache
+A72	Assertion T72 present
+T73	problem 8169 8186	Shoulder fracture
+A73	Assertion T73 present
+T74	problem 1377 1380	SOB
+A74	Assertion T74 absent
+T75	problem 12756 12762	fevers
+A75	Assertion T75 present
+T76	problem 8200 8223	s/p a left hip fracture
+A76	Assertion T76 present
+T77	problem 702 717	the hypotension
+A77	Assertion T77 present
+T78	problem 650 662	overdiuresis
+A78	Assertion T78 present
+T79	problem 6135 6148	contamination
+A79	Assertion T79 present
+T80	problem 8256 8280	a left shoulder fracture
+A80	Assertion T80 present
+T81	problem 6054 6063	infection
+A81	Assertion T81 absent
+T82	problem 8435 8441	trauma
+A82	Assertion T82 present
+T83	problem 680 698	a septic component
+A83	Assertion T83 possible
+T84	problem 1171 1193	working hard to breath
+A84	Assertion T84 present
+T85	problem 2121 2142	continued hypotension
+A85	Assertion T85 present
+T86	problem 1216 1223	febrile
+A86	Assertion T86 present
+T87	problem 8799 8805	her DM
+A87	Assertion T87 present
+T88	problem 1098 1105	fatigue
+A88	Assertion T88 present
+T89	problem 8781 8785	ESRD
+A89	Assertion T89 present
+T90	problem 8986 8988	PE
+A90	Assertion T90 present
+T91	problem 5659 5665	Sepsis
+A91	Assertion T91 present
+T92	problem 213 218	fever
+A92	Assertion T92 present
+T93	problem 5786 5791	fever
+A93	Assertion T93 present
+T94	problem 401 405	ESRD
+A94	Assertion T94 present
+T95	problem 453 463	PEA arrest
+A95	Assertion T95 present
+T96	problem 5585 5595	PEA arrest
+A96	Assertion T96 present
+T97	problem 5627 5633	sepsis
+A97	Assertion T97 present
+T98	problem 611 622	hypotension
+A98	Assertion T98 present
+T99	problem 495 501	sepsis
+A99	Assertion T99 present
+T100	problem 13151 13157	fevers
+A100	Assertion T100 hypothetical
+T101	problem 9289 9292	PVD
+A101	Assertion T101 present
+T102	problem 414 423	type 2 DM
+A102	Assertion T102 present
+T103	problem 5546 5555	type 2 DM
+A103	Assertion T103 present
+T104	problem 430 439	recent PE
+A104	Assertion T104 present
+T105	problem 9406 9415	infection
+A105	Assertion T105 hypothetical
+T106	problem 5562 5571	recent PE
+A106	Assertion T106 present
+T107	problem 9623 9629	a clot
+A107	Assertion T107 possible
+T108	problem 5533 5537	ESRD
+A108	Assertion T108 present
+T109	problem 9632 9654	an abscess in the area
+A109	Assertion T109 possible
+T110	problem 9544 9558	more edematous
+A110	Assertion T110 present
+T111	problem 9594 9602	fracture
+A111	Assertion T111 present
+T112	problem 5513 5516	PMH
+A112	Assertion T112 present
+T113	problem 9694 9698	clot
+A113	Assertion T113 absent
+T114	problem 5169 5172	VRE
+A114	Assertion T114 present
+T115	problem 9516 9521	decub
+A115	Assertion T115 hypothetical
+T116	problem 12733 12751	low blood pressure
+A116	Assertion T116 present
+T117	problem 9331 9371	necrosis of the heels and posterior calf
+A117	Assertion T117 present
+T118	problem 9295 9327	Dry gangrene of toes bilaterally
+A118	Assertion T118 present
+T119	problem 12630 12632	PE
+A119	Assertion T119 present
+T120	problem 12580 12599	hypercholestrolemia
+A120	Assertion T120 present
+T121	problem 12817 12829	any bacteria
+A121	Assertion T121 absent
+T122	problem 12777 12789	an infection
+A122	Assertion T122 possible
+T123	problem 13191 13214	the shortness of breath
+A123	Assertion T123 hypothetical
+T124	problem 3605 3612	Sedated
+A124	Assertion T124 present
+T125	problem 3559 3572	mild erythema
+A125	Assertion T125 possible
+T126	problem 13272 13278	fevers
+A126	Assertion T126 hypothetical
+T127	problem 3539 3547	infected
+A127	Assertion T127 absent
+T128	problem 3435 3462	Skin breakdown between toes
+A128	Assertion T128 present
+T129	problem 3465 3499	Pressure ulcers under bilateral LE
+A129	Assertion T129 present
+T130	problem 3403 3432	2+ pitting edema bilateral LE
+A130	Assertion T130 present

@@ -1,0 +1,90 @@
+T0	problem 2009 2020	thyromegaly
+A0	Assertion T0 absent
+T1	problem 348 372	congestive heart failure
+A1	Assertion T1 present
+T2	problem 2216 2234	hepatosplenomegaly
+A2	Assertion T2 absent
+T3	problem 956 971	Aortic stenosis
+A3	Assertion T3 present
+T4	problem 3496 3511	somewhat labile
+A4	Assertion T4 present
+T5	problem 2169 2181	nondistended
+A5	Assertion T5 absent
+T6	problem 2307 2312	edema
+A6	Assertion T6 absent
+T7	problem 2284 2292	cyanosis
+A7	Assertion T7 absent
+T8	problem 2295 2303	clubbing
+A8	Assertion T8 absent
+T9	problem 5487 5496	nontender
+A9	Assertion T9 absent
+T10	problem 2637 2651	carotid bruits
+A10	Assertion T10 absent
+T11	problem 2318 2330	varicosities
+A11	Assertion T11 absent
+T12	problem 5416 5424	Incision
+A12	Assertion T12 present
+T13	problem 5601 5609	clubbing
+A13	Assertion T13 absent
+T14	problem 5499 5511	nondistended
+A14	Assertion T14 absent
+T15	problem 5590 5598	cyanosis
+A15	Assertion T15 absent
+T16	problem 5254 5271	Scattered rhonchi
+A16	Assertion T16 present
+T17	problem 5277 5314	diminished breath sounds in the bases
+A17	Assertion T17 present
+T18	problem 5364 5393	soft systolic ejection murmur
+A18	Assertion T18 present
+T19	problem 2859 2880	first degree AV block
+A19	Assertion T19 present
+T20	problem 2916 2944	left ventricular hypertrophy
+A20	Assertion T20 present
+T21	problem 1249 1269	known drug allergies
+A21	Assertion T21 absent
+T22	problem 1344 1355	myocarditis
+A22	Assertion T22 associated_with_someone_else
+T23	problem 6075 6090	Aortic stenosis
+A23	Assertion T23 present
+T24	problem 256 268	tires easily
+A24	Assertion T24 conditional
+T25	problem 3767 3789	a respiratory acidosis
+A25	Assertion T25 present
+T26	problem 5613 5618	edema
+A26	Assertion T26 absent
+T27	problem 1711 1725	acute distress
+A27	Assertion T27 absent
+T28	problem 1873 1882	anicteric
+A28	Assertion T28 absent
+T29	problem 1749 1755	rashes
+A29	Assertion T29 absent
+T30	problem 533 552	her aortic stenosis
+A30	Assertion T30 present
+T31	problem 1738 1745	lesions
+A31	Assertion T31 absent
+T32	problem 1978 2003	jugular venous distention
+A32	Assertion T32 absent
+T33	problem 1889 1897	injected
+A33	Assertion T33 absent
+T34	problem 1957 1972	lymphadenopathy
+A34	Assertion T34 absent
+T35	problem 221 251	increasing shortness of breath
+A35	Assertion T35 present
+T36	problem 423 438	aortic stenosis
+A36	Assertion T36 present
+T37	problem 2157 2166	nontender
+A37	Assertion T37 absent
+T38	problem 2116 2137	III/VI blowing murmur
+A38	Assertion T38 present
+T39	problem 774 796	severe aortic stenosis
+A39	Assertion T39 present
+T40	problem 748 771	1+ mitral regurgitation
+A40	Assertion T40 present
+T41	problem 6163 6187	Diabetes mellitus Type 2
+A41	Assertion T41 present
+T42	problem 975 999	Diabetes mellitus Type 2
+A42	Assertion T42 present
+T43	problem 694 725	Moderate pulmonary hypertension
+A43	Assertion T43 present
+T44	problem 1028 1066	Noninsulin dependent diabetes mellitus
+A44	Assertion T44 present

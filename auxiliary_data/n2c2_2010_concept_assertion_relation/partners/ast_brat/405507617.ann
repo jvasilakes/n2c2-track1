@@ -1,0 +1,78 @@
+T0	problem 2788 2811	a tendency to fall back
+A0	Assertion T0 present
+T1	problem 610 627	increased falling
+A1	Assertion T1 present
+T2	problem 1983 1993	non-tender
+A2	Assertion T2 absent
+T3	problem 1587 1609	some urinary accidents
+A3	Assertion T3 present
+T4	problem 1199 1212	heart disease
+A4	Assertion T4 absent
+T5	problem 4488 4501	changing gait
+A5	Assertion T5 present
+T6	problem 2139 2156	back folliculitis
+A6	Assertion T6 present
+T7	problem 2738 2755	a wide based gait
+A7	Assertion T7 present
+T8	problem 1844 1863	bilateral esotropia
+A8	Assertion T8 present
+T9	problem 4159 4168	organisms
+A9	Assertion T9 absent
+T10	problem 1720 1732	Down &apos;s
+A10	Assertion T10 present
+T11	problem 570 591	Down &apos;s syndrome
+A11	Assertion T11 present
+T12	problem 1385 1405	known drug allergies
+A12	Assertion T12 absent
+T13	problem 860 887	enlarged lateral ventricles
+A13	Assertion T13 present
+T14	problem 918 947	normal pressure hydrocephalus
+A14	Assertion T14 possible
+T15	problem 764 781	Alzheimer &apos;s
+A15	Assertion T15 present
+T16	problem 2393 2412	bilateral esotropia
+A16	Assertion T16 present
+T17	problem 1558 1584	a decrease in her language
+A17	Assertion T17 present
+T18	problem 632 649	gait unsteadiness
+A18	Assertion T18 present
+T19	problem 396 417	Down &apos;s syndrome
+A19	Assertion T19 present
+T20	problem 436 443	falling
+A20	Assertion T20 present
+T21	problem 1085 1111	Altzheimer &apos;s disease
+A21	Assertion T21 present
+T22	problem 1125 1146	Down &apos;s syndrome
+A22	Assertion T22 present
+T23	problem 2761 2782	shuffling short steps
+A23	Assertion T23 present
+T24	problem 2705 2732	her feet externally rotated
+A24	Assertion T24 present
+T25	problem 2923 2939	large ventricles
+A25	Assertion T25 present
+T26	problem 1632 1643	a poor gait
+A26	Assertion T26 present
+T27	problem 4146 4151	polys
+A27	Assertion T27 absent
+T28	problem 2061 2069	swelling
+A28	Assertion T28 present
+T29	problem 654 676	an increased inability
+A29	Assertion T29 present
+T30	problem 448 476	a decrease in her activities
+A30	Assertion T30 present
+T31	problem 1061 1082	Down &apos;s syndrome
+A31	Assertion T31 present
+T32	problem 1612 1627	increased falls
+A32	Assertion T32 present
+T33	problem 3209 3226	severely agitated
+A33	Assertion T33 present
+T34	problem 1233 1248	an abnormal EEG
+A34	Assertion T34 present
+T35	problem 1179 1193	multiple falls
+A35	Assertion T35 present
+T36	problem 308 329	Down &apos;s syndrome
+A36	Assertion T36 present
+T37	problem 269 294	Alzheimer &apos;s disease
+A37	Assertion T37 present
+T38	problem 1501 1518	decreased ability
+A38	Assertion T38 present

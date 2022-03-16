@@ -1,0 +1,106 @@
+T0	problem 4063 4079	slow bilaterally
+A0	Assertion T0 present
+T1	problem 4780 4797	her gait disorder
+A1	Assertion T1 present
+T2	problem 5487 5504	markedly unstable
+A2	Assertion T2 present
+T3	problem 5904 5926	her own symptomatology
+A3	Assertion T3 present
+T4	problem 1065 1079	other symptoms
+A4	Assertion T4 present
+T5	problem 1089 1125	diffuse and mainly frontal headaches
+A5	Assertion T5 present
+T6	problem 1130 1148	mild neck soreness
+A6	Assertion T6 present
+T7	problem 5085 5095	infarction
+A7	Assertion T7 absent
+T8	problem 5099 5125	other pathologic processes
+A8	Assertion T8 absent
+T9	problem 5061 5081	arterial dissections
+A9	Assertion T9 absent
+T10	problem 2605 2639	hematomas in the bilaterally shins
+A10	Assertion T10 present
+T11	problem 1164 1172	diplopia
+A11	Assertion T11 absent
+T12	problem 4851 4861	anisocoria
+A12	Assertion T12 present
+T13	problem 4425 4431	ataxia
+A13	Assertion T13 absent
+T14	problem 2543 2551	clubbing
+A14	Assertion T14 absent
+T15	problem 3702 3736	slightly slow fine finger motility
+A15	Assertion T15 present
+T16	problem 4435 4441	tremor
+A16	Assertion T16 absent
+T17	problem 5758 5774	acutely suicidal
+A17	Assertion T17 absent
+T18	problem 1189 1207	speech abnormality
+A18	Assertion T18 absent
+T19	problem 561 593	right-sided arm and leg weakness
+A19	Assertion T19 present
+T20	problem 5462 5470	her gait
+A20	Assertion T20 present
+T21	problem 2554 2562	cyanosis
+A21	Assertion T21 absent
+T22	problem 2565 2570	edema
+A22	Assertion T22 absent
+T23	problem 2336 2362	carotid or cervical bruits
+A23	Assertion T23 absent
+T24	problem 5555 5563	weakness
+A24	Assertion T24 absent
+T25	problem 3347 3356	nystagmus
+A25	Assertion T25 absent
+T26	problem 2191 2205	acute distress
+A26	Assertion T26 absent
+T27	problem 3364 3370	ptosis
+A27	Assertion T27 absent
+T28	problem 410 428	difficulty walking
+A28	Assertion T28 present
+T29	problem 1397 1407	depression
+A29	Assertion T29 present
+T30	problem 57 70	GAIT DISORDER
+A30	Assertion T30 present
+T31	problem 2760 2784	singing or humming along
+A31	Assertion T31 present
+T32	problem 2712 2734	slightly inappropriate
+A32	Assertion T32 present
+T33	problem 5682 5691	dysmetria
+A33	Assertion T33 absent
+T34	problem 4696 4716	intracranial process
+A34	Assertion T34 absent
+T35	problem 771 782	the episode
+A35	Assertion T35 present
+T36	problem 5624 5678	reproducible upper extremity or lower extremity ataxia
+A36	Assertion T36 absent
+T37	problem 1211 1225	sensory change
+A37	Assertion T37 absent
+T38	problem 1725 1731	a rash
+A38	Assertion T38 conditional
+T39	problem 3653 3658	drift
+A39	Assertion T39 absent
+T40	problem 3997 4005	jaw jerk
+A40	Assertion T40 absent
+T41	problem 986 1018	small spells of &quot; imbalance
+A41	Assertion T41 present
+T42	problem 262 275	Gait disorder
+A42	Assertion T42 present
+T43	problem 361 405	right-sided greater than left-sided weakness
+A43	Assertion T43 present
+T44	problem 2428 2435	murmurs
+A44	Assertion T44 absent
+T45	problem 2871 2883	the deficits
+A45	Assertion T45 present
+T46	problem 2576 2580	rash
+A46	Assertion T46 absent
+T47	problem 4809 4825	notable findings
+A47	Assertion T47 present
+T48	problem 1175 1186	visual loss
+A48	Assertion T48 absent
+T49	problem 893 900	malaise
+A49	Assertion T49 present
+T50	problem 2855 2867	indifference
+A50	Assertion T50 present
+T51	problem 598 604	ataxia
+A51	Assertion T51 present
+T52	problem 909 926	specific deficits
+A52	Assertion T52 absent

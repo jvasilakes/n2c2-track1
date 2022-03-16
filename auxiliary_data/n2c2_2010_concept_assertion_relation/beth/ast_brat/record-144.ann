@@ -1,0 +1,176 @@
+T0	problem 3069 3080	Hypotension
+A0	Assertion T0 present
+T1	problem 573 584	weight gain
+A1	Assertion T1 present
+T2	problem 589 607	abdominal fullness
+A2	Assertion T2 present
+T3	problem 6016 6034	extremely fatigued
+A3	Assertion T3 present
+T4	problem 3033 3045	tachycardiac
+A4	Assertion T4 present
+T5	problem 4854 4878	a confirmatory elevation
+A5	Assertion T5 present
+T6	problem 725 745	chronic mild dyspnea
+A6	Assertion T6 conditional
+T7	problem 313 351	a recent cardiac myocardial infarction
+A7	Assertion T7 present
+T8	problem 6299 6309	atraumatic
+A8	Assertion T8 absent
+T9	problem 6334 6344	a hematoma
+A9	Assertion T9 absent
+T10	problem 354 376	pulmonary hypertension
+A10	Assertion T10 present
+T11	problem 3109 3127	mildly hypotensive
+A11	Assertion T11 present
+T12	problem 1174 1180	chills
+A12	Assertion T12 absent
+T13	problem 6424 6460	any extra or intracranial hemorrhage
+A13	Assertion T13 absent
+T14	problem 251 275	congestive heart failure
+A14	Assertion T14 present
+T15	problem 939 963	an increasing heart rate
+A15	Assertion T15 present
+T16	problem 6564 6583	his prostate cancer
+A16	Assertion T16 present
+T17	problem 6513 6528	rectal bleeding
+A17	Assertion T17 present
+T18	problem 1035 1069	some increased shortness of breath
+A18	Assertion T18 present
+T19	problem 4728 4751	ischemic cardiomyopathy
+A19	Assertion T19 possible
+T20	problem 6466 6481	Rectal bleeding
+A20	Assertion T20 present
+T21	problem 1074 1096	a 10 pound weight gain
+A21	Assertion T21 present
+T22	problem 5165 5194	a partial biliary obstruction
+A22	Assertion T22 possible
+T23	problem 4028 4047	mildly tachycardiac
+A23	Assertion T23 present
+T24	problem 2834 2876	Moderate to severe 3+ mitral regurgitation
+A24	Assertion T24 present
+T25	problem 2651 2685	moderately dilated right ventricle
+A25	Assertion T25 present
+T26	problem 5081 5113	underlying chronic liver disease
+A26	Assertion T26 possible
+T27	problem 2698 2754	global hypokinesis apical throughout the right ventricle
+A27	Assertion T27 present
+T28	problem 5412 5443	any obstructing pancreatic mass
+A28	Assertion T28 absent
+T29	problem 3789 3815	rapid ventricular response
+A29	Assertion T29 present
+T30	problem 3764 3783	atrial fibrillation
+A30	Assertion T30 present
+T31	problem 5387 5405	biliary dilatation
+A31	Assertion T31 absent
+T32	problem 2605 2646	severe left ventricular systolic function
+A32	Assertion T32 present
+T33	problem 3741 3759	his atrial flutter
+A33	Assertion T33 present
+T34	problem 2557 2599	severe global left ventricular hypokinesis
+A34	Assertion T34 present
+T35	problem 5541 5576	chronic hepatic vascular congestion
+A35	Assertion T35 possible
+T36	problem 5508 5529	dilated hepatic veins
+A36	Assertion T36 present
+T37	problem 5461 5502	a slightly irregular contour of the liver
+A37	Assertion T37 present
+T38	problem 381 401	mitral regurgitation
+A38	Assertion T38 present
+T39	problem 408 427	atrial fibrillation
+A39	Assertion T39 present
+T40	problem 3605 3624	Atrial fibrillation
+A40	Assertion T40 present
+T41	problem 2919 2965	moderate pulmonary early systolic hypertension
+A41	Assertion T41 present
+T42	problem 5832 5859	some mild cirrhotic changes
+A42	Assertion T42 possible
+T43	problem 3232 3249	volume overloaded
+A43	Assertion T43 possible
+T44	problem 2881 2907	3+ tricuspid regurgitation
+A44	Assertion T44 present
+T45	problem 1435 1450	prostate cancer
+A45	Assertion T45 present
+T46	problem 4583 4611	the patient 's heart failure
+A46	Assertion T46 present
+T47	problem 1383 1402	atrial fibrillation
+A47	Assertion T47 present
+T48	problem 1407 1421	atrial flutter
+A48	Assertion T48 present
+T49	problem 2502 2530	moderate dilated left atrium
+A49	Assertion T49 present
+T50	problem 2536 2554	atrioseptal defect
+A50	Assertion T50 absent
+T51	problem 563 570	fatigue
+A51	Assertion T51 present
+T52	problem 1308 1344	right-sided congestive heart failure
+A52	Assertion T52 present
+T53	problem 4364 4379	short of breath
+A53	Assertion T53 present
+T54	problem 4416 4440	congestive heart failure
+A54	Assertion T54 present
+T55	problem 528 558	increasing shortness of breath
+A55	Assertion T55 present
+T56	problem 5758 5777	vascular congestion
+A56	Assertion T56 present
+T57	problem 5783 5811	his congestive heart failure
+A57	Assertion T57 present
+T58	problem 5020 5048	an irregular hepatic contour
+A58	Assertion T58 present
+T59	problem 4972 4990	any cholelithiasis
+A59	Assertion T59 absent
+T60	problem 4994 5007	cholecystitis
+A60	Assertion T60 absent
+T61	problem 2407 2426	atrial fibrillation
+A61	Assertion T61 present
+T62	problem 2432 2458	rapid ventricular response
+A62	Assertion T62 present
+T63	problem 2463 2477	atrial flutter
+A63	Assertion T63 present
+T64	problem 4805 4848	an isolated , elevated alkaline phosphatase
+A64	Assertion T64 present
+T65	problem 3253 3268	volume depleted
+A65	Assertion T65 possible
+T66	problem 1183 1189	nausea
+A66	Assertion T66 absent
+T67	problem 1582 1589	allergy
+A67	Assertion T67 conditional
+T68	problem 3422 3448	the patient 's hypotension
+A68	Assertion T68 present
+T69	problem 3474 3504	his rapid ventricular response
+A69	Assertion T69 present
+T70	problem 3509 3528	right heart failure
+A70	Assertion T70 present
+T71	problem 6656 6675	his rectal bleeding
+A71	Assertion T71 present
+T72	problem 1165 1171	fevers
+A72	Assertion T72 absent
+T73	problem 1141 1152	a dry cough
+A73	Assertion T73 present
+T74	problem 2759 2781	abnormal septal motion
+A74	Assertion T74 present
+T75	problem 2798 2831	right ventricular volume overload
+A75	Assertion T75 present
+T76	problem 1119 1135	pillow orthopnea
+A76	Assertion T76 present
+T77	problem 1492 1507	rectal bleeding
+A77	Assertion T77 present
+T78	problem 1218 1229	diaphoresis
+A78	Assertion T78 absent
+T79	problem 4069 4093	Congestive heart failure
+A79	Assertion T79 present
+T80	problem 4348 4359	symptomatic
+A80	Assertion T80 present
+T81	problem 1291 1305	cardiomyopathy
+A81	Assertion T81 present
+T82	problem 1347 1369	pulmonary hypertension
+A82	Assertion T82 present
+T83	problem 1193 1201	vomiting
+A83	Assertion T83 absent
+T84	problem 4216 4231	volume depleted
+A84	Assertion T84 possible
+T85	problem 1510 1533	obstructive sleep apnea
+A85	Assertion T85 present
+T86	problem 1204 1214	chest pain
+A86	Assertion T86 absent
+T87	problem 4195 4212	volume overloaded
+A87	Assertion T87 possible

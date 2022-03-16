@@ -1,0 +1,121 @@
+Processing  018636330_DH
+Processing  026350193_RWH
+Processing  037945397_RWH
+Processing  044687343_ELMVH
+Processing  060376519_DH
+Processing  095889687_WGH
+Processing  101407944_PUMC
+Processing  105732749
+Processing  115026438_SC
+Processing  130959255
+Processing  134300717
+Processing  143748600_SC
+Processing  145980160
+Process mention: error in offsets c="non-insulin diabetes mellitus" 30:2 30:5
+
+non-insulin diabetes mellitus ,	 text: non-insulin diabetes mellitus
+Processing  156406283
+Processing  176318078_a
+Processing  176746010_WGH
+Processing  188543380
+Processing  194442600_RWH
+Processing  212512774_WGH
+Processing  223159990
+Processing  245096078
+Processing  245317863_WGH
+Processing  262182942
+Processing  262912613
+Processing  270045381
+Process mention: error in offsets c="few bacteria" 159:31 159:33
+
+few bacteria ,	 text: few bacteria
+Processing  274230067_EH
+Processing  284487129
+Processing  289811204
+Processing  297228405_DH
+Processing  306968218_YC
+Processing  320422564
+Processing  332803550
+Processing  333521954
+Processing  337702516_WGH
+Processing  346176858_SC
+Processing  348301810
+Processing  351853846_WGH
+Processing  373254497_PUMC
+Processing  384729825
+Processing  388755206_SC
+Processing  402389409_WGH
+Processing  405507617
+Processing  405868244_YC
+Processing  412141256
+Processing  424729395_DH
+Processing  425680098_SC
+Processing  433651389
+Processing  455343475_PUMC
+Processing  493597270
+Processing  498710998
+Processing  500472963
+Processing  503651854_WGH
+Processing  517414339
+Processing  523704694
+Processing  544907529_RWH
+Processing  555509347_PUMC
+Processing  574700124_RWH
+Processing  596437842
+Processing  598403789_DH
+Processing  614746156
+Processing  622086964
+Processing  627258104
+Processing  638157550_SC
+Processing  641557794_WGH
+Processing  655358166_WGH
+Errors in index of line 34
+
+c="ext lesions" 34:95 34:96	97
+Errors in index of line 34
+
+c="palp masses" 34:79 34:80	97
+Errors in index of line 34
+
+c="srom" 34:71 34:71	97
+Processing  688127038_EH
+Processing  693008750
+Processing  699905656_SC
+Processing  708739405_DH
+Processing  723989226
+Processing  745431641_WGH
+Processing  745701560_WGH
+Processing  767751445_ELMVH
+Processing  779878634
+Processing  788268693_DH
+Processing  814743340_RWH
+Processing  817406016_RWH
+Processing  825330116
+Processing  837898389
+Processing  839999049_YC
+Processing  843566350_RWH
+Processing  853262744
+Processing  869436718_SC
+Processing  879492218_YC
+Processing  888428725_RWH
+Processing  891864133_RWH
+Processing  910458031
+Processing  915093496_RWH
+Processing  917989835_RWH
+Processing  920798564
+Processing  932057504_DH
+Processing  950452368
+Errors in index of line 48
+
+c="indigestion" 48:105 48:105	201
+Errors in index of line 48
+
+c="pain" 48:178 48:178	201
+Errors in index of line 48
+
+c="constipation" 48:120 48:120	201
+Processing  959086752
+Processing  965367286_WGH
+Processing  974381789
+Processing  979440029_RWH
+Processing  989519730_WGH

@@ -1,0 +1,102 @@
+T0	problem 213 227	acute leukemia
+A0	Assertion T0 present
+T1	problem 2280 2292	nondistended
+A1	Assertion T1 absent
+T2	problem 3857 3874	urinary retention
+A2	Assertion T2 present
+T3	problem 3705 3727	elevated liver enzymes
+A3	Assertion T3 present
+T4	problem 750 760	chest pain
+A4	Assertion T4 absent
+T5	problem 685 709	Some shortness of breath
+A5	Assertion T5 conditional
+T6	problem 715 724	allergies
+A6	Assertion T6 present
+T7	problem 4845 4853	gas pain
+A7	Assertion T7 hypothetical
+T8	problem 2317 2335	hepatosplenomegaly
+A8	Assertion T8 absent
+T9	problem 1231 1250	penicillin reaction
+A9	Assertion T9 possible
+T10	problem 1339 1351	her reaction
+A10	Assertion T10 present
+T11	problem 1513 1525	colon cancer
+A11	Assertion T11 associated_with_someone_else
+T12	problem 1886 1896	atraumatic
+A12	Assertion T12 absent
+T13	problem 956 966	depression
+A13	Assertion T13 present
+T14	problem 4598 4610	constipation
+A14	Assertion T14 hypothetical
+T15	problem 4701 4716	skin irritation
+A15	Assertion T15 hypothetical
+T16	problem 4750 4757	itching
+A16	Assertion T16 hypothetical
+T17	problem 366 374	bruising
+A17	Assertion T17 present
+T18	problem 2211 2240	a diffuse 2/6 systolic murmur
+A18	Assertion T18 present
+T19	problem 2043 2064	a partial upper plate
+A19	Assertion T19 present
+T20	problem 1143 1163	hypercholesterolemia
+A20	Assertion T20 present
+T21	problem 5070 5075	cough
+A21	Assertion T21 hypothetical
+T22	problem 4005 4016	constipated
+A22	Assertion T22 present
+T23	problem 2301 2309	guarding
+A23	Assertion T23 absent
+T24	problem 1735 1752	apparent distress
+A24	Assertion T24 absent
+T25	problem 981 999	pleural thickening
+A25	Assertion T25 present
+T26	problem 2266 2275	nontender
+A26	Assertion T26 absent
+T27	problem 45 59	ACUTE LEUKEMIA
+A27	Assertion T27 present
+T28	problem 971 978	anxiety
+A28	Assertion T28 present
+T29	problem 1953 1982	decreased hearing bilaterally
+A29	Assertion T29 present
+T30	problem 1178 1207	The patient &apos;s allergies
+A30	Assertion T30 present
+T31	problem 343 361	increased weakness
+A31	Assertion T31 present
+T32	problem 653 659	nausea
+A32	Assertion T32 absent
+T33	problem 3379 3399	Staphylococcusaureus
+A33	Assertion T33 present
+T34	problem 4386 4408	breathing difficulties
+A34	Assertion T34 hypothetical
+T35	problem 3939 3948	drug rash
+A35	Assertion T35 possible
+T36	problem 3302 3320	increased crackles
+A36	Assertion T36 present
+T37	problem 3273 3291	pulmonary symptoms
+A37	Assertion T37 present
+T38	problem 662 670	vomiting
+A38	Assertion T38 absent
+T39	problem 1015 1047	chronic left bundle branch block
+A39	Assertion T39 present
+T40	problem 2484 2516	pale blue two centimeter macules
+A40	Assertion T40 present
+T41	problem 562 565	ALL
+A41	Assertion T41 present
+T42	problem 944 953	allergies
+A42	Assertion T42 present
+T43	problem 1406 1423	platelet reaction
+A43	Assertion T43 present
+T44	problem 2417 2449	a dark two centimeter ecchymosis
+A44	Assertion T44 present
+T45	problem 639 647	headache
+A45	Assertion T45 absent
+T46	problem 2108 2123	lymphadenopathy
+A46	Assertion T46 absent
+T47	problem 674 682	diarrhea
+A47	Assertion T47 absent
+T48	problem 1108 1127	left wrist fracture
+A48	Assertion T48 present
+T49	problem 3151 3162	neutropenic
+A49	Assertion T49 present
+T50	problem 1002 1012	asbestosis
+A50	Assertion T50 present

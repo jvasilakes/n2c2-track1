@@ -1,0 +1,14 @@
+T0	problem 804 809	scars
+A0	Assertion T0 absent
+T1	problem 1140 1160	superficial invasion
+A1	Assertion T1 present
+T2	problem 187 205	ENDOMETRIAL CANCER
+A2	Assertion T2 present
+T3	problem 496 518	grade I adenocarcinoma
+A3	Assertion T3 present
+T4	problem 875 880	edema
+A4	Assertion T4 absent
+T5	problem 785 798	Abdomen obese
+A5	Assertion T5 present
+T6	problem 381 404	postmenopausal spotting
+A6	Assertion T6 present

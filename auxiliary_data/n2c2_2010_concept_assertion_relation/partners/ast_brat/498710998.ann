@@ -1,0 +1,130 @@
+T0	problem 2203 2225	bilateral arcussenilis
+A0	Assertion T0 present
+T1	problem 926 937	diaphoresis
+A1	Assertion T1 present
+T2	problem 6149 6158	agitation
+A2	Assertion T2 hypothetical
+T3	problem 2976 3005	left ventricular hyper-trophy
+A3	Assertion T3 present
+T4	problem 2578 2584	gallop
+A4	Assertion T4 absent
+T5	problem 1845 1853	glaucoma
+A5	Assertion T5 present
+T6	problem 860 876	light-headedness
+A6	Assertion T6 present
+T7	problem 956 962	nausea
+A7	Assertion T7 present
+T8	problem 902 921	shortness of breath
+A8	Assertion T8 present
+T9	problem 3194 3236	70% stenosis of her left circumflex artery
+A9	Assertion T9 present
+T10	problem 3361 3398	left internal carotid stenosis of 90%
+A10	Assertion T10 present
+T11	problem 512 529	exertional angina
+A11	Assertion T11 present
+T12	problem 534 544	chest pain
+A12	Assertion T12 present
+T13	problem 561 577	light-headedness
+A13	Assertion T13 present
+T14	problem 5173 5180	aphasia
+A14	Assertion T14 absent
+T15	problem 980 988	vomiting
+A15	Assertion T15 absent
+T16	problem 1077 1085	The pain
+A16	Assertion T16 present
+T17	problem 2696 2704	cyanosis
+A17	Assertion T17 absent
+T18	problem 2274 2277	JVD
+A18	Assertion T18 absent
+T19	problem 1676 1692	uterine fibroids
+A19	Assertion T19 present
+T20	problem 1746 1777	known bilateral carotid disease
+A20	Assertion T20 present
+T21	problem 1884 1908	claudication in her legs
+A21	Assertion T21 possible
+T22	problem 3239 3283	50% stenosis of the left anterior descending
+A22	Assertion T22 present
+T23	problem 2110 2118	afebrile
+A23	Assertion T23 absent
+T24	problem 179 195	Carotid stenosis
+A24	Assertion T24 present
+T25	problem 3011 3047	poor anterior progression of R-waves
+A25	Assertion T25 present
+T26	problem 4538 4602	some noted right upper and right lower extremity discoordination
+A26	Assertion T26 present
+T27	problem 1003 1015	the episodes
+A27	Assertion T27 present
+T28	problem 391 406	aortic stenosis
+A28	Assertion T28 present
+T29	problem 411 421	chest pain
+A29	Assertion T29 present
+T30	problem 4095 4128	her left upper extremity weakness
+A30	Assertion T30 present
+T31	problem 2685 2693	clubbing
+A31	Assertion T31 absent
+T32	problem 3401 3462	right internal carotid artery &quot; critical stenosis &quot;
+A32	Assertion T32 present
+T33	problem 4850 4897	significant stenosis of the left carotid artery
+A33	Assertion T33 present
+T34	problem 1933 1945	hypertension
+A34	Assertion T34 present
+T35	problem 1090 1106	light-headedness
+A35	Assertion T35 present
+T36	problem 1560 1598	right heart wall motion abnormali-ties
+A36	Assertion T36 absent
+T37	problem 2290 2325	a slow carotid upstroke bilaterally
+A37	Assertion T37 present
+T38	problem 4700 4724	some elements of aphasia
+A38	Assertion T38 present
+T39	problem 5223 5243	the residual deficit
+A39	Assertion T39 present
+T40	problem 5261 5295	some left upper extremity weakness
+A40	Assertion T40 present
+T41	problem 2708 2713	edema
+A41	Assertion T41 absent
+T42	problem 4649 4673	the right-sided symptoms
+A42	Assertion T42 present
+T43	problem 201 216	Aortic stenosis
+A43	Assertion T43 present
+T44	problem 2371 2389	transmitted murmur
+A44	Assertion T44 possible
+T45	problem 700 710	chest pain
+A45	Assertion T45 present
+T46	problem 1240 1260	hypercholesterolemia
+A46	Assertion T46 present
+T47	problem 4502 4535	the left upper extremity weakness
+A47	Assertion T47 present
+T48	problem 4357 4376	atrial fibrillation
+A48	Assertion T48 present
+T49	problem 2339 2363	bilateral carotid bruits
+A49	Assertion T49 possible
+T50	problem 222 245	Coronary artery disease
+A50	Assertion T50 present
+T51	problem 716 743	a dull pressure in her neck
+A51	Assertion T51 conditional
+T52	problem 2523 2572	systolic murmur at the right upper sternal border
+A52	Assertion T52 present
+T53	problem 3288 3329	10% stenosis of the right coronary artery
+A53	Assertion T53 present
+T54	problem 4473 4484	a new event
+A54	Assertion T54 possible
+T55	problem 1497 1525	left ventricular hypertrophy
+A55	Assertion T55 present
+T56	problem 1263 1275	hypertension
+A56	Assertion T56 present
+T57	problem 4280 4308	diffuse small vessel disease
+A57	Assertion T57 present
+T58	problem 3887 3921	some left upper extremity weakness
+A58	Assertion T58 present
+T59	problem 6175 6184	confusion
+A59	Assertion T59 hypothetical
+T60	problem 1377 1392	aortic stenosis
+A60	Assertion T60 present
+T61	problem 4239 4249	infarction
+A61	Assertion T61 absent
+T62	problem 1306 1314	diabetes
+A62	Assertion T62 absent
+T63	problem 2623 2632	nontender
+A63	Assertion T63 absent
+T64	problem 679 695	light-headedness
+A64	Assertion T64 present

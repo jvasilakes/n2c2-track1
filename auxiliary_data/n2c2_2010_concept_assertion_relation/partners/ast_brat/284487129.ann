@@ -1,0 +1,108 @@
+T0	problem 533 558	acute shortness of breath
+A0	Assertion T0 present
+T1	problem 563 578	pulmonary edema
+A1	Assertion T1 present
+T2	problem 4316 4353	his high right-sided filling pressure
+A2	Assertion T2 present
+T3	problem 777 799	multiple complications
+A3	Assertion T3 present
+T4	problem 1784 1799	pulmonary edema
+A4	Assertion T4 present
+T5	problem 3074 3081	wheezes
+A5	Assertion T5 absent
+T6	problem 3008 3033	jugular venous distention
+A6	Assertion T6 absent
+T7	problem 236 266	ANTERIOR MYOCARDIAL INFARCTION
+A7	Assertion T7 present
+T8	problem 4007 4017	a large OM
+A8	Assertion T8 present
+T9	problem 4707 4732	his low ejection fraction
+A9	Assertion T9 present
+T10	problem 968 1016	a high grade left circumflex lesion after the OM
+A10	Assertion T10 present
+T11	problem 1681 1691	chest pain
+A11	Assertion T11 absent
+T12	problem 3400 3415	pulmonary edema
+A12	Assertion T12 absent
+T13	problem 432 467	insulin dependent diabetes mellitus
+A13	Assertion T13 present
+T14	problem 3085 3090	rales
+A14	Assertion T14 absent
+T15	problem 2213 2233	undescended testicle
+A15	Assertion T15 present
+T16	problem 180 215	INSULIN DEPENDENT DIABETES MELLITUS
+A16	Assertion T16 present
+T17	problem 720 759	an acute anterior myocardial infarction
+A17	Assertion T17 present
+T18	problem 2240 2263	Coronary artery disease
+A18	Assertion T18 present
+T19	problem 281 296	PULMONARY EDEMA
+A19	Assertion T19 present
+T20	problem 923 938	an occluded RCA
+A20	Assertion T20 present
+T21	problem 3381 3392	infiltrates
+A21	Assertion T21 absent
+T22	problem 879 917	a three vessel coronary artery disease
+A22	Assertion T22 present
+T23	problem 3743 3770	his coronary artery disease
+A23	Assertion T23 present
+T24	problem 3526 3551	flat T waves in I and aVL
+A24	Assertion T24 present
+T25	problem 1022 1054	distal left circumflex occlusion
+A25	Assertion T25 present
+T26	problem 941 961	70%-80% proximal LAD
+A26	Assertion T26 present
+T27	problem 3987 4002	an 80% stenosis
+A27	Assertion T27 present
+T28	problem 1934 1950	ischemic changes
+A28	Assertion T28 absent
+T29	problem 2290 2310	known drug allergies
+A29	Assertion T29 absent
+T30	problem 391 427	prior anterior myocardial infarction
+A30	Assertion T30 present
+T31	problem 2120 2131	retinopathy
+A31	Assertion T31 absent
+T32	problem 1892 1913	myocardial infarction
+A32	Assertion T32 absent
+T33	problem 2135 2147	foot lesions
+A33	Assertion T33 absent
+T34	problem 300 320	HYPERCHOLESTEROLEMIA
+A34	Assertion T34 present
+T35	problem 4102 4120	a 50% LAD stenosis
+A35	Assertion T35 present
+T36	problem 3214 3219	edema
+A36	Assertion T36 absent
+T37	problem 3664 3683	his pulmonary edema
+A37	Assertion T37 present
+T38	problem 1247 1269	a thin fibrotic septum
+A38	Assertion T38 present
+T39	problem 1275 1283	akinesis
+A39	Assertion T39 present
+T40	problem 1288 1338	moderately severe hypokinesis in all other regions
+A40	Assertion T40 present
+T41	problem 1694 1706	palpitations
+A41	Assertion T41 absent
+T42	problem 2065 2100	Insulin dependent diabetes mellitus
+A42	Assertion T42 present
+T43	problem 4123 4147	a 100% large DT stenosis
+A43	Assertion T43 present
+T44	problem 1726 1732	nausea
+A44	Assertion T44 absent
+T45	problem 2767 2788	myocardial infarction
+A45	Assertion T45 associated_with_someone_else
+T46	problem 2819 2842	a myocardial infarction
+A46	Assertion T46 associated_with_someone_else
+T47	problem 2154 2173	Bilateral cataracts
+A47	Assertion T47 present
+T48	problem 4067 4087	left-to-left filling
+A48	Assertion T48 present
+T49	problem 3142 3160	extra heart sounds
+A49	Assertion T49 absent
+T50	problem 1709 1720	diaphoresis
+A50	Assertion T50 absent
+T51	problem 3168 3175	murmurs
+A51	Assertion T51 absent
+T52	problem 1620 1643	acutely short of breath
+A52	Assertion T52 present
+T53	problem 4053 4061	occluded
+A53	Assertion T53 present
