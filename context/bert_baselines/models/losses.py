@@ -93,13 +93,10 @@ class RatioLoss(torch.nn.Module):
         super().__init__()
         self.ratio = torch.tensor(ratio)
 
-    def forward(self, zs, z_dists, lengths):
-        mask_ratio = zs.sum(dim=1) / lengths
+    def forward(self, zs, z_dists, token_mask):
+        mask_ratio = zs.sum(dim=1) / token_mask.sum(dim=1)
         example_losses = torch.abs(mask_ratio - self.ratio)
-        if self.reduction == "mean":
-            return example_losses.mean()
-        else:
-            raise ValueError(f"Unsupported reduction '{self.reduction}'")
+        return example_losses.mean()
 
     def __repr__(self):
         return f"RatioLoss(ratio={self.ratio})"
@@ -154,7 +151,6 @@ class ControlledSparsityLoss(torch.nn.Module):
         C_lasso = self.constraint_loss(
                 lasso, self.transition_rate, "lasso")
         return (self.gamma * C_l0) + ((1 - self.gamma) * C_lasso)
-        return constrained_lasso
 
     def __repr__(self):
         return "ControlledSparsityLoss()"
