@@ -1,0 +1,64 @@
+T0	problem 3153 3173	difficult ambulation
+A0	Assertion T0 present
+T1	problem 3198 3230	a small ulcer in the sacral area
+A1	Assertion T1 present
+T2	problem 2782 2787	yeast
+A2	Assertion T2 present
+T4	problem 1070 1093	coronary artery disease
+A3	Assertion T4 present
+T5	problem 727 747	status post lymphoma
+A4	Assertion T5 present
+T6	problem 2556 2577	the persistent fevers
+A5	Assertion T6 present
+T7	problem 2503 2514	Enterococci
+A6	Assertion T7 present
+T8	problem 2537 2546	the wound
+A7	Assertion T8 present
+T9	problem 2519 2533	Staphylococcus
+A8	Assertion T9 present
+T10	problem 1935 1940	obese
+A9	Assertion T10 present
+T11	problem 3748 3760	constipation
+A10	Assertion T11 hypothetical
+T12	problem 2175 2184	purulence
+A11	Assertion T12 absent
+T13	problem 950 958	melanoma
+A12	Assertion T13 present
+T14	problem 2011 2053	I / VI and erythema over the sternal wound
+A13	Assertion T14 present
+T15	problem 1007 1019	hypertension
+A14	Assertion T15 present
+T16	problem 2188 2197	discharge
+A15	Assertion T16 absent
+T17	problem 909 917	lymphoma
+A16	Assertion T17 present
+T18	problem 1022 1036	hypothyroidism
+A17	Assertion T18 present
+T19	problem 2999 3019	a small complication
+A18	Assertion T19 present
+T20	problem 3041 3059	a left ankle wound
+A19	Assertion T20 present
+T22	problem 190 213	STERNAL WOUND INFECTION
+A20	Assertion T22 present
+T24	problem 816 845	an insulin-dependent diabetic
+A21	Assertion T24 present
+T25	problem 4594 4609	desensitization
+A22	Assertion T25 present
+T26	problem 376 399	sternal wound infection
+A23	Assertion T26 present
+T27	problem 460 478	the same diagnosis
+A24	Assertion T27 present
+T28	problem 1039 1063	congestive heart failure
+A25	Assertion T28 present
+T29	problem 2086 2113	a beefy red cellulitic area
+A26	Assertion T29 present
+T30	problem 929 947	ulcerative colitis
+A27	Assertion T30 present
+T31	problem 2072 2081	The wound
+A28	Assertion T31 present
+T32	problem 1991 2008	a systolic murmur
+A29	Assertion T32 present
+T33	problem 52 77	EXTERNAL WOUND INFECTIONS
+A30	Assertion T33 present
+T34	problem 871 906	Insulin-dependent diabetes mellitus
+A31	Assertion T34 present

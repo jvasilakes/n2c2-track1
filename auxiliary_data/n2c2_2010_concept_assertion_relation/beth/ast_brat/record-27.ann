@@ -1,0 +1,208 @@
+T0	problem 1175 1209	mildly decreased breath sounds b/l
+A0	Assertion T0 present
+T1	problem 4954 4965	pneumatosis
+A1	Assertion T1 present
+T2	problem 4934 4949	wall thickening
+A2	Assertion T2 present
+T3	problem 1239 1245	masses
+A3	Assertion T3 absent
+T4	problem 753 757	pain
+A4	Assertion T4 present
+T5	problem 9847 9868	colovesicular fistula
+A5	Assertion T5 present
+T6	problem 718 748	worsening abdominal distention
+A6	Assertion T6 present
+T7	problem 1135 1143	Afebrile
+A7	Assertion T7 absent
+T8	problem 1160 1163	NAD
+A8	Assertion T8 absent
+T9	problem 791 793	MI
+A9	Assertion T9 present
+T10	problem 783 786	CAD
+A10	Assertion T10 present
+T11	problem 2261 2264	VRE
+A11	Assertion T11 present
+T12	problem 10227 10252	inability to eat or drink
+A12	Assertion T12 hypothetical
+T13	problem 5259 5281	friable colonic tissue
+A13	Assertion T13 present
+T14	problem 10263 10277	other symptoms
+A14	Assertion T14 hypothetical
+T15	problem 5240 5254	pseudomembrane
+A15	Assertion T15 present
+T16	problem 10157 10178	severe abdominal pain
+A16	Assertion T16 hypothetical
+T17	problem 10135 10142	redness
+A17	Assertion T17 hypothetical
+T18	problem 10146 10154	swelling
+A18	Assertion T18 hypothetical
+T19	problem 5305 5311	tender
+A19	Assertion T19 present
+T20	problem 5316 5325	distended
+A20	Assertion T20 present
+T21	problem 6076 6097	colovesicular fistula
+A21	Assertion T21 present
+T22	problem 4375 4390	unstable angina
+A22	Assertion T22 present
+T23	problem 2454 2488	pneumatosis in the ascending colon
+A23	Assertion T23 present
+T24	problem 2283 2305	Markedly dilated colon
+A24	Assertion T24 present
+T25	problem 10454 10468	your incisions
+A25	Assertion T25 present
+T26	problem 2591 2606	wall thickening
+A26	Assertion T26 present
+T27	problem 2519 2555	focal narrowing of the sigmoid colon
+A27	Assertion T27 present
+T28	problem 2571 2585	the dilatation
+A28	Assertion T28 present
+T29	problem 2938 2959	Bilateral renal cysts
+A29	Assertion T29 present
+T30	problem 9649 9662	Hurtado Colon
+A30	Assertion T30 present
+T31	problem 2866 2889	Small amount of ascites
+A31	Assertion T31 present
+T32	problem 4911 4931	dilated Turner colon
+A32	Assertion T32 present
+T33	problem 2965 3022	Heavy calcification of the aorta and SMA and its branches
+A33	Assertion T33 present
+T34	problem 8860 8864	pain
+A34	Assertion T34 hypothetical
+T35	problem 3032 3047	atherosclerosis
+A35	Assertion T35 present
+T36	problem 402 423	colovesicular fistula
+A36	Assertion T36 present
+T37	problem 558 564	nausea
+A37	Assertion T37 present
+T38	problem 569 577	vomiting
+A38	Assertion T38 present
+T39	problem 6304 6316	Her incision
+A39	Assertion T39 present
+T40	problem 1296 1310	LE trace edema
+A40	Assertion T40 present
+T41	problem 6515 6519	leak
+A41	Assertion T41 absent
+T42	problem 6891 6905	high residuals
+A42	Assertion T42 present
+T43	problem 10182 10192	distention
+A43	Assertion T43 hypothetical
+T44	problem 203 209	Nausea
+A44	Assertion T44 present
+T45	problem 212 220	vomiting
+A45	Assertion T45 present
+T46	problem 5437 5453	unresponsiveness
+A46	Assertion T46 present
+T47	problem 705 713	ischemia
+A47	Assertion T47 present
+T48	problem 240 250	distention
+A48	Assertion T48 present
+T49	problem 223 237	Abdominal pain
+A49	Assertion T49 present
+T50	problem 530 544	abdominal pain
+A50	Assertion T50 present
+T51	problem 6588 6614	significant deconditioning
+A51	Assertion T51 present
+T52	problem 796 799	HTN
+A52	Assertion T52 present
+T53	problem 802 806	DMII
+A53	Assertion T53 present
+T54	problem 7320 7324	Pain
+A54	Assertion T54 present
+T55	problem 2368 2384	air-fluid levels
+A55	Assertion T55 present
+T56	problem 2669 2680	obstruction
+A56	Assertion T56 possible
+T57	problem 547 555	diarrhea
+A57	Assertion T57 present
+T58	problem 6196 6205	nontender
+A58	Assertion T58 absent
+T59	problem 685 702	bowel obstruction
+A59	Assertion T59 present
+T60	problem 3405 3443	a small collection of extraluminal gas
+A60	Assertion T60 present
+T61	problem 3246 3318	Left lower quadrant thick-walled peripherally enhancing fluid collection
+A61	Assertion T61 present
+T62	problem 5892 5915	a colovesicular fistula
+A62	Assertion T62 present
+T63	problem 5877 5886	an abcess
+A63	Assertion T63 present
+T64	problem 7327 7335	Her pain
+A64	Assertion T64 present
+T65	problem 5710 5720	distention
+A65	Assertion T65 present
+T66	problem 7293 7317	persistent hyperglycemia
+A66	Assertion T66 present
+T67	problem 5674 5705	additional abdominal tenderness
+A67	Assertion T67 present
+T68	problem 4612 4639	trace lower extremity edema
+A68	Assertion T68 present
+T69	problem 9869 9884	Unstable Angina
+A69	Assertion T69 present
+T70	problem 9663 9677	Diverticulitis
+A70	Assertion T70 present
+T71	problem 3526 3557	Moderate intraabdominal ascites
+A71	Assertion T71 present
+T72	problem 2683 2708	An underlying mass lesion
+A72	Assertion T72 possible
+T73	problem 2712 2718	cancer
+A73	Assertion T73 possible
+T74	problem 3510 3520	an abscess
+A74	Assertion T74 possible
+T75	problem 2831 2860	known sigmoid-vesicle fistula
+A75	Assertion T75 present
+T76	problem 10739 10751	constipation
+A76	Assertion T76 hypothetical
+T77	problem 3946 3966	Intermitent delirium
+A77	Assertion T77 present
+T78	problem 10807 10813	drowsy
+A78	Assertion T78 hypothetical
+T79	problem 10029 10048	shortness of breath
+A79	Assertion T79 hypothetical
+T80	problem 3857 3866	confusion
+A80	Assertion T80 present
+T81	problem 10016 10026	chest pain
+A81	Assertion T81 hypothetical
+T82	problem 10364 10378	clear drainage
+A82	Assertion T82 hypothetical
+T83	problem 10384 10398	your incisions
+A83	Assertion T83 present
+T84	problem 3733 3737	leak
+A84	Assertion T84 absent
+T85	problem 10051 10075	fever greater than 101.5
+A85	Assertion T85 hypothetical
+T86	problem 7714 7726	acute events
+A86	Assertion T86 absent
+T87	problem 3661 3714	Diverticulosis within the right remnant sigmoid colon
+A87	Assertion T87 present
+T88	problem 4257 4272	mildly elevated
+A88	Assertion T88 present
+T89	problem 10216 10224	vomiting
+A89	Assertion T89 hypothetical
+T90	problem 10078 10112	foul smelling or colorful drainage
+A90	Assertion T90 hypothetical
+T91	problem 10195 10212	persistent nausea
+A91	Assertion T91 hypothetical
+T92	problem 4115 4125	chest pain
+A92	Assertion T92 present
+T93	problem 10118 10132	your incisions
+A93	Assertion T93 present
+T94	problem 1221 1226	NT/ND
+A94	Assertion T94 absent
+T95	problem 2616 2630	diverticulitis
+A95	Assertion T95 present
+T96	problem 2491 2513	Sigmoid diverticulosis
+A96	Assertion T96 present
+T97	problem 3634 3655	Distended gallbladder
+A97	Assertion T97 present
+T98	problem 3605 3628	small-bowel obstruction
+A98	Assertion T98 absent
+T99	problem 7199 7228	an insulin dependent diabetic
+A99	Assertion T99 present
+T100	problem 3178 3211	Small bilateral pleural effusions
+A100	Assertion T100 present
+T101	problem 3217 3240	compressive atelectasis
+A101	Assertion T101 present
+T102	problem 3157 3175	pulmonary embolism
+A102	Assertion T102 absent
+T103	problem 6035 6061	a leak from Relaford pouch
+A103	Assertion T103 present

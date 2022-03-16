@@ -1,0 +1,26 @@
+T0	problem 626 647	Noncardiac chest pain
+A0	Assertion T0 present
+T1	problem 589 599	chest pain
+A1	Assertion T1 present
+T2	problem 729 737	ischemia
+A2	Assertion T2 absent
+T3	problem 956 962	nausea
+A3	Assertion T3 hypothetical
+T4	problem 911 931	worsening chest pain
+A4	Assertion T4 hypothetical
+T5	problem 1028 1046	any other problems
+A5	Assertion T5 hypothetical
+T6	problem 1004 1022	dizziness/numbness
+A6	Assertion T6 hypothetical
+T7	problem 965 973	vomiting
+A7	Assertion T7 hypothetical
+T8	problem 976 981	fever
+A8	Assertion T8 hypothetical
+T9	problem 993 1001	weakness
+A9	Assertion T9 hypothetical
+T10	problem 984 990	chills
+A10	Assertion T10 hypothetical
+T11	problem 934 953	shortness of breath
+A11	Assertion T11 present
+T12	problem 501 503	CP
+A12	Assertion T12 present

@@ -1,0 +1,12 @@
+T0	problem 647 659	Active Labor
+A0	Assertion T0 present
+T1	problem 1236 1248	active labor
+A1	Assertion T1 present
+T2	problem 349 366	Abnormal Pap Test
+A2	Assertion T2 present
+T3	problem 279 313	Abnormal Fetal Heart Rate / Rhythm
+A3	Assertion T3 present
+T4	problem 1499 1516	fetal bradycardia
+A4	Assertion T4 present
+T5	problem 1590 1601	nuchal cord
+A5	Assertion T5 present

@@ -1,0 +1,158 @@
+T0	problem 2289 2312	occult facial fractures
+A0	Assertion T0 absent
+T1	problem 6936 6949	complications
+A1	Assertion T1 absent
+T2	problem 7398 7418	any further reaction
+A2	Assertion T2 absent
+T3	problem 7068 7075	his LLE
+A3	Assertion T3 present
+T4	problem 8539 8547	vomiting
+A4	Assertion T4 hypothetical
+T5	problem 8302 8319	Subdural hematoma
+A5	Assertion T5 present
+T6	problem 4356 4379	significant abnormality
+A6	Assertion T6 absent
+T7	problem 445 449	+LOC
+A7	Assertion T7 present
+T8	problem 8320 8334	Skull fracture
+A8	Assertion T8 present
+T9	problem 4624 4632	Fracture
+A9	Assertion T9 present
+T10	problem 3316 3328	pneumothorax
+A10	Assertion T10 absent
+T11	problem 6115 6128	hydrocephalus
+A11	Assertion T11 absent
+T12	problem 8531 8536	nause
+A12	Assertion T12 hypothetical
+T13	problem 3164 3209	significant prevertebral soft tissue swelling
+A13	Assertion T13 absent
+T14	problem 5798 5823	the linear skull fracture
+A14	Assertion T14 present
+T15	problem 8490 8506	severe headaches
+A15	Assertion T15 hypothetical
+T16	problem 7838 7842	pain
+A16	Assertion T16 hypothetical
+T17	problem 3558 3578	opacified with blood
+A17	Assertion T17 present
+T18	problem 5771 5785	pneumocephalus
+A18	Assertion T18 present
+T19	problem 4912 4981	a non-displaced comminuted fracture of the proximal fibular diaphysis
+A19	Assertion T19 present
+T20	problem 3368 3410	a linear right temporal calvarial fracture
+A20	Assertion T20 present
+T21	problem 8557 8575	any other symptoms
+A21	Assertion T21 hypothetical
+T22	problem 328 351	right tib/fib fractures
+A22	Assertion T22 present
+T23	problem 6075 6111	shift of normally midline structures
+A23	Assertion T23 absent
+T24	problem 5330 5344	pneumocephalus
+A24	Assertion T24 present
+T25	problem 4888 4900	the fracture
+A25	Assertion T25 present
+T26	problem 4743 4791	a proximal diaphyseal comminuted tibial fracture
+A26	Assertion T26 present
+T27	problem 7544 7552	Allergic
+A27	Assertion T27 present
+T28	problem 5938 5955	surrounding edema
+A28	Assertion T28 present
+T29	problem 3073 3087	acute fracture
+A29	Assertion T29 absent
+T30	problem 7272 7292	transfusion reaction
+A30	Assertion T30 possible
+T31	problem 4515 4526	open RLE fx
+A31	Assertion T31 present
+T32	problem 3995 4014	Postoperative fever
+A32	Assertion T32 present
+T33	problem 3091 3113	traumatic malalignment
+A33	Assertion T33 absent
+T34	problem 2715 2717	fx
+A34	Assertion T34 present
+T35	problem 5691 5739	subdural hemorrhage in the right posterior fossa
+A35	Assertion T35 present
+T36	problem 1798 1834	shift of normally midline structures
+A36	Assertion T36 absent
+T37	problem 598 624	Attention deficit disorder
+A37	Assertion T37 present
+T38	problem 2500 2514	pneumocephalus
+A38	Assertion T38 present
+T39	problem 2435 2495	small associated right posterior convexity subdural hematoma
+A39	Assertion T39 present
+T40	problem 3708 3759	a small right posterior convexity subdural hematoma
+A40	Assertion T40 present
+T41	problem 6411 6428	surrounding edema
+A41	Assertion T41 present
+T42	problem 3764 3778	pneumocephalus
+A42	Assertion T42 present
+T43	problem 6332 6367	right posterior subdural hemorrhage
+A43	Assertion T43 present
+T44	problem 2354 2394	Linear right temporal calvarial fracture
+A44	Assertion T44 present
+T45	problem 6233 6281	bilateral opacification of the mastoid air cells
+A45	Assertion T45 present
+T46	problem 3635 3675	Linear right temporal calvarial fracture
+A46	Assertion T46 present
+T47	problem 6587 6611	His Neurosurgical issues
+A47	Assertion T47 present
+T48	problem 2148 2169	other acute fractures
+A48	Assertion T48 absent
+T49	problem 6572 6584	his injuries
+A49	Assertion T49 present
+T50	problem 1851 1883	a left occipital scalp contusion
+A50	Assertion T50 present
+T51	problem 1733 1747	pneumocephalus
+A51	Assertion T51 present
+T52	problem 8335 8375	Right comminuted tibia / fibula fracture
+A52	Assertion T52 present
+T53	problem 1891 1916	associated skull fracture
+A53	Assertion T53 absent
+T54	problem 3909 3922	post-op fever
+A54	Assertion T54 present
+T55	problem 3600 3629	acute cervical spine fracture
+A55	Assertion T55 absent
+T56	problem 4322 4325	CHF
+A56	Assertion T56 absent
+T57	problem 5069 5111	Comminuted proximal tibiofibular fractures
+A57	Assertion T57 present
+T58	problem 1688 1713	a small subdural hematoma
+A58	Assertion T58 present
+T59	problem 3841 3854	acute process
+A59	Assertion T59 possible
+T60	problem 5005 5025	soft tissue swelling
+A60	Assertion T60 present
+T61	problem 8077 8089	constipation
+A61	Assertion T61 hypothetical
+T62	problem 4275 4295	focal consolidations
+A62	Assertion T62 absent
+T63	problem 1402 1407	bleed
+A63	Assertion T63 present
+T64	problem 5201 5232	immediate hardware complication
+A64	Assertion T64 absent
+T65	problem 3966 3979	acute process
+A65	Assertion T65 possible
+T66	problem 1586 1641	a linear nondepressed right temporal calvarial fracture
+A66	Assertion T66 present
+T67	problem 5870 5932	persistent bifrontal and right parietal hemorrhagic contusions
+A67	Assertion T67 present
+T68	problem 5969 6011	small left frontal subarachnoid hemorrhage
+A68	Assertion T68 possible
+T69	problem 4254 4271	pleural effusions
+A69	Assertion T69 absent
+T70	problem 2125 2142	an acute fracture
+A70	Assertion T70 absent
+T71	problem 8472 8478	fevers
+A71	Assertion T71 hypothetical
+T72	problem 5481 5495	pneumocephalus
+A72	Assertion T72 present
+T73	problem 6373 6406	Multifocal hemorrhagic contusions
+A73	Assertion T73 present
+T74	problem 6838 6866	His right tib / fib fracture
+A74	Assertion T74 present
+T75	problem 2799 2825	Head injury to the occiput
+A75	Assertion T75 present
+T76	problem 8509 8528	visual disturbances
+A76	Assertion T76 hypothetical
+T77	problem 8481 8487	chills
+A77	Assertion T77 hypothetical
+T78	problem 2213 2255	mucosal thickening in the sphenoid sinuses
+A78	Assertion T78 present

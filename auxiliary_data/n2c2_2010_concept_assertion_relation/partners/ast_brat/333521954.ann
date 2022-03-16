@@ -1,0 +1,10 @@
+T0	problem 464 474	CHEST PAIN
+A0	Assertion T0 present
+T1	problem 477 480	SOB
+A1	Assertion T1 present
+T2	problem 493 504	R Lung Mass
+A2	Assertion T2 present
+T3	problem 514 520	cancer
+A3	Assertion T3 possible
+T4	problem 656 660	pain
+A4	Assertion T4 hypothetical

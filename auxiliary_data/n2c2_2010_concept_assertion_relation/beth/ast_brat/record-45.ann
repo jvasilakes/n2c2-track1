@@ -1,0 +1,30 @@
+T0	problem 1604 1623	Hepatic candidiasis
+A0	Assertion T0 present
+T1	problem 1580 1598	Burkitt's lymphoma
+A1	Assertion T1 present
+T2	problem 327 384	the previously noted enumerable hepatic cyst in her liver
+A2	Assertion T2 present
+T3	problem 251 264	Liver lesions
+A3	Assertion T3 present
+T4	problem 539 547	lymphoma
+A4	Assertion T4 possible
+T5	problem 1856 1863	itching
+A5	Assertion T5 hypothetical
+T6	problem 485 504	hepatic candidiasis
+A6	Assertion T6 possible
+T7	problem 463 474	these cysts
+A7	Assertion T7 present
+T8	problem 954 962	elevated
+A8	Assertion T8 present
+T9	problem 1162 1173	hypotension
+A9	Assertion T9 present
+T10	problem 1026 1033	febrile
+A10	Assertion T10 absent
+T11	problem 563 572	Burkitt's
+A11	Assertion T11 possible
+T12	problem 184 202	Berkitt's lymphoma
+A12	Assertion T12 present
+T13	problem 642 665	her hepatic candidiasis
+A13	Assertion T13 present
+T14	problem 1532 1539	Guarded
+A14	Assertion T14 present

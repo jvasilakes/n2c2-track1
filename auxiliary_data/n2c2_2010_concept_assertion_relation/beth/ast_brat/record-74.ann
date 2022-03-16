@@ -1,0 +1,60 @@
+T0	problem 1235 1250	Carotid disease
+A0	Assertion T0 present
+T1	problem 2087 2105	hepatosplenomegaly
+A1	Assertion T1 absent
+T2	problem 976 1015	right coronary artery dominant diseased
+A2	Assertion T2 present
+T3	problem 200 216	high cholesterol
+A3	Assertion T3 present
+T4	problem 1191 1207	high cholesterol
+A4	Assertion T4 present
+T5	problem 695 706	EKG changes
+A5	Assertion T5 present
+T6	problem 1464 1487	coronary artery disease
+A6	Assertion T6 present
+T7	problem 4000 4004	pain
+A7	Assertion T7 hypothetical
+T8	problem 1652 1662	atraumatic
+A8	Assertion T8 absent
+T9	problem 2130 2138	cyanosis
+A9	Assertion T9 absent
+T10	problem 1807 1822	lymphadenopathy
+A10	Assertion T10 absent
+T11	problem 2141 2149	clubbing
+A11	Assertion T11 absent
+T12	problem 580 619	an acute inferior myocardial infarction
+A12	Assertion T12 present
+T13	problem 1596 1604	afebrile
+A13	Assertion T13 absent
+T14	problem 816 836	mitral regurgitation
+A14	Assertion T14 absent
+T15	problem 1994 2001	murmurs
+A15	Assertion T15 absent
+T16	problem 1579 1593	acute distress
+A16	Assertion T16 absent
+T17	problem 2075 2081	masses
+A17	Assertion T17 absent
+T18	problem 334 348	mid chest pain
+A18	Assertion T18 conditional
+T19	problem 2057 2069	nondistended
+A19	Assertion T19 absent
+T20	problem 2045 2054	nontender
+A20	Assertion T20 absent
+T21	problem 1881 1901	right carotid bruits
+A21	Assertion T21 present
+T22	problem 445 457	unresponsive
+A22	Assertion T22 present
+T23	problem 353 360	burning
+A23	Assertion T23 conditional
+T24	problem 839 852	insufficiency
+A24	Assertion T24 absent
+T25	problem 856 867	hypokinesis
+A25	Assertion T25 absent
+T26	problem 1827 1838	thyromegaly
+A26	Assertion T26 absent
+T27	problem 900 908	narrowed
+A27	Assertion T27 present
+T28	problem 427 436	breathing
+A28	Assertion T28 present
+T29	problem 2153 2158	edema
+A29	Assertion T29 absent

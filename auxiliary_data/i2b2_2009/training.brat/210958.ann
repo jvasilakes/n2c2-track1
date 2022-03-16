@@ -1,0 +1,82 @@
+T0	NoDisposition 3247 3255	coumadin
+T1	NoDisposition 1229 1242	CIPROFLOXACIN
+T2	NoDisposition 1475 1486	SIMVASTATIN
+T3	Disposition 5223 5234	antibiotics
+E3	Disposition:T3
+A0	Event E3 start-continue
+A1	Temporality E3 future
+A2	Certainty E3 suggestion
+T4	NoDisposition 5294 5303	linezolid
+T5	NoDisposition 751 769	POTASSIUM CHLORIDE
+T6	NoDisposition 801 806	SARNA
+T7	Disposition 4396 4402	cipro.
+E7	Disposition:T7
+A3	Event E7 start
+A4	Temporality E7 past
+A5	Certainty E7 factual
+T8	NoDisposition 1460 1468	WARFARIN
+T9	NoDisposition 2109 2129	ACETYLSALICYLIC ACID
+T10	NoDisposition 657 678	KCL IMMEDIATE RELEASE
+T11	NoDisposition 1764 1775	SIMVASTATIN
+T12	NoDisposition 1393 1404	SIMVASTATIN
+T13	Disposition 518 528	LISINOPRIL
+E13	Disposition:T13
+A6	Event E13 stop
+A7	Temporality E13 past
+A8	Certainty E13 conditional
+T14	NoDisposition 4936 4944	coumadin
+T15	NoDisposition 1214 1222	WARFARIN
+T16	Disposition 4548 4552	vanc
+E16	Disposition:T16
+A9	Event E16 stop
+A10	Temporality E16 past
+A11	Certainty E16 suggestion
+T17	NoDisposition 2240 2247	ASPIRIN
+T18	Disposition 1858 1867	LINEZOLID
+E18	Disposition:T18
+A12	Event E18 start
+A13	Temporality E18 present
+A14	Certainty E18 factual
+T19	NoDisposition 734 744	LISINOPRIL
+T20	NoDisposition 1749 1757	WARFARIN
+T21	Disposition 870 898	COUMADIN ( WARFARIN SODIUM )
+E21	Disposition:T21
+A15	Event E21 stop
+A16	Temporality E21 present
+A17	Certainty E21 conditional
+T22	NoDisposition 4877 4880	ADA
+T23	NoDisposition 1145 1158	CIPROFLOXACIN
+T24	Disposition 4557 4561	levo
+E24	Disposition:T24
+A18	Event E24 stop
+A19	Temporality E24 past
+A20	Certainty E24 suggestion
+T25	NoDisposition 2073 2096	NEXIUM ( ESOMEPRAZOLE )
+T26	Disposition 4387 4391	vanc
+E26	Disposition:T26
+A21	Event E26 start
+A22	Temporality E26 past
+A23	Certainty E26 factual
+T27	Disposition 3488 3494	unasyn
+E27	Disposition:T27
+A24	Event E27 stop
+A25	Certainty E27 factual
+T28	NoDisposition 2225 2233	WARFARIN
+T29	Disposition 3522 3531	Linezolid
+E29	Disposition:T29
+A26	Event E29 start
+A27	Temporality E29 past
+A28	Certainty E29 factual
+T30	NoDisposition 1814 1842	MICONAZOLE NITRATE 2% POWDER
+T31	NoDisposition 4865 4874	glyburide
+T32	NoDisposition 1525 1536	SIMVASTATIN
+T33	Disposition 4575 4585	linezolid.
+E33	Disposition:T33
+A29	Event E33 start
+A30	Temporality E33 present
+A31	Certainty E33 factual
+T34	Disposition 482 491	GLYBURIDE
+E34	Disposition:T34
+A32	Event E34 stop
+A33	Temporality E34 past
+A34	Certainty E34 conditional

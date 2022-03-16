@@ -1,0 +1,110 @@
+T0	problem 4832 4880	a large hemorrhagic lesion on the occipital lobe
+A0	Assertion T0 present
+T1	problem 1670 1687	apparent distress
+A1	Assertion T1 absent
+T2	problem 2545 2581	a dense hemianopsia on the left side
+A2	Assertion T2 present
+T3	problem 1497 1510	heart disease
+A3	Assertion T3 associated_with_someone_else
+T4	problem 5152 5239	scattered T2 hyperintense foci within the periventricular and left frontal white matter
+A4	Assertion T4 present
+T5	problem 5256 5276	small vessel disease
+A5	Assertion T5 possible
+T6	problem 5279 5286	gliosis
+A6	Assertion T6 possible
+T7	problem 5290 5303	demyelination
+A7	Assertion T7 possible
+T8	problem 1772 1782	atraumatic
+A8	Assertion T8 absent
+T9	problem 2004 2009	rales
+A9	Assertion T9 absent
+T10	problem 2013 2020	wheezes
+A10	Assertion T10 absent
+T11	problem 5836 5859	urinary tract infection
+A11	Assertion T11 possible
+T12	problem 4122 4150	a right occipital hemorrhage
+A12	Assertion T12 present
+T13	problem 6143 6167	a dense left hemianopsia
+A13	Assertion T13 present
+T14	problem 5435 5479	some very rare atrial premature contractions
+A14	Assertion T14 present
+T15	problem 5976 5984	afebrile
+A15	Assertion T15 absent
+T16	problem 1307 1327	known drug allergies
+A16	Assertion T16 absent
+T17	problem 3296 3307	hemianopsia
+A17	Assertion T17 present
+T18	problem 343 348	dizzy
+A18	Assertion T18 present
+T19	problem 5739 5748	confusion
+A19	Assertion T19 present
+T20	problem 62 96	RIGHT OCCIPITAL HEMORRHAGIC STROKE
+A20	Assertion T20 present
+T21	problem 5016 5055	the right parietal occipital hemorrhage
+A21	Assertion T21 present
+T22	problem 4226 4238	hypertension
+A22	Assertion T22 present
+T23	problem 3035 3049	pronator drift
+A23	Assertion T23 absent
+T24	problem 674 679	dizzy
+A24	Assertion T24 present
+T25	problem 3644 3671	difficulty with tandem gait
+A25	Assertion T25 present
+T26	problem 1091 1099	diplopia
+A26	Assertion T26 absent
+T27	problem 3211 3268	considerable difficulty with left finger-to-nose movement
+A27	Assertion T27 present
+T28	problem 2097 2106	nontender
+A28	Assertion T28 absent
+T29	problem 922 942	the change in vision
+A29	Assertion T29 present
+T30	problem 978 986	numbness
+A30	Assertion T30 absent
+T31	problem 850 858	Symptoms
+A31	Assertion T31 present
+T32	problem 2145 2186	2+ pitting edema in the knees bilaterally
+A32	Assertion T32 present
+T33	problem 4896 4916	clear enhancing mass
+A33	Assertion T33 absent
+T34	problem 1022 1032	hoarseness
+A34	Assertion T34 absent
+T35	problem 1035 1064	difficulties in finding words
+A35	Assertion T35 absent
+T36	problem 1698 1706	afebrile
+A36	Assertion T36 absent
+T37	problem 1078 1085	hiccups
+A37	Assertion T37 absent
+T38	problem 992 996	pain
+A38	Assertion T38 absent
+T39	problem 5496 5530	ventricular premature contractions
+A39	Assertion T39 absent
+T40	problem 2109 2121	nondistended
+A40	Assertion T40 absent
+T41	problem 967 975	weakness
+A41	Assertion T41 absent
+T42	problem 5073 5103	mild narrowing of the left ICA
+A42	Assertion T42 present
+T43	problem 5627 5635	thrombus
+A43	Assertion T43 absent
+T44	problem 3323 3332	nystagmus
+A44	Assertion T44 absent
+T45	problem 448 460	hypertension
+A45	Assertion T45 present
+T46	problem 2435 2460	word finding difficulty .
+A46	Assertion T46 present
+T47	problem 4261 4297	a right occipital hemorrhagic stroke
+A47	Assertion T47 present
+T48	problem 3346 3407	some fine fast beat nystagmus bilateral extremes of abduction
+A48	Assertion T48 present
+T49	problem 1407 1433	transient ischemic attacks
+A49	Assertion T49 absent
+T50	problem 2416 2431	notable aphasia
+A50	Assertion T50 present
+T51	problem 1169 1181	hypertension
+A51	Assertion T51 present
+T52	problem 3158 3192	intention tremor on the right side
+A52	Assertion T52 present
+T53	problem 795 847	a dull , right sided headache over the right eyebrow
+A53	Assertion T53 present
+T54	problem 209 243	Right occipital hemorrhagic stroke
+A54	Assertion T54 present

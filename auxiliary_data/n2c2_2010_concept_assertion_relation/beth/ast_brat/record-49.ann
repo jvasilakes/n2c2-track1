@@ -1,0 +1,14 @@
+T0	problem 995 1019	physically decompensated
+A0	Assertion T0 present
+T1	problem 650 702	the patient 's chronic obstructive pulmonary disease
+A1	Assertion T1 present
+T2	problem 840 845	cough
+A2	Assertion T2 absent
+T3	problem 817 836	shortness of breath
+A3	Assertion T3 absent
+T4	problem 279 319	stage 1 sacral decubitus on her buttocks
+A4	Assertion T4 present
+T5	problem 493 512	the decubitus ulcer
+A5	Assertion T5 present
+T6	problem 572 582	discomfort
+A6	Assertion T6 present

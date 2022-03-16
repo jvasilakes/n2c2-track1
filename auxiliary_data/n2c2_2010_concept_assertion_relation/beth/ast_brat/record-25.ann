@@ -1,0 +1,90 @@
+T0	problem 2512 2553	dilation of intrahepatic common bile duct
+A0	Assertion T0 present
+T1	problem 1838 1844	masses
+A1	Assertion T1 absent
+T2	problem 5983 6010	the prerenal kidney failure
+A2	Assertion T2 absent
+T3	problem 3858 3870	an elevation
+A3	Assertion T3 present
+T4	problem 3263 3281	advanced cirrhosis
+A4	Assertion T4 possible
+T5	problem 3030 3048	cholangiocarcinoma
+A5	Assertion T5 possible
+T6	problem 5196 5207	the ascites
+A6	Assertion T6 present
+T7	problem 5233 5236	SVT
+A7	Assertion T7 present
+T8	problem 2972 3006	nodularity in the common bile duct
+A8	Assertion T8 present
+T9	problem 5543 5557	this condition
+A9	Assertion T9 present
+T10	problem 3213 3248	significant nodularity of the liver
+A10	Assertion T10 present
+T11	problem 773 809	Nodularities in the common bile duct
+A11	Assertion T11 present
+T12	problem 894 912	cholangiocarcinoma
+A12	Assertion T12 possible
+T13	problem 4303 4322	a prerenal etiology
+A13	Assertion T13 possible
+T14	problem 3680 3711	leakage at the anastomosis site
+A14	Assertion T14 absent
+T15	problem 1531 1538	icteric
+A15	Assertion T15 present
+T16	problem 5308 5319	the ascites
+A16	Assertion T16 present
+T17	problem 5339 5351	any organism
+A17	Assertion T17 absent
+T18	problem 3365 3382	region nodularity
+A18	Assertion T18 present
+T19	problem 3549 3559	malignancy
+A19	Assertion T19 absent
+T20	problem 5713 5731	oxygen requirement
+A20	Assertion T20 absent
+T21	problem 269 299	primary sclerosing cholangitis
+A21	Assertion T21 present
+T22	problem 1462 1476	acute distress
+A22	Assertion T22 absent
+T23	problem 5373 5391	oxygen requirement
+A23	Assertion T23 present
+T24	problem 2628 2640	splenomegaly
+A24	Assertion T24 present
+T25	problem 4680 4725	significant lower extremity and scrotum edema
+A25	Assertion T25 present
+T26	problem 2816 2858	a distal stricture of the common bile duct
+A26	Assertion T26 present
+T27	problem 1568 1583	lymphadenopathy
+A27	Assertion T27 absent
+T28	problem 1742 1751	nontender
+A28	Assertion T28 absent
+T29	problem 1757 1763	masses
+A29	Assertion T29 absent
+T30	problem 2410 2439	minimal left base atelectasis
+A30	Assertion T30 present
+T31	problem 2444 2475	elevation of left hemidiaphragm
+A31	Assertion T31 present
+T32	problem 1277 1297	known drug allergies
+A32	Assertion T32 absent
+T33	problem 1768 1780	nondistended
+A33	Assertion T33 absent
+T34	problem 1039 1057	Ulcerative colitis
+A34	Assertion T34 present
+T35	problem 4124 4137	any pneumonia
+A35	Assertion T35 absent
+T36	problem 1507 1517	atraumatic
+A36	Assertion T36 absent
+T37	problem 4189 4205	low urine output
+A37	Assertion T37 present
+T38	problem 5476 5493	prerenal azotemia
+A38	Assertion T38 present
+T39	problem 1709 1716	murmurs
+A39	Assertion T39 absent
+T40	problem 6648 6651	PSC
+A40	Assertion T40 present
+T41	problem 4593 4619	distentions of the abdomen
+A41	Assertion T41 present
+T42	problem 4636 4665	accumulation of ascitic fluid
+A42	Assertion T42 present
+T43	problem 1060 1090	primary sclerosing cholangitis
+A43	Assertion T43 present
+T44	problem 1795 1813	hepatosplenomegaly
+A44	Assertion T44 absent

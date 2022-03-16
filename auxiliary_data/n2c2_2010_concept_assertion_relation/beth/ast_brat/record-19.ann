@@ -1,0 +1,214 @@
+T0	problem 10774 10780	fevers
+A0	Assertion T0 hypothetical
+T1	problem 10783 10789	chills
+A1	Assertion T1 hypothetical
+T2	problem 10792 10802	chest pain
+A2	Assertion T2 hypothetical
+T3	problem 3274 3282	elevated
+A3	Assertion T3 absent
+T4	problem 3224 3238	Flushed cheeks
+A4	Assertion T4 present
+T5	problem 10805 10824	shortness of breath
+A5	Assertion T5 hypothetical
+T6	problem 3241 3256	Slightly dry MM
+A6	Assertion T6 present
+T7	problem 7406 7428	ground glass opacities
+A7	Assertion T7 present
+T8	problem 7445 7477	an underlying infectious process
+A8	Assertion T8 possible
+T9	problem 9901 9910	Pneumonia
+A9	Assertion T9 present
+T10	problem 2436 2456	increasing back pain
+A10	Assertion T10 present
+T11	problem 3391 3393	S3
+A11	Assertion T11 absent
+T12	problem 2374 2397	Lymphovascular invasion
+A12	Assertion T12 present
+T13	problem 9914 9933	Acute renal failure
+A13	Assertion T13 present
+T14	problem 3292 3311	Decreased air entry
+A14	Assertion T14 present
+T15	problem 3348 3356	Egophony
+A15	Assertion T15 present
+T16	problem 3404 3410	murmur
+A16	Assertion T16 absent
+T17	problem 3414 3417	rub
+A17	Assertion T17 absent
+T18	problem 3396 3398	S4
+A18	Assertion T18 absent
+T19	problem 10530 10556	low thyroid hormone levels
+A19	Assertion T19 present
+T20	problem 2463 2481	metastatic disease
+A20	Assertion T20 present
+T21	problem 6797 6835	interval periosteal new bone formation
+A21	Assertion T21 present
+T22	problem 7851 7864	abnormal TFTs
+A22	Assertion T22 present
+T23	problem 2122 2153	Metastatic renal cell carcinoma
+A23	Assertion T23 present
+T24	problem 2593 2615	ongoing grade III rash
+A24	Assertion T24 present
+T25	problem 6761 6791	Predominantly sclerotic lesion
+A25	Assertion T25 present
+T26	problem 2298 2338	renal cell carcinoma of chromophobe type
+A26	Assertion T26 present
+T27	problem 2344 2364	Carter nuclear grade
+A27	Assertion T27 present
+T28	problem 2659 2670	proteinuria
+A28	Assertion T28 present
+T29	problem 7104 7123	Bibasilar pneumonia
+A29	Assertion T29 present
+T30	problem 7150 7178	community-acquired pneumonia
+A30	Assertion T30 present
+T31	problem 2885 2903	Seasonal allergies
+A31	Assertion T31 present
+T32	problem 10827 10836	dizziness
+A32	Assertion T32 hypothetical
+T33	problem 5430 5448	slightly increased
+A33	Assertion T33 present
+T34	problem 2830 2854	mild renal insufficiency
+A34	Assertion T34 present
+T35	problem 152 167	Known Allergies
+A35	Assertion T35 absent
+T36	problem 10840 10869	any other concerning symptoms
+A36	Assertion T36 hypothetical
+T37	problem 6575 6611	Mild posterior mitral valve prolapse
+A37	Assertion T37 present
+T38	problem 6617 6642	mild mitral regurgitation
+A38	Assertion T38 present
+T39	problem 5613 5640	bilateral pleural effusions
+A39	Assertion T39 present
+T40	problem 5658 5679	cardiac insufficiency
+A40	Assertion T40 present
+T41	problem 5699 5714	volume overload
+A41	Assertion T41 possible
+T42	problem 7055 7060	fever
+A42	Assertion T42 present
+T43	problem 3210 3213	NAD
+A43	Assertion T43 absent
+T44	problem 3316 3343	crackles at both lung bases
+A44	Assertion T44 present
+T45	problem 8223 8242	Renal insufficiency
+A45	Assertion T45 present
+T46	problem 5231 5290	deep venous thrombosis in the lower extremities bilaterally
+A46	Assertion T46 absent
+T47	problem 5374 5406	bilateral small pleural effusion
+A47	Assertion T47 present
+T48	problem 633 638	fever
+A48	Assertion T48 present
+T49	problem 5313 5341	New bibasilar consolidations
+A49	Assertion T49 present
+T50	problem 5515 5568	Marked interval enlargement of the cardiac silhouette
+A50	Assertion T50 present
+T51	problem 723 733	chest pain
+A51	Assertion T51 present
+T52	problem 8355 8373	prerenal component
+A52	Assertion T52 present
+T53	problem 5463 5475	pneumothorax
+A53	Assertion T53 absent
+T54	problem 8322 8343	underlying malignancy
+A54	Assertion T54 present
+T55	problem 7991 8020	destruction of L femoral neck
+A55	Assertion T55 present
+T56	problem 931 939	fatigued
+A56	Assertion T56 present
+T57	problem 10195 10206	a pneumonia
+A57	Assertion T57 present
+T58	problem 1060 1071	a new fever
+A58	Assertion T58 present
+T59	problem 8081 8098	an acute fracture
+A59	Assertion T59 absent
+T60	problem 1131 1143	a mild cough
+A60	Assertion T60 present
+T61	problem 1161 1175	non-productive
+A61	Assertion T61 absent
+T62	problem 1201 1218	aspiration events
+A62	Assertion T62 conditional
+T63	problem 9398 9410	constipation
+A63	Assertion T63 hypothetical
+T64	problem 1647 1671	bibasilar consolidations
+A64	Assertion T64 present
+T65	problem 6340 6368	diffuse mesenteric stranding
+A65	Assertion T65 present
+T66	problem 9612 9616	Pain
+A66	Assertion T66 hypothetical
+T67	problem 9937 9968	Metastatic renal cell carcinoma
+A67	Assertion T67 present
+T68	problem 9972 9981	Hypoxemia
+A68	Assertion T68 present
+T69	problem 1484 1490	chills
+A69	Assertion T69 absent
+T70	problem 1413 1438	his low oxygen saturation
+A70	Assertion T70 present
+T71	problem 5784 5825	Bilateral basilar compressive atelectasis
+A71	Assertion T71 present
+T72	problem 8519 8527	diarrhea
+A72	Assertion T72 present
+T73	problem 6147 6160	Drug toxicity
+A73	Assertion T73 possible
+T74	problem 256 261	fever
+A74	Assertion T74 present
+T75	problem 6263 6290	New jejunal wall thickening
+A75	Assertion T75 present
+T76	problem 375 389	metastatic RCC
+A76	Assertion T76 present
+T77	problem 6482 6525	Mild symmetric left ventricular hypertrophy
+A77	Assertion T77 present
+T78	problem 609 628	shortness of breath
+A78	Assertion T78 present
+T79	problem 6296 6335	persistent distal ileal wall thickening
+A79	Assertion T79 present
+T80	problem 6015 6036	an infectious process
+A80	Assertion T80 possible
+T81	problem 7362 7383	an oxygen requirement
+A81	Assertion T81 present
+T82	problem 6092 6144	viral , fungal and atypical mycobacterial infections
+A82	Assertion T82 possible
+T83	problem 5940 5997	scattered ground glass opacities involving the right lung
+A83	Assertion T83 present
+T84	problem 7063 7072	hypoxemia
+A84	Assertion T84 present
+T85	problem 7079 7098	bibasilar pneumonia
+A85	Assertion T85 present
+T86	problem 1496 1506	chest pain
+A86	Assertion T86 absent
+T87	problem 1512 1523	LE swelling
+A87	Assertion T87 absent
+T88	problem 6997 7011	metastatic RCC
+A88	Assertion T88 present
+T89	problem 7781 7817	significant increase in tumor burden
+A89	Assertion T89 absent
+T90	problem 1025 1034	congested
+A90	Assertion T90 present
+T91	problem 7707 7722	acute infection
+A91	Assertion T91 present
+T92	problem 7649 7663	Metastatic RCC
+A92	Assertion T92 present
+T93	problem 234 253	Shortness of breath
+A93	Assertion T93 present
+T94	problem 1963 1985	His oxygen requirement
+A94	Assertion T94 present
+T95	problem 539 563	mild renal insufficiency
+A95	Assertion T95 present
+T96	problem 3477 3482	edema
+A96	Assertion T96 absent
+T97	problem 3450 3460	non-tender
+A97	Assertion T97 absent
+T98	problem 1262 1282	mild reflux symptoms
+A98	Assertion T98 present
+T99	problem 6901 6919	displaced fracture
+A99	Assertion T99 absent
+T100	problem 6645 6698	Small ( 0.6 cm ) circumferential pericardial effusion
+A100	Assertion T100 present
+T101	problem 1314 1322	mild SOB
+A101	Assertion T101 present
+T102	problem 1222 1229	choking
+A102	Assertion T102 conditional
+T103	problem 6443 6460	metastatic burden
+A103	Assertion T103 present
+T104	problem 6394 6416	an infectious etiology
+A104	Assertion T104 possible
+T105	problem 5905 5935	tree-in-Eric nodular opacities
+A105	Assertion T105 present
+T106	problem 5828 5865	Superimposed infectious consolidation
+A106	Assertion T106 possible

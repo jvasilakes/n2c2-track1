@@ -1,0 +1,63 @@
+T0	Disposition 4126 4133	Digoxin
+E0	Disposition:T0
+A0	Event E0 start
+A1	Temporality E0 past
+A2	Certainty E0 factual
+T1	NoDisposition 6067 6079	troglipazone
+T2	NoDisposition 5714 5729	magnesium oxide
+T3	Disposition 4261 4268	Digoxin
+E3	Disposition:T3
+A3	Event E3 start-continue
+A4	Temporality E3 past
+A5	Certainty E3 factual
+T4	Disposition 1085 1096	amiodarone.
+E4	Disposition:T4
+A6	Event E4 start-continue
+A7	Temporality E4 present
+A8	Certainty E4 factual
+T5	Disposition 4303 4310	Digoxin
+E5	Disposition:T5
+A9	Event E5 continue
+A10	Temporality E5 past
+A11	Certainty E5 factual
+T6	NoDisposition 5620 5625	Lasix
+T7	NoDisposition 6030 6044	mononitrate-SR
+T8	Disposition 5092 5100	Coumadin
+E8	Disposition:T8
+A12	Event E8 start-continue
+A13	Certainty E8 factual
+T9	NoDisposition 5984 5995	Simvastatin
+T10	Disposition 4126 4133	Digoxin
+E10	Disposition:T10
+A14	Event E10 start
+A15	Temporality E10 past
+A16	Certainty E10 factual
+T11	NoDisposition 5749 5758	Lopressor
+T12	NoDisposition 5529 5539	clonazepam
+T13	NoDisposition 1179 1182	PTU
+T14	Disposition 4477 4485	heparin.
+E14	Disposition:T14
+A17	Event E14 start
+A18	Temporality E14 past
+A19	Certainty E14 factual
+T15	NoDisposition 6017 6027	isosorbide
+T16	NoDisposition 5469 5479	Amiodarone
+T17	NoDisposition 5673 5693	levothyroxine sodium
+T18	NoDisposition 5118 5125	heparin
+T19	NoDisposition 5499 5508	Captopril
+T20	Disposition 1153 1163	amiodarone
+E20	Disposition:T20
+A20	Event E20 start-continue
+A21	Temporality E20 past
+A22	Certainty E20 factual
+T21	NoDisposition 5646 5655	glipizide
+T22	NoDisposition 5560 5568	Klonopin
+T23	NoDisposition 5859 5867	Coumadin
+T24	NoDisposition 5779 5809	nitroglycerin 1/150 ( 0.4 mg )
+T25	Disposition 4376 4386	amiodarone
+E25	Disposition:T25
+A23	Event E25 continue
+A24	Temporality E25 past
+A25	Certainty E25 factual
+T26	NoDisposition 5591 5598	Digoxin
+T27	NoDisposition 1230 1244	Levothyroxine.

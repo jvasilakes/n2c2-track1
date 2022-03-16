@@ -1,0 +1,188 @@
+T0	problem 888 900	cardiomegaly
+A0	Assertion T0 present
+T1	problem 905 915	pulm edema
+A1	Assertion T1 present
+T2	problem 318 326	LE edema
+A2	Assertion T2 present
+T3	problem 5882 5904	hypertensive emergency
+A3	Assertion T3 present
+T4	problem 3912 3946	an abnormality of the aortic valve
+A4	Assertion T4 possible
+T5	problem 1640 1656	Sclera anicteric
+A5	Assertion T5 absent
+T6	problem 191 198	Dyspnea
+A6	Assertion T6 present
+T7	problem 5782 5803	lower extremity edema
+A7	Assertion T7 present
+T8	problem 5709 5727	mild transaminitis
+A8	Assertion T8 present
+T9	problem 1796 1803	s3/s4/r
+A9	Assertion T9 absent
+T10	problem 5703 5706	ARF
+A10	Assertion T10 present
+T11	problem 1448 1481	premature coronary artery disease
+A11	Assertion T11 associated_with_someone_else
+T12	problem 4832 4862	acute hypertensive nephropathy
+A12	Assertion T12 present
+T13	problem 4877 4911	long-standing hypertensive disease
+A13	Assertion T13 possible
+T14	problem 4777 4790	Renal Failure
+A14	Assertion T14 present
+T15	problem 5678 5700	hypertensive emergency
+A15	Assertion T15 present
+T16	problem 2380 2383	LVH
+A16	Assertion T16 present
+T17	problem 1485 1497	sudden death
+A17	Assertion T17 associated_with_someone_else
+T18	problem 2387 2401	strain pattern
+A18	Assertion T18 present
+T19	problem 3216 3248	Mild ( 1+ ) mitral regurgitation
+A19	Assertion T19 present
+T20	problem 2407 2423	ischemic changes
+A20	Assertion T20 absent
+T21	problem 1751 1790	2/6 systolic murmur radiating to axilla
+A21	Assertion T21 present
+T22	problem 1905 1934	2+ pitting edema to knees b/l
+A22	Assertion T22 present
+T23	problem 3053 3072	minimally thickened
+A23	Assertion T23 present
+T24	problem 1064 1072	elevated
+A24	Assertion T24 present
+T25	problem 6266 6269	SOB
+A25	Assertion T25 hypothetical
+T26	problem 4519 4544	His lower extremity edema
+A26	Assertion T26 present
+T27	problem 6272 6282	chest pain
+A27	Assertion T27 hypothetical
+T28	problem 6294 6300	chills
+A28	Assertion T28 hypothetical
+T29	problem 4257 4273	end-organ damage
+A29	Assertion T29 absent
+T30	problem 4296 4315	elevated creatinine
+A30	Assertion T30 present
+T31	problem 4339 4356	a chronic problem
+A31	Assertion T31 present
+T32	problem 6285 6291	fevers
+A32	Assertion T32 hypothetical
+T33	problem 3710 3757	Very small circumferential pericardial effusion
+A33	Assertion T33 present
+T34	problem 2432 2488	Moderate to severe enlargement of the cardiac silhouette
+A34	Assertion T34 present
+T35	problem 2540 2569	pulmonary vascular congestion
+A35	Assertion T35 present
+T36	problem 2574 2594	mild pulmonary edema
+A36	Assertion T36 present
+T37	problem 6303 6312	dizziness
+A37	Assertion T37 hypothetical
+T38	problem 3192 3213	mitral valve prolapse
+A38	Assertion T38 absent
+T39	problem 1325 1333	seizures
+A39	Assertion T39 absent
+T40	problem 3667 3707	Moderate pulmonary arterial hypertension
+A40	Assertion T40 present
+T41	problem 2986 3014	severe free wall hypokinesis
+A41	Assertion T41 present
+T42	problem 2966 2980	mildly dilated
+A42	Assertion T42 present
+T43	problem 1337 1342	DT s.
+A43	Assertion T43 absent
+T44	problem 2867 2913	an increased left ventricular filling pressure
+A44	Assertion T44 present
+T45	problem 4135 4155	Hypertensive urgency
+A45	Assertion T45 present
+T46	problem 6315 6337	decreased urine output
+A46	Assertion T46 hypothetical
+T47	problem 2690 2737	moderate symmetric left ventricular hypertrophy
+A47	Assertion T47 present
+T48	problem 2743 2763	mild cavity dilation
+A48	Assertion T48 present
+T49	problem 2768 2793	severe global hypokinesis
+A49	Assertion T49 present
+T50	problem 2799 2824	left ventricular thrombus
+A50	Assertion T50 absent
+T51	problem 1303 1322	withdrawal symptoms
+A51	Assertion T51 absent
+T52	problem 1621 1624	NAD
+A52	Assertion T52 absent
+T53	problem 3573 3576	LVH
+A53	Assertion T53 absent
+T54	problem 4014 4022	LE edema
+A54	Assertion T54 present
+T55	problem 4027 4030	DOE
+A55	Assertion T55 conditional
+T56	problem 4043 4066	diastolic heart failure
+A56	Assertion T56 possible
+T57	problem 4112 4132	hypertensive urgency
+A57	Assertion T57 present
+T58	problem 3541 3552	myocarditis
+A58	Assertion T58 possible
+T59	problem 4204 4215	chronic HTN
+A59	Assertion T59 present
+T60	problem 3392 3438	Moderate symmetric eft ventricular hypertrophy
+A60	Assertion T60 present
+T61	problem 3444 3483	severe global biventricular hypokinesis
+A61	Assertion T61 present
+T62	problem 3488 3503	diffuse process
+A62	Assertion T62 present
+T63	problem 3506 3511	toxin
+A63	Assertion T63 present
+T64	problem 2660 2678	moderately dilated
+A64	Assertion T64 present
+T65	problem 522 525	PND
+A65	Assertion T65 present
+T66	problem 499 517	2-pillow orthopnea
+A66	Assertion T66 present
+T67	problem 3327 3376	a very small circumferential pericardial effusion
+A67	Assertion T67 present
+T68	problem 538 559	any recent chest pain
+A68	Assertion T68 absent
+T69	problem 562 574	palpitations
+A69	Assertion T69 absent
+T70	problem 3268 3315	moderate pulmonary artery systolic hypertension
+A70	Assertion T70 present
+T71	problem 356 368	b/l LE edema
+A71	Assertion T71 present
+T72	problem 3586 3609	an infiltrative process
+A72	Assertion T72 possible
+T73	problem 447 454	dyspnea
+A73	Assertion T73 conditional
+T74	problem 3828 3848	aortic regurgitation
+A74	Assertion T74 absent
+T75	problem 3769 3800	abnormality on the aortic valve
+A75	Assertion T75 possible
+T76	problem 2611 2624	heart failure
+A76	Assertion T76 present
+T77	problem 600 608	weakness
+A77	Assertion T77 absent
+T78	problem 611 619	numbness
+A78	Assertion T78 absent
+T79	problem 3639 3664	Mild mitral regurgitation
+A79	Assertion T79 present
+T80	problem 577 585	headache
+A80	Assertion T80 absent
+T81	problem 588 597	confusion
+A81	Assertion T81 absent
+T82	problem 636 645	hematuria
+A82	Assertion T82 absent
+T83	problem 622 630	abd pain
+A83	Assertion T83 absent
+T84	problem 651 673	recent viral syndromes
+A84	Assertion T84 absent
+T85	problem 1633 1637	NCAT
+A85	Assertion T85 absent
+T86	problem 1852 1857	obese
+A86	Assertion T86 present
+T87	problem 1873 1877	NTND
+A87	Assertion T87 absent
+T88	problem 1739 1746	loud s2
+A88	Assertion T88 present
+T89	problem 3078 3093	aortic stenosis
+A89	Assertion T89 absent
+T90	problem 677 683	URI s.
+A90	Assertion T90 absent
+T91	problem 1825 1833	crackles
+A91	Assertion T91 absent
+T92	problem 3097 3117	aortic regurgitation
+A92	Assertion T92 absent
+T93	problem 1837 1845	wheezing
+A93	Assertion T93 absent

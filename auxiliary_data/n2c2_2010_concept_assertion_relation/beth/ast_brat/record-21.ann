@@ -1,0 +1,126 @@
+T0	problem 7232 7273	Left transverse mid shaft radial fracture
+A0	Assertion T0 present
+T1	problem 7279 7297	ulnar displacement
+A1	Assertion T1 present
+T2	problem 6618 6626	erythema
+A2	Assertion T2 absent
+T3	problem 1116 1133	apparent distress
+A3	Assertion T3 absent
+T4	problem 1778 1795	A 5 cm laceration
+A4	Assertion T4 present
+T5	problem 1864 1887	exposed underlying bone
+A5	Assertion T5 absent
+T6	problem 5881 5889	erythema
+A6	Assertion T6 absent
+T7	problem 2258 2309	decreased sensation in the ulnar-nerve distribution
+A7	Assertion T7 present
+T8	problem 2035 2052	gross deformities
+A8	Assertion T8 absent
+T9	problem 2055 2065	tenderness
+A9	Assertion T9 present
+T10	problem 4499 4519	right thigh hematoma
+A10	Assertion T10 present
+T11	problem 4812 4843	major arterial or venous injury
+A11	Assertion T11 absent
+T12	problem 4665 4700	the patient 's right thigh hematoma
+A12	Assertion T12 present
+T13	problem 1584 1588	rubs
+A13	Assertion T13 absent
+T14	problem 2411 2424	mild swelling
+A14	Assertion T14 present
+T15	problem 2429 2468	ecchymosis of the right posterior thigh
+A15	Assertion T15 present
+T16	problem 2487 2521	a 3 cm laceration in the lower leg
+A16	Assertion T16 present
+T17	problem 6630 6639	purulence
+A17	Assertion T17 absent
+T18	problem 6507 6549	The patient 's right anterior tibial wound
+A18	Assertion T18 present
+T19	problem 1421 1429	crepitus
+A19	Assertion T19 absent
+T20	problem 571 579	confused
+A20	Assertion T20 present
+T21	problem 3046 3067	intracranial bleeding
+A21	Assertion T21 absent
+T22	problem 8105 8109	pain
+A22	Assertion T22 hypothetical
+T23	problem 4526 4546	right leg laceration
+A23	Assertion T23 present
+T24	problem 4398 4406	injuries
+A24	Assertion T24 present
+T25	problem 4418 4446	a posterior scalp laceration
+A25	Assertion T25 present
+T26	problem 4449 4472	left fractured clavicle
+A26	Assertion T26 present
+T27	problem 4475 4496	left fractured radius
+A27	Assertion T27 present
+T28	problem 2736 2753	gross deformities
+A28	Assertion T28 absent
+T29	problem 6306 6319	Mild swelling
+A29	Assertion T29 present
+T30	problem 1436 1463	a left clavicular deformity
+A30	Assertion T30 present
+T31	problem 1594 1601	gallops
+A31	Assertion T31 absent
+T32	problem 1574 1581	murmurs
+A32	Assertion T32 absent
+T33	problem 7364 7391	Left midclavicular fracture
+A33	Assertion T33 present
+T34	problem 6171 6181	saturation
+A34	Assertion T34 absent
+T35	problem 1621 1630	nontender
+A35	Assertion T35 absent
+T36	problem 1633 1645	nondistended
+A36	Assertion T36 absent
+T37	problem 2990 3007	a pelvic fracture
+A37	Assertion T37 absent
+T38	problem 5345 5386	the scalp and right lower leg lacerations
+A38	Assertion T38 present
+T39	problem 7825 7867	The left forearm and right lower leg wound
+A39	Assertion T39 present
+T40	problem 2588 2605	gross deformities
+A40	Assertion T40 absent
+T41	problem 2866 2915	an inferior displaced left midclavicular fracture
+A41	Assertion T41 present
+T42	problem 2933 2945	pneumothorax
+A42	Assertion T42 absent
+T43	problem 3197 3218	cervical spine injury
+A43	Assertion T43 absent
+T44	problem 7957 7973	Scalp laceration
+A44	Assertion T44 present
+T45	problem 6020 6035	mild tenderness
+A45	Assertion T45 present
+T46	problem 6000 6015	a minor stepoff
+A46	Assertion T46 present
+T47	problem 7561 7565	pain
+A47	Assertion T47 hypothetical
+T48	problem 7452 7484	Right anterior tibial laceration
+A48	Assertion T48 present
+T49	problem 7420 7446	Occipital scalp laceration
+A49	Assertion T49 present
+T50	problem 3442 3463	fracture displacement
+A50	Assertion T50 absent
+T51	problem 3128 3143	pelvic fracture
+A51	Assertion T51 absent
+T52	problem 3093 3118	mild pulmonary contusions
+A52	Assertion T52 present
+T53	problem 3509 3545	transverse mid shaft radial fracture
+A53	Assertion T53 present
+T54	problem 3551 3569	ulnar displacement
+A54	Assertion T54 present
+T55	problem 5893 5902	purulence
+A55	Assertion T55 absent
+T56	problem 3640 3664	intra-abdominal bleeding
+A56	Assertion T56 absent
+T57	problem 5941 5961	continued ecchymosis
+A57	Assertion T57 present
+T58	problem 3282 3303	fracture displacement
+A58	Assertion T58 absent
+T59	problem 3371 3383	displacement
+A59	Assertion T59 absent
+T60	problem 3359 3367	fracture
+A60	Assertion T60 absent
+T61	problem 5547 5586	the patient 's left clavicular fracture
+A61	Assertion T61 present
+T62	problem 5779 5815	The patient 's head wound laceration
+A62	Assertion T62 present

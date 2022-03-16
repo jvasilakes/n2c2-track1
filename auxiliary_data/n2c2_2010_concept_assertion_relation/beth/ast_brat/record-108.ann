@@ -1,0 +1,104 @@
+T0	problem 3646 3652	chills
+A0	Assertion T0 hypothetical
+T1	problem 1064 1086	Mitochondrial myopathy
+A1	Assertion T1 present
+T2	problem 434 453	chronic prostatitis
+A2	Assertion T2 present
+T3	problem 1008 1036	Supraventricular tachycardia
+A3	Assertion T3 present
+T4	problem 3624 3630	fevers
+A4	Assertion T4 hypothetical
+T5	problem 3585 3610	new and continuing nausea
+A5	Assertion T5 hypothetical
+T6	problem 3613 3621	vomiting
+A6	Assertion T6 hypothetical
+T7	problem 685 713	supraventricular tachycardia
+A7	Assertion T7 present
+T8	problem 3415 3436	Interstitial cystitis
+A8	Assertion T8 present
+T9	problem 629 652	coronary artery disease
+A9	Assertion T9 present
+T10	problem 567 588	interstitial cystitis
+A10	Assertion T10 present
+T11	problem 4427 4439	constipation
+A11	Assertion T11 hypothetical
+T12	problem 4286 4298	constipation
+A12	Assertion T12 conditional
+T13	problem 3736 3743	swollen
+A13	Assertion T13 hypothetical
+T14	problem 3658 3677	shortness of breath
+A14	Assertion T14 hypothetical
+T15	problem 3730 3733	red
+A15	Assertion T15 hypothetical
+T16	problem 2936 2956	indigestion/gas pain
+A16	Assertion T16 hypothetical
+T17	problem 288 307	Chronic prostatitis
+A17	Assertion T17 present
+T18	problem 1724 1727	TWI
+A18	Assertion T18 present
+T19	problem 1587 1594	tympany
+A19	Assertion T19 present
+T20	problem 1606 1620	hyperactive BS
+A20	Assertion T20 absent
+T21	problem 3395 3414	Chronic prostatitis
+A21	Assertion T21 present
+T22	problem 1103 1114	orthostasis
+A22	Assertion T22 present
+T23	problem 1600 1603	HSM
+A23	Assertion T23 absent
+T24	problem 1630 1635	c/c/e
+A24	Assertion T24 absent
+T25	problem 948 971	Coronary artery disease
+A25	Assertion T25 present
+T26	problem 3073 3084	indigestion
+A26	Assertion T26 hypothetical
+T27	problem 1272 1284	Pericarditis
+A27	Assertion T27 present
+T28	problem 3746 3750	warm
+A28	Assertion T28 hypothetical
+T29	problem 1538 1543	m/r/g
+A29	Assertion T29 absent
+T30	problem 1570 1581	+distension
+A30	Assertion T30 present
+T31	problem 1453 1455	MI
+A31	Assertion T31 associated_with_someone_else
+T32	problem 1477 1479	MI
+A32	Assertion T32 associated_with_someone_else
+T33	problem 1508 1511	NAD
+A33	Assertion T33 absent
+T34	problem 3711 3721	your wound
+A34	Assertion T34 present
+T35	problem 3765 3768	pus
+A35	Assertion T35 hypothetical
+T36	problem 3531 3539	symptoms
+A36	Assertion T36 hypothetical
+T37	problem 782 791	dribbling
+A37	Assertion T37 present
+T38	problem 770 778	symptoms
+A38	Assertion T38 present
+T39	problem 794 813	stress incontinence
+A39	Assertion T39 present
+T40	problem 816 825	hematuria
+A40	Assertion T40 present
+T41	problem 839 846	dysuria
+A41	Assertion T41 absent
+T42	problem 4568 4579	your wounds
+A42	Assertion T42 present
+T43	problem 720 756	a progressive mitochondrial myopathy
+A43	Assertion T43 present
+T44	problem 1308 1328	Hypercholesterolemia
+A44	Assertion T44 present
+T45	problem 1290 1302	Hypertension
+A45	Assertion T45 present
+T46	problem 4035 4049	clear drainage
+A46	Assertion T46 hypothetical
+T47	problem 1335 1357	Gastrointestinal bleed
+A47	Assertion T47 present
+T48	problem 4127 4139	the drainage
+A48	Assertion T48 hypothetical
+T49	problem 1696 1710	Q waves in III
+A49	Assertion T49 present
+T50	problem 4055 4066	your wounds
+A50	Assertion T50 hypothetical
+T51	problem 1245 1266	Interstitial cystitis
+A51	Assertion T51 present

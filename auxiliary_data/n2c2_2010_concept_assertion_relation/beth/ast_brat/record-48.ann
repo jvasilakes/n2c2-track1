@@ -1,0 +1,260 @@
+T0	problem 5195 5210	demand ischemia
+A0	Assertion T0 present
+T1	problem 5225 5245	hypertensive urgency
+A1	Assertion T1 present
+T2	problem 4919 4931	hypertension
+A2	Assertion T2 present
+T3	problem 3982 3986	ESRD
+A3	Assertion T3 associated_with_someone_else
+T4	problem 11670 11694	other worrisome symptoms
+A4	Assertion T4 hypothetical
+T5	problem 4815 4835	hypertensive urgency
+A5	Assertion T5 present
+T6	problem 4791 4810	specific complaints
+A6	Assertion T6 absent
+T7	problem 11446 11465	your line infection
+A7	Assertion T7 present
+T8	problem 3723 3733	Foot Ulcer
+A8	Assertion T8 present
+T9	problem 8422 8432	difficulty
+A9	Assertion T9 absent
+T10	problem 4687 4693	rashes
+A10	Assertion T10 absent
+T11	problem 4081 4089	diabetes
+A11	Assertion T11 associated_with_someone_else
+T12	problem 4360 4369	anicteric
+A12	Assertion T12 absent
+T13	problem 7034 7046	hypoglycemia
+A13	Assertion T13 present
+T14	problem 6934 6937	DMI
+A14	Assertion T14 present
+T15	problem 4120 4128	diabetes
+A15	Assertion T15 associated_with_someone_else
+T16	problem 7642 7644	DM
+A16	Assertion T16 present
+T17	problem 2477 2496	abscess at the site
+A17	Assertion T17 possible
+T18	problem 2366 2395	localizing signs of infection
+A18	Assertion T18 absent
+T19	problem 7548 7552	ESRD
+A19	Assertion T19 present
+T20	problem 2266 2277	hypotension
+A20	Assertion T20 present
+T21	problem 7448 7463	demand ischemia
+A21	Assertion T21 possible
+T22	problem 7478 7507	original hypertensive urgency
+A22	Assertion T22 present
+T23	problem 7513 7541	persistent elevation of trop
+A23	Assertion T23 present
+T24	problem 8442 8462	subtherapeuticon INR
+A24	Assertion T24 present
+T25	problem 1677 1692	critically high
+A25	Assertion T25 present
+T26	problem 7925 7948	his PORT line infection
+A26	Assertion T26 present
+T27	problem 2064 2078	other symptoms
+A27	Assertion T27 absent
+T28	problem 4638 4659	left arm with fistula
+A28	Assertion T28 present
+T29	problem 8368 8377	infection
+A29	Assertion T29 absent
+T30	problem 1835 1857	somewhat uncomfortable
+A30	Assertion T30 present
+T31	problem 1870 1876	nausea
+A31	Assertion T31 present
+T32	problem 1881 1895	abdominal pain
+A32	Assertion T32 present
+T33	problem 7613 7617	ESRD
+A33	Assertion T33 present
+T34	problem 7649 7652	HTN
+A34	Assertion T34 present
+T35	problem 7710 7720	difficulty
+A35	Assertion T35 absent
+T36	problem 8786 8809	his PORT line infection
+A36	Assertion T36 present
+T37	problem 2107 2118	hypotensive
+A37	Assertion T37 present
+T38	problem 5778 5794	+ blood cultures
+A38	Assertion T38 present
+T39	problem 6666 6680	abdominal pain
+A39	Assertion T39 present
+T40	problem 918 922	pain
+A40	Assertion T40 present
+T41	problem 463 467	ESRD
+A41	Assertion T41 present
+T42	problem 7282 7285	sob
+A42	Assertion T42 absent
+T43	problem 7277 7279	cp
+A43	Assertion T43 absent
+T44	problem 889 900	diaphoretic
+A44	Assertion T44 present
+T45	problem 243 251	vomiting
+A45	Assertion T45 present
+T46	problem 7261 7264	CAD
+A46	Assertion T46 present
+T47	problem 5313 5339	Pt 's hypertensive urgency
+A47	Assertion T47 absent
+T48	problem 5150 5181	carduac enzymes mildly elevated
+A48	Assertion T48 present
+T49	problem 447 460	gastroparesis
+A49	Assertion T49 present
+T50	problem 5046 5069	active end organ damage
+A50	Assertion T50 absent
+T51	problem 5007 5028	autonomic dysfunction
+A51	Assertion T51 present
+T52	problem 232 238	nausea
+A52	Assertion T52 present
+T53	problem 429 438	Type I DM
+A53	Assertion T53 present
+T54	problem 6752 6765	gastroparesis
+A54	Assertion T54 present
+T55	problem 4980 4983	N/V
+A55	Assertion T55 present
+T56	problem 4943 4965	inability to take meds
+A56	Assertion T56 present
+T57	problem 4594 4620	multiple well healed scars
+A57	Assertion T57 present
+T58	problem 5863 5875	endocarditis
+A58	Assertion T58 absent
+T59	problem 5889 5904	stigmata of SBE
+A59	Assertion T59 absent
+T60	problem 1538 1550	hypoglycemia
+A60	Assertion T60 present
+T61	problem 6716 6734	similar complaints
+A61	Assertion T61 present
+T62	problem 6661 6665	n/v/
+A62	Assertion T62 present
+T63	problem 1492 1511	labile blood sugars
+A63	Assertion T63 present
+T64	problem 3741 3745	clot
+A64	Assertion T64 present
+T65	problem 8325 8339	numerous clots
+A65	Assertion T65 present
+T66	problem 152 167	Known Allergies
+A66	Assertion T66 absent
+T67	problem 5631 5641	bacteremia
+A67	Assertion T67 present
+T68	problem 1463 1469	nausea
+A68	Assertion T68 present
+T69	problem 803 813	somnolence
+A69	Assertion T69 present
+T70	problem 1414 1428	abdominal pain
+A70	Assertion T70 present
+T71	problem 5664 5678	coag neg staph
+A71	Assertion T71 present
+T72	problem 3034 3045	disoriented
+A72	Assertion T72 present
+T73	problem 1472 1480	vomiting
+A73	Assertion T73 present
+T74	problem 2829 2838	somnolent
+A74	Assertion T74 present
+T75	problem 1978 1988	sleepiness
+A75	Assertion T75 present
+T76	problem 694 706	hypertensive
+A76	Assertion T76 present
+T77	problem 659 673	abdominal pain
+A77	Assertion T77 present
+T78	problem 3188 3213	GPC in pairs and clusters
+A78	Assertion T78 present
+T79	problem 2006 2009	SOB
+A79	Assertion T79 absent
+T80	problem 648 656	vomiting
+A80	Assertion T80 present
+T81	problem 2001 2003	CP
+A81	Assertion T81 absent
+T82	problem 2545 2556	hypotension
+A82	Assertion T82 present
+T83	problem 2012 2014	HA
+A83	Assertion T83 absent
+T84	problem 629 645	his usual nausea
+A84	Assertion T84 present
+T85	problem 441 444	HTN
+A85	Assertion T85 present
+T86	problem 2034 2048	neck stiffness
+A86	Assertion T86 absent
+T87	problem 2051 2058	dysuria
+A87	Assertion T87 absent
+T88	problem 3536 3549	gastroparesis
+A88	Assertion T88 present
+T89	problem 6335 6355	diabetic gastropathy
+A89	Assertion T89 present
+T90	problem 6461 6481	hypertensive urgency
+A90	Assertion T90 present
+T91	problem 3511 3533	hypertensive emergency
+A91	Assertion T91 present
+T92	problem 6364 6417	inability to toleral oral antihypertensive medication
+A92	Assertion T92 present
+T93	problem 2017 2031	vision changes
+A93	Assertion T93 absent
+T94	problem 11611 11617	naseau
+A94	Assertion T94 hypothetical
+T95	problem 11645 11664	shortness of breath
+A95	Assertion T95 hypothetical
+T96	problem 11620 11629	vomitting
+A96	Assertion T96 hypothetical
+T97	problem 3556 3579	orthostatic hypotension
+A97	Assertion T97 present
+T98	problem 3374 3381	DM type
+A98	Assertion T98 present
+T99	problem 534 554	hypertensive urgency
+A99	Assertion T99 present
+T100	problem 3637 3653	1-vessel disease
+A100	Assertion T100 present
+T101	problem 3628 3631	CAD
+A101	Assertion T101 present
+T102	problem 3656 3671	50% stenosis D1
+A102	Assertion T102 present
+T103	problem 4200 4206	sleepy
+A103	Assertion T103 present
+T104	problem 11165 11175	bacteremia
+A104	Assertion T104 present
+T105	problem 11583 11599	recurrent fevers
+A105	Assertion T105 hypothetical
+T106	problem 11223 11243	diabetic gastropathy
+A106	Assertion T106 present
+T107	problem 11602 11608	chills
+A107	Assertion T107 hypothetical
+T108	problem 4287 4316	left pupil smaller than right
+A108	Assertion T108 present
+T109	problem 11202 11222	hypertensive urgency
+A109	Assertion T109 present
+T110	problem 3387 3391	ESRD
+A110	Assertion T110 present
+T111	problem 4372 4378	MM dry
+A111	Assertion T111 present
+T112	problem 4384 4394	OP lesions
+A112	Assertion T112 absent
+T113	problem 11182 11201	PORT line infection
+A113	Assertion T113 present
+T114	problem 4414 4417	JVD
+A114	Assertion T114 absent
+T115	problem 4442 4469	2/6 systolic murmur at LUSB
+A115	Assertion T115 present
+T116	problem 10554 10566	constipation
+A116	Assertion T116 hypothetical
+T117	problem 3991 3999	diabetes
+A117	Assertion T117 associated_with_someone_else
+T118	problem 4521 4529	erythema
+A118	Assertion T118 absent
+T119	problem 4036 4048	hypertension
+A119	Assertion T119 associated_with_someone_else
+T120	problem 818 832	lack of desire
+A120	Assertion T120 present
+T121	problem 4543 4545	ND
+A121	Assertion T121 absent
+T122	problem 11632 11642	chest pain
+A122	Assertion T122 hypothetical
+T123	problem 4548 4557	nontender
+A123	Assertion T123 absent
+T124	problem 3447 3475	Severe autonomic dysfunction
+A124	Assertion T124 present
+T125	problem 4570 4578	guarding
+A125	Assertion T125 absent
+T126	problem 3596 3614	esophageal erosion
+A126	Assertion T126 present
+T127	problem 4584 4591	rebound
+A127	Assertion T127 absent
+T128	problem 3617 3624	MW tear
+A128	Assertion T128 present
+T129	problem 4630 4635	c/c/e
+A129	Assertion T129 absent

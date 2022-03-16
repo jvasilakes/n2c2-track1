@@ -1,0 +1,172 @@
+T0	problem 2728 2750	Seventh nerve weakness
+A0	Assertion T0 present
+T1	problem 6648 6656	afebrile
+A1	Assertion T1 absent
+T2	problem 4256 4279	&quot; locked in &quot;
+A2	Assertion T2 present
+T3	problem 1605 1611	ectopy
+A3	Assertion T3 absent
+T4	problem 4838 4860	severe memory deficits
+A4	Assertion T4 present
+T5	problem 7429 7446	hypoproliferation
+A5	Assertion T5 present
+T6	problem 6307 6317	bad thrush
+A6	Assertion T6 present
+T7	problem 5405 5592	infarction in bilateral basis pontis , mid brain , the superior cerebellar areas , left thalamus , bilateral temporal lobes medially and inferiorly and left posterior communicating artery
+A7	Assertion T7 present
+T8	problem 8890 8906	brief chest pain
+A8	Assertion T8 present
+T9	problem 9052 9090	T wave inversions in the lateral leads
+A9	Assertion T9 present
+T10	problem 10920 10934	iron deficient
+A10	Assertion T10 absent
+T11	problem 10565 10665	recent infarct to pons , mid brain , left thalamus , bilateral temporal lobes and left visual cortex
+A11	Assertion T11 present
+T12	problem 1804 1809	edema
+A12	Assertion T12 absent
+T13	problem 6572 6582	the thrush
+A13	Assertion T13 present
+T14	problem 5880 5901	Klebsiella pneumoniae
+A14	Assertion T14 present
+T15	problem 5976 5979	bug
+A15	Assertion T15 present
+T16	problem 372 379	vertigo
+A16	Assertion T16 present
+T17	problem 7398 7404	anemia
+A17	Assertion T17 present
+T18	problem 7984 7996	any problems
+A18	Assertion T18 absent
+T19	problem 5664 5689	rising white blood counts
+A19	Assertion T19 present
+T20	problem 6019 6042	A left pleural effusion
+A20	Assertion T20 present
+T21	problem 1781 1789	clubbing
+A21	Assertion T21 absent
+T22	problem 3856 3876	A small intimal tear
+A22	Assertion T22 present
+T23	problem 3937 3945	sequelae
+A23	Assertion T23 absent
+T24	problem 798 814	high cholesterol
+A24	Assertion T24 present
+T25	problem 1727 1745	hepatosplenomegaly
+A25	Assertion T25 absent
+T26	problem 5819 5825	fevers
+A26	Assertion T26 present
+T27	problem 534 542	aneurysm
+A27	Assertion T27 possible
+T28	problem 307 314	vertigo
+A28	Assertion T28 present
+T29	problem 3557 3589	some left lower lobe atelectasis
+A29	Assertion T29 present
+T30	problem 10981 10991	Low sodium
+A30	Assertion T30 present
+T31	problem 6150 6157	empyema
+A31	Assertion T31 present
+T32	problem 5717 5757	a progressing left lower lobe infiltrate
+A32	Assertion T32 present
+T33	problem 9605 9636	recently elevated liver enzymes
+A33	Assertion T33 present
+T34	problem 7408 7423	chronic disease
+A34	Assertion T34 present
+T35	problem 10937 10950	Low potassium
+A35	Assertion T35 present
+T36	problem 7051 7078	common bile duct dilatation
+A36	Assertion T36 absent
+T37	problem 9341 9365	congestive heart failure
+A37	Assertion T37 absent
+T38	problem 654 690	thrombosis at the mid basilar artery
+A38	Assertion T38 present
+T39	problem 10744 10769	Left lower lobe pneumonia
+A39	Assertion T39 present
+T40	problem 4140 4152	acute sepsis
+A40	Assertion T40 absent
+T41	problem 1495 1503	afebrile
+A41	Assertion T41 absent
+T42	problem 7900 7921	her pulmonary process
+A42	Assertion T42 present
+T43	problem 7804 7815	low sodiums
+A43	Assertion T43 present
+T44	problem 9583 9600	her acute disease
+A44	Assertion T44 present
+T45	problem 9225 9235	chest pain
+A45	Assertion T45 absent
+T46	problem 328 341	double vision
+A46	Assertion T46 present
+T47	problem 7082 7102	active cholecystitis
+A47	Assertion T47 absent
+T48	problem 7018 7028	gallstones
+A48	Assertion T48 present
+T49	problem 10512 10553	&quot; top of the basilar &quot; syndrome
+A49	Assertion T49 present
+T50	problem 10808 10818	Gallstones
+A50	Assertion T50 present
+T51	problem 4699 4705	drowsy
+A51	Assertion T51 present
+T52	problem 10881 10887	Anemia
+A52	Assertion T52 present
+T53	problem 7266 7282	a steady decline
+A53	Assertion T53 present
+T54	problem 10383 10387	pain
+A54	Assertion T54 hypothetical
+T55	problem 8560 8571	her deficit
+A55	Assertion T55 present
+T56	problem 4179 4223	substantial decrement in neurologic function
+A56	Assertion T56 present
+T57	problem 11074 11090	High cholesterol
+A57	Assertion T57 present
+T58	problem 3477 3492	mildly elevated
+A58	Assertion T58 present
+T59	problem 1060 1080	known drug allergies
+A59	Assertion T59 absent
+T60	problem 496 518	basilar artery disease
+A60	Assertion T60 present
+T61	problem 5611 5617	fevers
+A61	Assertion T61 present
+T62	problem 858 864	angina
+A62	Assertion T62 present
+T63	problem 7862 7896	her central nervous system process
+A63	Assertion T63 present
+T64	problem 817 840	coronary artery disease
+A64	Assertion T64 present
+T65	problem 881 902	myocardial infarction
+A65	Assertion T65 absent
+T66	problem 1792 1800	cyanosis
+A66	Assertion T66 absent
+T67	problem 9110 9121	an increase
+A67	Assertion T67 present
+T68	problem 10489 10507	basilar thrombosis
+A68	Assertion T68 present
+T69	problem 4045 4058	an acute drop
+A69	Assertion T69 present
+T70	problem 770 782	Hypertension
+A70	Assertion T70 present
+T71	problem 7370 7380	her anemia
+A71	Assertion T71 present
+T72	problem 8810 8816	angina
+A72	Assertion T72 present
+T73	problem 1666 1699	minimal radiation to the carotids
+A73	Assertion T73 present
+T74	problem 7124 7150	her liver enzyme elevation
+A74	Assertion T74 present
+T75	problem 11039 11062	coronary artery disease
+A75	Assertion T75 present
+T76	problem 10460 10483	Basilar artery stenosis
+A76	Assertion T76 present
+T77	problem 10856 10878	liver enzyme elevation
+A77	Assertion T77 present
+T78	problem 344 354	dysarthria
+A78	Assertion T78 present
+T79	problem 2533 2556	right beading nystagmus
+A79	Assertion T79 present
+T80	problem 3386 3411	ST depression in V4 to V6
+A80	Assertion T80 present
+T81	problem 8825 8846	myocardial infarction
+A81	Assertion T81 absent
+T82	problem 1614 1648	A II / VI systolic ejection murmur
+A82	Assertion T82 present
+T83	problem 9411 9421	chest pain
+A83	Assertion T83 absent
+T84	problem 11065 11071	Thrush
+A84	Assertion T84 present
+T85	problem 1943 1953	chest pain
+A85	Assertion T85 present

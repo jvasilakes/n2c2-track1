@@ -1,0 +1,198 @@
+T0	problem 3331 3353	intraparenchymal bleed
+A0	Assertion T0 present
+T1	problem 3457 3484	Intraparenchymal hemorrhage
+A1	Assertion T1 present
+T2	problem 2752 2793	Extensive carotid arterial calcifications
+A2	Assertion T2 present
+T3	problem 8374 8386	complication
+A3	Assertion T3 absent
+T4	problem 2673 2706	Prevertebral soft tissue swelling
+A4	Assertion T4 possible
+T5	problem 451 471	right sided weakness
+A5	Assertion T5 present
+T6	problem 3054 3139	Minimally displaced , comminuted fractures of the left C7 and T1 transverse processes
+A6	Assertion T6 present
+T7	problem 8188 8198	aspiration
+A7	Assertion T7 possible
+T8	problem 8156 8170	MRSA pneumonia
+A8	Assertion T8 present
+T9	problem 2572 2596	atlantoaxial subluxation
+A9	Assertion T9 absent
+T10	problem 8297 8327	decreased pulmonary secretions
+A10	Assertion T10 present
+T11	problem 8286 8292	fevers
+A11	Assertion T11 absent
+T12	problem 7652 7657	edema
+A12	Assertion T12 present
+T13	problem 7636 7646	congestion
+A13	Assertion T13 present
+T14	problem 9889 9901	constipation
+A14	Assertion T14 hypothetical
+T15	problem 384 402	Ulcerative Colitis
+A15	Assertion T15 present
+T16	problem 4961 5000	Ovoid 18 - mm density within the atrium
+A16	Assertion T16 present
+T17	problem 9099 9114	decreased blood
+A17	Assertion T17 present
+T18	problem 439 442	CVA
+A18	Assertion T18 present
+T19	problem 4336 4357	diffuse brain atrophy
+A19	Assertion T19 present
+T20	problem 3509 3519	hemorrhage
+A20	Assertion T20 possible
+T21	problem 10298 10316	Left rib fractures
+A21	Assertion T21 present
+T22	problem 6073 6132	a small amount of blood layering in both lateral ventricles
+A22	Assertion T22 present
+T23	problem 3393 3398	bleed
+A23	Assertion T23 possible
+T24	problem 3271 3276	bleed
+A24	Assertion T24 possible
+T25	problem 10242 10297	C7 & T1 mimimally displaced transverse process fracture
+A25	Assertion T25 present
+T26	problem 5901 5933	chronic microvascular infarction
+A26	Assertion T26 possible
+T27	problem 5785 5858	decreased attenuation in the periventricular and subcortical white matter
+A27	Assertion T27 present
+T28	problem 7389 7422	Multiple left-sided rib fractures
+A28	Assertion T28 present
+T29	problem 4307 4324	surrounding edema
+A29	Assertion T29 absent
+T30	problem 10168 10205	bilateral intraventricular hemorrhage
+A30	Assertion T30 present
+T31	problem 4191 4238	an 18 x 10 mm nodular area of increased density
+A31	Assertion T31 present
+T32	problem 7926 7932	desats
+A32	Assertion T32 present
+T33	problem 4020 4048	a small amount of hemorrhage
+A33	Assertion T33 present
+T34	problem 10206 10241	Left T1 transverse process fracture
+A34	Assertion T34 present
+T35	problem 4641 4677	shift of normally midline structures
+A35	Assertion T35 absent
+T36	problem 10014 10026	consitpation
+A36	Assertion T36 hypothetical
+T37	problem 10141 10164	Subarachnoid hemorrhage
+A37	Assertion T37 present
+T38	problem 4518 4561	acute major vascular territorial infarction
+A38	Assertion T38 absent
+T39	problem 4362 4422	chronic microvascular infarction throughout the white matter
+A39	Assertion T39 present
+T40	problem 2332 2365	extreme head tilting to the right
+A40	Assertion T40 present
+T41	problem 7170 7193	Some interstitial edema
+A41	Assertion T41 present
+T42	problem 2117 2209	minimally displaced and comminuted fractures through the left C7 and T1 transverse processes
+A42	Assertion T42 present
+T43	problem 8511 8531	Failed swallow study
+A43	Assertion T43 present
+T44	problem 3157 3198	extension into the foramina transversaria
+A44	Assertion T44 absent
+T45	problem 7872 7897	multiple spinal fractures
+A45	Assertion T45 present
+T46	problem 2929 2999	opacification of the visualized left mastoid air cells and mastoid tip
+A46	Assertion T46 present
+T47	problem 2915 2924	sclerosis
+A47	Assertion T47 present
+T48	problem 3031 3038	disease
+A48	Assertion T48 possible
+T49	problem 2867 2886	mild bronchiectasis
+A49	Assertion T49 present
+T50	problem 7714 7744	the right upper lobe pneumonia
+A50	Assertion T50 present
+T51	problem 7844 7867	subarachnoid hemorrhage
+A51	Assertion T51 present
+T52	problem 2840 2862	Biapical lung scarring
+A52	Assertion T52 present
+T53	problem 5098 5122	an intraventricular mass
+A53	Assertion T53 possible
+T54	problem 324 343	Atrial fibrillation
+A54	Assertion T54 present
+T55	problem 5062 5094	an atypically located blood clot
+A55	Assertion T55 possible
+T56	problem 7158 7167	pneumonia
+A56	Assertion T56 possible
+T57	problem 7111 7141	right upper lobe consolidation
+A57	Assertion T57 present
+T58	problem 4928 4955	intraventricular hemorrhage
+A58	Assertion T58 present
+T59	problem 6900 6906	Trauma
+A59	Assertion T59 present
+T60	problem 4491 4514	subarachnoid hemorrhage
+A60	Assertion T60 absent
+T61	problem 4434 4464	a remote right frontal infarct
+A61	Assertion T61 present
+T62	problem 4837 4883	Opacified and sclerotic left mastoid air cells
+A62	Assertion T62 present
+T63	problem 4718 4777	opacification of the posterior nasal cavity and nasopharynx
+A63	Assertion T63 present
+T64	problem 4692 4706	skull fracture
+A64	Assertion T64 absent
+T65	problem 5950 5995	an old right frontal lobe cortical infarction
+A65	Assertion T65 present
+T66	problem 5998 6045	A small right occipital lobe chronic infarction
+A66	Assertion T66 present
+T67	problem 6365 6375	some fluid
+A67	Assertion T67 possible
+T68	problem 416 428	Hypertension
+A68	Assertion T68 present
+T69	problem 6240 6254	new hemorrhage
+A69	Assertion T69 absent
+T70	problem 6278 6316	opacification of the mastoid air cells
+A70	Assertion T70 present
+T71	problem 5497 5518	altered mental status
+A71	Assertion T71 present
+T72	problem 360 383	Coronary Artery Disease
+A72	Assertion T72 present
+T73	problem 5393 5414	altered mental status
+A73	Assertion T73 present
+T74	problem 9001 9072	an early bilateral upper extermity contracture at the elbows and wrists
+A74	Assertion T74 present
+T75	problem 5597 5618	altered mental status
+A75	Assertion T75 present
+T76	problem 472 481	Cataracts
+A76	Assertion T76 present
+T77	problem 8899 8908	agitation
+A77	Assertion T77 present
+T78	problem 6709 6714	Fever
+A78	Assertion T78 present
+T79	problem 6830 6835	fever
+A79	Assertion T79 present
+T80	problem 6721 6730	infiltrte
+A80	Assertion T80 present
+T81	problem 6491 6501	hemorrhage
+A81	Assertion T81 absent
+T82	problem 6527 6559	decreased intraventricular blood
+A82	Assertion T82 present
+T83	problem 6452 6487	new cortical territorial infarction
+A83	Assertion T83 absent
+T84	problem 6621 6634	hydrocephalus
+A84	Assertion T84 absent
+T85	problem 8037 8040	SAH
+A85	Assertion T85 present
+T86	problem 7010 7015	edema
+A86	Assertion T86 present
+T87	problem 7076 7107	significant radiographic change
+A87	Assertion T87 absent
+T88	problem 7227 7264	central pulmonary vascular congestion
+A88	Assertion T88 absent
+T89	problem 6775 6781	rib fx
+A89	Assertion T89 present
+T90	problem 6786 6792	trauma
+A90	Assertion T90 present
+T91	problem 7309 7360	fluid layering at the apices and the pleural spaces
+A91	Assertion T91 present
+T92	problem 6379 6433	mucosal thickening in the ethmoid and sphenoid sinuses
+A92	Assertion T92 possible
+T93	problem 7555 7568	Calcification
+A93	Assertion T93 present
+T94	problem 6868 6873	Fever
+A94	Assertion T94 present
+T95	problem 6880 6889	infiltrte
+A95	Assertion T95 present
+T96	problem 6936 6941	fever
+A96	Assertion T96 present
+T97	problem 6909 6933	congestive heart failure
+A97	Assertion T97 present
+T98	problem 6944 6953	pneumonia
+A98	Assertion T98 present

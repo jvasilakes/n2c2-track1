@@ -1,0 +1,165 @@
+T0	NoDisposition 9143 9153	lopressor.
+T1	NoDisposition 2996 3005	Neurontin
+T2	Disposition 1758 1769	antibiotics
+E2	Disposition:T2
+A0	Event E2 stop
+A1	Temporality E2 past
+A2	Certainty E2 factual
+T3	Disposition 8633 8640	lipitor
+E3	Disposition:T3
+A3	Event E3 continue
+A4	Temporality E3 past
+A5	Certainty E3 factual
+T4	NoDisposition 2931 2937	Lantus
+T5	NoDisposition 11262 11275	levofloxacin;
+T6	NoDisposition 2878 2884	folate
+T7	NoDisposition 2959 2966	Lipitor
+T8	NoDisposition 7055 7070	pain medication
+T9	NoDisposition 3021 3027	PhosLo
+T10	Disposition 10108 10114	Lyrica
+E10	Disposition:T10
+A6	Event E10 start
+A7	Temporality E10 past
+A8	Certainty E10 factual
+T11	NoDisposition 8603 8614	gemfibrozil
+T12	Disposition 5244 5254	Vancomycin
+E12	Disposition:T12
+A9	Event E12 continue
+A10	Temporality E12 past
+A11	Certainty E12 factual
+T13	NoDisposition 3119 3127	Coumadin
+T14	Disposition 9974 9982	ketamine
+E14	Disposition:T14
+A12	Event E14 start
+A13	Temporality E14 past
+A14	Certainty E14 factual
+T15	Disposition 8746 8755	b-blocker
+E15	Disposition:T15
+A15	Event E15 start
+A16	Temporality E15 past
+A17	Certainty E15 factual
+T16	NoDisposition 11390 11406	pain medications
+T17	Disposition 5172 5178	Unasyn
+E17	Disposition:T17
+A18	Event E17 stop
+A19	Temporality E17 past
+A20	Certainty E17 factual
+T18	NoDisposition 3068 3075	Renagel
+T19	NoDisposition 11304 11312	coumadin
+T20	NoDisposition 7911 7918	heparin
+T21	NoDisposition 9957 9969	fentanyl PCA
+T22	NoDisposition 2983 2993	Nephrocaps
+T23	Disposition 7752 7761	Coumadin.
+E23	Disposition:T23
+A21	Event E23 continue
+A22	Temporality E23 future
+A23	Certainty E23 suggestion
+T24	Disposition 5827 5839	Levofloxacin
+E24	Disposition:T24
+A24	Event E24 start
+A25	Temporality E24 past
+A26	Certainty E24 factual
+T25	Disposition 5847 5853	Flagyl
+E25	Disposition:T25
+A27	Event E25 start
+A28	Temporality E25 past
+A29	Certainty E25 factual
+T26	NoDisposition 2855 2861	Colace
+T27	NoDisposition 9494 9500	lantus
+T28	NoDisposition 10028 10037	oxycontin
+T29	NoDisposition 3093 3099	Requip
+T30	Disposition 1356 1368	antibiotics.
+E30	Disposition:T30
+A30	Event E30 start-continue
+A31	Temporality E30 past
+A32	Certainty E30 factual
+T31	NoDisposition 8413 8424	gemfibrozil
+T32	Disposition 5913 5923	vancomycin
+E32	Disposition:T32
+A33	Event E32 continue
+A34	Temporality E32 past
+A35	Certainty E32 factual
+T33	NoDisposition 798 809	vancomycin.
+T34	Disposition 7443 7451	coumadin
+E34	Disposition:T34
+A36	Event E34 stop
+A37	Temporality E34 past
+A38	Certainty E34 factual
+T35	NoDisposition 8367 8380	levofloxacin.
+T36	NoDisposition 8439 8446	lipitor
+T37	Disposition 9921 9929	ketamine
+E37	Disposition:T37
+A39	Event E37 start
+A40	Temporality E37 past
+A41	Certainty E37 factual
+T38	NoDisposition 9622 9628	Aspart
+T39	NoDisposition 8619 8626	lipitor
+T40	Disposition 8220 8227	heparin
+E40	Disposition:T40
+A42	Event E40 stop
+A43	Temporality E40 future
+A44	Certainty E40 suggestion
+T41	Disposition 4692 4698	Unasyn
+E41	Disposition:T41
+A45	Event E41 start
+A46	Temporality E41 past
+A47	Certainty E41 factual
+T42	Disposition 11183 11190	heparin
+E42	Disposition:T42
+A48	Event E42 stop
+A49	Temporality E42 future
+A50	Certainty E42 suggestion
+T43	NoDisposition 2903 2914	gemfibrozil
+T44	NoDisposition 9939 9952	Fentanyl PCA.
+T45	Disposition 7766 7774	coumadin
+E45	Disposition:T45
+A51	Event E45 stop
+A52	Temporality E45 past
+A53	Certainty E45 factual
+T46	NoDisposition 3045 3053	Protonix
+T47	Disposition 10492 10498	Ativan
+E47	Disposition:T47
+A54	Event E47 start
+A55	Temporality E47 future
+A56	Certainty E47 suggestion
+T48	NoDisposition 9604 9610	Lantus
+T49	Disposition 10052 10061	oxycodone
+E49	Disposition:T49
+A57	Event E49 start
+A58	Temporality E49 past
+A59	Certainty E49 factual
+T50	Disposition 5226 5235	Augmentin
+E50	Disposition:T50
+A60	Event E50 start
+A61	Temporality E50 past
+A62	Certainty E50 factual
+T51	Disposition 9095 9105	lisinopril
+E51	Disposition:T51
+A63	Event E51 start
+A64	Temporality E51 past
+A65	Certainty E51 factual
+T52	Disposition 7989 7996	heparin
+E52	Disposition:T52
+A66	Event E52 stop
+A67	Temporality E52 past
+A68	Certainty E52 factual
+T53	Disposition 7832 7839	heparin
+E53	Disposition:T53
+A69	Event E53 start
+A70	Temporality E53 past
+A71	Certainty E53 factual
+T54	Disposition 1412 1423	antibiotics
+E54	Disposition:T54
+A72	Event E54 start
+A73	Temporality E54 past
+A74	Certainty E54 factual
+T55	Disposition 4677 4687	Vancomycin
+E55	Disposition:T55
+A75	Event E55 start
+A76	Temporality E55 past
+A77	Certainty E55 factual
+T56	Disposition 7850 7858	coumadin
+E56	Disposition:T56
+A78	Event E56 start
+A79	Temporality E56 past
+A80	Certainty E56 factual

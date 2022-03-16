@@ -1,0 +1,48 @@
+T0	problem 1431 1471	Mild intercostal and sternal retractions
+A0	Assertion T0 present
+T1	problem 3887 3892	apnea
+A1	Assertion T1 absent
+T2	problem 2761 2793	unconjungated hyperbilirubinemia
+A2	Assertion T2 present
+T3	problem 1212 1225	Nondysmorphic
+A3	Assertion T3 absent
+T4	problem 183 239	a spontaneous triamniotic-trichorionic triplet pregnancy
+A4	Assertion T4 present
+T5	problem 2259 2266	murmurs
+A5	Assertion T5 absent
+T6	problem 1565 1571	murmur
+A6	Assertion T6 absent
+T7	problem 4503 4523	chronic lung disease
+A7	Assertion T7 present
+T8	problem 4878 4911	Prematurity at 34 weeks gestation
+A8	Assertion T8 present
+T9	problem 4616 4636	chronic lung disease
+A9	Assertion T9 hypothetical
+T10	problem 4001 4017	abnormal results
+A10	Assertion T10 absent
+T11	problem 4769 4778	influenza
+A11	Assertion T11 hypothetical
+T12	problem 4954 4985	Unconjugated hyperbilirubinemia
+A12	Assertion T12 present
+T13	problem 1021 1032	prematurity
+A13	Assertion T13 present
+T14	problem 577 583	nausea
+A14	Assertion T14 present
+T15	problem 3896 3915	oxygen desaturation
+A15	Assertion T15 absent
+T16	problem 586 594	vomiting
+A16	Assertion T16 present
+T17	problem 2134 2151	spontaneous apnea
+A17	Assertion T17 absent
+T18	problem 3167 3188	neurological concerns
+A18	Assertion T18 absent
+T19	problem 601 619	a shortened cervix
+A19	Assertion T19 present
+T20	problem 1624 1636	nondistended
+A20	Assertion T20 absent
+T21	problem 1612 1621	nontender
+A21	Assertion T21 absent
+T22	problem 1242 1267	mild respiratory distress
+A22	Assertion T22 present
+T23	problem 1642 1648	masses
+A23	Assertion T23 absent

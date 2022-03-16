@@ -1,0 +1,22 @@
+T0	problem 897 920	blurry or double vision
+A0	Assertion T0 hypothetical
+T1	problem 872 894	any neurologic changes
+A1	Assertion T1 hypothetical
+T2	problem 923 932	headaches
+A2	Assertion T2 hypothetical
+T3	problem 935 950	trouble walking
+A3	Assertion T3 hypothetical
+T4	problem 827 845	increased swelling
+A4	Assertion T4 hypothetical
+T5	problem 489 520	L upper lip / L nostril abscess
+A5	Assertion T5 present
+T6	problem 848 852	pain
+A6	Assertion T6 hypothetical
+T7	problem 550 567	purulent material
+A7	Assertion T7 present
+T8	problem 451 476	SWOLLEN PAINFUL L SIDE FC
+A8	Assertion T8 present
+T9	problem 815 824	infection
+A9	Assertion T9 hypothetical
+T10	problem 855 862	redness
+A10	Assertion T10 hypothetical

@@ -1,0 +1,36 @@
+T0	problem 1694 1707	complications
+A0	Assertion T0 absent
+T1	problem 1633 1653	Estimated blood loss
+A1	Assertion T1 present
+T2	problem 1387 1419	invasive squamous cell carcinoma
+A2	Assertion T2 present
+T3	problem 1425 1438	complications
+A3	Assertion T3 absent
+T4	problem 1229 1240	mouth tumor
+A4	Assertion T4 present
+T5	problem 1957 1970	complications
+A5	Assertion T5 absent
+T6	problem 705 711	hernia
+A6	Assertion T6 present
+T7	problem 751 762	anaphylaxis
+A7	Assertion T7 conditional
+T8	problem 938 945	anxiety
+A8	Assertion T8 hypothetical
+T9	problem 2493 2497	pain
+A9	Assertion T9 hypothetical
+T10	problem 4305 4323	minimal secretions
+A10	Assertion T10 present
+T11	problem 3218 3230	pneumothorax
+A11	Assertion T11 absent
+T12	problem 580 617	chronic obstructive pulmonary disease
+A12	Assertion T12 present
+T13	problem 3781 3814	positive biphasic Doppler signals
+A13	Assertion T13 present
+T14	problem 563 575	hypertension
+A14	Assertion T14 present
+T15	problem 328 360	invasive squamous cell carcinoma
+A15	Assertion T15 present
+T16	problem 246 257	stage T2 N0
+A16	Assertion T16 present
+T17	problem 198 221	squamous cell carcinoma
+A17	Assertion T17 present

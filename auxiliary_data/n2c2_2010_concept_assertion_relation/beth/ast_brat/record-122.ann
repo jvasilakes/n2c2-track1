@@ -1,0 +1,58 @@
+T0	problem 1209 1232	this left facial lesion
+A0	Assertion T0 present
+T1	problem 1786 1792	hoarse
+A1	Assertion T1 present
+T2	problem 1733 1746	complications
+A2	Assertion T2 absent
+T3	problem 1033 1049	Minimal bleeding
+A3	Assertion T3 present
+T4	problem 1005 1017	visible bone
+A4	Assertion T4 present
+T5	problem 2458 2478	squamous cell cancer
+A5	Assertion T5 present
+T6	problem 927 942	polypoid lesion
+A6	Assertion T6 present
+T7	problem 819 827	afebrile
+A7	Assertion T7 absent
+T8	problem 2519 2542	positive level II nodes
+A8	Assertion T8 present
+T9	problem 1817 1847	significant supraglottic edema
+A9	Assertion T9 present
+T10	problem 1557 1591	the left face squamous cell cancer
+A10	Assertion T10 present
+T11	problem 1398 1407	hematuria
+A11	Assertion T11 present
+T12	problem 867 885	somewhat cachectic
+A12	Assertion T12 present
+T13	problem 425 453	benign prostatic hypertrophy
+A13	Assertion T13 present
+T14	problem 1102 1111	Nontender
+A14	Assertion T14 absent
+T15	problem 407 422	prostate cancer
+A15	Assertion T15 present
+T16	problem 1114 1126	nondistended
+A16	Assertion T16 absent
+T17	problem 554 580	degenerative joint disease
+A17	Assertion T17 present
+T18	problem 525 551	chronic painless hematuria
+A18	Assertion T18 present
+T19	problem 596 604	a murmur
+A19	Assertion T19 present
+T20	problem 1944 1967	some supraglottic edema
+A20	Assertion T20 present
+T21	problem 1023 1030	exudate
+A21	Assertion T21 absent
+T22	problem 1665 1676	the defects
+A22	Assertion T22 present
+T23	problem 499 522	non Hodgkin 's lymphoma
+A23	Assertion T23 present
+T24	problem 643 651	Dementia
+A24	Assertion T24 present
+T25	problem 456 470	hypothyroidism
+A25	Assertion T25 present
+T26	problem 225 243	a left facial mass
+A26	Assertion T26 present
+T27	problem 1273 1286	his hematuria
+A27	Assertion T27 present
+T28	problem 669 689	known drug allergies
+A28	Assertion T28 absent

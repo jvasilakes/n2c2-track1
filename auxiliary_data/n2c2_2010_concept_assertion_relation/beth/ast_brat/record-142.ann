@@ -1,0 +1,256 @@
+T0	problem 1343 1351	cyanotic
+A0	Assertion T0 present
+T1	problem 8029 8053	a more pervasive process
+A1	Assertion T1 present
+T2	problem 4338 4350	Old TWI V4-6
+A2	Assertion T2 present
+T3	problem 7959 7990	his new , severe global deficit
+A3	Assertion T3 present
+T4	problem 8063 8084	anoxic encephalopathy
+A4	Assertion T4 possible
+T5	problem 9487 9512	Anemia of chronic disease
+A5	Assertion T5 present
+T6	problem 682 688	sepsis
+A6	Assertion T6 present
+T7	problem 6235 6254	impaired relaxation
+A7	Assertion T7 present
+T8	problem 1045 1049	MRSA
+A8	Assertion T8 present
+T9	problem 1029 1040	Pseudomonas
+A9	Assertion T9 present
+T10	problem 6108 6140	Mild ( 1+ ) aortic regurgitation
+A10	Assertion T10 present
+T11	problem 1333 1338	dusky
+A11	Assertion T11 present
+T12	problem 4423 4439	Long QT interval
+A12	Assertion T12 present
+T13	problem 4456 4477	ST depressions V4 , 5
+A13	Assertion T13 present
+T14	problem 7242 7264	PSEUDOMONAS AERUGINOSA
+A14	Assertion T14 present
+T15	problem 6084 6105	aortic valve stenosis
+A15	Assertion T15 absent
+T16	problem 9474 9486	Hyponatremia
+A16	Assertion T16 present
+T17	problem 4480 4503	Mild ST elevation in V3
+A17	Assertion T17 present
+T18	problem 555 574	respiratory failure
+A18	Assertion T18 present
+T19	problem 593 608	pulmonary edema
+A19	Assertion T19 present
+T20	problem 4506 4518	Old TWI V4-6
+A20	Assertion T20 present
+T21	problem 664 679	failure to wean
+A21	Assertion T21 present
+T22	problem 6055 6069	mildly dilated
+A22	Assertion T22 present
+T23	problem 4673 4681	effusion
+A23	Assertion T23 possible
+T24	problem 4645 4665	Blunting of left CPA
+A24	Assertion T24 present
+T25	problem 1992 2018	Non-small cell lung cancer
+A25	Assertion T25 present
+T26	problem 4684 4717	New lower left lateral CW opacity
+A26	Assertion T26 present
+T27	problem 4727 4750	loculated pleural fluid
+A27	Assertion T27 possible
+T28	problem 6266 6294	a small pericardial effusion
+A28	Assertion T28 present
+T29	problem 9383 9404	Pseudomonal pneumonia
+A29	Assertion T29 present
+T30	problem 9307 9328	Anoxic encephalopathy
+A30	Assertion T30 present
+T31	problem 9405 9420	Volume overload
+A31	Assertion T31 present
+T32	problem 4771 4820	Left-to-right shunt across the interatrial septum
+A32	Assertion T32 present
+T33	problem 9355 9382	Chronic respiratory failure
+A33	Assertion T33 present
+T34	problem 9642 9652	recurrence
+A34	Assertion T34 present
+T35	problem 9528 9554	Non-small cell lung cancer
+A35	Assertion T35 present
+T36	problem 4854 4883	mid to distal septal akinesis
+A36	Assertion T36 present
+T37	problem 4886 4901	apical akinesis
+A37	Assertion T37 present
+T38	problem 6151 6179	Trivial mitral regurgitation
+A38	Assertion T38 present
+T39	problem 1643 1656	acute changes
+A39	Assertion T39 absent
+T40	problem 4904 4933	inferior akinesis/hypokinesis
+A40	Assertion T40 present
+T41	problem 4940 4979	mid to distal anterolateral hypokinesis
+A41	Assertion T41 present
+T42	problem 9765 9777	Hypertension
+A42	Assertion T42 present
+T43	problem 9655 9684	Chronic left pleural effusion
+A43	Assertion T43 present
+T44	problem 4982 4990	akinesis
+A44	Assertion T44 present
+T45	problem 2105 2115	recurrence
+A45	Assertion T45 present
+T46	problem 9690 9709	Sick Sinus Syndrome
+A46	Assertion T46 present
+T47	problem 5005 5020	apical thrombus
+A47	Assertion T47 absent
+T48	problem 3403 3405	S4
+A48	Assertion T48 present
+T49	problem 5053 5055	AR
+A49	Assertion T49 present
+T50	problem 3312 3347	Ronchorous breath sounds left chest
+A50	Assertion T50 present
+T51	problem 6337 6346	tamponade
+A51	Assertion T51 absent
+T52	problem 5074 5076	TR
+A52	Assertion T52 present
+T53	problem 5058 5068	Trivial MR
+A53	Assertion T53 present
+T54	problem 9421 9458	Chronic obstructive pulmonary disease
+A54	Assertion T54 present
+T55	problem 6942 6963	epileptiform features
+A55	Assertion T55 absent
+T56	problem 3411 3417	murmur
+A56	Assertion T56 absent
+T57	problem 5239 5258	subacute infarction
+A57	Assertion T57 possible
+T58	problem 5100 5128	New rounded low-density area
+A58	Assertion T58 present
+T59	problem 6895 6936	subcortical dysfunction on the right side
+A59	Assertion T59 present
+T60	problem 5420 5434	fluid overload
+A60	Assertion T60 possible
+T61	problem 5409 5416	failure
+A61	Assertion T61 possible
+T62	problem 5542 5563	so-called pseudotumor
+A62	Assertion T62 present
+T63	problem 5452 5512	small loculated pleural fluid collection along the periphery
+A63	Assertion T63 present
+T64	problem 693 712	C.difficile colitis
+A64	Assertion T64 present
+T65	problem 5797 5809	hyperdynamic
+A65	Assertion T65 possible
+T66	problem 5818 5850	regional contraction abnormality
+A66	Assertion T66 absent
+T67	problem 910 930	ventilator dependent
+A67	Assertion T67 present
+T68	problem 6364 6394	Markedly abnormal portable EEG
+A68	Assertion T68 present
+T69	problem 6462 6495	the bursts of generalized slowing
+A69	Assertion T69 present
+T70	problem 6402 6450	the voltage suppression over the left hemisphere
+A70	Assertion T70 present
+T71	problem 6500 6524	right hemisphere slowing
+A71	Assertion T71 present
+T72	problem 6527 6548	The first abnormality
+A72	Assertion T72 present
+T73	problem 6668 6712	widespread cortical dysfunction on that side
+A73	Assertion T73 possible
+T74	problem 6575 6639	material ( such as subdural fluid ) interposed between the brain
+A74	Assertion T74 possible
+T75	problem 6783 6806	The generalized slowing
+A75	Assertion T75 present
+T76	problem 6817 6865	a non specific dysfunction in midline structures
+A76	Assertion T76 present
+T77	problem 7487 7510	a pseudomonal pneumonia
+A77	Assertion T77 present
+T78	problem 9459 9473	Bronchiectasis
+A78	Assertion T78 present
+T79	problem 4271 4290	Atrial fibrillation
+A79	Assertion T79 present
+T80	problem 7690 7731	his recent acute decline in mental status
+A80	Assertion T80 present
+T81	problem 7846 7880	a small left basal ganglia infarct
+A81	Assertion T81 present
+T82	problem 7890 7903	cardioembolic
+A82	Assertion T82 possible
+T83	problem 1921 1927	C.diff
+A83	Assertion T83 possible
+T84	problem 2389 2395	sepsis
+A84	Assertion T84 present
+T85	problem 2363 2384	Recent MRSA pneumonia
+A85	Assertion T85 present
+T86	problem 5932 5938	masses
+A86	Assertion T86 absent
+T87	problem 2189 2208	COPD/bronchiectasis
+A87	Assertion T87 present
+T88	problem 1358 1375	stopped breathing
+A88	Assertion T88 present
+T89	problem 3268 3309	Bronchial breathing over right hemithorax
+A89	Assertion T89 present
+T90	problem 3465 3473	drainage
+A90	Assertion T90 absent
+T91	problem 3212 3228	Sclera anicteric
+A91	Assertion T91 absent
+T92	problem 3184 3209	Pupils minimally reactive
+A92	Assertion T92 present
+T93	problem 2324 2347	Left femoral AV fistula
+A93	Assertion T93 present
+T94	problem 3611 3623	sacral edema
+A94	Assertion T94 present
+T95	problem 2310 2320	Depression
+A95	Assertion T95 present
+T96	problem 3626 3642	Cool extremities
+A96	Assertion T96 present
+T97	problem 2590 2605	failure to wean
+A97	Assertion T97 present
+T98	problem 9742 9761	COPD/bronchiectasis
+A98	Assertion T98 present
+T99	problem 5942 5949	thrombi
+A99	Assertion T99 absent
+T100	problem 2303 2306	BPH
+A100	Assertion T100 present
+T101	problem 3577 3608	2+ edema both upper extremities
+A101	Assertion T101 present
+T102	problem 2437 2457	C. difficile colitis
+A102	Assertion T102 present
+T103	problem 7414 7433	respiratory failure
+A103	Assertion T103 present
+T104	problem 7461 7475	mucus plugging
+A104	Assertion T104 possible
+T105	problem 9781 9784	CAD
+A105	Assertion T105 present
+T106	problem 9856 9859	BPH
+A106	Assertion T106 present
+T107	problem 9877 9900	Left femoral AV fistula
+A107	Assertion T107 present
+T108	problem 5363 5381	pulmonary embolism
+A108	Assertion T108 absent
+T109	problem 9329 9354	Acute respiratory failure
+A109	Assertion T109 present
+T110	problem 2212 2224	Hypertension
+A110	Assertion T110 present
+T111	problem 9863 9873	Depression
+A111	Assertion T111 present
+T112	problem 4367 4371	Afib
+A112	Assertion T112 present
+T113	problem 9810 9813	CHF
+A113	Assertion T113 present
+T114	problem 2228 2231	CAD
+A114	Assertion T114 present
+T115	problem 2257 2260	CHF
+A115	Assertion T115 present
+T116	problem 547 552	STEMI
+A116	Assertion T116 present
+T117	problem 9942 9948	sepsis
+A117	Assertion T117 present
+T118	problem 9916 9937	Recent MRSA pneumonia
+A118	Assertion T118 present
+T119	problem 2118 2147	Chronic left pleural effusion
+A119	Assertion T119 present
+T120	problem 2153 2156	SSS
+A120	Assertion T120 present
+T121	problem 1271 1279	coughing
+A121	Assertion T121 present
+T122	problem 3520 3529	grimacing
+A122	Assertion T122 absent
+T123	problem 3489 3499	hypoactive
+A123	Assertion T123 present
+T124	problem 240 268	chronic respiratory distress
+A124	Assertion T124 present
+T125	problem 10143 10158	failure to wean
+A125	Assertion T125 present
+T126	problem 1551 1561	BP dropped
+A126	Assertion T126 present
+T127	problem 9990 10010	C. difficile colitis
+A127	Assertion T127 present

@@ -1,0 +1,88 @@
+T0	problem 1514 1519	edema
+A0	Assertion T0 absent
+T1	problem 1419 1420	M
+A1	Assertion T1 absent
+T2	problem 2054 2079	metastatic bladder cancer
+A2	Assertion T2 present
+T3	problem 152 167	Known Allergies
+A3	Assertion T3 absent
+T4	problem 813 834	Metastatic bladder CA
+A4	Assertion T4 present
+T5	problem 2372 2390	a right psoas mass
+A5	Assertion T5 present
+T6	problem 2414 2424	a hematoma
+A6	Assertion T6 possible
+T7	problem 3587 3606	a right pelvic mass
+A7	Assertion T7 present
+T8	problem 3621 3631	a hematoma
+A8	Assertion T8 possible
+T9	problem 774 776	LH
+A9	Assertion T9 absent
+T10	problem 785 787	CP
+A10	Assertion T10 absent
+T11	problem 3049 3052	GIB
+A11	Assertion T11 present
+T12	problem 779 782	SOB
+A12	Assertion T12 absent
+T13	problem 757 765	abd pain
+A13	Assertion T13 absent
+T14	problem 768 771	N/V
+A14	Assertion T14 absent
+T15	problem 3499 3507	bleeding
+A15	Assertion T15 present
+T16	problem 375 395	recurrent bladder ca
+A16	Assertion T16 present
+T17	problem 3117 3122	DVT s
+A17	Assertion T17 present
+T18	problem 990 997	b/l DVT
+A18	Assertion T18 present
+T19	problem 2296 2314	sigmoid angulation
+A19	Assertion T19 present
+T20	problem 3911 3930	blood in your stool
+A20	Assertion T20 hypothetical
+T21	problem 1488 1510	yellowish urine in RLQ
+A21	Assertion T21 present
+T22	problem 1240 1248	bleeding
+A22	Assertion T22 associated_with_someone_else
+T23	problem 1073 1088	Nephrolithiasis
+A23	Assertion T23 present
+T24	problem 232 259	bright red blood per rectum
+A24	Assertion T24 present
+T25	problem 1525 1533	clubbing
+A25	Assertion T25 absent
+T26	problem 2531 2557	a mass in the right pelvis
+A26	Assertion T26 present
+T27	problem 1091 1097	Anemia
+A27	Assertion T27 present
+T28	problem 3075 3112	Metastatic , recurrent bladder cancer
+A28	Assertion T28 present
+T29	problem 1252 1270	clotting disorders
+A29	Assertion T29 associated_with_someone_else
+T30	problem 1439 1460	Midline surgical scar
+A30	Assertion T30 present
+T31	problem 3302 3333	a bleeding source in your colon
+A31	Assertion T31 possible
+T32	problem 3895 3900	dizzy
+A32	Assertion T32 hypothetical
+T33	problem 3374 3386	The bleeding
+A33	Assertion T33 absent
+T34	problem 526 530	tics
+A34	Assertion T34 present
+T35	problem 2145 2181	Right lower quadrant source of bleed
+A35	Assertion T35 present
+T36	problem 432 437	BRBPR
+A36	Assertion T36 present
+T37	problem 1434 1436	NT
+A37	Assertion T37 absent
+T38	problem 1397 1400	LAD
+A38	Assertion T38 absent
+T39	problem 516 521	blood
+A39	Assertion T39 present
+T40	problem 1362 1378	sclera anicteric
+A40	Assertion T40 absent
+T41	problem 1358 1361	NAD
+A41	Assertion T41 absent
+T42	problem 2084 2099	recurrent DVT s
+A42	Assertion T42 present
+T43	problem 2125 2142	lower GI bleeding
+A43	Assertion T43 present

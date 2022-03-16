@@ -1,0 +1,42 @@
+T0	problem 999 1014	spinal stenosis
+A0	Assertion T0 present
+T1	problem 1273 1293	known drug allergies
+A1	Assertion T1 absent
+T2	problem 2075 2088	complications
+A2	Assertion T2 absent
+T3	problem 544 552	the pain
+A3	Assertion T3 present
+T4	problem 598 623	an associated weight loss
+A4	Assertion T4 present
+T5	problem 1762 1809	no gross evidence seating in the abdominal wall
+A5	Assertion T5 absent
+T6	problem 1812 1822	one nodule
+A6	Assertion T6 present
+T7	problem 1881 1891	one nodule
+A7	Assertion T7 present
+T8	problem 266 286	Pancreatic carcinoma
+A8	Assertion T8 present
+T9	problem 756 762	a mass
+A9	Assertion T9 present
+T10	problem 2213 2252	subcutaneous emphysema over the abdomen
+A10	Assertion T10 possible
+T11	problem 1458 1465	murmurs
+A11	Assertion T11 absent
+T12	problem 2421 2433	a mild ileus
+A12	Assertion T12 present
+T13	problem 1500 1515	palpable masses
+A13	Assertion T13 absent
+T14	problem 2825 2829	pain
+A14	Assertion T14 hypothetical
+T15	problem 2172 2195	some abdominal bloating
+A15	Assertion T15 present
+T16	problem 2041 2058	falciform nodules
+A16	Assertion T16 present
+T17	problem 2263 2276	uncomfortable
+A17	Assertion T17 present
+T18	problem 1062 1082	a ureteral stricture
+A18	Assertion T18 present
+T19	problem 463 505	increasing pain in her left upper quadrant
+A19	Assertion T19 present
+T20	problem 2398 2416	abdominal cramping
+A20	Assertion T20 present

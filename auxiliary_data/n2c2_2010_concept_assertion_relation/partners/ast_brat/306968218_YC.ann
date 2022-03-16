@@ -1,0 +1,24 @@
+T0	problem 526 530	PAIN
+A0	Assertion T0 hypothetical
+T1	problem 731 735	PAIN
+A1	Assertion T1 hypothetical
+T2	problem 846 861	Known Allergies
+A2	Assertion T2 absent
+T3	problem 619 623	PAIN
+A3	Assertion T3 hypothetical
+T4	problem 690 702	Constipation
+A4	Assertion T4 hypothetical
+T5	problem 1110 1148	insulin dependent gestational diabetic
+A5	Assertion T5 present
+T6	problem 576 588	Constipation
+A6	Assertion T6 hypothetical
+T7	problem 1151 1162	prior C / S
+A7	Assertion T7 present
+T8	problem 1092 1095	IUP
+A8	Assertion T8 present
+T9	problem 880 896	Repeat C / S PPS
+A9	Assertion T9 present
+T10	problem 977 980	IUP
+A10	Assertion T10 present
+T11	problem 1165 1169	RSAP
+A11	Assertion T11 present

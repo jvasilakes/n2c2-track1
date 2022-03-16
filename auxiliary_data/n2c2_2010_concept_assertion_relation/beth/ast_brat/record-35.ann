@@ -1,0 +1,80 @@
+T0	problem 2184 2204	involuntary guarding
+A0	Assertion T0 absent
+T1	problem 2609 2633	continued abdominal pain
+A1	Assertion T1 present
+T2	problem 2926 2934	elevated
+A2	Assertion T2 present
+T3	problem 390 418	continuing vaginal discharge
+A3	Assertion T3 present
+T4	problem 2290 2302	nondistended
+A4	Assertion T4 absent
+T5	problem 2656 2695	fluid and gas in the endometrial cavity
+A5	Assertion T5 present
+T6	problem 444 463	bacterial vaginosis
+A6	Assertion T6 present
+T7	problem 939 947	vomiting
+A7	Assertion T7 absent
+T8	problem 3977 3997	post-surgical change
+A8	Assertion T8 possible
+T9	problem 2218 2254	mild right lower quadrant tenderness
+A9	Assertion T9 present
+T10	problem 2208 2215	rebound
+A10	Assertion T10 absent
+T11	problem 3953 3972	an infected abscess
+A11	Assertion T11 possible
+T12	problem 4108 4119	the abscess
+A12	Assertion T12 present
+T13	problem 2158 2176	voluntary guarding
+A13	Assertion T13 present
+T14	problem 746 760	abdominal pain
+A14	Assertion T14 present
+T15	problem 1579 1599	herpes simplex virus
+A15	Assertion T15 present
+T16	problem 1007 1013	chills
+A16	Assertion T16 absent
+T17	problem 3135 3176	gram-positive cocci in pairs and clusters
+A17	Assertion T17 present
+T18	problem 3097 3105	positive
+A18	Assertion T18 present
+T19	problem 1562 1565	SAB
+A19	Assertion T19 present
+T20	problem 1337 1350	Some spotting
+A20	Assertion T20 present
+T21	problem 3396 3415	a temperature spike
+A21	Assertion T21 present
+T22	problem 545 570	increasing abdominal pain
+A22	Assertion T22 present
+T23	problem 1075 1080	fluid
+A23	Assertion T23 present
+T24	problem 1097 1126	gas in the endometrial cavity
+A24	Assertion T24 possible
+T25	problem 929 935	nausea
+A25	Assertion T25 absent
+T26	problem 1248 1268	spontaneous abortion
+A26	Assertion T26 present
+T27	problem 3341 3349	afebrile
+A27	Assertion T27 absent
+T28	problem 1473 1487	Fibroid uterus
+A28	Assertion T28 present
+T29	problem 3211 3239	staphylococcus coag-negative
+A29	Assertion T29 hypothetical
+T30	problem 2430 2462	voluntary tensing of her abdomen
+A30	Assertion T30 present
+T31	problem 3794 3833	continued air in the endometrial cavity
+A31	Assertion T31 present
+T32	problem 3841 3859	the fundal fibroid
+A32	Assertion T32 present
+T33	problem 2344 2367	some brownish discharge
+A33	Assertion T33 present
+T34	problem 262 282	lower abdominal pain
+A34	Assertion T34 present
+T35	problem 367 375	fibroids
+A35	Assertion T35 present
+T36	problem 1640 1659	abnormal Pap smears
+A36	Assertion T36 absent
+T37	problem 882 899	some loose stools
+A37	Assertion T37 present
+T38	problem 2585 2601	uterine fibroids
+A38	Assertion T38 present
+T39	problem 2113 2127	acute distress
+A39	Assertion T39 absent

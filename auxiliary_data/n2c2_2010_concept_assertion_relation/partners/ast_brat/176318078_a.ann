@@ -1,0 +1,122 @@
+T0	problem 2395 2421	Superficial varicose veins
+A0	Assertion T0 present
+T1	problem 1392 1429	chronic obstructive pulmonary disease
+A1	Assertion T1 present
+T2	problem 2002 2025	Right ventricular heave
+A2	Assertion T2 present
+T3	problem 4093 4102	epistaxis
+A3	Assertion T3 present
+T4	problem 2766 2832	left atrial , right ventricular and pulmonary arterial enlargement
+A4	Assertion T4 present
+T5	problem 2109 2121	opening snap
+A5	Assertion T5 absent
+T6	problem 2861 2888	small , bilateral effusions
+A6	Assertion T6 present
+T7	problem 232 255	Tricuspid regurgitation
+A7	Assertion T7 present
+T8	problem 921 946	progressive heart failure
+A8	Assertion T8 present
+T9	problem 2837 2855	interstitial edema
+A9	Assertion T9 present
+T10	problem 2079 2091	accentuation
+A10	Assertion T10 present
+T11	problem 718 750	bleeding from the mouth and nose
+A11	Assertion T11 conditional
+T12	problem 304 330	chronic ventricular ectopy
+A12	Assertion T12 present
+T13	problem 2568 2587	atrial fibrillation
+A13	Assertion T13 present
+T14	problem 2590 2619	moderate ventricular response
+A14	Assertion T14 present
+T15	problem 2661 2681	right axis deviation
+A15	Assertion T15 present
+T16	problem 2684 2713	right ventricular hypertrophy
+A16	Assertion T16 present
+T17	problem 2622 2658	incomplete right bundle branch block
+A17	Assertion T17 present
+T18	problem 2727 2744	apical infarction
+A18	Assertion T18 possible
+T19	problem 3612 3646	minimal aortic valve calcification
+A19	Assertion T19 present
+T20	problem 2288 2312	Liver slightly pulsatile
+A20	Assertion T20 present
+T21	problem 2320 2328	enlarged
+A21	Assertion T21 absent
+T22	problem 873 890	recurrent syncope
+A22	Assertion T22 present
+T23	problem 1781 1789	headache
+A23	Assertion T23 conditional
+T24	problem 965 984	atrial fibrillation
+A24	Assertion T24 present
+T25	problem 1000 1020	ventricular bigemini
+A25	Assertion T25 present
+T26	problem 4819 4838	marked hyperkalemia
+A26	Assertion T26 conditional
+T27	problem 3257 3274	markedly elevated
+A27	Assertion T27 present
+T28	problem 2103 2105	S3
+A28	Assertion T28 absent
+T29	problem 3348 3369	aortic valve gradient
+A29	Assertion T29 absent
+T30	problem 393 402	Epistaxis
+A30	Assertion T30 conditional
+T31	problem 2366 2392	weak dorsalis pedis pulses
+A31	Assertion T31 present
+T32	problem 3131 3155	tricuspid valve gradient
+A32	Assertion T32 absent
+T33	problem 258 271	heart failure
+A33	Assertion T33 present
+T34	problem 3092 3115	tricuspid regurgitation
+A34	Assertion T34 present
+T35	problem 1540 1561	a &quot; tumor &quot;
+A35	Assertion T35 present
+T36	problem 4166 4182	nasal hemorrhage
+A36	Assertion T36 hypothetical
+T37	problem 3472 3506	minimal mitral valve calcification
+A37	Assertion T37 present
+T38	problem 3551 3599	2+ mitral regurgitation into a large left atrium
+A38	Assertion T38 present
+T39	problem 1217 1225	diabetes
+A39	Assertion T39 absent
+T40	problem 4122 4137	bleeding source
+A40	Assertion T40 absent
+T41	problem 1337 1350	heart disease
+A41	Assertion T41 associated_with_someone_else
+T42	problem 2184 2254	Grade II decrescendo diastolic murmur at the left lower sternal border
+A42	Assertion T42 present
+T43	problem 1201 1213	hypertension
+A43	Assertion T43 absent
+T44	problem 193 208	Mitral stenosis
+A44	Assertion T44 present
+T45	problem 1917 1937	Neck veins distended
+A45	Assertion T45 present
+T46	problem 624 639	rheumatic fever
+A46	Assertion T46 present
+T47	problem 2124 2181	Grade II systolic murmur at the left lower sternal border
+A47	Assertion T47 present
+T48	problem 3649 3679	mild ______________ thickening
+A48	Assertion T48 present
+T49	problem 333 365	chronic obstructive lung disease
+A49	Assertion T49 present
+T50	problem 65 80	MITRAL STENOSIS
+A50	Assertion T50 present
+T51	problem 3188 3205	markedly elevated
+A51	Assertion T51 present
+T52	problem 3288 3322	a very large mitral valve gradient
+A52	Assertion T52 present
+T53	problem 274 301	chronic atrial fibrillation
+A53	Assertion T53 present
+T54	problem 3738 3794	mild atherosclerosis of the mid left anterior descending
+A54	Assertion T54 present
+T55	problem 2043 2073	narrowly physiologically split
+A55	Assertion T55 present
+T56	problem 2955 2967	complication
+A56	Assertion T56 absent
+T57	problem 2257 2285	Diastolic rumble at the apex
+A57	Assertion T57 present
+T58	problem 668 695	chronic atrial fibrillation
+A58	Assertion T58 present
+T59	problem 2427 2432	edema
+A59	Assertion T59 absent
+T60	problem 3700 3725	mild aortic regurgitation
+A60	Assertion T60 present

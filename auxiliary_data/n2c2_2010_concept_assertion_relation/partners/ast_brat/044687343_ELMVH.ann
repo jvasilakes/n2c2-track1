@@ -1,0 +1,108 @@
+T0	problem 3285 3289	COPD
+A0	Assertion T0 present
+T1	problem 3649 3652	NAD
+A1	Assertion T1 absent
+T2	problem 3349 3356	fatigue
+A2	Assertion T2 present
+T3	problem 3324 3344	generalized weakness
+A3	Assertion T3 present
+T4	problem 3898 3908	ST changes
+A4	Assertion T4 absent
+T5	problem 4637 4645	symptoms
+A5	Assertion T5 present
+T6	problem 4058 4074	diffusely wheezy
+A6	Assertion T6 present
+T7	problem 3446 3460	these symptoms
+A7	Assertion T7 present
+T8	problem 1422 1441	Shortness of Breath
+A8	Assertion T8 hypothetical
+T9	problem 1444 1452	Wheezing
+A9	Assertion T9 hypothetical
+T10	problem 3745 3752	wheezes
+A10	Assertion T10 absent
+T11	problem 4684 4687	uti
+A11	Assertion T11 absent
+T12	problem 4869 4879	COPD flare
+A12	Assertion T12 present
+T13	problem 4185 4207	typical flare symptoms
+A13	Assertion T13 present
+T14	problem 4614 4633	stress incontinence
+A14	Assertion T14 present
+T15	problem 4651 4666	increased cough
+A15	Assertion T15 present
+T16	problem 4937 4948	resp status
+A16	Assertion T16 present
+T17	problem 2842 2852	COPD flare
+A17	Assertion T17 present
+T18	problem 3403 3430	increased sputum production
+A18	Assertion T18 present
+T19	problem 5146 5163	sputum production
+A19	Assertion T19 hypothetical
+T20	problem 2987 2989	DM
+A20	Assertion T20 present
+T21	problem 4230 4238	Ischemia
+A21	Assertion T21 present
+T22	problem 4740 4768	Chronic Fe deficiency anemia
+A22	Assertion T22 present
+T23	problem 3918 3937	focal consolidation
+A23	Assertion T23 absent
+T24	problem 3941 3946	edema
+A24	Assertion T24 absent
+T25	problem 4303 4308	flare
+A25	Assertion T25 present
+T26	problem 4032 4055	still poor air movement
+A26	Assertion T26 present
+T27	problem 4821 4829	afebrile
+A27	Assertion T27 absent
+T28	problem 3007 3056	iron deficiency anemia ( iron deficiency anemia )
+A28	Assertion T28 present
+T29	problem 4788 4790	DM
+A29	Assertion T29 present
+T30	problem 2940 2986	COPD ( chronic obstructive pulmonary disease )
+A30	Assertion T30 present
+T31	problem 3840 3854	focal deficits
+A31	Assertion T31 absent
+T32	problem 5127 5142	increased cough
+A32	Assertion T32 hypothetical
+T33	problem 4145 4149	COPD
+A33	Assertion T33 present
+T34	problem 4156 4178	frequent exacerbations
+A34	Assertion T34 present
+T35	problem 3088 3107	osa ( sleep apnea )
+A35	Assertion T35 present
+T36	problem 3280 3282	DM
+A36	Assertion T36 present
+T37	problem 3476 3486	COPD flare
+A37	Assertion T37 present
+T38	problem 645 664	Shortness of Breath
+A38	Assertion T38 hypothetical
+T39	problem 3384 3391	shaking
+A39	Assertion T39 present
+T40	problem 3699 3728	poor air movement bilaterally
+A40	Assertion T40 present
+T41	problem 3249 3257	weakness
+A41	Assertion T41 present
+T42	problem 4438 4457	atypical bronchitis
+A42	Assertion T42 present
+T43	problem 3949 3970	old biapical scarring
+A43	Assertion T43 present
+T44	problem 2751 2761	COPD flare
+A44	Assertion T44 present
+T45	problem 4298 4302	COPD
+A45	Assertion T45 present
+T46	problem 3796 3801	edema
+A46	Assertion T46 absent
+T47	problem 5110 5123	worsening sob
+A47	Assertion T47 hypothetical
+T48	problem 3359 3379	urinary incontinence
+A48	Assertion T48 present
+T49	problem 2990 3002	cervical DJD
+A49	Assertion T49 present
+T50	problem 3756 3761	rales
+A50	Assertion T50 absent
+T51	problem 4276 4283	failure
+A51	Assertion T51 absent
+T52	problem 55 65	COPD flare
+A52	Assertion T52 present
+T53	problem 3057 3080	cervical and lumbar djd
+A53	Assertion T53 present

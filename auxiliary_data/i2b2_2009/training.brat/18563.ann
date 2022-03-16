@@ -1,0 +1,123 @@
+T0	Disposition 2563 2574	cefpodoxime
+E0	Disposition:T0
+A0	Event E0 start
+A1	Temporality E0 past
+A2	Certainty E0 factual
+T1	NoDisposition 3809 3815	aspart
+T2	Disposition 1606 1612	Lantus
+E2	Disposition:T2
+A3	Event E2 stop
+A4	Temporality E2 past
+A5	Certainty E2 factual
+T3	NoDisposition 2605 2616	cefpodoxime
+T4	NoDisposition 4199 4206	Tylenol
+T5	NoDisposition 3933 3939	aspart
+T6	Disposition 1135 1146	cefpodoxime
+E6	Disposition:T6
+A6	Event E6 start
+A7	Temporality E6 past
+A8	Certainty E6 factual
+T7	Disposition 353 359	Ativan
+E7	Disposition:T7
+A9	Event E7 start-continue
+A10	Temporality E7 past
+A11	Certainty E7 factual
+T8	NoDisposition 1644 1650	aspart
+T9	NoDisposition 3362 3368	Flagyl
+T10	NoDisposition 815 821	Haldol
+T11	NoDisposition 3174 3182	Depakote
+T12	Disposition 2516 2527	ceftriaxone
+E12	Disposition:T12
+A12	Event E12 stop
+A13	Temporality E12 past
+A14	Certainty E12 factual
+T13	NoDisposition 3204 3210	folate
+T14	NoDisposition 3145 3151	PhosLo
+T15	NoDisposition 3229 3235	Haldol
+T16	NoDisposition 4146 4166	albuterol butt paste
+T17	Disposition 562 568	Haldol
+E17	Disposition:T17
+A15	Event E17 start
+A16	Temporality E17 past
+A17	Certainty E17 factual
+T18	Disposition 1802 1808	aspart
+E18	Disposition:T18
+A18	Event E18 start-continue
+A19	Temporality E18 past
+A20	Certainty E18 factual
+T19	NoDisposition 3933 3939	aspart
+T20	Disposition 1107 1114	Flagyl.
+E20	Disposition:T20
+A21	Event E20 start
+A22	Temporality E20 past
+A23	Certainty E20 factual
+T21	Disposition 562 568	Haldol
+E21	Disposition:T21
+A24	Event E21 stop
+A25	Temporality E21 past
+A26	Certainty E21 factual
+T22	NoDisposition 1829 1836	insulin
+T23	Disposition 2003 2009	aspart
+E23	Disposition:T23
+A27	Event E23 stop
+A28	Temporality E23 past
+A29	Certainty E23 factual
+T24	NoDisposition 3809 3815	aspart
+T25	NoDisposition 715 723	Depakote
+T26	Disposition 1088 1099	ceftriaxone
+E26	Disposition:T26
+A30	Event E26 start
+A31	Temporality E26 past
+A32	Certainty E26 factual
+T27	NoDisposition 1151 1157	Flagyl
+T28	NoDisposition 3933 3939	aspart
+T29	NoDisposition 3490 3501	cefpodoxime
+T30	NoDisposition 3458 3468	gabapentin
+T31	NoDisposition 3809 3815	aspart
+T32	NoDisposition 4401 4411	Loperamide
+T33	NoDisposition 4199 4206	Tylenol
+T34	Disposition 787 795	Depakote
+E34	Disposition:T34
+A33	Event E34 continue
+A34	Temporality E34 present
+A35	Certainty E34 factual
+T35	NoDisposition 3933 3939	aspart
+T36	Disposition 2501 2512	antibiotics
+E36	Disposition:T36
+A36	Event E36 start
+A37	Temporality E36 past
+A38	Certainty E36 factual
+T37	NoDisposition 3332 3342	lisinopril
+T38	NoDisposition 3603 3613	Nephrocaps
+T39	Disposition 551 559	Depakote
+E39	Disposition:T39
+A39	Event E39 start
+A40	Temporality E39 past
+A41	Certainty E39 factual
+T40	Disposition 562 568	Haldol
+E40	Disposition:T40
+A42	Event E40 start
+A43	Certainty E40 factual
+T41	NoDisposition 3402 3410	thiamine
+T42	NoDisposition 4199 4206	Tylenol
+T43	NoDisposition 2913 2920	insulin
+T44	NoDisposition 3709 3715	Nexium
+T45	NoDisposition 3638 3647	sevelamer
+T46	NoDisposition 3735 3741	Lantus
+T47	NoDisposition 3301 3310	labetalol
+T48	NoDisposition 3670 3690	Advair diskus 250/50
+T49	NoDisposition 4256 4273	albuterol inhaler
+T50	NoDisposition 3431 3438	Norvasc
+T51	NoDisposition 4292 4298	Haldol
+T52	Disposition 2516 2527	ceftriaxone
+E52	Disposition:T52
+A44	Event E52 start
+A45	Temporality E52 past
+A46	Certainty E52 factual
+T53	NoDisposition 3933 3939	aspart
+T54	NoDisposition 1693 1699	aspart
+T55	Disposition 2579 2585	Flagyl
+E55	Disposition:T55
+A47	Event E55 start-continue
+A48	Temporality E55 past
+A49	Certainty E55 factual

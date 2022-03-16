@@ -1,0 +1,114 @@
+T0	problem 406 445	hypertrophic obstructive cardiomyopathy
+A0	Assertion T0 present
+T1	problem 4545 4564	atrial fibrillation
+A1	Assertion T1 present
+T2	problem 4600 4616	digitalis effect
+A2	Assertion T2 present
+T3	problem 4628 4656	left ventricular hypertrophy
+A3	Assertion T3 present
+T4	problem 4570 4595	slow ventricular response
+A4	Assertion T4 present
+T5	problem 3487 3506	shortness of breath
+A5	Assertion T5 conditional
+T6	problem 471 503	right cheek basal cell carcinoma
+A6	Assertion T6 present
+T7	problem 363 375	hypertension
+A7	Assertion T7 present
+T8	problem 1498 1533	generalized hoarseness in her voice
+A8	Assertion T8 present
+T9	problem 509 517	glaucoma
+A9	Assertion T9 present
+T10	problem 2184 2198	osteoarthritis
+A10	Assertion T10 present
+T11	problem 4781 4798	increased calcium
+A11	Assertion T11 present
+T12	problem 4803 4822	hyperparathyroidism
+A12	Assertion T12 present
+T13	problem 3124 3155	parathyroid or thyroid diseases
+A13	Assertion T13 associated_with_someone_else
+T14	problem 1620 1653	some difficulties with swallowing
+A14	Assertion T14 present
+T15	problem 5566 5592	some tingling in her hands
+A15	Assertion T15 present
+T16	problem 5602 5640	some tingling hear her perioral region
+A16	Assertion T16 present
+T17	problem 885 908	her hyperparathyroidism
+A17	Assertion T17 present
+T18	problem 3957 3973	irregular border
+A18	Assertion T18 present
+T19	problem 2589 2595	polyps
+A19	Assertion T19 present
+T20	problem 2367 2375	glaucoma
+A20	Assertion T20 present
+T21	problem 1298 1312	a high calcium
+A21	Assertion T21 present
+T22	problem 3752 3766	acute distress
+A22	Assertion T22 absent
+T23	problem 1415 1430	an elevated PTH
+A23	Assertion T23 present
+T24	problem 3982 4006	very sluggishly reactive
+A24	Assertion T24 present
+T25	problem 2139 2178	hypertrophic obstructive cardiomyopathy
+A25	Assertion T25 present
+T26	problem 3568 3587	shortness of breath
+A26	Assertion T26 conditional
+T27	problem 1582 1596	some dysphagia
+A27	Assertion T27 present
+T28	problem 3638 3653	short of breath
+A28	Assertion T28 conditional
+T29	problem 2040 2052	hypertension
+A29	Assertion T29 present
+T30	problem 60 79	HYPERPARATHYROIDISM
+A30	Assertion T30 present
+T31	problem 3388 3407	dyspnea on exertion
+A31	Assertion T31 conditional
+T32	problem 2071 2090	atrial fibrillation
+A32	Assertion T32 present
+T33	problem 5989 6018	her ionized calcium decreased
+A33	Assertion T33 present
+T34	problem 2676 2696	known drug allergies
+A34	Assertion T34 absent
+T35	problem 959 998	hypertrophic obstructive cardiomyopathy
+A35	Assertion T35 present
+T36	problem 2290 2322	right cheek basal cell carcinoma
+A36	Assertion T36 present
+T37	problem 2381 2420	non insulin dependent diabetes mellitus
+A37	Assertion T37 present
+T38	problem 5728 5745	muscular weakness
+A38	Assertion T38 absent
+T39	problem 4759 4778	dyspnea on exertion
+A39	Assertion T39 conditional
+T40	problem 5293 5300	changes
+A40	Assertion T40 absent
+T41	problem 6280 6303	tingling in her fingers
+A41	Assertion T41 absent
+T42	problem 273 292	hyperparathyroidism
+A42	Assertion T42 present
+T43	problem 4741 4756	cardiac history
+A43	Assertion T43 present
+T44	problem 451 465	osteoarthritis
+A44	Assertion T44 present
+T45	problem 1078 1090	hypertension
+A45	Assertion T45 present
+T46	problem 1048 1075	chronic atrial fibrillation
+A46	Assertion T46 present
+T47	problem 1379 1398	hyperparathyroidism
+A47	Assertion T47 present
+T48	problem 2013 2025	hypertension
+A48	Assertion T48 present
+T49	problem 1456 1474	masses in her neck
+A49	Assertion T49 absent
+T50	problem 4163 4191	irregularly irregular rhythm
+A50	Assertion T50 present
+T51	problem 2462 2470	shingles
+A51	Assertion T51 present
+T52	problem 523 562	non-insulin dependent diabetes mellitus
+A52	Assertion T52 present
+T53	problem 5041 5058	markedly enlarged
+A53	Assertion T53 present
+T54	problem 5079 5089	an adenoma
+A54	Assertion T54 present
+T55	problem 4135 4158	III / VI systolic click
+A55	Assertion T55 present
+T56	problem 381 400	atrial fibrillation
+A56	Assertion T56 present

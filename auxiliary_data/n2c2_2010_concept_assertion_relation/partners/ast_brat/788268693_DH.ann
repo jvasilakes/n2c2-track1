@@ -1,0 +1,22 @@
+T0	problem 435 449	R ELBOW INJURY
+A0	Assertion T0 present
+T1	problem 641 655	R elbow strain
+A1	Assertion T1 present
+T2	problem 699 707	effusion
+A2	Assertion T2 absent
+T3	problem 559 566	bruises
+A3	Assertion T3 hypothetical
+T4	problem 790 794	pain
+A4	Assertion T4 hypothetical
+T5	problem 904 917	your symptoms
+A5	Assertion T5 present
+T6	problem 535 542	sprains
+A6	Assertion T6 hypothetical
+T7	problem 1216 1229	your symptoms
+A7	Assertion T7 present
+T8	problem 545 554	fractures
+A8	Assertion T8 hypothetical
+T9	problem 711 719	fracture
+A9	Assertion T9 absent
+T10	problem 1150 1160	sore areas
+A10	Assertion T10 present

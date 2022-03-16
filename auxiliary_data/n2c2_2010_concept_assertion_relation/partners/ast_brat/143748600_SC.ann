@@ -1,0 +1,42 @@
+T0	problem 1608 1611	HTN
+A0	Assertion T0 present
+T1	problem 52 71	atypical chest pain
+A1	Assertion T1 present
+T2	problem 1891 1901	dissection
+A2	Assertion T2 possible
+T3	problem 1347 1366	anxiety ( anxiety )
+A3	Assertion T3 present
+T4	problem 1911 1920	back pain
+A4	Assertion T4 present
+T5	problem 1559 1575	high cholesterol
+A5	Assertion T5 present
+T6	problem 1388 1414	gerd ( esophageal reflux )
+A6	Assertion T6 present
+T7	problem 1367 1387	htn ( hypertension )
+A7	Assertion T7 present
+T8	problem 1546 1556	DM Type II
+A8	Assertion T8 present
+T9	problem 1538 1542	CRFs
+A9	Assertion T9 present
+T10	problem 1952 1954	MI
+A10	Assertion T10 absent
+T11	problem 1790 1794	pain
+A11	Assertion T11 present
+T12	problem 1693 1700	anxiety
+A12	Assertion T12 present
+T13	problem 1809 1813	pain
+A13	Assertion T13 absent
+T14	problem 1742 1784	T wave flattening laterally and inferiorly
+A14	Assertion T14 present
+T15	problem 1123 1134	atypical cp
+A15	Assertion T15 present
+T16	problem 1618 1650	episodes of atypical CP x 1 week
+A16	Assertion T16 conditional
+T17	problem 1705 1709	GERD
+A17	Assertion T17 present
+T18	problem 1715 1728	assoicated Sx
+A18	Assertion T18 absent
+T19	problem 1322 1346	dm ( diabetes mellitus )
+A19	Assertion T19 present
+T20	problem 1215 1234	atypical chest pain
+A20	Assertion T20 present

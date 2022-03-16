@@ -1,0 +1,60 @@
+T0	problem 2923 2944	a persistent acidemia
+A0	Assertion T0 present
+T1	problem 1804 1812	cyanosis
+A1	Assertion T1 absent
+T2	problem 1139 1159	known drug allergies
+A2	Assertion T2 absent
+T3	problem 1397 1411	acute distress
+A3	Assertion T3 absent
+T4	problem 1773 1782	nontender
+A4	Assertion T4 absent
+T5	problem 2131 2175	significant disease in the coronary arteries
+A5	Assertion T5 absent
+T6	problem 1827 1847	edema in extremities
+A6	Assertion T6 absent
+T7	problem 2357 2367	PA fistula
+A7	Assertion T7 present
+T8	problem 2277 2294	a persistent flow
+A8	Assertion T8 present
+T9	problem 2395 2430	the circumflex to PA branch fistula
+A9	Assertion T9 present
+T10	problem 2194 2235	an left anterior descending to PA fistula
+A10	Assertion T10 present
+T11	problem 1815 1823	clubbing
+A11	Assertion T11 absent
+T12	problem 4716 4726	any fevers
+A12	Assertion T12 hypothetical
+T13	problem 4226 4246	Mitral regurgitation
+A13	Assertion T13 present
+T14	problem 1588 1612	cervical lymphadenopathy
+A14	Assertion T14 absent
+T15	problem 3773 3791	diabetes insipidus
+A15	Assertion T15 possible
+T16	problem 258 285	severe mitral regurgitation
+A16	Assertion T16 present
+T17	problem 4049 4063	some hematuria
+A17	Assertion T17 absent
+T18	problem 3739 3761	intracranial pathology
+A18	Assertion T18 possible
+T19	problem 923 949	Mitral valve regurgitation
+A19	Assertion T19 present
+T20	problem 1533 1551	missing many teeth
+A20	Assertion T20 present
+T21	problem 3372 3397	a slight bit of confusion
+A21	Assertion T21 absent
+T22	problem 643 681	flow-limited disease in the coronaries
+A22	Assertion T22 absent
+T23	problem 435 449	severe dyspnea
+A23	Assertion T23 conditional
+T24	problem 351 383	significant exercise intolerance
+A24	Assertion T24 present
+T25	problem 686 702	several fistulae
+A25	Assertion T25 present
+T26	problem 1667 1700	a III/VI systolic ejection murmur
+A26	Assertion T26 present
+T27	problem 2062 2072	infiltrate
+A27	Assertion T27 absent
+T28	problem 2076 2088	pneumothorax
+A28	Assertion T28 absent
+T29	problem 4730 4762	difficulties with the wound care
+A29	Assertion T29 hypothetical

@@ -1,0 +1,68 @@
+T0	problem 2248 2270	leg length discrepancy
+A0	Assertion T0 absent
+T1	problem 752 776	The patient &apos;s pain
+A1	Assertion T1 present
+T2	problem 3207 3239	the patient &apos;s hypertension
+A2	Assertion T2 present
+T3	problem 2698 2721	trace white blood cells
+A3	Assertion T3 present
+T4	problem 1374 1394	known drug allergies
+A4	Assertion T4 absent
+T5	problem 1547 1561	acute distress
+A5	Assertion T5 absent
+T6	problem 1065 1094	left ankle and knee fractures
+A6	Assertion T6 present
+T7	problem 1137 1144	E. coli
+A7	Assertion T7 present
+T8	problem 1104 1134	Recent urinary tract infection
+A8	Assertion T8 present
+T9	problem 4501 4525	Right hip osteoarthritis
+A9	Assertion T9 present
+T10	problem 350 364	right hip pain
+A10	Assertion T10 present
+T11	problem 1153 1173	Recent herpes zoster
+A11	Assertion T11 present
+T12	problem 847 871	right hip osteoarthritis
+A12	Assertion T12 present
+T13	problem 2904 2926	acute ischemic changes
+A13	Assertion T13 absent
+T14	problem 2983 3017	acute cardiac or pulmonary disease
+A14	Assertion T14 absent
+T15	problem 408 416	Her pain
+A15	Assertion T15 present
+T16	problem 4596 4621	Postoperative hypokalemia
+A16	Assertion T16 absent
+T17	problem 2826 2859	intraventricular conduction delay
+A17	Assertion T17 present
+T18	problem 2864 2887	poor R wave progression
+A18	Assertion T18 present
+T19	problem 1002 1014	Hypertension
+A19	Assertion T19 present
+T20	problem 4244 4266	deep venous thrombosis
+A20	Assertion T20 absent
+T21	problem 1026 1046	peptic ulcer disease
+A21	Assertion T21 possible
+T22	problem 2952 2975	borderline cardiomegaly
+A22	Assertion T22 present
+T23	problem 4031 4058	postoperatively hypokalemia
+A23	Assertion T23 present
+T24	problem 1695 1701	murmur
+A24	Assertion T24 absent
+T25	problem 3286 3325	the patient &apos;s low potassium level
+A25	Assertion T25 present
+T26	problem 201 227	Right hip , osteoarthritis
+A26	Assertion T26 present
+T27	problem 4635 4658	Postoperative confusion
+A27	Assertion T27 absent
+T28	problem 544 553	rest pain
+A28	Assertion T28 conditional
+T29	problem 5425 5436	hypokalemic
+A29	Assertion T29 hypothetical
+T30	problem 2724 2753	slight occult red blood cells
+A30	Assertion T30 present
+T31	problem 704 749	difficulty with shoes and socks and foot care
+A31	Assertion T31 present
+T32	problem 4581 4593	Hypertension
+A32	Assertion T32 present
+T33	problem 62 88	RIGHT HIP , OSTEOARTHRITIS
+A33	Assertion T33 present

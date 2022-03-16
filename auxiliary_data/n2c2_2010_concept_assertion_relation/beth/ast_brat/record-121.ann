@@ -1,0 +1,158 @@
+T0	problem 3343 3353	diminished
+A0	Assertion T0 present
+T1	problem 5540 5561	the surrounding edema
+A1	Assertion T1 present
+T2	problem 5486 5510	developing hydrocephalus
+A2	Assertion T2 absent
+T3	problem 3664 3705	mildly diminished in the finger extensors
+A3	Assertion T3 present
+T4	problem 3281 3302	subjectively abnormal
+A4	Assertion T4 present
+T5	problem 5577 5612	suppression of the fourth ventricle
+A5	Assertion T5 possible
+T6	problem 2439 2462	long response latencies
+A6	Assertion T6 present
+T7	problem 2323 2336	mildly drowsy
+A7	Assertion T7 present
+T8	problem 348 359	an ear ache
+A8	Assertion T8 present
+T9	problem 4084 4097	very unsteady
+A9	Assertion T9 present
+T10	problem 3171 3209	decreased excursion of the right mouth
+A10	Assertion T10 present
+T11	problem 5865 5906	a subacute bleed in the mid to lower pons
+A11	Assertion T11 present
+T12	problem 4071 4081	wide based
+A12	Assertion T12 present
+T13	problem 3214 3262	flattening of the right nasolabial fold ( mild )
+A13	Assertion T13 present
+T14	problem 5783 5801	cavernous angiomas
+A14	Assertion T14 associated_with_someone_else
+T15	problem 3442 3468	a mild left pronator drift
+A15	Assertion T15 present
+T16	problem 2152 2159	murmurs
+A16	Assertion T16 absent
+T17	problem 3014 3046	sustained gaze holding nystagmus
+A17	Assertion T17 present
+T18	problem 6773 6785	paresthesias
+A18	Assertion T18 present
+T19	problem 3092 3108	rotary component
+A19	Assertion T19 absent
+T20	problem 6613 6643	Familial cavernous hemangiomas
+A20	Assertion T20 associated_with_someone_else
+T21	problem 1475 1495	generalized weakness
+A21	Assertion T21 present
+T22	problem 1389 1419	at least two bleeding episodes
+A22	Assertion T22 present
+T23	problem 2170 2177	gallops
+A23	Assertion T23 absent
+T24	problem 6658 6687	a subacute pontine hemorrhage
+A24	Assertion T24 present
+T25	problem 3119 3158	a mildly widened right palpable fissure
+A25	Assertion T25 present
+T26	problem 2209 2218	distended
+A26	Assertion T26 present
+T27	problem 4143 4154	retropulsed
+A27	Assertion T27 present
+T28	problem 1060 1079	progressively worse
+A28	Assertion T28 present
+T29	problem 2243 2248	edema
+A29	Assertion T29 absent
+T30	problem 2162 2166	rubs
+A30	Assertion T30 absent
+T31	problem 2592 2598	abulic
+A31	Assertion T31 absent
+T32	problem 2195 2204	nontender
+A32	Assertion T32 absent
+T33	problem 2418 2422	slow
+A33	Assertion T33 present
+T34	problem 6693 6711	Severe gait ataxia
+A34	Assertion T34 present
+T35	problem 761 778	decreased hearing
+A35	Assertion T35 present
+T36	problem 1124 1137	very fatigued
+A36	Assertion T36 present
+T37	problem 6108 6129	right facial weakness
+A37	Assertion T37 absent
+T38	problem 6074 6103	the subtle left hand weakness
+A38	Assertion T38 absent
+T39	problem 5962 5995	a slight right-sided predominance
+A39	Assertion T39 present
+T40	problem 6150 6165	severely ataxic
+A40	Assertion T40 present
+T41	problem 5232 5261	areas of restricted diffusion
+A41	Assertion T41 absent
+T42	problem 5274 5284	infarction
+A42	Assertion T42 absent
+T43	problem 5816 5845	several prior bleeding events
+A43	Assertion T43 present
+T44	problem 6188 6211	sensory deafferentation
+A44	Assertion T44 possible
+T45	problem 4731 4777	subacute blood products in the mid to low pons
+A45	Assertion T45 present
+T46	problem 4789 4831	recent hemorrhage into a cavernous angioma
+A46	Assertion T46 possible
+T47	problem 1344 1374	multiple cavernous hemangiomas
+A47	Assertion T47 present
+T48	problem 6240 6274	crossing pontine cerebellar fibers
+A48	Assertion T48 present
+T49	problem 3523 3539	slow on the left
+A49	Assertion T49 present
+T50	problem 3552 3597	trouble isolating individual finger movements
+A50	Assertion T50 present
+T51	problem 4590 4644	multiple foci susceptibility artifact within the brain
+A51	Assertion T51 present
+T52	problem 533 553	unsteady on her feet
+A52	Assertion T52 present
+T53	problem 5394 5402	angiomas
+A53	Assertion T53 present
+T54	problem 3907 3935	mistakes with position sense
+A54	Assertion T54 present
+T55	problem 898 916	This unsteady gait
+A55	Assertion T55 present
+T56	problem 975 1041	a pins and needle feeling in the face , hands and feet bilaterally
+A56	Assertion T56 present
+T57	problem 800 818	static in her ears
+A57	Assertion T57 present
+T58	problem 719 728	dizziness
+A58	Assertion T58 present
+T59	problem 484 493	dizziness
+A59	Assertion T59 present
+T60	problem 2710 2720	dysarthria
+A60	Assertion T60 absent
+T61	problem 3873 3895	bilateral upgoing toes
+A61	Assertion T61 present
+T62	problem 1182 1227	a 1.5 cm diameter hyperdense mass in the pons
+A62	Assertion T62 present
+T63	problem 2770 2789	any special neglect
+A63	Assertion T63 absent
+T64	problem 1084 1103	the sound of static
+A64	Assertion T64 present
+T65	problem 2012 2026	acute distress
+A65	Assertion T65 absent
+T66	problem 1510 1543	at least two generalized seizures
+A66	Assertion T66 present
+T67	problem 821 839	meniere 's disease
+A67	Assertion T67 possible
+T68	problem 2041 2050	anicteric
+A68	Assertion T68 absent
+T69	problem 185 224	multiple familial cavernous hemangiomas
+A69	Assertion T69 associated_with_someone_else
+T70	problem 1844 1855	hemangiomas
+A70	Assertion T70 associated_with_someone_else
+T71	problem 4844 4871	some mild surrounding edema
+A71	Assertion T71 present
+T72	problem 5658 5689	the subacute pontine hemorrhage
+A72	Assertion T72 present
+T73	problem 5628 5654	significant change in size
+A73	Assertion T73 absent
+T74	problem 3830 3862	clonus at the ankles bilaterally
+A74	Assertion T74 present
+T75	problem 4889 4950	tiny foci artifact within the cerebellum and base of the pons
+A75	Assertion T75 present
+T76	problem 4980 5092	susceptibility artifact in the left temporal lobe , right frontal lobe , and the splenius of the corpus collasum
+A76	Assertion T76 present
+T77	problem 3610 3651	mild finger-to-nose dysmetria on the left
+A77	Assertion T77 present
+T78	problem 5149 5197	mild enhancement of the pontine hemorrhagic mass
+A78	Assertion T78 present

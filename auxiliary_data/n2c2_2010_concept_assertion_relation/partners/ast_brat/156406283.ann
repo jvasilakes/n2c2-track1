@@ -1,0 +1,82 @@
+T0	problem 3347 3388	old Q wave inferior myocardial infarction
+A0	Assertion T0 present
+T1	problem 4796 4808	hypertension
+A1	Assertion T1 present
+T2	problem 2474 2501	decreased shrug on the left
+A2	Assertion T2 present
+T3	problem 855 872	numb on that side
+A3	Assertion T3 present
+T4	problem 1923 1933	non-tender
+A4	Assertion T4 absent
+T5	problem 767 795	a mild central dull headache
+A5	Assertion T5 present
+T6	problem 748 755	slurred
+A6	Assertion T6 present
+T7	problem 1936 1941	obese
+A7	Assertion T7 present
+T8	problem 3704 3724	movement in the hand
+A8	Assertion T8 absent
+T9	problem 1667 1681	acute distress
+A9	Assertion T9 absent
+T10	problem 567 603	primary hemisensory loss on the left
+A10	Assertion T10 present
+T11	problem 4768 4793	Right thalamic hemorrhage
+A11	Assertion T11 present
+T12	problem 1141 1156	visual symptoms
+A12	Assertion T12 absent
+T13	problem 1062 1085	superficial mass effect
+A13	Assertion T13 absent
+T14	problem 1019 1053	a 1x2 thalamic capsular hemorrhage
+A14	Assertion T14 present
+T15	problem 4232 4249	diabetes mellitus
+A15	Assertion T15 present
+T16	problem 3933 3945	hypertension
+A16	Assertion T16 present
+T17	problem 1990 1995	stiff
+A17	Assertion T17 present
+T18	problem 1160 1182	cortical-type symptoms
+A18	Assertion T18 absent
+T19	problem 1750 1756	bruits
+A19	Assertion T19 absent
+T20	problem 4175 4188	Muscle spasms
+A20	Assertion T20 present
+T21	problem 1684 1692	afebrile
+A21	Assertion T21 absent
+T22	problem 1373 1393	known drug allergies
+A22	Assertion T22 absent
+T23	problem 1525 1531	cancer
+A23	Assertion T23 associated_with_someone_else
+T24	problem 453 474	myocardial infarction
+A24	Assertion T24 present
+T25	problem 3070 3076	clonus
+A25	Assertion T25 present
+T26	problem 4811 4828	diabetes mellitus
+A26	Assertion T26 present
+T27	problem 517 562	left face and arm greater than leg hemiplegia
+A27	Assertion T27 present
+T28	problem 416 438	ankylosing spondylitis
+A28	Assertion T28 present
+T29	problem 1492 1509	diabetes mellitus
+A29	Assertion T29 associated_with_someone_else
+T30	problem 2000 2004	sore
+A30	Assertion T30 present
+T31	problem 1810 1841	a I/VI systolic ejection murmur
+A31	Assertion T31 present
+T32	problem 3545 3550	shift
+A32	Assertion T32 absent
+T33	problem 2276 2286	extinction
+A33	Assertion T33 absent
+T34	problem 3519 3534	mild distortion
+A34	Assertion T34 present
+T35	problem 3432 3479	1.5 to 2 centimeter bleed in the right thalamus
+A35	Assertion T35 present
+T36	problem 384 413	adult onset diabetes mellitus
+A36	Assertion T36 present
+T37	problem 2340 2392	lower left facial decreased sensation to temperature
+A37	Assertion T37 present
+T38	problem 274 286	hypertension
+A38	Assertion T38 present
+T39	problem 4683 4691	allergic
+A39	Assertion T39 present
+T40	problem 2015 2036	localizing tenderness
+A40	Assertion T40 absent

@@ -1,0 +1,50 @@
+T0	problem 1117 1126	agitation
+A0	Assertion T0 present
+T1	problem 1455 1463	agitated
+A1	Assertion T1 present
+T2	problem 1677 1702	the severity of the bleed
+A2	Assertion T2 present
+T3	problem 377 403	an elevated platelet count
+A3	Assertion T3 present
+T4	problem 1279 1299	respiratory distress
+A4	Assertion T4 present
+T5	problem 1248 1274	the changing mental status
+A5	Assertion T5 present
+T6	problem 46 74	CHRONIC MYELOGENOUS LEUKEMIA
+A6	Assertion T6 present
+T7	problem 856 871	a drug reaction
+A7	Assertion T7 present
+T8	problem 1527 1551	this continued agitation
+A8	Assertion T8 present
+T9	problem 760 766	fevers
+A9	Assertion T9 present
+T10	problem 187 190	CML
+A10	Assertion T10 present
+T11	problem 1606 1636	an intraparenchymal hemorrhage
+A11	Assertion T11 present
+T12	problem 771 782	neutropenia
+A12	Assertion T12 present
+T13	problem 823 844	a diffuse erythroderm
+A13	Assertion T13 present
+T14	problem 1157 1187	increased respiratory distress
+A14	Assertion T14 present
+T15	problem 1129 1152	change in mental status
+A15	Assertion T15 present
+T16	problem 998 1003	blood
+A16	Assertion T16 present
+T17	problem 1050 1066	blood in alveoli
+A17	Assertion T17 absent
+T18	problem 1092 1095	DAH
+A18	Assertion T18 absent
+T19	problem 916 937	pulmonary infiltrates
+A19	Assertion T19 present
+T20	problem 1828 1832	dead
+A20	Assertion T20 present
+T21	problem 254 276	INTRAPARENCHYMAL BLEED
+A21	Assertion T21 present
+T22	problem 942 957	some hemoptysis
+A22	Assertion T22 present
+T23	problem 1348 1367	worsening mucositis
+A23	Assertion T23 present
+T24	problem 438 441	CML
+A24	Assertion T24 present

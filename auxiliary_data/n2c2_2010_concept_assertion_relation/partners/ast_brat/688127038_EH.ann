@@ -1,0 +1,26 @@
+T0	problem 1145 1152	anxiety
+A0	Assertion T0 present
+T1	problem 1234 1243	tremulous
+A1	Assertion T1 present
+T2	problem 1208 1231	TCA and celexa overdose
+A2	Assertion T2 present
+T3	problem 880 892	TCA overdose
+A3	Assertion T3 present
+T4	problem 980 1005	depression ( depression )
+A4	Assertion T4 present
+T5	problem 787 799	TCA overdose
+A5	Assertion T5 present
+T6	problem 1172 1193	prior suicide attempt
+A6	Assertion T6 present
+T7	problem 1157 1167	depression
+A7	Assertion T7 present
+T8	problem 1386 1406	acute medical issues
+A8	Assertion T8 absent
+T9	problem 1246 1258	light-headed
+A9	Assertion T9 present
+T10	problem 753 768	Known Allergies
+A10	Assertion T10 absent
+T11	problem 1435 1452	actively suicidal
+A11	Assertion T11 absent
+T12	problem 50 62	TCA overdose
+A12	Assertion T12 present

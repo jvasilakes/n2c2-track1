@@ -1,0 +1,120 @@
+T0	problem 3952 3960	pleuricy
+A0	Assertion T0 absent
+T1	problem 3423 3448	a demand ischemic episode
+A1	Assertion T1 present
+T2	problem 78 84	NSTEMI
+A2	Assertion T2 present
+T3	problem 55 72	COPD exacerbation
+A3	Assertion T3 present
+T4	problem 4149 4161	osteoporosis
+A4	Assertion T4 present
+T5	problem 3548 3561	troponin leak
+A5	Assertion T5 present
+T6	problem 3525 3542	COPD exacerpation
+A6	Assertion T6 present
+T7	problem 3295 3312	STEROID PSYCHOSIS
+A7	Assertion T7 present
+T8	problem 4939 4951	exacerbation
+A8	Assertion T8 possible
+T9	problem 5544 5565	cardiac troponin leak
+A9	Assertion T9 present
+T10	problem 4966 4969	URI
+A10	Assertion T10 possible
+T11	problem 3880 3884	V/HA
+A11	Assertion T11 absent
+T12	problem 5213 5216	MVI
+A12	Assertion T12 present
+T13	problem 4123 4146	R renal artery stenosis
+A13	Assertion T13 present
+T14	problem 3272 3285	poor appetite
+A14	Assertion T14 present
+T15	problem 3876 3877	N
+A15	Assertion T15 absent
+T16	problem 3063 3080	COPD exacerbation
+A16	Assertion T16 present
+T17	problem 4850 4854	leak
+A17	Assertion T17 present
+T18	problem 4502 4524	small pleural effusion
+A18	Assertion T18 present
+T19	problem 4545 4558	acute changes
+A19	Assertion T19 absent
+T20	problem 3892 3898	sweats
+A20	Assertion T20 absent
+T21	problem 3589 3604	demand ischemia
+A21	Assertion T21 present
+T22	problem 3569 3575	NSTEMI
+A22	Assertion T22 possible
+T23	problem 4007 4020	shoulder pain
+A23	Assertion T23 absent
+T24	problem 2965 2982	COPD exacerbation
+A24	Assertion T24 present
+T25	problem 3180 3191	severe COPD
+A25	Assertion T25 present
+T26	problem 3086 3092	NSTEMI
+A26	Assertion T26 present
+T27	problem 3251 3271	unexplained hct drop
+A27	Assertion T27 present
+T28	problem 3812 3838	1mm lateral ST depressions
+A28	Assertion T28 present
+T29	problem 4045 4049	COPD
+A29	Assertion T29 present
+T30	problem 4655 4661	demand
+A30	Assertion T30 present
+T31	problem 4633 4641	a NSTEMI
+A31	Assertion T31 present
+T32	problem 4117 4120	PVD
+A32	Assertion T32 present
+T33	problem 4318 4333	Bibasilar rales
+A33	Assertion T33 present
+T34	problem 3625 3638	worsening SOB
+A34	Assertion T34 present
+T35	problem 3975 3987	paresthesias
+A35	Assertion T35 absent
+T36	problem 4086 4114	chronic pericardial effusion
+A36	Assertion T36 present
+T37	problem 4758 4761	PTT
+A37	Assertion T37 present
+T38	problem 3887 3888	D
+A38	Assertion T38 absent
+T39	problem 3966 3969	LEE
+A39	Assertion T39 absent
+T40	problem 4164 4178	presbylaryngis
+A40	Assertion T40 present
+T41	problem 3644 3655	sore throat
+A41	Assertion T41 present
+T42	problem 3916 3930	abdominal pain
+A42	Assertion T42 absent
+T43	problem 3499 3516	COPD exacerpation
+A43	Assertion T43 present
+T44	problem 4267 4270	NAD
+A44	Assertion T44 present
+T45	problem 3660 3701	cough productive of yellow / green sputum
+A45	Assertion T45 present
+T46	problem 3904 3910	chills
+A46	Assertion T46 absent
+T47	problem 3993 4001	numbness
+A47	Assertion T47 absent
+T48	problem 5613 5630	COPD exacerbation
+A48	Assertion T48 present
+T49	problem 4303 4315	oral lesions
+A49	Assertion T49 absent
+T50	problem 3725 3742	worsening dyspnea
+A50	Assertion T50 present
+T51	problem 3704 3711	Fatigue
+A51	Assertion T51 present
+T52	problem 4774 4785	enzyme leak
+A52	Assertion T52 present
+T53	problem 2943 2946	NKA
+A53	Assertion T53 absent
+T54	problem 3843 3870	slight troponin and MB leak
+A54	Assertion T54 present
+T55	problem 3936 3946	chest pain
+A55	Assertion T55 absent
+T56	problem 4972 4981	pneumonia
+A56	Assertion T56 possible
+T57	problem 4026 4034	jaw pain
+A57	Assertion T57 absent
+T58	problem 3192 3201	Pneumonia
+A58	Assertion T58 present
+T59	problem 4893 4912	evidence of failure
+A59	Assertion T59 absent

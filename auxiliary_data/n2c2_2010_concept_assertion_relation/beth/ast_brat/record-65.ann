@@ -1,0 +1,358 @@
+T0	problem 1521 1533	her effusion
+A0	Assertion T0 present
+T1	problem 1550 1557	her SOB
+A1	Assertion T1 present
+T2	problem 5703 5706	CHF
+A2	Assertion T2 present
+T3	problem 9617 9637	tamponade physiology
+A3	Assertion T3 present
+T4	problem 4838 4843	fever
+A4	Assertion T4 absent
+T5	problem 5734 5750	low urine output
+A5	Assertion T5 present
+T6	problem 11231 11245	consolidations
+A6	Assertion T6 absent
+T7	problem 4863 4871	diarrhea
+A7	Assertion T7 absent
+T8	problem 5618 5631	her effusions
+A8	Assertion T8 present
+T9	problem 5637 5649	transudative
+A9	Assertion T9 present
+T10	problem 5665 5668	CHF
+A10	Assertion T10 present
+T11	problem 10095 10103	Afib/SSS
+A11	Assertion T11 present
+T12	problem 10173 10176	PTX
+A12	Assertion T12 present
+T13	problem 8691 8718	bilateral pleural effusions
+A13	Assertion T13 present
+T14	problem 11164 11175	atelectasis
+A14	Assertion T14 possible
+T15	problem 4541 4559	transudative fluid
+A15	Assertion T15 present
+T16	problem 11134 11159	underlying consolidations
+A16	Assertion T16 possible
+T17	problem 4846 4860	abdominal pain
+A17	Assertion T17 absent
+T18	problem 4475 4477	MI
+A18	Assertion T18 absent
+T19	problem 10933 10953	low amounts of urine
+A19	Assertion T19 present
+T20	problem 1996 2010	hypothyroidism
+A20	Assertion T20 present
+T21	problem 9971 9981	transudate
+A21	Assertion T21 present
+T22	problem 5926 5952	net positive fluid balance
+A22	Assertion T22 present
+T23	problem 8631 8653	right pleural effusion
+A23	Assertion T23 present
+T24	problem 11075 11087	leukocytosis
+A24	Assertion T24 present
+T25	problem 2538 2542	LBBB
+A25	Assertion T25 present
+T26	problem 2548 2564	ST or TW changes
+A26	Assertion T26 absent
+T27	problem 2306 2312	bruits
+A27	Assertion T27 absent
+T28	problem 8117 8120	SOB
+A28	Assertion T28 present
+T29	problem 8144 8147	CHF
+A29	Assertion T29 present
+T30	problem 8196 8204	her COPD
+A30	Assertion T30 present
+T31	problem 3825 3839	hydronephrosis
+A31	Assertion T31 absent
+T32	problem 4742 4755	worsening ARF
+A32	Assertion T32 present
+T33	problem 2823 2834	atelectasis
+A33	Assertion T33 possible
+T34	problem 3585 3588	low
+A34	Assertion T34 present
+T35	problem 10766 10769	ATN
+A35	Assertion T35 present
+T36	problem 4370 4397	bilateral pleural effusions
+A36	Assertion T36 present
+T37	problem 2815 2818	PNA
+A37	Assertion T37 possible
+T38	problem 4670 4702	persistent pericardial effusions
+A38	Assertion T38 present
+T39	problem 545 548	ARF
+A39	Assertion T39 present
+T40	problem 4900 4908	headache
+A40	Assertion T40 absent
+T41	problem 1865 1869	COPD
+A41	Assertion T41 present
+T42	problem 9441 9455	a complication
+A42	Assertion T42 present
+T43	problem 9381 9411	her large pericardial effusion
+A43	Assertion T43 present
+T44	problem 10549 10554	a fib
+A44	Assertion T44 present
+T45	problem 4825 4827	CP
+A45	Assertion T45 absent
+T46	problem 4758 4776	Her O2 requirement
+A46	Assertion T46 present
+T47	problem 9262 9271	tamponade
+A47	Assertion T47 absent
+T48	problem 2943 2964	RV diastolic collapse
+A48	Assertion T48 absent
+T49	problem 2887 2925	mod-lg circumferential pericardial eff
+A49	Assertion T49 present
+T50	problem 2992 3001	tamponade
+A50	Assertion T50 absent
+T51	problem 4874 4896	black or bloody stools
+A51	Assertion T51 absent
+T52	problem 4830 4835	cough
+A52	Assertion T52 absent
+T53	problem 1987 1991	GERD
+A53	Assertion T53 present
+T54	problem 8371 8381	transudate
+A54	Assertion T54 present
+T55	problem 8411 8414	CHF
+A55	Assertion T55 possible
+T56	problem 712 717	a PTX
+A56	Assertion T56 present
+T57	problem 8233 8259	large pericardial effusion
+A57	Assertion T57 present
+T58	problem 2011 2024	legally blind
+A58	Assertion T58 present
+T59	problem 1398 1419	RV diastolic collapse
+A59	Assertion T59 absent
+T60	problem 8288 8310	right pleural effusion
+A60	Assertion T60 present
+T61	problem 6909 6932	multiple co-morbidities
+A61	Assertion T61 present
+T62	problem 12304 12331	Hypoxic Respiratory Failure
+A62	Assertion T62 present
+T63	problem 12284 12299	Pulmonary Edema
+A63	Assertion T63 present
+T64	problem 12518 12541	Coronary Artery Disease
+A64	Assertion T64 present
+T65	problem 3532 3552	Mild pulmonary edema
+A65	Assertion T65 present
+T66	problem 12467 12486	Sick sinus syndrome
+A66	Assertion T66 present
+T67	problem 8537 8540	PNX
+A67	Assertion T67 absent
+T68	problem 8543 8551	effusion
+A68	Assertion T68 present
+T69	problem 2424 2433	distended
+A69	Assertion T69 present
+T70	problem 12433 12463	Paroxysmal Atrial Fibrillation
+A70	Assertion T70 present
+T71	problem 2469 2480	1+ LE edema
+A71	Assertion T71 present
+T72	problem 2448 2462	CVA tenderness
+A72	Assertion T72 absent
+T73	problem 2436 2442	dec BS
+A73	Assertion T73 present
+T74	problem 12405 12429	Congestive Heart Failure
+A74	Assertion T74 present
+T75	problem 4973 5005	her ongoing pericardial effusion
+A75	Assertion T75 present
+T76	problem 12365 12401	Moderate bilateral pleural effusions
+A76	Assertion T76 present
+T77	problem 3973 3987	hydronephrosis
+A77	Assertion T77 absent
+T78	problem 359 364	pafib
+A78	Assertion T78 present
+T79	problem 369 372	SSS
+A79	Assertion T79 present
+T80	problem 12335 12361	Large pericardial effusion
+A80	Assertion T80 present
+T81	problem 5173 5205	change in appearance of effusion
+A81	Assertion T81 absent
+T82	problem 353 356	CAD
+A82	Assertion T82 present
+T83	problem 8107 8111	pain
+A83	Assertion T83 present
+T84	problem 346 350	COPD
+A84	Assertion T84 present
+T85	problem 3418 3429	perforation
+A85	Assertion T85 possible
+T86	problem 3090 3097	atrophy
+A86	Assertion T86 present
+T87	problem 8088 8102	her air hunger
+A87	Assertion T87 present
+T88	problem 3100 3136	dense calcification of the tentorium
+A88	Assertion T88 present
+T89	problem 10805 10819	hydronephrosis
+A89	Assertion T89 absent
+T90	problem 6576 6584	afebrile
+A90	Assertion T90 absent
+T91	problem 6203 6225	her oxygen requirement
+A91	Assertion T91 present
+T92	problem 1181 1208	bilateral pleural effusions
+A92	Assertion T92 present
+T93	problem 11286 11289	UTI
+A93	Assertion T93 present
+T94	problem 1240 1247	her ARF
+A94	Assertion T94 present
+T95	problem 1449 1458	tamponade
+A95	Assertion T95 absent
+T96	problem 1334 1377	mod-lg circumferential pericardial effusion
+A96	Assertion T96 present
+T97	problem 396 414	symptomatic pauses
+A97	Assertion T97 present
+T98	problem 11560 11567	opacity
+A98	Assertion T98 possible
+T99	problem 1992 1995	CVA
+A99	Assertion T99 present
+T100	problem 434 460	large pericardial effusion
+A100	Assertion T100 present
+T101	problem 11586 11598	leukocytosis
+A101	Assertion T101 present
+T102	problem 1622 1625	CHF
+A102	Assertion T102 present
+T103	problem 6480 6499	stable cardiomegaly
+A103	Assertion T103 present
+T104	problem 6515 6529	RLL infiltrate
+A104	Assertion T104 possible
+T105	problem 6435 6477	moderate sized bilateral pleural effusions
+A105	Assertion T105 present
+T106	problem 9914 9931	some leukocytosis
+A106	Assertion T106 present
+T107	problem 484 487	CHF
+A107	Assertion T107 present
+T108	problem 9111 9131	Pericardial effusion
+A108	Assertion T108 present
+T109	problem 9180 9194	RV perforation
+A109	Assertion T109 possible
+T110	problem 192 218	large pericardial effusion
+A110	Assertion T110 present
+T111	problem 9863 9880	Pleural effusions
+A111	Assertion T111 present
+T112	problem 9897 9900	CHF
+A112	Assertion T112 possible
+T113	problem 1744 1750	any CP
+A113	Assertion T113 absent
+T114	problem 4042 4045	SSS
+A114	Assertion T114 present
+T115	problem 799 806	her PTX
+A115	Assertion T115 absent
+T116	problem 831 839	vomiting
+A116	Assertion T116 present
+T117	problem 11424 11438	levo-resistant
+A117	Assertion T117 possible
+T118	problem 11362 11379	floridly positive
+A118	Assertion T118 present
+T119	problem 10653 10656	n/v
+A119	Assertion T119 present
+T120	problem 822 828	nausea
+A120	Assertion T120 present
+T121	problem 914 924	her nausea
+A121	Assertion T121 present
+T122	problem 10676 10693	poor forward flow
+A122	Assertion T122 present
+T123	problem 10657 10671	poor po intake
+A123	Assertion T123 present
+T124	problem 4035 4039	afib
+A124	Assertion T124 present
+T125	problem 2643 2658	pericardial eff
+A125	Assertion T125 present
+T126	problem 2617 2638	bilateral pleural eff
+A126	Assertion T126 present
+T127	problem 1067 1070	n/v
+A127	Assertion T127 present
+T128	problem 1054 1062	lethargy
+A128	Assertion T128 present
+T129	problem 1140 1143	ARF
+A129	Assertion T129 present
+T130	problem 3692 3700	mild CHF
+A130	Assertion T130 present
+T131	problem 11604 11610	Anemia
+A131	Assertion T131 present
+T132	problem 1146 1174	a large pericardial effusion
+A132	Assertion T132 present
+T133	problem 1861 1864	SSS
+A133	Assertion T133 present
+T134	problem 1854 1858	afib
+A134	Assertion T134 present
+T135	problem 10079 10089	air hunger
+A135	Assertion T135 present
+T136	problem 3591 3612	Bibasilar atelectasis
+A136	Assertion T136 present
+T137	problem 3641 3687	Unchanged moderate bilateral pleural effusions
+A137	Assertion T137 present
+T138	problem 3488 3515	bilateral pleural effusions
+A138	Assertion T138 present
+T139	problem 10615 10627	Oliguric ARF
+A139	Assertion T139 present
+T140	problem 4085 4088	CAD
+A140	Assertion T140 present
+T141	problem 11257 11265	afebrile
+A141	Assertion T141 absent
+T142	problem 1870 1873	CAD
+A142	Assertion T142 present
+T143	problem 3853 3868	urinary calculi
+A143	Assertion T143 absent
+T144	problem 4187 4214	bilateral pleural effusions
+A144	Assertion T144 present
+T145	problem 1921 1924	SSS
+A145	Assertion T145 present
+T146	problem 1930 1953	symptomatic bradycardia
+A146	Assertion T146 present
+T147	problem 4154 4182	a large pericardial effusion
+A147	Assertion T147 present
+T148	problem 4121 4124	ARF
+A148	Assertion T148 present
+T149	problem 4129 4137	lethargy
+A149	Assertion T149 present
+T150	problem 2168 2184	pulsus parodoxus
+A150	Assertion T150 present
+T151	problem 4341 4344	CHF
+A151	Assertion T151 present
+T152	problem 9675 9678	CHF
+A152	Assertion T152 present
+T153	problem 9715 9736	diastolic dysfunction
+A153	Assertion T153 possible
+T154	problem 3253 3291	Moderate to large pericardial effusion
+A154	Assertion T154 present
+T155	problem 3294 3318	minimal fluid anteriorly
+A155	Assertion T155 present
+T156	problem 3330 3336	bloody
+A156	Assertion T156 possible
+T157	problem 4250 4259	tamponade
+A157	Assertion T157 absent
+T158	problem 1780 1788	diarrhea
+A158	Assertion T158 absent
+T159	problem 4066 4069	PTX
+A159	Assertion T159 present
+T160	problem 1850 1853	htn
+A160	Assertion T160 present
+T161	problem 4928 4937	decreased
+A161	Assertion T161 present
+T162	problem 8738 8765	right lower lobe infiltrate
+A162	Assertion T162 present
+T163	problem 1791 1813	black or bloody stools
+A163	Assertion T163 absent
+T164	problem 576 579	SOB
+A164	Assertion T164 present
+T165	problem 1960 1965	R PTX
+A165	Assertion T165 present
+T166	problem 1816 1824	headache
+A166	Assertion T166 absent
+T167	problem 1656 1664	some SOB
+A167	Assertion T167 present
+T168	problem 3343 3372	definite tamponade physiology
+A168	Assertion T168 absent
+T169	problem 2745 2762	bilat pleural eff
+A169	Assertion T169 present
+T170	problem 2768 2792	underlying consolidation
+A170	Assertion T170 present
+T171	problem 2716 2742	large pericardial effusion
+A171	Assertion T171 present
+T172	problem 1753 1758	cough
+A172	Assertion T172 absent
+T173	problem 9753 9755	MI
+A173	Assertion T173 absent
+T174	problem 10274 10277	PTX
+A174	Assertion T174 absent
+T175	problem 1761 1766	fever
+A175	Assertion T175 absent
+T176	problem 1769 1777	abd pain
+A176	Assertion T176 absent
+T177	problem 2390 2403	consolidation
+A177	Assertion T177 absent
+T178	problem 2200 2218	mild resp distress
+A178	Assertion T178 present

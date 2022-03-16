@@ -1,0 +1,12 @@
+T0	problem 607 635	recently passed kidney stone
+A0	Assertion T0 possible
+T1	problem 895 913	your kidney stones
+A1	Assertion T1 possible
+T2	problem 560 573	kidney stones
+A2	Assertion T2 present
+T3	problem 987 1000	your symptoms
+A3	Assertion T3 hypothetical
+T4	problem 1022 1029	a fever
+A4	Assertion T4 hypothetical
+T5	problem 466 474	RLQ PAIN
+A5	Assertion T5 present

@@ -1,0 +1,48 @@
+T0	problem 2264 2268	pain
+A0	Assertion T0 hypothetical
+T1	problem 829 843	hyperlipidemia
+A1	Assertion T1 present
+T2	problem 1743 1751	Her pain
+A2	Assertion T2 present
+T3	problem 719 735	cord compression
+A3	Assertion T3 present
+T4	problem 2011 2017	chills
+A4	Assertion T4 hypothetical
+T5	problem 1306 1319	hyperreflexia
+A5	Assertion T5 present
+T6	problem 1504 1545	partial decompression of the spinal canal
+A6	Assertion T6 present
+T7	problem 484 507	bilateral hand numbness
+A7	Assertion T7 present
+T8	problem 1228 1246	10 beats of clonus
+A8	Assertion T8 present
+T9	problem 246 266	C5-6 disc herniation
+A9	Assertion T9 present
+T10	problem 272 288	cord compression
+A10	Assertion T10 present
+T11	problem 293 303	myelopathy
+A11	Assertion T11 present
+T12	problem 557 571	these symptoms
+A12	Assertion T12 present
+T13	problem 512 531	occasional weakness
+A13	Assertion T13 present
+T14	problem 691 713	a C5-6 disc herniation
+A14	Assertion T14 present
+T15	problem 740 758	a T2 signal change
+A15	Assertion T15 present
+T16	problem 1639 1656	her hyperreflexia
+A16	Assertion T16 present
+T17	problem 814 826	hypertension
+A17	Assertion T17 present
+T18	problem 2002 2008	fevers
+A18	Assertion T18 hypothetical
+T19	problem 2043 2051	numbness
+A19	Assertion T19 hypothetical
+T20	problem 2059 2087	bowel and bladder disruption
+A20	Assertion T20 hypothetical
+T21	problem 1269 1295	3-5 beats in the left foot
+A21	Assertion T21 present
+T22	problem 951 969	known drug allergy
+A22	Assertion T22 absent
+T23	problem 2020 2039	increasing weakness
+A23	Assertion T23 hypothetical

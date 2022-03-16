@@ -1,0 +1,14 @@
+T0	problem 451 460	DIZZINESS
+A0	Assertion T0 present
+T1	problem 582 607	Benign positional vertigo
+A1	Assertion T1 possible
+T2	problem 818 823	fever
+A2	Assertion T2 hypothetical
+T3	problem 829 837	headache
+A3	Assertion T3 hypothetical
+T4	problem 546 555	dizziness
+A4	Assertion T4 present
+T5	problem 796 804	symptoms
+A5	Assertion T5 hypothetical
+T6	problem 611 624	labyrinthitis
+A6	Assertion T6 possible
