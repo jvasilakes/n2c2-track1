@@ -160,7 +160,6 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
         for (task, clf_head) in self.classifier_heads.items():
             logits = clf_head(pooled_output)
             task_labels = labels[task]
-            self._maybe_kwargs_to_device(self.classifier_loss_kwargs[task])
             clf_loss_fn = self.classifier_loss_fn(
                     **self.classifier_loss_kwargs[task])
             clf_loss = clf_loss_fn(
@@ -273,9 +272,3 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
         elif class_weights is None:
             class_weights = {task: None for task in label_spec.keys()}
         return class_weights
-
-    def _maybe_kwargs_to_device(self, kwargs):
-        for (key, val) in kwargs.items():
-            if torch.is_tensor(val):
-                if val.device != self.device:
-                    kwargs[key] = val.to(self.device)
