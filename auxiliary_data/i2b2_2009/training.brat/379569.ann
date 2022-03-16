@@ -1,0 +1,79 @@
+T0	NoDisposition 930 936	MOTRIN
+T1	NoDisposition 2427 2450	NEXIUM ( ESOMEPRAZOLE )
+T2	NoDisposition 4369 4374	zocor
+T3	NoDisposition 2222 2247	SINGULAIR ( MONTELUKAST )
+T4	NoDisposition 6158 6167	verapamil
+T5	NoDisposition 4296 4305	verapamil
+T6	Disposition 2109 2120	METFORMIN 1
+E6	Disposition:T6
+A0	Event E6 start
+A1	Temporality E6 present
+A2	Certainty E6 factual
+T7	NoDisposition 731 751	MOTRIN ( IBUPROFEN )
+T8	NoDisposition 4105 4114	albuterol
+T9	NoDisposition 1793 1803	LORATADINE
+T10	NoDisposition 1121 1136	MAGNESIUM OXIDE
+T11	Disposition 1358 1379	KEFLEX ( CEPHALEXIN )
+E11	Disposition:T11
+A3	Event E11 start
+A4	Temporality E11 past
+A5	Certainty E11 factual
+T12	NoDisposition 2463 2472	OXYCODONE
+T13	NoDisposition 2260 2303	EFFEXOR XR ( VENLAFAXINE EXTENDED RELEASE )
+T14	NoDisposition 495 512	ALBUTEROL INHALER
+T15	NoDisposition 2162 2205	RHINOCORT AQUA ( BUDESONIDE NASAL INHALER )
+T16	Disposition 6172 6178	zocor.
+E16	Disposition:T16
+A6	Event E16 continue
+A7	Temporality E16 past
+A8	Certainty E16 factual
+T17	NoDisposition 4430 4437	mgoxide
+T18	Disposition 6638 6647	metformin
+E18	Disposition:T18
+A9	Event E18 start
+A10	Temporality E18 past
+A11	Certainty E18 factual
+T19	NoDisposition 4184 4193	singulair
+T20	NoDisposition 1524 1545	ZOCOR ( SIMVASTATIN )
+T21	NoDisposition 6398 6410	antibiotics.
+T22	NoDisposition 4452 4458	ambien
+T23	NoDisposition 6812 6817	Lasix
+T24	Disposition 1150 1177	VERAPAMIL SUSTAINED RELEASE
+E24	Disposition:T24
+A12	Event E24 start
+A13	Temporality E24 present
+A14	Certainty E24 factual
+T25	NoDisposition 4278 4281	kcl
+T26	NoDisposition 1641 1669	AMBIEN ( ZOLPIDEM TARTRATE )
+T27	NoDisposition 1061 1105	ATROVENT HFA INHALER ( IPRATROPIUM INHALER )
+T28	NoDisposition 4205 4211	nexium
+T29	Disposition 6974 6980	Keflex
+E29	Disposition:T29
+A15	Event E29 start
+A16	Temporality E29 future
+A17	Certainty E29 factual
+T30	NoDisposition 2034 2052	Potassium Chloride
+T31	NoDisposition 4407 4416	metformin
+T32	NoDisposition 4320 4327	patanol
+T33	Disposition 6679 6686	effexor
+E33	Disposition:T33
+A18	Event E33 continue
+A19	Temporality E33 present
+A20	Certainty E33 factual
+T34	Disposition 563 583	LASIX ( FUROSEMIDE )
+E34	Disposition:T34
+A21	Event E34 start
+A22	Temporality E34 present
+A23	Certainty E34 factual
+T35	NoDisposition 4117 4130	advair 250/50
+T36	NoDisposition 4162 4170	atrovent
+T37	NoDisposition 5876 5881	lasix
+T38	NoDisposition 4465 4469	amox
+T39	NoDisposition 3811 3816	lasix
+T40	NoDisposition 1961 2010	POTASSIUM CHLORIDE SLOW REL. ( KCL SLOW RELEASE )
+T41	NoDisposition 4345 4355	loratidine
+T42	NoDisposition 6069 6074	lasix
+T43	NoDisposition 4386 4393	effexor
+T44	NoDisposition 4225 4230	lasix
+T45	NoDisposition 2360 2411	ADVAIR DISKUS 250/50 ( FLUTICASONE PROPIONATE/... )
+T46	NoDisposition 4137 4146	rhinocort

@@ -1,0 +1,50 @@
+T0	NoDisposition 3667 3678	epinephrine
+T1	NoDisposition 2468 2483	Humalog insulin
+T2	NoDisposition 2415 2422	aspirin
+T3	Disposition 4547 4552	Lasix
+E3	Disposition:T3
+A0	Event E3 stop
+A1	Temporality E3 past
+A2	Certainty E3 factual
+T4	NoDisposition 5146 5151	Lasix
+T5	NoDisposition 5256 5262	Motrin
+T6	Disposition 4438 4451	nasal cannula
+E6	Disposition:T6
+A3	Event E6 start
+A4	Temporality E6 past
+A5	Certainty E6 factual
+T7	NoDisposition 2390 2398	Atenolol
+T8	NoDisposition 2438 2447	metformin
+T9	NoDisposition 5193 5224	potassium chloride slow release
+T10	Disposition 4019 4024	Lasix
+E10	Disposition:T10
+A6	Event E10 continue
+A7	Temporality E10 past
+A8	Certainty E10 factual
+T11	NoDisposition 3695 3704	Precedex.
+T12	Disposition 4352 4365	ciprofloxacin
+E12	Disposition:T12
+A9	Event E12 start
+A10	Temporality E12 past
+A11	Certainty E12 factual
+T13	Disposition 4526 4531	Lasix
+E13	Disposition:T13
+A12	Event E13 continue
+A13	Temporality E13 past
+A14	Certainty E13 factual
+T14	NoDisposition 5065 5078	Ciprofloxacin
+T15	Disposition 5418 5425	NovoLog
+E15	Disposition:T15
+A15	Event E15 start-continue
+A16	Temporality E15 present
+A17	Certainty E15 factual
+T16	NoDisposition 5119 5131	baby aspirin
+T17	NoDisposition 3683 3690	insulin
+T18	NoDisposition 5362 5371	Toprol-XL
+T19	NoDisposition 5321 5327	Lantus
+T20	Disposition 4227 4239	beta-blocker
+E20	Disposition:T20
+A18	Event E20 continue
+A19	Temporality E20 past
+A20	Certainty E20 factual
+T21	NoDisposition 5290 5297	NovoLog

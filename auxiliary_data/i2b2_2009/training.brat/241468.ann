@@ -1,0 +1,59 @@
+T0	NoDisposition 2147 2156	TRAZODONE
+T1	NoDisposition 1913 1931	POTASSIUM CHLORIDE
+T2	NoDisposition 793 813	LASIX ( FUROSEMIDE )
+T3	Disposition 1625 1657	ISORDIL ( ISOSORBIDE DINITRATE )
+E3	Disposition:T3
+A0	Event E3 stop
+A1	Temporality E3 future
+A2	Certainty E3 conditional
+T4	NoDisposition 1401 1410	MICRONASE
+T5	NoDisposition 1034 1058	NEURONTIN ( GABAPENTIN )
+T6	NoDisposition 918 923	LASIX
+T7	Disposition 4005 4013	coumadin
+E7	Disposition:T7
+A3	Event E7 stop
+A4	Temporality E7 past
+A5	Certainty E7 factual
+T8	NoDisposition 754 777	NEXIUM ( ESOMEPRAZOLE )
+T9	Disposition 4101 4109	coumadin
+E9	Disposition:T9
+A6	Event E9 start
+A7	Temporality E9 future
+A8	Certainty E9 conditional
+T10	Disposition 523 545	NORVASC ( AMLODIPINE )
+E10	Disposition:T10
+A9	Event E10 stop
+A10	Temporality E10 future
+A11	Certainty E10 conditional
+T11	NoDisposition 1869 1879	LISINOPRIL
+T12	Disposition 4508 4516	coumadin
+E12	Disposition:T12
+A12	Event E12 start
+A13	Temporality E12 future
+A14	Certainty E12 conditional
+T13	NoDisposition 4319 4327	coumadin
+T14	Disposition 1691 1701	LISINOPRIL
+E14	Disposition:T14
+A15	Event E14 stop
+A16	Temporality E14 future
+A17	Certainty E14 conditional
+T15	NoDisposition 3453 3461	coumadin
+T16	NoDisposition 713 739	COLACE ( DOCUSATE SODIUM )
+T17	Disposition 4401 4409	coumadin
+E17	Disposition:T17
+A18	Event E17 start
+A19	Temporality E17 future
+A20	Certainty E17 conditional
+T18	NoDisposition 1073 1082	GLIPIZIDE
+T19	NoDisposition 2080 2131	MULTIVITAMIN THERAPEUTIC ( THERAPEUTIC MULTIVI... )
+T20	NoDisposition 1844 1862	POTASSIUM CHLORIDE
+T21	NoDisposition 1938 1948	LISINOPRIL
+T22	NoDisposition 663 698	TEARS NATURALE ( ARTIFICIAL TEARS )
+T23	Disposition 1982 2012	NITROGLYCERIN 1/150 ( 0.4 MG )
+E23	Disposition:T23
+A21	Event E23 stop
+A22	Temporality E23 future
+A23	Certainty E23 conditional
+T24	NoDisposition 1521 1561	PLAQUENIL SULFATE ( HYDROXYCHLOROQUINE )
+T25	NoDisposition 1185 1194	GLIPIZIDE
+T26	NoDisposition 496 506	AMIODARONE

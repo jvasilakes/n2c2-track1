@@ -1,0 +1,51 @@
+T0	NoDisposition 6040 6067	nifedipine extended release
+T1	NoDisposition 2025 2044	hydrochlorothiazide
+T2	NoDisposition 2123 2126	NPH
+T3	Disposition 4089 4116	nifedipine extended release
+E3	Disposition:T3
+A0	Event E3 start
+A1	Certainty E3 factual
+T4	NoDisposition 2004 2012	Atenolol
+T5	Disposition 4004 4012	Atenolol
+E5	Disposition:T5
+A2	Event E5 start
+A3	Certainty E5 factual
+T6	NoDisposition 6100 6103	NPH
+T7	NoDisposition 5486 5489	NPH
+T8	NoDisposition 6152 6159	aspirin
+T9	Disposition 5408 5417	metformin
+E9	Disposition:T9
+A4	Event E9 continue
+A5	Temporality E9 past
+A6	Certainty E9 factual
+T10	NoDisposition 4392 4397	Lasix
+T11	NoDisposition 4058 4068	Lisinopril
+T12	Disposition 3900 3911	simvastatin
+E12	Disposition:T12
+A7	Event E12 continue
+A8	Temporality E12 past
+A9	Certainty E12 factual
+T13	NoDisposition 6100 6103	NPH
+T14	NoDisposition 2076 2087	simvastatin
+T15	NoDisposition 2055 2065	Lisinopril
+T16	NoDisposition 2098 2107	metformin
+T17	NoDisposition 5968 5976	Atenolol
+T18	NoDisposition 5486 5489	NPH
+T19	NoDisposition 6175 6180	Lasix
+T20	Disposition 3888 3895	aspirin
+E20	Disposition:T20
+A10	Event E20 continue
+A11	Temporality E20 past
+A12	Certainty E20 factual
+T21	NoDisposition 5486 5489	NPH
+T22	NoDisposition 5989 6008	hydrochlorothiazide
+T23	NoDisposition 4467 4472	Lasix
+T24	NoDisposition 2123 2126	NPH
+T25	NoDisposition 6130 6141	simvastatin
+T26	Disposition 1650 1657	insulin
+E26	Disposition:T26
+A13	Event E26 continue
+A14	Temporality E26 past
+A15	Certainty E26 factual
+T27	NoDisposition 6019 6029	Lisinopril
+T28	NoDisposition 6079 6088	metformin

@@ -1,0 +1,120 @@
+T0	Disposition 7316 7324	Percocet
+E0	Disposition:T0
+A0	Event E0 start
+A1	Temporality E0 past
+A2	Certainty E0 factual
+T1	Disposition 6616 6628	beta-blocker
+E1	Disposition:T1
+A3	Event E1 continue
+A4	Temporality E1 past
+A5	Certainty E1 factual
+T2	NoDisposition 1386 1396	Glucophage
+T3	NoDisposition 1494 1504	Neurontin.
+T4	Disposition 4234 4241	Lovenox
+E4	Disposition:T4
+A6	Event E4 stop
+A7	Temporality E4 past
+A8	Certainty E4 factual
+T5	NoDisposition 1420 1427	aspirin
+T6	NoDisposition 1464 1471	Zestril
+T7	NoDisposition 3543 3551	Klonopin
+T8	NoDisposition 707 721	nitroglycerin.
+T9	Disposition 4260 4270	protamine.
+E9	Disposition:T9
+A9	Event E9 start
+A10	Temporality E9 past
+A11	Certainty E9 factual
+T10	NoDisposition 7457 7463	Celexa
+T11	NoDisposition 4200 4207	aspirin
+T12	NoDisposition 4046 4069	packed red blood cells.
+T13	NoDisposition 3534 3540	Celexa
+T14	Disposition 2697 2704	Lovenox
+E14	Disposition:T14
+A12	Event E14 start
+A13	Temporality E14 past
+A14	Certainty E14 factual
+T15	Disposition 4401 4420	fresh frozen plasma
+E15	Disposition:T15
+A15	Event E15 start
+A16	Temporality E15 past
+A17	Certainty E15 factual
+T16	Disposition 6504 6511	aspirin
+E16	Disposition:T16
+A18	Event E16 start
+A19	Temporality E16 past
+A20	Certainty E16 factual
+T17	NoDisposition 1399 1406	Lipitor
+T18	NoDisposition 1474 1480	Celexa
+T19	NoDisposition 5922 5928	Plavix
+T20	NoDisposition 3522 3531	captopril
+T21	NoDisposition 1483 1491	Klonopin
+T22	NoDisposition 3510 3519	Lopressor
+T23	NoDisposition 3502 3507	Zocor
+T24	NoDisposition 3492 3499	aspirin
+T25	Disposition 6372 6394	packed red blood cells
+E25	Disposition:T25
+A21	Event E25 start
+A22	Temporality E25 past
+A23	Certainty E25 factual
+T26	Disposition 4147 4154	Lovenox
+E26	Disposition:T26
+A24	Event E26 stop
+A25	Temporality E26 past
+A26	Certainty E26 factual
+T27	Disposition 5231 5237	Plavix
+E27	Disposition:T27
+A27	Event E27 stop
+A28	Temporality E27 past
+A29	Certainty E27 factual
+T28	NoDisposition 3728 3742	nitroglycerin.
+T29	NoDisposition 7378 7385	Aspirin
+T30	NoDisposition 7430 7440	glucophage
+T31	NoDisposition 7405 7413	Klonopin
+T32	NoDisposition 4212 4219	Plavix.
+T33	Disposition 4448 4471	packed red blood cells.
+E33	Disposition:T33
+A30	Event E33 start
+A31	Temporality E33 past
+A32	Certainty E33 factual
+T34	Disposition 906 913	heparin
+E34	Disposition:T34
+A33	Event E34 start
+A34	Temporality E34 past
+A35	Certainty E34 factual
+T35	Disposition 6631 6636	Zocor
+E35	Disposition:T35
+A36	Event E35 continue
+A37	Temporality E35 past
+A38	Certainty E35 factual
+T36	NoDisposition 7482 7489	Zestril
+T37	Disposition 562 575	nitroglycerin
+E37	Disposition:T37
+A39	Event E37 start-continue
+A40	Temporality E37 past
+A41	Certainty E37 factual
+T38	NoDisposition 7504 7512	atenolol
+T39	Disposition 6606 6613	aspirin
+E39	Disposition:T39
+A42	Event E39 coninue
+A43	Temporality E39 past
+A44	Certainty E39 factual
+T40	NoDisposition 5931 5938	aspirin
+T41	Disposition 6641 6655	ACE inhibitor.
+E41	Disposition:T41
+A45	Event E41 continue
+A46	Temporality E41 past
+A47	Certainty E41 factual
+T42	NoDisposition 5912 5919	Lovenox
+T43	NoDisposition 1441 1454	nitroglycerin
+T44	NoDisposition 1409 1417	atenolol
+T45	Disposition 7265 7272	Tylenol
+E45	Disposition:T45
+A48	Event E45 start-continue
+A49	Temporality E45 past
+A50	Certainty E45 factual
+T46	NoDisposition 7531 7538	Lipitor
+T47	Disposition 5242 5249	aspirin
+E47	Disposition:T47
+A51	Event E47 stop
+A52	Temporality E47 past
+A53	Certainty E47 factual

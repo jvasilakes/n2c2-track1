@@ -1,0 +1,47 @@
+T0	NoDisposition 2277 2286	Ofloxacin
+T1	NoDisposition 4609 4620	insulin NPH
+T2	NoDisposition 4581 4587	Colace
+T3	NoDisposition 4545 4553	Percocet
+T4	NoDisposition 4442 4450	Coumadin
+T5	NoDisposition 4344 4353	Ofloxacin
+T6	Disposition 4118 4126	Coumadin
+E6	Disposition:T6
+A0	Event E6 start
+A1	Temporality E6 past
+A2	Certainty E6 factual
+T7	Disposition 4073 4080	Heparin
+E7	Disposition:T7
+A3	Event E7 continue
+A4	Temporality E7 past
+A5	Certainty E7 factual
+T8	NoDisposition 3193 3200	Heparin
+T9	NoDisposition 2327 2337	Vancomycin
+T10	NoDisposition 4746 4750	Axid
+T11	NoDisposition 4721 4730	Lopressor
+T12	NoDisposition 4702 4709	Zestril
+T13	NoDisposition 4659 4666	insulin
+T14	NoDisposition 2306 2313	Ecotrin
+T15	NoDisposition 2256 2260	Axid
+T16	NoDisposition 2231 2240	Lopressor
+T17	NoDisposition 2212 2219	Zestril
+T18	NoDisposition 4679 4686	Isordil
+T19	NoDisposition 4316 4326	Vancomycin
+T20	Disposition 3515 3524	urokinase
+E20	Disposition:T20
+A6	Event E20 start
+A7	Temporality E20 past
+A8	Certainty E20 factual
+T21	NoDisposition 2189 2196	Isordil
+T22	Disposition 3503 3510	heparin
+E22	Disposition:T22
+A9	Event E22 start
+A10	Temporality E22 past
+A11	Certainty E22 factual
+T23	NoDisposition 2173 2180	insulin
+T24	NoDisposition 2099 2112	insulin Lente
+T25	Disposition 4380 4391	antibiotics
+E25	Disposition:T25
+A12	Event E25 continue
+A13	Temporality E25 present
+A14	Certainty E25 factual
+T26	NoDisposition 2076 2082	Colace
