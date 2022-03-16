@@ -9,10 +9,10 @@ from transformers import BasicTokenizer
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--indir", type=str,
-                        default='Jake_github/n2c2-track1/n2c2Track1TrainingData/segmented/train',  # noqa
+                        default='n2c2Track1TrainingData/segmented/train',  # noqa
                         help="Directory containing sentence .json files.")
     parser.add_argument("--outdir", type=str,
-                        default='Jake_github/n2c2-track1/n2c2Track1TrainingData/tokenised/train',  # noqa
+                        default='n2c2Track1TrainingData/tokenised/train',  # noqa
                         help="Where to save tokenized files.")
     return parser.parse_args()
 
