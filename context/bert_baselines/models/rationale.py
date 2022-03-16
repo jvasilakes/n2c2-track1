@@ -158,7 +158,6 @@ class BertRationaleClassifier(pl.LightningModule):
             kwargs = self.classifier_loss_kwargs[task]
             self.classifier_loss_fns[task] = clf_loss_fn(**kwargs)
 
-
     def forward(
             self,
             input_ids=None,
@@ -168,8 +167,9 @@ class BertRationaleClassifier(pl.LightningModule):
             head_mask=None,
             inputs_embeds=None,
             offset_mapping=None,
+            entity_spans=None,
             labels=None,
-            entity_spans=None
+            dataset=None,
             ):
         """
         labels: dict from task names to torch.LongTensor labels of
@@ -197,6 +197,13 @@ class BertRationaleClassifier(pl.LightningModule):
 
         clf_outputs = {}
         for (task, clf_head) in self.classifier_heads.items():
+            if dataset is not None:
+                # If doing multi-dataset learning, the task will
+                # be formatted like {dataset}-{label},
+                # e.g., "n2c2Context-Action"
+                if dataset not in task:
+                    continue
+
             # Compute HardKuma gates
             entity_expanded = pooled_entity_output.unsqueeze(1).expand(h.size())  # noqa
             # TODO: Try just passing h.
@@ -237,20 +244,28 @@ class BertRationaleClassifier(pl.LightningModule):
     def compute_transition_rate(z, token_mask):
         total = torch.zeros(z.size(0)).type_as(z)
         J = z.size(1)
-        I = J - 1
+        I = J - 1  # noqa E741: Ambiguous variable name I
         for (i, j) in zip(range(0, I), torch.arange(1, J)):
             zi = z[:, i]
             zj = z[:, j]
             total += torch.abs(zi - zj)
         return total / token_mask[:, :-1].sum(dim=1)
 
-    def training_step(self, batch, batch_idx):
-        task_outputs = self(
+    def get_model_outputs(self, batch):
+        dataset = None
+        if "dataset" in batch.keys():
+            dataset = batch["dataset"]
+        outputs_by_task = self(
                 **batch["encodings"],
+                entity_spans=batch["entity_spans"],
                 labels=batch["labels"],
-                entity_spans=batch["entity_spans"])
+                dataset=dataset)
+        return outputs_by_task
+
+    def training_step(self, batch, batch_idx):
+        outputs_by_task = self.get_model_outputs(batch)
         batch_loss = None
-        for (task, outputs) in task_outputs.items():
+        for (task, outputs) in outputs_by_task.items():
             if batch_loss is None:
                 # So it's on the right device
                 batch_loss = torch.tensor(0.).type_as(outputs.loss)
@@ -266,12 +281,8 @@ class BertRationaleClassifier(pl.LightningModule):
         return batch_loss
 
     def predict_step(self, batch, batch_idx):
-        task_outputs = self(
-                **batch["encodings"],
-                labels=batch["labels"],
-                entity_spans=batch["entity_spans"])
-
-        tasks = list(task_outputs.keys())
+        outputs_by_task = self.get_model_outputs(batch)
+        tasks = list(outputs_by_task.keys())
         inputs_with_predictions = {
                 "texts": batch["texts"],
                 "input_ids": batch["encodings"]["input_ids"],
@@ -282,7 +293,7 @@ class BertRationaleClassifier(pl.LightningModule):
                 "predictions": {task: [] for task in tasks},
                 "zmask": {task: [] for task in tasks},
                 }
-        for (task, outputs) in task_outputs.items():
+        for (task, outputs) in outputs_by_task.items():
             softed = nn.functional.softmax(outputs.logits, dim=1)
             preds = torch.argmax(softed, dim=1)
             inputs_with_predictions["predictions"][task] = preds
@@ -290,13 +301,9 @@ class BertRationaleClassifier(pl.LightningModule):
         return inputs_with_predictions
 
     def validation_step(self, batch, batch_idx, dataloader_idx=0):
-        task_outputs = self(
-                **batch["encodings"],
-                labels=batch["labels"],
-                entity_spans=batch["entity_spans"])
-
+        outputs_by_task = self.get_model_outputs(batch)
         task_metrics = {}
-        for (task, outputs) in task_outputs.items():
+        for (task, outputs) in outputs_by_task.items():
             preds = torch.argmax(outputs.logits, axis=1)
             mask_ratios = self.compute_mask_ratio(
                     outputs.mask, batch["encodings"]["attention_mask"])

@@ -126,9 +126,10 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
             position_ids=None,
             head_mask=None,
             inputs_embeds=None,
-            labels=None,
             offset_mapping=None,
-            entity_spans=None
+            entity_spans=None,
+            labels=None,
+            dataset=None,
             ):
         """
         labels: dict from task names to torch.LongTensor labels of
@@ -158,6 +159,12 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
 
         clf_outputs = {}
         for (task, clf_head) in self.classifier_heads.items():
+            if dataset is not None:
+                # If doing multi-dataset learning, the task will
+                # be formatted like {dataset}-{label},
+                # e.g., "n2c2Context-Action"
+                if dataset not in task:
+                    continue
             logits = clf_head(pooled_output)
             task_labels = labels[task]
             clf_loss_fn = self.classifier_loss_fn(
@@ -172,24 +179,28 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
                     attentions=bert_outputs.attentions)
         return clf_outputs
 
-    def training_step(self, batch, batch_idx):
-        task_outputs = self(
+    def get_model_outputs(self, batch):
+        dataset = None
+        if "dataset" in batch.keys():
+            dataset = batch["dataset"]
+        outputs_by_task = self(
                 **batch["encodings"],
+                entity_spans=batch["entity_spans"],
                 labels=batch["labels"],
-                entity_spans=batch["entity_spans"])
+                dataset=dataset)
+        return outputs_by_task
+
+    def training_step(self, batch, batch_idx):
+        outputs_by_task = self.get_model_outputs(batch)
         total_loss = torch.tensor(0.).to(self.device)
-        for (task, outputs) in task_outputs.items():
+        for (task, outputs) in outputs_by_task.items():
             total_loss += outputs.loss
             self.log(f"train_loss_{task}", outputs.loss)
         return total_loss
 
     def predict_step(self, batch, batch_idx):
-        task_outputs = self(
-                **batch["encodings"],
-                labels=batch["labels"],
-                entity_spans=batch["entity_spans"])
-
-        tasks = list(task_outputs.keys())
+        outputs_by_task = self.get_model_outputs(batch)
+        tasks = list(outputs_by_task.keys())
         inputs_with_predictions = {
                 "texts": batch["texts"],
                 "labels": batch["labels"],
@@ -198,20 +209,16 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
                 "docids": batch["docids"],
                 "predictions": {task: [] for task in tasks}
                 }
-        for (task, outputs) in task_outputs.items():
+        for (task, outputs) in outputs_by_task.items():
             softed = nn.functional.softmax(outputs.logits, dim=1)
             preds = torch.argmax(softed, dim=1)
             inputs_with_predictions["predictions"][task] = preds
         return inputs_with_predictions
 
     def validation_step(self, batch, batch_idx, dataloader_idx=0):
-        task_outputs = self(
-                **batch["encodings"],
-                labels=batch["labels"],
-                entity_spans=batch["entity_spans"])
-
+        outputs_by_task = self.get_model_outputs(batch)
         task_metrics = {}
-        for (task, outputs) in task_outputs.items():
+        for (task, outputs) in outputs_by_task.items():
             preds = torch.argmax(outputs.logits, axis=1)
             task_metrics[task] = {"loss": outputs.loss,
                                   "preds": preds,
