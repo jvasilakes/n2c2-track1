@@ -11,7 +11,9 @@ from pytorch_lightning.loggers import TensorBoardLogger
 from pytorch_lightning.callbacks import ModelCheckpoint
 
 from config import ExperimentConfig
-from data import n2c2ContextDataModule
+from data import DATAMODULE_LOOKUP
+from data.n2c2 import n2c2ContextDataModule
+from data.combined import CombinedDataModule
 from models import MODEL_LOOKUP
 from models.rationale import format_input_ids_and_masks
 
@@ -67,7 +69,7 @@ def main(args):
 
     pl.seed_everything(config.random_seed, workers=True)
 
-    datamodule = n2c2ContextDataModule.from_config(config)
+    datamodule = load_datamodule_from_config(config)
     datamodule.setup()
 
     print("Label Spec")
@@ -94,6 +96,23 @@ def main(args):
 
     curr_time = datetime.datetime.now()
     print(f"End: {curr_time}")
+
+
+def load_datamodule_from_config(config: ExperimentConfig):
+    datamodule = n2c2ContextDataModule.from_config(config)
+    if len(config.auxiliary_data) > 0:
+        all_datamods = [datamodule]
+        dm_names = [datamodule.name]
+        for (dataset_name, kwargs) in config.auxiliary_data.items():
+            datamodule_cls = DATAMODULE_LOOKUP[dataset_name]
+            dm = datamodule_cls.from_config(config, **kwargs)
+            if dm.name in dm_names:
+                raise ValueError(f"Already loaded a datamodule '{dm.name}'! Make sure you're not using duplicate datasets or specify a unique name for any entries under `auxiliary_data`.")  # noqa
+            all_datamods.append(dm)
+            dm_names.append(dm.name)
+        datamodule = CombinedDataModule(
+            all_datamods, dataset_sample_strategy=config.dataset_sample_strategy)  # noqa
+    return datamodule
 
 
 def get_next_experiment_version(logdir, experiment_name):

@@ -45,7 +45,7 @@ class BertRationaleClassifier(pl.LightningModule):
     def from_config(cls, config, datamodule):
         """
         :param config.ExperimentConfig config: config instance
-        :param data.n2c2SentencesDataModule datamodule: data module instance
+        :param data.n2c2.n2c2SentencesDataModule datamodule: data module
         """
         if config.use_entity_spans is False:
             msg = """You specified use_entity_spans=False but BertRationaleClassifer always uses entity spans, so this has been ignored."""  # noqa
@@ -199,11 +199,10 @@ class BertRationaleClassifier(pl.LightningModule):
         for (task, clf_head) in self.classifier_heads.items():
             if dataset is not None:
                 # If doing multi-dataset learning, the task will
-                # be formatted like {dataset}-{label},
-                # e.g., "n2c2Context-Action"
-                if dataset not in task:
+                # be formatted like {dataset}:{label},
+                # e.g., "n2c2Context:Action"
+                if dataset != task.split(':')[0]:
                     continue
-
             # Compute HardKuma gates
             entity_expanded = pooled_entity_output.unsqueeze(1).expand(h.size())  # noqa
             # TODO: Try just passing h.

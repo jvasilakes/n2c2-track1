@@ -2,7 +2,7 @@ import os
 import yaml
 import argparse
 import warnings
-from typing import List, Union
+from typing import List, Dict, Union
 from collections import OrderedDict, defaultdict
 
 
@@ -40,6 +40,8 @@ class ExperimentConfig(object):
                 "tasks_to_load",
                 "window_size",
                 "max_train_examples",
+                "auxiliary_data",
+                "dataset_sample_strategy",
             ],
             "Model": [
                 "model_name",
@@ -80,11 +82,17 @@ class ExperimentConfig(object):
             logdir: str = "logs/",
             random_seed: int = 0,
             # Data
+            # The kwargs below always specify the main n2c2 dataset
             data_dir: str = '',
             sentences_dir: str = '',
             tasks_to_load: Union[List[str], str] = "all",
             window_size: int = 0,
             max_train_examples: int = -1,
+            # {dataset_name: dict()} where dict has name args as above.
+            # dataset_name is used to determine which datamodule to use.
+            auxiliary_data: Dict[str, List] = None,
+            # Ignored if auxiliary_data is None
+            dataset_sample_strategy: str = "proportional",
             # Model
             model_name: str = '',
             bert_model_name_or_path: str = '',
@@ -120,6 +128,8 @@ class ExperimentConfig(object):
         self.tasks_to_load = tasks_to_load
         self.window_size = window_size
         self.max_train_examples = max_train_examples
+        self.auxiliary_data = auxiliary_data or {}
+        self.dataset_sample_strategy = dataset_sample_strategy
         # Model
         self.model_name = model_name
         self.bert_model_name_or_path = bert_model_name_or_path
@@ -236,7 +246,7 @@ class ExperimentConfig(object):
         with open(outpath, 'w') as outF:
             for (param_type, param_names) in self.organized_param_names().items():  # noqa
                 outF.write(f"# {param_type}\n")
-                params_dict = {}
+                params_dict = OrderedDict()
                 for name in param_names:
                     # Don't want to print out all the weird yaml
                     # encodings for python objects.

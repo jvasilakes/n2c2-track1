@@ -21,7 +21,7 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
     """
     bert_model_name_or_path: e.g., 'bert-base-uncased'
     label_spec: dict from task names to number of labels. Can be obtained
-                from data.n2c2SentencesDataModule.label_spec
+                from data.n2c2.n2c2SentencesDataModule.label_spec
     freeze_pretrained: bool. Default False. If True, freeze the BERT layers.
     use_entity_spans: bool. Default False. If True, use only the pooled
                       entity embeddings as input to the classifier heads.
@@ -87,11 +87,9 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
         self.dropout_prob = dropout_prob
         self.lr = lr
         self.weight_decay = weight_decay
-        self.classifier_loss_fn = get_loss_function(classifier_loss_fn)
-        self.classifier_loss_kwargs = classifier_loss_kwargs or {}
-        if "class_weights" in classifier_loss_kwargs.keys():
-            self.class_weights = self._validate_class_weights(
-                classifier_loss_kwargs["class_weights"], self.label_spec)
+        # prepare loss function stuff
+        self.classifier_loss_fn = classifier_loss_fn
+        self.classifier_loss_kwargs = classifier_loss_kwargs
 
         self.bert_config = BertConfig.from_pretrained(
             self.bert_model_name_or_path)
@@ -110,11 +108,16 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
                 insize, outsize, self.entity_pool_fn)
 
         self.classifier_heads = nn.ModuleDict()
+        self.classifier_loss_fns = nn.ModuleDict()
         for (task, num_labels) in label_spec.items():
             self.classifier_heads[task] = nn.Sequential(
                     nn.Dropout(self.dropout_prob),
                     nn.Linear(self.bert_config.hidden_size, num_labels)
                     )
+            # Classifier loss function for this task
+            clf_loss_fn = get_loss_function(self.classifier_loss_fn)
+            kwargs = self.classifier_loss_kwargs[task]
+            self.classifier_loss_fns[task] = clf_loss_fn(**kwargs)
         # save __init__ arguments to self.hparams, which is logged by pl
         self.save_hyperparameters()
 
@@ -161,15 +164,13 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
         for (task, clf_head) in self.classifier_heads.items():
             if dataset is not None:
                 # If doing multi-dataset learning, the task will
-                # be formatted like {dataset}-{label},
-                # e.g., "n2c2Context-Action"
-                if dataset not in task:
+                # be formatted like {dataset}:{label},
+                # e.g., "n2c2Context:Action"
+                if dataset != task.split(':')[0]:
                     continue
             logits = clf_head(pooled_output)
             task_labels = labels[task]
-            clf_loss_fn = self.classifier_loss_fn(
-                    **self.classifier_loss_kwargs[task])
-            clf_loss = clf_loss_fn(
+            clf_loss = self.classifier_loss_fns[task](
                     logits.view(-1, self.label_spec[task]),
                     task_labels.view(-1))
             clf_outputs[task] = SequenceClassifierOutput(
@@ -182,6 +183,7 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
     def get_model_outputs(self, batch):
         dataset = None
         if "dataset" in batch.keys():
+            # We're doing multi-dataset learning
             dataset = batch["dataset"]
         outputs_by_task = self(
                 **batch["encodings"],
