@@ -70,6 +70,34 @@ class ExperimentConfig(object):
         })
 
     @classmethod
+    def from_yaml_file(cls, filepath, errors="raise", **override_kwargs):
+        with open(filepath, 'r') as inF:
+            config = yaml.safe_load(inF)
+        to_del = set()
+        for key in config.keys():
+            if key not in cls.param_names():
+                if errors == "raise":
+                    raise ValueError(f"Unsupported config parameter '{key}'")  # noqa
+                elif errors == "fix":
+                    warnings.warn(f"Ignoring unsupported config parameter '{key}: {config[key]}'.")  # noqa
+                    to_del.add(key)
+            if key in override_kwargs:
+                config[key] = override_kwargs[key]
+        for key in to_del:
+            config.pop(key)
+        conf = cls(**config, run_validate=False)
+        conf.validate(errors=errors)
+        unused_override = [key for key in override_kwargs.keys()
+                           if key not in config.keys()]
+        if len(unused_override) > 0:
+            warnings.warn(f"Ignored the following override kwargs: {unused_override}")  # noqa
+        return conf
+
+    @classmethod
+    def write_default_config(cls, outpath):
+        cls().save_to_yaml(outpath)
+
+    @classmethod
     def param_names(cls):
         return [name for names in cls.organized_param_names().values()
                 for name in names]
@@ -219,28 +247,6 @@ class ExperimentConfig(object):
             raise ConfigError(msg)
         setattr(self, key, cast_value)
         self.validate()
-
-    @classmethod
-    def from_yaml_file(cls, filepath, errors="raise"):
-        with open(filepath, 'r') as inF:
-            config = yaml.safe_load(inF)
-            to_del = set()
-            for key in config.keys():
-                if key not in cls.param_names():
-                    if errors == "raise":
-                        raise ValueError(f"Unsupported config parameter '{key}'")  # noqa
-                    elif errors == "fix":
-                        warnings.warn(f"Ignoring unsupported config parameter '{key}: {config[key]}'.")  # noqa
-                        to_del.add(key)
-            for key in to_del:
-                config.pop(key)
-            conf = cls(**config, run_validate=False)
-            conf.validate(errors=errors)
-            return conf
-
-    @classmethod
-    def write_default_config(cls, outpath):
-        cls().save_to_yaml(outpath)
 
     def save_to_yaml(self, outpath):
         with open(outpath, 'w') as outF:

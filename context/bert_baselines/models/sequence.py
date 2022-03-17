@@ -35,7 +35,7 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
     """
 
     @classmethod
-    def from_config(cls, config, datamodule):
+    def from_config(cls, config, datamodule, **override_kwargs):
         """
         :param config.ExperimentConfig config: config instance
         :param data.n2c2SentencesDataModule datamodule: data module instance
@@ -51,18 +51,24 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
                     val = datamodule.class_weights[task]
                 classifier_loss_kwargs[task][key] = val
 
-        return cls(
-                config.bert_model_name_or_path,
-                datamodule.label_spec,
-                freeze_pretrained=config.freeze_pretrained,
-                use_entity_spans=config.use_entity_spans,
-                entity_pool_fn=config.entity_pool_fn,
-                dropout_prob=config.dropout_prob,
-                lr=config.lr,
-                weight_decay=config.weight_decay,
-                classifier_loss_fn=config.classifier_loss_fn,
-                classifier_loss_kwargs=classifier_loss_kwargs,
-                )
+        kwargs = {
+            "bert_model_name_or_path": config.bert_model_name_or_path,
+            "label_spec": datamodule.label_spec,
+            "freeze_pretrained": config.freeze_pretrained,
+            "use_entity_spans": config.use_entity_spans,
+            "entity_pool_fn": config.entity_pool_fn,
+            "dropout_prob": config.dropout_prob,
+            "lr": config.lr,
+            "weight_decay": config.weight_decay,
+            "classifier_loss_fn": config.classifier_loss_fn,
+            "classifier_loss_kwargs": classifier_loss_kwargs,
+        }
+        for (key, val) in override_kwargs.items():
+            if key == "classifier_loss_kwargs":
+                warnings.warn("Overriding classifier_loss_kwargs not supported. Please change the config file instead.")  # noqa
+                continue
+            kwargs[key] = val
+        return cls(**kwargs)
 
     def __init__(
             self,
