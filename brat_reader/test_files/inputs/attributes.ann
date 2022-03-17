@@ -1,0 +1,20 @@
+T0	problem 2023 2047	left basilar atelectasis
+A0	Assertion T0 present
+T1	problem 6223 6237	ventral hernia
+A1	Assertion T1 present
+T2	problem 919 922	HTN
+A2	Assertion T2 present
+T3	problem 2461 2486	spontaneous echo contrast
+A3	Assertion T3 absent
+T4	problem 754 767	80% LM lesion
+A4	Assertion T4 present
+T5	problem 1950 1968	interstitial edema
+A5	Assertion T5 absent
+T6	problem 455 467	abnormal EKG
+A6	Assertion T6 present
+T7	problem 6219 6222	HTN
+A7	Assertion T7 present
+T8	problem 236 254	recent mild angina
+A8	Assertion T8 conditional
+T9	problem 602 619	perfusion defects
+A9	Assertion T9 present

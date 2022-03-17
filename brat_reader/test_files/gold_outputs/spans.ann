@@ -1,0 +1,14 @@
+T8	NoDisposition 707 721	nitroglycerin.
+T2	NoDisposition 1386 1396	Glucophage
+T5	NoDisposition 1420 1427	aspirin
+T6	NoDisposition 1464 1471	Zestril
+T3	NoDisposition 1494 1504	Neurontin.
+T13	NoDisposition 3534 3540	Celexa
+T7	NoDisposition 3543 3551	Klonopin
+T12	NoDisposition 4046 4069	packed red blood cells.
+T11	NoDisposition 4200 4207	aspirin
+T4	Disposition 4234 4241	Lovenox
+T9	Disposition 4260 4270	protamine.
+T1	Disposition 6616 6628	beta-blocker
+T0	Disposition 7316 7324	Percocet
+T10	NoDisposition 7457 7463	Celexa
