@@ -106,6 +106,30 @@ class Attribute(Annotation):
             self.reference.id == other.reference.id,
         ])
 
+    @property
+    def start_index(self):
+        if self.reference is None:
+            idx = None
+        elif isinstance(self.reference, Span):
+            idx = self.reference.start_index
+        elif isinstance(self.reference, Event):
+            idx = self.reference.span.start_index
+        else:
+            raise ValueError(f"reference must be Span, Event, or None. Got {type(self.reference)}.")  # noqa
+        return idx
+
+    @property
+    def end_index(self):
+        if self.reference is None:
+            idx = None
+        elif isinstance(self.reference, Span):
+            idx = self.reference.end_index
+        elif isinstance(self.reference, Event):
+            idx = self.reference.span.end_index
+        else:
+            raise ValueError(f"reference must be Span, Event, or None. Got {type(self.reference)}.")  # noqa
+        return idx
+
     def to_brat_str(self, output_references=False):
         outlines = []
         if output_references is True:
@@ -133,6 +157,14 @@ class Event(Annotation):
             self.span == other.span,
             self.attributes == other.attributes,
         ])
+
+    @property
+    def start_index(self):
+        return self.span.start_index
+
+    @property
+    def end_index(self):
+        return self.span.end_index
 
     def to_brat_str(self, output_references=False):
         event_str = f"{self.id}\t{self.type}:{self.span.id}"
