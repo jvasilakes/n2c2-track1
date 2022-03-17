@@ -37,6 +37,9 @@ class n2c2ContextDataset(Dataset):
     SORTED_ATTRIBUTES = ["Action", "Actor", "Certainty",
                          "Negation", "Temporality"]
 
+    START_ENTITY_MARKER = '@'
+    END_ENTITY_MARKER = '@'
+
     def __init__(self, data_dir, sentences_dir,
                  label_names="all", window_size=0,
                  max_examples=-1, mark_entities=False):
@@ -91,7 +94,7 @@ class n2c2ContextDataset(Dataset):
         # Surround the entity spans with '@'. E.g., 'He took @Toradol@'.
         if self.mark_entities is True:
             marked_text = text[:entity_start]
-            marked_text += '@' + text[entity_start:entity_end] + '@'
+            marked_text += self.START_ENTITY_MARKER + text[entity_start:entity_end] + self.END_ENTITY_MARKER
             marked_text += text[entity_end:]
             text = marked_text
             entity_end += 2
