@@ -11,9 +11,7 @@ from pytorch_lightning.loggers import TensorBoardLogger
 from pytorch_lightning.callbacks import ModelCheckpoint
 
 from config import ExperimentConfig
-from data import DATAMODULE_LOOKUP
-from data.n2c2 import n2c2ContextDataModule
-from data.combined import CombinedDataModule
+from data import DATAMODULE_LOOKUP, n2c2ContextDataModule, CombinedDataModule
 from models import MODEL_LOOKUP
 from models.rationale import format_input_ids_and_masks
 
@@ -71,6 +69,7 @@ def main(args):
 
     datamodule = load_datamodule_from_config(config)
     datamodule.setup()
+    print(datamodule)
 
     print("Label Spec")
     print('  ' + str(datamodule.label_spec))

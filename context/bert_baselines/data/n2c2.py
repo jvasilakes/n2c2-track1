@@ -159,8 +159,11 @@ class n2c2ContextDataset(Dataset):
             try:
                 sent_i = sent_index_lookup[e.span.start_index]
             except KeyError:
-                print(f"MISSING {e}")
-                continue
+                try:
+                    sent_i = sent_index_lookup[e.span.end_index]
+                except KeyError:
+                    print(f"MISSING {e}")
+                    continue
             sent_idxs.append(sent_i)
         return sent_idxs
 
@@ -380,10 +383,13 @@ class n2c2ContextDataModule(BasicBertDataModule):
 class n2c2AssertionDataset(Dataset):
 
     ENCODINGS = {
-        "Assertion": {"absent": 0,
-                      "conditional": 1,
-                      "hypothetical": 2,
-                      "present": 3}
+        # Task        label: encoding       num_examples
+        "Assertion": {"absent": 0,        # 1594
+                      "associated_with_someone_else": 1,  # 89
+                      "conditional": 2,   # 73
+                      "hypothetical": 3,  # 379
+                      "possible": 4,      # 309
+                      "present": 5}       # 4621
     }
     SORTED_ATTRIBUTES = ["Assertion"]
 
@@ -420,14 +426,23 @@ class n2c2AssertionDataset(Dataset):
         return inv_enc
 
     def inverse_transform(self, task, encoded_labels):
-        return [self._inverse_encodings[task][enc_lab]
-                for enc_lab in encoded_labels]
+        if isinstance(encoded_labels, int):
+            return self._inverse_encodings[task][encoded_labels]
+        elif torch.is_tensor(encoded_labels):
+            if encoded_labels.dim() == 0:
+                return self._inverse_encodings[task][encoded_labels.item()]
+            else:
+                return [self._inverse_encodings[task][enc_lab.item()]
+                        for enc_lab in encoded_labels]
+        else:
+            return [self._inverse_encodings[task][enc_lab]
+                    for enc_lab in encoded_labels]
 
     def __len__(self):
         if self.max_examples == -1:
-            return len(self.events)
+            return len(self.assertions)
         else:
-            return len(self.events[:self.max_examples])
+            return len(self.assertions[:self.max_examples])
 
     def __getitem__(self, idx):
         # Get the sentences in the window
@@ -463,8 +478,9 @@ class n2c2AssertionDataset(Dataset):
         labels = {}
         for attr_name in self.SORTED_ATTRIBUTES:
             if attr_name in self.label_names:
-                attr = asrt.attributes[attr_name]
-                val = attr.value
+                if asrt.type != attr_name:
+                    continue
+                val = asrt.value
                 labels[attr_name] = self.ENCODINGS[attr_name][val]
 
         return {"text": text,
@@ -490,7 +506,7 @@ class n2c2AssertionDataset(Dataset):
         for ann_file in glob(ann_glob):
             anns = BratAnnotations.from_file(ann_file)
             assertions = anns.get_attributes_by_type("Assertion")
-            docid = os.path.basename(ann_file).strip(".ann")
+            docid = os.path.splitext(os.path.basename(ann_file))[0]
             for a in assertions:
                 a.update("docid", docid)
             all_assertions.extend(assertions)
@@ -519,13 +535,220 @@ class n2c2AssertionDataset(Dataset):
             try:
                 sent_i = sent_index_lookup[a.start_index]
             except KeyError:
-                print(f"MISSING {a}")
-                continue
+                try:
+                    sent_i = sent_index_lookup[a.end_index]
+                except KeyError:
+                    print(f"MISSING {a}")
+                    continue
             sent_idxs.append(sent_i)
         return sent_idxs
 
 
 class n2c2AssertionDataModule(BasicBertDataModule):
 
-    def __init__(self, *args, **kwargs):
-        raise NotImplementedError()
+    @classmethod
+    def from_config(cls, config, **override_kwargs):
+        compute_class_weights = config.classifier_loss_kwargs.get("class_weights", None)  # noqa
+        kwargs = {
+            "data_dir": config.data_dir,
+            "sentences_dir": config.sentences_dir,
+            "batch_size": config.batch_size,
+            "bert_model_name_or_path": config.bert_model_name_or_path,
+            "tasks_to_load": config.tasks_to_load,
+            "max_seq_length": config.max_seq_length,
+            "window_size": config.window_size,
+            "max_train_examples": config.max_train_examples,
+            "sample_strategy": config.sample_strategy,
+            "compute_class_weights": compute_class_weights,
+            "mark_entities": config.mark_entities,
+        }
+        for (key, val) in override_kwargs.items():
+            kwargs[key] = val
+        return cls(**kwargs)
+
+    def __init__(self, data_dir, sentences_dir, batch_size,
+                 bert_model_name_or_path, tasks_to_load="all",
+                 max_seq_length=128, window_size=0, sample_strategy=None,
+                 max_train_examples=-1, compute_class_weights=None,
+                 mark_entities=False, name=None):
+        super().__init__(name=name)
+        self.data_dir = data_dir
+        self.sentences_dir = sentences_dir
+        self.batch_size = batch_size
+        self.bert_model_name_or_path = bert_model_name_or_path
+        self.tasks_to_load = tasks_to_load
+        self.max_seq_length = max_seq_length
+        self.window_size = window_size
+        self.sample_strategy = sample_strategy
+        self.max_train_examples = max_train_examples
+        self.compute_class_weights = compute_class_weights
+        self.mark_entities = mark_entities
+
+        self.tokenizer = AutoTokenizer.from_pretrained(
+                self.bert_model_name_or_path, use_fast=True)
+        self._ran_setup = False
+
+    def setup(self, stage=None):
+        train_path = os.path.join(self.data_dir, "train")
+        train_sent_path = os.path.join(self.sentences_dir, "train")
+        self.train = n2c2AssertionDataset(
+                train_path, train_sent_path,
+                window_size=self.window_size,
+                label_names=self.tasks_to_load,
+                max_examples=self.max_train_examples,
+                mark_entities=self.mark_entities)
+
+        val_path = os.path.join(self.data_dir, "dev")
+        val_sent_path = os.path.join(self.sentences_dir, "dev")
+        self.val = n2c2AssertionDataset(
+                val_path, val_sent_path,
+                window_size=self.window_size,
+                label_names=self.tasks_to_load,
+                mark_entities=self.mark_entities)
+
+        test_path = os.path.join(self.data_dir, "test")
+        test_sent_path = os.path.join(self.sentences_dir, "test")
+        if os.path.exists(test_path):
+            self.test = n2c2AssertionDataset(
+                    test_path, test_sent_path,
+                    window_size=self.window_size,
+                    label_names=self.tasks_to_load,
+                    mark_entities=self.mark_entities)
+        else:
+            warnings.warn("No test set found.")
+            self.test = None
+
+        if self.sample_strategy is None:
+            self.sampler = None
+        elif self.sample_strategy == "weighted":
+            # This should give a near-uniform distribution of task
+            # values across examples.
+            weights = self._compute_sample_weights(self.train)
+            self.sampler = WeightedRandomSampler(weights, len(weights))
+        else:
+            msg = f"Unknown sampling strategy {self.sample_strategy}"
+            raise ValueError(msg)
+
+        self._ran_setup = True
+
+    def __str__(self):
+        return f"""{self.__class__}
+  name: {self.name},
+  data_dir: {self.data_dir},
+  sentences_dir: {self.sentences_dir},
+  batch_size: {self.batch_size},
+  bert_model_name_or_path: {self.bert_model_name_or_path},
+  tasks_to_load: {self.tasks_to_load},
+  max_seq_length: {self.max_seq_length},
+  window_size: {self.window_size},
+  max_train_examples: {self.max_train_examples},
+  sample_strategy: {self.sample_strategy},
+  class_weights: {self.class_weights},
+  mark_entities: {self.mark_entities}"""
+
+    @property
+    def label_spec(self):
+        if self._ran_setup is False:
+            raise ValueError("Run setup() first!")
+        if getattr(self, "_label_spec", None) is not None:
+            return self._label_spec
+
+        spec = {task: len(encs) for (task, encs)
+                in self.train.ENCODINGS.items()}
+        if self.tasks_to_load != "all":
+            spec = {task: n for (task, n) in spec.items()
+                    if task in self.tasks_to_load}
+        self._label_spec = spec
+        return self._label_spec
+
+    @property
+    def class_weights(self):
+        if self._ran_setup is False:
+            raise ValueError("Run setup() first!")
+        if getattr(self, "_class_weights", None) is not None:
+            return self._class_weights
+
+        if self.compute_class_weights is None:
+            self._class_weights = None
+        elif self.compute_class_weights == "balanced":
+            self._class_weights = self._compute_class_weights(self.train)
+        else:
+            raise ValueError(f"Unsupported class weighting {self.compute_class_weights}")  # noqa
+        return self._class_weights
+
+    def train_dataloader(self):
+        if self._ran_setup is False:
+            raise ValueError("Run setup() first!")
+        shuffle = True if self.sampler is None else False
+        return DataLoader(self.train, batch_size=self.batch_size,
+                          shuffle=shuffle, collate_fn=self.encode_and_collate,
+                          num_workers=4, sampler=self.sampler)
+
+    def val_dataloader(self):
+        if self._ran_setup is False:
+            raise ValueError("Run setup() first!")
+        return DataLoader(self.val, batch_size=self.batch_size,
+                          collate_fn=self.encode_and_collate, num_workers=4)
+
+    def test_dataloader(self):
+        if self._ran_setup is False:
+            raise ValueError("Run setup() first!")
+        if self.test is not None:
+            return DataLoader(self.test, batch_size=self.batch_size,
+                              collate_fn=self.encode_and_collate,
+                              num_workers=4)
+        return None
+
+    def encode_and_collate(self, examples):
+        batch = {"encodings": None,
+                 "entity_spans": [],
+                 "char_offsets": [],
+                 "texts": [],
+                 "labels": defaultdict(list),
+                 "docids": []
+                 }
+
+        for ex in examples:
+            batch["entity_spans"].append(ex["entity_span"])
+            batch["char_offsets"].append(ex["char_offset"])
+            batch["texts"].append(ex["text"])
+            batch["docids"].append(ex["docid"])
+            for (task, val) in ex["labels"].items():
+                batch["labels"][task].append(val)
+
+        encodings = self.tokenizer(batch["texts"], truncation=True,
+                                   max_length=self.max_seq_length,
+                                   padding="max_length",
+                                   return_offsets_mapping=True,
+                                   return_tensors="pt")
+        batch["encodings"] = encodings
+        batch["entity_spans"] = torch.tensor(batch["entity_spans"])
+        for task in batch["labels"].keys():
+            batch["labels"][task] = torch.tensor(batch["labels"][task])
+        batch["labels"] = dict(batch["labels"])
+        return batch
+
+    # Used with WeightedRandomSampler in setup()
+    def _compute_sample_weights(self, train_dataset):
+        task_vals = [tuple(ex["labels"][task]
+                           for task in train_dataset.label_names)
+                     for ex in train_dataset]
+        val_counts = Counter(task_vals)
+        val_weights = {val: 1. / val_counts[val] for val in val_counts.keys()}
+        sample_weights = [val_weights[task_val] for task_val in task_vals]
+        return sample_weights
+
+    # Weights for each task can be passed to CrossEntropyLoss in a model.
+    def _compute_class_weights(self, train_dataset):
+        y_per_task = defaultdict(list)
+        for ex in train_dataset:
+            for (task, val) in ex["labels"].items():
+                y_per_task[task].append(val)
+        class_weights_per_task = {}
+        for (task, task_y) in y_per_task.items():
+            classes = list(sorted(set(task_y)))
+            weights = compute_class_weight(
+                    "balanced", classes=classes, y=task_y)
+            class_weights_per_task[task] = torch.tensor(
+                    weights, dtype=torch.float)
+        return class_weights_per_task
