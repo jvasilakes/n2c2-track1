@@ -1,0 +1,22 @@
+T0	problem 510 514	PAIN
+A0	Assertion T0 hypothetical
+T1	problem 1261 1271	Post dates
+A1	Assertion T1 present
+T2	problem 1573 1578	fever
+A2	Assertion T2 hypothetical
+T3	problem 1592 1600	bleeding
+A3	Assertion T3 hypothetical
+T4	problem 1647 1661	abdominal pain
+A4	Assertion T4 hypothetical
+T5	problem 1621 1644	foul smelling discharge
+A5	Assertion T5 hypothetical
+T6	problem 1321 1343	observed abnormalities
+A6	Assertion T6 absent
+T7	problem 767 771	NSVD
+A7	Assertion T7 present
+T8	problem 1667 1691	other worrisome symptoms
+A8	Assertion T8 hypothetical
+T9	problem 627 642	Known Allergies
+A9	Assertion T9 absent
+T10	problem 661 680	postdates pregnancy
+A10	Assertion T10 present

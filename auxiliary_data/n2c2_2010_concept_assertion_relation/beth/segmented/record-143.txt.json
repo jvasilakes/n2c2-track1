@@ -1,0 +1,272 @@
+{"sent_index": 0, "start_index": 0, "end_index": 27, "_text": "Admission Date :\n2018-12-26"}
+{"sent_index": 1, "start_index": 28, "end_index": 42, "_text": "Discharge Date"}
+{"sent_index": 2, "start_index": 45, "end_index": 55, "_text": "2019-01-10"}
+{"sent_index": 3, "start_index": 56, "end_index": 69, "_text": "Date of Birth"}
+{"sent_index": 4, "start_index": 72, "end_index": 82, "_text": "1949-02-09"}
+{"sent_index": 5, "start_index": 83, "end_index": 86, "_text": "Sex"}
+{"sent_index": 6, "start_index": 89, "end_index": 90, "_text": "F"}
+{"sent_index": 7, "start_index": 91, "end_index": 98, "_text": "Service"}
+{"sent_index": 8, "start_index": 101, "end_index": 109, "_text": "MEDICINE"}
+{"sent_index": 9, "start_index": 110, "end_index": 119, "_text": "Allergies"}
+{"sent_index": 10, "start_index": 122, "end_index": 158, "_text": "Losartan / Aspirin / Lisinopril-Hctz"}
+{"sent_index": 11, "start_index": 159, "end_index": 168, "_text": "Attending"}
+{"sent_index": 12, "start_index": 171, "end_index": 177, "_text": "Donald"}
+{"sent_index": 13, "start_index": 178, "end_index": 194, "_text": "I Patrick , M.D."}
+{"sent_index": 14, "start_index": 195, "end_index": 218, "_text": "Chief Complaint : fever"}
+{"sent_index": 15, "start_index": 219, "end_index": 255, "_text": "Major Surgical or Invasive Procedure"}
+{"sent_index": 16, "start_index": 258, "end_index": 332, "_text": "Intubation for airway protection tunneled line change over wire 2019-01-08"}
+{"sent_index": 17, "start_index": 333, "end_index": 359, "_text": "History of Present Illness"}
+{"sent_index": 18, "start_index": 362, "end_index": 523, "_text": "69 y/o female wtih PMH significant for ESRD on HD , type 2 DM , and recent PE resulting in PEA arrest admitted through the Juan with sepsis of unknown etiology ."}
+{"sent_index": 19, "start_index": 524, "end_index": 669, "_text": "Pt was recently admitted to The Hospital for Orthopedics from 12-07 thorugh 12-14 with hypotension thought to be secondary to overdiuresis at HD."}
+{"sent_index": 20, "start_index": 670, "end_index": 816, "_text": "However , a septic component to the hypotension was also considered as the pt was found to have citrobacter in her urine and C diff in her stool ."}
+{"sent_index": 21, "start_index": 817, "end_index": 944, "_text": "Pt was then discharged to Arbour-Fuller Hospital Senior Life where she was in her normal state of health until three days ago ."}
+{"sent_index": 22, "start_index": 945, "end_index": 1063, "_text": "Her son reports that she then developed a headache and fevers started three days ago which were treated with tylenol ."}
+{"sent_index": 23, "start_index": 1064, "end_index": 1128, "_text": "Then , this morning she developed fatigue and did not eat well ."}
+{"sent_index": 24, "start_index": 1129, "end_index": 1195, "_text": "He son also notes that she appeared to be working hard to breath ."}
+{"sent_index": 25, "start_index": 1196, "end_index": 1271, "_text": "She was found to be febrile to 101.9 and received levoflox and vancomycin ."}
+{"sent_index": 26, "start_index": 1272, "end_index": 1354, "_text": "Pt was then sent to the The Hospital for Orthopedics Juan for further evaluation ."}
+{"sent_index": 27, "start_index": 1355, "end_index": 1428, "_text": "Per notes , pt denied SOB , CP , and abdominal pain prior to intubation ."}
+{"sent_index": 28, "start_index": 1429, "end_index": 1474, "_text": "She did complain of a left frontal headache ."}
+{"sent_index": 29, "start_index": 1475, "end_index": 1611, "_text": "In the Juan , the pt 's VS were singificant for a fever of 103.8 , tachycardia in the 130s-150s , and initial hypertensive in the 140s ."}
+{"sent_index": 30, "start_index": 1612, "end_index": 1678, "_text": "Her oxygen saturation was 96% on RA but she was tachypneic to 31 ."}
+{"sent_index": 31, "start_index": 1679, "end_index": 1742, "_text": "She was obtunded and was thus intubated for airway protection ."}
+{"sent_index": 32, "start_index": 1743, "end_index": 1827, "_text": "Post-intubation , the pt 's BP acutely dropped to 58/19 in the setting of propofol ."}
+{"sent_index": 33, "start_index": 1828, "end_index": 1914, "_text": "When this medication was discontinued , her BP came back up to the 70s-90s / 30s-50s ."}
+{"sent_index": 34, "start_index": 1915, "end_index": 1961, "_text": "Pt was then initiated on the sepsis protocol ."}
+{"sent_index": 35, "start_index": 1962, "end_index": 2048, "_text": "In the Juan , she received vancomycin , levofloxacin , flagyl , and cefepime ( 2 gm )."}
+{"sent_index": 36, "start_index": 2049, "end_index": 2144, "_text": "She received a total of 4 liters of NS then was started on levophed for continued hypotension ."}
+{"sent_index": 37, "start_index": 2145, "end_index": 2197, "_text": "Pt is now transferred to the FICU for further care ."}
+{"sent_index": 38, "start_index": 2198, "end_index": 2282, "_text": "Per pt 's son , she is bedbound at baseline due to her multiple LE femur fractures ."}
+{"sent_index": 39, "start_index": 2283, "end_index": 2303, "_text": "Past Medical History"}
+{"sent_index": 40, "start_index": 2306, "end_index": 2333, "_text": "1. Type 2 diabetes mellitus"}
+{"sent_index": 41, "start_index": 2334, "end_index": 2400, "_text": "2. Diabetic nephropathy resulting in ESRD for which she is on HD ."}
+{"sent_index": 42, "start_index": 2401, "end_index": 2459, "_text": "Pt was due for HD but missed it secondary to her illness ."}
+{"sent_index": 43, "start_index": 2460, "end_index": 2509, "_text": "She normally receives HD on Mon , Wed , and Fri ."}
+{"sent_index": 44, "start_index": 2510, "end_index": 2544, "_text": "3. Status post left femur fracture"}
+{"sent_index": 45, "start_index": 2545, "end_index": 2560, "_text": "4. Hyponatremia"}
+{"sent_index": 46, "start_index": 2561, "end_index": 2584, "_text": "5. Hypercholesterolemia"}
+{"sent_index": 47, "start_index": 2585, "end_index": 2601, "_text": "6. Unsteady gait"}
+{"sent_index": 48, "start_index": 2602, "end_index": 2614, "_text": "7. Cataracts"}
+{"sent_index": 49, "start_index": 2615, "end_index": 2627, "_text": "8. Back pain"}
+{"sent_index": 50, "start_index": 2628, "end_index": 2643, "_text": "9. Hypertension"}
+{"sent_index": 51, "start_index": 2644, "end_index": 2673, "_text": "10. Anemia of chronic disease"}
+{"sent_index": 52, "start_index": 2674, "end_index": 2815, "_text": "11. S/P L shoulder hemiarthroplasty following a left humeral fracuture in 2018-11-10- Dumas was complicated by a PEA arrest secondary to PE ."}
+{"sent_index": 53, "start_index": 2816, "end_index": 2855, "_text": "12. PE 2018-11-17 leading to PEA arrest"}
+{"sent_index": 54, "start_index": 2856, "end_index": 2870, "_text": "Social History"}
+{"sent_index": 55, "start_index": 2873, "end_index": 2953, "_text": "Lives with son who is very involved and well informed regarding her care needs ."}
+{"sent_index": 56, "start_index": 2954, "end_index": 2966, "_text": "Non smoker ."}
+{"sent_index": 57, "start_index": 2967, "end_index": 2974, "_text": "No EtOH"}
+{"sent_index": 58, "start_index": 2975, "end_index": 2989, "_text": "Family History"}
+{"sent_index": 59, "start_index": 2992, "end_index": 3007, "_text": "Noncontributory"}
+{"sent_index": 60, "start_index": 3008, "end_index": 3028, "_text": "Physical Exam :\n94.5"}
+{"sent_index": 61, "start_index": 3029, "end_index": 3035, "_text": "132/50"}
+{"sent_index": 62, "start_index": 3036, "end_index": 3039, "_text": "108"}
+{"sent_index": 63, "start_index": 3040, "end_index": 3046, "_text": "15\n100"}
+{"sent_index": 64, "start_index": 3048, "end_index": 3065, "_text": "AC 500 / 15 / .50"}
+{"sent_index": 65, "start_index": 3068, "end_index": 3074, "_text": "PEEP 5"}
+{"sent_index": 66, "start_index": 3075, "end_index": 3104, "_text": "Gen - Sedated and intubated ."}
+{"sent_index": 67, "start_index": 3105, "end_index": 3141, "_text": "Grimaces eyes when they are opened ."}
+{"sent_index": 68, "start_index": 3142, "end_index": 3157, "_text": "HEENT - NC AT ."}
+{"sent_index": 69, "start_index": 3158, "end_index": 3176, "_text": "Right pupil ERRL ."}
+{"sent_index": 70, "start_index": 3177, "end_index": 3198, "_text": "Surgical left pupil ."}
+{"sent_index": 71, "start_index": 3199, "end_index": 3217, "_text": "Anicteric sclera ."}
+{"sent_index": 72, "start_index": 3218, "end_index": 3223, "_text": "MMM ."}
+{"sent_index": 73, "start_index": 3224, "end_index": 3239, "_text": "Cardiac - RRR ."}
+{"sent_index": 74, "start_index": 3240, "end_index": 3247, "_text": "S1 S2 ."}
+{"sent_index": 75, "start_index": 3248, "end_index": 3258, "_text": "No m,r,g ."}
+{"sent_index": 76, "start_index": 3259, "end_index": 3283, "_text": "Pulm - CTA anteriorlly ."}
+{"sent_index": 77, "start_index": 3284, "end_index": 3301, "_text": "Abdomen - Obese ."}
+{"sent_index": 78, "start_index": 3302, "end_index": 3308, "_text": "Soft ."}
+{"sent_index": 79, "start_index": 3309, "end_index": 3313, "_text": "NT ."}
+{"sent_index": 80, "start_index": 3314, "end_index": 3318, "_text": "ND ."}
+{"sent_index": 81, "start_index": 3319, "end_index": 3342, "_text": "Positive bowel sounds ."}
+{"sent_index": 82, "start_index": 3343, "end_index": 3375, "_text": "Extremities - Feet mildly cool ."}
+{"sent_index": 83, "start_index": 3376, "end_index": 3402, "_text": "2+ DP pulses bilaterally ."}
+{"sent_index": 84, "start_index": 3403, "end_index": 3434, "_text": "2+ pitting edema bilateral LE ."}
+{"sent_index": 85, "start_index": 3435, "end_index": 3464, "_text": "Skin breakdown between toes ."}
+{"sent_index": 86, "start_index": 3465, "end_index": 3524, "_text": "Pressure ulcers under bilateral LE right above the ankles ."}
+{"sent_index": 87, "start_index": 3525, "end_index": 3549, "_text": "Do not appear infected ."}
+{"sent_index": 88, "start_index": 3550, "end_index": 3596, "_text": "Question mild erythema and warmth of left LE ."}
+{"sent_index": 89, "start_index": 3597, "end_index": 3614, "_text": "Neuro - Sedated ."}
+{"sent_index": 90, "start_index": 3615, "end_index": 3643, "_text": "Downgoing toes bilaterally ."}
+{"sent_index": 91, "start_index": 3644, "end_index": 3690, "_text": "Scruntches eyes closed when try to open them ."}
+{"sent_index": 92, "start_index": 3691, "end_index": 3708, "_text": "Pertinent Results"}
+{"sent_index": 93, "start_index": 3711, "end_index": 3730, "_text": "2018-12-26 11:10 PM"}
+{"sent_index": 94, "start_index": 3731, "end_index": 3744, "_text": "LACTATE - 1.8"}
+{"sent_index": 95, "start_index": 3745, "end_index": 3764, "_text": "2018-12-26 10:53 PM"}
+{"sent_index": 96, "start_index": 3765, "end_index": 3775, "_text": "CRP - 46.2"}
+{"sent_index": 97, "start_index": 3778, "end_index": 3797, "_text": "2018-12-26 10:53 PM"}
+{"sent_index": 98, "start_index": 3798, "end_index": 3811, "_text": "SED RATE - 33"}
+{"sent_index": 99, "start_index": 3814, "end_index": 3833, "_text": "2018-12-26 09:54 PM"}
+{"sent_index": 100, "start_index": 3834, "end_index": 3932, "_text": "TYPE - MIX TEMP - 35.6 RATES -/ 15 TIDAL VOL - 500 PEEP - 5 O2 - 50 PO2 - 34 * PCO2 - 39 PH - 7.32"}
+{"sent_index": 101, "start_index": 3935, "end_index": 3962, "_text": "TOTAL CO2 - 21 BASE XS - -6"}
+{"sent_index": 102, "start_index": 3965, "end_index": 3999, "_text": "ASSIST / CON INTUBATED - INTUBATED"}
+{"sent_index": 103, "start_index": 4000, "end_index": 4019, "_text": "2018-12-26 09:54 PM"}
+{"sent_index": 104, "start_index": 4020, "end_index": 4033, "_text": "LACTATE - 1.6"}
+{"sent_index": 105, "start_index": 4034, "end_index": 4053, "_text": "2018-12-26 09:44 PM"}
+{"sent_index": 106, "start_index": 4054, "end_index": 4195, "_text": "GLUCOSE - 210 * UREA N - 29 * CREAT - 3.2 * SODIUM - 139 POTASSIUM - 3.9 CHLORIDE - 112 * TOTAL CO2 - 17 * ANION GAP - 14\n2018-12-26 09:44 PM"}
+{"sent_index": 107, "start_index": 4196, "end_index": 4245, "_text": "CALCIUM - 6.2 * PHOSPHATE - 1.7 * MAGNESIUM - 0.9"}
+{"sent_index": 108, "start_index": 4248, "end_index": 4267, "_text": "2018-12-26 09:44 PM"}
+{"sent_index": 109, "start_index": 4268, "end_index": 4283, "_text": "CORTISOL - 10.3"}
+{"sent_index": 110, "start_index": 4284, "end_index": 4303, "_text": "2018-12-26 09:44 PM"}
+{"sent_index": 111, "start_index": 4304, "end_index": 4386, "_text": "WBC - 9.0 RBC - 2.93 * HGB - 9.0 * HCT - 29.7 * MCV - 101 * MCH - 30.8 MCHC - 30.4"}
+{"sent_index": 112, "start_index": 4389, "end_index": 4399, "_text": "RDW - 24.1"}
+{"sent_index": 113, "start_index": 4402, "end_index": 4421, "_text": "2018-12-26 09:44 PM"}
+{"sent_index": 114, "start_index": 4422, "end_index": 4448, "_text": "NEUTS - 65.2 LYMPHS - 25.2"}
+{"sent_index": 115, "start_index": 4449, "end_index": 4502, "_text": "MONOS - 6.0 EOS - 3.3 BASOS - 0.4\n2018-12-26 09:44 PM"}
+{"sent_index": 116, "start_index": 4503, "end_index": 4594, "_text": "HYPOCHROM - 3+ ANISOCYT - 3+ POIKILOCY - 1+ MACROCYT - 3+ MICROCYT - 1+\n2018-12-26 09:44 PM"}
+{"sent_index": 117, "start_index": 4595, "end_index": 4630, "_text": "PLT COUNT - 177\n2018-12-26 08:28 PM"}
+{"sent_index": 118, "start_index": 4631, "end_index": 4645, "_text": "CORTISOL - 9.3"}
+{"sent_index": 119, "start_index": 4646, "end_index": 4659, "_text": "2018-12-26 08"}
+{"sent_index": 120, "start_index": 4660, "end_index": 4671, "_text": "28 PM URINE"}
+{"sent_index": 121, "start_index": 4672, "end_index": 4721, "_text": "COLOR - Yellow APPEAR - SlHazy SP Barajas - 1.005"}
+{"sent_index": 122, "start_index": 4722, "end_index": 4735, "_text": "2018-12-26 08"}
+{"sent_index": 123, "start_index": 4736, "end_index": 4747, "_text": "28 PM URINE"}
+{"sent_index": 124, "start_index": 4748, "end_index": 4865, "_text": "BLOOD - LGE NITRITE - NEG PROTEIN - 500 GLUCOSE - TR KETONE - NEG BILIRUBIN - NEG UROBILNGN - NEG PH - 7.0 LEUK - NEG"}
+{"sent_index": 125, "start_index": 4866, "end_index": 4891, "_text": "2018-12-26 08:28 PM URINE"}
+{"sent_index": 126, "start_index": 4892, "end_index": 4901, "_text": "RBC - 225"}
+{"sent_index": 127, "start_index": 4904, "end_index": 4972, "_text": "WBC - 8 * BACTERIA - NONE YEAST - NONE EPI - < 1\n2018-12-26 02:40 PM"}
+{"sent_index": 128, "start_index": 4973, "end_index": 4988, "_text": "CK ( CPK )- 350"}
+{"sent_index": 129, "start_index": 4991, "end_index": 5010, "_text": "2018-12-26 02:40 PM"}
+{"sent_index": 130, "start_index": 5011, "end_index": 5037, "_text": "CK - MB - 3 cTropnT - 0.40"}
+{"sent_index": 131, "start_index": 5040, "end_index": 5116, "_text": "MICRO : sputum 12-27 : grm stn and cx negative\ninfl A and B 12-27 : negative"}
+{"sent_index": 132, "start_index": 5117, "end_index": 5144, "_text": "CSF grm stn / cx : negative"}
+{"sent_index": 133, "start_index": 5145, "end_index": 5159, "_text": "urine cx 12-26"}
+{"sent_index": 134, "start_index": 5164, "end_index": 5255, "_text": "100K VRE likely colonized , 01-03 yest and VRE\nc diff neg : 12-28 , 12-31 , 01-01 , 01-02 ."}
+{"sent_index": 135, "start_index": 5256, "end_index": 5299, "_text": "bld cx 12-26 , 12-27 , 12-28 , 12-31 - NG ."}
+{"sent_index": 136, "start_index": 5300, "end_index": 5351, "_text": "01-01 , 01-02 X 3 , 01-03 , 01-04 , 11/27X 2 NGTD ."}
+{"sent_index": 137, "start_index": 5352, "end_index": 5377, "_text": "Catheter tip 01-05 , NG ."}
+{"sent_index": 138, "start_index": 5378, "end_index": 5398, "_text": "C. Diff B - negative"}
+{"sent_index": 139, "start_index": 5399, "end_index": 5432, "_text": "Tunnled catheter tip 01-08 - ngtd"}
+{"sent_index": 140, "start_index": 5433, "end_index": 5463, "_text": "HERPES SIMPLEX VIRUS PCR - PND"}
+{"sent_index": 141, "start_index": 5464, "end_index": 5485, "_text": "Brief Hospital Course"}
+{"sent_index": 142, "start_index": 5488, "end_index": 5491, "_text": "A/P"}
+{"sent_index": 143, "start_index": 5494, "end_index": 5655, "_text": "69 y/o female wtih PMH significant for ESRD on HD , type 2 DM , and recent PE resulting in PEA arrest admitted through the Juan with sepsis of unknown etiology ."}
+{"sent_index": 144, "start_index": 5656, "end_index": 5700, "_text": "1. Sepsis / ID- Started on sepsis protocol ."}
+{"sent_index": 145, "start_index": 5701, "end_index": 5827, "_text": "Unclear etiology headache over the three days prior to admission in association with fever was concerning for a CNS etiology ."}
+{"sent_index": 146, "start_index": 5828, "end_index": 5885, "_text": "Covered broadly with vancomycin , flagyl , and cefipime ."}
+{"sent_index": 147, "start_index": 5886, "end_index": 6004, "_text": "Given stress dose steroids empirically and Sanchez stim showed cortisol of 9.3 --> 10.3 therefore steroids continued ."}
+{"sent_index": 148, "start_index": 6005, "end_index": 6065, "_text": "CXR , LP , UA and abdominal CT showed no sign of infection ."}
+{"sent_index": 149, "start_index": 6066, "end_index": 6101, "_text": "PICC line was removed empirically ."}
+{"sent_index": 150, "start_index": 6102, "end_index": 6150, "_text": "Tip could not be cultured due to contamination ."}
+{"sent_index": 151, "start_index": 6151, "end_index": 6204, "_text": "Cultures drawn off the HD cath are negative to date ."}
+{"sent_index": 152, "start_index": 6205, "end_index": 6290, "_text": "Patient 's LE ulcers appear chronic and do not appear to be the source of infection ."}
+{"sent_index": 153, "start_index": 6291, "end_index": 6372, "_text": "Her left knee is slightly erythematous compared to the right but not impressive ."}
+{"sent_index": 154, "start_index": 6373, "end_index": 6390, "_text": "Joint is mobile ."}
+{"sent_index": 155, "start_index": 6391, "end_index": 6453, "_text": "Nasal washings for influenza were negative ; culture pending ."}
+{"sent_index": 156, "start_index": 6454, "end_index": 6495, "_text": "Patient improved over the next few days ."}
+{"sent_index": 157, "start_index": 6496, "end_index": 6524, "_text": "Steroids were discontinued ."}
+{"sent_index": 158, "start_index": 6525, "end_index": 6610, "_text": "On 12-18 flagyl and cefepime were discontinued as all culture data negative to date ."}
+{"sent_index": 159, "start_index": 6611, "end_index": 6693, "_text": "Plan to continue vancomycin for 08-19 day course to treat empiric line infection ."}
+{"sent_index": 160, "start_index": 6694, "end_index": 6817, "_text": "Urine culture came back positive for VRE , however , since patient improved without treatement ( ie Linezolid ) initially ."}
+{"sent_index": 161, "start_index": 6818, "end_index": 6867, "_text": "After transfer to the floor when she was stable ."}
+{"sent_index": 162, "start_index": 6868, "end_index": 6955, "_text": "On the floor the Vancomycin was discontinued as the catheter tip culture was negative ."}
+{"sent_index": 163, "start_index": 6956, "end_index": 7036, "_text": "ID was consulted who suggested broad spectrum antibiotics if she were to spike ."}
+{"sent_index": 164, "start_index": 7037, "end_index": 7171, "_text": "When pt spiked a temperature and became hypotensive she was started on Linezolid was started for presumed VRE infection in the urine ."}
+{"sent_index": 165, "start_index": 7172, "end_index": 7217, "_text": "She will be treated for total 14 day course ."}
+{"sent_index": 166, "start_index": 7218, "end_index": 7328, "_text": "She was also started on fluconazole for yeast in the urine , to be treated with fluconazole for total 7 days ."}
+{"sent_index": 167, "start_index": 7329, "end_index": 7371, "_text": "She was given Flagyl for presumed C. Diff."}
+{"sent_index": 168, "start_index": 7372, "end_index": 7414, "_text": "Colitis , however this was stopped when C."}
+{"sent_index": 169, "start_index": 7415, "end_index": 7462, "_text": "Diff B toxin came back negative on 2019-01-10 ."}
+{"sent_index": 170, "start_index": 7463, "end_index": 7545, "_text": "The tunneled catheter line was changed over a wire and the tip was also negative ."}
+{"sent_index": 171, "start_index": 7546, "end_index": 7627, "_text": "2. Respiratory - Intubated for airway protection due to change in mental status ."}
+{"sent_index": 172, "start_index": 7628, "end_index": 7662, "_text": "Extubated 12-28 with no incident ."}
+{"sent_index": 173, "start_index": 7663, "end_index": 7823, "_text": "3. ECG changes - Patient had an episode of chest pain during her hospital stay that was both right and left sided with no radiation and no associated symptoms ."}
+{"sent_index": 174, "start_index": 7824, "end_index": 7865, "_text": "ECG showed new diffuse TWI in all leads ."}
+{"sent_index": 175, "start_index": 7866, "end_index": 7911, "_text": "Cardiac enzymes were cycled and were normal ."}
+{"sent_index": 176, "start_index": 7912, "end_index": 7965, "_text": "Echo was obtained which showed WMA and EF of 35-40% ."}
+{"sent_index": 177, "start_index": 7966, "end_index": 8078, "_text": "Pt was note started on ASA as she does not tolerate this well , BB was also not started given SBPs in the 110s ."}
+{"sent_index": 178, "start_index": 8079, "end_index": 8105, "_text": "Statin was also deffered ."}
+{"sent_index": 179, "start_index": 8106, "end_index": 8165, "_text": "She may be started on ASA , BB , statin by PCP as Stephen ."}
+{"sent_index": 180, "start_index": 8166, "end_index": 8186, "_text": "4. Shoulder fracture"}
+{"sent_index": 181, "start_index": 8189, "end_index": 8310, "_text": "Patient is s/p a left hip fracture ( decision not to operate ) and a left shoulder fracture with hemiarthroplasty 11-14 ."}
+{"sent_index": 182, "start_index": 8311, "end_index": 8407, "_text": "Patient was found to have a new humerus fracture distal to the hardware on film this admission ."}
+{"sent_index": 183, "start_index": 8408, "end_index": 8478, "_text": "Assumed to be secondary to trauma when moving patient into ambulance ."}
+{"sent_index": 184, "start_index": 8479, "end_index": 8562, "_text": "CMED service was consulted and recommended wtd woulnd care and sling at all times ."}
+{"sent_index": 185, "start_index": 8563, "end_index": 8624, "_text": "Wound care should be continued as described after discharge ."}
+{"sent_index": 186, "start_index": 8625, "end_index": 8637, "_text": "5. Type 2 DM"}
+{"sent_index": 187, "start_index": 8640, "end_index": 8757, "_text": "Patient was initially covered with an insulin drip while septic and then transitioned back to insulin sliding scale ."}
+{"sent_index": 188, "start_index": 8758, "end_index": 8820, "_text": "6. ESRD on HD - Pt has ESRD secondary to her DM and is on HD ."}
+{"sent_index": 189, "start_index": 8821, "end_index": 8879, "_text": "She was dialysed but was slightly limited by hypotension ."}
+{"sent_index": 190, "start_index": 8880, "end_index": 8929, "_text": "Dialyzed 12-28 with plan to dialyze again 12-31 ."}
+{"sent_index": 191, "start_index": 8930, "end_index": 8982, "_text": "Her dialysis was managed by renal service in house ."}
+{"sent_index": 192, "start_index": 8983, "end_index": 9017, "_text": "7. PE ( 11-14 )- On heparin drip ."}
+{"sent_index": 193, "start_index": 9018, "end_index": 9046, "_text": "Restared coumadin on 12-29 ."}
+{"sent_index": 194, "start_index": 9047, "end_index": 9095, "_text": "Heparin discontinued on 01-01 when INR was 2.0 ."}
+{"sent_index": 195, "start_index": 9096, "end_index": 9176, "_text": "Coumadin was stopped and she received fFP for tunneled line change over a wire ."}
+{"sent_index": 196, "start_index": 9177, "end_index": 9223, "_text": "Coumadin was restarted at a dose of 2 mg qhs ."}
+{"sent_index": 197, "start_index": 9224, "end_index": 9285, "_text": "This should be titrated after discharge for INR goal of 2-3 ."}
+{"sent_index": 198, "start_index": 9286, "end_index": 9292, "_text": "8. PVD"}
+{"sent_index": 199, "start_index": 9295, "end_index": 9373, "_text": "Dry gangrene of toes bilaterally w/ necrosis of the heels and posterior calf ."}
+{"sent_index": 200, "start_index": 9374, "end_index": 9417, "_text": "Continue to monitor for sign of infection ."}
+{"sent_index": 201, "start_index": 9418, "end_index": 9470, "_text": "On vit C. and zinc as well to aid w/ wound healing ."}
+{"sent_index": 202, "start_index": 9471, "end_index": 9523, "_text": "Wound care consult given anasarca to prevent decub ."}
+{"sent_index": 203, "start_index": 9524, "end_index": 9674, "_text": "9. Left UE markedly more edematous than right UE , this could be from fracture , or there could be a clot , an abscess in the area also a possiblity ."}
+{"sent_index": 204, "start_index": 9675, "end_index": 9700, "_text": "Ultrasound without clot ."}
+{"sent_index": 205, "start_index": 9701, "end_index": 9745, "_text": "Continue elevation and tight dressing to LUE"}
+{"sent_index": 206, "start_index": 9748, "end_index": 9751, "_text": "10."}
+{"sent_index": 207, "start_index": 9752, "end_index": 9835, "_text": "Access - Left IJ placed 12-26 in Juan was discontinued during the hospitilization ."}
+{"sent_index": 208, "start_index": 9836, "end_index": 9911, "_text": "Right dialysis catheter ( 2018-11-05 ) was changed over a wire 2019-01-08 ."}
+{"sent_index": 209, "start_index": 9912, "end_index": 10022, "_text": "PICC line placed 2019-01-08 , this should be discontinued immediately after pt finishes the linezolid course ."}
+{"sent_index": 210, "start_index": 10023, "end_index": 10112, "_text": "11. Code status - Initially full code then made DNR / DNI after family meeting on 02-27 ."}
+{"sent_index": 211, "start_index": 10113, "end_index": 10174, "_text": "Made full code again on 12-30 after family meeting with son ."}
+{"sent_index": 212, "start_index": 10175, "end_index": 10209, "_text": "Larry would like everything done ."}
+{"sent_index": 213, "start_index": 10210, "end_index": 10246, "_text": "12. Communication - With pt 's son ."}
+{"sent_index": 214, "start_index": 10247, "end_index": 10308, "_text": "His name is Andrea and his phone number is 794 1029 x. 1385 ."}
+{"sent_index": 215, "start_index": 10309, "end_index": 10333, "_text": "Medications on Admission"}
+{"sent_index": 216, "start_index": 10336, "end_index": 10363, "_text": "1. Ascorbic acid 500 mg BID"}
+{"sent_index": 217, "start_index": 10364, "end_index": 10388, "_text": "2. Folic acid 1 mg daily"}
+{"sent_index": 218, "start_index": 10389, "end_index": 10419, "_text": "3. Humulin insulin 2 units QAM"}
+{"sent_index": 219, "start_index": 10420, "end_index": 10427, "_text": "4. RISS"}
+{"sent_index": 220, "start_index": 10428, "end_index": 10453, "_text": "5. Pantoprazole 40 mg BID"}
+{"sent_index": 221, "start_index": 10454, "end_index": 10479, "_text": "6. Neutra phos 2 tabs BID"}
+{"sent_index": 222, "start_index": 10480, "end_index": 10512, "_text": "7. Vitamin B complex 1 tab daily"}
+{"sent_index": 223, "start_index": 10513, "end_index": 10539, "_text": "8. Coumadin - Dose unknown"}
+{"sent_index": 224, "start_index": 10540, "end_index": 10565, "_text": "9. Tylenol 650 mg Q4H PRN"}
+{"sent_index": 225, "start_index": 10566, "end_index": 10594, "_text": "10. Ondansetron 4 mg Q6H PRN"}
+{"sent_index": 226, "start_index": 10595, "end_index": 10616, "_text": "Discharge Medications"}
+{"sent_index": 227, "start_index": 10619, "end_index": 10699, "_text": "1. Ascorbic Acid 500 mg Tablet Sig : One ( 1 ) Tablet PO BID ( 2 times a day ) ."}
+{"sent_index": 228, "start_index": 10700, "end_index": 10769, "_text": "2. Folic Acid 1 mg Tablet Sig : One ( 1 ) Tablet PO DAILY ( Daily ) ."}
+{"sent_index": 229, "start_index": 10770, "end_index": 10845, "_text": "3. Zinc Sulfate 220 mg Capsule Sig : One ( 1 ) Capsule PO DAILY ( Daily ) ."}
+{"sent_index": 230, "start_index": 10846, "end_index": 10938, "_text": "4. Acetaminophen 325 mg Tablet Sig : 1-2 Tablets PO Q4-6H ( every 4 to 6 hours ) as needed ."}
+{"sent_index": 231, "start_index": 10939, "end_index": 11038, "_text": "5. Papain - Urea 544 287 0616 unit - mg / g Ointment Sig : One ( 1 ) Appl Topical DAILY ( Daily ) ."}
+{"sent_index": 232, "start_index": 11039, "end_index": 11128, "_text": "6. Ipratropium Bromide 0.02 % Solution Sig : One ( 1 ) Inhalation Q4H ( every 4 hours ) ."}
+{"sent_index": 233, "start_index": 11129, "end_index": 11231, "_text": "7. Calcium Acetate 667 mg Tablet Sig : One ( 1 ) Tablet PO TID W/ MEALS ( 3 TIMES A DAY WITH MEALS ) ."}
+{"sent_index": 234, "start_index": 11232, "end_index": 11342, "_text": "8. Metoprolol Tartrate 25 mg Tablet Sig : 0.5 Tablet PO TID ( 3 times a day ) : Hold for SBP < 100 , HR < 60 ."}
+{"sent_index": 235, "start_index": 11343, "end_index": 11434, "_text": "9. Fluconazole 200 mg Tablet Sig : One ( 1 ) Tablet PO Q24H ( every 24 hours ) for 2 days ."}
+{"sent_index": 236, "start_index": 11435, "end_index": 11633, "_text": "10. Insulin Regular Human 300 unit / 3 mL Insulin Pen Sig : as directed Subcutaneous four times a day : Please administer 8 units glargine at dinner and regular insulin sliding scale as prescribed ."}
+{"sent_index": 237, "start_index": 11634, "end_index": 11737, "_text": "11. Warfarin 2 mg Tablet Sig : One ( 1 ) Tablet PO HS ( at bedtime ) : Titrate dose to Goal INR 03-15 ."}
+{"sent_index": 238, "start_index": 11738, "end_index": 11748, "_text": "Tablet ( s"}
+{"sent_index": 239, "start_index": 11751, "end_index": 11779, "_text": "12. Linezolid 600 mg IV Q12H"}
+{"sent_index": 240, "start_index": 11780, "end_index": 11942, "_text": "13. Heparin Flush PICC ( 100 units / ml ) 2 ml IV DAILY : PRN 10 ml NS followed by 2 ml of 100 Units / ml heparin ( 200 units heparin ) each lumen Daily and PRN ."}
+{"sent_index": 241, "start_index": 11943, "end_index": 11969, "_text": "Inspect site every shift ."}
+{"sent_index": 242, "start_index": 11970, "end_index": 12124, "_text": "14. Heparin Flush CVL ( 100 units / ml ) 1 ml IV DAILY : PRN\n10ml NS followed by 1ml of 100 units/ml heparin ( 100 units heparin ) each lumen QD and PRN ."}
+{"sent_index": 243, "start_index": 12125, "end_index": 12149, "_text": "Inspect site every shift"}
+{"sent_index": 244, "start_index": 12150, "end_index": 12194, "_text": "15. Dolasetron Mesylate 12.5 mg IV Q8H : PRN"}
+{"sent_index": 245, "start_index": 12195, "end_index": 12209, "_text": "16. medication"}
+{"sent_index": 246, "start_index": 12210, "end_index": 12262, "_text": "Please complete a total 14 day course of linezolid ."}
+{"sent_index": 247, "start_index": 12263, "end_index": 12293, "_text": "Stop linezolid on 2019-01-17 ."}
+{"sent_index": 248, "start_index": 12294, "end_index": 12381, "_text": "The PICC line should be discontinued promptly after the linezolid course is completed ."}
+{"sent_index": 249, "start_index": 12382, "end_index": 12403, "_text": "Discharge Disposition"}
+{"sent_index": 250, "start_index": 12406, "end_index": 12419, "_text": "Extended Care"}
+{"sent_index": 251, "start_index": 12420, "end_index": 12428, "_text": "Facility"}
+{"sent_index": 252, "start_index": 12431, "end_index": 12483, "_text": "Newton-Wellesley Hospital for the Aged - Acute Rehab"}
+{"sent_index": 253, "start_index": 12484, "end_index": 12503, "_text": "Discharge Diagnosis"}
+{"sent_index": 254, "start_index": 12506, "end_index": 12522, "_text": "Sepsis -? source"}
+{"sent_index": 255, "start_index": 12523, "end_index": 12655, "_text": "Chronic Kidney disease - on hemodialysis type 2 diabetes hypercholestrolemia anemia of chornic disease h/o PE , s/p PEA arrest 11-14"}
+{"sent_index": 256, "start_index": 12656, "end_index": 12675, "_text": "Discharge Condition"}
+{"sent_index": 257, "start_index": 12678, "end_index": 12684, "_text": "Stable"}
+{"sent_index": 258, "start_index": 12685, "end_index": 12707, "_text": "Discharge Instructions"}
+{"sent_index": 259, "start_index": 12710, "end_index": 12791, "_text": "You were admitted with low blood pressure and fevers likely due to an infection ."}
+{"sent_index": 260, "start_index": 12792, "end_index": 12922, "_text": "Although there was never any bacteria isolated from the blood you had some bacteria in the urine which you are being treated for ."}
+{"sent_index": 261, "start_index": 12923, "end_index": 12994, "_text": "It is important that you complete the antibiotic course as prescribed ."}
+{"sent_index": 262, "start_index": 12995, "end_index": 13091, "_text": "Please continue to take all medications as prescirbed and follow up with all your appointments ."}
+{"sent_index": 263, "start_index": 13092, "end_index": 13183, "_text": "If you have chest pain , shortness of breath , diahrrea or fevers please contact your PCP ."}
+{"sent_index": 264, "start_index": 13184, "end_index": 13259, "_text": "Robert the shortness of breath gets worse please return to emergency room ."}
+{"sent_index": 265, "start_index": 13260, "end_index": 13336, "_text": "If you have fevers please contact your PCP or return to the emergency room ."}
+{"sent_index": 266, "start_index": 13337, "end_index": 13358, "_text": "Followup Instructions"}
+{"sent_index": 267, "start_index": 13361, "end_index": 13448, "_text": "Please call ( 664 ) 369-9786 to set up an appointment with your primary care doctor Dr."}
+{"sent_index": 268, "start_index": 13449, "end_index": 13492, "_text": "Andrew Shelton in 1-2 wks after discharge ."}
+{"sent_index": 269, "start_index": 13493, "end_index": 13520, "_text": "Cleveland Barbara MD 00-732"}
+{"sent_index": 270, "start_index": 13521, "end_index": 13576, "_text": "Completed by : Sharon Frank MD 75-572 2019-01-10 @ 1333"}
+{"sent_index": 271, "start_index": 13577, "end_index": 13668, "_text": "Signed electronically by : DR. Janice Oconnell on : Kent 2019-01-10 3:28 PM\n( End of Report"}

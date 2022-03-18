@@ -1,0 +1,106 @@
+{"sent_index": 0, "start_index": 0, "end_index": 14, "_text": "Admission Date"}
+{"sent_index": 1, "start_index": 17, "end_index": 27, "_text": "2015-06-05"}
+{"sent_index": 2, "start_index": 28, "end_index": 42, "_text": "Discharge Date"}
+{"sent_index": 3, "start_index": 45, "end_index": 55, "_text": "2015-06-10"}
+{"sent_index": 4, "start_index": 56, "end_index": 69, "_text": "Date of Birth"}
+{"sent_index": 5, "start_index": 72, "end_index": 82, "_text": "2015-06-05"}
+{"sent_index": 6, "start_index": 83, "end_index": 86, "_text": "Sex"}
+{"sent_index": 7, "start_index": 89, "end_index": 90, "_text": "M"}
+{"sent_index": 8, "start_index": 91, "end_index": 98, "_text": "Service"}
+{"sent_index": 9, "start_index": 101, "end_index": 112, "_text": "Neonatology"}
+{"sent_index": 10, "start_index": 113, "end_index": 120, "_text": "HISTORY"}
+{"sent_index": 11, "start_index": 123, "end_index": 291, "_text": "The patient is a 1,770 gram male infant born by stat cesarean section for fetal bradycardia at 30-6/7 weeks gestation to a 29-year-old gravida 3 , para 0 now 1 mother ."}
+{"sent_index": 12, "start_index": 292, "end_index": 457, "_text": "The pregnancy was unremarkable until 2015-06-01 when the mother presented to Shriner 's Hospital for Crippled Children for increased blood pressure and proteinuria ."}
+{"sent_index": 13, "start_index": 458, "end_index": 562, "_text": "She was transferred to Charles River Hospital and was treated with magnesium sulfate and betamethasone ."}
+{"sent_index": 14, "start_index": 563, "end_index": 659, "_text": "The morning of admission the mother developed vaginal bleeding and fetal bradycardia was noted ."}
+{"sent_index": 15, "start_index": 660, "end_index": 711, "_text": "Therefore , a stat cesarean section was performed ."}
+{"sent_index": 16, "start_index": 712, "end_index": 780, "_text": "The infant emerged limp and without spontaneous respiratory effort ."}
+{"sent_index": 17, "start_index": 781, "end_index": 835, "_text": "He was given bag mask ventilation with good response ."}
+{"sent_index": 18, "start_index": 836, "end_index": 893, "_text": "Apgar scores were 6 at one minute and 8 at five minutes ."}
+{"sent_index": 19, "start_index": 894, "end_index": 991, "_text": "PRENATAL SCREENS :\nO+ , hepatitis B surface antigen negative ,\nRPR nonreactive , rubella immune ."}
+{"sent_index": 20, "start_index": 992, "end_index": 1022, "_text": "ADMISSION PHYSICAL EXAMINATION"}
+{"sent_index": 21, "start_index": 1025, "end_index": 1059, "_text": "The birth weight was 1,770 grams ."}
+{"sent_index": 22, "start_index": 1060, "end_index": 1118, "_text": "The patient was in mild to moderate respiratory distress ."}
+{"sent_index": 23, "start_index": 1119, "end_index": 1148, "_text": "He was a nondysmorphic male ."}
+{"sent_index": 24, "start_index": 1149, "end_index": 1193, "_text": "Anterior fontanel was soft , open and flat ."}
+{"sent_index": 25, "start_index": 1194, "end_index": 1234, "_text": "The ears and eyes were normally placed ."}
+{"sent_index": 26, "start_index": 1235, "end_index": 1258, "_text": "The palate was intact ."}
+{"sent_index": 27, "start_index": 1259, "end_index": 1286, "_text": "The oropharynx was benign ."}
+{"sent_index": 28, "start_index": 1287, "end_index": 1330, "_text": "Neck was supple without masses or defects ."}
+{"sent_index": 29, "start_index": 1331, "end_index": 1392, "_text": "The lungs were coarse bilaterally with moderate retractions ."}
+{"sent_index": 30, "start_index": 1393, "end_index": 1485, "_text": "The cardiovascular examination revealed S1 and S2 regular , no murmurs , 2+ femoral pulses ."}
+{"sent_index": 31, "start_index": 1486, "end_index": 1517, "_text": "He was warm and well perfused ."}
+{"sent_index": 32, "start_index": 1518, "end_index": 1600, "_text": "The abdomen was benign , flat , nontender , nondistended , no hepatosplenomegaly ."}
+{"sent_index": 33, "start_index": 1601, "end_index": 1664, "_text": "He had a normal male phallus and bilaterally descended testes ."}
+{"sent_index": 34, "start_index": 1665, "end_index": 1706, "_text": "The anus was patent and normally placed ."}
+{"sent_index": 35, "start_index": 1707, "end_index": 1739, "_text": "Hips were stable without clunk ."}
+{"sent_index": 36, "start_index": 1740, "end_index": 1783, "_text": "The extremities were normal in appearance ."}
+{"sent_index": 37, "start_index": 1784, "end_index": 1814, "_text": "The skin was without lesions ."}
+{"sent_index": 38, "start_index": 1815, "end_index": 1924, "_text": "The neurological examination was appropriate for age with normal tone and strength and appropriate reflexes ."}
+{"sent_index": 39, "start_index": 1925, "end_index": 1940, "_text": "HOSPITAL COURSE"}
+{"sent_index": 40, "start_index": 1943, "end_index": 2034, "_text": "1. Cardiovascular :\nThe patient remained cardiovascularly stable throughout the admission ."}
+{"sent_index": 41, "start_index": 2035, "end_index": 2144, "_text": "He was noted to have some apnea and bradycardic spells of prematurity and was therefore started on caffeine ."}
+{"sent_index": 42, "start_index": 2145, "end_index": 2242, "_text": "With the initiation of caffeine therapy the patient has had no more apnea or bradycardic events ."}
+{"sent_index": 43, "start_index": 2243, "end_index": 2257, "_text": "2. Respiratory"}
+{"sent_index": 44, "start_index": 2260, "end_index": 2358, "_text": "The patient was initially started on nasal prong CPAP at 6 and required additional oxygen to 35% ."}
+{"sent_index": 45, "start_index": 2359, "end_index": 2498, "_text": "However by 24 hours he transitioned to low-flow nasal cannula and on day of life five transitioned to room air where he currently remains ."}
+{"sent_index": 46, "start_index": 2499, "end_index": 2537, "_text": "3. Fluids , electrolytes and nutrition"}
+{"sent_index": 47, "start_index": 2540, "end_index": 2685, "_text": "The patient was initially maintained on intravenous fluids only and when his respiratory distress resolved he was transitioned to enteral feeds ."}
+{"sent_index": 48, "start_index": 2686, "end_index": 2846, "_text": "The morning of transfer his IV came out so he has just been advanced to 120 cc per kg per day of PE-20 and his tolerating these PG feedings without difficulty ."}
+{"sent_index": 49, "start_index": 2847, "end_index": 2925, "_text": "Last set of electrolytes on 06-08 , DOL3 :\nNa 145 , K 4.3 , Cl 110 , tCO2 25 ."}
+{"sent_index": 50, "start_index": 2926, "end_index": 2949, "_text": "Discharge Wt 1645 gms ."}
+{"sent_index": 51, "start_index": 2950, "end_index": 2963, "_text": "4. Hematology"}
+{"sent_index": 52, "start_index": 2966, "end_index": 3064, "_text": "His admission complete blood count was notable for a white count of 11.8 , 25 polys and no bands ."}
+{"sent_index": 53, "start_index": 3065, "end_index": 3105, "_text": "Hematocrit was 45 , platelet count 270 ."}
+{"sent_index": 54, "start_index": 3106, "end_index": 3241, "_text": "He developed physiologic hyperbilirubinemia ( peak bili 8.6/0.3 on 06-08 , DOL3 ) for which he was treated with a single phototherapy ."}
+{"sent_index": 55, "start_index": 3242, "end_index": 3358, "_text": "His most recent bilirubin was 6.6 on day of life six , the day of discharge , and his phototherapy was discontinued."}
+{"sent_index": 56, "start_index": 3359, "end_index": 3405, "_text": "He will need a rebound bilirubin level in am ."}
+{"sent_index": 57, "start_index": 3406, "end_index": 3427, "_text": "5. Infectious disease"}
+{"sent_index": 58, "start_index": 3430, "end_index": 3494, "_text": "Blood culture was sent but he was never started on antibiotics ."}
+{"sent_index": 59, "start_index": 3495, "end_index": 3531, "_text": "The blood culture remained sterile ."}
+{"sent_index": 60, "start_index": 3532, "end_index": 3628, "_text": "He was noted to have an erythematous perianal rash and for this was started on Nystatin powder ."}
+{"sent_index": 61, "start_index": 3629, "end_index": 3724, "_text": "The parents were updated throughout the admission and a family meeting was held on 2015-06-09 ."}
+{"sent_index": 62, "start_index": 3725, "end_index": 3799, "_text": "6. Sensory :\nThe patient has not had an CMED examination or hearing test ."}
+{"sent_index": 63, "start_index": 3800, "end_index": 3822, "_text": "CONDITION ON DISCHARGE"}
+{"sent_index": 64, "start_index": 3825, "end_index": 3831, "_text": "Good ."}
+{"sent_index": 65, "start_index": 3832, "end_index": 3843, "_text": "DISPOSITION"}
+{"sent_index": 66, "start_index": 3846, "end_index": 3888, "_text": "To Kindred Hospital Special Care Nursery ."}
+{"sent_index": 67, "start_index": 3889, "end_index": 3909, "_text": "NAME OF PEDIATRICIAN"}
+{"sent_index": 68, "start_index": 3912, "end_index": 3944, "_text": "Hale Air Force Base Pediatrics ."}
+{"sent_index": 69, "start_index": 3945, "end_index": 3969, "_text": "CARE AND RECOMMENDATIONS"}
+{"sent_index": 70, "start_index": 3972, "end_index": 4109, "_text": "Feeds at discharge are PE-20 currently at 120 cc per kg per day due to advance 15 cc per kg per day to a total of 150 cc per kg per day ."}
+{"sent_index": 71, "start_index": 4110, "end_index": 4131, "_text": "DISCHARGE MEDICATIONS"}
+{"sent_index": 72, "start_index": 4134, "end_index": 4158, "_text": "Caffeine 12 mg pg q day."}
+{"sent_index": 73, "start_index": 4159, "end_index": 4190, "_text": "He has not had his 06-10 dose ."}
+{"sent_index": 74, "start_index": 4191, "end_index": 4221, "_text": "STATE NEWBORN SCREENING STATUS"}
+{"sent_index": 75, "start_index": 4224, "end_index": 4271, "_text": "He is due to have his state screen sent today ."}
+{"sent_index": 76, "start_index": 4272, "end_index": 4285, "_text": "IMMUNIZATIONS"}
+{"sent_index": 77, "start_index": 4288, "end_index": 4306, "_text": "Not yet received ."}
+{"sent_index": 78, "start_index": 4307, "end_index": 4429, "_text": "Synagis RSV prophylaxis should be considered from October through April for infants who meet any of the following criteria"}
+{"sent_index": 79, "start_index": 4432, "end_index": 4463, "_text": "1. Born at less than 32 weeks ."}
+{"sent_index": 80, "start_index": 4464, "end_index": 4594, "_text": "2. Born at 32-35 weeks with plans for day care during RSV season with a smoker in the household , or with preschool age siblings ."}
+{"sent_index": 81, "start_index": 4595, "end_index": 4625, "_text": "3. With chronic lung disease ."}
+{"sent_index": 82, "start_index": 4626, "end_index": 4771, "_text": "Influenza vaccination should be considered annually in the fall for preterm infants with chronic lung disease once they reach six months of age ."}
+{"sent_index": 83, "start_index": 4772, "end_index": 4901, "_text": "Before this age , the family and other caregivers should be considered for immunization against influenza to protect the infant ."}
+{"sent_index": 84, "start_index": 4902, "end_index": 4921, "_text": "DISCHARGE DIAGNOSES"}
+{"sent_index": 85, "start_index": 4924, "end_index": 4956, "_text": "1. Prematurity at 30-6/7 weeks ."}
+{"sent_index": 86, "start_index": 4957, "end_index": 4995, "_text": "2. Rule out sepsis , off antibiotics ."}
+{"sent_index": 87, "start_index": 4996, "end_index": 5037, "_text": "3. Apnea and bradycardia of prematurity ."}
+{"sent_index": 88, "start_index": 5038, "end_index": 5061, "_text": "4. Hyperbilirubinemia ."}
+{"sent_index": 89, "start_index": 5062, "end_index": 5085, "_text": "5. Feeding immaturity ."}
+{"sent_index": 90, "start_index": 5086, "end_index": 5107, "_text": "Freddy Stephen , M.D."}
+{"sent_index": 91, "start_index": 5108, "end_index": 5114, "_text": "55-454"}
+{"sent_index": 92, "start_index": 5115, "end_index": 5126, "_text": "Dictated By"}
+{"sent_index": 93, "start_index": 5127, "end_index": 5154, "_text": "Nathan D. Delgadillo , M.D."}
+{"sent_index": 94, "start_index": 5155, "end_index": 5165, "_text": "MEDQUIST36"}
+{"sent_index": 95, "start_index": 5166, "end_index": 5180, "_text": "D :\n2015-06-10"}
+{"sent_index": 96, "start_index": 5181, "end_index": 5186, "_text": "09:35"}
+{"sent_index": 97, "start_index": 5187, "end_index": 5201, "_text": "T :\n2015-06-10"}
+{"sent_index": 98, "start_index": 5202, "end_index": 5207, "_text": "09:51"}
+{"sent_index": 99, "start_index": 5208, "end_index": 5211, "_text": "JOB"}
+{"sent_index": 100, "start_index": 5215, "end_index": 5220, "_text": "53951"}
+{"sent_index": 101, "start_index": 5221, "end_index": 5245, "_text": "Signed electronically by"}
+{"sent_index": 102, "start_index": 5248, "end_index": 5251, "_text": "DR."}
+{"sent_index": 103, "start_index": 5252, "end_index": 5266, "_text": "Freddy King on"}
+{"sent_index": 104, "start_index": 5269, "end_index": 5292, "_text": "WED 2015-06-10 11:54 AM"}
+{"sent_index": 105, "start_index": 5295, "end_index": 5308, "_text": "End of Report"}

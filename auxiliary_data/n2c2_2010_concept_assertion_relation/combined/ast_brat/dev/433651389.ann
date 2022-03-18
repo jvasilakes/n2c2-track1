@@ -1,0 +1,156 @@
+T0	problem 6562 6571	the wound
+A0	Assertion T0 present
+T1	problem 6587 6600	some erythema
+A1	Assertion T1 present
+T2	problem 6136 6147	abnormality
+A2	Assertion T2 absent
+T3	problem 2036 2043	colitis
+A3	Assertion T3 present
+T4	problem 3724 3726	S3
+A4	Assertion T4 absent
+T5	problem 759 828	Nafcillin sensitive Staphylococcus aureus cellulitis of the right leg
+A5	Assertion T5 present
+T6	problem 6850 6870	mitral regurgitation
+A6	Assertion T6 present
+T7	problem 3778 3797	1+ carotid impulses
+A7	Assertion T7 present
+T8	problem 3856 3883	transmitted cardiac murmurs
+A8	Assertion T8 present
+T9	problem 200 221	MENTAL STATUS CHANGES
+A9	Assertion T9 present
+T10	problem 6821 6845	critical aortic stenosis
+A10	Assertion T10 present
+T11	problem 54 74	MENTAL STATUS CHANGE
+A11	Assertion T11 present
+T12	problem 5202 5229	trace microscopic hematuria
+A12	Assertion T12 present
+T13	problem 5279 5290	1+ bacteria
+A13	Assertion T13 present
+T14	problem 5174 5179	bleed
+A14	Assertion T14 absent
+T15	problem 6248 6274	degenerative joint disease
+A15	Assertion T15 present
+T16	problem 6282 6298	obvious fracture
+A16	Assertion T16 absent
+T17	problem 7204 7233	Abnormal liver function tests
+A17	Assertion T17 present
+T18	problem 528 562	a right lower extremity cellulitis
+A18	Assertion T18 present
+T19	problem 4223 4236	quite sedated
+A19	Assertion T19 present
+T20	problem 3475 3511	a two out of six high pitched murmur
+A20	Assertion T20 present
+T21	problem 77 87	CELLULITIS
+A21	Assertion T21 present
+T22	problem 7134 7153	Atrial fibrillation
+A22	Assertion T22 present
+T23	problem 5561 5572	acute bleed
+A23	Assertion T23 absent
+T24	problem 1742 1766	congestive heart failure
+A24	Assertion T24 present
+T25	problem 598 618	worsening cellulitis
+A25	Assertion T25 present
+T26	problem 4123 4136	a small ulcer
+A26	Assertion T26 present
+T27	problem 4091 4117	erythema of the right calf
+A27	Assertion T27 present
+T28	problem 3995 4001	masses
+A28	Assertion T28 absent
+T29	problem 3124 3135	a leg ulcer
+A29	Assertion T29 present
+T30	problem 3140 3150	cellulitis
+A30	Assertion T30 present
+T31	problem 668 690	severe aortic stenosis
+A31	Assertion T31 present
+T32	problem 3233 3244	thyromegaly
+A32	Assertion T32 absent
+T33	problem 5794 5807	her agitation
+A33	Assertion T33 present
+T34	problem 5831 5840	infection
+A34	Assertion T34 possible
+T35	problem 5873 5896	her metabolic condition
+A35	Assertion T35 present
+T36	problem 353 377	CEREBROVASCULAR ACCIDENT
+A36	Assertion T36 present
+T37	problem 325 350	TRANSIENT ISCHEMIC ATTACK
+A37	Assertion T37 present
+T38	problem 1814 1834	Mitral regurgitation
+A38	Assertion T38 present
+T39	problem 304 308	FALL
+A39	Assertion T39 present
+T40	problem 6767 6776	infection
+A40	Assertion T40 present
+T41	problem 3346 3361	a sustained PMI
+A41	Assertion T41 present
+T42	problem 1265 1274	combative
+A42	Assertion T42 present
+T43	problem 1252 1260	confused
+A43	Assertion T43 present
+T44	problem 3945 3955	non-tender
+A44	Assertion T44 absent
+T45	problem 3958 3971	non-distended
+A45	Assertion T45 absent
+T46	problem 266 286	MITRAL REGURGITATION
+A46	Assertion T46 present
+T47	problem 245 260	AORTIC STENOSIS
+A47	Assertion T47 present
+T48	problem 7375 7394	cholestatic picture
+A48	Assertion T48 present
+T49	problem 7320 7356	mildly elevated alkaline phosphatase
+A49	Assertion T49 present
+T50	problem 7281 7300	elevated bilirubins
+A50	Assertion T50 present
+T51	problem 383 410	RIGHT LOWER EXTREMITY WOUND
+A51	Assertion T51 present
+T52	problem 5400 5413	argumentative
+A52	Assertion T52 present
+T53	problem 5438 5467	uncooperative with procedures
+A53	Assertion T53 present
+T54	problem 5418 5426	confused
+A54	Assertion T54 present
+T55	problem 2060 2084	vertebral body fractures
+A55	Assertion T55 present
+T56	problem 5717 5733	xanthrochromasia
+A56	Assertion T56 absent
+T57	problem 6962 6966	fall
+A57	Assertion T57 present
+T58	problem 3419 3471	near complete obliteration of the second heart sound
+A58	Assertion T58 present
+T59	problem 3977 3989	organomegaly
+A59	Assertion T59 absent
+T60	problem 1923 1946	cerebrovascular disease
+A60	Assertion T60 present
+T61	problem 1887 1906	atrial fibrillation
+A61	Assertion T61 present
+T62	problem 6463 6495	Right lower extremity cellulitis
+A62	Assertion T62 present
+T63	problem 3635 3664	a blowing holosystolic murmur
+A63	Assertion T63 present
+T64	problem 898 926	a right leg fluid collection
+A64	Assertion T64 present
+T65	problem 1532 1556	Aortic stenosis , severe
+A65	Assertion T65 present
+T66	problem 1981 1999	temporal arteritis
+A66	Assertion T66 present
+T67	problem 6199 6204	bleed
+A67	Assertion T67 absent
+T68	problem 5068 5078	infiltrate
+A68	Assertion T68 absent
+T69	problem 1952 1964	Hypertension
+A69	Assertion T69 present
+T70	problem 3190 3206	spider angiomata
+A70	Assertion T70 absent
+T71	problem 5084 5108	congestive heart failure
+A71	Assertion T71 absent
+T72	problem 7095 7103	deficits
+A72	Assertion T72 absent
+T73	problem 623 636	new confusion
+A73	Assertion T73 present
+T74	problem 416 435	ATRIAL FIBRILLATION
+A74	Assertion T74 present
+T75	problem 6625 6640	true cellulitis
+A75	Assertion T75 absent
+T76	problem 2554 2574	known drug allergies
+A76	Assertion T76 absent
+T77	problem 1180 1194	the cellulitis
+A77	Assertion T77 present

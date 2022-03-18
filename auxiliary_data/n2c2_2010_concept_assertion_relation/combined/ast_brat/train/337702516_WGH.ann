@@ -1,0 +1,88 @@
+T0	problem 2097 2113	left TM scarring
+A0	Assertion T0 present
+T1	problem 964 970	chills
+A1	Assertion T1 absent
+T2	problem 1226 1234	anorexia
+A2	Assertion T2 absent
+T3	problem 1038 1044	melena
+A3	Assertion T3 absent
+T4	problem 734 740	nausea
+A4	Assertion T4 present
+T5	problem 2180 2195	lymphadenopathy
+A5	Assertion T5 absent
+T6	problem 2434 2452	hepatosplenomegaly
+A6	Assertion T6 absent
+T7	problem 870 878	Episodes
+A7	Assertion T7 present
+T8	problem 337 360	recurrent biliary colic
+A8	Assertion T8 present
+T9	problem 1007 1034	bright red blood per rectum
+A9	Assertion T9 absent
+T10	problem 1146 1157	gallbladder
+A10	Assertion T10 associated_with_someone_else
+T11	problem 2366 2369	rub
+A11	Assertion T11 absent
+T12	problem 574 582	symptoms
+A12	Assertion T12 absent
+T13	problem 1209 1220	weight loss
+A13	Assertion T13 absent
+T14	problem 464 492	ultrasound proven gallstones
+A14	Assertion T14 present
+T15	problem 2020 2037	apparent distress
+A15	Assertion T15 absent
+T16	problem 426 449	recurrent biliary colic
+A16	Assertion T16 present
+T17	problem 2065 2069	rash
+A17	Assertion T17 absent
+T18	problem 2416 2425	nontender
+A18	Assertion T18 absent
+T19	problem 1330 1343	liver disease
+A19	Assertion T19 absent
+T20	problem 2485 2493	guarding
+A20	Assertion T20 absent
+T21	problem 1292 1305	cholecystitis
+A21	Assertion T21 absent
+T22	problem 671 707	right upper quadrant epigastric pain
+A22	Assertion T22 present
+T23	problem 1161 1179	pancreatic disease
+A23	Assertion T23 associated_with_someone_else
+T24	problem 639 665	classic biliary colic pain
+A24	Assertion T24 present
+T25	problem 2927 2935	afebrile
+A25	Assertion T25 absent
+T26	problem 1269 1283	six gallstones
+A26	Assertion T26 present
+T27	problem 2373 2379	gallop
+A27	Assertion T27 absent
+T28	problem 2247 2253	bruits
+A28	Assertion T28 absent
+T29	problem 955 961	fevers
+A29	Assertion T29 absent
+T30	problem 3195 3199	pain
+A30	Assertion T30 hypothetical
+T31	problem 2047 2056	anicteric
+A31	Assertion T31 absent
+T32	problem 973 993	respiratory symptoms
+A32	Assertion T32 absent
+T33	problem 2357 2363	murmur
+A33	Assertion T33 absent
+T34	problem 2144 2152	drainage
+A34	Assertion T34 absent
+T35	problem 996 1004	diarrhea
+A35	Assertion T35 absent
+T36	problem 2456 2460	mass
+A36	Assertion T36 absent
+T37	problem 1800 1820	known drug allergies
+A37	Assertion T37 absent
+T38	problem 2257 2260	JVD
+A38	Assertion T38 absent
+T39	problem 1346 1355	hepatitis
+A39	Assertion T39 absent
+T40	problem 2474 2481	rebound
+A40	Assertion T40 absent
+T41	problem 755 763	vomiting
+A41	Assertion T41 absent
+T42	problem 2122 2140	acute inflammation
+A42	Assertion T42 absent
+T43	problem 2860 2872	complication
+A43	Assertion T43 absent

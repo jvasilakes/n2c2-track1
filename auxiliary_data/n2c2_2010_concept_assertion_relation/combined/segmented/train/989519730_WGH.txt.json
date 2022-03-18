@@ -1,0 +1,77 @@
+{"sent_index": 0, "start_index": 0, "end_index": 13, "_text": "989519730 WGH"}
+{"sent_index": 1, "start_index": 14, "end_index": 21, "_text": "4708487"}
+{"sent_index": 2, "start_index": 22, "end_index": 28, "_text": "265076"}
+{"sent_index": 3, "start_index": 29, "end_index": 59, "_text": "4927849\n05/09/2004 12:00:00 AM"}
+{"sent_index": 4, "start_index": 60, "end_index": 77, "_text": "Discharge Summary"}
+{"sent_index": 5, "start_index": 78, "end_index": 84, "_text": "Signed"}
+{"sent_index": 6, "start_index": 85, "end_index": 88, "_text": "DIS"}
+{"sent_index": 7, "start_index": 89, "end_index": 102, "_text": "Report Status"}
+{"sent_index": 8, "start_index": 105, "end_index": 111, "_text": "Signed"}
+{"sent_index": 9, "start_index": 112, "end_index": 129, "_text": "DISCHARGE SUMMARY"}
+{"sent_index": 10, "start_index": 130, "end_index": 175, "_text": "NAME :\nGINSLENT , A L\nUNIT NUMBER :\n537-43-35"}
+{"sent_index": 11, "start_index": 176, "end_index": 203, "_text": "ADMISSION DATE :\n05/09/2004"}
+{"sent_index": 12, "start_index": 204, "end_index": 231, "_text": "DISCHARGE DATE :\n05/16/2004"}
+{"sent_index": 13, "start_index": 232, "end_index": 251, "_text": "PRINCIPAL DIAGNOSIS"}
+{"sent_index": 14, "start_index": 254, "end_index": 268, "_text": "Colon cancer ."}
+{"sent_index": 15, "start_index": 269, "end_index": 289, "_text": "ASSOCIATED DIAGNOSES"}
+{"sent_index": 16, "start_index": 292, "end_index": 395, "_text": "History of diverticulitis , status post cholecystectomy , status post appendectomy , and hypertension ."}
+{"sent_index": 17, "start_index": 396, "end_index": 415, "_text": "PRINCIPAL PROCEDURE"}
+{"sent_index": 18, "start_index": 418, "end_index": 450, "_text": "Transverse colectomy for tumor ."}
+{"sent_index": 19, "start_index": 451, "end_index": 481, "_text": "ASSOCIATED PROCEDURES :\nNone ."}
+{"sent_index": 20, "start_index": 482, "end_index": 508, "_text": "HISTORY OF PRESENT ILLNESS"}
+{"sent_index": 21, "start_index": 511, "end_index": 670, "_text": "The patient is an 84-year-old woman with a history of diverticulitis who was found to have colon cancer on colonoscopy , which was performed in March of 2004 ."}
+{"sent_index": 22, "start_index": 671, "end_index": 768, "_text": "An invasive moderately differentiated adenocarcinoma was noted in the transverse colon at 80 cm ."}
+{"sent_index": 23, "start_index": 769, "end_index": 856, "_text": "The patient reports a history of bloating and flatulence as well as increased fatigue ."}
+{"sent_index": 24, "start_index": 857, "end_index": 951, "_text": "She has also had some discomfort in her left lower abdomen and notes diarrhea every 4-5 days ."}
+{"sent_index": 25, "start_index": 952, "end_index": 1017, "_text": "She says that her appetite is good and has noted no weight loss ."}
+{"sent_index": 26, "start_index": 1018, "end_index": 1038, "_text": "PAST MEDICAL HISTORY"}
+{"sent_index": 27, "start_index": 1041, "end_index": 1233, "_text": "Cholecystectomy in 1994 , colonoscopy 2004 , status post tonsillectomy , status post appendectomy , status post ORIF of left wrist , status post left ear surgery , NSVD x5 , and hypertension ."}
+{"sent_index": 28, "start_index": 1234, "end_index": 1245, "_text": "MEDICATIONS"}
+{"sent_index": 29, "start_index": 1248, "end_index": 1335, "_text": "Premarin vaginal once a month , enalapril , Tylenol , vitamins , and Halcion at night ."}
+{"sent_index": 30, "start_index": 1336, "end_index": 1345, "_text": "ALLERGIES"}
+{"sent_index": 31, "start_index": 1348, "end_index": 1373, "_text": "No known drug allergies ."}
+{"sent_index": 32, "start_index": 1374, "end_index": 1388, "_text": "SOCIAL HISTORY"}
+{"sent_index": 33, "start_index": 1391, "end_index": 1465, "_text": "She is married and lives in an assisted living facility with her husband ."}
+{"sent_index": 34, "start_index": 1466, "end_index": 1495, "_text": "She has five grown children ."}
+{"sent_index": 35, "start_index": 1496, "end_index": 1516, "_text": "PHYSICAL EXAMINATION"}
+{"sent_index": 36, "start_index": 1519, "end_index": 1544, "_text": "On exam she is afebrile ."}
+{"sent_index": 37, "start_index": 1545, "end_index": 1573, "_text": "Her vital signs are stable ."}
+{"sent_index": 38, "start_index": 1574, "end_index": 1671, "_text": "Baseline blood pressure of 144/61 , heart rate of 73 , and oxygen saturation of 96% on room air ."}
+{"sent_index": 39, "start_index": 1672, "end_index": 1741, "_text": "She is a pleasant well appearing elderly woman in no acute distress ."}
+{"sent_index": 40, "start_index": 1742, "end_index": 1787, "_text": "Lungs are clear to auscultation bilaterally ."}
+{"sent_index": 41, "start_index": 1788, "end_index": 1842, "_text": "Heart is regular without murmurs , rubs , or gallops ."}
+{"sent_index": 42, "start_index": 1843, "end_index": 1891, "_text": "Abdomen is soft , nontender , and nondistended ."}
+{"sent_index": 43, "start_index": 1892, "end_index": 1940, "_text": "Her extremities are without edema and are warm ."}
+{"sent_index": 44, "start_index": 1941, "end_index": 1956, "_text": "HOSPITAL COURSE"}
+{"sent_index": 45, "start_index": 1959, "end_index": 2093, "_text": "The patient was consented for surgery and on the day of admission was taken to the operating room for transverse colectomy for tumor ."}
+{"sent_index": 46, "start_index": 2094, "end_index": 2167, "_text": "The patient tolerated the procedure well and there are no complications ."}
+{"sent_index": 47, "start_index": 2168, "end_index": 2211, "_text": "Her postoperative course was unremarkable ."}
+{"sent_index": 48, "start_index": 2212, "end_index": 2272, "_text": "She was maintained on an epidural and PCA for pain control ."}
+{"sent_index": 49, "start_index": 2273, "end_index": 2347, "_text": "She was kept NPO initially and her diet was slowly advanced as tolerated ."}
+{"sent_index": 50, "start_index": 2348, "end_index": 2456, "_text": "When she was taking clear liquids , her pain medication was switched to p.o. pain regimen with good affect ."}
+{"sent_index": 51, "start_index": 2457, "end_index": 2594, "_text": "For blood pressure control she was maintained on metoprolol at the request of her primary care physician and enalapril was discontinued ."}
+{"sent_index": 52, "start_index": 2595, "end_index": 2842, "_text": "With the help of physical therapy the patient was ambulated and on postoperative seven , with the patient tolerating a post surgical soft diet and with pain well controlled on oral pain medications , she was discharged to rehabilitation facility ."}
+{"sent_index": 53, "start_index": 2843, "end_index": 2864, "_text": "DISCHARGE MEDICATIONS"}
+{"sent_index": 54, "start_index": 2867, "end_index": 2910, "_text": "1. Tylenol 650 mg p.o. q.4.h. p.r.n. pain ."}
+{"sent_index": 55, "start_index": 2911, "end_index": 2942, "_text": "2. Metoprolol 25 mg p.o. b.i.d."}
+{"sent_index": 56, "start_index": 2943, "end_index": 2985, "_text": "3. Motrin 400 mg p.o. b.i.d. p.r.n. pain ."}
+{"sent_index": 57, "start_index": 2986, "end_index": 3020, "_text": "4. Halcion 0.25 mg p.o. at night ."}
+{"sent_index": 58, "start_index": 3021, "end_index": 3076, "_text": "5. Dulcolax 10 to 20 mg PR b.i.d. p.r.n. constipation ."}
+{"sent_index": 59, "start_index": 3077, "end_index": 3107, "_text": "6. Senna 2 tablets p.o. b.i.d."}
+{"sent_index": 60, "start_index": 3108, "end_index": 3130, "_text": "DISCHARGE INSTRUCTIONS"}
+{"sent_index": 61, "start_index": 3133, "end_index": 3192, "_text": "Consume a diet as tolerated avoiding carbonated beverages ."}
+{"sent_index": 62, "start_index": 3193, "end_index": 3229, "_text": "Her activity level is as tolerated ."}
+{"sent_index": 63, "start_index": 3230, "end_index": 3309, "_text": "She is to contact Dr. Warm &apos;s office to schedule a follow up appointment ."}
+{"sent_index": 64, "start_index": 3310, "end_index": 3441, "_text": "She is to also call the office if she has any fever greater than 101 , bleeding from the surgical wounds , or pus from the wounds ."}
+{"sent_index": 65, "start_index": 3442, "end_index": 3595, "_text": "She is to be maintained on metoprolol for blood pressure control and the restarting of her ACE inhibitor is to be decided by her primary care physician ."}
+{"sent_index": 66, "start_index": 3596, "end_index": 3618, "_text": "ALEN L CREDKOTE , M.D."}
+{"sent_index": 67, "start_index": 3619, "end_index": 3632, "_text": "DICTATING FOR"}
+{"sent_index": 68, "start_index": 3635, "end_index": 3678, "_text": "Electronically Signed OIE LIMOR WARM , M.D."}
+{"sent_index": 69, "start_index": 3679, "end_index": 3695, "_text": "05/18/2004 11:28"}
+{"sent_index": 70, "start_index": 3726, "end_index": 3747, "_text": "OIE LIMOR WARM , M.D."}
+{"sent_index": 71, "start_index": 3748, "end_index": 3755, "_text": "TR :\nep"}
+{"sent_index": 72, "start_index": 3756, "end_index": 3771, "_text": "DD :\n05/16/2004"}
+{"sent_index": 73, "start_index": 3772, "end_index": 3774, "_text": "TD"}
+{"sent_index": 74, "start_index": 3777, "end_index": 3804, "_text": "05/16/2004 7:28 A 265076\ncc"}
+{"sent_index": 75, "start_index": 3807, "end_index": 3828, "_text": "OIE LIMOR WARM , M.D."}
+{"sent_index": 76, "start_index": 3829, "end_index": 3848, "_text": "CH GILD WARM , M.D."}

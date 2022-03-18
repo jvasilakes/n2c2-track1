@@ -1,0 +1,122 @@
+T0	problem 1816 1826	dysarthric
+A0	Assertion T0 present
+T1	problem 1156 1158	PE
+A1	Assertion T1 associated_with_someone_else
+T2	problem 273 285	hypertension
+A2	Assertion T2 present
+T3	problem 707 715	diplopia
+A3	Assertion T3 absent
+T4	problem 4196 4208	the hematoma
+A4	Assertion T4 present
+T5	problem 4228 4240	hypertension
+A5	Assertion T5 present
+T6	problem 4424 4453	a small vascular malformation
+A6	Assertion T6 possible
+T7	problem 4473 4487	the hemorrhage
+A7	Assertion T7 present
+T8	problem 5431 5452	renal artery stenosis
+A8	Assertion T8 present
+T9	problem 1417 1426	anicteric
+A9	Assertion T9 absent
+T10	problem 4858 4874	Her hypertension
+A10	Assertion T10 present
+T11	problem 1497 1500	rub
+A11	Assertion T11 absent
+T12	problem 4133 4149	pulmonary emboli
+A12	Assertion T12 absent
+T13	problem 1633 1651	hepatosplenomegaly
+A13	Assertion T13 absent
+T14	problem 1448 1454	bruits
+A14	Assertion T14 absent
+T15	problem 578 585	slurred
+A15	Assertion T15 present
+T16	problem 1694 1699	edema
+A16	Assertion T16 absent
+T17	problem 3858 3884	intra-parenchymal hematoma
+A17	Assertion T17 present
+T18	problem 3890 3912	mild local mass effect
+A18	Assertion T18 present
+T19	problem 4682 4702	arm and leg weakness
+A19	Assertion T19 present
+T20	problem 4707 4722	sensory deficit
+A20	Assertion T20 present
+T21	problem 4658 4679	a mild leftsided face
+A21	Assertion T21 present
+T22	problem 2688 2721	a mild dysmetria on the left side
+A22	Assertion T22 present
+T23	problem 1671 1681	clubbing ,
+A23	Assertion T23 absent
+T24	problem 5137 5149	hypertension
+A24	Assertion T24 present
+T25	problem 1504 1510	gallop
+A25	Assertion T25 absent
+T26	problem 2510 2603	a mild diminution of light touch , pinprick , position , and vibration sense in the left side
+A26	Assertion T26 present
+T27	problem 4621 4628	problem
+A27	Assertion T27 absent
+T28	problem 4036 4046	hemorrhage
+A28	Assertion T28 present
+T29	problem 4058 4093	slightly more edema and mass effect
+A29	Assertion T29 present
+T30	problem 5118 5133	secondary cause
+A30	Assertion T30 present
+T31	problem 1349 1357	afebrile
+A31	Assertion T31 absent
+T32	problem 3753 3778	3 centimeter hyperdensity
+A32	Assertion T32 present
+T33	problem 3917 3934	surrounding edema
+A33	Assertion T33 present
+T34	problem 383 395	hypertension
+A34	Assertion T34 present
+T35	problem 2665 2675	diminished
+A35	Assertion T35 present
+T36	problem 5401 5427	lymphocytic ? chromocytoma
+A36	Assertion T36 present
+T37	problem 2160 2189	a left central facial paresis
+A37	Assertion T37 present
+T38	problem 1682 1690	cyanosis
+A38	Assertion T38 absent
+T39	problem 536 557	difficulty in talking
+A39	Assertion T39 present
+T40	problem 1585 1594	nontender
+A40	Assertion T40 absent
+T41	problem 1370 1377	lesions
+A41	Assertion T41 absent
+T42	problem 4311 4323	hypertension
+A42	Assertion T42 present
+T43	problem 1488 1494	murmur
+A43	Assertion T43 absent
+T44	problem 3658 3682	ST-segment abnormalities
+A44	Assertion T44 absent
+T45	problem 2252 2271	a left arm pronator
+A45	Assertion T45 present
+T46	problem 1788 1813	phasic or praxic problems
+A46	Assertion T46 absent
+T47	problem 212 247	Right capsular putamenal hemorrhage
+A47	Assertion T47 present
+T48	problem 1597 1609	nondistended
+A48	Assertion T48 absent
+T49	problem 1404 1414	atraumatic
+A49	Assertion T49 absent
+T50	problem 696 704	headache
+A50	Assertion T50 absent
+T51	problem 1311 1318	anxious
+A51	Assertion T51 present
+T52	problem 862 885	a mild left hemiparesis
+A52	Assertion T52 present
+T53	problem 3955 3965	hemorrhage
+A53	Assertion T53 absent
+T54	problem 5336 5352	secondary causes
+A54	Assertion T54 absent
+T55	problem 5356 5368	hypertension
+A55	Assertion T55 present
+T56	problem 2757 2794	The walk was paretic in the left side
+A56	Assertion T56 present
+T57	problem 629 669	weakness and numbness of her arm and leg
+A57	Assertion T57 present
+T58	problem 62 97	RIGHT CAPSULAR PUTAMENAL HEMORRHAGE
+A58	Assertion T58 present
+T59	problem 721 752	any other neurological symptoms
+A59	Assertion T59 absent
+T60	problem 4286 4307	cerebellar hemorrhage
+A60	Assertion T60 present

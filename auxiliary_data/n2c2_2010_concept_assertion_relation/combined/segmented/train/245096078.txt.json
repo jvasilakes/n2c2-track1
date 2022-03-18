@@ -1,0 +1,175 @@
+{"sent_index": 0, "start_index": 0, "end_index": 9, "_text": "245096078"}
+{"sent_index": 1, "start_index": 10, "end_index": 13, "_text": "FIH"}
+{"sent_index": 2, "start_index": 14, "end_index": 21, "_text": "9174858"}
+{"sent_index": 3, "start_index": 22, "end_index": 33, "_text": "12/February"}
+{"sent_index": 4, "start_index": 34, "end_index": 40, "_text": "997359"}
+{"sent_index": 5, "start_index": 41, "end_index": 62, "_text": "11/3/1992 12:00:00 AM"}
+{"sent_index": 6, "start_index": 63, "end_index": 80, "_text": "Discharge Summary"}
+{"sent_index": 7, "start_index": 81, "end_index": 89, "_text": "Unsigned"}
+{"sent_index": 8, "start_index": 90, "end_index": 93, "_text": "DIS"}
+{"sent_index": 9, "start_index": 94, "end_index": 107, "_text": "Report Status"}
+{"sent_index": 10, "start_index": 110, "end_index": 118, "_text": "Unsigned"}
+{"sent_index": 11, "start_index": 119, "end_index": 133, "_text": "ADMISSION DATE"}
+{"sent_index": 12, "start_index": 136, "end_index": 143, "_text": "11/3/92"}
+{"sent_index": 13, "start_index": 144, "end_index": 158, "_text": "DISCHARGE DATE"}
+{"sent_index": 14, "start_index": 161, "end_index": 168, "_text": "12/6/92"}
+{"sent_index": 15, "start_index": 169, "end_index": 195, "_text": "HISTORY OF PRESENT ILLNESS"}
+{"sent_index": 16, "start_index": 198, "end_index": 381, "_text": "The patient is a 68 year old , right handed caucasian female , former R.N. who complained of several days of vertigo , one day of double vision , dysarthria and worsening of vertigo ."}
+{"sent_index": 17, "start_index": 382, "end_index": 452, "_text": "She was seen at the outside hospital and put on aspirin for two days ."}
+{"sent_index": 18, "start_index": 453, "end_index": 544, "_text": "An magnetic resonance imaging study showed basilar artery disease , questionable aneurysm ."}
+{"sent_index": 19, "start_index": 545, "end_index": 612, "_text": "The patient was transferred to the Fairm of Ijordcompmac Hospital ."}
+{"sent_index": 20, "start_index": 613, "end_index": 692, "_text": "An angiogram on 11/3 was consistent with thrombosis at the mid basilar artery ."}
+{"sent_index": 21, "start_index": 693, "end_index": 746, "_text": "The patient was put on heparin and was stable since ."}
+{"sent_index": 22, "start_index": 747, "end_index": 767, "_text": "PAST MEDICAL HISTORY"}
+{"sent_index": 23, "start_index": 770, "end_index": 939, "_text": "Hypertension for 20 years , high cholesterol , coronary artery disease with episodes of angina , no history of myocardial infarction , exercise treadmill or evaluation ."}
+{"sent_index": 24, "start_index": 940, "end_index": 979, "_text": "She has had an inguinal hernia repair ."}
+{"sent_index": 25, "start_index": 980, "end_index": 1028, "_text": "A left breast lumpectomy was reportedly benign ."}
+{"sent_index": 26, "start_index": 1029, "end_index": 1038, "_text": "ALLERGIES"}
+{"sent_index": 27, "start_index": 1041, "end_index": 1082, "_text": "The patient has no known drug allergies ."}
+{"sent_index": 28, "start_index": 1083, "end_index": 1107, "_text": "MEDICATIONS ON ADMISSION"}
+{"sent_index": 29, "start_index": 1110, "end_index": 1124, "_text": "Mevicor 60 mg."}
+{"sent_index": 30, "start_index": 1125, "end_index": 1150, "_text": "PO q.d. , Cardizem 90 mg."}
+{"sent_index": 31, "start_index": 1151, "end_index": 1212, "_text": "w release PO q.d. , Questran one pack q.i.d. , Niacin 500 mg."}
+{"sent_index": 32, "start_index": 1213, "end_index": 1222, "_text": "PO b.i.d."}
+{"sent_index": 33, "start_index": 1223, "end_index": 1237, "_text": "SOCIAL HISTORY"}
+{"sent_index": 34, "start_index": 1240, "end_index": 1383, "_text": "She is a one pack per day smoker for the last forty years , denies alcohol , is a former nurse with the Storm Mor Hospital And Medical Center ."}
+{"sent_index": 35, "start_index": 1384, "end_index": 1404, "_text": "PHYSICAL EXAMINATION"}
+{"sent_index": 36, "start_index": 1407, "end_index": 1486, "_text": "Her blood pressure was 190/90 when I first saw her on her second hospital day ."}
+{"sent_index": 37, "start_index": 1487, "end_index": 1534, "_text": "She was afebrile , in sinus rhythm , pulse 60 ."}
+{"sent_index": 38, "start_index": 1535, "end_index": 1548, "_text": "Neck supple ."}
+{"sent_index": 39, "start_index": 1549, "end_index": 1562, "_text": "Lungs clear ."}
+{"sent_index": 40, "start_index": 1563, "end_index": 1568, "_text": "Heart"}
+{"sent_index": 41, "start_index": 1571, "end_index": 1613, "_text": "regular rate and rhythm , without ectopy ."}
+{"sent_index": 42, "start_index": 1614, "end_index": 1701, "_text": "A II / VI systolic ejection murmur is at the base , minimal radiation to the carotids ."}
+{"sent_index": 43, "start_index": 1702, "end_index": 1709, "_text": "Abdomen"}
+{"sent_index": 44, "start_index": 1712, "end_index": 1747, "_text": "soft , without hepatosplenomegaly ."}
+{"sent_index": 45, "start_index": 1748, "end_index": 1759, "_text": "Extremities"}
+{"sent_index": 46, "start_index": 1762, "end_index": 1811, "_text": "normal pulses , no clubbing , cyanosis or edema ."}
+{"sent_index": 47, "start_index": 1812, "end_index": 1840, "_text": "The neurological examination"}
+{"sent_index": 48, "start_index": 1843, "end_index": 1880, "_text": "post angiogram her eyes were closed ."}
+{"sent_index": 49, "start_index": 1881, "end_index": 2087, "_text": "She was very responsive , somewhat sleepy , she complained of chest pain , which was diffuse , non-localizing without electrocardiogram changes and persisted for several days and then went away completely ."}
+{"sent_index": 50, "start_index": 2088, "end_index": 2234, "_text": "She was oriented to person , place , time and purpose , she recalled three out of three objects at five minutes , she is able to do calculations ."}
+{"sent_index": 51, "start_index": 2235, "end_index": 2289, "_text": "She maintained her fixation on the conversation well ."}
+{"sent_index": 52, "start_index": 2290, "end_index": 2312, "_text": "The cranial nerve exam"}
+{"sent_index": 53, "start_index": 2315, "end_index": 2393, "_text": "pupils reactive to light , extra ocular movements show good upgaze up to 3 mm."}
+{"sent_index": 54, "start_index": 2396, "end_index": 2412, "_text": "good down gaze ."}
+{"sent_index": 55, "start_index": 2413, "end_index": 2457, "_text": "Right lateral gaze , the right eye had 2 mm."}
+{"sent_index": 56, "start_index": 2458, "end_index": 2558, "_text": "of sclera showing , the left eye was normal , and there are a few beats of right beading nystagmus ."}
+{"sent_index": 57, "start_index": 2559, "end_index": 2633, "_text": "The left lateral gaze , the left eye had 1 mm. of lateral sclera showing ."}
+{"sent_index": 58, "start_index": 2634, "end_index": 2651, "_text": "Disks were flat ."}
+{"sent_index": 59, "start_index": 2652, "end_index": 2727, "_text": "Sensory limb of the right eye corneal reflex is slowed , otherwise normal ."}
+{"sent_index": 60, "start_index": 2728, "end_index": 2797, "_text": "Seventh nerve weakness on the right in a central pattern is present ."}
+{"sent_index": 61, "start_index": 2798, "end_index": 2883, "_text": "Soft palate was in the midline and moved upward nicely , but did not respond to gag ."}
+{"sent_index": 62, "start_index": 2884, "end_index": 2943, "_text": "Tongue protrudes 2 cm. with slight deviation to the right ."}
+{"sent_index": 63, "start_index": 2944, "end_index": 3012, "_text": "Sensory exam was not remarkable , cerebellar exam was not possible ."}
+{"sent_index": 64, "start_index": 3013, "end_index": 3118, "_text": "Motor exam showed greater than 4+ strength bilateral upper extremities and psoas unable to lift off bed ."}
+{"sent_index": 65, "start_index": 3119, "end_index": 3166, "_text": "Quadraceps 2+ on the left and 3+ on the right ."}
+{"sent_index": 66, "start_index": 3167, "end_index": 3211, "_text": "Gastroc. 3 on the left and 4+ on the right ."}
+{"sent_index": 67, "start_index": 3212, "end_index": 3254, "_text": "Tibialis 3 on the left , 5+ on the right ."}
+{"sent_index": 68, "start_index": 3255, "end_index": 3308, "_text": "Reflexes were diffuse 3+ , toes upgoing bilaterally ."}
+{"sent_index": 69, "start_index": 3309, "end_index": 3324, "_text": "LABORATORY DATA"}
+{"sent_index": 70, "start_index": 3327, "end_index": 3460, "_text": "On admission , electrocardiogram showed less than 1 mm. of ST depression in V4 to V6 , which is likely the patient &apos;s baseline ."}
+{"sent_index": 71, "start_index": 3461, "end_index": 3535, "_text": "CK &apos;s were mildly elevated but the MB fractions were not remarkable ."}
+{"sent_index": 72, "start_index": 3536, "end_index": 3591, "_text": "A chest X-ray showed some left lower lobe atelectasis ."}
+{"sent_index": 73, "start_index": 3592, "end_index": 3715, "_text": "Admitting creatinine was .7 , glucose 131 , white blood count was 10,000 , hematocrit was 40 , liver enzymes normal range ."}
+{"sent_index": 74, "start_index": 3716, "end_index": 3731, "_text": "HOSPITAL COURSE"}
+{"sent_index": 75, "start_index": 3734, "end_index": 3804, "_text": "The patient was taken to the Intensive Care Unit after her angiogram ."}
+{"sent_index": 76, "start_index": 3805, "end_index": 3855, "_text": "She was aggressively anticoagulated with heparin ."}
+{"sent_index": 77, "start_index": 3856, "end_index": 3947, "_text": "A small intimal tear in the arch of the aorta during the angiogram , was without sequelae ."}
+{"sent_index": 78, "start_index": 3948, "end_index": 4154, "_text": "She was doing well with at least 4+ strength in all of her extremities , when on 11/13 , she had an acute drop in her systolic blood pressure to 70 for unclear reasons and without evidence of acute sepsis ."}
+{"sent_index": 79, "start_index": 4155, "end_index": 4225, "_text": "This was accompanied by substantial decrement in neurologic function ."}
+{"sent_index": 80, "start_index": 4226, "end_index": 4281, "_text": "For a short time , she seemed &quot; locked in &quot; ."}
+{"sent_index": 81, "start_index": 4282, "end_index": 4417, "_text": "She has made slow progress since then and at the time of discharge has 4-strength at the left elbow and 4+ in the left wrist and hand ."}
+{"sent_index": 82, "start_index": 4418, "end_index": 4496, "_text": "Trace movement of the right elbow and 4-strength of the right wrist and hand ."}
+{"sent_index": 83, "start_index": 4497, "end_index": 4581, "_text": "4-to 4+ strength at the left ankle , 4+ strength at the right knee and right ankle ."}
+{"sent_index": 84, "start_index": 4582, "end_index": 4629, "_text": "She is unable to lift either foot off the bed ."}
+{"sent_index": 85, "start_index": 4630, "end_index": 4667, "_text": "The extra ocular movements are full ."}
+{"sent_index": 86, "start_index": 4668, "end_index": 4691, "_text": "Tongue protrudes 4 cm ."}
+{"sent_index": 87, "start_index": 4692, "end_index": 4829, "_text": "She is drowsy at times , but generally alert , responsive , interactive , able to talk in two to three word sentences when she wants to ."}
+{"sent_index": 88, "start_index": 4830, "end_index": 5030, "_text": "She has severe memory deficits , but nevertheless , is able to engage in conversation , answers questions , names things well , does calculations and recognizes family members and states preferences ."}
+{"sent_index": 89, "start_index": 5031, "end_index": 5165, "_text": "She has been working with Speech Therapy , occupational therapy and physical therapy closely and should continue to show improvement ."}
+{"sent_index": 90, "start_index": 5166, "end_index": 5226, "_text": "She is anticoagulated on Coumadin and this has been stable ."}
+{"sent_index": 91, "start_index": 5227, "end_index": 5314, "_text": "She is do not resuscitate in agreement with the wishes of her multiple family members ."}
+{"sent_index": 92, "start_index": 5315, "end_index": 5594, "_text": "Follow up computerized tomography scans and magnetic resonance imaging studies have shown infarction in bilateral basis pontis , mid brain , the superior cerebellar areas , left thalamus , bilateral temporal lobes medially and inferiorly and left posterior communicating artery ."}
+{"sent_index": 93, "start_index": 5595, "end_index": 5691, "_text": "The patient had fevers sporadically during this hospitalization with rising white blood counts ."}
+{"sent_index": 94, "start_index": 5692, "end_index": 5759, "_text": "A chest X-ray documented a progressing left lower lobe infiltrate ."}
+{"sent_index": 95, "start_index": 5760, "end_index": 5863, "_text": "Initially this improved on Clindamycin and Cefotetan , but fevers recurred on this antibiotic regimen ."}
+{"sent_index": 96, "start_index": 5864, "end_index": 6018, "_text": "Sputum grew out Klebsiella pneumoniae , and she was treated with Gentamicin and Ancef for 14 days intravenous ( bug being sensitive to these two drugs ) ."}
+{"sent_index": 97, "start_index": 6019, "end_index": 6159, "_text": "A left pleural effusion developed and this was tapped with ultrasound guidance , and found to be sterile , and without evidence of empyema ."}
+{"sent_index": 98, "start_index": 6160, "end_index": 6193, "_text": "The patient is on Ciprofloxacin ."}
+{"sent_index": 99, "start_index": 6194, "end_index": 6288, "_text": "The day of discharge is day #3 of 7 , after which antibiotics should be totally discontinued ."}
+{"sent_index": 100, "start_index": 6289, "end_index": 6426, "_text": "She has developed bad thrush in this setting , she is not yet able to swallow and so she is on Nystatin swish and spit five times a day ."}
+{"sent_index": 101, "start_index": 6427, "end_index": 6473, "_text": "She also gets Peridex to clean out her mouth ."}
+{"sent_index": 102, "start_index": 6474, "end_index": 6634, "_text": "Once her liver enzymes are completely normal , a seven day course of Fluconazol may be helpful if the thrush is not spontaneously resolving off of antibiotics ."}
+{"sent_index": 103, "start_index": 6635, "end_index": 6728, "_text": "She has been afebrile for greater than 10 days , including several days on oral antibiotics ."}
+{"sent_index": 104, "start_index": 6729, "end_index": 6887, "_text": "The patient &apos;s liver enzymes were noted to be elevated mid way through her hospital course , to about three times normal , especially the SGOT and SGPT ."}
+{"sent_index": 105, "start_index": 6888, "end_index": 6972, "_text": "These have spontaneously reversed , and are nearly normal at the time of discharge ."}
+{"sent_index": 106, "start_index": 6973, "end_index": 7104, "_text": "A right upper quadrant ultrasound documented gallstones , without evidence of common bile duct dilatation or active cholecystitis ."}
+{"sent_index": 107, "start_index": 7105, "end_index": 7249, "_text": "The exact cause of her liver enzyme elevation is unclear , but we are being careful about administering drugs , which might irritate the liver ."}
+{"sent_index": 108, "start_index": 7250, "end_index": 7330, "_text": "The patient had a steady decline in her hematocrit during this hospitalization ."}
+{"sent_index": 109, "start_index": 7331, "end_index": 7481, "_text": "Iron studies are all entirely normal , her anemia is attributed to anemia or chronic disease with hypoproliferation as well as multiple phlebotomies ."}
+{"sent_index": 110, "start_index": 7482, "end_index": 7533, "_text": "The plan is to give her folic acid , but not iron ."}
+{"sent_index": 111, "start_index": 7534, "end_index": 7630, "_text": "The patient &apos;s potassiums have been repeatedly low and require daily checks and repletion ."}
+{"sent_index": 112, "start_index": 7631, "end_index": 7709, "_text": "This is thought due to the extensive course of Gentamicin which she received ."}
+{"sent_index": 113, "start_index": 7710, "end_index": 7783, "_text": "This must be carefully checked despite the standing order for potassium ."}
+{"sent_index": 114, "start_index": 7784, "end_index": 7845, "_text": "The patient has had low sodiums during this hospitalization ."}
+{"sent_index": 115, "start_index": 7846, "end_index": 8008, "_text": "This may due to her central nervous system process or her pulmonary process , with fluids administered as described , she should not have any problems from this ."}
+{"sent_index": 116, "start_index": 8009, "end_index": 8043, "_text": "Her sodiums were never below 130 ."}
+{"sent_index": 117, "start_index": 8044, "end_index": 8075, "_text": "She does well with tube feeds ."}
+{"sent_index": 118, "start_index": 8076, "end_index": 8111, "_text": "Her tube feeds orders are as follow"}
+{"sent_index": 119, "start_index": 8114, "end_index": 8156, "_text": "full strength Replete with fiber at 70 cc."}
+{"sent_index": 120, "start_index": 8157, "end_index": 8167, "_text": "per hour ."}
+{"sent_index": 121, "start_index": 8168, "end_index": 8206, "_text": "In addition , the patient gets 250 cc."}
+{"sent_index": 122, "start_index": 8207, "end_index": 8249, "_text": "of juice ( not water ) three times a day ."}
+{"sent_index": 123, "start_index": 8250, "end_index": 8327, "_text": "She also gets Lactinex granules three packages in each bottle of tube feeds ."}
+{"sent_index": 124, "start_index": 8328, "end_index": 8405, "_text": "She also gets Metamucil one teaspoon with the first bolus of juice each day ."}
+{"sent_index": 125, "start_index": 8406, "end_index": 8652, "_text": "Please note that evaluation by the swallowing therapist , showed that the patient is aspirating at this time , but there is great hope from the nature of her deficit and the good movements of her tongue that normal swallowing should return soon ."}
+{"sent_index": 126, "start_index": 8653, "end_index": 8785, "_text": "It is for this reason that she is discharged with an nasogastric tube and that no plans for G tube placement are made at this time ."}
+{"sent_index": 127, "start_index": 8786, "end_index": 8876, "_text": "She has a history of of angina without myocardial infarction that has not been worked up ."}
+{"sent_index": 128, "start_index": 8877, "end_index": 8990, "_text": "She did have brief chest pain twice during this admission that did not correlate with electrocardiogram changes ."}
+{"sent_index": 129, "start_index": 8991, "end_index": 9147, "_text": "In the first week of November , her electrocardiogram showed T wave inversions in the lateral leads , correlating with an increase in the LDH , but not CK ."}
+{"sent_index": 130, "start_index": 9148, "end_index": 9250, "_text": "This did not normalize with administration of Isordil and the patient denied chest pain at this time ."}
+{"sent_index": 131, "start_index": 9251, "end_index": 9433, "_text": "As of 4/7 , her electrocardiogram had reverted back to normal and there is no evidence of congestive heart failure or continued electrocardiogram changes , and chest pain is absent ."}
+{"sent_index": 132, "start_index": 9434, "end_index": 9464, "_text": "Her cholesterol was 350 here ."}
+{"sent_index": 133, "start_index": 9465, "end_index": 9517, "_text": "She has been off of her hypercholesterol medicines ."}
+{"sent_index": 134, "start_index": 9518, "end_index": 9638, "_text": "These can be restarted when it is deemed reasonable , in view of her acute disease and recently elevated liver enzymes ."}
+{"sent_index": 135, "start_index": 9639, "end_index": 9763, "_text": "Note that the liver enzymes were normal on admission , at which time she was taking all of the above cholesterol medicines ."}
+{"sent_index": 136, "start_index": 9764, "end_index": 9788, "_text": "MEDICATIONS ON DISCHARGE"}
+{"sent_index": 137, "start_index": 9791, "end_index": 9860, "_text": "Metamucil 1 teaspoon q.d. , with first bolus of juice , juice 250 cc."}
+{"sent_index": 138, "start_index": 9861, "end_index": 9949, "_text": "down nasogastric tube t.i.d. , tube feeds as above , Lactinex as above , Tagamet 800 mg."}
+{"sent_index": 139, "start_index": 9950, "end_index": 10003, "_text": "nasogastric tube qhs , Nystatin swish and spit 10 cc."}
+{"sent_index": 140, "start_index": 10004, "end_index": 10051, "_text": "five times a day , Cardizem slow release 90 mg."}
+{"sent_index": 141, "start_index": 10052, "end_index": 10078, "_text": "PO q.d. , Folic Acid 1 mg."}
+{"sent_index": 142, "start_index": 10079, "end_index": 10110, "_text": "PO q.d. , Ciprofloxacin 500 mg."}
+{"sent_index": 143, "start_index": 10111, "end_index": 10162, "_text": "PO b.i.d. , discontinue on 12/10/92 KayCiel 30 mEq."}
+{"sent_index": 144, "start_index": 10163, "end_index": 10189, "_text": "down nasogastric tube q.d."}
+{"sent_index": 145, "start_index": 10192, "end_index": 10228, "_text": "Peridex 10 cc. swish and spit q.i.d."}
+{"sent_index": 146, "start_index": 10231, "end_index": 10245, "_text": "Coumadin 4 mg."}
+{"sent_index": 147, "start_index": 10246, "end_index": 10299, "_text": "nasogastric tube on odd days , alternating with 5 mg."}
+{"sent_index": 148, "start_index": 10300, "end_index": 10360, "_text": "nasogastric tube on even days , once daily , Tylenol 650 mg."}
+{"sent_index": 149, "start_index": 10361, "end_index": 10437, "_text": "PO and PR q6hours PRN pain , Nystatin powder to axilla and groin as needed ."}
+{"sent_index": 150, "start_index": 10438, "end_index": 10457, "_text": "DISCHARGE DIAGNOSIS"}
+{"sent_index": 151, "start_index": 10460, "end_index": 10555, "_text": "Basilar artery stenosis with basilar thrombosis and &quot; top of the basilar &quot; syndrome ."}
+{"sent_index": 152, "start_index": 10556, "end_index": 10681, "_text": "Includes recent infarct to pons , mid brain , left thalamus , bilateral temporal lobes and left visual cortex , on Coumadin ."}
+{"sent_index": 153, "start_index": 10682, "end_index": 10743, "_text": "The patient is do not resuscitate at family &apos;s request ."}
+{"sent_index": 154, "start_index": 10744, "end_index": 10807, "_text": "Left lower lobe pneumonia , resolving now on oral antibiotics ."}
+{"sent_index": 155, "start_index": 10808, "end_index": 10845, "_text": "Gallstones , thought to be inactive ."}
+{"sent_index": 156, "start_index": 10846, "end_index": 10880, "_text": "Improving liver enzyme elevation ."}
+{"sent_index": 157, "start_index": 10881, "end_index": 10936, "_text": "Anemia , discharge hematocrit 28 , not iron deficient ."}
+{"sent_index": 158, "start_index": 10937, "end_index": 10980, "_text": "Low potassium , thought due to Gentamicin ."}
+{"sent_index": 159, "start_index": 10981, "end_index": 11027, "_text": "Low sodium , responsive to fluid restriction ."}
+{"sent_index": 160, "start_index": 11028, "end_index": 11064, "_text": "History of coronary artery disease ."}
+{"sent_index": 161, "start_index": 11065, "end_index": 11073, "_text": "Thrush ."}
+{"sent_index": 162, "start_index": 11074, "end_index": 11092, "_text": "High cholesterol ."}
+{"sent_index": 163, "start_index": 11093, "end_index": 11239, "_text": "The patient needs prothrombin time checked daily , patient needs potassium checked daily , patient needs sodium checked at least every other day ."}
+{"sent_index": 164, "start_index": 11240, "end_index": 11261, "_text": "DO JOASSCCHIRD , M.D."}
+{"sent_index": 165, "start_index": 11262, "end_index": 11275, "_text": "DICTATING FOR"}
+{"sent_index": 166, "start_index": 11278, "end_index": 11298, "_text": "NAREA SWALLOW , M.D."}
+{"sent_index": 167, "start_index": 11299, "end_index": 11301, "_text": "TR"}
+{"sent_index": 168, "start_index": 11304, "end_index": 11313, "_text": "sw / bmot"}
+{"sent_index": 169, "start_index": 11314, "end_index": 11316, "_text": "DD"}
+{"sent_index": 170, "start_index": 11319, "end_index": 11326, "_text": "12/6/92"}
+{"sent_index": 171, "start_index": 11327, "end_index": 11340, "_text": "TD :\n12/06/92"}
+{"sent_index": 172, "start_index": 11341, "end_index": 11343, "_text": "CC"}
+{"sent_index": 173, "start_index": 11346, "end_index": 11349, "_text": "Dr."}
+{"sent_index": 174, "start_index": 11350, "end_index": 11366, "_text": "Namarce May STAT"}

@@ -1,0 +1,104 @@
+T0	problem 2292 2310	two vessel disease
+A0	Assertion T0 present
+T1	problem 4085 4105	sudden cardiac death
+A1	Assertion T1 hypothetical
+T2	problem 4631 4645	a small stroke
+A2	Assertion T2 possible
+T3	problem 4299 4307	weakness
+A3	Assertion T3 absent
+T4	problem 451 474	some GERD-like symptoms
+A4	Assertion T4 present
+T5	problem 4176 4205	left lower extremity weakness
+A5	Assertion T5 conditional
+T6	problem 2189 2212	CORONARY ARTERY DISEASE
+A6	Assertion T6 present
+T7	problem 4838 4853	apical akinesis
+A7	Assertion T7 present
+T8	problem 1988 2012	edema in the extremities
+A8	Assertion T8 absent
+T9	problem 4858 4869	stroke risk
+A9	Assertion T9 present
+T10	problem 673 681	the pain
+A10	Assertion T10 present
+T11	problem 1914 1923	nontender
+A11	Assertion T11 absent
+T12	problem 5068 5102	ST elevation myocardial infarction
+A12	Assertion T12 present
+T13	problem 4547 4557	difficulty
+A13	Assertion T13 absent
+T14	problem 1926 1938	nondistended
+A14	Assertion T14 absent
+T15	problem 1753 1767	acute distress
+A15	Assertion T15 absent
+T16	problem 3338 3354	an akinetic apex
+A16	Assertion T16 present
+T17	problem 1826 1833	murmurs
+A17	Assertion T17 absent
+T18	problem 3824 3842	significant events
+A18	Assertion T18 absent
+T19	problem 1449 1469	known drug allergies
+A19	Assertion T19 absent
+T20	problem 1633 1641	afebrile
+A20	Assertion T20 absent
+T21	problem 1331 1335	GERD
+A21	Assertion T21 present
+T22	problem 4684 4702	neurologic deficit
+A22	Assertion T22 absent
+T23	problem 3359 3389	apical mid and septal akinesis
+A23	Assertion T23 present
+T24	problem 3428 3455	significant apical akinesis
+A24	Assertion T24 present
+T25	problem 3575 3590	apical akinesis
+A25	Assertion T25 present
+T26	problem 1236 1248	Hypertension
+A26	Assertion T26 present
+T27	problem 1094 1130	ST depressions in II , III , and aVF
+A27	Assertion T27 present
+T28	problem 1303 1325	Carpal tunnel syndrome
+A28	Assertion T28 present
+T29	problem 2596 2622	proximal RCA lesion of 80%
+A29	Assertion T29 present
+T30	problem 1280 1297	Chondrocalcinosis
+A30	Assertion T30 present
+T31	problem 1254 1274	Hypercholesterolemia
+A31	Assertion T31 present
+T32	problem 985 995	dissection
+A32	Assertion T32 possible
+T33	problem 2906 2921	muscle cramping
+A33	Assertion T33 present
+T34	problem 239 276	prior coronary artery disease history
+A34	Assertion T34 absent
+T35	problem 3120 3147	her coronary artery disease
+A35	Assertion T35 present
+T36	problem 631 637	nausea
+A36	Assertion T36 present
+T37	problem 642 653	diaphoresis
+A37	Assertion T37 present
+T38	problem 1048 1089	elevations in I , aVL , and V1 through V2
+A38	Assertion T38 present
+T39	problem 528 536	The pain
+A39	Assertion T39 present
+T40	problem 3174 3199	her remaining RCA lesions
+A40	Assertion T40 present
+T41	problem 823 831	the pain
+A41	Assertion T41 present
+T42	problem 732 746	these symptoms
+A42	Assertion T42 present
+T43	problem 2348 2360	a 90% lesion
+A43	Assertion T43 present
+T44	problem 2387 2401	a 95% stenosis
+A44	Assertion T44 present
+T45	problem 2429 2441	99% stenosis
+A45	Assertion T45 present
+T46	problem 296 306	chest pain
+A46	Assertion T46 present
+T47	problem 3011 3029	these side effects
+A47	Assertion T47 present
+T48	problem 194 206	hypertension
+A48	Assertion T48 present
+T49	problem 211 231	hypercholesterolemia
+A49	Assertion T49 present
+T50	problem 329 337	the pain
+A50	Assertion T50 present
+T51	problem 2627 2653	a mid RCA lesion of 80-90%
+A51	Assertion T51 present

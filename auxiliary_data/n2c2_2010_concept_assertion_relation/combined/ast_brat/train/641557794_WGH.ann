@@ -1,0 +1,54 @@
+T0	problem 1759 1810	a 3.3 centimeter right lobe microfollicular adenoma
+A0	Assertion T0 present
+T1	problem 1832 1851	papillary carcinoma
+A1	Assertion T1 present
+T2	problem 456 464	migraine
+A2	Assertion T2 present
+T3	problem 1879 1917	any middle compartment lymphadenopathy
+A3	Assertion T3 absent
+T4	problem 314 353	Left thyroid occult papillary carcinoma
+A4	Assertion T4 present
+T5	problem 1428 1433	bruit
+A5	Assertion T5 absent
+T6	problem 767 774	dyspnea
+A6	Assertion T6 absent
+T7	problem 722 753	pressure discomfort in the neck
+A7	Assertion T7 present
+T8	problem 687 716	a right lower dominant nodule
+A8	Assertion T8 present
+T9	problem 673 681	symptoms
+A9	Assertion T9 present
+T10	problem 1634 1640	masses
+A10	Assertion T10 absent
+T11	problem 1009 1021	exophthalmos
+A11	Assertion T11 absent
+T12	problem 356 387	Chronic lymphocytic thyroiditis
+A12	Assertion T12 present
+T13	problem 839 853	thyroid cancer
+A13	Assertion T13 associated_with_someone_else
+T14	problem 621 652	a non-toxic multinodular goiter
+A14	Assertion T14 present
+T15	problem 1618 1630	organomegaly
+A15	Assertion T15 absent
+T16	problem 478 496	Droperidol allergy
+A16	Assertion T16 conditional
+T17	problem 447 453	asthma
+A17	Assertion T17 present
+T18	problem 778 787	dysphagia
+A18	Assertion T18 absent
+T19	problem 1597 1607	non-tender
+A19	Assertion T19 absent
+T20	problem 1352 1387	associated cervical lymphadenopathy
+A20	Assertion T20 absent
+T21	problem 1293 1314	a multinodular goiter
+A21	Assertion T21 present
+T22	problem 1832 1851	papillary carcinoma
+A22	Assertion T22 present
+T23	problem 259 288	Non-toxic multinodular goiter
+A23	Assertion T23 present
+T24	problem 1570 1576	murmur
+A24	Assertion T24 absent
+T25	problem 1931 1940	the tumor
+A25	Assertion T25 absent
+T26	problem 1503 1510	stridor
+A26	Assertion T26 absent

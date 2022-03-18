@@ -1,0 +1,66 @@
+{"sent_index": 0, "start_index": 0, "end_index": 12, "_text": "018636330 DH"}
+{"sent_index": 1, "start_index": 13, "end_index": 20, "_text": "5425710"}
+{"sent_index": 2, "start_index": 21, "end_index": 27, "_text": "123524"}
+{"sent_index": 3, "start_index": 28, "end_index": 35, "_text": "0144918"}
+{"sent_index": 4, "start_index": 36, "end_index": 56, "_text": "6/2/2005 12:00:00 AM"}
+{"sent_index": 5, "start_index": 57, "end_index": 74, "_text": "Discharge Summary"}
+{"sent_index": 6, "start_index": 75, "end_index": 81, "_text": "Signed"}
+{"sent_index": 7, "start_index": 82, "end_index": 85, "_text": "DIS"}
+{"sent_index": 8, "start_index": 86, "end_index": 99, "_text": "Report Status"}
+{"sent_index": 9, "start_index": 102, "end_index": 108, "_text": "Signed"}
+{"sent_index": 10, "start_index": 109, "end_index": 126, "_text": "DISCHARGE SUMMARY"}
+{"sent_index": 11, "start_index": 127, "end_index": 167, "_text": "NAME :\nKOTE , OA\nUNIT NUMBER :\n509-22-30"}
+{"sent_index": 12, "start_index": 168, "end_index": 182, "_text": "ADMISSION DATE"}
+{"sent_index": 13, "start_index": 185, "end_index": 195, "_text": "06/02/2005"}
+{"sent_index": 14, "start_index": 196, "end_index": 223, "_text": "DISCHARGE DATE :\n06/05/2005"}
+{"sent_index": 15, "start_index": 224, "end_index": 243, "_text": "PRINCIPAL DIAGNOSIS"}
+{"sent_index": 16, "start_index": 246, "end_index": 305, "_text": "C5-6 disc herniation with cord compression and myelopathy ."}
+{"sent_index": 17, "start_index": 306, "end_index": 325, "_text": "PRINCIPAL PROCEDURE"}
+{"sent_index": 18, "start_index": 328, "end_index": 389, "_text": "Microscopic anterior cervical diskectomy at C5-6 and fusion ."}
+{"sent_index": 19, "start_index": 390, "end_index": 416, "_text": "HISTORY OF PRESENT ILLNESS"}
+{"sent_index": 20, "start_index": 419, "end_index": 533, "_text": "The patient is a 63-year-old female with a three-year history of bilateral hand numbness and occasional weakness ."}
+{"sent_index": 21, "start_index": 534, "end_index": 634, "_text": "Within the past year , these symptoms have progressively gotten worse , to encompass also her feet ."}
+{"sent_index": 22, "start_index": 635, "end_index": 774, "_text": "She had a workup by her neurologist and an MRI revealed a C5-6 disc herniation with cord compression and a T2 signal change at that level ."}
+{"sent_index": 23, "start_index": 775, "end_index": 795, "_text": "PAST MEDICAL HISTORY"}
+{"sent_index": 24, "start_index": 798, "end_index": 845, "_text": "Significant for hypertension , hyperlipidemia ."}
+{"sent_index": 25, "start_index": 846, "end_index": 870, "_text": "MEDICATIONS ON ADMISSION"}
+{"sent_index": 26, "start_index": 873, "end_index": 927, "_text": "Lipitor , Flexeril , hydrochlorothiazide and Norvasc ."}
+{"sent_index": 27, "start_index": 928, "end_index": 937, "_text": "ALLERGIES"}
+{"sent_index": 28, "start_index": 940, "end_index": 971, "_text": "She has no known drug allergy ."}
+{"sent_index": 29, "start_index": 972, "end_index": 986, "_text": "SOCIAL HISTORY"}
+{"sent_index": 30, "start_index": 989, "end_index": 1028, "_text": "She smokes one pack per day x45 years ."}
+{"sent_index": 31, "start_index": 1029, "end_index": 1062, "_text": "She occasionally drinks alcohol ."}
+{"sent_index": 32, "start_index": 1063, "end_index": 1083, "_text": "PHYSICAL EXAMINATION"}
+{"sent_index": 33, "start_index": 1086, "end_index": 1149, "_text": "She had 5/5 strength in bilateral upper and lower extremities ."}
+{"sent_index": 34, "start_index": 1150, "end_index": 1297, "_text": "She had a Hoffman &apos;s sign greater on the right than the left and she had 10 beats of clonus in the right foot and 3-5 beats in the left foot ."}
+{"sent_index": 35, "start_index": 1298, "end_index": 1371, "_text": "She had hyperreflexia in both the bilateral upper and lower extremities ."}
+{"sent_index": 36, "start_index": 1372, "end_index": 1387, "_text": "HOSPITAL COURSE"}
+{"sent_index": 37, "start_index": 1390, "end_index": 1430, "_text": "The patient tolerated a C5-6 ACDF by Dr."}
+{"sent_index": 38, "start_index": 1431, "end_index": 1457, "_text": "Miezetri Gach quite well ."}
+{"sent_index": 39, "start_index": 1458, "end_index": 1582, "_text": "She had a postoperative CT scan that revealed partial decompression of the spinal canal and good placement of her hardware ."}
+{"sent_index": 40, "start_index": 1583, "end_index": 1658, "_text": "Immediately postop , her exam only improved slightly in her hyperreflexia ."}
+{"sent_index": 41, "start_index": 1659, "end_index": 1711, "_text": "She was ambulating by postoperative day number two ."}
+{"sent_index": 42, "start_index": 1712, "end_index": 1742, "_text": "She tolerated a regular diet ."}
+{"sent_index": 43, "start_index": 1743, "end_index": 1843, "_text": "Her pain was under good control with PO pain medications and she was deemed suitable for discharge ."}
+{"sent_index": 44, "start_index": 1844, "end_index": 1860, "_text": "DISCHARGE ORDERS"}
+{"sent_index": 45, "start_index": 1863, "end_index": 1896, "_text": "The patient was asked to call Dr."}
+{"sent_index": 46, "start_index": 1897, "end_index": 1971, "_text": "Miezetri Gach &apos;s office for a follow-up appointment and wound check ."}
+{"sent_index": 47, "start_index": 1972, "end_index": 2089, "_text": "She is asked to call with any fevers , chills , increasing weakness or numbness or any bowel and bladder disruption ."}
+{"sent_index": 48, "start_index": 2090, "end_index": 2111, "_text": "DISCHARGE MEDICATIONS"}
+{"sent_index": 49, "start_index": 2114, "end_index": 2163, "_text": "She was discharged on the following medications ."}
+{"sent_index": 50, "start_index": 2164, "end_index": 2191, "_text": "1. Colace , 100 mg PO bid ."}
+{"sent_index": 51, "start_index": 2192, "end_index": 2219, "_text": "2. Zantac , 150 mg PO bid ."}
+{"sent_index": 52, "start_index": 2220, "end_index": 2270, "_text": "3. Percocet , 5/325 , 1-2 tabs PO q4-6h prn pain ."}
+{"sent_index": 53, "start_index": 2271, "end_index": 2300, "_text": "4. Lipitor , 10 mg PO daily ."}
+{"sent_index": 54, "start_index": 2301, "end_index": 2342, "_text": "5. Hydrochlorothiazide , 25 mg PO daily ."}
+{"sent_index": 55, "start_index": 2343, "end_index": 2371, "_text": "6. Norvasc , 5 mg PO daily ."}
+{"sent_index": 56, "start_index": 2372, "end_index": 2390, "_text": "LALIND KOTE , M.D."}
+{"sent_index": 57, "start_index": 2391, "end_index": 2404, "_text": "DICTATING FOR"}
+{"sent_index": 58, "start_index": 2407, "end_index": 2455, "_text": "Electronically Signed MIEZETRI NIMIRY POP , M.D."}
+{"sent_index": 59, "start_index": 2456, "end_index": 2472, "_text": "08/01/2005 18:50"}
+{"sent_index": 60, "start_index": 2503, "end_index": 2529, "_text": "MIEZETRI NIMIRY POP , M.D."}
+{"sent_index": 61, "start_index": 2530, "end_index": 2532, "_text": "TR"}
+{"sent_index": 62, "start_index": 2535, "end_index": 2537, "_text": "qg"}
+{"sent_index": 63, "start_index": 2538, "end_index": 2553, "_text": "DD :\n07/30/2005"}
+{"sent_index": 64, "start_index": 2554, "end_index": 2586, "_text": "TD :\n07/31/2005 9:43 A 123524\ncc"}
+{"sent_index": 65, "start_index": 2589, "end_index": 2615, "_text": "MIEZETRI NIMIRY POP , M.D."}

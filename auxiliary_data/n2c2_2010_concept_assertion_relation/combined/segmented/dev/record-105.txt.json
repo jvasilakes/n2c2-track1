@@ -1,0 +1,146 @@
+{"sent_index": 0, "start_index": 0, "end_index": 14, "_text": "Admission Date"}
+{"sent_index": 1, "start_index": 17, "end_index": 27, "_text": "2017-06-13"}
+{"sent_index": 2, "start_index": 28, "end_index": 42, "_text": "Discharge Date"}
+{"sent_index": 3, "start_index": 45, "end_index": 55, "_text": "2017-06-17"}
+{"sent_index": 4, "start_index": 56, "end_index": 69, "_text": "Date of Birth"}
+{"sent_index": 5, "start_index": 72, "end_index": 82, "_text": "1956-02-17"}
+{"sent_index": 6, "start_index": 83, "end_index": 86, "_text": "Sex"}
+{"sent_index": 7, "start_index": 89, "end_index": 90, "_text": "M"}
+{"sent_index": 8, "start_index": 91, "end_index": 98, "_text": "Service"}
+{"sent_index": 9, "start_index": 101, "end_index": 115, "_text": "CARDIOTHORACIC"}
+{"sent_index": 10, "start_index": 116, "end_index": 125, "_text": "Allergies"}
+{"sent_index": 11, "start_index": 128, "end_index": 182, "_text": "Patient recorded as having No Known Allergies to Drugs"}
+{"sent_index": 12, "start_index": 183, "end_index": 199, "_text": "Attending:Jordan"}
+{"sent_index": 13, "start_index": 200, "end_index": 218, "_text": "U Kostohryz , M.D."}
+{"sent_index": 14, "start_index": 219, "end_index": 234, "_text": "Chief Complaint"}
+{"sent_index": 15, "start_index": 236, "end_index": 268, "_text": "recent mild angina with exertion"}
+{"sent_index": 16, "start_index": 269, "end_index": 305, "_text": "Major Surgical or Invasive Procedure"}
+{"sent_index": 17, "start_index": 309, "end_index": 411, "_text": "emergency CABG X 3 ( 2017-06-13 )( LIMA to LAD , SVG to ramus , SVG to OM )\nHistory of Present Illness"}
+{"sent_index": 18, "start_index": 414, "end_index": 497, "_text": "61 yo African-American-Hispanic male had abnormal EKG found as part of pre-op eval."}
+{"sent_index": 19, "start_index": 498, "end_index": 525, "_text": "for ventral hernia repair ."}
+{"sent_index": 20, "start_index": 526, "end_index": 621, "_text": "Had subsequent abnormal stress test and pefusion imaging showed EF 38% with perfusion defects ."}
+{"sent_index": 21, "start_index": 622, "end_index": 712, "_text": "Echo prior to scheduled cath showed mild LVH , inferior HK , EF 40% , mild MR , mild LAE ."}
+{"sent_index": 22, "start_index": 713, "end_index": 796, "_text": "Cath at Kindred/North Shore today showed 80% LM lesion with normal LAD , CX , RCA ."}
+{"sent_index": 23, "start_index": 797, "end_index": 829, "_text": "Severe systolic HTN also noted ."}
+{"sent_index": 24, "start_index": 830, "end_index": 880, "_text": "Transferred in urgently for cabg with Dr. Howard ."}
+{"sent_index": 25, "start_index": 881, "end_index": 901, "_text": "Past Medical History"}
+{"sent_index": 26, "start_index": 904, "end_index": 918, "_text": "ventral hernia"}
+{"sent_index": 27, "start_index": 919, "end_index": 928, "_text": "HTN elev."}
+{"sent_index": 28, "start_index": 929, "end_index": 1013, "_text": "chol. right facial droop with metal plate secondary to GSW to face right nephrectomy"}
+{"sent_index": 29, "start_index": 1014, "end_index": 1028, "_text": "Social History"}
+{"sent_index": 30, "start_index": 1031, "end_index": 1045, "_text": "current smoker"}
+{"sent_index": 31, "start_index": 1046, "end_index": 1060, "_text": "Family History"}
+{"sent_index": 32, "start_index": 1063, "end_index": 1072, "_text": "not given"}
+{"sent_index": 33, "start_index": 1073, "end_index": 1086, "_text": "Physical Exam"}
+{"sent_index": 34, "start_index": 1088, "end_index": 1143, "_text": "Not done , taken to OR direct from ambulance transfer ."}
+{"sent_index": 35, "start_index": 1144, "end_index": 1161, "_text": "Pertinent Results"}
+{"sent_index": 36, "start_index": 1163, "end_index": 1187, "_text": "2017-06-14 02:06AM BLOOD"}
+{"sent_index": 37, "start_index": 1188, "end_index": 1289, "_text": "WBC - 9.4 RBC - 3.61* Hgb - 10.4* Hct - 29.9* MCV - 83 MCH - 28.8 MCHC - 34.8 RDW - 14.3 Plt Ct - 154"}
+{"sent_index": 38, "start_index": 1290, "end_index": 1314, "_text": "2017-06-17 05:14AM BLOOD"}
+{"sent_index": 39, "start_index": 1315, "end_index": 1325, "_text": "Hct - 25.2"}
+{"sent_index": 40, "start_index": 1327, "end_index": 1351, "_text": "2017-06-14 02:06AM BLOOD"}
+{"sent_index": 41, "start_index": 1352, "end_index": 1364, "_text": "Plt Ct - 154"}
+{"sent_index": 42, "start_index": 1365, "end_index": 1389, "_text": "2017-06-13 08:05PM BLOOD"}
+{"sent_index": 43, "start_index": 1390, "end_index": 1428, "_text": "PT - 13.6* PTT - 33.3 INR ( PT ) - 1.2"}
+{"sent_index": 44, "start_index": 1430, "end_index": 1454, "_text": "2017-06-17 05:14AM BLOOD"}
+{"sent_index": 45, "start_index": 1455, "end_index": 1520, "_text": "UreaN - 25* Creat - 1.0 K - 3.9\n2017-06-15 02:02PM BLOOD\nMg - 2.1"}
+{"sent_index": 46, "start_index": 1521, "end_index": 1533, "_text": "FINAL REPORT"}
+{"sent_index": 47, "start_index": 1534, "end_index": 1561, "_text": "TWO VIEW CHEST , 2017-06-17"}
+{"sent_index": 48, "start_index": 1562, "end_index": 1572, "_text": "COMPARISON"}
+{"sent_index": 49, "start_index": 1575, "end_index": 1587, "_text": "2017-06-14 ."}
+{"sent_index": 50, "start_index": 1588, "end_index": 1598, "_text": "INDICATION"}
+{"sent_index": 51, "start_index": 1601, "end_index": 1638, "_text": "Status post coronary bypass surgery ."}
+{"sent_index": 52, "start_index": 1639, "end_index": 1855, "_text": "There has been removal of a Swan-Ganz catheter and placement of a right internal jugular vascular catheter , with the tip terminating in the proximal right atrium just below the junction with the superior vena cava ."}
+{"sent_index": 53, "start_index": 1856, "end_index": 1929, "_text": "Cardiac and mediastinal contours are stable in the postoperative period ."}
+{"sent_index": 54, "start_index": 1930, "end_index": 1983, "_text": "Previously reported interstitial edema has resolved ."}
+{"sent_index": 55, "start_index": 1984, "end_index": 2049, "_text": "There has been interval improvement in left basilar atelectasis ."}
+{"sent_index": 56, "start_index": 2050, "end_index": 2099, "_text": "Right basilar atelectasis has slightly worsened ."}
+{"sent_index": 57, "start_index": 2100, "end_index": 2143, "_text": "Bilateral pleural effusions are unchanged ."}
+{"sent_index": 58, "start_index": 2144, "end_index": 2154, "_text": "IMPRESSION"}
+{"sent_index": 59, "start_index": 2157, "end_index": 2219, "_text": "1. Vascular catheter tip terminates in proximal right atrium ."}
+{"sent_index": 60, "start_index": 2220, "end_index": 2298, "_text": "2. Bibasilar minor atelectasis , worse on the right and improved on the left ."}
+{"sent_index": 61, "start_index": 2299, "end_index": 2329, "_text": "Persistent pleural effusions ."}
+{"sent_index": 62, "start_index": 2330, "end_index": 2341, "_text": "DR. John S."}
+{"sent_index": 63, "start_index": 2342, "end_index": 2351, "_text": "Beauchamp"}
+{"sent_index": 64, "start_index": 2352, "end_index": 2385, "_text": "Approved :\nSAT 2017-06-17 8:20 PM"}
+{"sent_index": 65, "start_index": 2386, "end_index": 2411, "_text": "Procedure Date:2017-06-17"}
+{"sent_index": 66, "start_index": 2412, "end_index": 2419, "_text": "PRE-CPB"}
+{"sent_index": 67, "start_index": 2422, "end_index": 2457, "_text": "The left atrium is mildly dilated ."}
+{"sent_index": 68, "start_index": 2458, "end_index": 2527, "_text": "No spontaneous echo contrast is seen in the body of the left atrium ."}
+{"sent_index": 69, "start_index": 2528, "end_index": 2634, "_text": "No spontaneous echo contrast or thrombus is seen in the body of the left atrium or left atrial appendage ."}
+{"sent_index": 70, "start_index": 2635, "end_index": 2705, "_text": "No mass/thrombus is seen in the left atrium or left atrial appendage ."}
+{"sent_index": 71, "start_index": 2706, "end_index": 2762, "_text": "No atrial septal defect is seen by 2D or color Doppler ."}
+{"sent_index": 72, "start_index": 2763, "end_index": 2841, "_text": "There is mild symmetric left ventricular hypertrophy with normal cavity size ."}
+{"sent_index": 73, "start_index": 2842, "end_index": 2896, "_text": "There is mild symmetric left ventricular hypertrophy ."}
+{"sent_index": 74, "start_index": 2897, "end_index": 2941, "_text": "The left ventricular cavity size is normal ."}
+{"sent_index": 75, "start_index": 2942, "end_index": 2980, "_text": "No left ventricular aneurysm is seen ."}
+{"sent_index": 76, "start_index": 2981, "end_index": 3043, "_text": "There is mild regional left ventricular systolic dysfunction ."}
+{"sent_index": 77, "start_index": 3044, "end_index": 3108, "_text": "Overall left ventricular systolic function is mildly depressed ."}
+{"sent_index": 78, "start_index": 3109, "end_index": 3148, "_text": "There is no ventricular septal defect ."}
+{"sent_index": 79, "start_index": 3149, "end_index": 3227, "_text": "Resting regional wall motion abnormalities include mild inferior hypokinesis ."}
+{"sent_index": 80, "start_index": 3228, "end_index": 3292, "_text": "Right ventricular chamber size and free wall motion are normal ."}
+{"sent_index": 81, "start_index": 3293, "end_index": 3341, "_text": "The right ventricular cavity is mildly dilated ."}
+{"sent_index": 82, "start_index": 3342, "end_index": 3388, "_text": "There are simple atheroma in the aortic root ."}
+{"sent_index": 83, "start_index": 3389, "end_index": 3439, "_text": "There are simple atheroma in the ascending aorta ."}
+{"sent_index": 84, "start_index": 3440, "end_index": 3486, "_text": "There are simple atheroma in the aortic arch ."}
+{"sent_index": 85, "start_index": 3487, "end_index": 3547, "_text": "There are simple atheroma in the descending thoracic aorta ."}
+{"sent_index": 86, "start_index": 3548, "end_index": 3587, "_text": "There are three aortic valve leaflets ."}
+{"sent_index": 87, "start_index": 3588, "end_index": 3636, "_text": "The aortic valve leaflets are mildly thickened ."}
+{"sent_index": 88, "start_index": 3637, "end_index": 3692, "_text": "No masses or vegetations are seen on the aortic valve ."}
+{"sent_index": 89, "start_index": 3693, "end_index": 3728, "_text": "There is no aortic valve stenosis ."}
+{"sent_index": 90, "start_index": 3729, "end_index": 3765, "_text": "Trace aortic regurgitation is seen ."}
+{"sent_index": 91, "start_index": 3766, "end_index": 3814, "_text": "The mitral valve leaflets are mildly thickened ."}
+{"sent_index": 92, "start_index": 3815, "end_index": 3866, "_text": "No mass or vegetation is seen on the mitral valve ."}
+{"sent_index": 93, "start_index": 3867, "end_index": 3905, "_text": "Trivial mitral regurgitation is seen ."}
+{"sent_index": 94, "start_index": 3906, "end_index": 3940, "_text": "There is no pericardial effusion ."}
+{"sent_index": 95, "start_index": 3941, "end_index": 3949, "_text": "POST-CPB"}
+{"sent_index": 96, "start_index": 3952, "end_index": 4001, "_text": "Preserved LV systolic function on phenylephrine ."}
+{"sent_index": 97, "start_index": 4002, "end_index": 4016, "_text": "LVEF now 50% ."}
+{"sent_index": 98, "start_index": 4017, "end_index": 4045, "_text": "Trace MR , AI as described ."}
+{"sent_index": 99, "start_index": 4046, "end_index": 4070, "_text": "Normal aortic contours ."}
+{"sent_index": 100, "start_index": 4071, "end_index": 4156, "_text": "I certify that I was present for this procedure in compliance with HCFA regulations ."}
+{"sent_index": 101, "start_index": 4157, "end_index": 4225, "_text": "Electronically signed by Tracy Kimball , MD , Interpreting physician"}
+{"sent_index": 102, "start_index": 4226, "end_index": 4247, "_text": "Brief Hospital Course"}
+{"sent_index": 103, "start_index": 4249, "end_index": 4345, "_text": "Admitted directly to OR from ambulance transfer and underwent cabg x3 with Dr. Howard on 06-13 ."}
+{"sent_index": 104, "start_index": 4346, "end_index": 4427, "_text": "Transferred to the CSRU in stable condition on phenylephrine and propofol drips ."}
+{"sent_index": 105, "start_index": 4428, "end_index": 4486, "_text": "Extubated early the next morning and chest tubes removed ."}
+{"sent_index": 106, "start_index": 4487, "end_index": 4607, "_text": "Gentle diuresis and beta blockade started , and he was transferred to the floor to begin increasing his activity level ."}
+{"sent_index": 107, "start_index": 4608, "end_index": 4673, "_text": "Foley removed on POD #2 and had scattered rales with temp 101.2 ."}
+{"sent_index": 108, "start_index": 4674, "end_index": 4739, "_text": "Afebrile the next day and pacing wires removed without incident ."}
+{"sent_index": 109, "start_index": 4740, "end_index": 4823, "_text": "He made excellent progress and was discharged to home with VNA services on POD #4 ."}
+{"sent_index": 110, "start_index": 4824, "end_index": 4889, "_text": "He is to follow up with providers as per discharge instructions ."}
+{"sent_index": 111, "start_index": 4890, "end_index": 4958, "_text": "Medications on Admission :\nbisoprolol 5 mg daily crestor 20 mg daily"}
+{"sent_index": 112, "start_index": 4959, "end_index": 4998, "_text": "HCTZ 25 mg daily lisinopril 40 mg daily"}
+{"sent_index": 113, "start_index": 4999, "end_index": 5020, "_text": "Discharge Medications"}
+{"sent_index": 114, "start_index": 5022, "end_index": 5107, "_text": "1. Metoprolol Tartrate 25 mg Tablet Sig : One ( 1 ) Tablet PO BID ( 2 times a day ) ."}
+{"sent_index": 115, "start_index": 5108, "end_index": 5144, "_text": "Disp : *60 Tablet( s )*\nRefills : *2"}
+{"sent_index": 116, "start_index": 5146, "end_index": 5286, "_text": "2. Potassium Chloride 10 mEq Capsule , Sustained Release Sig : Two ( 2 ) Capsule , Sustained Release PO Q12H ( every 12 hours ) for 7 days ."}
+{"sent_index": 117, "start_index": 5287, "end_index": 5344, "_text": "Disp : *28 Capsule , Sustained Release( s )*\nRefills : *0"}
+{"sent_index": 118, "start_index": 5346, "end_index": 5430, "_text": "3. Docusate Sodium 100 mg Capsule Sig : One ( 1 ) Capsule PO BID ( 2 times a day ) ."}
+{"sent_index": 119, "start_index": 5431, "end_index": 5468, "_text": "Disp : *60 Capsule( s )*\nRefills : *2"}
+{"sent_index": 120, "start_index": 5470, "end_index": 5551, "_text": "4. Ranitidine HCl 150 mg Tablet Sig : One ( 1 ) Tablet PO BID ( 2 times a day ) ."}
+{"sent_index": 121, "start_index": 5552, "end_index": 5588, "_text": "Disp : *60 Tablet( s )*\nRefills : *2"}
+{"sent_index": 122, "start_index": 5590, "end_index": 5711, "_text": "5. Aspirin 81 mg Tablet , Delayed Release ( E.C. ) Sig : One ( 1 ) Tablet , Delayed Release ( E.C. ) PO DAILY ( Daily ) ."}
+{"sent_index": 123, "start_index": 5712, "end_index": 5775, "_text": "Disp : *30 Tablet , Delayed Release ( E.C. )( s )*\nRefills : *2"}
+{"sent_index": 124, "start_index": 5777, "end_index": 5877, "_text": "6. Oxycodone-Acetaminophen 5-325 mg Tablet Sig : 1-2 Tablets PO every 4-6 hours as needed for pain ."}
+{"sent_index": 125, "start_index": 5878, "end_index": 5914, "_text": "Disp : *50 Tablet( s )*\nRefills : *0"}
+{"sent_index": 126, "start_index": 5916, "end_index": 5988, "_text": "7. Rosuvastatin 20 mg Tablet Sig : One ( 1 ) Tablet PO DAILY ( Daily ) ."}
+{"sent_index": 127, "start_index": 5989, "end_index": 6025, "_text": "Disp : *30 Tablet( s )*\nRefills : *2"}
+{"sent_index": 128, "start_index": 6027, "end_index": 6114, "_text": "8. Furosemide 20 mg Tablet Sig : One ( 1 ) Tablet PO BID ( 2 times a day ) for 7 days ."}
+{"sent_index": 129, "start_index": 6115, "end_index": 6151, "_text": "Disp : *14 Tablet( s )*\nRefills : *0"}
+{"sent_index": 130, "start_index": 6153, "end_index": 6174, "_text": "Discharge Disposition"}
+{"sent_index": 131, "start_index": 6176, "end_index": 6193, "_text": "Home with Service"}
+{"sent_index": 132, "start_index": 6194, "end_index": 6213, "_text": "Discharge Diagnosis"}
+{"sent_index": 133, "start_index": 6215, "end_index": 6218, "_text": "CAD"}
+{"sent_index": 134, "start_index": 6219, "end_index": 6280, "_text": "HTN ventral hernia right nephrectomy s/p right facial plating"}
+{"sent_index": 135, "start_index": 6281, "end_index": 6300, "_text": "Discharge Condition"}
+{"sent_index": 136, "start_index": 6303, "end_index": 6307, "_text": "good"}
+{"sent_index": 137, "start_index": 6308, "end_index": 6482, "_text": "Discharge Instructions : may shower , no bathing or swimming for 1 month no creams , lotions or powders to any incisions no driving for 1 month no lifting > 10 # for 10 weeks"}
+{"sent_index": 138, "start_index": 6483, "end_index": 6509, "_text": "A. Instructions : with Dr."}
+{"sent_index": 139, "start_index": 6510, "end_index": 6592, "_text": "Matthew in 2-3 weeks with Dr. Dellinger in 2-3 weeks with Dr. les Gokey in 4 weeks"}
+{"sent_index": 140, "start_index": 6593, "end_index": 6624, "_text": "Curtis van den Moreno MD 07-506"}
+{"sent_index": 141, "start_index": 6625, "end_index": 6645, "_text": "Completed by :\nScott"}
+{"sent_index": 142, "start_index": 6646, "end_index": 6680, "_text": "Robert NP 80-AUM 2017-06-29 @ 1121"}
+{"sent_index": 143, "start_index": 6681, "end_index": 6705, "_text": "Signed electronically by"}
+{"sent_index": 144, "start_index": 6708, "end_index": 6711, "_text": "DR."}
+{"sent_index": 145, "start_index": 6712, "end_index": 6775, "_text": "Barbara van de Tate on :\nFRI 2017-07-28 1:55 PM\n( End of Report"}

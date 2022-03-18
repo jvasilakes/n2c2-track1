@@ -1,0 +1,12 @@
+T0	problem 762 770	vomiting
+A0	Assertion T0 hypothetical
+T1	problem 480 491	head trauma
+A1	Assertion T1 present
+T2	problem 753 759	nausea
+A2	Assertion T2 hypothetical
+T3	problem 773 781	headache
+A3	Assertion T3 hypothetical
+T4	problem 818 832	other concerns
+A4	Assertion T4 hypothetical
+T5	problem 784 814	visual / mental status changes
+A5	Assertion T5 hypothetical

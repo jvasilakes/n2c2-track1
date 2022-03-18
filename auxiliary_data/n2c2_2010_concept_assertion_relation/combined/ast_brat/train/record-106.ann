@@ -1,0 +1,154 @@
+T0	problem 557 565	vomiting
+A0	Assertion T0 absent
+T1	problem 568 579	diaphoresis
+A1	Assertion T1 absent
+T2	problem 653 680	new ST depressions in V1-V4
+A2	Assertion T2 present
+T3	problem 361 382	substernal chest pain
+A3	Assertion T3 conditional
+T4	problem 548 554	nausea
+A4	Assertion T4 absent
+T5	problem 3153 3156	HTN
+A5	Assertion T5 present
+T6	problem 3241 3264	ST depressions in V1-V4
+A6	Assertion T6 present
+T7	problem 3291 3297	NSTEMI
+A7	Assertion T7 possible
+T8	problem 3919 3944	wall motion abnormalities
+A8	Assertion T8 absent
+T9	problem 3524 3538	Her chest pain
+A9	Assertion T9 present
+T10	problem 3686 3705	atrial fibrillation
+A10	Assertion T10 present
+T11	problem 3161 3182	substernal chest pain
+A11	Assertion T11 conditional
+T12	problem 305 308	HTN
+A12	Assertion T12 present
+T13	problem 185 195	Chest pain
+A13	Assertion T13 present
+T14	problem 1335 1355	macular degeneration
+A14	Assertion T14 present
+T15	problem 4033 4041	her afib
+A15	Assertion T15 present
+T16	problem 4974 4991	mild elevated WBC
+A16	Assertion T16 present
+T17	problem 1356 1366	R ankle fx
+A17	Assertion T17 present
+T18	problem 1319 1328	Blindness
+A18	Assertion T18 present
+T19	problem 4905 4916	weight gain
+A19	Assertion T19 hypothetical
+T20	problem 1300 1318	Hearing difficulty
+A20	Assertion T20 present
+T21	problem 4920 4939	shortness of breath
+A21	Assertion T21 hypothetical
+T22	problem 4420 4460	Bilateral crackles at bases and midlungs
+A22	Assertion T22 present
+T23	problem 4946 4959	Leukocytosis-
+A23	Assertion T23 present
+T24	problem 1296 1299	HTN
+A24	Assertion T24 present
+T25	problem 4685 4707	respiratory difficulty
+A25	Assertion T25 absent
+T26	problem 4801 4816	mild pulm edema
+A26	Assertion T26 present
+T27	problem 984 995	sinus brady
+A27	Assertion T27 present
+T28	problem 1003 1042	old LAD and new ST depressions in V1-V4
+A28	Assertion T28 present
+T29	problem 4463 4475	elevated JVP
+A29	Assertion T29 present
+T30	problem 5563 5575	constipation
+A30	Assertion T30 hypothetical
+T31	problem 4478 4505	trace bilateral ankle edema
+A31	Assertion T31 present
+T32	problem 4594 4602	acute MI
+A32	Assertion T32 present
+T33	problem 4556 4571	pulmonary edema
+A33	Assertion T33 possible
+T34	problem 4521 4538	diffuse opacities
+A34	Assertion T34 present
+T35	problem 934 952	bibasilar crackles
+A35	Assertion T35 present
+T36	problem 925 931	murmur
+A36	Assertion T36 absent
+T37	problem 5102 5110	afebrile
+A37	Assertion T37 absent
+T38	problem 5204 5212	positive
+A38	Assertion T38 hypothetical
+T39	problem 5016 5028	few bacteria
+A39	Assertion T39 present
+T40	problem 1856 1885	Trace ankle edema bilaterally
+A40	Assertion T40 present
+T41	problem 1612 1615	NAD
+A41	Assertion T41 absent
+T42	problem 1843 1849	masses
+A42	Assertion T42 absent
+T43	problem 1748 1753	m/r/g
+A43	Assertion T43 absent
+T44	problem 1634 1639	blind
+A44	Assertion T44 present
+T45	problem 6431 6450	shortness of breath
+A45	Assertion T45 hypothetical
+T46	problem 6454 6462	wheezing
+A46	Assertion T46 hypothetical
+T47	problem 1817 1819	NT
+A47	Assertion T47 absent
+T48	problem 1822 1824	ND
+A48	Assertion T48 absent
+T49	problem 1761 1803	Crackles at base and mid-lungs bilaterally
+A49	Assertion T49 present
+T50	problem 6343 6354	indigestion
+A50	Assertion T50 hypothetical
+T51	problem 6500 6511	weight gain
+A51	Assertion T51 hypothetical
+T52	problem 6515 6534	shortness of breath
+A52	Assertion T52 hypothetical
+T53	problem 6602 6621	Atrial Fibrillation
+A53	Assertion T53 present
+T54	problem 6663 6673	chest pain
+A54	Assertion T54 absent
+T55	problem 6622 6625	HTN
+A55	Assertion T55 present
+T56	problem 2201 2205	RBBB
+A56	Assertion T56 present
+T57	problem 6893 6903	chest pain
+A57	Assertion T57 hypothetical
+T58	problem 2222 2245	ST depressions in V1-V4
+A58	Assertion T58 present
+T59	problem 2208 2219	Q wave in I
+A59	Assertion T59 present
+T60	problem 6906 6925	shortness of breath
+A60	Assertion T60 hypothetical
+T61	problem 6937 6945	vomiting
+A61	Assertion T61 hypothetical
+T62	problem 2248 2267	ST elevation in III
+A62	Assertion T62 present
+T63	problem 6928 6934	nausea
+A63	Assertion T63 hypothetical
+T64	problem 2270 2273	aVF
+A64	Assertion T64 present
+T65	problem 6948 6954	fevers
+A65	Assertion T65 hypothetical
+T66	problem 2276 2286	TWI in III
+A66	Assertion T66 present
+T67	problem 6957 6963	chills
+A67	Assertion T67 hypothetical
+T68	problem 520 524	SSCP
+A68	Assertion T68 present
+T69	problem 2195 2198	LVH
+A69	Assertion T69 present
+T70	problem 6595 6601	NSTEMI
+A70	Assertion T70 present
+T71	problem 2166 2177	sinus brady
+A71	Assertion T71 present
+T72	problem 2495 2527	regional wall motion abnormality
+A72	Assertion T72 absent
+T73	problem 2335 2365	the still mild pulmonary edema
+A73	Assertion T73 present
+T74	problem 2315 2331	slight worsening
+A74	Assertion T74 present
+T75	problem 2380 2392	pneumothorax
+A75	Assertion T75 absent
+T76	problem 2395 2423	Small right pleural effusion
+A76	Assertion T76 present

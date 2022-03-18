@@ -1,0 +1,31 @@
+{"sent_index": 0, "start_index": 0, "end_index": 13, "_text": "503651854 WGH"}
+{"sent_index": 1, "start_index": 14, "end_index": 21, "_text": "4959433"}
+{"sent_index": 2, "start_index": 22, "end_index": 58, "_text": "288418\n2823104\n7/31/2004 12:00:00 AM"}
+{"sent_index": 3, "start_index": 59, "end_index": 79, "_text": "ED Discharge Summary"}
+{"sent_index": 4, "start_index": 80, "end_index": 88, "_text": "Unsigned"}
+{"sent_index": 5, "start_index": 89, "end_index": 92, "_text": "DIS"}
+{"sent_index": 6, "start_index": 93, "end_index": 106, "_text": "Report Status"}
+{"sent_index": 7, "start_index": 109, "end_index": 117, "_text": "Unsigned"}
+{"sent_index": 8, "start_index": 118, "end_index": 153, "_text": "ED DISCHARGE NOTIFICATION / SUMMARY"}
+{"sent_index": 9, "start_index": 154, "end_index": 164, "_text": "A , WALINA"}
+{"sent_index": 10, "start_index": 165, "end_index": 168, "_text": "MRN"}
+{"sent_index": 11, "start_index": 171, "end_index": 182, "_text": "4959433\nAge"}
+{"sent_index": 12, "start_index": 185, "end_index": 188, "_text": "32y"}
+{"sent_index": 13, "start_index": 189, "end_index": 228, "_text": "REGISTRATION DATE :\n07/31/2004 11:24 AM"}
+{"sent_index": 14, "start_index": 229, "end_index": 254, "_text": "Provider :\nPADA MEEDHUANG"}
+{"sent_index": 15, "start_index": 255, "end_index": 273, "_text": "PRELIMINARY REPORT"}
+{"sent_index": 16, "start_index": 274, "end_index": 327, "_text": "PCP notified by MD :\nE-mail PCP\nBenefits Assigned :\nY"}
+{"sent_index": 17, "start_index": 328, "end_index": 368, "_text": "Discharge Date / Time :\n07/31/2004 12:58"}
+{"sent_index": 18, "start_index": 369, "end_index": 385, "_text": "Discharge Status"}
+{"sent_index": 19, "start_index": 388, "end_index": 398, "_text": "Discharged"}
+{"sent_index": 20, "start_index": 399, "end_index": 421, "_text": "Condition on Discharge"}
+{"sent_index": 21, "start_index": 424, "end_index": 430, "_text": "Stable"}
+{"sent_index": 22, "start_index": 431, "end_index": 455, "_text": "Patient States Complaint"}
+{"sent_index": 23, "start_index": 458, "end_index": 467, "_text": "S / P MVA"}
+{"sent_index": 24, "start_index": 468, "end_index": 497, "_text": "Diagnosis :\nhead trauma - mva"}
+{"sent_index": 25, "start_index": 498, "end_index": 579, "_text": "Treatment Rendered :\nhistory , physical , neuro exam normal\nDischarge Medications"}
+{"sent_index": 26, "start_index": 582, "end_index": 601, "_text": "tylenol as needed ."}
+{"sent_index": 27, "start_index": 602, "end_index": 636, "_text": "refrain from motrin at this time ."}
+{"sent_index": 28, "start_index": 637, "end_index": 729, "_text": "Follow up Service :\nf / u with dr. white\nDisposition , Follow up and Instructions to Patient"}
+{"sent_index": 29, "start_index": 732, "end_index": 834, "_text": "monitor / return for nausea / vomiting , headache , visual / mental status changes or other concerns ."}
+{"sent_index": 30, "start_index": 835, "end_index": 949, "_text": "PCP Name :\nWHITE , ELVNO R\nProvider Number :\n70468\nThis report was created by MEEDHUANG , PADA 07/31/2004 12:59 PM"}

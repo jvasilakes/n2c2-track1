@@ -1,0 +1,62 @@
+{"sent_index": 0, "start_index": 0, "end_index": 21, "_text": "388755206 SC\n28741969"}
+{"sent_index": 1, "start_index": 22, "end_index": 29, "_text": "9895112"}
+{"sent_index": 2, "start_index": 30, "end_index": 51, "_text": "12/1/2003 12:00:00 AM"}
+{"sent_index": 3, "start_index": 52, "end_index": 70, "_text": "s / p cesarean\nDIS"}
+{"sent_index": 4, "start_index": 71, "end_index": 85, "_text": "Admission Date"}
+{"sent_index": 5, "start_index": 88, "end_index": 98, "_text": "12/01/2003"}
+{"sent_index": 6, "start_index": 99, "end_index": 112, "_text": "Report Status"}
+{"sent_index": 7, "start_index": 115, "end_index": 142, "_text": "Discharge Date :\n12/06/2003"}
+{"sent_index": 8, "start_index": 150, "end_index": 166, "_text": "DISCHARGE ORDERS"}
+{"sent_index": 9, "start_index": 174, "end_index": 181, "_text": "STENOBE"}
+{"sent_index": 10, "start_index": 184, "end_index": 206, "_text": "LANDEM 847-02-84-0 J73"}
+{"sent_index": 11, "start_index": 207, "end_index": 224, "_text": "Room :\nGHA74-9086"}
+{"sent_index": 12, "start_index": 225, "end_index": 232, "_text": "Service"}
+{"sent_index": 13, "start_index": 235, "end_index": 238, "_text": "OBS"}
+{"sent_index": 14, "start_index": 239, "end_index": 282, "_text": "DISCHARGE PATIENT ON :\n12/06/03 AT 10:00 AM"}
+{"sent_index": 15, "start_index": 283, "end_index": 298, "_text": "CONTINGENT UPON"}
+{"sent_index": 16, "start_index": 299, "end_index": 319, "_text": "Attending evaluation"}
+{"sent_index": 17, "start_index": 320, "end_index": 371, "_text": "WILL D / C ORDER BE USED AS THE D / C SUMMARY :\nYES"}
+{"sent_index": 18, "start_index": 372, "end_index": 404, "_text": "Attending :\nCLOZPLU , A A , M.D."}
+{"sent_index": 19, "start_index": 405, "end_index": 423, "_text": "DISPOSITION :\nHome"}
+{"sent_index": 20, "start_index": 424, "end_index": 445, "_text": "DISCHARGE MEDICATIONS"}
+{"sent_index": 21, "start_index": 448, "end_index": 596, "_text": "COLACE ( DOCUSATE SODIUM ) 100 MG PO BID IBUPROFEN 600 MG PO Q6H PRN PAIN ALDOMET ( METHYLDOPA ) 250 MG PO BID PERCOCET 1-2 TAB PO Q4H PRN PAIN\nDIET"}
+{"sent_index": 22, "start_index": 599, "end_index": 614, "_text": "No Restrictions"}
+{"sent_index": 23, "start_index": 615, "end_index": 623, "_text": "ACTIVITY"}
+{"sent_index": 24, "start_index": 626, "end_index": 726, "_text": "Resume regular exercise\nFOLLOW UP APPOINTMENT ( S ) :\nYour obstetrician 6 weeks , No Known Allergies"}
+{"sent_index": 25, "start_index": 727, "end_index": 759, "_text": "ADMIT DIAGNOSIS :\ns / p cesarean"}
+{"sent_index": 26, "start_index": 760, "end_index": 854, "_text": "PRINCIPAL DISCHARGE DIAGNOSIS ; Responsible After Study for Causing Admission ) s / p cesarean"}
+{"sent_index": 27, "start_index": 855, "end_index": 956, "_text": "OTHER DIAGNOSIS ; Conditions , Infections , Complications , affecting Treatment / Stay s / p cesarean"}
+{"sent_index": 28, "start_index": 957, "end_index": 982, "_text": "OPERATIONS AND PROCEDURES"}
+{"sent_index": 29, "start_index": 985, "end_index": 1003, "_text": "Primary Anesthesia"}
+{"sent_index": 30, "start_index": 1006, "end_index": 1031, "_text": "Epidural Vaginal delivery"}
+{"sent_index": 31, "start_index": 1034, "end_index": 1061, "_text": "Undelivered Cesarean Status"}
+{"sent_index": 32, "start_index": 1064, "end_index": 1079, "_text": "Primary Urgency"}
+{"sent_index": 33, "start_index": 1082, "end_index": 1102, "_text": "Emergent Indications"}
+{"sent_index": 34, "start_index": 1105, "end_index": 1156, "_text": "Non-reassuring fetal status , Uterine\nincision type"}
+{"sent_index": 35, "start_index": 1159, "end_index": 1169, "_text": "Transverse"}
+{"sent_index": 36, "start_index": 1170, "end_index": 1189, "_text": "Placenta :\nDelivery"}
+{"sent_index": 37, "start_index": 1192, "end_index": 1208, "_text": "Manual Condition"}
+{"sent_index": 38, "start_index": 1211, "end_index": 1275, "_text": "Normal Staff Obstetrician ( supervising ) :\nCLOZPLU , A A , M.D."}
+{"sent_index": 39, "start_index": 1276, "end_index": 1284, "_text": "Delivery"}
+{"sent_index": 40, "start_index": 1285, "end_index": 1328, "_text": "OTHER TREATMENTS / PROCEDURES ( NOT IN O.R."}
+{"sent_index": 41, "start_index": 1331, "end_index": 1400, "_text": "IV ABX\nBRIEF RESUME OF HOSPITAL COURSE :\nG9 T3 P0 A5 L3\nEstimated EDC"}
+{"sent_index": 42, "start_index": 1403, "end_index": 1411, "_text": "11/28/03"}
+{"sent_index": 43, "start_index": 1412, "end_index": 1437, "_text": "Indications for induction"}
+{"sent_index": 44, "start_index": 1440, "end_index": 1473, "_text": "Post dates\nComplications of labor"}
+{"sent_index": 45, "start_index": 1478, "end_index": 1497, "_text": "Other - bradycardia"}
+{"sent_index": 46, "start_index": 1498, "end_index": 1515, "_text": "Maternal transfer"}
+{"sent_index": 47, "start_index": 1518, "end_index": 1520, "_text": "No"}
+{"sent_index": 48, "start_index": 1521, "end_index": 1541, "_text": "Initial newborn exam"}
+{"sent_index": 49, "start_index": 1544, "end_index": 1569, "_text": "No observed abnormalities"}
+{"sent_index": 50, "start_index": 1570, "end_index": 1576, "_text": "Baby 1"}
+{"sent_index": 51, "start_index": 1577, "end_index": 1591, "_text": "MRN :\n32859272"}
+{"sent_index": 52, "start_index": 1592, "end_index": 1605, "_text": "Delivery date"}
+{"sent_index": 53, "start_index": 1608, "end_index": 1636, "_text": "12/02/03 03:20 PM Apgars 7,8"}
+{"sent_index": 54, "start_index": 1637, "end_index": 1666, "_text": "Weight :\n9lb 15 oz 4508 grams"}
+{"sent_index": 55, "start_index": 1667, "end_index": 1670, "_text": "Sex"}
+{"sent_index": 56, "start_index": 1673, "end_index": 1677, "_text": "Male"}
+{"sent_index": 57, "start_index": 1678, "end_index": 1697, "_text": "ADDITIONAL COMMENTS"}
+{"sent_index": 58, "start_index": 1700, "end_index": 1948, "_text": "no heavy lifting ; nothing in the vagina for 6 weeks -- no intercourse , no douching , no tampons ; call for fever above 100.5 , worsening abdominal pain , heavy bleeding , or any other concern ; no driving while taking percocet\nDISCHARGE CONDITION"}
+{"sent_index": 59, "start_index": 1951, "end_index": 1970, "_text": "Stable\nTO DO / PLAN"}
+{"sent_index": 60, "start_index": 1973, "end_index": 2054, "_text": "No dictated summary\nENTERED BY :\nHAXKOTE , A N. , M.D. ( ZL69 ) 12/06/03 09:04 AM"}
+{"sent_index": 61, "start_index": 2062, "end_index": 2085, "_text": "END OF DISCHARGE ORDERS"}

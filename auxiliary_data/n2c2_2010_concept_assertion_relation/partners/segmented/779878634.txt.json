@@ -1,0 +1,56 @@
+{"sent_index": 0, "start_index": 0, "end_index": 9, "_text": "779878634"}
+{"sent_index": 1, "start_index": 10, "end_index": 23, "_text": "TGCHO\n9260099"}
+{"sent_index": 2, "start_index": 24, "end_index": 30, "_text": "612765"}
+{"sent_index": 3, "start_index": 31, "end_index": 53, "_text": "12/11/2003 12:00:00 AM"}
+{"sent_index": 4, "start_index": 54, "end_index": 71, "_text": "Discharge Summary"}
+{"sent_index": 5, "start_index": 72, "end_index": 78, "_text": "Signed"}
+{"sent_index": 6, "start_index": 79, "end_index": 82, "_text": "DIS"}
+{"sent_index": 7, "start_index": 83, "end_index": 96, "_text": "Report Status"}
+{"sent_index": 8, "start_index": 99, "end_index": 105, "_text": "Signed"}
+{"sent_index": 9, "start_index": 106, "end_index": 123, "_text": "DISCHARGE SUMMARY"}
+{"sent_index": 10, "start_index": 124, "end_index": 166, "_text": "NAME :\nA , REBAY J\nUNIT NUMBER :\n984-98-62"}
+{"sent_index": 11, "start_index": 167, "end_index": 194, "_text": "ADMISSION DATE :\n12/11/2003"}
+{"sent_index": 12, "start_index": 195, "end_index": 222, "_text": "DISCHARGE DATE :\n01/08/2004"}
+{"sent_index": 13, "start_index": 223, "end_index": 285, "_text": "The patient has a known history of pancreatic adenocarcinoma ."}
+{"sent_index": 14, "start_index": 286, "end_index": 350, "_text": "He is admitted at this time because of significant GI bleeding ."}
+{"sent_index": 15, "start_index": 351, "end_index": 368, "_text": "REVIEW OF SYSTEMS"}
+{"sent_index": 16, "start_index": 371, "end_index": 431, "_text": "Significant for fatigue and increased abdominal discomfort ."}
+{"sent_index": 17, "start_index": 432, "end_index": 468, "_text": "MEDICATIONS AT THE TIME OF ADMISSION"}
+{"sent_index": 18, "start_index": 471, "end_index": 522, "_text": "Insulin , Celexa , Protonix , Ambien and Pancreas ."}
+{"sent_index": 19, "start_index": 523, "end_index": 543, "_text": "PHYSICAL EXAMINATION"}
+{"sent_index": 20, "start_index": 546, "end_index": 680, "_text": "Vital signs showed his blood pressure to be slightly decreased at 120/60 , pulse 64 , respirations 16 , temperature 98.8 , O2 sat 95 ."}
+{"sent_index": 21, "start_index": 681, "end_index": 686, "_text": "HEENT"}
+{"sent_index": 22, "start_index": 689, "end_index": 759, "_text": "Evidence of anemia with being pale , but anicteric , no oral lesions ."}
+{"sent_index": 23, "start_index": 760, "end_index": 773, "_text": "Neck supple ."}
+{"sent_index": 24, "start_index": 774, "end_index": 787, "_text": "Lungs clear ."}
+{"sent_index": 25, "start_index": 788, "end_index": 827, "_text": "Back without CVA or spinal tenderness ."}
+{"sent_index": 26, "start_index": 828, "end_index": 859, "_text": "Heart regular rate and rhythm ."}
+{"sent_index": 27, "start_index": 860, "end_index": 867, "_text": "Abdomen"}
+{"sent_index": 28, "start_index": 870, "end_index": 983, "_text": "Bowel sounds positive , soft , mildly tender in the epigastrium without hepatosplenomegaly , mass or tenderness ."}
+{"sent_index": 29, "start_index": 984, "end_index": 1040, "_text": "Extremities :\nTrace edema without cyanosis or clubbing ."}
+{"sent_index": 30, "start_index": 1041, "end_index": 1131, "_text": "His hematocrit at the time of admission was 20.5 , after having been 32 one week earlier ."}
+{"sent_index": 31, "start_index": 1132, "end_index": 1142, "_text": "ASSESSMENT"}
+{"sent_index": 32, "start_index": 1145, "end_index": 1188, "_text": "The assessment was that he had a GI bleed ."}
+{"sent_index": 33, "start_index": 1189, "end_index": 1233, "_text": "He was transfused and then evaluated by GI ."}
+{"sent_index": 34, "start_index": 1234, "end_index": 1299, "_text": "Endoscopy showed multiple angio ectasias throughout the stomach ."}
+{"sent_index": 35, "start_index": 1300, "end_index": 1368, "_text": "He received multiple treatments for this over the succeeding weeks ."}
+{"sent_index": 36, "start_index": 1369, "end_index": 1402, "_text": "In addition , he was transfused ."}
+{"sent_index": 37, "start_index": 1403, "end_index": 1477, "_text": "His platelet count was maintained with platelet transfusion as necessary ."}
+{"sent_index": 38, "start_index": 1478, "end_index": 1543, "_text": "He was treated with Octreotide to try to slow down the bleeding ."}
+{"sent_index": 39, "start_index": 1544, "end_index": 1616, "_text": "Despite all these measures , his bleeding was never totally controlled ."}
+{"sent_index": 40, "start_index": 1617, "end_index": 1688, "_text": "He then had an angiogram with Gel foam to try to control his GI bleed ."}
+{"sent_index": 41, "start_index": 1689, "end_index": 1720, "_text": "Again , this was unsuccessful ."}
+{"sent_index": 42, "start_index": 1721, "end_index": 1798, "_text": "At that point he had a change in mental status and was no longer responsive ."}
+{"sent_index": 43, "start_index": 1799, "end_index": 1874, "_text": "Given this , the decision was made to make his care comfort measures only ."}
+{"sent_index": 44, "start_index": 1875, "end_index": 1945, "_text": "At this point , he was made comfort measures and expired comfortably ."}
+{"sent_index": 45, "start_index": 1946, "end_index": 2071, "_text": "The cause of death was a combination of GI bleeding felt to be ultimately related to his known metastatic pancreatic cancer ."}
+{"sent_index": 46, "start_index": 2072, "end_index": 2090, "_text": "TA KO FOSSA , M.D."}
+{"sent_index": 47, "start_index": 2091, "end_index": 2104, "_text": "DICTATING FOR"}
+{"sent_index": 48, "start_index": 2107, "end_index": 2121, "_text": "Electronically"}
+{"sent_index": 49, "start_index": 2122, "end_index": 2147, "_text": "Signed TA KO FOSSA , M.D."}
+{"sent_index": 50, "start_index": 2148, "end_index": 2164, "_text": "02/05/2004 17:03"}
+{"sent_index": 51, "start_index": 2195, "end_index": 2213, "_text": "TA KO FOSSA , M.D."}
+{"sent_index": 52, "start_index": 2214, "end_index": 2221, "_text": "TR :\nmb"}
+{"sent_index": 53, "start_index": 2222, "end_index": 2237, "_text": "DD :\n01/23/2004"}
+{"sent_index": 54, "start_index": 2238, "end_index": 2270, "_text": "TD :\n01/26/2004 2:16 A 612765\ncc"}
+{"sent_index": 55, "start_index": 2273, "end_index": 2291, "_text": "TA KO FOSSA , M.D."}

@@ -1,0 +1,89 @@
+{"sent_index": 0, "start_index": 0, "end_index": 9, "_text": "145980160"}
+{"sent_index": 1, "start_index": 10, "end_index": 13, "_text": "FIH"}
+{"sent_index": 2, "start_index": 14, "end_index": 21, "_text": "6382196"}
+{"sent_index": 3, "start_index": 22, "end_index": 32, "_text": "94916/ly7e"}
+{"sent_index": 4, "start_index": 33, "end_index": 62, "_text": "289653\n06/30/1993 12:00:00 AM"}
+{"sent_index": 5, "start_index": 63, "end_index": 80, "_text": "PROSTATE CANCER ."}
+{"sent_index": 6, "start_index": 81, "end_index": 89, "_text": "Unsigned"}
+{"sent_index": 7, "start_index": 90, "end_index": 93, "_text": "DIS"}
+{"sent_index": 8, "start_index": 94, "end_index": 107, "_text": "Report Status"}
+{"sent_index": 9, "start_index": 110, "end_index": 118, "_text": "Unsigned"}
+{"sent_index": 10, "start_index": 119, "end_index": 133, "_text": "ADMISSION DATE"}
+{"sent_index": 11, "start_index": 136, "end_index": 144, "_text": "06-30-93"}
+{"sent_index": 12, "start_index": 145, "end_index": 159, "_text": "DISCHARGE DATE"}
+{"sent_index": 13, "start_index": 162, "end_index": 170, "_text": "07-06-93"}
+{"sent_index": 14, "start_index": 171, "end_index": 190, "_text": "PRINCIPAL DIAGNOSIS"}
+{"sent_index": 15, "start_index": 193, "end_index": 210, "_text": "Prostate cancer ."}
+{"sent_index": 16, "start_index": 211, "end_index": 244, "_text": "SPECIAL PROCEDURES AND OPERATIONS"}
+{"sent_index": 17, "start_index": 247, "end_index": 315, "_text": "Radical retropubic prostatectomy , bilateral lymph node dissection ."}
+{"sent_index": 18, "start_index": 316, "end_index": 342, "_text": "HISTORY OF PRESENT ILLNESS"}
+{"sent_index": 19, "start_index": 345, "end_index": 475, "_text": "The patient is a 67 year old white male with a recent history of urinary frequency Q2-3H , stranguria , nocturia x 3-4 per night ."}
+{"sent_index": 20, "start_index": 476, "end_index": 593, "_text": "He was found on physical exam to have an asymmetric prostate with prominence on the left and a question of a nodule ."}
+{"sent_index": 21, "start_index": 594, "end_index": 653, "_text": "Repeat exam one month later showed a firm left-sided lobe ."}
+{"sent_index": 22, "start_index": 654, "end_index": 737, "_text": "Transrectal ultrasound showed a hypoechoic left-sided mass in the peripheral zone ."}
+{"sent_index": 23, "start_index": 738, "end_index": 831, "_text": "A biopsy showed moderately to poorly differentiated Grade III-IV adenocarcinoma on the left ."}
+{"sent_index": 24, "start_index": 832, "end_index": 873, "_text": "The right lobe was within normal limits ."}
+{"sent_index": 25, "start_index": 874, "end_index": 908, "_text": "This was done on 05/05/93 at FIH ."}
+{"sent_index": 26, "start_index": 909, "end_index": 954, "_text": "He also had a 3-4 year history of impotence ."}
+{"sent_index": 27, "start_index": 955, "end_index": 975, "_text": "PAST MEDICAL HISTORY"}
+{"sent_index": 28, "start_index": 978, "end_index": 1114, "_text": "Significant for non-insulin diabetes mellitus , for which he takes Diabeta , one QD ; right eye cataract , operated on three years ago ."}
+{"sent_index": 29, "start_index": 1115, "end_index": 1124, "_text": "ALLERGIES"}
+{"sent_index": 30, "start_index": 1127, "end_index": 1153, "_text": "He is allergic to Motrin ."}
+{"sent_index": 31, "start_index": 1154, "end_index": 1199, "_text": "MEDICATIONS ON ADMISSION :\nDiabeta , one QD ."}
+{"sent_index": 32, "start_index": 1200, "end_index": 1214, "_text": "SOCIAL HISTORY"}
+{"sent_index": 33, "start_index": 1217, "end_index": 1237, "_text": "No smoking history ."}
+{"sent_index": 34, "start_index": 1238, "end_index": 1258, "_text": "PHYSICAL EXAMINATION"}
+{"sent_index": 35, "start_index": 1261, "end_index": 1314, "_text": "He was a well developed , well nourished white male ."}
+{"sent_index": 36, "start_index": 1315, "end_index": 1345, "_text": "HEENT :\nwithin normal limits ."}
+{"sent_index": 37, "start_index": 1346, "end_index": 1416, "_text": "His neck was supple with no jugular venous distention or thyromegaly ."}
+{"sent_index": 38, "start_index": 1417, "end_index": 1465, "_text": "Chest was clear to percussion and auscultation ."}
+{"sent_index": 39, "start_index": 1466, "end_index": 1471, "_text": "Heart"}
+{"sent_index": 40, "start_index": 1474, "end_index": 1534, "_text": "regular rate and rhythm with normal S1 and S2 , no murmurs ."}
+{"sent_index": 41, "start_index": 1535, "end_index": 1603, "_text": "The abdomen was soft and non-tender with no masses or organomegaly ."}
+{"sent_index": 42, "start_index": 1604, "end_index": 1640, "_text": "No costovertebral angle tenderness ."}
+{"sent_index": 43, "start_index": 1641, "end_index": 1723, "_text": "His genitourinary exam showed an uncircumcised male with normal scrotal contents ."}
+{"sent_index": 44, "start_index": 1724, "end_index": 1730, "_text": "Rectal"}
+{"sent_index": 45, "start_index": 1733, "end_index": 1813, "_text": "There was a firm nodule in the left lobe of the prostate in the lateral aspect ."}
+{"sent_index": 46, "start_index": 1814, "end_index": 1825, "_text": "Extremities"}
+{"sent_index": 47, "start_index": 1828, "end_index": 1861, "_text": "No clubbing , cyanosis or edema ."}
+{"sent_index": 48, "start_index": 1862, "end_index": 1873, "_text": "Pulses 2+ ."}
+{"sent_index": 49, "start_index": 1874, "end_index": 1886, "_text": "Neurological"}
+{"sent_index": 50, "start_index": 1889, "end_index": 1899, "_text": "Nonfocal ."}
+{"sent_index": 51, "start_index": 1900, "end_index": 1915, "_text": "LABORATORY DATA"}
+{"sent_index": 52, "start_index": 1918, "end_index": 2020, "_text": "Sodium 141 , potassium 4.1 , chloride 104 , bicarbonate 28.8 , BUN 17 , creatinine 0.9 , glucose 118 ."}
+{"sent_index": 53, "start_index": 2021, "end_index": 2096, "_text": "His white blood count was 7100 , hematocrit 35.9 , platelet count 258,000 ."}
+{"sent_index": 54, "start_index": 2097, "end_index": 2119, "_text": "PT 9.4/10.3 , PTT 27 ."}
+{"sent_index": 55, "start_index": 2120, "end_index": 2227, "_text": "His urinalysis showed marked occult blood and positive white blood cell screen but was otherwise negative ."}
+{"sent_index": 56, "start_index": 2228, "end_index": 2256, "_text": "His chest X-ray was normal ."}
+{"sent_index": 57, "start_index": 2257, "end_index": 2307, "_text": "EKG :\nnormal sinus rhythm at 73 beats per minute ."}
+{"sent_index": 58, "start_index": 2308, "end_index": 2323, "_text": "HOSPITAL COURSE"}
+{"sent_index": 59, "start_index": 2326, "end_index": 2421, "_text": "The patient was brought to the operating room on 06/30/93 after informed consent was obtained ."}
+{"sent_index": 60, "start_index": 2422, "end_index": 2504, "_text": "A radical retropubic prostatectomy with bilateral lymph node dissection was done ."}
+{"sent_index": 61, "start_index": 2505, "end_index": 2562, "_text": "He was afebrile postoperatively with vital signs stable ."}
+{"sent_index": 62, "start_index": 2563, "end_index": 2608, "_text": "His potassium was 3.7 and his hematocrit 33 ."}
+{"sent_index": 63, "start_index": 2609, "end_index": 2687, "_text": "His postoperative course was remarkable for a low grade temperature to 101.7 ."}
+{"sent_index": 64, "start_index": 2688, "end_index": 2738, "_text": "His blood cultures and chest X-ray were negative ."}
+{"sent_index": 65, "start_index": 2739, "end_index": 2779, "_text": "He had flatus on postoperative day # 3 ."}
+{"sent_index": 66, "start_index": 2780, "end_index": 2876, "_text": "His Jackson-Pratt drained about 35-40 cc per day and was discontinued on postoperative day # 3 ."}
+{"sent_index": 67, "start_index": 2877, "end_index": 2911, "_text": "His hematocrit on 07/03 was 28.1 ."}
+{"sent_index": 68, "start_index": 2912, "end_index": 2982, "_text": "On that day he was slightly diaphoretic with some tachycardia to 100 ."}
+{"sent_index": 69, "start_index": 2983, "end_index": 3055, "_text": "The remaining unit of autologous packed red blood cells was transfused ."}
+{"sent_index": 70, "start_index": 3056, "end_index": 3207, "_text": "A cardiology consult was obtained for this episode of diaphoresis with tachycardia , as well as for an EKG being read as having anterolateral changes ."}
+{"sent_index": 71, "start_index": 3208, "end_index": 3265, "_text": "He had no symptoms of chest pain or myocardial ischemia ."}
+{"sent_index": 72, "start_index": 3266, "end_index": 3298, "_text": "A repeat EKG showed no changes ."}
+{"sent_index": 73, "start_index": 3299, "end_index": 3382, "_text": "He subsequently did well , with a repeat hematocrit of 34.3 after the transfusion ."}
+{"sent_index": 74, "start_index": 3383, "end_index": 3432, "_text": "His creatinine was 1.2 on postoperative day # 5 ."}
+{"sent_index": 75, "start_index": 3433, "end_index": 3494, "_text": "On postoperative day # 6 his low grade temperature resolved ."}
+{"sent_index": 76, "start_index": 3495, "end_index": 3524, "_text": "His vital signs were stable ."}
+{"sent_index": 77, "start_index": 3525, "end_index": 3572, "_text": "He was discharged home on Percocet and Keflex ."}
+{"sent_index": 78, "start_index": 3573, "end_index": 3610, "_text": "He was discharged in good condition ."}
+{"sent_index": 79, "start_index": 3611, "end_index": 3637, "_text": "He will follow up with Dr."}
+{"sent_index": 80, "start_index": 3638, "end_index": 3671, "_text": "Iechalette Cancer in his office ."}
+{"sent_index": 81, "start_index": 3672, "end_index": 3687, "_text": "SIE ROOM , M.D."}
+{"sent_index": 82, "start_index": 3688, "end_index": 3701, "_text": "DICTATING FOR"}
+{"sent_index": 83, "start_index": 3704, "end_index": 3726, "_text": "IECHALETTE ROOM , M.D."}
+{"sent_index": 84, "start_index": 3727, "end_index": 3742, "_text": "TR :\nbtt / bmot"}
+{"sent_index": 85, "start_index": 3743, "end_index": 3756, "_text": "DD :\n07-07-93"}
+{"sent_index": 86, "start_index": 3757, "end_index": 3770, "_text": "TD :\n07/08/93"}
+{"sent_index": 87, "start_index": 3771, "end_index": 3773, "_text": "CC"}
+{"sent_index": 88, "start_index": 3776, "end_index": 3790, "_text": "Dr. Na Dussmum"}

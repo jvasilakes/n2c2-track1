@@ -1,0 +1,126 @@
+{"sent_index": 0, "start_index": 0, "end_index": 9, "_text": "596437842"}
+{"sent_index": 1, "start_index": 10, "end_index": 14, "_text": "CTMC"}
+{"sent_index": 2, "start_index": 15, "end_index": 23, "_text": "63056604"}
+{"sent_index": 3, "start_index": 24, "end_index": 30, "_text": "547591"}
+{"sent_index": 4, "start_index": 31, "end_index": 53, "_text": "02/08/1991 12:00:00 AM"}
+{"sent_index": 5, "start_index": 54, "end_index": 71, "_text": "Discharge Summary"}
+{"sent_index": 6, "start_index": 72, "end_index": 78, "_text": "Signed"}
+{"sent_index": 7, "start_index": 79, "end_index": 82, "_text": "DIS"}
+{"sent_index": 8, "start_index": 83, "end_index": 110, "_text": "Admission Date :\n02/08/1991"}
+{"sent_index": 9, "start_index": 111, "end_index": 124, "_text": "Report Status"}
+{"sent_index": 10, "start_index": 127, "end_index": 133, "_text": "Signed"}
+{"sent_index": 11, "start_index": 134, "end_index": 148, "_text": "Discharge Date"}
+{"sent_index": 12, "start_index": 151, "end_index": 161, "_text": "02/18/1991"}
+{"sent_index": 13, "start_index": 162, "end_index": 181, "_text": "DISCHARGE DIAGNOSES"}
+{"sent_index": 14, "start_index": 184, "end_index": 223, "_text": "1) ACQUIRED IMMUNODEFICIENCY SYNDROME ."}
+{"sent_index": 15, "start_index": 224, "end_index": 259, "_text": "2) PNEUMOCYSTIS CARINII PNEUMONIA ."}
+{"sent_index": 16, "start_index": 260, "end_index": 300, "_text": "3) ADULT RESPIRATORY DISTRESS SYNDROME ."}
+{"sent_index": 17, "start_index": 301, "end_index": 327, "_text": "HISTORY OF PRESENT ILLNESS"}
+{"sent_index": 18, "start_index": 330, "end_index": 333, "_text": "Mr."}
+{"sent_index": 19, "start_index": 334, "end_index": 613, "_text": "Breutzfarstxei is a 30 year old man with recently diagnosed acquired immunodeficiency syndrome and Pneumocystis carinii pneumonia who presented with pneumonia , developed adult respiratory distress syndrome , and died in the hospital after failed efforts of ventilatory support ."}
+{"sent_index": 20, "start_index": 614, "end_index": 752, "_text": "Mr. Breutzfarstxei was recently diagnosed with acquired immunodeficiency syndrome when he had Pneumocystis carinii pneumonia on 01/17/91 ."}
+{"sent_index": 21, "start_index": 753, "end_index": 861, "_text": "He was admitted to the Retelk County Medical Center at that time and was treated with Bactrim and steroids ."}
+{"sent_index": 22, "start_index": 862, "end_index": 982, "_text": "He was actually intubated and underwent bronchoscopy where the diagnosis was made with a positive toluidine blue study ."}
+{"sent_index": 23, "start_index": 983, "end_index": 1092, "_text": "He initially did well after extubation and completed approximately two weeks of Bactrim and a steroid taper ."}
+{"sent_index": 24, "start_index": 1093, "end_index": 1204, "_text": "At discharge after about two weeks post-extubation , he had an O2 saturation of approximately 95% on room air ."}
+{"sent_index": 25, "start_index": 1205, "end_index": 1261, "_text": "He was seen by Dr. Seen and Dr. Seen as an out-patient ."}
+{"sent_index": 26, "start_index": 1262, "end_index": 1389, "_text": "On 02/06/91 , he was seen in FLFDMC and at that point , his temperature was noted to be 101.4 and he had malaise and diarrhea ."}
+{"sent_index": 27, "start_index": 1390, "end_index": 1430, "_text": "He was evaluated in the Emergency Room ."}
+{"sent_index": 28, "start_index": 1431, "end_index": 1531, "_text": "At that time , his oxygen saturation was only 90% on room air and his chest X-Ray showed no change ."}
+{"sent_index": 29, "start_index": 1532, "end_index": 1573, "_text": "Cultures were taken and he was sent out ."}
+{"sent_index": 30, "start_index": 1574, "end_index": 1610, "_text": "On 02/08/91 , the patient called Dr."}
+{"sent_index": 31, "start_index": 1611, "end_index": 1670, "_text": "Seen because of increased shortness of breath and malaise ."}
+{"sent_index": 32, "start_index": 1671, "end_index": 1760, "_text": "He was seen in FLFDMC where he was noted to have jaundice and newly palpable liver edge ."}
+{"sent_index": 33, "start_index": 1761, "end_index": 1949, "_text": "Review of liver function tests revealed a cholestatic picture which was not previously found and it was felt that this was secondary to the Bactrim which had been recently stopped anyway ."}
+{"sent_index": 34, "start_index": 1950, "end_index": 2031, "_text": "His oxygen saturation at that time was only 86% on room air and he was admitted ."}
+{"sent_index": 35, "start_index": 2032, "end_index": 2052, "_text": "PAST MEDICAL HISTORY"}
+{"sent_index": 36, "start_index": 2055, "end_index": 2095, "_text": "1) HIV positive with a CD4 count of 74 ."}
+{"sent_index": 37, "start_index": 2096, "end_index": 2111, "_text": "2) Recent PCP ."}
+{"sent_index": 38, "start_index": 2112, "end_index": 2148, "_text": "3) Status post right elbow surgery ."}
+{"sent_index": 39, "start_index": 2149, "end_index": 2178, "_text": "4) Venereal disease history ."}
+{"sent_index": 40, "start_index": 2179, "end_index": 2195, "_text": "5) PPD anergic ."}
+{"sent_index": 41, "start_index": 2196, "end_index": 2315, "_text": "The patient &apos;s HIV risk factors include history of intravenous drug abuse , prostitution , and a former prisoner ."}
+{"sent_index": 42, "start_index": 2316, "end_index": 2336, "_text": "PHYSICAL EXAMINATION"}
+{"sent_index": 43, "start_index": 2339, "end_index": 2524, "_text": "On presentation , the patient was a young appearing Hispanic male in mild respiratory distress with a blood pressure of 140/90 , heart rate 120 , respirations 32 , and temperature 101 ."}
+{"sent_index": 44, "start_index": 2525, "end_index": 2529, "_text": "SKIN"}
+{"sent_index": 45, "start_index": 2532, "end_index": 2543, "_text": "Jaundiced ."}
+{"sent_index": 46, "start_index": 2544, "end_index": 2549, "_text": "HEENT"}
+{"sent_index": 47, "start_index": 2552, "end_index": 2649, "_text": "Revealed icteric sclerae , the oropharynx with extensive thrush , and an ulcer under his tongue ."}
+{"sent_index": 48, "start_index": 2650, "end_index": 2654, "_text": "NECK"}
+{"sent_index": 49, "start_index": 2657, "end_index": 2712, "_text": "He had no cervical adenopathy and his neck was supple ."}
+{"sent_index": 50, "start_index": 2713, "end_index": 2718, "_text": "LUNGS"}
+{"sent_index": 51, "start_index": 2721, "end_index": 2784, "_text": "Had tubular breath sounds especially in the lower lung fields ."}
+{"sent_index": 52, "start_index": 2785, "end_index": 2792, "_text": "CARDIAC"}
+{"sent_index": 53, "start_index": 2795, "end_index": 2863, "_text": "Showed regular rate and rhythm without murmurs , rubs , or gallops ."}
+{"sent_index": 54, "start_index": 2864, "end_index": 2910, "_text": "There was no costovertebral angle tenderness ."}
+{"sent_index": 55, "start_index": 2911, "end_index": 2918, "_text": "ABDOMEN"}
+{"sent_index": 56, "start_index": 2921, "end_index": 3010, "_text": "Soft with bowel sounds and there was mid epigastric and right upper quadrant tenderness ."}
+{"sent_index": 57, "start_index": 3011, "end_index": 3091, "_text": "His liver was 10 cm and was felt three finger breadths below the costal margin ."}
+{"sent_index": 58, "start_index": 3092, "end_index": 3121, "_text": "His spleen was not palpable ."}
+{"sent_index": 59, "start_index": 3122, "end_index": 3128, "_text": "RECTAL"}
+{"sent_index": 60, "start_index": 3131, "end_index": 3162, "_text": "He had guaiac positive stools ."}
+{"sent_index": 61, "start_index": 3163, "end_index": 3174, "_text": "EXTREMITIES"}
+{"sent_index": 62, "start_index": 3177, "end_index": 3191, "_text": "Unremarkable ."}
+{"sent_index": 63, "start_index": 3192, "end_index": 3205, "_text": "GENITOURINARY"}
+{"sent_index": 64, "start_index": 3208, "end_index": 3263, "_text": "His penis had a 1/2 cm ulcer with yellowish discharge ."}
+{"sent_index": 65, "start_index": 3264, "end_index": 3276, "_text": "NEUROLOGICAL"}
+{"sent_index": 66, "start_index": 3279, "end_index": 3290, "_text": "Non-focal ."}
+{"sent_index": 67, "start_index": 3291, "end_index": 3313, "_text": "LABORATORY EXAMINATION"}
+{"sent_index": 68, "start_index": 3316, "end_index": 3434, "_text": "On admission , white count was 7.2 with 57% neutrophils , 40% lymphocytes , l mononuclear cell , and 1.6 eosinophils ."}
+{"sent_index": 69, "start_index": 3435, "end_index": 3463, "_text": "PT was 12.6 and PTT was 29 ."}
+{"sent_index": 70, "start_index": 3464, "end_index": 3568, "_text": "Sodium was 133 , potassium was 4.2 , chloride 100 , CO2 19 , BUN 21 , creatinine 1.2 , and glucose 122 ."}
+{"sent_index": 71, "start_index": 3569, "end_index": 3672, "_text": "ALT was 181 , AST was 156 , LDH was 336 , alkaline phosphatase was 214 , and bilirubin was 12.7 total ."}
+{"sent_index": 72, "start_index": 3675, "end_index": 3730, "_text": "On 02/06 , his bilirubin had been 7.2 with 6 direct ) ."}
+{"sent_index": 73, "start_index": 3731, "end_index": 3797, "_text": "His arterial blood gas on 50% was pO2 92 , pCO2 24 , and pH 7.46 ."}
+{"sent_index": 74, "start_index": 3798, "end_index": 3852, "_text": "His chest X-Ray showed bilateral nodular infiltrates ."}
+{"sent_index": 75, "start_index": 3853, "end_index": 3868, "_text": "HOSPITAL COURSE"}
+{"sent_index": 76, "start_index": 3871, "end_index": 4012, "_text": "The patient was admitted for work-up of his cholestatic jaundice picture along with work-up for his pulmonary process and treatment of both ."}
+{"sent_index": 77, "start_index": 4013, "end_index": 4157, "_text": "In terms of pulmonary function , it was felt that one possibility was that the patient was a Bactrim failure for PCP although this was unusual ."}
+{"sent_index": 78, "start_index": 4158, "end_index": 4299, "_text": "He was started on Pentamidine , especially in light of the fact that it was felt that his liver function tests were due possibly to Bactrim ."}
+{"sent_index": 79, "start_index": 4300, "end_index": 4432, "_text": "The patient was also covered with Erythromycin and Gentamicin for coverage of community acquired pneumonias and gram negative rods ."}
+{"sent_index": 80, "start_index": 4433, "end_index": 4467, "_text": "He was given supplemental oxygen ."}
+{"sent_index": 81, "start_index": 4468, "end_index": 4692, "_text": "In terms of his liver abnormalities , it was felt that viral hepatitis was in the differential as well as several opportunistic infections of the liver but also was felt that Bactrim could be a cause of these abnormalities ."}
+{"sent_index": 82, "start_index": 4693, "end_index": 4778, "_text": "Titers for CMV and Epstein-Barr virus were sent and a titer for toxoplasma was sent ."}
+{"sent_index": 83, "start_index": 4779, "end_index": 4817, "_text": "Stool was sent for ova and parasites ."}
+{"sent_index": 84, "start_index": 4818, "end_index": 4850, "_text": "Gastrointestinal was consulted ."}
+{"sent_index": 85, "start_index": 4851, "end_index": 4937, "_text": "Initially , the patient did well in terms of his pre-status and required less oxygen ."}
+{"sent_index": 86, "start_index": 4938, "end_index": 5030, "_text": "However , on 02/10/91 , his respiratory rate increased and his oxygen saturation decreased ."}
+{"sent_index": 87, "start_index": 5031, "end_index": 5295, "_text": "Actually in reviewing the records at this point , it appears that Pentamidine was not started initially so on the antibiotics of Erythromycin and Gentamicin , the patient &apos;s respiratory status worsened and his LDH climbed so he began Pentamidine on 02/10/91 ."}
+{"sent_index": 88, "start_index": 5296, "end_index": 5474, "_text": "On 02/11/91 , the patient again appeared more comfortable this time with 50% facemask but then required more oxygen , dropped his O2 saturations , and was intubated on 02/11/91 ."}
+{"sent_index": 89, "start_index": 5475, "end_index": 5592, "_text": "He was transferred to the Intensive Care Unit on 12/12/90 on Gentamicin , Vancomycin , Pentamidine , and Prednisone ."}
+{"sent_index": 90, "start_index": 5593, "end_index": 5675, "_text": "Also of note at that point , hepatitis C virus serologies had come back positive ."}
+{"sent_index": 91, "start_index": 5676, "end_index": 5851, "_text": "However , at this point , his liver function test abnormalities appeared more consistent with a cholestatic picture with his direct bilirubin being 12.1 and total being 14.1 ."}
+{"sent_index": 92, "start_index": 5852, "end_index": 5934, "_text": "The patient &apos;s abdominal CT scan showed no liver disease and no obstruction ."}
+{"sent_index": 93, "start_index": 5935, "end_index": 5997, "_text": "The patient &apos;s liver function tests appeared to improve ."}
+{"sent_index": 94, "start_index": 5998, "end_index": 6125, "_text": "The patient &apos;s penile ulcer was cultured and grew positive herpes simplex virus and the patient was started on Acyclovir ."}
+{"sent_index": 95, "start_index": 6126, "end_index": 6250, "_text": "On 02/13/91 , the patient had a bronchoalveolar lavage performed which showed a toluidine blue with many pneumocysts noted ."}
+{"sent_index": 96, "start_index": 6251, "end_index": 6332, "_text": "No other cultures grew out and the patient &apos;s clinical status deteriorated ."}
+{"sent_index": 97, "start_index": 6333, "end_index": 6425, "_text": "The patient required 100% oxygen to maintain adequate oxygen saturations on the ventilator ."}
+{"sent_index": 98, "start_index": 6426, "end_index": 6495, "_text": "He required elevated ventilatory pressures with PIPS often above 60 ."}
+{"sent_index": 99, "start_index": 6496, "end_index": 6555, "_text": "Fortunately , no evidence of baratroma was ever discerned ."}
+{"sent_index": 100, "start_index": 6556, "end_index": 6781, "_text": "However , the patient &apos;s respiratory status continued to decline and we were unable to maintain oxygen saturations above 80% even using reverse I to E ventilation , paralysis , sedation , and other modes of ventilation ."}
+{"sent_index": 101, "start_index": 6782, "end_index": 6885, "_text": "Patient underwent liver biopsy on 02/16/91 and the results of this were pending when the patient died ."}
+{"sent_index": 102, "start_index": 6886, "end_index": 7041, "_text": "The patient actually developed decreasing counts with white count as low as 1.75 , hematocrit as low as 26 , and platelets as low as 68 noted on 02/15/91 ."}
+{"sent_index": 103, "start_index": 7042, "end_index": 7113, "_text": "These were supported with blood products and Hematology was consulted ."}
+{"sent_index": 104, "start_index": 7114, "end_index": 7231, "_text": "They felt that it was most likely secondary to Bactrim and these actually were getting better when the patient died ."}
+{"sent_index": 105, "start_index": 7232, "end_index": 7270, "_text": "Bone marrow biopsy was not attempted ."}
+{"sent_index": 106, "start_index": 7271, "end_index": 7347, "_text": "Discussions were begun with the family regarding limits of supportive care ."}
+{"sent_index": 107, "start_index": 7348, "end_index": 7518, "_text": "Due to continued worsening pulmonary status and an overall grim prognosis , the family decided , in consultation with the Medical Team , to withdraw ventilatory support ."}
+{"sent_index": 108, "start_index": 7519, "end_index": 7561, "_text": "This was done on the evening of 02/18/91 ."}
+{"sent_index": 109, "start_index": 7562, "end_index": 7632, "_text": "Patient expired after the endotracheal tube was withdrawn at 6:40 p.m."}
+{"sent_index": 110, "start_index": 7633, "end_index": 7644, "_text": "DISPOSITION"}
+{"sent_index": 111, "start_index": 7647, "end_index": 7677, "_text": "The patient died in hospital ."}
+{"sent_index": 112, "start_index": 7678, "end_index": 7708, "_text": "An autopsy will be performed ."}
+{"sent_index": 113, "start_index": 7709, "end_index": 7768, "_text": "An autopsy was performed as per the family &apos;s wishes ."}
+{"sent_index": 114, "start_index": 7769, "end_index": 7814, "_text": "WE221/9850 TAKO C. INSKE , M.D. , PH. JT2 FF2"}
+{"sent_index": 115, "start_index": 7815, "end_index": 7827, "_text": "D :\n02/18/91"}
+{"sent_index": 116, "start_index": 7828, "end_index": 7840, "_text": "Batch :\n8600"}
+{"sent_index": 117, "start_index": 7841, "end_index": 7847, "_text": "Report"}
+{"sent_index": 118, "start_index": 7850, "end_index": 7858, "_text": "V7238B57"}
+{"sent_index": 119, "start_index": 7859, "end_index": 7871, "_text": "T :\n02/20/91"}
+{"sent_index": 120, "start_index": 7872, "end_index": 7884, "_text": "Dicatated By"}
+{"sent_index": 121, "start_index": 7887, "end_index": 7915, "_text": "LATO L. TIKFREIERM , M.D.\ncc"}
+{"sent_index": 122, "start_index": 7918, "end_index": 7951, "_text": "1. LERMA N. WYNBRANTESXELL , M.D."}
+{"sent_index": 123, "start_index": 7952, "end_index": 7970, "_text": "2. ANA V. A , M.D."}
+{"sent_index": 124, "start_index": 7971, "end_index": 7993, "_text": "3. DALLI A. SEEN , M.D"}
+{"sent_index": 125, "start_index": 7994, "end_index": 8015, "_text": "4. ARC N. SEEN , M.D."}

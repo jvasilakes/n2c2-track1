@@ -1,0 +1,60 @@
+T0	problem 1556 1567	retractions
+A0	Assertion T0 absent
+T1	problem 422 434	Tuberculosis
+A1	Assertion T1 absent
+T2	problem 1607 1613	murmur
+A2	Assertion T2 absent
+T3	problem 682 692	Trisomy 21
+A3	Assertion T3 possible
+T4	problem 4868 4888	chronic lung disease
+A4	Assertion T4 hypothetical
+T5	problem 2312 2318	murmur
+A5	Assertion T5 absent
+T6	problem 4973 4976	RSV
+A6	Assertion T6 hypothetical
+T7	problem 1664 1676	nondistended
+A7	Assertion T7 absent
+T8	problem 627 643	duodenal atresia
+A8	Assertion T8 present
+T9	problem 1716 1722	masses
+A9	Assertion T9 absent
+T10	problem 598 612	polyhydramnios
+A10	Assertion T10 present
+T11	problem 1126 1143	fetal tachycardia
+A11	Assertion T11 absent
+T12	problem 576 590	twin gestation
+A12	Assertion T12 present
+T13	problem 1090 1109	Sepsis risk factors
+A13	Assertion T13 present
+T14	problem 1476 1498	nondysmorphic features
+A14	Assertion T14 absent
+T15	problem 1115 1120	fever
+A15	Assertion T15 absent
+T16	problem 1273 1281	distress
+A16	Assertion T16 absent
+T17	problem 1146 1166	rupture of membranes
+A17	Assertion T17 present
+T18	problem 3102 3121	sepsis risk factors
+A18	Assertion T18 absent
+T19	problem 1066 1087	a breech presentation
+A19	Assertion T19 present
+T20	problem 746 767	Maternal hypertension
+A20	Assertion T20 present
+T21	problem 5276 5296	chronic lung disease
+A21	Assertion T21 hypothetical
+T22	problem 5427 5436	influenza
+A22	Assertion T22 hypothetical
+T23	problem 1687 1705	hepatosplenomegaly
+A23	Assertion T23 absent
+T24	problem 655 665	thickening
+A24	Assertion T24 present
+T25	problem 2194 2205	retractions
+A25	Assertion T25 absent
+T26	problem 2652 2671	hypoglycemia issues
+A26	Assertion T26 absent
+T27	problem 5581 5592	Prematurity
+A27	Assertion T27 present
+T28	problem 529 540	Infertility
+A28	Assertion T28 present
+T29	problem 5637 5643	sepsis
+A29	Assertion T29 possible

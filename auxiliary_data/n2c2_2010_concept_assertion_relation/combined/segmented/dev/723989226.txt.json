@@ -1,0 +1,134 @@
+{"sent_index": 0, "start_index": 0, "end_index": 9, "_text": "723989226"}
+{"sent_index": 1, "start_index": 10, "end_index": 13, "_text": "OMH"}
+{"sent_index": 2, "start_index": 14, "end_index": 28, "_text": "6410178\n996067"}
+{"sent_index": 3, "start_index": 29, "end_index": 50, "_text": "3/30/1999 12:00:00 AM"}
+{"sent_index": 4, "start_index": 51, "end_index": 68, "_text": "Discharge Summary"}
+{"sent_index": 5, "start_index": 69, "end_index": 75, "_text": "Signed"}
+{"sent_index": 6, "start_index": 76, "end_index": 79, "_text": "DIS"}
+{"sent_index": 7, "start_index": 80, "end_index": 93, "_text": "Report Status"}
+{"sent_index": 8, "start_index": 96, "end_index": 102, "_text": "Signed"}
+{"sent_index": 9, "start_index": 103, "end_index": 120, "_text": "DISCHARGE SUMMARY"}
+{"sent_index": 10, "start_index": 121, "end_index": 153, "_text": "NAME :\nNETSHUFFSCARVTRACE , RIRA"}
+{"sent_index": 11, "start_index": 154, "end_index": 177, "_text": "UNIT NUMBER :\n005-27-20"}
+{"sent_index": 12, "start_index": 178, "end_index": 192, "_text": "ADMISSION DATE"}
+{"sent_index": 13, "start_index": 195, "end_index": 205, "_text": "03/30/1999"}
+{"sent_index": 14, "start_index": 206, "end_index": 220, "_text": "DISCHARGE DATE"}
+{"sent_index": 15, "start_index": 223, "end_index": 233, "_text": "09/16/2006"}
+{"sent_index": 16, "start_index": 234, "end_index": 253, "_text": "PRINCIPAL DIAGNOSIS"}
+{"sent_index": 17, "start_index": 256, "end_index": 302, "_text": "Severe chronic obstructive pulmonary disease ."}
+{"sent_index": 18, "start_index": 303, "end_index": 324, "_text": "Respiratory failure ."}
+{"sent_index": 19, "start_index": 325, "end_index": 351, "_text": "Congestive heart failure ."}
+{"sent_index": 20, "start_index": 352, "end_index": 380, "_text": "Right lower lobe pneumonia ."}
+{"sent_index": 21, "start_index": 381, "end_index": 422, "_text": "Atonic bladder with suprapubic catheter ."}
+{"sent_index": 22, "start_index": 423, "end_index": 432, "_text": "Anxiety ."}
+{"sent_index": 23, "start_index": 433, "end_index": 458, "_text": "Coronary artery disease ."}
+{"sent_index": 24, "start_index": 459, "end_index": 510, "_text": "History of colon cancer status post hemicolectomy ."}
+{"sent_index": 25, "start_index": 511, "end_index": 537, "_text": "HISTORY OF PRESENT ILLNESS"}
+{"sent_index": 26, "start_index": 540, "end_index": 760, "_text": "This is a 76 year old white male with severe chronic obstructive pulmonary disease who has had several recent admissions to Oaksgekesser/ Memorial Hospital for respiratory insuffiencey most often secondary to pneumonia ."}
+{"sent_index": 27, "start_index": 761, "end_index": 941, "_text": "He was most recently discharged from Oaksgekesser/ Memorial Hospital on 03/06/99 and was then transferred to Linghs County Medical Center from which he was discharged on 03/20/99 ."}
+{"sent_index": 28, "start_index": 942, "end_index": 1074, "_text": "The patient was doing relatively at home until one day prior to admission he complained discomfort over a suprapubic catheter area ."}
+{"sent_index": 29, "start_index": 1075, "end_index": 1222, "_text": "The patient had missed his usual monthly change of his suprapubic catheter and felt discomfort and noticed some blood at the site of the catheter ."}
+{"sent_index": 30, "start_index": 1223, "end_index": 1360, "_text": "The patient was brought to the Emergency Room one day prior to admission where he was evaluated by Urology and had his catheter changed ."}
+{"sent_index": 31, "start_index": 1361, "end_index": 1445, "_text": "The patient at that time noted slight shortness of breath but was sent home anyway ."}
+{"sent_index": 32, "start_index": 1446, "end_index": 1522, "_text": "On the day of admission the patient noticed increasing shortness of breath ."}
+{"sent_index": 33, "start_index": 1523, "end_index": 1670, "_text": "The patient was noted to be confused and to be disoriented toward the end of the day after complaining of shortness of breath for most of the day ."}
+{"sent_index": 34, "start_index": 1671, "end_index": 1785, "_text": "The patient denies any recent upper respiratory infections , no fevers , no chills , no change in cough , sputum ."}
+{"sent_index": 35, "start_index": 1786, "end_index": 1817, "_text": "He also denies any chest pain ."}
+{"sent_index": 36, "start_index": 1818, "end_index": 1832, "_text": "No orthopnea ."}
+{"sent_index": 37, "start_index": 1833, "end_index": 1866, "_text": "No paroxysmal nocturnal dyspnea ."}
+{"sent_index": 38, "start_index": 1867, "end_index": 1953, "_text": "The patient had been taking his usual medications and using his nasal oxygen at home ."}
+{"sent_index": 39, "start_index": 1954, "end_index": 2081, "_text": "By the time the patient arrived at the Oaksgekesser/ Memorial Hospital Emergency Room he was in moderate respiratory distress ."}
+{"sent_index": 40, "start_index": 2082, "end_index": 2150, "_text": "His initial blood gases on 40% 02 was P02 102 , PC02 115 , PH 7.11 ."}
+{"sent_index": 41, "start_index": 2151, "end_index": 2401, "_text": "The patient was given respiratory therapy in the way of nebulizer treatments in the Oaksgekesser/ Memorial Hospital Emergency Room because of a longstanding desire by patient and family to refrain from intubation to be considered Do Not Resuscitate ."}
+{"sent_index": 42, "start_index": 2402, "end_index": 2433, "_text": "The patient was not intubated ."}
+{"sent_index": 43, "start_index": 2434, "end_index": 2655, "_text": "However he was transferred to the Medical Intensive Care Unit where he received continuous respiratory therapy in theway of Albuterol nebulizers as well as nasal oxygen , intravenous steroids and intravenous antibiotics ."}
+{"sent_index": 44, "start_index": 2656, "end_index": 2843, "_text": "A chest x-ray in the Oaksgekesser/ Memorial Hospital Emergency Room showed new changes on his chest x-ray on top of his usual severe bilateral emphysema_____ with scarring in both lungs ."}
+{"sent_index": 45, "start_index": 2844, "end_index": 2927, "_text": "There were new air space opacifications in the left apex and the right lower lobe ."}
+{"sent_index": 46, "start_index": 2928, "end_index": 3017, "_text": "These were thought to be consistent either with pneumonia or asymmetric pulmonary edema ."}
+{"sent_index": 47, "start_index": 3018, "end_index": 3038, "_text": "PAST MEDICAL HISTORY"}
+{"sent_index": 48, "start_index": 3041, "end_index": 3076, "_text": "Associated medical problems include"}
+{"sent_index": 49, "start_index": 3079, "end_index": 3081, "_text": "1."}
+{"sent_index": 50, "start_index": 3082, "end_index": 3121, "_text": "Atonic bladder with a suprapubic tube ."}
+{"sent_index": 51, "start_index": 3122, "end_index": 3134, "_text": "2. Anxiety ."}
+{"sent_index": 52, "start_index": 3135, "end_index": 3208, "_text": "3. Coronary artery disease with a history of angina in the distant past ."}
+{"sent_index": 53, "start_index": 3209, "end_index": 3266, "_text": "4. History of colon cancer with a colectomy in the past ."}
+{"sent_index": 54, "start_index": 3267, "end_index": 3291, "_text": "MEDICATIONS ON ADMISSION"}
+{"sent_index": 55, "start_index": 3294, "end_index": 3325, "_text": "1. Ativan 1 mg po twice a day ."}
+{"sent_index": 56, "start_index": 3326, "end_index": 3371, "_text": "2. Trusopt 1 gtt left eye three times a day ."}
+{"sent_index": 57, "start_index": 3372, "end_index": 3412, "_text": "3. Xalatan 0.005% one gtt left eye qhs ."}
+{"sent_index": 58, "start_index": 3413, "end_index": 3462, "_text": "4. Brimonidine 1 gtt left eye three times a day ."}
+{"sent_index": 59, "start_index": 3463, "end_index": 3504, "_text": "5. Combivent 3 puffs four times per day ."}
+{"sent_index": 60, "start_index": 3505, "end_index": 3541, "_text": "6. Aerobid three puffs twice a day ."}
+{"sent_index": 61, "start_index": 3542, "end_index": 3577, "_text": "7. Sorbitol 30 cc every other day ."}
+{"sent_index": 62, "start_index": 3578, "end_index": 3598, "_text": "PHYSICAL EXAMINATION"}
+{"sent_index": 63, "start_index": 3601, "end_index": 3669, "_text": "He was an elderly frail gentleman in moderate respiratory distress ."}
+{"sent_index": 64, "start_index": 3670, "end_index": 3770, "_text": "He had a blood pressure 110/70 , heart rate 110 beats per minute and regular , respiratory rate 25 ."}
+{"sent_index": 65, "start_index": 3771, "end_index": 3812, "_text": "He was in moderate respiratory distress ."}
+{"sent_index": 66, "start_index": 3813, "end_index": 3838, "_text": "His temperature was 98F ."}
+{"sent_index": 67, "start_index": 3839, "end_index": 3898, "_text": "He had a normal head , eyes , ears , nose and throat exam ."}
+{"sent_index": 68, "start_index": 3899, "end_index": 3962, "_text": "Neck exam revealed no jugular venous distention and no masses ."}
+{"sent_index": 69, "start_index": 3963, "end_index": 4040, "_text": "Lung exam revealed decreased breath sounds as well as crackles in the bases ."}
+{"sent_index": 70, "start_index": 4041, "end_index": 4075, "_text": "There were no wheezes or rhonchi ."}
+{"sent_index": 71, "start_index": 4076, "end_index": 4144, "_text": "Heart exam revealed a soft S1 and S2 , no murmur was heard , no S3 ."}
+{"sent_index": 72, "start_index": 4145, "end_index": 4199, "_text": "Abdomen was soft , nontender with no masses palpable ."}
+{"sent_index": 73, "start_index": 4200, "end_index": 4255, "_text": "Rectal exam was unremarkable with stool heme negative ."}
+{"sent_index": 74, "start_index": 4256, "end_index": 4323, "_text": "Neurological exam revealed an alert and oriented x 3 elderly male ."}
+{"sent_index": 75, "start_index": 4324, "end_index": 4350, "_text": "He moved all extremities ."}
+{"sent_index": 76, "start_index": 4351, "end_index": 4409, "_text": "Deep tendon reflexes were symmetrical in all extremities ."}
+{"sent_index": 77, "start_index": 4410, "end_index": 4440, "_text": "LABORATORY AND RADIOLOGIC DATA"}
+{"sent_index": 78, "start_index": 4443, "end_index": 4526, "_text": "Sodium 148 , potassium 3.4 , glucose 174 , P02 102 , PC02 115 , PH 7.11 on 40% 02 ."}
+{"sent_index": 79, "start_index": 4527, "end_index": 4701, "_text": "Blood urea nitrogen 11 , creatinine .6 , uric acid 3.0 , alkaline phosphatase 78 , creatinine phosphokinase isoenzymes too low , hematocrit 41 , white blood cell count 11.6 ."}
+{"sent_index": 80, "start_index": 4702, "end_index": 4773, "_text": "Urine analysis showed 20-50 white blood cells and 3-5 red blood cells ."}
+{"sent_index": 81, "start_index": 4774, "end_index": 4933, "_text": "Electrocardiogram showed sinus tachycardia at a rate of 123 beats per minute compared to previous electrocardiogram of 1/29 there were no significant changes ."}
+{"sent_index": 82, "start_index": 4934, "end_index": 4949, "_text": "HOSPITAL COURSE"}
+{"sent_index": 83, "start_index": 4952, "end_index": 5015, "_text": "The patient was stabilized in the Medical Intensive Care Unit ."}
+{"sent_index": 84, "start_index": 5016, "end_index": 5057, "_text": "He stayed in the unit for about one day ."}
+{"sent_index": 85, "start_index": 5058, "end_index": 5134, "_text": "During that period of time he received nebulizer treatments with Albuterol ."}
+{"sent_index": 86, "start_index": 5135, "end_index": 5220, "_text": "He was also started on intravenous Ticarcillin for possible gram negative pneumonia ."}
+{"sent_index": 87, "start_index": 5221, "end_index": 5356, "_text": "He was diuresed with intravenous Lasix to which he responded with at lease a 2L urine output on the first day and 1.5L the second day ."}
+{"sent_index": 88, "start_index": 5357, "end_index": 5501, "_text": "After one day in the Medical Intensive Care Unit the patient was stable enough to go to the floor where he continued the rest of his treatment ."}
+{"sent_index": 89, "start_index": 5502, "end_index": 5615, "_text": "This consisted of continued nebulizer treatments as well as intravenous antibiotics and intravenous Solu-Medrol ."}
+{"sent_index": 90, "start_index": 5616, "end_index": 5691, "_text": "As the patient &apos;s diuresis continued his respiratory status improved ."}
+{"sent_index": 91, "start_index": 5692, "end_index": 5871, "_text": "A chest x-ray showed clearing of the opacities in the chest x-ray that were consistent with pulmonary edema because he continued to have some abnormality in the right lower lobe ."}
+{"sent_index": 92, "start_index": 5872, "end_index": 5937, "_text": "The patient was continued on antibiotics for possible pneumonia ."}
+{"sent_index": 93, "start_index": 5938, "end_index": 5995, "_text": "The antibiotic chosen was Levaquin 500 mg 1 tab per day ."}
+{"sent_index": 94, "start_index": 5996, "end_index": 6061, "_text": "This was started on 4/2/99 and should be continued for ten days ."}
+{"sent_index": 95, "start_index": 6062, "end_index": 6164, "_text": "The Ticarcillin was stopped after two days when it was felt that he did not have a serious pneumonia ."}
+{"sent_index": 96, "start_index": 6165, "end_index": 6317, "_text": "The patient &apos;s respiratory status continued to improve but towards the last 2-3 days of his hospitalization the amount of improvement was minimal ."}
+{"sent_index": 97, "start_index": 6318, "end_index": 6394, "_text": "It was felt that his respiratory status has been maximally treated by then ."}
+{"sent_index": 98, "start_index": 6395, "end_index": 6495, "_text": "The patient &apos;s major improvement came after the first two days with brisk diuresis with Lasix ."}
+{"sent_index": 99, "start_index": 6496, "end_index": 6716, "_text": "While in the Oaksgekesser/ Memorial Hospital the patient on 4/4/99 complained of mild epigastric discomfort because he was put in Cimetidine while in the Intensive Care Unit for prophylaxis against peptic ulcer disease ."}
+{"sent_index": 100, "start_index": 6717, "end_index": 6840, "_text": "The patient was upgraded to Prilosec 20 mg per day for possible treatment of gastritis or gastroesophageal reflux disease ."}
+{"sent_index": 101, "start_index": 6841, "end_index": 6926, "_text": "The patient did have any nausea , vomiting or evidence of gastrointestinal bleeding ."}
+{"sent_index": 102, "start_index": 6927, "end_index": 7047, "_text": "The patient &apos;s abdominal pain should be followed over the next week or so in case it does not respond to Prilosec ."}
+{"sent_index": 103, "start_index": 7048, "end_index": 7158, "_text": "While in Oaksgekesser/ Memorial Hospital the patient was never able to get out of bed and walk independently ."}
+{"sent_index": 104, "start_index": 7159, "end_index": 7341, "_text": "It is hoped that when he is transferred to a rehab facility that he will continue with physical therapy to regain his strength and regain independence in activities of daily living ."}
+{"sent_index": 105, "start_index": 7342, "end_index": 7515, "_text": "Discussion with the family regarding the possibility of sending him to a nursing home was entertained however the family strongly refused to allow him to go a nursing home ."}
+{"sent_index": 106, "start_index": 7516, "end_index": 7596, "_text": "They wanted the patient to return to his home after a stay at a rehab facility ."}
+{"sent_index": 107, "start_index": 7597, "end_index": 7619, "_text": "CONDITION ON DISCHARGE"}
+{"sent_index": 108, "start_index": 7622, "end_index": 7673, "_text": "The patient &apos;s respiratory status was stable ."}
+{"sent_index": 109, "start_index": 7674, "end_index": 7798, "_text": "I think his breathing was as good as to be expected with the amount of severe chronic obstructive pulmonary disease he had ."}
+{"sent_index": 110, "start_index": 7799, "end_index": 7927, "_text": "He needed to go to a rehab facility for continued respiratory therapy and for Physical Therapy to increase his muscle strength ."}
+{"sent_index": 111, "start_index": 7928, "end_index": 7952, "_text": "MEDICATIONS ON DISCHARGE"}
+{"sent_index": 112, "start_index": 7955, "end_index": 8001, "_text": "1. Albuterol 2.5 mg in 2.5 normal saline q4h ."}
+{"sent_index": 113, "start_index": 8002, "end_index": 8052, "_text": "2. Heparin 5000 units subcutaneously twice a day ."}
+{"sent_index": 114, "start_index": 8053, "end_index": 8082, "_text": "3. Ativan .5 mg twice a day ."}
+{"sent_index": 115, "start_index": 8083, "end_index": 8114, "_text": "4. Nasal oxygen 3L per minute ."}
+{"sent_index": 116, "start_index": 8115, "end_index": 8173, "_text": "5. Levaquin 500 mg per day to be continued until 4/12/99 ."}
+{"sent_index": 117, "start_index": 8174, "end_index": 8198, "_text": "6. Lasix 40 mg per day ."}
+{"sent_index": 118, "start_index": 8199, "end_index": 8257, "_text": "7. Prednisone 40 mg per day to be tapered over two weeks ."}
+{"sent_index": 119, "start_index": 8258, "end_index": 8305, "_text": "8. Xalatan eyedrops 1 gtt in left eye per day ."}
+{"sent_index": 120, "start_index": 8306, "end_index": 8355, "_text": "9. Alphagan 1 gtt in left eye three times a day ."}
+{"sent_index": 121, "start_index": 8356, "end_index": 8404, "_text": "10. Trusopt 1gtt in left eye three times a day ."}
+{"sent_index": 122, "start_index": 8405, "end_index": 8433, "_text": "11. Prilosec 20 mg per day ."}
+{"sent_index": 123, "start_index": 8434, "end_index": 8442, "_text": "FOLLOWUP"}
+{"sent_index": 124, "start_index": 8445, "end_index": 8605, "_text": "The patient should have follow up with his primary care physician Dr. Rod Linkeboltshieltrus at the TRE 453 about one week after discharge from rehab facility ."}
+{"sent_index": 125, "start_index": 8606, "end_index": 8654, "_text": "The telephone number at his office is 236-4518 ."}
+{"sent_index": 126, "start_index": 8655, "end_index": 8669, "_text": "ROD END , M.D."}
+{"sent_index": 127, "start_index": 8670, "end_index": 8677, "_text": "TR :\nlh"}
+{"sent_index": 128, "start_index": 8678, "end_index": 8693, "_text": "DD :\n04/05/1999"}
+{"sent_index": 129, "start_index": 8694, "end_index": 8696, "_text": "TD"}
+{"sent_index": 130, "start_index": 8699, "end_index": 8714, "_text": "04/05/1999 3:06"}
+{"sent_index": 131, "start_index": 8715, "end_index": 8718, "_text": "Pcc"}
+{"sent_index": 132, "start_index": 8721, "end_index": 8735, "_text": "ROD END , M.D."}
+{"sent_index": 133, "start_index": 8736, "end_index": 8763, "_text": "C.R.TRYGLO HOSPITAL OF STAT"}

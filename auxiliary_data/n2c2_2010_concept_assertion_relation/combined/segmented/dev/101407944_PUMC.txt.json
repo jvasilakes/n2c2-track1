@@ -1,0 +1,168 @@
+{"sent_index": 0, "start_index": 0, "end_index": 14, "_text": "101407944 PUMC"}
+{"sent_index": 1, "start_index": 15, "end_index": 22, "_text": "3925529"}
+{"sent_index": 2, "start_index": 23, "end_index": 29, "_text": "441763"}
+{"sent_index": 3, "start_index": 30, "end_index": 37, "_text": "2345939"}
+{"sent_index": 4, "start_index": 38, "end_index": 59, "_text": "4/30/2005 12:00:00 AM"}
+{"sent_index": 5, "start_index": 60, "end_index": 77, "_text": "Discharge Summary"}
+{"sent_index": 6, "start_index": 78, "end_index": 84, "_text": "Signed"}
+{"sent_index": 7, "start_index": 85, "end_index": 88, "_text": "DIS"}
+{"sent_index": 8, "start_index": 89, "end_index": 102, "_text": "Report Status"}
+{"sent_index": 9, "start_index": 105, "end_index": 111, "_text": "Signed"}
+{"sent_index": 10, "start_index": 112, "end_index": 149, "_text": "DISCHARGE SUMMARY NAME :\nCAUGH , DI K"}
+{"sent_index": 11, "start_index": 150, "end_index": 173, "_text": "UNIT NUMBER :\n569-82-26"}
+{"sent_index": 12, "start_index": 174, "end_index": 201, "_text": "ADMISSION DATE :\n04/30/2005"}
+{"sent_index": 13, "start_index": 202, "end_index": 237, "_text": "DISCHARGE DATE :\n5/14/05 05/14/2005"}
+{"sent_index": 14, "start_index": 238, "end_index": 257, "_text": "PRINCIPAL DIAGNOSIS"}
+{"sent_index": 15, "start_index": 260, "end_index": 301, "_text": "Right parietal occipital temporal tumor ."}
+{"sent_index": 16, "start_index": 302, "end_index": 311, "_text": "PRINCIPAL"}
+{"sent_index": 17, "start_index": 312, "end_index": 321, "_text": "PROCEDURE"}
+{"sent_index": 18, "start_index": 324, "end_index": 420, "_text": "5/5/05 right parietal occipital craniotomy and debulking of tumor using stulz neuro navigation ."}
+{"sent_index": 19, "start_index": 421, "end_index": 447, "_text": "HISTORY OF PRESENT ILLNESS"}
+{"sent_index": 20, "start_index": 450, "end_index": 597, "_text": "The patient is a pleasant 83-year-old retired psychiatrist who presents with a chief complaint of gait difficulty for the last five to six months ."}
+{"sent_index": 21, "start_index": 598, "end_index": 771, "_text": "The patient has a history of laryngeal cancer in 2000 and 2001 , CVA in 2001 to 2002 and hypertension , who has a six month history of progressive difficulty in ambulation ."}
+{"sent_index": 22, "start_index": 772, "end_index": 891, "_text": "The patient was in previously good health when he reports starting to notice problems ambulating about six months ago ."}
+{"sent_index": 23, "start_index": 892, "end_index": 968, "_text": "His partner also reports that he has been having more difficulty with ADLs ."}
+{"sent_index": 24, "start_index": 969, "end_index": 1192, "_text": "He reported that he began with difficulty buttoning his shirt for many years since after a stroke but now reports that on occasion she would ask him why he was doing certain things and he could not give a concrete example ."}
+{"sent_index": 25, "start_index": 1193, "end_index": 1273, "_text": "The patient was having a hard time walking and reports that he has felt weaker ."}
+{"sent_index": 26, "start_index": 1274, "end_index": 1390, "_text": "He has had uncoordination of his feet and began having a cane four to five months ago with the increasing weakness ."}
+{"sent_index": 27, "start_index": 1391, "end_index": 1437, "_text": "This was especially bad when trying to arise ."}
+{"sent_index": 28, "start_index": 1438, "end_index": 1581, "_text": "The patient has seen his primary care physician who referred him to physical therapy for his gait weakness but his symptoms failed to improve ."}
+{"sent_index": 29, "start_index": 1582, "end_index": 1721, "_text": "He continued to progress until two weeks prior to admission when he was found in the bathtub , unsteady and fell trying to steady himself ."}
+{"sent_index": 30, "start_index": 1722, "end_index": 1790, "_text": "The patient could not be moved and had to have 911 called for help ."}
+{"sent_index": 31, "start_index": 1791, "end_index": 1912, "_text": "Since that time he had been ambulating with a walker and has had increasing difficulty with falls in the last two weeks ."}
+{"sent_index": 32, "start_index": 1913, "end_index": 2028, "_text": "The patient was again seen by his primary care physician and a CG scan revealed a mass in the right parietal lobe ."}
+{"sent_index": 33, "start_index": 2029, "end_index": 2111, "_text": "The patient was referred to the Neurology Service for further workup of the mass ."}
+{"sent_index": 34, "start_index": 2112, "end_index": 2240, "_text": "The patient denied blurry vision , headache , nausea , vomiting , paresthesias , pain in mental status , confusion or seizures ."}
+{"sent_index": 35, "start_index": 2241, "end_index": 2345, "_text": "The patient is status post radiation therapy and resection and reconstruction for his laryngeal cancer ."}
+{"sent_index": 36, "start_index": 2346, "end_index": 2363, "_text": "REVIEW OF SYSTEMS"}
+{"sent_index": 37, "start_index": 2366, "end_index": 2406, "_text": "Positive weakness , otherwise negative ."}
+{"sent_index": 38, "start_index": 2407, "end_index": 2427, "_text": "PAST MEDICAL HISTORY"}
+{"sent_index": 39, "start_index": 2430, "end_index": 2578, "_text": "Hypertension , CVA 2001 , 2002 diabetes , laryngeal cancer , right CEA , prostatectomy for BPH , total knee replacement , status post appendectomy ."}
+{"sent_index": 40, "start_index": 2579, "end_index": 2609, "_text": "MEDICATIONS PRIOR TO ADMISSION"}
+{"sent_index": 41, "start_index": 2612, "end_index": 2722, "_text": "Plavix 75 mg every day , Lipitor 40 mg every day , HCTZ 50 mg , Monopril 10 mg every day , Viagra 100 mg prn ."}
+{"sent_index": 42, "start_index": 2723, "end_index": 2732, "_text": "ALLERGIES"}
+{"sent_index": 43, "start_index": 2735, "end_index": 2741, "_text": "NKDA ."}
+{"sent_index": 44, "start_index": 2742, "end_index": 2756, "_text": "FAMILY HISTORY"}
+{"sent_index": 45, "start_index": 2759, "end_index": 2822, "_text": "Father with CAD at 90 , diabetes , CVA , hypercholesterolemia ."}
+{"sent_index": 46, "start_index": 2823, "end_index": 2837, "_text": "SOCIAL HISTORY"}
+{"sent_index": 47, "start_index": 2840, "end_index": 2923, "_text": "The patient has one to two pack x20 year history of smoking that was 30 years ago ."}
+{"sent_index": 48, "start_index": 2924, "end_index": 2975, "_text": "He reports occasional alcohol use and no illicits ."}
+{"sent_index": 49, "start_index": 2976, "end_index": 3031, "_text": "The patient is a retired psychiatrist who lives in Ph ."}
+{"sent_index": 50, "start_index": 3032, "end_index": 3045, "_text": "PHYSICAL EXAM"}
+{"sent_index": 51, "start_index": 3048, "end_index": 3122, "_text": "Afebrile , vital signs stable but notable for a blood pressure of 164/80 ."}
+{"sent_index": 52, "start_index": 3123, "end_index": 3202, "_text": "Generally a well developed elderly man in no apparent distress sitting in bed ."}
+{"sent_index": 53, "start_index": 3203, "end_index": 3241, "_text": "HEENT ;\nextraocular movements intact ."}
+{"sent_index": 54, "start_index": 3242, "end_index": 3286, "_text": "Pupils equally round and reactive to light ."}
+{"sent_index": 55, "start_index": 3287, "end_index": 3301, "_text": "No nystagmus ."}
+{"sent_index": 56, "start_index": 3302, "end_index": 3326, "_text": "No retinal hemorrhages ."}
+{"sent_index": 57, "start_index": 3327, "end_index": 3349, "_text": "External ears normal ."}
+{"sent_index": 58, "start_index": 3350, "end_index": 3439, "_text": "Moist buccal mucosa , poor dentition , no erythema or exudates in the posterior pharynx ."}
+{"sent_index": 59, "start_index": 3440, "end_index": 3453, "_text": "Neck supple ."}
+{"sent_index": 60, "start_index": 3454, "end_index": 3493, "_text": "Prominent salivary glands bilaterally ."}
+{"sent_index": 61, "start_index": 3494, "end_index": 3532, "_text": "No other masses or thyromegaly noted ."}
+{"sent_index": 62, "start_index": 3533, "end_index": 3593, "_text": "No cervical , para-auricular or clavicular lymphadenopathy ."}
+{"sent_index": 63, "start_index": 3594, "end_index": 3599, "_text": "Chest"}
+{"sent_index": 64, "start_index": 3602, "end_index": 3636, "_text": "Crackles in the right lung field ."}
+{"sent_index": 65, "start_index": 3637, "end_index": 3650, "_text": "No egophony ."}
+{"sent_index": 66, "start_index": 3651, "end_index": 3656, "_text": "Heart"}
+{"sent_index": 67, "start_index": 3659, "end_index": 3688, "_text": "no palpable thrill or heave ."}
+{"sent_index": 68, "start_index": 3689, "end_index": 3698, "_text": "S1 , S2 ."}
+{"sent_index": 69, "start_index": 3699, "end_index": 3752, "_text": "3/6 systolic ejection murmur heard best at the apex ."}
+{"sent_index": 70, "start_index": 3753, "end_index": 3831, "_text": "Pulses 2+ carotids bilaterally , 2+ radial pulses , 2+ DP pulses bilaterally ."}
+{"sent_index": 71, "start_index": 3832, "end_index": 3905, "_text": "The abdomen was soft , nontender , nondistended , positive bowel sounds ."}
+{"sent_index": 72, "start_index": 3906, "end_index": 3933, "_text": "No hepato or splenomegaly ."}
+{"sent_index": 73, "start_index": 3934, "end_index": 4008, "_text": "Right lower quadrant scar and inferior midline scar that are well healed ."}
+{"sent_index": 74, "start_index": 4009, "end_index": 4013, "_text": "Back"}
+{"sent_index": 75, "start_index": 4016, "end_index": 4035, "_text": "No CVA tenderness ."}
+{"sent_index": 76, "start_index": 4036, "end_index": 4040, "_text": "Skin"}
+{"sent_index": 77, "start_index": 4043, "end_index": 4057, "_text": "No petechiae ."}
+{"sent_index": 78, "start_index": 4058, "end_index": 4165, "_text": "Cranial nerves II through XII grossly intact with a slight deviation of the uvula and tongue to the right ."}
+{"sent_index": 79, "start_index": 4166, "end_index": 4254, "_text": "There is increased tone in his right upper extremity with a slight left pronator drift ."}
+{"sent_index": 80, "start_index": 4255, "end_index": 4299, "_text": "On the right side his strength was 5 out 5 ."}
+{"sent_index": 81, "start_index": 4300, "end_index": 4360, "_text": "On the left side it is 4 out of 5 in the lower extremities ."}
+{"sent_index": 82, "start_index": 4361, "end_index": 4417, "_text": "The patient has an intention tremor with the left hand ."}
+{"sent_index": 83, "start_index": 4418, "end_index": 4465, "_text": "His reflexes were symmetric with upgoing toes ."}
+{"sent_index": 84, "start_index": 4466, "end_index": 4518, "_text": "There was a plantar grasp present on the left hand ."}
+{"sent_index": 85, "start_index": 4519, "end_index": 4557, "_text": "Graphesthesia was poor in both hands ."}
+{"sent_index": 86, "start_index": 4558, "end_index": 4619, "_text": "His gait was unsteady and he was unable to stand on his own ."}
+{"sent_index": 87, "start_index": 4620, "end_index": 4633, "_text": "Mental status"}
+{"sent_index": 88, "start_index": 4636, "end_index": 4666, "_text": "he was alert and oriented x3 ."}
+{"sent_index": 89, "start_index": 4667, "end_index": 4691, "_text": "RELEVANT LABORATORY DATA"}
+{"sent_index": 90, "start_index": 4694, "end_index": 4777, "_text": "White blood cell count on admission 6.1 , INR on admission 1.0 , relevant imaging ."}
+{"sent_index": 91, "start_index": 4778, "end_index": 4824, "_text": "Echocardiogram June 2004 showed an EF of 77% ."}
+{"sent_index": 92, "start_index": 4825, "end_index": 4880, "_text": "Chest xray reveals no consolidation or signs of edema ."}
+{"sent_index": 93, "start_index": 4881, "end_index": 5056, "_text": "CT shows a right parietal hyperdense and heterogenously enhancing mass measuring 6.5 x 5 cm with the surrounding vasogenic edema in effacement of the right lateral ventricle ."}
+{"sent_index": 94, "start_index": 5057, "end_index": 5172, "_text": "The finding was most consistent with metastatic disease and less likely primary CNS neoplasm such as glioblastoma ."}
+{"sent_index": 95, "start_index": 5173, "end_index": 5276, "_text": "MRI showed a large heterogenous enhancing right parietal mass lesion with a possible ependymal spread ."}
+{"sent_index": 96, "start_index": 5277, "end_index": 5353, "_text": "The patient was admitted to the Neurologic Service for workup of his tumor ."}
+{"sent_index": 97, "start_index": 5354, "end_index": 5556, "_text": "The neuro-oncologist felt that because of the tremendous tumor burden that was likely causing his symptoms the patient will require open debulking as well as obtaining issue for a pathologic diagnosis ."}
+{"sent_index": 98, "start_index": 5557, "end_index": 5617, "_text": "Thea patient was referred to Dr. Coma of the Eragnes Houseco"}
+{"sent_index": 99, "start_index": 5618, "end_index": 5644, "_text": "Ardbay Memorial Hospital ."}
+{"sent_index": 100, "start_index": 5645, "end_index": 5804, "_text": "On May 5 , 2005 the patient was taken to the operating room for a right parietal occipital craniotomy and debulking of the tumor using stulz neuro navigation ."}
+{"sent_index": 101, "start_index": 5805, "end_index": 5895, "_text": "Please see the separately dictated operative report for further details of the procedure ."}
+{"sent_index": 102, "start_index": 5896, "end_index": 5996, "_text": "The patient was taken to the recovery room and then to the postoperative floor in stable condition ."}
+{"sent_index": 103, "start_index": 5997, "end_index": 6069, "_text": "Of note the patient was seen by cardiology for preoperative assessment ."}
+{"sent_index": 104, "start_index": 6070, "end_index": 6244, "_text": "The patient was also seen by physical and occupational therapy during his postoperative course and they recommended that he go to a rehabilitation facility for his recovery ."}
+{"sent_index": 105, "start_index": 6245, "end_index": 6348, "_text": "A postoperative MRI was obtained which revealed no remarkable findings but only post surgical changes ."}
+{"sent_index": 106, "start_index": 6349, "end_index": 6471, "_text": "Transcranial Dopplers were checked following surgery and the patient was started on Decadron 4 mg q6 to prevent swelling ."}
+{"sent_index": 107, "start_index": 6472, "end_index": 6580, "_text": "The patient was started on Fragmin for DVT prophylaxis and the patient was also started on Dilantin levels ."}
+{"sent_index": 108, "start_index": 6581, "end_index": 6674, "_text": "Of note on 5/9/05 the patient was seen by Urology due to an inability to void and a 16 French"}
+{"sent_index": 109, "start_index": 6675, "end_index": 6702, "_text": "Coude catheter was placed ."}
+{"sent_index": 110, "start_index": 6703, "end_index": 6797, "_text": "The patient then was given voiding trials but eventually he needed to be straight cathed prn ."}
+{"sent_index": 111, "start_index": 6798, "end_index": 6876, "_text": "At the time of transfer , a 16 Coude catheter was in place and draining well ."}
+{"sent_index": 112, "start_index": 6877, "end_index": 6960, "_text": "The patient can have voiding trials at rehab and he is being maintained on Flomax ."}
+{"sent_index": 113, "start_index": 6961, "end_index": 7082, "_text": "The patient had a relatively unremarkable course and his neurologic status continued to improve following the operation ."}
+{"sent_index": 114, "start_index": 7083, "end_index": 7207, "_text": "At the time of discharge the patient was alert and oriented x3 and able to swallow pureed and thick diet without a problem ."}
+{"sent_index": 115, "start_index": 7208, "end_index": 7271, "_text": "On 5/11/05 repeat imaging revealed some edema and mass affect ."}
+{"sent_index": 116, "start_index": 7272, "end_index": 7395, "_text": "The patient was given an IV load of Decadron and restarted on IV Decadron which was eventually transferred to po Decadron ."}
+{"sent_index": 117, "start_index": 7396, "end_index": 7438, "_text": "The patient was also started on Mannitol ."}
+{"sent_index": 118, "start_index": 7439, "end_index": 7491, "_text": "His pathology came back as a large grade IV glioma ."}
+{"sent_index": 119, "start_index": 7492, "end_index": 7674, "_text": "The patient &apos;s pain was initially controlled with IV pain medications but at the time of discharge to the rehab facility he was able to control his pain on po pain medications ."}
+{"sent_index": 120, "start_index": 7675, "end_index": 7779, "_text": "The patient did have a postoperative serum sodium in the 120s from the 130s three days postoperatively ."}
+{"sent_index": 121, "start_index": 7780, "end_index": 7853, "_text": "An endocrine consult was obtained to help manage his serum electrolytes ."}
+{"sent_index": 122, "start_index": 7854, "end_index": 7938, "_text": "The patient was started on three grams of sodium , 3x a day with fluid restriction ."}
+{"sent_index": 123, "start_index": 7939, "end_index": 8048, "_text": "Over the next several days his sodium levels were followed and by 5/12/05 his plasma sodium was back to 136 ."}
+{"sent_index": 124, "start_index": 8049, "end_index": 8094, "_text": "The patient was taken off fluid restriction ."}
+{"sent_index": 125, "start_index": 8095, "end_index": 8149, "_text": "On 5/14/05 Mannitol was tapered and then d / c&apos;d."}
+{"sent_index": 126, "start_index": 8150, "end_index": 8248, "_text": "At the time of transfer the patient was stable and needed only physical and occupational therapy ."}
+{"sent_index": 127, "start_index": 8249, "end_index": 8353, "_text": "The patient was oriented to person , place and time and opened eyes appropriately to speech when asked ."}
+{"sent_index": 128, "start_index": 8354, "end_index": 8386, "_text": "The patient is hard of hearing ."}
+{"sent_index": 129, "start_index": 8387, "end_index": 8426, "_text": "The patient had no complaints of pain ."}
+{"sent_index": 130, "start_index": 8427, "end_index": 8448, "_text": "DISCHARGE MEDICATIONS"}
+{"sent_index": 131, "start_index": 8451, "end_index": 8482, "_text": "1. Lipitor 40 mg po every day ."}
+{"sent_index": 132, "start_index": 8483, "end_index": 8512, "_text": "2. Captopril 12.5 mg po tid ."}
+{"sent_index": 133, "start_index": 8513, "end_index": 8543, "_text": "3. Nexium 40 mg po every day ."}
+{"sent_index": 134, "start_index": 8544, "end_index": 8569, "_text": "4. Colace 100 mg po bid ."}
+{"sent_index": 135, "start_index": 8570, "end_index": 8616, "_text": "5. Ativan 0.5 mg po q4 hours prn for anxiety ."}
+{"sent_index": 136, "start_index": 8617, "end_index": 8642, "_text": "6. Allegra 60 mg po bid ."}
+{"sent_index": 137, "start_index": 8643, "end_index": 8721, "_text": "7. Dilantin 100 mg IV tid which can be changed to a po regimen in seven days ."}
+{"sent_index": 138, "start_index": 8722, "end_index": 8751, "_text": "8. Zinc 220 mg po every day ."}
+{"sent_index": 139, "start_index": 8752, "end_index": 8780, "_text": "9. Vitamin C 500 mg po bid ."}
+{"sent_index": 140, "start_index": 8781, "end_index": 8813, "_text": "10. Flomax 0.4 mg po every day ."}
+{"sent_index": 141, "start_index": 8814, "end_index": 8855, "_text": "11. Fragmin 2500 units subcut every day ."}
+{"sent_index": 142, "start_index": 8856, "end_index": 8901, "_text": "12. Levofloxacin 500 mg po q daily x10 days ."}
+{"sent_index": 143, "start_index": 8902, "end_index": 8938, "_text": "13. Dexamethasone 4 mg po q6 hours ."}
+{"sent_index": 144, "start_index": 8939, "end_index": 9032, "_text": "14. The steroid will be kept for now and tapered at a later date on follow up with Dr. Coma ."}
+{"sent_index": 145, "start_index": 9033, "end_index": 9099, "_text": "15. Regular insulin sliding scale with finger sticks qac and qhs ."}
+{"sent_index": 146, "start_index": 9100, "end_index": 9141, "_text": "16. Neutra-Phos 1.25 grams po as needed ."}
+{"sent_index": 147, "start_index": 9142, "end_index": 9164, "_text": "DISCHARGE INSTRUCTIONS"}
+{"sent_index": 148, "start_index": 9167, "end_index": 9231, "_text": "The patient is instructed to not shower or bath until one week ."}
+{"sent_index": 149, "start_index": 9232, "end_index": 9277, "_text": "The staples were removed prior to discharge ."}
+{"sent_index": 150, "start_index": 9278, "end_index": 9318, "_text": "The patient is instructed not to drive ."}
+{"sent_index": 151, "start_index": 9319, "end_index": 9563, "_text": "The patient is asked to see a physician immediately or go to the nearest emergency room if any bleeding , wound infection , fever greater than 100.8 , intractable nausea and vomiting , headache , dizziness , numbness , pain or weakness occurs ."}
+{"sent_index": 152, "start_index": 9564, "end_index": 9767, "_text": "The patient instructed to call Dr. Coma &apos;s office at 496-260-3297 to arrange for a follow up appointment in the Saintaelfoote Hospital at the first available time , one to two months after surgery ."}
+{"sent_index": 153, "start_index": 9768, "end_index": 9918, "_text": "The patient is also asked to call the Neuro / Oncology Service , the office of Dr. Britts at 430-884-2917 for a follow up appointment in three weeks ."}
+{"sent_index": 154, "start_index": 9919, "end_index": 9988, "_text": "The patient is asked to take a course of Dilantin for ten more days ."}
+{"sent_index": 155, "start_index": 9989, "end_index": 10070, "_text": "The patient is instructed not to undergo any heavy lifting until seen in clinic ."}
+{"sent_index": 156, "start_index": 10071, "end_index": 10081, "_text": "HOPETAMEMY"}
+{"sent_index": 157, "start_index": 10082, "end_index": 10106, "_text": "K. THOREDUHEDREPS , M.D."}
+{"sent_index": 158, "start_index": 10107, "end_index": 10120, "_text": "DICTATING FOR"}
+{"sent_index": 159, "start_index": 10123, "end_index": 10166, "_text": "Electronically Signed ERIN KENGEKOTE , M.D."}
+{"sent_index": 160, "start_index": 10167, "end_index": 10183, "_text": "05/14/2005 16:02"}
+{"sent_index": 161, "start_index": 10214, "end_index": 10235, "_text": "ERIN KENGEKOTE , M.D."}
+{"sent_index": 162, "start_index": 10236, "end_index": 10243, "_text": "TR :\nwy"}
+{"sent_index": 163, "start_index": 10244, "end_index": 10246, "_text": "DD"}
+{"sent_index": 164, "start_index": 10249, "end_index": 10259, "_text": "05/14/2005"}
+{"sent_index": 165, "start_index": 10260, "end_index": 10280, "_text": "TD :\n05/14/2005 1:10"}
+{"sent_index": 166, "start_index": 10281, "end_index": 10292, "_text": "P 441763\ncc"}
+{"sent_index": 167, "start_index": 10295, "end_index": 10316, "_text": "ERIN KENGEKOTE , M.D."}

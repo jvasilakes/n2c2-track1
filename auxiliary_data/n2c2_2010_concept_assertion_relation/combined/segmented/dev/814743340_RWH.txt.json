@@ -1,0 +1,146 @@
+{"sent_index": 0, "start_index": 0, "end_index": 13, "_text": "814743340 RWH"}
+{"sent_index": 1, "start_index": 14, "end_index": 21, "_text": "3393103"}
+{"sent_index": 2, "start_index": 22, "end_index": 28, "_text": "501370"}
+{"sent_index": 3, "start_index": 29, "end_index": 36, "_text": "9041109"}
+{"sent_index": 4, "start_index": 37, "end_index": 58, "_text": "5/13/2006 12:00:00 AM"}
+{"sent_index": 5, "start_index": 59, "end_index": 76, "_text": "Discharge Summary"}
+{"sent_index": 6, "start_index": 77, "end_index": 85, "_text": "Unsigned"}
+{"sent_index": 7, "start_index": 86, "end_index": 89, "_text": "DIS"}
+{"sent_index": 8, "start_index": 90, "end_index": 103, "_text": "Report Status"}
+{"sent_index": 9, "start_index": 106, "end_index": 114, "_text": "Unsigned"}
+{"sent_index": 10, "start_index": 115, "end_index": 132, "_text": "DISCHARGE SUMMARY"}
+{"sent_index": 11, "start_index": 133, "end_index": 163, "_text": "NAME :\nTRICHEPRAKEJESC , BETLA"}
+{"sent_index": 12, "start_index": 164, "end_index": 187, "_text": "UNIT NUMBER :\n381-75-78"}
+{"sent_index": 13, "start_index": 188, "end_index": 215, "_text": "ADMISSION DATE :\n05/13/2006"}
+{"sent_index": 14, "start_index": 216, "end_index": 243, "_text": "DISCHARGE DATE :\n05/16/2006"}
+{"sent_index": 15, "start_index": 244, "end_index": 263, "_text": "PRINCIPAL DIAGNOSIS"}
+{"sent_index": 16, "start_index": 266, "end_index": 278, "_text": "Chest pain ."}
+{"sent_index": 17, "start_index": 279, "end_index": 299, "_text": "ASSOCIATED DIAGNOSIS"}
+{"sent_index": 18, "start_index": 302, "end_index": 391, "_text": "Coronary artery disease ; hypertension ; hyperlipidemia ; sleep apnea ; diabetes type 2 ."}
+{"sent_index": 19, "start_index": 392, "end_index": 402, "_text": "PROCEDURES"}
+{"sent_index": 20, "start_index": 405, "end_index": 428, "_text": "Adenosine stress test ."}
+{"sent_index": 21, "start_index": 429, "end_index": 454, "_text": "Part 1 of a sleep study ."}
+{"sent_index": 22, "start_index": 455, "end_index": 475, "_text": "Coronary angiogram ."}
+{"sent_index": 23, "start_index": 476, "end_index": 486, "_text": "Chest CT ."}
+{"sent_index": 24, "start_index": 487, "end_index": 500, "_text": "Chest x-ray ."}
+{"sent_index": 25, "start_index": 501, "end_index": 539, "_text": "HISTORY AND REASON FOR HOSPITALIZATION"}
+{"sent_index": 26, "start_index": 542, "end_index": 685, "_text": "The patient is a 55-year-old gentleman with a history of CAD status post non ST elevation MI in 11/17 who presents with chest pain X 48 hours ."}
+{"sent_index": 27, "start_index": 686, "end_index": 733, "_text": "He went to Padrugmoff Hospital Emergency Room ."}
+{"sent_index": 28, "start_index": 734, "end_index": 802, "_text": "He has a history of hypertension , diabetes , and high cholesterol ."}
+{"sent_index": 29, "start_index": 803, "end_index": 925, "_text": "In 2003 , he had a non ST elevation MI , came to the RWH , and had a cath done , which showed a 40% RCA , which was hazy ."}
+{"sent_index": 30, "start_index": 926, "end_index": 986, "_text": "An IVUS was done , and it was felt that it was more severe ."}
+{"sent_index": 31, "start_index": 987, "end_index": 1055, "_text": "He underwent a PTC stenting of an RCA with a Vision stent , 3 x 18 ."}
+{"sent_index": 32, "start_index": 1056, "end_index": 1092, "_text": "Diagonal 1 also had a 99% stenosis ."}
+{"sent_index": 33, "start_index": 1093, "end_index": 1127, "_text": "There was no other noted disease ."}
+{"sent_index": 34, "start_index": 1128, "end_index": 1230, "_text": "Since then , the patient has occasional chest pain with emotional stress , when he is angry or upset ."}
+{"sent_index": 35, "start_index": 1231, "end_index": 1400, "_text": "Yesterday morning , he developed intermittent substernal chest pain with radiation to the left shoulder that worsened with any activity and any motion of his shoulders ."}
+{"sent_index": 36, "start_index": 1401, "end_index": 1467, "_text": "It progressed over the course of the day requiring less movement ."}
+{"sent_index": 37, "start_index": 1468, "end_index": 1533, "_text": "He also became short of breath with climbing a flight of stairs ."}
+{"sent_index": 38, "start_index": 1534, "end_index": 1567, "_text": "He denies diaphoresis or nausea ."}
+{"sent_index": 39, "start_index": 1568, "end_index": 1654, "_text": "He went to the Padrugmoff Hospital Emergency Room after trying nitroglycerin at home ."}
+{"sent_index": 40, "start_index": 1655, "end_index": 1719, "_text": "However , his nitroglycerin was old and the script was expired ."}
+{"sent_index": 41, "start_index": 1720, "end_index": 1794, "_text": "In the ER , he received 3 sublingual nitroglycerins and 1 mg of Dilaudid ."}
+{"sent_index": 42, "start_index": 1795, "end_index": 1826, "_text": "After that , he was pain-free ."}
+{"sent_index": 43, "start_index": 1827, "end_index": 1877, "_text": "Lopressor IV was given to control his heart rate ."}
+{"sent_index": 44, "start_index": 1878, "end_index": 1983, "_text": "He also received Lipitor 80 mg , Plavix 300 , heparin IV , integrelin double bolus , followed by a drip ."}
+{"sent_index": 45, "start_index": 1984, "end_index": 2096, "_text": "Apparently once his pain was free , his EKG was noted to have hyperacute T-wave anteriorly without progression ."}
+{"sent_index": 46, "start_index": 2097, "end_index": 2170, "_text": "He was transferred to the Ro Woodma Healthcare for further cardiac care ."}
+{"sent_index": 47, "start_index": 2171, "end_index": 2191, "_text": "PAST MEDICAL HISTORY"}
+{"sent_index": 48, "start_index": 2194, "end_index": 2236, "_text": "Diabetes ; hypertension ; hyperlipidemia ."}
+{"sent_index": 49, "start_index": 2237, "end_index": 2256, "_text": "MEDICATIONS AT HOME"}
+{"sent_index": 50, "start_index": 2259, "end_index": 2488, "_text": "Include Lisinopril 5 mg p.o. every day ; nitroglycerin sublingual p.r.n.; Toprol XL 100 mg p.o. every day ; Plavix 75 mg p.o. every day ; Avandia 4 mg p.o. every day ; Lipitor 40 mg p.o. every day ; TriCor 145 mg p.o. every day ."}
+{"sent_index": 51, "start_index": 2489, "end_index": 2503, "_text": "SOCIAL HISTORY"}
+{"sent_index": 52, "start_index": 2506, "end_index": 2521, "_text": "He is married ."}
+{"sent_index": 53, "start_index": 2522, "end_index": 2553, "_text": "He does have a lot of anxiety ."}
+{"sent_index": 54, "start_index": 2554, "end_index": 2582, "_text": "Socially he drinks alcohol ."}
+{"sent_index": 55, "start_index": 2583, "end_index": 2602, "_text": "He does not smoke ."}
+{"sent_index": 56, "start_index": 2603, "end_index": 2623, "_text": "He has 2 daughters ."}
+{"sent_index": 57, "start_index": 2624, "end_index": 2639, "_text": "HOSPITAL COURSE"}
+{"sent_index": 58, "start_index": 2642, "end_index": 2720, "_text": "The patient ruled out for an MI with negative CK X4 and negative troponin X4 ."}
+{"sent_index": 59, "start_index": 2721, "end_index": 2945, "_text": "He was taken to the Cardiac Catheterization Lab where cath showed top-normal LVEDP at 12 ; no AF ; widely patent RCA stent ; mild CAD in the left coronary artery symptom ; widely patent diagonal 1 at the site of prior PTCA ."}
+{"sent_index": 60, "start_index": 2946, "end_index": 3008, "_text": "He received an Angio-Seal to the right common femoral artery ."}
+{"sent_index": 61, "start_index": 3009, "end_index": 3055, "_text": "He then underwent a CT scan to rule out a PE ."}
+{"sent_index": 62, "start_index": 3056, "end_index": 3080, "_text": "That test was negative ."}
+{"sent_index": 63, "start_index": 3081, "end_index": 3148, "_text": "He underwent lower extremity study to rule out a DVT in both legs ."}
+{"sent_index": 64, "start_index": 3149, "end_index": 3168, "_text": "That was negative ."}
+{"sent_index": 65, "start_index": 3169, "end_index": 3252, "_text": "He was noted to have an episode of desaturation into the 80% range while sleeping ."}
+{"sent_index": 66, "start_index": 3253, "end_index": 3442, "_text": "Pulmonary consult was done , and it was felt that the patient should undergo a formal sleep study , full PFTs , and a repeat CT scan in 1 year to assess for pulmonary nodule that was seen ."}
+{"sent_index": 67, "start_index": 3443, "end_index": 3509, "_text": "However , please note that this nodule has been stable over time ."}
+{"sent_index": 68, "start_index": 3510, "end_index": 3667, "_text": "The patient also complained of intermittent right neck swelling , and recommendations are to consider a CT scan with contrast to evaluate nodes in his neck ."}
+{"sent_index": 69, "start_index": 3668, "end_index": 3794, "_text": "On physical exam today , the patient did not have any swelling , and he states that he did not feel the swelling was present ."}
+{"sent_index": 70, "start_index": 3795, "end_index": 3917, "_text": "The patient underwent an adenosine stress test , where he exercised for 4 minutes , reaching 65% of predicted heart rate ."}
+{"sent_index": 71, "start_index": 3918, "end_index": 3946, "_text": "He did not have chest pain ."}
+{"sent_index": 72, "start_index": 3947, "end_index": 3978, "_text": "EKG was negative for ischemia ."}
+{"sent_index": 73, "start_index": 3979, "end_index": 4050, "_text": "The myocardial perfusion images show no definite evidence of ischemia ."}
+{"sent_index": 74, "start_index": 4051, "end_index": 4091, "_text": "The LV contractile function was normal ."}
+{"sent_index": 75, "start_index": 4092, "end_index": 4133, "_text": "There was mild posterior vasal thinning ."}
+{"sent_index": 76, "start_index": 4134, "end_index": 4175, "_text": "It is not clearly outside normal limits ."}
+{"sent_index": 77, "start_index": 4176, "end_index": 4236, "_text": "He underwent an echocardiogram , which showed an EF of 60% ."}
+{"sent_index": 78, "start_index": 4237, "end_index": 4267, "_text": "There was no evidence of MVP ."}
+{"sent_index": 79, "start_index": 4268, "end_index": 4306, "_text": "There was trace mitral regurgitation ."}
+{"sent_index": 80, "start_index": 4307, "end_index": 4347, "_text": "There was no evidence of LA dilatation ."}
+{"sent_index": 81, "start_index": 4348, "end_index": 4378, "_text": "There was no aortic stenosis ."}
+{"sent_index": 82, "start_index": 4379, "end_index": 4417, "_text": "There was trace aortic insufficiency ."}
+{"sent_index": 83, "start_index": 4418, "end_index": 4449, "_text": "The LV cavity size was normal ."}
+{"sent_index": 84, "start_index": 4450, "end_index": 4498, "_text": "The systolic function was within normal limits ."}
+{"sent_index": 85, "start_index": 4499, "end_index": 4540, "_text": "There was no evidence of LV hypertrophy ."}
+{"sent_index": 86, "start_index": 4541, "end_index": 4597, "_text": "There was no obvious segmental wall-motion abnormality ."}
+{"sent_index": 87, "start_index": 4598, "end_index": 4645, "_text": "There was no evidence of pericardial effusion ."}
+{"sent_index": 88, "start_index": 4646, "end_index": 4683, "_text": "The right ventricle was not dilated ."}
+{"sent_index": 89, "start_index": 4684, "end_index": 4732, "_text": "The systolic function was within normal limits ."}
+{"sent_index": 90, "start_index": 4733, "end_index": 4887, "_text": "The patient underwent a sleep study , the first part , which showed that he had 75 respiratory events observed with apnea , hypopnea index of 11 an hour ."}
+{"sent_index": 91, "start_index": 4888, "end_index": 4916, "_text": "The mean heart rate was 68 ."}
+{"sent_index": 92, "start_index": 4917, "end_index": 5065, "_text": "They felt that there was obstruction and possible obstruction to airflow generating some obstructive apnea , as well as partial obstructive events ."}
+{"sent_index": 93, "start_index": 5066, "end_index": 5173, "_text": "They recommended that the patient may benefit from a trial of continuous positive pressure at the bedside ."}
+{"sent_index": 94, "start_index": 5174, "end_index": 5377, "_text": "The patient has been scheduled to have the second part of the sleep study done on June 18 , 2006 , at 8:30 p.m. at RWH in the Esley Community Hospital , 10th floor sleep lab , phone number 133-225-1257 ."}
+{"sent_index": 95, "start_index": 5378, "end_index": 5424, "_text": "Prior to discharge today , he underwent PFTs ."}
+{"sent_index": 96, "start_index": 5425, "end_index": 5496, "_text": "The results of the PFTs are unavailable at the time of this dictation ."}
+{"sent_index": 97, "start_index": 5497, "end_index": 5588, "_text": "Based on all the tests above , it was felt that the patient was stable for discharge home ."}
+{"sent_index": 98, "start_index": 5589, "end_index": 5627, "_text": "His blood pressure was 114 to 123/62 ."}
+{"sent_index": 99, "start_index": 5628, "end_index": 5649, "_text": "Heart rate 69 to 80 ."}
+{"sent_index": 100, "start_index": 5650, "end_index": 5675, "_text": "Room air saturation 96% ."}
+{"sent_index": 101, "start_index": 5676, "end_index": 5694, "_text": "Temperature 97.9 ."}
+{"sent_index": 102, "start_index": 5695, "end_index": 5726, "_text": "Lung sounds clear bilaterally ."}
+{"sent_index": 103, "start_index": 5727, "end_index": 5739, "_text": "Heart sounds"}
+{"sent_index": 104, "start_index": 5742, "end_index": 5801, "_text": "Regular rate and rhythm ; S1-S2 ; positive S4 ; no murmur ."}
+{"sent_index": 105, "start_index": 5802, "end_index": 5809, "_text": "Abdomen"}
+{"sent_index": 106, "start_index": 5812, "end_index": 5857, "_text": "Soft , nontender , nondistended ; no guarding"}
+{"sent_index": 107, "start_index": 5860, "end_index": 5898, "_text": "no masses ; positive bowel sounds X4 ."}
+{"sent_index": 108, "start_index": 5899, "end_index": 5968, "_text": "Right groin status post catheterization showed no hematoma or bruit ."}
+{"sent_index": 109, "start_index": 5969, "end_index": 6023, "_text": "Lower extremity pulses were intact without any edema ."}
+{"sent_index": 110, "start_index": 6024, "end_index": 6034, "_text": "Lab values"}
+{"sent_index": 111, "start_index": 6037, "end_index": 6115, "_text": "Sodium 139 ; potassium 4.1 ; BUN 15 ; creatinine 1.1 ; magnesium 1.6 ; SGPT 19"}
+{"sent_index": 112, "start_index": 6118, "end_index": 6344, "_text": "SGOT 20 ; alkaline phosphatase 66 ; total bilirubin 0.6 ; direct bilirubin 0.2 ; total cholesterol 234 ; triglycerides 274 ; HDL 44 ; LDL 135 ; hemoglobin A1c 6.7 ; white cell count 6.1 ; hematocrit 36.4 ; platelet count 201 ."}
+{"sent_index": 113, "start_index": 6345, "end_index": 6447, "_text": "During the hospital course , the patient was started on a PPI , Nexium , for concerns of acid reflux ."}
+{"sent_index": 114, "start_index": 6448, "end_index": 6566, "_text": "Also , a long discussion was taken with the patient as most of his chest discomfort happens when he is quite anxious ."}
+{"sent_index": 115, "start_index": 6567, "end_index": 6618, "_text": "He used Ativan in the hospital , which helped him ."}
+{"sent_index": 116, "start_index": 6619, "end_index": 6786, "_text": "The patient was advised that he needs to speak with his PCP about medication for antianxiety and / or further testing or counseling to help control his anxiety level ."}
+{"sent_index": 117, "start_index": 6787, "end_index": 6811, "_text": "MEDICATIONS ON DISCHARGE"}
+{"sent_index": 118, "start_index": 6814, "end_index": 6850, "_text": "Nitroglycerin 1 tablet sublingual q."}
+{"sent_index": 119, "start_index": 6851, "end_index": 6883, "_text": "5 minutes X3 p.r.n. chest pain ."}
+{"sent_index": 120, "start_index": 6884, "end_index": 6914, "_text": "TriCor 145 mg p.o. every day ."}
+{"sent_index": 121, "start_index": 6915, "end_index": 6945, "_text": "Lipitor 40 mg p.o. every day ."}
+{"sent_index": 122, "start_index": 6946, "end_index": 6975, "_text": "Plavix 75 mg p.o. every day ."}
+{"sent_index": 123, "start_index": 6976, "end_index": 7007, "_text": "Aspirin 325 mg p.o. every day ."}
+{"sent_index": 124, "start_index": 7008, "end_index": 7040, "_text": "Lisinopril 5 mg p.o. every day ."}
+{"sent_index": 125, "start_index": 7041, "end_index": 7070, "_text": "Avandia 4 mg p.o. every day ."}
+{"sent_index": 126, "start_index": 7071, "end_index": 7104, "_text": "Toprol XL 100 mg p.o. every day ."}
+{"sent_index": 127, "start_index": 7105, "end_index": 7136, "_text": "Prilosec 20 mg p.o. every day ."}
+{"sent_index": 128, "start_index": 7137, "end_index": 7179, "_text": "Ativan 0.5 mg p.o. b.i.d. p.r.n. anxiety ."}
+{"sent_index": 129, "start_index": 7180, "end_index": 7233, "_text": "The patient was asked to follow up with his PCP , Dr."}
+{"sent_index": 130, "start_index": 7234, "end_index": 7315, "_text": "Cora Belbsnil , at Necrestneysagiles Medical Center in a period of 1 to 2 weeks ."}
+{"sent_index": 131, "start_index": 7316, "end_index": 7466, "_text": "He was asked to follow up with Dr. Riale Tables , his cardiologist , in a period of 1 to 2 weeks ; he also works at Necrestneysagiles Medical Center ."}
+{"sent_index": 132, "start_index": 7467, "end_index": 7580, "_text": "The patient was told that he should discus with his PCP further GI testing , as well as medications for anxiety ."}
+{"sent_index": 133, "start_index": 7581, "end_index": 7694, "_text": "The patient will need to have a followup sleep study done as above per the recommendations based on the results ."}
+{"sent_index": 134, "start_index": 7695, "end_index": 7717, "_text": "CONDITION ON DISCHARGE"}
+{"sent_index": 135, "start_index": 7720, "end_index": 7728, "_text": "Stable ."}
+{"sent_index": 136, "start_index": 7729, "end_index": 7747, "_text": "RYROL DALEDAE , NP"}
+{"sent_index": 137, "start_index": 7748, "end_index": 7761, "_text": "DICTATING FOR"}
+{"sent_index": 138, "start_index": 7764, "end_index": 7774, "_text": "Unreviewed"}
+{"sent_index": 139, "start_index": 7805, "end_index": 7829, "_text": "NAA NARICHA EARLY , M.D."}
+{"sent_index": 140, "start_index": 7830, "end_index": 7837, "_text": "TR :\nso"}
+{"sent_index": 141, "start_index": 7838, "end_index": 7853, "_text": "DD :\n05/16/2006"}
+{"sent_index": 142, "start_index": 7854, "end_index": 7871, "_text": "TD :\n05/17/2006 7"}
+{"sent_index": 143, "start_index": 7872, "end_index": 7883, "_text": "29 A 501370"}
+{"sent_index": 144, "start_index": 7884, "end_index": 7886, "_text": "cc"}
+{"sent_index": 145, "start_index": 7889, "end_index": 7913, "_text": "NAA NARICHA EARLY , M.D."}

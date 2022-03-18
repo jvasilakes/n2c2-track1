@@ -1,0 +1,146 @@
+T0	problem 4912 4931	significant changes
+A0	Assertion T0 absent
+T1	problem 470 482	colon cancer
+A1	Assertion T1 present
+T2	problem 4055 4062	wheezes
+A2	Assertion T2 absent
+T3	problem 5926 5935	pneumonia
+A3	Assertion T3 possible
+T4	problem 5725 5738	the opacities
+A4	Assertion T4 present
+T5	problem 5784 5799	pulmonary edema
+A5	Assertion T5 present
+T6	problem 5829 5869	some abnormality in the right lower lobe
+A6	Assertion T6 present
+T7	problem 1159 1169	discomfort
+A7	Assertion T7 present
+T8	problem 1182 1204	some blood at the site
+A8	Assertion T8 present
+T9	problem 6927 6961	The patient &apos;s abdominal pain
+A9	Assertion T9 present
+T10	problem 1821 1830	orthopnea
+A10	Assertion T10 absent
+T11	problem 6143 6162	a serious pneumonia
+A11	Assertion T11 absent
+T12	problem 4799 4816	sinus tachycardia
+A12	Assertion T12 present
+T13	problem 1759 1774	change in cough
+A13	Assertion T13 absent
+T14	problem 1836 1864	paroxysmal nocturnal dyspnea
+A14	Assertion T14 absent
+T15	problem 6866 6872	nausea
+A15	Assertion T15 absent
+T16	problem 433 456	Coronary artery disease
+A16	Assertion T16 present
+T17	problem 749 758	pneumonia
+A17	Assertion T17 present
+T18	problem 700 724	respiratory insuffiencey
+A18	Assertion T18 present
+T19	problem 578 622	severe chronic obstructive pulmonary disease
+A19	Assertion T19 present
+T20	problem 325 349	Congestive heart failure
+A20	Assertion T20 present
+T21	problem 2989 3015	asymmetric pulmonary edema
+A21	Assertion T21 possible
+T22	problem 7745 7789	severe chronic obstructive pulmonary disease
+A22	Assertion T22 present
+T23	problem 3223 3235	colon cancer
+A23	Assertion T23 present
+T24	problem 1747 1753	chills
+A24	Assertion T24 absent
+T25	problem 4118 4124	murmur
+A25	Assertion T25 absent
+T26	problem 6165 6203	The patient &apos;s respiratory status
+A26	Assertion T26 present
+T27	problem 6875 6883	vomiting
+A27	Assertion T27 absent
+T28	problem 1735 1741	fevers
+A28	Assertion T28 absent
+T29	problem 3082 3096	Atonic bladder
+A29	Assertion T29 present
+T30	problem 1030 1040	discomfort
+A30	Assertion T30 present
+T31	problem 1392 1418	slight shortness of breath
+A31	Assertion T31 present
+T32	problem 3180 3186	angina
+A32	Assertion T32 present
+T33	problem 4182 4197	masses palpable
+A33	Assertion T33 absent
+T34	problem 3954 3960	masses
+A34	Assertion T34 absent
+T35	problem 2050 2079	moderate respiratory distress
+A35	Assertion T35 present
+T36	problem 6577 6603	mild epigastric discomfort
+A36	Assertion T36 present
+T37	problem 381 395	Atonic bladder
+A37	Assertion T37 present
+T38	problem 2855 2925	new air space opacifications in the left apex and the right lower lobe
+A38	Assertion T38 present
+T39	problem 3638 3667	moderate respiratory distress
+A39	Assertion T39 present
+T40	problem 4066 4073	rhonchi
+A40	Assertion T40 absent
+T41	problem 6694 6714	peptic ulcer disease
+A41	Assertion T41 present
+T42	problem 1551 1559	confused
+A42	Assertion T42 present
+T43	problem 4164 4173	nontender
+A43	Assertion T43 absent
+T44	problem 303 322	Respiratory failure
+A44	Assertion T44 present
+T45	problem 423 430	Anxiety
+A45	Assertion T45 present
+T46	problem 1490 1520	increasing shortness of breath
+A46	Assertion T46 present
+T47	problem 3921 3946	jugular venous distention
+A47	Assertion T47 absent
+T48	problem 1629 1648	shortness of breath
+A48	Assertion T48 present
+T49	problem 6899 6924	gastrointestinal bleeding
+A49	Assertion T49 absent
+T50	problem 2819 2841	scarring in both lungs
+A50	Assertion T50 present
+T51	problem 2772 2813	his usual severe bilateral emphysema_____
+A51	Assertion T51 present
+T52	problem 1694 1729	recent upper respiratory infections
+A52	Assertion T52 absent
+T53	problem 5658 5680	his respiratory status
+A53	Assertion T53 present
+T54	problem 4017 4038	crackles in the bases
+A54	Assertion T54 present
+T55	problem 6807 6838	gastroesophageal reflux disease
+A55	Assertion T55 possible
+T56	problem 3781 3810	moderate respiratory distress
+A56	Assertion T56 present
+T57	problem 3125 3132	Anxiety
+A57	Assertion T57 present
+T58	problem 3138 3161	Coronary artery disease
+A58	Assertion T58 present
+T59	problem 2731 2742	new changes
+A59	Assertion T59 present
+T60	problem 6794 6803	gastritis
+A60	Assertion T60 possible
+T61	problem 1805 1815	chest pain
+A61	Assertion T61 absent
+T62	problem 4140 4142	S3
+A62	Assertion T62 absent
+T63	problem 2976 2985	pneumonia
+A63	Assertion T63 possible
+T64	problem 1777 1783	sputum
+A64	Assertion T64 absent
+T65	problem 4610 4653	creatinine phosphokinase isoenzymes too low
+A65	Assertion T65 present
+T66	problem 3982 4005	decreased breath sounds
+A66	Assertion T66 present
+T67	problem 3041 3068	Associated medical problems
+A67	Assertion T67 present
+T68	problem 5195 5218	gram negative pneumonia
+A68	Assertion T68 possible
+T69	problem 256 300	Severe chronic obstructive pulmonary disease
+A69	Assertion T69 present
+T70	problem 352 378	Right lower lobe pneumonia
+A70	Assertion T70 present
+T71	problem 1570 1581	disoriented
+A71	Assertion T71 present
+T72	problem 6335 6357	his respiratory status
+A72	Assertion T72 present

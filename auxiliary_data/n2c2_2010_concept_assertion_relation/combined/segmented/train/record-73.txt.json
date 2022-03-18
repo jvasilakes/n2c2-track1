@@ -1,0 +1,96 @@
+{"sent_index": 0, "start_index": 0, "end_index": 14, "_text": "Admission Date"}
+{"sent_index": 1, "start_index": 17, "end_index": 27, "_text": "2015-12-03"}
+{"sent_index": 2, "start_index": 28, "end_index": 42, "_text": "Discharge Date"}
+{"sent_index": 3, "start_index": 45, "end_index": 55, "_text": "2015-12-08"}
+{"sent_index": 4, "start_index": 56, "end_index": 69, "_text": "Date of Birth"}
+{"sent_index": 5, "start_index": 72, "end_index": 82, "_text": "1960-04-22"}
+{"sent_index": 6, "start_index": 83, "end_index": 86, "_text": "Sex"}
+{"sent_index": 7, "start_index": 89, "end_index": 90, "_text": "M"}
+{"sent_index": 8, "start_index": 91, "end_index": 98, "_text": "Service"}
+{"sent_index": 9, "start_index": 101, "end_index": 109, "_text": "MEDICINE"}
+{"sent_index": 10, "start_index": 110, "end_index": 119, "_text": "Allergies"}
+{"sent_index": 11, "start_index": 122, "end_index": 176, "_text": "Patient recorded as having No Known Allergies to Drugs"}
+{"sent_index": 12, "start_index": 177, "end_index": 213, "_text": "Attending : Geoffrey F Corney , M.D."}
+{"sent_index": 13, "start_index": 214, "end_index": 229, "_text": "Chief Complaint"}
+{"sent_index": 14, "start_index": 232, "end_index": 259, "_text": "bright red blood per rectum"}
+{"sent_index": 15, "start_index": 260, "end_index": 296, "_text": "Major Surgical or Invasive Procedure"}
+{"sent_index": 16, "start_index": 299, "end_index": 310, "_text": "Colonoscopy"}
+{"sent_index": 17, "start_index": 311, "end_index": 330, "_text": "Virtual colonoscopy"}
+{"sent_index": 18, "start_index": 331, "end_index": 357, "_text": "History of Present Illness"}
+{"sent_index": 19, "start_index": 360, "end_index": 446, "_text": "55 yo M w/ h/o recurrent bladder ca s/p cystectomy w/ ileal conduit p/w BRBPR to OSH ."}
+{"sent_index": 20, "start_index": 447, "end_index": 461, "_text": "Hct dropped 34"}
+{"sent_index": 21, "start_index": 465, "end_index": 469, "_text": "22 ."}
+{"sent_index": 22, "start_index": 470, "end_index": 482, "_text": "EGD normal ."}
+{"sent_index": 23, "start_index": 483, "end_index": 537, "_text": "Cscope unable to complete due to blood but tics seen ."}
+{"sent_index": 24, "start_index": 538, "end_index": 568, "_text": "Tagged RBC + activity in RLQ ."}
+{"sent_index": 25, "start_index": 569, "end_index": 643, "_text": "Transferred to Mediplex Rehab Hospital ICU where Hct has remained stable ."}
+{"sent_index": 26, "start_index": 644, "end_index": 731, "_text": "Seen by GI and plan is to continue holding anticoagulation and repeat scope on Monday ."}
+{"sent_index": 27, "start_index": 732, "end_index": 789, "_text": "Pt feeling well , denies abd pain , N/V , LH , SOB , CP ."}
+{"sent_index": 28, "start_index": 790, "end_index": 810, "_text": "Past Medical History"}
+{"sent_index": 29, "start_index": 813, "end_index": 989, "_text": "Metastatic bladder CA now in remission s/p chemo/xrt s/p cystectomy and ileal loop urinary diversion and also radical prstatectomy with bilateral pelvic lymph node dissection ."}
+{"sent_index": 30, "start_index": 990, "end_index": 1072, "_text": "b/l DVT s, most recent seen in IVC to right femoral vein s/p IVC filter 2015-01-15"}
+{"sent_index": 31, "start_index": 1073, "end_index": 1090, "_text": "Nephrolithiasis ."}
+{"sent_index": 32, "start_index": 1091, "end_index": 1118, "_text": "Anemia - baseline mid 30 s."}
+{"sent_index": 33, "start_index": 1119, "end_index": 1133, "_text": "Social History"}
+{"sent_index": 34, "start_index": 1136, "end_index": 1162, "_text": "From Sao Tome originally ."}
+{"sent_index": 35, "start_index": 1163, "end_index": 1177, "_text": "denies smoking"}
+{"sent_index": 36, "start_index": 1178, "end_index": 1209, "_text": "works at a deli in beaconhill ."}
+{"sent_index": 37, "start_index": 1210, "end_index": 1224, "_text": "Family History"}
+{"sent_index": 38, "start_index": 1227, "end_index": 1272, "_text": "denies fh of bleeding or clotting disorders ."}
+{"sent_index": 39, "start_index": 1273, "end_index": 1286, "_text": "Physical Exam"}
+{"sent_index": 40, "start_index": 1289, "end_index": 1311, "_text": "per admitting resident"}
+{"sent_index": 41, "start_index": 1314, "end_index": 1341, "_text": "T 97.4 BP 100/62 P 56 RR 16"}
+{"sent_index": 42, "start_index": 1342, "end_index": 1400, "_text": "Mid aged man in NAD\nsclera anicteric , MMM\nsupple , no LAD"}
+{"sent_index": 43, "start_index": 1401, "end_index": 1405, "_text": "CTAB"}
+{"sent_index": 44, "start_index": 1406, "end_index": 1533, "_text": "RRR S1/S2 no M\nsoft , +BS , NT , Midline surgical scar , nephrostomy bag draining\nyellowish urine in RLQ\nno edema , no clubbing"}
+{"sent_index": 45, "start_index": 1534, "end_index": 1551, "_text": "Pertinent Results"}
+{"sent_index": 46, "start_index": 1554, "end_index": 1683, "_text": "2015-12-03 10:27 PM GLUCOSE - 88 UREA N - 12 CREAT - 1.0 SODIUM - 138 POTASSIUM - 3.3 CHLORIDE - 107 TOTAL CO2 - 25 ANION GAP - 9"}
+{"sent_index": 47, "start_index": 1684, "end_index": 1723, "_text": "2015-12-03 10:27 PM estGFR - Using this"}
+{"sent_index": 48, "start_index": 1724, "end_index": 1834, "_text": "2015-12-03 10:27 PM CALCIUM - 8.7 PHOSPHATE - 2.4 * MAGNESIUM - 1.5 *\n2015-12-03 10:27 PM WBC - 8.4 RBC - 2.98"}
+{"sent_index": 49, "start_index": 1837, "end_index": 1906, "_text": "HGB - 9.3 * HCT - 26.3 * MCV - 88 MCH - 31.1 MCHC - 35.3 * RDW - 14.4"}
+{"sent_index": 50, "start_index": 1907, "end_index": 1997, "_text": "2015-12-03 10:27 PM PLT COUNT - 164\n2015-12-03 10:27 PM PT - 11.4 PTT - 27.5 INR(PT) - 1.0"}
+{"sent_index": 51, "start_index": 1998, "end_index": 2019, "_text": "Brief Hospital Course"}
+{"sent_index": 52, "start_index": 2022, "end_index": 2144, "_text": "55 year old man with history of metastatic bladder cancer and recurrent DVT s on Lovenox admitted with lower GI bleeding ."}
+{"sent_index": 53, "start_index": 2145, "end_index": 2206, "_text": "Right lower quadrant source of bleed on red blood cell scan ."}
+{"sent_index": 54, "start_index": 2207, "end_index": 2358, "_text": "Attempts to visualize colon by conventional and CT virtual colonoscopy failed because of sigmoid angulation and inadequate preparation , respectively ."}
+{"sent_index": 55, "start_index": 2359, "end_index": 2437, "_text": "On Ct scan , a right psoas mass , most consistent with a hematoma , was seen ."}
+{"sent_index": 56, "start_index": 2438, "end_index": 2588, "_text": "Since the hematocrit of the patient was stable and outside records from 2015-03-28 mentioned a mass in the right pelvis , the patient was discharged ."}
+{"sent_index": 57, "start_index": 2589, "end_index": 2648, "_text": "Lovenox was held until follow-up with primary care doctor ."}
+{"sent_index": 58, "start_index": 2649, "end_index": 2737, "_text": "Also , a repeat outpatient CT colonoscopy with better preparation should be considered ."}
+{"sent_index": 59, "start_index": 2738, "end_index": 2762, "_text": "Medications on Admission"}
+{"sent_index": 60, "start_index": 2765, "end_index": 2791, "_text": "Lovenox 0.6 mg / kg SC BID"}
+{"sent_index": 61, "start_index": 2792, "end_index": 2813, "_text": "Discharge Medications"}
+{"sent_index": 62, "start_index": 2816, "end_index": 2937, "_text": "1. Pantoprazole 40 mg Tablet , Delayed Release ( E.C. ) Sig : One ( 1 ) Tablet , Delayed Release ( E.C. ) PO once a day ."}
+{"sent_index": 63, "start_index": 2938, "end_index": 2977, "_text": "2. Outpatient Lab Work\ncbc , creatinine"}
+{"sent_index": 64, "start_index": 2978, "end_index": 2999, "_text": "Discharge Disposition"}
+{"sent_index": 65, "start_index": 3002, "end_index": 3006, "_text": "Home"}
+{"sent_index": 66, "start_index": 3007, "end_index": 3026, "_text": "Discharge Diagnosis"}
+{"sent_index": 67, "start_index": 3029, "end_index": 3046, "_text": "Primary diagnosis"}
+{"sent_index": 68, "start_index": 3049, "end_index": 3052, "_text": "GIB"}
+{"sent_index": 69, "start_index": 3053, "end_index": 3072, "_text": "Secondary diagnosis"}
+{"sent_index": 70, "start_index": 3075, "end_index": 3112, "_text": "Metastatic , recurrent bladder cancer"}
+{"sent_index": 71, "start_index": 3113, "end_index": 3122, "_text": "h/o DVT s"}
+{"sent_index": 72, "start_index": 3123, "end_index": 3142, "_text": "Discharge Condition"}
+{"sent_index": 73, "start_index": 3145, "end_index": 3151, "_text": "Good ."}
+{"sent_index": 74, "start_index": 3152, "end_index": 3170, "_text": "Stable Hct of 31 ."}
+{"sent_index": 75, "start_index": 3171, "end_index": 3193, "_text": "Discharge Instructions"}
+{"sent_index": 76, "start_index": 3196, "end_index": 3285, "_text": "We recommend that you do NOT resume your lovenox until talking to your PCP , Dr. Jessie ."}
+{"sent_index": 77, "start_index": 3286, "end_index": 3373, "_text": "You likely have a bleeding source in your colon that we have been unable to visualize ."}
+{"sent_index": 78, "start_index": 3374, "end_index": 3553, "_text": "The bleeding has stopped and you have remained hemodynamically stable and your hematocrit is stable , but you are at risk of bleeding from this source again with anticoagulation ."}
+{"sent_index": 79, "start_index": 3554, "end_index": 3685, "_text": "A CT scan of your abdomen showed a right pelvic mass , most likely a hematoma , which had been described previously in 2015-03-28 ."}
+{"sent_index": 80, "start_index": 3686, "end_index": 3748, "_text": "Please continue to take your other medications as prescribed ."}
+{"sent_index": 81, "start_index": 3749, "end_index": 3794, "_text": "Please follow up with your PCP as scheduled ."}
+{"sent_index": 82, "start_index": 3795, "end_index": 3853, "_text": "Please bring your outpatient lab results to your PCP ( Dr."}
+{"sent_index": 83, "start_index": 3854, "end_index": 3860, "_text": "Hemler"}
+{"sent_index": 84, "start_index": 3863, "end_index": 3938, "_text": "Please see a doctor if you feel dizzy , or have blood in your stool again ."}
+{"sent_index": 85, "start_index": 3939, "end_index": 3960, "_text": "Followup Instructions"}
+{"sent_index": 86, "start_index": 3963, "end_index": 3996, "_text": "Please follow up with your PCP S."}
+{"sent_index": 87, "start_index": 3997, "end_index": 4032, "_text": "Saracino on 2015-12-30 at 8:00 AM ."}
+{"sent_index": 88, "start_index": 4033, "end_index": 4065, "_text": "Her number is ( 512 ) 677-6547 ."}
+{"sent_index": 89, "start_index": 4066, "end_index": 4082, "_text": "Please go to Dr."}
+{"sent_index": 90, "start_index": 4083, "end_index": 4153, "_text": "Colombo office later this week to have your labs drawn and sent to Dr."}
+{"sent_index": 91, "start_index": 4154, "end_index": 4162, "_text": "Powell ."}
+{"sent_index": 92, "start_index": 4163, "end_index": 4193, "_text": "James Jennifer MD , PHD 12-944"}
+{"sent_index": 93, "start_index": 4194, "end_index": 4251, "_text": "Completed by : Kimberly Sarah MD 97-625 2015-12-08 @ 1543"}
+{"sent_index": 94, "start_index": 4252, "end_index": 4289, "_text": "Signed electronically by : DR. Joanne"}
+{"sent_index": 95, "start_index": 4290, "end_index": 4346, "_text": "Gilbert YANG on : MON 2016-02-08 9:27 AM\n( End of Report"}

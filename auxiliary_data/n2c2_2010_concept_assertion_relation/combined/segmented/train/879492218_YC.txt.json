@@ -1,0 +1,113 @@
+{"sent_index": 0, "start_index": 0, "end_index": 12, "_text": "879492218 YC"}
+{"sent_index": 1, "start_index": 13, "end_index": 21, "_text": "53470378"}
+{"sent_index": 2, "start_index": 22, "end_index": 51, "_text": "3210349\n6/26/2004 12:00:00 AM"}
+{"sent_index": 3, "start_index": 52, "end_index": 61, "_text": "PNEUMONIA"}
+{"sent_index": 4, "start_index": 62, "end_index": 68, "_text": "Signed"}
+{"sent_index": 5, "start_index": 69, "end_index": 72, "_text": "DIS"}
+{"sent_index": 6, "start_index": 73, "end_index": 100, "_text": "Admission Date :\n06/26/2004"}
+{"sent_index": 7, "start_index": 101, "end_index": 114, "_text": "Report Status"}
+{"sent_index": 8, "start_index": 117, "end_index": 123, "_text": "Signed"}
+{"sent_index": 9, "start_index": 124, "end_index": 138, "_text": "Discharge Date"}
+{"sent_index": 10, "start_index": 141, "end_index": 151, "_text": "07/08/2004"}
+{"sent_index": 11, "start_index": 152, "end_index": 161, "_text": "ATTENDING"}
+{"sent_index": 12, "start_index": 164, "end_index": 169, "_text": "MALTA"}
+{"sent_index": 13, "start_index": 170, "end_index": 186, "_text": "FYFEZEISLEITZ MD"}
+{"sent_index": 14, "start_index": 187, "end_index": 202, "_text": "CHIEF COMPLAINT"}
+{"sent_index": 15, "start_index": 205, "end_index": 226, "_text": "Shortness of breath ."}
+{"sent_index": 16, "start_index": 227, "end_index": 253, "_text": "HISTORY OF PRESENT ILLNESS"}
+{"sent_index": 17, "start_index": 256, "end_index": 467, "_text": "The patient is a 38-year-old gentleman , Spanish-speaking , from the Taheimpromong , with no significant past medical history , who presents with shortness of breath x 2 months as well as a dry cough x 1 month ."}
+{"sent_index": 18, "start_index": 468, "end_index": 624, "_text": "The patient was in his usual state of health until two months prior to admission when he began to notice shortness of breath on climbing flights of stairs ."}
+{"sent_index": 19, "start_index": 625, "end_index": 728, "_text": "He stated that this became worse over the last month until he was noted to be short of breath at rest ."}
+{"sent_index": 20, "start_index": 729, "end_index": 805, "_text": "He also states that he has had a dry and nonproductive cough for one month ."}
+{"sent_index": 21, "start_index": 806, "end_index": 855, "_text": "He denied any fevers , chills , or night sweats ."}
+{"sent_index": 22, "start_index": 856, "end_index": 892, "_text": "No nausea , vomiting , or diarrhea ."}
+{"sent_index": 23, "start_index": 893, "end_index": 984, "_text": "He did note some weight loss over the past several months , though the amount was unknown ."}
+{"sent_index": 24, "start_index": 985, "end_index": 1034, "_text": "He denied any contact with TB positive patients ."}
+{"sent_index": 25, "start_index": 1035, "end_index": 1127, "_text": "He describes a negative PPD one year prior to admission when he was in prison for one week ."}
+{"sent_index": 26, "start_index": 1128, "end_index": 1198, "_text": "He did travel to the Taheimpromong , last in 01/2004 for three weeks ."}
+{"sent_index": 27, "start_index": 1199, "end_index": 1300, "_text": "He did note multiple female sexual partners , although described using condoms except with his wife ."}
+{"sent_index": 28, "start_index": 1301, "end_index": 1375, "_text": "He denies any IV drug use , did describe cocaine use last two months ago ."}
+{"sent_index": 29, "start_index": 1376, "end_index": 1444, "_text": "He did drink alcohol three drinks per day , no withdrawal symptoms ."}
+{"sent_index": 30, "start_index": 1445, "end_index": 1579, "_text": "In emergency room , he was noted to be afebrile with stable vital signs , was treated with IV fluids , azithromycin , and cefuroxime ."}
+{"sent_index": 31, "start_index": 1580, "end_index": 1600, "_text": "PAST MEDICAL HISTORY"}
+{"sent_index": 32, "start_index": 1603, "end_index": 1609, "_text": "None ."}
+{"sent_index": 33, "start_index": 1610, "end_index": 1621, "_text": "MEDICATIONS"}
+{"sent_index": 34, "start_index": 1624, "end_index": 1630, "_text": "None ."}
+{"sent_index": 35, "start_index": 1631, "end_index": 1640, "_text": "ALLERGIES"}
+{"sent_index": 36, "start_index": 1643, "end_index": 1668, "_text": "No known drug allergies ."}
+{"sent_index": 37, "start_index": 1669, "end_index": 1683, "_text": "SOCIAL HISTORY"}
+{"sent_index": 38, "start_index": 1686, "end_index": 1980, "_text": "The patient lives currently with a friend , he is from the Taheimpromong and has lived here for 13 years , he does note multiple sexual partners , although he notes using condoms with everyone except his wife , he reportedly had a negative PPD during his prison stay one year ago for one week ."}
+{"sent_index": 39, "start_index": 1981, "end_index": 2045, "_text": "He traveled to the Taheimpromong last in 01/2004 for one month ."}
+{"sent_index": 40, "start_index": 2046, "end_index": 2123, "_text": "He does drink alcohol three drinks per day , denies any current tobacco use ."}
+{"sent_index": 41, "start_index": 2124, "end_index": 2138, "_text": "FAMILY HISTORY"}
+{"sent_index": 42, "start_index": 2141, "end_index": 2166, "_text": "Sister with bone cancer ."}
+{"sent_index": 43, "start_index": 2167, "end_index": 2202, "_text": "PHYSICAL EXAMINATION UPON ADMISSION"}
+{"sent_index": 44, "start_index": 2205, "end_index": 2300, "_text": "Temperature 97.4 , heart rate 100 , blood pressure 142/89 , and O2 saturation 94% on room air ."}
+{"sent_index": 45, "start_index": 2301, "end_index": 2389, "_text": "General exam revealed a well-developed , well-nourished gentleman in no acute distress ."}
+{"sent_index": 46, "start_index": 2390, "end_index": 2434, "_text": "HEENT exam revealed sclerae to be injected ."}
+{"sent_index": 47, "start_index": 2435, "end_index": 2481, "_text": "Pupils equal , round , and reactive to light ."}
+{"sent_index": 48, "start_index": 2482, "end_index": 2581, "_text": "No lymphadenopathy was noted in the neck , there was a question of right axillary lymphadenopathy ."}
+{"sent_index": 49, "start_index": 2582, "end_index": 2646, "_text": "Chest exam reveals coarse rhonchi with some bibasilar crackles ."}
+{"sent_index": 50, "start_index": 2647, "end_index": 2716, "_text": "Abdominal exam revealed soft , nontender , and nondistended abdomen ."}
+{"sent_index": 51, "start_index": 2717, "end_index": 2809, "_text": "Heart exam was regular rate and rhythm , tachycardic , with a flat jugular venous pressure ."}
+{"sent_index": 52, "start_index": 2810, "end_index": 2871, "_text": "His extremities were without cyanosis , clubbing , or edema ."}
+{"sent_index": 53, "start_index": 2872, "end_index": 2909, "_text": "His skin was clear , without rashes ."}
+{"sent_index": 54, "start_index": 2910, "end_index": 2966, "_text": "There is no hepatosplenomegaly noted on abdominal exam ."}
+{"sent_index": 55, "start_index": 2967, "end_index": 3006, "_text": "Neuro exam was alert and oriented x 3 ."}
+{"sent_index": 56, "start_index": 3007, "end_index": 3037, "_text": "LABORATORY DATA UPON ADMISSION"}
+{"sent_index": 57, "start_index": 3040, "end_index": 3142, "_text": "Sodium 139 , potassium 3.5 , chloride 103 , bicarbonate 25 , BUN 9 , creatinine 0.9 , and glucose 83 ."}
+{"sent_index": 58, "start_index": 3143, "end_index": 3214, "_text": "White blood cell count 11.2 , hematocrit 43.2 , and platelets 447,000 ."}
+{"sent_index": 59, "start_index": 3215, "end_index": 3233, "_text": "EKG upon admission"}
+{"sent_index": 60, "start_index": 3236, "end_index": 3262, "_text": "Sinus tachycardia at 100 ."}
+{"sent_index": 61, "start_index": 3263, "end_index": 3289, "_text": "Chest x-ray upon admission"}
+{"sent_index": 62, "start_index": 3292, "end_index": 3338, "_text": "Diffuse interstitial process / consolidation ."}
+{"sent_index": 63, "start_index": 3339, "end_index": 3364, "_text": "HOSPITAL COURSE BY SYSTEM"}
+{"sent_index": 64, "start_index": 3367, "end_index": 3400, "_text": "1. Pulmonary / Infectious Disease"}
+{"sent_index": 65, "start_index": 3403, "end_index": 3509, "_text": "The patient &apos;s differential diagnosis included initially a question of an atypical pneumonia or PCP ."}
+{"sent_index": 66, "start_index": 3510, "end_index": 3624, "_text": "His PPD has been negative one year prior to admission , PPD was rechecked during this admission and was negative ."}
+{"sent_index": 67, "start_index": 3625, "end_index": 3709, "_text": "He was ruled out for tuberculosis with an induced sputum x 3 , which showed no AFB ."}
+{"sent_index": 68, "start_index": 3710, "end_index": 3776, "_text": "Chest CT showed bibasilar diffuse infiltrates , PCP was negative ."}
+{"sent_index": 69, "start_index": 3777, "end_index": 3863, "_text": "Thus initially he had been started on prednisone and Bactrim , this was discontinued ."}
+{"sent_index": 70, "start_index": 3864, "end_index": 3962, "_text": "He was continued on azithromycin and cefuroxime until bronchoscopy results were known , negative ."}
+{"sent_index": 71, "start_index": 3963, "end_index": 3992, "_text": "Thus they were discontinued ."}
+{"sent_index": 72, "start_index": 3993, "end_index": 4096, "_text": "He initially had refused HIV testing , however , was finally consented , HIV was noted to be negative ."}
+{"sent_index": 73, "start_index": 4097, "end_index": 4226, "_text": "Pulmonary consult was invited , initially the patient refused bronchoscopy , however , did agree to it during his hospital stay ."}
+{"sent_index": 74, "start_index": 4227, "end_index": 4421, "_text": "The results were negative for Micro , most likely diagnosis as per review of pathology is organizing pneumonia with possible diagnosis of BOOP and chronic inhalational injury was a possibility ."}
+{"sent_index": 75, "start_index": 4422, "end_index": 4511, "_text": "The patient required supplemental oxygen to keep his oxygen saturation greater than 93% ."}
+{"sent_index": 76, "start_index": 4512, "end_index": 4555, "_text": "Ambulatory saturation was 82% on room air ."}
+{"sent_index": 77, "start_index": 4556, "end_index": 4618, "_text": "He was treated with supportive medical therapy for his cough ."}
+{"sent_index": 78, "start_index": 4619, "end_index": 4672, "_text": "He was to follow up with pulmonary as an outpatient ."}
+{"sent_index": 79, "start_index": 4673, "end_index": 4690, "_text": "2. Cardiovascular"}
+{"sent_index": 80, "start_index": 4693, "end_index": 4825, "_text": "Echocardiogram was checked to rule out CHF , showed LVH and trace TR , ejection fraction of 60% without any pulmonary hypertension ."}
+{"sent_index": 81, "start_index": 4826, "end_index": 4833, "_text": "3. Heme"}
+{"sent_index": 82, "start_index": 4835, "end_index": 4837, "_text": "ID"}
+{"sent_index": 83, "start_index": 4840, "end_index": 4876, "_text": "Hepatitis serologies were negative ."}
+{"sent_index": 84, "start_index": 4877, "end_index": 4883, "_text": "4. FEN"}
+{"sent_index": 85, "start_index": 4886, "end_index": 4924, "_text": "The patient was kept on a house diet ."}
+{"sent_index": 86, "start_index": 4925, "end_index": 4962, "_text": "His electrolytes were repeated p.r.n."}
+{"sent_index": 87, "start_index": 4963, "end_index": 4977, "_text": "5. Prophylaxis"}
+{"sent_index": 88, "start_index": 4980, "end_index": 4989, "_text": "Lovenox ."}
+{"sent_index": 89, "start_index": 4990, "end_index": 5004, "_text": "6. Code status"}
+{"sent_index": 90, "start_index": 5007, "end_index": 5013, "_text": "Full ."}
+{"sent_index": 91, "start_index": 5014, "end_index": 5028, "_text": "7. Disposition"}
+{"sent_index": 92, "start_index": 5031, "end_index": 5110, "_text": "The patient was discharged to home in satisfactory condition with home oxygen ."}
+{"sent_index": 93, "start_index": 5111, "end_index": 5270, "_text": "Multiple conversations were had with the patient as well as an interpreter stating the importance of not smoking and keeping flames away from his oxygen tank ."}
+{"sent_index": 94, "start_index": 5271, "end_index": 5366, "_text": "He was sent home with LDAMC services to help with his medications as well as oxygen education ."}
+{"sent_index": 95, "start_index": 5367, "end_index": 5500, "_text": "He was told to call a doctor or come to the emergency room should he have any further troubles , breathing , chest pain , or fevers ."}
+{"sent_index": 96, "start_index": 5501, "end_index": 5529, "_text": "He was to follow up with Dr."}
+{"sent_index": 97, "start_index": 5530, "end_index": 5668, "_text": "Malta at Firmert Hospital on 07/23/04 at 3:00 p.m. , as well as Dr. Shawn Leick at the Stonho Health Care pulmonary division as directed ."}
+{"sent_index": 98, "start_index": 5669, "end_index": 5690, "_text": "DISCHARGE MEDICATIONS"}
+{"sent_index": 99, "start_index": 5693, "end_index": 5724, "_text": "1. Prednisone 60 mg p.o. q.a.m."}
+{"sent_index": 100, "start_index": 5725, "end_index": 5820, "_text": "2. Bactrim double strength one tablet p.o. q.d. for PCP prophylaxis during his steroid course ."}
+{"sent_index": 101, "start_index": 5821, "end_index": 5840, "_text": "eScription document"}
+{"sent_index": 102, "start_index": 5843, "end_index": 5860, "_text": "0-3054851 WEBCtug"}
+{"sent_index": 103, "start_index": 5861, "end_index": 5864, "_text": "Tel"}
+{"sent_index": 104, "start_index": 5865, "end_index": 5867, "_text": "CC"}
+{"sent_index": 105, "start_index": 5870, "end_index": 5888, "_text": "Mata Fyfezeisleitz"}
+{"sent_index": 106, "start_index": 5889, "end_index": 5897, "_text": "MD Verla"}
+{"sent_index": 107, "start_index": 5898, "end_index": 5909, "_text": "Dictated By"}
+{"sent_index": 108, "start_index": 5912, "end_index": 5930, "_text": "KOTEHARBE , THRYNE"}
+{"sent_index": 109, "start_index": 5931, "end_index": 5940, "_text": "Attending"}
+{"sent_index": 110, "start_index": 5943, "end_index": 5984, "_text": "FYFEZEISLEITZ , MATA Dictation ID 5149122"}
+{"sent_index": 111, "start_index": 5985, "end_index": 5997, "_text": "D :\n11/06/04"}
+{"sent_index": 112, "start_index": 5998, "end_index": 6010, "_text": "T :\n11/07/04"}

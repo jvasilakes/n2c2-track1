@@ -1,0 +1,158 @@
+T0	problem 1304 1334	radiation to the left shoulder
+A0	Assertion T0 present
+T1	problem 4942 4953	obstruction
+A1	Assertion T1 possible
+T2	problem 5037 5063	partial obstructive events
+A2	Assertion T2 present
+T3	problem 4967 4989	obstruction to airflow
+A3	Assertion T3 possible
+T4	problem 5001 5023	some obstructive apnea
+A4	Assertion T4 present
+T5	problem 2893 2917	widely patent diagonal 1
+A5	Assertion T5 present
+T6	problem 6511 6531	his chest discomfort
+A6	Assertion T6 conditional
+T7	problem 6557 6564	anxious
+A7	Assertion T7 present
+T8	problem 754 766	hypertension
+A8	Assertion T8 present
+T9	problem 5793 5799	murmur
+A9	Assertion T9 absent
+T10	problem 7571 7578	anxiety
+A10	Assertion T10 present
+T11	problem 1483 1498	short of breath
+A11	Assertion T11 conditional
+T12	problem 328 340	hypertension
+A12	Assertion T12 present
+T13	problem 4278 4304	trace mitral regurgitation
+A13	Assertion T13 present
+T14	problem 3648 3665	nodes in his neck
+A14	Assertion T14 present
+T15	problem 4623 4643	pericardial effusion
+A15	Assertion T15 absent
+T16	problem 2815 2817	AF
+A16	Assertion T16 absent
+T17	problem 2846 2890	mild CAD in the left coronary artery symptom
+A17	Assertion T17 present
+T18	problem 2046 2074	hyperacute T-wave anteriorly
+A18	Assertion T18 present
+T19	problem 897 906	a 40% RCA
+A19	Assertion T19 present
+T20	problem 919 923	hazy
+A20	Assertion T20 present
+T21	problem 2220 2234	hyperlipidemia
+A21	Assertion T21 present
+T22	problem 1157 1178	occasional chest pain
+A22	Assertion T22 conditional
+T23	problem 1184 1200	emotional stress
+A23	Assertion T23 conditional
+T24	problem 343 357	hyperlipidemia
+A24	Assertion T24 present
+T25	problem 3204 3235	desaturation into the 80% range
+A25	Assertion T25 present
+T26	problem 3128 3146	a DVT in both legs
+A26	Assertion T26 possible
+T27	problem 3410 3426	pulmonary nodule
+A27	Assertion T27 present
+T28	problem 3718 3730	any swelling
+A28	Assertion T28 absent
+T29	problem 3768 3780	the swelling
+A29	Assertion T29 absent
+T30	problem 6871 6881	chest pain
+A30	Assertion T30 hypothetical
+T31	problem 302 325	Coronary artery disease
+A31	Assertion T31 present
+T32	problem 6767 6784	his anxiety level
+A32	Assertion T32 present
+T33	problem 5863 5869	masses
+A33	Assertion T33 absent
+T34	problem 3049 3053	a PE
+A34	Assertion T34 possible
+T35	problem 769 777	diabetes
+A35	Assertion T35 present
+T36	problem 2544 2551	anxiety
+A36	Assertion T36 present
+T37	problem 4040 4048	ischemia
+A37	Assertion T37 absent
+T38	problem 2820 2843	widely patent RCA stent
+A38	Assertion T38 present
+T39	problem 1076 1090	a 99% stenosis
+A39	Assertion T39 present
+T40	problem 7170 7177	anxiety
+A40	Assertion T40 hypothetical
+T41	problem 4262 4265	MVP
+A41	Assertion T41 absent
+T42	problem 4674 4681	dilated
+A42	Assertion T42 absent
+T43	problem 3934 3944	chest pain
+A43	Assertion T43 absent
+T44	problem 2668 2673	an MI
+A44	Assertion T44 absent
+T45	problem 3968 3976	ischemia
+A45	Assertion T45 absent
+T46	problem 4813 4834	75 respiratory events
+A46	Assertion T46 present
+T47	problem 4849 4854	apnea
+A47	Assertion T47 present
+T48	problem 662 672	chest pain
+A48	Assertion T48 present
+T49	problem 615 634	non ST elevation MI
+A49	Assertion T49 present
+T50	problem 5849 5857	guarding
+A50	Assertion T50 absent
+T51	problem 1264 1298	intermittent substernal chest pain
+A51	Assertion T51 present
+T52	problem 4389 4415	trace aortic insufficiency
+A52	Assertion T52 present
+T53	problem 3470 3481	this nodule
+A53	Assertion T53 present
+T54	problem 1106 1125	other noted disease
+A54	Assertion T54 absent
+T55	problem 6434 6445	acid reflux
+A55	Assertion T55 present
+T56	problem 4562 4595	segmental wall-motion abnormality
+A56	Assertion T56 absent
+T57	problem 5961 5966	bruit
+A57	Assertion T57 absent
+T58	problem 784 800	high cholesterol
+A58	Assertion T58 present
+T59	problem 374 389	diabetes type 2
+A59	Assertion T59 present
+T60	problem 2205 2217	hypertension
+A60	Assertion T60 present
+T61	problem 1815 1824	pain-free
+A61	Assertion T61 absent
+T62	problem 4524 4538	LV hypertrophy
+A62	Assertion T62 absent
+T63	problem 6016 6021	edema
+A63	Assertion T63 absent
+T64	problem 4102 4131	mild posterior vasal thinning
+A64	Assertion T64 present
+T65	problem 360 371	sleep apnea
+A65	Assertion T65 present
+T66	problem 4361 4376	aortic stenosis
+A66	Assertion T66 absent
+T67	problem 5949 5957	hematoma
+A67	Assertion T67 absent
+T68	problem 599 602	CAD
+A68	Assertion T68 present
+T69	problem 1544 1555	diaphoresis
+A69	Assertion T69 absent
+T70	problem 2083 2094	progression
+A70	Assertion T70 absent
+T71	problem 820 841	a non ST elevation MI
+A71	Assertion T71 present
+T72	problem 2000 2008	his pain
+A72	Assertion T72 absent
+T73	problem 1559 1565	nausea
+A73	Assertion T73 absent
+T74	problem 266 276	Chest pain
+A74	Assertion T74 present
+T75	problem 5911 5938	status post catheterization
+A75	Assertion T75 present
+T76	problem 4332 4345	LA dilatation
+A76	Assertion T76 absent
+T77	problem 2194 2202	Diabetes
+A77	Assertion T77 present
+T78	problem 3541 3573	intermittent right neck swelling
+A78	Assertion T78 present

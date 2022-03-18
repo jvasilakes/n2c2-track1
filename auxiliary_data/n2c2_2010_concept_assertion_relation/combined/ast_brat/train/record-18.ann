@@ -1,0 +1,142 @@
+T0	problem 635 661	left lower lobe infiltrate
+A0	Assertion T0 possible
+T1	problem 3801 3819	neurogenic bladder
+A1	Assertion T1 present
+T2	problem 3747 3762	known gastritis
+A2	Assertion T2 present
+T3	problem 4058 4093	persistent carbon dioxide retention
+A3	Assertion T3 present
+T4	problem 4098 4118	respiratory acidosis
+A4	Assertion T4 present
+T5	problem 4123 4161	the intermittent mental status changes
+A5	Assertion T5 present
+T6	problem 794 800	Asthma
+A6	Assertion T6 present
+T7	problem 3475 3502	any significant EKG changes
+A7	Assertion T7 absent
+T8	problem 2762 2803	her chronic obstructive pulmonary disease
+A8	Assertion T8 present
+T9	problem 2592 2611	Shortness of breath
+A9	Assertion T9 present
+T10	problem 3450 3466	chest discomfort
+A10	Assertion T10 present
+T11	problem 6070 6089	shortness of breath
+A11	Assertion T11 hypothetical
+T12	problem 2893 2902	pneumonia
+A12	Assertion T12 present
+T13	problem 3326 3347	Adrenal insufficiency
+A13	Assertion T13 present
+T14	problem 1907 1914	wheezes
+A14	Assertion T14 absent
+T15	problem 4993 5012	megaloblastic cells
+A15	Assertion T15 present
+T16	problem 2828 2841	consolidation
+A16	Assertion T16 present
+T17	problem 1053 1076	Coronary artery disease
+A17	Assertion T17 present
+T18	problem 983 1005	Chronic abdominal pain
+A18	Assertion T18 present
+T19	problem 5040 5046	anemia
+A19	Assertion T19 present
+T20	problem 4980 4988	high MCV
+A20	Assertion T20 present
+T21	problem 939 949	duodenitis
+A21	Assertion T21 present
+T22	problem 3313 3323	secretions
+A22	Assertion T22 present
+T23	problem 1008 1026	Neurogenic bladder
+A23	Assertion T23 present
+T24	problem 1029 1050	Chronic muscle spasms
+A24	Assertion T24 present
+T25	problem 870 922	Chronic inflammatory demyelinating polyradiculopathy
+A25	Assertion T25 present
+T26	problem 4597 4609	bradycardiac
+A26	Assertion T26 present
+T27	problem 1306 1321	chronic disease
+A27	Assertion T27 present
+T28	problem 4567 4578	hypotensive
+A28	Assertion T28 present
+T29	problem 3646 3663	acute rib factors
+A29	Assertion T29 absent
+T30	problem 925 934	Gastritis
+A30	Assertion T30 present
+T31	problem 4399 4405	apneic
+A31	Assertion T31 present
+T32	problem 4410 4421	obstructing
+A32	Assertion T32 present
+T33	problem 3728 3742	reflux disease
+A33	Assertion T33 present
+T34	problem 964 980	Tyrone esophagus
+A34	Assertion T34 possible
+T35	problem 843 867	Restrictive lung disease
+A35	Assertion T35 present
+T36	problem 1214 1229	Hyperthyroidism
+A36	Assertion T36 present
+T37	problem 803 807	COPD
+A37	Assertion T37 present
+T38	problem 1204 1211	anxiety
+A38	Assertion T38 present
+T39	problem 1232 1246	IgG deficiency
+A39	Assertion T39 present
+T40	problem 203 212	pneumonia
+A40	Assertion T40 present
+T41	problem 4892 4907	mucous plugging
+A41	Assertion T41 possible
+T42	problem 215 219	COPD
+A42	Assertion T42 present
+T43	problem 222 241	asthma exacerbation
+A43	Assertion T43 present
+T44	problem 260 292	upper respiratory like infection
+A44	Assertion T44 present
+T45	problem 1296 1302	Anemia
+A45	Assertion T45 present
+T46	problem 1132 1139	syncope
+A46	Assertion T46 present
+T47	problem 4724 4745	adrenal insufficiency
+A47	Assertion T47 possible
+T48	problem 3945 3960	hyperthyroidism
+A48	Assertion T48 present
+T49	problem 5058 5072	B12 deficiency
+A49	Assertion T49 possible
+T50	problem 5109 5134	borderline low B12 levels
+A50	Assertion T50 present
+T51	problem 1189 1199	Depression
+A51	Assertion T51 present
+T52	problem 3411 3425	Chest soreness
+A52	Assertion T52 present
+T53	problem 1166 1186	Hypercholesterolemia
+A53	Assertion T53 present
+T54	problem 5356 5366	bronchitis
+A54	Assertion T54 present
+T55	problem 1142 1163	Adrenal insufficiency
+A55	Assertion T55 present
+T56	problem 5167 5181	B12 deficiency
+A56	Assertion T56 present
+T57	problem 5209 5225	poor p.o. intake
+A57	Assertion T57 present
+T58	problem 1795 1809	acute distress
+A58	Assertion T58 absent
+T59	problem 5339 5351	Asthma flare
+A59	Assertion T59 present
+T60	problem 1870 1901	Diffuse bronchial breath sounds
+A60	Assertion T60 present
+T61	problem 5369 5406	Chronic obstructive pulmonary disease
+A61	Assertion T61 present
+T62	problem 5409 5440	Demyelinating polyradiculopathy
+A62	Assertion T62 present
+T63	problem 1971 2023	Left lower extremity and left upper extremity weaker
+A63	Assertion T63 present
+T64	problem 5443 5459	Anxiety disorder
+A64	Assertion T64 present
+T65	problem 3077 3100	her shortness of breath
+A65	Assertion T65 present
+T66	problem 3042 3073	active airway disease component
+A66	Assertion T66 present
+T67	problem 5462 5484	Chronic abdominal pain
+A67	Assertion T67 present
+T68	problem 5599 5620	an oxygen requirement
+A68	Assertion T68 absent
+T69	problem 1548 1564	wheelchair bound
+A69	Assertion T69 present
+T70	problem 1963 1968	edema
+A70	Assertion T70 absent

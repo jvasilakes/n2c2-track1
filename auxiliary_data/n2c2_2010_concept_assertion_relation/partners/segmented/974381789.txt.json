@@ -1,0 +1,78 @@
+{"sent_index": 0, "start_index": 0, "end_index": 9, "_text": "974381789"}
+{"sent_index": 1, "start_index": 11, "end_index": 16, "_text": "PUOMC"}
+{"sent_index": 2, "start_index": 18, "end_index": 25, "_text": "0520610"}
+{"sent_index": 3, "start_index": 27, "end_index": 32, "_text": "70648"}
+{"sent_index": 4, "start_index": 34, "end_index": 40, "_text": "390115"}
+{"sent_index": 5, "start_index": 42, "end_index": 64, "_text": "12/25/1996 12:00:00 AM"}
+{"sent_index": 6, "start_index": 66, "end_index": 87, "_text": "ATRIAL FIBRILLATION ."}
+{"sent_index": 7, "start_index": 89, "end_index": 97, "_text": "Unsigned"}
+{"sent_index": 8, "start_index": 99, "end_index": 102, "_text": "DIS"}
+{"sent_index": 9, "start_index": 104, "end_index": 117, "_text": "Report Status"}
+{"sent_index": 10, "start_index": 121, "end_index": 129, "_text": "Unsigned"}
+{"sent_index": 11, "start_index": 131, "end_index": 148, "_text": "DISCHARGE SUMMARY"}
+{"sent_index": 12, "start_index": 150, "end_index": 190, "_text": "NAME : \nLENKPRUSKIHKOOGLEKIH , NIEKERO C"}
+{"sent_index": 13, "start_index": 192, "end_index": 216, "_text": "UNIT NUMBER : \n449-50-82"}
+{"sent_index": 14, "start_index": 218, "end_index": 232, "_text": "ADMISSION DATE"}
+{"sent_index": 15, "start_index": 236, "end_index": 244, "_text": "12/25/96"}
+{"sent_index": 16, "start_index": 246, "end_index": 260, "_text": "DISCHARGE DATE"}
+{"sent_index": 17, "start_index": 264, "end_index": 272, "_text": "12/29/96"}
+{"sent_index": 18, "start_index": 274, "end_index": 293, "_text": "PRINCIPAL DIAGNOSIS"}
+{"sent_index": 19, "start_index": 297, "end_index": 318, "_text": "Atrial fibrillation ."}
+{"sent_index": 20, "start_index": 320, "end_index": 340, "_text": "ASSOCIATED DIAGNOSIS"}
+{"sent_index": 21, "start_index": 344, "end_index": 438, "_text": "History of multinodular goiter ; history of hypertension ; history of subtotal thyroidectomy ."}
+{"sent_index": 22, "start_index": 440, "end_index": 459, "_text": "PRINCIPAL PROCEDURE"}
+{"sent_index": 23, "start_index": 463, "end_index": 489, "_text": "Electrical cardioversion ."}
+{"sent_index": 24, "start_index": 491, "end_index": 517, "_text": "HISTORY OF PRESENT ILLNESS"}
+{"sent_index": 25, "start_index": 521, "end_index": 524, "_text": "Ms."}
+{"sent_index": 26, "start_index": 525, "end_index": 919, "_text": "Lenkpruskihkooglekih is a 63-year-old lady with a history of frequent premature ventricular contractions and infrequent short runs of non-sustained ventricular tachycardia ( one four-beat run ) in 1991 , for which several antiarrhythmic agents including Propranolol , Quinidine , Procainamide , Tenormin , Norpace , Corgard , and Flecainide were used , but were stopped because of intolerance ."}
+{"sent_index": 27, "start_index": 921, "end_index": 1035, "_text": "At that time , she had clear coronary arteries on coronary angiography and an ejection fraction greater than 50% ."}
+{"sent_index": 28, "start_index": 1037, "end_index": 1232, "_text": "She did well off antiarrhythmic agents until October of this year when she was noted to have atrial fibrillation with a rapid ventricular rate after several days of decreased exercise tolerance ."}
+{"sent_index": 29, "start_index": 1234, "end_index": 1331, "_text": "She was started on Coumadin and had a failed attempt at DC electrical cardioversion on 11/16/96 ."}
+{"sent_index": 30, "start_index": 1333, "end_index": 1444, "_text": "She has been on Coumadin since and has continued to have occasional palpitations and mild shortness of breath ."}
+{"sent_index": 31, "start_index": 1446, "end_index": 1466, "_text": "PAST MEDICAL HISTORY"}
+{"sent_index": 32, "start_index": 1470, "end_index": 1553, "_text": "Includes a history of hypertension ; multinodular goiter ; subtotal thyroidectomy ."}
+{"sent_index": 33, "start_index": 1555, "end_index": 1566, "_text": "MEDICATIONS"}
+{"sent_index": 34, "start_index": 1570, "end_index": 1684, "_text": "Include Cardizem CD 180 mg daily ; Monopril 10 mg daily ; Digoxin .25 mg daily ; and Lasix 40 mg every other day ."}
+{"sent_index": 35, "start_index": 1686, "end_index": 1695, "_text": "ALLERGIES"}
+{"sent_index": 36, "start_index": 1699, "end_index": 1749, "_text": "To Quinidine , Procardia , and sulfa antibiotics ."}
+{"sent_index": 37, "start_index": 1751, "end_index": 1771, "_text": "PHYSICAL EXAMINATION"}
+{"sent_index": 38, "start_index": 1775, "end_index": 1872, "_text": "On examination , blood pressure was 200/100 ; heart rate 120 per minute ( atrial fibrillation ) ."}
+{"sent_index": 39, "start_index": 1874, "end_index": 1911, "_text": "The patient was noted to be anxious ."}
+{"sent_index": 40, "start_index": 1913, "end_index": 1966, "_text": "There was no neck vein distension or carotid bruits ."}
+{"sent_index": 41, "start_index": 1968, "end_index": 1994, "_text": "Heart sounds were normal ."}
+{"sent_index": 42, "start_index": 1996, "end_index": 2018, "_text": "The lungs were clear ."}
+{"sent_index": 43, "start_index": 2020, "end_index": 2058, "_text": "The abdominal examination was benign ."}
+{"sent_index": 44, "start_index": 2060, "end_index": 2091, "_text": "There was no peripheral edema ."}
+{"sent_index": 45, "start_index": 2093, "end_index": 2126, "_text": "Pulses were all easily palpable ."}
+{"sent_index": 46, "start_index": 2128, "end_index": 2143, "_text": "LABORATORY DATA"}
+{"sent_index": 47, "start_index": 2147, "end_index": 2237, "_text": "A 12-lead electrocardiogram showed atrial fibrillation with a QT interval of .46 seconds ."}
+{"sent_index": 48, "start_index": 2239, "end_index": 2320, "_text": "There were diffuse ST segment and T-wave abnormalities , which were nonspecific ."}
+{"sent_index": 49, "start_index": 2322, "end_index": 2408, "_text": "A complete blood count , electrolytes , BUN and creatinine were within normal limits ."}
+{"sent_index": 50, "start_index": 2410, "end_index": 2435, "_text": "INR was elevated at 2.5 ."}
+{"sent_index": 51, "start_index": 2437, "end_index": 2582, "_text": "An echocardiogram was performed , which showed completely normal left ventricular systolic function with an ejection fraction calculated at .74 ."}
+{"sent_index": 52, "start_index": 2584, "end_index": 2778, "_text": "There was no evidence of left ventricular hypertrophy or asymmetric septal hypertrophy , which had been an issue that had been raised on an echocardiogram in Ownra Cin , New Mexico on 12/06/96 ."}
+{"sent_index": 53, "start_index": 2780, "end_index": 2809, "_text": "HOSPITAL COURSE AND TREATMENT"}
+{"sent_index": 54, "start_index": 2813, "end_index": 2957, "_text": "The patient was started on Propafenone 300 mg three times a day and underwent an attempt at electrical cardioversion after seven doses of this ."}
+{"sent_index": 55, "start_index": 2959, "end_index": 3035, "_text": "This failed , despite one shock at 300 joules and two shocks at 360 joules ."}
+{"sent_index": 56, "start_index": 3037, "end_index": 3159, "_text": "The Propafenone was stopped , and the patient was changed to Amiodarone 400 mg t.i.d. , which was continued for two days ."}
+{"sent_index": 57, "start_index": 3161, "end_index": 3236, "_text": "The patient was discharged to home on Amiodarone 200 mg daily on 12/29/96 ."}
+{"sent_index": 58, "start_index": 3238, "end_index": 3401, "_text": "An electrocardiogram showed no evidence of QT prolongation prior to discharge , and pulmonary function tests will be performed before the patient goes home today ."}
+{"sent_index": 59, "start_index": 3403, "end_index": 3438, "_text": "The patient will follow up with Dr."}
+{"sent_index": 60, "start_index": 3439, "end_index": 3505, "_text": "Ther Ludzjesc at Shiekeu Hospital Medical Centers in Connecticut ."}
+{"sent_index": 61, "start_index": 3507, "end_index": 3634, "_text": "In addition , she will return to this hospital in early February for repeat attempt at electrical cardioversion on Amiodarone ."}
+{"sent_index": 62, "start_index": 3636, "end_index": 3780, "_text": "She will continue her Coumadin until then and arrangements for her readmission can be made through Dr. Iceca Rhaltkaaispehbreun 's office here ."}
+{"sent_index": 63, "start_index": 3782, "end_index": 3793, "_text": "MEDICATIONS"}
+{"sent_index": 64, "start_index": 3797, "end_index": 3897, "_text": "Other than the addition of Amiodarone 200 mg daily , will be the same as her admission medications ."}
+{"sent_index": 65, "start_index": 3899, "end_index": 3918, "_text": "STA BODEJOVE , M.D."}
+{"sent_index": 66, "start_index": 3920, "end_index": 3933, "_text": "DICTATING FOR"}
+{"sent_index": 67, "start_index": 3937, "end_index": 3968, "_text": "ICECA RHALTKAAISPEHBREUN , M.D."}
+{"sent_index": 68, "start_index": 3970, "end_index": 3972, "_text": "cc"}
+{"sent_index": 69, "start_index": 3976, "end_index": 3979, "_text": "Dr."}
+{"sent_index": 70, "start_index": 3980, "end_index": 4062, "_text": "Ther Ludzjesc Director , Section of Cardiology Shiekeu Hospital Medical Centers NC"}
+{"sent_index": 71, "start_index": 4064, "end_index": 4066, "_text": "TR"}
+{"sent_index": 72, "start_index": 4070, "end_index": 4073, "_text": "sip"}
+{"sent_index": 73, "start_index": 4075, "end_index": 4077, "_text": "DD"}
+{"sent_index": 74, "start_index": 4081, "end_index": 4089, "_text": "12/29/96"}
+{"sent_index": 75, "start_index": 4091, "end_index": 4093, "_text": "TD"}
+{"sent_index": 76, "start_index": 4097, "end_index": 4117, "_text": "12/29/96 10:03 A \ncc"}
+{"sent_index": 77, "start_index": 4121, "end_index": 4152, "_text": "ICECA RHALTKAAISPEHBREUN , M.D."}

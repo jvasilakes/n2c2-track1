@@ -1,0 +1,77 @@
+{"sent_index": 0, "start_index": 0, "end_index": 14, "_text": "Admission Date"}
+{"sent_index": 1, "start_index": 17, "end_index": 27, "_text": "2009-03-27"}
+{"sent_index": 2, "start_index": 28, "end_index": 42, "_text": "Discharge Date"}
+{"sent_index": 3, "start_index": 45, "end_index": 55, "_text": "2009-04-03"}
+{"sent_index": 4, "start_index": 56, "end_index": 69, "_text": "Date of Birth"}
+{"sent_index": 5, "start_index": 72, "end_index": 82, "_text": "1960-03-06"}
+{"sent_index": 6, "start_index": 83, "end_index": 86, "_text": "Sex"}
+{"sent_index": 7, "start_index": 89, "end_index": 90, "_text": "F"}
+{"sent_index": 8, "start_index": 91, "end_index": 111, "_text": "Service :\nGYNECOLOGY"}
+{"sent_index": 9, "start_index": 112, "end_index": 138, "_text": "HISTORY OF PRESENT ILLNESS"}
+{"sent_index": 10, "start_index": 141, "end_index": 284, "_text": "The patient is a 49-year-old gravida III , para II , who was sent from her primary care physician 's office secondary to lower abdominal pain ."}
+{"sent_index": 11, "start_index": 285, "end_index": 377, "_text": "The patient is status post uterine artery embolization on 2009-01-07 secondary to fibroids ."}
+{"sent_index": 12, "start_index": 378, "end_index": 534, "_text": "She has had continuing vaginal discharge , and was diagnosed with bacterial vaginosis one day prior to admission , and was given a prescription for Flagyl ."}
+{"sent_index": 13, "start_index": 535, "end_index": 657, "_text": "She noted increasing abdominal pain two days prior to admission , which became more severe on the day prior to admission ."}
+{"sent_index": 14, "start_index": 658, "end_index": 830, "_text": "She went to her primary care physician 's office on the day of admission complaining of abdominal pain , which she stated was constant but intermittently sharper at times ."}
+{"sent_index": 15, "start_index": 831, "end_index": 858, "_text": "The location was variable ."}
+{"sent_index": 16, "start_index": 859, "end_index": 949, "_text": "She also complained of some loose stools on the day of admission , no nausea or vomiting ."}
+{"sent_index": 17, "start_index": 950, "end_index": 1015, "_text": "Her temperature was 100.4 in the office , and she had no chills ."}
+{"sent_index": 18, "start_index": 1016, "end_index": 1197, "_text": "She was sent for a CT scan of her abdomen , which revealed fluid and question of gas in the endometrial cavity , and she was sent to Pinewood , Norfolk for treatment and admission ."}
+{"sent_index": 19, "start_index": 1198, "end_index": 1222, "_text": "PAST OBSTETRICAL HISTORY"}
+{"sent_index": 20, "start_index": 1225, "end_index": 1274, "_text": "Cesarean section x 2 , spontaneous abortion x 1 ."}
+{"sent_index": 21, "start_index": 1275, "end_index": 1299, "_text": "PAST GYNECOLOGIC HISTORY"}
+{"sent_index": 22, "start_index": 1302, "end_index": 1336, "_text": "Last menstrual period 2009-02-21 ."}
+{"sent_index": 23, "start_index": 1337, "end_index": 1408, "_text": "Some spotting on the day prior to admission , but not a normal period ."}
+{"sent_index": 24, "start_index": 1409, "end_index": 1426, "_text": "Periods regular ."}
+{"sent_index": 25, "start_index": 1427, "end_index": 1472, "_text": "Lupron x three months prior to embolization ."}
+{"sent_index": 26, "start_index": 1473, "end_index": 1528, "_text": "Fibroid uterus status post embolization on 2009-01-07 ."}
+{"sent_index": 27, "start_index": 1529, "end_index": 1567, "_text": "Dilatation and curettage x 1 for SAB ."}
+{"sent_index": 28, "start_index": 1568, "end_index": 1625, "_text": "History of herpes simplex virus , last outbreak in 2000 ."}
+{"sent_index": 29, "start_index": 1626, "end_index": 1661, "_text": "No history of abnormal Pap smears ."}
+{"sent_index": 30, "start_index": 1662, "end_index": 1682, "_text": "PAST MEDICAL HISTORY"}
+{"sent_index": 31, "start_index": 1685, "end_index": 1691, "_text": "None ."}
+{"sent_index": 32, "start_index": 1692, "end_index": 1713, "_text": "PAST SURGICAL HISTORY"}
+{"sent_index": 33, "start_index": 1716, "end_index": 1860, "_text": "Cesarean section x 2 , dilatation and curettage x 1 , neck fusion after motor vehicle accident , shoulder surgery after motor vehicle accident ."}
+{"sent_index": 34, "start_index": 1861, "end_index": 1872, "_text": "MEDICATIONS"}
+{"sent_index": 35, "start_index": 1875, "end_index": 1883, "_text": "Flagyl ."}
+{"sent_index": 36, "start_index": 1884, "end_index": 1893, "_text": "ALLERGIES"}
+{"sent_index": 37, "start_index": 1896, "end_index": 1902, "_text": "None ."}
+{"sent_index": 38, "start_index": 1903, "end_index": 1917, "_text": "SOCIAL HISTORY"}
+{"sent_index": 39, "start_index": 1920, "end_index": 1951, "_text": "No smoking , alcohol or drugs ."}
+{"sent_index": 40, "start_index": 1952, "end_index": 1972, "_text": "PHYSICAL EXAMINATION"}
+{"sent_index": 41, "start_index": 1975, "end_index": 2085, "_text": "Temperature 100.4 , pulse 108 , respirations 20 , blood pressure 110/70 , oxygen saturation 100% on room air ."}
+{"sent_index": 42, "start_index": 2086, "end_index": 2129, "_text": "In general , she was in no acute distress ."}
+{"sent_index": 43, "start_index": 2130, "end_index": 2304, "_text": "Her abdomen was notable for voluntary guarding but no involuntary guarding or rebound , mild right lower quadrant tenderness greater than left lower quadrant , nondistended ."}
+{"sent_index": 44, "start_index": 2305, "end_index": 2369, "_text": "Her pelvic examination was notable for some brownish discharge ."}
+{"sent_index": 45, "start_index": 2370, "end_index": 2464, "_text": "Her uterus and adnexa were difficult to assess secondary to voluntary tensing of her abdomen ."}
+{"sent_index": 46, "start_index": 2465, "end_index": 2475, "_text": "ASSESSMENT"}
+{"sent_index": 47, "start_index": 2478, "end_index": 2697, "_text": "This is a 49-year-old gravida III , para II , status post uterine artery embolization on 2009-01-07 due to uterine fibroids , with continued abdominal pain and CT scan revealing fluid and gas in the endometrial cavity ."}
+{"sent_index": 48, "start_index": 2698, "end_index": 2713, "_text": "HOSPITAL COURSE"}
+{"sent_index": 49, "start_index": 2716, "end_index": 2823, "_text": "The patient was admitted and was initially started on intravenous ampicillin , gentamicin and clindamycin ."}
+{"sent_index": 50, "start_index": 2824, "end_index": 2898, "_text": "Her initial white blood cell count was 11.3 , with a normal differential ."}
+{"sent_index": 51, "start_index": 2899, "end_index": 2943, "_text": "Her sedimentation rate was elevated at 110 ."}
+{"sent_index": 52, "start_index": 2944, "end_index": 2988, "_text": "Her electrolytes were within normal limits ."}
+{"sent_index": 53, "start_index": 2989, "end_index": 3036, "_text": "She was maintained on intravenous antibiotics ."}
+{"sent_index": 54, "start_index": 3037, "end_index": 3178, "_text": "On hospital day number three , her blood cultures came back positive in the anaerobic culture for gram-positive cocci in pairs and clusters ."}
+{"sent_index": 55, "start_index": 3179, "end_index": 3293, "_text": "Further identification revealed staphylococcus coag-negative , which was sensitive to gentamicin and clindamycin ."}
+{"sent_index": 56, "start_index": 3294, "end_index": 3426, "_text": "She was continued on her antibiotics , and was afebrile until hospital day number five , when she had a temperature spike to 102.3 ."}
+{"sent_index": 57, "start_index": 3427, "end_index": 3460, "_text": "Repeat blood cultures were sent ."}
+{"sent_index": 58, "start_index": 3461, "end_index": 3527, "_text": "Her white blood cell count was 12.8 , with a normal differential ."}
+{"sent_index": 59, "start_index": 3528, "end_index": 3713, "_text": "At this time , an Infectious Disease consult was obtained , and the recommendation was to discontinue the ampicillin , gentamicin and clindamycin , and start her on intravenous Unasyn ."}
+{"sent_index": 60, "start_index": 3714, "end_index": 3861, "_text": "She underwent a pelvic ultrasound and an abdomen and pelvis CT , which revealed continued air in the endometrial cavity vs. in the fundal fibroid ."}
+{"sent_index": 61, "start_index": 3862, "end_index": 3999, "_text": "Discussion was had at this time with the patient regarding whether or not this represented an infected abscess vs. post-surgical change ."}
+{"sent_index": 62, "start_index": 4000, "end_index": 4138, "_text": "Extensive discussion was held , and second opinion was obtained regarding the need for\npossible drainage of the abscess vs. hysterectomy ."}
+{"sent_index": 63, "start_index": 4139, "end_index": 4248, "_text": "The patient requested an outside second opinion , as she was reluctant to undergo hysterectomy at this time ."}
+{"sent_index": 64, "start_index": 4249, "end_index": 4328, "_text": "She was discharged to home on hospital day number eight , on oral antibiotics ."}
+{"sent_index": 65, "start_index": 4329, "end_index": 4383, "_text": "The patient was to have a repeat CT scan in one week ."}
+{"sent_index": 66, "start_index": 4384, "end_index": 4480, "_text": "She was also to obtain a second opinion regarding the question of possible surgical management ."}
+{"sent_index": 67, "start_index": 4481, "end_index": 4504, "_text": "Claude U Bolanos , M.D."}
+{"sent_index": 68, "start_index": 4505, "end_index": 4511, "_text": "95-182"}
+{"sent_index": 69, "start_index": 4512, "end_index": 4523, "_text": "Dictated By"}
+{"sent_index": 70, "start_index": 4526, "end_index": 4550, "_text": "William MP Lajoie , M.D."}
+{"sent_index": 71, "start_index": 4551, "end_index": 4561, "_text": "MEDQUIST36"}
+{"sent_index": 72, "start_index": 4562, "end_index": 4582, "_text": "D : 2009-04-02 22:09"}
+{"sent_index": 73, "start_index": 4583, "end_index": 4603, "_text": "T : 2009-04-03 01:26"}
+{"sent_index": 74, "start_index": 4604, "end_index": 4616, "_text": "JOB #:\n61261"}
+{"sent_index": 75, "start_index": 4617, "end_index": 4647, "_text": "Signed electronically by : DR."}
+{"sent_index": 76, "start_index": 4648, "end_index": 4708, "_text": "Suzanne Simpson on : FRI 2009-04-24 12:48 PM\n( End of Report"}

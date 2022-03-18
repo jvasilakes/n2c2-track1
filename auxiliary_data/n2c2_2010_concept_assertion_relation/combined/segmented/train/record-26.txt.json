@@ -1,0 +1,175 @@
+{"sent_index": 0, "start_index": 0, "end_index": 14, "_text": "Admission Date"}
+{"sent_index": 1, "start_index": 17, "end_index": 27, "_text": "2016-12-30"}
+{"sent_index": 2, "start_index": 28, "end_index": 42, "_text": "Discharge Date"}
+{"sent_index": 3, "start_index": 45, "end_index": 55, "_text": "2017-01-13"}
+{"sent_index": 4, "start_index": 56, "end_index": 69, "_text": "Date of Birth"}
+{"sent_index": 5, "start_index": 72, "end_index": 82, "_text": "1960-09-05"}
+{"sent_index": 6, "start_index": 83, "end_index": 86, "_text": "Sex"}
+{"sent_index": 7, "start_index": 89, "end_index": 90, "_text": "M"}
+{"sent_index": 8, "start_index": 91, "end_index": 98, "_text": "Service"}
+{"sent_index": 9, "start_index": 101, "end_index": 108, "_text": "HISTORY"}
+{"sent_index": 10, "start_index": 109, "end_index": 127, "_text": "OF PRESENT ILLNESS"}
+{"sent_index": 11, "start_index": 130, "end_index": 224, "_text": "This is a 56 year old man with history of hypercholesterolemia and type II diabetes mellitus ."}
+{"sent_index": 12, "start_index": 225, "end_index": 390, "_text": "He has a recent history of dyspnea on exertion on exertional chest pain which has increased over the last several weeks and is relieved by sublingual nitroglycerin ."}
+{"sent_index": 13, "start_index": 391, "end_index": 450, "_text": "On 2016-06-26 , he had a positive exercise tolerance test ."}
+{"sent_index": 14, "start_index": 451, "end_index": 759, "_text": "Cardiac catheterization at the end of October revealed a dilated aortic root to 4.4 cm and 80% stenosis of the mid left anterior descending at the bifurcation involving the diagonal branch , 70% stenoses of the left circumflex and oblique marginal artery and 90% stenosis of the posterior descending artery ."}
+{"sent_index": 15, "start_index": 760, "end_index": 835, "_text": "His atrioventricular valve gradient was 27 with an AV surface area of .91 ."}
+{"sent_index": 16, "start_index": 836, "end_index": 853, "_text": "REVIEW OF SYSTEMS"}
+{"sent_index": 17, "start_index": 856, "end_index": 950, "_text": "Review of systems shows that the patient denies any orthopnea , paroxysmal nocturnal dyspnea ."}
+{"sent_index": 18, "start_index": 951, "end_index": 992, "_text": "He has no bleeding or clotting problems ."}
+{"sent_index": 19, "start_index": 993, "end_index": 1033, "_text": "Juanita does not feel any palpitations ."}
+{"sent_index": 20, "start_index": 1034, "end_index": 1105, "_text": "He does not have wheezing , claudication or gastrointestinal bleeding ."}
+{"sent_index": 21, "start_index": 1106, "end_index": 1160, "_text": "Nor does he have any history of stroke like symptoms ."}
+{"sent_index": 22, "start_index": 1161, "end_index": 1181, "_text": "PAST MEDICAL HISTORY"}
+{"sent_index": 23, "start_index": 1184, "end_index": 1206, "_text": "Hypercholesterolemia ."}
+{"sent_index": 24, "start_index": 1207, "end_index": 1225, "_text": "Type II diabetes ."}
+{"sent_index": 25, "start_index": 1226, "end_index": 1244, "_text": "Recent pneumonia ."}
+{"sent_index": 26, "start_index": 1245, "end_index": 1265, "_text": "Remote tobacco use ."}
+{"sent_index": 27, "start_index": 1266, "end_index": 1316, "_text": "Recent weight loss associated with the pneumonia ."}
+{"sent_index": 28, "start_index": 1317, "end_index": 1350, "_text": "Gastroesophageal reflux disease ."}
+{"sent_index": 29, "start_index": 1351, "end_index": 1360, "_text": "ALLERGIES"}
+{"sent_index": 30, "start_index": 1363, "end_index": 1388, "_text": "No known drug allergies ."}
+{"sent_index": 31, "start_index": 1389, "end_index": 1413, "_text": "MEDICATIONS ON ADMISSION"}
+{"sent_index": 32, "start_index": 1416, "end_index": 1435, "_text": "One aspirin a day ."}
+{"sent_index": 33, "start_index": 1436, "end_index": 1456, "_text": "Nexium 40 mg a day ."}
+{"sent_index": 34, "start_index": 1457, "end_index": 1484, "_text": "Carvedilol 6.125 mg a day ."}
+{"sent_index": 35, "start_index": 1485, "end_index": 1514, "_text": "Glucophage 25 mg once a day ."}
+{"sent_index": 36, "start_index": 1515, "end_index": 1541, "_text": "Lipitor 10 mg once a day ."}
+{"sent_index": 37, "start_index": 1542, "end_index": 1556, "_text": "SOCIAL HISTORY"}
+{"sent_index": 38, "start_index": 1559, "end_index": 1633, "_text": "He lives with his wife and works as a drug representative for Carvedilol ."}
+{"sent_index": 39, "start_index": 1634, "end_index": 1654, "_text": "PHYSICAL EXAMINATION"}
+{"sent_index": 40, "start_index": 1657, "end_index": 1708, "_text": "On physical examination , the patient is afebrile ."}
+{"sent_index": 41, "start_index": 1709, "end_index": 1733, "_text": "Weight is 82 kilograms ."}
+{"sent_index": 42, "start_index": 1734, "end_index": 1757, "_text": "Blood pressure 126/66 ."}
+{"sent_index": 43, "start_index": 1758, "end_index": 1765, "_text": "General"}
+{"sent_index": 44, "start_index": 1768, "end_index": 1815, "_text": "Active , well-developed , well-nourished male ."}
+{"sent_index": 45, "start_index": 1816, "end_index": 1841, "_text": "Head and neck examination"}
+{"sent_index": 46, "start_index": 1844, "end_index": 1867, "_text": "No bruits appreciated ."}
+{"sent_index": 47, "start_index": 1868, "end_index": 1913, "_text": "Lungs are clear to auscultation bilaterally ."}
+{"sent_index": 48, "start_index": 1914, "end_index": 1949, "_text": "Heart was regular rate and rhythm ."}
+{"sent_index": 49, "start_index": 1950, "end_index": 1961, "_text": "S1 and S2 ."}
+{"sent_index": 50, "start_index": 1962, "end_index": 2018, "_text": "3/6 systolic ejection murmur throughout his precordium ."}
+{"sent_index": 51, "start_index": 2019, "end_index": 2067, "_text": "His abdomen is soft , nontender , nondistended ."}
+{"sent_index": 52, "start_index": 2068, "end_index": 2113, "_text": "No hepatosplenomegaly and no CVA tenderness ."}
+{"sent_index": 53, "start_index": 2114, "end_index": 2186, "_text": "Extremities are warm , well perfused , no cyanosis , clubbing or\nedema ."}
+{"sent_index": 54, "start_index": 2187, "end_index": 2219, "_text": "Palpable dorsalis pedis pulses ."}
+{"sent_index": 55, "start_index": 2220, "end_index": 2243, "_text": "No varicosities noted ."}
+{"sent_index": 56, "start_index": 2244, "end_index": 2291, "_text": "The patient was also noted to be right handed ."}
+{"sent_index": 57, "start_index": 2292, "end_index": 2307, "_text": "HOSPITAL COURSE"}
+{"sent_index": 58, "start_index": 2310, "end_index": 2438, "_text": "He was admitted to the cardiac surgery service for an elected Bental procedure with homograft and coronary artery bypass graft ."}
+{"sent_index": 59, "start_index": 2439, "end_index": 2531, "_text": "Once consent and preoperative evaluation was complete , he was taken to the operating room ."}
+{"sent_index": 60, "start_index": 2532, "end_index": 2607, "_text": "Please refer to the previously dictated operative note of 2016-12-30 by Dr."}
+{"sent_index": 61, "start_index": 2608, "end_index": 2618, "_text": "Lawrence ."}
+{"sent_index": 62, "start_index": 2619, "end_index": 2799, "_text": "Briefly , the patient was taken to the operating room to repair his critical aortic stenosis , his coronary artery disease and his significantly dilated ascending aortic aneurysm ."}
+{"sent_index": 63, "start_index": 2800, "end_index": 2943, "_text": "The procedure was an aortic valve replacement with a tissue valve , a coronary artery bypass graft procedure where five grafts were performed ."}
+{"sent_index": 64, "start_index": 2944, "end_index": 3181, "_text": "The left internal mammary artery was connected to the proximal left anterior descending and saphenous vein grafts were connected to the posterior descending artery , diagonal branch , obtuse marginal and distal left anterior descending ."}
+{"sent_index": 65, "start_index": 3182, "end_index": 3235, "_text": "Finally , a super coronary arch graft was implanted ."}
+{"sent_index": 66, "start_index": 3236, "end_index": 3275, "_text": "This was a .................... graft ."}
+{"sent_index": 67, "start_index": 3276, "end_index": 3321, "_text": "Cardiopulmonary bypass time was 234 minutes ."}
+{"sent_index": 68, "start_index": 3322, "end_index": 3367, "_text": "His aorta was cross clamped for 168 minutes ."}
+{"sent_index": 69, "start_index": 3368, "end_index": 3424, "_text": "He had pharmacologic circulatory arrest for 18 minutes ."}
+{"sent_index": 70, "start_index": 3425, "end_index": 3554, "_text": "The patient tolerated the procedure well and was transferred to the unit , intubated on Milrinone , Levophed and Propofol drips ."}
+{"sent_index": 71, "start_index": 3555, "end_index": 3637, "_text": "The rest of the hospital stay can be discussed in terms of system based approach ."}
+{"sent_index": 72, "start_index": 3638, "end_index": 3647, "_text": "Pulmonary"}
+{"sent_index": 73, "start_index": 3650, "end_index": 3718, "_text": "The patient remained intubated until postoperative day number five ."}
+{"sent_index": 74, "start_index": 3719, "end_index": 3782, "_text": "After that , the patient had no major problems with his lungs ."}
+{"sent_index": 75, "start_index": 3783, "end_index": 3912, "_text": "His oxygen saturations remained good and he did not require supplemental oxygen more than a couple of days after his extubation ."}
+{"sent_index": 76, "start_index": 3913, "end_index": 4012, "_text": "He was sent to the floor from the cardiac surgery recovery unit on postoperative day number seven ."}
+{"sent_index": 77, "start_index": 4013, "end_index": 4110, "_text": "After an extended stay for hemodynamic monitoring and pressor support to maintain his perfusion ."}
+{"sent_index": 78, "start_index": 4111, "end_index": 4121, "_text": "Neurologic"}
+{"sent_index": 79, "start_index": 4124, "end_index": 4256, "_text": "The major neurologic event of this hospital course was that the patient was slow to awake after his Propofol drip was discontinued ."}
+{"sent_index": 80, "start_index": 4257, "end_index": 4625, "_text": "Because of his confusion , a neurology consult was obtained and subsequent radiographic imaging revealed chronic appearing infarcts in the right occipital lobe as well as both cerebellar hemispheres , suggestive of more chronic infarcts , as well as an area in the left corona radiata , adjacent to the left lateral ventricle which may or may not be an acute infarct ."}
+{"sent_index": 81, "start_index": 4626, "end_index": 4697, "_text": "This was seen on the CAT scan on postoperative day number one , 12-31 ."}
+{"sent_index": 82, "start_index": 4698, "end_index": 4797, "_text": "As the patient became more awake , he still remained somewhat confused and a little bit out of it ."}
+{"sent_index": 83, "start_index": 4798, "end_index": 4859, "_text": "In addition , he was noted to have a right sided hemiplegia ."}
+{"sent_index": 84, "start_index": 4860, "end_index": 4895, "_text": "Over his postoperative course , Mr."}
+{"sent_index": 85, "start_index": 4896, "end_index": 5135, "_text": "Douglass has gradually been able to utilize more and more of his right side and with the assistance of physical therapy and occupational therapy , he has 4 to 5 + strength in his right hand and arm and about 4 + strength in his right leg ."}
+{"sent_index": 86, "start_index": 5136, "end_index": 5262, "_text": "He is able to walk about the floor on the days prior to discharge , with the assistance of the physical therapist and nurses ."}
+{"sent_index": 87, "start_index": 5263, "end_index": 5280, "_text": "In addition , Mr."}
+{"sent_index": 88, "start_index": 5281, "end_index": 5337, "_text": "Douglass is given Trazodone to help him sleep at night ."}
+{"sent_index": 89, "start_index": 5338, "end_index": 5597, "_text": "A psychiatric consult was also obtained due to his mental status and confusion postoperatively but his psychiatric issues are mostly related to his neurologic insults and he has no distinctive psychiatric disorder , except for perhaps postoperative delirium ."}
+{"sent_index": 90, "start_index": 5598, "end_index": 5671, "_text": "Cardiovascularly , the patient did extremely well following the surgery ."}
+{"sent_index": 91, "start_index": 5672, "end_index": 5740, "_text": "The Levophed drip was continued until postoperative day number one ."}
+{"sent_index": 92, "start_index": 5741, "end_index": 5938, "_text": "Milrinone was continued until postoperative day number three , at which point he was having good enough cardiac output that he did not need these drips to help maintain his blood pressure anymore ."}
+{"sent_index": 93, "start_index": 5939, "end_index": 6080, "_text": "He has remained without any chest pain following this procedure and his sternal wound is clean , dry and intact at the end of the procedure ."}
+{"sent_index": 94, "start_index": 6081, "end_index": 6228, "_text": "In addition , he has hypertension , for which he receives Metoprolol and he has hypercholesterolemia , for which he receives nothing at this time ."}
+{"sent_index": 95, "start_index": 6229, "end_index": 6238, "_text": "Pulmonary"}
+{"sent_index": 96, "start_index": 6241, "end_index": 6309, "_text": "The patient remained intubated until postoperative day number five ."}
+{"sent_index": 97, "start_index": 6310, "end_index": 6373, "_text": "He was diuresed and was soon saturating very well on room air ."}
+{"sent_index": 98, "start_index": 6374, "end_index": 6390, "_text": "Gastrointestinal"}
+{"sent_index": 99, "start_index": 6393, "end_index": 6499, "_text": "The patient has gastroesophageal reflux disease , for which he has been receiving Zantac as an inpatient ."}
+{"sent_index": 100, "start_index": 6500, "end_index": 6536, "_text": "We will put him back on his Nexium ."}
+{"sent_index": 101, "start_index": 6537, "end_index": 6646, "_text": "In addition , over the last couple of days prior to discharge , the patient did appear a little bit icteric ."}
+{"sent_index": 102, "start_index": 6647, "end_index": 6818, "_text": "Liver function tests were obtained and they were slightly elevated liver function tests and ALT was 44 , AST was 34 ; alkaline phosphatase was 199 , within normal limits ."}
+{"sent_index": 103, "start_index": 6819, "end_index": 6844, "_text": "Total bilirubin was 2.8 ."}
+{"sent_index": 104, "start_index": 6845, "end_index": 6881, "_text": "Amylase was 108 and lipase was 213 ."}
+{"sent_index": 105, "start_index": 6882, "end_index": 7024, "_text": "A right upper quadrant ultrasound did not reveal any gallstones or common bile duct dilatation indicative of cholecystitis or cholelithiasis ."}
+{"sent_index": 106, "start_index": 7025, "end_index": 7238, "_text": "In addition , the patient did have slightly elevated blood sugars over the last couple of days and has required an insulin sliding scale and basal insulin to maintain his blood sugars at a more appropriate level ."}
+{"sent_index": 107, "start_index": 7239, "end_index": 7275, "_text": "The ideal blood sugar levels for Mr."}
+{"sent_index": 108, "start_index": 7276, "end_index": 7339, "_text": "Douglass in this postoperative period should be less than 140 ."}
+{"sent_index": 109, "start_index": 7340, "end_index": 7429, "_text": "Please stay on top of the sliding scale so that the patient can keep a euglycemic level ."}
+{"sent_index": 110, "start_index": 7430, "end_index": 7441, "_text": "Hematologic"}
+{"sent_index": 111, "start_index": 7444, "end_index": 7577, "_text": "The patient , during this admission , required transfusion of three units of packed red blood cells to maintain adequate hematocrit ."}
+{"sent_index": 112, "start_index": 7578, "end_index": 7608, "_text": "At the time of discharge , Mr."}
+{"sent_index": 113, "start_index": 7609, "end_index": 7639, "_text": "Norman hematocrit is at 40.7 ."}
+{"sent_index": 114, "start_index": 7640, "end_index": 7675, "_text": "Fluids , electrolytes and nutrition"}
+{"sent_index": 115, "start_index": 7678, "end_index": 7863, "_text": "The patient did receive a significant amount of diuresis postoperatively and is well below his baseline with weight , most likely because of his inability to eat because of his stroke ."}
+{"sent_index": 116, "start_index": 7864, "end_index": 7986, "_text": "Once he was coherent enough , the patient was evaluated by the swallow team who\ndeclared him at first an aspiration risk ."}
+{"sent_index": 117, "start_index": 7987, "end_index": 7993, "_text": "As Mr."}
+{"sent_index": 118, "start_index": 7994, "end_index": 8102, "_text": "Douglass has improved from his initial stroke , he has become more lucid\nand is less of an aspiration risk ."}
+{"sent_index": 119, "start_index": 8103, "end_index": 8206, "_text": "On 01-12 , one day prior to discharge , he was cleared by the swallow team to eat\na diet as he wishes ."}
+{"sent_index": 120, "start_index": 8207, "end_index": 8299, "_text": "He is going out on a cardiac healthy , diabetic diet , as tolerated with Boost supplements ."}
+{"sent_index": 121, "start_index": 8300, "end_index": 8318, "_text": "Infectious disease"}
+{"sent_index": 122, "start_index": 8321, "end_index": 8466, "_text": "The patient had positive blood and urine cultures on 01-05 for history of Methicillin resistant Staphylococcus aureus , which was pan sensitive ."}
+{"sent_index": 123, "start_index": 8467, "end_index": 8489, "_text": "He was started on Oct."}
+{"sent_index": 124, "start_index": 8490, "end_index": 8507, "_text": "25 for this bug ."}
+{"sent_index": 125, "start_index": 8508, "end_index": 8572, "_text": "On 01-08 , the patient 's central venous line was discontinued ."}
+{"sent_index": 126, "start_index": 8573, "end_index": 8621, "_text": "The catheterization tip also grew out Serratia ."}
+{"sent_index": 127, "start_index": 8622, "end_index": 8776, "_text": "On the 16th , a urine culture was obtained and did grow out greater than 100,000 colonies of E. coli which was intermittently resistant to Ciprofloxacin ."}
+{"sent_index": 128, "start_index": 8777, "end_index": 8813, "_text": "He was started on Bactrim for that ."}
+{"sent_index": 129, "start_index": 8814, "end_index": 8833, "_text": "Please continue Mr."}
+{"sent_index": 130, "start_index": 8834, "end_index": 9023, "_text": "David Montero for one month to fight his blood borne infection , to prevent seeding of his aortic graft and continue Bactrim for ten days after discharge to treat the E. coli in his urine ."}
+{"sent_index": 131, "start_index": 9024, "end_index": 9035, "_text": "DISPOSITION"}
+{"sent_index": 132, "start_index": 9038, "end_index": 9133, "_text": "Mr. Douglass is being discharged on 2017-01-13 to a rehabilitation facility in good condition ."}
+{"sent_index": 133, "start_index": 9134, "end_index": 9143, "_text": "FOLLOW-UP"}
+{"sent_index": 134, "start_index": 9146, "end_index": 9276, "_text": "One to two weeks with his primary care physician and two to three weeks with his cardiologist and at one month with Dr. Costello ."}
+{"sent_index": 135, "start_index": 9277, "end_index": 9296, "_text": "DISCHARGE DIAGNOSES"}
+{"sent_index": 136, "start_index": 9299, "end_index": 9367, "_text": "Coronary artery disease , status post coronary artery bypass graft ."}
+{"sent_index": 137, "start_index": 9368, "end_index": 9433, "_text": "Critical aortic stenosis , status post aortic valve replacement ."}
+{"sent_index": 138, "start_index": 9434, "end_index": 9488, "_text": "Aortic arch aneurysm , status post aortic arch graft ."}
+{"sent_index": 139, "start_index": 9489, "end_index": 9519, "_text": "Acute postoperative delirium ."}
+{"sent_index": 140, "start_index": 9520, "end_index": 9542, "_text": "Perioperative stroke ."}
+{"sent_index": 141, "start_index": 9543, "end_index": 9598, "_text": "Chronic blood loss anemia and chronic RBC transfusion ."}
+{"sent_index": 142, "start_index": 9599, "end_index": 9624, "_text": "Urinary tract infection ."}
+{"sent_index": 143, "start_index": 9625, "end_index": 9647, "_text": "Hypercholesterolemia ."}
+{"sent_index": 144, "start_index": 9648, "end_index": 9666, "_text": "Type II diabetes ."}
+{"sent_index": 145, "start_index": 9667, "end_index": 9700, "_text": "Gastroesophageal reflux disease ."}
+{"sent_index": 146, "start_index": 9701, "end_index": 9722, "_text": "DISCHARGE MEDICATIONS"}
+{"sent_index": 147, "start_index": 9725, "end_index": 9760, "_text": "Metoprolol 75 mg p.o. twice a day ."}
+{"sent_index": 148, "start_index": 9761, "end_index": 9803, "_text": "Captopril 12.5 mg p.o. three times a day ."}
+{"sent_index": 149, "start_index": 9804, "end_index": 9831, "_text": "Aspirin 81 mg p.o. q. day ."}
+{"sent_index": 150, "start_index": 9832, "end_index": 9858, "_text": "Plavix 75 mg p.o. q. day ."}
+{"sent_index": 151, "start_index": 9859, "end_index": 9904, "_text": "Heparin 5000 units subcutaneous twice a day ."}
+{"sent_index": 152, "start_index": 9905, "end_index": 9953, "_text": "Metformin 1000 mg extended release p.o. q. day ."}
+{"sent_index": 153, "start_index": 9954, "end_index": 9961, "_text": "Humalog"}
+{"sent_index": 154, "start_index": 9962, "end_index": 10023, "_text": "Max 75/25 , 20 units subcutaneous once a day in the morning ."}
+{"sent_index": 155, "start_index": 10024, "end_index": 10057, "_text": "Levofloxacin 500 mg p.o. q. day ."}
+{"sent_index": 156, "start_index": 10058, "end_index": 10113, "_text": "Bactrim DS tabs , one tablet p.o. q. day for ten days ."}
+{"sent_index": 157, "start_index": 10114, "end_index": 10146, "_text": "Colace 100 mg p.o. twice a day ."}
+{"sent_index": 158, "start_index": 10147, "end_index": 10170, "_text": "Hold for loose stools ."}
+{"sent_index": 159, "start_index": 10171, "end_index": 10197, "_text": "Nexium 40 mg p.o. q. day ."}
+{"sent_index": 160, "start_index": 10198, "end_index": 10247, "_text": "Trazodone 25 mg p.o. q h.s. as needed for sleep ."}
+{"sent_index": 161, "start_index": 10248, "end_index": 10286, "_text": "Lasix 20 mg p.o. q. day for one week ."}
+{"sent_index": 162, "start_index": 10287, "end_index": 10323, "_text": "KCl 20 mg p.o. q. day for one week ."}
+{"sent_index": 163, "start_index": 10324, "end_index": 10346, "_text": "Dolly V Blevins , M.D."}
+{"sent_index": 164, "start_index": 10347, "end_index": 10353, "_text": "04-100"}
+{"sent_index": 165, "start_index": 10354, "end_index": 10365, "_text": "Dictated By"}
+{"sent_index": 166, "start_index": 10368, "end_index": 10391, "_text": "Kenneth O. Hogan , M.D."}
+{"sent_index": 167, "start_index": 10392, "end_index": 10402, "_text": "MEDQUIST36"}
+{"sent_index": 168, "start_index": 10403, "end_index": 10423, "_text": "D : 2017-01-12 11:35"}
+{"sent_index": 169, "start_index": 10424, "end_index": 10444, "_text": "T : 2017-01-13 05:30"}
+{"sent_index": 170, "start_index": 10445, "end_index": 10457, "_text": "JOB #:\n92344"}
+{"sent_index": 171, "start_index": 10458, "end_index": 10488, "_text": "Signed electronically by : DR."}
+{"sent_index": 172, "start_index": 10489, "end_index": 10499, "_text": "Dolly D.F."}
+{"sent_index": 173, "start_index": 10500, "end_index": 10536, "_text": "Sipes on: Roxane 2017-02-21 11:52 AM"}
+{"sent_index": 174, "start_index": 10539, "end_index": 10552, "_text": "End of Report"}

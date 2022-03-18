@@ -1,0 +1,153 @@
+{"sent_index": 0, "start_index": 0, "end_index": 14, "_text": "Admission Date"}
+{"sent_index": 1, "start_index": 17, "end_index": 27, "_text": "2011-01-19"}
+{"sent_index": 2, "start_index": 28, "end_index": 42, "_text": "Discharge Date"}
+{"sent_index": 3, "start_index": 45, "end_index": 55, "_text": "2011-01-25"}
+{"sent_index": 4, "start_index": 56, "end_index": 69, "_text": "Date of Birth"}
+{"sent_index": 5, "start_index": 72, "end_index": 82, "_text": "1943-01-22"}
+{"sent_index": 6, "start_index": 83, "end_index": 86, "_text": "Sex"}
+{"sent_index": 7, "start_index": 89, "end_index": 90, "_text": "M"}
+{"sent_index": 8, "start_index": 91, "end_index": 109, "_text": "Service :\nMEDICINE"}
+{"sent_index": 9, "start_index": 110, "end_index": 134, "_text": "INDICATION FOR ADMISSION"}
+{"sent_index": 10, "start_index": 137, "end_index": 251, "_text": "Transfer from Rehab Hospital of the Cape & Islands Hospital for an endoscopic retrogram cholangiopancreatography ."}
+{"sent_index": 11, "start_index": 252, "end_index": 259, "_text": "HISTORY"}
+{"sent_index": 12, "start_index": 260, "end_index": 278, "_text": "OF PRESENT ILLNESS"}
+{"sent_index": 13, "start_index": 281, "end_index": 584, "_text": "Mr. Eugene is a 67 year old male with a remote history of chronic pancreatitis due to alcohol abuse 30 years ago , who is transferred now from Rehab Hospital of the Cape & Islands Hospital for an ERCP and work-up for a cystic lesion at the head of his pancreas on CT scan shown at the outside hospital ."}
+{"sent_index": 14, "start_index": 585, "end_index": 746, "_text": "The patient presented initially to Rehab Hospital of the Cape & Islands Hospital at the end of December for abdominal pain , and was found to have pancreatitis ."}
+{"sent_index": 15, "start_index": 747, "end_index": 876, "_text": "During this admission , two CT scans had shown a question of an enlargement of the head of his pancreas\nversus early pseudocyst ."}
+{"sent_index": 16, "start_index": 877, "end_index": 956, "_text": "The patient was discharged home early from this admission due to family needs ."}
+{"sent_index": 17, "start_index": 957, "end_index": 1079, "_text": "While at home , the patient did not do well and could tolerate minimal food intake and lost about 20 pounds in one month ."}
+{"sent_index": 18, "start_index": 1080, "end_index": 1185, "_text": "On an office visit on 01-14 , the patient was found to have significantly elevated alkaline phosphatase ."}
+{"sent_index": 19, "start_index": 1186, "end_index": 1377, "_text": "That evening , the patient again developed abdominal pain \" like his pancreatitis \" with nausea and vomiting , for which he was admitted to the Rehab Hospital of the Cape & Islands Hospital ."}
+{"sent_index": 20, "start_index": 1378, "end_index": 1528, "_text": "In the Emergency Department at the Rehab Hospital of the Cape & Islands Hospital , the patient was noted to have vomited some heme positive material ."}
+{"sent_index": 21, "start_index": 1529, "end_index": 1606, "_text": "His complete blood count showed 11% bandemia with a total white count of 10 ."}
+{"sent_index": 22, "start_index": 1607, "end_index": 1698, "_text": "A HIDA scan showed no flow , question of pancreatitis versus common bile duct obstruction ."}
+{"sent_index": 23, "start_index": 1699, "end_index": 1751, "_text": "His electrocardiogram showed a normal sinus rhythm ."}
+{"sent_index": 24, "start_index": 1752, "end_index": 1784, "_text": "A chest x-ray was unremarkable ."}
+{"sent_index": 25, "start_index": 1785, "end_index": 1930, "_text": "During his admission to Rehab Hospital of the Cape & Islands Hospital , the patient had dropped his hematocrit to the 30 s with recorded melena ."}
+{"sent_index": 26, "start_index": 1931, "end_index": 1994, "_text": "He received an MRCP which was negative for evidence of stones ."}
+{"sent_index": 27, "start_index": 1995, "end_index": 2119, "_text": "An ultrasound showed normal gallbladder with no wall thickening but a dilated common bile duct of 8 mm measured on CT scan ."}
+{"sent_index": 28, "start_index": 2120, "end_index": 2223, "_text": "The patient had an attempted ERCP on 01-18 , which was unsuccessful due to a long nipple like papilla ."}
+{"sent_index": 29, "start_index": 2224, "end_index": 2329, "_text": "He was therefore transferred to Saints Medical Center for endoscopic retrogram cholangiopancreatography ."}
+{"sent_index": 30, "start_index": 2330, "end_index": 2430, "_text": "The patient 's blood cultures at outside hospital grew out Streptococcus sanguis-gordonii on 01-18 ."}
+{"sent_index": 31, "start_index": 2431, "end_index": 2511, "_text": "This was sensitive to Clindamycin , Erythromycin , penicillin S and Vancomycin ."}
+{"sent_index": 32, "start_index": 2512, "end_index": 2606, "_text": "Prior to this result , the patient had already been on Ampicillin , Sulbactam and Gentamycin ."}
+{"sent_index": 33, "start_index": 2607, "end_index": 2737, "_text": "It appears from the Discharge summary that the patient was placed on Unasyn 3 grams intravenously every six hours after his ERCP ."}
+{"sent_index": 34, "start_index": 2738, "end_index": 2758, "_text": "PAST MEDICAL HISTORY"}
+{"sent_index": 35, "start_index": 2761, "end_index": 2790, "_text": "1. Type 2 diabetes mellitus ."}
+{"sent_index": 36, "start_index": 2791, "end_index": 2821, "_text": "2. Right rotator cuff injury ."}
+{"sent_index": 37, "start_index": 2822, "end_index": 2899, "_text": "3. Gastroesophageal reflux disease with esophageal dilatation for stricture ."}
+{"sent_index": 38, "start_index": 2900, "end_index": 2993, "_text": "4. Recent pancreatitis ; prior history for recurrent pancreatitis 30 years ago from alcohol ."}
+{"sent_index": 39, "start_index": 2994, "end_index": 3090, "_text": "5. History of Streptococcemia in the year 2008 ; source was unclear but presumed to be urinary ."}
+{"sent_index": 40, "start_index": 3091, "end_index": 3132, "_text": "6. Status post tonsillectomy as a child ."}
+{"sent_index": 41, "start_index": 3133, "end_index": 3152, "_text": "MEDICATIONS AT HOME"}
+{"sent_index": 42, "start_index": 3155, "end_index": 3186, "_text": "1. Prilosec 20 mg p.o. q. day ."}
+{"sent_index": 43, "start_index": 3187, "end_index": 3215, "_text": "2. Flomax 4 mg p.o. q. day ."}
+{"sent_index": 44, "start_index": 3216, "end_index": 3251, "_text": "3. Humalog 75/25 , subcutaneously ."}
+{"sent_index": 45, "start_index": 3252, "end_index": 3308, "_text": "4. Regular insulin 15 units q. a.m. and 14 units q. p.m."}
+{"sent_index": 46, "start_index": 3309, "end_index": 3347, "_text": "MEDICATIONS ON ADMISSION FROM TRANSFER"}
+{"sent_index": 47, "start_index": 3350, "end_index": 3397, "_text": "1. Unasyn 3 grams intravenous every six hours ."}
+{"sent_index": 48, "start_index": 3398, "end_index": 3485, "_text": "2. NPH 10 units subcutaneously every morning and 8 units subcutaneously every evening ."}
+{"sent_index": 49, "start_index": 3486, "end_index": 3516, "_text": "3. Flomax 0.4 mg p.o. q. day ."}
+{"sent_index": 50, "start_index": 3517, "end_index": 3548, "_text": "4. Prilosec 30 mg p.o. q. day ."}
+{"sent_index": 51, "start_index": 3549, "end_index": 3583, "_text": "5. Regular insulin sliding scale ."}
+{"sent_index": 52, "start_index": 3584, "end_index": 3596, "_text": "6. Tylenol ."}
+{"sent_index": 53, "start_index": 3597, "end_index": 3606, "_text": "ALLERGIES"}
+{"sent_index": 54, "start_index": 3609, "end_index": 3685, "_text": "The patient is allergic to Ciprofloxacin , morphine sulfate and Droperidol ."}
+{"sent_index": 55, "start_index": 3686, "end_index": 3700, "_text": "SOCIAL HISTORY"}
+{"sent_index": 56, "start_index": 3703, "end_index": 3777, "_text": "The patient lives with his disabled wife who has a psychiatric condition ."}
+{"sent_index": 57, "start_index": 3778, "end_index": 3845, "_text": "He had a history of alcohol abuse but has been sober for 30 years ."}
+{"sent_index": 58, "start_index": 3846, "end_index": 3871, "_text": "He is a retired painter ."}
+{"sent_index": 59, "start_index": 3872, "end_index": 3892, "_text": "PHYSICAL EXAMINATION"}
+{"sent_index": 60, "start_index": 3895, "end_index": 3939, "_text": "On admission showed a temperature of 97.1 F."}
+{"sent_index": 61, "start_index": 3942, "end_index": 4072, "_text": "heart rate of 65 ; blood pressure of 146/74 ; respiratory rate of 20 ; oxygen saturation 98% on three liters and 95% on room air ."}
+{"sent_index": 62, "start_index": 4073, "end_index": 4155, "_text": "The patient was alert , awake and oriented , pleasant , and in no acute distress ."}
+{"sent_index": 63, "start_index": 4156, "end_index": 4248, "_text": "Head , eyes , ears , nose and throat examination revealed mucous membranes that were moist ."}
+{"sent_index": 64, "start_index": 4249, "end_index": 4276, "_text": "The patient has two teeth ."}
+{"sent_index": 65, "start_index": 4277, "end_index": 4305, "_text": "He has fine dental hygiene ."}
+{"sent_index": 66, "start_index": 4306, "end_index": 4325, "_text": "He had no icterus ."}
+{"sent_index": 67, "start_index": 4326, "end_index": 4427, "_text": "Cardiovascular system revealed normal S1 and S2 , no murmurs or gallops and regular rate and rhythm ."}
+{"sent_index": 68, "start_index": 4428, "end_index": 4500, "_text": "Pulmonary examination revealed lungs clear to auscultation bilaterally ."}
+{"sent_index": 69, "start_index": 4501, "end_index": 4577, "_text": "Abdominal examination revealed an abdomen that is nondistended , nontender ."}
+{"sent_index": 70, "start_index": 4578, "end_index": 4611, "_text": "He had normoactive bowel sounds ."}
+{"sent_index": 71, "start_index": 4612, "end_index": 4637, "_text": "His liver span was 8 cm ."}
+{"sent_index": 72, "start_index": 4638, "end_index": 4692, "_text": "The antrum was palpable 3 cm below the costal margin ."}
+{"sent_index": 73, "start_index": 4693, "end_index": 4722, "_text": "The spleen tip was palpable ."}
+{"sent_index": 74, "start_index": 4723, "end_index": 4761, "_text": "There was no rebound ; no Munos sign ."}
+{"sent_index": 75, "start_index": 4762, "end_index": 4805, "_text": "Extremities reveal no edema , no swelling ."}
+{"sent_index": 76, "start_index": 4806, "end_index": 4872, "_text": "Neurologic examination revealed an alert and oriented individual ."}
+{"sent_index": 77, "start_index": 4873, "end_index": 4918, "_text": "His face was symmetric ; tongue was midline ."}
+{"sent_index": 78, "start_index": 4919, "end_index": 4955, "_text": "His language was fluent and normal ."}
+{"sent_index": 79, "start_index": 4956, "end_index": 5011, "_text": "The patient was moving all four extremities with ease ."}
+{"sent_index": 80, "start_index": 5012, "end_index": 5052, "_text": "There was no formal strength test done ."}
+{"sent_index": 81, "start_index": 5053, "end_index": 5063, "_text": "LABORATORY"}
+{"sent_index": 82, "start_index": 5066, "end_index": 5126, "_text": "Studies revealed a hematocrit of 32.6 , white count of 6.0 ."}
+{"sent_index": 83, "start_index": 5127, "end_index": 5155, "_text": "His platelet count was 267 ."}
+{"sent_index": 84, "start_index": 5156, "end_index": 5159, "_text": "His"}
+{"sent_index": 85, "start_index": 5160, "end_index": 5205, "_text": "MCV was 88 , red cell distribution was 13.4 ."}
+{"sent_index": 86, "start_index": 5206, "end_index": 5360, "_text": "Chemistry on admission showed a sodium of 141 , potassium of 4.3 , chloride of 107 , bicarbonate of 25 , BUN of 4 , creatinine of 0.6 and a sugar of 177 ."}
+{"sent_index": 87, "start_index": 5361, "end_index": 5447, "_text": "Liver function tests revealed an ALT of 31 , AST of 36 , alkaline phosphatase of 509 ."}
+{"sent_index": 88, "start_index": 5448, "end_index": 5473, "_text": "Total bilirubin was 0.8 ."}
+{"sent_index": 89, "start_index": 5474, "end_index": 5491, "_text": "Albumin was 2.6 ."}
+{"sent_index": 90, "start_index": 5492, "end_index": 5535, "_text": "His blood cultures were drawn and pending ."}
+{"sent_index": 91, "start_index": 5536, "end_index": 5651, "_text": "Urinalysis revealed trace glucose , no ketones , no red cells , no white cells and less than one epithelial cells ."}
+{"sent_index": 92, "start_index": 5652, "end_index": 5670, "_text": "COURSE IN HOSPITAL"}
+{"sent_index": 93, "start_index": 5673, "end_index": 5767, "_text": "The patient was taken down to the endoscopic retrogram cholangiopancreatogram upon admission ."}
+{"sent_index": 94, "start_index": 5768, "end_index": 5890, "_text": "On this examination , the patient was found to have mild biliary stricture most likely secondary to chronic pancreatitis ."}
+{"sent_index": 95, "start_index": 5891, "end_index": 5914, "_text": "Cytology was obtained ."}
+{"sent_index": 96, "start_index": 5915, "end_index": 6024, "_text": "He was also found to have dilated pancreatic ducts with calcifications consistent with chronic pancreatitis ."}
+{"sent_index": 97, "start_index": 6025, "end_index": 6113, "_text": "The patient underwent a percutaneous sphincterotomy extended to a full sphincterectomy ."}
+{"sent_index": 98, "start_index": 6114, "end_index": 6168, "_text": "He also had successful extraction of stone fragments ."}
+{"sent_index": 99, "start_index": 6169, "end_index": 6237, "_text": "The patient tolerated this procedure well and had no complications ."}
+{"sent_index": 100, "start_index": 6238, "end_index": 6372, "_text": "The patient subsequently underwent a CT scan angiogram with Pancreas protocol to assess the pseudocyst versus enlarged pancreas head ."}
+{"sent_index": 101, "start_index": 6373, "end_index": 6633, "_text": "The results of this study indicated that this structure at the head of his pancreas is most likely a forming pseudocyst ; however , the suspicion of malignancy is still possible and the patient underwent an ultrasound guided biopsy of this mass on 2011-01-20 ."}
+{"sent_index": 102, "start_index": 6634, "end_index": 6681, "_text": "The cytology for this biopsy is still pending ."}
+{"sent_index": 103, "start_index": 6682, "end_index": 6743, "_text": "The patient recovered well status post these two procedures ."}
+{"sent_index": 104, "start_index": 6744, "end_index": 6802, "_text": "He had no complications and no subsequently pancreatitis ."}
+{"sent_index": 105, "start_index": 6803, "end_index": 6892, "_text": "His alkaline phosphatase and all the other abnormal liver function tests were resolving ."}
+{"sent_index": 106, "start_index": 6893, "end_index": 6950, "_text": "He had no pain and did not require any pain medications ."}
+{"sent_index": 107, "start_index": 6951, "end_index": 7023, "_text": "He was tolerating food very well and was afebrile throughout admission ."}
+{"sent_index": 108, "start_index": 7024, "end_index": 7131, "_text": "With regards to the patient 's documented Strep septicemia in the outside hospital , the Infectious Disease"}
+{"sent_index": 109, "start_index": 7132, "end_index": 7161, "_text": "Team was formally consulted ."}
+{"sent_index": 110, "start_index": 7162, "end_index": 7362, "_text": "Upon obtaining more information from Rehab Hospital of the Cape & Islands Hospital , it appears that the patient had two out of four bottles growing out Streptococcus sanguis in the outside hospital ."}
+{"sent_index": 111, "start_index": 7363, "end_index": 7473, "_text": "The patient appeared to have been covered by Ampicillin , Gentamycin and then Unasyn in the outside hospital ."}
+{"sent_index": 112, "start_index": 7474, "end_index": 7553, "_text": "The patient , on admission , was placed on Ampicillin , Gentamycin and Flagyl ."}
+{"sent_index": 113, "start_index": 7554, "end_index": 7674, "_text": "With repeated blood cultures that were negative , the patient was reduced to single Mckenzie of intravenous Ampicillin ."}
+{"sent_index": 114, "start_index": 7675, "end_index": 7754, "_text": "For this documented septicemia , this patient went for a endocarditis work-up ."}
+{"sent_index": 115, "start_index": 7755, "end_index": 7824, "_text": "He had a transthoracic echocardiogram which revealed no vegetations ."}
+{"sent_index": 116, "start_index": 7825, "end_index": 7998, "_text": "On this echocardiogram , he was found to have mildly dilated left atrium , mild symmetric left ventricular hypertrophy , and a normal ejection fraction of greater than 55% ."}
+{"sent_index": 117, "start_index": 7999, "end_index": 8054, "_text": "There were no other abnormalities noted on this study ."}
+{"sent_index": 118, "start_index": 8055, "end_index": 8125, "_text": "The patient then underwent a transesophageal echocardiogram on 01-24 ."}
+{"sent_index": 119, "start_index": 8126, "end_index": 8221, "_text": "On this echocardiogram , he was again noted to not have any evidence for valvular vegetations ."}
+{"sent_index": 120, "start_index": 8222, "end_index": 8339, "_text": "A complex plaque was found in the aortic arch in the descending thoracic aorta , although this plaque is non-mobile ."}
+{"sent_index": 121, "start_index": 8340, "end_index": 8425, "_text": "There was focal mitral valve prolapse noted without pathologic mitral regurgitation ."}
+{"sent_index": 122, "start_index": 8426, "end_index": 8484, "_text": "The patient was noted to have trace aortic regurgitation ."}
+{"sent_index": 123, "start_index": 8485, "end_index": 8568, "_text": "A Panorex x-ray of his two teeth were obtained and a Dental Consultation was done ."}
+{"sent_index": 124, "start_index": 8569, "end_index": 8694, "_text": "The patient was thought to have normal dental hygiene and low suspicion for a source of his alpha septicemia from his mouth ."}
+{"sent_index": 125, "start_index": 8695, "end_index": 8713, "_text": "Infectious Disease"}
+{"sent_index": 126, "start_index": 8714, "end_index": 8906, "_text": "Department as well as Cardiology had recommended a formal 14 - day course of intravenous antibiotics to treat a documented alpha Streptococcal septicemia from outside hospital blood cultures ."}
+{"sent_index": 127, "start_index": 8907, "end_index": 8988, "_text": "The patient 's insurance company , however , would not pay for home antibiotics ."}
+{"sent_index": 128, "start_index": 8989, "end_index": 9150, "_text": "After much discussion with the patient , the patient was informed of the risks of not finishing a 14 day course of intravenous antibiotics and chose to go home ."}
+{"sent_index": 129, "start_index": 9151, "end_index": 9220, "_text": "He had three days of antibiotics remaining at the time of discharge ."}
+{"sent_index": 130, "start_index": 9221, "end_index": 9328, "_text": "It was discussed with the patient to send him out on Augmentin 500 mg three times a day for ten more days ."}
+{"sent_index": 131, "start_index": 9329, "end_index": 9456, "_text": "He was to follow-up with his primary care physician within two to three days for repeat laboratory studies and blood cultures ."}
+{"sent_index": 132, "start_index": 9457, "end_index": 9533, "_text": "He was to return to the hospital with any signs of shaking chills or fever ."}
+{"sent_index": 133, "start_index": 9534, "end_index": 9553, "_text": "DISCHARGE DIAGNOSES"}
+{"sent_index": 134, "start_index": 9556, "end_index": 9650, "_text": "1. Pancreatitis status post endoscopic retrogram cholangiopancreatography and sphincterotomy ."}
+{"sent_index": 135, "start_index": 9651, "end_index": 9686, "_text": "2. Alpha Streptococcus septicemia ."}
+{"sent_index": 136, "start_index": 9687, "end_index": 9708, "_text": "DISCHARGE MEDICATIONS"}
+{"sent_index": 137, "start_index": 9711, "end_index": 9770, "_text": "1. Augmentin 500 mg p.o. three times a day times ten days ."}
+{"sent_index": 138, "start_index": 9771, "end_index": 9801, "_text": "2. Flomax 0.4 mg p.o. q. day ."}
+{"sent_index": 139, "start_index": 9802, "end_index": 9833, "_text": "3. Prilosec 20 mg p.o. q. day ."}
+{"sent_index": 140, "start_index": 9834, "end_index": 9881, "_text": "4. Humalog and Regular insulin subcutaneously ."}
+{"sent_index": 141, "start_index": 9882, "end_index": 9902, "_text": "Hallo MING LI , M.D."}
+{"sent_index": 142, "start_index": 9903, "end_index": 9909, "_text": "40-963"}
+{"sent_index": 143, "start_index": 9910, "end_index": 9921, "_text": "Dictated By"}
+{"sent_index": 144, "start_index": 9924, "end_index": 9932, "_text": "Annie D."}
+{"sent_index": 145, "start_index": 9933, "end_index": 9948, "_text": "Martinez , M.D."}
+{"sent_index": 146, "start_index": 9949, "end_index": 9959, "_text": "MEDQUIST36"}
+{"sent_index": 147, "start_index": 9960, "end_index": 9980, "_text": "D : 2011-01-25 14:08"}
+{"sent_index": 148, "start_index": 9981, "end_index": 10001, "_text": "T : 2011-01-26 11:30"}
+{"sent_index": 149, "start_index": 10002, "end_index": 10014, "_text": "JOB #:\n09167"}
+{"sent_index": 150, "start_index": 10015, "end_index": 10056, "_text": "Signed electronically by : DR. Dorothy L."}
+{"sent_index": 151, "start_index": 10057, "end_index": 10097, "_text": "Brennan on : Russell 2011-01-27 11:38 AM"}
+{"sent_index": 152, "start_index": 10100, "end_index": 10113, "_text": "End of Report"}

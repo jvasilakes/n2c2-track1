@@ -1,0 +1,117 @@
+{"sent_index": 0, "start_index": 0, "end_index": 14, "_text": "Admission Date"}
+{"sent_index": 1, "start_index": 17, "end_index": 27, "_text": "2012-11-06"}
+{"sent_index": 2, "start_index": 28, "end_index": 42, "_text": "Discharge Date"}
+{"sent_index": 3, "start_index": 45, "end_index": 55, "_text": "2012-11-11"}
+{"sent_index": 4, "start_index": 56, "end_index": 69, "_text": "Date of Birth"}
+{"sent_index": 5, "start_index": 72, "end_index": 82, "_text": "1965-09-22"}
+{"sent_index": 6, "start_index": 83, "end_index": 86, "_text": "Sex"}
+{"sent_index": 7, "start_index": 89, "end_index": 90, "_text": "M"}
+{"sent_index": 8, "start_index": 91, "end_index": 98, "_text": "Service"}
+{"sent_index": 9, "start_index": 101, "end_index": 104, "_text": "CCU"}
+{"sent_index": 10, "start_index": 105, "end_index": 131, "_text": "HISTORY OF PRESENT ILLNESS"}
+{"sent_index": 11, "start_index": 134, "end_index": 521, "_text": "The patient is a 47 - year-old male with a past medical history of coronary artery disease , status post 2-vessel percutaneous transluminal coronary angioplasty in 2005 , 3-vessel percutaneous transluminal coronary angioplasty in 2009 , hypertension , new onset type 2 diabetes , and hypercholesterolemia who presents with the sudden onset of substernal chest pain status post exercise ."}
+{"sent_index": 12, "start_index": 522, "end_index": 696, "_text": "The patient presented to Bournewood Hospital on the morning of admission with a chief complaint of substernal burning without radiation which developed while doing exercise ."}
+{"sent_index": 13, "start_index": 697, "end_index": 773, "_text": "Of note , this is the second time the patient has exercised in many months ."}
+{"sent_index": 14, "start_index": 774, "end_index": 885, "_text": "The pain became worse over the next few minutes to 07-12 and increased to 10-12 while he was in the ambulance ."}
+{"sent_index": 15, "start_index": 886, "end_index": 998, "_text": "His nitroglycerin patch did not help , and he only had slight relief with sublingual nitroglycerin times three ."}
+{"sent_index": 16, "start_index": 999, "end_index": 1206, "_text": "In addition , he had slight shortness of breath but denies headache , change in vision , dizziness , nausea , vomiting , abdominal pain , change in bowel or urinary habits , or fevers , chills , and sweats ."}
+{"sent_index": 17, "start_index": 1207, "end_index": 1262, "_text": "Of note , he had a negative stress test in 2012-07-03 ."}
+{"sent_index": 18, "start_index": 1263, "end_index": 1313, "_text": "He was sent to Bournewood Hospital via ambulance ."}
+{"sent_index": 19, "start_index": 1314, "end_index": 1482, "_text": "In the Emergency Department he received aspirin , nitroglycerin drip , heparin drip , Dilaudid , and TNK with decreased in his pain but without resolution of symptoms ."}
+{"sent_index": 20, "start_index": 1483, "end_index": 1576, "_text": "Electrocardiogram at that time showed ST elevations and J point elevations in V2 through V4 ."}
+{"sent_index": 21, "start_index": 1577, "end_index": 1660, "_text": "The patient was transferred to Sturdy Memorial where he underwent catheterization ."}
+{"sent_index": 22, "start_index": 1661, "end_index": 1791, "_text": "Catheterization results showed 100% occlusion of the proximal left anterior descending artery and 50% stenosis of first diagonal ."}
+{"sent_index": 23, "start_index": 1792, "end_index": 2026, "_text": "Angio-Jet percutaneous transluminal coronary angioplasty and stenting was performed on proximal left anterior descending artery and the percutaneous transluminal coronary angioplasty was performed on first diagonal with good results ."}
+{"sent_index": 24, "start_index": 2027, "end_index": 2089, "_text": "An intra-aortic balloon pump was placed at this time as well ."}
+{"sent_index": 25, "start_index": 2090, "end_index": 2110, "_text": "PAST MEDICAL HISTORY"}
+{"sent_index": 26, "start_index": 2113, "end_index": 2378, "_text": "1. Coronary artery disease ; the patient is status post percutaneous transluminal coronary angioplasty times three in 2009 at Clinton Hospital ; the patient is status post percutaneous transluminal coronary angioplasty times two in 2005 at Waltham/Weston Hospital ."}
+{"sent_index": 27, "start_index": 2379, "end_index": 2399, "_text": "2. Type 2 diabetes ."}
+{"sent_index": 28, "start_index": 2400, "end_index": 2425, "_text": "3. Hypercholesterolemia ."}
+{"sent_index": 29, "start_index": 2426, "end_index": 2443, "_text": "4. Hypertension ."}
+{"sent_index": 30, "start_index": 2444, "end_index": 2458, "_text": "FAMILY HISTORY"}
+{"sent_index": 31, "start_index": 2461, "end_index": 2588, "_text": "The patient 's father died of a myocardial infarction at age 40 , and a brother who died of a myocardial infarction at age 40 ."}
+{"sent_index": 32, "start_index": 2589, "end_index": 2603, "_text": "SOCIAL HISTORY"}
+{"sent_index": 33, "start_index": 2606, "end_index": 2622, "_text": "No ethanol use ."}
+{"sent_index": 34, "start_index": 2623, "end_index": 2671, "_text": "No tobacco at this time ; he quit 20 years ago ."}
+{"sent_index": 35, "start_index": 2672, "end_index": 2696, "_text": "The patient is married ."}
+{"sent_index": 36, "start_index": 2697, "end_index": 2721, "_text": "MEDICATIONS ON ADMISSION"}
+{"sent_index": 37, "start_index": 2724, "end_index": 2889, "_text": "Diltiazem 180 mg p.o. q.d. , Lipitor 10 mg p.o. q.d. , Glyset 25 mg p.o. q.d. , Prevacid 30 mg p.o. q.d. , metoprolol 50 mg p.o. b.i.d. , Glucophage 500 mg p.o. q.d."}
+{"sent_index": 38, "start_index": 2890, "end_index": 2899, "_text": "ALLERGIES"}
+{"sent_index": 39, "start_index": 2902, "end_index": 2944, "_text": "Allergies included PENICILLIN and IODINE ."}
+{"sent_index": 40, "start_index": 2945, "end_index": 2978, "_text": "PHYSICAL EXAMINATION ON ADMISSION"}
+{"sent_index": 41, "start_index": 2981, "end_index": 3198, "_text": "Temperature maximum 98.7 , temperature current 98.3 , pulse ranged from 82 to 92 , blood pressure 104 to 124/67 to 74 with a mean of 86 to 99 , respiratory rate of 11 to 16 , oxygen saturation 94% to 98% on 2 liters ."}
+{"sent_index": 42, "start_index": 3199, "end_index": 3254, "_text": "Pulmonary artery pressure was 29/15 with a mean of 22 ."}
+{"sent_index": 43, "start_index": 3255, "end_index": 3307, "_text": "Cardiac output was 7 ( that was on 6 of dopamine ) ."}
+{"sent_index": 44, "start_index": 3308, "end_index": 3390, "_text": "Intra-aortic balloon pump augmented systole was 109 , augmented diastole was 111 ."}
+{"sent_index": 45, "start_index": 3391, "end_index": 3443, "_text": "The patient was lying flat in no apparent distress ."}
+{"sent_index": 46, "start_index": 3444, "end_index": 3494, "_text": "HEENT revealed extraocular movements were intact ."}
+{"sent_index": 47, "start_index": 3495, "end_index": 3564, "_text": "Pupils were equal , round , and reactive to light and accommodation ."}
+{"sent_index": 48, "start_index": 3565, "end_index": 3609, "_text": "The oropharynx was clear with moist mucosa ."}
+{"sent_index": 49, "start_index": 3610, "end_index": 3627, "_text": "Neck was supple ."}
+{"sent_index": 50, "start_index": 3628, "end_index": 3648, "_text": "No lymphadenopathy ."}
+{"sent_index": 51, "start_index": 3649, "end_index": 3722, "_text": "Lungs were clear to auscultation bilaterally , anteriorly and laterally ."}
+{"sent_index": 52, "start_index": 3723, "end_index": 3790, "_text": "Cardiovascular revealed jugular venous distention not appreciated ."}
+{"sent_index": 53, "start_index": 3791, "end_index": 3861, "_text": "Carotids had normal upstroke and normal volume with bilateral bruits ."}
+{"sent_index": 54, "start_index": 3862, "end_index": 3878, "_text": "A regular rate ."}
+{"sent_index": 55, "start_index": 3879, "end_index": 3897, "_text": "Normal S1 and S2 ."}
+{"sent_index": 56, "start_index": 3898, "end_index": 3911, "_text": "No S3 or S4 ."}
+{"sent_index": 57, "start_index": 3912, "end_index": 3942, "_text": "No murmurs , rubs or gallops ."}
+{"sent_index": 58, "start_index": 3943, "end_index": 4017, "_text": "Abdomen had decreased bowel sounds , soft , nontender , and nondistended ."}
+{"sent_index": 59, "start_index": 4018, "end_index": 4041, "_text": "No hepatosplenomegaly ."}
+{"sent_index": 60, "start_index": 4042, "end_index": 4064, "_text": "Liver was about 5 cm ."}
+{"sent_index": 61, "start_index": 4065, "end_index": 4091, "_text": "Extremities had no edema ."}
+{"sent_index": 62, "start_index": 4092, "end_index": 4238, "_text": "The right groin revealed intra-aortic balloon pump site and pulmonary artery catheterization site were clean , dry and intact without tenderness ."}
+{"sent_index": 63, "start_index": 4239, "end_index": 4282, "_text": "Dorsalis pedis pulses were 2+ bilaterally ."}
+{"sent_index": 64, "start_index": 4283, "end_index": 4347, "_text": "Neurologic examination revealed alert and oriented times three ."}
+{"sent_index": 65, "start_index": 4348, "end_index": 4391, "_text": "Cranial nerves II through XII were intact ."}
+{"sent_index": 66, "start_index": 4392, "end_index": 4420, "_text": "LABORATORY DATA ON ADMISSION"}
+{"sent_index": 67, "start_index": 4423, "end_index": 4536, "_text": "Laboratories on admission revealed white count 7.8 , hematocrit was 41.7 , platelets of 252 , MCV 89 , RDW 12.7 ."}
+{"sent_index": 68, "start_index": 4537, "end_index": 4656, "_text": "Chem-7 revealed sodium of 136 , potassium 4.7 , chloride 103 , bicarbonate 22 , BUN 16 , creatinine 0.8 , glucose 284 ."}
+{"sent_index": 69, "start_index": 4657, "end_index": 4688, "_text": "PT 14.2 , PTT 108.5 , INR 1.3 ."}
+{"sent_index": 70, "start_index": 4689, "end_index": 4745, "_text": "Creatine kinase at 11 a.m. was 83 , at 5 p.m. was 3021 ."}
+{"sent_index": 71, "start_index": 4746, "end_index": 4793, "_text": "Arterial blood gas at 11 a.m. was 7.33/46/115 ."}
+{"sent_index": 72, "start_index": 4794, "end_index": 4995, "_text": "Creatine kinases trended from 11:15 on the day of admission from 83 to 3021 at 5 p.m. to 3450 at 11 p.m. , to 1734 at 5:30 a.m. on 11-07 , to 1277 at 11:30 a.m. on 11-07 , to 83 at 9:30 a.m. on 11-11 ."}
+{"sent_index": 73, "start_index": 4996, "end_index": 5015, "_text": "RADIOLOGY / IMAGING"}
+{"sent_index": 74, "start_index": 5018, "end_index": 5129, "_text": "Electrocardiogram post catheterization showed continued ST elevations and J point elevations in V2 through V3 ."}
+{"sent_index": 75, "start_index": 5130, "end_index": 5348, "_text": "Post catheterization echocardiogram showed an ejection fraction of 30% , moderate systolic dysfunction , basal anterior hypokinesis , mid anterior akinesis , basal anteroseptal hypokinesis , mid anteroseptal akinesis ."}
+{"sent_index": 76, "start_index": 5349, "end_index": 5418, "_text": "Anterior apex akinesis , inferior apex akinesis , and apex akinesis ."}
+{"sent_index": 77, "start_index": 5419, "end_index": 5489, "_text": "The was trace mitral regurgitation and trace tricuspid regurgitation ."}
+{"sent_index": 78, "start_index": 5490, "end_index": 5500, "_text": "IMPRESSION"}
+{"sent_index": 79, "start_index": 5503, "end_index": 6039, "_text": "This is a 47 - year-old male with a past medical history of type 2 diabetes , high cholesterol , hypertension , and coronary artery disease , status post percutaneous transluminal coronary angioplasty times two , who presented with acute coronary syndrome refractory to medical treatment and TNK , now status post Angio-Jet percutaneous transluminal coronary angioplasty and stent of proximal left anterior descending artery and percutaneous transluminal coronary angioplasty of first diagonal with intra-aortic balloon pump placement ."}
+{"sent_index": 80, "start_index": 6040, "end_index": 6055, "_text": "HOSPITAL COURSE"}
+{"sent_index": 81, "start_index": 6058, "end_index": 6067, "_text": "The Mass."}
+{"sent_index": 82, "start_index": 6068, "end_index": 6123, "_text": "Mental Health Center hospital course was unremarkable ."}
+{"sent_index": 83, "start_index": 6124, "end_index": 6162, "_text": "Dopamine was discontinued on day one ."}
+{"sent_index": 84, "start_index": 6163, "end_index": 6222, "_text": "The intra-aortic balloon pump was discontinued on day two ."}
+{"sent_index": 85, "start_index": 6223, "end_index": 6342, "_text": "The patient was continued on heparin throughout his hospital course and transitioned to Coumadin on hospital day four ."}
+{"sent_index": 86, "start_index": 6343, "end_index": 6471, "_text": "The patient was continued on Lipitor and aspirin , and Plavix was added and will be continued for 30 days post catheterization ."}
+{"sent_index": 87, "start_index": 6472, "end_index": 6630, "_text": "The patient was continued on Lopressor and captopril throughout his hospital course , and changed to\nZestril 10 mg q.d. and atenolol 25 mg q.d. at discharge ."}
+{"sent_index": 88, "start_index": 6631, "end_index": 6778, "_text": "The patient was discharged to the medical floor on hospital day three and discharged from the hospital once his INR was within the 2 to 2.5 range ."}
+{"sent_index": 89, "start_index": 6779, "end_index": 6801, "_text": "CONDITION AT DISCHARGE"}
+{"sent_index": 90, "start_index": 6804, "end_index": 6854, "_text": "The patient 's condition on discharge was stable ."}
+{"sent_index": 91, "start_index": 6855, "end_index": 6871, "_text": "DISCHARGE STATUS"}
+{"sent_index": 92, "start_index": 6874, "end_index": 6898, "_text": "He was discharged home ."}
+{"sent_index": 93, "start_index": 6899, "end_index": 6917, "_text": "DISCHARGE FOLLOWUP"}
+{"sent_index": 94, "start_index": 6920, "end_index": 7010, "_text": "Instructions to follow up with his primary care physician on the Heather after discharge ."}
+{"sent_index": 95, "start_index": 7011, "end_index": 7101, "_text": "Primary care physician was to check INR and titrate Zestril up and atenolol as tolerated ."}
+{"sent_index": 96, "start_index": 7102, "end_index": 7126, "_text": "MEDICATIONS ON DISCHARGE"}
+{"sent_index": 97, "start_index": 7129, "end_index": 7155, "_text": "1. Lipitor 10 mg p.o. q.d."}
+{"sent_index": 98, "start_index": 7156, "end_index": 7183, "_text": "2. Aspirin 325 mg p.o. q.d."}
+{"sent_index": 99, "start_index": 7184, "end_index": 7225, "_text": "3. Plavix 75 mg p.o. q.d. times 30 days ."}
+{"sent_index": 100, "start_index": 7226, "end_index": 7253, "_text": "4. Prevacid 30 mg p.o. q.d."}
+{"sent_index": 101, "start_index": 7254, "end_index": 7281, "_text": "5. Atenolol 25 mg p.o. q.d."}
+{"sent_index": 102, "start_index": 7282, "end_index": 7308, "_text": "6. Zestril 10 mg p.o. q.d."}
+{"sent_index": 103, "start_index": 7309, "end_index": 7334, "_text": "7. Glyset 25 mg p.o. q.d."}
+{"sent_index": 104, "start_index": 7335, "end_index": 7365, "_text": "8. Glucophage 500 mg p.o. q.d."}
+{"sent_index": 105, "start_index": 7366, "end_index": 7392, "_text": "9. Coumadin 5 mg p.o. q.d."}
+{"sent_index": 106, "start_index": 7393, "end_index": 7421, "_text": "Tina Squillace , M.D. 30-977"}
+{"sent_index": 107, "start_index": 7422, "end_index": 7433, "_text": "Dictated By"}
+{"sent_index": 108, "start_index": 7436, "end_index": 7444, "_text": "Lloyd U."}
+{"sent_index": 109, "start_index": 7445, "end_index": 7456, "_text": "King , M.D."}
+{"sent_index": 110, "start_index": 7457, "end_index": 7467, "_text": "MEDQUIST36"}
+{"sent_index": 111, "start_index": 7468, "end_index": 7488, "_text": "D : 2012-11-12 21:57"}
+{"sent_index": 112, "start_index": 7489, "end_index": 7509, "_text": "T : 2012-11-15 14:05"}
+{"sent_index": 113, "start_index": 7510, "end_index": 7513, "_text": "JOB"}
+{"sent_index": 114, "start_index": 7518, "end_index": 7526, "_text": "15711\ncc"}
+{"sent_index": 115, "start_index": 7529, "end_index": 7536, "_text": "Beau J."}
+{"sent_index": 116, "start_index": 7537, "end_index": 7547, "_text": "Box , M.D."}

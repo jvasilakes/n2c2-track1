@@ -1,0 +1,52 @@
+T0	problem 1018 1026	cyanosis
+A0	Assertion T0 absent
+T1	problem 1529 1541	the bleeding
+A1	Assertion T1 present
+T2	problem 801 825	CVA or spinal tenderness
+A2	Assertion T2 absent
+T3	problem 399 429	increased abdominal discomfort
+A3	Assertion T3 present
+T4	problem 590 608	slightly decreased
+A4	Assertion T4 present
+T5	problem 1573 1585	his bleeding
+A5	Assertion T5 present
+T6	problem 387 394	fatigue
+A6	Assertion T6 present
+T7	problem 998 1009	Trace edema
+A7	Assertion T7 present
+T8	problem 901 933	mildly tender in the epigastrium
+A8	Assertion T8 present
+T9	problem 745 757	oral lesions
+A9	Assertion T9 absent
+T10	problem 1251 1297	multiple angio ectasias throughout the stomach
+A10	Assertion T10 present
+T11	problem 971 981	tenderness
+A11	Assertion T11 absent
+T12	problem 1959 1964	death
+A12	Assertion T12 present
+T13	problem 1674 1686	his GI bleed
+A13	Assertion T13 present
+T14	problem 1176 1186	a GI bleed
+A14	Assertion T14 present
+T15	problem 1030 1038	clubbing
+A15	Assertion T15 absent
+T16	problem 1776 1796	no longer responsive
+A16	Assertion T16 present
+T17	problem 1742 1767	a change in mental status
+A17	Assertion T17 present
+T18	problem 963 967	mass
+A18	Assertion T18 absent
+T19	problem 942 960	hepatosplenomegaly
+A19	Assertion T19 absent
+T20	problem 258 283	pancreatic adenocarcinoma
+A20	Assertion T20 present
+T21	problem 2031 2069	his known metastatic pancreatic cancer
+A21	Assertion T21 present
+T22	problem 1986 1997	GI bleeding
+A22	Assertion T22 present
+T23	problem 325 348	significant GI bleeding
+A23	Assertion T23 present
+T24	problem 689 707	Evidence of anemia
+A24	Assertion T24 present
+T25	problem 713 723	being pale
+A25	Assertion T25 present

@@ -1,0 +1,100 @@
+{"sent_index": 0, "start_index": 0, "end_index": 27, "_text": "Admission Date :\n2011-09-23"}
+{"sent_index": 1, "start_index": 28, "end_index": 42, "_text": "Discharge Date"}
+{"sent_index": 2, "start_index": 45, "end_index": 55, "_text": "2011-10-06"}
+{"sent_index": 3, "start_index": 56, "end_index": 69, "_text": "Date of Birth"}
+{"sent_index": 4, "start_index": 72, "end_index": 82, "_text": "2011-09-23"}
+{"sent_index": 5, "start_index": 83, "end_index": 86, "_text": "Sex"}
+{"sent_index": 6, "start_index": 89, "end_index": 90, "_text": "M"}
+{"sent_index": 7, "start_index": 91, "end_index": 98, "_text": "Service"}
+{"sent_index": 8, "start_index": 101, "end_index": 112, "_text": "NEONATOLOGY"}
+{"sent_index": 9, "start_index": 113, "end_index": 139, "_text": "HISTORY OF PRESENT ILLNESS"}
+{"sent_index": 10, "start_index": 142, "end_index": 298, "_text": "Ken Nansteel-Miller is the triplet #3 of a spontaneous triamniotic-trichorionic triplet pregnancy born to a 39-year-old G4 P1 spontaneous abortion 2 woman ."}
+{"sent_index": 11, "start_index": 299, "end_index": 469, "_text": "Prenatal screens :\nBlood type A positive , antibody negative , rubella immune , RPR nonreactive , hepatitis B surface antigen negative , group beta Strep status unknown ."}
+{"sent_index": 12, "start_index": 470, "end_index": 541, "_text": "The mother was followed closely and received betamethasone 2011-08-22 ."}
+{"sent_index": 13, "start_index": 542, "end_index": 621, "_text": "She was admitted on 2011-08-25 for nausea , vomiting , and a shortened cervix ."}
+{"sent_index": 14, "start_index": 622, "end_index": 673, "_text": "She was treated with bed rest and prn terbutaline ."}
+{"sent_index": 15, "start_index": 674, "end_index": 710, "_text": "Other medications including Prozac ."}
+{"sent_index": 16, "start_index": 711, "end_index": 784, "_text": "The babies were born by elective cesarean section at 34 weeks gestation ."}
+{"sent_index": 17, "start_index": 785, "end_index": 891, "_text": "This triplet #3 emerged with spontaneous respirations , and required blow-by oxygen in the delivery room ."}
+{"sent_index": 18, "start_index": 892, "end_index": 951, "_text": "Apgars were seven at one minute and eight at five minutes ."}
+{"sent_index": 19, "start_index": 952, "end_index": 1034, "_text": "He was admitted to the Neonatal Intensive Care Unit for treatment of prematurity ."}
+{"sent_index": 20, "start_index": 1035, "end_index": 1048, "_text": "PHYSICAL EXAM"}
+{"sent_index": 21, "start_index": 1049, "end_index": 1099, "_text": "UPON ADMISSION TO THE NEONATAL INTENSIVE CARE UNIT"}
+{"sent_index": 22, "start_index": 1102, "end_index": 1201, "_text": "Weight 1.7 kg , length 41.5 cm , head circumference 29 cm , all 10th-25th percentile for 34 weeks ."}
+{"sent_index": 23, "start_index": 1202, "end_index": 1209, "_text": "General"}
+{"sent_index": 24, "start_index": 1212, "end_index": 1269, "_text": "Nondysmorphic preterm male in mild respiratory distress ."}
+{"sent_index": 25, "start_index": 1270, "end_index": 1308, "_text": "Head , eyes , ears , nose , and throat"}
+{"sent_index": 26, "start_index": 1311, "end_index": 1344, "_text": "Anterior fontanel open and flat ."}
+{"sent_index": 27, "start_index": 1345, "end_index": 1372, "_text": "Symmetric facial features ."}
+{"sent_index": 28, "start_index": 1373, "end_index": 1406, "_text": "Positive red reflex bilaterally ."}
+{"sent_index": 29, "start_index": 1407, "end_index": 1422, "_text": "Palate intact ."}
+{"sent_index": 30, "start_index": 1423, "end_index": 1428, "_text": "Chest"}
+{"sent_index": 31, "start_index": 1431, "end_index": 1473, "_text": "Mild intercostal and sternal retractions ."}
+{"sent_index": 32, "start_index": 1474, "end_index": 1514, "_text": "Breath sounds equal with fair aeration ."}
+{"sent_index": 33, "start_index": 1515, "end_index": 1573, "_text": "Cardiovascular : Regular , rate , and rhythm , no murmur ."}
+{"sent_index": 34, "start_index": 1574, "end_index": 1593, "_text": "Femoral pulses +2 ."}
+{"sent_index": 35, "start_index": 1594, "end_index": 1674, "_text": "Abdomen is soft , nontender , nondistended , no masses , positive bowel sounds ."}
+{"sent_index": 36, "start_index": 1675, "end_index": 1712, "_text": "Genitourinary : Normal preterm male ."}
+{"sent_index": 37, "start_index": 1713, "end_index": 1743, "_text": "Testes descended bilaterally ."}
+{"sent_index": 38, "start_index": 1744, "end_index": 1779, "_text": "Spine straight with normal sacrum ."}
+{"sent_index": 39, "start_index": 1780, "end_index": 1793, "_text": "Hips stable ."}
+{"sent_index": 40, "start_index": 1794, "end_index": 1804, "_text": "Neurologic"}
+{"sent_index": 41, "start_index": 1807, "end_index": 1838, "_text": "Appropriate tone and reflexes ."}
+{"sent_index": 42, "start_index": 1839, "end_index": 1901, "_text": "HOSPITAL COURSE BY SYSTEMS INCLUDING PERTINENT LABORATORY DATA"}
+{"sent_index": 43, "start_index": 1904, "end_index": 1918, "_text": "1. Respiratory"}
+{"sent_index": 44, "start_index": 1921, "end_index": 2003, "_text": "Lincoln required nasal cannula O2 for approximately the first 8-12 hours of life ."}
+{"sent_index": 45, "start_index": 2004, "end_index": 2107, "_text": "He weaned to room air and remained on room air the rest of his Neonatal Intensive Care Unit admission ."}
+{"sent_index": 46, "start_index": 2108, "end_index": 2170, "_text": "He has had no episodes of spontaneous apnea during admission ."}
+{"sent_index": 47, "start_index": 2171, "end_index": 2255, "_text": "2. Cardiovascular : Falmouth has maintained normal heart rates and blood pressures ."}
+{"sent_index": 48, "start_index": 2256, "end_index": 2284, "_text": "No murmurs have been noted ."}
+{"sent_index": 49, "start_index": 2285, "end_index": 2325, "_text": "3. Fluids , electrolytes , and nutrition"}
+{"sent_index": 50, "start_index": 2328, "end_index": 2392, "_text": "Beverly was initially NPO and maintained on intravenous fluids ."}
+{"sent_index": 51, "start_index": 2393, "end_index": 2479, "_text": "Enteral feeds were started on day of life #1 , and gradually advanced to full volume ."}
+{"sent_index": 52, "start_index": 2480, "end_index": 2534, "_text": "His maximum caloric intake was 24 calories per ounce ."}
+{"sent_index": 53, "start_index": 2535, "end_index": 2678, "_text": "At the time of discharge , he is breastfeeding or taking Enfamil fortified to 24 calories / ounce with intake approximately 150 cc / kg / day ."}
+{"sent_index": 54, "start_index": 2679, "end_index": 2708, "_text": "Discharge weight is 1.89 kg ."}
+{"sent_index": 55, "start_index": 2709, "end_index": 2813, "_text": "4. Gastrointestinal : Boston required treatment for unconjungated hyperbilirubinemia with phototherapy ."}
+{"sent_index": 56, "start_index": 2814, "end_index": 2924, "_text": "His peak serum bilirubin occurred on day of life three with a total of 8.3 / 0.2 direct , 8.1 indirect mg/dl ."}
+{"sent_index": 57, "start_index": 2925, "end_index": 2978, "_text": "He received phototherapy for approximately 72 hours ."}
+{"sent_index": 58, "start_index": 2979, "end_index": 3051, "_text": "Rebound bilirubin on day of life #7 was 6.6 , and total was 0.2 direct ."}
+{"sent_index": 59, "start_index": 3052, "end_index": 3130, "_text": "5. Neurological : Wellesley has maintained a normal neurological examination ."}
+{"sent_index": 60, "start_index": 3131, "end_index": 3215, "_text": "Throughout admission , there are no neurological concerns at the time of discharge ."}
+{"sent_index": 61, "start_index": 3216, "end_index": 3238, "_text": "6. Sensory :\nAudiology"}
+{"sent_index": 62, "start_index": 3241, "end_index": 3319, "_text": "Hearing screening was performed with automated auditory brain stem responses ."}
+{"sent_index": 63, "start_index": 3320, "end_index": 3351, "_text": "Nantucket passed in both ears ."}
+{"sent_index": 64, "start_index": 3352, "end_index": 3374, "_text": "CONDITION ON DISCHARGE"}
+{"sent_index": 65, "start_index": 3377, "end_index": 3383, "_text": "Good ."}
+{"sent_index": 66, "start_index": 3384, "end_index": 3407, "_text": "DISCHARGE / DISPOSITION"}
+{"sent_index": 67, "start_index": 3410, "end_index": 3429, "_text": "Home with parents ."}
+{"sent_index": 68, "start_index": 3430, "end_index": 3450, "_text": "PRIMARY PEDIATRICIAN"}
+{"sent_index": 69, "start_index": 3453, "end_index": 3478, "_text": "Dr. Penny Scott , 8400 S."}
+{"sent_index": 70, "start_index": 3479, "end_index": 3563, "_text": "Maple Blvd. , Arbour-Fuller Hospital , New Hampshire 25344 , phone number 617-6198 ."}
+{"sent_index": 71, "start_index": 3564, "end_index": 3593, "_text": "Fax number ( 317 ) 497-7408 ."}
+{"sent_index": 72, "start_index": 3594, "end_index": 3643, "_text": "CARE AND RECOMMENDATIONS AT THE TIME OF DISCHARGE"}
+{"sent_index": 73, "start_index": 3646, "end_index": 3706, "_text": "1. Feeding : Breast feeding or Enfamil 24 calories / ounce ."}
+{"sent_index": 74, "start_index": 3707, "end_index": 3778, "_text": "2. Medications : Ferrous sulfate 0.15 cc po q day 25 mg / ml dilution ."}
+{"sent_index": 75, "start_index": 3779, "end_index": 3825, "_text": "3. Car seat position screening was performed ."}
+{"sent_index": 76, "start_index": 3826, "end_index": 3917, "_text": "Waltham was monitored for 90 minutes without any episodes of apnea or oxygen desaturation ."}
+{"sent_index": 77, "start_index": 3918, "end_index": 4027, "_text": "4. State Newborn Screens were sent on 09-27 and 2011-10-05 with no notification of abnormal results to date ."}
+{"sent_index": 78, "start_index": 4028, "end_index": 4062, "_text": "5. No immunizations administered ."}
+{"sent_index": 79, "start_index": 4063, "end_index": 4160, "_text": "Plan is to receive hepatitis B in the pediatrician 's office , once he reaches a weight of 2 kg ."}
+{"sent_index": 80, "start_index": 4161, "end_index": 4320, "_text": "6. Immunizations recommended : Synagis RSV prophylaxis should be considered from October through April for infants who meet any of the following three criteria"}
+{"sent_index": 81, "start_index": 4323, "end_index": 4494, "_text": "1) Born at less than 32 weeks ,\n2) born between 32 and 35 weeks with plans for daycare during RSV season , with a smoker in the household , or with preschool siblings , or"}
+{"sent_index": 82, "start_index": 4495, "end_index": 4525, "_text": "3) with chronic lung disease ."}
+{"sent_index": 83, "start_index": 4526, "end_index": 4672, "_text": "Influenza immunization should be considered annually in the fall for preterm infants with chronic lung disease once they reach six months of age ."}
+{"sent_index": 84, "start_index": 4673, "end_index": 4802, "_text": "Before this age , the family and other caregivers should be considered for immunization against influenza to protect the infant ."}
+{"sent_index": 85, "start_index": 4803, "end_index": 4852, "_text": "FOLLOW-UP APPOINTMENTS : Dr. Parramore on 10-10 ."}
+{"sent_index": 86, "start_index": 4853, "end_index": 4872, "_text": "DISCHARGE DIAGNOSES"}
+{"sent_index": 87, "start_index": 4875, "end_index": 4913, "_text": "1. Prematurity at 34 weeks gestation ."}
+{"sent_index": 88, "start_index": 4914, "end_index": 4950, "_text": "2. Triplet #3 of triplet gestation ."}
+{"sent_index": 89, "start_index": 4951, "end_index": 4987, "_text": "3. Unconjugated hyperbilirubinemia ."}
+{"sent_index": 90, "start_index": 4988, "end_index": 5025, "_text": "Reviewed By : Janna L. Desorbo , M.D."}
+{"sent_index": 91, "start_index": 5026, "end_index": 5032, "_text": "00-112"}
+{"sent_index": 92, "start_index": 5033, "end_index": 5071, "_text": "Dictated By : Jeannette D. Rede , M.D."}
+{"sent_index": 93, "start_index": 5072, "end_index": 5082, "_text": "MEDQUIST36"}
+{"sent_index": 94, "start_index": 5083, "end_index": 5103, "_text": "D : 2011-10-06 04:03"}
+{"sent_index": 95, "start_index": 5104, "end_index": 5124, "_text": "T : 2011-10-06 06:19"}
+{"sent_index": 96, "start_index": 5125, "end_index": 5137, "_text": "JOB #:\n02566"}
+{"sent_index": 97, "start_index": 5138, "end_index": 5162, "_text": "Signed electronically by"}
+{"sent_index": 98, "start_index": 5165, "end_index": 5212, "_text": "DR. Bernice Jenkins on : FRI 2011-10-07 4:01 PM"}
+{"sent_index": 99, "start_index": 5215, "end_index": 5228, "_text": "End of Report"}

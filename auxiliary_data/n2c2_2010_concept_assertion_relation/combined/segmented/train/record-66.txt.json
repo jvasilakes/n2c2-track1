@@ -1,0 +1,156 @@
+{"sent_index": 0, "start_index": 0, "end_index": 14, "_text": "Admission Date"}
+{"sent_index": 1, "start_index": 17, "end_index": 27, "_text": "2016-07-18"}
+{"sent_index": 2, "start_index": 28, "end_index": 42, "_text": "Discharge Date"}
+{"sent_index": 3, "start_index": 45, "end_index": 55, "_text": "2016-07-21"}
+{"sent_index": 4, "start_index": 56, "end_index": 69, "_text": "Date of Birth"}
+{"sent_index": 5, "start_index": 72, "end_index": 82, "_text": "1969-11-05"}
+{"sent_index": 6, "start_index": 83, "end_index": 86, "_text": "Sex"}
+{"sent_index": 7, "start_index": 89, "end_index": 90, "_text": "M"}
+{"sent_index": 8, "start_index": 91, "end_index": 98, "_text": "Service"}
+{"sent_index": 9, "start_index": 101, "end_index": 109, "_text": "MEDICINE"}
+{"sent_index": 10, "start_index": 110, "end_index": 119, "_text": "Allergies"}
+{"sent_index": 11, "start_index": 122, "end_index": 133, "_text": "Penicillins"}
+{"sent_index": 12, "start_index": 134, "end_index": 143, "_text": "Attending"}
+{"sent_index": 13, "start_index": 146, "end_index": 158, "_text": "Daniel Z. H."}
+{"sent_index": 14, "start_index": 159, "end_index": 172, "_text": "Walton , M.D."}
+{"sent_index": 15, "start_index": 173, "end_index": 188, "_text": "Chief Complaint"}
+{"sent_index": 16, "start_index": 191, "end_index": 198, "_text": "Dyspnea"}
+{"sent_index": 17, "start_index": 199, "end_index": 235, "_text": "Major Surgical or Invasive Procedure"}
+{"sent_index": 18, "start_index": 238, "end_index": 242, "_text": "None"}
+{"sent_index": 19, "start_index": 243, "end_index": 269, "_text": "History of Present Illness"}
+{"sent_index": 20, "start_index": 272, "end_index": 328, "_text": "46 - yo-man w/ active cocaine use presents w/ LE edema ."}
+{"sent_index": 21, "start_index": 329, "end_index": 416, "_text": "10 days ago , he developed b/l LE edema that has gotten progressively worse until now ."}
+{"sent_index": 22, "start_index": 417, "end_index": 527, "_text": "Three days ago , he developed dyspnea on exertion when climbing stairs , assoc w/ 2-pillow orthopnea and PND ."}
+{"sent_index": 23, "start_index": 528, "end_index": 647, "_text": "He denies any recent chest pain , palpitations , headache , confusion , weakness , numbness , abd pain , or hematuria ."}
+{"sent_index": 24, "start_index": 648, "end_index": 683, "_text": "No recent viral syndromes or URI s."}
+{"sent_index": 25, "start_index": 684, "end_index": 725, "_text": "He does admit to cocaine use last night ."}
+{"sent_index": 26, "start_index": 726, "end_index": 798, "_text": "Today , his wife convinced him to present to the Deanna for evaluation ."}
+{"sent_index": 27, "start_index": 799, "end_index": 835, "_text": "In the Deanna , his BP was 230/170 ."}
+{"sent_index": 28, "start_index": 836, "end_index": 862, "_text": "BNP was elevated at 7500 ."}
+{"sent_index": 29, "start_index": 863, "end_index": 917, "_text": "CXR revealed evidence of cardiomegaly and pulm edema ."}
+{"sent_index": 30, "start_index": 918, "end_index": 996, "_text": "He was treated w/ ASA 325 mg , lasix 10 mg IV , and hydralazine 10 mg IV x 2 ."}
+{"sent_index": 31, "start_index": 997, "end_index": 1125, "_text": "He responded well to lasix w/ good UOP , but diastolic BP remained elevated at 170 , prompting initiation of nitroprusside gtt ."}
+{"sent_index": 32, "start_index": 1126, "end_index": 1174, "_text": "He is now admitted to the CCU for further care ."}
+{"sent_index": 33, "start_index": 1175, "end_index": 1195, "_text": "Past Medical History"}
+{"sent_index": 34, "start_index": 1198, "end_index": 1202, "_text": "none"}
+{"sent_index": 35, "start_index": 1203, "end_index": 1217, "_text": "Social History"}
+{"sent_index": 36, "start_index": 1220, "end_index": 1257, "_text": "significant for current tobacco use ."}
+{"sent_index": 37, "start_index": 1258, "end_index": 1342, "_text": "Drinks 3-4 beers a few times weekly , no h/o withdrawal symptoms , seizures or DT s."}
+{"sent_index": 38, "start_index": 1343, "end_index": 1377, "_text": "Snorts cocaine 1-2 times monthly ."}
+{"sent_index": 39, "start_index": 1378, "end_index": 1400, "_text": "Never injected drugs ."}
+{"sent_index": 40, "start_index": 1401, "end_index": 1415, "_text": "Family History"}
+{"sent_index": 41, "start_index": 1418, "end_index": 1499, "_text": "There is no family history of premature coronary artery disease or sudden death ."}
+{"sent_index": 42, "start_index": 1500, "end_index": 1513, "_text": "Physical Exam"}
+{"sent_index": 43, "start_index": 1516, "end_index": 1564, "_text": "VS : T, BP 181/122 , HR 84 , RR 12 , O2 98% 2L/m"}
+{"sent_index": 44, "start_index": 1565, "end_index": 1624, "_text": "Gen : lying flat in bed , pleasant and conversational , NAD"}
+{"sent_index": 45, "start_index": 1625, "end_index": 1639, "_text": "HEENT : NCAT ."}
+{"sent_index": 46, "start_index": 1640, "end_index": 1658, "_text": "Sclera anicteric ."}
+{"sent_index": 47, "start_index": 1659, "end_index": 1673, "_text": "PERRL , EOMI ."}
+{"sent_index": 48, "start_index": 1674, "end_index": 1691, "_text": "OP clear w/ MMM ."}
+{"sent_index": 49, "start_index": 1692, "end_index": 1696, "_text": "Neck"}
+{"sent_index": 50, "start_index": 1699, "end_index": 1724, "_text": "Supple with JVP of 8 cm ."}
+{"sent_index": 51, "start_index": 1725, "end_index": 1727, "_text": "CV"}
+{"sent_index": 52, "start_index": 1730, "end_index": 1803, "_text": "reg s1 , loud s2 , + 2/6 systolic murmur radiating to axilla , no s3/s4/r"}
+{"sent_index": 53, "start_index": 1804, "end_index": 1845, "_text": "Pulm : CTA b/l w/ no crackles or wheezing"}
+{"sent_index": 54, "start_index": 1846, "end_index": 1879, "_text": "Abd : obese , +BS , soft , NTND ."}
+{"sent_index": 55, "start_index": 1880, "end_index": 1934, "_text": "Ext : warm , 2+ DP b/l , 2+ pitting edema to knees b/l"}
+{"sent_index": 56, "start_index": 1935, "end_index": 1940, "_text": "Neuro"}
+{"sent_index": 57, "start_index": 1943, "end_index": 1968, "_text": "a/o x 3 , CN 04-04 intact"}
+{"sent_index": 58, "start_index": 1969, "end_index": 1986, "_text": "Pertinent Results"}
+{"sent_index": 59, "start_index": 1989, "end_index": 2008, "_text": "2016-07-18 05:30 PM"}
+{"sent_index": 60, "start_index": 2009, "end_index": 2040, "_text": "WBC - 7.7 RBC - 5.00 HGB - 15.0"}
+{"sent_index": 61, "start_index": 2041, "end_index": 2094, "_text": "HCT - 42.8 MCV - 86 MCH - 30.0 MCHC - 35.0 RDW - 14.6"}
+{"sent_index": 62, "start_index": 2095, "end_index": 2114, "_text": "2016-07-18 05:30 PM"}
+{"sent_index": 63, "start_index": 2115, "end_index": 2130, "_text": "PLT COUNT - 315"}
+{"sent_index": 64, "start_index": 2131, "end_index": 2150, "_text": "2016-07-18 05:30 PM"}
+{"sent_index": 65, "start_index": 2151, "end_index": 2174, "_text": "CK-MB - 4 proBNP - 7489"}
+{"sent_index": 66, "start_index": 2177, "end_index": 2196, "_text": "2016-07-18 05:30 PM"}
+{"sent_index": 67, "start_index": 2197, "end_index": 2233, "_text": "cTropnT - 0.02 *\n2016-07-18 05:30 PM"}
+{"sent_index": 68, "start_index": 2234, "end_index": 2327, "_text": "ALT(SGPT) - 77 * AST(SGOT) - 60 * CK(CPK) - 195 * ALK PHOS - 104 AMYLASE - 100 TOT BILI - 0.4"}
+{"sent_index": 69, "start_index": 2328, "end_index": 2425, "_text": "EKG demonstrated NSR at 87 bpm , nl axis , nl int , LVH w/ strain pattern , no ischemic changes ."}
+{"sent_index": 70, "start_index": 2426, "end_index": 2429, "_text": "CXR"}
+{"sent_index": 71, "start_index": 2432, "end_index": 2626, "_text": "Moderate to severe enlargement of the cardiac silhouette , and  particularly the left atrium accompanied by pulmonary vascular congestion and mild pulmonary edema consistent with heart failure ."}
+{"sent_index": 72, "start_index": 2627, "end_index": 2638, "_text": "Conclusions"}
+{"sent_index": 73, "start_index": 2641, "end_index": 2680, "_text": "The left atrium is moderately dilated ."}
+{"sent_index": 74, "start_index": 2681, "end_index": 2795, "_text": "There is moderate symmetric left ventricular hypertrophy with mild cavity dilation and severe global hypokinesis ."}
+{"sent_index": 75, "start_index": 2796, "end_index": 2834, "_text": "No left ventricular thrombus is seen ."}
+{"sent_index": 76, "start_index": 2835, "end_index": 2933, "_text": "Tissue Doppler imaging suggests an increased left ventricular filling pressure ( PCWP > 18 mmHg )."}
+{"sent_index": 77, "start_index": 2934, "end_index": 3016, "_text": "The right ventricular cavity is mildly dilated with severe free wall hypokinesis ."}
+{"sent_index": 78, "start_index": 3017, "end_index": 3074, "_text": "The aortic valve leaflets ( 3 ) are minimally thickened ."}
+{"sent_index": 79, "start_index": 3075, "end_index": 3127, "_text": "No aortic stenosis or aortic regurgitation is seen ."}
+{"sent_index": 80, "start_index": 3128, "end_index": 3179, "_text": "The mitral valve leaflets are structurally normal ."}
+{"sent_index": 81, "start_index": 3180, "end_index": 3215, "_text": "There is no mitral valve prolapse ."}
+{"sent_index": 82, "start_index": 3216, "end_index": 3258, "_text": "Mild ( 1+ ) mitral regurgitation is seen ."}
+{"sent_index": 83, "start_index": 3259, "end_index": 3317, "_text": "There is moderate pulmonary artery systolic hypertension ."}
+{"sent_index": 84, "start_index": 3318, "end_index": 3378, "_text": "There is a very small circumferential pericardial effusion ."}
+{"sent_index": 85, "start_index": 3379, "end_index": 3389, "_text": "IMPRESSION"}
+{"sent_index": 86, "start_index": 3392, "end_index": 3638, "_text": "Moderate symmetric eft ventricular hypertrophy with severe global biventricular hypokinesis c/w diffuse process ( toxin , metabolic , cannot exclude myocarditis ; in the absence of LVH on ECG , an infiltrative process should also be considered )."}
+{"sent_index": 87, "start_index": 3639, "end_index": 3666, "_text": "Mild mitral regurgitation ."}
+{"sent_index": 88, "start_index": 3667, "end_index": 3709, "_text": "Moderate pulmonary arterial hypertension ."}
+{"sent_index": 89, "start_index": 3710, "end_index": 3759, "_text": "Very small circumferential pericardial effusion ."}
+{"sent_index": 90, "start_index": 3760, "end_index": 3850, "_text": "Possible abnormality on the aortic valve as described above without aortic regurgitation ."}
+{"sent_index": 91, "start_index": 3851, "end_index": 3948, "_text": "If clinically indicated a TEE would be better able to define an abnormality of the aortic valve ."}
+{"sent_index": 92, "start_index": 3949, "end_index": 3970, "_text": "Brief Hospital Course"}
+{"sent_index": 93, "start_index": 3973, "end_index": 4134, "_text": "46 - yo-man w/ cocaine abuse presents w/ LE edema and DOE likely from diastolic heart failure in the setting of cocaine use complicated by hypertensive urgency ."}
+{"sent_index": 94, "start_index": 4135, "end_index": 4155, "_text": "Hypertensive urgency"}
+{"sent_index": 95, "start_index": 4158, "end_index": 4244, "_text": "BP 230/170 on presentation , most likely from chronic HTN exacerbated by cocaine use ."}
+{"sent_index": 96, "start_index": 4245, "end_index": 4358, "_text": "No signs of end-organ damage at present except for elevated creatinine , which is more likely a chronic problem ."}
+{"sent_index": 97, "start_index": 4359, "end_index": 4412, "_text": "The patient was started on labetalol and Lisinopril ."}
+{"sent_index": 98, "start_index": 4413, "end_index": 4518, "_text": "His blood pressure was taken down from 230 systolic to approx 160 systolic / 100 diastolic on discharge ."}
+{"sent_index": 99, "start_index": 4519, "end_index": 4569, "_text": "His lower extremity edema improved with diuresis ."}
+{"sent_index": 100, "start_index": 4570, "end_index": 4625, "_text": "An echo performed on admission showed an LF EF of 25% ."}
+{"sent_index": 101, "start_index": 4626, "end_index": 4776, "_text": "It is hoped with good blood pressure control and use of an ACE-I with follow up in addition to cocaine abstaining will improved his cardiac function ."}
+{"sent_index": 102, "start_index": 4777, "end_index": 4790, "_text": "Renal Failure"}
+{"sent_index": 103, "start_index": 4793, "end_index": 4913, "_text": "creatinine on admission was 1.6 Likely acute hypertensive nephropathy plus probalbe long-standing hypertensive disease ."}
+{"sent_index": 104, "start_index": 4914, "end_index": 4935, "_text": "discharged on ACE-I ."}
+{"sent_index": 105, "start_index": 4936, "end_index": 4949, "_text": "Substance Use"}
+{"sent_index": 106, "start_index": 4952, "end_index": 5021, "_text": "Social work saw patient and counceled him regarding substance abuse ."}
+{"sent_index": 107, "start_index": 5022, "end_index": 5150, "_text": "Discharged with Margaret Hallock , cardiology follow up as well as scheduled appointment with a new PCP @ Newton Health Center ."}
+{"sent_index": 108, "start_index": 5151, "end_index": 5175, "_text": "Medications on Admission"}
+{"sent_index": 109, "start_index": 5178, "end_index": 5182, "_text": "none"}
+{"sent_index": 110, "start_index": 5183, "end_index": 5204, "_text": "Discharge Medications"}
+{"sent_index": 111, "start_index": 5207, "end_index": 5274, "_text": "1. Aspirin 325 mg Tablet Sig : One ( 1 ) Tablet PO DAILY ( Daily )."}
+{"sent_index": 112, "start_index": 5275, "end_index": 5353, "_text": "2. Hydrochlorothiazide 25 mg Tablet Sig : One ( 1 ) Tablet PO DAILY ( Daily )."}
+{"sent_index": 113, "start_index": 5354, "end_index": 5389, "_text": "Disp :* 30 Tablet (s)* Refills :* 2"}
+{"sent_index": 114, "start_index": 5392, "end_index": 5467, "_text": "3. Labetalol 200 mg Tablet Sig : Two ( 2 ) Tablet PO BID ( 2 times a day )."}
+{"sent_index": 115, "start_index": 5468, "end_index": 5576, "_text": "Disp :* 120 Tablet (s)* Refills :* 2 *\n4. Lisinopril 20 mg Tablet Sig : One ( 1 ) Tablet PO DAILY ( Daily )."}
+{"sent_index": 116, "start_index": 5577, "end_index": 5636, "_text": "Disp :* 30 Tablet (s)* Refills :* 2 *\nDischarge Disposition"}
+{"sent_index": 117, "start_index": 5639, "end_index": 5643, "_text": "Home"}
+{"sent_index": 118, "start_index": 5644, "end_index": 5663, "_text": "Discharge Diagnosis"}
+{"sent_index": 119, "start_index": 5666, "end_index": 5673, "_text": "Primary"}
+{"sent_index": 120, "start_index": 5678, "end_index": 5700, "_text": "hypertensive emergency"}
+{"sent_index": 121, "start_index": 5703, "end_index": 5706, "_text": "ARF"}
+{"sent_index": 122, "start_index": 5709, "end_index": 5763, "_text": "mild transaminitis likely 03-25 etoh and cocaine abuse"}
+{"sent_index": 123, "start_index": 5766, "end_index": 5779, "_text": "cocaine abuse"}
+{"sent_index": 124, "start_index": 5782, "end_index": 5812, "_text": "lower extremity edema improved"}
+{"sent_index": 125, "start_index": 5813, "end_index": 5832, "_text": "Discharge Condition"}
+{"sent_index": 126, "start_index": 5835, "end_index": 5839, "_text": "well"}
+{"sent_index": 127, "start_index": 5840, "end_index": 5862, "_text": "Discharge Instructions"}
+{"sent_index": 128, "start_index": 5865, "end_index": 5906, "_text": "You came in with hypertensive emergency ."}
+{"sent_index": 129, "start_index": 5907, "end_index": 5973, "_text": "You were treated with medications to improve your blood pressure ."}
+{"sent_index": 130, "start_index": 5974, "end_index": 6004, "_text": "Notably you were discharged on"}
+{"sent_index": 131, "start_index": 6007, "end_index": 6032, "_text": "1. Lisinopril 20 mg daily"}
+{"sent_index": 132, "start_index": 6033, "end_index": 6052, "_text": "2. HCTZ 25 mg daily"}
+{"sent_index": 133, "start_index": 6053, "end_index": 6076, "_text": "3. Labetalol 400 mg bid"}
+{"sent_index": 134, "start_index": 6077, "end_index": 6095, "_text": "4. ASA 162mg daily"}
+{"sent_index": 135, "start_index": 6096, "end_index": 6157, "_text": "It is extremely important for you to take these medications ."}
+{"sent_index": 136, "start_index": 6158, "end_index": 6219, "_text": "It is very important that you followup with your cardiology ."}
+{"sent_index": 137, "start_index": 6220, "end_index": 6339, "_text": "Please return to the Deanna if you experience SOB , chest pain , fevers , chills , dizziness , decreased urine output ."}
+{"sent_index": 138, "start_index": 6340, "end_index": 6401, "_text": "It is also very important that you abstain from cocaine use ."}
+{"sent_index": 139, "start_index": 6402, "end_index": 6423, "_text": "Followup Instructions"}
+{"sent_index": 140, "start_index": 6426, "end_index": 6440, "_text": "Please see Dr."}
+{"sent_index": 141, "start_index": 6441, "end_index": 6493, "_text": "Villani on Monday 2016-07-25 at 10:00 in Smith 7th ."}
+{"sent_index": 142, "start_index": 6494, "end_index": 6554, "_text": "It is extremely important for you to keep this appointment ."}
+{"sent_index": 143, "start_index": 6555, "end_index": 6591, "_text": "You have a Primary Care Physician B."}
+{"sent_index": 144, "start_index": 6592, "end_index": 6623, "_text": "Schumacher on 07-29 @ 1:45 pm ."}
+{"sent_index": 145, "start_index": 6624, "end_index": 6715, "_text": "Please arrive 1 hour prior to the appointment to complete the Free Care Application there ."}
+{"sent_index": 146, "start_index": 6716, "end_index": 6790, "_text": "You need to bring a picture ID , proof of citizenship , proof of address ."}
+{"sent_index": 147, "start_index": 6791, "end_index": 6834, "_text": "The Clinci phone number is ( 754 ) 280-1011"}
+{"sent_index": 148, "start_index": 6835, "end_index": 6897, "_text": "Please followup with Dr. Lesha Lefebvre on 08-15 at 10:30 am ."}
+{"sent_index": 149, "start_index": 6898, "end_index": 6928, "_text": "His number is ( 532-803-1162 ."}
+{"sent_index": 150, "start_index": 6929, "end_index": 6980, "_text": "His secretary can help you clarify your insurance ."}
+{"sent_index": 151, "start_index": 6981, "end_index": 7006, "_text": "Ralph Katherine MD 31-164"}
+{"sent_index": 152, "start_index": 7007, "end_index": 7061, "_text": "Completed by : Terry Smith MD 12-201 2016-07-21 @ 1848"}
+{"sent_index": 153, "start_index": 7062, "end_index": 7086, "_text": "Signed electronically by"}
+{"sent_index": 154, "start_index": 7089, "end_index": 7101, "_text": "DR. Jennifer"}
+{"sent_index": 155, "start_index": 7102, "end_index": 7157, "_text": "Applebee on : Sandra 2016-07-21 9:54 PM\n( End of Report"}

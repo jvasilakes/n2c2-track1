@@ -1,0 +1,147 @@
+{"sent_index": 0, "start_index": 0, "end_index": 14, "_text": "Admission Date"}
+{"sent_index": 1, "start_index": 17, "end_index": 27, "_text": "2019-01-09"}
+{"sent_index": 2, "start_index": 28, "end_index": 42, "_text": "Discharge Date"}
+{"sent_index": 3, "start_index": 45, "end_index": 55, "_text": "2019-01-15"}
+{"sent_index": 4, "start_index": 56, "end_index": 69, "_text": "Date of Birth"}
+{"sent_index": 5, "start_index": 72, "end_index": 82, "_text": "1973-11-18"}
+{"sent_index": 6, "start_index": 83, "end_index": 86, "_text": "Sex"}
+{"sent_index": 7, "start_index": 89, "end_index": 90, "_text": "M"}
+{"sent_index": 8, "start_index": 91, "end_index": 98, "_text": "Service"}
+{"sent_index": 9, "start_index": 101, "end_index": 109, "_text": "MEDICINE"}
+{"sent_index": 10, "start_index": 110, "end_index": 119, "_text": "Allergies"}
+{"sent_index": 11, "start_index": 122, "end_index": 139, "_text": "Erythromycin Base"}
+{"sent_index": 12, "start_index": 140, "end_index": 149, "_text": "Attending"}
+{"sent_index": 13, "start_index": 152, "end_index": 175, "_text": "Stephanie I Sept , M.D."}
+{"sent_index": 14, "start_index": 176, "end_index": 191, "_text": "Chief Complaint"}
+{"sent_index": 15, "start_index": 194, "end_index": 203, "_text": "Syncope ."}
+{"sent_index": 16, "start_index": 204, "end_index": 240, "_text": "Major Surgical or Invasive Procedure"}
+{"sent_index": 17, "start_index": 243, "end_index": 249, "_text": "None ."}
+{"sent_index": 18, "start_index": 250, "end_index": 276, "_text": "History of Present Illness"}
+{"sent_index": 19, "start_index": 279, "end_index": 375, "_text": "45M w/no PMH presented to Chelseahospital after a syncopal episode on the morning of admission ."}
+{"sent_index": 20, "start_index": 376, "end_index": 492, "_text": "Pt was preparing lunch when suddenly felt lightheaded / faint and immediately fell to the kitchen floor face first ."}
+{"sent_index": 21, "start_index": 493, "end_index": 508, "_text": "He denies LOC ."}
+{"sent_index": 22, "start_index": 509, "end_index": 602, "_text": "Immediately there after he was very short of breath , felt lightheaded again and called 911 ."}
+{"sent_index": 23, "start_index": 603, "end_index": 657, "_text": "At Springfield , CT chest was positive for saddle PE ."}
+{"sent_index": 24, "start_index": 658, "end_index": 715, "_text": "VS were with stable BPs , tachy to 110-120 , sat 98% RA ."}
+{"sent_index": 25, "start_index": 716, "end_index": 821, "_text": "He received Lovenox 91 mg SC prior to transport and was transferred to Arbour Hospital for further care ."}
+{"sent_index": 26, "start_index": 822, "end_index": 902, "_text": "Mr. Anders states that 2 weeks prior to his presentation he hurt his left knee ."}
+{"sent_index": 27, "start_index": 903, "end_index": 990, "_text": "He was sitting on the floor legs crossed and stood up when he heard his knee CMED CCU ."}
+{"sent_index": 28, "start_index": 991, "end_index": 1083, "_text": "Then again on Sunday , 3 days PTA , again from sitting to standing heard his knee CMED CCU ."}
+{"sent_index": 29, "start_index": 1084, "end_index": 1165, "_text": "He was essentially bed bound for 3 days prior to admission , unable to ambulate ."}
+{"sent_index": 30, "start_index": 1166, "end_index": 1256, "_text": "He started to notice inflammation of his L calf / leg worse 2 days prior to presentation ."}
+{"sent_index": 31, "start_index": 1257, "end_index": 1370, "_text": "In this 2 week interval he denied having CP / chest discomfort or difficulty breathing , no cough or hemoptysis ."}
+{"sent_index": 32, "start_index": 1371, "end_index": 1387, "_text": "No f/c/ sweats ."}
+{"sent_index": 33, "start_index": 1388, "end_index": 1471, "_text": "Pt denied any bleeding or clotting disorders and has never had a clot in the past ."}
+{"sent_index": 34, "start_index": 1472, "end_index": 1492, "_text": "Past Medical History"}
+{"sent_index": 35, "start_index": 1495, "end_index": 1513, "_text": "Left knee injury ."}
+{"sent_index": 36, "start_index": 1514, "end_index": 1534, "_text": "Seasonal allergies ."}
+{"sent_index": 37, "start_index": 1535, "end_index": 1549, "_text": "Social History"}
+{"sent_index": 38, "start_index": 1554, "end_index": 1586, "_text": "Lives w/ wife & son in Jose , MA"}
+{"sent_index": 39, "start_index": 1589, "end_index": 1625, "_text": "Denies TOB use , occasional ETOH use"}
+{"sent_index": 40, "start_index": 1626, "end_index": 1640, "_text": "Family History"}
+{"sent_index": 41, "start_index": 1645, "end_index": 1646, "_text": "M"}
+{"sent_index": 42, "start_index": 1649, "end_index": 1657, "_text": "HTN , DM"}
+{"sent_index": 43, "start_index": 1660, "end_index": 1661, "_text": "F"}
+{"sent_index": 44, "start_index": 1664, "end_index": 1682, "_text": "COPD , Prostate CA"}
+{"sent_index": 45, "start_index": 1685, "end_index": 1717, "_text": "Grandfather died of MI at age 75"}
+{"sent_index": 46, "start_index": 1718, "end_index": 1731, "_text": "Physical Exam"}
+{"sent_index": 47, "start_index": 1734, "end_index": 1774, "_text": "VS : 99.4 HR 111 BP 110/64 RR16 97% 2LNC"}
+{"sent_index": 48, "start_index": 1775, "end_index": 1822, "_text": "GEN : NAD , pleasant speaking in full sentences"}
+{"sent_index": 49, "start_index": 1823, "end_index": 1875, "_text": "HEENT : MMM , OP clear , dried blood in nasal mucosa"}
+{"sent_index": 50, "start_index": 1876, "end_index": 1880, "_text": "RESP"}
+{"sent_index": 51, "start_index": 1883, "end_index": 1927, "_text": "CTABL , no crackles , no wheezing or rhonchi"}
+{"sent_index": 52, "start_index": 1928, "end_index": 1967, "_text": "CV : Reg , tachy Nml S1 , S2 , no M/R/G"}
+{"sent_index": 53, "start_index": 1968, "end_index": 1988, "_text": "ABD : soft ND/NT +BS"}
+{"sent_index": 54, "start_index": 1989, "end_index": 2152, "_text": "EXT : L leg/calf swollen , + Johnson sign , not tense , no cord palpable , L knee w/ medial meniscus area inflammed , not warm , no crepitus , feet-2+DP pulses b/l"}
+{"sent_index": 55, "start_index": 2153, "end_index": 2170, "_text": "Pertinent Results"}
+{"sent_index": 56, "start_index": 2173, "end_index": 2203, "_text": "1. CT OF HEAD WITHOUT CONTRAST"}
+{"sent_index": 57, "start_index": 2206, "end_index": 2265, "_text": "No evidence of acute intracranial hemorrhage or fractures ."}
+{"sent_index": 58, "start_index": 2266, "end_index": 2273, "_text": "2. ECHO"}
+{"sent_index": 59, "start_index": 2274, "end_index": 2285, "_text": "Conclusions"}
+{"sent_index": 60, "start_index": 2288, "end_index": 2323, "_text": "The left atrium is normal in size ."}
+{"sent_index": 61, "start_index": 2324, "end_index": 2375, "_text": "The estimated right atrial pressure is 16-20 mmHg ."}
+{"sent_index": 62, "start_index": 2376, "end_index": 2422, "_text": "Left ventricular wall thicknesses are normal ."}
+{"sent_index": 63, "start_index": 2423, "end_index": 2461, "_text": "The left ventricular cavity is small ."}
+{"sent_index": 64, "start_index": 2462, "end_index": 2527, "_text": "Left ventricular systolic function is hyperdynamic ( EF > 75% ) ."}
+{"sent_index": 65, "start_index": 2528, "end_index": 2567, "_text": "There is no ventricular septal defect ."}
+{"sent_index": 66, "start_index": 2568, "end_index": 2616, "_text": "The right ventricular cavity is mildly dilated ."}
+{"sent_index": 67, "start_index": 2617, "end_index": 2675, "_text": "Right ventricular systolic function is borderline normal ."}
+{"sent_index": 68, "start_index": 2676, "end_index": 2792, "_text": "The aortic valve leaflets ( 3 ) appear structurally normal with good leaflet excursion and no aortic regurgitation ."}
+{"sent_index": 69, "start_index": 2793, "end_index": 2844, "_text": "The mitral valve leaflets are structurally normal ."}
+{"sent_index": 70, "start_index": 2845, "end_index": 2880, "_text": "There is no mitral valve prolapse ."}
+{"sent_index": 71, "start_index": 2881, "end_index": 2939, "_text": "There is moderate pulmonary artery systolic hypertension ."}
+{"sent_index": 72, "start_index": 2940, "end_index": 2974, "_text": "There is no pericardial effusion ."}
+{"sent_index": 73, "start_index": 2975, "end_index": 2985, "_text": "Impression"}
+{"sent_index": 74, "start_index": 2988, "end_index": 3099, "_text": "mildly dilated right ventricle ; small , hyperdynamic left ventricle ; at least moderate pulmonary hypertension"}
+{"sent_index": 75, "start_index": 3100, "end_index": 3120, "_text": "3. BILATERAL LENI 's"}
+{"sent_index": 76, "start_index": 3121, "end_index": 3131, "_text": "IMPRESSION"}
+{"sent_index": 77, "start_index": 3134, "end_index": 3175, "_text": "No evidence of DVT in either lower limb ."}
+{"sent_index": 78, "start_index": 3176, "end_index": 3187, "_text": "OSH IMAGING"}
+{"sent_index": 79, "start_index": 3192, "end_index": 3224, "_text": "saddle PE , no CD or report sent"}
+{"sent_index": 80, "start_index": 3225, "end_index": 3228, "_text": "EKG"}
+{"sent_index": 81, "start_index": 3233, "end_index": 3309, "_text": "Sinus Tach , normal axis HR 119 ST Depression V3-V5 ; S1Q3T3 , p-pulmonale ."}
+{"sent_index": 82, "start_index": 3310, "end_index": 3342, "_text": "01-11 MRI Left Knee w/o Contrast"}
+{"sent_index": 83, "start_index": 3343, "end_index": 3431, "_text": "1. Bucket handle medial meniscal tear with flipped fragment in the intercondylar notch ."}
+{"sent_index": 84, "start_index": 3432, "end_index": 3487, "_text": "Complex tear involving the posterior Ellison and body ."}
+{"sent_index": 85, "start_index": 3488, "end_index": 3577, "_text": "2. Moderate knee joint effusion with possible ganglion cyst at the insertion of the PCL ."}
+{"sent_index": 86, "start_index": 3578, "end_index": 3607, "_text": "3. Discoid lateral meniscus ."}
+{"sent_index": 87, "start_index": 3608, "end_index": 3629, "_text": "Brief Hospital Course"}
+{"sent_index": 88, "start_index": 3632, "end_index": 3635, "_text": "Mr."}
+{"sent_index": 89, "start_index": 3636, "end_index": 3768, "_text": "Anders was admitted for anticoagulation and hemodynamic monitoring in the setting of saddle pulmonary embolus and left knee injury ."}
+{"sent_index": 90, "start_index": 3770, "end_index": 3774, "_text": ". PE"}
+{"sent_index": 91, "start_index": 3777, "end_index": 3891, "_text": "Given no other risk factors or likely causes , the most likely etiology for his embolus is DVT from the left leg ."}
+{"sent_index": 92, "start_index": 3892, "end_index": 3986, "_text": "He has no known clotting disorder but did have trauma to leg prompting immobility and stasis ."}
+{"sent_index": 93, "start_index": 3987, "end_index": 4107, "_text": "He remained hemodynmically stable throughout his hospitalization and did not have an oxygen requirement upon discharge ."}
+{"sent_index": 94, "start_index": 4108, "end_index": 4179, "_text": "Given no evidence of hemodynamic instability , lysis was not required ."}
+{"sent_index": 95, "start_index": 4180, "end_index": 4229, "_text": "He was anticoagulated with heparin and coumadin ."}
+{"sent_index": 96, "start_index": 4230, "end_index": 4389, "_text": "He will need to follow up with hematology for an outpatient thrombophilia work-up ( not done as inpatient as results would not change acute management of PE )."}
+{"sent_index": 97, "start_index": 4390, "end_index": 4483, "_text": "He will also require close follow up with his primary care provider for coumadin management ."}
+{"sent_index": 98, "start_index": 4484, "end_index": 4598, "_text": "Duration of his coumadin therapy to be determined by hematology , but likely to be at least 6 months in duration ."}
+{"sent_index": 99, "start_index": 4600, "end_index": 4609, "_text": ". Syncope"}
+{"sent_index": 100, "start_index": 4612, "end_index": 4630, "_text": "In setting of PE ."}
+{"sent_index": 101, "start_index": 4631, "end_index": 4677, "_text": "Remainder of his cardiac workup was negative ."}
+{"sent_index": 102, "start_index": 4678, "end_index": 4809, "_text": "He did have a small troponin leak , felt to be related to right heart strain in the setting of P-pulmonale related to clot burden ."}
+{"sent_index": 103, "start_index": 4810, "end_index": 4891, "_text": "His tronponin quickly trended down and he did not have EKG evidence of ischemia ."}
+{"sent_index": 104, "start_index": 4892, "end_index": 4966, "_text": "An ECHO did not reveal any wall motion abnormalities related to ischemia ."}
+{"sent_index": 105, "start_index": 4968, "end_index": 4980, "_text": ". Hematocrit"}
+{"sent_index": 106, "start_index": 4983, "end_index": 5066, "_text": "Dropped from 42.7 to 36 in setting of anticoagulation for saddle PE and IV fluids ."}
+{"sent_index": 107, "start_index": 5067, "end_index": 5093, "_text": "No active bleeding noted ."}
+{"sent_index": 108, "start_index": 5094, "end_index": 5111, "_text": "Pt asymptomatic ."}
+{"sent_index": 109, "start_index": 5113, "end_index": 5128, "_text": ". L knee injury"}
+{"sent_index": 110, "start_index": 5131, "end_index": 5172, "_text": "Given his history and physical exam , Mr."}
+{"sent_index": 111, "start_index": 5173, "end_index": 5241, "_text": "Anders presented with an injury most consistent with meniscal tear ."}
+{"sent_index": 112, "start_index": 5242, "end_index": 5328, "_text": "In order to facilitate therapy and to promote mobility , an MRI of the knee was done ."}
+{"sent_index": 113, "start_index": 5329, "end_index": 5444, "_text": "He was seen by physical therapy and will need to follow up with orthopaedics upon discharge for repeat evaluation ."}
+{"sent_index": 114, "start_index": 5446, "end_index": 5452, "_text": ". CODE"}
+{"sent_index": 115, "start_index": 5455, "end_index": 5466, "_text": "FULL CODE ."}
+{"sent_index": 116, "start_index": 5467, "end_index": 5491, "_text": "Medications on Admission"}
+{"sent_index": 117, "start_index": 5496, "end_index": 5508, "_text": "Claritin prn"}
+{"sent_index": 118, "start_index": 5511, "end_index": 5522, "_text": "Flonase prn"}
+{"sent_index": 119, "start_index": 5523, "end_index": 5544, "_text": "Discharge Disposition"}
+{"sent_index": 120, "start_index": 5547, "end_index": 5551, "_text": "Home"}
+{"sent_index": 121, "start_index": 5552, "end_index": 5571, "_text": "Discharge Diagnosis"}
+{"sent_index": 122, "start_index": 5574, "end_index": 5591, "_text": "Pulmonary embolus"}
+{"sent_index": 123, "start_index": 5592, "end_index": 5615, "_text": "Left knee meniscal tear"}
+{"sent_index": 124, "start_index": 5616, "end_index": 5635, "_text": "Discharge Condition"}
+{"sent_index": 125, "start_index": 5638, "end_index": 5644, "_text": "Stable"}
+{"sent_index": 126, "start_index": 5645, "end_index": 5667, "_text": "Discharge Instructions"}
+{"sent_index": 127, "start_index": 5670, "end_index": 5730, "_text": "You were admitted to the hospital for a pulmonary embolism ."}
+{"sent_index": 128, "start_index": 5731, "end_index": 5769, "_text": "You were treated with blood thinners ."}
+{"sent_index": 129, "start_index": 5770, "end_index": 5846, "_text": "You have been started on an oral blood thinner called Coumadin ( Warfarin )."}
+{"sent_index": 130, "start_index": 5847, "end_index": 5902, "_text": "Please continue to take this medication as prescribed ."}
+{"sent_index": 131, "start_index": 5903, "end_index": 6006, "_text": "You must have your INR ( blood levels ) checked on a regular basis until your INR levels remain 01-19 ."}
+{"sent_index": 132, "start_index": 6007, "end_index": 6052, "_text": "The MRI of your knee showed a meniscal tear ."}
+{"sent_index": 133, "start_index": 6053, "end_index": 6148, "_text": "Please schedule an appointment with your orthopedic surgeon to determine a plan for treatment ."}
+{"sent_index": 134, "start_index": 6149, "end_index": 6218, "_text": "Please follow-up with your Primary Care doctor Marion Bock as below ."}
+{"sent_index": 135, "start_index": 6219, "end_index": 6332, "_text": "Please return to the hospital if you experience chest pain , shortness of breath , lightheadedness or dizziness ."}
+{"sent_index": 136, "start_index": 6333, "end_index": 6354, "_text": "Followup Instructions"}
+{"sent_index": 137, "start_index": 6357, "end_index": 6438, "_text": "Please follow-up with your Primary care doctor Larry Bock 2019-01-16 at 8:30 AM ."}
+{"sent_index": 138, "start_index": 6439, "end_index": 6536, "_text": "At this appointment , you should confirm orthopedic follow-up and request a hematology referral ."}
+{"sent_index": 139, "start_index": 6537, "end_index": 6557, "_text": "Call to reschedule ."}
+{"sent_index": 140, "start_index": 6558, "end_index": 6579, "_text": "Heidi Laura MD 44-725"}
+{"sent_index": 141, "start_index": 6580, "end_index": 6601, "_text": "Completed by : Daniel"}
+{"sent_index": 142, "start_index": 6602, "end_index": 6636, "_text": "Tapaha MD 73-060 2019-01-15 @ 0918"}
+{"sent_index": 143, "start_index": 6637, "end_index": 6661, "_text": "Signed electronically by"}
+{"sent_index": 144, "start_index": 6664, "end_index": 6677, "_text": "DR. Steven W."}
+{"sent_index": 145, "start_index": 6678, "end_index": 6717, "_text": "Weekley on : Sandra 2019-01-15 10:22 AM"}
+{"sent_index": 146, "start_index": 6720, "end_index": 6733, "_text": "End of Report"}

@@ -1,0 +1,134 @@
+{"sent_index": 0, "start_index": 0, "end_index": 14, "_text": "Admission Date"}
+{"sent_index": 1, "start_index": 17, "end_index": 27, "_text": "2010-08-26"}
+{"sent_index": 2, "start_index": 28, "end_index": 42, "_text": "Discharge Date"}
+{"sent_index": 3, "start_index": 45, "end_index": 55, "_text": "2010-09-02"}
+{"sent_index": 4, "start_index": 56, "end_index": 69, "_text": "Date of Birth"}
+{"sent_index": 5, "start_index": 72, "end_index": 82, "_text": "1961-06-26"}
+{"sent_index": 6, "start_index": 83, "end_index": 86, "_text": "Sex"}
+{"sent_index": 7, "start_index": 89, "end_index": 90, "_text": "M"}
+{"sent_index": 8, "start_index": 91, "end_index": 98, "_text": "Service"}
+{"sent_index": 9, "start_index": 101, "end_index": 108, "_text": "HISTORY"}
+{"sent_index": 10, "start_index": 109, "end_index": 127, "_text": "OF PRESENT ILLNESS"}
+{"sent_index": 11, "start_index": 130, "end_index": 140, "_text": "Mr. Robert"}
+{"sent_index": 12, "start_index": 141, "end_index": 220, "_text": "Mackey is a 49 year old gentleman with a 22 year history of diabetes mellitus ."}
+{"sent_index": 13, "start_index": 221, "end_index": 470, "_text": "He has a history of peripheral neuropathy , kidney transplantation in 2003 secondary to diabetic nephropathy , as well as throat cancer in 2004 treated with local resection and radical neck dissection on the left as well as postoperative radiation ."}
+{"sent_index": 14, "start_index": 471, "end_index": 474, "_text": "Mr."}
+{"sent_index": 15, "start_index": 476, "end_index": 711, "_text": "Mackey also had signs and symptoms consistent with cervical myelopathy ; a cervical MRI scan showed very impressive disc herniations at C5-C6 , less so at C4-C5 , with clear cut cord compression , particularly on the right side C5-C6 ."}
+{"sent_index": 16, "start_index": 712, "end_index": 832, "_text": "Therefore , he was admitted for C4-C5 and C5-C6 anterior diskectomy with autologous bone graft and instrumented fusion ."}
+{"sent_index": 17, "start_index": 833, "end_index": 853, "_text": "PHYSICAL EXAMINATION"}
+{"sent_index": 18, "start_index": 856, "end_index": 1024, "_text": "Postoperative physical examination demonstrated that he was afebrile at 97 degrees ; blood pressure 145/80 ; pulse 60 ; respiratory rate 10 ; 100% on a non-rebreather ."}
+{"sent_index": 19, "start_index": 1025, "end_index": 1145, "_text": "He was awake , alert , uncomfortable secondary to incisional tenderness at neck site as well as right iliac graft site ."}
+{"sent_index": 20, "start_index": 1146, "end_index": 1197, "_text": "The wounds were clean , dry and intact , and flat ."}
+{"sent_index": 21, "start_index": 1198, "end_index": 1213, "_text": "HOSPITAL COURSE"}
+{"sent_index": 22, "start_index": 1216, "end_index": 1338, "_text": "While in the PACU , Anesthesia was called because the patient became dyspneic and tachypneic and his SAO2 dropped to 89% ."}
+{"sent_index": 23, "start_index": 1339, "end_index": 1381, "_text": "His respiratory rate was 30 on face mask ."}
+{"sent_index": 24, "start_index": 1382, "end_index": 1531, "_text": "Interoperatively , he was positive two liters with a stable blood pressure and heart rate , although requiring some neo-synephrine interoperatively ."}
+{"sent_index": 25, "start_index": 1532, "end_index": 1638, "_text": "He responded to intravenous Lasix with 3.2 liters of urine output as well as marked clinical improvement ."}
+{"sent_index": 26, "start_index": 1639, "end_index": 1787, "_text": "The etiology for his congestive heart failure was determined likely to be diastolic dysfunction from increased heart rate as well as excess volume ."}
+{"sent_index": 27, "start_index": 1788, "end_index": 1926, "_text": "No definite evidence for significant myocardial ischemia , although cardiac enzymes were sent and he ruled out for myocardial infarction ."}
+{"sent_index": 28, "start_index": 1927, "end_index": 2045, "_text": "He was admitted to the Surgical Intensive Care Unit where his respiratory and cardiac status was monitored carefully ."}
+{"sent_index": 29, "start_index": 2046, "end_index": 2107, "_text": "He was given Lasix to continue to diurese the excess volume ."}
+{"sent_index": 30, "start_index": 2108, "end_index": 2157, "_text": "He was also put on Lopressor 150 mg twice a day ."}
+{"sent_index": 31, "start_index": 2158, "end_index": 2229, "_text": "Also in the Intensive Care Unit , O2 saturation was closely monitored ."}
+{"sent_index": 32, "start_index": 2230, "end_index": 2331, "_text": "The patient became agitated with both tent and Bi-PAP machine , although continued to saturate well ."}
+{"sent_index": 33, "start_index": 2332, "end_index": 2438, "_text": "He was transferred to Medicine the morning of 2010-08-30 , for continued medical management post surgery ."}
+{"sent_index": 34, "start_index": 2439, "end_index": 2602, "_text": "On the day of transfer , the patient was noted to be confused with waxing and waning sensorium ; thus , a delirium work-up was initiated looking for precipitants ."}
+{"sent_index": 35, "start_index": 2603, "end_index": 2701, "_text": "1. When his O2 saturation was monitored , his pulse oximetry remained in the 90s during his stay ."}
+{"sent_index": 36, "start_index": 2702, "end_index": 2925, "_text": "2. His non-essential medications that may have been contributing to his change in mental status were discontinued ; those included Temocillin , Nortriptyline , Haldol , Lorazepam , Venlafaxine , Bupropion , and Gabapentin ."}
+{"sent_index": 37, "start_index": 2926, "end_index": 2977, "_text": "In addition , his cyclosporin levels were checked ."}
+{"sent_index": 38, "start_index": 2978, "end_index": 3002, "_text": "3. Hypo or hyperglycemia"}
+{"sent_index": 39, "start_index": 3005, "end_index": 3091, "_text": "Mahoney had been following with their appreciated recommendations on glucose control ."}
+{"sent_index": 40, "start_index": 3092, "end_index": 3221, "_text": "Finger sticks were in the 150 s when acutely agitated , therefore , it was not determined that glucose levels were contributory ."}
+{"sent_index": 41, "start_index": 3222, "end_index": 3259, "_text": "4. Infectious causes were evaluated ."}
+{"sent_index": 42, "start_index": 3260, "end_index": 3313, "_text": "He was febrile in the Intensive Care Unit to 101.0 F."}
+{"sent_index": 43, "start_index": 3316, "end_index": 3414, "_text": "yet , chest x-ray , blood cultures , urinalysis and urine cultures were all negative for sources ."}
+{"sent_index": 44, "start_index": 3415, "end_index": 3557, "_text": "A lumbar puncture was considered , although not performed due to the fact that the cerebrospinal fluid was not breached during the procedure ."}
+{"sent_index": 45, "start_index": 3558, "end_index": 3765, "_text": "5. Mass effect was considered , although no focal deficits were ever noted on examination and due to the fluctuating sensorium , it was determined that there was no severe underlying structural abnormality ."}
+{"sent_index": 46, "start_index": 3766, "end_index": 3859, "_text": "A head and neck CT scan , non-contrast , were ordered though to evaluate for such processes ."}
+{"sent_index": 47, "start_index": 3860, "end_index": 3983, "_text": "No acute intracranial hemorrhages or midline shifts were noted , although a soft tissue mass was noted at the level of C2 ."}
+{"sent_index": 48, "start_index": 3984, "end_index": 4059, "_text": "This was determined to be within the normal expected changes post surgery ."}
+{"sent_index": 49, "start_index": 4060, "end_index": 4091, "_text": "6. Trauma was also considered ."}
+{"sent_index": 50, "start_index": 4092, "end_index": 4181, "_text": "The patient was found out of bed but no signs of head trauma , no loss of consciousness ."}
+{"sent_index": 51, "start_index": 4182, "end_index": 4227, "_text": "Throughout his stay , Chem-10 was monitored ."}
+{"sent_index": 52, "start_index": 4228, "end_index": 4313, "_text": "There were no electrolytes or mineral abnormalities that could explain his delirium ."}
+{"sent_index": 53, "start_index": 4314, "end_index": 4401, "_text": "Liver function tests were checked , only total bilirubin was slightly elevated at 1.6 ."}
+{"sent_index": 54, "start_index": 4402, "end_index": 4454, "_text": "TSH was within normal limits as was B12 and folate ."}
+{"sent_index": 55, "start_index": 4455, "end_index": 4521, "_text": "RPR evaluating for possible neurologic syphilis was also checked ."}
+{"sent_index": 56, "start_index": 4522, "end_index": 4549, "_text": "The assay was nonreactive ."}
+{"sent_index": 57, "start_index": 4550, "end_index": 4680, "_text": "An EEG was also considered to rule out non-convulsive status epilepticus , although again this did not seem to be a likely cause ."}
+{"sent_index": 58, "start_index": 4681, "end_index": 4878, "_text": "On the evening of the 22nd , the patient became acutely agitated , threatening to leave , and also threatening to harm those nurses and physicians that were attempting to prevent him from leaving ."}
+{"sent_index": 59, "start_index": 4879, "end_index": 5055, "_text": "Security was notified who then arrived to the room and helped to place the patient in four-point\nrestraints , for the safety of both the patient and the staff of the hospital ."}
+{"sent_index": 60, "start_index": 5056, "end_index": 5172, "_text": "The restraints were weaned off overnight although he became acutely agitated and they were replaced early on 08-31 ."}
+{"sent_index": 61, "start_index": 5173, "end_index": 5289, "_text": "Later in the morning on 08-31 , the patient was more oriented and alert , and asked to have the restraints removed ."}
+{"sent_index": 62, "start_index": 5290, "end_index": 5325, "_text": "They were taken off two at a time ."}
+{"sent_index": 63, "start_index": 5326, "end_index": 5408, "_text": "The patient continued to do well and did not require restraints after that event ."}
+{"sent_index": 64, "start_index": 5409, "end_index": 5526, "_text": "Intramuscular as well as intravenous Haldol were ordered p.r.n. for emergency use should he become acutely agitated ."}
+{"sent_index": 65, "start_index": 5527, "end_index": 5609, "_text": "haldol as well as the restraints were not required after the morning of the 23rd ."}
+{"sent_index": 66, "start_index": 5610, "end_index": 5636, "_text": "Each progressive day,  Mr."}
+{"sent_index": 67, "start_index": 5637, "end_index": 5714, "_text": "Donald delirium abated with return to baseline mental status early on 09-01 ."}
+{"sent_index": 68, "start_index": 5715, "end_index": 5836, "_text": "The likely cause of the delirium was a combination of surgery and Intensive Care Unit stay in addition to poly-pharmacy ."}
+{"sent_index": 69, "start_index": 5837, "end_index": 5931, "_text": "Other concerns during his stay was his kidney function , due to his renal transplant in 2003 ."}
+{"sent_index": 70, "start_index": 5932, "end_index": 6088, "_text": "His immunosuppressive therapy was continued throughout his stay ; his creatinine remained approximately 2.3 to 2.4 ; he has a baseline renal insufficiency ."}
+{"sent_index": 71, "start_index": 6089, "end_index": 6196, "_text": "With this in mind , when obtaining a CT scan it was determined that contrast would not be the best option ."}
+{"sent_index": 72, "start_index": 6197, "end_index": 6302, "_text": "While the patient was in restraints , gentle hydration was initiated since p.o. intake was not adequate ."}
+{"sent_index": 73, "start_index": 6303, "end_index": 6435, "_text": "As for his diabetes mellitus , the Mahoney Team provided updated recommendations each day , adjusting for the changing p.o. intake ."}
+{"sent_index": 74, "start_index": 6436, "end_index": 6470, "_text": "The only other complaints from Mr."}
+{"sent_index": 75, "start_index": 6471, "end_index": 6564, "_text": "Mackey during his stay were :\nSoreness at his operative sites , for which he was given p.r.n."}
+{"sent_index": 76, "start_index": 6565, "end_index": 6605, "_text": "Tylenol once his delirium had resolved ."}
+{"sent_index": 77, "start_index": 6606, "end_index": 6712, "_text": "In addition , he also complained of difficulty with swallowing , necessitating only soft and liquid diet ."}
+{"sent_index": 78, "start_index": 6713, "end_index": 6813, "_text": "This was attributed to postoperative swelling and changes from his diskectomy performed 2010-08-27 ."}
+{"sent_index": 79, "start_index": 6814, "end_index": 6825, "_text": "DISPOSITION"}
+{"sent_index": 80, "start_index": 6828, "end_index": 6865, "_text": "The patient was discharged on 09-02 ."}
+{"sent_index": 81, "start_index": 6866, "end_index": 6888, "_text": "DISCHARGE INSTRUCTIONS"}
+{"sent_index": 82, "start_index": 6891, "end_index": 6952, "_text": "1. Follow-up with Dr. Williams on Tuesday , 09-07 , at noon ."}
+{"sent_index": 83, "start_index": 6953, "end_index": 7026, "_text": "2. Follow-up with Dr. Michael , his psychiatrist , on Wednesday , 09-08 ."}
+{"sent_index": 84, "start_index": 7027, "end_index": 7138, "_text": "3. He was also discharged home with Visiting Nurse Association for Physical Therapy evaluation of home safety ."}
+{"sent_index": 85, "start_index": 7139, "end_index": 7160, "_text": "DISCHARGE MEDICATIONS"}
+{"sent_index": 86, "start_index": 7163, "end_index": 7194, "_text": "1. Venlafaxine XR 75 mg q. a.m."}
+{"sent_index": 87, "start_index": 7195, "end_index": 7221, "_text": "2. Furosemide 20 mg q.o.d."}
+{"sent_index": 88, "start_index": 7222, "end_index": 7256, "_text": "3. Metoprolol 100 mg twice a day ."}
+{"sent_index": 89, "start_index": 7257, "end_index": 7298, "_text": "4. Nitroglycerin sublingual 0.3 mg p.r.n."}
+{"sent_index": 90, "start_index": 7299, "end_index": 7329, "_text": "5. Cyclosporin microemulsion ."}
+{"sent_index": 91, "start_index": 7330, "end_index": 7360, "_text": "6. Neoral 100 mg twice a day ."}
+{"sent_index": 92, "start_index": 7361, "end_index": 7389, "_text": "7. Zithropren 50 mg q. day ."}
+{"sent_index": 93, "start_index": 7390, "end_index": 7418, "_text": "8. Prednisone 10 mg q. day ."}
+{"sent_index": 94, "start_index": 7419, "end_index": 7451, "_text": "9. Minoxidil 10 mg twice a day ."}
+{"sent_index": 95, "start_index": 7452, "end_index": 7479, "_text": "10. Prilosec 20 mg q. day ."}
+{"sent_index": 96, "start_index": 7480, "end_index": 7527, "_text": "11. NPH 30 units q. a.m. , 5 to 6 units q. p.m."}
+{"sent_index": 97, "start_index": 7528, "end_index": 7588, "_text": "12. Regular insulin 5 units q. a.m. and 3 to 5 units q. p.m."}
+{"sent_index": 98, "start_index": 7589, "end_index": 7619, "_text": "13. Wellbutrin 100 mg q. day ."}
+{"sent_index": 99, "start_index": 7620, "end_index": 7644, "_text": "14. Zocor 60 mg q. day ."}
+{"sent_index": 100, "start_index": 7645, "end_index": 7686, "_text": "15. Nitroglycerin SR 2.5 mg twice a day ."}
+{"sent_index": 101, "start_index": 7687, "end_index": 7776, "_text": "He was instructed to hold the following three medications that he took prior to admission"}
+{"sent_index": 102, "start_index": 7779, "end_index": 7830, "_text": "Nortriptyline 10 mg q. h.s. ; Flomax 0.4 mg q. h.s."}
+{"sent_index": 103, "start_index": 7833, "end_index": 7869, "_text": "Neurontin 600 mg three times a day ."}
+{"sent_index": 104, "start_index": 7870, "end_index": 7934, "_text": "He was instructed not to restart these until seen by Dr. Ercek ."}
+{"sent_index": 105, "start_index": 7935, "end_index": 7954, "_text": "DISCHARGE DIAGNOSES"}
+{"sent_index": 106, "start_index": 7957, "end_index": 8041, "_text": "1. C4-C5 , C5-C6 , anterior microdiscectomy and fusion with right iliac bone graft ."}
+{"sent_index": 107, "start_index": 8042, "end_index": 8105, "_text": "For completeness , the patient 's complete past medical history"}
+{"sent_index": 108, "start_index": 8108, "end_index": 8213, "_text": "1. End-stage renal disease secondary to type 1 diabetes mellitus ; status post renal transplant in 2003 ."}
+{"sent_index": 109, "start_index": 8214, "end_index": 8263, "_text": "2. History of multiple urinary tract infections ."}
+{"sent_index": 110, "start_index": 8264, "end_index": 8283, "_text": "3. Pyelonephritis ."}
+{"sent_index": 111, "start_index": 8284, "end_index": 8310, "_text": "4. Creatinine 2.2 to 2.5 ."}
+{"sent_index": 112, "start_index": 8311, "end_index": 8381, "_text": "5. Right coronary artery stent in 2008 ; ejection fraction 60 to 65% ."}
+{"sent_index": 113, "start_index": 8382, "end_index": 8467, "_text": "6. Type 1 diabetes mellitus with triopathy , retinopathy , neuropathy , nephropathy ."}
+{"sent_index": 114, "start_index": 8468, "end_index": 8576, "_text": "7. Benign prostatic hypertrophy status post transurethral resection of the prostate ; self catheterization ."}
+{"sent_index": 115, "start_index": 8577, "end_index": 8594, "_text": "8. Hypertension ."}
+{"sent_index": 116, "start_index": 8595, "end_index": 8620, "_text": "9. Hypercholesterolemia ."}
+{"sent_index": 117, "start_index": 8621, "end_index": 8638, "_text": "10. Hepatitis B ."}
+{"sent_index": 118, "start_index": 8639, "end_index": 8708, "_text": "11. Throat cancer status post right neck dissection and XRT in 2004 ."}
+{"sent_index": 119, "start_index": 8709, "end_index": 8732, "_text": "12. Cerebral aneurysm ."}
+{"sent_index": 120, "start_index": 8733, "end_index": 8763, "_text": "13. Left prosthetic CMED CCU ."}
+{"sent_index": 121, "start_index": 8764, "end_index": 8773, "_text": "ALLERGIES"}
+{"sent_index": 122, "start_index": 8776, "end_index": 8804, "_text": "Gentamicin , and ibuprofen ."}
+{"sent_index": 123, "start_index": 8805, "end_index": 8833, "_text": "Kenneth Jeffrey , MD  89-808"}
+{"sent_index": 124, "start_index": 8834, "end_index": 8845, "_text": "Dictated By"}
+{"sent_index": 125, "start_index": 8848, "end_index": 8871, "_text": "Michael S Bonham , M.D."}
+{"sent_index": 126, "start_index": 8872, "end_index": 8882, "_text": "MEDQUIST36"}
+{"sent_index": 127, "start_index": 8883, "end_index": 8903, "_text": "D : 2010-09-02 18:23"}
+{"sent_index": 128, "start_index": 8904, "end_index": 8924, "_text": "T : 2010-09-07 16:04"}
+{"sent_index": 129, "start_index": 8925, "end_index": 8937, "_text": "JOB #:\n36814"}
+{"sent_index": 130, "start_index": 8938, "end_index": 8962, "_text": "Signed electronically by"}
+{"sent_index": 131, "start_index": 8965, "end_index": 8989, "_text": "DR. Victoria Williams on"}
+{"sent_index": 132, "start_index": 8992, "end_index": 9014, "_text": "MON 2010-11-08 3:18 PM"}
+{"sent_index": 133, "start_index": 9017, "end_index": 9030, "_text": "End of Report"}

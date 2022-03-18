@@ -1,0 +1,147 @@
+{"sent_index": 0, "start_index": 0, "end_index": 7, "_text": "7901625"}
+{"sent_index": 1, "start_index": 8, "end_index": 35, "_text": "Admission Date :\n2015-03-16"}
+{"sent_index": 2, "start_index": 36, "end_index": 50, "_text": "Discharge Date"}
+{"sent_index": 3, "start_index": 53, "end_index": 63, "_text": "2015-03-19"}
+{"sent_index": 4, "start_index": 64, "end_index": 77, "_text": "Date of Birth"}
+{"sent_index": 5, "start_index": 80, "end_index": 83, "_text": "Sex"}
+{"sent_index": 6, "start_index": 86, "end_index": 93, "_text": "Service"}
+{"sent_index": 7, "start_index": 96, "end_index": 122, "_text": "HISTORY OF PRESENT ILLNESS"}
+{"sent_index": 8, "start_index": 125, "end_index": 423, "_text": "The patient is an 82 - year-old male with a history of hypertension , remote tobacco abuse , chronic renal insufficiency , and a history of a TIA who was in his usual state of health until five nights prior to admission when he awoke at midnight with severe epigastric pain radiating to both arms ."}
+{"sent_index": 9, "start_index": 424, "end_index": 460, "_text": "He also had bilateral arm numbness ."}
+{"sent_index": 10, "start_index": 461, "end_index": 558, "_text": "The symptoms were associated with diaphoresis and shortness of breath but no nausea or vomiting ."}
+{"sent_index": 11, "start_index": 559, "end_index": 804, "_text": "After approximately one hour , he presented to the Bristol County Tuberculosis Hospital Dana-Farber Cancer Institute Campus where he ruled in for a non-ST elevation MI with a CK of 438 with a peak CK MB of 19.8 and troponin that peaked at 10.2 ."}
+{"sent_index": 12, "start_index": 805, "end_index": 896, "_text": "He was started on nitrates there as well as heparin and Integrelin and remained pain-free ."}
+{"sent_index": 13, "start_index": 897, "end_index": 1016, "_text": "He denied any history of similar symptoms in the past and has had no prior history of angina or myocardial infarction ."}
+{"sent_index": 14, "start_index": 1017, "end_index": 1108, "_text": "The patient was subsequently transferred to Youville Hospital for cardiac catheterization ."}
+{"sent_index": 15, "start_index": 1109, "end_index": 1354, "_text": "At the time of transfer , he was initially admitted to the CMI Service after undergoing cardiac catheterization which revealed a long LAD lesion that was angioplastied without stent placement , and a total occlusion of the RCA with collaterals ."}
+{"sent_index": 16, "start_index": 1355, "end_index": 1557, "_text": "He subsequently became hypotensive and bradycardiac in the Catheterization Laboratory which responded to IV fluids , dopamine , Atropine , and he was then transferred to the CCU for further monitoring ."}
+{"sent_index": 17, "start_index": 1558, "end_index": 1684, "_text": "He had a bedside transthoracic echocardiogram done in the Cardiac Catheterization laboratory without evidence of an effusion ."}
+{"sent_index": 18, "start_index": 1685, "end_index": 1709, "_text": "A Swan was also placed ."}
+{"sent_index": 19, "start_index": 1710, "end_index": 1779, "_text": "There were no stents deployed at all throughout the catheterization ."}
+{"sent_index": 20, "start_index": 1780, "end_index": 1872, "_text": "By the time he was admitted , he was off pressors and hemodynamically stable and pain-free ."}
+{"sent_index": 21, "start_index": 1873, "end_index": 1893, "_text": "PAST MEDICAL HISTORY"}
+{"sent_index": 22, "start_index": 1896, "end_index": 1909, "_text": "TIA in 1998 ."}
+{"sent_index": 23, "start_index": 1910, "end_index": 1952, "_text": "COPD with 2 liters dependence of home 02 ."}
+{"sent_index": 24, "start_index": 1953, "end_index": 1958, "_text": "BPH ."}
+{"sent_index": 25, "start_index": 1959, "end_index": 1988, "_text": "Chronic renal insufficiency ."}
+{"sent_index": 26, "start_index": 1989, "end_index": 2000, "_text": "Gastritis ."}
+{"sent_index": 27, "start_index": 2001, "end_index": 2009, "_text": "Asthma ."}
+{"sent_index": 28, "start_index": 2010, "end_index": 2024, "_text": "SOCIAL HISTORY"}
+{"sent_index": 29, "start_index": 2027, "end_index": 2053, "_text": "He lis currently widowed ."}
+{"sent_index": 30, "start_index": 2054, "end_index": 2125, "_text": "He lives in senior apartment housing in Cambridge on the second floor ."}
+{"sent_index": 31, "start_index": 2126, "end_index": 2145, "_text": "He is very active ."}
+{"sent_index": 32, "start_index": 2146, "end_index": 2181, "_text": "He uses a cane p.r.n. for walking ."}
+{"sent_index": 33, "start_index": 2182, "end_index": 2211, "_text": "He denied any falls at home ."}
+{"sent_index": 34, "start_index": 2212, "end_index": 2259, "_text": "His only family member is a niece in Missouri ."}
+{"sent_index": 35, "start_index": 2260, "end_index": 2285, "_text": "He is currently retired ."}
+{"sent_index": 36, "start_index": 2286, "end_index": 2354, "_text": "He has a remote tobacco history and reports occasional alcohol use ."}
+{"sent_index": 37, "start_index": 2355, "end_index": 2385, "_text": "He denied any other drug use ."}
+{"sent_index": 38, "start_index": 2386, "end_index": 2400, "_text": "FAMILY HISTORY"}
+{"sent_index": 39, "start_index": 2403, "end_index": 2420, "_text": "Noncontributory ."}
+{"sent_index": 40, "start_index": 2421, "end_index": 2430, "_text": "ALLERGIES"}
+{"sent_index": 41, "start_index": 2433, "end_index": 2474, "_text": "The patient has no known drug allergies ."}
+{"sent_index": 42, "start_index": 2475, "end_index": 2499, "_text": "MEDICATIONS ON ADMISSION"}
+{"sent_index": 43, "start_index": 2502, "end_index": 2524, "_text": "1. Aspirin 325 mg q.d."}
+{"sent_index": 44, "start_index": 2525, "end_index": 2551, "_text": "2. Metoprolol 50 mg b.i.d."}
+{"sent_index": 45, "start_index": 2552, "end_index": 2573, "_text": "3. Lipitor 10 mg q.d."}
+{"sent_index": 46, "start_index": 2574, "end_index": 2587, "_text": "4. MDI p.r.n."}
+{"sent_index": 47, "start_index": 2588, "end_index": 2617, "_text": "5. Heparin drip on transfer ."}
+{"sent_index": 48, "start_index": 2618, "end_index": 2650, "_text": "6. Integrelin drip on transfer ."}
+{"sent_index": 49, "start_index": 2651, "end_index": 2671, "_text": "PHYSICAL EXAMINATION"}
+{"sent_index": 50, "start_index": 2674, "end_index": 2685, "_text": "Vital signs"}
+{"sent_index": 51, "start_index": 2688, "end_index": 2841, "_text": "Heart rate 91 , regular , blood pressure 169/81 from a right groin A line , respirations 12 , oxygen saturation of 97 percent on 2 liters nasal cannula ."}
+{"sent_index": 52, "start_index": 2842, "end_index": 2849, "_text": "General"}
+{"sent_index": 53, "start_index": 2852, "end_index": 2903, "_text": "He was a well appearing male in no acute distress ."}
+{"sent_index": 54, "start_index": 2904, "end_index": 2909, "_text": "HEENT"}
+{"sent_index": 55, "start_index": 2912, "end_index": 3004, "_text": "Crusting around the right eyelid but the pupils were equal , round , and reactive to light ."}
+{"sent_index": 56, "start_index": 3005, "end_index": 3024, "_text": "He was edentulous ."}
+{"sent_index": 57, "start_index": 3025, "end_index": 3029, "_text": "Neck"}
+{"sent_index": 58, "start_index": 3032, "end_index": 3092, "_text": "The neck was supple without lymphadenopathy or thyromegaly ."}
+{"sent_index": 59, "start_index": 3093, "end_index": 3107, "_text": "Cardiovascular"}
+{"sent_index": 60, "start_index": 3110, "end_index": 3157, "_text": "His heart was regular with a normal S1 and S2 ."}
+{"sent_index": 61, "start_index": 3158, "end_index": 3197, "_text": "He had no murmurs , rubs , or gallops ."}
+{"sent_index": 62, "start_index": 3198, "end_index": 3203, "_text": "Lungs"}
+{"sent_index": 63, "start_index": 3206, "end_index": 3281, "_text": "His lungs were clear to auscultation bilaterally Anteriorly and laterally ."}
+{"sent_index": 64, "start_index": 3282, "end_index": 3289, "_text": "Abdomen"}
+{"sent_index": 65, "start_index": 3292, "end_index": 3333, "_text": "Soft , obese , nontender , nondistended ."}
+{"sent_index": 66, "start_index": 3334, "end_index": 3367, "_text": "He had normoactive bowel sounds ."}
+{"sent_index": 67, "start_index": 3368, "end_index": 3379, "_text": "Extremities"}
+{"sent_index": 68, "start_index": 3382, "end_index": 3457, "_text": "There was a right groin A line and a left groin venous sheath with a Swan ."}
+{"sent_index": 69, "start_index": 3458, "end_index": 3483, "_text": "He had no evident edema ."}
+{"sent_index": 70, "start_index": 3484, "end_index": 3550, "_text": "He had 2+ dorsalis pedis and posterior tibial pulses bilaterally ."}
+{"sent_index": 71, "start_index": 3551, "end_index": 3561, "_text": "Neurologic"}
+{"sent_index": 72, "start_index": 3564, "end_index": 3628, "_text": "He was alert and oriented times three , moving all extremities ."}
+{"sent_index": 73, "start_index": 3629, "end_index": 3644, "_text": "LABORATORY DATA"}
+{"sent_index": 74, "start_index": 3647, "end_index": 3746, "_text": "On admission , the CBC revealed a white count of 7.4 , hematocrit 39.7 , and platelets of 217,000 ."}
+{"sent_index": 75, "start_index": 3747, "end_index": 3885, "_text": "Serum chemistries revealed a sodium of 135, potassium 4.0 , chloride 102 , bicarbonate 26 , BUN 29 , creatinine 1.6 , and glucose of 111 ."}
+{"sent_index": 76, "start_index": 3886, "end_index": 4050, "_text": "The initial EKG showed normal sinus rhythm at a rate of 71 with a normal axis and evidence of first-degree AV block with prolonged PR interval of 238 milliseconds ."}
+{"sent_index": 77, "start_index": 4051, "end_index": 4169, "_text": "He also had a widened QRS of 153 milliseconds , an old right bundle branch block , and no acute ST or T wave changes ."}
+{"sent_index": 78, "start_index": 4170, "end_index": 4247, "_text": "The EKG was prior to catheterization and the one post PTCA was no different ."}
+{"sent_index": 79, "start_index": 4248, "end_index": 4307, "_text": "He had a bedside echocardiogram done in the Catheterization"}
+{"sent_index": 80, "start_index": 4308, "end_index": 4384, "_text": "Laboratory which showed normal LV wall thickness and normal LV cavity size ."}
+{"sent_index": 81, "start_index": 4385, "end_index": 4420, "_text": "There was no evidence of effusion ."}
+{"sent_index": 82, "start_index": 4421, "end_index": 4466, "_text": "It was difficult to assess free wall motion ."}
+{"sent_index": 83, "start_index": 4467, "end_index": 4635, "_text": "Cardiac catheterization revealed a totally occluded RCA with collaterals , an 80 percent LAD lesion extending distally which was angioplastied but no stent was placed ."}
+{"sent_index": 84, "start_index": 4636, "end_index": 4648, "_text": "Hemodynamics"}
+{"sent_index": 85, "start_index": 4651, "end_index": 4857, "_text": "The right heart catheterization revealed pulmonary capillary wedge pressure of 4 , cardiac output of 8 , and cardiac index of 3.8 , he had an RA pressure of 10 , RV pressure of 43/4 , PA pressure of 37/10 ."}
+{"sent_index": 86, "start_index": 4858, "end_index": 4868, "_text": "ASSESSMENT"}
+{"sent_index": 87, "start_index": 4871, "end_index": 5122, "_text": "This is an 82 - year-old male with a history of prior tobacco use , hypertension , chronic renal insufficiency , COPD , gastritis , and TIA who initially presented to Braintree with a non-ST elevation MI and Guaiac positive stools , transferred to St."}
+{"sent_index": 88, "start_index": 5123, "end_index": 5468, "_text": "Margaret's Center for Women & Infants for cardiac catheterization with PTCA to mid LAD lesion complicated by hypotension and bradycardia requiring Atropine , IV fluids and transient dopamine possibly secondary to vagal reaction , subsequently transferred to CCU for close monitoring , hemodynamically stable at the time of admission to the CCU ."}
+{"sent_index": 89, "start_index": 5469, "end_index": 5484, "_text": "HOSPITAL COURSE"}
+{"sent_index": 90, "start_index": 5487, "end_index": 5504, "_text": "1. CARDIOVASCULAR"}
+{"sent_index": 91, "start_index": 5507, "end_index": 5673, "_text": "As summarized above , the patient had a non-ST elevation MI with evidence of an 80 percent mid LAD lesion for which he underwent angioplasty without stent placement ."}
+{"sent_index": 92, "start_index": 5674, "end_index": 5766, "_text": "He was initially continued on aspirin , Plavix , beta blocker , statin , and ACE inhibitor ."}
+{"sent_index": 93, "start_index": 5767, "end_index": 5886, "_text": "At the time of discharge , his Plavix was held due to Guaiac positive stools and hematocrit drop throughout admission ."}
+{"sent_index": 94, "start_index": 5887, "end_index": 6006, "_text": "He had a transthoracic echocardiogram the day after admission showing an ejection fraction of greater than 60 percent ."}
+{"sent_index": 95, "start_index": 6007, "end_index": 6043, "_text": "No focal wall motion abnormalities ."}
+{"sent_index": 96, "start_index": 6044, "end_index": 6120, "_text": "He had no recurrent chest pain or shortness of breath throughout admission ."}
+{"sent_index": 97, "start_index": 6121, "end_index": 6266, "_text": "In regards to his rhythm , he has an underlying right bundle branch block and first-degree AV block which were stable throughout this admission ."}
+{"sent_index": 98, "start_index": 6267, "end_index": 6327, "_text": "He will be followed-up by his cardiologist after discharge ."}
+{"sent_index": 99, "start_index": 6328, "end_index": 6340, "_text": "1. PULMONARY"}
+{"sent_index": 100, "start_index": 6343, "end_index": 6485, "_text": "He had a history of COPD for which he is on baseline 2 liters of 02 by nasal cannula at home and Albuterol and Atrovent MDI s p.r.n. at home ."}
+{"sent_index": 101, "start_index": 6486, "end_index": 6529, "_text": "He is also on Flovent MDI at home as well ."}
+{"sent_index": 102, "start_index": 6530, "end_index": 6619, "_text": "He was continued on his MDI and was at his baseline 02 requirement throughout admission ."}
+{"sent_index": 103, "start_index": 6620, "end_index": 6628, "_text": "1. RENAL"}
+{"sent_index": 104, "start_index": 6631, "end_index": 6755, "_text": "He has a history of chronic renal insufficiency likely secondary to hypertension and was admitted with a creatinine of 1.6 ."}
+{"sent_index": 105, "start_index": 6756, "end_index": 6824, "_text": "His ACE inhibitor post MI was initially held due to his creatinine ."}
+{"sent_index": 106, "start_index": 6825, "end_index": 6925, "_text": "However , this responded to IV fluids and his ACE inhibitor was restarted at the time of discharge ."}
+{"sent_index": 107, "start_index": 6926, "end_index": 7043, "_text": "He will need close monitoring of his creatinine post discharge in the setting of reinstitution of his ACE inhibitor ."}
+{"sent_index": 108, "start_index": 7044, "end_index": 7063, "_text": "1. GASTROINTESTINAL"}
+{"sent_index": 109, "start_index": 7066, "end_index": 7296, "_text": "His stools were noted to be Guaiac positive at the outside hospital and there was still concern for possible GI bleed given continued Guaiac positive stools during this admission and a slight drop in his hematocrit from 39 to 33 ."}
+{"sent_index": 110, "start_index": 7297, "end_index": 7439, "_text": "It was felt most appropriate for him to have an outpatient GI workup , and his PCP was contacted and will arrange for outpatient colonoscopy ."}
+{"sent_index": 111, "start_index": 7440, "end_index": 7595, "_text": "His Plavix was held at the time of discharge due to a question of GI bleed and in the setting of not having a stent placed at the time of catheterization ."}
+{"sent_index": 112, "start_index": 7596, "end_index": 7639, "_text": "He was continued on his aspirin , however ."}
+{"sent_index": 113, "start_index": 7640, "end_index": 7659, "_text": "DISCHARGE DIAGNOSIS"}
+{"sent_index": 114, "start_index": 7662, "end_index": 7801, "_text": "Coronary artery disease , status post non-ST elevation myocardial infarction with 80 percent mid LAD lesion , now status post angioplasty ."}
+{"sent_index": 115, "start_index": 7802, "end_index": 7816, "_text": "Hypertension ."}
+{"sent_index": 116, "start_index": 7817, "end_index": 7846, "_text": "Chronic renal insufficiency ."}
+{"sent_index": 117, "start_index": 7847, "end_index": 7886, "_text": "Chronic obstructive pulmonary disease ."}
+{"sent_index": 118, "start_index": 7887, "end_index": 7912, "_text": "Guaiac  positive stools ."}
+{"sent_index": 119, "start_index": 7913, "end_index": 7921, "_text": "Anemia ."}
+{"sent_index": 120, "start_index": 7922, "end_index": 7943, "_text": "DISCHARGE MEDICATIONS"}
+{"sent_index": 121, "start_index": 7946, "end_index": 7967, "_text": "1. Lipitor 10 mg q.d."}
+{"sent_index": 122, "start_index": 7968, "end_index": 7993, "_text": "2. Lisinopril 2.5 mg q.d."}
+{"sent_index": 123, "start_index": 7994, "end_index": 8044, "_text": "3. Flovent 110 micrograms aerosol two puffs b.i.d."}
+{"sent_index": 124, "start_index": 8045, "end_index": 8067, "_text": "4. Aspirin 325 mg q.d."}
+{"sent_index": 125, "start_index": 8068, "end_index": 8091, "_text": "5. Combivent MDI p.r.n."}
+{"sent_index": 126, "start_index": 8092, "end_index": 8116, "_text": "6. Toprol XL 100 mg q.d."}
+{"sent_index": 127, "start_index": 8117, "end_index": 8128, "_text": "DISPOSITION"}
+{"sent_index": 128, "start_index": 8131, "end_index": 8228, "_text": "At the time of discharge , the patient 's vital signs were stable and he was without complaints ."}
+{"sent_index": 129, "start_index": 8229, "end_index": 8245, "_text": "DISCHARGE STATUS"}
+{"sent_index": 130, "start_index": 8248, "end_index": 8315, "_text": "He will be discharged to home and was cleared by Physical Therapy ."}
+{"sent_index": 131, "start_index": 8316, "end_index": 8325, "_text": "FOLLOW UP"}
+{"sent_index": 132, "start_index": 8328, "end_index": 8372, "_text": "He has been scheduled for follow-up with Dr."}
+{"sent_index": 133, "start_index": 8373, "end_index": 8407, "_text": "Martha on 2015-03-25 at 11:00 a.m."}
+{"sent_index": 134, "start_index": 8408, "end_index": 8503, "_text": "It was discussed with him the need to schedule follow-up for colonoscopy with his PCP as well ."}
+{"sent_index": 135, "start_index": 8504, "end_index": 8654, "_text": "He will call the Cardiology Division at Addison Gilbert Hospital Greenfield to schedule a follow-up with his cardiologist there within the next week ."}
+{"sent_index": 136, "start_index": 8655, "end_index": 8683, "_text": "Lucile Minor Etta , MD\n12ADA"}
+{"sent_index": 137, "start_index": 8684, "end_index": 8695, "_text": "Dictated By"}
+{"sent_index": 138, "start_index": 8698, "end_index": 8706, "_text": "Emily M."}
+{"sent_index": 139, "start_index": 8707, "end_index": 8721, "_text": "Cassidy , M.D."}
+{"sent_index": 140, "start_index": 8722, "end_index": 8732, "_text": "MEDQUIST36"}
+{"sent_index": 141, "start_index": 8733, "end_index": 8756, "_text": "D : 2015-07-29 17:03:53"}
+{"sent_index": 142, "start_index": 8757, "end_index": 8780, "_text": "T : 2015-07-29 22:08:30"}
+{"sent_index": 143, "start_index": 8781, "end_index": 8793, "_text": "Job #: 81504"}
+{"sent_index": 144, "start_index": 8794, "end_index": 8818, "_text": "Signed electronically by"}
+{"sent_index": 145, "start_index": 8821, "end_index": 8835, "_text": "DR. Brenda JM."}
+{"sent_index": 146, "start_index": 8836, "end_index": 8891, "_text": "Espinosa on : Maxine 2015-09-10 1:57 PM\n( End of Report"}

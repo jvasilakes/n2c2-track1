@@ -1,0 +1,81 @@
+{"sent_index": 0, "start_index": 0, "end_index": 9, "_text": "320422564"}
+{"sent_index": 1, "start_index": 10, "end_index": 14, "_text": "CTMC"}
+{"sent_index": 2, "start_index": 15, "end_index": 23, "_text": "09300549"}
+{"sent_index": 3, "start_index": 24, "end_index": 53, "_text": "340424\n06/16/1997 12:00:00 AM"}
+{"sent_index": 4, "start_index": 54, "end_index": 73, "_text": "BILIARY OBSTRUCTION"}
+{"sent_index": 5, "start_index": 74, "end_index": 80, "_text": "Signed"}
+{"sent_index": 6, "start_index": 81, "end_index": 84, "_text": "DIS"}
+{"sent_index": 7, "start_index": 85, "end_index": 112, "_text": "Admission Date :\n06/16/1997"}
+{"sent_index": 8, "start_index": 113, "end_index": 126, "_text": "Report Status"}
+{"sent_index": 9, "start_index": 129, "end_index": 135, "_text": "Signed"}
+{"sent_index": 10, "start_index": 136, "end_index": 150, "_text": "Discharge Date"}
+{"sent_index": 11, "start_index": 153, "end_index": 163, "_text": "06/18/1997"}
+{"sent_index": 12, "start_index": 164, "end_index": 176, "_text": "PROBLEM LIST"}
+{"sent_index": 13, "start_index": 179, "end_index": 232, "_text": "1. RECTAL CARCINOMA , STATUS POST PARTIAL COLECTOMY ."}
+{"sent_index": 14, "start_index": 233, "end_index": 264, "_text": "2. METASTATIC COLON CARCINOMA ."}
+{"sent_index": 15, "start_index": 265, "end_index": 282, "_text": "3. HYPERTENSION ."}
+{"sent_index": 16, "start_index": 283, "end_index": 322, "_text": "4. AORTIC STENOSIS WITH PORCINE VALVE ."}
+{"sent_index": 17, "start_index": 323, "end_index": 351, "_text": "5. URINARY TRACT INFECTION ."}
+{"sent_index": 18, "start_index": 352, "end_index": 368, "_text": "6. CHOLANGITIS ."}
+{"sent_index": 19, "start_index": 369, "end_index": 380, "_text": "7. ANEMIA ."}
+{"sent_index": 20, "start_index": 381, "end_index": 407, "_text": "HISTORY OF PRESENT ILLNESS"}
+{"sent_index": 21, "start_index": 410, "end_index": 512, "_text": "This is a 70 year old gentleman with metastatic rectal cancer who presented with biliary obstruction ."}
+{"sent_index": 22, "start_index": 513, "end_index": 575, "_text": "In the past , he had biliary stents placed which clotted off ."}
+{"sent_index": 23, "start_index": 576, "end_index": 648, "_text": "The patient was admitted to the Short Stay Unit for further evaluation ."}
+{"sent_index": 24, "start_index": 649, "end_index": 875, "_text": "The day prior , the patient had endoscopic retrograde cholangiopancreatography done with dilated ducts times two and eventually had interventional radiology attempt to place percutaneous drains to decompress his biliary tree ."}
+{"sent_index": 25, "start_index": 876, "end_index": 960, "_text": "The patient had two drains placed after a prolonged course and difficult procedure ."}
+{"sent_index": 26, "start_index": 961, "end_index": 1118, "_text": "After being transferred from the interventional radiology table to the stretcher , one of his lateral percutaneous drains had been pulled out inadvertently ."}
+{"sent_index": 27, "start_index": 1119, "end_index": 1251, "_text": "He was admitted to the Short Stay Unit , given Ancef and Gentamicin per the team for antibiotic prophylaxis and observed overnight ."}
+{"sent_index": 28, "start_index": 1252, "end_index": 1272, "_text": "PAST MEDICAL HISTORY"}
+{"sent_index": 29, "start_index": 1275, "end_index": 1285, "_text": "As above ."}
+{"sent_index": 30, "start_index": 1286, "end_index": 1295, "_text": "ALLERGIES"}
+{"sent_index": 31, "start_index": 1298, "end_index": 1304, "_text": "None ."}
+{"sent_index": 32, "start_index": 1305, "end_index": 1329, "_text": "MEDICATIONS ON ADMISSION"}
+{"sent_index": 33, "start_index": 1332, "end_index": 1377, "_text": "Cipro 500 mg p.o. b.i.d. , Vasotec 10 mg q.d."}
+{"sent_index": 34, "start_index": 1378, "end_index": 1392, "_text": "SOCIAL HISTORY"}
+{"sent_index": 35, "start_index": 1395, "end_index": 1438, "_text": "The patient denies any alcohol or tobacco ."}
+{"sent_index": 36, "start_index": 1439, "end_index": 1453, "_text": "FAMILY HISTORY"}
+{"sent_index": 37, "start_index": 1456, "end_index": 1489, "_text": "Significant for colon carcinoma ."}
+{"sent_index": 38, "start_index": 1490, "end_index": 1507, "_text": "REVIEW OF SYSTEMS"}
+{"sent_index": 39, "start_index": 1510, "end_index": 1524, "_text": "Unremarkable ."}
+{"sent_index": 40, "start_index": 1525, "end_index": 1545, "_text": "PHYSICAL EXAMINATION"}
+{"sent_index": 41, "start_index": 1548, "end_index": 1653, "_text": "Temperature was 99.1 , blood pressure 132/74 , heart rate 80 , respirations 18 , 02 sat 99% on room air ."}
+{"sent_index": 42, "start_index": 1654, "end_index": 1723, "_text": "The patient was an alert , jaundiced gentleman in no acute distress ."}
+{"sent_index": 43, "start_index": 1724, "end_index": 1729, "_text": "LUNGS"}
+{"sent_index": 44, "start_index": 1732, "end_index": 1760, "_text": "were clear to auscultation ."}
+{"sent_index": 45, "start_index": 1761, "end_index": 1766, "_text": "HEART"}
+{"sent_index": 46, "start_index": 1769, "end_index": 1859, "_text": "had a regular rate and rhythm with a II / VI systolic murmur at the right sternal border ."}
+{"sent_index": 47, "start_index": 1860, "end_index": 1867, "_text": "ABDOMEN"}
+{"sent_index": 48, "start_index": 1870, "end_index": 1917, "_text": "was soft , nontender , with good bowel sounds ."}
+{"sent_index": 49, "start_index": 1918, "end_index": 1989, "_text": "He had midline catheter that was still in place and was draining bile ."}
+{"sent_index": 50, "start_index": 1990, "end_index": 2001, "_text": "EXTREMITIES"}
+{"sent_index": 51, "start_index": 2004, "end_index": 2024, "_text": "were without edema ."}
+{"sent_index": 52, "start_index": 2025, "end_index": 2037, "_text": "NEUROLOGICAL"}
+{"sent_index": 53, "start_index": 2040, "end_index": 2067, "_text": "exam within normal limits ."}
+{"sent_index": 54, "start_index": 2068, "end_index": 2078, "_text": "LABORATORY"}
+{"sent_index": 55, "start_index": 2081, "end_index": 2118, "_text": "White count was 8.2 , hematocrit 35 ."}
+{"sent_index": 56, "start_index": 2119, "end_index": 2151, "_text": "AST was 175 , ALT 76 , LDH 454 ."}
+{"sent_index": 57, "start_index": 2152, "end_index": 2199, "_text": "Total bilirubin was 12 and direct bilirubin 8 ."}
+{"sent_index": 58, "start_index": 2200, "end_index": 2230, "_text": "Alkaline phosphatase was 372 ."}
+{"sent_index": 59, "start_index": 2231, "end_index": 2246, "_text": "HOSPITAL COURSE"}
+{"sent_index": 60, "start_index": 2249, "end_index": 2345, "_text": "The patient was admitted to the Short Stay Unit and continued to receive antibiotics overnight ."}
+{"sent_index": 61, "start_index": 2346, "end_index": 2455, "_text": "The next morning , he was doing well with the intact drain draining bilious material without any difficulty ."}
+{"sent_index": 62, "start_index": 2456, "end_index": 2540, "_text": "The patient was doing well with minimal to no belly pain and no nausea or vomiting ."}
+{"sent_index": 63, "start_index": 2541, "end_index": 2718, "_text": "The patient was taken back to surgery by the interventional radiology team and had a second drain placed without any difficulty and was transferred back to the Short Stay Unit ."}
+{"sent_index": 64, "start_index": 2719, "end_index": 2776, "_text": "The patient was observed overnight without any problems ."}
+{"sent_index": 65, "start_index": 2777, "end_index": 2834, "_text": "He was tolerating p.o. and feeling back to his baseline ."}
+{"sent_index": 66, "start_index": 2835, "end_index": 2874, "_text": "He was discharged in stable condition ."}
+{"sent_index": 67, "start_index": 2875, "end_index": 2896, "_text": "DISCHARGE MEDICATIONS"}
+{"sent_index": 68, "start_index": 2899, "end_index": 2918, "_text": "Same as admission ."}
+{"sent_index": 69, "start_index": 2919, "end_index": 2964, "_text": "He will continue Cipro p.o. for prophylaxis ."}
+{"sent_index": 70, "start_index": 2965, "end_index": 2974, "_text": "FOLLOW-UP"}
+{"sent_index": 71, "start_index": 2977, "end_index": 3026, "_text": "Follow-up with Dr. Loydsadd in one to two weeks ."}
+{"sent_index": 72, "start_index": 3027, "end_index": 3074, "_text": "He is also to have AH for his home stent care ."}
+{"sent_index": 73, "start_index": 3075, "end_index": 3086, "_text": "Dictated By"}
+{"sent_index": 74, "start_index": 3089, "end_index": 3098, "_text": "Attending"}
+{"sent_index": 75, "start_index": 3101, "end_index": 3124, "_text": "LILLBI FYFEBREUN , M.D."}
+{"sent_index": 76, "start_index": 3125, "end_index": 3140, "_text": "KE15 TB326/0625"}
+{"sent_index": 77, "start_index": 3141, "end_index": 3164, "_text": "Batch :\n56777\nIndex No."}
+{"sent_index": 78, "start_index": 3165, "end_index": 3175, "_text": "M2ZRS51Y3Q"}
+{"sent_index": 79, "start_index": 3176, "end_index": 3188, "_text": "D :\n06/18/97"}
+{"sent_index": 80, "start_index": 3189, "end_index": 3201, "_text": "T :\n06/21/97"}

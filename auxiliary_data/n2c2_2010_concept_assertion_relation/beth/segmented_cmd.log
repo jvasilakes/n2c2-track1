@@ -1,0 +1,1 @@
+python scripts/run_biomedicus_sentences.py --biomedicus_data_dir ~/.biomedicus/data/sentences --indir auxiliary_data/n2c2_2010_concept_assertion_relation/beth/txt --outdir auxiliary_data/n2c2_2010_concept_assertion_relation/beth/segmented/

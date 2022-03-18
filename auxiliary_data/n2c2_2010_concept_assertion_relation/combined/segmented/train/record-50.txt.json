@@ -1,0 +1,118 @@
+{"sent_index": 0, "start_index": 0, "end_index": 27, "_text": "Admission Date :\n2010-05-17"}
+{"sent_index": 1, "start_index": 28, "end_index": 42, "_text": "Discharge Date"}
+{"sent_index": 2, "start_index": 45, "end_index": 55, "_text": "2010-05-29"}
+{"sent_index": 3, "start_index": 56, "end_index": 69, "_text": "Date of Birth"}
+{"sent_index": 4, "start_index": 72, "end_index": 82, "_text": "1923-11-09"}
+{"sent_index": 5, "start_index": 83, "end_index": 86, "_text": "Sex"}
+{"sent_index": 6, "start_index": 89, "end_index": 90, "_text": "F"}
+{"sent_index": 7, "start_index": 91, "end_index": 98, "_text": "Service"}
+{"sent_index": 8, "start_index": 101, "end_index": 127, "_text": "HISTORY OF PRESENT ILLNESS"}
+{"sent_index": 9, "start_index": 130, "end_index": 328, "_text": "This is an 86-year-old female with a past medical history of diabetes and hypertension who presented to the Emergency Department with a two day history of shortness of breath and easy fatigability ."}
+{"sent_index": 10, "start_index": 329, "end_index": 375, "_text": "She also noted increased dyspnea on exertion ."}
+{"sent_index": 11, "start_index": 376, "end_index": 434, "_text": "Prior to this patient could walk upstairs but now cannot ."}
+{"sent_index": 12, "start_index": 435, "end_index": 501, "_text": "She denies chest pain , orthopnea , paroxysmal nocturnal dyspnea ."}
+{"sent_index": 13, "start_index": 502, "end_index": 624, "_text": "However , the patient has noted some abdominal pain , intermittent times a couple of days , none on the day of admission ."}
+{"sent_index": 14, "start_index": 625, "end_index": 690, "_text": "Denied nausea , vomiting , diaphoresis , bowel movement changes ."}
+{"sent_index": 15, "start_index": 691, "end_index": 734, "_text": "She has noted increased urinary frequency ."}
+{"sent_index": 16, "start_index": 735, "end_index": 759, "_text": "Denies fever or chills ."}
+{"sent_index": 17, "start_index": 760, "end_index": 868, "_text": "Of note , she has had recent medication changes which included discontinuing Diovan and starting terazosin ."}
+{"sent_index": 18, "start_index": 869, "end_index": 889, "_text": "PAST MEDICAL HISTORY"}
+{"sent_index": 19, "start_index": 892, "end_index": 914, "_text": "1. Diabetes mellitus ."}
+{"sent_index": 20, "start_index": 915, "end_index": 932, "_text": "2. Hypertension ."}
+{"sent_index": 21, "start_index": 933, "end_index": 952, "_text": "3. Osteoarthritis ."}
+{"sent_index": 22, "start_index": 953, "end_index": 955, "_text": "4."}
+{"sent_index": 23, "start_index": 972, "end_index": 981, "_text": "ALLERGIES"}
+{"sent_index": 24, "start_index": 984, "end_index": 1009, "_text": "No known drug allergies ."}
+{"sent_index": 25, "start_index": 1010, "end_index": 1026, "_text": "HOME MEDICATIONS"}
+{"sent_index": 26, "start_index": 1029, "end_index": 1060, "_text": "1. Aspirin 325 mg p.o. q. day ."}
+{"sent_index": 27, "start_index": 1061, "end_index": 1091, "_text": "2. Norvasc 10 mg p.o. q. day ."}
+{"sent_index": 28, "start_index": 1092, "end_index": 1129, "_text": "3. Isosorbide mononitrate 30 q. day ."}
+{"sent_index": 29, "start_index": 1130, "end_index": 1161, "_text": "4. Terazosin 1 mg p.o. q. day ."}
+{"sent_index": 30, "start_index": 1162, "end_index": 1176, "_text": "SOCIAL HISTORY"}
+{"sent_index": 31, "start_index": 1179, "end_index": 1204, "_text": "The patient lives alone ."}
+{"sent_index": 32, "start_index": 1205, "end_index": 1235, "_text": "Has a remote tobacco history ."}
+{"sent_index": 33, "start_index": 1236, "end_index": 1248, "_text": "No ethanol ."}
+{"sent_index": 34, "start_index": 1249, "end_index": 1263, "_text": "FAMILY HISTORY"}
+{"sent_index": 35, "start_index": 1266, "end_index": 1289, "_text": "Positive for diabetes ."}
+{"sent_index": 36, "start_index": 1290, "end_index": 1318, "_text": "No coronary artery disease ."}
+{"sent_index": 37, "start_index": 1319, "end_index": 1339, "_text": "PHYSICAL EXAMINATION"}
+{"sent_index": 38, "start_index": 1342, "end_index": 1419, "_text": "On admission , blood pressure 151/61 , heart rate 75 , SaO2 93% on room air ."}
+{"sent_index": 39, "start_index": 1420, "end_index": 1463, "_text": "In general , patient in no acute distress ."}
+{"sent_index": 40, "start_index": 1464, "end_index": 1490, "_text": "Speaks in full sentences ."}
+{"sent_index": 41, "start_index": 1491, "end_index": 1495, "_text": "Neck"}
+{"sent_index": 42, "start_index": 1498, "end_index": 1578, "_text": "Jugular venous pressure notable at the mid neck upright about 80 degree angles ."}
+{"sent_index": 43, "start_index": 1579, "end_index": 1652, "_text": "Cardiovascular regular rate and rhythm with a 1-2/6 holosystolic murmur ."}
+{"sent_index": 44, "start_index": 1653, "end_index": 1662, "_text": "Pulmonary"}
+{"sent_index": 45, "start_index": 1665, "end_index": 1720, "_text": "Crackles bilaterally one-third to one-half the way up ."}
+{"sent_index": 46, "start_index": 1721, "end_index": 1728, "_text": "Abdomen"}
+{"sent_index": 47, "start_index": 1731, "end_index": 1790, "_text": "Bowel sounds positive , soft , non-tender , non-distended ."}
+{"sent_index": 48, "start_index": 1791, "end_index": 1802, "_text": "Extremities"}
+{"sent_index": 49, "start_index": 1805, "end_index": 1831, "_text": "1+ lower extremity edema ."}
+{"sent_index": 50, "start_index": 1832, "end_index": 1857, "_text": "LABORATORIES ON ADMISSION"}
+{"sent_index": 51, "start_index": 1860, "end_index": 1937, "_text": "Included normal CBC , BUN 47 , creatinine 2.4 up from baseline of about 1.5 ."}
+{"sent_index": 52, "start_index": 1938, "end_index": 1968, "_text": "Troponin 4.7 , CK 101 , MB 3 ."}
+{"sent_index": 53, "start_index": 1969, "end_index": 2041, "_text": "RADIOLOGY :\nChest x-ray showed patient was in congestive heart failure ."}
+{"sent_index": 54, "start_index": 2042, "end_index": 2059, "_text": "ELECTROCARDIOGRAM"}
+{"sent_index": 55, "start_index": 2062, "end_index": 2167, "_text": "Showed normal sinus rhythm at 107 beats per minute with left axis deviation and poor R-wave progression ."}
+{"sent_index": 56, "start_index": 2168, "end_index": 2210, "_text": "However , no acute changes were apparent ."}
+{"sent_index": 57, "start_index": 2211, "end_index": 2226, "_text": "HOSPITAL COURSE"}
+{"sent_index": 58, "start_index": 2229, "end_index": 2347, "_text": "The patient was admitted to the Cardiac Medicine Service and treated for presumed diastolic and systolic dysfunction ."}
+{"sent_index": 59, "start_index": 2348, "end_index": 2506, "_text": "Echocardiogram was obtained which showed moderately depressed left ventricular systolic function as well as hypokinesis of the lower half of septum and apex ."}
+{"sent_index": 60, "start_index": 2507, "end_index": 2561, "_text": "Also of note was the distal lateral wall hypokinesis ."}
+{"sent_index": 61, "start_index": 2562, "end_index": 2614, "_text": "The wall motion abnormalities were noted to be new ."}
+{"sent_index": 62, "start_index": 2615, "end_index": 2804, "_text": "It was believed that a troponin on admission in addition to the wall motion abnormalities she underwent a non-Q wave myocardial infarction prior to resulted in her current cardiac failure ."}
+{"sent_index": 63, "start_index": 2805, "end_index": 2883, "_text": "Throughout hospital course patient 's troponin trended down to less than 0.3 ."}
+{"sent_index": 64, "start_index": 2884, "end_index": 2920, "_text": "Heart Failure Service was involved ."}
+{"sent_index": 65, "start_index": 2921, "end_index": 2965, "_text": "She was continued with aggressive diuresis ."}
+{"sent_index": 66, "start_index": 2966, "end_index": 3064, "_text": "She was started on _________ with excellent diuresis , however , her renal functioning worsening ."}
+{"sent_index": 67, "start_index": 3065, "end_index": 3145, "_text": "A cardiac catheterization was deferred until the renal issue could be resolved ."}
+{"sent_index": 68, "start_index": 3146, "end_index": 3194, "_text": "However , her creatinine continued to increase ."}
+{"sent_index": 69, "start_index": 3195, "end_index": 3254, "_text": "Diuresis was halted and without improvement in creatinine ."}
+{"sent_index": 70, "start_index": 3255, "end_index": 3276, "_text": "Renal was consulted ."}
+{"sent_index": 71, "start_index": 3277, "end_index": 3310, "_text": "A renal ultrasound was obtained ."}
+{"sent_index": 72, "start_index": 3311, "end_index": 3385, "_text": "It showed a right kidney size of 6.3 cm and a left kidney size of 8.4 cm ."}
+{"sent_index": 73, "start_index": 3386, "end_index": 3598, "_text": "Given her hypertension which was very difficult to control , it was felt that she had renal artery stenosis and thus she underwent MRA of the kidney which showed severe right renal artery stenosis at its origin ."}
+{"sent_index": 74, "start_index": 3599, "end_index": 3711, "_text": "There was also moderate to severe focal stenosis of the left renal artery approximately 1.3 cm from its origin ."}
+{"sent_index": 75, "start_index": 3712, "end_index": 3754, "_text": "Dr. ______________ consulted on the case ."}
+{"sent_index": 76, "start_index": 3755, "end_index": 3845, "_text": "She was transferred to the unit overnight to assess volume which was noted to be optimal ."}
+{"sent_index": 77, "start_index": 3846, "end_index": 3935, "_text": "On 05-25 she underwent catheterization and subsequent stenting of the left renal artery ."}
+{"sent_index": 78, "start_index": 3936, "end_index": 4013, "_text": "Due to dye load required to assess the coronary disease were not visualized ."}
+{"sent_index": 79, "start_index": 4014, "end_index": 4056, "_text": "After the procedure the patient did well ."}
+{"sent_index": 80, "start_index": 4057, "end_index": 4106, "_text": "However , her creatinine has worsened up to 4.2 ."}
+{"sent_index": 81, "start_index": 4107, "end_index": 4148, "_text": "However , her urine output has improved ."}
+{"sent_index": 82, "start_index": 4149, "end_index": 4197, "_text": "She has not required hemodialysis at this time ."}
+{"sent_index": 83, "start_index": 4198, "end_index": 4254, "_text": "She will need close follow up of her renal functioning ."}
+{"sent_index": 84, "start_index": 4255, "end_index": 4316, "_text": "The patient is discharged to an extended discharge facility ."}
+{"sent_index": 85, "start_index": 4317, "end_index": 4336, "_text": "DISCHARGE DIAGNOSES"}
+{"sent_index": 86, "start_index": 4339, "end_index": 4376, "_text": "1. Non-Q wave myocardial infarction ."}
+{"sent_index": 87, "start_index": 4377, "end_index": 4429, "_text": "2. Systolic and diastolic congestive heart failure ."}
+{"sent_index": 88, "start_index": 4430, "end_index": 4502, "_text": "3. Bilateral renal artery stenosis status post stent left renal artery ."}
+{"sent_index": 89, "start_index": 4503, "end_index": 4527, "_text": "4. Acute renal failure ."}
+{"sent_index": 90, "start_index": 4528, "end_index": 4545, "_text": "5. Hypertension ."}
+{"sent_index": 91, "start_index": 4546, "end_index": 4555, "_text": "FOLLOW UP"}
+{"sent_index": 92, "start_index": 4558, "end_index": 4623, "_text": "She is to follow up with her primary care physician in one week ."}
+{"sent_index": 93, "start_index": 4624, "end_index": 4694, "_text": "She is to follow up Heart Failure and Cardiology in one week as well ."}
+{"sent_index": 94, "start_index": 4695, "end_index": 4763, "_text": "In addition , patient is to have her own appointment with Podiatry ."}
+{"sent_index": 95, "start_index": 4764, "end_index": 4785, "_text": "DISCHARGE MEDICATIONS"}
+{"sent_index": 96, "start_index": 4788, "end_index": 4819, "_text": "1. Aspirin 325 mg p.o. q. day ."}
+{"sent_index": 97, "start_index": 4820, "end_index": 4850, "_text": "2. Norvasc 10 mg p.o. q. day ."}
+{"sent_index": 98, "start_index": 4851, "end_index": 4886, "_text": "3. Atorvastatin 10 mg p.o. q. day ."}
+{"sent_index": 99, "start_index": 4887, "end_index": 4918, "_text": "4. Protonix 20 mg p.o. q. day ."}
+{"sent_index": 100, "start_index": 4919, "end_index": 4952, "_text": "5. Multivitamin one p.o. q. day ."}
+{"sent_index": 101, "start_index": 4953, "end_index": 4984, "_text": "6. Carvedilol 3.125 p.o. b.i.d."}
+{"sent_index": 102, "start_index": 4985, "end_index": 5027, "_text": "7. ___________ dinitrate 20 mg p.o. t.i.d."}
+{"sent_index": 103, "start_index": 5028, "end_index": 5098, "_text": "8. Erythropoietin 10,000 units two times a week Tuesday and Saturday ."}
+{"sent_index": 104, "start_index": 5099, "end_index": 5151, "_text": "9. Calcium acetate Tums one p.o. t.i.d. with meals ."}
+{"sent_index": 105, "start_index": 5152, "end_index": 5192, "_text": "10. Tylenol 325 mg p.o. q. 4-6 h. p.r.n."}
+{"sent_index": 106, "start_index": 5193, "end_index": 5230, "_text": "11. Iron sulfate 325 mg p.o. q. day ."}
+{"sent_index": 107, "start_index": 5231, "end_index": 5260, "_text": "12. Colace 100 mg p.o. b.i.d."}
+{"sent_index": 108, "start_index": 5261, "end_index": 5294, "_text": "13. Hydralazine 10 mg p.o. q. 6h."}
+{"sent_index": 109, "start_index": 5295, "end_index": 5339, "_text": "14. Plavix 75 mg p.o. q. day times 30 days ."}
+{"sent_index": 110, "start_index": 5340, "end_index": 5359, "_text": "Kathy Tillis , M.D."}
+{"sent_index": 111, "start_index": 5360, "end_index": 5366, "_text": "85-987"}
+{"sent_index": 112, "start_index": 5367, "end_index": 5405, "_text": "Dictated By : John V.E. Jameson , M.D."}
+{"sent_index": 113, "start_index": 5406, "end_index": 5416, "_text": "MEDQUIST36"}
+{"sent_index": 114, "start_index": 5417, "end_index": 5437, "_text": "D : 2010-05-27 14:29"}
+{"sent_index": 115, "start_index": 5438, "end_index": 5458, "_text": "T : 2010-05-27 14:10"}
+{"sent_index": 116, "start_index": 5459, "end_index": 5471, "_text": "JOB #:\n80987"}
+{"sent_index": 117, "start_index": 5472, "end_index": 5559, "_text": "Signed electronically by : DR. Kathy Tillis on : MON 2010-06-07 4:00 PM\n( End of Report"}

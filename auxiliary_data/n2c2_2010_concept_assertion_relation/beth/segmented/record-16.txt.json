@@ -1,0 +1,166 @@
+{"sent_index": 0, "start_index": 0, "end_index": 14, "_text": "Admission Date"}
+{"sent_index": 1, "start_index": 17, "end_index": 27, "_text": "2015-10-28"}
+{"sent_index": 2, "start_index": 28, "end_index": 42, "_text": "Discharge Date"}
+{"sent_index": 3, "start_index": 45, "end_index": 55, "_text": "2015-11-13"}
+{"sent_index": 4, "start_index": 56, "end_index": 69, "_text": "Date of Birth"}
+{"sent_index": 5, "start_index": 72, "end_index": 82, "_text": "1941-08-30"}
+{"sent_index": 6, "start_index": 83, "end_index": 86, "_text": "Sex"}
+{"sent_index": 7, "start_index": 89, "end_index": 90, "_text": "F"}
+{"sent_index": 8, "start_index": 91, "end_index": 98, "_text": "Service"}
+{"sent_index": 9, "start_index": 101, "end_index": 115, "_text": "CARDIOTHORACIC"}
+{"sent_index": 10, "start_index": 116, "end_index": 125, "_text": "Allergies"}
+{"sent_index": 11, "start_index": 128, "end_index": 143, "_text": "Tape / Benadryl"}
+{"sent_index": 12, "start_index": 144, "end_index": 161, "_text": "Attending :Jordan"}
+{"sent_index": 13, "start_index": 162, "end_index": 180, "_text": "U Kostohryz , M.D."}
+{"sent_index": 14, "start_index": 181, "end_index": 196, "_text": "Chief Complaint"}
+{"sent_index": 15, "start_index": 199, "end_index": 215, "_text": "Chest discomfort"}
+{"sent_index": 16, "start_index": 216, "end_index": 252, "_text": "Major Surgical or Invasive Procedure"}
+{"sent_index": 17, "start_index": 255, "end_index": 287, "_text": "2015-10-30 Left Carotid Stenting"}
+{"sent_index": 18, "start_index": 288, "end_index": 357, "_text": "2015-11-02 Coronary Artery Bypass Graft x 2 ( Lima to LAD , SVG to OM"}
+{"sent_index": 19, "start_index": 360, "end_index": 392, "_text": "History of Present Illness :\nMs."}
+{"sent_index": 20, "start_index": 393, "end_index": 520, "_text": "Bridge is a 74 y/o female admitted to outside hospital on 2015-10-21 with chest discomfort , vomiting and shortness of breath ."}
+{"sent_index": 21, "start_index": 521, "end_index": 596, "_text": "Initial EKG showed ST depressions , but cardiac enzymes were not elevated ."}
+{"sent_index": 22, "start_index": 597, "end_index": 717, "_text": "She eventually underwent a cardiac cath to assess coronary disease which revealed three vessel coronary artery disease ."}
+{"sent_index": 23, "start_index": 718, "end_index": 802, "_text": "She was then transferred to The Hospital for Orthopedics for surgical intervention ."}
+{"sent_index": 24, "start_index": 803, "end_index": 823, "_text": "Past Medical History"}
+{"sent_index": 25, "start_index": 826, "end_index": 1136, "_text": "Coronary Artery Disease , Hypertension , Hyperlipidemia , Diabetes Mellitus , Hypothyroid , h/o Bilateral DVT 's ( on chronic coumadin therapy ), Pleural disorder ? Sarcoidosis , Gastritis , B12 deficiency , Chronic renal insufficiency , s/p Appendectomy , s/p Lap cholectomy , s/p Total abdominal hysterectomy"}
+{"sent_index": 26, "start_index": 1137, "end_index": 1151, "_text": "Social History"}
+{"sent_index": 27, "start_index": 1154, "end_index": 1182, "_text": "Denies tobacco or ETOH use ."}
+{"sent_index": 28, "start_index": 1183, "end_index": 1202, "_text": "Lives wth husband ."}
+{"sent_index": 29, "start_index": 1203, "end_index": 1217, "_text": "Family History"}
+{"sent_index": 30, "start_index": 1220, "end_index": 1249, "_text": "Mother died of MI at age 55 ."}
+{"sent_index": 31, "start_index": 1250, "end_index": 1319, "_text": "Brother w/ CAD since age 40 and died in 70 's after cardiac surgery ."}
+{"sent_index": 32, "start_index": 1320, "end_index": 1344, "_text": "Son died at 14 d/t ASD ."}
+{"sent_index": 33, "start_index": 1345, "end_index": 1358, "_text": "Physical Exam"}
+{"sent_index": 34, "start_index": 1361, "end_index": 1370, "_text": "Gen : NAD"}
+{"sent_index": 35, "start_index": 1371, "end_index": 1403, "_text": "Neck : Supple , - JVD , - Bruits"}
+{"sent_index": 36, "start_index": 1404, "end_index": 1409, "_text": "Heart"}
+{"sent_index": 37, "start_index": 1412, "end_index": 1425, "_text": "RRR - c/r/m/g"}
+{"sent_index": 38, "start_index": 1426, "end_index": 1447, "_text": "Lungs : CTAB , coarse"}
+{"sent_index": 39, "start_index": 1448, "end_index": 1471, "_text": "Abd : Soft , NT/NT + BS"}
+{"sent_index": 40, "start_index": 1472, "end_index": 1528, "_text": "Ext : Cool , 1 + pedal pulses , - varicosities , - edema"}
+{"sent_index": 41, "start_index": 1529, "end_index": 1562, "_text": "Neuro : A&O x 3 , MAE , non-focal"}
+{"sent_index": 42, "start_index": 1563, "end_index": 1598, "_text": "Some rashes on ACW around EKG leads"}
+{"sent_index": 43, "start_index": 1599, "end_index": 1616, "_text": "Pertinent Results"}
+{"sent_index": 44, "start_index": 1619, "end_index": 1629, "_text": "CNIS 10-29"}
+{"sent_index": 45, "start_index": 1632, "end_index": 1689, "_text": "1. 60-69% stenosis of the right internal carotid artery ."}
+{"sent_index": 46, "start_index": 1690, "end_index": 1746, "_text": "2. 80-99% stenosis of the left internal carotid artery ."}
+{"sent_index": 47, "start_index": 1747, "end_index": 1770, "_text": "Echo 11-02 : PRE-BYPASS"}
+{"sent_index": 48, "start_index": 1773, "end_index": 1867, "_text": "Left ventricular wall thickness , cavity size , and systolic function are normal ( LVEF>55% )."}
+{"sent_index": 49, "start_index": 1868, "end_index": 1944, "_text": "Resting regional wall motion abnormalities include mild apical hypokinesis ."}
+{"sent_index": 50, "start_index": 1945, "end_index": 2061, "_text": "The aortic valve leaflets ( 3 ) appear structurally normal with good leaflet excursion and no aortic regurgitation ."}
+{"sent_index": 51, "start_index": 2062, "end_index": 2142, "_text": "The mitral valve appears structurally normal with trivial mitral regurgitation ."}
+{"sent_index": 52, "start_index": 2143, "end_index": 2214, "_text": "There are complex (> 4 mm ) atheroma in the descending thoracic aorta ."}
+{"sent_index": 53, "start_index": 2215, "end_index": 2245, "_text": "Mild tricuspid regurgitation ."}
+{"sent_index": 54, "start_index": 2246, "end_index": 2257, "_text": "POST-BYPASS"}
+{"sent_index": 55, "start_index": 2260, "end_index": 2320, "_text": "Preserved Kindred / North Shore - ventricular systolic fxn ."}
+{"sent_index": 56, "start_index": 2321, "end_index": 2333, "_text": "Trivial MR ."}
+{"sent_index": 57, "start_index": 2334, "end_index": 2344, "_text": "Edith AI ."}
+{"sent_index": 58, "start_index": 2345, "end_index": 2359, "_text": "Aorta intact ."}
+{"sent_index": 59, "start_index": 2360, "end_index": 2368, "_text": "CT 11-04"}
+{"sent_index": 60, "start_index": 2371, "end_index": 2405, "_text": "No acute intracranial hemorrhage ."}
+{"sent_index": 61, "start_index": 2406, "end_index": 2462, "_text": "Findings consistent with small vessel ischemic changes ."}
+{"sent_index": 62, "start_index": 2463, "end_index": 2530, "_text": "MRI would be more sensitive for the detection of acute infarction ."}
+{"sent_index": 63, "start_index": 2531, "end_index": 2614, "_text": "CT angiogram demonstrates no stenosis or aneurysm in the intracranial circulation ."}
+{"sent_index": 64, "start_index": 2615, "end_index": 2713, "_text": "Slight irregularity of the origin of the right vertebral artery may be atherosclerotic in nature ."}
+{"sent_index": 65, "start_index": 2714, "end_index": 2797, "_text": "Normal contrast enhancement seen in the left common/internal carotid artery stent ."}
+{"sent_index": 66, "start_index": 2798, "end_index": 2859, "_text": "Mild stenosis of the proximal right internal carotid artery ."}
+{"sent_index": 67, "start_index": 2860, "end_index": 2894, "_text": "4 mm left upper lobe lung nodule ."}
+{"sent_index": 68, "start_index": 2895, "end_index": 2967, "_text": "In the absence of history of malignancy , this is statistically benign ."}
+{"sent_index": 69, "start_index": 2968, "end_index": 3005, "_text": "One-year followup may be considered ."}
+{"sent_index": 70, "start_index": 3006, "end_index": 3015, "_text": "CXR 11-06"}
+{"sent_index": 71, "start_index": 3018, "end_index": 3098, "_text": "Allowing for technical changes , no major adverse interval change has occurred ."}
+{"sent_index": 72, "start_index": 3099, "end_index": 3205, "_text": "Bibasilar subsegmental atelectasis together with bilateral pleural effusions appear relatively unchanged ."}
+{"sent_index": 73, "start_index": 3206, "end_index": 3241, "_text": "The mediastinum appears unchanged ."}
+{"sent_index": 74, "start_index": 3242, "end_index": 3295, "_text": "Left-sided subclavian line is unchanged in position ."}
+{"sent_index": 75, "start_index": 3296, "end_index": 3340, "_text": "There is evidence of prior cardiac surgery ."}
+{"sent_index": 76, "start_index": 3341, "end_index": 3457, "_text": "2015-11-13 06:15 AM BLOOD WBC - 8.8 RBC - 2.79 * Hgb - 8.6 * Hct - 25.4 * MCV - 91 MCH - 30.9 MCHC - 33.8 RDW - 15.6"}
+{"sent_index": 77, "start_index": 3460, "end_index": 3472, "_text": "Plt Ct - 583"}
+{"sent_index": 78, "start_index": 3475, "end_index": 3645, "_text": "2015-11-12 06:00 AM BLOOD WBC - 7.7 RBC - 2.73 * Hgb - 8.3 * Hct - 25.1 * MCV - 92 MCH - 30.4 MCHC - 33.1 RDW - 15.5 Plt Ct - 528 *\n2015-11-13 06:15 AM BLOOD Plt Ct - 583"}
+{"sent_index": 79, "start_index": 3648, "end_index": 3779, "_text": "2015-11-13 06:15 AM BLOOD PT - 18.0 * PTT - 62.3 * INR(PT) - 1.7 *\n2015-11-12 06:00 AM BLOOD PT - 15.5 * PTT - 62.4 * INR(PT) - 1.4"}
+{"sent_index": 80, "start_index": 3782, "end_index": 3959, "_text": "2015-11-11 05:45 AM BLOOD PT - 14.5 * PTT - 51.4 * INR(PT) - 1.3 *\n2015-11-13 06:15 AM BLOOD Glucose - 96 UreaN - 20 Creat - 1.6 * Na - 141 K - 4.3 Cl - 106 HCO3 - 24 AnGap - 15"}
+{"sent_index": 81, "start_index": 3960, "end_index": 4070, "_text": "2015-11-12 06:00 AM BLOOD Glucose - 85 UreaN - 19 Creat - 1.6 * Na - 140 K - 4.4 Cl - 105 HCO3 - 24 AnGap - 15"}
+{"sent_index": 82, "start_index": 4071, "end_index": 4118, "_text": "2015-11-11 05:45 AM BLOOD Creat - 1.6 * K - 4.7"}
+{"sent_index": 83, "start_index": 4119, "end_index": 4231, "_text": "2015-10-28 03:30 PM BLOOD Glucose - 98 UreaN - 26 * Creat - 1.6 * Na - 140 K - 4.6 Cl - 104 HCO3 - 27 AnGap - 14"}
+{"sent_index": 84, "start_index": 4232, "end_index": 4259, "_text": "Brief Hospital Course :\nMs."}
+{"sent_index": 85, "start_index": 4260, "end_index": 4325, "_text": "Bridge was admitted from OSH for coronary artery bypass surgery ."}
+{"sent_index": 86, "start_index": 4326, "end_index": 4399, "_text": "She underwent usual pre-operative testing along with carotid ultrasound ."}
+{"sent_index": 87, "start_index": 4400, "end_index": 4512, "_text": "CNIS revealed carotid stenosis and she ultimately underwent left carotid stenting by vascular surgery on 10-30 ."}
+{"sent_index": 88, "start_index": 4513, "end_index": 4544, "_text": "Please see report for details ."}
+{"sent_index": 89, "start_index": 4545, "end_index": 4648, "_text": "On 11-02 she was brought to the operating room where she underwent a coronary artery bypass graft x 2 ."}
+{"sent_index": 90, "start_index": 4649, "end_index": 4699, "_text": "Please see operative report for surgical details ."}
+{"sent_index": 91, "start_index": 4700, "end_index": 4810, "_text": "She tolerated the procedure well and was transferred to the CSRU for invasive monitoring in stable condition ."}
+{"sent_index": 92, "start_index": 4811, "end_index": 4900, "_text": "Later on op day sedation was weaned , she awoke neurologically intact and was extubated ."}
+{"sent_index": 93, "start_index": 4901, "end_index": 4993, "_text": "On post-op day one chest tubes were removed and beta blockers and diuretics were initiated ."}
+{"sent_index": 94, "start_index": 4994, "end_index": 5045, "_text": "She was gently diuresed towards her pre-op weight ."}
+{"sent_index": 95, "start_index": 5046, "end_index": 5095, "_text": "Also on this day she was transferred to the SDU ."}
+{"sent_index": 96, "start_index": 5096, "end_index": 5124, "_text": "Early on post-op day two Ms."}
+{"sent_index": 97, "start_index": 5125, "end_index": 5159, "_text": "Bridge had an episode of aphasia ."}
+{"sent_index": 98, "start_index": 5160, "end_index": 5251, "_text": "She underwent an immediate head CT and Neuro consult and was transferred back to the CSRU ."}
+{"sent_index": 99, "start_index": 5252, "end_index": 5347, "_text": "CT was negative and she returned to baseline neuro status without deficits by arrival to CSRU ."}
+{"sent_index": 100, "start_index": 5348, "end_index": 5405, "_text": "Neurology concluded episode was most concerning for TIA ."}
+{"sent_index": 101, "start_index": 5406, "end_index": 5464, "_text": "Epicardial pacing wires were removed on post-op day four ."}
+{"sent_index": 102, "start_index": 5465, "end_index": 5605, "_text": "After remaining stable in the CSRU for several days without change in neuro status she was transferred back to the SDU on post-op day four ."}
+{"sent_index": 103, "start_index": 5606, "end_index": 5719, "_text": "She was then started on Heparin with transition to Coumadin ( goal INR of 2-3 secondary to h/o bilateral DVT 's)."}
+{"sent_index": 104, "start_index": 5720, "end_index": 5813, "_text": "During entire post-op course she was followed by physical therapy for strength and mobility ."}
+{"sent_index": 105, "start_index": 5814, "end_index": 5917, "_text": "She continued to improve steadily over the next several days without any other post-op \ncomplications ."}
+{"sent_index": 106, "start_index": 5918, "end_index": 5956, "_text": "She was discharged on post-op day 11 ."}
+{"sent_index": 107, "start_index": 5957, "end_index": 5981, "_text": "Medications on Admission"}
+{"sent_index": 108, "start_index": 5984, "end_index": 6270, "_text": "Meds at home : Coumadin , Levoxyl , Folate , Colace , Byetta , Verapamil , Lisinopril , Pravachol , Nexium , Lasix , Celexa\nMeds at transfer : Levoxyl , Celexa , Folate , Lopressor , Colace , RISS , B12 , Protonix , Lasix , Zocor , Verapamil , Lovenox , Lisinopril\nDischarge Medications"}
+{"sent_index": 109, "start_index": 6273, "end_index": 6393, "_text": "1. Aspirin 81 mg Tablet , Delayed Release ( E.C. ) Sig : One ( 1 ) Tablet , Delayed Release ( E.C. ) PO DAILY ( Daily )."}
+{"sent_index": 110, "start_index": 6394, "end_index": 6591, "_text": "Disp :* 30 Tablet , Delayed Release ( E.C. )(s)* Refills :* 0 *\n2. Pantoprazole 40 mg Tablet , Delayed Release ( E.C. ) Sig : One ( 1 ) Tablet , Delayed Release ( E.C. ) PO Q24H ( every 24 hours )."}
+{"sent_index": 111, "start_index": 6592, "end_index": 6653, "_text": "Disp :* 30 Tablet , Delayed Release ( E.C. )(s)* Refills :* 0"}
+{"sent_index": 112, "start_index": 6656, "end_index": 6730, "_text": "3. Levothyroxine 125 mcg Tablet Sig : One ( 1 ) Tablet PO DAILY ( Daily )."}
+{"sent_index": 113, "start_index": 6731, "end_index": 6766, "_text": "Disp :* 30 Tablet (s)* Refills :* 0"}
+{"sent_index": 114, "start_index": 6769, "end_index": 6839, "_text": "4. Simvastatin 40 mg Tablet Sig : One ( 1 ) Tablet PO DAILY ( Daily )."}
+{"sent_index": 115, "start_index": 6840, "end_index": 6875, "_text": "Disp :* 30 Tablet (s)* Refills :* 0"}
+{"sent_index": 116, "start_index": 6878, "end_index": 6941, "_text": "5. Citalopram 20 mg Tablet Sig : 0.5 Tablet PO DAILY ( Daily )."}
+{"sent_index": 117, "start_index": 6942, "end_index": 6977, "_text": "Disp :* 30 Tablet (s)* Refills :* 0"}
+{"sent_index": 118, "start_index": 6980, "end_index": 7050, "_text": "6. Clopidogrel 75 mg Tablet Sig : One ( 1 ) Tablet PO DAILY ( Daily )."}
+{"sent_index": 119, "start_index": 7051, "end_index": 7086, "_text": "Disp :* 30 Tablet (s)* Refills :* 0"}
+{"sent_index": 120, "start_index": 7089, "end_index": 7091, "_text": "7."}
+{"sent_index": 121, "start_index": 7092, "end_index": 7166, "_text": "Ferrous Gluconate 300 mg Tablet Sig : One ( 1 ) Tablet PO DAILY ( Daily )."}
+{"sent_index": 122, "start_index": 7167, "end_index": 7202, "_text": "Disp :* 30 Tablet (s)* Refills :* 0"}
+{"sent_index": 123, "start_index": 7205, "end_index": 7284, "_text": "8. Ascorbic Acid 500 mg Tablet Sig : One ( 1 ) Tablet PO BID ( 2 times a day )."}
+{"sent_index": 124, "start_index": 7285, "end_index": 7320, "_text": "Disp :* 30 Tablet (s)* Refills :* 0"}
+{"sent_index": 125, "start_index": 7323, "end_index": 7391, "_text": "9. Folic Acid 1 mg Tablet Sig : One ( 1 ) Tablet PO DAILY ( Daily )."}
+{"sent_index": 126, "start_index": 7392, "end_index": 7427, "_text": "Disp :* 30 Tablet (s)* Refills :* 0"}
+{"sent_index": 127, "start_index": 7430, "end_index": 7515, "_text": "10. Metoprolol Tartrate 25 mg Tablet Sig : One ( 1 ) Tablet PO BID ( 2 times a day )."}
+{"sent_index": 128, "start_index": 7516, "end_index": 7551, "_text": "Disp :* 60 Tablet (s)* Refills :* 0"}
+{"sent_index": 129, "start_index": 7554, "end_index": 7638, "_text": "11. Docusate Sodium 100 mg Capsule Sig : One ( 1 ) Capsule PO BID ( 2 times a day )."}
+{"sent_index": 130, "start_index": 7639, "end_index": 7675, "_text": "Disp :* 30 Capsule (s)* Refills :* 0"}
+{"sent_index": 131, "start_index": 7678, "end_index": 7681, "_text": "12."}
+{"sent_index": 132, "start_index": 7682, "end_index": 7791, "_text": "Coumadin 5 mg Tablet Sig : One ( 1 ) Tablet PO once a day : Check INR 11-15 with results called to Dr. Lynn ."}
+{"sent_index": 133, "start_index": 7792, "end_index": 7827, "_text": "Disp :* 30 Tablet (s)* Refills :* 0"}
+{"sent_index": 134, "start_index": 7830, "end_index": 7833, "_text": "13."}
+{"sent_index": 135, "start_index": 7834, "end_index": 7922, "_text": "Tramadol 50 mg Tablet Sig : One ( 1 ) Tablet PO Q4-6H ( every 4 to 6 hours ) as needed ."}
+{"sent_index": 136, "start_index": 7923, "end_index": 7958, "_text": "Disp :* 50 Tablet (s)* Refills :* 0"}
+{"sent_index": 137, "start_index": 7961, "end_index": 8092, "_text": "14. Lasix 40 mg Tablet Sig : One ( 1 ) Tablet PO once a day : 40 mg daily x 1 week then 40 mg every other day as prior to surgery ."}
+{"sent_index": 138, "start_index": 8093, "end_index": 8128, "_text": "Disp :* 30 Tablet (s)* Refills :* 0"}
+{"sent_index": 139, "start_index": 8131, "end_index": 8152, "_text": "Discharge Disposition"}
+{"sent_index": 140, "start_index": 8155, "end_index": 8168, "_text": "Extended Care"}
+{"sent_index": 141, "start_index": 8169, "end_index": 8188, "_text": "Discharge Diagnosis"}
+{"sent_index": 142, "start_index": 8191, "end_index": 8251, "_text": "Coronary Artery Disease s/p Coronary Artery Bypass Graft x 2"}
+{"sent_index": 143, "start_index": 8252, "end_index": 8292, "_text": "Post-operative Transient Ischemic Attack"}
+{"sent_index": 144, "start_index": 8293, "end_index": 8335, "_text": "Carotid Stenosis s/p Left Carotid Stenting"}
+{"sent_index": 145, "start_index": 8336, "end_index": 8339, "_text": "PMH"}
+{"sent_index": 146, "start_index": 8342, "end_index": 8594, "_text": "Hypertension , Hyperlipidemia , Diabetes Mellitus , Hypothyroid , h/o Bilateral DVT 's, Pleural disorder ? Sarcoidosis , Gastritis , B12 deficiency , Chronic renal insufficiency , s/p Appendectomy , s/p Lap cholectomy , s/p Total abdominal hysterectomy"}
+{"sent_index": 147, "start_index": 8595, "end_index": 8614, "_text": "Discharge Condition"}
+{"sent_index": 148, "start_index": 8617, "end_index": 8621, "_text": "good"}
+{"sent_index": 149, "start_index": 8622, "end_index": 8644, "_text": "Discharge Instructions"}
+{"sent_index": 150, "start_index": 8647, "end_index": 8678, "_text": "Patient may shower , no baths ."}
+{"sent_index": 151, "start_index": 8679, "end_index": 8726, "_text": "No creams , lotions or ointments to incisions ."}
+{"sent_index": 152, "start_index": 8727, "end_index": 8762, "_text": "No driving for at least one month ."}
+{"sent_index": 153, "start_index": 8763, "end_index": 8839, "_text": "No lifting more than 10 lbs for at least 10 weeks from the date of surgery ."}
+{"sent_index": 154, "start_index": 8840, "end_index": 8879, "_text": "Monitor wounds for signs of infection ."}
+{"sent_index": 155, "start_index": 8880, "end_index": 8924, "_text": "Please call with any concerns or questions ."}
+{"sent_index": 156, "start_index": 8925, "end_index": 8941, "_text": "VVp Instructions"}
+{"sent_index": 157, "start_index": 8944, "end_index": 8970, "_text": "Dr. von Sampson in 4 weeks"}
+{"sent_index": 158, "start_index": 8971, "end_index": 8992, "_text": "Dr Royer in 2-3 weeks"}
+{"sent_index": 159, "start_index": 8993, "end_index": 9014, "_text": "Dr. Lynn in 1-2 weeks"}
+{"sent_index": 160, "start_index": 9015, "end_index": 9045, "_text": "Peterson ver Vasquez MD 07-506"}
+{"sent_index": 161, "start_index": 9046, "end_index": 9068, "_text": "Completed by : Theresa"}
+{"sent_index": 162, "start_index": 9069, "end_index": 9104, "_text": "Leonore NP 80-BXH 2015-11-13 @ 1100"}
+{"sent_index": 163, "start_index": 9105, "end_index": 9135, "_text": "Signed electronically by : DR."}
+{"sent_index": 164, "start_index": 9136, "end_index": 9181, "_text": "Ruby von der Smith on: WED 2015-12-09 3:34 PM"}
+{"sent_index": 165, "start_index": 9184, "end_index": 9197, "_text": "End of Report"}

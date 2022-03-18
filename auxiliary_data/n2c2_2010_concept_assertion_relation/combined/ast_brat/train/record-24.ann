@@ -1,0 +1,154 @@
+T0	problem 3602 3616	focal deficits
+A0	Assertion T0 absent
+T1	problem 6288 6300	not adequate
+A1	Assertion T1 present
+T2	problem 5735 5747	the delirium
+A2	Assertion T2 present
+T3	problem 1813 1844	significant myocardial ischemia
+A3	Assertion T3 absent
+T4	problem 1903 1924	myocardial infarction
+A4	Assertion T4 absent
+T5	problem 3561 3572	Mass effect
+A5	Assertion T5 possible
+T6	problem 1713 1734	diastolic dysfunction
+A6	Assertion T6 possible
+T7	problem 1740 1760	increased heart rate
+A7	Assertion T7 present
+T8	problem 1772 1785	excess volume
+A8	Assertion T8 present
+T9	problem 241 262	peripheral neuropathy
+A9	Assertion T9 present
+T10	problem 309 329	diabetic nephropathy
+A10	Assertion T10 present
+T11	problem 3267 3274	febrile
+A11	Assertion T11 present
+T12	problem 6445 6461	other complaints
+A12	Assertion T12 present
+T13	problem 6736 6758	postoperative swelling
+A13	Assertion T13 present
+T14	problem 4483 4502	neurologic syphilis
+A14	Assertion T14 possible
+T15	problem 644 670	clear cut cord compression
+A15	Assertion T15 present
+T16	problem 527 546	cervical myelopathy
+A16	Assertion T16 present
+T17	problem 581 617	impressive disc herniations at C5-C6
+A17	Assertion T17 present
+T18	problem 4299 4311	his delirium
+A18	Assertion T18 present
+T19	problem 4242 4279	electrolytes or mineral abnormalities
+A19	Assertion T19 absent
+T20	problem 4141 4152	head trauma
+A20	Assertion T20 absent
+T21	problem 5116 5132	acutely agitated
+A21	Assertion T21 present
+T22	problem 1048 1061	uncomfortable
+A22	Assertion T22 present
+T23	problem 1075 1096	incisional tenderness
+A23	Assertion T23 present
+T24	problem 1100 1109	neck site
+A24	Assertion T24 present
+T25	problem 1121 1143	right iliac graft site
+A25	Assertion T25 present
+T26	problem 4589 4622	non-convulsive status epilepticus
+A26	Assertion T26 possible
+T27	problem 492 510	signs and symptoms
+A27	Assertion T27 present
+T28	problem 916 924	afebrile
+A28	Assertion T28 absent
+T29	problem 3897 3911	midline shifts
+A29	Assertion T29 absent
+T30	problem 1146 1156	The wounds
+A30	Assertion T30 present
+T31	problem 3863 3893	acute intracranial hemorrhages
+A31	Assertion T31 absent
+T32	problem 3843 3857	such processes
+A32	Assertion T32 possible
+T33	problem 6513 6532	his operative sites
+A33	Assertion T33 present
+T34	problem 3659 3684	the fluctuating sensorium
+A34	Assertion T34 present
+T35	problem 3723 3763	severe underlying structural abnormality
+A35	Assertion T35 absent
+T36	problem 5508 5524	acutely agitated
+A36	Assertion T36 hypothetical
+T37	problem 1656 1684	his congestive heart failure
+A37	Assertion T37 present
+T38	problem 5396 5406	that event
+A38	Assertion T38 present
+T39	problem 4729 4745	acutely agitated
+A39	Assertion T39 present
+T40	problem 2088 2105	the excess volume
+A40	Assertion T40 present
+T41	problem 5644 5652	delirium
+A41	Assertion T41 present
+T42	problem 6056 6086	a baseline renal insufficiency
+A42	Assertion T42 present
+T43	problem 8267 8281	Pyelonephritis
+A43	Assertion T43 present
+T44	problem 2249 2257	agitated
+A44	Assertion T44 present
+T45	problem 201 218	diabetes mellitus
+A45	Assertion T45 present
+T46	problem 2492 2500	confused
+A46	Assertion T46 present
+T47	problem 2506 2533	waxing and waning sensorium
+A47	Assertion T47 present
+T48	problem 4375 4392	slightly elevated
+A48	Assertion T48 present
+T49	problem 2770 2797	his change in mental status
+A49	Assertion T49 present
+T50	problem 8471 8499	Benign prostatic hypertrophy
+A50	Assertion T50 present
+T51	problem 6501 6509	Soreness
+A51	Assertion T51 present
+T52	problem 4158 4179	loss of consciousness
+A52	Assertion T52 absent
+T53	problem 6578 6590	his delirium
+A53	Assertion T53 present
+T54	problem 8713 8730	Cerebral aneurysm
+A54	Assertion T54 present
+T55	problem 3934 3952	a soft tissue mass
+A55	Assertion T55 present
+T56	problem 1298 1308	tachypneic
+A56	Assertion T56 present
+T57	problem 6310 6331	his diabetes mellitus
+A57	Assertion T57 present
+T58	problem 4063 4069	Trauma
+A58	Assertion T58 possible
+T59	problem 1285 1293	dyspneic
+A59	Assertion T59 present
+T60	problem 343 356	throat cancer
+A60	Assertion T60 present
+T61	problem 8441 8451	neuropathy
+A61	Assertion T61 present
+T62	problem 8454 8465	nephropathy
+A62	Assertion T62 present
+T63	problem 2981 3002	Hypo or hyperglycemia
+A63	Assertion T63 present
+T64	problem 6642 6668	difficulty with swallowing
+A64	Assertion T64 present
+T65	problem 3129 3145	acutely agitated
+A65	Assertion T65 present
+T66	problem 8643 8656	Throat cancer
+A66	Assertion T66 present
+T67	problem 8111 8134	End-stage renal disease
+A67	Assertion T67 present
+T68	problem 8427 8438	retinopathy
+A68	Assertion T68 present
+T69	problem 8580 8592	Hypertension
+A69	Assertion T69 present
+T70	problem 8598 8618	Hypercholesterolemia
+A70	Assertion T70 present
+T71	problem 8415 8424	triopathy
+A71	Assertion T71 present
+T72	problem 3225 3242	Infectious causes
+A72	Assertion T72 present
+T73	problem 8148 8172	type 1 diabetes mellitus
+A73	Assertion T73 present
+T74	problem 8625 8636	Hepatitis B
+A74	Assertion T74 present
+T75	problem 8228 8261	multiple urinary tract infections
+A75	Assertion T75 present
+T76	problem 8385 8409	Type 1 diabetes mellitus
+A76	Assertion T76 present

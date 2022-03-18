@@ -1,0 +1,76 @@
+{"sent_index": 0, "start_index": 0, "end_index": 9, "_text": "498710998"}
+{"sent_index": 1, "start_index": 10, "end_index": 22, "_text": "CMC\n14172445"}
+{"sent_index": 2, "start_index": 23, "end_index": 45, "_text": "04/29/1992 12:00:00 AM"}
+{"sent_index": 3, "start_index": 46, "end_index": 63, "_text": "Discharge Summary"}
+{"sent_index": 4, "start_index": 64, "end_index": 70, "_text": "Signed"}
+{"sent_index": 5, "start_index": 71, "end_index": 74, "_text": "DIS"}
+{"sent_index": 6, "start_index": 75, "end_index": 89, "_text": "Admission Date"}
+{"sent_index": 7, "start_index": 92, "end_index": 102, "_text": "04/29/1992"}
+{"sent_index": 8, "start_index": 103, "end_index": 116, "_text": "Report Status"}
+{"sent_index": 9, "start_index": 119, "end_index": 125, "_text": "Signed"}
+{"sent_index": 10, "start_index": 126, "end_index": 140, "_text": "Discharge Date"}
+{"sent_index": 11, "start_index": 143, "end_index": 153, "_text": "05/28/1992"}
+{"sent_index": 12, "start_index": 154, "end_index": 173, "_text": "DISCHARGE DIAGNOSES"}
+{"sent_index": 13, "start_index": 176, "end_index": 197, "_text": "1. Carotid stenosis ."}
+{"sent_index": 14, "start_index": 198, "end_index": 218, "_text": "2. Aortic stenosis ."}
+{"sent_index": 15, "start_index": 219, "end_index": 247, "_text": "3. Coronary artery disease ."}
+{"sent_index": 16, "start_index": 248, "end_index": 263, "_text": "PRESENT ILLNESS"}
+{"sent_index": 17, "start_index": 266, "end_index": 482, "_text": "The patient is a 76-year-old female who was admitted to the medicine service on 04-29-92 with a past history significant for aortic stenosis and chest pain who presented for evaluation for aortic valve replace-ment ."}
+{"sent_index": 18, "start_index": 483, "end_index": 843, "_text": "The patient has a history of exertional angina and chest pain associated with light-headedness for nine years which was noted to increase in frequency over the past year , then upon admission had light-headedness and chest pain with a dull pressure in her neck to her substernal area , with only minimal exertion such as &quot; walking across the room &quot; ."}
+{"sent_index": 19, "start_index": 844, "end_index": 964, "_text": "She states this light-headedness is often associated with shortness of breath and diaphoresis occasionally with nausea ."}
+{"sent_index": 20, "start_index": 965, "end_index": 1076, "_text": "She denies any vomiting , states that the episodes usually last about five minutes and are relieved with rest ."}
+{"sent_index": 21, "start_index": 1077, "end_index": 1218, "_text": "The pain and light-headedness is now severely lifestyle limiting and the patient requested evaluation for possible aortic valve replacement ."}
+{"sent_index": 22, "start_index": 1219, "end_index": 1334, "_text": "Cardiac risk factors hypercholesterolemia , hypertension , no history of tobacco use , diabetes or family history ."}
+{"sent_index": 23, "start_index": 1335, "end_index": 1649, "_text": "Past medical history is as stated above , aortic stenosis , found to be critical on echocardiogram on 4-13-92 , done in Otte A , New Jersey and was found to have left ventricular hypertrophy and ejection fraction of 58% , no right heart wall motion abnormali-ties and an aortic valve gradient of greater than 100 ."}
+{"sent_index": 24, "start_index": 1650, "end_index": 1737, "_text": "She also has a history of uterine fibroids , status post total abdominal hysterectomy ."}
+{"sent_index": 25, "start_index": 1738, "end_index": 1823, "_text": "She has known bilateral carotid disease , stated to be greater than 70% bilaterally ."}
+{"sent_index": 26, "start_index": 1824, "end_index": 1947, "_text": "She has a history of glaucoma and a questionable history of claudication in her legs as well as a history of hypertension ."}
+{"sent_index": 27, "start_index": 1948, "end_index": 2054, "_text": "Medications on admission were only aspirin p.r.n. and Timoptic solution 0.5% to the left eye twice a day ."}
+{"sent_index": 28, "start_index": 2055, "end_index": 2075, "_text": "PHYSICAL EXAMINATION"}
+{"sent_index": 29, "start_index": 2078, "end_index": 2172, "_text": "On physical examination she was afebrile with a blood pressure of 170/100 , heart rate of 70 ."}
+{"sent_index": 30, "start_index": 2173, "end_index": 2254, "_text": "HEENT examination notable for bilateral arcussenilis but otherwise unremarkable ."}
+{"sent_index": 31, "start_index": 2255, "end_index": 2391, "_text": "Her neck showed no JVD , there was a slow carotid upstroke bilaterally , there were bilateral carotid bruits versus transmitted murmur ."}
+{"sent_index": 32, "start_index": 2392, "end_index": 2437, "_text": "Chest was clear to auscultation bilaterally ."}
+{"sent_index": 33, "start_index": 2438, "end_index": 2599, "_text": "Cardiac examination revealed a regular rate and rhythm with a normal S1 and S2 , 3/6 systolic murmur at the right upper sternal border , no gallop was detected ."}
+{"sent_index": 34, "start_index": 2600, "end_index": 2657, "_text": "Her abdomen was soft , nontender with good bowel sounds ."}
+{"sent_index": 35, "start_index": 2658, "end_index": 2670, "_text": "Extremi-ties"}
+{"sent_index": 36, "start_index": 2673, "end_index": 2761, "_text": "There is no clubbing , cyanosis or edema and her peripheral pulses were trace palpable ."}
+{"sent_index": 37, "start_index": 2762, "end_index": 2778, "_text": "LAB / X-RAY DATA"}
+{"sent_index": 38, "start_index": 2781, "end_index": 2798, "_text": "Labs on admission"}
+{"sent_index": 39, "start_index": 2801, "end_index": 2920, "_text": "Sodium 141 , potassium 5.0 , BUN 18 , creatinine 1.0 , PT 12.3 , PTT 24 , WBC 7.6 , hematocrit 41 , platelets 278,000 ."}
+{"sent_index": 40, "start_index": 2921, "end_index": 3049, "_text": "EKG revealed a normal sinus rhythm with a rate of 69 , left ventricular hyper-trophy with poor anterior progression of R-waves ."}
+{"sent_index": 41, "start_index": 3050, "end_index": 3065, "_text": "HOSPITAL COURSE"}
+{"sent_index": 42, "start_index": 3068, "end_index": 3331, "_text": "She was admitted and evaluated by the cardiac surgery service after having undergone cardiac catheterization which revealed a 70% stenosis of her left circumflex artery , 50% stenosis of the left anterior descending and 10% stenosis of the right coronary artery ."}
+{"sent_index": 43, "start_index": 3332, "end_index": 3464, "_text": "Carotid angiography revealed left internal carotid stenosis of 90% , right internal carotid artery &quot; critical stenosis &quot; ."}
+{"sent_index": 44, "start_index": 3465, "end_index": 3757, "_text": "On 05-01-92 she was taken to the operating room at which time she underwent an aortic valve replacement with a # 19 St. Jude valve , coronary artery bypass graft times one with saphenous vein graft from the posterior descending artery to the obtuse marginal and right carotid endarterectomy ."}
+{"sent_index": 45, "start_index": 3758, "end_index": 3800, "_text": "This was performed by Dr. Medicine and Dr."}
+{"sent_index": 46, "start_index": 3801, "end_index": 3807, "_text": "Room ."}
+{"sent_index": 47, "start_index": 3808, "end_index": 3967, "_text": "The patient tolerated the procedure well and was found postoperatively to have some left upper extremity weakness on proximal greater than distal musculature ."}
+{"sent_index": 48, "start_index": 3968, "end_index": 4130, "_text": "She was extubated on postoperative day number one and otherwise had an unremarkable postoperative course with the exception of her left upper extremity weakness ."}
+{"sent_index": 49, "start_index": 4131, "end_index": 4264, "_text": "On 05-04-92 she was evaluated by the neurology service , who recommended a CT scan , however no evidence of infarction was detected ."}
+{"sent_index": 50, "start_index": 4265, "end_index": 4316, "_text": "There was only diffuse small vessel disease noted ."}
+{"sent_index": 51, "start_index": 4317, "end_index": 4424, "_text": "On 05-05-92 she was noted to convert to atrial fibrillation which resolved spontaneously a few days later ."}
+{"sent_index": 52, "start_index": 4425, "end_index": 4604, "_text": "However , on 05-07-92 there was a a question of a new event with addition to the left upper extremity weakness , some noted right upper and right lower extremity discoordination ."}
+{"sent_index": 53, "start_index": 4605, "end_index": 4638, "_text": "She was begun on a heparin drip ."}
+{"sent_index": 54, "start_index": 4639, "end_index": 4726, "_text": "On 5-9-92 the right-sided symptoms worsened and she also had some elements of aphasia ."}
+{"sent_index": 55, "start_index": 4727, "end_index": 4988, "_text": "She underwent angiography on 5-9-92 which showed the right internal carotid artery to be patent , however there was highly significant stenosis of the left carotid artery and she was taken to the operating room later that day for a left carotid endarterectomy ."}
+{"sent_index": 56, "start_index": 4989, "end_index": 5297, "_text": "She was taken postoperatively the ICU where she was extubated on postoperative day number one and by 5-11-92 she was noted to have markedly increased use of her right side , resolving aphasia and she was transferred to the floor with the residual deficit only noted to be some left upper extremity weakness ."}
+{"sent_index": 57, "start_index": 5298, "end_index": 5494, "_text": "She was worked up aggressively with the physical therapy and occupational services , made good progress and began ambulating with assistance with a walker but with minimal assistance from an aid ."}
+{"sent_index": 58, "start_index": 5495, "end_index": 5614, "_text": "She was feeding herself and was very enthusiastic and energetic in her participation in her rehabilitation activities ."}
+{"sent_index": 59, "start_index": 5615, "end_index": 5807, "_text": "She was maintained on heparin therapy initially but this was quickly switched over to Coumadin anticoagulation therapy which she will need to be on long-term for her aortic valve replacement ."}
+{"sent_index": 60, "start_index": 5808, "end_index": 5819, "_text": "DISPOSITION"}
+{"sent_index": 61, "start_index": 5822, "end_index": 5911, "_text": "She is transferred to Rockdempbanri Hospital on 05-28-92 to continue her rehabilitation ."}
+{"sent_index": 62, "start_index": 5912, "end_index": 5933, "_text": "Discharge medications"}
+{"sent_index": 63, "start_index": 5936, "end_index": 5964, "_text": "Lopressor 100 mg p.o. b.i.d."}
+{"sent_index": 64, "start_index": 5967, "end_index": 6030, "_text": "Nifedipine 10 mg p.o. t.i.d. ; Timoptic solution 0.5% OS b.i.d."}
+{"sent_index": 65, "start_index": 6033, "end_index": 6186, "_text": "Coumadin 1 mg alternating with 1.5 mg q.o.d. at q.h.s. and Haldol 2 mg p.o. q.h.s. p.r.n. in the evening , only for agitation associated with confusion ."}
+{"sent_index": 66, "start_index": 6187, "end_index": 6347, "_text": "Upon discharge it was the recommendation of the cardiology team that the patient &apos;s prothrombin time be monitored weekly and be kept at a ratio of 3-4 IU ."}
+{"sent_index": 67, "start_index": 6348, "end_index": 6359, "_text": "Dictated By"}
+{"sent_index": 68, "start_index": 6362, "end_index": 6382, "_text": "NIEIE FREIERM , M.D."}
+{"sent_index": 69, "start_index": 6383, "end_index": 6424, "_text": "ZX 681 / 0201 / RISHAN MISHON ROOM , M.D."}
+{"sent_index": 70, "start_index": 6425, "end_index": 6433, "_text": "BREUNTIK"}
+{"sent_index": 71, "start_index": 6434, "end_index": 6446, "_text": "D :\n05/26/92"}
+{"sent_index": 72, "start_index": 6447, "end_index": 6459, "_text": "T :\n05/27/92"}
+{"sent_index": 73, "start_index": 6460, "end_index": 6472, "_text": "Batch :\nU886"}
+{"sent_index": 74, "start_index": 6473, "end_index": 6479, "_text": "Report"}
+{"sent_index": 75, "start_index": 6482, "end_index": 6489, "_text": "LH486L9"}

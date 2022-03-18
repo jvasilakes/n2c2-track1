@@ -1,0 +1,37 @@
+{"sent_index": 0, "start_index": 0, "end_index": 13, "_text": "245317863 WGH"}
+{"sent_index": 1, "start_index": 14, "end_index": 21, "_text": "9156109"}
+{"sent_index": 2, "start_index": 22, "end_index": 59, "_text": "780576\n0720567\n04/20/2005 12:00:00 AM"}
+{"sent_index": 3, "start_index": 60, "end_index": 80, "_text": "ED Discharge Summary"}
+{"sent_index": 4, "start_index": 81, "end_index": 89, "_text": "Unsigned"}
+{"sent_index": 5, "start_index": 90, "end_index": 93, "_text": "DIS"}
+{"sent_index": 6, "start_index": 94, "end_index": 107, "_text": "Report Status"}
+{"sent_index": 7, "start_index": 110, "end_index": 118, "_text": "Unsigned"}
+{"sent_index": 8, "start_index": 119, "end_index": 172, "_text": "ED DISCHARGE NOTIFICATION / SUMMARY\nKOORSKOTE , RETCO"}
+{"sent_index": 9, "start_index": 173, "end_index": 186, "_text": "MRN :\n9156109"}
+{"sent_index": 10, "start_index": 187, "end_index": 190, "_text": "Age"}
+{"sent_index": 11, "start_index": 193, "end_index": 196, "_text": "26y"}
+{"sent_index": 12, "start_index": 197, "end_index": 236, "_text": "REGISTRATION DATE :\n04/20/2005 10:30 PM"}
+{"sent_index": 13, "start_index": 237, "end_index": 257, "_text": "Provider :\nHE HERDES"}
+{"sent_index": 14, "start_index": 258, "end_index": 276, "_text": "PRELIMINARY REPORT"}
+{"sent_index": 15, "start_index": 277, "end_index": 308, "_text": "PCP notified by MD :\nE-mail PCP"}
+{"sent_index": 16, "start_index": 309, "end_index": 326, "_text": "Benefits Assigned"}
+{"sent_index": 17, "start_index": 329, "end_index": 330, "_text": "Y"}
+{"sent_index": 18, "start_index": 331, "end_index": 376, "_text": "Discharge Note Date / Time :\n04/21/2005 05:25"}
+{"sent_index": 19, "start_index": 377, "end_index": 393, "_text": "Discharge Status"}
+{"sent_index": 20, "start_index": 396, "end_index": 406, "_text": "Discharged"}
+{"sent_index": 21, "start_index": 407, "end_index": 429, "_text": "Condition on Discharge"}
+{"sent_index": 22, "start_index": 432, "end_index": 438, "_text": "Stable"}
+{"sent_index": 23, "start_index": 439, "end_index": 463, "_text": "Patient States Complaint"}
+{"sent_index": 24, "start_index": 466, "end_index": 474, "_text": "RLQ PAIN"}
+{"sent_index": 25, "start_index": 475, "end_index": 510, "_text": "Standardized Discharge Instructions"}
+{"sent_index": 26, "start_index": 513, "end_index": 587, "_text": "The patient was given printed instructions for kidney stones ( English ) ."}
+{"sent_index": 27, "start_index": 588, "end_index": 597, "_text": "Diagnosis"}
+{"sent_index": 28, "start_index": 600, "end_index": 635, "_text": "likely recently passed kidney stone"}
+{"sent_index": 29, "start_index": 636, "end_index": 723, "_text": "Treatment Rendered :\nhistory , physical , lab , Abdominal CT scan\nDischarge Medications"}
+{"sent_index": 30, "start_index": 726, "end_index": 742, "_text": "Motrin as needed"}
+{"sent_index": 31, "start_index": 743, "end_index": 835, "_text": "Follow up Service :\nPlease follow up with your primary care physician within the next week ."}
+{"sent_index": 32, "start_index": 836, "end_index": 915, "_text": "Also please follow up with urology regarding management of your kidney stones ."}
+{"sent_index": 33, "start_index": 916, "end_index": 967, "_text": "Disposition , Follow up and Instructions to Patient"}
+{"sent_index": 34, "start_index": 970, "end_index": 1031, "_text": "Please return if your symptoms return , you develop a fever ."}
+{"sent_index": 35, "start_index": 1032, "end_index": 1066, "_text": "PCP Name :\nKOTEKOTEPRUESS , SUSNUM"}
+{"sent_index": 36, "start_index": 1067, "end_index": 1156, "_text": "Provider Number :\n43264\nThis report was created by HERDES , NEWSHALIE 04/21/2005 06:47 AM"}

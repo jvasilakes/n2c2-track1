@@ -1,0 +1,113 @@
+{"sent_index": 0, "start_index": 0, "end_index": 14, "_text": "Admission Date"}
+{"sent_index": 1, "start_index": 17, "end_index": 27, "_text": "2014-10-14"}
+{"sent_index": 2, "start_index": 28, "end_index": 42, "_text": "Discharge Date"}
+{"sent_index": 3, "start_index": 45, "end_index": 55, "_text": "2014-10-17"}
+{"sent_index": 4, "start_index": 56, "end_index": 69, "_text": "Date of Birth"}
+{"sent_index": 5, "start_index": 72, "end_index": 82, "_text": "1959-12-09"}
+{"sent_index": 6, "start_index": 83, "end_index": 86, "_text": "Sex"}
+{"sent_index": 7, "start_index": 89, "end_index": 90, "_text": "M"}
+{"sent_index": 8, "start_index": 91, "end_index": 98, "_text": "Service"}
+{"sent_index": 9, "start_index": 101, "end_index": 104, "_text": "CCU"}
+{"sent_index": 10, "start_index": 105, "end_index": 131, "_text": "HISTORY OF PRESENT ILLNESS"}
+{"sent_index": 11, "start_index": 134, "end_index": 431, "_text": "This is a 55 - year-old Caucasian speaking male who is a smoker and has a family history of coronary artery disease , as well as a personal history of hypertension , who experienced multiple episodes of 10/10 substernal chest pain radiating down his left arm last night with his daily activities ."}
+{"sent_index": 12, "start_index": 432, "end_index": 516, "_text": "Each episode lasted approximately 15 minutes in duration and resolved on their own ."}
+{"sent_index": 13, "start_index": 517, "end_index": 629, "_text": "This morning while landscaping the patient had unremitting 12-05 pain with shortness of breath and diaphoresis ."}
+{"sent_index": 14, "start_index": 630, "end_index": 663, "_text": "He presented to Deaconess-Nashoba"}
+{"sent_index": 15, "start_index": 664, "end_index": 823, "_text": "Hospital Hospital and the first EKG was found to have ST elevations in V1-V3 of 1-2 mm with T wave inversions in V4-6 , I and L , which progressed to 3-0167 W."}
+{"sent_index": 16, "start_index": 824, "end_index": 867, "_text": "Seventh Ave. elevations within 20 minutes ."}
+{"sent_index": 17, "start_index": 868, "end_index": 949, "_text": "Heparin and nitroglycerin drip were started with 10 mg of IV Retavase half dose ."}
+{"sent_index": 18, "start_index": 950, "end_index": 1027, "_text": "He was transferred to the North Adams Regional Hospital for catheterization ."}
+{"sent_index": 19, "start_index": 1028, "end_index": 1045, "_text": "Once at Hahnemann"}
+{"sent_index": 20, "start_index": 1046, "end_index": 1099, "_text": "General Hospital he received heparin and Integrilin ."}
+{"sent_index": 21, "start_index": 1100, "end_index": 1208, "_text": "Coronary angiography revealed left main , left circumflex and RCA normal and left LAD with 99% midstenosis ."}
+{"sent_index": 22, "start_index": 1209, "end_index": 1304, "_text": "A Hepacoat stent was placed with no residuals but good flow after nitroglycerin and diltiazem ."}
+{"sent_index": 23, "start_index": 1305, "end_index": 1413, "_text": "The chest pain persisted afterwards and a relook catheterization was performed that revealed no occlusions ."}
+{"sent_index": 24, "start_index": 1414, "end_index": 1509, "_text": "The right heart catheterization revealed a cardiac output index of 4.11 and 2.15 respectively ."}
+{"sent_index": 25, "start_index": 1510, "end_index": 1586, "_text": "RA pressure was 13 , RV pressure 45/7 , wedge 27 and PA pressures of 42/21 ."}
+{"sent_index": 26, "start_index": 1587, "end_index": 1709, "_text": "He was transferred to the CC for monitoring and he denied having further pain , shortness of breath , nausea or vomiting ."}
+{"sent_index": 27, "start_index": 1710, "end_index": 1833, "_text": "At baseline the patient denies any previous chest pain , pressure , dyspnea on exertion , orthopnea , PND or palpitations ."}
+{"sent_index": 28, "start_index": 1834, "end_index": 1854, "_text": "PAST MEDICAL HISTORY"}
+{"sent_index": 29, "start_index": 1857, "end_index": 1876, "_text": "Only hypertension ."}
+{"sent_index": 30, "start_index": 1877, "end_index": 1888, "_text": "MEDICATIONS"}
+{"sent_index": 31, "start_index": 1891, "end_index": 1957, "_text": "Antihypertensive medications that the patient could not identify ."}
+{"sent_index": 32, "start_index": 1958, "end_index": 1967, "_text": "ALLERGIES"}
+{"sent_index": 33, "start_index": 1970, "end_index": 2016, "_text": "The patient denies having any drug allergies ."}
+{"sent_index": 34, "start_index": 2017, "end_index": 2031, "_text": "FAMILY HISTORY"}
+{"sent_index": 35, "start_index": 2034, "end_index": 2085, "_text": "Significant for a brother who had an MI at age 61 ."}
+{"sent_index": 36, "start_index": 2086, "end_index": 2100, "_text": "SOCIAL HISTORY"}
+{"sent_index": 37, "start_index": 2103, "end_index": 2178, "_text": "He has two kids , works as a landscaper and as a school custodian in Ware ."}
+{"sent_index": 38, "start_index": 2179, "end_index": 2216, "_text": "He has a 15 to 20 pack-year history ."}
+{"sent_index": 39, "start_index": 2217, "end_index": 2302, "_text": "Smokes 1 pack-per-day for 15 years but had quit for 20 years and recently restarted ."}
+{"sent_index": 40, "start_index": 2303, "end_index": 2383, "_text": "He drinks two glasses of wine per day and denies any use of illicit substances ."}
+{"sent_index": 41, "start_index": 2384, "end_index": 2417, "_text": "PHYSICAL EXAMINATION ON ADMISSION"}
+{"sent_index": 42, "start_index": 2420, "end_index": 2446, "_text": "The patient was afebrile ."}
+{"sent_index": 43, "start_index": 2447, "end_index": 2505, "_text": "Blood pressure 156/67 , pulse 80 and respiratory rate 14 ."}
+{"sent_index": 44, "start_index": 2506, "end_index": 2516, "_text": "Appearance"}
+{"sent_index": 45, "start_index": 2519, "end_index": 2552, "_text": "He was laying flat , very tense ."}
+{"sent_index": 46, "start_index": 2553, "end_index": 2608, "_text": "Skin was strong build and was in no apparent distress ."}
+{"sent_index": 47, "start_index": 2609, "end_index": 2614, "_text": "HEENT"}
+{"sent_index": 48, "start_index": 2617, "end_index": 2663, "_text": "He was anicteric with moist mucous membranes ."}
+{"sent_index": 49, "start_index": 2664, "end_index": 2718, "_text": "No JVD or increased JVP was appreciated at 0 degrees ."}
+{"sent_index": 50, "start_index": 2719, "end_index": 2801, "_text": "The patient did not have any carotid bruits , abdominal bruits or femoral bruits ."}
+{"sent_index": 51, "start_index": 2802, "end_index": 2904, "_text": "His PMI was two finger breath width in the fifth intercostal space lateral to the midclavicular line ."}
+{"sent_index": 52, "start_index": 2905, "end_index": 2951, "_text": "There were no lifts or heaves on examination ."}
+{"sent_index": 53, "start_index": 2952, "end_index": 3073, "_text": "His heart was regular with no murmurs , rubs or gallops and his radial and DP pulses were both 2+ bilaterally and equal ."}
+{"sent_index": 54, "start_index": 3074, "end_index": 3112, "_text": "His lungs were clear to auscultation ."}
+{"sent_index": 55, "start_index": 3113, "end_index": 3193, "_text": "His abdomen was scaphoid , nondistended , nontender with positive bowel sounds ."}
+{"sent_index": 56, "start_index": 3194, "end_index": 3242, "_text": "His extremities were warm , pink with no edema ."}
+{"sent_index": 57, "start_index": 3243, "end_index": 3308, "_text": "The right calf site had minimal ooze and no hematomas or bruits ."}
+{"sent_index": 58, "start_index": 3309, "end_index": 3326, "_text": "ELECTROCARDIOGRAM"}
+{"sent_index": 59, "start_index": 3329, "end_index": 3373, "_text": "Significant for what was stated in the HPI ."}
+{"sent_index": 60, "start_index": 3374, "end_index": 3392, "_text": "OVERALL IMPRESSION"}
+{"sent_index": 61, "start_index": 3395, "end_index": 3690, "_text": "This is a 54 - year-old man with significant coronary artery disease risk factors , positive family history , smoking history , hypertension and gender who presented with an ST elevation MI status post LAD stent , complicated by no residuals requiring nitroglycerin and diltiazem for good flow ."}
+{"sent_index": 62, "start_index": 3691, "end_index": 3733, "_text": "The patient was pain free and doing well ."}
+{"sent_index": 63, "start_index": 3734, "end_index": 3749, "_text": "HOSPITAL COURSE"}
+{"sent_index": 64, "start_index": 3752, "end_index": 3814, "_text": "For his coronary artery disease , aspirin was started at 325 ."}
+{"sent_index": 65, "start_index": 3815, "end_index": 3993, "_text": "Plavix was started at 75 mg a day , Lipitor 20 mg per day , metoprolol 25 mg twice a day to be titrated up as tolerated and on day two of admission an ACE inhibitor was started ."}
+{"sent_index": 66, "start_index": 3994, "end_index": 4035, "_text": "Captopril 6.2 3 x a day and titrated up ."}
+{"sent_index": 67, "start_index": 4036, "end_index": 4197, "_text": "A lipid panel was checked and found to be within normal limits , although it was noted this was in the post MI setting and the lipid panel could be falsely low ."}
+{"sent_index": 68, "start_index": 4198, "end_index": 4247, "_text": "Serial CK s were followed with a CK peak of 433 ."}
+{"sent_index": 69, "start_index": 4248, "end_index": 4360, "_text": "Hypertension was managed with beta blocker and ACE inhibitor and Integrilin was continued post MI for 18 hours ."}
+{"sent_index": 70, "start_index": 4361, "end_index": 4440, "_text": "Rhythm was maintained at normal sinus , monitored on telemetry without ectopy ."}
+{"sent_index": 71, "start_index": 4441, "end_index": 4480, "_text": "EKG s were followed for normalization ."}
+{"sent_index": 72, "start_index": 4481, "end_index": 4971, "_text": "The patient had an echocardiogram on day two of admission , which revealed a mildly dilated left atrium , mild symmetric LVH , normal LV cavity size , mild region LV systolic dysfunction , arresting regional wall motion abnormality including focal apical hypokinesis , a normal right ventricular chamber size and free wall motion , a moderately dilated aortic root , a mildly dilated ascending aorta , normal aortic valve leaflet , normal mitral valve leaflet and no pericardial effusions ."}
+{"sent_index": 73, "start_index": 4972, "end_index": 5051, "_text": "The patient was normal volume and displayed no evidence CHF signs or symptoms ."}
+{"sent_index": 74, "start_index": 5052, "end_index": 5085, "_text": "The risk factors were addressed ."}
+{"sent_index": 75, "start_index": 5086, "end_index": 5283, "_text": "The patient was told repeatedly that he needed to stop smoking and was given a nicotine patch and his primary care provider was called to discuss outpatient plans to help the patient stop smoking ."}
+{"sent_index": 76, "start_index": 5284, "end_index": 5411, "_text": "The patient was advised to have a low fat / low cholesterol diet , was cleared by PT and advised to do cardiac rehabilitation ."}
+{"sent_index": 77, "start_index": 5412, "end_index": 5562, "_text": "He was advised the importance of each of his and compliance with each of these medications and was told he needed close followup with a cardiologist ."}
+{"sent_index": 78, "start_index": 5563, "end_index": 5646, "_text": "For renal , his creatinine was monitored and the dye load and the catheterization ."}
+{"sent_index": 79, "start_index": 5647, "end_index": 5683, "_text": "It was normal and did not increase ."}
+{"sent_index": 80, "start_index": 5684, "end_index": 5700, "_text": "Gastrointestinal"}
+{"sent_index": 81, "start_index": 5703, "end_index": 5759, "_text": "The patient was given a low fat / low cholesterol diet ."}
+{"sent_index": 82, "start_index": 5760, "end_index": 5816, "_text": "His electrolytes were monitored and repleted carefully ."}
+{"sent_index": 83, "start_index": 5817, "end_index": 5891, "_text": "He had normal bowel movements and had GI prophylaxis throughout his stay ."}
+{"sent_index": 84, "start_index": 5892, "end_index": 5991, "_text": "For hematology , the patient 's hematocrit and platelets were monitored after the catheterization ."}
+{"sent_index": 85, "start_index": 5992, "end_index": 6090, "_text": "They were normal and did not change and the patient received pneumatic boots for DVT prophylaxis ."}
+{"sent_index": 86, "start_index": 6091, "end_index": 6183, "_text": "On day two of admission , the patient ambulated with PT and was moved to the regular floor ."}
+{"sent_index": 87, "start_index": 6184, "end_index": 6269, "_text": "On day three of admission , the patient felt that his strength was back to baseline ."}
+{"sent_index": 88, "start_index": 6270, "end_index": 6399, "_text": "He denied ever having any chest pain , chest pressure , shortness of breath , dyspnea on exertion and he was discharged to home ."}
+{"sent_index": 89, "start_index": 6400, "end_index": 6550, "_text": "He was told to return to the emergency department if he had any chest pain , pressure , difficulty breathing , nausea , light-headiness or dizziness ."}
+{"sent_index": 90, "start_index": 6551, "end_index": 6598, "_text": "He was advised to take all of his medications ."}
+{"sent_index": 91, "start_index": 6599, "end_index": 6814, "_text": "An appointment was established for him to see his primary care doctor , Dr. Stella Booth on Maynard , 2014-10-20 and the patient was referred to Dr. Granville Hamers , at Ware in cardiology to be seen in two weeks ."}
+{"sent_index": 92, "start_index": 6815, "end_index": 6914, "_text": "Dr Marcus assistant was called and she stated that she would call the patient with an appointment ."}
+{"sent_index": 93, "start_index": 6915, "end_index": 6930, "_text": "FINAL DIAGNOSES"}
+{"sent_index": 94, "start_index": 6933, "end_index": 6972, "_text": "1. ST elevation myocardial infarction ."}
+{"sent_index": 95, "start_index": 6973, "end_index": 6990, "_text": "2. Hypertension ."}
+{"sent_index": 96, "start_index": 6991, "end_index": 7029, "_text": "MAJOR SURGICAL AND INVASIVE PROCEDURES"}
+{"sent_index": 97, "start_index": 7032, "end_index": 7120, "_text": "Cardiac catheterization and stent placement in the mid left anterior descending artery ."}
+{"sent_index": 98, "start_index": 7121, "end_index": 7140, "_text": "DISCHARGE CONDITION"}
+{"sent_index": 99, "start_index": 7143, "end_index": 7149, "_text": "Good ."}
+{"sent_index": 100, "start_index": 7150, "end_index": 7171, "_text": "DISCHARGE MEDICATIONS"}
+{"sent_index": 101, "start_index": 7174, "end_index": 7396, "_text": "Aspirin 325 mg q.d. , Plavix 75 mg q.d. , Lipitor 20 mg q.d. , nitroglycerin 0.3 mg sublingually p.r.n. chest pain or pressure or shortness of breath , lisinopril hydrochlorothiazide 20 / 12.5 mg q.d. , atenolol 25 mg q.d."}
+{"sent_index": 102, "start_index": 7397, "end_index": 7662, "_text": "The patient was told he could return to work after two weeks of rest , given that his work required a high level of exertion and the patient was also given a prescription for a transdermal nicotine patch 14 mg the be used for up to 2 weeks until cravings remitted ."}
+{"sent_index": 103, "start_index": 7663, "end_index": 7683, "_text": "Antonio PINTO , M.D."}
+{"sent_index": 104, "start_index": 7684, "end_index": 7690, "_text": "52-057"}
+{"sent_index": 105, "start_index": 7691, "end_index": 7702, "_text": "Dictated By"}
+{"sent_index": 106, "start_index": 7705, "end_index": 7733, "_text": "Salvador BX Hernandez , M.D."}
+{"sent_index": 107, "start_index": 7734, "end_index": 7744, "_text": "MEDQUIST36"}
+{"sent_index": 108, "start_index": 7745, "end_index": 7765, "_text": "D : 2014-10-18 12:39"}
+{"sent_index": 109, "start_index": 7766, "end_index": 7786, "_text": "T : 2014-10-21 12:42"}
+{"sent_index": 110, "start_index": 7787, "end_index": 7799, "_text": "JOB #: 78572"}
+{"sent_index": 111, "start_index": 7800, "end_index": 7870, "_text": "Signed electronically by : DR. Steve PINTO on : SUN 2014-11-02 8:39 PM"}
+{"sent_index": 112, "start_index": 7873, "end_index": 7886, "_text": "End of Report"}

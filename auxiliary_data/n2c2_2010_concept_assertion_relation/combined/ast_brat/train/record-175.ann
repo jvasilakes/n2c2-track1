@@ -1,0 +1,42 @@
+T0	problem 898 918	hepatorenal syndrome
+A0	Assertion T0 possible
+T1	problem 3100 3124	His estimated blood loss
+A1	Assertion T1 present
+T2	problem 947 968	Hepatitis C cirrhosis
+A2	Assertion T2 present
+T3	problem 177 200	end stage liver disease
+A3	Assertion T3 present
+T4	problem 214 235	hepatitis C cirrhosis
+A4	Assertion T4 present
+T5	problem 1175 1185	groin rash
+A5	Assertion T5 hypothetical
+T6	problem 486 493	ascites
+A6	Assertion T6 present
+T7	problem 467 481	encephalopathy
+A7	Assertion T7 present
+T8	problem 816 832	further elevated
+A8	Assertion T8 present
+T9	problem 2761 2794	spontaneous bacterial peritonitis
+A9	Assertion T9 absent
+T10	problem 648 672	worsening renal function
+A10	Assertion T10 present
+T11	problem 4892 4924	The patient 's surgical incision
+A11	Assertion T11 present
+T12	problem 4992 5001	infection
+A12	Assertion T12 absent
+T13	problem 2347 2363	thrombocytopenic
+A13	Assertion T13 present
+T14	problem 3581 3589	distress
+A14	Assertion T14 absent
+T15	problem 2456 2540	his previously diagnosed Methicillin resistant , coagulase negative Staph bacteremia
+A15	Assertion T15 present
+T16	problem 3683 3695	any problems
+A16	Assertion T16 absent
+T17	problem 1068 1079	Hemorrhoids
+A17	Assertion T17 present
+T18	problem 3333 3346	complications
+A18	Assertion T18 absent
+T19	problem 1029 1041	Hypertension
+A19	Assertion T19 present
+T20	problem 1047 1062	Nephrolithiasis
+A20	Assertion T20 present

@@ -1,0 +1,94 @@
+{"sent_index": 0, "start_index": 0, "end_index": 9, "_text": "622086964"}
+{"sent_index": 1, "start_index": 10, "end_index": 12, "_text": "BH"}
+{"sent_index": 2, "start_index": 13, "end_index": 20, "_text": "8245338"}
+{"sent_index": 3, "start_index": 21, "end_index": 27, "_text": "356492"}
+{"sent_index": 4, "start_index": 28, "end_index": 50, "_text": "05/16/2004 12:00:00 AM"}
+{"sent_index": 5, "start_index": 51, "end_index": 68, "_text": "Discharge Summary"}
+{"sent_index": 6, "start_index": 69, "end_index": 75, "_text": "Signed"}
+{"sent_index": 7, "start_index": 76, "end_index": 79, "_text": "DIS"}
+{"sent_index": 8, "start_index": 80, "end_index": 93, "_text": "Report Status"}
+{"sent_index": 9, "start_index": 96, "end_index": 102, "_text": "Signed"}
+{"sent_index": 10, "start_index": 103, "end_index": 125, "_text": "DISCHARGE SUMMARY NAME"}
+{"sent_index": 11, "start_index": 128, "end_index": 173, "_text": "WIERSTUPH , NORNAME H\nUNIT NUMBER :\n370-15-25"}
+{"sent_index": 12, "start_index": 174, "end_index": 201, "_text": "ADMISSION DATE :\n05/16/2004"}
+{"sent_index": 13, "start_index": 202, "end_index": 229, "_text": "DISCHARGE DATE :\n05/26/2004"}
+{"sent_index": 14, "start_index": 230, "end_index": 247, "_text": "PRIMARY DIAGNOSIS"}
+{"sent_index": 15, "start_index": 250, "end_index": 266, "_text": "Ovarian cancer ."}
+{"sent_index": 16, "start_index": 267, "end_index": 287, "_text": "ASSOCIATED DIAGNOSES"}
+{"sent_index": 17, "start_index": 290, "end_index": 391, "_text": "Hypertension , asthma , obesity , history of heart murmur , hemorrhoids , whooping cough as a child ."}
+{"sent_index": 18, "start_index": 392, "end_index": 417, "_text": "OPERATIONS AND PROCEDURES"}
+{"sent_index": 19, "start_index": 420, "end_index": 603, "_text": "Total abdominal hysterectomy , bilateral salpingooophorectomy , bilateral lymph node dissection , omentectomy , lysis of adhesions , removal of mass from surface of transverse colon ."}
+{"sent_index": 20, "start_index": 604, "end_index": 665, "_text": "HISTORY OF THE PRESENT ILLNESS AND REASON FOR HOSPITALIZATION"}
+{"sent_index": 21, "start_index": 668, "end_index": 836, "_text": "64-year-old G5P5 postmenopausal for 10 years with a history of two months of progressive abdominal distention , crampy abdominal pain , urinary frequency and diarrhea ."}
+{"sent_index": 22, "start_index": 837, "end_index": 1010, "_text": "The patient has not obtained gynecologic care for 32 years until April 2004 when an increase in abdominal GERD and urinary symptoms lead her to initial consultation with Dr."}
+{"sent_index": 23, "start_index": 1011, "end_index": 1096, "_text": "Lentny Farstnappsshee in Gobrew Street , Denlandcobridclevena , West Virginia 28880 ."}
+{"sent_index": 24, "start_index": 1097, "end_index": 1218, "_text": "At that time a pelvic ultrasound was performed showing extensive fluid and clear mass within the pelvi-abdominal cavity ."}
+{"sent_index": 25, "start_index": 1219, "end_index": 1335, "_text": "MRI showed a large fluid filled abdomen with a relatively small mass measuring about 5 to 6 cm in the right pelvis ."}
+{"sent_index": 26, "start_index": 1336, "end_index": 1399, "_text": "At this point she had an elevated CA 125 at 440 and came to Dr."}
+{"sent_index": 27, "start_index": 1400, "end_index": 1437, "_text": "Chabechird for further consultation ."}
+{"sent_index": 28, "start_index": 1438, "end_index": 1458, "_text": "PAST MEDICAL HISTORY"}
+{"sent_index": 29, "start_index": 1461, "end_index": 1599, "_text": "Hypertension , asthma for 10 years , no hospitalizations , obesity , history of heart murmur , hemorrhoids and whooping cough as a child ."}
+{"sent_index": 30, "start_index": 1600, "end_index": 1621, "_text": "PAST SURGICAL HISTORY"}
+{"sent_index": 31, "start_index": 1624, "end_index": 1711, "_text": "Tonsillectomy in 1947 , removal of a renal calculus in 1979 , cholecystectomy in 1986 ."}
+{"sent_index": 32, "start_index": 1712, "end_index": 1726, "_text": "OB-GYN HISTORY"}
+{"sent_index": 33, "start_index": 1729, "end_index": 1792, "_text": "G5 , P5 normal Pap smears , sexual active without dyspareunia ."}
+{"sent_index": 34, "start_index": 1793, "end_index": 1855, "_text": "No regular breast self examination , has not had a mammogram ."}
+{"sent_index": 35, "start_index": 1856, "end_index": 1875, "_text": "MEDICATIONS AT HOME"}
+{"sent_index": 36, "start_index": 1878, "end_index": 1936, "_text": "Included Prinzide 12.5 mg po daily , albuterol inhaler prn"}
+{"sent_index": 37, "start_index": 1937, "end_index": 1946, "_text": "ALLERGIES"}
+{"sent_index": 38, "start_index": 1949, "end_index": 1958, "_text": "Demerol ."}
+{"sent_index": 39, "start_index": 1959, "end_index": 2012, "_text": "The patient developed ulceration after IM injection ."}
+{"sent_index": 40, "start_index": 2013, "end_index": 2132, "_text": "She also has food allergies to raw vegetables as well as some shortness of breath and throat constriction with shrimp ."}
+{"sent_index": 41, "start_index": 2133, "end_index": 2147, "_text": "FAMILY HISTORY"}
+{"sent_index": 42, "start_index": 2150, "end_index": 2218, "_text": "Remarkable for colon cancer in her mother and maternal grandfather ."}
+{"sent_index": 43, "start_index": 2219, "end_index": 2234, "_text": "HOSPITAL COURSE"}
+{"sent_index": 44, "start_index": 2237, "end_index": 2318, "_text": "The patient was admitted on 05/16/2004 for bowel preparation before the surgery ."}
+{"sent_index": 45, "start_index": 2319, "end_index": 2533, "_text": "On 05/17/2004 the patient underwent atotal abdominal hysterectomy , bilateral salpingooophorectomy , bilateral node dissection , omentectomy , lysis of adhesions , removal of mass from surface of transverse colon ."}
+{"sent_index": 46, "start_index": 2534, "end_index": 2683, "_text": "The report from the frozen section sent in the surgery came back with poorly differentiated adenocarcinoma , possibly serous carcinoma of the ovary ."}
+{"sent_index": 47, "start_index": 2684, "end_index": 2779, "_text": "In the postoperative recovery room the patient had a hematocrit of 29.2 with low urine output ."}
+{"sent_index": 48, "start_index": 2780, "end_index": 2827, "_text": "She was given 1 unit of packed red blood cell ."}
+{"sent_index": 49, "start_index": 2828, "end_index": 2869, "_text": "Her urine output subsequently increased ."}
+{"sent_index": 50, "start_index": 2870, "end_index": 2938, "_text": "The patient was transferred to the floor without any complications ."}
+{"sent_index": 51, "start_index": 2939, "end_index": 2968, "_text": "She had an uneventful night ."}
+{"sent_index": 52, "start_index": 2969, "end_index": 3063, "_text": "On postoperative day one , the patient &apos;s urine culture came back with moderate E. coli ."}
+{"sent_index": 53, "start_index": 3064, "end_index": 3113, "_text": "She was started on Levofloxacin 500 mg po daily ."}
+{"sent_index": 54, "start_index": 3114, "end_index": 3160, "_text": "The patient was also started on a clear diet ."}
+{"sent_index": 55, "start_index": 3161, "end_index": 3216, "_text": "On postoperative day two , her Foley was discontinued ."}
+{"sent_index": 56, "start_index": 3217, "end_index": 3245, "_text": "The patient was out of bed ."}
+{"sent_index": 57, "start_index": 3246, "end_index": 3274, "_text": "She was tolerating liquids ."}
+{"sent_index": 58, "start_index": 3275, "end_index": 3335, "_text": "On postoperative day three , the patient had a port placed ."}
+{"sent_index": 59, "start_index": 3336, "end_index": 3385, "_text": "She also had one episode of shortness of breath ."}
+{"sent_index": 60, "start_index": 3386, "end_index": 3537, "_text": "Achest x-ray done at that time showed left pleural effusion and small right pleural effusion , not pulmonary edema and left lower lobe consolidations ."}
+{"sent_index": 61, "start_index": 3538, "end_index": 3633, "_text": "The patient was afebrile , her vital signs were stable and she maintained a good urine output ."}
+{"sent_index": 62, "start_index": 3634, "end_index": 3806, "_text": "She also had an episode of nausea with some emesis , after being treated with Zofran with no relief , a nasogastric tube was placed which drained 1200 cc of bilious fluid ."}
+{"sent_index": 63, "start_index": 3807, "end_index": 3892, "_text": "On postoperative day four , the patient continued to have nasogastric tube in place ."}
+{"sent_index": 64, "start_index": 3893, "end_index": 4001, "_text": "A repeat chest x-ray done for dyspnea showed persistent pleural effusion with atelectasis versus pneumonia ."}
+{"sent_index": 65, "start_index": 4002, "end_index": 4034, "_text": "Her levofloxacin was continued ."}
+{"sent_index": 66, "start_index": 4035, "end_index": 4131, "_text": "The patient tolerated nasogastric tube clamping trials with high residuals in the 600 cc range ."}
+{"sent_index": 67, "start_index": 4132, "end_index": 4188, "_text": "The patient did well on postoperative day five and six ."}
+{"sent_index": 68, "start_index": 4189, "end_index": 4249, "_text": "She was started on clear fluids with a nasogastric clamped ."}
+{"sent_index": 69, "start_index": 4250, "end_index": 4328, "_text": "On postoperative day seven the patient diet was slowly advanced as tolerated ."}
+{"sent_index": 70, "start_index": 4329, "end_index": 4399, "_text": "She was also started on Decadron in preparation for her chemotherapy ."}
+{"sent_index": 71, "start_index": 4400, "end_index": 4551, "_text": "On postoperative day eight which is Memorial Day the patient was started on Carboplatin-Taxolchemo therapy , which she tolerated without complication ."}
+{"sent_index": 72, "start_index": 4552, "end_index": 4607, "_text": "On postoperative nine , her JP drain was discontinued ."}
+{"sent_index": 73, "start_index": 4608, "end_index": 4693, "_text": "The patient was discharged home that afternoon in stable condition in the afternoon ."}
+{"sent_index": 74, "start_index": 4694, "end_index": 4715, "_text": "DISCHARGE MEDICATIONS"}
+{"sent_index": 75, "start_index": 4718, "end_index": 4890, "_text": "Dilaudid 2 to 4 mg po q3h prn pain , Ativan 1 mg po q12h prn anxiety , Zofran 8 mg po q8h prn nausea , Compazine 10 mg po q6h prn nausea , Decadron 20 mg po q6h x 2 doses ."}
+{"sent_index": 76, "start_index": 4891, "end_index": 5021, "_text": "The patient was instructed to take 20 mg at 11 pm the night before her next chemotherapy and 8 am on the morning of chemotherapy ."}
+{"sent_index": 77, "start_index": 5022, "end_index": 5120, "_text": "Colace 100 mg po bid , Albuterol inhalers two puffs inhaled qid prn wheezing and asthma symptoms ."}
+{"sent_index": 78, "start_index": 5121, "end_index": 5143, "_text": "DISCHARGE INSTRUCTIONS"}
+{"sent_index": 79, "start_index": 5146, "end_index": 5217, "_text": "The patient was instructed to follow up with Dr. Slaineaee Chabechird ."}
+{"sent_index": 80, "start_index": 5218, "end_index": 5320, "_text": "She was told to make an appointment two weeks after her surgery for removal of her retention sutures ."}
+{"sent_index": 81, "start_index": 5321, "end_index": 5374, "_text": "The patient was discharged home in stable condition ."}
+{"sent_index": 82, "start_index": 5375, "end_index": 5409, "_text": "NAUNGDAPHBERE T. BUMPSFOOKS , M.D."}
+{"sent_index": 83, "start_index": 5410, "end_index": 5423, "_text": "DICTATING FOR"}
+{"sent_index": 84, "start_index": 5426, "end_index": 5447, "_text": "Electronically Signed"}
+{"sent_index": 85, "start_index": 5448, "end_index": 5482, "_text": "SLAINEAEE S CHABECHIRD , JR , M.D."}
+{"sent_index": 86, "start_index": 5483, "end_index": 5499, "_text": "06/04/2004 15:45"}
+{"sent_index": 87, "start_index": 5530, "end_index": 5564, "_text": "SLAINEAEE S CHABECHIRD , JR , M.D."}
+{"sent_index": 88, "start_index": 5565, "end_index": 5572, "_text": "TR :\nfk"}
+{"sent_index": 89, "start_index": 5573, "end_index": 5588, "_text": "DD :\n05/26/2004"}
+{"sent_index": 90, "start_index": 5589, "end_index": 5591, "_text": "TD"}
+{"sent_index": 91, "start_index": 5594, "end_index": 5621, "_text": "05/27/2004 4:01 A 356492\ncc"}
+{"sent_index": 92, "start_index": 5624, "end_index": 5633, "_text": "SLAINEAEE"}
+{"sent_index": 93, "start_index": 5634, "end_index": 5658, "_text": "S CHABECHIRD , JR , M.D."}

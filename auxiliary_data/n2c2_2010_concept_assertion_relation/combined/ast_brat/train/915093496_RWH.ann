@@ -1,0 +1,30 @@
+T0	problem 1534 1540	masses
+A0	Assertion T0 absent
+T1	problem 2138 2153	persistent pain
+A1	Assertion T1 present
+T2	problem 1085 1105	known drug allergies
+A2	Assertion T2 absent
+T3	problem 260 279	Undesired fertility
+A3	Assertion T3 present
+T4	problem 1544 1554	tenderness
+A4	Assertion T4 absent
+T5	problem 1510 1519	nontender
+A5	Assertion T5 absent
+T6	problem 2212 2222	complaints
+A6	Assertion T6 absent
+T7	problem 1756 1780	The estimated blood loss
+A7	Assertion T7 present
+T8	problem 1369 1381	nondistended
+A8	Assertion T8 absent
+T9	problem 956 984	sexually transmitted disease
+A9	Assertion T9 absent
+T10	problem 285 304	Undesired adiposity
+A10	Assertion T10 present
+T11	problem 1357 1366	nontender
+A11	Assertion T11 absent
+T12	problem 1230 1236	masses
+A12	Assertion T12 absent
+T13	problem 849 877	Spontaneous vaginal delivery
+A13	Assertion T13 present
+T14	problem 2238 2246	afebrile
+A14	Assertion T14 absent

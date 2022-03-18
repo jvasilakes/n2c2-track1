@@ -1,0 +1,36 @@
+T0	problem 2430 2436	pauses
+A0	Assertion T0 present
+T1	problem 2185 2193	ischemia
+A1	Assertion T1 absent
+T2	problem 2102 2105	HTN
+A2	Assertion T2 present
+T3	problem 2408 2425	sinus bradycardia
+A3	Assertion T3 present
+T4	problem 2132 2147	epigastric pain
+A4	Assertion T4 present
+T5	problem 2150 2153	SOB
+A5	Assertion T5 conditional
+T6	problem 2225 2240	mild dilatation
+A6	Assertion T6 present
+T7	problem 1750 1773	Obstructive Sleep Apnea
+A7	Assertion T7 present
+T8	problem 1861 1864	HTN
+A8	Assertion T8 present
+T9	problem 1627 1642	Known Allergies
+A9	Assertion T9 absent
+T10	problem 2063 2065	MI
+A10	Assertion T10 possible
+T11	problem 2248 2276	significant valvular disease
+A11	Assertion T11 absent
+T12	problem 1667 1669	MI
+A12	Assertion T12 possible
+T13	problem 1884 1901	sinus bradycardia
+A13	Assertion T13 present
+T14	problem 2072 2091	significant cardiac
+A14	Assertion T14 present
+T15	problem 2050 2052	CP
+A15	Assertion T15 present
+T16	problem 2455 2486	desaturations in the 70 &apos;s
+A16	Assertion T16 present
+T17	problem 52 75	Obstructive Sleep Apnea
+A17	Assertion T17 present

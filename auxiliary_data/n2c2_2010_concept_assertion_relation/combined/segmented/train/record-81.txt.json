@@ -1,0 +1,180 @@
+{"sent_index": 0, "start_index": 0, "end_index": 14, "_text": "Admission Date"}
+{"sent_index": 1, "start_index": 17, "end_index": 27, "_text": "2011-02-06"}
+{"sent_index": 2, "start_index": 28, "end_index": 42, "_text": "Discharge Date"}
+{"sent_index": 3, "start_index": 45, "end_index": 55, "_text": "2011-02-08"}
+{"sent_index": 4, "start_index": 56, "end_index": 69, "_text": "Date of Birth"}
+{"sent_index": 5, "start_index": 72, "end_index": 75, "_text": "Sex"}
+{"sent_index": 6, "start_index": 78, "end_index": 79, "_text": "M"}
+{"sent_index": 7, "start_index": 80, "end_index": 87, "_text": "Service"}
+{"sent_index": 8, "start_index": 90, "end_index": 116, "_text": "HISTORY OF PRESENT ILLNESS"}
+{"sent_index": 9, "start_index": 119, "end_index": 122, "_text": "Mr."}
+{"sent_index": 10, "start_index": 123, "end_index": 198, "_text": "Pohl is a 53 - year-old male with history of alcohol use and hypertension ."}
+{"sent_index": 11, "start_index": 199, "end_index": 267, "_text": "He was found in his apartment lobby \" shouting \" and very agitated ."}
+{"sent_index": 12, "start_index": 268, "end_index": 361, "_text": "The patient states that he recalls going out alone to a cafe the evening prior to admission ."}
+{"sent_index": 13, "start_index": 362, "end_index": 421, "_text": "There he recalls having pizza and two glasses of red wine ."}
+{"sent_index": 14, "start_index": 422, "end_index": 559, "_text": "The patient told other staff that he had a few cocktails and drinking a few more glasses of wine when he ran into some friends at a bar ."}
+{"sent_index": 15, "start_index": 560, "end_index": 605, "_text": "He denies any other drug or toxin ingestion ."}
+{"sent_index": 16, "start_index": 606, "end_index": 689, "_text": "He does not recall walking home , but he states that the way is well known to him ."}
+{"sent_index": 17, "start_index": 690, "end_index": 765, "_text": "He has no further recollection , until he presented to the emergency room ."}
+{"sent_index": 18, "start_index": 766, "end_index": 839, "_text": "He by emergency room report , was found in his apartment lobby agitated ."}
+{"sent_index": 19, "start_index": 840, "end_index": 904, "_text": "EMS was called and the patient was taken to the emergency room ."}
+{"sent_index": 20, "start_index": 905, "end_index": 934, "_text": "Blood alcohol level was 383 ."}
+{"sent_index": 21, "start_index": 935, "end_index": 1037, "_text": "Agitated in emergency room requiring 4 leather restraints , received 5 mg of Haldol , 2 mg of Ativan ."}
+{"sent_index": 22, "start_index": 1038, "end_index": 1162, "_text": "He became hypotensive in the emergency room with a systolic blood pressure in the 80 's and had decreased respiratory rate ."}
+{"sent_index": 23, "start_index": 1163, "end_index": 1242, "_text": "He received a normal saline bolus of 2 liters of good blood pressure response ."}
+{"sent_index": 24, "start_index": 1243, "end_index": 1446, "_text": "The patient was then admitted to the medical Intensive Care Unit for observation of his blood pressure and then transferred to our service on medicine when the blood pressures remained stable overnight ."}
+{"sent_index": 25, "start_index": 1447, "end_index": 1555, "_text": "The patient denies any chest pain , shortness of breath , dysuria , diarrhea , bright red blood per rectum ."}
+{"sent_index": 26, "start_index": 1556, "end_index": 1606, "_text": "He does complain of cold symptoms times one week ."}
+{"sent_index": 27, "start_index": 1607, "end_index": 1761, "_text": "The patient states in the past that he has participated in several alcohol treatment programs , most recently Star which is similar Alcoholics Anonymous ."}
+{"sent_index": 28, "start_index": 1762, "end_index": 1832, "_text": "The patient admits that he has had many stressors in his life lately ."}
+{"sent_index": 29, "start_index": 1833, "end_index": 1879, "_text": "His job as a computer programmer is unstable ."}
+{"sent_index": 30, "start_index": 1880, "end_index": 1969, "_text": "His brother is mentally handicapped and might be sent away from his instate institution ."}
+{"sent_index": 31, "start_index": 1970, "end_index": 2054, "_text": "He is also concerned about the threat of war and is ready to \" move to Madagascar \"."}
+{"sent_index": 32, "start_index": 2055, "end_index": 2102, "_text": "He states that he primarily relies on friends ."}
+{"sent_index": 33, "start_index": 2103, "end_index": 2219, "_text": "In the past , he has been very depressed and has seen a counselor at Greenfield Community College Community Health ."}
+{"sent_index": 34, "start_index": 2220, "end_index": 2240, "_text": "PAST MEDICAL HISTORY"}
+{"sent_index": 35, "start_index": 2243, "end_index": 2260, "_text": "1. Hypertension ."}
+{"sent_index": 36, "start_index": 2261, "end_index": 2352, "_text": "2. History of colonic polyps times 3 , benign in 2007 , repeat colonoscopy due to in 2010 ."}
+{"sent_index": 37, "start_index": 2353, "end_index": 2398, "_text": "3. History of right inguinal hernia in 2002 ."}
+{"sent_index": 38, "start_index": 2399, "end_index": 2413, "_text": "FAMILY HISTORY"}
+{"sent_index": 39, "start_index": 2416, "end_index": 2433, "_text": "Noncontributory ."}
+{"sent_index": 40, "start_index": 2434, "end_index": 2448, "_text": "SOCIAL HISTORY"}
+{"sent_index": 41, "start_index": 2451, "end_index": 2586, "_text": "Positive tobacco , 10 pack year history , quit for 8 years in his 40 's and now no cigarettes for one week using no pharmacal therapy ."}
+{"sent_index": 42, "start_index": 2587, "end_index": 2671, "_text": "Positive for ETOH ( 10 glasses a week ), positive for drugs , marijuana in college ."}
+{"sent_index": 43, "start_index": 2672, "end_index": 2699, "_text": "He denies any IV drug use ."}
+{"sent_index": 44, "start_index": 2700, "end_index": 2744, "_text": "The patient currently lives lone in Malden ."}
+{"sent_index": 45, "start_index": 2745, "end_index": 2816, "_text": "He came out here for college at BU and works as a computer programmer ."}
+{"sent_index": 46, "start_index": 2817, "end_index": 2858, "_text": "Primarily the family lives in Wisconsin ."}
+{"sent_index": 47, "start_index": 2859, "end_index": 3030, "_text": "The patient has only male sexual partners and in the last six months has two regular partners who reportedly are human immunodeficiency virus negative and no IV drug use ."}
+{"sent_index": 48, "start_index": 3031, "end_index": 3061, "_text": "He uses condoms consistently ."}
+{"sent_index": 49, "start_index": 3062, "end_index": 3152, "_text": "Major stressors in his life include unstable job , brother is mentally handicapped , war ."}
+{"sent_index": 50, "start_index": 3153, "end_index": 3162, "_text": "ALLERGIES"}
+{"sent_index": 51, "start_index": 3165, "end_index": 3190, "_text": "No known drug allergies ."}
+{"sent_index": 52, "start_index": 3191, "end_index": 3210, "_text": "MEDICATIONS AT HOME"}
+{"sent_index": 53, "start_index": 3213, "end_index": 3241, "_text": "1. Lisinopril 5 mg p.o. q.d."}
+{"sent_index": 54, "start_index": 3242, "end_index": 3271, "_text": "2. Mavik question of dosage ."}
+{"sent_index": 55, "start_index": 3272, "end_index": 3315, "_text": "3. Hydrochlorothiazide question of dosage ."}
+{"sent_index": 56, "start_index": 3316, "end_index": 3339, "_text": "MEDICATIONS ON TRANSFER"}
+{"sent_index": 57, "start_index": 3342, "end_index": 3369, "_text": "1. Ranitidine 150 mg b.i.d."}
+{"sent_index": 58, "start_index": 3370, "end_index": 3393, "_text": "2. Thiamine 100 mg q.d."}
+{"sent_index": 59, "start_index": 3394, "end_index": 3418, "_text": "3. Folic acid 1 mg q. d."}
+{"sent_index": 60, "start_index": 3419, "end_index": 3434, "_text": "4. Multivitamin"}
+{"sent_index": 61, "start_index": 3435, "end_index": 3455, "_text": "PHYSICAL EXAMINATION"}
+{"sent_index": 62, "start_index": 3458, "end_index": 3477, "_text": "Vitals on admission"}
+{"sent_index": 63, "start_index": 3480, "end_index": 3506, "_text": "Please refer to addendum ."}
+{"sent_index": 64, "start_index": 3507, "end_index": 3532, "_text": "Vital signs were stable ."}
+{"sent_index": 65, "start_index": 3533, "end_index": 3581, "_text": "Systolic blood pressure in the 120 's to 130 's."}
+{"sent_index": 66, "start_index": 3582, "end_index": 3610, "_text": "Pulse in the 60 's to 70 's."}
+{"sent_index": 67, "start_index": 3611, "end_index": 3686, "_text": "The patient was a thin well-appearing man who was visibly restless in bed ."}
+{"sent_index": 68, "start_index": 3687, "end_index": 3699, "_text": "Neurological"}
+{"sent_index": 69, "start_index": 3702, "end_index": 3772, "_text": "He was alert and oriented times 3 and with slightly pressured speech ."}
+{"sent_index": 70, "start_index": 3773, "end_index": 3807, "_text": "He states that mood is depressed ."}
+{"sent_index": 71, "start_index": 3808, "end_index": 3863, "_text": "He denies auditory , visual or tactile hallucinations ."}
+{"sent_index": 72, "start_index": 3864, "end_index": 3981, "_text": "Cranial nerves II-XII are grossly intact , 5/5 strength in all extremities , sensation is intact in all extremities ."}
+{"sent_index": 73, "start_index": 3982, "end_index": 4018, "_text": "Head , ears , eyes , nose and throat"}
+{"sent_index": 74, "start_index": 4021, "end_index": 4051, "_text": "Atraumatic and normocephalic ."}
+{"sent_index": 75, "start_index": 4052, "end_index": 4076, "_text": "Sclerae were anicteric ."}
+{"sent_index": 76, "start_index": 4077, "end_index": 4116, "_text": "Oropharynx was benign without exudate ."}
+{"sent_index": 77, "start_index": 4117, "end_index": 4121, "_text": "Neck"}
+{"sent_index": 78, "start_index": 4124, "end_index": 4132, "_text": "Supple ."}
+{"sent_index": 79, "start_index": 4133, "end_index": 4147, "_text": "Cardiovascular"}
+{"sent_index": 80, "start_index": 4150, "end_index": 4197, "_text": "Regular rate and rhythm with normal S1 and S2 ."}
+{"sent_index": 81, "start_index": 4198, "end_index": 4228, "_text": "NO murmurs , rubs or gallops ."}
+{"sent_index": 82, "start_index": 4229, "end_index": 4234, "_text": "Chest"}
+{"sent_index": 83, "start_index": 4237, "end_index": 4316, "_text": "Rare crackles on the right base , otherwise clear to auscultation bilaterally ."}
+{"sent_index": 84, "start_index": 4317, "end_index": 4324, "_text": "Abdomen"}
+{"sent_index": 85, "start_index": 4327, "end_index": 4379, "_text": "Positive bowel sounds , nontender and nondistended ."}
+{"sent_index": 86, "start_index": 4380, "end_index": 4403, "_text": "No hepatosplenomegaly ."}
+{"sent_index": 87, "start_index": 4404, "end_index": 4415, "_text": "Extremities"}
+{"sent_index": 88, "start_index": 4418, "end_index": 4511, "_text": "He had Dorsalis pedis in radial pulses , hands and feet notably tremulous without asterixis ."}
+{"sent_index": 89, "start_index": 4512, "end_index": 4540, "_text": "No stigmata of IV drug use ."}
+{"sent_index": 90, "start_index": 4541, "end_index": 4556, "_text": "LABORATORY DATA"}
+{"sent_index": 91, "start_index": 4559, "end_index": 4562, "_text": "CBC"}
+{"sent_index": 92, "start_index": 4565, "end_index": 4662, "_text": "White blood cell count is 8.8 , hematocrit 35.5 platelets 266 , PT 13 , PT-T 23.3 , INR was 1.1 ."}
+{"sent_index": 93, "start_index": 4663, "end_index": 4807, "_text": "Chem-7 : Sodium 145 , potassium 3.4 , chloride 116 , bicarb 21 , BUN 12 , creatinine 0.6 , glucose 96 , calcium 7.2 , phos 3.6 , magnesium 1.7 ."}
+{"sent_index": 94, "start_index": 4808, "end_index": 4828, "_text": "Liver function tests"}
+{"sent_index": 95, "start_index": 4831, "end_index": 4934, "_text": "ALT 38 , AST 34 , alk phos is 107 , albumin is 3.2 , peak bili is 0.3 , amylase 31 , and lipase is 32 ."}
+{"sent_index": 96, "start_index": 4935, "end_index": 4952, "_text": "UA was negative ."}
+{"sent_index": 97, "start_index": 4953, "end_index": 4977, "_text": "Urine tox was negative ."}
+{"sent_index": 98, "start_index": 4978, "end_index": 5039, "_text": "Serum tox was positive for ETOH at 383 , otherwise negative ."}
+{"sent_index": 99, "start_index": 5040, "end_index": 5103, "_text": "Serum osmolality was 38397 , calculated osmolality gap was 21 ."}
+{"sent_index": 100, "start_index": 5104, "end_index": 5113, "_text": "Radiology"}
+{"sent_index": 101, "start_index": 5116, "end_index": 5292, "_text": "chest x-ray from 02-07 had linear atelectasis in right lower lobe with no evidence of a band-like opacity in the left lower lobe which was evident on the chest x-ray on 02-06 ."}
+{"sent_index": 102, "start_index": 5293, "end_index": 5346, "_text": "CT of the head on 02-06 was negative for hemorrhage ."}
+{"sent_index": 103, "start_index": 5347, "end_index": 5407, "_text": "There was bran atrophy and right temporal encephalomalacia ."}
+{"sent_index": 104, "start_index": 5408, "end_index": 5427, "_text": "ASSESSMENT AND PLAN"}
+{"sent_index": 105, "start_index": 5430, "end_index": 5825, "_text": "Mr. Pohl is a 53 - year-old male with a history of ETOH , hypertension who presented int he emergency room with increased agitation , like secondary to ETOH intoxication and developed subsequent hypotension , systolic blood pressures in the 80 's, status post Ativan and Haldol , but was responsive\nto fluid resuscitation at 4 liters and was admitted to the CMED CCU for hemodynamic monitoring ."}
+{"sent_index": 106, "start_index": 5826, "end_index": 5904, "_text": "On hospital day #2 , the patient was transferred to the Medicine Ludlow Team ."}
+{"sent_index": 107, "start_index": 5905, "end_index": 5980, "_text": "Plan for patient regarding cardiac , unlike hypotension of cardiac origin ."}
+{"sent_index": 108, "start_index": 5981, "end_index": 6032, "_text": "The patient responded well to fluid resuscitation ."}
+{"sent_index": 109, "start_index": 6033, "end_index": 6098, "_text": "Elevated CK on 02-07 is likely secondary to mild rhabdomyolysis ."}
+{"sent_index": 110, "start_index": 6099, "end_index": 6165, "_text": "The patient was hemodynamically stable overnight in the CMED CCU ."}
+{"sent_index": 111, "start_index": 6166, "end_index": 6292, "_text": "We decided to discontinue telemetry and held all hypertension medications including Lisinopril , Mavik , hydrochlorothiazide ."}
+{"sent_index": 112, "start_index": 6293, "end_index": 6363, "_text": "2. For pulmonary , the patient had a good O2 saturations on room air ."}
+{"sent_index": 113, "start_index": 6364, "end_index": 6423, "_text": "He had atelectasis in the right lower lobe by chest x-ray ."}
+{"sent_index": 114, "start_index": 6424, "end_index": 6471, "_text": "We encouraged activity and patient out of bed ."}
+{"sent_index": 115, "start_index": 6472, "end_index": 6538, "_text": "3. Gastrointestinal :\nThe patient on ranitidine 150 mg p.o. b.i.d."}
+{"sent_index": 116, "start_index": 6539, "end_index": 6573, "_text": "for gastrointestinal prophylaxis ."}
+{"sent_index": 117, "start_index": 6574, "end_index": 6584, "_text": "4. Urology"}
+{"sent_index": 118, "start_index": 6587, "end_index": 6636, "_text": "Foley was discontinued in the CMED CCU at 12 p.m."}
+{"sent_index": 119, "start_index": 6637, "end_index": 6683, "_text": "The patient was urinating without difficulty ."}
+{"sent_index": 120, "start_index": 6684, "end_index": 6725, "_text": "We gave the patient bathroom privileges ."}
+{"sent_index": 121, "start_index": 6726, "end_index": 6732, "_text": "5. FEN"}
+{"sent_index": 122, "start_index": 6735, "end_index": 6865, "_text": "We continued IV fluids at 100 cc per hour for one liter secondary to a concern for rhabdomyolysis plus kidney protective effects ."}
+{"sent_index": 123, "start_index": 6866, "end_index": 6932, "_text": "K was 3.4 , repleted , potassium chloride 40 mEq times 1 dose p.o."}
+{"sent_index": 124, "start_index": 6933, "end_index": 7040, "_text": "Calcium with 7.2 corrected to less than 8.0, completed calcium carbonate at 500 mg blood pressure.o. t.i.d."}
+{"sent_index": 125, "start_index": 7041, "end_index": 7064, "_text": "while in the hospital ."}
+{"sent_index": 126, "start_index": 7065, "end_index": 7142, "_text": "Mag was 1.7 , repleted with magnesium oxide with 400 mg p.o. times one dose ."}
+{"sent_index": 127, "start_index": 7143, "end_index": 7162, "_text": "Diet as tolerated ."}
+{"sent_index": 128, "start_index": 7163, "end_index": 7195, "_text": "6. Substance use  and psychiatry"}
+{"sent_index": 129, "start_index": 7198, "end_index": 7284, "_text": "The patient states that he was willing to speak with someone from addiction services ."}
+{"sent_index": 130, "start_index": 7285, "end_index": 7352, "_text": "We were concerned regarding possibly binge drinking or ETOH abuse ."}
+{"sent_index": 131, "start_index": 7353, "end_index": 7403, "_text": "The patient seemed notably anxious and depressed ."}
+{"sent_index": 132, "start_index": 7404, "end_index": 7492, "_text": "It is possible that the patient is self medicating for underlying psychiatric disorder ."}
+{"sent_index": 133, "start_index": 7493, "end_index": 7570, "_text": "We will monitor for signs of alcohol withdrawal according to the CIWA scale ."}
+{"sent_index": 134, "start_index": 7571, "end_index": 7629, "_text": "We will given valium 5 mg p.o. q. 3 hours for withdrawal ."}
+{"sent_index": 135, "start_index": 7630, "end_index": 7675, "_text": "We will consult addiction service in the a.m."}
+{"sent_index": 136, "start_index": 7676, "end_index": 7783, "_text": "We will consider psychiatry consult in the future to assess for underlying anxiety disorder or depression ."}
+{"sent_index": 137, "start_index": 7784, "end_index": 7795, "_text": "DISPOSITION"}
+{"sent_index": 138, "start_index": 7798, "end_index": 7965, "_text": "The patient may be discharge Harry 02-08 pending observations for delirium tremens after discussion with primary care physician , Dr. Blue who knows the patient well ."}
+{"sent_index": 139, "start_index": 7966, "end_index": 7981, "_text": "HOSPITAL COURSE"}
+{"sent_index": 140, "start_index": 7984, "end_index": 8117, "_text": "The patient was transferred to medicine service on hospital day #2 after remaining hemodynamically stable in the CMED CCU overnight ."}
+{"sent_index": 141, "start_index": 8118, "end_index": 8135, "_text": "1. Blood pressure"}
+{"sent_index": 142, "start_index": 8138, "end_index": 8306, "_text": "The patient 's blood pressure remained stable on hospital day #2 through hospital day #3 status post IV hydration with systolic blood pressures in the 120 's to 130 's."}
+{"sent_index": 143, "start_index": 8307, "end_index": 8376, "_text": "We continued to hold the patient 's home blood pressure medications ."}
+{"sent_index": 144, "start_index": 8377, "end_index": 8477, "_text": "The patient was asymptomatic without chest pain , shortness of breath and no mental status changes ."}
+{"sent_index": 145, "start_index": 8478, "end_index": 8496, "_text": "2. Substance abuse"}
+{"sent_index": 146, "start_index": 8499, "end_index": 8618, "_text": "On Hospital day #2 through hospital day #3 , the patient had mild tremor on hands , but improved over hospital course ."}
+{"sent_index": 147, "start_index": 8619, "end_index": 8685, "_text": "The patient became notably less anxious throughout hospital stay ."}
+{"sent_index": 148, "start_index": 8686, "end_index": 8792, "_text": "CIWA scale over night was 1 for tremor and the patient did not require any Valium for alcohol withdrawal ."}
+{"sent_index": 149, "start_index": 8793, "end_index": 8923, "_text": "We believe that the patient is able to be discharged and to follow up with Dr. Sandra Rose , addiction services as an outpatient ."}
+{"sent_index": 150, "start_index": 8924, "end_index": 8951, "_text": "Call for further referral ."}
+{"sent_index": 151, "start_index": 8952, "end_index": 8958, "_text": "3. FEN"}
+{"sent_index": 152, "start_index": 8961, "end_index": 9090, "_text": "Calcium carbonate 500 mg p.o. t.i.d. , Mag oxide 400 mg p.o. times one dose , potassium chloride repleted 40 mEq times one dose ."}
+{"sent_index": 153, "start_index": 9091, "end_index": 9110, "_text": "DISCHARGE DIAGNOSIS"}
+{"sent_index": 154, "start_index": 9113, "end_index": 9135, "_text": "1. ETOH intoxication ."}
+{"sent_index": 155, "start_index": 9136, "end_index": 9153, "_text": "2. Hypertension ."}
+{"sent_index": 156, "start_index": 9154, "end_index": 9241, "_text": "3. History of colonic polyp times 3 , benign in 2007 , repeat colonoscopy due in 2010 ."}
+{"sent_index": 157, "start_index": 9242, "end_index": 9287, "_text": "4. History of right inguinal hernia in 2002 ."}
+{"sent_index": 158, "start_index": 9288, "end_index": 9304, "_text": "DISCHARGE STATUS"}
+{"sent_index": 159, "start_index": 9307, "end_index": 9313, "_text": "Home ."}
+{"sent_index": 160, "start_index": 9314, "end_index": 9323, "_text": "FOLLOW UP"}
+{"sent_index": 161, "start_index": 9326, "end_index": 9344, "_text": "Follow up with Dr."}
+{"sent_index": 162, "start_index": 9345, "end_index": 9390, "_text": "Marcia Bender to be arranged by the patient ."}
+{"sent_index": 163, "start_index": 9391, "end_index": 9522, "_text": "The patient will also call clinical nurse specialist , Sandra Rose at ( 968 ) 347-9868 for further referral to addiction services ."}
+{"sent_index": 164, "start_index": 9523, "end_index": 9544, "_text": "DISCHARGE MEDICATIONS"}
+{"sent_index": 165, "start_index": 9547, "end_index": 9573, "_text": "Return to home medications"}
+{"sent_index": 166, "start_index": 9576, "end_index": 9603, "_text": "1. Lisinopril 5 mg p.o.q.d."}
+{"sent_index": 167, "start_index": 9604, "end_index": 9629, "_text": "2. Mavik unknown dosage ."}
+{"sent_index": 168, "start_index": 9630, "end_index": 9669, "_text": "3. Hydrochlorothiazide unknown dosage ."}
+{"sent_index": 169, "start_index": 9670, "end_index": 9696, "_text": "MARK T Ragin , M.D. 34-329"}
+{"sent_index": 170, "start_index": 9697, "end_index": 9708, "_text": "Dictated By"}
+{"sent_index": 171, "start_index": 9711, "end_index": 9734, "_text": "Alice T. Mahoney , M.D."}
+{"sent_index": 172, "start_index": 9735, "end_index": 9745, "_text": "MEDQUIST36"}
+{"sent_index": 173, "start_index": 9746, "end_index": 9766, "_text": "D : 2011-02-08 12:05"}
+{"sent_index": 174, "start_index": 9767, "end_index": 9787, "_text": "T : 2011-02-08 12:15"}
+{"sent_index": 175, "start_index": 9788, "end_index": 9800, "_text": "JOB #: 77892"}
+{"sent_index": 176, "start_index": 9801, "end_index": 9825, "_text": "Signed electronically by"}
+{"sent_index": 177, "start_index": 9828, "end_index": 9831, "_text": "DR."}
+{"sent_index": 178, "start_index": 9832, "end_index": 9875, "_text": "Richard Carlson on : SUN 2011-02-20 1:40 PM"}
+{"sent_index": 179, "start_index": 9878, "end_index": 9891, "_text": "End of Report"}

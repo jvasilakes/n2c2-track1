@@ -1,0 +1,54 @@
+{"sent_index": 0, "start_index": 0, "end_index": 21, "_text": "143748600 SC\n43243309"}
+{"sent_index": 1, "start_index": 22, "end_index": 51, "_text": "095342\n09/30/2000 12:00:00 AM"}
+{"sent_index": 2, "start_index": 52, "end_index": 75, "_text": "atypical chest pain\nDIS"}
+{"sent_index": 3, "start_index": 76, "end_index": 103, "_text": "Admission Date :\n09/30/2000"}
+{"sent_index": 4, "start_index": 104, "end_index": 117, "_text": "Report Status"}
+{"sent_index": 5, "start_index": 120, "end_index": 134, "_text": "Discharge Date"}
+{"sent_index": 6, "start_index": 137, "end_index": 147, "_text": "10/01/2000"}
+{"sent_index": 7, "start_index": 155, "end_index": 206, "_text": "DISCHARGE ORDERS ******\nFALC , COLL 891-57-52-0 T37"}
+{"sent_index": 8, "start_index": 207, "end_index": 211, "_text": "Room"}
+{"sent_index": 9, "start_index": 214, "end_index": 221, "_text": "53X-785"}
+{"sent_index": 10, "start_index": 222, "end_index": 235, "_text": "Service :\nCAR"}
+{"sent_index": 11, "start_index": 236, "end_index": 256, "_text": "DISCHARGE PATIENT ON"}
+{"sent_index": 12, "start_index": 259, "end_index": 279, "_text": "10/01/00 AT 03:30 PM"}
+{"sent_index": 13, "start_index": 280, "end_index": 299, "_text": "CONTINGENT UPON\nETT"}
+{"sent_index": 14, "start_index": 300, "end_index": 345, "_text": "WILL D / C ORDER BE USED AS THE D / C SUMMARY"}
+{"sent_index": 15, "start_index": 348, "end_index": 351, "_text": "YES"}
+{"sent_index": 16, "start_index": 352, "end_index": 396, "_text": "Attending :\nKOTEZUSTLEEB , LIJO LIFLE , M.D."}
+{"sent_index": 17, "start_index": 397, "end_index": 408, "_text": "CODE STATUS"}
+{"sent_index": 18, "start_index": 411, "end_index": 420, "_text": "Full code"}
+{"sent_index": 19, "start_index": 421, "end_index": 432, "_text": "DISPOSITION"}
+{"sent_index": 20, "start_index": 435, "end_index": 439, "_text": "Home"}
+{"sent_index": 21, "start_index": 440, "end_index": 461, "_text": "DISCHARGE MEDICATIONS"}
+{"sent_index": 22, "start_index": 464, "end_index": 496, "_text": "ALBUTEROL INHALER 2 PUFF INH QID"}
+{"sent_index": 23, "start_index": 497, "end_index": 509, "_text": "Instructions"}
+{"sent_index": 24, "start_index": 512, "end_index": 869, "_text": "PLEASE USE WITH SPACER ( PLEASE INSTRUCT PATIENT ) ECASA ( ASPIRIN ENTERIC COATED ) 325 MG PO QD WELLBUTRIN ( BUPROPION HCL ) 150 MG PO BID GEMFIBROZIL 600 MG PO BID ZESTRIL ( LISINOPRIL ) 20 MG PO QD ZANTAC ( RANITIDINE HCL ) 150 MG PO BID SERZONE ( NEFAZODONE ) 300 MG PO QHS ZYPREXA ( OLANZAPINE ) 5 MG PO QHS\nNumber of Doses Required ( approximate ) :\n4"}
+{"sent_index": 25, "start_index": 870, "end_index": 957, "_text": "GLUCOPHAGE ( METFORMIN ) 850 MG PO TID Starting ON 10/03/00 ( 10/03 ) ACTOS 30 MG PO QD"}
+{"sent_index": 26, "start_index": 958, "end_index": 962, "_text": "DIET"}
+{"sent_index": 27, "start_index": 965, "end_index": 991, "_text": "House / ADA 2100 cals / dy"}
+{"sent_index": 28, "start_index": 992, "end_index": 1006, "_text": "RETURN TO WORK"}
+{"sent_index": 29, "start_index": 1009, "end_index": 1054, "_text": "Immediately\nFOLLOW UP APPOINTMENT ( S ) :\nDr."}
+{"sent_index": 30, "start_index": 1055, "end_index": 1080, "_text": "Rotrysbreunkorc 1-2 weeks"}
+{"sent_index": 31, "start_index": 1083, "end_index": 1090, "_text": "ALLERGY"}
+{"sent_index": 32, "start_index": 1093, "end_index": 1104, "_text": "Penicillins"}
+{"sent_index": 33, "start_index": 1105, "end_index": 1120, "_text": "ADMIT DIAGNOSIS"}
+{"sent_index": 34, "start_index": 1123, "end_index": 1134, "_text": "atypical cp"}
+{"sent_index": 35, "start_index": 1135, "end_index": 1234, "_text": "PRINCIPAL DISCHARGE DIAGNOSIS ; Responsible After Study for Causing Admission ) atypical chest pain"}
+{"sent_index": 36, "start_index": 1235, "end_index": 1425, "_text": "OTHER DIAGNOSIS ; Conditions , Infections , Complications , affecting Treatment / Stay dm ( diabetes mellitus ) anxiety ( anxiety ) htn ( hypertension ) gerd ( esophageal reflux )\nOPERATIONS"}
+{"sent_index": 37, "start_index": 1426, "end_index": 1440, "_text": "AND PROCEDURES"}
+{"sent_index": 38, "start_index": 1443, "end_index": 1486, "_text": "OTHER TREATMENTS / PROCEDURES ( NOT IN O.R."}
+{"sent_index": 39, "start_index": 1489, "end_index": 1520, "_text": "BRIEF RESUME OF HOSPITAL COURSE"}
+{"sent_index": 40, "start_index": 1523, "end_index": 1677, "_text": "41 yo man with CRFs of DM Type II , high cholesterol , smoking history , family hx , HTN p / w episodes of atypical CP x 1 week , with rest and exertion ."}
+{"sent_index": 41, "start_index": 1678, "end_index": 1711, "_text": "also has h / o anxiety and GERD ."}
+{"sent_index": 42, "start_index": 1712, "end_index": 1730, "_text": "No assoicated Sx ."}
+{"sent_index": 43, "start_index": 1731, "end_index": 1868, "_text": "Here , had T wave flattening laterally and inferiorly with pain that resolved pain free , but not clear that lead placement is the same ."}
+{"sent_index": 44, "start_index": 1869, "end_index": 1937, "_text": "Had Chest CT to r / o dissection ( due to back pain ) which was neg."}
+{"sent_index": 45, "start_index": 1938, "end_index": 1956, "_text": "Ruled out for MI ."}
+{"sent_index": 46, "start_index": 1957, "end_index": 1975, "_text": "Will plan on ETT ."}
+{"sent_index": 47, "start_index": 1976, "end_index": 2032, "_text": "Holding Metformin until Friday due to CT with contrast ."}
+{"sent_index": 48, "start_index": 2033, "end_index": 2123, "_text": "ADDITIONAL COMMENTS :\nsmoking cessation group will contact you at home\nDISCHARGE CONDITION"}
+{"sent_index": 49, "start_index": 2126, "end_index": 2145, "_text": "Stable\nTO DO / PLAN"}
+{"sent_index": 50, "start_index": 2148, "end_index": 2210, "_text": "you will be contacted at home by the smoking cessation program"}
+{"sent_index": 51, "start_index": 2211, "end_index": 2230, "_text": "No dictated summary"}
+{"sent_index": 52, "start_index": 2231, "end_index": 2293, "_text": "ENTERED BY :\nWIERST , STO L. , M.D. ( RR86 ) 10/01/00 02:33 PM"}
+{"sent_index": 53, "start_index": 2301, "end_index": 2324, "_text": "END OF DISCHARGE ORDERS"}

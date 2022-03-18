@@ -1,0 +1,134 @@
+{"sent_index": 0, "start_index": 0, "end_index": 24, "_text": "767751445 ELMVH\n45154940"}
+{"sent_index": 1, "start_index": 25, "end_index": 54, "_text": "6035801\n12/6/2005 12:00:00 AM"}
+{"sent_index": 2, "start_index": 55, "end_index": 84, "_text": "COPD exacerbation with NSTEMI"}
+{"sent_index": 3, "start_index": 85, "end_index": 88, "_text": "DIS"}
+{"sent_index": 4, "start_index": 89, "end_index": 103, "_text": "Admission Date"}
+{"sent_index": 5, "start_index": 106, "end_index": 116, "_text": "12/06/2005"}
+{"sent_index": 6, "start_index": 117, "end_index": 130, "_text": "Report Status"}
+{"sent_index": 7, "start_index": 133, "end_index": 147, "_text": "Discharge Date"}
+{"sent_index": 8, "start_index": 150, "end_index": 160, "_text": "12/10/2005"}
+{"sent_index": 9, "start_index": 168, "end_index": 190, "_text": "FINAL DISCHARGE ORDERS"}
+{"sent_index": 10, "start_index": 198, "end_index": 245, "_text": "SCHOELLSULLKOTEFONG , MAUSTINIE\n161-66-98-5 W53"}
+{"sent_index": 11, "start_index": 246, "end_index": 260, "_text": "Room :\n66R-249"}
+{"sent_index": 12, "start_index": 261, "end_index": 268, "_text": "Service"}
+{"sent_index": 13, "start_index": 271, "end_index": 274, "_text": "MED"}
+{"sent_index": 14, "start_index": 275, "end_index": 318, "_text": "DISCHARGE PATIENT ON :\n12/09/05 AT 08:00 PM"}
+{"sent_index": 15, "start_index": 319, "end_index": 334, "_text": "CONTINGENT UPON"}
+{"sent_index": 16, "start_index": 335, "end_index": 355, "_text": "Attending evaluation"}
+{"sent_index": 17, "start_index": 356, "end_index": 401, "_text": "WILL D / C ORDER BE USED AS THE D / C SUMMARY"}
+{"sent_index": 18, "start_index": 404, "end_index": 407, "_text": "YES"}
+{"sent_index": 19, "start_index": 408, "end_index": 417, "_text": "Attending"}
+{"sent_index": 20, "start_index": 420, "end_index": 461, "_text": "FREIERMFUSC , SHAIGAYDONA , M.D. , M.DIV."}
+{"sent_index": 21, "start_index": 462, "end_index": 473, "_text": "CODE STATUS"}
+{"sent_index": 22, "start_index": 476, "end_index": 485, "_text": "Full code"}
+{"sent_index": 23, "start_index": 486, "end_index": 516, "_text": "DISPOSITION :\nHome w/ services"}
+{"sent_index": 24, "start_index": 517, "end_index": 538, "_text": "DISCHARGE MEDICATIONS"}
+{"sent_index": 25, "start_index": 541, "end_index": 733, "_text": "VITAMIN C ( ASCORBIC ACID ) 1,000 MG PO QD ECASA ( ASPIRIN ENTERIC COATED ) 81 MG PO QD CALCIUM CARBONATE ( 500 MG ELEMENTAL CA++ ) 500 MG PO BID PREDNISONE 20 MG PO QAM Starting Today ( 12/09"}
+{"sent_index": 26, "start_index": 736, "end_index": 748, "_text": "Instructions"}
+{"sent_index": 27, "start_index": 751, "end_index": 820, "_text": "taper over 2 weeks MULTIVITAMIN THERAPEUTIC ( THERAPEUTIC MULTIVI ..."}
+{"sent_index": 28, "start_index": 823, "end_index": 913, "_text": "5 MILLILITERS PO QD\nOverride Notice :\nOverride added on 12/07/05 by BELB , BRITHERL , M.D."}
+{"sent_index": 29, "start_index": 914, "end_index": 959, "_text": "on order for ATORVASTATIN PO ( ref # 33823759"}
+{"sent_index": 30, "start_index": 962, "end_index": 1010, "_text": "POTENTIALLY SERIOUS INTERACTION :\nNIACIN , VIT ."}
+{"sent_index": 31, "start_index": 1011, "end_index": 1039, "_text": "B-3 and ATORVASTATIN CALCIUM"}
+{"sent_index": 32, "start_index": 1040, "end_index": 1059, "_text": "Reason for override"}
+{"sent_index": 33, "start_index": 1062, "end_index": 1070, "_text": "md aware"}
+{"sent_index": 34, "start_index": 1071, "end_index": 1100, "_text": "Previous override information"}
+{"sent_index": 35, "start_index": 1103, "end_index": 1155, "_text": "Override added on 12/06/05 by BELB , BRITHERL , M.D."}
+{"sent_index": 36, "start_index": 1156, "end_index": 1194, "_text": "on order for ZOCOR PO ( ref # 33033281"}
+{"sent_index": 37, "start_index": 1197, "end_index": 1245, "_text": "POTENTIALLY SERIOUS INTERACTION :\nNIACIN , VIT ."}
+{"sent_index": 38, "start_index": 1246, "end_index": 1265, "_text": "B-3 and SIMVASTATIN"}
+{"sent_index": 39, "start_index": 1266, "end_index": 1285, "_text": "Reason for override"}
+{"sent_index": 40, "start_index": 1288, "end_index": 1296, "_text": "md aware"}
+{"sent_index": 41, "start_index": 1297, "end_index": 1410, "_text": "FLOVENT ( FLUTICASONE PROPIONATE ) 44 MCG INH BID Starting Today ( 12/09 ) LEVAQUIN ( LEVOFLOXACIN ) 500 MG PO QD"}
+{"sent_index": 42, "start_index": 1411, "end_index": 1446, "_text": "Food / Drug Interaction Instruction"}
+{"sent_index": 43, "start_index": 1447, "end_index": 1550, "_text": "Administer iron products a minimum of 2 hours before or after a levofloxacin or ciprofloxacin dose dose"}
+{"sent_index": 44, "start_index": 1551, "end_index": 1615, "_text": "If on tube feeds , please cycle ( hold 1 hr before to 2 hr after"}
+{"sent_index": 45, "start_index": 1618, "end_index": 1671, "_text": "Take 2 hours before or 2 hours after dairy products ."}
+{"sent_index": 46, "start_index": 1672, "end_index": 1688, "_text": "Alert overridden"}
+{"sent_index": 47, "start_index": 1691, "end_index": 1743, "_text": "Override added on 12/06/05 by BELB , BRITHERL , M.D."}
+{"sent_index": 48, "start_index": 1744, "end_index": 1775, "_text": "POTENTIALLY SERIOUS INTERACTION"}
+{"sent_index": 49, "start_index": 1778, "end_index": 1815, "_text": "SALMETEROL XINAFOATE and LEVOFLOXACIN"}
+{"sent_index": 50, "start_index": 1816, "end_index": 1835, "_text": "Reason for override"}
+{"sent_index": 51, "start_index": 1838, "end_index": 1846, "_text": "md aware"}
+{"sent_index": 52, "start_index": 1847, "end_index": 1899, "_text": "SEREVENT DISKUS ( SALMETEROL DISKUS ) 1 PUFF INH BID"}
+{"sent_index": 53, "start_index": 1900, "end_index": 1915, "_text": "Override Notice"}
+{"sent_index": 54, "start_index": 1918, "end_index": 2012, "_text": "Override added on 12/06/05 by BELB , BRITHERL , M.D. on order for LEVAQUIN PO ( ref # 57095042"}
+{"sent_index": 55, "start_index": 2015, "end_index": 2046, "_text": "POTENTIALLY SERIOUS INTERACTION"}
+{"sent_index": 56, "start_index": 2049, "end_index": 2086, "_text": "SALMETEROL XINAFOATE and LEVOFLOXACIN"}
+{"sent_index": 57, "start_index": 2087, "end_index": 2106, "_text": "Reason for override"}
+{"sent_index": 58, "start_index": 2109, "end_index": 2117, "_text": "md aware"}
+{"sent_index": 59, "start_index": 2118, "end_index": 2139, "_text": "LISINOPRIL 5 MG PO QD"}
+{"sent_index": 60, "start_index": 2140, "end_index": 2156, "_text": "Alert overridden"}
+{"sent_index": 61, "start_index": 2159, "end_index": 2188, "_text": "Override added on 12/08/05 by"}
+{"sent_index": 62, "start_index": 2191, "end_index": 2222, "_text": "POTENTIALLY SERIOUS INTERACTION"}
+{"sent_index": 63, "start_index": 2225, "end_index": 2258, "_text": "POTASSIUM CHLORIDE and LISINOPRIL"}
+{"sent_index": 64, "start_index": 2259, "end_index": 2278, "_text": "Reason for override"}
+{"sent_index": 65, "start_index": 2281, "end_index": 2289, "_text": "md aware"}
+{"sent_index": 66, "start_index": 2290, "end_index": 2414, "_text": "TOPROL XL ( METOPROLOL SUCCINATE EXTENDED RELEASE ) 25 MG PO QD Starting Today ( 12/09 )\nFood / Drug Interaction Instruction"}
+{"sent_index": 67, "start_index": 2415, "end_index": 2465, "_text": "Take consistently with meals or on empty stomach ."}
+{"sent_index": 68, "start_index": 2466, "end_index": 2492, "_text": "ALENDRONATE 70 MG PO QWEEK"}
+{"sent_index": 69, "start_index": 2493, "end_index": 2528, "_text": "Food / Drug Interaction Instruction"}
+{"sent_index": 70, "start_index": 2529, "end_index": 2589, "_text": "Give on an empty stomach ( give 1hr before or 2hr after food"}
+{"sent_index": 71, "start_index": 2592, "end_index": 2758, "_text": "Take with 8 oz of plain water ALBUTEROL INHALER 2 PUFF INH QID Starting Today ( 12/09 ) ATROVENT INHALER ( IPRATROPIUM INHALER ) 2 PUFF INH QID Starting Today ( 12/09"}
+{"sent_index": 72, "start_index": 2761, "end_index": 2765, "_text": "DIET"}
+{"sent_index": 73, "start_index": 2768, "end_index": 2783, "_text": "No Restrictions"}
+{"sent_index": 74, "start_index": 2784, "end_index": 2792, "_text": "ACTIVITY"}
+{"sent_index": 75, "start_index": 2795, "end_index": 2818, "_text": "Resume regular exercise"}
+{"sent_index": 76, "start_index": 2819, "end_index": 2854, "_text": "FOLLOW UP APPOINTMENT ( S ) :\nGento"}
+{"sent_index": 77, "start_index": 2855, "end_index": 2892, "_text": "Yaneslaunt 03/17/06 scheduled ,\nArois"}
+{"sent_index": 78, "start_index": 2893, "end_index": 2940, "_text": "Maillliepslighsint 02/18/06 scheduled ,\nALLERGY"}
+{"sent_index": 79, "start_index": 2943, "end_index": 2962, "_text": "NKA ADMIT DIAGNOSIS"}
+{"sent_index": 80, "start_index": 2965, "end_index": 2982, "_text": "COPD exacerbation"}
+{"sent_index": 81, "start_index": 2983, "end_index": 3026, "_text": "PRINCIPAL DISCHARGE DIAGNOSIS ;\nResponsible"}
+{"sent_index": 82, "start_index": 3027, "end_index": 3092, "_text": "After Study for Causing Admission ) COPD exacerbation with NSTEMI"}
+{"sent_index": 83, "start_index": 3093, "end_index": 3294, "_text": "OTHER DIAGNOSIS ;\nConditions , Infections , Complications , affecting Treatment / Stay\nsevere COPD Pneumonia recovering alcoholic recovering barbituate abuse unexplained hct drop poor appetite x 1 week"}
+{"sent_index": 84, "start_index": 3295, "end_index": 3348, "_text": "STEROID PSYCHOSIS NO BENZOS\nOPERATIONS AND PROCEDURES"}
+{"sent_index": 85, "start_index": 3351, "end_index": 3399, "_text": "none\nOTHER TREATMENTS / PROCEDURES ( NOT IN O.R."}
+{"sent_index": 86, "start_index": 3402, "end_index": 3448, "_text": "Heparin while having a demand ischemic episode"}
+{"sent_index": 87, "start_index": 3449, "end_index": 3516, "_text": "BRIEF RESUME OF HOSPITAL COURSE :\n* CC :\n82F with COPD exacerpation"}
+{"sent_index": 88, "start_index": 3519, "end_index": 3522, "_text": "DDx"}
+{"sent_index": 89, "start_index": 3525, "end_index": 3606, "_text": "COPD exacerpation with troponin leak likely NSTEMI secondary to demand ischemia ."}
+{"sent_index": 90, "start_index": 3609, "end_index": 3612, "_text": "HPI"}
+{"sent_index": 91, "start_index": 3615, "end_index": 3703, "_text": "4 days of worsening SOB with sore throat and cough productive of yellow / green sputum ."}
+{"sent_index": 92, "start_index": 3704, "end_index": 3744, "_text": "Fatigue secondary to worsening dyspnea ."}
+{"sent_index": 93, "start_index": 3745, "end_index": 3872, "_text": "took Prednisone 40 at home and presented to ED where found to have 1mm lateral ST depressions and slight troponin and MB leak ."}
+{"sent_index": 94, "start_index": 3873, "end_index": 4036, "_text": "no N / V/HA / D no sweats , no chills , of abdominal pain , no chest pain , no pleuricy , no LEE , no paresthesias , no numbness , no shoulder pain , no jaw pain ."}
+{"sent_index": 95, "start_index": 4039, "end_index": 4042, "_text": "PMH"}
+{"sent_index": 96, "start_index": 4045, "end_index": 4178, "_text": "COPD ( s / p lung resection FEV1 25% ) , chronic pericardial effusion , PVD , R renal artery stenosis , osteoporosis , presbylaryngis"}
+{"sent_index": 97, "start_index": 4194, "end_index": 4266, "_text": "PATIENT STATUS ********************\n98.4 , 94 , 22 , 120/96 , 98% on 2L."}
+{"sent_index": 98, "start_index": 4267, "end_index": 4415, "_text": "NAD , using scalenes , AT / NC , no oral lesions , Bibasilar rales otherwise clear , good air movement , RRR , no MRG , NTND +BS , no CCE , 2+ DPs ."}
+{"sent_index": 99, "start_index": 4416, "end_index": 4454, "_text": "Guiac negative\n*************** STUDIES"}
+{"sent_index": 100, "start_index": 4479, "end_index": 4483, "_text": "LABS"}
+{"sent_index": 101, "start_index": 4486, "end_index": 4495, "_text": "WBC 12.91"}
+{"sent_index": 102, "start_index": 4496, "end_index": 4499, "_text": "CXR"}
+{"sent_index": 103, "start_index": 4502, "end_index": 4558, "_text": "small pleural effusion , flat diaphrams no acute changes"}
+{"sent_index": 104, "start_index": 4559, "end_index": 4563, "_text": "Echo"}
+{"sent_index": 105, "start_index": 4578, "end_index": 4613, "_text": "HOSPITAL COURSE ****************\n1."}
+{"sent_index": 106, "start_index": 4614, "end_index": 4663, "_text": "CV :\nlikely having a NSTEMI secondary to demand ."}
+{"sent_index": 107, "start_index": 4664, "end_index": 4741, "_text": "Cardiac enzymes trending down on 12.7.05 , anticoagulated while having leak ."}
+{"sent_index": 108, "start_index": 4742, "end_index": 4787, "_text": "I - heparin for PTT 50-70 durin enzyme leak ."}
+{"sent_index": 109, "start_index": 4788, "end_index": 4807, "_text": "metoprolol 12 QID ."}
+{"sent_index": 110, "start_index": 4808, "end_index": 4860, "_text": "Cardiac enzymes BID while actively having leak , ASA"}
+{"sent_index": 111, "start_index": 4861, "end_index": 4885, "_text": "R - monitor on telemetry"}
+{"sent_index": 112, "start_index": 4886, "end_index": 4912, "_text": "P - no evidence of failure"}
+{"sent_index": 113, "start_index": 4915, "end_index": 4919, "_text": "Echo"}
+{"sent_index": 114, "start_index": 4922, "end_index": 4929, "_text": "2. COPD"}
+{"sent_index": 115, "start_index": 4932, "end_index": 4983, "_text": "likely exacerbation possibly from URI / pneumonia ."}
+{"sent_index": 116, "start_index": 4984, "end_index": 5009, "_text": "Aputum cultures pending ."}
+{"sent_index": 117, "start_index": 5010, "end_index": 5151, "_text": "Treated with :\natrovent NEB QID , albuterol Neb QID , ipratropium NEB BID , flovent INH BID , Serevent INH BID , and prednisone 30 QD taper ."}
+{"sent_index": 118, "start_index": 5152, "end_index": 5179, "_text": "Levaquin 500 QD empirically"}
+{"sent_index": 119, "start_index": 5180, "end_index": 5203, "_text": "3. GI :\nPPI prophylaxis"}
+{"sent_index": 120, "start_index": 5204, "end_index": 5231, "_text": "4. FEN :\nMVI , Cardiac diet"}
+{"sent_index": 121, "start_index": 5232, "end_index": 5251, "_text": "ADDITIONAL COMMENTS"}
+{"sent_index": 122, "start_index": 5254, "end_index": 5291, "_text": "Please make an appointment to see dr."}
+{"sent_index": 123, "start_index": 5292, "end_index": 5409, "_text": "Arois Maillliepslighsint within2-3 weeks after you leave the hospital\nPlease taper off your prednisone within 2 weeks"}
+{"sent_index": 124, "start_index": 5410, "end_index": 5429, "_text": "DISCHARGE CONDITION"}
+{"sent_index": 125, "start_index": 5432, "end_index": 5438, "_text": "Stable"}
+{"sent_index": 126, "start_index": 5439, "end_index": 5451, "_text": "TO DO / PLAN"}
+{"sent_index": 127, "start_index": 5454, "end_index": 5513, "_text": "PT :\nplease evaluate ambutlation ability and O2 requirement"}
+{"sent_index": 128, "start_index": 5514, "end_index": 5582, "_text": "Please evaluate resolution of cardiac troponin leak and stable EKG ."}
+{"sent_index": 129, "start_index": 5583, "end_index": 5666, "_text": "Please evaluate resolution of COPD exacerbation and need for any further antibiocis"}
+{"sent_index": 130, "start_index": 5667, "end_index": 5686, "_text": "No dictated summary"}
+{"sent_index": 131, "start_index": 5687, "end_index": 5697, "_text": "ENTERED BY"}
+{"sent_index": 132, "start_index": 5700, "end_index": 5749, "_text": "BELB , BRITHERL , M.D. ( IL35 ) 12/10/05 02:50 PM"}
+{"sent_index": 133, "start_index": 5757, "end_index": 5780, "_text": "END OF DISCHARGE ORDERS"}

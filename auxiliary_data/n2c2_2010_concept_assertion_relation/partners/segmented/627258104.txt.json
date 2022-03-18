@@ -1,0 +1,164 @@
+{"sent_index": 0, "start_index": 0, "end_index": 9, "_text": "627258104"}
+{"sent_index": 1, "start_index": 10, "end_index": 21, "_text": "GH\n56900479"}
+{"sent_index": 2, "start_index": 22, "end_index": 42, "_text": "1/8/2001 12:00:00 AM"}
+{"sent_index": 3, "start_index": 43, "end_index": 60, "_text": "PANCREATIC CANCER"}
+{"sent_index": 4, "start_index": 61, "end_index": 67, "_text": "Signed"}
+{"sent_index": 5, "start_index": 68, "end_index": 71, "_text": "DIS"}
+{"sent_index": 6, "start_index": 72, "end_index": 86, "_text": "Admission Date"}
+{"sent_index": 7, "start_index": 89, "end_index": 99, "_text": "01/08/2001"}
+{"sent_index": 8, "start_index": 100, "end_index": 113, "_text": "Report Status"}
+{"sent_index": 9, "start_index": 116, "end_index": 122, "_text": "Signed"}
+{"sent_index": 10, "start_index": 123, "end_index": 137, "_text": "Discharge Date"}
+{"sent_index": 11, "start_index": 140, "end_index": 150, "_text": "01/30/2001"}
+{"sent_index": 12, "start_index": 151, "end_index": 166, "_text": "CHIEF COMPLAINT"}
+{"sent_index": 13, "start_index": 169, "end_index": 286, "_text": "The patient was transferred from an outside hospital for a second opinion regarding workup of his pancreatic cancer ."}
+{"sent_index": 14, "start_index": 287, "end_index": 313, "_text": "HISTORY OF PRESENT ILLNESS"}
+{"sent_index": 15, "start_index": 316, "end_index": 550, "_text": "This is a 61 year old male with a history of diabetes , coronary artery disease , hepatitis C , and asthma who was diagnosed recently with pancreatic cancer after he presented to Seph&apos;sju Memorial after a motor vehicle accident ."}
+{"sent_index": 16, "start_index": 551, "end_index": 589, "_text": "Chest CT revealed a pulmonary nodule ."}
+{"sent_index": 17, "start_index": 590, "end_index": 667, "_text": "Abdominal CT revealed a 3.0 to 4.0 centimeter lesion in the pancreatic head ."}
+{"sent_index": 18, "start_index": 668, "end_index": 823, "_text": "An ERCP performed there showed a long segment of distal narrowing of the common bileduct and a transhepatic biliary drain was placed there on December 29 ."}
+{"sent_index": 19, "start_index": 824, "end_index": 897, "_text": "On January 1 , a chest tube was placed for a loculated pleural effusion ."}
+{"sent_index": 20, "start_index": 898, "end_index": 940, "_text": "On January 2 , pleurodesis was performed ."}
+{"sent_index": 21, "start_index": 941, "end_index": 979, "_text": "On January 4 , he had a desaturation ."}
+{"sent_index": 22, "start_index": 980, "end_index": 1002, "_text": "VQ was indeterminate ."}
+{"sent_index": 23, "start_index": 1003, "end_index": 1037, "_text": "LENIs were negative at that time ."}
+{"sent_index": 24, "start_index": 1038, "end_index": 1147, "_text": "On January 5 , he had a chest xray with a left apicalpneumothorax but was stable on chest xray of January 7 ."}
+{"sent_index": 25, "start_index": 1148, "end_index": 1207, "_text": "Brain CT was negative , as was a bronchoscopy with lavage ."}
+{"sent_index": 26, "start_index": 1208, "end_index": 1229, "_text": "His CA99 was normal ."}
+{"sent_index": 27, "start_index": 1230, "end_index": 1247, "_text": "REVIEW OF SYSTEMS"}
+{"sent_index": 28, "start_index": 1250, "end_index": 1327, "_text": "The patient had reported an approximately 30 pound weight loss in six weeks ."}
+{"sent_index": 29, "start_index": 1328, "end_index": 1530, "_text": "He had experienced some constipation for the few months prior with lighter colored stools , darkened urine and fatigue for months with increased shortness of breath , orthopnea and dyspnea on exertion ."}
+{"sent_index": 30, "start_index": 1531, "end_index": 1578, "_text": "He denied any fevers , chills or night sweats ."}
+{"sent_index": 31, "start_index": 1579, "end_index": 1599, "_text": "PAST MEDICAL HISTORY"}
+{"sent_index": 32, "start_index": 1602, "end_index": 1656, "_text": "Significant for recently diagnosed pancreatic cancer ."}
+{"sent_index": 33, "start_index": 1657, "end_index": 1667, "_text": "Diabetes ."}
+{"sent_index": 34, "start_index": 1668, "end_index": 1682, "_text": "Hypertension ."}
+{"sent_index": 35, "start_index": 1683, "end_index": 1689, "_text": "Gout ."}
+{"sent_index": 36, "start_index": 1690, "end_index": 1712, "_text": "Hypercholesterolemia ."}
+{"sent_index": 37, "start_index": 1713, "end_index": 1768, "_text": "Coronary artery disease with congestive heart failure ."}
+{"sent_index": 38, "start_index": 1769, "end_index": 1777, "_text": "Asthma ."}
+{"sent_index": 39, "start_index": 1778, "end_index": 1791, "_text": "Hepatitis C ."}
+{"sent_index": 40, "start_index": 1792, "end_index": 1803, "_text": "Psoriasis ."}
+{"sent_index": 41, "start_index": 1804, "end_index": 1828, "_text": "MEDICATIONS ON ADMISSION"}
+{"sent_index": 42, "start_index": 1831, "end_index": 2060, "_text": "Lasix , 80 ; Avandia , 4 b.i.d. ; Glipizide , 10 b.i.d.; Imdur , 30 ; Allopurinol ; Zocor , 20 ; Prilosec , 20 , potassium , 40 ; Oxycontin , 30 b.i.d.; subcutaneous heparin ; Unasyn , 1.5 grams q 6 ; Combivent and morphine prn ."}
+{"sent_index": 43, "start_index": 2061, "end_index": 2075, "_text": "SOCIAL HISTORY"}
+{"sent_index": 44, "start_index": 2078, "end_index": 2109, "_text": "The patient is a hair stylist ."}
+{"sent_index": 45, "start_index": 2110, "end_index": 2144, "_text": "He lives by himself in Tennessee ."}
+{"sent_index": 46, "start_index": 2145, "end_index": 2157, "_text": "No tobacco ."}
+{"sent_index": 47, "start_index": 2158, "end_index": 2171, "_text": "Seldom ETOH ."}
+{"sent_index": 48, "start_index": 2172, "end_index": 2185, "_text": "No drug use ."}
+{"sent_index": 49, "start_index": 2186, "end_index": 2216, "_text": "Heis single with no children ."}
+{"sent_index": 50, "start_index": 2217, "end_index": 2273, "_text": "He has a very supportive family with numerous siblings ."}
+{"sent_index": 51, "start_index": 2274, "end_index": 2288, "_text": "FAMILY HISTORY"}
+{"sent_index": 52, "start_index": 2291, "end_index": 2332, "_text": "Mother and father died of heart failure ."}
+{"sent_index": 53, "start_index": 2333, "end_index": 2373, "_text": "Theyalso had diabetes and hypertension ."}
+{"sent_index": 54, "start_index": 2374, "end_index": 2402, "_text": "Sister with stomach cancer ."}
+{"sent_index": 55, "start_index": 2403, "end_index": 2436, "_text": "PHYSICAL EXAMINATION ON ADMISSION"}
+{"sent_index": 56, "start_index": 2439, "end_index": 2465, "_text": "The patient was afebrile ."}
+{"sent_index": 57, "start_index": 2466, "end_index": 2562, "_text": "Heart rate was 78 , blood pressure 98/50 , respiratory rate of 32 , satting 91% on four liters ."}
+{"sent_index": 58, "start_index": 2563, "end_index": 2628, "_text": "In general , this is an obese male in mild respiratory distress ."}
+{"sent_index": 59, "start_index": 2629, "end_index": 2670, "_text": "Neck was supple with no lymphadenopathy ."}
+{"sent_index": 60, "start_index": 2671, "end_index": 2740, "_text": "HEENT - normocephalic / atraumatic , extraocular movements are intact"}
+{"sent_index": 61, "start_index": 2743, "end_index": 2805, "_text": "pupils equal , round and reactive to light and accommodation ."}
+{"sent_index": 62, "start_index": 2806, "end_index": 2857, "_text": "Chest had diffuse crackles bilaterally halfway up ."}
+{"sent_index": 63, "start_index": 2858, "end_index": 2983, "_text": "Coronary - irregular PVCs , S1 , S2 normal , positive systolic murmur at the left upper sternal border radiating throughout ."}
+{"sent_index": 64, "start_index": 2984, "end_index": 3073, "_text": "Abdomen was distended , tympanitic , mildly tender epigastrium and right lower quadrant ."}
+{"sent_index": 65, "start_index": 3074, "end_index": 3098, "_text": "No rebound or guarding ."}
+{"sent_index": 66, "start_index": 3099, "end_index": 3160, "_text": "Extremities had 2+ bilateral lower extremity edema to knees ."}
+{"sent_index": 67, "start_index": 3161, "end_index": 3186, "_text": "No clubbing or cyanosis ."}
+{"sent_index": 68, "start_index": 3187, "end_index": 3209, "_text": "Neurologic examination"}
+{"sent_index": 69, "start_index": 3212, "end_index": 3277, "_text": "alert and oriented x 3 , slurred and slow speech , distractable ."}
+{"sent_index": 70, "start_index": 3278, "end_index": 3320, "_text": "Cranial nerves II through XII are intact ."}
+{"sent_index": 71, "start_index": 3321, "end_index": 3365, "_text": "Sensory is intact to soft touch throughout ."}
+{"sent_index": 72, "start_index": 3366, "end_index": 3394, "_text": "Strength is 5/5 throughout ."}
+{"sent_index": 73, "start_index": 3395, "end_index": 3410, "_text": "LABORATORY DATA"}
+{"sent_index": 74, "start_index": 3413, "end_index": 3490, "_text": "White blood count 4.36 , hematocrit 26.1 with platelets of 107,000 , MCV 81 ."}
+{"sent_index": 75, "start_index": 3491, "end_index": 3690, "_text": "Sodium 137 , potassium 4.5 , chloride97 , bicarb 24 , BUN 124 , creatinine 4.1 , glucose 144 , AST 49 , ALT33 , alkaline phosphatase 253 , total bili 1.6 , calcium 9.2 , magnesium 2.3 , albumin 3.4 ."}
+{"sent_index": 76, "start_index": 3691, "end_index": 3706, "_text": "HOSPITAL COURSE"}
+{"sent_index": 77, "start_index": 3709, "end_index": 3730, "_text": "1. Gastrointestinal ."}
+{"sent_index": 78, "start_index": 3731, "end_index": 3822, "_text": "The patient had an elevated bilirubin on admission with decreased output of biliary drain ."}
+{"sent_index": 79, "start_index": 3823, "end_index": 3909, "_text": "The drain was replaced over the wire , 8-10 by IR , when it was accidentally removed ."}
+{"sent_index": 80, "start_index": 3910, "end_index": 3932, "_text": "Increased flow again ."}
+{"sent_index": 81, "start_index": 3933, "end_index": 4020, "_text": "The patient had signs and symptoms develop of SBP , also with an elevated white count ."}
+{"sent_index": 82, "start_index": 4021, "end_index": 4072, "_text": "He was treated broadly with amp , levo and Flagyl ."}
+{"sent_index": 83, "start_index": 4073, "end_index": 4159, "_text": "Cultures were negative and onlyon one gram stain did it show rare gram negative rods ."}
+{"sent_index": 84, "start_index": 4160, "end_index": 4292, "_text": "The patient &apos;s abdominal fluid cell counts showed 2400 white blood cells , 500 red cells with 82 polyps , 11 lymphs , 7 monos ."}
+{"sent_index": 85, "start_index": 4293, "end_index": 4462, "_text": "Clinically , this was consistent with SBP , although unfortunately , fluid was never sent for cytology and a lot of those white cells are most likely due to his cancer ."}
+{"sent_index": 86, "start_index": 4463, "end_index": 4547, "_text": "He underwent abdominal paracentesis approximately two times a week for therapeutic ."}
+{"sent_index": 87, "start_index": 4548, "end_index": 4639, "_text": "This had to be performed by IR because the pocket was too deep to access from the bedside ."}
+{"sent_index": 88, "start_index": 4640, "end_index": 4771, "_text": "He received a two week course of broad spectrum antibiotics and will be maintained on Levofloxacin IV for prophylaxis against SBP ."}
+{"sent_index": 89, "start_index": 4772, "end_index": 4786, "_text": "2. Pulmonary ."}
+{"sent_index": 90, "start_index": 4787, "end_index": 4866, "_text": "From a pulmonary standpoint , he continued to complain of shortness of breath ."}
+{"sent_index": 91, "start_index": 4867, "end_index": 4931, "_text": "His apical pneumothorax from the outside hospital had resolved ."}
+{"sent_index": 92, "start_index": 4932, "end_index": 4976, "_text": "Chest xray was consistent with pleurodesis ."}
+{"sent_index": 93, "start_index": 4977, "end_index": 5276, "_text": "However , with persistent abdomen distention , there is likely restrictive deficit and , in addition , after each tap , he at times became hypotensive and with some mild fluid resuscitation decompensated with pulmonary edema , requiring both albumin and Lasix to try to mobilize third space fluids ."}
+{"sent_index": 94, "start_index": 5277, "end_index": 5366, "_text": "On the day of discharge , he is stating approximately 91 to 92% on three to four liters ."}
+{"sent_index": 95, "start_index": 5367, "end_index": 5420, "_text": "Chest xray is still consistent with volume overload ."}
+{"sent_index": 96, "start_index": 5421, "end_index": 5511, "_text": "The plan will be to continue to try to alternate albumin and Lasix to mobilize his fluid ."}
+{"sent_index": 97, "start_index": 5512, "end_index": 5531, "_text": "3. Cardiovascular ."}
+{"sent_index": 98, "start_index": 5532, "end_index": 5640, "_text": "He had episodes of bradycardia without subsequent fall in blood pressure at the beginning of his admission ."}
+{"sent_index": 99, "start_index": 5641, "end_index": 5687, "_text": "He was ruled out for a myocardial infarction ."}
+{"sent_index": 100, "start_index": 5688, "end_index": 5764, "_text": "Echocardiogram showed 50% ejection fraction with mild mitral regurgitation ."}
+{"sent_index": 101, "start_index": 5765, "end_index": 5858, "_text": "He did not show any episodes of bradycardia throughout the remainder of his hospital course ."}
+{"sent_index": 102, "start_index": 5859, "end_index": 5873, "_text": "4. Endocrine ."}
+{"sent_index": 103, "start_index": 5874, "end_index": 5884, "_text": "Diabetes ."}
+{"sent_index": 104, "start_index": 5885, "end_index": 5952, "_text": "His Avandia was discontinued secondary to the side effect profile ."}
+{"sent_index": 105, "start_index": 5953, "end_index": 6016, "_text": "He is being maintained on glipizide and sliding scale insulin ."}
+{"sent_index": 106, "start_index": 6017, "end_index": 6026, "_text": "5. Heme ."}
+{"sent_index": 107, "start_index": 6027, "end_index": 6101, "_text": "From a heme standpoint , he presented anemic and with an elevated PT INR ."}
+{"sent_index": 108, "start_index": 6102, "end_index": 6161, "_text": "He required a few transfusions during his hospital course ."}
+{"sent_index": 109, "start_index": 6162, "end_index": 6222, "_text": "He also required FFP initially to reverse his coagulopathy ."}
+{"sent_index": 110, "start_index": 6223, "end_index": 6284, "_text": "However , this resolved on its own over the hospital course ."}
+{"sent_index": 111, "start_index": 6285, "end_index": 6440, "_text": "His INR normalized , however , unfortunately , he developed bilateral deep venous thromboses during his hospital course and will be maintained on Lovenox ."}
+{"sent_index": 112, "start_index": 6441, "end_index": 6451, "_text": "6. Renal ."}
+{"sent_index": 113, "start_index": 6452, "end_index": 6576, "_text": "He had a creatinine of 4.0 on admission and this decreased down to the mid ones with fluid , currently at 1.7 on discharge ."}
+{"sent_index": 114, "start_index": 6577, "end_index": 6631, "_text": "From his urinalysis , he has mostly a prerenal state ."}
+{"sent_index": 115, "start_index": 6632, "end_index": 6747, "_text": "However , he does require diuresis to prevent increased volume overload in his lungs from his hypoalbunemic state ."}
+{"sent_index": 116, "start_index": 6748, "end_index": 6849, "_text": "At the time , Nutrition was following , initially with a low fat , low cholesterol , low sugar diet ."}
+{"sent_index": 117, "start_index": 6850, "end_index": 6995, "_text": "His appetite is decreasing somewhat as his disease process progresses , therefore , we have liberalized his diet for him to take what he wishes ."}
+{"sent_index": 118, "start_index": 6996, "end_index": 7003, "_text": "7. ID ."}
+{"sent_index": 119, "start_index": 7004, "end_index": 7019, "_text": "Please see GI ."}
+{"sent_index": 120, "start_index": 7020, "end_index": 7105, "_text": "He was treated with broad spectrum antibiotics for a 14 day course for clinical SBP ."}
+{"sent_index": 121, "start_index": 7106, "end_index": 7173, "_text": "He will be maintained on Levofloxacin for prophylaxis against SBP ."}
+{"sent_index": 122, "start_index": 7174, "end_index": 7212, "_text": "Given that he will need continued taps"}
+{"sent_index": 123, "start_index": 7214, "end_index": 7227, "_text": "8. Oncology ."}
+{"sent_index": 124, "start_index": 7228, "end_index": 7332, "_text": "The patient initially came for workup of pancreatic cancer with a questions of palliative chemotherapy ."}
+{"sent_index": 125, "start_index": 7333, "end_index": 7517, "_text": "However , given his rapid clinical decline , this was deferred and I do not suspect that he will be a candidate for this , as the degree of his decline bodes a poor prognosis for him ."}
+{"sent_index": 126, "start_index": 7518, "end_index": 7614, "_text": "His pain here has been controlled , initially on Oxycontin with morphine for breakthrough pain ."}
+{"sent_index": 127, "start_index": 7615, "end_index": 7726, "_text": "As he becomes progressively more somnolent , this will likely need to be switched to IV pain medications only ."}
+{"sent_index": 128, "start_index": 7727, "end_index": 7889, "_text": "Discussion , at that point in time , should occur with the family about comfort measures and about weaning him from his medications to make him more comfortable ."}
+{"sent_index": 129, "start_index": 7890, "end_index": 7932, "_text": "Code status - the patient is a DNR / DNI ."}
+{"sent_index": 130, "start_index": 7933, "end_index": 7968, "_text": "This is an unfortunate case but Mr."}
+{"sent_index": 131, "start_index": 7969, "end_index": 8111, "_text": "Po does have an incredibly supportive family who have been here consistently to visit him and that offers him an important source of comfort ."}
+{"sent_index": 132, "start_index": 8112, "end_index": 8133, "_text": "DISCHARGE MEDICATIONS"}
+{"sent_index": 133, "start_index": 8136, "end_index": 8314, "_text": "Tylenol , 650 mg p.o. q 4 prn ; Allopurinol , 100 mg p.o. q.d. ; Peridex mouthwash , 10 ml b.i.d.; cholysteramineresin , 4 grams p.o. q.d. ; clotrimazole , one troche p.o. q.i.d."}
+{"sent_index": 134, "start_index": 8317, "end_index": 8893, "_text": "Fentanyl patch , 100 mcg per hour topical q 72 hours ; glipizide , 10 mg p.o. q.d.; Atarax , 25 operating table 50 mg p.o. q 6 to 8 hours prn itching ; regular sliding scale insulin ; KBL mouthwash , 15 ccp .o. q.d. prn mouth discomfort ; Lactulose , 30 ml p.o. q.i.d. that was started on January 30 , for no bowel movements with instructions to continue until bowel movement and then decrease to b.i.d. or q.d. ; Lidocaine , 2% , 10 ml UR q 3 to 4 hours prn for pain around Foley site ; Ativan , 0.25 to 0.5 mg IV q 4 to 6 hours prn anxiety with instructions to use caution ."}
+{"sent_index": 135, "start_index": 8894, "end_index": 8939, "_text": "The patient gets very somnolent with Ativan ."}
+{"sent_index": 136, "start_index": 8940, "end_index": 9090, "_text": "Maalox Plus , Extra Strength , 15 cc p.o. q 6 hours prn indigestion ; magnesium sulfate ; sliding scale IV and potassium chloride , sliding scale IV ."}
+{"sent_index": 137, "start_index": 9091, "end_index": 9207, "_text": "He is also on Reglan , 10 mg p.o. q h ; Miracle topical cream to affected area ; also Sarna , topical cream , b.i.d."}
+{"sent_index": 138, "start_index": 9208, "end_index": 9277, "_text": "He has Nystatin suspension mouthwash , 10 cc swish and swallow q.i.d."}
+{"sent_index": 139, "start_index": 9278, "end_index": 9332, "_text": "He gets Serax , 15 to 30 mg p.o. q h.s. prni nsomnia ."}
+{"sent_index": 140, "start_index": 9333, "end_index": 9380, "_text": "Ocean Spray q.i.d. to nares prn nasal dryness ."}
+{"sent_index": 141, "start_index": 9381, "end_index": 9408, "_text": "Multivitamin , one tab q.d."}
+{"sent_index": 142, "start_index": 9409, "end_index": 9487, "_text": "Morphine immediate release , MSIR , 15 to 30 mg p.o. q 2 to 3 hours prn pain ."}
+{"sent_index": 143, "start_index": 9488, "end_index": 9541, "_text": "He is also on a Fentanyl patch , 100 mcg q 72 hours ."}
+{"sent_index": 144, "start_index": 9542, "end_index": 9581, "_text": "The morphine is for breakthrough pain ."}
+{"sent_index": 145, "start_index": 9582, "end_index": 9644, "_text": "Hydrocortisone , 1% topical cream q 6 to 8 hours prn itching ."}
+{"sent_index": 146, "start_index": 9645, "end_index": 9676, "_text": "Levofloxacin , 250 mg p.o. q.d."}
+{"sent_index": 147, "start_index": 9679, "end_index": 9743, "_text": "Albuterol and Atrovent nebs q 4 to6 hours as needed prn wheeze ."}
+{"sent_index": 148, "start_index": 9744, "end_index": 9761, "_text": "PLAN FOR FOLLOWUP"}
+{"sent_index": 149, "start_index": 9764, "end_index": 9790, "_text": "Follow up will be with Dr."}
+{"sent_index": 150, "start_index": 9791, "end_index": 9877, "_text": "A Flow from Stromware St. , Balt who is the patient &apos;s primary oncologist there ."}
+{"sent_index": 151, "start_index": 9878, "end_index": 9889, "_text": "Dictated By"}
+{"sent_index": 152, "start_index": 9892, "end_index": 9900, "_text": "JIMCHARL"}
+{"sent_index": 153, "start_index": 9901, "end_index": 9920, "_text": "B. VERGEFLOW , M.D."}
+{"sent_index": 154, "start_index": 9921, "end_index": 9925, "_text": "XX14"}
+{"sent_index": 155, "start_index": 9926, "end_index": 9935, "_text": "Attending"}
+{"sent_index": 156, "start_index": 9938, "end_index": 9962, "_text": "LUPEVICKETTE FLOW , M.D."}
+{"sent_index": 157, "start_index": 9963, "end_index": 9980, "_text": "YA80 QO567/192247"}
+{"sent_index": 158, "start_index": 9981, "end_index": 9993, "_text": "Batch :\n8798"}
+{"sent_index": 159, "start_index": 9994, "end_index": 10003, "_text": "Index No."}
+{"sent_index": 160, "start_index": 10004, "end_index": 10015, "_text": "QFQYRB7 AGG"}
+{"sent_index": 161, "start_index": 10016, "end_index": 10017, "_text": "D"}
+{"sent_index": 162, "start_index": 10020, "end_index": 10028, "_text": "01/30/01"}
+{"sent_index": 163, "start_index": 10029, "end_index": 10041, "_text": "T :\n01/30/01"}

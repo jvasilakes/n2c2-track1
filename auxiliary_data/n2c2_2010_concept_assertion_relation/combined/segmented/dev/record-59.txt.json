@@ -1,0 +1,106 @@
+{"sent_index": 0, "start_index": 0, "end_index": 14, "_text": "Admission Date"}
+{"sent_index": 1, "start_index": 17, "end_index": 27, "_text": "2015-11-09"}
+{"sent_index": 2, "start_index": 28, "end_index": 42, "_text": "Discharge Date"}
+{"sent_index": 3, "start_index": 45, "end_index": 55, "_text": "2015-11-16"}
+{"sent_index": 4, "start_index": 56, "end_index": 69, "_text": "Date of Birth"}
+{"sent_index": 5, "start_index": 72, "end_index": 82, "_text": "2015-11-09"}
+{"sent_index": 6, "start_index": 83, "end_index": 86, "_text": "Sex"}
+{"sent_index": 7, "start_index": 89, "end_index": 90, "_text": "F"}
+{"sent_index": 8, "start_index": 91, "end_index": 98, "_text": "Service"}
+{"sent_index": 9, "start_index": 101, "end_index": 109, "_text": "CMED CCU"}
+{"sent_index": 10, "start_index": 110, "end_index": 136, "_text": "HISTORY OF PRESENT ILLNESS"}
+{"sent_index": 11, "start_index": 139, "end_index": 259, "_text": "Baby girl Fritsche is the 1670 gram product of a 31 and 06-17 week gestation born to a 34 - year-old G2 P1 now 2 woman ."}
+{"sent_index": 12, "start_index": 260, "end_index": 394, "_text": "Fetal screens , O positive , antibody negative , RPR nonreactive , rubella immune , hepatitis surface antigen negative , GBS unknown ."}
+{"sent_index": 13, "start_index": 395, "end_index": 522, "_text": "IVF pregnancy complicated by IUGR , 2 vessel cord , normal fetal echo reverse diastolic flow and demise of twin A at 27 weeks ."}
+{"sent_index": 14, "start_index": 523, "end_index": 696, "_text": "Twin B with normal fetal survey was transferred to Boston Medical Center at 26 and 2/7 weeks with IUGR of twin A was first noted , presented with preterm labor at 31 weeks ."}
+{"sent_index": 15, "start_index": 697, "end_index": 760, "_text": "Betamethasone complete at approximately 26 weeks and 31 weeks ."}
+{"sent_index": 16, "start_index": 761, "end_index": 800, "_text": "Mother was on clindamycin since 11-04 ."}
+{"sent_index": 17, "start_index": 801, "end_index": 867, "_text": "PPROM with bleeding and transverse lie prompted cesarean section ."}
+{"sent_index": 18, "start_index": 868, "end_index": 885, "_text": "Abruption noted ."}
+{"sent_index": 19, "start_index": 886, "end_index": 907, "_text": "Apgars were 6 and 9 ."}
+{"sent_index": 20, "start_index": 908, "end_index": 928, "_text": "PHYSICAL EXAMINATION"}
+{"sent_index": 21, "start_index": 931, "end_index": 1056, "_text": "On admission weight 1670 grams approximately 50 th percentile , length 43 cm 50 th percentile , head circumference not done ."}
+{"sent_index": 22, "start_index": 1057, "end_index": 1118, "_text": "Anterior fontanel soft , flat , cap and prong CPAP in place ."}
+{"sent_index": 23, "start_index": 1119, "end_index": 1139, "_text": "Nondysmorphic intact"}
+{"sent_index": 24, "start_index": 1140, "end_index": 1147, "_text": "Veliz ."}
+{"sent_index": 25, "start_index": 1148, "end_index": 1245, "_text": "Comfortable with good aeration , clear breath sounds , does grunt intermittently when disturbed ."}
+{"sent_index": 26, "start_index": 1246, "end_index": 1257, "_text": "No murmur ."}
+{"sent_index": 27, "start_index": 1258, "end_index": 1273, "_text": "Normal pulses ."}
+{"sent_index": 28, "start_index": 1274, "end_index": 1304, "_text": "Soft abdomen , 3 vessel cord ."}
+{"sent_index": 29, "start_index": 1305, "end_index": 1328, "_text": "No hepatosplenomegaly ."}
+{"sent_index": 30, "start_index": 1329, "end_index": 1354, "_text": "Normal female genitalia ."}
+{"sent_index": 31, "start_index": 1355, "end_index": 1377, "_text": "Positive vaginal tag ."}
+{"sent_index": 32, "start_index": 1378, "end_index": 1391, "_text": "Patent anus ."}
+{"sent_index": 33, "start_index": 1392, "end_index": 1406, "_text": "No hip click ."}
+{"sent_index": 34, "start_index": 1407, "end_index": 1425, "_text": "No sacral dimple ."}
+{"sent_index": 35, "start_index": 1426, "end_index": 1449, "_text": "Moves all extremities ."}
+{"sent_index": 36, "start_index": 1450, "end_index": 1528, "_text": "Decrease tone , ruddy , warm , well perfused with peripheral IV in left hand ."}
+{"sent_index": 37, "start_index": 1529, "end_index": 1544, "_text": "HOSPITAL COURSE"}
+{"sent_index": 38, "start_index": 1547, "end_index": 1560, "_text": "Respiratory ."}
+{"sent_index": 39, "start_index": 1561, "end_index": 1651, "_text": "Mills was admitted to the newborn intensive care unit with moderate respiratory distress ."}
+{"sent_index": 40, "start_index": 1652, "end_index": 1675, "_text": "Infant placed on CPAP ."}
+{"sent_index": 41, "start_index": 1676, "end_index": 1727, "_text": "X-ray revealed mild respiratory distress syndrome ."}
+{"sent_index": 42, "start_index": 1728, "end_index": 1856, "_text": "She remained on CPAP for a total of 24 hours at which time she transitioned to room air and continues to be stable in room air ."}
+{"sent_index": 43, "start_index": 1857, "end_index": 1939, "_text": "Caffeine citrate was initiated on 11-14 for apnea and bradycardia of prematurity ."}
+{"sent_index": 44, "start_index": 1940, "end_index": 1987, "_text": "She is currently receiving 11 mg po every day ."}
+{"sent_index": 45, "start_index": 1988, "end_index": 2004, "_text": "Cardiovascular ."}
+{"sent_index": 46, "start_index": 2005, "end_index": 2064, "_text": "Has been cardiovascular stable throughout hospital course ."}
+{"sent_index": 47, "start_index": 2065, "end_index": 2093, "_text": "Heart ranges 130 s to 160 s."}
+{"sent_index": 48, "start_index": 2094, "end_index": 2148, "_text": "Blood pressure most recently 60/37 with a mean of 44 ."}
+{"sent_index": 49, "start_index": 2149, "end_index": 2172, "_text": "Fluid and electrolyte ."}
+{"sent_index": 50, "start_index": 2173, "end_index": 2251, "_text": "Birth weight was 1670 grams 50 th percentile , length 43 cm 50 th percentile ."}
+{"sent_index": 51, "start_index": 2252, "end_index": 2281, "_text": "Head circumference not done ."}
+{"sent_index": 52, "start_index": 2282, "end_index": 2346, "_text": "Infant was initially started on 80 cc per kilo per day of D10W ."}
+{"sent_index": 53, "start_index": 2347, "end_index": 2398, "_text": "Enteral feedings were initiated on day of life #1 ."}
+{"sent_index": 54, "start_index": 2399, "end_index": 2455, "_text": "Infant achieved full enteral feedings by day of life 6 ."}
+{"sent_index": 55, "start_index": 2456, "end_index": 2527, "_text": "She is currently receiving 150 cc per kilo per day of Special Care 20 ."}
+{"sent_index": 56, "start_index": 2528, "end_index": 2561, "_text": "Her discharge weight is 1477 gm ."}
+{"sent_index": 57, "start_index": 2562, "end_index": 2712, "_text": "Her most recent set of electrolytes were on 2015-11-13 with a sodium of 143 , a potassium of 6.3 hemolyzed , a chloride of 113 and a total CO2 of 17 ."}
+{"sent_index": 58, "start_index": 2713, "end_index": 2770, "_text": "She will need advance calorie density for better growth ."}
+{"sent_index": 59, "start_index": 2771, "end_index": 2775, "_text": "GI ."}
+{"sent_index": 60, "start_index": 2776, "end_index": 2825, "_text": "Bilirubin peaked on day of life #2 of 9.0 / 0.3 ."}
+{"sent_index": 61, "start_index": 2826, "end_index": 2890, "_text": "Infant is under phototherapy , which was discontinued on 11-13 ."}
+{"sent_index": 62, "start_index": 2891, "end_index": 2940, "_text": "Most recent bilirubin was on 11-14 of 4.8 / 0.3 ."}
+{"sent_index": 63, "start_index": 2941, "end_index": 2953, "_text": "Hematology ."}
+{"sent_index": 64, "start_index": 2954, "end_index": 2988, "_text": "Hematocrit on admission was 53.7 ."}
+{"sent_index": 65, "start_index": 2989, "end_index": 3034, "_text": "She has not required any blood transfusions ."}
+{"sent_index": 66, "start_index": 3035, "end_index": 3055, "_text": "Infectious disease ."}
+{"sent_index": 67, "start_index": 3056, "end_index": 3103, "_text": "A CBC and blood culture obtained on admission ."}
+{"sent_index": 68, "start_index": 3104, "end_index": 3183, "_text": "CBC had a white blood cell count of 9 , 17 polys , 0 bands , platelets of 326 ."}
+{"sent_index": 69, "start_index": 3184, "end_index": 3299, "_text": "She received 48 hours of ampicillin and gentamycin with negative blood cultures and antibiotics were discontinued ."}
+{"sent_index": 70, "start_index": 3300, "end_index": 3314, "_text": "Neurological ."}
+{"sent_index": 71, "start_index": 3315, "end_index": 3361, "_text": "She has been appropriate for gestational age ."}
+{"sent_index": 72, "start_index": 3362, "end_index": 3422, "_text": "Head ultrasound was performed on 2015-11-16 and was normal ."}
+{"sent_index": 73, "start_index": 3423, "end_index": 3516, "_text": "Sensory , hearing screen has not yet been performed , but should be done prior to discharge ."}
+{"sent_index": 74, "start_index": 3517, "end_index": 3539, "_text": "CONDITION AT DISCHARGE"}
+{"sent_index": 75, "start_index": 3542, "end_index": 3550, "_text": "Stable ."}
+{"sent_index": 76, "start_index": 3551, "end_index": 3572, "_text": "DISCHARGE DISPOSITION"}
+{"sent_index": 77, "start_index": 3575, "end_index": 3601, "_text": "To Boston Medical Center ."}
+{"sent_index": 78, "start_index": 3602, "end_index": 3622, "_text": "PRIMARY PEDIATRICIAN"}
+{"sent_index": 79, "start_index": 3625, "end_index": 3640, "_text": "Dr. Kim Adams ."}
+{"sent_index": 80, "start_index": 3641, "end_index": 3679, "_text": "Telephone number is ( 261 ) 564-6894 ."}
+{"sent_index": 81, "start_index": 3680, "end_index": 3704, "_text": "CARE AND RECOMMENDATIONS"}
+{"sent_index": 82, "start_index": 3707, "end_index": 3862, "_text": "Continue 150 cc per kilo per day of Special Care 20 calories advancing caloric intake as required to maintain weight gain of 3 grams per kilogram per day ."}
+{"sent_index": 83, "start_index": 3863, "end_index": 3926, "_text": "Medications , continue caffeine citrate of 11 mg po every day ."}
+{"sent_index": 84, "start_index": 3927, "end_index": 3978, "_text": "Car seat position screening has not yet been done ."}
+{"sent_index": 85, "start_index": 3979, "end_index": 4045, "_text": "State newborn screen was sent on day of life #3 and at discharge ."}
+{"sent_index": 86, "start_index": 4046, "end_index": 4089, "_text": "Initial results were within normal limits ."}
+{"sent_index": 87, "start_index": 4090, "end_index": 4166, "_text": "Immunizations received , infant has not received any immunizations to date ."}
+{"sent_index": 88, "start_index": 4167, "end_index": 4212, "_text": "State newborn screen was sent on 2015-11-12 ."}
+{"sent_index": 89, "start_index": 4213, "end_index": 4226, "_text": "Immunizations"}
+{"sent_index": 90, "start_index": 4229, "end_index": 4606, "_text": "recommended Synagis RSV prophylaxis should be considered from November through March for infants who meet any of the following 3 criteria , born at less than 32 weeks , born between 32 and 35 weeks with 2 of the following , daycare during RSV season , a smoker in the household , neuromuscular disease and weight abnormalities or school age siblings with chronic lung disease ."}
+{"sent_index": 91, "start_index": 4607, "end_index": 4715, "_text": "Influenza immunization is recommended annually in the fall for all infants once they reach 6 months of age ."}
+{"sent_index": 92, "start_index": 4716, "end_index": 4880, "_text": "Before this age and for the first 24 months of the child 's life immunizations against influenza is recommended for household contacts and out of home care givers ."}
+{"sent_index": 93, "start_index": 4881, "end_index": 4900, "_text": "DISCHARGE DIAGNOSES"}
+{"sent_index": 94, "start_index": 4903, "end_index": 4997, "_text": "Premature infant born at 31 and 6/7 weeks gestation , resolved respiratory distress syndrome ."}
+{"sent_index": 95, "start_index": 4998, "end_index": 5031, "_text": "Rule out sepsis with antibiotic ."}
+{"sent_index": 96, "start_index": 5032, "end_index": 5062, "_text": "Hyperbilirubinemia resolving ."}
+{"sent_index": 97, "start_index": 5063, "end_index": 5101, "_text": "Apnea and bradycardia of prematurity ."}
+{"sent_index": 98, "start_index": 5102, "end_index": 5137, "_text": "Tai Pamela Wendell , Oklahoma 05158"}
+{"sent_index": 99, "start_index": 5138, "end_index": 5174, "_text": "Dictated By : Kurt S Imperato , M.D."}
+{"sent_index": 100, "start_index": 5175, "end_index": 5185, "_text": "MEDQUIST36"}
+{"sent_index": 101, "start_index": 5186, "end_index": 5209, "_text": "D : 2015-11-15 21:17:13"}
+{"sent_index": 102, "start_index": 5210, "end_index": 5233, "_text": "T : 2015-11-16 06:38:42"}
+{"sent_index": 103, "start_index": 5234, "end_index": 5246, "_text": "Job #:\n82694"}
+{"sent_index": 104, "start_index": 5247, "end_index": 5317, "_text": "Signed electronically by : DR. Debbie TRAN on : MON 2015-11-16 9:57 AM"}
+{"sent_index": 105, "start_index": 5320, "end_index": 5333, "_text": "End of Report"}

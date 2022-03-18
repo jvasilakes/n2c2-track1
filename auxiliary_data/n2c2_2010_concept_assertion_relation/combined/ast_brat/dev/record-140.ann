@@ -1,0 +1,126 @@
+T0	problem 1058 1066	headache
+A0	Assertion T0 absent
+T1	problem 2116 2139	Coronary artery disease
+A1	Assertion T1 present
+T2	problem 2382 2397	Type 2 diabetes
+A2	Assertion T2 present
+T3	problem 5619 5642	coronary artery disease
+A3	Assertion T3 present
+T4	problem 5735 5758	acute coronary syndrome
+A4	Assertion T4 present
+T5	problem 5403 5416	apex akinesis
+A5	Assertion T5 present
+T6	problem 2403 2423	Hypercholesterolemia
+A6	Assertion T6 present
+T7	problem 4003 4015	nondistended
+A7	Assertion T7 absent
+T8	problem 2491 2514	a myocardial infarction
+A8	Assertion T8 associated_with_someone_else
+T9	problem 3907 3909	S4
+A9	Assertion T9 absent
+T10	problem 2429 2441	Hypertension
+A10	Assertion T10 present
+T11	problem 1437 1445	his pain
+A11	Assertion T11 present
+T12	problem 1020 1046	slight shortness of breath
+A12	Assertion T12 present
+T13	problem 5374 5396	inferior apex akinesis
+A13	Assertion T13 present
+T14	problem 1100 1106	nausea
+A14	Assertion T14 absent
+T15	problem 201 224	coronary artery disease
+A15	Assertion T15 present
+T16	problem 1472 1480	symptoms
+A16	Assertion T16 present
+T17	problem 4226 4236	tenderness
+A17	Assertion T17 absent
+T18	problem 1521 1534	ST elevations
+A18	Assertion T18 present
+T19	problem 5349 5371	Anterior apex akinesis
+A19	Assertion T19 present
+T20	problem 774 782	The pain
+A20	Assertion T20 present
+T21	problem 4084 4089	edema
+A21	Assertion T21 absent
+T22	problem 621 639	substernal burning
+A22	Assertion T22 conditional
+T23	problem 5427 5453	trace mitral regurgitation
+A23	Assertion T23 present
+T24	problem 1069 1085	change in vision
+A24	Assertion T24 absent
+T25	problem 5563 5578	type 2 diabetes
+A25	Assertion T25 present
+T26	problem 1759 1789	50% stenosis of first diagonal
+A26	Assertion T26 present
+T27	problem 3987 3996	nontender
+A27	Assertion T27 absent
+T28	problem 1692 1754	100% occlusion of the proximal left anterior descending artery
+A28	Assertion T28 present
+T29	problem 4021 4039	hepatosplenomegaly
+A29	Assertion T29 absent
+T30	problem 5458 5487	trace tricuspid regurgitation
+A30	Assertion T30 present
+T31	problem 5600 5612	hypertension
+A31	Assertion T31 present
+T32	problem 1137 1170	change in bowel or urinary habits
+A32	Assertion T32 absent
+T33	problem 477 498	substernal chest pain
+A33	Assertion T33 conditional
+T34	problem 3424 3441	apparent distress
+A34	Assertion T34 absent
+T35	problem 5581 5597	high cholesterol
+A35	Assertion T35 present
+T36	problem 3955 3977	decreased bowel sounds
+A36	Assertion T36 present
+T37	problem 5092 5127	J point elevations in V2 through V3
+A37	Assertion T37 present
+T38	problem 5064 5087	continued ST elevations
+A38	Assertion T38 present
+T39	problem 5203 5232	moderate systolic dysfunction
+A39	Assertion T39 present
+T40	problem 5235 5261	basal anterior hypokinesis
+A40	Assertion T40 present
+T41	problem 5264 5285	mid anterior akinesis
+A41	Assertion T41 present
+T42	problem 5288 5318	basal anteroseptal hypokinesis
+A42	Assertion T42 present
+T43	problem 5321 5346	mid anteroseptal akinesis
+A43	Assertion T43 present
+T44	problem 3925 3929	rubs
+A44	Assertion T44 absent
+T45	problem 3747 3772	jugular venous distention
+A45	Assertion T45 absent
+T46	problem 3631 3646	lymphadenopathy
+A46	Assertion T46 absent
+T47	problem 1109 1117	vomiting
+A47	Assertion T47 absent
+T48	problem 1539 1574	J point elevations in V2 through V4
+A48	Assertion T48 present
+T49	problem 371 383	hypertension
+A49	Assertion T49 present
+T50	problem 3915 3922	murmurs
+A50	Assertion T50 absent
+T51	problem 1198 1204	sweats
+A51	Assertion T51 absent
+T52	problem 2902 2911	Allergies
+A52	Assertion T52 conditional
+T53	problem 1185 1191	chills
+A53	Assertion T53 absent
+T54	problem 3843 3859	bilateral bruits
+A54	Assertion T54 present
+T55	problem 3933 3940	gallops
+A55	Assertion T55 absent
+T56	problem 418 438	hypercholesterolemia
+A56	Assertion T56 present
+T57	problem 1176 1182	fevers
+A57	Assertion T57 absent
+T58	problem 386 411	new onset type 2 diabetes
+A58	Assertion T58 present
+T59	problem 1120 1134	abdominal pain
+A59	Assertion T59 absent
+T60	problem 3901 3903	S3
+A60	Assertion T60 absent
+T61	problem 1088 1097	dizziness
+A61	Assertion T61 absent
+T62	problem 2553 2576	a myocardial infarction
+A62	Assertion T62 associated_with_someone_else

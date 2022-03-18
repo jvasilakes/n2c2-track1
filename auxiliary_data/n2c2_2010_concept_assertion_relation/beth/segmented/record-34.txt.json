@@ -1,0 +1,109 @@
+{"sent_index": 0, "start_index": 0, "end_index": 14, "_text": "Admission Date"}
+{"sent_index": 1, "start_index": 17, "end_index": 27, "_text": "2008-12-24"}
+{"sent_index": 2, "start_index": 28, "end_index": 42, "_text": "Discharge Date"}
+{"sent_index": 3, "start_index": 45, "end_index": 55, "_text": "2009-02-06"}
+{"sent_index": 4, "start_index": 56, "end_index": 69, "_text": "Date of Birth"}
+{"sent_index": 5, "start_index": 72, "end_index": 82, "_text": "2008-12-24"}
+{"sent_index": 6, "start_index": 83, "end_index": 86, "_text": "Sex"}
+{"sent_index": 7, "start_index": 89, "end_index": 90, "_text": "F"}
+{"sent_index": 8, "start_index": 91, "end_index": 98, "_text": "Service"}
+{"sent_index": 9, "start_index": 101, "end_index": 112, "_text": "Neonatology"}
+{"sent_index": 10, "start_index": 113, "end_index": 139, "_text": "HISTORY OF PRESENT ILLNESS"}
+{"sent_index": 11, "start_index": 142, "end_index": 256, "_text": "Gerardo is the 1400 gm product of a 32 05-03 week twin gestation born to a 37 year old gravida 1 , para 0 mother ."}
+{"sent_index": 12, "start_index": 257, "end_index": 283, "_text": "Prenatal laboratory values"}
+{"sent_index": 13, "start_index": 286, "end_index": 362, "_text": "Maternal blood type 0-positive , DAT negative , negative , RPR nonreactive ."}
+{"sent_index": 14, "start_index": 363, "end_index": 416, "_text": "The mother 's past medical history is significant for"}
+{"sent_index": 15, "start_index": 419, "end_index": 525, "_text": "1. Tuberculosis , mother was treated in 2001 according to chart with subsequent negative chest x-ray , and"}
+{"sent_index": 16, "start_index": 526, "end_index": 528, "_text": "2."}
+{"sent_index": 17, "start_index": 529, "end_index": 542, "_text": "Infertility ."}
+{"sent_index": 18, "start_index": 543, "end_index": 711, "_text": "The pregnancy was complicated by twin gestation and by polyhydramnios with apparent duodenal atresia and nuchal\nthickening consistent with Trisomy 21 in the B co-twin ."}
+{"sent_index": 19, "start_index": 712, "end_index": 745, "_text": "Amniocentesis was not performed ."}
+{"sent_index": 20, "start_index": 746, "end_index": 898, "_text": "Maternal hypertension was noted in the doctor 's office and Mom was referred to nonreassuring fetal tracing , necessitating an urgent cesarean section ."}
+{"sent_index": 21, "start_index": 899, "end_index": 986, "_text": "Twin #1 cried spontaneously at birth , was bulb suctioned and received Blow-by oxygen ."}
+{"sent_index": 22, "start_index": 987, "end_index": 1038, "_text": "Apgars were 8 at one minute and 8 at five minutes ."}
+{"sent_index": 23, "start_index": 1039, "end_index": 1089, "_text": "Twin #1 was noted to be in a breech presentation ."}
+{"sent_index": 24, "start_index": 1090, "end_index": 1109, "_text": "Sepsis risk factors"}
+{"sent_index": 25, "start_index": 1112, "end_index": 1180, "_text": "No fever , no fetal tachycardia , rupture of membranes at delivery ."}
+{"sent_index": 26, "start_index": 1181, "end_index": 1219, "_text": "Group B Streptococcus status unknown ."}
+{"sent_index": 27, "start_index": 1220, "end_index": 1240, "_text": "PHYSICAL EXAMINATION"}
+{"sent_index": 28, "start_index": 1243, "end_index": 1331, "_text": "Well-appearing female without distress on admission to the Newborn Intensive Care Unit ."}
+{"sent_index": 29, "start_index": 1332, "end_index": 1421, "_text": "The patient had a weight of 1400 gm , length 41.5 cm and head circumference of 29.25 cm ."}
+{"sent_index": 30, "start_index": 1422, "end_index": 1500, "_text": "Anterior fontanelle , soft and flat , palate intact , nondysmorphic features ."}
+{"sent_index": 31, "start_index": 1501, "end_index": 1506, "_text": "Lungs"}
+{"sent_index": 32, "start_index": 1509, "end_index": 1569, "_text": "breath sounds clear and equal bilaterally , no retractions ."}
+{"sent_index": 33, "start_index": 1570, "end_index": 1575, "_text": "Heart"}
+{"sent_index": 34, "start_index": 1578, "end_index": 1646, "_text": "regular rate and rhythm , no murmur , normal S1 and S2 , pulses 2 +."}
+{"sent_index": 35, "start_index": 1647, "end_index": 1678, "_text": "Abdomen : soft , nondistended ."}
+{"sent_index": 36, "start_index": 1679, "end_index": 1724, "_text": "Without hepatosplenomegaly , without masses ."}
+{"sent_index": 37, "start_index": 1725, "end_index": 1750, "_text": "Normal female genitalia ."}
+{"sent_index": 38, "start_index": 1751, "end_index": 1764, "_text": "Anus patent ."}
+{"sent_index": 39, "start_index": 1765, "end_index": 1797, "_text": "Positive suck , positive grasp ."}
+{"sent_index": 40, "start_index": 1798, "end_index": 1811, "_text": "Skin intact ."}
+{"sent_index": 41, "start_index": 1812, "end_index": 1867, "_text": "Size appropriate for gestational age , 32 week female ."}
+{"sent_index": 42, "start_index": 1868, "end_index": 1894, "_text": "SUMMARY OF HOSPITAL COURSE"}
+{"sent_index": 43, "start_index": 1897, "end_index": 1911, "_text": "1. Respiratory"}
+{"sent_index": 44, "start_index": 1914, "end_index": 2014, "_text": "Gerardo was initially placed in nasal cannula oxygen to maintain oxygen saturation greater than 94 ."}
+{"sent_index": 45, "start_index": 2015, "end_index": 2057, "_text": "On day of life #1 , caffeine was started ."}
+{"sent_index": 46, "start_index": 2058, "end_index": 2104, "_text": "Gerardo weaned to room air on day of life #6 ."}
+{"sent_index": 47, "start_index": 2105, "end_index": 2151, "_text": "Caffeine was discontinued on day of life #19 ."}
+{"sent_index": 48, "start_index": 2152, "end_index": 2238, "_text": "Breath sounds , clear and equal , without retractions , respiratory rate 30 s to 60 s."}
+{"sent_index": 49, "start_index": 2239, "end_index": 2320, "_text": "2. Cardiovascular - The patient has been cardiovascularly stable without murmur ."}
+{"sent_index": 50, "start_index": 2321, "end_index": 2405, "_text": "3. Fluids , electrolytes and nutrition - Birthweight was 1400 gm , 25th percentile ."}
+{"sent_index": 51, "start_index": 2406, "end_index": 2472, "_text": "The patient was initially started on D10 / W at 80 cc / kg / day ."}
+{"sent_index": 52, "start_index": 2473, "end_index": 2586, "_text": "She began enteral feeds on day of life #2 advancing to mother 's breastmilk 30 with ProMod at 150 cc / kg / day ."}
+{"sent_index": 53, "start_index": 2587, "end_index": 2648, "_text": "Baby received parenteral nutrition and lipids for four days ."}
+{"sent_index": 54, "start_index": 2649, "end_index": 2679, "_text": "No hypoglycemia issues noted ."}
+{"sent_index": 55, "start_index": 2680, "end_index": 2792, "_text": "Baby is presently tolerating mother 's breastmilk with Enfamil powder to make 24 cal / oz at 130 cc / kg / day ."}
+{"sent_index": 56, "start_index": 2793, "end_index": 2825, "_text": "The baby is breastfeeding well ."}
+{"sent_index": 57, "start_index": 2826, "end_index": 2861, "_text": "The plan is for alternating feeds ."}
+{"sent_index": 58, "start_index": 2862, "end_index": 2950, "_text": "4. Gastrointestinal , genitourinary - Peak bilirubin 8.5 , phototherapy times 24 hours ."}
+{"sent_index": 59, "start_index": 2951, "end_index": 2974, "_text": "Rebound bilirubin 6.4 ."}
+{"sent_index": 60, "start_index": 2975, "end_index": 3036, "_text": "5. Hematology - Most recent hematocrit was 42.8 on 50-05-25 ."}
+{"sent_index": 61, "start_index": 3037, "end_index": 3074, "_text": "The baby received no blood products ."}
+{"sent_index": 62, "start_index": 3075, "end_index": 3123, "_text": "6. Infectious disease - No sepsis risk factors ."}
+{"sent_index": 63, "start_index": 3124, "end_index": 3266, "_text": "Initial complete blood count with white blood cell count 14 , hemoglobin 21.6 , hematocrit 62.9 , 65 neutrophils , no bands , 28 lymphocytes ."}
+{"sent_index": 64, "start_index": 3267, "end_index": 3292, "_text": "Blood cultures negative ."}
+{"sent_index": 65, "start_index": 3293, "end_index": 3346, "_text": "7. Neurology - Normal head ultrasound on 2009-01-08 ."}
+{"sent_index": 66, "start_index": 3347, "end_index": 3450, "_text": "8. Sensory - Audiology , hearing screening was performed with automated auditory brain stem responses ."}
+{"sent_index": 67, "start_index": 3451, "end_index": 3491, "_text": "Baby passed hearing test on 2009-01-21 ."}
+{"sent_index": 68, "start_index": 3492, "end_index": 3531, "_text": "Follow up recommended in eight months ."}
+{"sent_index": 69, "start_index": 3532, "end_index": 3545, "_text": "Ophthalmology"}
+{"sent_index": 70, "start_index": 3549, "end_index": 3632, "_text": "eyes were examined most recently on 2009-01-14 , revealing mature retinal vessels ."}
+{"sent_index": 71, "start_index": 3633, "end_index": 3696, "_text": "A follow up examination is recommended in six to eight months ."}
+{"sent_index": 72, "start_index": 3697, "end_index": 3786, "_text": "9. Psychosocial - Bridgewater State Hospital Center 's social work involved with family ."}
+{"sent_index": 73, "start_index": 3787, "end_index": 3873, "_text": "The contact social worker is Barbara Cole and she can be reached at ( 972 ) 433-8086 ."}
+{"sent_index": 74, "start_index": 3874, "end_index": 3896, "_text": "CONDITION ON DISCHARGE"}
+{"sent_index": 75, "start_index": 3899, "end_index": 3907, "_text": "Stable ."}
+{"sent_index": 76, "start_index": 3908, "end_index": 3929, "_text": "DISCHARGE DISPOSITION"}
+{"sent_index": 77, "start_index": 3932, "end_index": 3938, "_text": "Home ."}
+{"sent_index": 78, "start_index": 3939, "end_index": 3959, "_text": "PRIMARY PEDIATRICIAN"}
+{"sent_index": 79, "start_index": 3962, "end_index": 3965, "_text": "Dr."}
+{"sent_index": 80, "start_index": 3966, "end_index": 4020, "_text": "Vito Dotzler , phone ( 259 ) 579-8396 , fax 898-3942 ."}
+{"sent_index": 81, "start_index": 4021, "end_index": 4036, "_text": "RECOMMENDATIONS"}
+{"sent_index": 82, "start_index": 4039, "end_index": 4189, "_text": "1. Feeds - Breastfeeding ad lib , supplementing with Enfamil 24 or breastmilk 24 cal / oz made with 1 tsp of Enfamil powder per 100 cc of breastmilk ."}
+{"sent_index": 83, "start_index": 4190, "end_index": 4303, "_text": "2. Medications - Poly-Vi-James 1 cc p.o. q. day ; Iron or Fer-In-James 0.2 cc p.o. q. day to give 2 mg / kg / day"}
+{"sent_index": 84, "start_index": 4304, "end_index": 4336, "_text": "3. Car seat screening - Passed ."}
+{"sent_index": 85, "start_index": 4337, "end_index": 4412, "_text": "4. State newborn screening - Last on 2009-01-07 , all within normal range ."}
+{"sent_index": 86, "start_index": 4413, "end_index": 4479, "_text": "5. Immunizations received - Hepatitis B vaccine given 2009-01-22 ."}
+{"sent_index": 87, "start_index": 4480, "end_index": 4663, "_text": "6. Immunizations recommended -\nSynagis respiratory syncytial virus prophylaxis should be considered from October through April for infants who meet\nany of the following three criteria"}
+{"sent_index": 88, "start_index": 4666, "end_index": 4695, "_text": "1. Born at less than 32 weeks"}
+{"sent_index": 89, "start_index": 4698, "end_index": 4859, "_text": "2. Born between 32 and 35 weeks with plans for daycare during respiratory syncytial virus season , with a smoker in the household or with preschool siblings ; or"}
+{"sent_index": 90, "start_index": 4860, "end_index": 4890, "_text": "3. With chronic lung disease ."}
+{"sent_index": 91, "start_index": 4891, "end_index": 5009, "_text": "After some debate , we concluded that Vetrano was not at unusually high risk from RSV , but that her sister might be ."}
+{"sent_index": 92, "start_index": 5010, "end_index": 5109, "_text": "Vetrano probably does not need Synagis at least until her sibling is discharged from the hospital ."}
+{"sent_index": 93, "start_index": 5110, "end_index": 5185, "_text": "It may then be reasonable to treat both for the balance of the RSV season ."}
+{"sent_index": 94, "start_index": 5186, "end_index": 5460, "_text": "Influenza immunization should be considered annually in the fall for preterm infants with chronic lung disease once they\nreach six months of age , before this age the family and other caregivers should be considered for immunization against\ninfluenza to protect the infant ."}
+{"sent_index": 95, "start_index": 5461, "end_index": 5555, "_text": "7. Follow up - Follow up appointment with primary pediatrician within five days of discharge ."}
+{"sent_index": 96, "start_index": 5556, "end_index": 5575, "_text": "DISCHARGE DIAGNOSIS"}
+{"sent_index": 97, "start_index": 5578, "end_index": 5624, "_text": "1. Prematurity , former 32 4/7 weeks , Twin #1"}
+{"sent_index": 98, "start_index": 5625, "end_index": 5643, "_text": "2. Rule out sepsis"}
+{"sent_index": 99, "start_index": 5644, "end_index": 5654, "_text": "Beverly Q."}
+{"sent_index": 100, "start_index": 5655, "end_index": 5668, "_text": "Bailey , M.D."}
+{"sent_index": 101, "start_index": 5669, "end_index": 5675, "_text": "02-131"}
+{"sent_index": 102, "start_index": 5676, "end_index": 5687, "_text": "Dictated By"}
+{"sent_index": 103, "start_index": 5690, "end_index": 5717, "_text": "Carmen Y.R. Martinez , M.D."}
+{"sent_index": 104, "start_index": 5718, "end_index": 5728, "_text": "MEDQUIST36"}
+{"sent_index": 105, "start_index": 5729, "end_index": 5749, "_text": "D : 2009-02-05 18:20"}
+{"sent_index": 106, "start_index": 5750, "end_index": 5770, "_text": "T : 2009-02-05 18:39"}
+{"sent_index": 107, "start_index": 5771, "end_index": 5783, "_text": "JOB #:\n17371"}
+{"sent_index": 108, "start_index": 5784, "end_index": 5878, "_text": "Signed electronically by : DR. Lizzie Calkins on : Adeline 2009-02-06 10:27 AM\n( End of Report"}

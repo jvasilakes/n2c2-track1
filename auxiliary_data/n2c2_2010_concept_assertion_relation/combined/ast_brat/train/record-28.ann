@@ -1,0 +1,94 @@
+T0	problem 2548 2553	m/g/r
+A0	Assertion T0 absent
+T1	problem 371 382	hepatitis C
+A1	Assertion T1 present
+T2	problem 4983 5008	L retrocardiac infiltrate
+A2	Assertion T2 possible
+T3	problem 385 401	bipolar disorder
+A3	Assertion T3 present
+T4	problem 2519 2522	JVD
+A4	Assertion T4 absent
+T5	problem 2097 2104	anxiety
+A5	Assertion T5 present
+T6	problem 235 243	Overdose
+A6	Assertion T6 present
+T7	problem 5133 5142	agitation
+A7	Assertion T7 hypothetical
+T8	problem 2643 2648	scars
+A8	Assertion T8 absent
+T9	problem 152 176	Known Allergies to Drugs
+A9	Assertion T9 absent
+T10	problem 5143 5159	Bipolar disorder
+A10	Assertion T10 present
+T11	problem 2564 2598	decreased BS over left middle lung
+A11	Assertion T11 present
+T12	problem 781 793	unresponsive
+A12	Assertion T12 present
+T13	problem 2635 2637	nd
+A13	Assertion T13 absent
+T14	problem 2691 2696	c/c/e
+A14	Assertion T14 absent
+T15	problem 2702 2707	edema
+A15	Assertion T15 absent
+T16	problem 1609 1614	Hep C
+A16	Assertion T16 present
+T17	problem 2666 2668	nt
+A17	Assertion T17 absent
+T18	problem 2873 2890	speech stuttering
+A18	Assertion T18 present
+T19	problem 1402 1422	aspiration pneumonia
+A19	Assertion T19 possible
+T20	problem 2719 2728	asterixis
+A20	Assertion T20 absent
+T21	problem 2908 2910	SI
+A21	Assertion T21 absent
+T22	problem 4444 4466	right pleural effusion
+A22	Assertion T22 absent
+T23	problem 4470 4488	right pneumothorax
+A23	Assertion T23 absent
+T24	problem 4205 4239	a patchy area of increased opacity
+A24	Assertion T24 present
+T25	problem 5116 5130	BZD withdrawal
+A25	Assertion T25 hypothetical
+T26	problem 4725 4740	early pneumonia
+A26	Assertion T26 possible
+T27	problem 4635 4667	Patchy left retrocardiac opacity
+A27	Assertion T27 present
+T28	problem 2914 2916	HI
+A28	Assertion T28 absent
+T29	problem 1709 1719	Narcissism
+A29	Assertion T29 present
+T30	problem 5681 5690	Depressed
+A30	Assertion T30 present
+T31	problem 1694 1708	Panic disorder
+A31	Assertion T31 present
+T32	problem 1734 1745	head trauma
+A32	Assertion T32 absent
+T33	problem 5648 5658	Depression
+A33	Assertion T33 present
+T34	problem 1615 1626	Bipolar D/O
+A34	Assertion T34 present
+T35	problem 1655 1663	overdose
+A35	Assertion T35 present
+T36	problem 1682 1693	Agoraphobia
+A36	Assertion T36 present
+T37	problem 4709 4719	aspiration
+A37	Assertion T37 possible
+T38	problem 4821 4824	HCV
+A38	Assertion T38 present
+T39	problem 2469 2490	tongue fasciculations
+A39	Assertion T39 absent
+T40	problem 4867 4875	overdose
+A40	Assertion T40 present
+T41	problem 4688 4706	patchy atelectasis
+A41	Assertion T41 possible
+T42	problem 2510 2513	LAD
+A42	Assertion T42 absent
+T43	problem 2439 2446	icterus
+A43	Assertion T43 absent
+T44	problem 4827 4837	bipolar DO
+A44	Assertion T44 present
+T45	problem 1749 1765	seizure disorder
+A45	Assertion T45 absent
+T46	problem 2402 2405	NAD
+A46	Assertion T46 absent

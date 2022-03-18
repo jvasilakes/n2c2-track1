@@ -1,0 +1,46 @@
+{"sent_index": 0, "start_index": 0, "end_index": 12, "_text": "708739405 DH"}
+{"sent_index": 1, "start_index": 13, "end_index": 20, "_text": "0606127"}
+{"sent_index": 2, "start_index": 21, "end_index": 57, "_text": "65761\n4209641\n10/29/2003 12:00:00 AM"}
+{"sent_index": 3, "start_index": 58, "end_index": 78, "_text": "OB Discharge Summary"}
+{"sent_index": 4, "start_index": 79, "end_index": 85, "_text": "Signed"}
+{"sent_index": 5, "start_index": 86, "end_index": 89, "_text": "DIS"}
+{"sent_index": 6, "start_index": 90, "end_index": 103, "_text": "Report Status"}
+{"sent_index": 7, "start_index": 106, "end_index": 145, "_text": "Signed OB EMR L and D\nDISCHARGE SUMMARY"}
+{"sent_index": 8, "start_index": 146, "end_index": 195, "_text": "NAME :\nSYSCO TAMARCE DOSE\nUNIT NUMBER :\n372-13-02"}
+{"sent_index": 9, "start_index": 196, "end_index": 221, "_text": "ADMISSION DATE :\n20031029"}
+{"sent_index": 10, "start_index": 222, "end_index": 247, "_text": "DISCHARGE DATE :\n20041101"}
+{"sent_index": 11, "start_index": 248, "end_index": 277, "_text": "PRINCIPAL DISCHARGE DIAGNOSIS"}
+{"sent_index": 12, "start_index": 280, "end_index": 303, "_text": "Normal Vaginal Delivery"}
+{"sent_index": 13, "start_index": 304, "end_index": 324, "_text": "ASSOCIATED DIAGNOSES"}
+{"sent_index": 14, "start_index": 327, "end_index": 458, "_text": "Current Smoker , history of ; Depression , history of ; Isoimmunization , Rh ; Undesired Fertility\nPRINCIPAL PROCEDURE OR OPERATION"}
+{"sent_index": 15, "start_index": 461, "end_index": 496, "_text": "Spontaneous Vertex Vaginal Delivery"}
+{"sent_index": 16, "start_index": 497, "end_index": 532, "_text": "ASSOCIATED PROCEDURES OR OPERATIONS"}
+{"sent_index": 17, "start_index": 535, "end_index": 567, "_text": "POSTPARTUM DIAGNOSTIC PROCEDURES"}
+{"sent_index": 18, "start_index": 570, "end_index": 574, "_text": "None"}
+{"sent_index": 19, "start_index": 575, "end_index": 615, "_text": "POSTPARTUM THERAPEUTIC PROCEDURES :\nNone"}
+{"sent_index": 20, "start_index": 616, "end_index": 642, "_text": "OTHER POSTPARTUM THERAPIES"}
+{"sent_index": 21, "start_index": 645, "end_index": 661, "_text": "Pp Sterilization"}
+{"sent_index": 22, "start_index": 662, "end_index": 700, "_text": "HISTORY AND REASON FOR HOSPITALIZATION"}
+{"sent_index": 23, "start_index": 703, "end_index": 731, "_text": "Early Labor / Rule Out Labor"}
+{"sent_index": 24, "start_index": 732, "end_index": 752, "_text": "PHYSICAL EXAMINATION"}
+{"sent_index": 25, "start_index": 755, "end_index": 808, "_text": "HEIGHT HOSPITAL COURSE ( include complications if any"}
+{"sent_index": 26, "start_index": 813, "end_index": 1008, "_text": "This 22 year old Gravida 4 Para 2012 was admitted to the Naliheall County Memorial Hospital Obstetrical service on 10/29/2003 at 11:14 pm for the indication ( s ) : early labor / rule out labor ."}
+{"sent_index": 27, "start_index": 1009, "end_index": 1206, "_text": "She delivered a 3263 gram female infant on 10/30/2003 at 05:03 am with apgar scores of 8 and 9 at one and five minutes respectively at 40.1 weeks gestation via spontaneous vertex vaginal delivery ."}
+{"sent_index": 28, "start_index": 1207, "end_index": 1281, "_text": "During her labor she encountered the following complication ( s ) :\nnone ."}
+{"sent_index": 29, "start_index": 1282, "end_index": 1399, "_text": "During her delivery she encountered the following complication ( s ) :\nnuchal cord , x 1- reduced prior to delivery ."}
+{"sent_index": 30, "start_index": 1400, "end_index": 1468, "_text": "Postpartum she encountered the following complication ( s ) :\nnone ."}
+{"sent_index": 31, "start_index": 1469, "end_index": 1533, "_text": "She was discharged on 11/01/2004 at 12:00 pm in good condition ."}
+{"sent_index": 32, "start_index": 1534, "end_index": 1628, "_text": "DISCHARGE ORDERS ( medications instructions to patient , follow-up care ) :\nDISCHARGE ACTIVITY"}
+{"sent_index": 33, "start_index": 1631, "end_index": 1646, "_text": "No Restrictions"}
+{"sent_index": 34, "start_index": 1647, "end_index": 1661, "_text": "DISCHARGE DIET"}
+{"sent_index": 35, "start_index": 1664, "end_index": 1679, "_text": "No Restrictions"}
+{"sent_index": 36, "start_index": 1680, "end_index": 1702, "_text": "POSTPARTUM DISPOSITION"}
+{"sent_index": 37, "start_index": 1705, "end_index": 1802, "_text": "Home With Self-Care ( Routine Discharge )\nPOSTPARTUM CARE SITE :\nUval General Hospital\nPOSTPARTUM"}
+{"sent_index": 38, "start_index": 1803, "end_index": 1835, "_text": "RETURN APPOINTMENT ( DAYS ) :\n42"}
+{"sent_index": 39, "start_index": 1836, "end_index": 1863, "_text": "BREAST FEEDING AT DISCHARGE"}
+{"sent_index": 40, "start_index": 1866, "end_index": 1868, "_text": "No"}
+{"sent_index": 41, "start_index": 1869, "end_index": 1898, "_text": "POSTPARTUM RH IMMUNE GLOBULIN"}
+{"sent_index": 42, "start_index": 1901, "end_index": 1906, "_text": "Given"}
+{"sent_index": 43, "start_index": 1907, "end_index": 1949, "_text": "POSTPARTUM MEASLES / MUMPS/RUBELLA VACCINE"}
+{"sent_index": 44, "start_index": 1952, "end_index": 2044, "_text": "Not Indicated\nMEDICATION ( S ) ON DISCHARGE :\nMultivitamins And Folate\nElectronically Signed"}
+{"sent_index": 45, "start_index": 2047, "end_index": 2091, "_text": "Ockgiernruss , Riret R 12/18/2003 7:53:30 PM"}

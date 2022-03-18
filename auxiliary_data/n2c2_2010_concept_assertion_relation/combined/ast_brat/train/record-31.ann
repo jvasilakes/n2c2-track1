@@ -1,0 +1,48 @@
+T0	problem 602 611	Arthritis
+A0	Assertion T0 present
+T1	problem 2821 2825	pain
+A1	Assertion T1 hypothetical
+T2	problem 410 436	worsening anginal symptoms
+A2	Assertion T2 present
+T3	problem 479 506	severe three-vessel disease
+A3	Assertion T3 present
+T4	problem 573 576	DM2
+A4	Assertion T4 present
+T5	problem 1011 1016	M/R/G
+A5	Assertion T5 absent
+T6	problem 982 996	carotid bruits
+A6	Assertion T6 absent
+T7	problem 4294 4310	your chest wound
+A7	Assertion T7 present
+T8	problem 4338 4341	pus
+A8	Assertion T8 hypothetical
+T9	problem 4280 4290	tenderness
+A9	Assertion T9 hypothetical
+T10	problem 4266 4274	swelling
+A10	Assertion T10 hypothetical
+T11	problem 4256 4263	redness
+A11	Assertion T11 hypothetical
+T12	problem 4429 4437	incision
+A12	Assertion T12 present
+T13	problem 861 873	colon cancer
+A13	Assertion T13 associated_with_someone_else
+T14	problem 612 615	HTN
+A14	Assertion T14 present
+T15	problem 4029 4052	Coronary artery disease
+A15	Assertion T15 present
+T16	problem 1046 1051	NT/ND
+A16	Assertion T16 absent
+T17	problem 158 182	Known Allergies to Drugs
+A17	Assertion T17 absent
+T18	problem 4186 4192	chills
+A18	Assertion T18 hypothetical
+T19	problem 237 260	Coronary artery disease
+A19	Assertion T19 present
+T20	problem 1075 1087	varicosities
+A20	Assertion T20 absent
+T21	problem 2480 2492	constipation
+A21	Assertion T21 hypothetical
+T22	problem 4196 4229	fever greater than 101 degrees F.
+A22	Assertion T22 hypothetical
+T23	problem 958 961	NAD
+A23	Assertion T23 absent

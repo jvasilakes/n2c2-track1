@@ -1,0 +1,212 @@
+{"sent_index": 0, "start_index": 0, "end_index": 14, "_text": "Admission Date"}
+{"sent_index": 1, "start_index": 17, "end_index": 27, "_text": "2018-05-26"}
+{"sent_index": 2, "start_index": 28, "end_index": 42, "_text": "Discharge Date"}
+{"sent_index": 3, "start_index": 45, "end_index": 55, "_text": "2018-05-31"}
+{"sent_index": 4, "start_index": 56, "end_index": 69, "_text": "Date of Birth"}
+{"sent_index": 5, "start_index": 72, "end_index": 82, "_text": "1935-11-10"}
+{"sent_index": 6, "start_index": 83, "end_index": 86, "_text": "Sex"}
+{"sent_index": 7, "start_index": 89, "end_index": 90, "_text": "F"}
+{"sent_index": 8, "start_index": 91, "end_index": 98, "_text": "Service"}
+{"sent_index": 9, "start_index": 101, "end_index": 109, "_text": "MEDICINE"}
+{"sent_index": 10, "start_index": 110, "end_index": 119, "_text": "Allergies"}
+{"sent_index": 11, "start_index": 122, "end_index": 138, "_text": "Codeine / Iodine"}
+{"sent_index": 12, "start_index": 139, "end_index": 173, "_text": "Attending : Derrick L. Mayo , M.D."}
+{"sent_index": 13, "start_index": 174, "end_index": 189, "_text": "Chief Complaint"}
+{"sent_index": 14, "start_index": 192, "end_index": 238, "_text": "large pericardial effusion , transfer from OSH"}
+{"sent_index": 15, "start_index": 239, "end_index": 275, "_text": "Major Surgical or Invasive Procedure"}
+{"sent_index": 16, "start_index": 278, "end_index": 302, "_text": "Thoracentesis 2018-05-27"}
+{"sent_index": 17, "start_index": 303, "end_index": 329, "_text": "History of Present Illness"}
+{"sent_index": 18, "start_index": 332, "end_index": 489, "_text": "82 F with h/o COPD , CAD , pafib and SSS s/p pacer on 05-08 for symptomatic pauses is transferred for large pericardial effusion ? needing drainage and CHF ."}
+{"sent_index": 19, "start_index": 490, "end_index": 581, "_text": "She was admitted to Cambridge Hospital 2018-05-24 with ARF ( Cr 3.5 up from 0.9 ) and SOB ."}
+{"sent_index": 20, "start_index": 582, "end_index": 808, "_text": "According to her guardian she was discharged to her NH for a few days after her pacer was placed 05-08 , which was complicated by a PTX requiring CT placement which had been d/c 'd in the hospital after resolution of her PTX ."}
+{"sent_index": 21, "start_index": 809, "end_index": 885, "_text": "She had some nausea / vomiting and generally was taking poor pos at her NH ."}
+{"sent_index": 22, "start_index": 886, "end_index": 997, "_text": "There had been some concern her nausea was due to her amiodarone which had been discontinued about 1 week ago ."}
+{"sent_index": 23, "start_index": 998, "end_index": 1072, "_text": "She was then sent to Franklin Medical Center 05-24 with lethargy and n/v ."}
+{"sent_index": 24, "start_index": 1073, "end_index": 1210, "_text": "At Erich Lindemann Mental Health Center she was discovered to have ARF , a large pericardial effusion , and bilateral pleural effusions ."}
+{"sent_index": 25, "start_index": 1211, "end_index": 1249, "_text": "She was treated with IVF for her ARF ."}
+{"sent_index": 26, "start_index": 1250, "end_index": 1278, "_text": "She underwent a TTE at Erich"}
+{"sent_index": 27, "start_index": 1279, "end_index": 1492, "_text": "Lindemann Mental Health Center today ( 05-26 ) showing mod-lg circumferential pericardial effusion without evidence of RV diastolic collapse and no MV inflow evidence of tamponade , pacer wire located in RV apex ."}
+{"sent_index": 28, "start_index": 1493, "end_index": 1627, "_text": "There was still concern for her effusion contributing to her SOB at the OSH so she was transferred for drainage and treatment of CHF ."}
+{"sent_index": 29, "start_index": 1628, "end_index": 1732, "_text": "Today she only complains of some SOB , which she says remains largely unchanged over the past few days ."}
+{"sent_index": 30, "start_index": 1733, "end_index": 1826, "_text": "She denies any CP / cough / fever / abd pain / diarrhea / black or bloody stools / headache ."}
+{"sent_index": 31, "start_index": 1827, "end_index": 1847, "_text": "Past Medical History"}
+{"sent_index": 32, "start_index": 1850, "end_index": 1853, "_text": "htn"}
+{"sent_index": 33, "start_index": 1854, "end_index": 1864, "_text": "afib , SSS"}
+{"sent_index": 34, "start_index": 1865, "end_index": 1869, "_text": "COPD"}
+{"sent_index": 35, "start_index": 1870, "end_index": 1873, "_text": "CAD"}
+{"sent_index": 36, "start_index": 1874, "end_index": 1986, "_text": "pacer DDDR ( Vitatron CL860 ) placed 05-08 for SSS with symptomatic bradycardia , c/b R PTX requiring chest tube"}
+{"sent_index": 37, "start_index": 1987, "end_index": 1991, "_text": "GERD"}
+{"sent_index": 38, "start_index": 1992, "end_index": 1995, "_text": "CVA"}
+{"sent_index": 39, "start_index": 1996, "end_index": 2010, "_text": "hypothyroidism"}
+{"sent_index": 40, "start_index": 2011, "end_index": 2024, "_text": "legally blind"}
+{"sent_index": 41, "start_index": 2025, "end_index": 2039, "_text": "Social History"}
+{"sent_index": 42, "start_index": 2042, "end_index": 2071, "_text": "NH resident , guardian Robert"}
+{"sent_index": 43, "start_index": 2072, "end_index": 2079, "_text": "Murrell"}
+{"sent_index": 44, "start_index": 2080, "end_index": 2094, "_text": "Family History"}
+{"sent_index": 45, "start_index": 2097, "end_index": 2099, "_text": "NC"}
+{"sent_index": 46, "start_index": 2100, "end_index": 2108, "_text": "Physical"}
+{"sent_index": 47, "start_index": 2109, "end_index": 2113, "_text": "Exam"}
+{"sent_index": 48, "start_index": 2116, "end_index": 2120, "_text": "Exam"}
+{"sent_index": 49, "start_index": 2123, "end_index": 2193, "_text": "T 96.2 HR 70 BP 118/46 R 24 sat 90% on 60%FM\npulsus parodoxus = 6-8 mm"}
+{"sent_index": 50, "start_index": 2194, "end_index": 2197, "_text": "gen"}
+{"sent_index": 51, "start_index": 2200, "end_index": 2273, "_text": "mild resp distress speaking in full sentences but using accessory muscles"}
+{"sent_index": 52, "start_index": 2274, "end_index": 2321, "_text": "HEENT : mmm , JVP at 14 cm , no bruits , supple"}
+{"sent_index": 53, "start_index": 2322, "end_index": 2352, "_text": "CV : RRR , 02-19 sys m at RUSB"}
+{"sent_index": 54, "start_index": 2353, "end_index": 2403, "_text": "pulm : no BS 01-15 way up bilat , no consolidation"}
+{"sent_index": 55, "start_index": 2404, "end_index": 2462, "_text": "abd : s/nt/slightly distended , dec BS , no CVA tenderness"}
+{"sent_index": 56, "start_index": 2463, "end_index": 2480, "_text": "ext : 1+ LE edema"}
+{"sent_index": 57, "start_index": 2481, "end_index": 2498, "_text": "Pertinent Results"}
+{"sent_index": 58, "start_index": 2501, "end_index": 2564, "_text": "ECG : a paced at 70 bpm / nml axis , LBBB , no ST or TW changes"}
+{"sent_index": 59, "start_index": 2565, "end_index": 2587, "_text": "CXR at Erich Lindemann"}
+{"sent_index": 60, "start_index": 2588, "end_index": 2658, "_text": "Mental Health Center 05-26 : bilateral pleural eff and pericardial eff"}
+{"sent_index": 61, "start_index": 2659, "end_index": 2686, "_text": "CT chest at Erich Lindemann"}
+{"sent_index": 62, "start_index": 2687, "end_index": 2834, "_text": "Mental Health Center 05-25 : large pericardial effusion , bilat pleural eff with underlying consolidation which could represent PNA vs. atelectasis"}
+{"sent_index": 63, "start_index": 2835, "end_index": 2857, "_text": "TTE at Erich Lindemann"}
+{"sent_index": 64, "start_index": 2858, "end_index": 3172, "_text": "Mental Health Center 05-26 : mod-lg circumferential pericardial eff , no evidence of RV diastolic collapse , no MV inflow evidence of tamponade , pacer lead located in RV apex\nhead CT at Erich Lindemann Mental Health Center 05-24 : atrophy , dense calcification of the tentorium , most likely of metabolic etiology"}
+{"sent_index": 65, "start_index": 3173, "end_index": 3221, "_text": "IMAGING AT Providence Behavioral Health Hospital"}
+{"sent_index": 66, "start_index": 3224, "end_index": 3239, "_text": "ECHO 2018-05-28"}
+{"sent_index": 67, "start_index": 3240, "end_index": 3250, "_text": "IMPRESSION"}
+{"sent_index": 68, "start_index": 3253, "end_index": 3339, "_text": "Moderate to large pericardial effusion ( minimal fluid anteriorly ( 1cm ), ? bloody )."}
+{"sent_index": 69, "start_index": 3340, "end_index": 3374, "_text": "No definite tamponade physiology ."}
+{"sent_index": 70, "start_index": 3375, "end_index": 3431, "_text": "Pacer seen in RV apex , but cannot exclude perforation ."}
+{"sent_index": 71, "start_index": 3432, "end_index": 3446, "_text": "CXR 2018-05-30"}
+{"sent_index": 72, "start_index": 3447, "end_index": 3455, "_text": "FINDINGS"}
+{"sent_index": 73, "start_index": 3458, "end_index": 3531, "_text": "The lung volumes are Moderate bilateral pleural effusions are unchanged ."}
+{"sent_index": 74, "start_index": 3532, "end_index": 3567, "_text": "Mild pulmonary edema is unchanged ."}
+{"sent_index": 75, "start_index": 3568, "end_index": 3590, "_text": "Lung volumes are low ."}
+{"sent_index": 76, "start_index": 3591, "end_index": 3627, "_text": "Bibasilar atelectasis is unchanged ."}
+{"sent_index": 77, "start_index": 3628, "end_index": 3638, "_text": "IMPRESSION"}
+{"sent_index": 78, "start_index": 3641, "end_index": 3702, "_text": "Unchanged moderate bilateral pleural effusions and mild CHF ."}
+{"sent_index": 79, "start_index": 3703, "end_index": 3722, "_text": "RENAL US 2018-05-28"}
+{"sent_index": 80, "start_index": 3723, "end_index": 3731, "_text": "FINDINGS"}
+{"sent_index": 81, "start_index": 3734, "end_index": 3821, "_text": "The right kidney measures 11 cm in length , the left kidney measures 9.7 cm in length ."}
+{"sent_index": 82, "start_index": 3822, "end_index": 3849, "_text": "No hydronephrosis is seen ."}
+{"sent_index": 83, "start_index": 3850, "end_index": 3879, "_text": "No urinary calculi are seen ."}
+{"sent_index": 84, "start_index": 3880, "end_index": 3944, "_text": "The bladder appears unremarkable and contains a Foley catheter ."}
+{"sent_index": 85, "start_index": 3945, "end_index": 3955, "_text": "IMPRESSION"}
+{"sent_index": 86, "start_index": 3958, "end_index": 3989, "_text": "No evidence of hydronephrosis ."}
+{"sent_index": 87, "start_index": 3990, "end_index": 4011, "_text": "Brief Hospital Course"}
+{"sent_index": 88, "start_index": 4014, "end_index": 4017, "_text": "A/P"}
+{"sent_index": 89, "start_index": 4020, "end_index": 4399, "_text": "82 y/o f w h/o afib , SSS s/p pacer 05-08 c/b PTX requiring CT , CAD , who was readmitted 05-24 with ARF and lethargy , found to have a large pericardial effusion and bilateral pleural effusions , with echo showing no evidence of tamponade , who is transferred for possible pericardial effusion drainage and treatment of CHF , as well as drainage of bilateral pleural effusions ."}
+{"sent_index": 90, "start_index": 4400, "end_index": 4438, "_text": "She had a BNP of > 5000 on admission ."}
+{"sent_index": 91, "start_index": 4439, "end_index": 4561, "_text": "Since admission , she ruled out for MI by enzymes , and had a right sided thoracentesis which yielded transudative fluid ."}
+{"sent_index": 92, "start_index": 4562, "end_index": 4623, "_text": "WBC s since admission were as high as 14,000 but normalized ."}
+{"sent_index": 93, "start_index": 4624, "end_index": 4704, "_text": "She also had 2 echocardiograms which revealed persistent pericardial effusions ."}
+{"sent_index": 94, "start_index": 4705, "end_index": 4757, "_text": "She has been gently diuresed but has worsening ARF ."}
+{"sent_index": 95, "start_index": 4758, "end_index": 4809, "_text": "Her O2 requirement has increased despite diuresis ."}
+{"sent_index": 96, "start_index": 4810, "end_index": 4910, "_text": "She denies any CP / cough / fever , abdominal pain / diarrhea , black or bloody stools or headache ."}
+{"sent_index": 97, "start_index": 4911, "end_index": 4954, "_text": "Her urine output decreased to nearly zero ."}
+{"sent_index": 98, "start_index": 4955, "end_index": 5063, "_text": "In the setting of her ongoing pericardial effusion , she was transferred for closer observation to the CCU ."}
+{"sent_index": 99, "start_index": 5064, "end_index": 5252, "_text": "The CCU fellow and team declined to do pericardial drainage , as the pt was hemodynamically stable , without change in appearance of effusion by echo performed at bedside by cards fellow ."}
+{"sent_index": 100, "start_index": 5253, "end_index": 5500, "_text": "As she was felt by the CCU to be a poor candidate for right heart cath , was hemodynamically stable with blood pressure 110 s- 120 s systolic and pulse 70 s- 80 s , she was called out of the CCU and back to the cardiac floor without intervention ."}
+{"sent_index": 101, "start_index": 5501, "end_index": 5708, "_text": "The procedure team was called to consider doing a left thoracentesis , but she was declined because it was felt that her effusions were transudative , secondary to CHF , and it was recommended to treat CHF ."}
+{"sent_index": 102, "start_index": 5709, "end_index": 5752, "_text": "The pt continued to have low urine output ."}
+{"sent_index": 103, "start_index": 5753, "end_index": 5954, "_text": "She was given a lasix drip IV upon call-out of the ICU , and additional boluses of IV lasix , 200 mg then 300 mg IV were given with a good response , however , she remained net positive fluid balance ."}
+{"sent_index": 104, "start_index": 5955, "end_index": 6027, "_text": "Renal consultants did not feel there was an emergent need for dialysis ."}
+{"sent_index": 105, "start_index": 6028, "end_index": 6105, "_text": "A nitro drip was started in an effort to decrease her preload and afterload ."}
+{"sent_index": 106, "start_index": 6106, "end_index": 6290, "_text": "On call out from the CCU , the pt was satting 93% on 4-5L NC , and through the following night , her oxygen requirement increased to NRB , wherein she was satting upper 80 s- low 90 s."}
+{"sent_index": 107, "start_index": 6291, "end_index": 6384, "_text": "ABG that evening was 7.29/51/56 on 4L NC and early the next morning , was 7.25/62/64 on NRB ."}
+{"sent_index": 108, "start_index": 6385, "end_index": 6531, "_text": "A CXR was performed the evening of 5/16 , showing moderate sized bilateral pleural effusions , stable cardiomegaly and a possible RLL infiltrate ."}
+{"sent_index": 109, "start_index": 6532, "end_index": 6567, "_text": "Vancomycin and Zosyn were started ."}
+{"sent_index": 110, "start_index": 6568, "end_index": 6586, "_text": "She was afebrile ."}
+{"sent_index": 111, "start_index": 6587, "end_index": 6640, "_text": "The morning of 5/17 , her pulsus parodoxicus was 12 ."}
+{"sent_index": 112, "start_index": 6641, "end_index": 6738, "_text": "Because of her ABG , and declining clinical status , the CCU was notified for possible transfer ."}
+{"sent_index": 113, "start_index": 6739, "end_index": 6875, "_text": "The CMED CSRU Intern called the Murphy , Robert Leigh , to give her the update with regards to the pt 's deteriorating clinical status ."}
+{"sent_index": 114, "start_index": 6876, "end_index": 7048, "_text": "It was felt that given her age , multiple co-morbidities , that her prognosis was poor even prior to CCU admission , possible pericardial drainage or repeat thoracenteses ."}
+{"sent_index": 115, "start_index": 7049, "end_index": 7112, "_text": "Goals of care were clarified with her Murphy , Robert Sanchez ."}
+{"sent_index": 116, "start_index": 7113, "end_index": 7380, "_text": "Explained to Lewin that pt will likely need to be intubated , as she cannot lie flat , and most likely cannot undergo pericardial drainage , thoracentesis , or right heart cath with BiPAP ( which would have been the next measure after NRB , and prior to intubation )."}
+{"sent_index": 117, "start_index": 7381, "end_index": 7467, "_text": "Explained that despite these invasive measures , she still has a very poor prognosis ."}
+{"sent_index": 118, "start_index": 7468, "end_index": 7599, "_text": "Odell stated she had been thinking about this all night of 2018-05-30 , and agreed that this is not what the pt would have wanted ."}
+{"sent_index": 119, "start_index": 7600, "end_index": 7710, "_text": "Odell does not believe the pt would want to be intubated , with central line , right heart cath , in the CCU ."}
+{"sent_index": 120, "start_index": 7711, "end_index": 7768, "_text": "She requested the patient be made Comfort Measures Only ."}
+{"sent_index": 121, "start_index": 7769, "end_index": 7799, "_text": "She was DNR/DNI on admission ."}
+{"sent_index": 122, "start_index": 7800, "end_index": 8006, "_text": "This was documented in the computer , confirmed with Cardiology attending and fellow , and conveyed to the CCU staff , who were informed she may need to go for transfer ( which was subsequently cancelled )."}
+{"sent_index": 123, "start_index": 8007, "end_index": 8113, "_text": "The pt will be made comfortable , with goals of care shifted towards suppressing her air hunger and pain ."}
+{"sent_index": 124, "start_index": 8115, "end_index": 8120, "_text": ". SOB"}
+{"sent_index": 125, "start_index": 8123, "end_index": 8219, "_text": "Most consistent with CHF by exam , although unknown what the severity of her COPD is currently ."}
+{"sent_index": 126, "start_index": 8220, "end_index": 8261, "_text": "TTE revealed large pericardial effusion ."}
+{"sent_index": 127, "start_index": 8262, "end_index": 8416, "_text": "Pt is now s/p drainage of right pleural effusion , diagnostic and therapeutic , with studies consistent with transudate , etiology most likely 02-15 CHF ."}
+{"sent_index": 128, "start_index": 8417, "end_index": 8503, "_text": "We continued her albuterol / atrovent nebs , diuresis with IV lasix drip and boluses ."}
+{"sent_index": 129, "start_index": 8504, "end_index": 8655, "_text": "Her 05-27 CXR post procedure w/o PNX , effusion much improved , yet her 05-28 CXR worse than 05-27 with some reaccumulation of right pleural effusion ."}
+{"sent_index": 130, "start_index": 8656, "end_index": 8896, "_text": "Then , on 05-29 , she demonstrated bilateral pleural effusions ( reaccumulated ), right lower lobe infiltrate ( started on vanco / zosyn )-> put on face mask , given lasix x 1 bolus 100 mg , responded somewhat and o2 sat stable in low 90 s."}
+{"sent_index": 131, "start_index": 8897, "end_index": 8994, "_text": "She was given 200 mg IV lasix X 1 with an additional 100 cc of urine output the evening of 5/16 ."}
+{"sent_index": 132, "start_index": 8995, "end_index": 9037, "_text": "Her lasix gtt continued during this time ."}
+{"sent_index": 133, "start_index": 9038, "end_index": 9071, "_text": "Her oxygen sats did not improve ."}
+{"sent_index": 134, "start_index": 9072, "end_index": 9095, "_text": "She was then made CMO ."}
+{"sent_index": 135, "start_index": 9096, "end_index": 9107, "_text": "See above ."}
+{"sent_index": 136, "start_index": 9109, "end_index": 9110, "_text": "."}
+{"sent_index": 137, "start_index": 9111, "end_index": 9131, "_text": "Pericardial effusion"}
+{"sent_index": 138, "start_index": 9134, "end_index": 9281, "_text": "unclear etiology , OSH had raised question of RV perforation from pacer , however she had a normal echo appearance of lead , no tamponade by exam ."}
+{"sent_index": 139, "start_index": 9282, "end_index": 9350, "_text": "This has still be known to occur during the placement of pacemaker ."}
+{"sent_index": 140, "start_index": 9351, "end_index": 9516, "_text": "It was felt posthumously that her large pericardial effusion was most likely secondary to a complication of pacer placement , although this was not seen on imaging ."}
+{"sent_index": 141, "start_index": 9517, "end_index": 9671, "_text": "In the last 12 hours of her life , her pulsus was 12 , and she was felt to likely to have aspect of tamponade physiology , since her preload was reduced ."}
+{"sent_index": 142, "start_index": 9673, "end_index": 9678, "_text": ". CHF"}
+{"sent_index": 143, "start_index": 9681, "end_index": 9755, "_text": "normal EF on TTE so possibly with diastolic dysfunction , ruled out for MI"}
+{"sent_index": 144, "start_index": 9758, "end_index": 9788, "_text": "See course of diuresis above ."}
+{"sent_index": 145, "start_index": 9791, "end_index": 9859, "_text": "We continued ASA / imdur / CCB / hold diovan until pt was made CMO ."}
+{"sent_index": 146, "start_index": 9861, "end_index": 9880, "_text": ". Pleural effusions"}
+{"sent_index": 147, "start_index": 9883, "end_index": 9953, "_text": "Likely due to CHF although had some leukocytosis at admission to OSH ."}
+{"sent_index": 148, "start_index": 9954, "end_index": 9983, "_text": "Mary studies c/w transudate ."}
+{"sent_index": 149, "start_index": 9986, "end_index": 10091, "_text": "After she was made CMO , the pt was started on Morphine gtt to maximize comfort and minimize air hunger ."}
+{"sent_index": 150, "start_index": 10093, "end_index": 10103, "_text": ". Afib/SSS"}
+{"sent_index": 151, "start_index": 10106, "end_index": 10298, "_text": "She was A-paced , pacer placed 05-08 in DDDR mode , complicated by PTX requiring chest tube which resolved and tube was removed during admit for pacer , no evidence of PTX on most recent CXR ."}
+{"sent_index": 152, "start_index": 10299, "end_index": 10336, "_text": "Her pacer wires in correct position ."}
+{"sent_index": 153, "start_index": 10337, "end_index": 10384, "_text": "We continued amiodarone until pt was made CMO ."}
+{"sent_index": 154, "start_index": 10385, "end_index": 10436, "_text": "Anticoagulation has not been given this admission ."}
+{"sent_index": 155, "start_index": 10437, "end_index": 10479, "_text": "She was a poor anticoagulation candidate ."}
+{"sent_index": 156, "start_index": 10480, "end_index": 10611, "_text": "We started her on dilt for additional a fib control ( revert back to a fib on 05-29 ), which was stopped when the pt was made CMO ."}
+{"sent_index": 157, "start_index": 10613, "end_index": 10733, "_text": ". Oliguric ARF : likely prerenal due to n/v poor po intake and poor forward flow , However , need to continue diuresis ."}
+{"sent_index": 158, "start_index": 10734, "end_index": 10781, "_text": "Her urine lytes consistent with ATN , FENA 4% ."}
+{"sent_index": 159, "start_index": 10782, "end_index": 10821, "_text": "Renal u/s negative for hydronephrosis ."}
+{"sent_index": 160, "start_index": 10822, "end_index": 10907, "_text": "Renal consultants did not feel that there was an indication for urgent hemodialysis ."}
+{"sent_index": 161, "start_index": 10908, "end_index": 11040, "_text": "She continued to put out low amounts of urine throughout the admission , despite aggressive diuresis with IV lasix gtt and boluses ."}
+{"sent_index": 162, "start_index": 11041, "end_index": 11052, "_text": "See above ."}
+{"sent_index": 163, "start_index": 11054, "end_index": 11268, "_text": ". ID : initially had leukocytosis at admission , with chest CT showing possible underlying consolidations vs. atelectasis , levoflox started 05-24 and subsequently stopped ( no consolidations on CXR and afebrile )."}
+{"sent_index": 164, "start_index": 11269, "end_index": 11291, "_text": "U/A on 05-27 c/w UTI ."}
+{"sent_index": 165, "start_index": 11292, "end_index": 11440, "_text": "Pt now on IV Ceftriaxone ( was on levoflox since 05-24 however UA now floridly positive ( more so than UA at OSH ) so felt possibly levo-resistant ."}
+{"sent_index": 166, "start_index": 11441, "end_index": 11466, "_text": "Pt started on CTX 05-27 ."}
+{"sent_index": 167, "start_index": 11467, "end_index": 11548, "_text": "She was empirically started on vanco/zosyn for empiric hosp acquired pna coverage"}
+{"sent_index": 168, "start_index": 11551, "end_index": 11600, "_text": "possible opacity on CXR - along w/ leukocytosis ."}
+{"sent_index": 169, "start_index": 11602, "end_index": 11610, "_text": ". Anemia"}
+{"sent_index": 170, "start_index": 11613, "end_index": 11629, "_text": "Unclear source ."}
+{"sent_index": 171, "start_index": 11630, "end_index": 11655, "_text": "She was guiaic negative ."}
+{"sent_index": 172, "start_index": 11658, "end_index": 11687, "_text": "no transfusions , CMO/DNR/DNI"}
+{"sent_index": 173, "start_index": 11689, "end_index": 11690, "_text": "."}
+{"sent_index": 174, "start_index": 11691, "end_index": 11733, "_text": "FEN : check lytes , most recently normal ."}
+{"sent_index": 175, "start_index": 11734, "end_index": 11752, "_text": "cardiac/renal diet"}
+{"sent_index": 176, "start_index": 11754, "end_index": 11768, "_text": ". Access : PIV"}
+{"sent_index": 177, "start_index": 11770, "end_index": 11828, "_text": ". Code : DNR/DNI/CMO verified with Robert Marks 2018-05-29"}
+{"sent_index": 178, "start_index": 11830, "end_index": 11831, "_text": "."}
+{"sent_index": 179, "start_index": 11832, "end_index": 11893, "_text": "Communication : Guardian Robert Fitzgerald ( 520 ) 328 5499 ."}
+{"sent_index": 180, "start_index": 11894, "end_index": 11918, "_text": "Medications on Admission"}
+{"sent_index": 181, "start_index": 11921, "end_index": 11947, "_text": "aranesp 100 mcg ( X1 05-26"}
+{"sent_index": 182, "start_index": 11950, "end_index": 11959, "_text": "diltiazem"}
+{"sent_index": 183, "start_index": 11960, "end_index": 11969, "_text": "CD 240 mg"}
+{"sent_index": 184, "start_index": 11970, "end_index": 11987, "_text": "paxil 20 mg daily"}
+{"sent_index": 185, "start_index": 11988, "end_index": 12008, "_text": "detrol LA 4 mg daily"}
+{"sent_index": 186, "start_index": 12009, "end_index": 12027, "_text": "EC ASA 81 mg daily"}
+{"sent_index": 187, "start_index": 12028, "end_index": 12070, "_text": "pepcid 20 mg daily\namiodarone 200 mg daily"}
+{"sent_index": 188, "start_index": 12071, "end_index": 12115, "_text": "levofloxacin 250 mg IV daily ( started 05-24"}
+{"sent_index": 189, "start_index": 12118, "end_index": 12164, "_text": "levothyroxine 50 mcg daily\ndiovan 160 mg daily"}
+{"sent_index": 190, "start_index": 12165, "end_index": 12182, "_text": "imdur 60 mg daily"}
+{"sent_index": 191, "start_index": 12183, "end_index": 12226, "_text": "albuterol-ipratroprium INH 2 sprays tid prn"}
+{"sent_index": 192, "start_index": 12227, "end_index": 12248, "_text": "Discharge Disposition"}
+{"sent_index": 193, "start_index": 12251, "end_index": 12258, "_text": "Expired"}
+{"sent_index": 194, "start_index": 12259, "end_index": 12278, "_text": "Discharge Diagnosis"}
+{"sent_index": 195, "start_index": 12281, "end_index": 12331, "_text": "1. Pulmonary Edema and Hypoxic Respiratory Failure"}
+{"sent_index": 196, "start_index": 12332, "end_index": 12361, "_text": "2. Large pericardial effusion"}
+{"sent_index": 197, "start_index": 12362, "end_index": 12401, "_text": "3. Moderate bilateral pleural effusions"}
+{"sent_index": 198, "start_index": 12402, "end_index": 12429, "_text": "4. Congestive Heart Failure"}
+{"sent_index": 199, "start_index": 12430, "end_index": 12463, "_text": "5. Paroxysmal Atrial Fibrillation"}
+{"sent_index": 200, "start_index": 12464, "end_index": 12514, "_text": "6. Sick sinus syndrome status post pacer placement"}
+{"sent_index": 201, "start_index": 12515, "end_index": 12541, "_text": "7. Coronary Artery Disease"}
+{"sent_index": 202, "start_index": 12542, "end_index": 12561, "_text": "Discharge Condition"}
+{"sent_index": 203, "start_index": 12564, "end_index": 12571, "_text": "Expired"}
+{"sent_index": 204, "start_index": 12572, "end_index": 12594, "_text": "Discharge Instructions"}
+{"sent_index": 205, "start_index": 12597, "end_index": 12611, "_text": "Not applicable"}
+{"sent_index": 206, "start_index": 12612, "end_index": 12633, "_text": "Followup Instructions"}
+{"sent_index": 207, "start_index": 12636, "end_index": 12675, "_text": "Not applicable\nJessica Ashley MD 19-617"}
+{"sent_index": 208, "start_index": 12676, "end_index": 12696, "_text": "Completed by : James"}
+{"sent_index": 209, "start_index": 12697, "end_index": 12733, "_text": "Weishaar MD 01-503 2018-05-31 @ 1428"}
+{"sent_index": 210, "start_index": 12734, "end_index": 12804, "_text": "Signed electronically by : DR. Barry Smith on : FRI 2018-06-01 8:26 AM"}
+{"sent_index": 211, "start_index": 12807, "end_index": 12820, "_text": "End of Report"}

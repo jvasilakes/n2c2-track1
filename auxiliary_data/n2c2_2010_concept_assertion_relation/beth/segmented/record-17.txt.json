@@ -1,0 +1,51 @@
+{"sent_index": 0, "start_index": 0, "end_index": 14, "_text": "Admission Date"}
+{"sent_index": 1, "start_index": 16, "end_index": 26, "_text": "2011-02-08"}
+{"sent_index": 2, "start_index": 27, "end_index": 41, "_text": "Discharge Date"}
+{"sent_index": 3, "start_index": 44, "end_index": 54, "_text": "2011-02-14"}
+{"sent_index": 4, "start_index": 55, "end_index": 68, "_text": "Date of Birth"}
+{"sent_index": 5, "start_index": 71, "end_index": 81, "_text": "1953-05-15"}
+{"sent_index": 6, "start_index": 82, "end_index": 85, "_text": "Sex"}
+{"sent_index": 7, "start_index": 88, "end_index": 89, "_text": "M"}
+{"sent_index": 8, "start_index": 90, "end_index": 97, "_text": "Service"}
+{"sent_index": 9, "start_index": 100, "end_index": 104, "_text": "CMED"}
+{"sent_index": 10, "start_index": 105, "end_index": 135, "_text": "HISTORY OF THE PRESENT ILLNESS"}
+{"sent_index": 11, "start_index": 138, "end_index": 482, "_text": "Briefly , this is a 57-year-old gentleman with a history of COPD , status post intubation six years ago but not on home 02 with recent FEV1 27% of predicted value , and FEV1/FVC ratio 56% of hypercholesterolemia , who was admitted for COPD exacerbation and worsening of upper respiratory tract infection symptoms for a week prior to admission ."}
+{"sent_index": 12, "start_index": 483, "end_index": 557, "_text": "He was afebrile with stable vital signs on presentation to\nHOSPITAL COURSE"}
+{"sent_index": 13, "start_index": 560, "end_index": 768, "_text": "He was started on p.o. steroids and to CMED for management of COPD exacerbation but he appeared in more respiratory distress overnight and was started on IV Solu-Medrol and more frequent nebulizers for COPD ."}
+{"sent_index": 14, "start_index": 769, "end_index": 861, "_text": "He was also started on antibiotics for possible bronchitis or community-acquired pneumonia ."}
+{"sent_index": 15, "start_index": 862, "end_index": 957, "_text": "Given his tenuous respiratory status , he was transferred to the FICU with closer observation ."}
+{"sent_index": 16, "start_index": 958, "end_index": 1043, "_text": "He did not require intubation and improved with q. two hour nebulizers and chest PT ."}
+{"sent_index": 17, "start_index": 1044, "end_index": 1138, "_text": "He was again transferred to the CMED Service for further management of his COPD exacerbation ."}
+{"sent_index": 18, "start_index": 1139, "end_index": 1209, "_text": "He was continued on p.o. prednisone and frequent nebulizers for COPD ."}
+{"sent_index": 19, "start_index": 1210, "end_index": 1333, "_text": "He was evaluated by the physical therapist in the hospital and was found to desaturate to 84% with ambulating on room air ."}
+{"sent_index": 20, "start_index": 1334, "end_index": 1384, "_text": "Therefore , home 02 was recommended on discharge ."}
+{"sent_index": 21, "start_index": 1385, "end_index": 1404, "_text": "DISCHARGE CONDITION"}
+{"sent_index": 22, "start_index": 1407, "end_index": 1415, "_text": "Stable ."}
+{"sent_index": 23, "start_index": 1416, "end_index": 1432, "_text": "DISCHARGE STATUS"}
+{"sent_index": 24, "start_index": 1435, "end_index": 1444, "_text": "To home ."}
+{"sent_index": 25, "start_index": 1445, "end_index": 1464, "_text": "DISCHARGE DIAGNOSIS"}
+{"sent_index": 26, "start_index": 1467, "end_index": 1522, "_text": "1. Chronic obstructive pulmonary disease exacerbation ."}
+{"sent_index": 27, "start_index": 1523, "end_index": 1538, "_text": "2. Bronchitis ."}
+{"sent_index": 28, "start_index": 1539, "end_index": 1572, "_text": "3. Community-acquired pneumonia ."}
+{"sent_index": 29, "start_index": 1573, "end_index": 1608, "_text": "4. Rule out myocardial infarction ."}
+{"sent_index": 30, "start_index": 1609, "end_index": 1630, "_text": "DISCHARGE MEDICATIONS"}
+{"sent_index": 31, "start_index": 1633, "end_index": 1660, "_text": "1. Flovent two puffs b.i.d."}
+{"sent_index": 32, "start_index": 1661, "end_index": 1746, "_text": "2. Levofloxacin 500 mg p.o. q.d. for another 11 days for a total of a 14 day course ."}
+{"sent_index": 33, "start_index": 1747, "end_index": 1812, "_text": "3. Albuterol inhaler one to two puffs q. four to six hours p.r.n."}
+{"sent_index": 34, "start_index": 1813, "end_index": 1839, "_text": "4. Aspirin 81 mg p.o. q.d."}
+{"sent_index": 35, "start_index": 1840, "end_index": 1877, "_text": "5. Salmeterol one to two puffs b.i.d."}
+{"sent_index": 36, "start_index": 1878, "end_index": 1938, "_text": "6. Oxygen 2 liters nasal cannula with ambulating as needed ."}
+{"sent_index": 37, "start_index": 1939, "end_index": 2087, "_text": "7. Prednisone taper with 40 mg p.o. q.d. for two days , 30 mg p.o. q.d. for two days , 20 mg p.o. q.d. for two days , 10 mg p.o. q.d. for two days ."}
+{"sent_index": 38, "start_index": 2088, "end_index": 2107, "_text": "DISCHARGE FOLLOW-UP"}
+{"sent_index": 39, "start_index": 2110, "end_index": 2160, "_text": "The patient will see his PCP in one to two weeks ."}
+{"sent_index": 40, "start_index": 2161, "end_index": 2260, "_text": "The patient will also see his pulmonologist , Dr. Daniel Bell , appointment was made on discharge ."}
+{"sent_index": 41, "start_index": 2261, "end_index": 2284, "_text": "John C Stalnaker , M.D."}
+{"sent_index": 42, "start_index": 2285, "end_index": 2291, "_text": "35-693"}
+{"sent_index": 43, "start_index": 2292, "end_index": 2333, "_text": "Dictated By : Margaret BT Mahaffey , M.D."}
+{"sent_index": 44, "start_index": 2334, "end_index": 2344, "_text": "MEDQUIST36"}
+{"sent_index": 45, "start_index": 2345, "end_index": 2365, "_text": "D : 2011-02-19 10:21"}
+{"sent_index": 46, "start_index": 2366, "end_index": 2386, "_text": "T : 2011-02-21 18:42"}
+{"sent_index": 47, "start_index": 2387, "end_index": 2399, "_text": "JOB #:\n74873"}
+{"sent_index": 48, "start_index": 2400, "end_index": 2430, "_text": "Signed electronically by : DR."}
+{"sent_index": 49, "start_index": 2431, "end_index": 2445, "_text": "Kate Gentry on"}
+{"sent_index": 50, "start_index": 2448, "end_index": 2486, "_text": "MON 2011-03-07 4:08 PM\n( End of Report"}

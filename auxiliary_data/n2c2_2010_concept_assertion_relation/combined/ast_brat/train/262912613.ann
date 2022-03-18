@@ -1,0 +1,38 @@
+T0	problem 1364 1379	a mild effusion
+A0	Assertion T0 present
+T1	problem 816 832	Anxiety neurosis
+A1	Assertion T1 present
+T2	problem 2034 2054	difficulties voiding
+A2	Assertion T2 absent
+T3	problem 1016 1023	ITCHING
+A3	Assertion T3 conditional
+T4	problem 2148 2157	agitation
+A4	Assertion T4 present
+T5	problem 503 546	a left femoral condyle osteonecrotic defect
+A5	Assertion T5 present
+T6	problem 2855 2860	edema
+A6	Assertion T6 absent
+T7	problem 1282 1307	slight valgus instability
+A7	Assertion T7 present
+T8	problem 1835 1852	slightly agitated
+A8	Assertion T8 absent
+T9	problem 386 400	left knee pain
+A9	Assertion T9 present
+T10	problem 791 800	Hepatitis
+A10	Assertion T10 present
+T11	problem 551 572	degenerative meniscus
+A11	Assertion T11 present
+T12	problem 2869 2878	her wound
+A12	Assertion T12 present
+T13	problem 754 763	Pneumonia
+A13	Assertion T13 present
+T14	problem 341 355	osteoarthritis
+A14	Assertion T14 present
+T15	problem 1229 1235	valgus
+A15	Assertion T15 present
+T16	problem 655 667	difficulties
+A16	Assertion T16 absent
+T17	problem 618 627	rest pain
+A17	Assertion T17 absent
+T18	problem 183 207	LEFT KNEE OSTEOARTHRITIS
+A18	Assertion T18 present

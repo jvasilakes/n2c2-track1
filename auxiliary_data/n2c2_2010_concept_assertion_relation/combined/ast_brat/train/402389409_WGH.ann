@@ -1,0 +1,24 @@
+T0	problem 1068 1078	sore areas
+A0	Assertion T0 present
+T1	problem 781 789	fracture
+A1	Assertion T1 absent
+T2	problem 846 850	pain
+A2	Assertion T2 hypothetical
+T3	problem 720 737	muscle contusions
+A3	Assertion T3 present
+T4	problem 655 662	bruises
+A4	Assertion T4 present
+T5	problem 563 569	trauma
+A5	Assertion T5 present
+T6	problem 1138 1152	worsening pain
+A6	Assertion T6 hypothetical
+T7	problem 641 650	fractures
+A7	Assertion T7 present
+T8	problem 1167 1185	any other concerns
+A8	Assertion T8 hypothetical
+T9	problem 1118 1135	trouble breathing
+A9	Assertion T9 hypothetical
+T10	problem 631 638	sprains
+A10	Assertion T10 present
+T11	problem 1155 1163	vomiting
+A11	Assertion T11 hypothetical

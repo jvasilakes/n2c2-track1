@@ -1,0 +1,56 @@
+{"sent_index": 0, "start_index": 0, "end_index": 13, "_text": "212512774 WGH"}
+{"sent_index": 1, "start_index": 14, "end_index": 21, "_text": "6218589"}
+{"sent_index": 2, "start_index": 22, "end_index": 58, "_text": "29021\n9923207\n10/31/2004 12:00:00 AM"}
+{"sent_index": 3, "start_index": 59, "end_index": 79, "_text": "OB Discharge Summary"}
+{"sent_index": 4, "start_index": 80, "end_index": 86, "_text": "Signed"}
+{"sent_index": 5, "start_index": 87, "end_index": 90, "_text": "DIS"}
+{"sent_index": 6, "start_index": 91, "end_index": 104, "_text": "Report Status"}
+{"sent_index": 7, "start_index": 107, "end_index": 128, "_text": "Signed OB EMR L and D"}
+{"sent_index": 8, "start_index": 129, "end_index": 146, "_text": "DISCHARGE SUMMARY"}
+{"sent_index": 9, "start_index": 147, "end_index": 176, "_text": "NAME :\nRIASHWAN BERLNI VALLEY"}
+{"sent_index": 10, "start_index": 177, "end_index": 200, "_text": "UNIT NUMBER :\n130-93-91"}
+{"sent_index": 11, "start_index": 201, "end_index": 226, "_text": "ADMISSION DATE :\n20041031"}
+{"sent_index": 12, "start_index": 227, "end_index": 252, "_text": "DISCHARGE DATE :\n20041103"}
+{"sent_index": 13, "start_index": 253, "end_index": 352, "_text": "PRINCIPAL DISCHARGE DIAGNOSIS :\nVaginal Delivery With Second Degree Laceration\nASSOCIATED DIAGNOSES"}
+{"sent_index": 14, "start_index": 355, "end_index": 455, "_text": "Abnormal Laboratory Result ; Abnormal Pap Test ; Monilial Vaginitis\nPRINCIPAL PROCEDURE OR OPERATION"}
+{"sent_index": 15, "start_index": 458, "end_index": 493, "_text": "Spontaneous Vertex Vaginal Delivery"}
+{"sent_index": 16, "start_index": 494, "end_index": 529, "_text": "ASSOCIATED PROCEDURES OR OPERATIONS"}
+{"sent_index": 17, "start_index": 532, "end_index": 612, "_text": "POSTPARTUM DIAGNOSTIC PROCEDURES :\nNone\nPOSTPARTUM THERAPEUTIC PROCEDURES :\nNone"}
+{"sent_index": 18, "start_index": 613, "end_index": 639, "_text": "OTHER POSTPARTUM THERAPIES"}
+{"sent_index": 19, "start_index": 642, "end_index": 666, "_text": "Routine Post Partum Care"}
+{"sent_index": 20, "start_index": 667, "end_index": 705, "_text": "HISTORY AND REASON FOR HOSPITALIZATION"}
+{"sent_index": 21, "start_index": 708, "end_index": 738, "_text": "Premature Rupture Of Membranes"}
+{"sent_index": 22, "start_index": 739, "end_index": 759, "_text": "PHYSICAL EXAMINATION"}
+{"sent_index": 23, "start_index": 762, "end_index": 937, "_text": "HEIGHT 63 HEENT NORMAL MOUTH NORMAL NECK NORMAL BREASTS NORMAL No masses NIPPLES NORMAL CHEST NORMAL CTA bilat , neg wheezing COR NORMAL NSR , no murmur ABDOMEN Gravid , vtx ."}
+{"sent_index": 24, "start_index": 938, "end_index": 948, "_text": "EFW = 7# ."}
+{"sent_index": 25, "start_index": 949, "end_index": 974, "_text": "FHTs 140s w/ reactivity ."}
+{"sent_index": 26, "start_index": 975, "end_index": 986, "_text": "Mild irreg."}
+{"sent_index": 27, "start_index": 987, "end_index": 992, "_text": "ctx ."}
+{"sent_index": 28, "start_index": 993, "end_index": 1089, "_text": "EXTREM NORMAL SKIN NORMAL NODES NORMAL VULVA NORMAL VAGINA Leaking copious amounts clear fluid ."}
+{"sent_index": 29, "start_index": 1090, "end_index": 1125, "_text": "Fluid amnioswab and fern positive ."}
+{"sent_index": 30, "start_index": 1126, "end_index": 1291, "_text": "SSE and digital exam deferred CERVIX digital exam deferred at time of admission OS NORMAL see above ADNEXAE NORMAL non-palp d / t advanced gest UTERUS Gravid , vtx ."}
+{"sent_index": 31, "start_index": 1292, "end_index": 1302, "_text": "EFW = 7# ."}
+{"sent_index": 32, "start_index": 1303, "end_index": 1328, "_text": "FHTs 140s w/ reactivity ."}
+{"sent_index": 33, "start_index": 1329, "end_index": 1345, "_text": "Ctx q 6 &apos; ."}
+{"sent_index": 34, "start_index": 1346, "end_index": 1370, "_text": "UTERINE SIZE IN WEEKS 38"}
+{"sent_index": 35, "start_index": 1371, "end_index": 1611, "_text": "HOSPITAL COURSE ( include complications if any ) :\nThis 27 year old Gravida 1 Para 0000 was admitted to the Life Valley Medical Center Obstetrical service on 10/31/2004 at 08:45 pm for the indication ( s ) :\npremature rupture of membranes ."}
+{"sent_index": 36, "start_index": 1612, "end_index": 1807, "_text": "She delivered a 3235 gram male infant on 11/01/2004 at 09:31 am with apgar scores of 9 and 9 at one and five minutes respectively at 39.0 weeks gestation via spontaneous vertex vaginal delivery ."}
+{"sent_index": 37, "start_index": 1808, "end_index": 1882, "_text": "During her labor she encountered the following complication ( s ) :\nnone ."}
+{"sent_index": 38, "start_index": 1883, "end_index": 1960, "_text": "During her delivery she encountered the following complication ( s ) :\nnone ."}
+{"sent_index": 39, "start_index": 1961, "end_index": 2029, "_text": "Postpartum she encountered the following complication ( s ) :\nnone ."}
+{"sent_index": 40, "start_index": 2030, "end_index": 2094, "_text": "She was discharged on 11/03/2004 at 11:18 am in good condition ."}
+{"sent_index": 41, "start_index": 2095, "end_index": 2189, "_text": "DISCHARGE ORDERS ( medications instructions to patient , follow-up care ) :\nDISCHARGE ACTIVITY"}
+{"sent_index": 42, "start_index": 2192, "end_index": 2207, "_text": "No Restrictions"}
+{"sent_index": 43, "start_index": 2208, "end_index": 2222, "_text": "DISCHARGE DIET"}
+{"sent_index": 44, "start_index": 2225, "end_index": 2240, "_text": "No Restrictions"}
+{"sent_index": 45, "start_index": 2241, "end_index": 2263, "_text": "POSTPARTUM DISPOSITION"}
+{"sent_index": 46, "start_index": 2266, "end_index": 2396, "_text": "Home With Self-Care ( Routine Discharge )\nPOSTPARTUM CARE SITE :\nLa Community Hospital\nPOSTPARTUM RETURN APPOINTMENT ( DAYS ) :\n42"}
+{"sent_index": 47, "start_index": 2397, "end_index": 2424, "_text": "BREAST FEEDING AT DISCHARGE"}
+{"sent_index": 48, "start_index": 2427, "end_index": 2441, "_text": "Yes\nPOSTPARTUM"}
+{"sent_index": 49, "start_index": 2442, "end_index": 2460, "_text": "RH IMMUNE GLOBULIN"}
+{"sent_index": 50, "start_index": 2463, "end_index": 2476, "_text": "Not Indicated"}
+{"sent_index": 51, "start_index": 2477, "end_index": 2521, "_text": "POSTPARTUM MEASLES / MUMPS / RUBELLA VACCINE"}
+{"sent_index": 52, "start_index": 2524, "end_index": 2537, "_text": "Not Indicated"}
+{"sent_index": 53, "start_index": 2538, "end_index": 2594, "_text": "MEDICATION ( S ) ON DISCHARGE :\nMultivitamins And Folate"}
+{"sent_index": 54, "start_index": 2595, "end_index": 2616, "_text": "Electronically Signed"}
+{"sent_index": 55, "start_index": 2619, "end_index": 2654, "_text": "Fyfe , Lan S 11/03/2004 11:19:27 AM"}

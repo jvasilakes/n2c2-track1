@@ -1,0 +1,44 @@
+T0	problem 372 378	ANEMIA
+A0	Assertion T0 present
+T1	problem 491 510	biliary obstruction
+A1	Assertion T1 present
+T2	problem 738 751	dilated ducts
+A2	Assertion T2 present
+T3	problem 326 349	URINARY TRACT INFECTION
+A3	Assertion T3 present
+T4	problem 1707 1721	acute distress
+A4	Assertion T4 absent
+T5	problem 2520 2526	nausea
+A5	Assertion T5 absent
+T6	problem 1472 1487	colon carcinoma
+A6	Assertion T6 associated_with_someone_else
+T7	problem 54 73	BILIARY OBSTRUCTION
+A7	Assertion T7 present
+T8	problem 268 280	HYPERTENSION
+A8	Assertion T8 present
+T9	problem 1804 1857	a II / VI systolic murmur at the right sternal border
+A9	Assertion T9 present
+T10	problem 857 873	his biliary tree
+A10	Assertion T10 present
+T11	problem 236 262	METASTATIC COLON CARCINOMA
+A11	Assertion T11 present
+T12	problem 2530 2538	vomiting
+A12	Assertion T12 absent
+T13	problem 1881 1890	nontender
+A13	Assertion T13 absent
+T14	problem 2414 2430	bilious material
+A14	Assertion T14 present
+T15	problem 2017 2022	edema
+A15	Assertion T15 absent
+T16	problem 355 366	CHOLANGITIS
+A16	Assertion T16 present
+T17	problem 286 301	AORTIC STENOSIS
+A17	Assertion T17 present
+T18	problem 447 471	metastatic rectal cancer
+A18	Assertion T18 present
+T19	problem 2762 2774	any problems
+A19	Assertion T19 absent
+T20	problem 182 198	RECTAL CARCINOMA
+A20	Assertion T20 present
+T21	problem 2502 2512	belly pain
+A21	Assertion T21 absent

@@ -1,0 +1,20 @@
+T0	problem 1086 1099	this bleeding
+A0	Assertion T0 present
+T1	problem 517 538	thickened endometrium
+A1	Assertion T1 present
+T2	problem 604 608	pain
+A2	Assertion T2 hypothetical
+T3	problem 879 897	any worsening pain
+A3	Assertion T3 hypothetical
+T4	problem 428 458	dysfunctional uterine bleeding
+A4	Assertion T4 present
+T5	problem 403 415	VAG BLEEDING
+A5	Assertion T5 present
+T6	problem 686 707	your uterine bleeding
+A6	Assertion T6 present
+T7	problem 900 908	vomiting
+A7	Assertion T7 hypothetical
+T8	problem 977 998	any fainting episodes
+A8	Assertion T8 hypothetical
+T9	problem 912 918	fevers
+A9	Assertion T9 hypothetical

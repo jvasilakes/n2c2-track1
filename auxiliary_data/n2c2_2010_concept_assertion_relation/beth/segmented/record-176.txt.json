@@ -1,0 +1,48 @@
+{"sent_index": 0, "start_index": 0, "end_index": 14, "_text": "Admission Date"}
+{"sent_index": 1, "start_index": 17, "end_index": 27, "_text": "2016-08-08"}
+{"sent_index": 2, "start_index": 28, "end_index": 42, "_text": "Discharge Date"}
+{"sent_index": 3, "start_index": 45, "end_index": 55, "_text": "2016-08-15"}
+{"sent_index": 4, "start_index": 56, "end_index": 69, "_text": "Date of Birth"}
+{"sent_index": 5, "start_index": 72, "end_index": 82, "_text": "1978-08-02"}
+{"sent_index": 6, "start_index": 83, "end_index": 86, "_text": "Sex"}
+{"sent_index": 7, "start_index": 89, "end_index": 90, "_text": "F"}
+{"sent_index": 8, "start_index": 91, "end_index": 98, "_text": "Service"}
+{"sent_index": 9, "start_index": 100, "end_index": 148, "_text": "PROCEDURE :\nCadaveric pancreas transplantation ."}
+{"sent_index": 10, "start_index": 149, "end_index": 175, "_text": "HISTORY OF PRESENT ILLNESS"}
+{"sent_index": 11, "start_index": 178, "end_index": 333, "_text": "The patient is a 37 year old lady with type 1 diabetes mellitus , who is four months postcadaveric kidney transplantation and now has good graft function ."}
+{"sent_index": 12, "start_index": 334, "end_index": 387, "_text": "She presents for cadaveric pancreas transplantation ."}
+{"sent_index": 13, "start_index": 388, "end_index": 496, "_text": "Her diabetes mellitus has been complicated by retinopathy and nephropathy as well as peripheral neuropathy ."}
+{"sent_index": 14, "start_index": 497, "end_index": 579, "_text": "She takes 14 units of NPH insulin twice a day supplementing with a sliding scale ."}
+{"sent_index": 15, "start_index": 580, "end_index": 600, "_text": "PHYSICAL EXAMINATION"}
+{"sent_index": 16, "start_index": 603, "end_index": 678, "_text": "On examination , she is in no apparent distress and is alert and oriented ."}
+{"sent_index": 17, "start_index": 679, "end_index": 739, "_text": "Her chest and cardiovascular examinations are unremarkable ."}
+{"sent_index": 18, "start_index": 740, "end_index": 781, "_text": "She is afebrile with stable vital signs ."}
+{"sent_index": 19, "start_index": 782, "end_index": 897, "_text": "Her abdomen is soft and nontender with a well healed left lower quadrant incision from her kidney transplantation ."}
+{"sent_index": 20, "start_index": 898, "end_index": 939, "_text": "She has good femoral pulses bilaterally ."}
+{"sent_index": 21, "start_index": 940, "end_index": 955, "_text": "HOSPITAL COURSE"}
+{"sent_index": 22, "start_index": 958, "end_index": 1029, "_text": "She underwent cadaveric pancreas transplantation without complication ."}
+{"sent_index": 23, "start_index": 1030, "end_index": 1130, "_text": "She received induction therapy with thymoglobulin intraoperative and postoperatively for five days ."}
+{"sent_index": 24, "start_index": 1131, "end_index": 1214, "_text": "She was kept on a similar immunosuppressive regimen as with her kidney transplant ."}
+{"sent_index": 25, "start_index": 1215, "end_index": 1270, "_text": "She had excellent pancreas graft function immediately ."}
+{"sent_index": 26, "start_index": 1271, "end_index": 1340, "_text": "Her renal function also remained stable in the perioperative period ."}
+{"sent_index": 27, "start_index": 1341, "end_index": 1404, "_text": "She was quickly placed on a diet and advanced to regular diet ."}
+{"sent_index": 28, "start_index": 1405, "end_index": 1475, "_text": "She was discharged home in stable condition on postoperative day six ."}
+{"sent_index": 29, "start_index": 1476, "end_index": 1498, "_text": "CONDITION ON DISCHARGE"}
+{"sent_index": 30, "start_index": 1501, "end_index": 1509, "_text": "Stable ."}
+{"sent_index": 31, "start_index": 1510, "end_index": 1532, "_text": "DISCHARGE INSTRUCTIONS"}
+{"sent_index": 32, "start_index": 1535, "end_index": 1593, "_text": "She will begin weekly follow-up in the Transplant Center ."}
+{"sent_index": 33, "start_index": 1594, "end_index": 1661, "_text": "She is to not lift anything greater than ten pounds for six weeks ."}
+{"sent_index": 34, "start_index": 1662, "end_index": 1721, "_text": "She is to continue monitoring her blood sugar twice a day ."}
+{"sent_index": 35, "start_index": 1722, "end_index": 1799, "_text": "She has undergone full teaching in regards to immunosuppressant medications ."}
+{"sent_index": 36, "start_index": 1800, "end_index": 1876, "_text": "In addition , she will take Valganciclovir for three months posttransplant ."}
+{"sent_index": 37, "start_index": 1877, "end_index": 1896, "_text": "DISCHARGE DIAGNOSES"}
+{"sent_index": 38, "start_index": 1899, "end_index": 1945, "_text": "1. Status post cadaveric pancreas transplant ."}
+{"sent_index": 39, "start_index": 1946, "end_index": 1975, "_text": "2. Type 1 diabetes mellitus ."}
+{"sent_index": 40, "start_index": 1976, "end_index": 2041, "_text": "3. End stage renal disease , status post kidney transplantation ."}
+{"sent_index": 41, "start_index": 2042, "end_index": 2075, "_text": "Dictated By : Jon O Shappy , M.D."}
+{"sent_index": 42, "start_index": 2076, "end_index": 2086, "_text": "MEDQUIST36"}
+{"sent_index": 43, "start_index": 2087, "end_index": 2107, "_text": "D : 2016-11-10 18:28"}
+{"sent_index": 44, "start_index": 2108, "end_index": 2128, "_text": "T : 2016-11-12 11:51"}
+{"sent_index": 45, "start_index": 2129, "end_index": 2142, "_text": "JOB # : 63429"}
+{"sent_index": 46, "start_index": 2143, "end_index": 2179, "_text": "Signed electronically by : DR. Jacob"}
+{"sent_index": 47, "start_index": 2180, "end_index": 2230, "_text": "Butler on : WED 2016-11-16 7:45 AM\n( End of Report"}

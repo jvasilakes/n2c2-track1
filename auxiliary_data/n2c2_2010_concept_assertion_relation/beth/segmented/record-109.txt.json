@@ -1,0 +1,106 @@
+{"sent_index": 0, "start_index": 0, "end_index": 14, "_text": "Admission Date"}
+{"sent_index": 1, "start_index": 17, "end_index": 27, "_text": "2016-11-21"}
+{"sent_index": 2, "start_index": 28, "end_index": 42, "_text": "Discharge Date"}
+{"sent_index": 3, "start_index": 45, "end_index": 55, "_text": "2016-11-30"}
+{"sent_index": 4, "start_index": 56, "end_index": 69, "_text": "Date of Birth"}
+{"sent_index": 5, "start_index": 72, "end_index": 82, "_text": "1953-10-19"}
+{"sent_index": 6, "start_index": 83, "end_index": 86, "_text": "Sex"}
+{"sent_index": 7, "start_index": 89, "end_index": 90, "_text": "M"}
+{"sent_index": 8, "start_index": 91, "end_index": 98, "_text": "Service"}
+{"sent_index": 9, "start_index": 101, "end_index": 109, "_text": "CMED CCU"}
+{"sent_index": 10, "start_index": 110, "end_index": 156, "_text": "CHIEF COMPLAINT AND HISTORY OF PRESENT ILLNESS"}
+{"sent_index": 11, "start_index": 159, "end_index": 294, "_text": "Mr. Jackson is a 63-year-old male with squamous cell carcinoma of the floor of mouth ( stage T2 N0 ) that was biopsied by his dentist ."}
+{"sent_index": 12, "start_index": 295, "end_index": 362, "_text": "Pathology was reviewed revealing invasive squamous cell carcinoma ."}
+{"sent_index": 13, "start_index": 363, "end_index": 405, "_text": "He presented on 2016-11-21 for resection ."}
+{"sent_index": 14, "start_index": 406, "end_index": 459, "_text": "He was admitted on 2016-11-21 following his surgery ."}
+{"sent_index": 15, "start_index": 460, "end_index": 530, "_text": "He underwent a joint procedure by Otolaryngology and Plastic Surgery ."}
+{"sent_index": 16, "start_index": 531, "end_index": 551, "_text": "PAST MEDICAL HISTORY"}
+{"sent_index": 17, "start_index": 554, "end_index": 619, "_text": "Includes hypertension and chronic obstructive pulmonary disease ."}
+{"sent_index": 18, "start_index": 620, "end_index": 641, "_text": "PAST SURGICAL HISTORY"}
+{"sent_index": 19, "start_index": 644, "end_index": 721, "_text": "Polypectomy in 2011 , tooth extraction ( all ) in 1980 , and hernia in 1977 ."}
+{"sent_index": 20, "start_index": 722, "end_index": 731, "_text": "ALLERGIES"}
+{"sent_index": 21, "start_index": 734, "end_index": 783, "_text": "TOMATO ( causing anaphylaxis ) and TETANUS SHOT ."}
+{"sent_index": 22, "start_index": 784, "end_index": 808, "_text": "MEDICATIONS ON ADMISSION"}
+{"sent_index": 23, "start_index": 811, "end_index": 949, "_text": "Triamterene/hydrochlorothiazide 37.5/25 mg one tablet by mouth once daily and lorazepam 1 mg three times daily as needed ( for anxiety ) ."}
+{"sent_index": 24, "start_index": 950, "end_index": 964, "_text": "SOCIAL HISTORY"}
+{"sent_index": 25, "start_index": 967, "end_index": 1078, "_text": "He has a half-pack per day smoking history and drinks approximately three to four alcoholic beverages per day ."}
+{"sent_index": 26, "start_index": 1079, "end_index": 1099, "_text": "PROCEDURES PERFORMED"}
+{"sent_index": 27, "start_index": 1101, "end_index": 1118, "_text": "1. Tracheostomy ."}
+{"sent_index": 28, "start_index": 1119, "end_index": 1158, "_text": "2. Diagnostic laryngoscopy and biopsy ."}
+{"sent_index": 29, "start_index": 1159, "end_index": 1203, "_text": "3. Bilateral supraomohyoid neck dissection ."}
+{"sent_index": 30, "start_index": 1204, "end_index": 1242, "_text": "4. Resection of floor of mouth tumor ."}
+{"sent_index": 31, "start_index": 1243, "end_index": 1269, "_text": "SUMMARY OF HOSPITAL COURSE"}
+{"sent_index": 32, "start_index": 1272, "end_index": 1306, "_text": "Surgeon was Dr. Kelsey K Sanchez ."}
+{"sent_index": 33, "start_index": 1307, "end_index": 1335, "_text": "Assistant was Dr. Justin K.."}
+{"sent_index": 34, "start_index": 1336, "end_index": 1343, "_text": "Velez ."}
+{"sent_index": 35, "start_index": 1344, "end_index": 1421, "_text": "Frozen section sent to pathology revealing invasive squamous cell carcinoma ."}
+{"sent_index": 36, "start_index": 1422, "end_index": 1440, "_text": "No complications ."}
+{"sent_index": 37, "start_index": 1441, "end_index": 1452, "_text": "The Plastic"}
+{"sent_index": 38, "start_index": 1453, "end_index": 1550, "_text": "Team then took over for reconstruction consisting of radial forearm free flap to floor of mouth ."}
+{"sent_index": 39, "start_index": 1551, "end_index": 1572, "_text": "Surgeon was Dr. Jude."}
+{"sent_index": 40, "start_index": 1573, "end_index": 1594, "_text": "Christopher Swinney ."}
+{"sent_index": 41, "start_index": 1595, "end_index": 1632, "_text": "Total intravenous fluids of 7300 cc ."}
+{"sent_index": 42, "start_index": 1633, "end_index": 1665, "_text": "Estimated blood loss of 300 cc ."}
+{"sent_index": 43, "start_index": 1666, "end_index": 1690, "_text": "Urine output of 900 cc ."}
+{"sent_index": 44, "start_index": 1691, "end_index": 1709, "_text": "No complications ."}
+{"sent_index": 45, "start_index": 1710, "end_index": 1808, "_text": "In addition , the patient was prepared for an attempted percutaneous endoscopic gastrostomy tube ."}
+{"sent_index": 46, "start_index": 1809, "end_index": 1972, "_text": "The percutaneous endoscopic gastrostomy was unsuccessful , and the procedure was converted to an open gastrostomy tube which then proceeded without complications ."}
+{"sent_index": 47, "start_index": 1973, "end_index": 2051, "_text": "The patient was admitted to the Surgical Intensive Care Unit postoperatively ."}
+{"sent_index": 48, "start_index": 2052, "end_index": 2122, "_text": "He was sedated and ventilated by his tracheostomy 6 cuff Shiley tube ."}
+{"sent_index": 49, "start_index": 2123, "end_index": 2205, "_text": "He had three Westwood-Pocasset drains - two in the neck and one in his right arm ."}
+{"sent_index": 50, "start_index": 2206, "end_index": 2269, "_text": "G-tube was to gravity , Foley to gravity , left radial A-line ."}
+{"sent_index": 51, "start_index": 2270, "end_index": 2318, "_text": "The flap was pink with a strong Doppler signal ."}
+{"sent_index": 52, "start_index": 2319, "end_index": 2396, "_text": "He underwent flap checks every 15 minutes initially with a dextran infusion ."}
+{"sent_index": 53, "start_index": 2397, "end_index": 2437, "_text": "He was placed on Unasyn 3 grams IV q.6h."}
+{"sent_index": 54, "start_index": 2438, "end_index": 2560, "_text": "Nothing by mouth initially with morphine as needed for pain and Ativan around the clock for delirium tremens prophylaxis ."}
+{"sent_index": 55, "start_index": 2561, "end_index": 2604, "_text": "In addition , he received metoprolol q.4.h."}
+{"sent_index": 56, "start_index": 2607, "end_index": 2698, "_text": "a regular insulin sliding scale , and adequate gastrointestinal prophylaxis with Protonix ."}
+{"sent_index": 57, "start_index": 2699, "end_index": 2883, "_text": "Postoperative laboratories revealed sodium was 134 , potassium was 4.1 , chloride was 102 , bicarbonate was 28 , blood urea nitrogen was 18 , creatinine was 0.8 , and glucose was 148 ."}
+{"sent_index": 58, "start_index": 2884, "end_index": 2901, "_text": "Calcium was 7.6 ."}
+{"sent_index": 59, "start_index": 2902, "end_index": 2921, "_text": "Magnesium was 2.2 ."}
+{"sent_index": 60, "start_index": 2922, "end_index": 3020, "_text": "Complete blood count revealed white count was 5.4 , hematocrit was 31.3 , and platelets were 160 ."}
+{"sent_index": 61, "start_index": 3021, "end_index": 3120, "_text": "ALT was 14 , AST was 31 , alkaline phosphatase was 42 , total bilirubin was 0.9 , albumin was 2.2 ."}
+{"sent_index": 62, "start_index": 3121, "end_index": 3177, "_text": "A chest x-ray postoperatively showed clear lung fields ."}
+{"sent_index": 63, "start_index": 3178, "end_index": 3214, "_text": "Tracheostomy tube in good position ."}
+{"sent_index": 64, "start_index": 3215, "end_index": 3232, "_text": "No pneumothorax ."}
+{"sent_index": 65, "start_index": 3233, "end_index": 3243, "_text": "By systems"}
+{"sent_index": 66, "start_index": 3246, "end_index": 3343, "_text": "CMED CSRU and Plastic Surgery flap checks , tracheostomy care , and Westwood-Pocasset management."}
+{"sent_index": 67, "start_index": 3345, "end_index": 3359, "_text": "Cardiovascular"}
+{"sent_index": 68, "start_index": 3362, "end_index": 3394, "_text": "Lopressor 5 intravenously q.4.h."}
+{"sent_index": 69, "start_index": 3395, "end_index": 3458, "_text": "Respiratory :\nNebulizers as needed , weaning from ventilation ."}
+{"sent_index": 70, "start_index": 3459, "end_index": 3475, "_text": "Gastrointestinal"}
+{"sent_index": 71, "start_index": 3478, "end_index": 3537, "_text": "Medications per gastrostomy tube on postoperative day one ."}
+{"sent_index": 72, "start_index": 3538, "end_index": 3551, "_text": "Genitourinary"}
+{"sent_index": 73, "start_index": 3554, "end_index": 3608, "_text": "Foley catheter for strict monitoring of ins and outs ."}
+{"sent_index": 74, "start_index": 3609, "end_index": 3620, "_text": "Hematologic"}
+{"sent_index": 75, "start_index": 3623, "end_index": 3642, "_text": "Hematocrit stable ."}
+{"sent_index": 76, "start_index": 3643, "end_index": 3661, "_text": "Infectious Disease"}
+{"sent_index": 77, "start_index": 3664, "end_index": 3696, "_text": "Unasyn for antibiotic coverage ."}
+{"sent_index": 78, "start_index": 3697, "end_index": 3726, "_text": "Flap checks carried out q.2h."}
+{"sent_index": 79, "start_index": 3727, "end_index": 3816, "_text": "initially in the Surgical Intensive Care Unit showing positive biphasic Doppler signals ."}
+{"sent_index": 80, "start_index": 3817, "end_index": 3845, "_text": "Pink flap with good refill ."}
+{"sent_index": 81, "start_index": 3846, "end_index": 3880, "_text": "Right arm neurovascularly intact ."}
+{"sent_index": 82, "start_index": 3881, "end_index": 4029, "_text": "He was weaned from ventilation on postoperative day one to pressure support ventilation and then to spontaneous breathing on postoperative day two ."}
+{"sent_index": 83, "start_index": 4030, "end_index": 4137, "_text": "His Westwood-Pocasset output for postoperative day one on the left was 60 , right neck 93 , in the arm 20 ."}
+{"sent_index": 84, "start_index": 4138, "end_index": 4195, "_text": "Tube feedings were started 48 hours after the procedure ."}
+{"sent_index": 85, "start_index": 4196, "end_index": 4353, "_text": "The cuff on his tracheostomy tube was put down on 11-23 , postoperative day two which he tolerated well with minimal secretions and a strong adequate cough ."}
+{"sent_index": 86, "start_index": 4354, "end_index": 4494, "_text": "Due to bed issues , he was transferred from the Surgical Intensive Care Unit to the Medical Intensive Care Unit on postoperative day three ."}
+{"sent_index": 87, "start_index": 4495, "end_index": 4528, "_text": "His tube feedings were advanced ."}
+{"sent_index": 88, "start_index": 4529, "end_index": 4559, "_text": "He was out of bed to a chair ."}
+{"sent_index": 89, "start_index": 4560, "end_index": 4618, "_text": "He continued with pulmonary toilet and q.2h. flap checks ."}
+{"sent_index": 90, "start_index": 4619, "end_index": 4685, "_text": "The Westwood-Pocasset in his right arm was removed on 2016-11-25 ."}
+{"sent_index": 91, "start_index": 4686, "end_index": 4790, "_text": "His tracheostomy was changed to a 6 cuffless Shiley on 2016-11-26 and sutures in place with a 3-0 silk ."}
+{"sent_index": 92, "start_index": 4791, "end_index": 4834, "_text": "The patient tolerated this procedure well ."}
+{"sent_index": 93, "start_index": 4835, "end_index": 4909, "_text": "This is the end of part 1 of this dictation summary for Patricia Jackson ."}
+{"sent_index": 94, "start_index": 4910, "end_index": 4951, "_text": "To be continued in a separate dictation ."}
+{"sent_index": 95, "start_index": 4952, "end_index": 4978, "_text": "Nola Daniel , Hawaii 31699"}
+{"sent_index": 96, "start_index": 4979, "end_index": 5008, "_text": "Dictated By:Joe C. Roa , M.D."}
+{"sent_index": 97, "start_index": 5009, "end_index": 5019, "_text": "MEDQUIST36"}
+{"sent_index": 98, "start_index": 5020, "end_index": 5043, "_text": "D :\n2016-11-30 10:56:11"}
+{"sent_index": 99, "start_index": 5044, "end_index": 5067, "_text": "T :\n2016-11-30 11:44:01"}
+{"sent_index": 100, "start_index": 5068, "end_index": 5080, "_text": "Job# :\n77004"}
+{"sent_index": 101, "start_index": 5081, "end_index": 5105, "_text": "Signed electronically by"}
+{"sent_index": 102, "start_index": 5108, "end_index": 5111, "_text": "DR."}
+{"sent_index": 103, "start_index": 5112, "end_index": 5133, "_text": "Michael Z Waldroup on"}
+{"sent_index": 104, "start_index": 5136, "end_index": 5159, "_text": "MON 2016-12-19 10:13 AM"}
+{"sent_index": 105, "start_index": 5162, "end_index": 5175, "_text": "End of Report"}

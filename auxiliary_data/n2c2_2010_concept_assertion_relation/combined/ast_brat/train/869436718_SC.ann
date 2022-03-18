@@ -1,0 +1,18 @@
+T0	problem 499 503	PAIN
+A0	Assertion T0 hypothetical
+T1	problem 1657 1675	Multiple gestation
+A1	Assertion T1 present
+T2	problem 1576 1587	Undelivered
+A2	Assertion T2 present
+T3	problem 870 882	Constipation
+A3	Assertion T3 hypothetical
+T4	problem 1648 1654	Breech
+A4	Assertion T4 present
+T5	problem 2020 2042	observed abnormalities
+A5	Assertion T5 absent
+T6	problem 1306 1315	Pregnancy
+A6	Assertion T6 present
+T7	problem 747 751	PAIN
+A7	Assertion T7 hypothetical
+T8	problem 911 915	PAIN
+A8	Assertion T8 hypothetical

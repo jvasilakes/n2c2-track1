@@ -1,0 +1,75 @@
+{"sent_index": 0, "start_index": 0, "end_index": 12, "_text": "839999049 YC"}
+{"sent_index": 1, "start_index": 13, "end_index": 21, "_text": "59242403"}
+{"sent_index": 2, "start_index": 22, "end_index": 28, "_text": "431924"}
+{"sent_index": 3, "start_index": 29, "end_index": 51, "_text": "11/01/2000 12:00:00 AM"}
+{"sent_index": 4, "start_index": 52, "end_index": 75, "_text": "Obstructive Sleep Apnea"}
+{"sent_index": 5, "start_index": 76, "end_index": 79, "_text": "DIS"}
+{"sent_index": 6, "start_index": 80, "end_index": 94, "_text": "Admission Date"}
+{"sent_index": 7, "start_index": 97, "end_index": 107, "_text": "11/01/2000"}
+{"sent_index": 8, "start_index": 108, "end_index": 121, "_text": "Report Status"}
+{"sent_index": 9, "start_index": 124, "end_index": 138, "_text": "Discharge Date"}
+{"sent_index": 10, "start_index": 141, "end_index": 151, "_text": "11/04/2000"}
+{"sent_index": 11, "start_index": 159, "end_index": 175, "_text": "DISCHARGE ORDERS"}
+{"sent_index": 12, "start_index": 183, "end_index": 204, "_text": "BREUNCLONTSTREAUAYLES"}
+{"sent_index": 13, "start_index": 207, "end_index": 216, "_text": "BINTRIREE"}
+{"sent_index": 14, "start_index": 217, "end_index": 232, "_text": "766-50-79-4 H55"}
+{"sent_index": 15, "start_index": 233, "end_index": 247, "_text": "Room :\n42Z-770"}
+{"sent_index": 16, "start_index": 248, "end_index": 255, "_text": "Service"}
+{"sent_index": 17, "start_index": 258, "end_index": 261, "_text": "MED"}
+{"sent_index": 18, "start_index": 262, "end_index": 305, "_text": "DISCHARGE PATIENT ON : 11/04/00 AT 03:00 PM"}
+{"sent_index": 19, "start_index": 306, "end_index": 336, "_text": "CONTINGENT UPON\nNot Applicable"}
+{"sent_index": 20, "start_index": 337, "end_index": 382, "_text": "WILL D / C ORDER BE USED AS THE D / C SUMMARY"}
+{"sent_index": 21, "start_index": 385, "end_index": 388, "_text": "YES"}
+{"sent_index": 22, "start_index": 389, "end_index": 416, "_text": "Attending :\nAISTAKEFLICHSKI"}
+{"sent_index": 23, "start_index": 419, "end_index": 434, "_text": "TAINE D. , M.D."}
+{"sent_index": 24, "start_index": 435, "end_index": 446, "_text": "CODE STATUS"}
+{"sent_index": 25, "start_index": 449, "end_index": 458, "_text": "Full code"}
+{"sent_index": 26, "start_index": 459, "end_index": 477, "_text": "DISPOSITION :\nHome"}
+{"sent_index": 27, "start_index": 478, "end_index": 499, "_text": "DISCHARGE MEDICATIONS"}
+{"sent_index": 28, "start_index": 502, "end_index": 747, "_text": "WELLBUTRIN ( BUPROPION HCL ) 150 MG PO BID FOLATE ( FOLIC ACID ) 1 MG PO QD ATIVAN ( LORAZEPAM ) 1 MG PO Q12H X 1 Days ATIVAN ( LORAZEPAM ) 1 MG PO QHS X 7 Days Starting on 11/5 MVI THERAPEUTIC W / MINERALS ( THERAP VITS / MINERALS ) 1 TAB PO QD"}
+{"sent_index": 29, "start_index": 748, "end_index": 764, "_text": "Alert overridden"}
+{"sent_index": 30, "start_index": 767, "end_index": 828, "_text": "Override added on 11/03/00 by TWADA , STASTERL ETHESHI , M.D."}
+{"sent_index": 31, "start_index": 829, "end_index": 860, "_text": "POTENTIALLY SERIOUS INTERACTION"}
+{"sent_index": 32, "start_index": 863, "end_index": 892, "_text": "SIMVASTATIN and NIACIN , VIT."}
+{"sent_index": 33, "start_index": 893, "end_index": 916, "_text": "B-3 Reason for override"}
+{"sent_index": 34, "start_index": 919, "end_index": 1134, "_text": "indicated THIAMINE ( THIAMINE HCL ) 100 MG PO QD SIMVASTATIN 40 MG PO QHS\nOverride Notice :\nOverride added on 11/03/00 by TWADA , STASTERL ETHESHI , M.D. on order for MVI THERAPEUTIC W / MINERALS PO ( ref # 90299469"}
+{"sent_index": 35, "start_index": 1137, "end_index": 1168, "_text": "POTENTIALLY SERIOUS INTERACTION"}
+{"sent_index": 36, "start_index": 1171, "end_index": 1200, "_text": "SIMVASTATIN and NIACIN , VIT."}
+{"sent_index": 37, "start_index": 1201, "end_index": 1204, "_text": "B-3"}
+{"sent_index": 38, "start_index": 1205, "end_index": 1224, "_text": "Reason for override"}
+{"sent_index": 39, "start_index": 1227, "end_index": 1305, "_text": "indicated LISINOPRIL 10 MG PO QD NICOTINE PATCH ( NICOTINE ) 21 MG/DAY TP Q24H"}
+{"sent_index": 40, "start_index": 1306, "end_index": 1310, "_text": "DIET"}
+{"sent_index": 41, "start_index": 1313, "end_index": 1346, "_text": "House / NAS / Low chol / low sat."}
+{"sent_index": 42, "start_index": 1347, "end_index": 1363, "_text": "fat &lt; FDI &gt"}
+{"sent_index": 43, "start_index": 1365, "end_index": 1379, "_text": "RETURN TO WORK"}
+{"sent_index": 44, "start_index": 1382, "end_index": 1540, "_text": "Immediately\nFOLLOW UP APPOINTMENT ( S ) :\nFirmert Hospital 11/6 at 9am scheduled , Cialneinsisters Hospital And Medical Center 11/16 at 8:15pm scheduled , Dr."}
+{"sent_index": 45, "start_index": 1541, "end_index": 1578, "_text": "Condnort 12/04 at 2pm scheduled , Dr."}
+{"sent_index": 46, "start_index": 1579, "end_index": 1642, "_text": "Lila Spielbjaque 12/01 at 1:50pm scheduled , No Known Allergies"}
+{"sent_index": 47, "start_index": 1643, "end_index": 1658, "_text": "ADMIT DIAGNOSIS"}
+{"sent_index": 48, "start_index": 1661, "end_index": 1669, "_text": "r / o MI"}
+{"sent_index": 49, "start_index": 1670, "end_index": 1773, "_text": "PRINCIPAL DISCHARGE DIAGNOSIS ;\nResponsible After Study for Causing Admission ) Obstructive Sleep Apnea"}
+{"sent_index": 50, "start_index": 1774, "end_index": 1927, "_text": "OTHER DIAGNOSIS ;\nConditions , Infections , Complications , affecting Treatment / Stay HTN tobacco EtOh abuse sinus bradycardia\nOPERATIONS AND PROCEDURES"}
+{"sent_index": 51, "start_index": 1930, "end_index": 1973, "_text": "OTHER TREATMENTS / PROCEDURES ( NOT IN O.R."}
+{"sent_index": 52, "start_index": 1976, "end_index": 2007, "_text": "BRIEF RESUME OF HOSPITAL COURSE"}
+{"sent_index": 53, "start_index": 2010, "end_index": 2067, "_text": "50 yo M from Taheimpromong admitted w / CP for r / o MI ."}
+{"sent_index": 54, "start_index": 2068, "end_index": 2091, "_text": "Has significant cardiac"}
+{"sent_index": 55, "start_index": 2092, "end_index": 2094, "_text": "RF"}
+{"sent_index": 56, "start_index": 2097, "end_index": 2117, "_text": "FH , HTN , tobacco ."}
+{"sent_index": 57, "start_index": 2118, "end_index": 2163, "_text": "Presented w / epigastric pain , SOB at work ."}
+{"sent_index": 58, "start_index": 2164, "end_index": 2195, "_text": "ETT was negative for ischemia ."}
+{"sent_index": 59, "start_index": 2196, "end_index": 2291, "_text": "Echo showed ef 45-50% , with mild dilatation and no significant valvular disease , and nl PAP ."}
+{"sent_index": 60, "start_index": 2292, "end_index": 2356, "_text": "ACE team consulted who arranged for pt to have outpt follow up ."}
+{"sent_index": 61, "start_index": 2357, "end_index": 2488, "_text": "During this hospitalization , pt was noted to have sinus bradycardia and pauses , associated with desaturations in the 70 &apos;s ."}
+{"sent_index": 62, "start_index": 2489, "end_index": 2545, "_text": "CPAP at 5 was attempted , but pt did not tolerate this ."}
+{"sent_index": 63, "start_index": 2546, "end_index": 2602, "_text": "He will have outpt fitting at the sleep center in Sabo ."}
+{"sent_index": 64, "start_index": 2603, "end_index": 2722, "_text": "Pt also counselled re :\nquitting smoking , and he appears motivated to do so , as well as to cut down on his drinking ."}
+{"sent_index": 65, "start_index": 2723, "end_index": 2742, "_text": "ADDITIONAL COMMENTS"}
+{"sent_index": 66, "start_index": 2745, "end_index": 2809, "_text": "1. llame a su doctor y haga cita para verlo dentro de 1 semana ."}
+{"sent_index": 67, "start_index": 2810, "end_index": 2902, "_text": "2. llame a la clinica the Wake Valley Hospital 442/961-2446 , si tiene que cambiar la cita ."}
+{"sent_index": 68, "start_index": 2903, "end_index": 2922, "_text": "DISCHARGE CONDITION"}
+{"sent_index": 69, "start_index": 2925, "end_index": 2931, "_text": "Stable"}
+{"sent_index": 70, "start_index": 2932, "end_index": 2944, "_text": "TO DO / PLAN"}
+{"sent_index": 71, "start_index": 2947, "end_index": 2966, "_text": "No dictated summary"}
+{"sent_index": 72, "start_index": 2967, "end_index": 3003, "_text": "ENTERED BY :\nLARDES , COLNKAY , M.D."}
+{"sent_index": 73, "start_index": 3006, "end_index": 3030, "_text": "IP09 ) 11/04/00 03:34 PM"}
+{"sent_index": 74, "start_index": 3038, "end_index": 3061, "_text": "END OF DISCHARGE ORDERS"}

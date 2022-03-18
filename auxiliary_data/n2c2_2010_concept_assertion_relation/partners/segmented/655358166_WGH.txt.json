@@ -1,0 +1,45 @@
+{"sent_index": 0, "start_index": 0, "end_index": 13, "_text": "655358166 WGH"}
+{"sent_index": 1, "start_index": 14, "end_index": 21, "_text": "5367777"}
+{"sent_index": 2, "start_index": 22, "end_index": 58, "_text": "33714\n8114836\n10/12/2004 12:00:00 AM"}
+{"sent_index": 3, "start_index": 59, "end_index": 79, "_text": "OB Discharge Summary"}
+{"sent_index": 4, "start_index": 80, "end_index": 86, "_text": "Signed"}
+{"sent_index": 5, "start_index": 87, "end_index": 90, "_text": "DIS"}
+{"sent_index": 6, "start_index": 91, "end_index": 104, "_text": "Report Status"}
+{"sent_index": 7, "start_index": 107, "end_index": 128, "_text": "Signed OB EMR L and D"}
+{"sent_index": 8, "start_index": 129, "end_index": 146, "_text": "DISCHARGE SUMMARY"}
+{"sent_index": 9, "start_index": 147, "end_index": 172, "_text": "NAME :\nJUARISY DUHESMITRE"}
+{"sent_index": 10, "start_index": 173, "end_index": 196, "_text": "UNIT NUMBER :\n683-54-33"}
+{"sent_index": 11, "start_index": 197, "end_index": 222, "_text": "ADMISSION DATE :\n20041012"}
+{"sent_index": 12, "start_index": 223, "end_index": 248, "_text": "DISCHARGE DATE :\n20041015"}
+{"sent_index": 13, "start_index": 249, "end_index": 278, "_text": "PRINCIPAL DISCHARGE DIAGNOSIS"}
+{"sent_index": 14, "start_index": 281, "end_index": 327, "_text": "Vaginal Delivery With Second Degree Laceration"}
+{"sent_index": 15, "start_index": 328, "end_index": 348, "_text": "ASSOCIATED DIAGNOSES"}
+{"sent_index": 16, "start_index": 351, "end_index": 446, "_text": "Abnormal Pap Test , history of ; Bacterial Vaginitis ; Contraception Management ; Hiv Counseled"}
+{"sent_index": 17, "start_index": 447, "end_index": 479, "_text": "PRINCIPAL PROCEDURE OR OPERATION"}
+{"sent_index": 18, "start_index": 482, "end_index": 517, "_text": "Spontaneous Vertex Vaginal Delivery"}
+{"sent_index": 19, "start_index": 518, "end_index": 553, "_text": "ASSOCIATED PROCEDURES OR OPERATIONS"}
+{"sent_index": 20, "start_index": 556, "end_index": 588, "_text": "POSTPARTUM DIAGNOSTIC PROCEDURES"}
+{"sent_index": 21, "start_index": 591, "end_index": 595, "_text": "None"}
+{"sent_index": 22, "start_index": 596, "end_index": 622, "_text": "OTHER POSTPARTUM THERAPIES"}
+{"sent_index": 23, "start_index": 625, "end_index": 646, "_text": "Antimicrobial Therapy"}
+{"sent_index": 24, "start_index": 647, "end_index": 685, "_text": "HISTORY AND REASON FOR HOSPITALIZATION"}
+{"sent_index": 25, "start_index": 688, "end_index": 701, "_text": "Srom In Labor"}
+{"sent_index": 26, "start_index": 702, "end_index": 722, "_text": "PHYSICAL EXAMINATION"}
+{"sent_index": 27, "start_index": 725, "end_index": 1245, "_text": "MOUTH NORMAL NECK NORMAL thyroid wnl BREASTS NORMAL no distinct masses NIPPLES NORMAL inverted [ b ] , evert w / stimulation CHEST NORMAL LCTA COR NORMAL RRR ABDOMEN NORMAL gravid EXTREM NORMAL SKIN NORMAL NODES NORMAL VULVA NORMAL no lesions , white d / c at introitus VAGINA NORMAL sml amt thin white d / c ph 4.5 , koh +amine , NS +clue , neg trich CERVIX NORMAL 1/100/0 srom clear OS NORMAL closed ADNEXAE NORMAL no palp masses , NT UTERUS NORMAL gravid UTERINE SIZE IN WEEKS NORMAL term RECTUM NORMAL no ext lesions"}
+{"sent_index": 28, "start_index": 1246, "end_index": 1469, "_text": "HOSPITAL COURSE ( include complications if any ) :\nThis 21 year old Gravida 2 Para 0010 was admitted to the Life Valley Medical Center Obstetrical service on 10/12/2004 at 08:41 am for the indication ( s ) :\nsrom in labor ."}
+{"sent_index": 29, "start_index": 1470, "end_index": 1665, "_text": "She delivered a 3680 gram male infant on 10/12/2004 at 10:17 pm with apgar scores of 9 and 9 at one and five minutes respectively at 40.0 weeks gestation via spontaneous vertex vaginal delivery ."}
+{"sent_index": 30, "start_index": 1666, "end_index": 1740, "_text": "During her labor she encountered the following complication ( s ) :\nsrom ."}
+{"sent_index": 31, "start_index": 1741, "end_index": 1818, "_text": "During her delivery she encountered the following complication ( s ) :\nnone ."}
+{"sent_index": 32, "start_index": 1819, "end_index": 1887, "_text": "Postpartum she encountered the following complication ( s ) :\nnone ."}
+{"sent_index": 33, "start_index": 1888, "end_index": 1952, "_text": "She was discharged on 10/15/2004 at 01:52 pm in good condition ."}
+{"sent_index": 34, "start_index": 1953, "end_index": 1971, "_text": "DISCHARGE ACTIVITY"}
+{"sent_index": 35, "start_index": 1974, "end_index": 1989, "_text": "No Restrictions"}
+{"sent_index": 36, "start_index": 1990, "end_index": 2004, "_text": "DISCHARGE DIET"}
+{"sent_index": 37, "start_index": 2007, "end_index": 2022, "_text": "No Restrictions"}
+{"sent_index": 38, "start_index": 2023, "end_index": 2045, "_text": "POSTPARTUM DISPOSITION"}
+{"sent_index": 39, "start_index": 2048, "end_index": 2106, "_text": "Home Under Care Of Home Health Agency\nPOSTPARTUM CARE SITE"}
+{"sent_index": 40, "start_index": 2109, "end_index": 2181, "_text": "Alle Rehabilitation Hospital\nPOSTPARTUM RETURN APPOINTMENT ( DAYS ) :\n42"}
+{"sent_index": 41, "start_index": 2182, "end_index": 2215, "_text": "BREAST FEEDING AT DISCHARGE :\nYes"}
+{"sent_index": 42, "start_index": 2216, "end_index": 2363, "_text": "MEDICATION ( S ) ON DISCHARGE :\nMetronidazole Tablets ( Flagyl ) ; Multivitamins And Folate Capsules ( Stuart Prenatal With Folate )\nElectronically"}
+{"sent_index": 43, "start_index": 2364, "end_index": 2370, "_text": "Signed"}
+{"sent_index": 44, "start_index": 2373, "end_index": 2426, "_text": "Thorerogodlethrelf , Cisperna M 10/17/2004 6:01:02 PM"}

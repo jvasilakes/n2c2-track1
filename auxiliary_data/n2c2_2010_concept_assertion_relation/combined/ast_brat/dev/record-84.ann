@@ -1,0 +1,162 @@
+T0	problem 1819 1831	palpitations
+A0	Assertion T0 absent
+T1	problem 4670 4712	arresting regional wall motion abnormality
+A1	Assertion T1 present
+T2	problem 4723 4747	focal apical hypokinesis
+A2	Assertion T2 present
+T3	problem 1778 1785	dyspnea
+A3	Assertion T3 conditional
+T4	problem 1667 1686	shortness of breath
+A4	Assertion T4 absent
+T5	problem 1401 1411	occlusions
+A5	Assertion T5 absent
+T6	problem 2589 2606	apparent distress
+A6	Assertion T6 absent
+T7	problem 1800 1809	orthopnea
+A7	Assertion T7 absent
+T8	problem 2919 2924	lifts
+A8	Assertion T8 absent
+T9	problem 2928 2934	heaves
+A9	Assertion T9 absent
+T10	problem 6539 6548	dizziness
+A10	Assertion T10 hypothetical
+T11	problem 2785 2799	femoral bruits
+A11	Assertion T11 absent
+T12	problem 4556 4584	a mildly dilated left atrium
+A12	Assertion T12 present
+T13	problem 4587 4605	mild symmetric LVH
+A13	Assertion T13 present
+T14	problem 4632 4667	mild region LV systolic dysfunction
+A14	Assertion T14 present
+T15	problem 4813 4845	a moderately dilated aortic root
+A15	Assertion T15 present
+T16	problem 4848 4880	a mildly dilated ascending aorta
+A16	Assertion T16 present
+T17	problem 4948 4969	pericardial effusions
+A17	Assertion T17 absent
+T18	problem 4248 4260	Hypertension
+A18	Assertion T18 present
+T19	problem 2765 2781	abdominal bruits
+A19	Assertion T19 absent
+T20	problem 2744 2762	any carotid bruits
+A20	Assertion T20 absent
+T21	problem 2982 2989	murmurs
+A21	Assertion T21 absent
+T22	problem 3140 3152	nondistended
+A22	Assertion T22 absent
+T23	problem 6511 6517	nausea
+A23	Assertion T23 hypothetical
+T24	problem 3300 3306	bruits
+A24	Assertion T24 absent
+T25	problem 3428 3476	significant coronary artery disease risk factors
+A25	Assertion T25 present
+T26	problem 2992 2996	rubs
+A26	Assertion T26 absent
+T27	problem 2436 2444	afebrile
+A27	Assertion T27 absent
+T28	problem 5028 5049	CHF signs or symptoms
+A28	Assertion T28 absent
+T29	problem 7643 7651	cravings
+A29	Assertion T29 present
+T30	problem 1305 1319	The chest pain
+A30	Assertion T30 present
+T31	problem 4343 4345	MI
+A31	Assertion T31 present
+T32	problem 1767 1775	pressure
+A32	Assertion T32 absent
+T33	problem 6309 6323	chest pressure
+A33	Assertion T33 absent
+T34	problem 7278 7288	chest pain
+A34	Assertion T34 hypothetical
+T35	problem 7292 7300	pressure
+A35	Assertion T35 hypothetical
+T36	problem 7304 7323	shortness of breath
+A36	Assertion T36 hypothetical
+T37	problem 6460 6474	any chest pain
+A37	Assertion T37 hypothetical
+T38	problem 6326 6345	shortness of breath
+A38	Assertion T38 absent
+T39	problem 2068 2073	an MI
+A39	Assertion T39 associated_with_someone_else
+T40	problem 432 444	Each episode
+A40	Assertion T40 present
+T41	problem 3566 3584	an ST elevation MI
+A41	Assertion T41 present
+T42	problem 6976 6988	Hypertension
+A42	Assertion T42 present
+T43	problem 3707 3711	pain
+A43	Assertion T43 absent
+T44	problem 5052 5068	The risk factors
+A44	Assertion T44 present
+T45	problem 3756 3783	his coronary artery disease
+A45	Assertion T45 present
+T46	problem 1177 1206	left LAD with 99% midstenosis
+A46	Assertion T46 present
+T47	problem 1689 1695	nausea
+A47	Assertion T47 absent
+T48	problem 6488 6508	difficulty breathing
+A48	Assertion T48 hypothetical
+T49	problem 6477 6485	pressure
+A49	Assertion T49 hypothetical
+T50	problem 1862 1874	hypertension
+A50	Assertion T50 present
+T51	problem 3129 3137	scaphoid
+A51	Assertion T51 present
+T52	problem 6936 6970	ST elevation myocardial infarction
+A52	Assertion T52 present
+T53	problem 6520 6535	light-headiness
+A53	Assertion T53 hypothetical
+T54	problem 3287 3296	hematomas
+A54	Assertion T54 absent
+T55	problem 2624 2633	anicteric
+A55	Assertion T55 absent
+T56	problem 1745 1764	previous chest pain
+A56	Assertion T56 absent
+T57	problem 616 627	diaphoresis
+A57	Assertion T57 present
+T58	problem 4432 4438	ectopy
+A58	Assertion T58 absent
+T59	problem 1652 1664	further pain
+A59	Assertion T59 absent
+T60	problem 3155 3164	nontender
+A60	Assertion T60 absent
+T61	problem 2667 2670	JVD
+A61	Assertion T61 absent
+T62	problem 3627 3636	residuals
+A62	Assertion T62 absent
+T63	problem 3523 3535	hypertension
+A63	Assertion T63 present
+T64	problem 564 586	unremitting 12-05 pain
+A64	Assertion T64 present
+T65	problem 592 611	shortness of breath
+A65	Assertion T65 present
+T66	problem 2674 2687	increased JVP
+A66	Assertion T66 absent
+T67	problem 1996 2014	any drug allergies
+A67	Assertion T67 absent
+T68	problem 226 249	coronary artery disease
+A68	Assertion T68 associated_with_someone_else
+T69	problem 3235 3240	edema
+A69	Assertion T69 absent
+T70	problem 1699 1707	vomiting
+A70	Assertion T70 absent
+T71	problem 756 773	T wave inversions
+A71	Assertion T71 present
+T72	problem 6292 6306	any chest pain
+A72	Assertion T72 absent
+T73	problem 6348 6355	dyspnea
+A73	Assertion T73 conditional
+T74	problem 3267 3279	minimal ooze
+A74	Assertion T74 present
+T75	problem 337 364	10/10 substernal chest pain
+A75	Assertion T75 present
+T76	problem 718 740	ST elevations in V1-V3
+A76	Assertion T76 present
+T77	problem 2540 2550	very tense
+A77	Assertion T77 present
+T78	problem 1812 1815	PND
+A78	Assertion T78 absent
+T79	problem 3000 3007	gallops
+A79	Assertion T79 absent
+T80	problem 285 297	hypertension
+A80	Assertion T80 present

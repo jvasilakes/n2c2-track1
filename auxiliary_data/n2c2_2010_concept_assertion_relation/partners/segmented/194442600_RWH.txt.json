@@ -1,0 +1,126 @@
+{"sent_index": 0, "start_index": 0, "end_index": 13, "_text": "194442600 RWH"}
+{"sent_index": 1, "start_index": 14, "end_index": 21, "_text": "1642008"}
+{"sent_index": 2, "start_index": 22, "end_index": 32, "_text": "83328/rh01"}
+{"sent_index": 3, "start_index": 33, "end_index": 61, "_text": "61509\n10/19/1993 12:00:00 AM"}
+{"sent_index": 4, "start_index": 62, "end_index": 99, "_text": "RIGHT CAPSULAR PUTAMENAL HEMORRHAGE ."}
+{"sent_index": 5, "start_index": 100, "end_index": 108, "_text": "Unsigned"}
+{"sent_index": 6, "start_index": 109, "end_index": 112, "_text": "DIS"}
+{"sent_index": 7, "start_index": 113, "end_index": 126, "_text": "Report Status"}
+{"sent_index": 8, "start_index": 129, "end_index": 137, "_text": "Unsigned"}
+{"sent_index": 9, "start_index": 138, "end_index": 152, "_text": "ADMISSION DATE"}
+{"sent_index": 10, "start_index": 155, "end_index": 163, "_text": "10/19/93"}
+{"sent_index": 11, "start_index": 164, "end_index": 178, "_text": "DISCHARGE DATE"}
+{"sent_index": 12, "start_index": 181, "end_index": 189, "_text": "10/25/93"}
+{"sent_index": 13, "start_index": 190, "end_index": 209, "_text": "PRINCIPAL DIAGNOSIS"}
+{"sent_index": 14, "start_index": 212, "end_index": 249, "_text": "Right capsular putamenal hemorrhage ."}
+{"sent_index": 15, "start_index": 250, "end_index": 270, "_text": "ASSOCIATED DIAGNOSIS"}
+{"sent_index": 16, "start_index": 273, "end_index": 287, "_text": "hypertension ."}
+{"sent_index": 17, "start_index": 288, "end_index": 314, "_text": "HISTORY OF PRESENT ILLNESS"}
+{"sent_index": 18, "start_index": 317, "end_index": 321, "_text": "Mrs."}
+{"sent_index": 19, "start_index": 322, "end_index": 421, "_text": "Dua is a 34 year old white female with an unclear history of hypertension for at least five years ."}
+{"sent_index": 20, "start_index": 422, "end_index": 559, "_text": "She was in her usual state of health until around 12:40 on October 19 , when while on the phone , started to have difficulty in talking ."}
+{"sent_index": 21, "start_index": 560, "end_index": 671, "_text": "Her speech became slurred , this was followed a few seconds after by weakness and numbness of her arm and leg ."}
+{"sent_index": 22, "start_index": 672, "end_index": 754, "_text": "She did not complain of headache , diplopia , or any other neurological symptoms ."}
+{"sent_index": 23, "start_index": 755, "end_index": 887, "_text": "She was seen at A Memorial Hospital where her blood pressure was measured at 240/120 and was found to have a mild left hemiparesis ."}
+{"sent_index": 24, "start_index": 888, "end_index": 961, "_text": "She was then transferred to Ro Woodma Healthcare for further management ."}
+{"sent_index": 25, "start_index": 962, "end_index": 982, "_text": "PAST MEDICAL HISTORY"}
+{"sent_index": 26, "start_index": 985, "end_index": 995, "_text": "negative ."}
+{"sent_index": 27, "start_index": 996, "end_index": 1002, "_text": "HABITS"}
+{"sent_index": 28, "start_index": 1005, "end_index": 1081, "_text": "She does not smoke , does not use birth control pills , does not use drugs ."}
+{"sent_index": 29, "start_index": 1082, "end_index": 1111, "_text": "Denies any abuse of alcohol ."}
+{"sent_index": 30, "start_index": 1112, "end_index": 1126, "_text": "FAMILY HISTORY"}
+{"sent_index": 31, "start_index": 1129, "end_index": 1160, "_text": "Father and brother died of PE ."}
+{"sent_index": 32, "start_index": 1161, "end_index": 1178, "_text": "REVIEW OF SYSTEMS"}
+{"sent_index": 33, "start_index": 1181, "end_index": 1191, "_text": "negative ."}
+{"sent_index": 34, "start_index": 1192, "end_index": 1206, "_text": "SOCIAL HISTORY"}
+{"sent_index": 35, "start_index": 1209, "end_index": 1245, "_text": "She works at TackyMart , is single ."}
+{"sent_index": 36, "start_index": 1246, "end_index": 1266, "_text": "PHYSICAL EXAMINATION"}
+{"sent_index": 37, "start_index": 1269, "end_index": 1359, "_text": "A 34 year old white female lying in bed , anxious ; blood pressure of 220/120 , afebrile ."}
+{"sent_index": 38, "start_index": 1360, "end_index": 1364, "_text": "Skin"}
+{"sent_index": 39, "start_index": 1367, "end_index": 1379, "_text": "no lesions ."}
+{"sent_index": 40, "start_index": 1380, "end_index": 1385, "_text": "HEENT"}
+{"sent_index": 41, "start_index": 1388, "end_index": 1428, "_text": "normocephalic , atraumatic , anicteric ."}
+{"sent_index": 42, "start_index": 1429, "end_index": 1456, "_text": "Neck :\nsupple , no bruits ."}
+{"sent_index": 43, "start_index": 1457, "end_index": 1462, "_text": "Heart"}
+{"sent_index": 44, "start_index": 1465, "end_index": 1512, "_text": "regular rhythm with no murmur , rub or gallop ."}
+{"sent_index": 45, "start_index": 1513, "end_index": 1518, "_text": "Lungs"}
+{"sent_index": 46, "start_index": 1521, "end_index": 1544, "_text": "clear to auscultation ."}
+{"sent_index": 47, "start_index": 1545, "end_index": 1552, "_text": "Abdomen"}
+{"sent_index": 48, "start_index": 1555, "end_index": 1653, "_text": "bowel sounds present , soft , nontender , nondistended , guaiac negative , no hepatosplenomegaly ."}
+{"sent_index": 49, "start_index": 1654, "end_index": 1665, "_text": "Extremities"}
+{"sent_index": 50, "start_index": 1668, "end_index": 1701, "_text": "no clubbing , cyanosis or edema ."}
+{"sent_index": 51, "start_index": 1702, "end_index": 1714, "_text": "Neurological"}
+{"sent_index": 52, "start_index": 1717, "end_index": 1757, "_text": "she was alert and oriented times three ."}
+{"sent_index": 53, "start_index": 1758, "end_index": 1828, "_text": "Her speech was fluent with no phasic or praxic problems , dysarthric ."}
+{"sent_index": 54, "start_index": 1829, "end_index": 1861, "_text": "Memory and attention span good ."}
+{"sent_index": 55, "start_index": 1862, "end_index": 1904, "_text": "Visual fields were full to confrontation ."}
+{"sent_index": 56, "start_index": 1905, "end_index": 1922, "_text": "Fundi were flat ."}
+{"sent_index": 57, "start_index": 1923, "end_index": 2004, "_text": "Pupils were 2 millimeters down to 1 millimeter by direct and consensual stimuli ."}
+{"sent_index": 58, "start_index": 2005, "end_index": 2039, "_text": "Extra ocular movements were full ."}
+{"sent_index": 59, "start_index": 2040, "end_index": 2078, "_text": "Corneals diminished on the left side ."}
+{"sent_index": 60, "start_index": 2079, "end_index": 2149, "_text": "V1 through V3 , diminished light touch and pinprick in the left side ."}
+{"sent_index": 61, "start_index": 2150, "end_index": 2191, "_text": "There was a left central facial paresis ."}
+{"sent_index": 62, "start_index": 2192, "end_index": 2211, "_text": "Gag was symmetric ."}
+{"sent_index": 63, "start_index": 2212, "end_index": 2241, "_text": "Tongue deviated to the left ."}
+{"sent_index": 64, "start_index": 2242, "end_index": 2273, "_text": "There was a left arm pronator ."}
+{"sent_index": 65, "start_index": 2274, "end_index": 2305, "_text": "The ______________ was normal ."}
+{"sent_index": 66, "start_index": 2306, "end_index": 2365, "_text": "Strength was 5/5 on the right side , 4/5 on the left side ."}
+{"sent_index": 67, "start_index": 2366, "end_index": 2440, "_text": "The deep tendon reflexes were 2+ on the left side , 1+ on the right side ."}
+{"sent_index": 68, "start_index": 2441, "end_index": 2483, "_text": "The plantar was upgoing on the left side ."}
+{"sent_index": 69, "start_index": 2484, "end_index": 2605, "_text": "On sensory exam there was a mild diminution of light touch , pinprick , position , and vibration sense in the left side ."}
+{"sent_index": 70, "start_index": 2606, "end_index": 2615, "_text": "Cerebella"}
+{"sent_index": 71, "start_index": 2618, "end_index": 2756, "_text": "the fine motor movements of the left hand were diminished , there was a mild dysmetria on the left side to finger / nose and heel / shin ."}
+{"sent_index": 72, "start_index": 2757, "end_index": 2796, "_text": "The walk was paretic in the left side ."}
+{"sent_index": 73, "start_index": 2797, "end_index": 2812, "_text": "LABORATORY DATA"}
+{"sent_index": 74, "start_index": 2815, "end_index": 2909, "_text": "sodium 140 , potassium 4 , chloride 107 , CO2 25.4 , BUN 9 , creatinine .8 , blood sugar 130 ."}
+{"sent_index": 75, "start_index": 2910, "end_index": 2980, "_text": "Uric acid 4.7 , cholesterol 150 , triglycerides 74 , HDL 44 , LDL 91 ."}
+{"sent_index": 76, "start_index": 2981, "end_index": 3010, "_text": "Normal liver function tests ."}
+{"sent_index": 77, "start_index": 3011, "end_index": 3055, "_text": "Urine and serum toxicology screen negative ."}
+{"sent_index": 78, "start_index": 3056, "end_index": 3089, "_text": "Thyroid stimulation hormone 1.9 ."}
+{"sent_index": 79, "start_index": 3090, "end_index": 3170, "_text": "Dexamethasone suppression test negative with a cortisol level at 8 a.m. of 1.7 ."}
+{"sent_index": 80, "start_index": 3171, "end_index": 3267, "_text": "Twenty-four urine for catecholamine , metanephrines , and VMA pending at the time of discharge ."}
+{"sent_index": 81, "start_index": 3268, "end_index": 3395, "_text": "White blood cell count 9.8 , hematocrit 44.1 , platelets 262 , prothrombin time 10.4/ 10.3 , partial thromboplastin time 25.9 ."}
+{"sent_index": 82, "start_index": 3396, "end_index": 3406, "_text": "urinalysis"}
+{"sent_index": 83, "start_index": 3409, "end_index": 3438, "_text": "specific gravity 125 , PH 6 ."}
+{"sent_index": 84, "start_index": 3439, "end_index": 3463, "_text": "Urine culture negative ."}
+{"sent_index": 85, "start_index": 3464, "end_index": 3503, "_text": "Sedimentation rate 2 , antithrombin 3 ."}
+{"sent_index": 86, "start_index": 3504, "end_index": 3570, "_text": "Protein C , protein S and plasminogen level within normal limits ."}
+{"sent_index": 87, "start_index": 3571, "end_index": 3588, "_text": "Electrocardiogram"}
+{"sent_index": 88, "start_index": 3591, "end_index": 3684, "_text": "sinus rhythm at 116 , axis of 23 , intervals of .14/ .07/ .42 , no ST-segment abnormalities ."}
+{"sent_index": 89, "start_index": 3685, "end_index": 3707, "_text": "Chest x-ray negative ."}
+{"sent_index": 90, "start_index": 3708, "end_index": 3936, "_text": "Head computerized tomography scan on 10/19 : 3 centimeter hyperdensity within the right putamenal area in the right external capsusle consistent with intra-parenchymal hematoma with mild local mass effect and surrounding edema ."}
+{"sent_index": 91, "start_index": 3937, "end_index": 3978, "_text": "No other areas of hemorrhage identified ."}
+{"sent_index": 92, "start_index": 3979, "end_index": 4021, "_text": "Head computerized tomography scan of 10/23"}
+{"sent_index": 93, "start_index": 4024, "end_index": 4095, "_text": "the area of hemorrhage the same , slightly more edema and mass effect ."}
+{"sent_index": 94, "start_index": 4096, "end_index": 4115, "_text": "Pulmonary angiogram"}
+{"sent_index": 95, "start_index": 4118, "end_index": 4151, "_text": "no evidence of pulmonary emboli ."}
+{"sent_index": 96, "start_index": 4152, "end_index": 4167, "_text": "HOSPITAL COURSE"}
+{"sent_index": 97, "start_index": 4170, "end_index": 4273, "_text": "Given the localization of the hematoma and the history of hypertension , the most likely cause for Mrs."}
+{"sent_index": 98, "start_index": 4274, "end_index": 4325, "_text": "Dua &apos;s cerebellar hemorrhage is hypertension ."}
+{"sent_index": 99, "start_index": 4326, "end_index": 4489, "_text": "A magnetic resonance imaging study will be scheduled as an outpatient in three months to rule out a small vascular malformation if responsible for the hemorrhage ."}
+{"sent_index": 100, "start_index": 4490, "end_index": 4521, "_text": "At the time of discharge , Mrs."}
+{"sent_index": 101, "start_index": 4522, "end_index": 4557, "_text": "Dua has had a remarkable recovery ."}
+{"sent_index": 102, "start_index": 4558, "end_index": 4630, "_text": "She is now able to walk fitfully and use her left hand with no problem ."}
+{"sent_index": 103, "start_index": 4631, "end_index": 4804, "_text": "The exam is remarkable for a mild leftsided face , arm and leg weakness and sensory deficit that should further improve with physical therapy and occupational therapy help ."}
+{"sent_index": 104, "start_index": 4805, "end_index": 4857, "_text": "She will be followed by the OT / PT dept. for that ."}
+{"sent_index": 105, "start_index": 4858, "end_index": 4995, "_text": "Her hypertension was difficult to manage initially and required three days of Intensive Care Unit with A-line and Nipride intravenously ."}
+{"sent_index": 106, "start_index": 4996, "end_index": 5094, "_text": "It was finally under control with high doses of Captopril , Nifedipine , and hydrochlorothiazide ."}
+{"sent_index": 107, "start_index": 5095, "end_index": 5325, "_text": "The workup to rule out secondary cause of hypertension given the patient &apos;s young age and the difficulty controlling the blood pressure was started as an inpatient and will be completed by Dr. ______________as an outpatient ."}
+{"sent_index": 108, "start_index": 5326, "end_index": 5482, "_text": "So far no secondary causes of hypertension were identified but causes like lymphocytic ? chromocytoma or renal artery stenosis have not been ruled out yet ."}
+{"sent_index": 109, "start_index": 5483, "end_index": 5507, "_text": "MEDICATIONS ON DISCHARGE"}
+{"sent_index": 110, "start_index": 5510, "end_index": 5536, "_text": "hydrochlorothiazide 25 mg."}
+{"sent_index": 111, "start_index": 5537, "end_index": 5628, "_text": "po q.day , Captopril 75 mg. po three times a day , Nifedipine 40 mg. po three times a day ."}
+{"sent_index": 112, "start_index": 5629, "end_index": 5651, "_text": "CONDITION ON DISCHARGE"}
+{"sent_index": 113, "start_index": 5654, "end_index": 5662, "_text": "Stable ."}
+{"sent_index": 114, "start_index": 5663, "end_index": 5671, "_text": "FOLLOWUP"}
+{"sent_index": 115, "start_index": 5674, "end_index": 5790, "_text": "The patient will followup with Dr. ______________at Omend Hospital and with Dr. Deep at the Barb Memorial Hospital ."}
+{"sent_index": 116, "start_index": 5791, "end_index": 5801, "_text": "DISABILITY"}
+{"sent_index": 117, "start_index": 5804, "end_index": 5818, "_text": "100% for now ."}
+{"sent_index": 118, "start_index": 5819, "end_index": 5908, "_text": "Will be reassessed after a month of intensive physical therapy and occupational therapy ."}
+{"sent_index": 119, "start_index": 5909, "end_index": 5928, "_text": "MATAANRE TAG , M.D."}
+{"sent_index": 120, "start_index": 5929, "end_index": 5931, "_text": "TR"}
+{"sent_index": 121, "start_index": 5934, "end_index": 5943, "_text": "ee / bihn"}
+{"sent_index": 122, "start_index": 5944, "end_index": 5946, "_text": "DD"}
+{"sent_index": 123, "start_index": 5949, "end_index": 5957, "_text": "10/25/93"}
+{"sent_index": 124, "start_index": 5958, "end_index": 5971, "_text": "TD :\n10/27/93"}
+{"sent_index": 125, "start_index": 5972, "end_index": 5974, "_text": "CC"}

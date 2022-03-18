@@ -1,0 +1,98 @@
+{"sent_index": 0, "start_index": 0, "end_index": 9, "_text": "493597270"}
+{"sent_index": 1, "start_index": 10, "end_index": 22, "_text": "CMC\n86164445"}
+{"sent_index": 2, "start_index": 23, "end_index": 44, "_text": "3/17/1998 12:00:00 AM"}
+{"sent_index": 3, "start_index": 45, "end_index": 59, "_text": "ACUTE LEUKEMIA"}
+{"sent_index": 4, "start_index": 60, "end_index": 66, "_text": "Signed"}
+{"sent_index": 5, "start_index": 67, "end_index": 70, "_text": "DIS"}
+{"sent_index": 6, "start_index": 71, "end_index": 85, "_text": "Admission Date"}
+{"sent_index": 7, "start_index": 88, "end_index": 98, "_text": "03/17/1998"}
+{"sent_index": 8, "start_index": 99, "end_index": 112, "_text": "Report Status"}
+{"sent_index": 9, "start_index": 115, "end_index": 121, "_text": "Signed"}
+{"sent_index": 10, "start_index": 122, "end_index": 136, "_text": "Discharge Date"}
+{"sent_index": 11, "start_index": 139, "end_index": 149, "_text": "04/12/1998"}
+{"sent_index": 12, "start_index": 150, "end_index": 176, "_text": "HISTORY OF PRESENT ILLNESS"}
+{"sent_index": 13, "start_index": 179, "end_index": 229, "_text": "The patient is a 68 year old with acute leukemia ."}
+{"sent_index": 14, "start_index": 230, "end_index": 376, "_text": "The patient was in her usual state of health until about three weeks prior to admission when she began to notice increased weakness and bruising ."}
+{"sent_index": 15, "start_index": 377, "end_index": 451, "_text": "She presented to a Wood Emergency Department six days prior to admission ."}
+{"sent_index": 16, "start_index": 452, "end_index": 515, "_text": "Platelets were 9,000 , hemoglobin 9.5 , temperature was 100.4 ."}
+{"sent_index": 17, "start_index": 516, "end_index": 567, "_text": "The patient had a smear there consistent with ALL ."}
+{"sent_index": 18, "start_index": 568, "end_index": 615, "_text": "The patient was transferred to Norri Hospital ."}
+{"sent_index": 19, "start_index": 616, "end_index": 633, "_text": "REVIEW OF SYSTEMS"}
+{"sent_index": 20, "start_index": 636, "end_index": 684, "_text": "No headache , no nausea , vomiting or diarrhea ."}
+{"sent_index": 21, "start_index": 685, "end_index": 746, "_text": "Some shortness of breath with allergies , particularly cats ."}
+{"sent_index": 22, "start_index": 747, "end_index": 762, "_text": "No chest pain ."}
+{"sent_index": 23, "start_index": 763, "end_index": 860, "_text": "The patient had been doing aerobics three times a week until a couple of weeks before admission ."}
+{"sent_index": 24, "start_index": 861, "end_index": 881, "_text": "PAST MEDICAL HISTORY"}
+{"sent_index": 25, "start_index": 884, "end_index": 1165, "_text": "The patient &apos;s past medical history is significant for allergies , depression and anxiety , pleural thickening / asbestosis , chronic left bundle branch block , tonsillectomy , adenoidectomy , vein stripping ( 1968 ) , left wrist fracture ( 1994 ) , and hypercholesterolemia ."}
+{"sent_index": 26, "start_index": 1166, "end_index": 1175, "_text": "ALLERGIES"}
+{"sent_index": 27, "start_index": 1178, "end_index": 1302, "_text": "The patient &apos;s allergies include a questionable penicillin reaction ; however , the patient tolerated Ampicillin well ."}
+{"sent_index": 28, "start_index": 1303, "end_index": 1371, "_text": "The patient does not recollect what her reaction to penicillin was ."}
+{"sent_index": 29, "start_index": 1372, "end_index": 1425, "_text": "The patient also had a history of platelet reaction ."}
+{"sent_index": 30, "start_index": 1426, "end_index": 1440, "_text": "FAMILY HISTORY"}
+{"sent_index": 31, "start_index": 1443, "end_index": 1527, "_text": "The patient &apos;s family history was significant for a brother with colon cancer ."}
+{"sent_index": 32, "start_index": 1528, "end_index": 1542, "_text": "SOCIAL HISTORY"}
+{"sent_index": 33, "start_index": 1545, "end_index": 1608, "_text": "The patient lives with her husband and she has three children ."}
+{"sent_index": 34, "start_index": 1609, "end_index": 1629, "_text": "PHYSICAL EXAMINATION"}
+{"sent_index": 35, "start_index": 1632, "end_index": 1754, "_text": "The patient &apos;s physical examination revealed a well-developed , well-nourished white female in no apparent distress ."}
+{"sent_index": 36, "start_index": 1755, "end_index": 1766, "_text": "Vital signs"}
+{"sent_index": 37, "start_index": 1769, "end_index": 1845, "_text": "Temperature 98.2 , blood pressure 134/80 , respiratory rate 22 , pulse 102 ."}
+{"sent_index": 38, "start_index": 1846, "end_index": 1898, "_text": "HEENT examination was normocephalic and atraumatic ."}
+{"sent_index": 39, "start_index": 1899, "end_index": 1942, "_text": "Cranial nerves II-XII were grossly intact ."}
+{"sent_index": 40, "start_index": 1943, "end_index": 1984, "_text": "There was decreased hearing bilaterally ."}
+{"sent_index": 41, "start_index": 1985, "end_index": 2066, "_text": "The oropharynx was within normal limits with fillings and a partial upper plate ."}
+{"sent_index": 42, "start_index": 2067, "end_index": 2125, "_text": "The neck had a full range of motion , no lymphadenopathy ."}
+{"sent_index": 43, "start_index": 2126, "end_index": 2168, "_text": "The chest exam was clear to auscultation ."}
+{"sent_index": 44, "start_index": 2169, "end_index": 2242, "_text": "Cardiac exam revealed an S1 and an S2 and a diffuse 2/6 systolic murmur ."}
+{"sent_index": 45, "start_index": 2243, "end_index": 2337, "_text": "The abdomen was soft , nontender and nondistended with no guarding and no hepatosplenomegaly ."}
+{"sent_index": 46, "start_index": 2338, "end_index": 2365, "_text": "Bowel sounds were present ."}
+{"sent_index": 47, "start_index": 2366, "end_index": 2518, "_text": "The skin examination revealed the right breast had a dark two centimeter ecchymosis and the left medial thigh had two pale blue two centimeter macules ."}
+{"sent_index": 48, "start_index": 2519, "end_index": 2534, "_text": "LABORATORY DATA"}
+{"sent_index": 49, "start_index": 2537, "end_index": 2715, "_text": "Admitting labs were :\nSodium 138 , potassium 4.2 , chloride 98 , BUN 21 , creatinine 0.7 , glucose 117 , white blood cell count 13,200 , hematocrit 22.5 , platelet count 40,000 ."}
+{"sent_index": 50, "start_index": 2716, "end_index": 2820, "_text": "AST 29 , ALK 151 , total bilirubin 0.2 , total protein 7.2 , albumin 4.3 , globulins 2.9 , calcium 8.9 ."}
+{"sent_index": 51, "start_index": 2821, "end_index": 2841, "_text": "PT 12.8 , PTT 19.1 ."}
+{"sent_index": 52, "start_index": 2842, "end_index": 2883, "_text": "Peripheral smear revealed blasts of 62% ."}
+{"sent_index": 53, "start_index": 2884, "end_index": 2899, "_text": "HOSPITAL COURSE"}
+{"sent_index": 54, "start_index": 2902, "end_index": 2975, "_text": "A Hickman catheter was placed and the patient was begun on chemotherapy ."}
+{"sent_index": 55, "start_index": 2976, "end_index": 3078, "_text": "The regimen included cyclophosphamide , daunorubicin , prednisone , Vincristine and PEG-asparaginase ."}
+{"sent_index": 56, "start_index": 3079, "end_index": 3132, "_text": "The patient tolerated the chemotherapy regimen well ."}
+{"sent_index": 57, "start_index": 3133, "end_index": 3189, "_text": "The patient began neutropenic on day five of induction ."}
+{"sent_index": 58, "start_index": 3190, "end_index": 3322, "_text": "The patient &apos;s liver function tests began to rise and she began to experience pulmonary symptoms including increased crackles ."}
+{"sent_index": 59, "start_index": 3323, "end_index": 3401, "_text": "The patient began to spike and a blood culture grew out Staphylococcusaureus ."}
+{"sent_index": 60, "start_index": 3402, "end_index": 3519, "_text": "The patient was begun on Gentamicin , Vancomycin and Piperacillin , which was changed to Gentamicin and Ceftazidime ."}
+{"sent_index": 61, "start_index": 3520, "end_index": 3653, "_text": "The patient continued to spike and was enrolled in a randomized trial , the patient was randomized to AmBisome antifungal treatment ."}
+{"sent_index": 62, "start_index": 3654, "end_index": 3762, "_text": "An abdominal MRI was performed to assess continued elevated liver enzymes ; however , the MRI was negative ."}
+{"sent_index": 63, "start_index": 3763, "end_index": 3824, "_text": "The patient was begun on Nafcillin due to continued spiking ."}
+{"sent_index": 64, "start_index": 3825, "end_index": 3906, "_text": "The patient began to experience urinary retention and was straight catheterized ."}
+{"sent_index": 65, "start_index": 3907, "end_index": 3985, "_text": "Thepatient developed a possible drug rash and Nafcillin was changed to Ancef ."}
+{"sent_index": 66, "start_index": 3986, "end_index": 4049, "_text": "The patient became constipated ; this resolved with laxatives ."}
+{"sent_index": 67, "start_index": 4050, "end_index": 4149, "_text": "The patient improved significantly and was thought to be ready for discharge by the 11th of April ."}
+{"sent_index": 68, "start_index": 4150, "end_index": 4250, "_text": "She will follow up with her primary oncologists , Dr A and Dr Dark , at IVMC , after her discharge ."}
+{"sent_index": 69, "start_index": 4251, "end_index": 4272, "_text": "DISCHARGE MEDICATIONS"}
+{"sent_index": 70, "start_index": 4275, "end_index": 4338, "_text": "The patient &apos;s discharge medications include the following"}
+{"sent_index": 71, "start_index": 4341, "end_index": 4410, "_text": "1) Albuterol inhaler two puffs q.i.d. p.r.n. breathing difficulties ."}
+{"sent_index": 72, "start_index": 4411, "end_index": 4452, "_text": "2) Calcium gluconate 1000 mg p.o. q day ."}
+{"sent_index": 73, "start_index": 4453, "end_index": 4483, "_text": "3) Cefazolin one gram IV q.8h."}
+{"sent_index": 74, "start_index": 4484, "end_index": 4494, "_text": "x 13days ."}
+{"sent_index": 75, "start_index": 4495, "end_index": 4523, "_text": "4) Colace 100 mg p.o. b.i.d."}
+{"sent_index": 76, "start_index": 4524, "end_index": 4551, "_text": "5) Lasix 40 mg p.o. q day ."}
+{"sent_index": 77, "start_index": 4552, "end_index": 4612, "_text": "6) Lactulose 30 milliliters p.o. q.2h. p.r.n. constipation ."}
+{"sent_index": 78, "start_index": 4613, "end_index": 4663, "_text": "7) Magnesium hydroxide 30 milliliters p.o. q day ."}
+{"sent_index": 79, "start_index": 4664, "end_index": 4700, "_text": "8) Miracle Creamtopical q day p.r.n."}
+{"sent_index": 80, "start_index": 4701, "end_index": 4718, "_text": "skin irritation ."}
+{"sent_index": 81, "start_index": 4719, "end_index": 4759, "_text": "9) Sarna topical b.i.d. p.r.n. itching ."}
+{"sent_index": 82, "start_index": 4760, "end_index": 4803, "_text": "10) Senna tablets , two tablets p.o. b.i.d."}
+{"sent_index": 83, "start_index": 4804, "end_index": 4855, "_text": "11) Simethicone 80 mg p.o. q.i.d. p.r.n. gas pain ."}
+{"sent_index": 84, "start_index": 4856, "end_index": 4896, "_text": "12) Citrucel one tablespoon p.o. q day ."}
+{"sent_index": 85, "start_index": 4897, "end_index": 4935, "_text": "13) K-Dur 10 mEq x three , p.o. b.i.d."}
+{"sent_index": 86, "start_index": 4936, "end_index": 4965, "_text": "14) Zoloft 25 mg p.o. q day ."}
+{"sent_index": 87, "start_index": 4966, "end_index": 5007, "_text": "15) Peridex 30 cc p.o. b.i.d. x 14 days ."}
+{"sent_index": 88, "start_index": 5008, "end_index": 5077, "_text": "16) Robituss in AC five to ten milliliters p.o. q.h.s. p.r.n. cough ."}
+{"sent_index": 89, "start_index": 5078, "end_index": 5089, "_text": "Dictated By"}
+{"sent_index": 90, "start_index": 5092, "end_index": 5113, "_text": "AZEL HIBBSKAYS , M.D."}
+{"sent_index": 91, "start_index": 5114, "end_index": 5118, "_text": "CF66"}
+{"sent_index": 92, "start_index": 5119, "end_index": 5128, "_text": "Attending"}
+{"sent_index": 93, "start_index": 5131, "end_index": 5161, "_text": "TELSHEY K. SWATLLEEBTIK , M.D."}
+{"sent_index": 94, "start_index": 5162, "end_index": 5177, "_text": "NJ38 ME089/6922"}
+{"sent_index": 95, "start_index": 5178, "end_index": 5191, "_text": "Batch :\n43792"}
+{"sent_index": 96, "start_index": 5192, "end_index": 5226, "_text": "Index No. CHDNIR25 OK\nD :\n05/13/98"}
+{"sent_index": 97, "start_index": 5227, "end_index": 5239, "_text": "T :\n05/13/98"}

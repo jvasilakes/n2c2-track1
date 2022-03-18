@@ -1,0 +1,18 @@
+T0	problem 226 245	a right breast mass
+A0	Assertion T0 present
+T1	problem 251 262	a discharge
+A1	Assertion T1 present
+T2	problem 353 367	nipple changes
+A2	Assertion T2 present
+T3	problem 495 509	a new shawdown
+A3	Assertion T3 present
+T4	problem 886 901	apparent masses
+A4	Assertion T4 absent
+T5	problem 950 983	A biopsy scar on the right breast
+A5	Assertion T5 present
+T6	problem 907 947	scarring supra-areolar and infra-areolar
+A6	Assertion T6 present
+T7	problem 372 382	discomfort
+A7	Assertion T7 present
+T8	problem 704 724	known drug allergies
+A8	Assertion T8 absent

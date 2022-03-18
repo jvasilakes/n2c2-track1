@@ -1,0 +1,220 @@
+{"sent_index": 0, "start_index": 0, "end_index": 14, "_text": "Admission Date"}
+{"sent_index": 1, "start_index": 17, "end_index": 27, "_text": "2014-10-21"}
+{"sent_index": 2, "start_index": 28, "end_index": 42, "_text": "Discharge Date"}
+{"sent_index": 3, "start_index": 45, "end_index": 55, "_text": "2014-11-21"}
+{"sent_index": 4, "start_index": 56, "end_index": 69, "_text": "Date of Birth"}
+{"sent_index": 5, "start_index": 72, "end_index": 82, "_text": "1942-03-10"}
+{"sent_index": 6, "start_index": 83, "end_index": 86, "_text": "Sex"}
+{"sent_index": 7, "start_index": 89, "end_index": 90, "_text": "M"}
+{"sent_index": 8, "start_index": 91, "end_index": 98, "_text": "Service"}
+{"sent_index": 9, "start_index": 101, "end_index": 108, "_text": "SURGERY"}
+{"sent_index": 10, "start_index": 109, "end_index": 118, "_text": "Allergies"}
+{"sent_index": 11, "start_index": 121, "end_index": 147, "_text": "Iodine ; Iodine Containing"}
+{"sent_index": 12, "start_index": 148, "end_index": 157, "_text": "Attending"}
+{"sent_index": 13, "start_index": 160, "end_index": 167, "_text": "Dona J."}
+{"sent_index": 14, "start_index": 168, "end_index": 170, "_text": "O."}
+{"sent_index": 15, "start_index": 171, "end_index": 186, "_text": "Anderson , M.D."}
+{"sent_index": 16, "start_index": 187, "end_index": 202, "_text": "Chief Complaint"}
+{"sent_index": 17, "start_index": 205, "end_index": 213, "_text": "s/p Fall"}
+{"sent_index": 18, "start_index": 214, "end_index": 250, "_text": "Major Surgical or Invasive Procedure"}
+{"sent_index": 19, "start_index": 253, "end_index": 276, "_text": "Tracheostomy 2014-11-11"}
+{"sent_index": 20, "start_index": 277, "end_index": 300, "_text": "Bronchoscopy 2014-11-05"}
+{"sent_index": 21, "start_index": 301, "end_index": 321, "_text": "Past Medical History"}
+{"sent_index": 22, "start_index": 324, "end_index": 357, "_text": "Atrial fibrillation ( on Coumadin"}
+{"sent_index": 23, "start_index": 360, "end_index": 383, "_text": "Coronary Artery Disease"}
+{"sent_index": 24, "start_index": 384, "end_index": 415, "_text": "Ulcerative Colitis w/ colostomy"}
+{"sent_index": 25, "start_index": 416, "end_index": 428, "_text": "Hypertension"}
+{"sent_index": 26, "start_index": 429, "end_index": 438, "_text": "Pacemaker"}
+{"sent_index": 27, "start_index": 439, "end_index": 471, "_text": "CVA 2012 w/ right sided weakness"}
+{"sent_index": 28, "start_index": 472, "end_index": 504, "_text": "Cataracts , s/p cataract surgery"}
+{"sent_index": 29, "start_index": 505, "end_index": 513, "_text": "s/p TURP"}
+{"sent_index": 30, "start_index": 514, "end_index": 528, "_text": "Social History"}
+{"sent_index": 31, "start_index": 531, "end_index": 558, "_text": "Lives with wife ; +ETOH use"}
+{"sent_index": 32, "start_index": 559, "end_index": 573, "_text": "Family History"}
+{"sent_index": 33, "start_index": 576, "end_index": 591, "_text": "Noncontributory"}
+{"sent_index": 34, "start_index": 592, "end_index": 609, "_text": "Pertinent Results"}
+{"sent_index": 35, "start_index": 612, "end_index": 631, "_text": "2014-10-21 08:10 PM"}
+{"sent_index": 36, "start_index": 632, "end_index": 743, "_text": "GLUCOSE - 126 * UREA N - 9 CREAT - 0.8 SODIUM - 135 POTASSIUM - 3.4 CHLORIDE - 99 TOTAL CO2 - 25 ANION GAP - 14"}
+{"sent_index": 37, "start_index": 744, "end_index": 763, "_text": "2014-10-21 08:10 PM"}
+{"sent_index": 38, "start_index": 764, "end_index": 795, "_text": "CALCIUM - 8.2 * PHOSPHATE - 2.1"}
+{"sent_index": 39, "start_index": 798, "end_index": 833, "_text": "MAGNESIUM - 1.9\n2014-10-21 08:10 PM"}
+{"sent_index": 40, "start_index": 834, "end_index": 914, "_text": "WBC - 6.5 RBC - 3.68 * HGB - 11.6 * HCT - 32.5 * MCV - 88 MCH - 31.5 MCHC - 35.6"}
+{"sent_index": 41, "start_index": 917, "end_index": 927, "_text": "RDW - 13.6"}
+{"sent_index": 42, "start_index": 928, "end_index": 947, "_text": "2014-10-21 08:10 PM"}
+{"sent_index": 43, "start_index": 948, "end_index": 983, "_text": "PLT COUNT - 207\n2014-10-21 08:10 PM"}
+{"sent_index": 44, "start_index": 984, "end_index": 993, "_text": "PT - 15.0"}
+{"sent_index": 45, "start_index": 996, "end_index": 1040, "_text": "PTT - 31.3 INR(PT) - 1.5\n2014-10-21 02:56 PM"}
+{"sent_index": 46, "start_index": 1041, "end_index": 1230, "_text": "TYPE - ART TEMP - 36.6 RATES - 14 / TIDAL VOL - 550 PEEP - 5 O2 - 100 PO2 - 416 * PCO2 - 39 PH - 7.41 TOTAL CO2 - 26 BASE XS - 0 AADO2 - 279 REQ O2 - 52 - ASSIST / CON INTUBATED - INTUBATED"}
+{"sent_index": 47, "start_index": 1231, "end_index": 1250, "_text": "2014-10-21 09:35 AM"}
+{"sent_index": 48, "start_index": 1251, "end_index": 1336, "_text": "ASA - NEG ETHANOL - NEG ACETMNPHN - NEG bnzodzpn - NEG barbitrt - NEG tricyclic - NEG"}
+{"sent_index": 49, "start_index": 1337, "end_index": 1362, "_text": "2014-10-21 09:35 AM URINE"}
+{"sent_index": 50, "start_index": 1363, "end_index": 1449, "_text": "bnzodzpn - NEG barbitrt - NEG opiates - NEG cocaine - NEG amphetmn - NEG mthdone - NEG"}
+{"sent_index": 51, "start_index": 1450, "end_index": 1475, "_text": "CT C - SPINE W/O CONTRAST"}
+{"sent_index": 52, "start_index": 1476, "end_index": 1494, "_text": "2014-10-21 9:59 AM"}
+{"sent_index": 53, "start_index": 1495, "end_index": 1540, "_text": "CT C - SPINE W/O CONTRAST ; CT RECONSTRUCTION"}
+{"sent_index": 54, "start_index": 1541, "end_index": 1581, "_text": "Reason : 72 male s/p fall down 20 stairs"}
+{"sent_index": 55, "start_index": 1582, "end_index": 1610, "_text": "UNDERLYING MEDICAL CONDITION"}
+{"sent_index": 56, "start_index": 1613, "end_index": 1633, "_text": "72 year old man with"}
+{"sent_index": 57, "start_index": 1634, "end_index": 1661, "_text": "REASON FOR THIS EXAMINATION"}
+{"sent_index": 58, "start_index": 1664, "end_index": 1695, "_text": "72 male s/p fall down 20 stairs"}
+{"sent_index": 59, "start_index": 1696, "end_index": 1738, "_text": "CONTRAINDICATIONS for IV CONTRAST : None ."}
+{"sent_index": 60, "start_index": 1739, "end_index": 1750, "_text": "INDICATIONS"}
+{"sent_index": 61, "start_index": 1753, "end_index": 1774, "_text": "Fall down 20 stairs ."}
+{"sent_index": 62, "start_index": 1775, "end_index": 1784, "_text": "TECHNIQUE"}
+{"sent_index": 63, "start_index": 1787, "end_index": 1818, "_text": "Noncontrast cervical spine CT ."}
+{"sent_index": 64, "start_index": 1819, "end_index": 1829, "_text": "COMPARISON"}
+{"sent_index": 65, "start_index": 1832, "end_index": 1838, "_text": "None ."}
+{"sent_index": 66, "start_index": 1839, "end_index": 1843, "_text": "NOTE"}
+{"sent_index": 67, "start_index": 1846, "end_index": 1896, "_text": "This study was initially performed on 2014-10-21 ."}
+{"sent_index": 68, "start_index": 1897, "end_index": 2074, "_text": "Findings were discussed with Dr. Leanne Vazquez at the time this study was performed , but the study was not dictated until the morning of 2014-10-22 , due to PACS malfunction ."}
+{"sent_index": 69, "start_index": 2075, "end_index": 2104, "_text": "NONCONTRAST CERVICAL SPINE CT"}
+{"sent_index": 70, "start_index": 2107, "end_index": 2211, "_text": "There are minimally displaced and comminuted fractures through the left C7 and T1 transverse processes ."}
+{"sent_index": 71, "start_index": 2212, "end_index": 2281, "_text": "The margins do not appear to extend into the foramina transversaria ."}
+{"sent_index": 72, "start_index": 2282, "end_index": 2463, "_text": "Positioning limits assessment of alignment due to extreme head tilting to the right , but this is likely the best obtainable secondary to intubation and nasogastric tube placement ."}
+{"sent_index": 73, "start_index": 2464, "end_index": 2559, "_text": "Allowing for the limitations , the vertebral bodies are normal in height and normally aligned ."}
+{"sent_index": 74, "start_index": 2560, "end_index": 2598, "_text": "There is no atlantoaxial subluxation ."}
+{"sent_index": 75, "start_index": 2599, "end_index": 2672, "_text": "The lateral masses of C1 articulate normally about the odontoid process ."}
+{"sent_index": 76, "start_index": 2673, "end_index": 2751, "_text": "Prevertebral soft tissue swelling cannot be excluded secondary to intubation ."}
+{"sent_index": 77, "start_index": 2752, "end_index": 2839, "_text": "Extensive carotid arterial calcifications are present in the bulb regions bilaterally ."}
+{"sent_index": 78, "start_index": 2840, "end_index": 2900, "_text": "Biapical lung scarring and mild bronchiectasis are present ."}
+{"sent_index": 79, "start_index": 2901, "end_index": 3040, "_text": "Also noted is sclerosis and opacification of the visualized left mastoid air cells and mastoid tip , likely chronic inflammatory \ndisease ."}
+{"sent_index": 80, "start_index": 3041, "end_index": 3051, "_text": "IMPRESSION"}
+{"sent_index": 81, "start_index": 3054, "end_index": 3141, "_text": "Minimally displaced , comminuted fractures of the left C7 and T1 transverse processes ."}
+{"sent_index": 82, "start_index": 3142, "end_index": 3200, "_text": "No evidence of extension into the foramina transversaria ."}
+{"sent_index": 83, "start_index": 3201, "end_index": 3221, "_text": "CT HEAD W/O CONTRAST"}
+{"sent_index": 84, "start_index": 3222, "end_index": 3240, "_text": "2014-10-21 9:42 AM"}
+{"sent_index": 85, "start_index": 3241, "end_index": 3261, "_text": "CT HEAD W/O CONTRAST"}
+{"sent_index": 86, "start_index": 3262, "end_index": 3276, "_text": "Reason : bleed"}
+{"sent_index": 87, "start_index": 3279, "end_index": 3307, "_text": "UNDERLYING MEDICAL CONDITION"}
+{"sent_index": 88, "start_index": 3310, "end_index": 3362, "_text": "72 year old man with intraparenchymal bleed s/p fall"}
+{"sent_index": 89, "start_index": 3363, "end_index": 3390, "_text": "REASON FOR THIS EXAMINATION"}
+{"sent_index": 90, "start_index": 3393, "end_index": 3398, "_text": "bleed"}
+{"sent_index": 91, "start_index": 3401, "end_index": 3434, "_text": "CONTRAINDICATIONS for IV CONTRAST"}
+{"sent_index": 92, "start_index": 3437, "end_index": 3443, "_text": "None ."}
+{"sent_index": 93, "start_index": 3444, "end_index": 3454, "_text": "INDICATION"}
+{"sent_index": 94, "start_index": 3457, "end_index": 3497, "_text": "Intraparenchymal hemorrhage after fall ."}
+{"sent_index": 95, "start_index": 3498, "end_index": 3521, "_text": "Assess for hemorrhage ."}
+{"sent_index": 96, "start_index": 3522, "end_index": 3531, "_text": "TECHNIQUE"}
+{"sent_index": 97, "start_index": 3534, "end_index": 3556, "_text": "Non-contrast head CT ."}
+{"sent_index": 98, "start_index": 3557, "end_index": 3567, "_text": "COMPARISON"}
+{"sent_index": 99, "start_index": 3570, "end_index": 3602, "_text": "No prior studies are available ."}
+{"sent_index": 100, "start_index": 3603, "end_index": 3649, "_text": "By report , the patient has an outside study ."}
+{"sent_index": 101, "start_index": 3650, "end_index": 3778, "_text": "Should this become available , an addendum will be issued to this report following the comparison with the outside examination ."}
+{"sent_index": 102, "start_index": 3779, "end_index": 3783, "_text": "NOTE"}
+{"sent_index": 103, "start_index": 3786, "end_index": 3918, "_text": "This study was initially performed on the morning of 10-21 , and is being dictated on the morning of 10-22 due to PACS malfunction ."}
+{"sent_index": 104, "start_index": 3919, "end_index": 3946, "_text": "Findings were called to Dr."}
+{"sent_index": 105, "start_index": 3947, "end_index": 3987, "_text": "Leanne Vazquez on the morning of 10-21 ."}
+{"sent_index": 106, "start_index": 3988, "end_index": 4130, "_text": "NON-CONTRAST HEAD CT : There is a small amount of hemorrhage within the occipital horns of both lateral ventricles , right greater than left ."}
+{"sent_index": 107, "start_index": 4131, "end_index": 4282, "_text": "Located within the atrium of the right lateral ventricle is an 18 x 10 mm nodular area of increased density which is separate from the choroid plexus ."}
+{"sent_index": 108, "start_index": 4283, "end_index": 4326, "_text": "There is no evidence of surrounding edema ."}
+{"sent_index": 109, "start_index": 4327, "end_index": 4424, "_text": "There is diffuse brain atrophy and chronic microvascular infarction throughout the white matter ."}
+{"sent_index": 110, "start_index": 4425, "end_index": 4466, "_text": "There is a remote right frontal infarct ."}
+{"sent_index": 111, "start_index": 4467, "end_index": 4563, "_text": "There is no evidence of subarachnoid hemorrhage or acute major vascular territorial infarction ."}
+{"sent_index": 112, "start_index": 4564, "end_index": 4679, "_text": "The ventricles do not appear dilated relative to the sulci , and there is no shift of normally midline structures ."}
+{"sent_index": 113, "start_index": 4680, "end_index": 4708, "_text": "There is no skull fracture ."}
+{"sent_index": 114, "start_index": 4709, "end_index": 4836, "_text": "There is opacification of the posterior nasal cavity and nasopharynx but an NG tube is present , and the patient is intubated ."}
+{"sent_index": 115, "start_index": 4837, "end_index": 4895, "_text": "Opacified and sclerotic left mastoid air cells are noted ."}
+{"sent_index": 116, "start_index": 4896, "end_index": 4906, "_text": "IMPRESSION"}
+{"sent_index": 117, "start_index": 4909, "end_index": 4957, "_text": "1. Small amount of intraventricular hemorrhage ."}
+{"sent_index": 118, "start_index": 4958, "end_index": 5033, "_text": "2. Ovoid 18 - mm density within the atrium of the right lateral ventricle ."}
+{"sent_index": 119, "start_index": 5034, "end_index": 5235, "_text": "This could represent either an atypically located blood clot or an intraventricular mass , and further evaluation with contrast - enhanced MRI of the brain , when clinically feasible , is recommended ."}
+{"sent_index": 120, "start_index": 5236, "end_index": 5321, "_text": "Results were discussed with Dr. Leanne Vazquez in the early afternoon on 2014-10-21 ."}
+{"sent_index": 121, "start_index": 5322, "end_index": 5342, "_text": "CT HEAD W/O CONTRAST"}
+{"sent_index": 122, "start_index": 5343, "end_index": 5362, "_text": "2014-11-14 12:34 PM"}
+{"sent_index": 123, "start_index": 5363, "end_index": 5383, "_text": "CT HEAD W/O CONTRAST"}
+{"sent_index": 124, "start_index": 5384, "end_index": 5414, "_text": "Reason : altered mental status"}
+{"sent_index": 125, "start_index": 5415, "end_index": 5443, "_text": "UNDERLYING MEDICAL CONDITION"}
+{"sent_index": 126, "start_index": 5446, "end_index": 5466, "_text": "72 year old man with"}
+{"sent_index": 127, "start_index": 5467, "end_index": 5494, "_text": "REASON FOR THIS EXAMINATION"}
+{"sent_index": 128, "start_index": 5497, "end_index": 5518, "_text": "altered mental status"}
+{"sent_index": 129, "start_index": 5519, "end_index": 5552, "_text": "CONTRAINDICATIONS for IV CONTRAST"}
+{"sent_index": 130, "start_index": 5555, "end_index": 5561, "_text": "None ."}
+{"sent_index": 131, "start_index": 5562, "end_index": 5572, "_text": "INDICATION"}
+{"sent_index": 132, "start_index": 5575, "end_index": 5620, "_text": "72-year-old male with altered mental status ."}
+{"sent_index": 133, "start_index": 5621, "end_index": 5630, "_text": "TECHNIQUE"}
+{"sent_index": 134, "start_index": 5633, "end_index": 5688, "_text": "Axial noncontrast CT scans of the brain were obtained ."}
+{"sent_index": 135, "start_index": 5689, "end_index": 5745, "_text": "Comparison is made to a previous study from 2014-10-27 ."}
+{"sent_index": 136, "start_index": 5746, "end_index": 5754, "_text": "FINDINGS"}
+{"sent_index": 137, "start_index": 5757, "end_index": 5935, "_text": "There are numerous areas of decreased attenuation in the periventricular and subcortical white matter of both cerebral hemispheres , indicating chronic microvascular infarction ."}
+{"sent_index": 138, "start_index": 5936, "end_index": 5997, "_text": "There is also an old right frontal lobe cortical infarction ."}
+{"sent_index": 139, "start_index": 5998, "end_index": 6063, "_text": "A small right occipital lobe chronic infarction is also evident ."}
+{"sent_index": 140, "start_index": 6064, "end_index": 6184, "_text": "There is a small amount of blood layering in both lateral ventricles , and this has decreased since the previous study ."}
+{"sent_index": 141, "start_index": 6185, "end_index": 6236, "_text": "The size and shape of the ventricles is unchanged ."}
+{"sent_index": 142, "start_index": 6237, "end_index": 6268, "_text": "No new hemorrhage is observed ."}
+{"sent_index": 143, "start_index": 6269, "end_index": 6355, "_text": "There is opacification of the mastoid air cells , greater on the left than the right ."}
+{"sent_index": 144, "start_index": 6356, "end_index": 6435, "_text": "There is some fluid or mucosal thickening in the ethmoid and sphenoid sinuses ."}
+{"sent_index": 145, "start_index": 6436, "end_index": 6446, "_text": "IMPRESSION"}
+{"sent_index": 146, "start_index": 6449, "end_index": 6517, "_text": "No new cortical territorial infarction or hemorrhage is identified ."}
+{"sent_index": 147, "start_index": 6518, "end_index": 6636, "_text": "There is decreased intraventricular blood , compared to the previous study , and there are no signs of hydrocephalus ."}
+{"sent_index": 148, "start_index": 6637, "end_index": 6656, "_text": "CHEST ( PORTABLE AP"}
+{"sent_index": 149, "start_index": 6659, "end_index": 6677, "_text": "2014-11-12 9:10 AM"}
+{"sent_index": 150, "start_index": 6678, "end_index": 6697, "_text": "CHEST ( PORTABLE AP"}
+{"sent_index": 151, "start_index": 6700, "end_index": 6730, "_text": "Reason : Fever , f/u infiltrte"}
+{"sent_index": 152, "start_index": 6731, "end_index": 6759, "_text": "UNDERLYING MEDICAL CONDITION"}
+{"sent_index": 153, "start_index": 6762, "end_index": 6837, "_text": "72 yo M with rib fx s/p trauma , failure on previous CXR , now with fever ."}
+{"sent_index": 154, "start_index": 6838, "end_index": 6865, "_text": "REASON FOR THIS EXAMINATION"}
+{"sent_index": 155, "start_index": 6868, "end_index": 6889, "_text": "Fever , f/u infiltrte"}
+{"sent_index": 156, "start_index": 6890, "end_index": 6897, "_text": "HISTORY"}
+{"sent_index": 157, "start_index": 6900, "end_index": 6955, "_text": "Trauma , congestive heart failure , fever , pneumonia ."}
+{"sent_index": 158, "start_index": 6956, "end_index": 7169, "_text": "Portable supine chest radiograph shows improvement in edema compared to studies from four and five days earlier with no significant radiographic change in right upper lobe consolidation consistent with pneumonia ."}
+{"sent_index": 159, "start_index": 7170, "end_index": 7266, "_text": "Some interstitial edema still persists , but there is no central pulmonary vascular congestion ."}
+{"sent_index": 160, "start_index": 7267, "end_index": 7294, "_text": "Cardiac size is unchanged ."}
+{"sent_index": 161, "start_index": 7295, "end_index": 7388, "_text": "The amount of fluid layering at the apices and the pleural spaces appear slightly decreased ."}
+{"sent_index": 162, "start_index": 7389, "end_index": 7433, "_text": "Multiple left-sided rib fractures are seen ."}
+{"sent_index": 163, "start_index": 7434, "end_index": 7554, "_text": "Supporting tubes and lines are in unchanged position and the patient has a single lead pacemaker projected on the left ."}
+{"sent_index": 164, "start_index": 7555, "end_index": 7607, "_text": "Calcification is seen at both carotid bifurcations ."}
+{"sent_index": 165, "start_index": 7608, "end_index": 7618, "_text": "CONCLUSION"}
+{"sent_index": 166, "start_index": 7621, "end_index": 7746, "_text": "Improvement in congestion from edema with no worsening , but no significant improvement , in the right upper lobe pneumonia ."}
+{"sent_index": 167, "start_index": 7747, "end_index": 7797, "_text": "Supporting lines and tubes in unchanged position ."}
+{"sent_index": 168, "start_index": 7798, "end_index": 7819, "_text": "Brief Hospital Course"}
+{"sent_index": 169, "start_index": 7822, "end_index": 7899, "_text": "Admitted to TSICU for subarachnoid hemorrhage and multiple spinal fractures ."}
+{"sent_index": 170, "start_index": 7900, "end_index": 7948, "_text": "Intubated and sedated for desats on 2014-10-27 ."}
+{"sent_index": 171, "start_index": 7949, "end_index": 8008, "_text": "Evaluated by neurosurgery and deemed stable on 2014-10-22 ."}
+{"sent_index": 172, "start_index": 8009, "end_index": 8042, "_text": "CT head remained stable for SAH ."}
+{"sent_index": 173, "start_index": 8043, "end_index": 8134, "_text": "Evaluated by orthopedic spine surgeons with recommendations for soft c-collar for comfort ."}
+{"sent_index": 174, "start_index": 8135, "end_index": 8329, "_text": "In TSICU , developed MRSA pneumonia with question of aspiration , treated Zosyn --> vanc / levo --> then 2 week course of Linazolid with resolution of fevers and decreased pulmonary secretions ."}
+{"sent_index": 175, "start_index": 8330, "end_index": 8388, "_text": "2014-11-11 : Tracheostomy performed without complication ."}
+{"sent_index": 176, "start_index": 8389, "end_index": 8437, "_text": "Patient tolerated decreasing ventillary support."}
+{"sent_index": 177, "start_index": 8438, "end_index": 8510, "_text": "Mental status improved with the discontinuation of his bensodiazapines ."}
+{"sent_index": 178, "start_index": 8511, "end_index": 8555, "_text": "Failed swallow study x 2 in early November ."}
+{"sent_index": 179, "start_index": 8556, "end_index": 8668, "_text": "Decision to continue Dobhoff at rehab given continued clinical improvement and his poor candidacy for G/J tube ."}
+{"sent_index": 180, "start_index": 8669, "end_index": 8712, "_text": "Communicating by speech s/p PMV placement ."}
+{"sent_index": 181, "start_index": 8713, "end_index": 8765, "_text": "Continued in Melrose-J for comfort per orthopedics ."}
+{"sent_index": 182, "start_index": 8766, "end_index": 8818, "_text": "Stable during his course on the surgical Beth Israel"}
+{"sent_index": 183, "start_index": 8819, "end_index": 8847, "_text": "Deaconess Hospital-Needham ."}
+{"sent_index": 184, "start_index": 8848, "end_index": 8910, "_text": "Occasionally required Haldol / ativan at night for agitation ."}
+{"sent_index": 185, "start_index": 8911, "end_index": 9074, "_text": "Progressed adequately with physical / occupational therapy , however was noted to develop an early bilateral upper extermity contracture at the elbows and wrists ."}
+{"sent_index": 186, "start_index": 9075, "end_index": 9135, "_text": "Serial CT head revealed decreased blood through 2014-11-14 ."}
+{"sent_index": 187, "start_index": 9136, "end_index": 9157, "_text": "Discharge Medications"}
+{"sent_index": 188, "start_index": 9160, "end_index": 9254, "_text": "1. Heparin ( Porcine ) 5,000 unit/mL Solution Sig : One ( 1 ) Injection TID ( 3 times a day )."}
+{"sent_index": 189, "start_index": 9255, "end_index": 9324, "_text": "2. Lisinopril 15 mg Tablet Sig : One ( 1 ) Tablet PO DAILY ( Daily )."}
+{"sent_index": 190, "start_index": 9325, "end_index": 9415, "_text": "3. Lansoprazole 30 mg Susp , Delayed Release for Recon Sig : One ( 1 ) PO DAILY ( Daily )."}
+{"sent_index": 191, "start_index": 9416, "end_index": 9516, "_text": "4. Linezolid 600 mg Tablet Sig : One ( 1 ) Tablet PO Q12H ( every 12 hours ): Last dose 2014-11-20 ."}
+{"sent_index": 192, "start_index": 9517, "end_index": 9601, "_text": "5. Metoprolol Tartrate 25 mg Tablet Sig : One ( 1 ) Tablet PO TID ( 3 times a day )."}
+{"sent_index": 193, "start_index": 9602, "end_index": 9670, "_text": "6. Digoxin 125 mcg Tablet Sig : One ( 1 ) Tablet PO DAILY ( Daily )."}
+{"sent_index": 194, "start_index": 9671, "end_index": 9753, "_text": "7. Docusate Sodium 150 mg / 15 mL Liquid Sig : One ( 1 ) PO BID ( 2 times a day )."}
+{"sent_index": 195, "start_index": 9754, "end_index": 9903, "_text": "8. Bisacodyl 5 mg Tablet , Delayed Release ( E.C. ) Sig : Two ( 2 ) Tablet , Delayed Release ( E.C. ) PO DAILY ( Daily ) as needed for constipation ."}
+{"sent_index": 196, "start_index": 9904, "end_index": 10028, "_text": "9. Magnesium Hydroxide 400 mg / 5 mL Suspension Sig : Thirty ( 30 ) ML PO Q6H ( every 6 hours ) as needed for consitpation ."}
+{"sent_index": 197, "start_index": 10029, "end_index": 10050, "_text": "Discharge Disposition"}
+{"sent_index": 198, "start_index": 10053, "end_index": 10066, "_text": "Extended Care"}
+{"sent_index": 199, "start_index": 10067, "end_index": 10075, "_text": "Facility"}
+{"sent_index": 200, "start_index": 10078, "end_index": 10109, "_text": "Children 's Hospital of Waltham"}
+{"sent_index": 201, "start_index": 10110, "end_index": 10129, "_text": "Discharge Diagnosis"}
+{"sent_index": 202, "start_index": 10132, "end_index": 10140, "_text": "s/p Fall"}
+{"sent_index": 203, "start_index": 10141, "end_index": 10205, "_text": "Subarachnoid hemorrhage w/ bilateral intraventricular hemorrhage"}
+{"sent_index": 204, "start_index": 10206, "end_index": 10241, "_text": "Left T1 transverse process fracture"}
+{"sent_index": 205, "start_index": 10242, "end_index": 10297, "_text": "C7 & T1 mimimally displaced transverse process fracture"}
+{"sent_index": 206, "start_index": 10298, "end_index": 10322, "_text": "Left rib fractures 05-22"}
+{"sent_index": 207, "start_index": 10323, "end_index": 10342, "_text": "Discharge Condition"}
+{"sent_index": 208, "start_index": 10345, "end_index": 10351, "_text": "Stable"}
+{"sent_index": 209, "start_index": 10352, "end_index": 10374, "_text": "Discharge Instructions"}
+{"sent_index": 210, "start_index": 10377, "end_index": 10463, "_text": "You must continue to wear your cervical collar for the next 4 weeks ( through 12-11 )."}
+{"sent_index": 211, "start_index": 10464, "end_index": 10521, "_text": "Follow up with Trauma in 3-4 weeks after your discharge ."}
+{"sent_index": 212, "start_index": 10522, "end_index": 10544, "_text": "Follow up Instructions"}
+{"sent_index": 213, "start_index": 10547, "end_index": 10624, "_text": "Call ( 909 ) 566-1185 to schedule appointment in Trauma Clinic in 3-4 weeks ."}
+{"sent_index": 214, "start_index": 10625, "end_index": 10643, "_text": "Follow up with Dr."}
+{"sent_index": 215, "start_index": 10644, "end_index": 10692, "_text": "Topping after your discharge from rehabilitation"}
+{"sent_index": 216, "start_index": 10693, "end_index": 10774, "_text": "Call 887 415 4220 to schedule an appointment with Orthopedics for late November ."}
+{"sent_index": 217, "start_index": 10775, "end_index": 10797, "_text": "David Thomas MD 60-008"}
+{"sent_index": 218, "start_index": 10798, "end_index": 10863, "_text": "Completed by : Russell Anthony Conner MD 87-672 2014-11-21 @ 1110"}
+{"sent_index": 219, "start_index": 10864, "end_index": 10954, "_text": "Signed electronically by : DR. Melissa Higuera on : SUN 2014-11-23 6:13 PM\n( End of Report"}

@@ -1,0 +1,81 @@
+{"sent_index": 0, "start_index": 0, "end_index": 14, "_text": "Admission Date"}
+{"sent_index": 1, "start_index": 17, "end_index": 27, "_text": "2016-04-05"}
+{"sent_index": 2, "start_index": 28, "end_index": 42, "_text": "Discharge Date"}
+{"sent_index": 3, "start_index": 45, "end_index": 55, "_text": "2016-04-11"}
+{"sent_index": 4, "start_index": 56, "end_index": 69, "_text": "Date of Birth"}
+{"sent_index": 5, "start_index": 72, "end_index": 82, "_text": "1948-10-18"}
+{"sent_index": 6, "start_index": 83, "end_index": 86, "_text": "Sex"}
+{"sent_index": 7, "start_index": 89, "end_index": 90, "_text": "M"}
+{"sent_index": 8, "start_index": 91, "end_index": 98, "_text": "Service"}
+{"sent_index": 9, "start_index": 101, "end_index": 123, "_text": "Cardiothoracic Surgery"}
+{"sent_index": 10, "start_index": 124, "end_index": 150, "_text": "HISTORY OF PRESENT ILLNESS"}
+{"sent_index": 11, "start_index": 153, "end_index": 272, "_text": "This is a 67 - year-old male with a history of high cholesterol who was in his usual state of health until 2016-04-03 ."}
+{"sent_index": 12, "start_index": 273, "end_index": 393, "_text": "He was raking leaves on 04-02 and then developed episodes of mid chest pain and burning which radiated to the left arm ."}
+{"sent_index": 13, "start_index": 394, "end_index": 459, "_text": "That night he reportedly stopped breathing and was unresponsive ."}
+{"sent_index": 14, "start_index": 460, "end_index": 538, "_text": "His wife gave him mouth-to-mouth resuscitation and he regained consciousness ."}
+{"sent_index": 15, "start_index": 539, "end_index": 663, "_text": "He presented to an outside hospital with an acute inferior myocardial infarction and was treated with thrombolytic therapy ."}
+{"sent_index": 16, "start_index": 664, "end_index": 708, "_text": "His troponin was 20 and he had EKG changes ."}
+{"sent_index": 17, "start_index": 709, "end_index": 869, "_text": "He underwent catheterization on 2016-04-05 which revealed a left ventricular ejection fraction of 50% , no mitral regurgitation , insufficiency or hypokinesis ."}
+{"sent_index": 18, "start_index": 870, "end_index": 1071, "_text": "Left main coronary artery was narrowed 50-60% , left anterior descending coronary artery 70% proximally , right coronary artery dominant diseased up to 90% proximally in the midportion , 70% distally ."}
+{"sent_index": 19, "start_index": 1072, "end_index": 1153, "_text": "The left circumflex coronary artery was 50% proximally , 90% obtuse marginal #3 ."}
+{"sent_index": 20, "start_index": 1154, "end_index": 1174, "_text": "PAST MEDICAL HISTORY"}
+{"sent_index": 21, "start_index": 1177, "end_index": 1209, "_text": "1. History of high cholesterol ."}
+{"sent_index": 22, "start_index": 1210, "end_index": 1231, "_text": "2. Hemorrhoidectomy ."}
+{"sent_index": 23, "start_index": 1232, "end_index": 1252, "_text": "3. Carotid disease ."}
+{"sent_index": 24, "start_index": 1253, "end_index": 1272, "_text": "MEDICATIONS AT HOME"}
+{"sent_index": 25, "start_index": 1275, "end_index": 1301, "_text": "1. Lipitor 20 mg p.o. q.d."}
+{"sent_index": 26, "start_index": 1302, "end_index": 1329, "_text": "2. Aspirin 325 mg p.o. q.d."}
+{"sent_index": 27, "start_index": 1330, "end_index": 1360, "_text": "3. Lopressor 25 mg p.o. b.i.d."}
+{"sent_index": 28, "start_index": 1361, "end_index": 1433, "_text": "4. Plavix 75 mg p.o. q.d. which has been discontinued prior to surgery ."}
+{"sent_index": 29, "start_index": 1434, "end_index": 1448, "_text": "FAMILY HISTORY"}
+{"sent_index": 30, "start_index": 1451, "end_index": 1489, "_text": "Positive for coronary artery disease ."}
+{"sent_index": 31, "start_index": 1490, "end_index": 1504, "_text": "SOCIAL HISTORY"}
+{"sent_index": 32, "start_index": 1507, "end_index": 1522, "_text": "No cigarettes ."}
+{"sent_index": 33, "start_index": 1523, "end_index": 1543, "_text": "PHYSICAL EXAMINATION"}
+{"sent_index": 34, "start_index": 1546, "end_index": 1627, "_text": "In general the patient was in no acute distress , afebrile , vital signs stable ."}
+{"sent_index": 35, "start_index": 1628, "end_index": 1633, "_text": "HEENT"}
+{"sent_index": 36, "start_index": 1636, "end_index": 1664, "_text": "Normocephalic , atraumatic ."}
+{"sent_index": 37, "start_index": 1665, "end_index": 1709, "_text": "Pupils equal , round and reactive to light ."}
+{"sent_index": 38, "start_index": 1710, "end_index": 1740, "_text": "Extraocular movements intact ."}
+{"sent_index": 39, "start_index": 1741, "end_index": 1761, "_text": "Nasopharynx benign ."}
+{"sent_index": 40, "start_index": 1762, "end_index": 1766, "_text": "Neck"}
+{"sent_index": 41, "start_index": 1769, "end_index": 1840, "_text": "Supple with full range of motion , no lymphadenopathy nor thyromegaly ."}
+{"sent_index": 42, "start_index": 1841, "end_index": 1871, "_text": "Carotids were 1+ bilaterally ."}
+{"sent_index": 43, "start_index": 1872, "end_index": 1903, "_text": "Positive right carotid bruits ."}
+{"sent_index": 44, "start_index": 1904, "end_index": 1909, "_text": "Lungs"}
+{"sent_index": 45, "start_index": 1912, "end_index": 1947, "_text": "Clear to auscultation bilaterally ."}
+{"sent_index": 46, "start_index": 1948, "end_index": 1962, "_text": "Cardiovascular"}
+{"sent_index": 47, "start_index": 1965, "end_index": 2003, "_text": "Regular rate and rhythm , no murmurs ."}
+{"sent_index": 48, "start_index": 2004, "end_index": 2011, "_text": "Abdomen"}
+{"sent_index": 49, "start_index": 2014, "end_index": 2107, "_text": "Positive bowel sounds , soft , nontender , nondistended , no masses , no hepatosplenomegaly ."}
+{"sent_index": 50, "start_index": 2108, "end_index": 2160, "_text": "Extremities : Without cyanosis , clubbing or edema ."}
+{"sent_index": 51, "start_index": 2161, "end_index": 2200, "_text": "Pulses were 2+ bilaterally throughout ."}
+{"sent_index": 52, "start_index": 2201, "end_index": 2211, "_text": "Neurologic"}
+{"sent_index": 53, "start_index": 2214, "end_index": 2224, "_text": "Nonfocal ."}
+{"sent_index": 54, "start_index": 2225, "end_index": 2240, "_text": "HOSPITAL COURSE"}
+{"sent_index": 55, "start_index": 2243, "end_index": 2611, "_text": "The patient was admitted to the hospital and on 2016-04-06 the patient underwent coronary artery bypass grafting x 4 with left internal mammary artery to the left anterior descending coronary artery , saphenous vein graft to the diagonal , saphenous vein graft to obtuse marginal , saphenous vein graft to right coronary artery , posterior descending coronary artery ."}
+{"sent_index": 56, "start_index": 2612, "end_index": 2750, "_text": "The patient appeared to have tolerated the procedure and was transferred to the cardiac intensive care unit for postoperative management ."}
+{"sent_index": 57, "start_index": 2751, "end_index": 2784, "_text": "He was started on beta blockers ."}
+{"sent_index": 58, "start_index": 2785, "end_index": 2910, "_text": "The patient had pacing wires and chest tubes in place , both of which over the course of his stay were removed successfully ."}
+{"sent_index": 59, "start_index": 2911, "end_index": 3104, "_text": "The patient did well postoperatively and was transported to the regular cardiac surgery floor where he tolerated a regular diet , ambulated well , did well with his activities of daily living ."}
+{"sent_index": 60, "start_index": 3105, "end_index": 3150, "_text": "He was seen by physical therapy and cleared ."}
+{"sent_index": 61, "start_index": 3151, "end_index": 3388, "_text": "They requested that he follow up in three to five weeks for endurance training , however then physical therapy followed him a number of times afterward and decided that he was in good condition and did not need further physical therapy ."}
+{"sent_index": 62, "start_index": 3389, "end_index": 3497, "_text": "On 2016-04-11 the patient was in good condition and he is being discharged on a regular heart-healthy diet ."}
+{"sent_index": 63, "start_index": 3498, "end_index": 3622, "_text": "He may observe regular activity although he should avoid strenuous activity and should not drive while on pain medications ."}
+{"sent_index": 64, "start_index": 3623, "end_index": 3674, "_text": "He should follow up with Dr. Dushaj in four weeks ."}
+{"sent_index": 65, "start_index": 3675, "end_index": 3816, "_text": "He should follow up with his cardiologist in two to three weeks and he should follow up with his primary care physician in one to two weeks ."}
+{"sent_index": 66, "start_index": 3817, "end_index": 3838, "_text": "DISCHARGE MEDICATIONS"}
+{"sent_index": 67, "start_index": 3841, "end_index": 3868, "_text": "1. Lasix 20 mg p.o. q. 12 ."}
+{"sent_index": 68, "start_index": 3869, "end_index": 3901, "_text": "2. Potassium 20 mEq p.o. q. 12 ."}
+{"sent_index": 69, "start_index": 3902, "end_index": 3930, "_text": "3. Colace 100 mg p.o. b.i.d."}
+{"sent_index": 70, "start_index": 3931, "end_index": 3958, "_text": "4. Aspirin 325 mg p.o. q.d."}
+{"sent_index": 71, "start_index": 3959, "end_index": 4006, "_text": "5. Percocet 1-2 tablets p.o. q. 4 p.r.n. pain ."}
+{"sent_index": 72, "start_index": 4007, "end_index": 4039, "_text": "6. Lopressor 12.5 mg p.o. b.i.d."}
+{"sent_index": 73, "start_index": 4040, "end_index": 4072, "_text": "Alexander S. Young , M.D. 29-418"}
+{"sent_index": 74, "start_index": 4073, "end_index": 4084, "_text": "Dictated By"}
+{"sent_index": 75, "start_index": 4087, "end_index": 4107, "_text": "Lila I Morgan , M.D."}
+{"sent_index": 76, "start_index": 4108, "end_index": 4118, "_text": "MEDQUIST36"}
+{"sent_index": 77, "start_index": 4119, "end_index": 4139, "_text": "D : 2016-04-11 10:48"}
+{"sent_index": 78, "start_index": 4140, "end_index": 4160, "_text": "T : 2016-04-11 10:59"}
+{"sent_index": 79, "start_index": 4161, "end_index": 4173, "_text": "JOB #: 75073"}
+{"sent_index": 80, "start_index": 4174, "end_index": 4259, "_text": "Signed electronically by : DR. Jose Kines on : TUE 2016-04-12 7:03 AM\n( End of Report"}

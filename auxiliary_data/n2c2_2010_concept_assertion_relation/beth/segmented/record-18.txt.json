@@ -1,0 +1,139 @@
+{"sent_index": 0, "start_index": 0, "end_index": 27, "_text": "Admission Date :\n2012-05-21"}
+{"sent_index": 1, "start_index": 28, "end_index": 42, "_text": "Discharge Date"}
+{"sent_index": 2, "start_index": 45, "end_index": 55, "_text": "2012-05-25"}
+{"sent_index": 3, "start_index": 56, "end_index": 69, "_text": "Date of Birth"}
+{"sent_index": 4, "start_index": 72, "end_index": 82, "_text": "1957-01-05"}
+{"sent_index": 5, "start_index": 83, "end_index": 86, "_text": "Sex"}
+{"sent_index": 6, "start_index": 89, "end_index": 90, "_text": "F"}
+{"sent_index": 7, "start_index": 91, "end_index": 98, "_text": "Service"}
+{"sent_index": 8, "start_index": 101, "end_index": 109, "_text": "CMED CCU"}
+{"sent_index": 9, "start_index": 110, "end_index": 136, "_text": "HISTORY OF PRESENT ILLNESS"}
+{"sent_index": 10, "start_index": 139, "end_index": 350, "_text": "This is a 55-year-old female with multiple prior admissions for pneumonia , COPD , asthma exacerbation , over 3 weeks of upper respiratory like infection unremitting with increased nebulizer treatments at home ."}
+{"sent_index": 11, "start_index": 351, "end_index": 451, "_text": "The patient saw her PCP and was known to have an oxygen saturation of 82 to 85 percent on room air ."}
+{"sent_index": 12, "start_index": 452, "end_index": 498, "_text": "She was referred to the Emergency Department ."}
+{"sent_index": 13, "start_index": 499, "end_index": 588, "_text": "In the Emergency Department , the patient received Zithromax , ceftriaxone , and Flagyl ."}
+{"sent_index": 14, "start_index": 589, "end_index": 663, "_text": "Chest x-ray was remarkable for a questionable left lower lobe infiltrate ."}
+{"sent_index": 15, "start_index": 664, "end_index": 770, "_text": "The patient received nebulizer treatment with oxygen saturations increasing up to 98 percent on room air ."}
+{"sent_index": 16, "start_index": 771, "end_index": 791, "_text": "PAST MEDICAL HISTORY"}
+{"sent_index": 17, "start_index": 794, "end_index": 842, "_text": "Asthma / COPD on BiPAP , history of intubation ."}
+{"sent_index": 18, "start_index": 843, "end_index": 869, "_text": "Restrictive lung disease ."}
+{"sent_index": 19, "start_index": 870, "end_index": 924, "_text": "Chronic inflammatory demyelinating polyradiculopathy ."}
+{"sent_index": 20, "start_index": 925, "end_index": 951, "_text": "Gastritis and duodenitis ."}
+{"sent_index": 21, "start_index": 952, "end_index": 982, "_text": "Question of Tyrone esophagus ."}
+{"sent_index": 22, "start_index": 983, "end_index": 1007, "_text": "Chronic abdominal pain ."}
+{"sent_index": 23, "start_index": 1008, "end_index": 1028, "_text": "Neurogenic bladder ."}
+{"sent_index": 24, "start_index": 1029, "end_index": 1052, "_text": "Chronic muscle spasms ."}
+{"sent_index": 25, "start_index": 1053, "end_index": 1120, "_text": "Coronary artery disease status post negative stress echo on 10-12 ."}
+{"sent_index": 26, "start_index": 1121, "end_index": 1141, "_text": "History of syncope ."}
+{"sent_index": 27, "start_index": 1142, "end_index": 1165, "_text": "Adrenal insufficiency ."}
+{"sent_index": 28, "start_index": 1166, "end_index": 1188, "_text": "Hypercholesterolemia ."}
+{"sent_index": 29, "start_index": 1189, "end_index": 1213, "_text": "Depression and anxiety ."}
+{"sent_index": 30, "start_index": 1214, "end_index": 1231, "_text": "Hyperthyroidism ."}
+{"sent_index": 31, "start_index": 1232, "end_index": 1248, "_text": "IgG deficiency ."}
+{"sent_index": 32, "start_index": 1249, "end_index": 1295, "_text": "Status post cholecystectomy and appendectomy ."}
+{"sent_index": 33, "start_index": 1296, "end_index": 1323, "_text": "Anemia of chronic disease ."}
+{"sent_index": 34, "start_index": 1324, "end_index": 1395, "_text": "ALLERGIES :\nAZMACORT , CLINDAMYCIN , VERSED , FENTANYL , and MORPHINE ."}
+{"sent_index": 35, "start_index": 1396, "end_index": 1410, "_text": "SOCIAL HISTORY"}
+{"sent_index": 36, "start_index": 1413, "end_index": 1486, "_text": "History of 20-to-30-pack-year smoking , quit approximately 15 years ago ."}
+{"sent_index": 37, "start_index": 1487, "end_index": 1523, "_text": "She denies any alcohol or drug use ."}
+{"sent_index": 38, "start_index": 1524, "end_index": 1573, "_text": "Married with children , wheelchair bound mostly ."}
+{"sent_index": 39, "start_index": 1574, "end_index": 1594, "_text": "PHYSICAL EXAMINATION"}
+{"sent_index": 40, "start_index": 1597, "end_index": 1734, "_text": "From admission , vital signs 98.3 , blood pressure 128/74 , 68 to 112 is her heart rate , respiratory rate 24 , 100 percent on room air ."}
+{"sent_index": 41, "start_index": 1735, "end_index": 1742, "_text": "General"}
+{"sent_index": 42, "start_index": 1745, "end_index": 1811, "_text": "She is a chronically ill-appearing female , in no acute distress ."}
+{"sent_index": 43, "start_index": 1812, "end_index": 1817, "_text": "HEENT"}
+{"sent_index": 44, "start_index": 1820, "end_index": 1828, "_text": "Benign ."}
+{"sent_index": 45, "start_index": 1829, "end_index": 1841, "_text": "Cardiac exam"}
+{"sent_index": 46, "start_index": 1844, "end_index": 1852, "_text": "Normal ."}
+{"sent_index": 47, "start_index": 1853, "end_index": 1867, "_text": "Pulmonary exam"}
+{"sent_index": 48, "start_index": 1870, "end_index": 1916, "_text": "Diffuse bronchial breath sounds , no wheezes ."}
+{"sent_index": 49, "start_index": 1917, "end_index": 1931, "_text": "Abdominal exam"}
+{"sent_index": 50, "start_index": 1934, "end_index": 1942, "_text": "Benign ."}
+{"sent_index": 51, "start_index": 1943, "end_index": 1957, "_text": "Extremity exam"}
+{"sent_index": 52, "start_index": 1960, "end_index": 1970, "_text": "No edema ."}
+{"sent_index": 53, "start_index": 1971, "end_index": 2127, "_text": "Left lower extremity and left upper extremity weaker at 3/5 compared to right upper extremity and right lower extremity , chronic according to the patient ."}
+{"sent_index": 54, "start_index": 2128, "end_index": 2139, "_text": "MEDICATIONS"}
+{"sent_index": 55, "start_index": 2142, "end_index": 2154, "_text": "On admission"}
+{"sent_index": 56, "start_index": 2155, "end_index": 2179, "_text": "1. Vitamin D 400 mg q.d."}
+{"sent_index": 57, "start_index": 2180, "end_index": 2202, "_text": "2. Levoxyl 50 mcg q.d."}
+{"sent_index": 58, "start_index": 2203, "end_index": 2232, "_text": "3. Baclofen 20 mg p.o. t.i.d."}
+{"sent_index": 59, "start_index": 2233, "end_index": 2263, "_text": "4. Florinef 0.1 mg p.o. q.a.m."}
+{"sent_index": 60, "start_index": 2264, "end_index": 2287, "_text": "5. Klonopin 2 mg t.i.d."}
+{"sent_index": 61, "start_index": 2288, "end_index": 2310, "_text": "6. BuSpar 10 mg t.i.d."}
+{"sent_index": 62, "start_index": 2311, "end_index": 2334, "_text": "7. Zanaflex 8 mg q.4 h."}
+{"sent_index": 63, "start_index": 2336, "end_index": 2360, "_text": "8. Oxazepam 30 mg p.r.n."}
+{"sent_index": 64, "start_index": 2361, "end_index": 2386, "_text": "9. Singulair 10 mg q.p.m."}
+{"sent_index": 65, "start_index": 2387, "end_index": 2411, "_text": "10. Lipitor 10 mg q.p.m."}
+{"sent_index": 66, "start_index": 2412, "end_index": 2434, "_text": "11. Ativan 2 mg p.r.n."}
+{"sent_index": 67, "start_index": 2435, "end_index": 2465, "_text": "12. Protonix 20 mg p.o. b.i.d."}
+{"sent_index": 68, "start_index": 2466, "end_index": 2492, "_text": "13. Sucralfate 2 mg b.i.d."}
+{"sent_index": 69, "start_index": 2493, "end_index": 2534, "_text": "14. Albuterol nebulizer q.03-14 h. p.r.n."}
+{"sent_index": 70, "start_index": 2535, "end_index": 2573, "_text": "15. Pamidronate 30 mg IV every month ."}
+{"sent_index": 71, "start_index": 2574, "end_index": 2613, "_text": "HOSPITAL COURSE :\nShortness of breath ."}
+{"sent_index": 72, "start_index": 2614, "end_index": 2805, "_text": "The patient was maintained on albuterol nebulizer treatments and Ipratropium nebulizer treatments , as this was apparently thought to be related to her chronic obstructive pulmonary disease ."}
+{"sent_index": 73, "start_index": 2806, "end_index": 2990, "_text": "Given the presence of consolidation on chest x-ray , however , and previous history of pneumonia , the patient was maintained on antibiotics of Zithromax 500 mg daily and ceftriaxone ."}
+{"sent_index": 74, "start_index": 2991, "end_index": 3102, "_text": "The patient was also started on Solu-Medrol IV for active airway disease component of her shortness of breath ."}
+{"sent_index": 75, "start_index": 3103, "end_index": 3250, "_text": "The patient was maintained on supplemental oxygen and sputum production was maximized with the help of an Acapella device and respiratory therapy ."}
+{"sent_index": 76, "start_index": 3251, "end_index": 3325, "_text": "Mucomyst was also considered as a mucolytic component towards secretions ."}
+{"sent_index": 77, "start_index": 3326, "end_index": 3349, "_text": "Adrenal insufficiency ."}
+{"sent_index": 78, "start_index": 3350, "end_index": 3405, "_text": "The patient was maintained on IV Solu - Medrol 60 mg q."}
+{"sent_index": 79, "start_index": 3406, "end_index": 3410, "_text": "8 h."}
+{"sent_index": 80, "start_index": 3411, "end_index": 3427, "_text": "Chest soreness ."}
+{"sent_index": 81, "start_index": 3428, "end_index": 3504, "_text": "The patient describes chest discomfort without any significant EKG changes ."}
+{"sent_index": 82, "start_index": 3505, "end_index": 3568, "_text": "The patient was maintained on Percocet p.r.n. for pain relief ."}
+{"sent_index": 83, "start_index": 3569, "end_index": 3620, "_text": "This was thought to be related to musculoskeletal ."}
+{"sent_index": 84, "start_index": 3621, "end_index": 3684, "_text": "There was no evidence of acute rib factors on her chest x-ray ."}
+{"sent_index": 85, "start_index": 3685, "end_index": 3689, "_text": "GI ."}
+{"sent_index": 86, "start_index": 3690, "end_index": 3764, "_text": "The patient was maintained on PPI for reflux disease and known gastritis ."}
+{"sent_index": 87, "start_index": 3765, "end_index": 3771, "_text": "CMED ."}
+{"sent_index": 88, "start_index": 3772, "end_index": 3876, "_text": "The patient has a history of neurogenic bladder and , therefore , she required a Foley catheterization ."}
+{"sent_index": 89, "start_index": 3877, "end_index": 3888, "_text": "Endocrine ."}
+{"sent_index": 90, "start_index": 3889, "end_index": 3962, "_text": "The patient was on Levoxyl at home as her home dose for hyperthyroidism ."}
+{"sent_index": 91, "start_index": 3963, "end_index": 3983, "_text": "CMED CSRU transfer ."}
+{"sent_index": 92, "start_index": 3984, "end_index": 4163, "_text": "The patient was transferred on the evening of 2012-05-22 to the ICU given persistent carbon dioxide retention and respiratory acidosis and the intermittent mental status changes ."}
+{"sent_index": 93, "start_index": 4164, "end_index": 4246, "_text": "The patient had had ABG on the floor , which prompted her to transfer to the ICU ."}
+{"sent_index": 94, "start_index": 4247, "end_index": 4303, "_text": "Her pH was 7.23 , PCO2 73 , PO2 146 on a nonrebreather ."}
+{"sent_index": 95, "start_index": 4304, "end_index": 4423, "_text": "The patient had BiPAP initiated once she reached the unit , but did not tolerate it , becoming apneic and obstructing ."}
+{"sent_index": 96, "start_index": 4424, "end_index": 4519, "_text": "The patient was switched to 2 liters nasal cannula and oxygen saturating at 98 to 100 percent ."}
+{"sent_index": 97, "start_index": 4520, "end_index": 4672, "_text": "After BiPAP was initiated , the patient became hypotensive down to 75/28 and bradycardiac , responding to 3 fluid boluses over the course of the night ."}
+{"sent_index": 98, "start_index": 4673, "end_index": 4845, "_text": "The patient was started on Florinef for concern of adrenal insufficiency ; however , she was hemodynamically stable that morning and was transferred back out to the floor ."}
+{"sent_index": 99, "start_index": 4846, "end_index": 4936, "_text": "It was thought that the patient may have been mucous plugging during her stay in the ICU ."}
+{"sent_index": 100, "start_index": 4937, "end_index": 4950, "_text": "Hematologic ."}
+{"sent_index": 101, "start_index": 4951, "end_index": 5136, "_text": "The patient has a history of high MCV and megaloblastic cells on smear in the setting of anemia ; question B12 deficiency , the patient also has a history of borderline low B12 levels ."}
+{"sent_index": 102, "start_index": 5137, "end_index": 5227, "_text": "The patient was diagnosed for B12 deficiency due to her long history of poor p.o. intake ."}
+{"sent_index": 103, "start_index": 5228, "end_index": 5316, "_text": "Methylmalonic acid levels were sent , the results are pending at the time of discharge ."}
+{"sent_index": 104, "start_index": 5317, "end_index": 5336, "_text": "DISCHARGE DIAGNOSES"}
+{"sent_index": 105, "start_index": 5339, "end_index": 5368, "_text": "Asthma flare and bronchitis ."}
+{"sent_index": 106, "start_index": 5369, "end_index": 5408, "_text": "Chronic obstructive pulmonary disease ."}
+{"sent_index": 107, "start_index": 5409, "end_index": 5442, "_text": "Demyelinating polyradiculopathy ."}
+{"sent_index": 108, "start_index": 5443, "end_index": 5461, "_text": "Anxiety disorder ."}
+{"sent_index": 109, "start_index": 5462, "end_index": 5486, "_text": "Chronic abdominal pain ."}
+{"sent_index": 110, "start_index": 5487, "end_index": 5503, "_text": "DISCHARGE STATUS"}
+{"sent_index": 111, "start_index": 5506, "end_index": 5546, "_text": "The patient will be discharged to home ."}
+{"sent_index": 112, "start_index": 5547, "end_index": 5566, "_text": "DISCHARGE CONDITION"}
+{"sent_index": 113, "start_index": 5569, "end_index": 5622, "_text": "The patient is stable without an oxygen requirement ."}
+{"sent_index": 114, "start_index": 5623, "end_index": 5728, "_text": "DISCHARGE FOLLOWUP :\nThe patient is instructed to followup with her doctor in 1 to 2 weeks of discharge ."}
+{"sent_index": 115, "start_index": 5729, "end_index": 5750, "_text": "DISCHARGE MEDICATIONS"}
+{"sent_index": 116, "start_index": 5753, "end_index": 5773, "_text": "1. Cholecalciferol ."}
+{"sent_index": 117, "start_index": 5774, "end_index": 5788, "_text": "2. Vitamin D ."}
+{"sent_index": 118, "start_index": 5789, "end_index": 5822, "_text": "3. Levothyroxine 50 mcg p.o. q.d."}
+{"sent_index": 119, "start_index": 5823, "end_index": 5852, "_text": "4. Baclofen 10 mg p.o. t.i.d."}
+{"sent_index": 120, "start_index": 5853, "end_index": 5883, "_text": "5. Clonazepam 1 mg p.o. t.i.d."}
+{"sent_index": 121, "start_index": 5884, "end_index": 5914, "_text": "6. Buspirone 10 mg p.o. t.i.d."}
+{"sent_index": 122, "start_index": 5915, "end_index": 5954, "_text": "7. Montelukast sodium 10 mg p.o. q.h.s."}
+{"sent_index": 123, "start_index": 5955, "end_index": 5988, "_text": "8. Atorvastatin 10 mg p.o. q.h.s."}
+{"sent_index": 124, "start_index": 5989, "end_index": 6016, "_text": "9. Protonix 40 mg p.o. q.d."}
+{"sent_index": 125, "start_index": 6017, "end_index": 6091, "_text": "10. Albuterol sulfate solution q.05-15 h. p.r.n. for shortness of breath ."}
+{"sent_index": 126, "start_index": 6092, "end_index": 6123, "_text": "11. Tizanidine 8 mg p.o. q.6 h."}
+{"sent_index": 127, "start_index": 6124, "end_index": 6148, "_text": "12. Acetaminophen p.r.n."}
+{"sent_index": 128, "start_index": 6149, "end_index": 6182, "_text": "13. Prednisone taper for 3 days ."}
+{"sent_index": 129, "start_index": 6183, "end_index": 6235, "_text": "14. Levofloxacin 500 mg p.o. q.d. for 10 more days ."}
+{"sent_index": 130, "start_index": 6236, "end_index": 6273, "_text": "15. Florinef Acetate 0.1 mg p.o. q.d."}
+{"sent_index": 131, "start_index": 6274, "end_index": 6300, "_text": "James Grunow , M.D. 53-506"}
+{"sent_index": 132, "start_index": 6301, "end_index": 6312, "_text": "Dictated By"}
+{"sent_index": 133, "start_index": 6315, "end_index": 6339, "_text": "Elizabeth A Eaton , M.D."}
+{"sent_index": 134, "start_index": 6340, "end_index": 6350, "_text": "MEDQUIST36"}
+{"sent_index": 135, "start_index": 6351, "end_index": 6374, "_text": "D : 2012-08-01 12:27:33"}
+{"sent_index": 136, "start_index": 6375, "end_index": 6398, "_text": "T : 2012-08-01 20:27:59"}
+{"sent_index": 137, "start_index": 6399, "end_index": 6411, "_text": "Job #:\n33698"}
+{"sent_index": 138, "start_index": 6412, "end_index": 6506, "_text": "Signed electronically by : DR. Kenneth Wilford on : Maxine 2012-08-16 12:22 PM\n( End of Report"}

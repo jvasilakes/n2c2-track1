@@ -1,0 +1,60 @@
+T0	problem 3382 3399	INCREASED REDNESS
+A0	Assertion T0 hypothetical
+T1	problem 3296 3305	INFECTION
+A1	Assertion T1 hypothetical
+T2	problem 3316 3322	FEVERS
+A2	Assertion T2 hypothetical
+T3	problem 3325 3331	CHILLS
+A3	Assertion T3 hypothetical
+T4	problem 3402 3416	INCREASED PAIN
+A4	Assertion T4 hypothetical
+T5	problem 3334 3379	PURULENT DISCHARGE FROM WOUND / INCISION SITE
+A5	Assertion T5 hypothetical
+T6	problem 3784 3789	WOUND
+A6	Assertion T6 present
+T7	problem 3668 3681	INCISION SITE
+A7	Assertion T7 present
+T8	problem 3917 3926	HER WOUND
+A8	Assertion T8 present
+T9	problem 1165 1173	CYANOSIS
+A9	Assertion T9 absent
+T10	problem 886 900	ACUTE DISTRESS
+A10	Assertion T10 absent
+T11	problem 661 677	BIPOLAR DISORDER
+A11	Assertion T11 present
+T12	problem 204 219	ACQUIRED DEFECT
+A12	Assertion T12 present
+T13	problem 844 852	AFEBRILE
+A13	Assertion T13 absent
+T14	problem 633 651	MENTAL RETARDATION
+A14	Assertion T14 present
+T15	problem 488 552	AN AQUIRED DEFECT OF THE RIGHT NASAL ALA AND MEDIAL CHEEK REGION
+A15	Assertion T15 present
+T16	problem 1113 1123	NON-TENDER
+A16	Assertion T16 absent
+T17	problem 652 660	DIABETES
+A17	Assertion T17 present
+T18	problem 559 579	BASAL CELL CARCINOMA
+A18	Assertion T18 present
+T19	problem 957 992	5 CM CIRCULAR FULL THICKNESS DEFECT
+A19	Assertion T19 present
+T20	problem 1157 1162	EDEMA
+A20	Assertion T20 absent
+T21	problem 442 459	MENTALLY RETARDED
+A21	Assertion T21 present
+T22	problem 1126 1139	NON-DISTENDED
+A22	Assertion T22 absent
+T23	problem 3274 3292	SIGNS AND SYMPTOMS
+A23	Assertion T23 hypothetical
+T24	problem 3042 3100	AQUIRED DEFORMITY OF THE RIGHT ALA / NOSE AND MEDIAL CHEEK
+A24	Assertion T24 present
+T25	problem 2385 2397	constipation
+A25	Assertion T25 hypothetical
+T26	problem 1599 1608	HER WOUND
+A26	Assertion T26 present
+T27	problem 1658 1667	INFECTION
+A27	Assertion T27 absent
+T28	problem 1671 1680	BREAKDOWN
+A28	Assertion T28 absent
+T29	problem 1517 1525	AFEBRILE
+A29	Assertion T29 absent

@@ -1,0 +1,63 @@
+{"sent_index": 0, "start_index": 0, "end_index": 27, "_text": "Admission Date :\n2009-05-01"}
+{"sent_index": 1, "start_index": 28, "end_index": 42, "_text": "Discharge Date"}
+{"sent_index": 2, "start_index": 45, "end_index": 58, "_text": "Date of Birth"}
+{"sent_index": 3, "start_index": 61, "end_index": 71, "_text": "1969-05-19"}
+{"sent_index": 4, "start_index": 72, "end_index": 75, "_text": "Sex"}
+{"sent_index": 5, "start_index": 78, "end_index": 79, "_text": "M"}
+{"sent_index": 6, "start_index": 80, "end_index": 87, "_text": "Service"}
+{"sent_index": 7, "start_index": 90, "end_index": 97, "_text": "Surgery"}
+{"sent_index": 8, "start_index": 98, "end_index": 124, "_text": "HISTORY OF PRESENT ILLNESS"}
+{"sent_index": 9, "start_index": 127, "end_index": 271, "_text": "The patient is a 39 year-old gentleman admitted on 2009-05-01 to the Jewish Memorial Hospital referred from South Cove Community Health Center ."}
+{"sent_index": 10, "start_index": 272, "end_index": 448, "_text": "He is a 39 year-old gentleman with hyperlipidemia and smoking who presented with acute onset of chest pain since five in the morning with radiation to the left arm and nausea ."}
+{"sent_index": 11, "start_index": 449, "end_index": 482, "_text": "Symptoms resolved spontaneously ."}
+{"sent_index": 12, "start_index": 483, "end_index": 723, "_text": "He was taken to the\nCath Lab at the Pinewood , Norfolk that evening where a stent procedure to the RCA was complicated by guidewire entrapment inside of a stent requiring CT surgery to do a thoracotomy with bypass and excision of the wire ."}
+{"sent_index": 13, "start_index": 724, "end_index": 845, "_text": "The case was complicated by an episode of coffee ground emesis and a bleed from femoral access site prior to CT surgery ."}
+{"sent_index": 14, "start_index": 846, "end_index": 952, "_text": "Gastroenterology was consulted and they recommended Protonix and felt it was due to peptic ulcer disease ."}
+{"sent_index": 15, "start_index": 953, "end_index": 973, "_text": "PAST MEDICAL HISTORY"}
+{"sent_index": 16, "start_index": 976, "end_index": 992, "_text": "1. Hepatitis B ."}
+{"sent_index": 17, "start_index": 993, "end_index": 1018, "_text": "2. Hypercholesterolemia ."}
+{"sent_index": 18, "start_index": 1019, "end_index": 1044, "_text": "3. Fatty liver resolved ."}
+{"sent_index": 19, "start_index": 1045, "end_index": 1064, "_text": "MEDICATIONS AT HOME"}
+{"sent_index": 20, "start_index": 1067, "end_index": 1106, "_text": "Relatively unknown other than Lipitor ."}
+{"sent_index": 21, "start_index": 1107, "end_index": 1116, "_text": "ALLERGIES"}
+{"sent_index": 22, "start_index": 1119, "end_index": 1151, "_text": "He had no known drug allergies ."}
+{"sent_index": 23, "start_index": 1152, "end_index": 1166, "_text": "SOCIAL HISTORY"}
+{"sent_index": 24, "start_index": 1169, "end_index": 1197, "_text": "He smokes one pack per day ."}
+{"sent_index": 25, "start_index": 1198, "end_index": 1221, "_text": "He works as a jeweler ."}
+{"sent_index": 26, "start_index": 1222, "end_index": 1254, "_text": "He lives at home with his wife ."}
+{"sent_index": 27, "start_index": 1255, "end_index": 1269, "_text": "FAMILY HISTORY"}
+{"sent_index": 28, "start_index": 1272, "end_index": 1317, "_text": "Not significant for coronary artery disease ."}
+{"sent_index": 29, "start_index": 1318, "end_index": 1401, "_text": "Please note the patient is only Caucasian speaking and information is second hand ."}
+{"sent_index": 30, "start_index": 1402, "end_index": 1417, "_text": "HOSPITAL COURSE"}
+{"sent_index": 31, "start_index": 1420, "end_index": 1488, "_text": "The patient was diagnosed as having an acute myocardial infarction ."}
+{"sent_index": 32, "start_index": 1489, "end_index": 1666, "_text": "The patient was taken emergently to the operating room on 2009-05-02 for his CABG , right coronary endarterectomy , removal of RCA stents and retrieval of the aortic guidewire ."}
+{"sent_index": 33, "start_index": 1667, "end_index": 1830, "_text": "Postoperatively he did well and was transferred to the Cardiac Surgery Intensive Care Unit where he was on pressor support of Neo-Synephrine and he was extubated ."}
+{"sent_index": 34, "start_index": 1831, "end_index": 1890, "_text": "The patient slowly weaned off Neo-Synephrine as tolerated ."}
+{"sent_index": 35, "start_index": 1891, "end_index": 1938, "_text": "He was transferred to the floor on 2009-05-04 ."}
+{"sent_index": 36, "start_index": 1939, "end_index": 1977, "_text": "His chest tube had been discontinued ."}
+{"sent_index": 37, "start_index": 1978, "end_index": 2098, "_text": "Upon arrival to the floor the patient 's wires were discontinued on 2009-05-05 and his Foley catheter was discontinued ."}
+{"sent_index": 38, "start_index": 2099, "end_index": 2141, "_text": "The patient was seen by Physical Therapy ."}
+{"sent_index": 39, "start_index": 2142, "end_index": 2251, "_text": "His electrolytes were repleted and the patient was discharged home on 2009-05-06 after tolerating a level V ."}
+{"sent_index": 40, "start_index": 2252, "end_index": 2297, "_text": "MEDICATIONS : His prescriptions shall include"}
+{"sent_index": 41, "start_index": 2298, "end_index": 2333, "_text": "1. Lopressor 25 milligrams po bid ."}
+{"sent_index": 42, "start_index": 2334, "end_index": 2368, "_text": "2. Lipitor 20 milligrams po q HS ."}
+{"sent_index": 43, "start_index": 2369, "end_index": 2419, "_text": "3. Niferex 150 milligrams caplet one cap per day ."}
+{"sent_index": 44, "start_index": 2420, "end_index": 2456, "_text": "4. Protonix 40 milligrams po q day ."}
+{"sent_index": 45, "start_index": 2457, "end_index": 2490, "_text": "5. Colace 100 milligrams po bid ."}
+{"sent_index": 46, "start_index": 2491, "end_index": 2545, "_text": "6. Percocet one to two tablets q four H prn for pain ."}
+{"sent_index": 47, "start_index": 2546, "end_index": 2571, "_text": "He will get 60 of those ."}
+{"sent_index": 48, "start_index": 2572, "end_index": 2625, "_text": "7. Plavix 75 milligrams po q day times three months ."}
+{"sent_index": 49, "start_index": 2626, "end_index": 2662, "_text": "8. Aspirin 325 milligrams po q day ."}
+{"sent_index": 50, "start_index": 2663, "end_index": 2704, "_text": "9. Lasix 20 milligrams po times 30 days ."}
+{"sent_index": 51, "start_index": 2705, "end_index": 2758, "_text": "10. KCL 20 milliequivalents po q d times three days ."}
+{"sent_index": 52, "start_index": 2759, "end_index": 2873, "_text": "DISCHARGE FOLLOW UP : The patient is to follow up with Dr. Debra Oneal , his PCP and his cardiologist in 3 weeks ."}
+{"sent_index": 53, "start_index": 2874, "end_index": 2881, "_text": "Saul N."}
+{"sent_index": 54, "start_index": 2882, "end_index": 2895, "_text": "Keehne , M.D."}
+{"sent_index": 55, "start_index": 2896, "end_index": 2932, "_text": "Dictated By : Shirley Y Waler , M.D."}
+{"sent_index": 56, "start_index": 2933, "end_index": 2943, "_text": "MEDQUIST36"}
+{"sent_index": 57, "start_index": 2944, "end_index": 2964, "_text": "D : 2009-05-06 11:12"}
+{"sent_index": 58, "start_index": 2965, "end_index": 2985, "_text": "T : 2009-05-06 11:34"}
+{"sent_index": 59, "start_index": 2986, "end_index": 2998, "_text": "JOB #:\n20629"}
+{"sent_index": 60, "start_index": 2999, "end_index": 3023, "_text": "Signed electronically by"}
+{"sent_index": 61, "start_index": 3026, "end_index": 3029, "_text": "DR."}
+{"sent_index": 62, "start_index": 3030, "end_index": 3090, "_text": "William Spencer on : WED 2009-05-06 12:20 PM\n( End of Report"}

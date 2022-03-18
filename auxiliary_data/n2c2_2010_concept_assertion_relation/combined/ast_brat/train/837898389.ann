@@ -1,0 +1,234 @@
+T0	problem 8201 8209	rapid AF
+A0	Assertion T0 present
+T1	problem 4524 4551	guaiac positive brown stool
+A1	Assertion T1 present
+T2	problem 6696 6731	the organism &apos;s susceptibility
+A2	Assertion T2 present
+T3	problem 8507 8541	his paroxysmal atrial fibrillation
+A3	Assertion T3 present
+T4	problem 5749 5765	an epidural mass
+A4	Assertion T4 present
+T5	problem 370 386	THROMBOCYTOPENIA
+A5	Assertion T5 present
+T6	problem 4409 4422	non-distended
+A6	Assertion T6 absent
+T7	problem 3688 3705	diabetes mellitus
+A7	Assertion T7 associated_with_someone_else
+T8	problem 4362 4398	a few fine crackles at the left base
+A8	Assertion T8 present
+T9	problem 6333 6355	Pseudomonas aeruginosa
+A9	Assertion T9 present
+T10	problem 11433 11454	adrenal insufficiency
+A10	Assertion T10 possible
+T11	problem 4003 4007	pain
+A11	Assertion T11 hypothetical
+T12	problem 2392 2415	some fecal incontinence
+A12	Assertion T12 present
+T13	problem 323 335	PLASMACYTOMA
+A13	Assertion T13 present
+T14	problem 2567 2577	dysarthria
+A14	Assertion T14 absent
+T15	problem 5011 5029	mildly inattentive
+A15	Assertion T15 present
+T16	problem 5664 5675	infiltrates
+A16	Assertion T16 absent
+T17	problem 2068 2076	the pain
+A17	Assertion T17 present
+T18	problem 1732 1748	cord compression
+A18	Assertion T18 possible
+T19	problem 4271 4277	bruits
+A19	Assertion T19 absent
+T20	problem 10843 10863	a low platelet count
+A20	Assertion T20 present
+T21	problem 2618 2628	chest pain
+A21	Assertion T21 absent
+T22	problem 8581 8592	tachycardia
+A22	Assertion T22 absent
+T23	problem 3423 3439	Multiple myeloma
+A23	Assertion T23 present
+T24	problem 3225 3253	a Pseudomonas sepsis picture
+A24	Assertion T24 present
+T25	problem 7825 7851	his Pseudomonas cellulitis
+A25	Assertion T25 present
+T26	problem 1022 1055	diffuse spinal column involvement
+A26	Assertion T26 present
+T27	problem 1061 1081	lesions in T4 and T8
+A27	Assertion T27 present
+T28	problem 1090 1106	cord compression
+A28	Assertion T28 absent
+T29	problem 7631 7643	extreme pain
+A29	Assertion T29 present
+T30	problem 4320 4326	murmur
+A30	Assertion T30 absent
+T31	problem 3550 3580	Chronically low platelet count
+A31	Assertion T31 present
+T32	problem 9305 9323	a cord compression
+A32	Assertion T32 present
+T33	problem 2597 2603	nausea
+A33	Assertion T33 absent
+T34	problem 874 889	lower back pain
+A34	Assertion T34 present
+T35	problem 1315 1328	mid back pain
+A35	Assertion T35 present
+T36	problem 4472 4490	hepatosplenomegaly
+A36	Assertion T36 absent
+T37	problem 2186 2189	red
+A37	Assertion T37 present
+T38	problem 1643 1682	a right posterior lateral epidural mass
+A38	Assertion T38 present
+T39	problem 226 256	PAROXYSMAL ATRIAL FIBRILLATION
+A39	Assertion T39 present
+T40	problem 9014 9030	the plasmacytoma
+A40	Assertion T40 present
+T41	problem 176 220	RIGHT LOWER EXTREMITY PSEUDOMONAS CELLULITIS
+A41	Assertion T41 present
+T42	problem 4890 4896	drowsy
+A42	Assertion T42 present
+T43	problem 11725 11742	breakthrough pain
+A43	Assertion T43 hypothetical
+T44	problem 10336 10358	respiratory compromise
+A44	Assertion T44 hypothetical
+T45	problem 10362 10388	increasing pulmonary edema
+A45	Assertion T45 present
+T46	problem 5870 5884	These findings
+A46	Assertion T46 present
+T47	problem 5906 5926	the cord compression
+A47	Assertion T47 present
+T48	problem 5998 6036	The patient &apos;s clinical situation
+A48	Assertion T48 present
+T49	problem 6062 6086	a Pseudomonas cellulitis
+A49	Assertion T49 present
+T50	problem 6091 6108	subsequent sepsis
+A50	Assertion T50 present
+T51	problem 5341 5366	no reflexes at the ankles
+A51	Assertion T51 present
+T52	problem 6165 6176	Pseudomonas
+A52	Assertion T52 present
+T53	problem 2926 2948	Pseudomonas aeruginosa
+A53	Assertion T53 present
+T54	problem 9479 9511	increasing lower extremity edema
+A54	Assertion T54 absent
+T55	problem 6267 6276	the wound
+A55	Assertion T55 present
+T56	problem 7717 7753	pain control during dressing changes
+A56	Assertion T56 present
+T57	problem 4456 4466	non-tender
+A57	Assertion T57 absent
+T58	problem 2308 2342	the right lower extremity swelling
+A58	Assertion T58 present
+T59	problem 2192 2199	swollen
+A59	Assertion T59 present
+T60	problem 10114 10139	improving septic pictures
+A60	Assertion T60 present
+T61	problem 5100 5118	positive asterixis
+A61	Assertion T61 present
+T62	problem 8438 8457	decreased global EF
+A62	Assertion T62 present
+T63	problem 5856 5867	CSF density
+A63	Assertion T63 absent
+T64	problem 10453 10468	hypoalbuminemia
+A64	Assertion T64 present
+T65	problem 10422 10447	a poor nutritional status
+A65	Assertion T65 present
+T66	problem 4557 4575	perirectal lesions
+A66	Assertion T66 absent
+T67	problem 9161 9171	infectious
+A67	Assertion T67 absent
+T68	problem 8313 8332	atrial fibrillation
+A68	Assertion T68 present
+T69	problem 8596 8621	blood pressure alteration
+A69	Assertion T69 absent
+T70	problem 9033 9059	The patient &apos;s lesion
+A70	Assertion T70 present
+T71	problem 4225 4237	oral lesions
+A71	Assertion T71 absent
+T72	problem 4660 4667	swollen
+A72	Assertion T72 present
+T73	problem 4743 4782	pitting edema of both lower extremities
+A73	Assertion T73 present
+T74	problem 4714 4730	extremely tender
+A74	Assertion T74 present
+T75	problem 9200 9212	plasmacytoma
+A75	Assertion T75 present
+T76	problem 4639 4644	tense
+A76	Assertion T76 present
+T77	problem 530 546	multiple myeloma
+A77	Assertion T77 present
+T78	problem 3481 3511	Plasmacytoma of T9 through T12
+A78	Assertion T78 present
+T79	problem 5614 5637	positive granular casts
+A79	Assertion T79 present
+T80	problem 2521 2529	headache
+A80	Assertion T80 absent
+T81	problem 4494 4500	masses
+A81	Assertion T81 absent
+T82	problem 3445 3475	Paroxysmal atrial fibrillation
+A82	Assertion T82 present
+T83	problem 10685 10704	ELEVATED PT and PTT
+A83	Assertion T83 present
+T84	problem 2240 2282	chronic bilateral lower extremity swelling
+A84	Assertion T84 present
+T85	problem 8157 8167	his sepsis
+A85	Assertion T85 present
+T86	problem 427 443	MULTIPLE MYELOMA
+A86	Assertion T86 present
+T87	problem 11021 11038	his bleeding risk
+A87	Assertion T87 present
+T88	problem 3070 3080	his sepsis
+A88	Assertion T88 present
+T89	problem 2607 2615	vomiting
+A89	Assertion T89 absent
+T90	problem 341 364	POOR NUTRITIONAL STATUS
+A90	Assertion T90 present
+T91	problem 4802 4840	cellulitis of the left lower extremity
+A91	Assertion T91 absent
+T92	problem 6358 6370	The organism
+A92	Assertion T92 present
+T93	problem 3823 3829	a rash
+A93	Assertion T93 conditional
+T94	problem 262 278	CORD COMPRESSION
+A94	Assertion T94 present
+T95	problem 2206 2226	increasingly painful
+A95	Assertion T95 present
+T96	problem 2532 2544	arm weakness
+A96	Assertion T96 absent
+T97	problem 2547 2564	changes in vision
+A97	Assertion T97 absent
+T98	problem 1489 1522	numbness in the lower extremities
+A98	Assertion T98 possible
+T99	problem 7201 7249	erythema along the lateral right lower extremity
+A99	Assertion T99 present
+T100	problem 3641 3655	Hypothyroidism
+A100	Assertion T100 present
+T101	problem 2451 2471	urinary incontinence
+A101	Assertion T101 absent
+T102	problem 4647 4657	purple-red
+A102	Assertion T102 present
+T103	problem 4209 4219	atraumatic
+A103	Assertion T103 absent
+T104	problem 9711 9744	steroid induced diabetes mellitus
+A104	Assertion T104 present
+T105	problem 7896 7904	erythema
+A105	Assertion T105 present
+T106	problem 2580 2594	abdominal pain
+A106	Assertion T106 absent
+T107	problem 1419 1475	noticeably increasing bilateral lower extremity weakness
+A107	Assertion T107 present
+T108	problem 7968 7981	this erythema
+A108	Assertion T108 present
+T109	problem 3517 3544	Chronic renal insufficiency
+A109	Assertion T109 present
+T110	problem 8424 8430	septic
+A110	Assertion T110 present
+T111	problem 1547 1577	difficulty rising from a chair
+A111	Assertion T111 present
+T112	problem 2632 2651	shortness of breath
+A112	Assertion T112 absent
+T113	problem 8827 8841	a plasmacytoma
+A113	Assertion T113 present
+T114	problem 2009 2035	right lower extremity pain
+A114	Assertion T114 present
+T115	problem 4579 4587	erythema
+A115	Assertion T115 absent
+T116	problem 284 317	STEROID INDUCED DIABETES MELLITUS
+A116	Assertion T116 present

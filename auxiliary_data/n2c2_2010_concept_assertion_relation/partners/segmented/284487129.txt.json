@@ -1,0 +1,97 @@
+{"sent_index": 0, "start_index": 0, "end_index": 9, "_text": "284487129"}
+{"sent_index": 1, "start_index": 10, "end_index": 14, "_text": "CTMC"}
+{"sent_index": 2, "start_index": 15, "end_index": 23, "_text": "42669672"}
+{"sent_index": 3, "start_index": 24, "end_index": 53, "_text": "466333\n01/16/1996 12:00:00 AM"}
+{"sent_index": 4, "start_index": 54, "end_index": 71, "_text": "Discharge Summary"}
+{"sent_index": 5, "start_index": 72, "end_index": 78, "_text": "Signed"}
+{"sent_index": 6, "start_index": 79, "end_index": 82, "_text": "DIS"}
+{"sent_index": 7, "start_index": 83, "end_index": 97, "_text": "Admission Date"}
+{"sent_index": 8, "start_index": 100, "end_index": 110, "_text": "01/16/1996"}
+{"sent_index": 9, "start_index": 111, "end_index": 124, "_text": "Report Status"}
+{"sent_index": 10, "start_index": 127, "end_index": 133, "_text": "Signed"}
+{"sent_index": 11, "start_index": 134, "end_index": 148, "_text": "Discharge Date"}
+{"sent_index": 12, "start_index": 151, "end_index": 161, "_text": "01/20/1996"}
+{"sent_index": 13, "start_index": 162, "end_index": 174, "_text": "PROBLEM LIST"}
+{"sent_index": 14, "start_index": 177, "end_index": 215, "_text": "1. INSULIN DEPENDENT DIABETES MELLITUS"}
+{"sent_index": 15, "start_index": 216, "end_index": 266, "_text": "2. PRIOR HISTORY OF ANTERIOR MYOCARDIAL INFARCTION"}
+{"sent_index": 16, "start_index": 267, "end_index": 296, "_text": "3. EPISODE OF PULMONARY EDEMA"}
+{"sent_index": 17, "start_index": 297, "end_index": 320, "_text": "4. HYPERCHOLESTEROLEMIA"}
+{"sent_index": 18, "start_index": 321, "end_index": 336, "_text": "CHIEF COMPLAINT"}
+{"sent_index": 19, "start_index": 339, "end_index": 580, "_text": "The patient is a 40 year old male with a history of prior anterior myocardial infarction and insulin dependent diabetes mellitus who was transferred from an outside hospital after an episode of acute shortness of breath and pulmonary edema ."}
+{"sent_index": 20, "start_index": 581, "end_index": 607, "_text": "HISTORY OF PRESENT ILLNESS"}
+{"sent_index": 21, "start_index": 610, "end_index": 761, "_text": "The patient has a history four years ago of being admitted to the Etearal Etsystems/ Hospital after suffering an acute anterior myocardial infarction ."}
+{"sent_index": 22, "start_index": 762, "end_index": 820, "_text": "The course had multiple complications requiring pressors ."}
+{"sent_index": 23, "start_index": 821, "end_index": 1056, "_text": "He had a cardiac catheterization performed which revealed a three vessel coronary artery disease with an occluded RCA , 70%-80% proximal LAD , and a high grade left circumflex lesion after the OM with distal left circumflex occlusion ."}
+{"sent_index": 24, "start_index": 1057, "end_index": 1158, "_text": "The patient was subsequently medically management after this hospitalization and has done very well ."}
+{"sent_index": 25, "start_index": 1159, "end_index": 1368, "_text": "His most recent echocardiogram in April of 1996 showed an ejection fraction of 20% with a thin fibrotic septum with akinesis and moderately severe hypokinesis in all other regions except for the lateral wall ."}
+{"sent_index": 26, "start_index": 1369, "end_index": 1490, "_text": "The patient also had an electrocardiogram in April of 1996 which was negative following , however was at a low workload ."}
+{"sent_index": 27, "start_index": 1491, "end_index": 1670, "_text": "The patient &apos;s was most recently admitted to Centdick Naco Hospital Medical Center on Martin Luther King Day after becoming acutely short of breath after a five minute walk ."}
+{"sent_index": 28, "start_index": 1671, "end_index": 1734, "_text": "He had no chest pain , palpitations , diaphoresis , or nausea ."}
+{"sent_index": 29, "start_index": 1735, "end_index": 1857, "_text": "He called the EMT &apos;s and was found to be in pulmonary edema by chest x-ray at Centdick Naco Hospital Medical Center ."}
+{"sent_index": 30, "start_index": 1858, "end_index": 1915, "_text": "He was diuresed and ruled out for myocardial infarction ."}
+{"sent_index": 31, "start_index": 1916, "end_index": 1952, "_text": "His ECG showed no ischemic changes ."}
+{"sent_index": 32, "start_index": 1953, "end_index": 2037, "_text": "He was then transferred to the Retelk County Medical Center for further management ."}
+{"sent_index": 33, "start_index": 2038, "end_index": 2058, "_text": "PAST MEDICAL HISTORY"}
+{"sent_index": 34, "start_index": 2062, "end_index": 2149, "_text": "1) Insulin dependent diabetes mellitus x 15 years with no retinopathy or foot lesions ."}
+{"sent_index": 35, "start_index": 2151, "end_index": 2175, "_text": "2) Bilateral cataracts ."}
+{"sent_index": 36, "start_index": 2177, "end_index": 2235, "_text": "3) In 1967 he had an orchiopexy for undescended testicle ."}
+{"sent_index": 37, "start_index": 2237, "end_index": 2274, "_text": "4) Coronary artery disease as above ."}
+{"sent_index": 38, "start_index": 2275, "end_index": 2284, "_text": "ALLERGIES"}
+{"sent_index": 39, "start_index": 2287, "end_index": 2312, "_text": "No known drug allergies ."}
+{"sent_index": 40, "start_index": 2313, "end_index": 2337, "_text": "MEDICATIONS ON ADMISSION"}
+{"sent_index": 41, "start_index": 2340, "end_index": 2546, "_text": "Aspirin 325 mg p.o. q. day , Capoten 25 mg p.o. q.8h. , NPH insulin 28 units q.a.m. and 10 units q.p.m. , Regular insulin 4 units q.a.m. and 4 units q.p.m. , simvastatin 20 mg p.o. q. day , digoxin 0.25 mg."}
+{"sent_index": 42, "start_index": 2547, "end_index": 2561, "_text": "SOCIAL HISTORY"}
+{"sent_index": 43, "start_index": 2564, "end_index": 2617, "_text": "He lives with his two brothers and is on disability ."}
+{"sent_index": 44, "start_index": 2618, "end_index": 2676, "_text": "He has a ten pack year history of smoking , quit in 1990 ."}
+{"sent_index": 45, "start_index": 2677, "end_index": 2704, "_text": "He does not drink alcohol ."}
+{"sent_index": 46, "start_index": 2705, "end_index": 2719, "_text": "FAMILY HISTORY"}
+{"sent_index": 47, "start_index": 2722, "end_index": 2790, "_text": "His mother and father both died secondary to myocardial infarction ."}
+{"sent_index": 48, "start_index": 2791, "end_index": 2844, "_text": "One of his brothers has had a myocardial infarction ."}
+{"sent_index": 49, "start_index": 2845, "end_index": 2865, "_text": "PHYSICAL EXAMINATION"}
+{"sent_index": 50, "start_index": 2868, "end_index": 2997, "_text": "Temperature 100.3 , heart rate 76 , blood pressure 100/78 , respiratory rate 16 , and an oxygen saturation of 96% on two liters ."}
+{"sent_index": 51, "start_index": 2998, "end_index": 3002, "_text": "NECK"}
+{"sent_index": 52, "start_index": 3005, "end_index": 3035, "_text": "No jugular venous distention ."}
+{"sent_index": 53, "start_index": 3036, "end_index": 3041, "_text": "CHEST"}
+{"sent_index": 54, "start_index": 3044, "end_index": 3092, "_text": "Clear to auscultation with no wheezes or rales ."}
+{"sent_index": 55, "start_index": 3093, "end_index": 3107, "_text": "CARDIOVASCULAR"}
+{"sent_index": 56, "start_index": 3110, "end_index": 3177, "_text": "Regular rate and rhythm with no extra heart sounds and no murmurs ."}
+{"sent_index": 57, "start_index": 3178, "end_index": 3185, "_text": "ABDOMEN"}
+{"sent_index": 58, "start_index": 3188, "end_index": 3196, "_text": "Benign ."}
+{"sent_index": 59, "start_index": 3197, "end_index": 3208, "_text": "EXTREMITIES"}
+{"sent_index": 60, "start_index": 3211, "end_index": 3236, "_text": "No edema with 2+ pulses ."}
+{"sent_index": 61, "start_index": 3237, "end_index": 3252, "_text": "LABORATORY DATA"}
+{"sent_index": 62, "start_index": 3255, "end_index": 3282, "_text": "BUN 25 and creatinine 1.4 ."}
+{"sent_index": 63, "start_index": 3283, "end_index": 3318, "_text": "White count 6 and hematocrit 41.5 ."}
+{"sent_index": 64, "start_index": 3319, "end_index": 3358, "_text": "PT 14.1 with an INR of 1.4 , PTT 36.7 ."}
+{"sent_index": 65, "start_index": 3359, "end_index": 3417, "_text": "Chest x-ray showed no infiltrates and no pulmonary edema ."}
+{"sent_index": 66, "start_index": 3418, "end_index": 3443, "_text": "Urinalysis was negative ."}
+{"sent_index": 67, "start_index": 3444, "end_index": 3518, "_text": "Electrocardiogram showed normal sinus rhythm at 63 with normal intervals ."}
+{"sent_index": 68, "start_index": 3519, "end_index": 3594, "_text": "He had flat T waves in I and aVL , which were unchanged from previous ECG ."}
+{"sent_index": 69, "start_index": 3595, "end_index": 3610, "_text": "HOSPITAL COURSE"}
+{"sent_index": 70, "start_index": 3613, "end_index": 3685, "_text": "The patient was admitted for further management of his pulmonary edema ."}
+{"sent_index": 71, "start_index": 3686, "end_index": 3832, "_text": "It was felt that the patient possibly had a worsening of his coronary artery disease and therefore underwent cardiac catheterization on 01/17/96 ."}
+{"sent_index": 72, "start_index": 3833, "end_index": 3955, "_text": "At cardiac catheterization he had an RA pressure of 8 , an RV pressure of 52/10 , PA pressure of 60/25 , and wedge of 26 ."}
+{"sent_index": 73, "start_index": 3956, "end_index": 4019, "_text": "His coronary arteries revealed an 80% stenosis and a large OM ."}
+{"sent_index": 74, "start_index": 4020, "end_index": 4089, "_text": "The dominant left circumflex was occluded with left-to-left filling ."}
+{"sent_index": 75, "start_index": 4090, "end_index": 4197, "_text": "He also had a 50% LAD stenosis , a 100% large DT stenosis and a nondominant RCA with left RCA collaterals ."}
+{"sent_index": 76, "start_index": 4198, "end_index": 4309, "_text": "It was felt that this cardiac catheterization was not significantly changed from his previous catheterization ."}
+{"sent_index": 77, "start_index": 4310, "end_index": 4458, "_text": "Given his high right-sided filling pressure , he was started on Lasix for diuresis and his Captopril was increased for greater afterload reduction ."}
+{"sent_index": 78, "start_index": 4459, "end_index": 4673, "_text": "It was felt that the patient should have an augmented medical regimen and as an outpatient undergo an exercise tolerance test with viability evaluation to determine whether he would benefit from revascularization ."}
+{"sent_index": 79, "start_index": 4674, "end_index": 4828, "_text": "He was restarted on Coumadin for his low ejection fraction and started on diuresis with IV Lasix for two days and then switched to an oral Lasix regimen ."}
+{"sent_index": 80, "start_index": 4829, "end_index": 4840, "_text": "DISPOSITION"}
+{"sent_index": 81, "start_index": 4843, "end_index": 4907, "_text": "He was discharged to home in stable condition and feeling well ."}
+{"sent_index": 82, "start_index": 4908, "end_index": 4929, "_text": "DISCHARGE MEDICATIONS"}
+{"sent_index": 83, "start_index": 4932, "end_index": 4989, "_text": "Insulin NPH 10 units q.p.m. and 28 units q.a.m. , insulin"}
+{"sent_index": 84, "start_index": 4990, "end_index": 5210, "_text": "Regular 4 units q.a.m. and 4 units q.p.m. , aspirin 325 mg p.o. q. day , digoxin 0.25 mg p.o. q. day , simvastatin 20 mg p.o. q. day , captopril 37.5 mg p.o. t.i.d. , Coumadin 5 mg p.o. q.h.s. , Lasix 20 mg p.o. q. day ."}
+{"sent_index": 85, "start_index": 5211, "end_index": 5220, "_text": "FOLLOW-UP"}
+{"sent_index": 86, "start_index": 5223, "end_index": 5313, "_text": "He is to see Dr. Ench in two weeks to check his PT and INR , also to check for potassium ."}
+{"sent_index": 87, "start_index": 5314, "end_index": 5325, "_text": "Dictated By"}
+{"sent_index": 88, "start_index": 5328, "end_index": 5347, "_text": "CA X. SCGACH , M.D."}
+{"sent_index": 89, "start_index": 5348, "end_index": 5352, "_text": "YG59"}
+{"sent_index": 90, "start_index": 5353, "end_index": 5362, "_text": "Attending"}
+{"sent_index": 91, "start_index": 5365, "end_index": 5391, "_text": "JEMALKYLE J. EHKOTE , M.D."}
+{"sent_index": 92, "start_index": 5392, "end_index": 5406, "_text": "BI7 PJ387/3762"}
+{"sent_index": 93, "start_index": 5407, "end_index": 5412, "_text": "Batch"}
+{"sent_index": 94, "start_index": 5415, "end_index": 5441, "_text": "37377\nIndex No. WDXZUZ7Y9B"}
+{"sent_index": 95, "start_index": 5442, "end_index": 5454, "_text": "D :\n01/20/96"}
+{"sent_index": 96, "start_index": 5455, "end_index": 5467, "_text": "T :\n01/20/96"}

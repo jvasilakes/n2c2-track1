@@ -1,0 +1,92 @@
+{"sent_index": 0, "start_index": 0, "end_index": 9, "_text": "959086752"}
+{"sent_index": 1, "start_index": 10, "end_index": 15, "_text": "PUOMC"}
+{"sent_index": 2, "start_index": 16, "end_index": 23, "_text": "6824024"}
+{"sent_index": 3, "start_index": 24, "end_index": 30, "_text": "094907"}
+{"sent_index": 4, "start_index": 31, "end_index": 37, "_text": "812890"}
+{"sent_index": 5, "start_index": 38, "end_index": 58, "_text": "2/1/2000 12:00:00 AM"}
+{"sent_index": 6, "start_index": 59, "end_index": 76, "_text": "Discharge Summary"}
+{"sent_index": 7, "start_index": 77, "end_index": 83, "_text": "Signed"}
+{"sent_index": 8, "start_index": 84, "end_index": 87, "_text": "DIS"}
+{"sent_index": 9, "start_index": 88, "end_index": 101, "_text": "Report Status"}
+{"sent_index": 10, "start_index": 104, "end_index": 110, "_text": "Signed"}
+{"sent_index": 11, "start_index": 111, "end_index": 128, "_text": "DISCHARGE SUMMARY"}
+{"sent_index": 12, "start_index": 129, "end_index": 145, "_text": "NAME :\nRATHELIFE"}
+{"sent_index": 13, "start_index": 148, "end_index": 182, "_text": "TIEANAKI B\nUNIT NUMBER :\n342-07-28"}
+{"sent_index": 14, "start_index": 183, "end_index": 210, "_text": "ADMISSION DATE :\n02/01/2000"}
+{"sent_index": 15, "start_index": 211, "end_index": 225, "_text": "DISCHARGE DATE"}
+{"sent_index": 16, "start_index": 228, "end_index": 238, "_text": "02/08/2000"}
+{"sent_index": 17, "start_index": 239, "end_index": 258, "_text": "PRINCIPAL DIAGNOSIS"}
+{"sent_index": 18, "start_index": 261, "end_index": 297, "_text": "Non-healing ulcer on the right leg ."}
+{"sent_index": 19, "start_index": 298, "end_index": 317, "_text": "PRINCIPAL PROCEDURE"}
+{"sent_index": 20, "start_index": 320, "end_index": 362, "_text": "Right fem to below knee pop bypass graft ."}
+{"sent_index": 21, "start_index": 363, "end_index": 389, "_text": "HISTORY OF PRESENT ILLNESS"}
+{"sent_index": 22, "start_index": 392, "end_index": 563, "_text": "This patient is an seventy eight year old female with history of peripheral vascular disease who is status post above knee to fem pop bypass graft with 6 millimeter PTFE ."}
+{"sent_index": 23, "start_index": 564, "end_index": 632, "_text": "This operation was performed for two months of increased rest pain ."}
+{"sent_index": 24, "start_index": 633, "end_index": 775, "_text": "Her pain resolved after surgery and she has been doing well since , although at baseline now she is minimally ambulatory from bed to commode ."}
+{"sent_index": 25, "start_index": 776, "end_index": 1080, "_text": "For the past couple of months the patient has had a non-healing right dorsal foot ulcer which has been increasing in size and started as a pin hole and she does not recollect any trauma , as similar small ulcers developed on the left foot as well around the same time , but that has subsequently healed ."}
+{"sent_index": 26, "start_index": 1081, "end_index": 1272, "_text": "The ulcer was managed conservatively at Har Hospital by Dr. Holes with Silvadene b.i.d. lower extremity non-invasive study obtained at that time showed poor distal right extremity perfusion ."}
+{"sent_index": 27, "start_index": 1273, "end_index": 1309, "_text": "The patient was referred back to Dr."}
+{"sent_index": 28, "start_index": 1310, "end_index": 1368, "_text": "Pop for the possibility of a revascularization procedure ."}
+{"sent_index": 29, "start_index": 1369, "end_index": 1407, "_text": "She is status post angiography today ."}
+{"sent_index": 30, "start_index": 1408, "end_index": 1465, "_text": "She has just finished a ten day course of Ciprofloxacin ."}
+{"sent_index": 31, "start_index": 1466, "end_index": 1499, "_text": "She denies any fevers or chills ."}
+{"sent_index": 32, "start_index": 1500, "end_index": 1553, "_text": "She does have rest pain in the right foot and ankle ."}
+{"sent_index": 33, "start_index": 1554, "end_index": 1574, "_text": "PAST MEDICAL HISTORY"}
+{"sent_index": 34, "start_index": 1577, "end_index": 1901, "_text": "Significant for Guillain-Barr syndrome , Lupus , status post multiple decubiti , peripheral vascular disease , status post right total knee replacement and status post cholecystectomy , status post hysterectomy , status post goiter and left lung fibrosis , status post methicillin resistant Staphylococcus aureus pneumonia ."}
+{"sent_index": 35, "start_index": 1902, "end_index": 1926, "_text": "MEDICATIONS ON ADMISSION"}
+{"sent_index": 36, "start_index": 1929, "end_index": 1998, "_text": "Prednisone 5 every other day , alternating with ten every other day ."}
+{"sent_index": 37, "start_index": 1999, "end_index": 2028, "_text": "Trental 400 milligrams t.i.d."}
+{"sent_index": 38, "start_index": 2031, "end_index": 2060, "_text": "Cytotec 100 milligrams t.i.d."}
+{"sent_index": 39, "start_index": 2063, "end_index": 2089, "_text": "Ativan 2 milligrams q.h.s."}
+{"sent_index": 40, "start_index": 2090, "end_index": 2280, "_text": "Darvon 65 milligrams two q.i.d , Relafen 500 milligrams b.i.d , Vitamin E , Prilosec 20 milligrams once a day , Zantac 150 milligrams b.i.d , Lasix 120 milligrams every other day PRN edema ."}
+{"sent_index": 41, "start_index": 2281, "end_index": 2322, "_text": "Didronel 1 q day which has been on hold ."}
+{"sent_index": 42, "start_index": 2323, "end_index": 2386, "_text": "Proventil inhaler via nebulizers 0.5 milligrams with Atrovent ."}
+{"sent_index": 43, "start_index": 2387, "end_index": 2396, "_text": "ALLERGIES"}
+{"sent_index": 44, "start_index": 2399, "end_index": 2501, "_text": "The patient is allergic Ampicillin , Tylenol , Clinoril , Biaxin , Codeine , Sulfa and Aminophylline ."}
+{"sent_index": 45, "start_index": 2502, "end_index": 2522, "_text": "PHYSICAL EXAMINATION"}
+{"sent_index": 46, "start_index": 2525, "end_index": 2571, "_text": "She is afebrile , her vital signs are stable ."}
+{"sent_index": 47, "start_index": 2572, "end_index": 2689, "_text": "Her pupils equal round reactive to light and accomodation , normocephalic , atraumatic , extraocular muscles intact ."}
+{"sent_index": 48, "start_index": 2690, "end_index": 2772, "_text": "Neck , she has II+ bilateral carotids , no bruits , no jugular venous distention ."}
+{"sent_index": 49, "start_index": 2773, "end_index": 2869, "_text": "Lungs decreased breath sounds at bilateral bases with minimal expiratory crackles on the right ."}
+{"sent_index": 50, "start_index": 2870, "end_index": 2944, "_text": "Abdomen , soft , non-tender , non-distended , normal active bowel sounds ."}
+{"sent_index": 51, "start_index": 2945, "end_index": 3026, "_text": "Extremities on the right , she has a II+ femoral , no distal pulses beyond that ."}
+{"sent_index": 52, "start_index": 3027, "end_index": 3111, "_text": "On the left she has a II+ femoral and II+ popliteal , no distal pulses beyond that ."}
+{"sent_index": 53, "start_index": 3112, "end_index": 3194, "_text": "She has on her right ankle anteriorly a four centimeter ulcer with necrotic base ."}
+{"sent_index": 54, "start_index": 3195, "end_index": 3225, "_text": "Minimal surrounding erythema ."}
+{"sent_index": 55, "start_index": 3226, "end_index": 3270, "_text": "She is able to wiggle her toes bilaterally ."}
+{"sent_index": 56, "start_index": 3271, "end_index": 3304, "_text": "Sensation is intact bilaterally ."}
+{"sent_index": 57, "start_index": 3305, "end_index": 3347, "_text": "Her legs are tender to touch bilaterally ."}
+{"sent_index": 58, "start_index": 3348, "end_index": 3448, "_text": "Her angiography showed a right proximal popliteal occlusion , anterior tibial dominant foot vessel ."}
+{"sent_index": 59, "start_index": 3449, "end_index": 3546, "_text": "Small posterior tibial occlusion on the distal calf and a small peroneal goes down to the ankle ."}
+{"sent_index": 60, "start_index": 3547, "end_index": 3641, "_text": "On a rectal examination she is guaiac negative , no masses and no gluteal ulcers or decubiti ."}
+{"sent_index": 61, "start_index": 3642, "end_index": 3671, "_text": "HOSPITAL COURSE AND TREATMENT"}
+{"sent_index": 62, "start_index": 3674, "end_index": 3853, "_text": "The patient was admitted and taken to the operating room on the following day and she underwent a right fem to below knee popliteal bypass graft using a six millimeter ring PTFE ."}
+{"sent_index": 63, "start_index": 3854, "end_index": 3955, "_text": "She had a strong popliteal doppler pulse intraoperatively and good PVR on the right postoperatively ."}
+{"sent_index": 64, "start_index": 3956, "end_index": 4006, "_text": "The patient did well in the postoperative period ."}
+{"sent_index": 65, "start_index": 4007, "end_index": 4055, "_text": "She was afebrile , her vital signs were stable ."}
+{"sent_index": 66, "start_index": 4056, "end_index": 4132, "_text": "She was making adequate urine output anywhere between 20 to 50 ccs an hour ."}
+{"sent_index": 67, "start_index": 4133, "end_index": 4214, "_text": "Her hematocrit was 26.8 and she was transfused 1 unit of packed red blood cells ."}
+{"sent_index": 68, "start_index": 4215, "end_index": 4273, "_text": "Her diet was advanced from clears to a diet as tolerated ."}
+{"sent_index": 69, "start_index": 4274, "end_index": 4433, "_text": "On postoperative day two the patient was noted to have some swelling in her left lower extremity and this was felt to be a hematoma secondary to her PVR cuff ."}
+{"sent_index": 70, "start_index": 4434, "end_index": 4530, "_text": "There is mild amount of surrounding erythema and the patient was started on Ancef at that time ."}
+{"sent_index": 71, "start_index": 4531, "end_index": 4573, "_text": "The patient was seen by physical therapy ."}
+{"sent_index": 72, "start_index": 4574, "end_index": 4742, "_text": "The area of erythema on her left leg enlarged slightly and the patient was placed on Vancomycin for several days after which time her erythema again began to decrease ."}
+{"sent_index": 73, "start_index": 4743, "end_index": 4773, "_text": "Her right foot remained warm ."}
+{"sent_index": 74, "start_index": 4774, "end_index": 4911, "_text": "She had wounds which were clean , dry and intact and the patient was stable from a respiratory standpoint using her respirator at night ."}
+{"sent_index": 75, "start_index": 4912, "end_index": 5056, "_text": "The patient required an additional blood transfusion during her hospital stay as her hematocrit had decreased to 27 on postoperative day three ."}
+{"sent_index": 76, "start_index": 5057, "end_index": 5105, "_text": "The patient while in bed had her legs elevated ."}
+{"sent_index": 77, "start_index": 5106, "end_index": 5244, "_text": "The patient was tolerating a general diet , she was voiding on her own and the patient was discharged to home as her daughter is a nurse ."}
+{"sent_index": 78, "start_index": 5245, "end_index": 5323, "_text": "She was discharged with PO Keflex that she was to take for the next ten days ."}
+{"sent_index": 79, "start_index": 5324, "end_index": 5360, "_text": "The patient is to follow up with Dr."}
+{"sent_index": 80, "start_index": 5361, "end_index": 5456, "_text": "Pop in one week and the patient was afebrile with stable vital signs at the time of discharge ."}
+{"sent_index": 81, "start_index": 5457, "end_index": 5478, "_text": "LAYMIE ASLINKE , M.D."}
+{"sent_index": 82, "start_index": 5479, "end_index": 5492, "_text": "DICTATING FOR"}
+{"sent_index": 83, "start_index": 5495, "end_index": 5537, "_text": "Electronically Signed EDRY R YELLOW , M.D."}
+{"sent_index": 84, "start_index": 5538, "end_index": 5554, "_text": "03/16/2000 13:21"}
+{"sent_index": 85, "start_index": 5585, "end_index": 5603, "_text": "EDRY YELLOW , M.D."}
+{"sent_index": 86, "start_index": 5604, "end_index": 5611, "_text": "TR :\nnw"}
+{"sent_index": 87, "start_index": 5612, "end_index": 5614, "_text": "DD"}
+{"sent_index": 88, "start_index": 5617, "end_index": 5627, "_text": "02/09/2000"}
+{"sent_index": 89, "start_index": 5628, "end_index": 5653, "_text": "TD :\n02/12/2000 1:41 P\ncc"}
+{"sent_index": 90, "start_index": 5656, "end_index": 5660, "_text": "EDRY"}
+{"sent_index": 91, "start_index": 5661, "end_index": 5676, "_text": "R YELLOW , M.D."}

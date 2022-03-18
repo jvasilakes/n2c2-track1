@@ -1,0 +1,224 @@
+{"sent_index": 0, "start_index": 0, "end_index": 14, "_text": "Admission Date"}
+{"sent_index": 1, "start_index": 17, "end_index": 27, "_text": "2017-08-14"}
+{"sent_index": 2, "start_index": 28, "end_index": 42, "_text": "Discharge Date"}
+{"sent_index": 3, "start_index": 45, "end_index": 55, "_text": "2017-08-23"}
+{"sent_index": 4, "start_index": 56, "end_index": 69, "_text": "Date of Birth"}
+{"sent_index": 5, "start_index": 72, "end_index": 82, "_text": "1943-08-23"}
+{"sent_index": 6, "start_index": 83, "end_index": 86, "_text": "Sex"}
+{"sent_index": 7, "start_index": 89, "end_index": 90, "_text": "M"}
+{"sent_index": 8, "start_index": 91, "end_index": 98, "_text": "Service"}
+{"sent_index": 9, "start_index": 101, "end_index": 109, "_text": "MEDICINE"}
+{"sent_index": 10, "start_index": 110, "end_index": 119, "_text": "Allergies"}
+{"sent_index": 11, "start_index": 122, "end_index": 134, "_text": "Sulfonamides"}
+{"sent_index": 12, "start_index": 135, "end_index": 144, "_text": "Attending"}
+{"sent_index": 13, "start_index": 147, "end_index": 156, "_text": "Marcus W."}
+{"sent_index": 14, "start_index": 157, "end_index": 170, "_text": "Kelley , M.D."}
+{"sent_index": 15, "start_index": 171, "end_index": 186, "_text": "Chief Complaint"}
+{"sent_index": 16, "start_index": 189, "end_index": 270, "_text": "Transfer from Athol Memorial Hospital for acute on chronic respiratory distress ."}
+{"sent_index": 17, "start_index": 271, "end_index": 307, "_text": "Major Surgical or Invasive Procedure"}
+{"sent_index": 18, "start_index": 310, "end_index": 334, "_text": "Lumbar puncture on 08-16"}
+{"sent_index": 19, "start_index": 335, "end_index": 361, "_text": "History of Present Illness"}
+{"sent_index": 20, "start_index": 364, "end_index": 367, "_text": "Mr."}
+{"sent_index": 21, "start_index": 368, "end_index": 462, "_text": "Lockley is a 73 yo male with a complicated past medical history , recently discharged from St."}
+{"sent_index": 22, "start_index": 463, "end_index": 775, "_text": "Margaret 's Center for Women & Infants on 08-02 following a prolonged admission for STEMI , respiratory failure felt secondary to pulmonary edema requiring intubation and subsequent tracheostomy 02-22 failure to wean , sepsis and C.difficile colitis treated with Vancomycin and Flagyl with a course of Levophed ."}
+{"sent_index": 23, "start_index": 776, "end_index": 844, "_text": "He was discharged to Athol Memorial Hospital for continued weaning ."}
+{"sent_index": 24, "start_index": 845, "end_index": 998, "_text": "Per Dr. John C. Corrigan Mental Health Center , patient remained ventilator dependent , intermittently on PS 20/5 and back on AC 15/5/500/0.35 on 08-08 ."}
+{"sent_index": 25, "start_index": 999, "end_index": 1117, "_text": "At OSH , sputum cultures grew Pseudomonas and MRSA , and he was restarted on Zosyn ( 08-08 ) and Vancomycin ( 08-09 )."}
+{"sent_index": 26, "start_index": 1118, "end_index": 1171, "_text": "He completed his course of Vancomycin on 2017-08-10 ."}
+{"sent_index": 27, "start_index": 1172, "end_index": 1281, "_text": "However , today around 17:45 , while being moved by the nursing staff , Mr. Lockley Bosche started coughing ."}
+{"sent_index": 28, "start_index": 1282, "end_index": 1317, "_text": "Suctioned X 1 , mucus not cleared ."}
+{"sent_index": 29, "start_index": 1318, "end_index": 1388, "_text": "He then became dusky and cyanotic , and stopped breathing on his own ."}
+{"sent_index": 30, "start_index": 1389, "end_index": 1418, "_text": "A code was called , + pulse ."}
+{"sent_index": 31, "start_index": 1419, "end_index": 1448, "_text": "Patient placed on FiO2 100% ."}
+{"sent_index": 32, "start_index": 1449, "end_index": 1489, "_text": "Vitals reportedly HR 88-98 , BP 150/80 ."}
+{"sent_index": 33, "start_index": 1490, "end_index": 1529, "_text": "ABG done on FiO2 100% 7.36/66/417/98% ."}
+{"sent_index": 34, "start_index": 1530, "end_index": 1630, "_text": "At Vencor Hospital , BP dropped to 90 , and patient was started on NS IVF , with improvement in BP ."}
+{"sent_index": 35, "start_index": 1631, "end_index": 1658, "_text": "EKG without acute changes ."}
+{"sent_index": 36, "start_index": 1659, "end_index": 1684, "_text": "He was transferred to St."}
+{"sent_index": 37, "start_index": 1685, "end_index": 1796, "_text": "Margaret 's Center for Women & Infants John for further management on AC , RR 15 , PEEP 5 , Vt 500 , Fi02 1.0 ."}
+{"sent_index": 38, "start_index": 1797, "end_index": 1825, "_text": "In John , BP 80/60 , HR 80 ."}
+{"sent_index": 39, "start_index": 1826, "end_index": 1905, "_text": "Continued on IVF ( received total 2300 cc ) , with improved BP to SBP 105-118 ."}
+{"sent_index": 40, "start_index": 1906, "end_index": 1965, "_text": "Stool sent for C.diff and given Flagyl 500 mg PO X 1 dose ."}
+{"sent_index": 41, "start_index": 1966, "end_index": 1986, "_text": "Past Medical History"}
+{"sent_index": 42, "start_index": 1989, "end_index": 2117, "_text": "1. Non-small cell lung cancer s/p XRT and chemotherapy in French Guiana , s/p right pneumonectomy in 2016-09-21 for recurrence ."}
+{"sent_index": 43, "start_index": 2118, "end_index": 2149, "_text": "Chronic left pleural effusion ."}
+{"sent_index": 44, "start_index": 2150, "end_index": 2185, "_text": "2. SSS status post PM/ICD placement"}
+{"sent_index": 45, "start_index": 2186, "end_index": 2208, "_text": "3. COPD/bronchiectasis"}
+{"sent_index": 46, "start_index": 2209, "end_index": 2224, "_text": "4. Hypertension"}
+{"sent_index": 47, "start_index": 2225, "end_index": 2253, "_text": "5. CAD , with known TO RCA ."}
+{"sent_index": 48, "start_index": 2254, "end_index": 2299, "_text": "6. CHF with EF 25% on last echo on 2017-07-19"}
+{"sent_index": 49, "start_index": 2300, "end_index": 2306, "_text": "7. BPH"}
+{"sent_index": 50, "start_index": 2307, "end_index": 2320, "_text": "8. Depression"}
+{"sent_index": 51, "start_index": 2321, "end_index": 2358, "_text": "9. Left femoral AV fistula 2017-04-19"}
+{"sent_index": 52, "start_index": 2359, "end_index": 2436, "_text": "10. Recent MRSA pneumonia and sepsis 2017-07-21 , treated with Vancomycin\n11."}
+{"sent_index": 53, "start_index": 2437, "end_index": 2495, "_text": "C. difficile colitis treated with Flagyl ( completed 08-10"}
+{"sent_index": 54, "start_index": 2498, "end_index": 2501, "_text": "12."}
+{"sent_index": 55, "start_index": 2502, "end_index": 2543, "_text": "Status post PEG tube placement 2017-07-21"}
+{"sent_index": 56, "start_index": 2544, "end_index": 2605, "_text": "13. Status post tracheostomy 2017-07-21 02-22 failure to wean"}
+{"sent_index": 57, "start_index": 2606, "end_index": 2644, "_text": "14. Status post partial colectomy 1972"}
+{"sent_index": 58, "start_index": 2645, "end_index": 2659, "_text": "Social History"}
+{"sent_index": 59, "start_index": 2662, "end_index": 2682, "_text": "Son is next of kin ."}
+{"sent_index": 60, "start_index": 2683, "end_index": 2718, "_text": "See below for contact information ."}
+{"sent_index": 61, "start_index": 2719, "end_index": 2795, "_text": "He has been living at The Cooley Dickinson Hospital House since 2017-08-02 ."}
+{"sent_index": 62, "start_index": 2796, "end_index": 2811, "_text": "Per Dr. John C."}
+{"sent_index": 63, "start_index": 2812, "end_index": 2883, "_text": "Corrigan Mental Health Center , at baseline , patient not interactive ."}
+{"sent_index": 64, "start_index": 2884, "end_index": 2942, "_text": "Opens eyes spontaneously , withdraws to painful stimulus ."}
+{"sent_index": 65, "start_index": 2943, "end_index": 2957, "_text": "Family History"}
+{"sent_index": 66, "start_index": 2960, "end_index": 2976, "_text": "Non-contributory"}
+{"sent_index": 67, "start_index": 2977, "end_index": 2990, "_text": "Physical Exam"}
+{"sent_index": 68, "start_index": 2993, "end_index": 3019, "_text": "PHYSICAL EXAM on admission"}
+{"sent_index": 69, "start_index": 3022, "end_index": 3061, "_text": "VITALS :\nBP 90s-118/47-59 , HR 80-90s ."}
+{"sent_index": 70, "start_index": 3062, "end_index": 3113, "_text": "Vent :\nAC , RR 15 , PEEP 5 , Vt 500 cc , FiO2 1.0 ."}
+{"sent_index": 71, "start_index": 3114, "end_index": 3175, "_text": "GEN :\nIntubated , opens eyes , responds to painful stimulus ."}
+{"sent_index": 72, "start_index": 3176, "end_index": 3181, "_text": "HEENT"}
+{"sent_index": 73, "start_index": 3184, "end_index": 3211, "_text": "Pupils minimally reactive ."}
+{"sent_index": 74, "start_index": 3212, "end_index": 3230, "_text": "Sclera anicteric ."}
+{"sent_index": 75, "start_index": 3231, "end_index": 3235, "_text": "NECK"}
+{"sent_index": 76, "start_index": 3238, "end_index": 3260, "_text": "Unable to assess JVP ."}
+{"sent_index": 77, "start_index": 3261, "end_index": 3265, "_text": "RESP"}
+{"sent_index": 78, "start_index": 3268, "end_index": 3311, "_text": "Bronchial breathing over right hemithorax ."}
+{"sent_index": 79, "start_index": 3312, "end_index": 3349, "_text": "Ronchorous breath sounds left chest ."}
+{"sent_index": 80, "start_index": 3350, "end_index": 3371, "_text": "Limited examination ."}
+{"sent_index": 81, "start_index": 3372, "end_index": 3375, "_text": "CVS"}
+{"sent_index": 82, "start_index": 3378, "end_index": 3383, "_text": "RRR ."}
+{"sent_index": 83, "start_index": 3384, "end_index": 3400, "_text": "Normal S1 , S2 ."}
+{"sent_index": 84, "start_index": 3403, "end_index": 3407, "_text": "S4 ."}
+{"sent_index": 85, "start_index": 3408, "end_index": 3431, "_text": "No murmur appreciated ."}
+{"sent_index": 86, "start_index": 3432, "end_index": 3434, "_text": "GI"}
+{"sent_index": 87, "start_index": 3437, "end_index": 3475, "_text": "PEG in place , site without drainage ."}
+{"sent_index": 88, "start_index": 3476, "end_index": 3501, "_text": "BS present , hypoactive ."}
+{"sent_index": 89, "start_index": 3502, "end_index": 3516, "_text": "Abdomen soft ."}
+{"sent_index": 90, "start_index": 3517, "end_index": 3546, "_text": "No grimacing with palpation ."}
+{"sent_index": 91, "start_index": 3547, "end_index": 3551, "_text": "CMED"}
+{"sent_index": 92, "start_index": 3554, "end_index": 3570, "_text": "Foley in place ."}
+{"sent_index": 93, "start_index": 3571, "end_index": 3625, "_text": "EXT :\n2+ edema both upper extremities , sacral edema ."}
+{"sent_index": 94, "start_index": 3626, "end_index": 3644, "_text": "Cool extremities ."}
+{"sent_index": 95, "start_index": 3645, "end_index": 3677, "_text": "Good pedal pulses peripherally ."}
+{"sent_index": 96, "start_index": 3678, "end_index": 3683, "_text": "NEURO"}
+{"sent_index": 97, "start_index": 3686, "end_index": 3707, "_text": "Limited examination ."}
+{"sent_index": 98, "start_index": 3708, "end_index": 3739, "_text": "Withdraws to painful stimulus ."}
+{"sent_index": 99, "start_index": 3740, "end_index": 3765, "_text": "Moves all 4 extremities ."}
+{"sent_index": 100, "start_index": 3766, "end_index": 3783, "_text": "Pertinent Results"}
+{"sent_index": 101, "start_index": 3786, "end_index": 3790, "_text": "LABS"}
+{"sent_index": 102, "start_index": 3793, "end_index": 4102, "_text": "WBC - 4.9 RBC - 2.92 * HGB - 8.8 * HCT - 26.2 * MCV - 90 MCH - 30.1 MCHC - 33.5 RDW - 18.5 * NEUTS - 86.5 * LYMPHS - 7.5 * MONOS - 4.7 EOS - 1.2 BASOS - 0.1 PLT COUNT - 145 * GLUCOSE - 91 UREA N - 21 * CREAT - 0.6 SODIUM - 143 POTASSIUM - 4.2 CHLORIDE - 106 TOTAL CO2 - 32 ANION GAP - 9 LACTATE - 1.4 K+ - 3.9"}
+{"sent_index": 103, "start_index": 4103, "end_index": 4149, "_text": "ABG :\n2017-08-14 07:30 PM TYPE - ART PO2 - 468"}
+{"sent_index": 104, "start_index": 4152, "end_index": 4225, "_text": "PCO2 - 44 PH - 7.50 * TOTAL CO2 - 36 * BASE XS - 10 INTUBATED - INTUBATED"}
+{"sent_index": 105, "start_index": 4226, "end_index": 4266, "_text": "EKG ( at Athol Memorial Hospital , 17:11"}
+{"sent_index": 106, "start_index": 4271, "end_index": 4323, "_text": "Atrial fibrillation , occasional V-paced , rate 74 ."}
+{"sent_index": 107, "start_index": 4324, "end_index": 4337, "_text": "Normal axis ."}
+{"sent_index": 108, "start_index": 4338, "end_index": 4352, "_text": "Old TWI V4-6 ."}
+{"sent_index": 109, "start_index": 4353, "end_index": 4364, "_text": "EKG in John"}
+{"sent_index": 110, "start_index": 4367, "end_index": 4408, "_text": "Afib , occasional V-paced , rate 83 bpm ."}
+{"sent_index": 111, "start_index": 4409, "end_index": 4422, "_text": "Normal axis ."}
+{"sent_index": 112, "start_index": 4423, "end_index": 4455, "_text": "Long QT interval ( QTc 462 ms )."}
+{"sent_index": 113, "start_index": 4456, "end_index": 4479, "_text": "ST depressions V4 , 5 ."}
+{"sent_index": 114, "start_index": 4480, "end_index": 4505, "_text": "Mild ST elevation in V3 ."}
+{"sent_index": 115, "start_index": 4506, "end_index": 4520, "_text": "Old TWI V4-6 ."}
+{"sent_index": 116, "start_index": 4538, "end_index": 4545, "_text": "IMAGING"}
+{"sent_index": 117, "start_index": 4548, "end_index": 4562, "_text": "2017-08-14 CXR"}
+{"sent_index": 118, "start_index": 4565, "end_index": 4590, "_text": "ETT in correct position ."}
+{"sent_index": 119, "start_index": 4591, "end_index": 4618, "_text": "PM wires in good position ."}
+{"sent_index": 120, "start_index": 4619, "end_index": 4644, "_text": "S/p right pneumonectomy ."}
+{"sent_index": 121, "start_index": 4645, "end_index": 4683, "_text": "Blunting of left CPA likely effusion ."}
+{"sent_index": 122, "start_index": 4684, "end_index": 4752, "_text": "New lower left lateral CW opacity , likely loculated pleural fluid ."}
+{"sent_index": 123, "start_index": 4753, "end_index": 4768, "_text": "2017-07-19 ECHO"}
+{"sent_index": 124, "start_index": 4771, "end_index": 4822, "_text": "Left-to-right shunt across the interatrial septum ."}
+{"sent_index": 125, "start_index": 4823, "end_index": 4833, "_text": "LVEF 25% ."}
+{"sent_index": 126, "start_index": 4834, "end_index": 4992, "_text": "Resting WMA include mid to distal septal akinesis , apical akinesis , inferior akinesis/hypokinesis , and mid to distal anterolateral hypokinesis / akinesis ."}
+{"sent_index": 127, "start_index": 4993, "end_index": 5045, "_text": "No definite apical thrombus seen ( cannot exclude )."}
+{"sent_index": 128, "start_index": 5046, "end_index": 5057, "_text": "01-22+ AR ."}
+{"sent_index": 129, "start_index": 5058, "end_index": 5070, "_text": "Trivial MR ."}
+{"sent_index": 130, "start_index": 5071, "end_index": 5078, "_text": "1+ TR ."}
+{"sent_index": 131, "start_index": 5079, "end_index": 5097, "_text": "2017-08-16 CT head"}
+{"sent_index": 132, "start_index": 5100, "end_index": 5260, "_text": "New rounded low-density area measuring 2.5 cm in left basal ganglia , which partially extends to the left thalamus , probably representing subacute infarction ."}
+{"sent_index": 133, "start_index": 5261, "end_index": 5323, "_text": "On this head CT without contrast , the evaluation is limited ."}
+{"sent_index": 134, "start_index": 5324, "end_index": 5344, "_text": "2017-08-16 CTA chest"}
+{"sent_index": 135, "start_index": 5347, "end_index": 5383, "_text": "No evidence for pulmonary embolism ."}
+{"sent_index": 136, "start_index": 5384, "end_index": 5436, "_text": "Findings consistent with failure or fluid overload ."}
+{"sent_index": 137, "start_index": 5437, "end_index": 5606, "_text": "Development of small loculated pleural fluid collection along the periphery of the left major fissure or so-called pseudotumor , consistent with the recent chest x-ray ."}
+{"sent_index": 138, "start_index": 5607, "end_index": 5652, "_text": "Unchanged appearance of right pneumonectomy ."}
+{"sent_index": 139, "start_index": 5653, "end_index": 5668, "_text": "2017-08-16 ECHO"}
+{"sent_index": 140, "start_index": 5671, "end_index": 5706, "_text": "The left atrium is normal in size ."}
+{"sent_index": 141, "start_index": 5707, "end_index": 5928, "_text": "Overall LVEF is difficult to assess due to poor echo windows although the basal LV appeas hyperdynamic without regional contraction abnormality ( suspect significant improvement compared to prior study dated 2017-07-18 )."}
+{"sent_index": 142, "start_index": 5929, "end_index": 6031, "_text": "No masses or thrombi are seen in the left ventricle ( due to poor echo windows cannot fully exclude )."}
+{"sent_index": 143, "start_index": 6032, "end_index": 6071, "_text": "The ascending aorta is mildly dilated ."}
+{"sent_index": 144, "start_index": 6072, "end_index": 6107, "_text": "There is no aortic valve stenosis ."}
+{"sent_index": 145, "start_index": 6108, "end_index": 6150, "_text": "Mild ( 1+ ) aortic regurgitation is seen ."}
+{"sent_index": 146, "start_index": 6151, "end_index": 6189, "_text": "Trivial mitral regurgitation is seen ."}
+{"sent_index": 147, "start_index": 6190, "end_index": 6256, "_text": "The left ventricular inflow pattern suggests impaired relaxation ."}
+{"sent_index": 148, "start_index": 6257, "end_index": 6296, "_text": "There is a small pericardial effusion ."}
+{"sent_index": 149, "start_index": 6297, "end_index": 6346, "_text": "There are no echocardiographic signs of tamponade"}
+{"sent_index": 150, "start_index": 6347, "end_index": 6361, "_text": "2017-08-17 EEG"}
+{"sent_index": 151, "start_index": 6364, "end_index": 6526, "_text": "Markedly abnormal portable EEG due to the voltage suppression over the left hemisphere and due to the bursts of generalized slowing and right hemisphere slowing ."}
+{"sent_index": 152, "start_index": 6527, "end_index": 6714, "_text": "The first abnormality raises the possibility of material ( such as subdural fluid ) interposed between the brain and recording electrodes or widespread cortical dysfunction on that side ."}
+{"sent_index": 153, "start_index": 6715, "end_index": 6782, "_text": "Anatomic correlation would be of interest if clinically indicated ."}
+{"sent_index": 154, "start_index": 6783, "end_index": 6867, "_text": "The generalized slowing indicates a non specific dysfunction in midline structures ."}
+{"sent_index": 155, "start_index": 6868, "end_index": 6938, "_text": "There was also evidence of subcortical dysfunction on the right side ."}
+{"sent_index": 156, "start_index": 6939, "end_index": 6975, "_text": "No epileptiform features were seen ."}
+{"sent_index": 157, "start_index": 6976, "end_index": 6986, "_text": "MICRO DATA"}
+{"sent_index": 158, "start_index": 6989, "end_index": 7049, "_text": "2017-08-17 STOOL CLOSTRIDIUM DIFFICILE TOXIN ASSAY - PENDING"}
+{"sent_index": 159, "start_index": 7050, "end_index": 7199, "_text": "2017-08-16 CSF ; SPINAL FLUID GRAM STAIN - neg FLUID CULTURE - neg ; FUNGAL CULTURE - PENDING ; ACID FAST CULTURE - PENDING ; VIRAL CULTURE - PENDING"}
+{"sent_index": 160, "start_index": 7200, "end_index": 7239, "_text": "2017-08-15 SPUTUM CULTURE - PRELIMINARY"}
+{"sent_index": 161, "start_index": 7242, "end_index": 7296, "_text": "PSEUDOMONAS AERUGINOSA }\n2017-08-15 BLOOD CULTURE NGTD"}
+{"sent_index": 162, "start_index": 7297, "end_index": 7329, "_text": "2017-08-15 URINE CULTURE - FINAL"}
+{"sent_index": 163, "start_index": 7330, "end_index": 7359, "_text": "2017-08-15 BLOOD CULTURE NGTD"}
+{"sent_index": 164, "start_index": 7360, "end_index": 7381, "_text": "Brief Hospital Course"}
+{"sent_index": 165, "start_index": 7384, "end_index": 7387, "_text": "Mr."}
+{"sent_index": 166, "start_index": 7388, "end_index": 7512, "_text": "Lockley was admitted with respiratory failure , thought to be related to mucus plugging as well as a pseudomonal pneumonia ."}
+{"sent_index": 167, "start_index": 7513, "end_index": 7636, "_text": "Both of these etiologies were treated , and he continued to oxygenate and ventilate well on his usual ventilator settings ."}
+{"sent_index": 168, "start_index": 7637, "end_index": 7733, "_text": "However , the issue that dominated the admission was his recent acute decline in mental status ."}
+{"sent_index": 169, "start_index": 7734, "end_index": 7819, "_text": "He was thoroughly evaluated by neurology and underwent head CT , MRI , LP , and EEG ."}
+{"sent_index": 170, "start_index": 7820, "end_index": 7905, "_text": "This work-up demonstrated a small left basal ganglia infarct , likely cardioembolic ."}
+{"sent_index": 171, "start_index": 7906, "end_index": 8130, "_text": "However , they felt this event could not account for his new , severe global deficit ; this was thought to be secondary to a more pervasive process , likely anoxic encephalopathy , for which the prognosis is extremely grim ."}
+{"sent_index": 172, "start_index": 8131, "end_index": 8328, "_text": "This was discussed at length in several family meetings involving the patient 's wife , son , primary care doctor , ICU attending , and neurology consultant in the presence of a Asian interpreter ."}
+{"sent_index": 173, "start_index": 8329, "end_index": 8552, "_text": "The end result of these discussion was that the patient 's wishes would not be consistent with this new level of functioning from which he had little hope of recovery ; the family decided to make him comfort measures only ."}
+{"sent_index": 174, "start_index": 8553, "end_index": 8686, "_text": "He was disconnected from the ventilator and all medications beyond a morphine drip were stopped , and he expired shortly thereafter ."}
+{"sent_index": 175, "start_index": 8687, "end_index": 8711, "_text": "The family was present ."}
+{"sent_index": 176, "start_index": 8712, "end_index": 8736, "_text": "Medications on Admission"}
+{"sent_index": 177, "start_index": 8739, "end_index": 8801, "_text": "Jevity 1.2 65 mL / hour continuous with water 240 cc q 8 hours"}
+{"sent_index": 178, "start_index": 8802, "end_index": 8834, "_text": "Lasix 40 mg IV QAM ( given 08-14"}
+{"sent_index": 179, "start_index": 8837, "end_index": 8899, "_text": "Vancomycin 1 gm IV q 36 hours ( last dose at 2000 on 08-13 ) ."}
+{"sent_index": 180, "start_index": 8900, "end_index": 8916, "_text": "Started on 08-09"}
+{"sent_index": 181, "start_index": 8919, "end_index": 8935, "_text": "ASA 325 mg PO QD"}
+{"sent_index": 182, "start_index": 8936, "end_index": 8961, "_text": "Lansoprazole 30 mg PO QAM"}
+{"sent_index": 183, "start_index": 8962, "end_index": 8987, "_text": "Heparin 5000 units SC TID"}
+{"sent_index": 184, "start_index": 8988, "end_index": 9062, "_text": "Zosyn 4.5 gm IV q 8 hours ( last dose on 08-14 at 1400 ) , started 08-08 ."}
+{"sent_index": 185, "start_index": 9063, "end_index": 9116, "_text": "Metoprolol 37.5 mg q 12 hours ( last dose 07/25 in AM"}
+{"sent_index": 186, "start_index": 9119, "end_index": 9163, "_text": "Protein / Soy supplement 2 scoops q 12 hours"}
+{"sent_index": 187, "start_index": 9164, "end_index": 9252, "_text": "Ipratropium / Albuterol inhaler 4 puffs QID\nCompleted course of Flagyl 07-25 --> 08-10 ."}
+{"sent_index": 188, "start_index": 9253, "end_index": 9274, "_text": "Discharge Disposition"}
+{"sent_index": 189, "start_index": 9277, "end_index": 9284, "_text": "Expired"}
+{"sent_index": 190, "start_index": 9285, "end_index": 9304, "_text": "Discharge Diagnosis"}
+{"sent_index": 191, "start_index": 9307, "end_index": 9328, "_text": "Anoxic encephalopathy"}
+{"sent_index": 192, "start_index": 9329, "end_index": 9354, "_text": "Acute respiratory failure"}
+{"sent_index": 193, "start_index": 9355, "end_index": 9382, "_text": "Chronic respiratory failure"}
+{"sent_index": 194, "start_index": 9383, "end_index": 9404, "_text": "Pseudomonal pneumonia"}
+{"sent_index": 195, "start_index": 9405, "end_index": 9420, "_text": "Volume overload"}
+{"sent_index": 196, "start_index": 9421, "end_index": 9458, "_text": "Chronic obstructive pulmonary disease"}
+{"sent_index": 197, "start_index": 9459, "end_index": 9473, "_text": "Bronchiectasis"}
+{"sent_index": 198, "start_index": 9474, "end_index": 9486, "_text": "Hyponatremia"}
+{"sent_index": 199, "start_index": 9487, "end_index": 9512, "_text": "Anemia of chronic disease"}
+{"sent_index": 200, "start_index": 9513, "end_index": 9522, "_text": "Secondary"}
+{"sent_index": 201, "start_index": 9525, "end_index": 9654, "_text": "1. Non-small cell lung cancer s/p XRT and chemotherapy in Western Sahara , s/p right pneumonectomy in 2016-09-21 for recurrence ."}
+{"sent_index": 202, "start_index": 9655, "end_index": 9686, "_text": "Chronic left pleural effusion ."}
+{"sent_index": 203, "start_index": 9687, "end_index": 9738, "_text": "2. Sick Sinus Syndrome status post PM/ICD placement"}
+{"sent_index": 204, "start_index": 9739, "end_index": 9761, "_text": "3. COPD/bronchiectasis"}
+{"sent_index": 205, "start_index": 9762, "end_index": 9777, "_text": "4. Hypertension"}
+{"sent_index": 206, "start_index": 9778, "end_index": 9806, "_text": "5. CAD , with known TO RCA ."}
+{"sent_index": 207, "start_index": 9807, "end_index": 9852, "_text": "6. CHF with EF 25% on last echo on 2017-07-19"}
+{"sent_index": 208, "start_index": 9853, "end_index": 9859, "_text": "7. BPH"}
+{"sent_index": 209, "start_index": 9860, "end_index": 9873, "_text": "8. Depression"}
+{"sent_index": 210, "start_index": 9874, "end_index": 9911, "_text": "9. Left femoral AV fistula 2017-04-19"}
+{"sent_index": 211, "start_index": 9912, "end_index": 9989, "_text": "10. Recent MRSA pneumonia and sepsis 2017-07-21 , treated with Vancomycin\n11."}
+{"sent_index": 212, "start_index": 9990, "end_index": 10048, "_text": "C. difficile colitis treated with Flagyl ( completed 08-10"}
+{"sent_index": 213, "start_index": 10051, "end_index": 10054, "_text": "12."}
+{"sent_index": 214, "start_index": 10055, "end_index": 10096, "_text": "Status post PEG tube placement 2017-07-21"}
+{"sent_index": 215, "start_index": 10097, "end_index": 10158, "_text": "13. Status post tracheostomy 2017-07-21 02-22 failure to wean"}
+{"sent_index": 216, "start_index": 10159, "end_index": 10197, "_text": "14. Status post partial colectomy 1972"}
+{"sent_index": 217, "start_index": 10198, "end_index": 10217, "_text": "Discharge Condition"}
+{"sent_index": 218, "start_index": 10220, "end_index": 10227, "_text": "Expired"}
+{"sent_index": 219, "start_index": 10228, "end_index": 10252, "_text": "Johnnie Callez MD 61-750"}
+{"sent_index": 220, "start_index": 10253, "end_index": 10305, "_text": "Completed by : Opal Anne MD 40-158 2017-08-23 @ 2054"}
+{"sent_index": 221, "start_index": 10306, "end_index": 10330, "_text": "Signed electronically by"}
+{"sent_index": 222, "start_index": 10333, "end_index": 10336, "_text": "DR."}
+{"sent_index": 223, "start_index": 10337, "end_index": 10393, "_text": "Teresa Loper on : FRI 2017-09-22 4:29 PM\n( End of Report"}

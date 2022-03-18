@@ -1,0 +1,28 @@
+T0	problem 2539 2543	pain
+A0	Assertion T0 hypothetical
+T1	problem 766 786	coffee ground emesis
+A1	Assertion T1 present
+T2	problem 791 823	a bleed from femoral access site
+A2	Assertion T2 present
+T3	problem 449 457	Symptoms
+A3	Assertion T3 absent
+T4	problem 368 378	chest pain
+A4	Assertion T4 present
+T5	problem 440 446	nausea
+A5	Assertion T5 present
+T6	problem 930 950	peptic ulcer disease
+A6	Assertion T6 possible
+T7	problem 1022 1033	Fatty liver
+A7	Assertion T7 absent
+T8	problem 307 321	hyperlipidemia
+A8	Assertion T8 present
+T9	problem 1129 1149	known drug allergies
+A9	Assertion T9 absent
+T10	problem 1292 1315	coronary artery disease
+A10	Assertion T10 associated_with_someone_else
+T11	problem 979 990	Hepatitis B
+A11	Assertion T11 present
+T12	problem 1456 1486	an acute myocardial infarction
+A12	Assertion T12 present
+T13	problem 996 1016	Hypercholesterolemia
+A13	Assertion T13 present

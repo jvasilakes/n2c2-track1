@@ -1,0 +1,106 @@
+{"sent_index": 0, "start_index": 0, "end_index": 14, "_text": "Admission Date"}
+{"sent_index": 1, "start_index": 17, "end_index": 27, "_text": "2013-11-04"}
+{"sent_index": 2, "start_index": 28, "end_index": 42, "_text": "Discharge Date"}
+{"sent_index": 3, "start_index": 45, "end_index": 55, "_text": "2013-11-16"}
+{"sent_index": 4, "start_index": 56, "end_index": 69, "_text": "Date of Birth"}
+{"sent_index": 5, "start_index": 72, "end_index": 82, "_text": "1930-12-19"}
+{"sent_index": 6, "start_index": 83, "end_index": 86, "_text": "Sex"}
+{"sent_index": 7, "start_index": 89, "end_index": 90, "_text": "F"}
+{"sent_index": 8, "start_index": 91, "end_index": 98, "_text": "Service"}
+{"sent_index": 9, "start_index": 101, "end_index": 109, "_text": "MEDICINE"}
+{"sent_index": 10, "start_index": 110, "end_index": 119, "_text": "Allergies"}
+{"sent_index": 11, "start_index": 122, "end_index": 142, "_text": "Sulfa ( Sulfonamides"}
+{"sent_index": 12, "start_index": 147, "end_index": 202, "_text": "Penicillins / Macrodantin / Ivp Dye , Iodine Containing"}
+{"sent_index": 13, "start_index": 203, "end_index": 212, "_text": "Attending"}
+{"sent_index": 14, "start_index": 215, "end_index": 242, "_text": "Robert E Goldschmidt , M.D."}
+{"sent_index": 15, "start_index": 243, "end_index": 251, "_text": "Addendum"}
+{"sent_index": 16, "start_index": 254, "end_index": 363, "_text": "Just prior to discharge on 11-14 , pt 's BP was found to be 70/40 P70 s just after receiving her am BP meds ."}
+{"sent_index": 17, "start_index": 364, "end_index": 386, "_text": "She was asymptomatic ."}
+{"sent_index": 18, "start_index": 387, "end_index": 463, "_text": "The patient was kept in the hospital and the following issues were addressed"}
+{"sent_index": 19, "start_index": 466, "end_index": 480, "_text": "1. Hypotension"}
+{"sent_index": 20, "start_index": 483, "end_index": 636, "_text": "The patient 'd pm BP meds were held 11-14 and she was administered 1.5L NS over the course of the day with subsequent SBP s in the high 90 s, low 100 s,."}
+{"sent_index": 21, "start_index": 637, "end_index": 795, "_text": "The hypotension was likely due to volume depletion caused by her diarrhea / loose stools in addition to decreased PO intake secondary to her GERD and thrush ."}
+{"sent_index": 22, "start_index": 796, "end_index": 1004, "_text": "All of this occurred in the setting of aggressive BP management with metoprolol 25 BID , HCTZ / Triampterene ( as a replacment for lasix due to recurrent hypokalemia ), Benicar 20 mg QD , and Imdur 30 mg QD ."}
+{"sent_index": 23, "start_index": 1005, "end_index": 1135, "_text": "Infection / sepsis was not likely given she was afebrile and had no localizing sx with an improving lung exam and 02 requirement ."}
+{"sent_index": 24, "start_index": 1136, "end_index": 1216, "_text": "Given the patient 's recent RP bleed , there was concern for a recurrent bleed ."}
+{"sent_index": 25, "start_index": 1217, "end_index": 1247, "_text": "Her groin exam was unchanged ."}
+{"sent_index": 26, "start_index": 1248, "end_index": 1346, "_text": "Her Hct dropped from Hct 38.9 before fluids to 35.5 s/p 1.5L NS and was thought to be dilutional ."}
+{"sent_index": 27, "start_index": 1347, "end_index": 1372, "_text": "Repeat hcts were stable ."}
+{"sent_index": 28, "start_index": 1373, "end_index": 1461, "_text": "The patient was kept an additional two days to follow her hcts and titrate her BP meds ."}
+{"sent_index": 29, "start_index": 1462, "end_index": 1559, "_text": "As volume depletion was thought to be the cause of her low BP , only the BBlocker was restarted ."}
+{"sent_index": 30, "start_index": 1560, "end_index": 1713, "_text": "She was also placed on on low dose spironolactone as a K sparing diuretic and for BP control in addition to Toprol XL 25 mg QD for her coronary disease ."}
+{"sent_index": 31, "start_index": 1714, "end_index": 1822, "_text": "She tolerated these meds with SBP s in the high 90 s to 100 s and was therefore discharged on this regimen ."}
+{"sent_index": 32, "start_index": 1823, "end_index": 1983, "_text": "She will need follow up with her PCP within B week after discharge from the extended care facility for further BP titration and monitoring of her electrolytes ."}
+{"sent_index": 33, "start_index": 1984, "end_index": 1993, "_text": "2. Thrush"}
+{"sent_index": 34, "start_index": 1996, "end_index": 2086, "_text": "This is likely secondary to her steroid inhalers and PO prednisone for COPD exacerbation ."}
+{"sent_index": 35, "start_index": 2087, "end_index": 2138, "_text": "She was started on nystatin swish and swallow QID ."}
+{"sent_index": 36, "start_index": 2139, "end_index": 2214, "_text": "The patient was encouraged to take PO liquids to prevent volume depletion ."}
+{"sent_index": 37, "start_index": 2215, "end_index": 2226, "_text": "3. diarrhea"}
+{"sent_index": 38, "start_index": 2229, "end_index": 2302, "_text": "The patient has been having loose stools at night and was guiac pos x 2 ."}
+{"sent_index": 39, "start_index": 2303, "end_index": 2357, "_text": "Stool for C.diff toxin was sent x 1 and was negative ."}
+{"sent_index": 40, "start_index": 2358, "end_index": 2384, "_text": "Her bowel regimen is prn ."}
+{"sent_index": 41, "start_index": 2385, "end_index": 2468, "_text": "Gastroenteritis is possible but she has no vomiting and only occ nausea with meds ."}
+{"sent_index": 42, "start_index": 2469, "end_index": 2513, "_text": "There is no evidence of obstruction on AXR ."}
+{"sent_index": 43, "start_index": 2514, "end_index": 2702, "_text": "Therefore , the cause of her mild diarrhea ( few loose BM / liquid stool / night ) may be either viral or secondary to resolving abdominal hematoma with resultant irritation of GI system ."}
+{"sent_index": 44, "start_index": 2703, "end_index": 2732, "_text": "We have advised a BRAT diet ."}
+{"sent_index": 45, "start_index": 2733, "end_index": 2751, "_text": "4. guiac pos stool"}
+{"sent_index": 46, "start_index": 2754, "end_index": 2955, "_text": "Given the patient 's sx of GERD , current PO steroid regimen , and ASA for her stents , the ddx for her guiac positive stools would include gastritis / gastric ulcer in addition to lower GI pathology ."}
+{"sent_index": 47, "start_index": 2956, "end_index": 3025, "_text": "However , she has no vomiting and only mild nausea with medications ."}
+{"sent_index": 48, "start_index": 3026, "end_index": 3088, "_text": "She also has no gross blood per rectum and her hct is stable ."}
+{"sent_index": 49, "start_index": 3089, "end_index": 3155, "_text": "Upon discharge the patient was changed to a BID protonix regimen ."}
+{"sent_index": 50, "start_index": 3156, "end_index": 3237, "_text": "Dr. Valerio office was notified about the patient 's discharge plans and status ."}
+{"sent_index": 51, "start_index": 3238, "end_index": 3345, "_text": "She will need outpatient follow up for her guiac pos stools with endoscopy vs EGD +/- H.pylori serologies ."}
+{"sent_index": 52, "start_index": 3346, "end_index": 3425, "_text": "A copy of this dc summary will be faxed to her PCP to ensure proper follow up ."}
+{"sent_index": 53, "start_index": 3426, "end_index": 3447, "_text": "Discharge Medications"}
+{"sent_index": 54, "start_index": 3450, "end_index": 3521, "_text": "1. Atorvastatin 10 mg Tablet Sig : One ( 1 ) Tablet PO DAILY ( Daily )."}
+{"sent_index": 55, "start_index": 3522, "end_index": 3644, "_text": "2. Pantoprazole 40 mg Tablet , Delayed Release ( E.C. ) Sig : One ( 1 ) Tablet , Delayed Release ( E.C. ) PO twice a day ."}
+{"sent_index": 56, "start_index": 3645, "end_index": 3724, "_text": "3. Acetaminophen 500 mg Tablet Sig : Two ( 2 ) Tablet PO Q6H ( every 6 hours )."}
+{"sent_index": 57, "start_index": 3725, "end_index": 3761, "_text": "Disp :* 240 Tablet (s)* Refills :* 2"}
+{"sent_index": 58, "start_index": 3764, "end_index": 3857, "_text": "4. Oxycodone 5 mg Tablet Sig : One ( 1 ) Tablet PO Q4H ( every 4 hours ) as needed for pain ."}
+{"sent_index": 59, "start_index": 3858, "end_index": 3893, "_text": "Disp :* 90 Tablet (s)* Refills :* 0"}
+{"sent_index": 60, "start_index": 3896, "end_index": 3898, "_text": "5."}
+{"sent_index": 61, "start_index": 3899, "end_index": 3990, "_text": "Fluticasone 50 mcg / Actuation Aerosol , Spray Sig : Two ( 2 ) Spray Nasal DAILY ( Daily )."}
+{"sent_index": 62, "start_index": 3991, "end_index": 4088, "_text": "6. Fluticasone 110 mcg / Actuation Aerosol Sig : Two ( 2 ) Puff Inhalation BID ( 2 times a day )."}
+{"sent_index": 63, "start_index": 4089, "end_index": 4196, "_text": "7. Tiotropium Bromide 18 mcg Capsule , w/ Inhalation Device Sig : One ( 1 ) Cap Inhalation DAILY ( Daily )."}
+{"sent_index": 64, "start_index": 4197, "end_index": 4229, "_text": "Disp :* 30 Cap (s)* Refills :* 2"}
+{"sent_index": 65, "start_index": 4232, "end_index": 4302, "_text": "8. Clopidogrel 75 mg Tablet Sig : One ( 1 ) Tablet PO DAILY ( Daily )."}
+{"sent_index": 66, "start_index": 4303, "end_index": 4338, "_text": "Disp :* 30 Tablet (s)* Refills :* 2"}
+{"sent_index": 67, "start_index": 4341, "end_index": 4480, "_text": "9. Albuterol Sulfate 0.083 % Solution Sig : One ( 1 ) puff Inhalation Q6H ( every 6 hours ) as needed for shortness of breath or wheezing ."}
+{"sent_index": 68, "start_index": 4481, "end_index": 4513, "_text": "Disp :* 1 inhaler * Refills :* 1"}
+{"sent_index": 69, "start_index": 4516, "end_index": 4618, "_text": "10. Aluminum - Magnesium Hydroxide 225-200 mg / 5 mL Suspension Sig : 15-30 ML s PO PRN ( as needed )."}
+{"sent_index": 70, "start_index": 4619, "end_index": 4702, "_text": "11. Senna 8.6 mg Tablet Sig : One ( 1 ) Tablet PO BID ( 2 times a day ) as needed ."}
+{"sent_index": 71, "start_index": 4703, "end_index": 4778, "_text": "12. Prednisone 10 mg Tablet Sig : 1-2 Tablets PO DAILY ( Daily ) for 4 days"}
+{"sent_index": 72, "start_index": 4781, "end_index": 4867, "_text": "Please take two pills for one day starting 11-17 , then take one pill for three days ."}
+{"sent_index": 73, "start_index": 4868, "end_index": 4903, "_text": "Disp :* 5 Tablet (s)* Refills : * 0"}
+{"sent_index": 74, "start_index": 4906, "end_index": 4972, "_text": "13. oxygen continue 02 at 1L/min continuous to keep sats in 90 's."}
+{"sent_index": 75, "start_index": 4973, "end_index": 5041, "_text": "14. Spironolactone 25 mg Tablet Sig : 0.5 Tablet PO DAILY ( Daily )."}
+{"sent_index": 76, "start_index": 5042, "end_index": 5168, "_text": "15. Metoprolol Succinate 25 mg Tablet Sustained Release 24HR Sig : One ( 1 ) Tablet Sustained Release 24HR PO DAILY ( Daily )."}
+{"sent_index": 77, "start_index": 5169, "end_index": 5268, "_text": "16. Nystatin 100,000 unit / mL Suspension Sig : Ten ( 10 ) ML PO QID ( 4 times a day ) for 7 days ."}
+{"sent_index": 78, "start_index": 5269, "end_index": 5391, "_text": "17. Aspirin 325 mg Tablet , Delayed Release ( E.C. ) Sig : One ( 1 ) Tablet , Delayed Release ( E.C. ) PO DAILY ( Daily )."}
+{"sent_index": 79, "start_index": 5392, "end_index": 5413, "_text": "Discharge Disposition"}
+{"sent_index": 80, "start_index": 5416, "end_index": 5429, "_text": "Extended Care"}
+{"sent_index": 81, "start_index": 5430, "end_index": 5438, "_text": "Facility"}
+{"sent_index": 82, "start_index": 5441, "end_index": 5448, "_text": "3133 W."}
+{"sent_index": 83, "start_index": 5449, "end_index": 5459, "_text": "Third Ave."}
+{"sent_index": 84, "start_index": 5460, "end_index": 5508, "_text": "Rehab & Nursing Center - Westwood Lodge Hospital"}
+{"sent_index": 85, "start_index": 5509, "end_index": 5528, "_text": "Discharge Diagnosis"}
+{"sent_index": 86, "start_index": 5531, "end_index": 5580, "_text": "1) Rapid atrial fibrillation with demand ischemia"}
+{"sent_index": 87, "start_index": 5581, "end_index": 5605, "_text": "2) Retroperitoneal bleed"}
+{"sent_index": 88, "start_index": 5606, "end_index": 5625, "_text": "Discharge Condition"}
+{"sent_index": 89, "start_index": 5628, "end_index": 5634, "_text": "Stable"}
+{"sent_index": 90, "start_index": 5635, "end_index": 5657, "_text": "Discharge Instructions"}
+{"sent_index": 91, "start_index": 5660, "end_index": 5749, "_text": "Please follow up with your PCP Richard , Kevin Robinson ( 771 ) 937-5400 upon discharge ."}
+{"sent_index": 92, "start_index": 5750, "end_index": 5872, "_text": "If you experience CP , SOB , dizzyness , or any other symptoms that concern you please call your PCP or return to the ER ."}
+{"sent_index": 93, "start_index": 5873, "end_index": 5939, "_text": "Note : you have had a cardiac stent placed during this admission ."}
+{"sent_index": 94, "start_index": 5940, "end_index": 6056, "_text": "You must take your aspirin and plavix every day to prevent failure of these stents which could be life threatening ."}
+{"sent_index": 95, "start_index": 6057, "end_index": 6100, "_text": "Please take all medications as prescribed ."}
+{"sent_index": 96, "start_index": 6101, "end_index": 6122, "_text": "Followup Instructions"}
+{"sent_index": 97, "start_index": 6125, "end_index": 6236, "_text": "1) Please follow up with your PCP and cardiologist , David , Larry Robinson ( 771 ) 937-5400 , upon discharge ."}
+{"sent_index": 98, "start_index": 6237, "end_index": 6337, "_text": "2) You are scheduled to have your staples removed on 2013-11-20 3:00 with provider : Leah , Paula G."}
+{"sent_index": 99, "start_index": 6338, "end_index": 6392, "_text": "Wilson SURGERY ( NHB )\nDate / Time : 2013-11-20 3:00 ."}
+{"sent_index": 100, "start_index": 6393, "end_index": 6423, "_text": "Lashonda Christopher MD 48-669"}
+{"sent_index": 101, "start_index": 6424, "end_index": 6443, "_text": "Completed by : Jill"}
+{"sent_index": 102, "start_index": 6444, "end_index": 6477, "_text": "Kelly MD 47-482 2013-11-16 @ 1550"}
+{"sent_index": 103, "start_index": 6478, "end_index": 6508, "_text": "Signed electronically by : DR."}
+{"sent_index": 104, "start_index": 6509, "end_index": 6515, "_text": "Lee V."}
+{"sent_index": 105, "start_index": 6516, "end_index": 6565, "_text": "Young on : FRI 2013-12-20 4:59 PM\n( End of Report"}

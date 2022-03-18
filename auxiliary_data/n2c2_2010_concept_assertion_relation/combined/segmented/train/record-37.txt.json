@@ -1,0 +1,236 @@
+{"sent_index": 0, "start_index": 0, "end_index": 14, "_text": "Admission Date"}
+{"sent_index": 1, "start_index": 17, "end_index": 27, "_text": "2013-05-18"}
+{"sent_index": 2, "start_index": 28, "end_index": 42, "_text": "Discharge Date"}
+{"sent_index": 3, "start_index": 45, "end_index": 55, "_text": "2013-05-24"}
+{"sent_index": 4, "start_index": 56, "end_index": 69, "_text": "Date of Birth"}
+{"sent_index": 5, "start_index": 72, "end_index": 82, "_text": "1811-08-19"}
+{"sent_index": 6, "start_index": 83, "end_index": 86, "_text": "Sex"}
+{"sent_index": 7, "start_index": 89, "end_index": 90, "_text": "F"}
+{"sent_index": 8, "start_index": 91, "end_index": 98, "_text": "Service"}
+{"sent_index": 9, "start_index": 101, "end_index": 109, "_text": "MEDICINE"}
+{"sent_index": 10, "start_index": 110, "end_index": 119, "_text": "Allergies"}
+{"sent_index": 11, "start_index": 122, "end_index": 176, "_text": "Patient recorded as having No Known Allergies to Drugs"}
+{"sent_index": 12, "start_index": 177, "end_index": 197, "_text": "Attending : Sarah Q."}
+{"sent_index": 13, "start_index": 198, "end_index": 211, "_text": "George , M.D."}
+{"sent_index": 14, "start_index": 212, "end_index": 227, "_text": "Chief Complaint"}
+{"sent_index": 15, "start_index": 230, "end_index": 242, "_text": "Hip fracture"}
+{"sent_index": 16, "start_index": 243, "end_index": 279, "_text": "Major Surgical or Invasive Procedure"}
+{"sent_index": 17, "start_index": 282, "end_index": 301, "_text": "OPERATIVE PROCEDURE"}
+{"sent_index": 18, "start_index": 304, "end_index": 391, "_text": "1. Closed reduction of right hip with open placement of dynamic hip screw , right hip ."}
+{"sent_index": 19, "start_index": 392, "end_index": 464, "_text": "2. Examination under anesthesia with placement of splint , right elbow ."}
+{"sent_index": 20, "start_index": 465, "end_index": 477, "_text": "PROCEDURE #2"}
+{"sent_index": 21, "start_index": 480, "end_index": 614, "_text": "1. Exploratory laparotomy with drainage of intra-abdominal abscess and peritonitis with gross soilage with bile and gastric contents ."}
+{"sent_index": 22, "start_index": 615, "end_index": 721, "_text": "2. Exposure and wide drainage of perforated posterior duodenal ulcer with internal and external drainage ."}
+{"sent_index": 23, "start_index": 722, "end_index": 746, "_text": "3. Feeding jejunostomy ."}
+{"sent_index": 24, "start_index": 747, "end_index": 768, "_text": "4. Tube gastrostomy ."}
+{"sent_index": 25, "start_index": 769, "end_index": 816, "_text": "5. Placement of a right femoral arterial line ."}
+{"sent_index": 26, "start_index": 817, "end_index": 843, "_text": "History of Present Illness"}
+{"sent_index": 27, "start_index": 846, "end_index": 958, "_text": "90 yo F with MMP ( see below ) who sustained a mechanical fall down stairs resulting in a hip and arm fracture ."}
+{"sent_index": 28, "start_index": 959, "end_index": 991, "_text": "Fall was witnessed by daughter ."}
+{"sent_index": 29, "start_index": 992, "end_index": 1045, "_text": "Nicholas seizures , no LOC , no head or neck trauma ."}
+{"sent_index": 30, "start_index": 1046, "end_index": 1132, "_text": "Patient denies CP , SOB , light headedness , or dizziness prior to of after the fall ."}
+{"sent_index": 31, "start_index": 1133, "end_index": 1207, "_text": "She fell on her R side and had a great deal of pain in her R arm and hip ."}
+{"sent_index": 32, "start_index": 1208, "end_index": 1271, "_text": "Presented to Taunton and found to have R humerus and R hip fx ."}
+{"sent_index": 33, "start_index": 1272, "end_index": 1330, "_text": "Ct of head and neck neg for fx , bleed , and dislocation ."}
+{"sent_index": 34, "start_index": 1331, "end_index": 1351, "_text": "Past Medical History"}
+{"sent_index": 35, "start_index": 1354, "end_index": 1549, "_text": "1. Coronary artery disease status post non-ST-elevation myocardial infarction in 2009-05-05 , status post cardiac catheterization with left anterior descending artery stent placement in 05/2001 ."}
+{"sent_index": 36, "start_index": 1550, "end_index": 1598, "_text": "2. CHF with an ejection fraction of 40-45% 02-09"}
+{"sent_index": 37, "start_index": 1599, "end_index": 1619, "_text": "3. Diabetes type 2 ."}
+{"sent_index": 38, "start_index": 1620, "end_index": 1674, "_text": "4. Anemia , transfusion dependent every three months ."}
+{"sent_index": 39, "start_index": 1675, "end_index": 1685, "_text": "Hct 28 b/l"}
+{"sent_index": 40, "start_index": 1686, "end_index": 1713, "_text": "5. Polymyalgia rheumatica ."}
+{"sent_index": 41, "start_index": 1714, "end_index": 1731, "_text": "6. Hypertension ."}
+{"sent_index": 42, "start_index": 1732, "end_index": 1751, "_text": "7. Hypothyroidism ."}
+{"sent_index": 43, "start_index": 1752, "end_index": 1813, "_text": "8. Chronic renal insufficiency with a b/l creatinine of 1.4 ."}
+{"sent_index": 44, "start_index": 1814, "end_index": 1896, "_text": "9. History of syncope and first degree A-V heart block with beta blocker therapy ."}
+{"sent_index": 45, "start_index": 1897, "end_index": 1956, "_text": "10. History of lower gastrointestinal bleed in 2009-06-05 ."}
+{"sent_index": 46, "start_index": 1957, "end_index": 1976, "_text": "11. spinal stenosis"}
+{"sent_index": 47, "start_index": 1977, "end_index": 2072, "_text": "12. Pacemaker - DDD dual chamber rate response pacemaker 2011-08-22 for symptomatic bradycardia"}
+{"sent_index": 48, "start_index": 2073, "end_index": 2087, "_text": "Social History"}
+{"sent_index": 49, "start_index": 2090, "end_index": 2249, "_text": "Lives alone in elderly housing , a daughter in the area , two children and exercises two times a week by walking and stretching .\nno , tob , no etoh , no drugs"}
+{"sent_index": 50, "start_index": 2250, "end_index": 2264, "_text": "Family History"}
+{"sent_index": 51, "start_index": 2267, "end_index": 2282, "_text": "Noncontributory"}
+{"sent_index": 52, "start_index": 2283, "end_index": 2296, "_text": "Physical Exam"}
+{"sent_index": 53, "start_index": 2299, "end_index": 2311, "_text": "at admission"}
+{"sent_index": 54, "start_index": 2312, "end_index": 2350, "_text": "T 96.0 BP 177/61 P 70 R 18 O2 97 on RA"}
+{"sent_index": 55, "start_index": 2351, "end_index": 2377, "_text": "Gen - somnolent , confused"}
+{"sent_index": 56, "start_index": 2378, "end_index": 2409, "_text": "HEENT - PERRL , OP clear , EOMI"}
+{"sent_index": 57, "start_index": 2410, "end_index": 2430, "_text": "Cor - rrr , no m/r/g"}
+{"sent_index": 58, "start_index": 2431, "end_index": 2454, "_text": "Chest - CTAB anteriorly"}
+{"sent_index": 59, "start_index": 2455, "end_index": 2472, "_text": "Abd - s/nt/nd +BS"}
+{"sent_index": 60, "start_index": 2473, "end_index": 2541, "_text": "Ext - 2 + edema to knees , warm 2 + pulses , pain in R arm and R hip"}
+{"sent_index": 61, "start_index": 2542, "end_index": 2559, "_text": "Pertinent Results"}
+{"sent_index": 62, "start_index": 2562, "end_index": 2684, "_text": "2013-05-18 06:00 PM GLUCOSE - 188 * UREA N - 48 * CREAT - 1.3 * SODIUM - 138 POTASSIUM - 4.0 CHLORIDE - 106 TOTAL CO2 - 21"}
+{"sent_index": 63, "start_index": 2687, "end_index": 2701, "_text": "ANION GAP - 15"}
+{"sent_index": 64, "start_index": 2702, "end_index": 2734, "_text": "2013-05-18 06:00 PM CK(CPK) - 32"}
+{"sent_index": 65, "start_index": 2735, "end_index": 2885, "_text": "2013-05-18 06:00 PM CK-MB - NotDone\n2013-05-18 06:00 PM WBC - 14.9 *# RBC - 2.91 * HGB - 8.5 * HCT - 24.7 * MCV - 85 MCH - 29.3 MCHC - 34.5 RDW - 14.6"}
+{"sent_index": 66, "start_index": 2886, "end_index": 2918, "_text": "2013-05-18 06:00 PM NEUTS - 87.9"}
+{"sent_index": 67, "start_index": 2921, "end_index": 3298, "_text": "BANDS - 0 LYMPHS - 6.3 * MONOS - 5.7 EOS - 0.1 BASOS - 0\n2013-05-18 06:00 PM HYPOCHROM - 1 + ANISOCYT - NORMAL POIKILOCY - NORMAL MACROCYT - NORMAL MICROCYT - NORMAL POLYCHROM - NORMAL\n2013-05-18 06:00 PM PLT SMR - NORMAL PLT COUNT - 216\n2013-05-18 06:00 PM PT - 13.3 PTT - 26.4 INR(PT) - 1.2 EKG - NSR 64 , 1st deg block , LAD , new TWI inf/lat leads , new ST depressions V4-6"}
+{"sent_index": 68, "start_index": 3299, "end_index": 3309, "_text": "Echo 02-09"}
+{"sent_index": 69, "start_index": 3310, "end_index": 3352, "_text": "1. The left atrium is moderately dilated ."}
+{"sent_index": 70, "start_index": 3353, "end_index": 3383, "_text": "The left atrium is elongated ."}
+{"sent_index": 71, "start_index": 3384, "end_index": 3437, "_text": "2. The left ventricular wall thicknesses are normal ."}
+{"sent_index": 72, "start_index": 3438, "end_index": 3482, "_text": "The left ventricular cavity size is normal ."}
+{"sent_index": 73, "start_index": 3483, "end_index": 3545, "_text": "There is mild regional left ventricular systolic dysfunction ."}
+{"sent_index": 74, "start_index": 3546, "end_index": 3610, "_text": "Overall left ventricular systolic function is mildly depressed ."}
+{"sent_index": 75, "start_index": 3611, "end_index": 3715, "_text": "Resting regional wall motion abnormalities include inferolateral , inferior and mid septal hypokinesis ."}
+{"sent_index": 76, "start_index": 3716, "end_index": 3761, "_text": "3. Right ventricular chamber size is normal ."}
+{"sent_index": 77, "start_index": 3762, "end_index": 3809, "_text": "Right ventricular systolic function is normal ."}
+{"sent_index": 78, "start_index": 3810, "end_index": 3867, "_text": "4. The aortic valve leaflets ( 3 ) are mildly thickened ."}
+{"sent_index": 79, "start_index": 3868, "end_index": 3901, "_text": "No aortic regurgitation present ."}
+{"sent_index": 80, "start_index": 3902, "end_index": 3953, "_text": "5. The mitral valve leaflets are mildly thickened ."}
+{"sent_index": 81, "start_index": 3954, "end_index": 4000, "_text": "Moderate ( 2 +) mitral regurgitation is seen ."}
+{"sent_index": 82, "start_index": 4001, "end_index": 4062, "_text": "6. There is moderate pulmonary artery systolic hypertension ."}
+{"sent_index": 83, "start_index": 4063, "end_index": 4100, "_text": "7. There is no pericardial effusion ."}
+{"sent_index": 84, "start_index": 4101, "end_index": 4284, "_text": "Compared with the findings of the prior study ( tape reviewed ) of 2009-06-05 , the LV function has improved with an improvementt in function of the apex , septal and anterior walls ."}
+{"sent_index": 85, "start_index": 4285, "end_index": 4389, "_text": "New inferior and inferolateral wall motion abnormalities with more severe mitral regurgitation present ."}
+{"sent_index": 86, "start_index": 4390, "end_index": 4487, "_text": "Cath 2001\n1. Coronary angiography demonstrated single vessel disease in a right dominant system ."}
+{"sent_index": 87, "start_index": 4488, "end_index": 4514, "_text": "The left main was normal ."}
+{"sent_index": 88, "start_index": 4515, "end_index": 4664, "_text": "The LAD had serial 90% lesions proximally , involving the origin of the first diagonal , which was occluded and filled via left to left collaterals ."}
+{"sent_index": 89, "start_index": 4665, "end_index": 4747, "_text": "The mid-distal LAD was underfilled initially but was without obstructive disease ."}
+{"sent_index": 90, "start_index": 4748, "end_index": 4828, "_text": "The non-dominant circumflex system had no hemodynamically significant stenoses ."}
+{"sent_index": 91, "start_index": 4829, "end_index": 4894, "_text": "The dominant RCA was a large vessel with no significant disease ."}
+{"sent_index": 92, "start_index": 4895, "end_index": 5048, "_text": "2. Resting hemodynamics revealed elevated right and left sided filling pressures with a mean RA pressure of 12 mm Hg and a mean wedge pressure 24 mm Hg ."}
+{"sent_index": 93, "start_index": 5049, "end_index": 5113, "_text": "Moderate pulmonary hypertension was present with a PA of 52/28 ."}
+{"sent_index": 94, "start_index": 5114, "end_index": 5167, "_text": "The cardiac index was preserved at 3.0 L / min / m2 ."}
+{"sent_index": 95, "start_index": 5168, "end_index": 5282, "_text": "3. Left ventriculography was not performed due to the presence of moderate renal insufficiency ( creatinine 1.6 )."}
+{"sent_index": 96, "start_index": 5283, "end_index": 5476, "_text": "4. Successful PTCA and stenting of the proximal LAD with overlapping 2.25 x 13 mm and 2.25 x 18 mm Hepacoat stents with no residual stenosis or dissection and normal flow ( see PTCA comments )."}
+{"sent_index": 97, "start_index": 5477, "end_index": 5492, "_text": "FINAL DIAGNOSIS"}
+{"sent_index": 98, "start_index": 5495, "end_index": 5534, "_text": "1. One vessel coronary artery disease ."}
+{"sent_index": 99, "start_index": 5535, "end_index": 5598, "_text": "2. Moderately elevated right and left sided filling pressures ."}
+{"sent_index": 100, "start_index": 5599, "end_index": 5643, "_text": "3. Successful stenting of the proximal LAD ."}
+{"sent_index": 101, "start_index": 5644, "end_index": 5779, "_text": "Hematology\nCOMPLETE BLOOD COUNT WBC RBC Hgb Hct MCV MCH MCHC RDW Plt Ct\n2013-05-24 09:40 AM 19.3 * 4.46 13.1 39.2 88 29.4 33.5 14.4 159"}
+{"sent_index": 102, "start_index": 5780, "end_index": 5846, "_text": "2013-05-24 12:52 AM 19.8 *# 4.73 13.8 42.1 # 89 29.3 32.9 14.3 147"}
+{"sent_index": 103, "start_index": 5849, "end_index": 5861, "_text": "DIFFERENTIAL"}
+{"sent_index": 104, "start_index": 5862, "end_index": 5954, "_text": "Neuts Bands Lymphs Monos Eos Baso Atyps Metas\n2013-05-22 06:15 AM 90.0 * 0 5.6 * 4.2 0.1 0.2"}
+{"sent_index": 105, "start_index": 5955, "end_index": 6084, "_text": "RED CELL MORPHOLOGY Hypochr Anisocy Poiklo Macrocy Microcy Polychr \n2013-05-22 06:15 AM NORMAL NORMAL NORMAL NORMAL NORMAL NORMAL"}
+{"sent_index": 106, "start_index": 6085, "end_index": 6228, "_text": "BASIC COAGULATION ( PT , PTT , PLT , INR ) PT PTT Plt Smr Plt Ct INR(PT) LPlt\n2013-05-24 09:40 AM 159 1 +\n2013-05-24 09:40 AM 14.9 * 1 31.9 1.5"}
+{"sent_index": 107, "start_index": 6229, "end_index": 6339, "_text": "1 NOTE NEW NORMAL RANGE AS OF 12 AM 2013-05-04\n2013-05-24 12:52 AM 147 *\n2013-05-24 12:52 AM 14.6 * 1 33.8 1.4"}
+{"sent_index": 108, "start_index": 6340, "end_index": 6386, "_text": "1 NOTE NEW NORMAL RANGE AS OF 12 AM 2013-05-04"}
+{"sent_index": 109, "start_index": 6387, "end_index": 6577, "_text": "Chemistry\nRENAL & GLUCOSE Glucose UreaN Creat Na K Cl HCO3 AnGap\n2013-05-24 09:40 AM 192 * 87 * 2.4 * 146 * 5.1 114 * 16 * 21 *\n2013-05-24 12:52 AM 160 * 86 * 2.6 * 148 * 4.4 115 * 14 * 1 23"}
+{"sent_index": 110, "start_index": 6580, "end_index": 6602, "_text": "1 VERIFIED BY DILUTION"}
+{"sent_index": 111, "start_index": 6603, "end_index": 6614, "_text": "NOTIFIED Y."}
+{"sent_index": 112, "start_index": 6615, "end_index": 6646, "_text": "Welch - TSICU 140 AM 2013-05-24"}
+{"sent_index": 113, "start_index": 6647, "end_index": 6722, "_text": "ENZYMES & BILIRUBIN ALT AST LD(LDH) CK(CPK) AlkPhos Amylase TotBili DirBili"}
+{"sent_index": 114, "start_index": 6724, "end_index": 6793, "_text": "2013-05-24 07:40 AM 628 *\n2013-05-24 12:52 AM 22 65 * 739 * 52 81 1.0"}
+{"sent_index": 115, "start_index": 6794, "end_index": 6850, "_text": "OTHER ENZYMES & BILIRUBINS Lipase\n2013-05-24 12:52 AM 17"}
+{"sent_index": 116, "start_index": 6851, "end_index": 6916, "_text": "CPK ISOENZYMES CK-MB MB Indx cTropnT\n2013-05-24 07:40 AM 15 * 2.4"}
+{"sent_index": 117, "start_index": 6917, "end_index": 6954, "_text": "2013-05-24 12:52 AM 14 * 1.9 0.12 * 1"}
+{"sent_index": 118, "start_index": 6955, "end_index": 6995, "_text": "1 CTROPNT > 0.10 NG/ML SUGGESTS ACUTE MI"}
+{"sent_index": 119, "start_index": 6996, "end_index": 7102, "_text": "CHEMISTRY TotProt Albumin Globuln Calcium Phos Mg UricAcd Iron Cholest\n2013-05-24 09:40 AM 8.3 * 5.4 * 2.1"}
+{"sent_index": 120, "start_index": 7103, "end_index": 7126, "_text": "2013-05-24 12:52 AM 2.1"}
+{"sent_index": 121, "start_index": 7129, "end_index": 7145, "_text": "7.7 * 5.1 *# 1.6"}
+{"sent_index": 122, "start_index": 7146, "end_index": 7193, "_text": "LIPID / CHOLESTEROL Triglyc HDL CHOL/HD LDLcalc"}
+{"sent_index": 123, "start_index": 7194, "end_index": 7333, "_text": "2013-05-19 09:20 AM 1603 - 5419 LDL(CALC) INVALID IF TRIG > 400 OR NON-FASTING SAMPLE LAB USE ONLY GreenHd\n2013-05-18 06:00 PM HOLD1\n1 HOLD"}
+{"sent_index": 124, "start_index": 7334, "end_index": 7366, "_text": "DISCARD GREATER THAN 4 HOURS OLD"}
+{"sent_index": 125, "start_index": 7367, "end_index": 7376, "_text": "Blood Gas"}
+{"sent_index": 126, "start_index": 7377, "end_index": 7393, "_text": "BLOOD GASES Type"}
+{"sent_index": 127, "start_index": 7394, "end_index": 7484, "_text": "Temp Rates Tidal V PEEP FiO2 O2 Flow pO2 pCO2 pH calHCO3 Base XS AADO2 REQ O2 Intubat Vent"}
+{"sent_index": 128, "start_index": 7486, "end_index": 7531, "_text": "2013-05-24 07:58 AM ART 102 36 7.26 * 17 * -9"}
+{"sent_index": 129, "start_index": 7532, "end_index": 7593, "_text": "2013-05-24 04:31 AM ART 36.4 16 / 662-15484 * 7.26 * 16 * -10"}
+{"sent_index": 130, "start_index": 7594, "end_index": 7617, "_text": "ASSIST / CON1 INTUBATED"}
+{"sent_index": 131, "start_index": 7618, "end_index": 7636, "_text": "1 ASSIST / CONTROL"}
+{"sent_index": 132, "start_index": 7637, "end_index": 7687, "_text": "2013-05-24 12:58 AM ART 147 * 39 7.22 * 1 17 * -11"}
+{"sent_index": 133, "start_index": 7688, "end_index": 7698, "_text": "1 VERIFIED"}
+{"sent_index": 134, "start_index": 7699, "end_index": 7916, "_text": "PROVIDER NOTIFIED PER CURRENT LAB POLICY\nWHOLE BLOOD , MISCELLANEOUS CHEMISTRY Glucose Lactate Na K Cl calHCO3 \n2013-05-24 07:58 AM 4.5 * 1\n1 VERIFIED\n2013-05-24 04:31 AM 5.1 * 1\n1 VERIFIED\n2013-05-24 12:58 AM 6.2 * 1"}
+{"sent_index": 135, "start_index": 7917, "end_index": 8033, "_text": "1 VERIFIED\nHEMOGLOBLIN FRACTIONS ( COOXIMETRY ) Hgb calcHCT O2 Sat COHgb MetHgb\n2013-05-23 09:36 PM 11.4 * 34 73 1 1"}
+{"sent_index": 136, "start_index": 8034, "end_index": 8106, "_text": "2013-05-23 01:08 PM 10.9 * 33 96\nCALCIUM freeCa\n2013-05-23 09:36 PM 1.00"}
+{"sent_index": 137, "start_index": 8109, "end_index": 8133, "_text": "2013-05-23 01:08 PM 1.22"}
+{"sent_index": 138, "start_index": 8134, "end_index": 8156, "_text": "RADIOLOGY Final Report"}
+{"sent_index": 139, "start_index": 8157, "end_index": 8199, "_text": "CT ABDOMEN W/O CONTRAST 2013-05-23 5:46 PM"}
+{"sent_index": 140, "start_index": 8200, "end_index": 8248, "_text": "CT ABDOMEN W/O CONTRAST ; CT PELVIS W/O CONTRAST"}
+{"sent_index": 141, "start_index": 8249, "end_index": 8295, "_text": "Reason : Please eval for perf / ischemic bowel"}
+{"sent_index": 142, "start_index": 8296, "end_index": 8324, "_text": "UNDERLYING MEDICAL CONDITION"}
+{"sent_index": 143, "start_index": 8327, "end_index": 8416, "_text": "92 year old woman with MS changes , abd pain hypotension and bloody lavage on Lovenox+ASA"}
+{"sent_index": 144, "start_index": 8417, "end_index": 8444, "_text": "REASON FOR THIS EXAMINATION"}
+{"sent_index": 145, "start_index": 8447, "end_index": 8484, "_text": "Please eval for perf / ischemic bowel"}
+{"sent_index": 146, "start_index": 8485, "end_index": 8518, "_text": "CONTRAINDICATIONS for IV CONTRAST"}
+{"sent_index": 147, "start_index": 8521, "end_index": 8534, "_text": "renal failure"}
+{"sent_index": 148, "start_index": 8535, "end_index": 8545, "_text": "INDICATION"}
+{"sent_index": 149, "start_index": 8548, "end_index": 8637, "_text": "94-year-old woman with mental status changes , now with abdominal pain and hypertension ."}
+{"sent_index": 150, "start_index": 8638, "end_index": 8647, "_text": "TECHNIQUE"}
+{"sent_index": 151, "start_index": 8650, "end_index": 8761, "_text": "A multidetector scanner was used to obtain contiguous axial images from the lung bases to the pubic symphysis ."}
+{"sent_index": 152, "start_index": 8762, "end_index": 8802, "_text": "Neither IV nor oral contrast were used ."}
+{"sent_index": 153, "start_index": 8803, "end_index": 8840, "_text": "CT OF THE ABDOMEN WITHOUT IV CONTRAST"}
+{"sent_index": 154, "start_index": 8843, "end_index": 8964, "_text": "There are bilateral pleural effusions , right greater the left ; there is compressive atelectasis at the left lung base ."}
+{"sent_index": 155, "start_index": 8965, "end_index": 9009, "_text": "There are coronary vascular calcifications ."}
+{"sent_index": 156, "start_index": 9010, "end_index": 9061, "_text": "A nasogastric tube is seen coiling in the stomach ."}
+{"sent_index": 157, "start_index": 9062, "end_index": 9159, "_text": "A dual chamber pacemaker is seen with leads terminating in the right atrium and right ventricle ."}
+{"sent_index": 158, "start_index": 9160, "end_index": 9239, "_text": "Nasogastric tube is seen coiling in the stomach , with its tip at the pylorus ."}
+{"sent_index": 159, "start_index": 9240, "end_index": 9357, "_text": "Allowing for the limitations of this noncontrast study , the liver , pancreas , adrenals , stomach are unremarkable ."}
+{"sent_index": 160, "start_index": 9358, "end_index": 9409, "_text": "A 1.8 cm exophytic renal cyst is seen on the left ."}
+{"sent_index": 161, "start_index": 9410, "end_index": 9468, "_text": "A similar lesion is seen on the right , measuring 2.2 cm ."}
+{"sent_index": 162, "start_index": 9469, "end_index": 9532, "_text": "The aorta is normal in caliber , with vascular calcifications ."}
+{"sent_index": 163, "start_index": 9533, "end_index": 9697, "_text": "A small amount of free fluid is seen tracking around the liver , right pericolic gutter , along the mesentery and surrounding the right colon , which is collapsed ."}
+{"sent_index": 164, "start_index": 9698, "end_index": 9785, "_text": "A small amount of nondependent free air is seen in the anterior aspect of the abdomen ."}
+{"sent_index": 165, "start_index": 9786, "end_index": 9854, "_text": "The remainder of the bowel loops are fluid filled , and nondilated ."}
+{"sent_index": 166, "start_index": 9855, "end_index": 9891, "_text": "CT OF THE PELVIS WITHOUT IV CONTRAST"}
+{"sent_index": 167, "start_index": 9894, "end_index": 10034, "_text": "As previously noted , there is a small amount of free fluid surrounding the right colon , tracking along the mesentery and into the pelvis ."}
+{"sent_index": 168, "start_index": 10035, "end_index": 10113, "_text": "A small amount of free air is seen in the nondependent portion of the pelvis ."}
+{"sent_index": 169, "start_index": 10114, "end_index": 10190, "_text": "Vascular calcifications are seen in the abdominal aorta and iliac arteries ."}
+{"sent_index": 170, "start_index": 10191, "end_index": 10252, "_text": "Subcutaneous edema is noted in the lower abdomen and pelvis ."}
+{"sent_index": 171, "start_index": 10253, "end_index": 10377, "_text": "A catheter is seen entering the left inguinal region and coursing along the iliac vessels , terminating in the left pelvis ."}
+{"sent_index": 172, "start_index": 10378, "end_index": 10557, "_text": "Osseous structures are remarkable for degenerative changes of the spine , and a fracture of the proximal right humerus , with orthopedic hardware causing beam hardening artifact ."}
+{"sent_index": 173, "start_index": 10558, "end_index": 10568, "_text": "IMPRESSION"}
+{"sent_index": 174, "start_index": 10571, "end_index": 10750, "_text": "1. A small amount of free air and free fluid in the pelvis and abdomen , mostly along the right pericolic gutter and surrounding the ascending colon , concerning for perforation ."}
+{"sent_index": 175, "start_index": 10751, "end_index": 10809, "_text": "Other bowel loops are unremarkable on this limited study ."}
+{"sent_index": 176, "start_index": 10810, "end_index": 10890, "_text": "This was discussed with Dr. Jason Long at approximately 6:30 p.m. , 2013-05-23 ."}
+{"sent_index": 177, "start_index": 10891, "end_index": 10991, "_text": "2. Bilateral pleural effusions , right greater than left , with left-sided compressive atelectasis ."}
+{"sent_index": 178, "start_index": 10992, "end_index": 11049, "_text": "3. Right proximal humeral fracture status post fixation ."}
+{"sent_index": 179, "start_index": 11050, "end_index": 11115, "_text": "The study and the report were reviewed by the staff radiologist ."}
+{"sent_index": 180, "start_index": 11116, "end_index": 11119, "_text": "DR."}
+{"sent_index": 181, "start_index": 11120, "end_index": 11128, "_text": "Billy L."}
+{"sent_index": 182, "start_index": 11129, "end_index": 11136, "_text": "Boender"}
+{"sent_index": 183, "start_index": 11137, "end_index": 11140, "_text": "DR."}
+{"sent_index": 184, "start_index": 11141, "end_index": 11147, "_text": "Pat K."}
+{"sent_index": 185, "start_index": 11148, "end_index": 11154, "_text": "Walton"}
+{"sent_index": 186, "start_index": 11155, "end_index": 11188, "_text": "Approved : FRI 2013-05-24 4:01 PM"}
+{"sent_index": 187, "start_index": 11189, "end_index": 11210, "_text": "Brief Hospital Course"}
+{"sent_index": 188, "start_index": 11213, "end_index": 11311, "_text": "95 yo F with MMP who sustained a mechanical fall down stairs resulting in a hip and arm fracture ."}
+{"sent_index": 189, "start_index": 11312, "end_index": 11363, "_text": "1) s/p Fall - unlikely to be mechanical in nature ."}
+{"sent_index": 190, "start_index": 11364, "end_index": 11410, "_text": "Patient has injuries to her shoulder and hip ."}
+{"sent_index": 191, "start_index": 11411, "end_index": 11416, "_text": "2) CV"}
+{"sent_index": 192, "start_index": 11419, "end_index": 11476, "_text": "Patient has CAD and CHF with a low hct and major trauma ."}
+{"sent_index": 193, "start_index": 11477, "end_index": 11510, "_text": "She also has new changes on EKG ."}
+{"sent_index": 194, "start_index": 11511, "end_index": 11539, "_text": "On pressor to hold mean 60 ."}
+{"sent_index": 195, "start_index": 11540, "end_index": 11549, "_text": "3) Anemia"}
+{"sent_index": 196, "start_index": 11552, "end_index": 11605, "_text": "patient transfusion dependant with a baseline of 28 ."}
+{"sent_index": 197, "start_index": 11608, "end_index": 11644, "_text": "transfuse 2 units today , with lasix"}
+{"sent_index": 198, "start_index": 11645, "end_index": 11658, "_text": "4) GERD - PPI"}
+{"sent_index": 199, "start_index": 11659, "end_index": 11682, "_text": "5) DM - glipizide , ISS"}
+{"sent_index": 200, "start_index": 11683, "end_index": 11689, "_text": "6) PMR"}
+{"sent_index": 201, "start_index": 11692, "end_index": 11707, "_text": "cont prednisone"}
+{"sent_index": 202, "start_index": 11708, "end_index": 11719, "_text": "7) GI : Ms."}
+{"sent_index": 203, "start_index": 11720, "end_index": 12034, "_text": "Pimental is an unfortunate 95 year old woman , status post a recent fall necessitating right ORIF of the hip and right wrist fracture ORIF , who was in the hospital for this event , when it was noted that she had abdominal pain , distention and coffee ground emesis with worsening mental status and renal failure ."}
+{"sent_index": 204, "start_index": 12035, "end_index": 12104, "_text": "CT scan was obtained and this revealed free air and massive ascites ."}
+{"sent_index": 205, "start_index": 12105, "end_index": 12134, "_text": "Pt underwent surgery on 05-23"}
+{"sent_index": 206, "start_index": 12135, "end_index": 12269, "_text": "1. Exploratory laparotomy with drainage of intra-abdominal abscess and peritonitis with gross soilage with bile and gastric contents ."}
+{"sent_index": 207, "start_index": 12270, "end_index": 12376, "_text": "2. Exposure and wide drainage of perforated posterior duodenal ulcer with internal and external drainage ."}
+{"sent_index": 208, "start_index": 12377, "end_index": 12401, "_text": "3. Feeding jejunostomy ."}
+{"sent_index": 209, "start_index": 12402, "end_index": 12423, "_text": "4. Tube gastrostomy ."}
+{"sent_index": 210, "start_index": 12424, "end_index": 12515, "_text": "Continue to deteriorate spiking fevers with ventilatory support on pressors to hold the bp."}
+{"sent_index": 211, "start_index": 12516, "end_index": 12573, "_text": "with no improvement in mental staus was made CMO 5/20/5 ."}
+{"sent_index": 212, "start_index": 12574, "end_index": 12589, "_text": "Expired at 5 pm"}
+{"sent_index": 213, "start_index": 12590, "end_index": 12614, "_text": "Medications on Admission"}
+{"sent_index": 214, "start_index": 12617, "end_index": 12670, "_text": "lasix alt 40 mg and 20 mg qday\nlevothyrox 50 mcg qday"}
+{"sent_index": 215, "start_index": 12671, "end_index": 12691, "_text": "lisinopril 5 mg qday"}
+{"sent_index": 216, "start_index": 12692, "end_index": 12713, "_text": "famotidine 20 mg qday"}
+{"sent_index": 217, "start_index": 12714, "end_index": 12769, "_text": "fe so4 325 mg qday\nasa 325 mg qday\ntoprol xl 25 mg qday"}
+{"sent_index": 218, "start_index": 12770, "end_index": 12789, "_text": "glipizide 5 mg qday"}
+{"sent_index": 219, "start_index": 12790, "end_index": 12806, "_text": "imdur 60 mg qdau"}
+{"sent_index": 220, "start_index": 12807, "end_index": 12827, "_text": "prednisone 5 mg qday"}
+{"sent_index": 221, "start_index": 12828, "end_index": 12835, "_text": "tylenol"}
+{"sent_index": 222, "start_index": 12836, "end_index": 12857, "_text": "Discharge Disposition"}
+{"sent_index": 223, "start_index": 12860, "end_index": 12867, "_text": "Expired"}
+{"sent_index": 224, "start_index": 12868, "end_index": 12887, "_text": "Discharge Diagnosis"}
+{"sent_index": 225, "start_index": 12890, "end_index": 12908, "_text": "MULTIORGAN FAILURE"}
+{"sent_index": 226, "start_index": 12909, "end_index": 12929, "_text": "DUODENAL PERFORATION"}
+{"sent_index": 227, "start_index": 12930, "end_index": 12945, "_text": "MULTIPLE TRAUMA"}
+{"sent_index": 228, "start_index": 12946, "end_index": 12976, "_text": "Discharge Condition :\ndeceased"}
+{"sent_index": 229, "start_index": 12977, "end_index": 12998, "_text": "Followup Instructions"}
+{"sent_index": 230, "start_index": 13001, "end_index": 13005, "_text": "none"}
+{"sent_index": 231, "start_index": 13006, "end_index": 13027, "_text": "Frank Linda MD 44-897"}
+{"sent_index": 232, "start_index": 13028, "end_index": 13049, "_text": "Completed by : Deanna"}
+{"sent_index": 233, "start_index": 13050, "end_index": 13085, "_text": "Patague MD 48-130 2013-05-24 @ 1820"}
+{"sent_index": 234, "start_index": 13086, "end_index": 13116, "_text": "Signed electronically by : DR."}
+{"sent_index": 235, "start_index": 13117, "end_index": 13173, "_text": "Marta Keever on : FRI 2013-06-21 9:40 PM\n( End of Report"}

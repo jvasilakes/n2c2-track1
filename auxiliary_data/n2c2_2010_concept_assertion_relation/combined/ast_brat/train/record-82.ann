@@ -1,0 +1,174 @@
+T0	problem 5053 5074	a non-ST elevation MI
+A0	Assertion T0 present
+T1	problem 495 506	diaphoresis
+A1	Assertion T1 present
+T2	problem 3468 3481	evident edema
+A2	Assertion T2 absent
+T3	problem 6569 6596	his baseline 02 requirement
+A3	Assertion T3 present
+T4	problem 1236 1253	a long LAD lesion
+A4	Assertion T4 present
+T5	problem 6363 6367	COPD
+A5	Assertion T5 present
+T6	problem 1671 1682	an effusion
+A6	Assertion T6 absent
+T7	problem 1989 1998	Gastritis
+A7	Assertion T7 present
+T8	problem 1378 1389	hypotensive
+A8	Assertion T8 present
+T9	problem 1394 1406	bradycardiac
+A9	Assertion T9 present
+T10	problem 1861 1870	pain-free
+A10	Assertion T10 absent
+T11	problem 8216 8226	complaints
+A11	Assertion T11 absent
+T12	problem 5584 5612	an 80 percent mid LAD lesion
+A12	Assertion T12 present
+T13	problem 6010 6041	focal wall motion abnormalities
+A13	Assertion T13 absent
+T14	problem 7175 7183	GI bleed
+A14	Assertion T14 possible
+T15	problem 7200 7222	Guaiac positive stools
+A15	Assertion T15 present
+T16	problem 7249 7280	a slight drop in his hematocrit
+A16	Assertion T16 present
+T17	problem 4099 4131	an old right bundle branch block
+A17	Assertion T17 present
+T18	problem 4991 5000	gastritis
+A18	Assertion T18 present
+T19	problem 7506 7514	GI bleed
+A19	Assertion T19 possible
+T20	problem 538 544	nausea
+A20	Assertion T20 absent
+T21	problem 5821 5843	Guaiac positive stools
+A21	Assertion T21 present
+T22	problem 2452 2472	known drug allergies
+A22	Assertion T22 absent
+T23	problem 4007 4028	prolonged PR interval
+A23	Assertion T23 present
+T24	problem 1959 1986	Chronic renal insufficiency
+A24	Assertion T24 present
+T25	problem 1307 1335	a total occlusion of the RCA
+A25	Assertion T25 present
+T26	problem 705 726	a non-ST elevation MI
+A26	Assertion T26 present
+T27	problem 6078 6097	shortness of breath
+A27	Assertion T27 absent
+T28	problem 4542 4566	an 80 percent LAD lesion
+A28	Assertion T28 present
+T29	problem 1896 1899	TIA
+A29	Assertion T29 present
+T30	problem 511 530	shortness of breath
+A30	Assertion T30 present
+T31	problem 436 458	bilateral arm numbness
+A31	Assertion T31 present
+T32	problem 376 398	severe epigastric pain
+A32	Assertion T32 present
+T33	problem 218 245	chronic renal insufficiency
+A33	Assertion T33 present
+T34	problem 5336 5350	vagal reaction
+A34	Assertion T34 present
+T35	problem 5232 5243	hypotension
+A35	Assertion T35 present
+T36	problem 5248 5259	bradycardia
+A36	Assertion T36 present
+T37	problem 461 473	The symptoms
+A37	Assertion T37 present
+T38	problem 5007 5010	TIA
+A38	Assertion T38 present
+T39	problem 7744 7769	80 percent mid LAD lesion
+A39	Assertion T39 present
+T40	problem 7700 7738	non-ST elevation myocardial infarction
+A40	Assertion T40 present
+T41	problem 7662 7685	Coronary artery disease
+A41	Assertion T41 present
+T42	problem 548 556	vomiting
+A42	Assertion T42 absent
+T43	problem 265 270	a TIA
+A43	Assertion T43 present
+T44	problem 6199 6220	first-degree AV block
+A44	Assertion T44 present
+T45	problem 993 1014	myocardial infarction
+A45	Assertion T45 absent
+T46	problem 5079 5101	Guaiac positive stools
+A46	Assertion T46 present
+T47	problem 5202 5216	mid LAD lesion
+A47	Assertion T47 present
+T48	problem 2912 2944	Crusting around the right eyelid
+A48	Assertion T48 present
+T49	problem 6054 6074	recurrent chest pain
+A49	Assertion T49 absent
+T50	problem 3168 3175	murmurs
+A50	Assertion T50 absent
+T51	problem 6155 6194	an underlying right bundle branch block
+A51	Assertion T51 present
+T52	problem 885 894	pain-free
+A52	Assertion T52 absent
+T53	problem 5848 5863	hematocrit drop
+A53	Assertion T53 present
+T54	problem 180 192	hypertension
+A54	Assertion T54 present
+T55	problem 3188 3195	gallops
+A55	Assertion T55 absent
+T56	problem 4984 4988	COPD
+A56	Assertion T56 present
+T57	problem 3178 3182	rubs
+A57	Assertion T57 absent
+T58	problem 3012 3022	edentulous
+A58	Assertion T58 present
+T59	problem 6699 6711	hypertension
+A59	Assertion T59 present
+T60	problem 4954 4981	chronic renal insufficiency
+A60	Assertion T60 present
+T61	problem 4141 4167	acute ST or T wave changes
+A61	Assertion T61 absent
+T62	problem 6779 6781	MI
+A62	Assertion T62 present
+T63	problem 4063 4076	a widened QRS
+A63	Assertion T63 present
+T64	problem 4500 4522	a totally occluded RCA
+A64	Assertion T64 present
+T65	problem 2001 2007	Asthma
+A65	Assertion T65 present
+T66	problem 4410 4418	effusion
+A66	Assertion T66 absent
+T67	problem 4939 4951	hypertension
+A67	Assertion T67 present
+T68	problem 922 938	similar symptoms
+A68	Assertion T68 absent
+T69	problem 3980 4001	first-degree AV block
+A69	Assertion T69 present
+T70	problem 1953 1956	BPH
+A70	Assertion T70 present
+T71	problem 5545 5566	a non-ST elevation MI
+A71	Assertion T71 present
+T72	problem 1910 1914	COPD
+A72	Assertion T72 present
+T73	problem 3307 3316	nontender
+A73	Assertion T73 absent
+T74	problem 3060 3075	lymphadenopathy
+A74	Assertion T74 absent
+T75	problem 7094 7109	Guaiac positive
+A75	Assertion T75 present
+T76	problem 7847 7884	Chronic obstructive pulmonary disease
+A76	Assertion T76 present
+T77	problem 7817 7844	Chronic renal insufficiency
+A77	Assertion T77 present
+T78	problem 983 989	angina
+A78	Assertion T78 absent
+T79	problem 7913 7919	Anemia
+A79	Assertion T79 present
+T80	problem 7887 7910	Guaiac  positive stools
+A80	Assertion T80 present
+T81	problem 3079 3090	thyromegaly
+A81	Assertion T81 absent
+T82	problem 2887 2901	acute distress
+A82	Assertion T82 absent
+T83	problem 7802 7814	Hypertension
+A83	Assertion T83 present
+T84	problem 6651 6678	chronic renal insufficiency
+A84	Assertion T84 present
+T85	problem 3299 3304	obese
+A85	Assertion T85 present
+T86	problem 3319 3331	nondistended
+A86	Assertion T86 absent

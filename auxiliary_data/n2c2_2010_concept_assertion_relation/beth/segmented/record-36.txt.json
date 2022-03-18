@@ -1,0 +1,88 @@
+{"sent_index": 0, "start_index": 0, "end_index": 14, "_text": "Admission Date"}
+{"sent_index": 1, "start_index": 17, "end_index": 27, "_text": "2013-11-21"}
+{"sent_index": 2, "start_index": 28, "end_index": 42, "_text": "Discharge Date"}
+{"sent_index": 3, "start_index": 45, "end_index": 55, "_text": "2013-11-26"}
+{"sent_index": 4, "start_index": 56, "end_index": 69, "_text": "Date of Birth"}
+{"sent_index": 5, "start_index": 72, "end_index": 82, "_text": "1949-07-18"}
+{"sent_index": 6, "start_index": 83, "end_index": 86, "_text": "Sex"}
+{"sent_index": 7, "start_index": 89, "end_index": 90, "_text": "F"}
+{"sent_index": 8, "start_index": 91, "end_index": 98, "_text": "Service"}
+{"sent_index": 9, "start_index": 101, "end_index": 108, "_text": "PLASTIC"}
+{"sent_index": 10, "start_index": 109, "end_index": 118, "_text": "Allergies"}
+{"sent_index": 11, "start_index": 121, "end_index": 150, "_text": "Trazodone / Ambien / Sinequan"}
+{"sent_index": 12, "start_index": 151, "end_index": 160, "_text": "Attending"}
+{"sent_index": 13, "start_index": 163, "end_index": 173, "_text": "Bobby Z.S."}
+{"sent_index": 14, "start_index": 174, "end_index": 185, "_text": "Ruiz , M.D."}
+{"sent_index": 15, "start_index": 186, "end_index": 201, "_text": "Chief Complaint"}
+{"sent_index": 16, "start_index": 204, "end_index": 255, "_text": "ACQUIRED DEFECT FROM BASAL CELL CARCINOMA RESECTION"}
+{"sent_index": 17, "start_index": 256, "end_index": 292, "_text": "Major Surgical or Invasive Procedure"}
+{"sent_index": 18, "start_index": 295, "end_index": 380, "_text": "RIGHT NOSE / ALA RECONSTRUCTION USING RIGHT CHEEK ADVANCEMENT AND FOREHEAD LOCAL FLAP"}
+{"sent_index": 19, "start_index": 381, "end_index": 407, "_text": "History of Present Illness"}
+{"sent_index": 20, "start_index": 410, "end_index": 413, "_text": "MS."}
+{"sent_index": 21, "start_index": 414, "end_index": 609, "_text": "Marshall IS A 64-YEAR OLD , MENTALLY RETARDED , FEMALE WHO PRESENTED WITH AN AQUIRED DEFECT OF THE RIGHT NASAL ALA AND MEDIAL CHEEK REGION AFTER BASAL CELL CARCINOMA WAS RESECTED BY DERMATOLOGY ."}
+{"sent_index": 22, "start_index": 610, "end_index": 630, "_text": "Past Medical History"}
+{"sent_index": 23, "start_index": 633, "end_index": 651, "_text": "MENTAL RETARDATION"}
+{"sent_index": 24, "start_index": 652, "end_index": 660, "_text": "DIABETES"}
+{"sent_index": 25, "start_index": 661, "end_index": 677, "_text": "BIPOLAR DISORDER"}
+{"sent_index": 26, "start_index": 678, "end_index": 692, "_text": "Social History"}
+{"sent_index": 27, "start_index": 695, "end_index": 765, "_text": "LIVES IN A NURSING HOME , HAS A BROTHER WHO IS THE HEALTH CARE PROXY ."}
+{"sent_index": 28, "start_index": 766, "end_index": 802, "_text": "NO Tifany , ETOH , OR REC DRUG USE ."}
+{"sent_index": 29, "start_index": 803, "end_index": 816, "_text": "Physical Exam"}
+{"sent_index": 30, "start_index": 819, "end_index": 876, "_text": "ON PRESENTATION , PT WAS AFEBRILE WITH NORMAL VITAL SIGNS"}
+{"sent_index": 31, "start_index": 877, "end_index": 880, "_text": "GEN"}
+{"sent_index": 32, "start_index": 883, "end_index": 940, "_text": "NO ACUTE DISTRESS , ABLE TO COMMUNICATE AND FOLLOW ORDERS"}
+{"sent_index": 33, "start_index": 941, "end_index": 1035, "_text": "HEAD AND NECK : 5 CM CIRCULAR FULL THICKNESS DEFECT AT THE JUNCTION OF THE RIGHT ALA AND CHEEK"}
+{"sent_index": 34, "start_index": 1036, "end_index": 1041, "_text": "HEART"}
+{"sent_index": 35, "start_index": 1044, "end_index": 1067, "_text": "REGULAR RATE AND RHYTHM"}
+{"sent_index": 36, "start_index": 1068, "end_index": 1095, "_text": "LUNGS : CLEAR TO ASCULATION"}
+{"sent_index": 37, "start_index": 1096, "end_index": 1139, "_text": "ABDOMEN : SOFT , NON-TENDER , NON-DISTENDED"}
+{"sent_index": 38, "start_index": 1140, "end_index": 1151, "_text": "EXTREMITIES"}
+{"sent_index": 39, "start_index": 1154, "end_index": 1196, "_text": "NO EDEMA , CYANOSIS , FULL RANGE OF MOTION"}
+{"sent_index": 40, "start_index": 1197, "end_index": 1218, "_text": "Brief Hospital Course"}
+{"sent_index": 41, "start_index": 1221, "end_index": 1284, "_text": "UPON ADMISSION , THE PATIENT WAS PRE-OP 'D AND MADE NPO / IVF ."}
+{"sent_index": 42, "start_index": 1285, "end_index": 1354, "_text": "SHE WENT TO SURGERY THE NEXT MORNING AND TOLERATED THE SURGERY WELL ."}
+{"sent_index": 43, "start_index": 1355, "end_index": 1451, "_text": "HOWEVER , SHE WAS SLOW TO AWAKE FROM ANESTHESIA , AND WAS ADMITTED TO THE CMED CCU OBSERVATION ."}
+{"sent_index": 44, "start_index": 1452, "end_index": 1598, "_text": "SHE WAS TRANSFERED TO THE FLOOR POST-OP DAY 2 WHERE SHE HAD BEEN AFEBRILE WITH NORMAL VITALS , MAKING GOOD URINE , AND TOLERATING A REGULAR DIET ."}
+{"sent_index": 45, "start_index": 1599, "end_index": 1682, "_text": "HER WOUND HAS REMAIND DRY AND CLOSED , WITHOUT EVIDENCE OF INFECTION OR BREAKDOWN ."}
+{"sent_index": 46, "start_index": 1683, "end_index": 1730, "_text": "SHE HAS BEEN WATCHED BY A SITTER AT ALL TIMES ."}
+{"sent_index": 47, "start_index": 1731, "end_index": 1866, "_text": "SHE WILL BE DISCHARGED TODAY BACK TO HER NURSING HOME IN GOOD CONDITION , ON PAIN MEDS , ANTIBIOTICS , AND WITH ANTICIPATED 1:1 WATCH ."}
+{"sent_index": 48, "start_index": 1867, "end_index": 1894, "_text": "SHE WILL FOLLOW UP WITH DR."}
+{"sent_index": 49, "start_index": 1895, "end_index": 1912, "_text": "Karen IN 1 WEEK ."}
+{"sent_index": 50, "start_index": 1913, "end_index": 1963, "_text": "STAGE TWO OF HER SURGERY WILL BE DONE IN 3 WEEKS ."}
+{"sent_index": 51, "start_index": 1964, "end_index": 1985, "_text": "Discharge Medications"}
+{"sent_index": 52, "start_index": 1988, "end_index": 2051, "_text": "1. Paroxetine HCl 10 mg Tablet Sig : One ( 1 ) Tablet PO AM ()."}
+{"sent_index": 53, "start_index": 2052, "end_index": 2136, "_text": "2. Multivitamin Capsule Sig : One ( 1 ) Cap PO QAM ( once a day ( in the morning ))."}
+{"sent_index": 54, "start_index": 2137, "end_index": 2289, "_text": "3. Divalproex Sodium 500 mg Tablet , Delayed Release ( E.C. ) Sig : One ( 1 ) Tablet , Delayed Release ( E.C. ) PO QAM ( once a day ( in the morning ))."}
+{"sent_index": 55, "start_index": 2290, "end_index": 2399, "_text": "4. Docusate Sodium 100 mg Capsule Sig : One ( 1 ) Capsule PO BID ( 2 times a day ) as needed : constipation ."}
+{"sent_index": 56, "start_index": 2400, "end_index": 2436, "_text": "Disp :* 30 Capsule (s)* Refills :* 0"}
+{"sent_index": 57, "start_index": 2439, "end_index": 2529, "_text": "5. Triamcinolone Acetonide 0.1 % Cream Sig : One ( 1 ) Appl Topical BID ( 2 times a day )."}
+{"sent_index": 58, "start_index": 2530, "end_index": 2556, "_text": "6. Divalproex Sodium  Oral"}
+{"sent_index": 59, "start_index": 2557, "end_index": 2630, "_text": "7. Atorvastatin 10 mg Tablet Sig : One ( 1 ) Tablet PO HS ( at bedtime )."}
+{"sent_index": 60, "start_index": 2631, "end_index": 2729, "_text": "8. Oxybutynin Chloride 5 mg Tablet Sig : One ( 1 ) Tablet PO QPM ( once a day ( in the evening ))."}
+{"sent_index": 61, "start_index": 2730, "end_index": 2818, "_text": "9. Hydrocodone-Acetaminophen 5-500 mg Tablet Sig : 1-2 Tablets PO Q4H ( every 4 hours )."}
+{"sent_index": 62, "start_index": 2819, "end_index": 2854, "_text": "Disp :* 40 Tablet (s)* Refills :* 0"}
+{"sent_index": 63, "start_index": 2857, "end_index": 2943, "_text": "10. Bacitracin-Polymyxin-Neosp HC Ointment Sig : One ( 1 ) Topical three times a day ."}
+{"sent_index": 64, "start_index": 2944, "end_index": 3003, "_text": "Disp :* 1 500 / gram * Refills :* 2 *\nDischarge Disposition"}
+{"sent_index": 65, "start_index": 3006, "end_index": 3019, "_text": "Extended Care"}
+{"sent_index": 66, "start_index": 3020, "end_index": 3039, "_text": "Discharge Diagnosis"}
+{"sent_index": 67, "start_index": 3042, "end_index": 3136, "_text": "AQUIRED DEFORMITY OF THE RIGHT ALA / NOSE AND MEDIAL CHEEK FROM BASAL CELL CARCINOMA RESECTION"}
+{"sent_index": 68, "start_index": 3137, "end_index": 3156, "_text": "Discharge Condition"}
+{"sent_index": 69, "start_index": 3159, "end_index": 3163, "_text": "GOOD"}
+{"sent_index": 70, "start_index": 3164, "end_index": 3186, "_text": "Discharge Instructions"}
+{"sent_index": 71, "start_index": 3189, "end_index": 3270, "_text": "PLEASE GIVE PATIENT MEDICATIONS AS PRESCRIBED AND READ WARNING LABELS CAREFULLY ."}
+{"sent_index": 72, "start_index": 3271, "end_index": 3460, "_text": "IF SIGNS AND SYMPTOMS OF INFECTION , SUCH AS FEVERS / CHILLS , PURULENT DISCHARGE FROM WOUND / INCISION SITE , INCREASED REDNESS , INCREASED PAIN , PLEASE CALL OR GO TO THE EMERGENCY ROOM ."}
+{"sent_index": 73, "start_index": 3461, "end_index": 3526, "_text": "REMEMBER TO CALL TO SCHEDULE HER FOLLOW UP APPOINTMENT ( BELOW )."}
+{"sent_index": 74, "start_index": 3527, "end_index": 3566, "_text": "LIGHT ACTIVITIES UNTIL SEEN IN CLINIC ."}
+{"sent_index": 75, "start_index": 3567, "end_index": 3615, "_text": "STAGE 2 OF THE SURGERY WILL BE DONE IN 3 WEEKS ."}
+{"sent_index": 76, "start_index": 3616, "end_index": 3654, "_text": "MAY SHOWER -- DAB DRY , DO NOT SCRUB ."}
+{"sent_index": 77, "start_index": 3655, "end_index": 3791, "_text": "PLEASE CLEAN INCISION SITE WITH NORMAL SALINE OR CLEAN WATER THREE TIMES A DAY AND PLACE ANTIBIOTIC OINTMENT ( GIVEN ) ON TOP OF WOUND ."}
+{"sent_index": 78, "start_index": 3792, "end_index": 3831, "_text": "PLEASE KEEP PATIENT AWAY FROM THE SUN ."}
+{"sent_index": 79, "start_index": 3832, "end_index": 3928, "_text": "MOST IMPORTANTLY , THE PATIENT MUST BE WATCH ONE-ON-ONE SO THAT SHE DOES NOT PICK AT HER WOUND ."}
+{"sent_index": 80, "start_index": 3929, "end_index": 3950, "_text": "Followup Instructions"}
+{"sent_index": 81, "start_index": 3953, "end_index": 3974, "_text": "PLEASE CALL DR.Parson"}
+{"sent_index": 82, "start_index": 3975, "end_index": 4028, "_text": "OFFICE FOR A FOLLOW UP ( 989-5361 Mauricio ( 540-4644"}
+{"sent_index": 83, "start_index": 4029, "end_index": 4049, "_text": "Nancy Lois MD 88-449"}
+{"sent_index": 84, "start_index": 4050, "end_index": 4074, "_text": "Completed by : Mary Lisa"}
+{"sent_index": 85, "start_index": 4075, "end_index": 4102, "_text": "MD 53-914 2013-11-26 @ 1134"}
+{"sent_index": 86, "start_index": 4103, "end_index": 4133, "_text": "Signed electronically by : DR."}
+{"sent_index": 87, "start_index": 4134, "end_index": 4192, "_text": "David Randazzo on : MON 2013-12-16 7:25 AM\n( End of Report"}

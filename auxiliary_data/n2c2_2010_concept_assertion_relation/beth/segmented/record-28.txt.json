@@ -1,0 +1,135 @@
+{"sent_index": 0, "start_index": 0, "end_index": 14, "_text": "Admission Date"}
+{"sent_index": 1, "start_index": 17, "end_index": 27, "_text": "2012-06-07"}
+{"sent_index": 2, "start_index": 28, "end_index": 42, "_text": "Discharge Date"}
+{"sent_index": 3, "start_index": 45, "end_index": 55, "_text": "2012-06-09"}
+{"sent_index": 4, "start_index": 56, "end_index": 69, "_text": "Date of Birth"}
+{"sent_index": 5, "start_index": 72, "end_index": 82, "_text": "1963-12-03"}
+{"sent_index": 6, "start_index": 83, "end_index": 86, "_text": "Sex"}
+{"sent_index": 7, "start_index": 89, "end_index": 90, "_text": "M"}
+{"sent_index": 8, "start_index": 91, "end_index": 98, "_text": "Service"}
+{"sent_index": 9, "start_index": 101, "end_index": 109, "_text": "MEDICINE"}
+{"sent_index": 10, "start_index": 110, "end_index": 119, "_text": "Allergies"}
+{"sent_index": 11, "start_index": 122, "end_index": 176, "_text": "Patient recorded as having No Known Allergies to Drugs"}
+{"sent_index": 12, "start_index": 177, "end_index": 216, "_text": "Attending : Christopher KJ Cater , M.D."}
+{"sent_index": 13, "start_index": 217, "end_index": 232, "_text": "Chief Complaint"}
+{"sent_index": 14, "start_index": 235, "end_index": 243, "_text": "Overdose"}
+{"sent_index": 15, "start_index": 244, "end_index": 280, "_text": "Major Surgical or Invasive Procedure"}
+{"sent_index": 16, "start_index": 283, "end_index": 290, "_text": "NG tube"}
+{"sent_index": 17, "start_index": 291, "end_index": 317, "_text": "History of Present Illness"}
+{"sent_index": 18, "start_index": 320, "end_index": 323, "_text": "Mr."}
+{"sent_index": 19, "start_index": 324, "end_index": 560, "_text": "Vazquez is a 48 year old man with a history of hepatitis C , bipolar disorder with suicide attempts in the past , recent CMED admit earlier in 4/05 who was found alert approximately one hour after taking an unspecified number of pills ."}
+{"sent_index": 20, "start_index": 561, "end_index": 720, "_text": "Per report , there were empty bottles of Inderal and Klonopin found at bedside , as well as 02-26 full bottles of geodon , gabapentin , Lescol and paroxitine ."}
+{"sent_index": 21, "start_index": 721, "end_index": 820, "_text": "The patient was reportedly alert at scene , and then became unresponsive in route to the hospital ."}
+{"sent_index": 22, "start_index": 821, "end_index": 891, "_text": "In the Rita , the patient was intubated and given activated charcoal ."}
+{"sent_index": 23, "start_index": 892, "end_index": 941, "_text": "His initial BP was 60/P with a pulse in the 60 s."}
+{"sent_index": 24, "start_index": 942, "end_index": 1015, "_text": "He was given 4 amps of calcium gluconate , and started on a Calcium gtt ."}
+{"sent_index": 25, "start_index": 1016, "end_index": 1101, "_text": "He was also given 5mg of glucagon and started on a glucagon drip with good response ."}
+{"sent_index": 26, "start_index": 1102, "end_index": 1185, "_text": "His urine and serum tox screens were notable only for benzos , otherwise negative ."}
+{"sent_index": 27, "start_index": 1186, "end_index": 1258, "_text": "He was seen by cardiology , and toxicology was consulted via telephone ."}
+{"sent_index": 28, "start_index": 1259, "end_index": 1370, "_text": "He was admitted to the CMED , intubated for airway protection and started on both a calcium and glucagon drip ."}
+{"sent_index": 29, "start_index": 1371, "end_index": 1518, "_text": "There was evidence of possible aspiration pneumonia on CXR , though he was extubated without incident on the AM of transfer to the medicine floor ."}
+{"sent_index": 30, "start_index": 1519, "end_index": 1585, "_text": "CMED was made aware , and they are actively involved in his care ."}
+{"sent_index": 31, "start_index": 1586, "end_index": 1606, "_text": "Past Medical History"}
+{"sent_index": 32, "start_index": 1609, "end_index": 1614, "_text": "Hep C"}
+{"sent_index": 33, "start_index": 1615, "end_index": 1681, "_text": "Bipolar D/O with one suicide attempt by overdose several years ago"}
+{"sent_index": 34, "start_index": 1682, "end_index": 1693, "_text": "Agoraphobia"}
+{"sent_index": 35, "start_index": 1694, "end_index": 1708, "_text": "Panic disorder"}
+{"sent_index": 36, "start_index": 1709, "end_index": 1719, "_text": "Narcissism"}
+{"sent_index": 37, "start_index": 1720, "end_index": 1765, "_text": "No history of head trauma or seizure disorder"}
+{"sent_index": 38, "start_index": 1766, "end_index": 1780, "_text": "Social History"}
+{"sent_index": 39, "start_index": 1783, "end_index": 1803, "_text": "Denies alcohol use ."}
+{"sent_index": 40, "start_index": 1804, "end_index": 1834, "_text": "Has a history of cocaine abuse"}
+{"sent_index": 41, "start_index": 1837, "end_index": 1896, "_text": "in remission for 6 years , with one relapse 2.5 years ago ."}
+{"sent_index": 42, "start_index": 1897, "end_index": 1965, "_text": "Has a history of qualude use since high school , also in remission ."}
+{"sent_index": 43, "start_index": 1966, "end_index": 1987, "_text": "Denies use of AA/NA ."}
+{"sent_index": 44, "start_index": 1988, "end_index": 2001, "_text": "Smokes 1ppd ."}
+{"sent_index": 45, "start_index": 2002, "end_index": 2062, "_text": "Patient lives at home with his mother , father and brother ."}
+{"sent_index": 46, "start_index": 2063, "end_index": 2156, "_text": "Reports that he has suffered from anxiety since childhood and needed to drop out of college ."}
+{"sent_index": 47, "start_index": 2157, "end_index": 2187, "_text": "Unemployed and on disability ."}
+{"sent_index": 48, "start_index": 2188, "end_index": 2224, "_text": "Waiting for a subsidized apartment ."}
+{"sent_index": 49, "start_index": 2225, "end_index": 2250, "_text": "No current relationship ."}
+{"sent_index": 50, "start_index": 2251, "end_index": 2265, "_text": "Family History"}
+{"sent_index": 51, "start_index": 2268, "end_index": 2276, "_text": "Denies ."}
+{"sent_index": 52, "start_index": 2277, "end_index": 2290, "_text": "Physical Exam"}
+{"sent_index": 53, "start_index": 2293, "end_index": 2366, "_text": "Vitals : 99.3   67 ( 60-70 )   99/53 ( 90-100 s)   96% on RA   3.7L + LOS"}
+{"sent_index": 54, "start_index": 2367, "end_index": 2405, "_text": "Gen : caucasian man lying in bed , NAD"}
+{"sent_index": 55, "start_index": 2406, "end_index": 2411, "_text": "HEENT"}
+{"sent_index": 56, "start_index": 2414, "end_index": 2490, "_text": "NCAT , PERRL , EOMI , no icterus , OP clear , MMM , no tongue fasciculations"}
+{"sent_index": 57, "start_index": 2491, "end_index": 2522, "_text": "Neck : supple , no LAD , no JVD"}
+{"sent_index": 58, "start_index": 2523, "end_index": 2614, "_text": "CV : RRR , nl s1 s2 , no m/g/r\nLungs : ? decreased BS over left middle lung , otherwise CTA"}
+{"sent_index": 59, "start_index": 2615, "end_index": 2681, "_text": "Abd : normal size , nd , no scars , nl bs , soft , nt , palp liver"}
+{"sent_index": 60, "start_index": 2682, "end_index": 2707, "_text": "Ext : no c/c/e , no edema"}
+{"sent_index": 61, "start_index": 2708, "end_index": 2825, "_text": "Neuro : no asterixis , CN II-XII intact , 5/5 strength throughout , sensation to LT intact throughout , gait deferred"}
+{"sent_index": 62, "start_index": 2826, "end_index": 2830, "_text": "CMED"}
+{"sent_index": 63, "start_index": 2833, "end_index": 2934, "_text": "A+Ox3 , mood \" great ,\" affect approp , speech stuttering , linear TP , no SI or HI\nPertinent Results"}
+{"sent_index": 64, "start_index": 2937, "end_index": 2999, "_text": "Labs on admit :\n2012-06-07 09:55 PM BLOOD WBC - 8.9 RBC - 4.94"}
+{"sent_index": 65, "start_index": 3000, "end_index": 3116, "_text": "Hgb - 15.8 Hct - 45.3 MCV - 92 MCH - 31.9 MCHC - 34.8 RDW - 12.4 Plt Ct - 175\n2012-06-07 09:55 PM BLOOD Neuts - 49.9"}
+{"sent_index": 66, "start_index": 3119, "end_index": 3132, "_text": "Lymphs - 42.4"}
+{"sent_index": 67, "start_index": 3135, "end_index": 3156, "_text": "Monos - 5.5 Eos - 1.6"}
+{"sent_index": 68, "start_index": 3157, "end_index": 3206, "_text": "Baso - 0.6\n2012-06-07 09:55 PM BLOOD Plt Ct - 175"}
+{"sent_index": 69, "start_index": 3207, "end_index": 3267, "_text": "2012-06-07 09:55 PM BLOOD PT - 12.8 PTT - 25.7 INR(PT) - 1.0"}
+{"sent_index": 70, "start_index": 3268, "end_index": 3459, "_text": "2012-06-07 09:55 PM BLOOD Glucose - 108 * UreaN - 13 Creat - 0.7 Na - 146 * K - 3.7 Cl - 109 * HCO3 - 30 * AnGap - 11\n2012-06-07 09:55 PM BLOOD Albumin - 3.9 Calcium - 8.5 Phos - 4.2 Mg - 2.0"}
+{"sent_index": 71, "start_index": 3460, "end_index": 3640, "_text": "2012-06-07 09:55 PM BLOOD ALT - 44 * AST - 31 AlkPhos - 36 * TotBili - 0.2\n2012-06-07 09:55 PM BLOOD ASA - NEG Ethanol - NEG Acetmnp - NEG Bnzodzp - NEG Barbitr - NEG Tricycl - NEG"}
+{"sent_index": 72, "start_index": 3641, "end_index": 3651, "_text": "Labs today"}
+{"sent_index": 73, "start_index": 3654, "end_index": 3787, "_text": "2012-06-08 09:30 AM BLOOD WBC - 10.1 RBC - 4.35 * Hgb - 14.2 Hct - 39.9 * MCV - 92 MCH - 32.6 * MCHC - 35.6 * RDW - 12.4 Plt Ct - 151"}
+{"sent_index": 74, "start_index": 3788, "end_index": 3900, "_text": "2012-06-08 09:30 AM BLOOD Glucose - 115 * UreaN - 14 Creat - 0.8 Na - 142 K - 4.1 Cl - 112 * HCO3 - 26 AnGap - 8"}
+{"sent_index": 75, "start_index": 3901, "end_index": 3963, "_text": "2012-06-08 09:30 AM BLOOD Calcium - 10.4 * Phos - 2.8 Mg - 1.8"}
+{"sent_index": 76, "start_index": 3964, "end_index": 3974, "_text": "2012-06-08"}
+{"sent_index": 77, "start_index": 3975, "end_index": 3978, "_text": "CXR"}
+{"sent_index": 78, "start_index": 3981, "end_index": 4082, "_text": "An endotracheal tube terminates just above the thoracic inlet approximately 6.5 cm above the carina ."}
+{"sent_index": 79, "start_index": 4083, "end_index": 4135, "_text": "The nasogastric tube terminates within the stomach ."}
+{"sent_index": 80, "start_index": 4136, "end_index": 4195, "_text": "Cardiac and mediastinal contours are within normal limits ."}
+{"sent_index": 81, "start_index": 4196, "end_index": 4315, "_text": "There is a patchy area of increased opacity in the left retrocardiac region , which was not seen on the earlier study ."}
+{"sent_index": 82, "start_index": 4316, "end_index": 4337, "_text": "Right lung is clear ."}
+{"sent_index": 83, "start_index": 4338, "end_index": 4419, "_text": "Left costophrenic angle has been excluded from the study and cannot be assessed ."}
+{"sent_index": 84, "start_index": 4420, "end_index": 4490, "_text": "There is no evidence of right pleural effusion or right pneumothorax ."}
+{"sent_index": 85, "start_index": 4491, "end_index": 4501, "_text": "IMPRESSION"}
+{"sent_index": 86, "start_index": 4504, "end_index": 4631, "_text": "1) Endotracheal tube is slightly proximal in location , and could be advanced approximately 1.5 cm for more optimal placement ."}
+{"sent_index": 87, "start_index": 4632, "end_index": 4742, "_text": "2) Patchy left retrocardiac opacity which may be due to patchy atelectasis , aspiration , or early pneumonia ."}
+{"sent_index": 88, "start_index": 4743, "end_index": 4772, "_text": "Followup radiograph suggested"}
+{"sent_index": 89, "start_index": 4773, "end_index": 4794, "_text": "Brief Hospital Course"}
+{"sent_index": 90, "start_index": 4797, "end_index": 4800, "_text": "A/P"}
+{"sent_index": 91, "start_index": 4803, "end_index": 5027, "_text": "48yo man with h/o HCV , bipolar DO , h/o suicide attempts , a/w overdose of Inderal , Klonopin , Geodon , s/T Jackson stay with intubation for airway protection , with question of L retrocardiac infiltrate , now doing well ."}
+{"sent_index": 92, "start_index": 5028, "end_index": 5036, "_text": "Overdose"}
+{"sent_index": 93, "start_index": 5041, "end_index": 5066, "_text": "monitor on tele overnight"}
+{"sent_index": 94, "start_index": 5069, "end_index": 5103, "_text": "if HR drops , restart glucagon gtt"}
+{"sent_index": 95, "start_index": 5106, "end_index": 5142, "_text": "watch for BZD withdrawal , agitation"}
+{"sent_index": 96, "start_index": 5143, "end_index": 5159, "_text": "Bipolar disorder"}
+{"sent_index": 97, "start_index": 5164, "end_index": 5174, "_text": "appreciate"}
+{"sent_index": 98, "start_index": 5175, "end_index": 5253, "_text": "CMED consult ; patient to be discharged to inpatient CMED facility once stable"}
+{"sent_index": 99, "start_index": 5256, "end_index": 5275, "_text": "suicide precautions"}
+{"sent_index": 100, "start_index": 5276, "end_index": 5284, "_text": "Activity"}
+{"sent_index": 101, "start_index": 5287, "end_index": 5302, "_text": "OOB with assist"}
+{"sent_index": 102, "start_index": 5303, "end_index": 5319, "_text": "FEN : house diet"}
+{"sent_index": 103, "start_index": 5320, "end_index": 5323, "_text": "PPX"}
+{"sent_index": 104, "start_index": 5326, "end_index": 5369, "_text": "SC heparin , bowel regimen , nicotine patch"}
+{"sent_index": 105, "start_index": 5370, "end_index": 5374, "_text": "CODE"}
+{"sent_index": 106, "start_index": 5377, "end_index": 5381, "_text": "full"}
+{"sent_index": 107, "start_index": 5382, "end_index": 5387, "_text": "DISPO"}
+{"sent_index": 108, "start_index": 5390, "end_index": 5432, "_text": "transfer to inpatient CMED likely tomorrow"}
+{"sent_index": 109, "start_index": 5433, "end_index": 5457, "_text": "Medications on Admission"}
+{"sent_index": 110, "start_index": 5460, "end_index": 5480, "_text": "Neurontin 800 mg tid"}
+{"sent_index": 111, "start_index": 5481, "end_index": 5496, "_text": "Ziprasidone bid"}
+{"sent_index": 112, "start_index": 5497, "end_index": 5517, "_text": "Propanolol 20 mg tid"}
+{"sent_index": 113, "start_index": 5518, "end_index": 5535, "_text": "Klonopin 2 mg tid"}
+{"sent_index": 114, "start_index": 5536, "end_index": 5550, "_text": "Paxil 30 mg qd"}
+{"sent_index": 115, "start_index": 5551, "end_index": 5568, "_text": "Protonix 40 mg qd"}
+{"sent_index": 116, "start_index": 5569, "end_index": 5583, "_text": "Folate 1 mg qd"}
+{"sent_index": 117, "start_index": 5584, "end_index": 5596, "_text": "Lescol 40 qd"}
+{"sent_index": 118, "start_index": 5597, "end_index": 5618, "_text": "Discharge Disposition"}
+{"sent_index": 119, "start_index": 5621, "end_index": 5625, "_text": "Home"}
+{"sent_index": 120, "start_index": 5626, "end_index": 5645, "_text": "Discharge Diagnosis"}
+{"sent_index": 121, "start_index": 5648, "end_index": 5658, "_text": "Depression"}
+{"sent_index": 122, "start_index": 5659, "end_index": 5678, "_text": "Discharge Condition"}
+{"sent_index": 123, "start_index": 5681, "end_index": 5690, "_text": "Depressed"}
+{"sent_index": 124, "start_index": 5691, "end_index": 5713, "_text": "Discharge Instructions"}
+{"sent_index": 125, "start_index": 5716, "end_index": 5730, "_text": "Going to UMass"}
+{"sent_index": 126, "start_index": 5731, "end_index": 5739, "_text": "Memorial"}
+{"sent_index": 127, "start_index": 5740, "end_index": 5758, "_text": "Medical Center 4 ."}
+{"sent_index": 128, "start_index": 5759, "end_index": 5780, "_text": "Followup Instructions"}
+{"sent_index": 129, "start_index": 5783, "end_index": 5816, "_text": "Please f / u with PCP D 2 weeks ."}
+{"sent_index": 130, "start_index": 5817, "end_index": 5838, "_text": "Joseph Judy MD 35-943"}
+{"sent_index": 131, "start_index": 5839, "end_index": 5858, "_text": "Completed by : John"}
+{"sent_index": 132, "start_index": 5859, "end_index": 5895, "_text": "Konderla MD 01-196 2012-06-09 @ 1707"}
+{"sent_index": 133, "start_index": 5896, "end_index": 5926, "_text": "Signed electronically by : DR."}
+{"sent_index": 134, "start_index": 5927, "end_index": 5983, "_text": "Felix Garcia on : FRI 2012-06-15 4:29 PM\n( End of Report"}

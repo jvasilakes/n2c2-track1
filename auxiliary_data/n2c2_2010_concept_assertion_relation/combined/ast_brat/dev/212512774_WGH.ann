@@ -1,0 +1,28 @@
+T0	problem 307 331	Second Degree Laceration
+A0	Assertion T0 present
+T1	problem 908 914	murmur
+A1	Assertion T1 absent
+T2	problem 355 381	Abnormal Laboratory Result
+A2	Assertion T2 present
+T3	problem 1060 1087	copious amounts clear fluid
+A3	Assertion T3 present
+T4	problem 975 990	Mild irreg. ctx
+A4	Assertion T4 present
+T5	problem 1579 1609	premature rupture of membranes
+A5	Assertion T5 present
+T6	problem 828 834	masses
+A6	Assertion T6 absent
+T7	problem 1256 1283	advanced gest UTERUS Gravid
+A7	Assertion T7 present
+T8	problem 384 401	Abnormal Pap Test
+A8	Assertion T8 present
+T9	problem 1110 1123	fern positive
+A9	Assertion T9 present
+T10	problem 404 422	Monilial Vaginitis
+A10	Assertion T10 present
+T11	problem 923 929	Gravid
+A11	Assertion T11 present
+T12	problem 708 738	Premature Rupture Of Membranes
+A12	Assertion T12 present
+T13	problem 879 887	wheezing
+A13	Assertion T13 absent

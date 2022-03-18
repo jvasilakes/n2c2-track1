@@ -1,0 +1,72 @@
+{"sent_index": 0, "start_index": 0, "end_index": 9, "_text": "915093496"}
+{"sent_index": 1, "start_index": 10, "end_index": 13, "_text": "RWH"}
+{"sent_index": 2, "start_index": 14, "end_index": 36, "_text": "0802338\n045989\n2923113"}
+{"sent_index": 3, "start_index": 37, "end_index": 59, "_text": "12/13/2002 12:00:00 AM"}
+{"sent_index": 4, "start_index": 60, "end_index": 77, "_text": "Discharge Summary"}
+{"sent_index": 5, "start_index": 78, "end_index": 84, "_text": "Signed"}
+{"sent_index": 6, "start_index": 85, "end_index": 88, "_text": "DIS"}
+{"sent_index": 7, "start_index": 89, "end_index": 102, "_text": "Report Status"}
+{"sent_index": 8, "start_index": 105, "end_index": 111, "_text": "Signed"}
+{"sent_index": 9, "start_index": 112, "end_index": 129, "_text": "DISCHARGE SUMMARY"}
+{"sent_index": 10, "start_index": 130, "end_index": 178, "_text": "NAME :\nGIENGBEENEA , NAA\nUNIT NUMBER :\n799-54-08"}
+{"sent_index": 11, "start_index": 179, "end_index": 206, "_text": "ADMISSION DATE :\n12/13/2002"}
+{"sent_index": 12, "start_index": 207, "end_index": 221, "_text": "DISCHARGE DATE"}
+{"sent_index": 13, "start_index": 224, "end_index": 234, "_text": "12/14/2002"}
+{"sent_index": 14, "start_index": 235, "end_index": 254, "_text": "ADMITTING DIAGNOSIS"}
+{"sent_index": 15, "start_index": 257, "end_index": 281, "_text": "1. Undesired fertility ."}
+{"sent_index": 16, "start_index": 282, "end_index": 306, "_text": "2. Undesired adiposity ."}
+{"sent_index": 17, "start_index": 307, "end_index": 333, "_text": "HISTORY OF PRESENT ILLNESS"}
+{"sent_index": 18, "start_index": 336, "end_index": 446, "_text": "The patient is a 30 -year-old Gravida III , Para II who presented desiring definitive surgical sterilization ."}
+{"sent_index": 19, "start_index": 447, "end_index": 575, "_text": "She was extensively counseled regarding other methods of birth control and desired to proceed with definitive surgical therapy ."}
+{"sent_index": 20, "start_index": 576, "end_index": 648, "_text": "In addition , the patient desired liposuction of varying areas as well ."}
+{"sent_index": 21, "start_index": 649, "end_index": 730, "_text": "The patient was consented for both procedures and brought to the Operating Room ."}
+{"sent_index": 22, "start_index": 731, "end_index": 751, "_text": "PAST MEDICAL HISTORY"}
+{"sent_index": 23, "start_index": 754, "end_index": 760, "_text": "None ."}
+{"sent_index": 24, "start_index": 761, "end_index": 782, "_text": "PAST SURGICAL HISTORY"}
+{"sent_index": 25, "start_index": 785, "end_index": 823, "_text": "Appendectomy at the age of 14 , open ."}
+{"sent_index": 26, "start_index": 824, "end_index": 846, "_text": "PAST OBSTETRIC HISTORY"}
+{"sent_index": 27, "start_index": 849, "end_index": 883, "_text": "Spontaneous vaginal delivery x 2 ."}
+{"sent_index": 28, "start_index": 884, "end_index": 900, "_text": "PAST GYN HISTORY"}
+{"sent_index": 29, "start_index": 903, "end_index": 941, "_text": "Regular menses , on Ortho-Tri-Cyclen ."}
+{"sent_index": 30, "start_index": 942, "end_index": 1020, "_text": "No history of sexually transmitted disease , no history of domestic violence ."}
+{"sent_index": 31, "start_index": 1021, "end_index": 1045, "_text": "MEDICATIONS ON ADMISSION"}
+{"sent_index": 32, "start_index": 1048, "end_index": 1069, "_text": "1. Ortho Tri-Cyclen ."}
+{"sent_index": 33, "start_index": 1070, "end_index": 1079, "_text": "ALLERGIES"}
+{"sent_index": 34, "start_index": 1082, "end_index": 1107, "_text": "No known drug allergies ."}
+{"sent_index": 35, "start_index": 1108, "end_index": 1128, "_text": "PHYSICAL EXAMINATION"}
+{"sent_index": 36, "start_index": 1131, "end_index": 1172, "_text": "Height 5 &apos; 1 &quot; , weight 138 lb."}
+{"sent_index": 37, "start_index": 1173, "end_index": 1216, "_text": "Blood pressure :\n130/82 and heart rate 80 ."}
+{"sent_index": 38, "start_index": 1217, "end_index": 1224, "_text": "Breasts"}
+{"sent_index": 39, "start_index": 1227, "end_index": 1238, "_text": "no masses ."}
+{"sent_index": 40, "start_index": 1239, "end_index": 1297, "_text": "Lungs :\nclear to auscultation and percussion bilaterally ."}
+{"sent_index": 41, "start_index": 1298, "end_index": 1303, "_text": "Heart"}
+{"sent_index": 42, "start_index": 1306, "end_index": 1339, "_text": "regular rate and rhythm , S1-S2 ."}
+{"sent_index": 43, "start_index": 1340, "end_index": 1347, "_text": "Abdomen"}
+{"sent_index": 44, "start_index": 1350, "end_index": 1383, "_text": "soft , nontender , nondistended ."}
+{"sent_index": 45, "start_index": 1384, "end_index": 1413, "_text": "Extremities :\nwithin normal ."}
+{"sent_index": 46, "start_index": 1414, "end_index": 1521, "_text": "Pelvic exam revealed normal vulva , vagina normal , cervix normal , uterus anteverted , small , nontender ."}
+{"sent_index": 47, "start_index": 1522, "end_index": 1556, "_text": "Adnexa :\nno masses or tenderness ."}
+{"sent_index": 48, "start_index": 1557, "end_index": 1563, "_text": "Rectal"}
+{"sent_index": 49, "start_index": 1566, "end_index": 1576, "_text": "deferred ."}
+{"sent_index": 50, "start_index": 1577, "end_index": 1606, "_text": "HOSPITAL COURSE AND TREATMENT"}
+{"sent_index": 51, "start_index": 1609, "end_index": 1721, "_text": "The patient was admitted to the Operating Room where she underwent an unremarkable laparoscopic tubal ligation ."}
+{"sent_index": 52, "start_index": 1722, "end_index": 1755, "_text": "This was done with Falope rings ."}
+{"sent_index": 53, "start_index": 1756, "end_index": 1848, "_text": "The estimated blood loss was minimal and the patient received 600 cc. of intravenous fluid ."}
+{"sent_index": 54, "start_index": 1849, "end_index": 1929, "_text": "Of note , the patient had a negative urine pregnancy test prior to the surgery ."}
+{"sent_index": 55, "start_index": 1930, "end_index": 2048, "_text": "The patient then underwent liposuction of her abdomen , inner thighs , hips , flanks , chest and arms with Dr. Chain ."}
+{"sent_index": 56, "start_index": 2049, "end_index": 2155, "_text": "She did well and was admitted to the GYN Service postoperatively because the patient had persistent pain ."}
+{"sent_index": 57, "start_index": 2156, "end_index": 2224, "_text": "On postoperative day #one , she was then stable with no complaints ."}
+{"sent_index": 58, "start_index": 2225, "end_index": 2248, "_text": "She remained afebrile ."}
+{"sent_index": 59, "start_index": 2249, "end_index": 2272, "_text": "Her Foley was removed ."}
+{"sent_index": 60, "start_index": 2273, "end_index": 2356, "_text": "Her diet was advanced without difficulty and the patient was stable for discharge ."}
+{"sent_index": 61, "start_index": 2357, "end_index": 2446, "_text": "The patient was to follow up in several days time with Dr. Chain of the Plastics Clinic ."}
+{"sent_index": 62, "start_index": 2447, "end_index": 2468, "_text": "DISCHARGE MEDICATIONS"}
+{"sent_index": 63, "start_index": 2471, "end_index": 2502, "_text": "Motrin and Percocet as needed ."}
+{"sent_index": 64, "start_index": 2503, "end_index": 2533, "_text": "PADA MARONNESSGRE CHAIN , M.D."}
+{"sent_index": 65, "start_index": 2534, "end_index": 2547, "_text": "DICTATING FOR"}
+{"sent_index": 66, "start_index": 2550, "end_index": 2619, "_text": "Electronically Signed PADA MARONNESSGRE CHAIN , M.D. 04/25/2003 09:50"}
+{"sent_index": 67, "start_index": 2650, "end_index": 2680, "_text": "PADA MARONNESSGRE CHAIN , M.D."}
+{"sent_index": 68, "start_index": 2681, "end_index": 2689, "_text": "TR :\nwwi"}
+{"sent_index": 69, "start_index": 2690, "end_index": 2705, "_text": "DD :\n04/17/2003"}
+{"sent_index": 70, "start_index": 2706, "end_index": 2738, "_text": "TD :\n04/18/2003 8:28 A 045989\ncc"}
+{"sent_index": 71, "start_index": 2741, "end_index": 2771, "_text": "PADA MARONNESSGRE CHAIN , M.D."}

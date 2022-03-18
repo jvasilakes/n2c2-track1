@@ -1,0 +1,109 @@
+{"sent_index": 0, "start_index": 0, "end_index": 14, "_text": "Admission Date"}
+{"sent_index": 1, "start_index": 17, "end_index": 27, "_text": "2015-06-04"}
+{"sent_index": 2, "start_index": 28, "end_index": 42, "_text": "Discharge Date"}
+{"sent_index": 3, "start_index": 45, "end_index": 55, "_text": "2015-06-08"}
+{"sent_index": 4, "start_index": 56, "end_index": 69, "_text": "Date of Birth"}
+{"sent_index": 5, "start_index": 72, "end_index": 82, "_text": "1958-03-17"}
+{"sent_index": 6, "start_index": 83, "end_index": 86, "_text": "Sex"}
+{"sent_index": 7, "start_index": 89, "end_index": 90, "_text": "F"}
+{"sent_index": 8, "start_index": 91, "end_index": 98, "_text": "Service"}
+{"sent_index": 9, "start_index": 101, "end_index": 104, "_text": "CCU"}
+{"sent_index": 10, "start_index": 105, "end_index": 135, "_text": "HISTORY OF THE PRESENT ILLNESS"}
+{"sent_index": 11, "start_index": 138, "end_index": 308, "_text": "The patient is a 57 - year-old female with a history of hypertension and hypercholesterolemia but no prior coronary artery disease history who presented with chest pain ."}
+{"sent_index": 12, "start_index": 309, "end_index": 382, "_text": "The patient reports the pain began at 4:00 p.m. on the day of admission ."}
+{"sent_index": 13, "start_index": 383, "end_index": 476, "_text": "She reports that it had essentially started earlier in the day with some GERD-like symptoms ."}
+{"sent_index": 14, "start_index": 477, "end_index": 527, "_text": "She had taken Maalox but had no relief with this ."}
+{"sent_index": 15, "start_index": 528, "end_index": 655, "_text": "The pain was intermittent through the day and then at 4:00 p.m. increased and was also associated with nausea and diaphoresis ."}
+{"sent_index": 16, "start_index": 656, "end_index": 705, "_text": "She reports that the pain shot through her back ."}
+{"sent_index": 17, "start_index": 706, "end_index": 760, "_text": "The patient has never had these symptoms in the past ."}
+{"sent_index": 18, "start_index": 761, "end_index": 807, "_text": "She arrived in the Emergency Room at 8:00 p.m."}
+{"sent_index": 19, "start_index": 808, "end_index": 849, "_text": "At that time , the pain was unremitting ."}
+{"sent_index": 20, "start_index": 850, "end_index": 937, "_text": "In the Emergency Room , the patient was given Lopressor , nitroglycerin , and aspirin ."}
+{"sent_index": 21, "start_index": 938, "end_index": 997, "_text": "A TP3A inhibitor was not given for concern for dissection ."}
+{"sent_index": 22, "start_index": 998, "end_index": 1035, "_text": "The patient was found to have 5057 E."}
+{"sent_index": 23, "start_index": 1036, "end_index": 1047, "_text": "Sixth Blvd."}
+{"sent_index": 24, "start_index": 1048, "end_index": 1132, "_text": "elevations in I , aVL , and V1 through V2 and ST depressions in II , III , and aVF ."}
+{"sent_index": 25, "start_index": 1133, "end_index": 1209, "_text": "The patient was taken emergently to the Cardiac Catheterization Laboratory ."}
+{"sent_index": 26, "start_index": 1210, "end_index": 1230, "_text": "PAST MEDICAL HISTORY"}
+{"sent_index": 27, "start_index": 1233, "end_index": 1250, "_text": "1. Hypertension ."}
+{"sent_index": 28, "start_index": 1251, "end_index": 1276, "_text": "2. Hypercholesterolemia ."}
+{"sent_index": 29, "start_index": 1277, "end_index": 1299, "_text": "3. Chondrocalcinosis ."}
+{"sent_index": 30, "start_index": 1300, "end_index": 1327, "_text": "4. Carpal tunnel syndrome ."}
+{"sent_index": 31, "start_index": 1328, "end_index": 1337, "_text": "5. GERD ."}
+{"sent_index": 32, "start_index": 1338, "end_index": 1359, "_text": "ADMISSION MEDICATIONS"}
+{"sent_index": 33, "start_index": 1362, "end_index": 1378, "_text": "1. Atenolol 25 ."}
+{"sent_index": 34, "start_index": 1379, "end_index": 1397, "_text": "2. Crestor 10 q.d."}
+{"sent_index": 35, "start_index": 1398, "end_index": 1417, "_text": "3. Uniretic 15/25 ."}
+{"sent_index": 36, "start_index": 1418, "end_index": 1427, "_text": "ALLERGIES"}
+{"sent_index": 37, "start_index": 1430, "end_index": 1471, "_text": "The patient has no known drug allergies ."}
+{"sent_index": 38, "start_index": 1472, "end_index": 1486, "_text": "SOCIAL HISTORY"}
+{"sent_index": 39, "start_index": 1489, "end_index": 1517, "_text": "The patient denied tobacco ."}
+{"sent_index": 40, "start_index": 1518, "end_index": 1564, "_text": "The patient denied alcohol or other drug use ."}
+{"sent_index": 41, "start_index": 1565, "end_index": 1585, "_text": "PHYSICAL EXAMINATION"}
+{"sent_index": 42, "start_index": 1588, "end_index": 1599, "_text": "Vital signs"}
+{"sent_index": 43, "start_index": 1602, "end_index": 1696, "_text": "On admission , the patient was afebrile , blood pressure 146/88 , pulse 71 , respirations 18 ."}
+{"sent_index": 44, "start_index": 1697, "end_index": 1704, "_text": "General"}
+{"sent_index": 45, "start_index": 1707, "end_index": 1769, "_text": "The patient was a well appearing female in no acute distress ."}
+{"sent_index": 46, "start_index": 1770, "end_index": 1822, "_text": "Cardiac : Regular rate and rhythm , normal S1 , S2 ."}
+{"sent_index": 47, "start_index": 1823, "end_index": 1852, "_text": "No murmurs were appreciated ."}
+{"sent_index": 48, "start_index": 1853, "end_index": 1896, "_text": "Lungs : Clear to auscultation bilaterally ."}
+{"sent_index": 49, "start_index": 1897, "end_index": 1960, "_text": "Abdomen : Soft , nontender , nondistended , good bowel sounds ."}
+{"sent_index": 50, "start_index": 1961, "end_index": 1972, "_text": "Extremities"}
+{"sent_index": 51, "start_index": 1975, "end_index": 2014, "_text": "There was no edema in the extremities ."}
+{"sent_index": 52, "start_index": 2015, "end_index": 2062, "_text": "The dorsalis pedis pulses were 2+ bilaterally ."}
+{"sent_index": 53, "start_index": 2063, "end_index": 2093, "_text": "LABORATORY AND RADIOLOGIC DATA"}
+{"sent_index": 54, "start_index": 2096, "end_index": 2167, "_text": "On admission , white count 10.8 , hematocrit 38.2 , platelets 324,000 ."}
+{"sent_index": 55, "start_index": 2168, "end_index": 2183, "_text": "HOSPITAL COURSE"}
+{"sent_index": 56, "start_index": 2186, "end_index": 2212, "_text": "1. CORONARY ARTERY DISEASE"}
+{"sent_index": 57, "start_index": 2215, "end_index": 2312, "_text": "The patient was taken to Cardiac Catheterization where she was found to have two vessel disease ."}
+{"sent_index": 58, "start_index": 2313, "end_index": 2443, "_text": "The proximal LAD was found to have a 90% lesion with a septal branch with a 95% stenosis and a diagonal branch with 99% stenosis ."}
+{"sent_index": 59, "start_index": 2444, "end_index": 2539, "_text": "The patient had twin LAD stents to the LAD diagonal and LAD septal branches with Taxus stents ."}
+{"sent_index": 60, "start_index": 2540, "end_index": 2574, "_text": "This restored flow appropriately ."}
+{"sent_index": 61, "start_index": 2575, "end_index": 2686, "_text": "The patient also had proximal RCA lesion of 80% and a mid RCA lesion of 80-90% which were not intervened upon ."}
+{"sent_index": 62, "start_index": 2687, "end_index": 2857, "_text": "The patient was given an aspirin and Plavix and in addition started on a beta Elmore , Maxine ACE inhibitor , and these were titrated up as her blood pressure tolerated ."}
+{"sent_index": 63, "start_index": 2858, "end_index": 3031, "_text": "Given the fact that the patient had issues with muscle cramping with Atorvastatin in the past , she was started on Pravastatin which should give less of these side effects ."}
+{"sent_index": 64, "start_index": 3032, "end_index": 3201, "_text": "The patient will follow-up with Cardiology in one months time for further management of her coronary artery disease and further evaluation of her remaining RCA lesions ."}
+{"sent_index": 65, "start_index": 3202, "end_index": 3209, "_text": "2. PUMP"}
+{"sent_index": 66, "start_index": 3212, "end_index": 3273, "_text": "The patient had an echocardiogram to assess her LV function ."}
+{"sent_index": 67, "start_index": 3274, "end_index": 3391, "_text": "She was found to have an ejection fraction of 30-35% as well as an akinetic apex and apical mid and septal akinesis ."}
+{"sent_index": 68, "start_index": 3392, "end_index": 3592, "_text": "Given the fact that the patient had significant apical akinesis , she was started on heparin with a transition to Coumadin for anticoagulation for stroke prevention in the setting of apical akinesis ."}
+{"sent_index": 69, "start_index": 3593, "end_index": 3733, "_text": "On discharge , the patient was given Lovenox injections which should be continued until the patient reaches a therapeutic dose of Coumadin ."}
+{"sent_index": 70, "start_index": 3734, "end_index": 3844, "_text": "3. RHYTHM : The patient was monitored on telemetry throughout her hospitalization with no significant events ."}
+{"sent_index": 71, "start_index": 3845, "end_index": 3916, "_text": "The patient had an EP evaluation and will be followed-up by Dr. Welch ."}
+{"sent_index": 72, "start_index": 3917, "end_index": 3965, "_text": "14-087 , the patient had a signal-averaged EKG ."}
+{"sent_index": 73, "start_index": 3966, "end_index": 4134, "_text": "She will follow-up with Dr. Welch with an echocardiogram on 2015-07-24 in a meeting to discuss risk stratification for sudden cardiac death and possible ICD placement ."}
+{"sent_index": 74, "start_index": 4135, "end_index": 4266, "_text": "4. NEUROLOGY : The patient complained of left lower extremity weakness with ambulation two days after her cardiac catheterization ."}
+{"sent_index": 75, "start_index": 4267, "end_index": 4416, "_text": "The patient had no evidence for weakness on examination with good proximal and distal strength in the lower extremities as well as intact sensation ."}
+{"sent_index": 76, "start_index": 4417, "end_index": 4503, "_text": "The patient worked with Physical Therapy and was able to ambulate without difficulty ."}
+{"sent_index": 77, "start_index": 4504, "end_index": 4559, "_text": "She was also able to ascend stairs without difficulty ."}
+{"sent_index": 78, "start_index": 4560, "end_index": 4647, "_text": "The patient was already on an aspirin and Plavix should this represent a small stroke ."}
+{"sent_index": 79, "start_index": 4648, "end_index": 4778, "_text": "However , there was no evidence for neurologic deficit on examination and this will be followed-up by her primary care physician ."}
+{"sent_index": 80, "start_index": 4779, "end_index": 4871, "_text": "5. HEMATOLOGY : The patient was discharged on Coumadin for apical akinesis and stroke risk ."}
+{"sent_index": 81, "start_index": 4872, "end_index": 4982, "_text": "This will be further monitored by her primary care physician , Dr. Banks , who will adjust her Coumadin dose ."}
+{"sent_index": 82, "start_index": 4983, "end_index": 5016, "_text": "CONDITION ON DISCHARGE : Stable ."}
+{"sent_index": 83, "start_index": 5017, "end_index": 5033, "_text": "DISCHARGE STATUS"}
+{"sent_index": 84, "start_index": 5036, "end_index": 5045, "_text": "To home ."}
+{"sent_index": 85, "start_index": 5046, "end_index": 5065, "_text": "DISCHARGE DIAGNOSIS"}
+{"sent_index": 86, "start_index": 5068, "end_index": 5156, "_text": "ST elevation myocardial infarction , status post left anterior descending artery stent ."}
+{"sent_index": 87, "start_index": 5157, "end_index": 5178, "_text": "DISCHARGE MEDICATIONS"}
+{"sent_index": 88, "start_index": 5181, "end_index": 5200, "_text": "1. Aspirin 325 q.d."}
+{"sent_index": 89, "start_index": 5201, "end_index": 5221, "_text": "2. Lisinopril 5 q.d."}
+{"sent_index": 90, "start_index": 5222, "end_index": 5243, "_text": "3. Toprol XL 100 q.d."}
+{"sent_index": 91, "start_index": 5244, "end_index": 5262, "_text": "4. Coumadin 5 q.d."}
+{"sent_index": 92, "start_index": 5263, "end_index": 5280, "_text": "5. Plavix 75 q.d."}
+{"sent_index": 93, "start_index": 5281, "end_index": 5336, "_text": "6. Lovenox 60 mg b.i.d. until therapeutic on Coumadin ."}
+{"sent_index": 94, "start_index": 5337, "end_index": 5359, "_text": "7. Pravastatin 80 q.d."}
+{"sent_index": 95, "start_index": 5360, "end_index": 5375, "_text": "FOLLOW-UP PLANS"}
+{"sent_index": 96, "start_index": 5378, "end_index": 5540, "_text": "The patient will follow-up with her primary care physician in the week following discharge for further monitoring of her INR and adjustment of her Coumadin dose ."}
+{"sent_index": 97, "start_index": 5541, "end_index": 5626, "_text": "The patient will also follow-up with Electrophysiology with Dr. Welch on 2015-07-24 ."}
+{"sent_index": 98, "start_index": 5627, "end_index": 5762, "_text": "In addition to this , the patient will follow-up with Cardiology , Dr. Foster , and Dr. Upshaw , on 2015-07-06 for further monitoring ."}
+{"sent_index": 99, "start_index": 5763, "end_index": 5782, "_text": "Joshua PINTO , M.D."}
+{"sent_index": 100, "start_index": 5783, "end_index": 5789, "_text": "12.932"}
+{"sent_index": 101, "start_index": 5790, "end_index": 5826, "_text": "Dictated By : Greg E. Riordan , M.D."}
+{"sent_index": 102, "start_index": 5827, "end_index": 5837, "_text": "MEDQUIST36"}
+{"sent_index": 103, "start_index": 5838, "end_index": 5858, "_text": "D : 2015-06-10 09:17"}
+{"sent_index": 104, "start_index": 5859, "end_index": 5879, "_text": "T : 2015-06-12 16:28"}
+{"sent_index": 105, "start_index": 5880, "end_index": 5892, "_text": "JOB #:\n74717"}
+{"sent_index": 106, "start_index": 5893, "end_index": 5917, "_text": "Signed electronically by"}
+{"sent_index": 107, "start_index": 5920, "end_index": 5963, "_text": "DR. David PINTO on : FRI 2015-06-19 5:36 PM"}
+{"sent_index": 108, "start_index": 5966, "end_index": 5979, "_text": "End of Report"}

@@ -1,0 +1,58 @@
+T0	problem 3149 3166	occasional spells
+A0	Assertion T0 present
+T1	problem 3187 3213	some orthostatic dizziness
+A1	Assertion T1 present
+T2	problem 3171 3182	jitteriness
+A2	Assertion T2 present
+T3	problem 1356 1361	obese
+A3	Assertion T3 present
+T4	problem 2301 2319	left shoulder pain
+A4	Assertion T4 present
+T5	problem 1099 1118	palpable adenopathy
+A5	Assertion T5 absent
+T6	problem 311 334	bilateral shoulder pain
+A6	Assertion T6 present
+T7	problem 2714 2748	persistently elevated blood sugars
+A7	Assertion T7 present
+T8	problem 2567 2576	His wound
+A8	Assertion T8 present
+T9	problem 2614 2632	signs of infection
+A9	Assertion T9 absent
+T10	problem 510 545	increased pain in his left shoulder
+A10	Assertion T10 present
+T11	problem 2802 2826	newly diagnosed diabetes
+A11	Assertion T11 possible
+T12	problem 3571 3596	his neurologic conditions
+A12	Assertion T12 present
+T13	problem 182 204	LEFT ROTATOR CUFF TEAR
+A13	Assertion T13 present
+T14	problem 843 863	KNOWN DRUG ALLERGIES
+A14	Assertion T14 absent
+T15	problem 1174 1205	occasional wheezing bilaterally
+A15	Assertion T15 present
+T16	problem 1245 1278	a I / VI systolic ejection murmur
+A16	Assertion T16 present
+T17	problem 1391 1400	nontender
+A17	Assertion T17 present
+T18	problem 469 494	a right rotator cuff tear
+A18	Assertion T18 present
+T19	problem 1403 1415	nondistended
+A19	Assertion T19 present
+T20	problem 1590 1615	positive joint tenderness
+A20	Assertion T20 present
+T21	problem 3711 3744	a well healed left shoulder wound
+A21	Assertion T21 present
+T22	problem 3517 3549	some underlying diabetic process
+A22	Assertion T22 possible
+T23	problem 3469 3497	an autonomic type neuropathy
+A23	Assertion T23 possible
+T24	problem 2971 2979	diabetes
+A24	Assertion T24 possible
+T25	problem 2907 2926	the wide excursions
+A25	Assertion T25 present
+T26	problem 1287 1312	jugular venous distention
+A26	Assertion T26 absent
+T27	problem 2007 2035	intraoperative complications
+A27	Assertion T27 absent
+T28	problem 681 690	Back pain
+A28	Assertion T28 present

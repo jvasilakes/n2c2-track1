@@ -1,0 +1,32 @@
+{"sent_index": 0, "start_index": 0, "end_index": 13, "_text": "037945397 RWH"}
+{"sent_index": 1, "start_index": 14, "end_index": 28, "_text": "2690633\n194867"}
+{"sent_index": 2, "start_index": 29, "end_index": 58, "_text": "151887\n10/17/2001 12:00:00 AM"}
+{"sent_index": 3, "start_index": 59, "end_index": 88, "_text": "ED Discharge Summary\nUnsigned"}
+{"sent_index": 4, "start_index": 89, "end_index": 92, "_text": "DIS"}
+{"sent_index": 5, "start_index": 93, "end_index": 106, "_text": "Report Status"}
+{"sent_index": 6, "start_index": 109, "end_index": 117, "_text": "Unsigned"}
+{"sent_index": 7, "start_index": 118, "end_index": 175, "_text": "ED DISCHARGE NOTIFICATION / SUMMARY\nFYFEVAIA , LORERINDIL"}
+{"sent_index": 8, "start_index": 176, "end_index": 189, "_text": "MRN :\n2690633"}
+{"sent_index": 9, "start_index": 190, "end_index": 193, "_text": "Age"}
+{"sent_index": 10, "start_index": 196, "end_index": 239, "_text": "77y\nREGISTRATION DATE :\n10/17/2001 01:36 PM"}
+{"sent_index": 11, "start_index": 240, "end_index": 262, "_text": "Provider :\nCH KOTEKOLL"}
+{"sent_index": 12, "start_index": 263, "end_index": 297, "_text": "PRELIMINARY REPORT\nPCP notified by"}
+{"sent_index": 13, "start_index": 298, "end_index": 306, "_text": "MD :\nYes"}
+{"sent_index": 14, "start_index": 309, "end_index": 332, "_text": "Direct contact with PCP"}
+{"sent_index": 15, "start_index": 333, "end_index": 350, "_text": "Benefits Assigned"}
+{"sent_index": 16, "start_index": 353, "end_index": 354, "_text": "N"}
+{"sent_index": 17, "start_index": 355, "end_index": 395, "_text": "Discharge Date / Time :\n10/17/2001 16:28"}
+{"sent_index": 18, "start_index": 396, "end_index": 425, "_text": "Discharge Status :\nDischarged"}
+{"sent_index": 19, "start_index": 426, "end_index": 448, "_text": "Condition on Discharge"}
+{"sent_index": 20, "start_index": 451, "end_index": 457, "_text": "Stable"}
+{"sent_index": 21, "start_index": 458, "end_index": 482, "_text": "Patient States Complaint"}
+{"sent_index": 22, "start_index": 485, "end_index": 533, "_text": "NEAR SYNCOPE Standardized Discharge Instructions"}
+{"sent_index": 23, "start_index": 536, "end_index": 606, "_text": "The patient was given printed instructions for dizziness ( English ) ."}
+{"sent_index": 24, "start_index": 607, "end_index": 616, "_text": "Diagnosis"}
+{"sent_index": 25, "start_index": 619, "end_index": 660, "_text": "near syncope , dehydration vs cardiogenic"}
+{"sent_index": 26, "start_index": 661, "end_index": 863, "_text": "Treatment Rendered :\nIVF , cbc ( hct 36 ) , normal chem 7 , negative cardiac enzymes , negative stool guaiac , normal CXR\nDischarge Medications :\nnone\nDisposition , Follow up and Instructions to Patient"}
+{"sent_index": 27, "start_index": 866, "end_index": 931, "_text": "Patient will follow-up with his PCP , Dr. Foutchner , on Monday ."}
+{"sent_index": 28, "start_index": 932, "end_index": 993, "_text": "Dr. Foutchner will arrange for an outpatient Holter monitor ."}
+{"sent_index": 29, "start_index": 994, "end_index": 1101, "_text": "The patient is to return to the ED for recurrent dizziness , chest pain , shortness of breath or weakness ."}
+{"sent_index": 30, "start_index": 1102, "end_index": 1163, "_text": "PCP Name :\nSUMCHIRDKAYSMAVVEINDREPS , YERTREY\nProvider Number"}
+{"sent_index": 31, "start_index": 1166, "end_index": 1232, "_text": "12298\nThis report was created by KOTEKOLL , CH 10/17/2001 07:08 PM"}

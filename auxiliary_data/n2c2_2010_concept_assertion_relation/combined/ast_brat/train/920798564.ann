@@ -1,0 +1,162 @@
+T0	problem 3885 3900	calf tenderness
+A0	Assertion T0 absent
+T1	problem 4858 4877	left axis deviation
+A1	Assertion T1 present
+T2	problem 4515 4535	right hydronephrosis
+A2	Assertion T2 present
+T3	problem 3602 3613	tachycardia
+A3	Assertion T3 present
+T4	problem 1469 1499	prostate CA in the pelvic area
+A4	Assertion T4 present
+T5	problem 1441 1461	obstructive uropathy
+A5	Assertion T5 possible
+T6	problem 1637 1675	the patient &apos;s hematocrit dropped
+A6	Assertion T6 present
+T7	problem 1356 1373	his renal failure
+A7	Assertion T7 present
+T8	problem 1402 1426	bilateral hydronephrosis
+A8	Assertion T8 present
+T9	problem 514 534	persistent hematuria
+A9	Assertion T9 present
+T10	problem 451 462	prostate CA
+A10	Assertion T10 present
+T11	problem 3539 3583	some basilar crackles at the right lung base
+A11	Assertion T11 present
+T12	problem 2319 2334	epigastric pain
+A12	Assertion T12 present
+T13	problem 2361 2369	headache
+A13	Assertion T13 absent
+T14	problem 246 268	METASTATIC PROSTATE CA
+A14	Assertion T14 present
+T15	problem 5576 5590	renal function
+A15	Assertion T15 hypothetical
+T16	problem 1513 1538	the increasing creatinine
+A16	Assertion T16 present
+T17	problem 4446 4458	cardiomegaly
+A17	Assertion T17 absent
+T18	problem 5948 5970	his metabolic acidosis
+A18	Assertion T18 present
+T19	problem 874 902	persistent urinary retention
+A19	Assertion T19 present
+T20	problem 2375 2384	bone pain
+A20	Assertion T20 absent
+T21	problem 3364 3393	Mucous membranes slightly dry
+A21	Assertion T21 present
+T22	problem 3616 3681	grade II / VI systolic ejection murmur at the left sternal border
+A22	Assertion T22 present
+T23	problem 331 343	HYPERTENSION
+A23	Assertion T23 present
+T24	problem 6554 6584	this well advanced prostate CA
+A24	Assertion T24 present
+T25	problem 198 217	ACUTE RENAL FAILURE
+A25	Assertion T25 present
+T26	problem 4553 4601	an asymmetrically thickened urinary bladder wall
+A26	Assertion T26 present
+T27	problem 3500 3511	thyromegaly
+A27	Assertion T27 absent
+T28	problem 349 355	ANEMIA
+A28	Assertion T28 present
+T29	problem 5679 5717	his electrolyte and metabolic acidosis
+A29	Assertion T29 present
+T30	problem 2480 2491	Prostate CA
+A30	Assertion T30 present
+T31	problem 72 85	RENAL FAILURE
+A31	Assertion T31 present
+T32	problem 7156 7165	agitation
+A32	Assertion T32 hypothetical
+T33	problem 297 325	STATUS POST LEFT NEPHROSTOMY
+A33	Assertion T33 present
+T34	problem 5239 5268	the patient &apos;s hematuria
+A34	Assertion T34 present
+T35	problem 4604 4649	A mass like thickening of the urinary bladder
+A35	Assertion T35 present
+T36	problem 4704 4709	tumor
+A36	Assertion T36 possible
+T37	problem 4671 4691	detrusor hypertrophy
+A37	Assertion T37 possible
+T38	problem 4836 4855	atrial fibrillation
+A38	Assertion T38 present
+T39	problem 1315 1331	body weight loss
+A39	Assertion T39 present
+T40	problem 1899 1911	hyperkalemia
+A40	Assertion T40 present
+T41	problem 6177 6196	atrial fibrillation
+A41	Assertion T41 present
+T42	problem 274 294	OBSTRUCTIVE UROPATHY
+A42	Assertion T42 present
+T43	problem 2509 2529	known drug allergies
+A43	Assertion T43 absent
+T44	problem 2245 2250	fever
+A44	Assertion T44 absent
+T45	problem 757 787	adenocarcinoma of the prostate
+A45	Assertion T45 present
+T46	problem 654 669	PRESENT ILLNESS
+A46	Assertion T46 present
+T47	problem 4731 4777	a cavitary lung lesion in the right lower lobe
+A47	Assertion T47 present
+T48	problem 361 392	GASTROESOPHAGEAL REFLUX DISEASE
+A48	Assertion T48 present
+T49	problem 3155 3169	acute distress
+A49	Assertion T49 absent
+T50	problem 1290 1310	urinary incontinence
+A50	Assertion T50 present
+T51	problem 2210 2222	constipation
+A51	Assertion T51 present
+T52	problem 2228 2235	dysuria
+A52	Assertion T52 present
+T53	problem 2494 2503	ALLERGIES
+A53	Assertion T53 present
+T54	problem 2468 2474	Anemia
+A54	Assertion T54 present
+T55	problem 4886 4910	nonspecific ST-T changes
+A55	Assertion T55 present
+T56	problem 1921 1954	the persistent blood in the urine
+A56	Assertion T56 present
+T57	problem 2079 2096	vascular injuries
+A57	Assertion T57 possible
+T58	problem 2339 2355	body weight loss
+A58	Assertion T58 present
+T59	problem 4880 4883	LVH
+A59	Assertion T59 present
+T60	problem 4464 4479	lung infiltrate
+A60	Assertion T60 absent
+T61	problem 4808 4822	septic embolus
+A61	Assertion T61 possible
+T62	problem 2293 2305	palpitations
+A62	Assertion T62 absent
+T63	problem 3779 3799	Traced pitting edema
+A63	Assertion T63 present
+T64	problem 2277 2287	chest pain
+A64	Assertion T64 absent
+T65	problem 2431 2462	Gastroesophageal reflux disease
+A65	Assertion T65 present
+T66	problem 3805 3813	cyanosis
+A66	Assertion T66 absent
+T67	problem 220 240	SIGNIFICANT PROBLEMS
+A67	Assertion T67 present
+T68	problem 2266 2271	cough
+A68	Assertion T68 absent
+T69	problem 3324 3353	Isocoric cataract bilaterally
+A69	Assertion T69 present
+T70	problem 1806 1815	hematuria
+A70	Assertion T70 present
+T71	problem 3399 3410	oral ulcers
+A71	Assertion T71 absent
+T72	problem 2413 2425	Hypertension
+A72	Assertion T72 present
+T73	problem 2254 2260	chills
+A73	Assertion T73 absent
+T74	problem 52 67	PROSTATE CANCER
+A74	Assertion T74 present
+T75	problem 1049 1066	failure to thrive
+A75	Assertion T75 present
+T76	problem 1115 1127	elevated BUN
+A76	Assertion T76 present
+T77	problem 4925 4941	digitalis affect
+A77	Assertion T77 possible
+T78	problem 3821 3829	clubbing
+A78	Assertion T78 absent
+T79	problem 5394 5438	further damage to the patient &apos;s kidney
+A79	Assertion T79 absent
+T80	problem 1071 1091	decreased hematocrit
+A80	Assertion T80 present

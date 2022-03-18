@@ -1,0 +1,114 @@
+T0	problem 3277 3297	her guiac pos stools
+A0	Assertion T0 present
+T1	problem 3042 3064	gross blood per rectum
+A1	Assertion T1 absent
+T2	problem 1053 1061	afebrile
+A2	Assertion T2 absent
+T3	problem 4470 4478	wheezing
+A3	Assertion T3 hypothetical
+T4	problem 2677 2700	irritation of GI system
+A4	Assertion T4 possible
+T5	problem 2611 2616	viral
+A5	Assertion T5 possible
+T6	problem 2067 2084	COPD exacerbation
+A6	Assertion T6 hypothetical
+T7	problem 372 384	asymptomatic
+A7	Assertion T7 absent
+T8	problem 940 961	recurrent hypokalemia
+A8	Assertion T8 present
+T9	problem 2196 2212	volume depletion
+A9	Assertion T9 hypothetical
+T10	problem 5999 6022	failure of these stents
+A10	Assertion T10 hypothetical
+T11	problem 2257 2269	loose stools
+A11	Assertion T11 present
+T12	problem 713 725	loose stools
+A12	Assertion T12 present
+T13	problem 1691 1711	her coronary disease
+A13	Assertion T13 present
+T14	problem 3851 3855	pain
+A14	Assertion T14 hypothetical
+T15	problem 2977 2985	vomiting
+A15	Assertion T15 absent
+T16	problem 2428 2436	vomiting
+A16	Assertion T16 absent
+T17	problem 1119 1133	02 requirement
+A17	Assertion T17 present
+T18	problem 2990 3006	only mild nausea
+A18	Assertion T18 conditional
+T19	problem 2736 2751	guiac pos stool
+A19	Assertion T19 present
+T20	problem 1017 1023	sepsis
+A20	Assertion T20 possible
+T21	problem 1142 1172	the patient 's recent RP bleed
+A21	Assertion T21 present
+T22	problem 1197 1214	a recurrent bleed
+A22	Assertion T22 hypothetical
+T23	problem 4447 4466	shortness of breath
+A23	Assertion T23 hypothetical
+T24	problem 1513 1523	her low BP
+A24	Assertion T24 present
+T25	problem 637 652	The hypotension
+A25	Assertion T25 present
+T26	problem 671 687	volume depletion
+A26	Assertion T26 present
+T27	problem 698 710	her diarrhea
+A27	Assertion T27 present
+T28	problem 741 760	decreased PO intake
+A28	Assertion T28 present
+T29	problem 774 782	her GERD
+A29	Assertion T29 present
+T30	problem 787 793	thrush
+A30	Assertion T30 present
+T31	problem 1465 1481	volume depletion
+A31	Assertion T31 possible
+T32	problem 5768 5770	CP
+A32	Assertion T32 hypothetical
+T33	problem 5584 5605	Retroperitoneal bleed
+A33	Assertion T33 present
+T34	problem 469 480	Hypotension
+A34	Assertion T34 present
+T35	problem 2633 2661	resolving abdominal hematoma
+A35	Assertion T35 possible
+T36	problem 5779 5788	dizzyness
+A36	Assertion T36 hypothetical
+T37	problem 1987 1993	Thrush
+A37	Assertion T37 present
+T38	problem 2218 2226	diarrhea
+A38	Assertion T38 present
+T39	problem 5565 5580	demand ischemia
+A39	Assertion T39 present
+T40	problem 5773 5776	SOB
+A40	Assertion T40 hypothetical
+T41	problem 5794 5812	any other symptoms
+A41	Assertion T41 hypothetical
+T42	problem 2854 2879	her guiac positive stools
+A42	Assertion T42 present
+T43	problem 2894 2903	gastritis
+A43	Assertion T43 possible
+T44	problem 2906 2919	gastric ulcer
+A44	Assertion T44 possible
+T45	problem 2935 2953	lower GI pathology
+A45	Assertion T45 possible
+T46	problem 2287 2296	guiac pos
+A46	Assertion T46 present
+T47	problem 5534 5559	Rapid atrial fibrillation
+A47	Assertion T47 present
+T48	problem 2446 2456	occ nausea
+A48	Assertion T48 conditional
+T49	problem 2781 2785	GERD
+A49	Assertion T49 present
+T50	problem 2493 2504	obstruction
+A50	Assertion T50 absent
+T51	problem 2385 2400	Gastroenteritis
+A51	Assertion T51 possible
+T52	problem 2574 2586	liquid stool
+A52	Assertion T52 present
+T53	problem 1005 1014	Infection
+A53	Assertion T53 possible
+T54	problem 2539 2556	her mild diarrhea
+A54	Assertion T54 present
+T55	problem 2559 2571	few loose BM
+A55	Assertion T55 present
+T56	problem 1073 1086	localizing sx
+A56	Assertion T56 absent

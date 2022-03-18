@@ -1,0 +1,101 @@
+{"sent_index": 0, "start_index": 0, "end_index": 21, "_text": "638157550 SC\n97308722"}
+{"sent_index": 1, "start_index": 22, "end_index": 29, "_text": "6261929"}
+{"sent_index": 2, "start_index": 30, "end_index": 51, "_text": "1/22/2005 12:00:00 AM"}
+{"sent_index": 3, "start_index": 52, "end_index": 61, "_text": "gastritis"}
+{"sent_index": 4, "start_index": 62, "end_index": 65, "_text": "DIS"}
+{"sent_index": 5, "start_index": 66, "end_index": 93, "_text": "Admission Date :\n01/22/2005"}
+{"sent_index": 6, "start_index": 94, "end_index": 107, "_text": "Report Status"}
+{"sent_index": 7, "start_index": 110, "end_index": 137, "_text": "Discharge Date :\n01/24/2005"}
+{"sent_index": 8, "start_index": 145, "end_index": 161, "_text": "DISCHARGE ORDERS"}
+{"sent_index": 9, "start_index": 169, "end_index": 196, "_text": "AKOTE , NAO 630-65-64-5 Q39"}
+{"sent_index": 10, "start_index": 197, "end_index": 201, "_text": "Room"}
+{"sent_index": 11, "start_index": 204, "end_index": 211, "_text": "70B-157"}
+{"sent_index": 12, "start_index": 212, "end_index": 219, "_text": "Service"}
+{"sent_index": 13, "start_index": 222, "end_index": 225, "_text": "GGI"}
+{"sent_index": 14, "start_index": 226, "end_index": 269, "_text": "DISCHARGE PATIENT ON :\n01/24/05 AT 07:00 PM"}
+{"sent_index": 15, "start_index": 270, "end_index": 285, "_text": "CONTINGENT UPON"}
+{"sent_index": 16, "start_index": 286, "end_index": 300, "_text": "Not Applicable"}
+{"sent_index": 17, "start_index": 301, "end_index": 352, "_text": "WILL D / C ORDER BE USED AS THE D / C SUMMARY :\nYES"}
+{"sent_index": 18, "start_index": 353, "end_index": 394, "_text": "Attending :\nGAETZFREIERM , DENA DA , M.D."}
+{"sent_index": 19, "start_index": 395, "end_index": 406, "_text": "CODE STATUS"}
+{"sent_index": 20, "start_index": 409, "end_index": 418, "_text": "Full code"}
+{"sent_index": 21, "start_index": 419, "end_index": 430, "_text": "DISPOSITION"}
+{"sent_index": 22, "start_index": 433, "end_index": 437, "_text": "Home"}
+{"sent_index": 23, "start_index": 438, "end_index": 459, "_text": "DISCHARGE MEDICATIONS"}
+{"sent_index": 24, "start_index": 462, "end_index": 500, "_text": "AMOXICILLIN 1,000 MG PO BID X 28 doses"}
+{"sent_index": 25, "start_index": 501, "end_index": 530, "_text": "Instructions :\nfor H.Pylori ."}
+{"sent_index": 26, "start_index": 531, "end_index": 643, "_text": "Food / Drug Interaction Instruction\nMay be taken without regard to meals\nCLARITHROMYCIN 500 MG PO BID X 28 doses"}
+{"sent_index": 27, "start_index": 644, "end_index": 656, "_text": "Instructions"}
+{"sent_index": 28, "start_index": 659, "end_index": 667, "_text": "h.pylori"}
+{"sent_index": 29, "start_index": 668, "end_index": 672, "_text": "tx ."}
+{"sent_index": 30, "start_index": 673, "end_index": 708, "_text": "Food / Drug Interaction Instruction"}
+{"sent_index": 31, "start_index": 709, "end_index": 723, "_text": "Take with food"}
+{"sent_index": 32, "start_index": 724, "end_index": 740, "_text": "Alert overridden"}
+{"sent_index": 33, "start_index": 743, "end_index": 810, "_text": "Override added on 01/23/05 by DAINSAYLESNOORT , AGER , M.D. , PH.D."}
+{"sent_index": 34, "start_index": 811, "end_index": 830, "_text": "SERIOUS INTERACTION"}
+{"sent_index": 35, "start_index": 833, "end_index": 863, "_text": "SIMVASTATIN and CLARITHROMYCIN"}
+{"sent_index": 36, "start_index": 864, "end_index": 895, "_text": "POTENTIALLY SERIOUS INTERACTION"}
+{"sent_index": 37, "start_index": 898, "end_index": 928, "_text": "SIMVASTATIN and CLARITHROMYCIN"}
+{"sent_index": 38, "start_index": 929, "end_index": 948, "_text": "Reason for override"}
+{"sent_index": 39, "start_index": 951, "end_index": 965, "_text": "will monitor ."}
+{"sent_index": 40, "start_index": 966, "end_index": 1068, "_text": "HYDROCHLOROTHIAZIDE 25 MG PO QD ZOCOR ( SIMVASTATIN ) 40 MG PO QHS\nFood / Drug Interaction Instruction"}
+{"sent_index": 41, "start_index": 1069, "end_index": 1117, "_text": "Avoid grapefruit unless MD instructs otherwise ."}
+{"sent_index": 42, "start_index": 1118, "end_index": 1251, "_text": "Override Notice :\nOverride added on 01/23/05 by DAINSAYLESNOORT , AGER , M.D. , PH.D. on order for CLARITHROMYCIN PO ( ref # 99052380"}
+{"sent_index": 43, "start_index": 1254, "end_index": 1273, "_text": "SERIOUS INTERACTION"}
+{"sent_index": 44, "start_index": 1276, "end_index": 1306, "_text": "SIMVASTATIN and CLARITHROMYCIN"}
+{"sent_index": 45, "start_index": 1307, "end_index": 1338, "_text": "POTENTIALLY SERIOUS INTERACTION"}
+{"sent_index": 46, "start_index": 1341, "end_index": 1371, "_text": "SIMVASTATIN and CLARITHROMYCIN"}
+{"sent_index": 47, "start_index": 1372, "end_index": 1391, "_text": "Reason for override"}
+{"sent_index": 48, "start_index": 1394, "end_index": 1408, "_text": "will monitor ."}
+{"sent_index": 49, "start_index": 1409, "end_index": 1481, "_text": "POTASSIUM CHLORIDE SLOW REL. ( KCL SLOW RELEASE ) 40 MEQ PO QD As per SC"}
+{"sent_index": 50, "start_index": 1482, "end_index": 1507, "_text": "Potassium Chloride Policy"}
+{"sent_index": 51, "start_index": 1510, "end_index": 1589, "_text": "each 20 mEq dose to be given with 4 oz of fluid COZAAR ( LOSARTAN ) 50 MG PO QD"}
+{"sent_index": 52, "start_index": 1590, "end_index": 1673, "_text": "Number of Doses Required ( approximate ) :\n2\nLAMICTAL ( LAMOTRIGINE ) 150 MG PO BID"}
+{"sent_index": 53, "start_index": 1674, "end_index": 1864, "_text": "Number of Doses Required ( approximate ) :\n5\nWELLBUTRIN SR ( BUPROPION HCL SUSTAINED RELEASE ) 200 MG PO BID\nNumber of Doses Required ( approximate ) :\n4\nESOMEPRAZOLE 20 MG PO BID X 28 doses"}
+{"sent_index": 54, "start_index": 1865, "end_index": 1877, "_text": "Instructions"}
+{"sent_index": 55, "start_index": 1880, "end_index": 1882, "_text": "H."}
+{"sent_index": 56, "start_index": 1883, "end_index": 1894, "_text": "Pylori tx ."}
+{"sent_index": 57, "start_index": 1895, "end_index": 1899, "_text": "DIET"}
+{"sent_index": 58, "start_index": 1902, "end_index": 1917, "_text": "No Restrictions"}
+{"sent_index": 59, "start_index": 1918, "end_index": 1926, "_text": "ACTIVITY"}
+{"sent_index": 60, "start_index": 1929, "end_index": 1952, "_text": "Resume regular exercise"}
+{"sent_index": 61, "start_index": 1953, "end_index": 1986, "_text": "FOLLOW UP APPOINTMENT ( S ) :\nDr."}
+{"sent_index": 62, "start_index": 1987, "end_index": 2019, "_text": "Gaetzfreierm 1-2 weeks ,\nALLERGY"}
+{"sent_index": 63, "start_index": 2022, "end_index": 2068, "_text": "PERCOCET , IV Contrast , LISINOPRIL , ATENOLOL"}
+{"sent_index": 64, "start_index": 2069, "end_index": 2084, "_text": "ADMIT DIAGNOSIS"}
+{"sent_index": 65, "start_index": 2087, "end_index": 2096, "_text": "Gastritis"}
+{"sent_index": 66, "start_index": 2097, "end_index": 2186, "_text": "PRINCIPAL DISCHARGE DIAGNOSIS ; Responsible After Study for Causing Admission ) gastritis"}
+{"sent_index": 67, "start_index": 2187, "end_index": 2393, "_text": "OTHER DIAGNOSIS ; Conditions , Infections , Complications , affecting Treatment / Stay Obesity HTN High Cholesterol Tobacco Fhx of CAD ETT 12/94 ( - ) ischemia ECHO 02/89 nl ETT 03/89 , 07/90 c / w ND ische"}
+{"sent_index": 68, "start_index": 2394, "end_index": 2489, "_text": "Takes hubby &apos;s sl ntg Barium Swallow 04/89 ( - ) UGI 06/91 ( - )\nOPERATIONS AND PROCEDURES"}
+{"sent_index": 69, "start_index": 2492, "end_index": 2535, "_text": "OTHER TREATMENTS / PROCEDURES ( NOT IN O.R."}
+{"sent_index": 70, "start_index": 2538, "end_index": 2549, "_text": "MRI HIDA CT"}
+{"sent_index": 71, "start_index": 2550, "end_index": 2581, "_text": "BRIEF RESUME OF HOSPITAL COURSE"}
+{"sent_index": 72, "start_index": 2584, "end_index": 2698, "_text": "The pt is a 55yo F s / p Roux en Y GBP in 12/20 presenting to the ED this AM c / o mod severe midepigastric pain ."}
+{"sent_index": 73, "start_index": 2699, "end_index": 2819, "_text": "She notes that she has had this pain since Thursday , and that it becomes much worse within 15 min of consuming a meal ."}
+{"sent_index": 74, "start_index": 2820, "end_index": 2947, "_text": "She has also had intermittent post-prandial nausea / satiety for which she had been scheduled for an outpt EGD with GI on 2/8 ."}
+{"sent_index": 75, "start_index": 2948, "end_index": 3028, "_text": "She describes the pain as band-like / radiating to both sides but not the back ."}
+{"sent_index": 76, "start_index": 3029, "end_index": 3057, "_text": "Her pain currently is 5/10 ."}
+{"sent_index": 77, "start_index": 3058, "end_index": 3112, "_text": "ROS ( - ) emesis / BRBPR/melena / fever/chills / sob ."}
+{"sent_index": 78, "start_index": 3113, "end_index": 3214, "_text": "Pt was seen by GI on 13 EGD was performed HD2 which was negative for gastritis , stricture or ulcer ."}
+{"sent_index": 79, "start_index": 3215, "end_index": 3236, "_text": "Pt was found to be H."}
+{"sent_index": 80, "start_index": 3237, "end_index": 3301, "_text": "Pylori positive and therefore was started on empiric treatment ."}
+{"sent_index": 81, "start_index": 3302, "end_index": 3409, "_text": "Afferent limb of the roux en y anastamosis was visualized however the efferent limb could not be explored ."}
+{"sent_index": 82, "start_index": 3410, "end_index": 3489, "_text": "Pt had HIDA scan which was negative for obstruction , and CT was unremarkable ."}
+{"sent_index": 83, "start_index": 3490, "end_index": 3599, "_text": "Pt was tolerating regular diet by HD4 , and GI felt that further workup could be continued as an outpatient ."}
+{"sent_index": 84, "start_index": 3600, "end_index": 3707, "_text": "Pt was therefore discharged home in stable condition , voiding , ambulating and eating without difficulty ."}
+{"sent_index": 85, "start_index": 3708, "end_index": 3884, "_text": "Plans to follow up with outpatient MRA to rule out ischemic causes of post prandial pain , as well as HIDA with CK challenge to evaluate for biliary dyskinesia without stasis ."}
+{"sent_index": 86, "start_index": 3885, "end_index": 3939, "_text": "Pt will finish course of H. pylori treatment as well ."}
+{"sent_index": 87, "start_index": 3940, "end_index": 3959, "_text": "ADDITIONAL COMMENTS"}
+{"sent_index": 88, "start_index": 3962, "end_index": 4055, "_text": "If fevers , chills , nausea , vomiting , diarrhea , increasing pain with food please call Dr."}
+{"sent_index": 89, "start_index": 4056, "end_index": 4092, "_text": "Gaetzfreierm &apos;s office or PCP ."}
+{"sent_index": 90, "start_index": 4093, "end_index": 4140, "_text": "If severe , then proceed to ER for evaluation ."}
+{"sent_index": 91, "start_index": 4141, "end_index": 4261, "_text": "Will need to call for outpatient MRA and HIDA with CCK challenge to evaluate biliary system and mesenteric vasculature ."}
+{"sent_index": 92, "start_index": 4262, "end_index": 4307, "_text": "Please continue taking the antibiotics for H."}
+{"sent_index": 93, "start_index": 4308, "end_index": 4349, "_text": "Pylori for full course ( 26 more days ) ."}
+{"sent_index": 94, "start_index": 4350, "end_index": 4369, "_text": "DISCHARGE CONDITION"}
+{"sent_index": 95, "start_index": 4372, "end_index": 4378, "_text": "Stable"}
+{"sent_index": 96, "start_index": 4379, "end_index": 4391, "_text": "TO DO / PLAN"}
+{"sent_index": 97, "start_index": 4394, "end_index": 4413, "_text": "No dictated summary"}
+{"sent_index": 98, "start_index": 4414, "end_index": 4424, "_text": "ENTERED BY"}
+{"sent_index": 99, "start_index": 4427, "end_index": 4482, "_text": "DOUETSHUFF , DE CLEEE , M.D. ( CP85 ) 01/24/05 06:53 PM"}
+{"sent_index": 100, "start_index": 4490, "end_index": 4513, "_text": "END OF DISCHARGE ORDERS"}

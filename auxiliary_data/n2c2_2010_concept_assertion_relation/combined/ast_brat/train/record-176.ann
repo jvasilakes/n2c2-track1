@@ -1,0 +1,24 @@
+T0	problem 217 241	type 1 diabetes mellitus
+A0	Assertion T0 present
+T1	problem 633 650	apparent distress
+A1	Assertion T1 absent
+T2	problem 747 755	afebrile
+A2	Assertion T2 absent
+T3	problem 1979 2002	End stage renal disease
+A3	Assertion T3 present
+T4	problem 1949 1973	Type 1 diabetes mellitus
+A4	Assertion T4 present
+T5	problem 821 863	a well healed left lower quadrant incision
+A5	Assertion T5 present
+T6	problem 1015 1027	complication
+A6	Assertion T6 absent
+T7	problem 806 815	nontender
+A7	Assertion T7 absent
+T8	problem 388 409	Her diabetes mellitus
+A8	Assertion T8 present
+T9	problem 434 445	retinopathy
+A9	Assertion T9 present
+T10	problem 450 461	nephropathy
+A10	Assertion T10 present
+T11	problem 473 494	peripheral neuropathy
+A11	Assertion T11 present

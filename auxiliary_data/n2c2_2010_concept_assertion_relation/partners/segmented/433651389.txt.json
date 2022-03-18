@@ -1,0 +1,139 @@
+{"sent_index": 0, "start_index": 0, "end_index": 9, "_text": "433651389"}
+{"sent_index": 1, "start_index": 10, "end_index": 14, "_text": "CTMC"}
+{"sent_index": 2, "start_index": 15, "end_index": 23, "_text": "81247987"}
+{"sent_index": 3, "start_index": 24, "end_index": 53, "_text": "625670\n08/16/1998 12:00:00 AM"}
+{"sent_index": 4, "start_index": 54, "end_index": 87, "_text": "MENTAL STATUS CHANGE , CELLULITIS"}
+{"sent_index": 5, "start_index": 88, "end_index": 94, "_text": "Signed"}
+{"sent_index": 6, "start_index": 95, "end_index": 98, "_text": "DIS"}
+{"sent_index": 7, "start_index": 99, "end_index": 113, "_text": "Admission Date"}
+{"sent_index": 8, "start_index": 116, "end_index": 126, "_text": "08/16/1998"}
+{"sent_index": 9, "start_index": 127, "end_index": 149, "_text": "Report Status :\nSigned"}
+{"sent_index": 10, "start_index": 150, "end_index": 164, "_text": "Discharge Date"}
+{"sent_index": 11, "start_index": 167, "end_index": 177, "_text": "08/18/1998"}
+{"sent_index": 12, "start_index": 178, "end_index": 197, "_text": "PRINCIPAL DIAGNOSIS"}
+{"sent_index": 13, "start_index": 200, "end_index": 223, "_text": "MENTAL STATUS CHANGES ."}
+{"sent_index": 14, "start_index": 224, "end_index": 239, "_text": "OTHER DIAGNOSES"}
+{"sent_index": 15, "start_index": 242, "end_index": 262, "_text": "1) AORTIC STENOSIS ."}
+{"sent_index": 16, "start_index": 263, "end_index": 288, "_text": "2) MITRAL REGURGITATION ."}
+{"sent_index": 17, "start_index": 289, "end_index": 310, "_text": "3) STATUS POST FALL ."}
+{"sent_index": 18, "start_index": 311, "end_index": 379, "_text": "4) HISTORY OF TRANSIENT ISCHEMIC ATTACK / CEREBROVASCULAR ACCIDENT ."}
+{"sent_index": 19, "start_index": 380, "end_index": 412, "_text": "5) RIGHT LOWER EXTREMITY WOUND ."}
+{"sent_index": 20, "start_index": 413, "end_index": 437, "_text": "6) ATRIAL FIBRILLATION ."}
+{"sent_index": 21, "start_index": 438, "end_index": 464, "_text": "HISTORY OF PRESENT ILLNESS"}
+{"sent_index": 22, "start_index": 467, "end_index": 638, "_text": "The patient is an 88 year-old woman undergoing treatment for a right lower extremity cellulitis who was transferred from Child for worsening cellulitis and new confusion ."}
+{"sent_index": 23, "start_index": 639, "end_index": 882, "_text": "The patient has a history of severe aortic stenosis and was recently admitted to the Retelk County Medical Center for a Nafcillin sensitive Staphylococcus aureus cellulitis of the right leg treated with a course of Nafcillin and Levofloxacin ."}
+{"sent_index": 24, "start_index": 883, "end_index": 976, "_text": "There was also a right leg fluid collection that was incised and drained on August 1 , 1998 ."}
+{"sent_index": 25, "start_index": 977, "end_index": 1040, "_text": "The patient was sent to rehabilitation on Levofloxacin orally ."}
+{"sent_index": 26, "start_index": 1041, "end_index": 1221, "_text": "Although details were not available at the time of admission , apparently , she had done well until the 24 hours proceeding admission when the cellulitis was felt to be worsening ."}
+{"sent_index": 27, "start_index": 1222, "end_index": 1303, "_text": "She had also been noted to be confused and combative during that 24 hour period ."}
+{"sent_index": 28, "start_index": 1304, "end_index": 1505, "_text": "As her baseline mental status is completely alert and oriented , this caused concern amongst the staff of the rehabilitation center and the patient was transferred to the Retelk County Medical Center ."}
+{"sent_index": 29, "start_index": 1506, "end_index": 1526, "_text": "PAST MEDICAL HISTORY"}
+{"sent_index": 30, "start_index": 1529, "end_index": 1712, "_text": "1) Aortic stenosis , severe , echocardiogram in July of 1998 with a peak gradient of 6-8 mm of mercury , aortic valve area calculated to be 0.5 cm squared by the continuity equation ."}
+{"sent_index": 31, "start_index": 1713, "end_index": 1768, "_text": "The patient has a history of congestive heart failure ."}
+{"sent_index": 32, "start_index": 1769, "end_index": 1810, "_text": "Calculated ejection fraction was 45-50% ."}
+{"sent_index": 33, "start_index": 1811, "end_index": 1872, "_text": "2) Mitral regurgitation , 2+ on July of 1998 echocardiogram ."}
+{"sent_index": 34, "start_index": 1873, "end_index": 1908, "_text": "3) History of atrial fibrillation ."}
+{"sent_index": 35, "start_index": 1909, "end_index": 1948, "_text": "4) History of cerebrovascular disease ."}
+{"sent_index": 36, "start_index": 1949, "end_index": 1966, "_text": "5) Hypertension ."}
+{"sent_index": 37, "start_index": 1967, "end_index": 2021, "_text": "6) History of temporal arteritis on chronic steroids ."}
+{"sent_index": 38, "start_index": 2022, "end_index": 2045, "_text": "7) History of colitis ."}
+{"sent_index": 39, "start_index": 2046, "end_index": 2086, "_text": "8) History of vertebral body fractures ."}
+{"sent_index": 40, "start_index": 2087, "end_index": 2111, "_text": "MEDICATIONS ON ADMISSION"}
+{"sent_index": 41, "start_index": 2114, "end_index": 2147, "_text": "1) Digoxin 0.125 mg p.o. q. day ."}
+{"sent_index": 42, "start_index": 2148, "end_index": 2174, "_text": "2) Lasix 80 mg p.o. b.i.d."}
+{"sent_index": 43, "start_index": 2175, "end_index": 2205, "_text": "3) Aspirin 81 mg p.o. q. day ."}
+{"sent_index": 44, "start_index": 2206, "end_index": 2234, "_text": "4) Coumadin 2 mg p.o. q.h.s."}
+{"sent_index": 45, "start_index": 2235, "end_index": 2268, "_text": "5) Zaroxolyn 2.5 mg p.o. q. day ."}
+{"sent_index": 46, "start_index": 2269, "end_index": 2301, "_text": "6) Toprol XL 50 mg p.o. q. day ."}
+{"sent_index": 47, "start_index": 2302, "end_index": 2335, "_text": "7) Potassium 20 mEq p.o. q. day ."}
+{"sent_index": 48, "start_index": 2336, "end_index": 2366, "_text": "8) Prednisone 5 mg p.o. q.o.d."}
+{"sent_index": 49, "start_index": 2367, "end_index": 2397, "_text": "9) Fosamax 10 mg p.o. q. day ."}
+{"sent_index": 50, "start_index": 2398, "end_index": 2435, "_text": "10) Levofloxacin 250 mg p.o. q. day ."}
+{"sent_index": 51, "start_index": 2436, "end_index": 2463, "_text": "11) Axid 150 mg p.o. b.i.d."}
+{"sent_index": 52, "start_index": 2464, "end_index": 2491, "_text": "12) Buspar 5 mg p.o. t.i.d."}
+{"sent_index": 53, "start_index": 2492, "end_index": 2522, "_text": "13) Zyrtec 10 mg p.o. q. day ."}
+{"sent_index": 54, "start_index": 2523, "end_index": 2532, "_text": "ALLERGIES"}
+{"sent_index": 55, "start_index": 2535, "end_index": 2576, "_text": "The patient had no known drug allergies ."}
+{"sent_index": 56, "start_index": 2577, "end_index": 2591, "_text": "SOCIAL HISTORY"}
+{"sent_index": 57, "start_index": 2594, "end_index": 2662, "_text": "The patient is presently staying at the Gangistown Hospital Center ."}
+{"sent_index": 58, "start_index": 2663, "end_index": 2715, "_text": "She has a son who is actively involved in her care ."}
+{"sent_index": 59, "start_index": 2716, "end_index": 2736, "_text": "PHYSICAL EXAMINATION"}
+{"sent_index": 60, "start_index": 2739, "end_index": 2912, "_text": "Physical examination on admission revealed an elderly woman , sleeping , responsive only to noxious stimuli after having received some sedation in the emergency department ."}
+{"sent_index": 61, "start_index": 2913, "end_index": 2924, "_text": "Vital signs"}
+{"sent_index": 62, "start_index": 2927, "end_index": 3051, "_text": "Heart rate 60 , respiratory rate 18 , blood pressure 116/80 , temperature 97.1 degrees , oxygen saturation 93% on room air ."}
+{"sent_index": 63, "start_index": 3052, "end_index": 3090, "_text": "Head and neck examination was benign ."}
+{"sent_index": 64, "start_index": 3091, "end_index": 3175, "_text": "Skin examination was notable for a leg ulcer and cellulitis to be delineated below ."}
+{"sent_index": 65, "start_index": 3176, "end_index": 3208, "_text": "There were no spider angiomata ."}
+{"sent_index": 66, "start_index": 3209, "end_index": 3246, "_text": "Neck was supple with no thyromegaly ."}
+{"sent_index": 67, "start_index": 3247, "end_index": 3293, "_text": "Lungs were clear to auscultation bilaterally ."}
+{"sent_index": 68, "start_index": 3294, "end_index": 3576, "_text": "The heart examination revealed that the patient had a sustained PMI which was located in the left mid clavicular line , S1 , near complete obliteration of the second heart sound by a two out of six high pitched murmur peaking at mid to late systole and heard across the precordium ."}
+{"sent_index": 69, "start_index": 3577, "end_index": 3619, "_text": "It radiates to both carotids bilaterally ."}
+{"sent_index": 70, "start_index": 3620, "end_index": 3710, "_text": "There was also a blowing holosystolic murmur heard at the patient &apos;s apex to axilla ."}
+{"sent_index": 71, "start_index": 3711, "end_index": 3740, "_text": "There was no S3 appreciated ."}
+{"sent_index": 72, "start_index": 3741, "end_index": 3885, "_text": "Vascular examination was notable for 1+ carotid impulses which were diminished and delayed and the above mentioned transmitted cardiac murmurs ."}
+{"sent_index": 73, "start_index": 3886, "end_index": 4032, "_text": "Abdominal examination revealed that the abdomen was soft , non-tender , non-distended , no organomegaly , no masses , normal active bowel sounds ."}
+{"sent_index": 74, "start_index": 4033, "end_index": 4167, "_text": "The patient &apos;s extremity examination was notable for erythema of the right calf with a small ulcer with a relatively clean base ."}
+{"sent_index": 75, "start_index": 4168, "end_index": 4284, "_text": "Neurological examination revealed that the patient was quite sedated at this time having received some medications ."}
+{"sent_index": 76, "start_index": 4285, "end_index": 4328, "_text": "She was arousable only to painful stimuli ."}
+{"sent_index": 77, "start_index": 4329, "end_index": 4367, "_text": "Her pupils were reactive bilaterally ."}
+{"sent_index": 78, "start_index": 4368, "end_index": 4392, "_text": "Her face was symmetric ."}
+{"sent_index": 79, "start_index": 4393, "end_index": 4423, "_text": "She had an intact gag reflex ."}
+{"sent_index": 80, "start_index": 4424, "end_index": 4494, "_text": "She was able to move all four of her extremities in response to pain ."}
+{"sent_index": 81, "start_index": 4495, "end_index": 4580, "_text": "Her deep tendon reflexes were slightly diminished at 1+ bilaterally , but symmetric ."}
+{"sent_index": 82, "start_index": 4581, "end_index": 4591, "_text": "LABORATORY"}
+{"sent_index": 83, "start_index": 4594, "end_index": 4656, "_text": "The patient &apos;s laboratory data on admission is as follows"}
+{"sent_index": 84, "start_index": 4659, "end_index": 4731, "_text": "Sodium was 142 , potassium 3.3 , chloride 99 , BUN 23 , creatinine 1.1 ."}
+{"sent_index": 85, "start_index": 4732, "end_index": 4821, "_text": "AST was 25 , alkaline phosphatase 130 , total bilirubin 3.2 , albumin 3.4 , calcium 8.8 ."}
+{"sent_index": 86, "start_index": 4822, "end_index": 4845, "_text": "Digoxin level was 0.8 ."}
+{"sent_index": 87, "start_index": 4846, "end_index": 4931, "_text": "Hematocrit was 33.0 , platelet count 627 , white blood cell count 10,000 , MCV 79.8 ."}
+{"sent_index": 88, "start_index": 4932, "end_index": 5013, "_text": "Coagulation studies revealed a PT of 17.4 seconds with an INR of 2.1 , PTT 25.5 ."}
+{"sent_index": 89, "start_index": 5014, "end_index": 5110, "_text": "The patient &apos;s admission chest x-ray revealed no infiltrate , no congestive heart failure ."}
+{"sent_index": 90, "start_index": 5111, "end_index": 5181, "_text": "Head CT scan performed in the emergency department revealed no bleed ."}
+{"sent_index": 91, "start_index": 5182, "end_index": 5292, "_text": "Urinalysis revealed trace microscopic hematuria with 47 red blood cells per high powered field , 1+ bacteria ."}
+{"sent_index": 92, "start_index": 5293, "end_index": 5308, "_text": "HOSPITAL COURSE"}
+{"sent_index": 93, "start_index": 5311, "end_index": 5335, "_text": "1) Mental status changes"}
+{"sent_index": 94, "start_index": 5338, "end_index": 5469, "_text": "On admission to the emergency room , the patient was somewhat argumentative and confused as well as uncooperative with procedures ."}
+{"sent_index": 95, "start_index": 5470, "end_index": 5735, "_text": "A neurologic work-up was undertaken which included a CT scan of the head which revealed no acute bleed and a lumbar puncture which revealed a glucose of 72 , protein 65 , white blood cell count 19 , red blood cell count 11,500 with no evidence of xanthrochromasia ."}
+{"sent_index": 96, "start_index": 5736, "end_index": 5898, "_text": "The Neurology Service evaluated the patient who felt that her agitation was most likely due to infection , her multiple medications , or her metabolic condition ."}
+{"sent_index": 97, "start_index": 5899, "end_index": 6076, "_text": "The patient &apos;s mental status slowly began to recover , however on the morning of the first day of admission , August 16 , 1998 , the patient was found after having fallen ."}
+{"sent_index": 98, "start_index": 6077, "end_index": 6300, "_text": "A neurological examination was performed which revealed no abnormality and imaging included a head scan which revealed no bleed and a cervical spine series which revealed degenerative joint disease but no obvious fracture ."}
+{"sent_index": 99, "start_index": 6301, "end_index": 6372, "_text": "The patient decided not to pursue further testing with a neck CT scan ."}
+{"sent_index": 100, "start_index": 6373, "end_index": 6459, "_text": "At the time of discharge , the patient &apos;s mental status is back to its baseline ."}
+{"sent_index": 101, "start_index": 6460, "end_index": 6495, "_text": "2) Right lower extremity cellulitis"}
+{"sent_index": 102, "start_index": 6498, "end_index": 6642, "_text": "The patient was evaluated by the Surgical Service who felt that the wound was clean with some erythema but without evidence of true cellulitis ."}
+{"sent_index": 103, "start_index": 6643, "end_index": 6778, "_text": "The patient &apos;s antibiotics were discontinued with the thought that prolonged antibiotics only put her at more risk for infection ."}
+{"sent_index": 104, "start_index": 6779, "end_index": 6789, "_text": "3) Cardiac"}
+{"sent_index": 105, "start_index": 6792, "end_index": 6872, "_text": "The patient has a history of critical aortic stenosis and mitral regurgitation ."}
+{"sent_index": 106, "start_index": 6873, "end_index": 6946, "_text": "Fortunately , these issues were not active during the present admission ."}
+{"sent_index": 107, "start_index": 6947, "end_index": 6966, "_text": "4) Status post fall"}
+{"sent_index": 108, "start_index": 6969, "end_index": 7005, "_text": "The patient did fall while inhouse ."}
+{"sent_index": 109, "start_index": 7006, "end_index": 7062, "_text": "A head CT scan and cervical spine series were negative ."}
+{"sent_index": 110, "start_index": 7063, "end_index": 7130, "_text": "The patient appeared to have no deficits at the time of discharge ."}
+{"sent_index": 111, "start_index": 7131, "end_index": 7153, "_text": "5) Atrial fibrillation"}
+{"sent_index": 112, "start_index": 7156, "end_index": 7200, "_text": "The patient &apos;s Coumadin was continued ."}
+{"sent_index": 113, "start_index": 7201, "end_index": 7233, "_text": "6) Abnormal liver function tests"}
+{"sent_index": 114, "start_index": 7236, "end_index": 7396, "_text": "On admission , the patient was noted to have elevated bilirubins in the 3 range and mildly elevated alkaline phosphatase consistent with a cholestatic picture ."}
+{"sent_index": 115, "start_index": 7397, "end_index": 7467, "_text": "These liver function tests will be followed closely as an outpatient ."}
+{"sent_index": 116, "start_index": 7468, "end_index": 7492, "_text": "MEDICATIONS ON DISCHARGE"}
+{"sent_index": 117, "start_index": 7495, "end_index": 7525, "_text": "1) Aspirin 81 mg p.o. q. day ."}
+{"sent_index": 118, "start_index": 7526, "end_index": 7558, "_text": "2) Digoxin 0.125 mg p.o. q. AM ."}
+{"sent_index": 119, "start_index": 7559, "end_index": 7585, "_text": "3) Lasix 40 mg p.o. b.i.d."}
+{"sent_index": 120, "start_index": 7586, "end_index": 7620, "_text": "4) Zaroxolyn 0.25 mg p.o. q. day ."}
+{"sent_index": 121, "start_index": 7621, "end_index": 7651, "_text": "5) Prednisone 5 mg p.o. q.o.d."}
+{"sent_index": 122, "start_index": 7652, "end_index": 7680, "_text": "6) Coumadin 2 mg p.o. q.h.s."}
+{"sent_index": 123, "start_index": 7681, "end_index": 7713, "_text": "7) Kay Ciel 20 mEq p.o. q. day ."}
+{"sent_index": 124, "start_index": 7714, "end_index": 7744, "_text": "8) Fosamax 10 mg p.o. q. day ."}
+{"sent_index": 125, "start_index": 7745, "end_index": 7779, "_text": "9) Amitriptyline 10 mg p.o. q.h.s."}
+{"sent_index": 126, "start_index": 7780, "end_index": 7807, "_text": "10) Buspar 5 mg p.o. t.i.d."}
+{"sent_index": 127, "start_index": 7808, "end_index": 7817, "_text": "FOLLOW-UP"}
+{"sent_index": 128, "start_index": 7820, "end_index": 7909, "_text": "The patient will be followed at rehabilitation by her primary care physician , Dr. Both ."}
+{"sent_index": 129, "start_index": 7910, "end_index": 7921, "_text": "Dictated By"}
+{"sent_index": 130, "start_index": 7924, "end_index": 7944, "_text": "TIA BREUNMULL , M.D."}
+{"sent_index": 131, "start_index": 7945, "end_index": 7949, "_text": "OH29"}
+{"sent_index": 132, "start_index": 7950, "end_index": 7959, "_text": "Attending"}
+{"sent_index": 133, "start_index": 7962, "end_index": 7979, "_text": "RA S. BOTH , M.D."}
+{"sent_index": 134, "start_index": 7980, "end_index": 7995, "_text": "YT79 WH234/2364"}
+{"sent_index": 135, "start_index": 7996, "end_index": 8008, "_text": "Batch :\n4025"}
+{"sent_index": 136, "start_index": 8009, "end_index": 8029, "_text": "Index No. FSYAMR79X6"}
+{"sent_index": 137, "start_index": 8030, "end_index": 8042, "_text": "D :\n08/18/98"}
+{"sent_index": 138, "start_index": 8043, "end_index": 8055, "_text": "T :\n08/18/98"}

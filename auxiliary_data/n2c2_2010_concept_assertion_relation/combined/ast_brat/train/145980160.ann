@@ -1,0 +1,78 @@
+T0	problem 629 651	a firm left-sided lobe
+A0	Assertion T0 present
+T1	problem 684 735	a hypoechoic left-sided mass in the peripheral zone
+A1	Assertion T1 present
+T2	problem 1374 1399	jugular venous distention
+A2	Assertion T2 absent
+T3	problem 583 591	a nodule
+A3	Assertion T3 possible
+T4	problem 542 564	prominence on the left
+A4	Assertion T4 present
+T5	problem 514 536	an asymmetric prostate
+A5	Assertion T5 present
+T6	problem 3458 3483	his low grade temperature
+A6	Assertion T6 present
+T7	problem 3230 3240	chest pain
+A7	Assertion T7 absent
+T8	problem 1743 1756	a firm nodule
+A8	Assertion T8 present
+T9	problem 1589 1601	organomegaly
+A9	Assertion T9 absent
+T10	problem 3289 3296	changes
+A10	Assertion T10 absent
+T11	problem 449 457	nocturia
+A11	Assertion T11 present
+T12	problem 2166 2198	positive white blood cell screen
+A12	Assertion T12 present
+T13	problem 2653 2676	a low grade temperature
+A13	Assertion T13 present
+T14	problem 3218 3226	symptoms
+A14	Assertion T14 absent
+T15	problem 2142 2161	marked occult blood
+A15	Assertion T15 present
+T16	problem 3184 3205	anterolateral changes
+A16	Assertion T16 present
+T17	problem 410 427	urinary frequency
+A17	Assertion T17 present
+T18	problem 1607 1638	costovertebral angle tenderness
+A18	Assertion T18 absent
+T19	problem 754 829	moderately to poorly differentiated Grade III-IV adenocarcinoma on the left
+A19	Assertion T19 present
+T20	problem 436 446	stranguria
+A20	Assertion T20 present
+T22	problem 3127 3138	tachycardia
+A21	Assertion T22 present
+T23	problem 3110 3121	diaphoresis
+A22	Assertion T23 present
+T24	problem 1133 1141	allergic
+A23	Assertion T24 present
+T25	problem 943 952	impotence
+A24	Assertion T25 present
+T26	problem 193 208	Prostate cancer
+A25	Assertion T26 present
+T27	problem 1525 1534	murmurs .
+A26	Assertion T27 absent
+T28	problem 1403 1414	thyromegaly
+A27	Assertion T28 absent
+T29	problem 1831 1841	clubbing ,
+A28	Assertion T29 absent
+T30	problem 63 78	PROSTATE CANCER
+A29	Assertion T30 present
+T31	problem 2512 2520	afebrile
+A30	Assertion T31 absent
+T32	problem 1560 1570	non-tender
+A31	Assertion T32 absent
+T33	problem 1579 1585	masses
+A32	Assertion T33 absent
+T34	problem 1842 1850	cyanosis
+A33	Assertion T34 absent
+T35	problem 2931 2951	slightly diaphoretic
+A34	Assertion T35 present
+T36	problem 1064 1082	right eye cataract
+A35	Assertion T36 present
+T37	problem 2957 2973	some tachycardia
+A36	Assertion T37 present
+T38	problem 1854 1859	edema
+A37	Assertion T38 absent
+T39	problem 3244 3263	myocardial ischemia
+A38	Assertion T39 absent
