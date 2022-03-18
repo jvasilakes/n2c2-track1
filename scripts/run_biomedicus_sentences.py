@@ -140,7 +140,11 @@ def segment(model, text, input_mapper):
                 all_sentences.append(sent_data)
             curr_sent_span = list(ts)
         else:
-            curr_sent_span[1] = ts[1]
+            if curr_sent_span is None:
+                # We haven't actually encountered a start of sentence yet.
+                continue
+            else:
+                curr_sent_span[1] = ts[1]
 
     start_i, end_i = curr_sent_span
     sent_data = {"sent_index": len(all_sentences),
