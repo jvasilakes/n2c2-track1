@@ -1,6 +1,7 @@
 import os
 import pathlib
 from collections import defaultdict
+from html.parser import HTMLParser
 import numpy as np
 
 
@@ -343,6 +344,8 @@ class BratAnnotations(object):
 
 
 def parse_brat_span(line):
+    # Sometimes things like '&quot;' appear
+    line = HTMLParser().unescape(line)
     uid, label, other = line.split(maxsplit=2)
     if ';' not in other:
         start_idx, end_idx, text = other.split(maxsplit=2)
