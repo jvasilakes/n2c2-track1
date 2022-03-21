@@ -1,14 +1,14 @@
 import os
+import html
 import pathlib
 from collections import defaultdict
-from html.parser import HTMLParser
 import numpy as np
 
 
 class Annotation(object):
 
-    def __init__(self, id, _source_file):
-        self.id = id
+    def __init__(self, _id, _source_file):
+        self.id = _id
         self._source_file = self._resolve_file_path(_source_file)
 
     def update(self, key, value):
@@ -64,7 +64,7 @@ class Annotation(object):
 class Span(Annotation):
     def __init__(self, _id, _type, start_index, end_index,
                  text, _source_file=None):
-        super().__init__(id=_id, _source_file=_source_file)
+        super().__init__(_id=_id, _source_file=_source_file)
         self.type = _type
         self.start_index = start_index
         self.end_index = end_index
@@ -88,7 +88,7 @@ class Span(Annotation):
 
 class Attribute(Annotation):
     def __init__(self, _id, _type, value, reference, _source_file=None):
-        super().__init__(id=_id, _source_file=_source_file)
+        super().__init__(_id=_id, _source_file=_source_file)
         self.type = _type
         self.value = value
         self.reference = reference
@@ -144,10 +144,12 @@ class Attribute(Annotation):
 
 class Event(Annotation):
     def __init__(self, _id, _type, span, attributes=None, _source_file=None):
-        super().__init__(id=_id, _source_file=_source_file)
+        super().__init__(_id=_id, _source_file=_source_file)
         self.type = _type
         self.span = span
         self.attributes = attributes or {}
+        for attr in self.attributes.values():
+            attr.reference = self
 
     def __eq__(self, other):
         if not isinstance(other, Event):
@@ -345,7 +347,7 @@ class BratAnnotations(object):
 
 def parse_brat_span(line):
     # Sometimes things like '&quot;' appear
-    line = HTMLParser().unescape(line)
+    line = html.unescape(line)
     uid, label, other = line.split(maxsplit=2)
     if ';' not in other:
         start_idx, end_idx, text = other.split(maxsplit=2)
