@@ -310,6 +310,9 @@ def batched_predictions_to_brat(preds, datamodule):
     """
     events_by_docid = defaultdict(list)
     for batch in preds:
+        # TODO: When using a CombinedDataModule, tasks may be split across
+        #       batches for a given example. Group by all docids first,
+        #       then iterate over them to create the output documents.
         for (i, docid) in enumerate(batch["docids"]):
             attrs = {}
             for (task, task_preds) in batch["predictions"].items():
