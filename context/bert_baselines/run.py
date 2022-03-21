@@ -27,6 +27,16 @@ def parse_args():
     train_parser = subparsers.add_parser("train", help="Run training")
     train_parser.add_argument(
             "config_file", type=str, help="Path to a yaml config file")
+    train_parser.add_argument(
+            "--save_last_epoch", action="store_true", default=False,
+            help="Save checkpoint after last training epoch.")
+
+    cont_parser = subparsers.add_parser("continue", help="Continue training.")
+    cont_parser.add_argument(
+            "config_file", type=str, help="Path to a yaml config file")
+    cont_parser.add_argument(
+            "--save_last_epoch", action="store_true", default=False,
+            help="Save checkpoint after last training epoch.")
 
     val_parser = subparsers.add_parser(
             "validate", help="Evaluate a trained model on the dev set.")
@@ -81,7 +91,13 @@ def main(args):
     if args.command == "train":
         version = get_next_experiment_version(logdir, config.name)
         run_kwargs["version"] = version
+        run_kwargs["save_last_epoch"] = args.save_last_epoch
         run_fn = run_train
+    elif args.command == "continue":
+        version = get_current_experiment_version(args.config_file)
+        run_kwargs["version"] = version
+        run_kwargs["save_last_epoch"] = args.save_last_epoch
+        run_fn = run_continue_train
     elif args.command in ["validate", "test"]:
         run_kwargs["dataset"] = args.dataset
         version = get_current_experiment_version(args.config_file)
@@ -136,8 +152,21 @@ def get_current_experiment_version(config_path):
     return version_num
 
 
-def run_train(config, datamodule,
-              logdir="logs/", version=None, quiet=False):
+def find_checkpoint(logdir, model_name, version, ckpt_glob="*.ckpt"):
+    checkpoint_dir = os.path.join(
+            logdir, model_name, f"version_{version}", "checkpoints")
+    checkpoint_files = glob(os.path.join(checkpoint_dir, ckpt_glob))
+    if len(checkpoint_files) == 0:
+        raise OSError(f"No checkpoints found in {checkpoint_dir}")
+    if len(checkpoint_files) > 1:
+        raise OSError(f"Found multiple checkpoint files. Try a more specific glob? {checkpoint_files}")  # noqa
+    checkpoint_file = checkpoint_files[0]
+    hparams_file = os.path.join(checkpoint_dir, "../hparams.yaml")
+    return checkpoint_file, hparams_file
+
+
+def run_train(config, datamodule, logdir="logs/", version=None,
+              save_last_epoch=False, quiet=False):
 
     version_dir = os.path.join(logdir, config.name, f"version_{version}")
     os.makedirs(version_dir, exist_ok=False)
@@ -170,24 +199,73 @@ def run_train(config, datamodule,
             log_every_n_steps=32,
             )
     trainer.fit(model, datamodule=datamodule)
+    if save_last_epoch is True:
+        ckpt_dir = os.path.join(logdir, config.name,
+                                f"version_{version}", "checkpoints")
+        epoch = config.max_epochs - 1
+        ckpt_path = os.path.join(ckpt_dir, f"last-train-epoch={epoch}.ckpt")
+        trainer.save_checkpoint(ckpt_path)
+        print(f"Final training epoch checkpointed at {ckpt_path}")
+
+
+def run_continue_train(config, datamodule, logdir="logs/", version=None,
+                       save_last_epoch=False, quiet=False):
+    checkpoint_file, hparams_file = find_checkpoint(
+            logdir, config.name, version, ckpt_glob="last-train-epoch=*.ckpt")  # noqa
+    model_class = MODEL_LOOKUP[config.model_name]
+    model = model_class.load_from_checkpoint(
+            checkpoint_path=checkpoint_file,
+            hparams_file=hparams_file)
+
+    logger = TensorBoardLogger(
+            save_dir=logdir, version=version, name=config.name)
+
+    checkpoint_cb = ModelCheckpoint(
+            monitor="avg_macro_f1",
+            mode="max",
+            filename="{epoch:02d}-{avg_macro_f1:.2f}")
+
+    available_gpus = min(1, torch.cuda.device_count())
+    enable_progress_bar = not quiet
+    ckpt_bn = os.path.basename(checkpoint_file)
+    prev_epochs = os.path.splitext(ckpt_bn)[0].split('=')[-1]
+    prev_epochs = int(prev_epochs)
+    max_epochs = prev_epochs + 1 + config.max_epochs
+    # There is a bug with deterministic indexing on the gpu
+    #  in pytorch 1.10, so we have to turn it off.
+    #  https://github.com/pytorch/pytorch/issues/61032
+    trainer = pl.Trainer(
+            logger=logger,
+            max_epochs=max_epochs,
+            gpus=available_gpus,
+            gradient_clip_val=config.gradient_clip_val,
+            deterministic=False,
+            callbacks=[checkpoint_cb],
+            enable_progress_bar=enable_progress_bar,
+            log_every_n_steps=32,
+            )
+
+    trainer.fit(model, datamodule=datamodule, ckpt_path=checkpoint_file)
+    if save_last_epoch is True:
+        os.remove(checkpoint_file)
+        ckpt_dir = os.path.join(logdir, config.name,
+                                f"version_{version}", "checkpoints")
+        epoch = max_epochs - 1
+        ckpt_path = os.path.join(ckpt_dir, f"last-train-epoch={epoch}.ckpt")
+        trainer.save_checkpoint(ckpt_path)
+        print(f"Final training epoch checkpointed at {ckpt_path}")
 
 
 def run_validate(config, datamodule, dataset="dev",
                  logdir="logs/", version=None, quiet=False,
                  output_brat=False, output_token_masks=False):
-    # Find the checkpoint and hparams files.
-    # Since we only checkpoint the best dev performance during training,
-    #   there is only ever one checkpoint.
-    checkpoint_dir = os.path.join(
-            logdir, config.name, f"version_{version}", "checkpoints")
-    checkpoint_file = glob(os.path.join(checkpoint_dir, "*.ckpt"))
-    if checkpoint_file == []:
-        raise OSError(f"No checkpoints found in {checkpoint_dir}")
-    hparams_file = os.path.join(checkpoint_dir, "../hparams.yaml")
+
+    checkpoint_file, hparams_file = find_checkpoint(
+            logdir, config.name, version, ckpt_glob="epoch*.ckpt")
 
     model_class = MODEL_LOOKUP[config.model_name]
     model = model_class.load_from_checkpoint(
-            checkpoint_path=checkpoint_file[0],
+            checkpoint_path=checkpoint_file,
             hparams_file=hparams_file)
     model.eval()
 
@@ -220,10 +298,9 @@ def run_validate(config, datamodule, dataset="dev",
             val_dataloader = val_dataloader_fn(predicting=True)
         preds = trainer.predict(model, dataloaders=val_dataloader)
     if output_brat is True:
-        train_dataset = datamodule.train
-        # List[BratAnnotations]
         pred_anns_by_docid = batched_predictions_to_brat(preds, datamodule)
-        preds_dir = os.path.join(checkpoint_dir, "../predictions", dataset)
+        preds_dir = os.path.join(logdir, config.name, f"version_{version}",
+                                 "predictions", dataset)
         os.makedirs(preds_dir, exist_ok=False)
         for doc_preds in pred_anns_by_docid:
             doc_preds.save_brat(preds_dir)
@@ -231,7 +308,8 @@ def run_validate(config, datamodule, dataset="dev",
     if output_token_masks is True:
         if config.model_name != "bert-rationale-classifier":
             raise ValueError("--output_token_masks only compatible with bert-rationale-classifier.")  # noqa
-        mask_dir = os.path.join(checkpoint_dir, "../token_masks", dataset)
+        mask_dir = os.path.join(logdir, config.name, f"version_{version}",
+                                "token_masks", dataset)
         os.makedirs(mask_dir, exist_ok=False)
         masked_by_task = batched_predictions_to_masked_tokens(
                 preds, datamodule)
@@ -323,7 +401,8 @@ def batched_predictions_to_brat(preds, datamodule):
                 aid = f"A{num_attrs}"
                 if isinstance(datamodule, CombinedDataModule):
                     task = task.split(':')[1]
-                attr = br.Attribute(_id=aid, _type=task, value=decoded_pred, reference=None)
+                attr = br.Attribute(_id=aid, _type=task,
+                                    value=decoded_pred, reference=None)
                 attrs[task] = attr
 
             # Reconstruct original character offsets
@@ -342,8 +421,8 @@ def batched_predictions_to_brat(preds, datamodule):
             num_spans = len(set([(e.span.start_index, e.span.end_index)
                                  for e in events_by_docid[docid]]))
             sid = f"T{num_spans}"
-            span = br.Span(_id=sid, _type="Disposition", start_index=start, end_index=end,
-                           text=entity_text)
+            span = br.Span(_id=sid, _type="Disposition", start_index=start,
+                           end_index=end, text=entity_text)
 
             src_file_str = f"{docid}.ann"
             eid = f"E{len(events_by_docid[docid])}"
