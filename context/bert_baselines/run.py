@@ -199,15 +199,16 @@ def run_validate(config, datamodule, dataset="dev",
             enable_progress_bar=enable_progress_bar
             )
     if dataset == "train":
-        val_dataloader = datamodule.train_dataloader()
+        val_dataloader_fn = datamodule.train_dataloader
     elif dataset == "dev":
-        val_dataloader = datamodule.val_dataloader()
+        val_dataloader_fn = datamodule.val_dataloader
     elif dataset == "test":
         if datamodule.test_dataloader() is None:
             raise OSError("No test data found. Aborting.")
-        val_dataloader = datamodule.test_dataloader()
+        val_dataloader_fn = datamodule.test_dataloader
     else:
         raise ValueError(f"Unknown validation dataset '{dataset}'")
+    val_dataloader = val_dataloader_fn()
     results = trainer.validate(
         model, dataloaders=val_dataloader, verbose=False)[0]
     tasks = sorted(datamodule.label_spec.keys())
@@ -215,11 +216,13 @@ def run_validate(config, datamodule, dataset="dev",
     print(md)
 
     if output_brat is True or output_token_masks is True:
+        if isinstance(datamodule, CombinedDataModule):
+            val_dataloader = val_dataloader_fn(predicting=True)
         preds = trainer.predict(model, dataloaders=val_dataloader)
     if output_brat is True:
         train_dataset = datamodule.train
         # List[BratAnnotations]
-        pred_anns_by_docid = batched_predictions_to_brat(preds, train_dataset)
+        pred_anns_by_docid = batched_predictions_to_brat(preds, datamodule)
         preds_dir = os.path.join(checkpoint_dir, "../predictions", dataset)
         os.makedirs(preds_dir, exist_ok=False)
         for doc_preds in pred_anns_by_docid:
@@ -257,7 +260,11 @@ def format_results_as_markdown_table(results, tasks):
     # Header
     table = '|'
     for task in tasks:
-        task_str = task_abbrevs[task]
+        try:
+            task_str = task_abbrevs[task]
+        except KeyError:
+            # Probably doing multi-dataset learning.
+            task_str = task_abbrevs[task.split(':')[-1]]
         table += f" {task_str: <7} | {'P': <5} | {'R': <5} | {'F1': <5} |"
 
     # Separator
@@ -296,22 +303,27 @@ def batched_predictions_to_masked_tokens(preds, datamodule):
     return masked_by_task
 
 
-def batched_predictions_to_brat(preds, dataset):
+def batched_predictions_to_brat(preds, datamodule):
     """
     Create a BratAnnotations instance for each grouped of predictions,
     grouped by doc_id.
     """
     events_by_docid = defaultdict(list)
     for batch in preds:
+        # TODO: When using a CombinedDataModule, tasks may be split across
+        #       batches for a given example. Group by all docids first,
+        #       then iterate over them to create the output documents.
         for (i, docid) in enumerate(batch["docids"]):
             attrs = {}
             for (task, task_preds) in batch["predictions"].items():
                 enc_pred = task_preds[i].int().item()
-                decoded_pred = dataset.inverse_transform(task, [enc_pred])[0]
+                decoded_pred = datamodule.inverse_transform(task, enc_pred)
                 num_attrs = len([attr for e in events_by_docid[docid]
                                  for attr in e.attributes]) + len(attrs)
                 aid = f"A{num_attrs}"
-                attr = br.Attribute(id=aid, type=task, value=decoded_pred)
+                if isinstance(datamodule, CombinedDataModule):
+                    task = task.split(':')[1]
+                attr = br.Attribute(_id=aid, _type=task, value=decoded_pred, reference=None)
                 attrs[task] = attr
 
             # Reconstruct original character offsets
@@ -323,19 +335,19 @@ def batched_predictions_to_brat(preds, dataset):
             end += batch["char_offsets"][i]
 
             # Remove the '@' entity markers if used.
-            if dataset.mark_entities is True:
+            if datamodule.mark_entities is True:
                 entity_text = entity_text.strip('@')
                 end -= 2
 
             num_spans = len(set([(e.span.start_index, e.span.end_index)
                                  for e in events_by_docid[docid]]))
             sid = f"T{num_spans}"
-            span = br.Span(id=sid, start_index=start, end_index=end,
+            span = br.Span(_id=sid, _type="Disposition", start_index=start, end_index=end,
                            text=entity_text)
 
             src_file_str = f"{docid}.ann"
             eid = f"E{len(events_by_docid[docid])}"
-            event = br.Event(id=eid, type="Disposition", span=span,
+            event = br.Event(_id=eid, _type="Disposition", span=span,
                              attributes=attrs, _source_file=src_file_str)
             events_by_docid[docid].append(event)
 

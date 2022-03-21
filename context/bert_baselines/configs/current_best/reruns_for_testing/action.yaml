@@ -1,42 +1,38 @@
 # Experiment
-description: Bio ClinicalBERT rationale model on the Certainty task only
+description: Bio_ClinicalBERT using entity spans on the Action task only
 logdir: /mnt/iusers01/nactem01/u14498jv/scratch/n2c2_track1/context/bert_baseline_logs/
-name: clinical_bert/rationale/certainty
+name: clinical_bert/action_entity_marked/version_4/rerun
 random_seed: 0
 
 # Data
 data_dir: /mnt/iusers01/nactem01/u14498jv/Projects/n2c2-track1/n2c2Track1TrainingData-v3/data_v3/
 max_train_examples: null
-sentences_dir: /mnt/iusers01/nactem01/u14498jv/Projects/n2c2-track1/n2c2Track1TrainingData-v3/segmented/
+sentences_dir: /mnt/iusers01/nactem01/u14498jv/Projects/n2c2-track1/n2c2Track1TrainingData-v3/segmented
 tasks_to_load:
-- Certainty
-window_size: 0
+- Action
+window_size: 1
 
 # Model
-bert_model_name_or_path: emilyalsentzer/Bio_ClinicalBERT 
+bert_model_name_or_path: emilyalsentzer/Bio_ClinicalBERT
 dropout_prob: 0.2
 entity_pool_fn: first-last
 freeze_pretrained: false
 mark_entities: true
-max_seq_length: 250
-model_name: bert-rationale-classifier
+max_seq_length: 300
+model_name: bert-sequence-classifier
 use_entity_spans: true
 
 # Losses
 classifier_loss_fn: cross-entropy
 classifier_loss_kwargs: {}
-mask_loss_fn: controlled-sparsity
-mask_loss_kwargs:
-  selection_rate: 0.13
-  transition_rate: 0.05
-  lagrange_alpha: 0.5
-  lambda_init: 0.0015
+mask_loss_fn: ratio
+mask_loss_kwargs: {}
 
 # Training
 batch_size: 32
 gradient_clip_val: 10.0
 lr: 3.0e-05
-max_epochs: 15
+max_epochs: 10
 sample_strategy: null
 weight_decay: 0.0
 

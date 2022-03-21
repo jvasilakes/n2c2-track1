@@ -1,7 +1,7 @@
 # Experiment
-description: Bio ClinicalBERT rationale model on the Certainty task only
+description: Bio ClinicalBERT rationale model on the Action task only
 logdir: /mnt/iusers01/nactem01/u14498jv/scratch/n2c2_track1/context/bert_baseline_logs/
-name: clinical_bert/rationale/certainty
+name: clinical_bert/rationale/action
 random_seed: 0
 
 # Data
@@ -9,7 +9,7 @@ data_dir: /mnt/iusers01/nactem01/u14498jv/Projects/n2c2-track1/n2c2Track1Trainin
 max_train_examples: null
 sentences_dir: /mnt/iusers01/nactem01/u14498jv/Projects/n2c2-track1/n2c2Track1TrainingData-v3/segmented/
 tasks_to_load:
-- Certainty
+- Action
 window_size: 0
 
 # Model

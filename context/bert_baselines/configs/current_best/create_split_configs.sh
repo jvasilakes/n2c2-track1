@@ -1,3 +1,14 @@
+args=()
+for task in "$@"
+do
+  args+=("${task}.yaml") 
+done
+if (( ${#args[@]} == 0 ))
+then
+  args=$(ls -1 *.yaml)
+fi
+echo "${args[@]}"
+
 current_dir=$(basename $(pwd))
 if [[ "$current_dir" != "current_best" ]]; then
   echo "Run this script in the configs/current_best directory. Aborting."
@@ -8,7 +19,9 @@ fi
 outdir=cv_split_configs
 mkdir -p $outdir
 
-for fname in $(ls -1 *.yaml); do
+#for fname in $(ls -1 *.yaml); do
+for fname in ${args[@]}
+do
 
   # Check if the source file is a symlink, as we'll use this info later.
   if [[ ! -L $fname ]]; then

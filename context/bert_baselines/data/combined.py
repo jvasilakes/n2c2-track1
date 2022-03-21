@@ -55,6 +55,7 @@ class CombinedDataModule(BasicBertDataModule):
         # that they are all compatible.
         self.batch_size = None
         self.bert_model_name_or_path = None
+        self.mark_entities = None
         self._ran_setup = False
 
     def setup(self, stage=None):
@@ -93,6 +94,12 @@ class CombinedDataModule(BasicBertDataModule):
             self.bert_model_name_or_path = berts[0]
         else:
             raise ValueError(f"bert models differ! {berts}")
+        # Check that entity marking is the same
+        marks = [dm.mark_entities for dm in self.datamodules]
+        if all([mark == marks[0] for mark in marks]):
+            self.mark_entities = marks[0]
+        else:
+            raise ValueError(f"mark_entites differ! {marks}")
         self._ran_setup = True
 
     def __str__(self):
@@ -117,6 +124,20 @@ class CombinedDataModule(BasicBertDataModule):
         self._label_spec = spec
         return self._label_spec
 
+    def inverse_transform(self, task, encoded):
+        dataset = self.get_dataset_from_task(task)
+        task_wo_dataset_name = task.split(':')[1]
+        return dataset.inverse_transform(task_wo_dataset_name, encoded)
+
+    def get_dataset_from_task(self, target_task, split="train"):
+        if split not in ["train", "dev", "test"]:
+            raise ValueError(f"Unknown split '{split}'")
+        target_name = target_task.split(':')[0]
+        for dm in self.datamodules:
+            if dm.name == target_name:
+                return getattr(dm, split)
+        raise KeyError(target_task)
+
     def train_dataloader(self):
         if self._ran_setup is False:
             raise ValueError("Run setup() first!")
@@ -126,10 +147,12 @@ class CombinedDataModule(BasicBertDataModule):
         return DataLoader(self.train, collate_fn=self.encode_and_collate,
                           num_workers=4, batch_sampler=sampler)
 
-    def val_dataloader(self):
+    def val_dataloader(self, predicting=False):
         if self._ran_setup is False:
             raise ValueError("Run setup() first!")
-        sampler = IterativeDatasetSampler(self.val, self.batch_size)
+        sampler = IterativeDatasetSampler(self.val, self.batch_size, predicting=predicting)
+        if predicting is True:
+            sampler = torch.utils.data.sampler.BatchSampler(sampler, 1, drop_last=False)
         return DataLoader(self.val, collate_fn=self.encode_and_collate,
                           num_workers=4, batch_sampler=sampler)
 
@@ -174,7 +197,7 @@ class ProportionalSampler(torch.utils.data.sampler.Sampler):
     """
 
     def __init__(self, dataset: ConcatDataset,
-                 strategy="proportional", batch_size=16):
+                 strategy="proportional", batch_size=16, **kwargs):
         self.dataset = dataset
         self.strategy = strategy
         self.batch_size = batch_size
@@ -236,9 +259,10 @@ class IterativeDatasetSampler(torch.utils.data.sampler.Sampler):
     """
     Each batch must come from the same dataset.
     """
-    def __init__(self, dataset: ConcatDataset, batch_size=16):
+    def __init__(self, dataset: ConcatDataset, batch_size=16, predicting=False): 
         self.dataset = dataset
         self.batch_size = batch_size
+        self.predicting = predicting
         self.num_datasets = len(dataset.datasets)
 
     def __iter__(self):
@@ -251,8 +275,14 @@ class IterativeDatasetSampler(torch.utils.data.sampler.Sampler):
             for batch_idxs in grouper(idxs, self.batch_size):
                 batch_idxs = [i + idx_offset for i in batch_idxs
                               if i is not None]
-                yield batch_idxs
+                if self.predicting is True:
+                    yield from batch_idxs
+                else:
+                    yield batch_idxs
 
     def __len__(self):
         lengths = [len(ds) for ds in self.dataset.datasets]
         return int(sum([np.ceil(ln / self.batch_size) for ln in lengths]))
+
+    def str(self):
+        return "IterativeDatasetSampler"

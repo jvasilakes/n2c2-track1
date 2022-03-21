@@ -62,8 +62,17 @@ class n2c2ContextDataset(Dataset):
         self._inverse_encodings = self._invert_encodings()
 
     def inverse_transform(self, task, encoded_labels):
-        return [self._inverse_encodings[task][enc_lab]
-                for enc_lab in encoded_labels]
+        if isinstance(encoded_labels, int):
+            return self._inverse_encodings[task][encoded_labels]
+        elif torch.is_tensor(encoded_labels):
+            if encoded_labels.dim() == 0:
+                return self._inverse_encodings[task][encoded_labels.item()]
+            else:
+                return [self._inverse_encodings[task][enc_lab.item()]
+                        for enc_lab in encoded_labels]
+        else:
+            return [self._inverse_encodings[task][enc_lab]
+                    for enc_lab in encoded_labels]
 
     def __len__(self):
         if self.max_examples == -1:
@@ -292,6 +301,9 @@ class n2c2ContextDataModule(BasicBertDataModule):
                     if task in self.tasks_to_load}
         self._label_spec = spec
         return self._label_spec
+
+    def inverse_transform(self, task, encoded):
+        return self.train.inverse_transform(task, encoded)
 
     @property
     def class_weights(self):
@@ -660,6 +672,9 @@ class n2c2AssertionDataModule(BasicBertDataModule):
                     if task in self.tasks_to_load}
         self._label_spec = spec
         return self._label_spec
+
+    def inverse_transform(self, task, encoded):
+        return self.train.inverse_transform(task, encoded)
 
     @property
     def class_weights(self):

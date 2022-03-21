@@ -1,10 +1,25 @@
+args=()
+for task in "$@"
+do
+  for ((i=0; i<5; ++i))
+  do
+    args+=("cv_split_configs/${task}${i}.yaml") 
+  done
+done
+if (( ${#args[@]} == 0 ))
+then
+  args=$(ls -1 cv_split_configs/*.yaml)
+fi
+
 current_dir=$(basename $(pwd))
 if [[ "$current_dir" != "current_best" ]]; then
   echo "Run this script in the configs/current_best directory. Aborting."
   exit 1
 fi
 
-for config in $(ls -1 cv_split_configs/*.yaml); do
+#for config in $(ls -1 cv_split_configs/*.yaml); do
+for config in ${args[@]}
+do
   echo "============================================"
   echo "$config"
   echo "============================================"
