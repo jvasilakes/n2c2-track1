@@ -19,9 +19,9 @@ There are large variations in performance on the Certainty and Negation tasks, s
 that these training examples do not necessarily generalize well.
 
 ## Action
-Bio\_ClinicalBERT
-+/- 1 sentence window
-Entity markers: use both
+Bio\_ClinicalBERT  
++/- 1 sentence window  
+Entity markers: use both  
 |         | P     | R     | F1    | Avg F1|
 |---------|-------|-------|-------|-------|
 |micro    | 0.814 | 0.814 | 0.814 | 0.857 |
@@ -29,53 +29,40 @@ Entity markers: use both
 
 
 ## Actor
-bert-base-uncased
-0 sentence window
-Entity markers: use both
+bert-base-uncased  
+0 sentence window  
+Entity markers: use both  
 |         | P     | R     | F1    | Avg F1|
 |---------|-------|-------|-------|-------|
 |micro    | 0.923 | 0.923 | 0.923 | 0.918 |
 |macro    | 0.762 | 0.656 | 0.700 | 0.721 |
 
+
 ## Certainty
-Bio\_ClinicalBERT
-+/- 1 sentence window
-Entity markers: use first only
+Bio\_ClinicalBERT  
++/- 1 sentence window  
+Entity markers: use first only  
 |         | P     | R     | F1    | Avg F1|
 |---------|-------|-------|-------|-------|
 |micro    | 0.910 | 0.910 | 0.910 | 0.911 |
 |macro    | 0.854 | 0.779 | 0.808 | 0.655 |
 
+
 ## Negation
-bert-base-uncased
-0 sentence window (same results with +/- 1 sentence window)
-pooled output
-|         | P     | R     | F1    | Avg F1|
+Bio\_ClinicalBERT  
+Action + Negation multi-task setup  
++/- 1 sentence window  
+Entity markers: use both  
+|         | prec  | rec   | f1    | Avg F1|
 |---------|-------|-------|-------|-------|
-| micro   | 0.982 | 0.982 | 0.982 | 0.977 |
-| macro   | 0.743 | 0.623 | 0.662 | 0.523 |
-
-#### Possible contender
-Multi-task learning alongside Action task
-Bio\_ClinicalBERT
-+/- 1 sentence window
-Entity markers: use both 
-
-| Neg  | prec  | rec   | f1    |
-|------|-------|-------|-------|
-|MICRO | 0.986 | 0.986 | 0.986 |
-|MACRO | 0.993 | 0.625 | 0.697 |
-
-|Action| prec  | rec   | f1    |
-|------|-------|-------|-------|
-|MICRO | 0.796 | 0.796 | 0.796 |
-|MACRO | 0.768 | 0.680 | 0.711 |
+| micro   | 0.986 | 0.986 | 0.986 | 0.978 |
+| macro   | 0.993 | 0.625 | 0.697 | 0.589 |
 
 
 ## Temporality
-Bio\_ClinicalBERT
-+/- 1 sentence window
-Entity markers: use first only
+Bio\_ClinicalBERT  
++/- 1 sentence window  
+Entity markers: use first only  
 |         | P     | R     | F1    | Avg F1|
 |---------|-------|-------|-------|-------|
 |micro    | 0.837 | 0.837 | 0.837 | 0.862 |
