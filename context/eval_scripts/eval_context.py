@@ -34,7 +34,7 @@ def main(args):
         pred_anns = BratAnnotations.from_file(pred_f)
         gold_anns = BratAnnotations.from_file(gold_f)
 
-        tasklist = sorted(set([a["type"] for a in pred_anns._raw_attributes]))
+        tasklist = sorted(set([a["_type"] for a in pred_anns._raw_attributes]))
         for task in tasklist:
             # We're only predicting over Disposition events
             preds = []
