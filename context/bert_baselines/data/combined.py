@@ -150,9 +150,11 @@ class CombinedDataModule(BasicBertDataModule):
     def val_dataloader(self, predicting=False):
         if self._ran_setup is False:
             raise ValueError("Run setup() first!")
-        sampler = IterativeDatasetSampler(self.val, self.batch_size, predicting=predicting)
+        sampler = IterativeDatasetSampler(
+                self.val, self.batch_size, predicting=predicting)
         if predicting is True:
-            sampler = torch.utils.data.sampler.BatchSampler(sampler, 1, drop_last=False)
+            sampler = torch.utils.data.sampler.BatchSampler(
+                    sampler, 1, drop_last=False)
         return DataLoader(self.val, collate_fn=self.encode_and_collate,
                           num_workers=4, batch_sampler=sampler)
 
@@ -259,7 +261,8 @@ class IterativeDatasetSampler(torch.utils.data.sampler.Sampler):
     """
     Each batch must come from the same dataset.
     """
-    def __init__(self, dataset: ConcatDataset, batch_size=16, predicting=False): 
+    def __init__(self, dataset: ConcatDataset,
+                 batch_size=16, predicting=False):
         self.dataset = dataset
         self.batch_size = batch_size
         self.predicting = predicting
