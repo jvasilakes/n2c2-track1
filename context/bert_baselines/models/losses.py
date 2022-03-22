@@ -96,8 +96,8 @@ class LossLookup(object):
             selection_rate: float (Default 1.0)  # target for L0
             transition_rate: float (Default 0.0) # target for fused lasso
             lagrange_alpha: float (Default 0.5)  # not used
-            lagrange_lr: float (Default 0.05)    # learning rate for Lagrange multipliers
-            lambda_init: float (Default 1.0)     # initial Lagrange multiplier value
+            lagrange_lr: float (Default 0.05)    # Lagrangian learning rate
+            lambda_init: float (Default 1.0)     # initial Lagrange value
             gamma: float (Default 0.5)  # Relative weight of L0 vs. Lasso loss
         """
         return ControlledSparsityLoss
