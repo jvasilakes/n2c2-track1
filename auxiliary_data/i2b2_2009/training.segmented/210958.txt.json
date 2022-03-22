@@ -1,0 +1,126 @@
+{"sent_index": 0, "start_index": 0, "end_index": 14, "_text": "RECORD #210958"}
+{"sent_index": 1, "start_index": 17, "end_index": 26, "_text": "863982363"}
+{"sent_index": 2, "start_index": 29, "end_index": 43, "_text": "SMC | 55476585"}
+{"sent_index": 3, "start_index": 48, "end_index": 102, "_text": "0947383 | 8/0/2005 12:00:00 AM | diabetic foot | | DIS"}
+{"sent_index": 4, "start_index": 105, "end_index": 144, "_text": "Admission Date: 4/18/2005 Report Status"}
+{"sent_index": 5, "start_index": 147, "end_index": 172, "_text": "Discharge Date: 4/17/2005"}
+{"sent_index": 6, "start_index": 180, "end_index": 237, "_text": "FINAL DISCHARGE ORDERS ******\nSANTIGO , BRUNO 021-73-77-2"}
+{"sent_index": 7, "start_index": 238, "end_index": 243, "_text": "Boise"}
+{"sent_index": 8, "start_index": 244, "end_index": 251, "_text": "Service"}
+{"sent_index": 9, "start_index": 253, "end_index": 256, "_text": "MED"}
+{"sent_index": 10, "start_index": 257, "end_index": 298, "_text": "DISCHARGE PATIENT ON: 7/15/05 AT 02:00 PM"}
+{"sent_index": 11, "start_index": 299, "end_index": 371, "_text": "CONTINGENT UPON Not Applicable\nWILL D/C ORDER BE USED AS THE D/C SUMMARY"}
+{"sent_index": 12, "start_index": 373, "end_index": 376, "_text": "YES"}
+{"sent_index": 13, "start_index": 377, "end_index": 417, "_text": "Attending: FOHL , BRET R. , M.D. , PH.D."}
+{"sent_index": 14, "start_index": 418, "end_index": 429, "_text": "CODE STATUS"}
+{"sent_index": 15, "start_index": 431, "end_index": 440, "_text": "Full code"}
+{"sent_index": 16, "start_index": 441, "end_index": 458, "_text": "DISPOSITION: Home"}
+{"sent_index": 17, "start_index": 459, "end_index": 480, "_text": "DISCHARGE MEDICATIONS"}
+{"sent_index": 18, "start_index": 482, "end_index": 517, "_text": "GLYBURIDE 2.5 MG PO QD HOLD IF: NPO"}
+{"sent_index": 19, "start_index": 518, "end_index": 548, "_text": "LISINOPRIL 10 MG PO QD HOLD IF"}
+{"sent_index": 20, "start_index": 550, "end_index": 559, "_text": "SBP&lt;95"}
+{"sent_index": 21, "start_index": 560, "end_index": 643, "_text": "Override Notice: Override added on 10/28/05 by COFFER , CLIFFORD M. , M.D. , M.P.H."}
+{"sent_index": 22, "start_index": 644, "end_index": 698, "_text": "on order for KCL IMMEDIATE RELEASE PO ( ref # 33759797"}
+{"sent_index": 23, "start_index": 701, "end_index": 732, "_text": "POTENTIALLY SERIOUS INTERACTION"}
+{"sent_index": 24, "start_index": 734, "end_index": 760, "_text": "LISINOPRIL &amp; POTASSIUM"}
+{"sent_index": 25, "start_index": 761, "end_index": 800, "_text": "CHLORIDE Reason for override: as needed"}
+{"sent_index": 26, "start_index": 801, "end_index": 820, "_text": "SARNA TOPICAL TP QD"}
+{"sent_index": 27, "start_index": 821, "end_index": 869, "_text": "Instructions: for bilateral lower extremity rash"}
+{"sent_index": 28, "start_index": 870, "end_index": 910, "_text": "COUMADIN ( WARFARIN SODIUM ) 5 MG PO QPM"}
+{"sent_index": 29, "start_index": 911, "end_index": 967, "_text": "Starting ROUTINE , 20:00 ( Standard Admin Time )\nHOLD IF"}
+{"sent_index": 30, "start_index": 969, "end_index": 979, "_text": "INR&gt;3.o"}
+{"sent_index": 31, "start_index": 980, "end_index": 1013, "_text": "Food/Drug Interaction Instruction"}
+{"sent_index": 32, "start_index": 1014, "end_index": 1048, "_text": "No high Vitamin-K containing foods"}
+{"sent_index": 33, "start_index": 1049, "end_index": 1064, "_text": "Override Notice"}
+{"sent_index": 34, "start_index": 1066, "end_index": 1131, "_text": "Override added on 4/21/05 by BRESSER , CARROLL B. , M.D. , M.P.H."}
+{"sent_index": 35, "start_index": 1132, "end_index": 1178, "_text": "on order for CIPROFLOXACIN PO ( ref # 87642577"}
+{"sent_index": 36, "start_index": 1181, "end_index": 1246, "_text": "POTENTIALLY SERIOUS INTERACTION: WARFARIN &amp; CIPROFLOXACIN\nHCL"}
+{"sent_index": 37, "start_index": 1247, "end_index": 1283, "_text": "Reason for override: will follow INR"}
+{"sent_index": 38, "start_index": 1284, "end_index": 1313, "_text": "Previous override information"}
+{"sent_index": 39, "start_index": 1315, "end_index": 1379, "_text": "Override added on 4/21/05 by HUYETT , BRANDEN Q. , M.D. , M.P.H."}
+{"sent_index": 40, "start_index": 1380, "end_index": 1424, "_text": "on order for SIMVASTATIN PO ( ref # 96793722"}
+{"sent_index": 41, "start_index": 1427, "end_index": 1458, "_text": "POTENTIALLY SERIOUS INTERACTION"}
+{"sent_index": 42, "start_index": 1460, "end_index": 1486, "_text": "WARFARIN &amp; SIMVASTATIN"}
+{"sent_index": 43, "start_index": 1487, "end_index": 1506, "_text": "Reason for override"}
+{"sent_index": 44, "start_index": 1508, "end_index": 1549, "_text": "pt takes at home\nSIMVASTATIN 20 MG PO QHS"}
+{"sent_index": 45, "start_index": 1550, "end_index": 1583, "_text": "Food/Drug Interaction Instruction"}
+{"sent_index": 46, "start_index": 1584, "end_index": 1631, "_text": "Avoid grapefruit unless MD instructs otherwise."}
+{"sent_index": 47, "start_index": 1632, "end_index": 1648, "_text": "Alert overridden"}
+{"sent_index": 48, "start_index": 1650, "end_index": 1715, "_text": "Override added on 4/21/05 by\nURBANCIC , REGGIE K. , M.D. , M.P.H."}
+{"sent_index": 49, "start_index": 1716, "end_index": 1747, "_text": "POTENTIALLY SERIOUS INTERACTION"}
+{"sent_index": 50, "start_index": 1749, "end_index": 1775, "_text": "WARFARIN &amp; SIMVASTATIN"}
+{"sent_index": 51, "start_index": 1776, "end_index": 1795, "_text": "Reason for override"}
+{"sent_index": 52, "start_index": 1797, "end_index": 1938, "_text": "pt takes at home\nMICONAZOLE NITRATE 2% POWDER TOPICAL TP BID\nLINEZOLID 600 MG PO BID Starting Today ( 0/4 )\nFood/Drug Interaction Instruction"}
+{"sent_index": 53, "start_index": 1939, "end_index": 2027, "_text": "This order has received infectious disease approval from\nSLOCOMBE , BRENDAN LAMAR , M.D."}
+{"sent_index": 54, "start_index": 2028, "end_index": 2072, "_text": "Number of Doses Required ( approximate ): 10"}
+{"sent_index": 55, "start_index": 2073, "end_index": 2108, "_text": "NEXIUM ( ESOMEPRAZOLE ) 20 MG PO QD"}
+{"sent_index": 56, "start_index": 2109, "end_index": 2142, "_text": "ACETYLSALICYLIC ACID 325 MG PO QD"}
+{"sent_index": 57, "start_index": 2143, "end_index": 2189, "_text": "Alert overridden: Override added on 7/15/05 by"}
+{"sent_index": 58, "start_index": 2192, "end_index": 2223, "_text": "POTENTIALLY SERIOUS INTERACTION"}
+{"sent_index": 59, "start_index": 2225, "end_index": 2247, "_text": "WARFARIN &amp; ASPIRIN"}
+{"sent_index": 60, "start_index": 2248, "end_index": 2271, "_text": "Reason for override: ok"}
+{"sent_index": 61, "start_index": 2272, "end_index": 2276, "_text": "DIET"}
+{"sent_index": 62, "start_index": 2278, "end_index": 2293, "_text": "No Restrictions"}
+{"sent_index": 63, "start_index": 2294, "end_index": 2302, "_text": "ACTIVITY"}
+{"sent_index": 64, "start_index": 2304, "end_index": 2458, "_text": "Resume regular exercise\nFOLLOW UP APPOINTMENT( S ):\nvasc ular surgery ,\npcp ,\nArrange INR to be drawn on 10/13/05 with f/u INR's to be drawn every\n7 days."}
+{"sent_index": 65, "start_index": 2459, "end_index": 2488, "_text": "INR's will be followed by PCP"}
+{"sent_index": 66, "start_index": 2489, "end_index": 2507, "_text": "No Known Allergies"}
+{"sent_index": 67, "start_index": 2508, "end_index": 2523, "_text": "ADMIT DIAGNOSIS"}
+{"sent_index": 68, "start_index": 2525, "end_index": 2538, "_text": "diabetic foot"}
+{"sent_index": 69, "start_index": 2539, "end_index": 2631, "_text": "PRINCIPAL DISCHARGE DIAGNOSIS ;Responsible After Study for Causing Admission )\ndiabetic foot"}
+{"sent_index": 70, "start_index": 2632, "end_index": 2954, "_text": "OTHER DIAGNOSIS;Conditions , Infections , Complications , affecting Treatment/Stay\ndiabetes ( diabetes mellitus ) htn ( hypertension ) edema ( peripheral\nedema ) obesity ( obesity ) recurrent cellulitis\n( cellulitis ) mitral prolapse ( mitral valve prolapse ) uti ( urinary\ntract infection ) atopic dermatitis ( dermatitis"}
+{"sent_index": 71, "start_index": 2957, "end_index": 2982, "_text": "OPERATIONS AND PROCEDURES"}
+{"sent_index": 72, "start_index": 2984, "end_index": 3005, "_text": "debridement of r foot"}
+{"sent_index": 73, "start_index": 3006, "end_index": 3047, "_text": "OTHER TREATMENTS/PROCEDURES ( NOT IN O.R."}
+{"sent_index": 74, "start_index": 3050, "end_index": 3059, "_text": "foot xray"}
+{"sent_index": 75, "start_index": 3060, "end_index": 3091, "_text": "BRIEF RESUME OF HOSPITAL COURSE"}
+{"sent_index": 76, "start_index": 3093, "end_index": 3095, "_text": "ID"}
+{"sent_index": 77, "start_index": 3097, "end_index": 3109, "_text": "60 YO female"}
+{"sent_index": 78, "start_index": 3114, "end_index": 3145, "_text": "CC: RLE\nulceration/redness/pain"}
+{"sent_index": 79, "start_index": 3150, "end_index": 3152, "_text": "DX"}
+{"sent_index": 80, "start_index": 3154, "end_index": 3181, "_text": "Diabetic foot ulcer ---\nHPI"}
+{"sent_index": 81, "start_index": 3183, "end_index": 3319, "_text": "60 YO female with DMII , PVD , chronic AF now with\nDDI pacer on coumadin who has had history of recurrent LE ulcerations\nand infections."}
+{"sent_index": 82, "start_index": 3320, "end_index": 3406, "_text": "She had the left foot amputated 9/13 and has been\nconsidering amputation of the right."}
+{"sent_index": 83, "start_index": 3407, "end_index": 3463, "_text": "Pt was admitted on 8/15 for\ncellulitis and R foot ulcer."}
+{"sent_index": 84, "start_index": 3464, "end_index": 3546, "_text": "She was treated with IV unasyn for 5\ndays and switched to Linezolid as out pt med."}
+{"sent_index": 85, "start_index": 3547, "end_index": 3590, "_text": "While in house pt was\nseen by ortho and ID."}
+{"sent_index": 86, "start_index": 3591, "end_index": 3725, "_text": "On 1/10 pt saw dermatologist and ulcer was found to extend to bone\nand Left foot appeared cyanotic- worrisome for vascular compromise."}
+{"sent_index": 87, "start_index": 3726, "end_index": 3773, "_text": "Pt was sent to the hosp for further\nmanagement."}
+{"sent_index": 88, "start_index": 3778, "end_index": 3784, "_text": "STATUS"}
+{"sent_index": 89, "start_index": 3786, "end_index": 3818, "_text": "VS: T:97.1 HR:75 BP:85/46 RR: 18"}
+{"sent_index": 90, "start_index": 3819, "end_index": 3834, "_text": "SaO2:100%RA GEN"}
+{"sent_index": 91, "start_index": 3836, "end_index": 3844, "_text": "NAD NECK"}
+{"sent_index": 92, "start_index": 3846, "end_index": 3858, "_text": "no JVD CHEST"}
+{"sent_index": 93, "start_index": 3860, "end_index": 3878, "_text": "CTA bilaterally CV"}
+{"sent_index": 94, "start_index": 3880, "end_index": 3966, "_text": "RRR S1 , S2 3/6 SEM at base , no gallop ABD: soft , NT , ND , bowel sounds\npresent EXT"}
+{"sent_index": 95, "start_index": 3968, "end_index": 4078, "_text": "Left foot amputated , R with charcot joint/hindfoot\nvarus , erthema , draining ulcer fifth metatarcel ,\nedema."}
+{"sent_index": 96, "start_index": 4083, "end_index": 4089, "_text": "EVENTS"}
+{"sent_index": 97, "start_index": 4091, "end_index": 4189, "_text": "Seen by vascular surg in ED- Left foot not\ncyanotic 7/18 admitted to\nmedicine ---\nTESTS/PROCEDURES"}
+{"sent_index": 98, "start_index": 4191, "end_index": 4237, "_text": "7/18 - RLE plain films - neg for osteomyelitis"}
+{"sent_index": 99, "start_index": 4242, "end_index": 4250, "_text": "CONSULTS"}
+{"sent_index": 100, "start_index": 4252, "end_index": 4288, "_text": "7/18 ID 7/18 Ortho - followed by Dr."}
+{"sent_index": 101, "start_index": 4289, "end_index": 4300, "_text": "Smithhisler"}
+{"sent_index": 102, "start_index": 4305, "end_index": 4324, "_text": "PROBLEM LIST ---\n1."}
+{"sent_index": 103, "start_index": 4327, "end_index": 4372, "_text": "RLE ulcer - diabetic foot ulcer with ? osteo."}
+{"sent_index": 104, "start_index": 4373, "end_index": 4402, "_text": "Pt started on vanc\nand cipro."}
+{"sent_index": 105, "start_index": 4403, "end_index": 4465, "_text": "Bone scan and plain films from prior hospitalzations were\nneg."}
+{"sent_index": 106, "start_index": 4466, "end_index": 4499, "_text": "Will await new plain film result."}
+{"sent_index": 107, "start_index": 4500, "end_index": 4528, "_text": "Ortho and ID were\nconsulted."}
+{"sent_index": 108, "start_index": 4529, "end_index": 4585, "_text": "ID recommended D/c vanc and levo and starting linezolid."}
+{"sent_index": 109, "start_index": 4586, "end_index": 4635, "_text": "Ortho\ndebrided wound and could not probe to bone."}
+{"sent_index": 110, "start_index": 4640, "end_index": 4712, "_text": "2. ) LLE cyanosis: Seen by vascular , no emergent intervention\nrequired."}
+{"sent_index": 111, "start_index": 4713, "end_index": 4800, "_text": "Pt to be seen by out pt vascular surgeon on 10/13/05 , will\ndeffer for further testing."}
+{"sent_index": 112, "start_index": 4805, "end_index": 4845, "_text": "3. ) Elevated CR: Baseline Will\nhydrate."}
+{"sent_index": 113, "start_index": 4850, "end_index": 4899, "_text": "4. ) DMII - on glyburide , ADA diet , RISS ---\n5."}
+{"sent_index": 114, "start_index": 4902, "end_index": 4951, "_text": "AF/SSS - has DDI PPM in and is on coumadin ---\n6."}
+{"sent_index": 115, "start_index": 4954, "end_index": 5003, "_text": "CKD - likely secondary to DM - at baseline ---\n7."}
+{"sent_index": 116, "start_index": 5006, "end_index": 5015, "_text": "FULL CODE"}
+{"sent_index": 117, "start_index": 5016, "end_index": 5035, "_text": "ADDITIONAL COMMENTS"}
+{"sent_index": 118, "start_index": 5037, "end_index": 5098, "_text": "pls follow up with your vascular surgeon- Dr Vais on 10/13/05"}
+{"sent_index": 119, "start_index": 5099, "end_index": 5169, "_text": "Pls follow up with your orthopedic surgeon\npls follow up with your PCP"}
+{"sent_index": 120, "start_index": 5170, "end_index": 5248, "_text": "Pls continue daily wet to dry wound changes\npls take antibiotics as prescribed"}
+{"sent_index": 121, "start_index": 5249, "end_index": 5268, "_text": "DISCHARGE CONDITION"}
+{"sent_index": 122, "start_index": 5270, "end_index": 5276, "_text": "Stable"}
+{"sent_index": 123, "start_index": 5277, "end_index": 5287, "_text": "TO DO/PLAN"}
+{"sent_index": 124, "start_index": 5289, "end_index": 5335, "_text": "Abx- linezolid for 6 wks\nINR check on 10/13/05"}
+{"sent_index": 125, "start_index": 5336, "end_index": 5523, "_text": "Follow up appointments with ortho , vascular and PCP\nNo dictated summary\nENTERED BY: CARMONY , PORTER L , M.D. ( GD1 ) 7/15/05 @ 02:51 PM\n****** END OF DISCHARGE ORDERS ******\n[report_end"}

@@ -1,0 +1,169 @@
+{"sent_index": 0, "start_index": 0, "end_index": 14, "_text": "RECORD #379569"}
+{"sent_index": 1, "start_index": 17, "end_index": 26, "_text": "162950782"}
+{"sent_index": 2, "start_index": 29, "end_index": 44, "_text": "MBCH | 32649506"}
+{"sent_index": 3, "start_index": 49, "end_index": 79, "_text": "4610153 | 4/3/2005 12:00:00 AM"}
+{"sent_index": 4, "start_index": 82, "end_index": 99, "_text": "s/p ICD placement"}
+{"sent_index": 5, "start_index": 104, "end_index": 148, "_text": "DIS | Admission Date: 4/3/2005 Report Status"}
+{"sent_index": 6, "start_index": 151, "end_index": 177, "_text": "Discharge Date: 10/29/2005"}
+{"sent_index": 7, "start_index": 185, "end_index": 207, "_text": "FINAL DISCHARGE ORDERS"}
+{"sent_index": 8, "start_index": 215, "end_index": 246, "_text": "FULLWOOD , HARRISON 604-96-75-0"}
+{"sent_index": 9, "start_index": 247, "end_index": 252, "_text": "Lavan"}
+{"sent_index": 10, "start_index": 253, "end_index": 260, "_text": "Service"}
+{"sent_index": 11, "start_index": 262, "end_index": 265, "_text": "CAR"}
+{"sent_index": 12, "start_index": 267, "end_index": 308, "_text": "DISCHARGE PATIENT ON: 0/10/05 AT 04:00 PM"}
+{"sent_index": 13, "start_index": 309, "end_index": 339, "_text": "CONTINGENT UPON Not Applicable"}
+{"sent_index": 14, "start_index": 340, "end_index": 381, "_text": "WILL D/C ORDER BE USED AS THE D/C SUMMARY"}
+{"sent_index": 15, "start_index": 383, "end_index": 386, "_text": "YES"}
+{"sent_index": 16, "start_index": 387, "end_index": 430, "_text": "Attending: ALDAY , WILFRED C. , M.D. , M.S."}
+{"sent_index": 17, "start_index": 431, "end_index": 442, "_text": "CODE STATUS"}
+{"sent_index": 18, "start_index": 444, "end_index": 453, "_text": "Full code"}
+{"sent_index": 19, "start_index": 454, "end_index": 471, "_text": "DISPOSITION: Home"}
+{"sent_index": 20, "start_index": 472, "end_index": 493, "_text": "DISCHARGE MEDICATIONS"}
+{"sent_index": 21, "start_index": 495, "end_index": 527, "_text": "ALBUTEROL INHALER 2 PUFF INH QID"}
+{"sent_index": 22, "start_index": 528, "end_index": 562, "_text": "PRN Shortness of Breath , Wheezing"}
+{"sent_index": 23, "start_index": 563, "end_index": 618, "_text": "LASIX ( FUROSEMIDE ) 20 MG PO QD Starting Today ( 10/19"}
+{"sent_index": 24, "start_index": 621, "end_index": 633, "_text": "Instructions"}
+{"sent_index": 25, "start_index": 635, "end_index": 785, "_text": "please titrate your dose 20mg/40mg/60mg as\nyou normally do depending on your degree of swelling\nMOTRIN ( IBUPROFEN ) 600 MG PO Q6H PRN Pain , Headache"}
+{"sent_index": 26, "start_index": 786, "end_index": 834, "_text": "Food/Drug Interaction Instruction Take with food"}
+{"sent_index": 27, "start_index": 835, "end_index": 851, "_text": "Alert overridden"}
+{"sent_index": 28, "start_index": 853, "end_index": 916, "_text": "Override added on 9/20/05 by NOLTE , STEVE S STUART OTHA , M.D."}
+{"sent_index": 29, "start_index": 917, "end_index": 957, "_text": "on order for MOTRIN PO ( ref # 234611479"}
+{"sent_index": 30, "start_index": 960, "end_index": 1019, "_text": "Pt. has a POSSIBLE allergy to Aspirin; reaction is Unknown."}
+{"sent_index": 31, "start_index": 1020, "end_index": 1039, "_text": "Reason for override"}
+{"sent_index": 32, "start_index": 1041, "end_index": 1060, "_text": "pt tolerates motrin"}
+{"sent_index": 33, "start_index": 1061, "end_index": 1103, "_text": "ATROVENT HFA INHALER ( IPRATROPIUM INHALER"}
+{"sent_index": 34, "start_index": 1106, "end_index": 1120, "_text": "2 PUFF INH QID"}
+{"sent_index": 35, "start_index": 1121, "end_index": 1149, "_text": "MAGNESIUM OXIDE 560 MG PO QD"}
+{"sent_index": 36, "start_index": 1150, "end_index": 1190, "_text": "VERAPAMIL SUSTAINED RELEASE 120 MG PO QD"}
+{"sent_index": 37, "start_index": 1191, "end_index": 1213, "_text": "Starting Today ( 10/19"}
+{"sent_index": 38, "start_index": 1216, "end_index": 1275, "_text": "Instructions: please confirm home dose and resume home dose"}
+{"sent_index": 39, "start_index": 1276, "end_index": 1309, "_text": "Food/Drug Interaction Instruction"}
+{"sent_index": 40, "start_index": 1310, "end_index": 1357, "_text": "Avoid grapefruit unless MD instructs otherwise."}
+{"sent_index": 41, "start_index": 1358, "end_index": 1404, "_text": "KEFLEX ( CEPHALEXIN ) 250 MG PO QID X 10 doses"}
+{"sent_index": 42, "start_index": 1405, "end_index": 1417, "_text": "Instructions"}
+{"sent_index": 43, "start_index": 1419, "end_index": 1523, "_text": "started on 10/19 , continue through 0/17 for\n12 total doses Number of Doses Required ( approximate ): 20"}
+{"sent_index": 44, "start_index": 1524, "end_index": 1592, "_text": "ZOCOR ( SIMVASTATIN ) 20 MG PO QHS\nFood/Drug Interaction Instruction"}
+{"sent_index": 45, "start_index": 1593, "end_index": 1640, "_text": "Avoid grapefruit unless MD instructs otherwise."}
+{"sent_index": 46, "start_index": 1641, "end_index": 1695, "_text": "AMBIEN ( ZOLPIDEM TARTRATE ) 10 MG PO QHS PRN Insomnia"}
+{"sent_index": 47, "start_index": 1696, "end_index": 1729, "_text": "Food/Drug Interaction Instruction"}
+{"sent_index": 48, "start_index": 1730, "end_index": 1849, "_text": "Give on an empty stomach ( give 1hr before or 2hr after\nfood )\nLORATADINE 10 MG PO QD Food/Drug Interaction Instruction"}
+{"sent_index": 49, "start_index": 1850, "end_index": 1897, "_text": "Avoid grapefruit unless MD instructs otherwise."}
+{"sent_index": 50, "start_index": 1898, "end_index": 1958, "_text": "Give on an empty stomach ( give 1hr before or 2hr after\nfood"}
+{"sent_index": 51, "start_index": 1961, "end_index": 2008, "_text": "POTASSIUM CHLORIDE SLOW REL. ( KCL SLOW RELEASE"}
+{"sent_index": 52, "start_index": 2011, "end_index": 2059, "_text": "20 MEQ PO QD As per AH Potassium Chloride Policy"}
+{"sent_index": 53, "start_index": 2061, "end_index": 2259, "_text": "each 20 mEq dose to be given with 4 oz of fluid\nMETFORMIN 1 , 250 MG PO BID Starting IN AM ( 10/19 )\nRHINOCORT AQUA ( BUDESONIDE NASAL INHALER )\n2 SPRAY INH BID\nSINGULAIR ( MONTELUKAST ) 10 MG PO QD"}
+{"sent_index": 54, "start_index": 2260, "end_index": 2409, "_text": "EFFEXOR XR ( VENLAFAXINE EXTENDED RELEASE ) 75 MG PO QD\nNumber of Doses Required ( approximate ): 5\nADVAIR DISKUS 250/50 ( FLUTICASONE PROPIONATE/..."}
+{"sent_index": 55, "start_index": 2412, "end_index": 2426, "_text": "1 PUFF INH BID"}
+{"sent_index": 56, "start_index": 2427, "end_index": 2494, "_text": "NEXIUM ( ESOMEPRAZOLE ) 40 MG PO QD\nOXYCODONE 10 MG PO Q4H PRN Pain"}
+{"sent_index": 57, "start_index": 2495, "end_index": 2499, "_text": "DIET"}
+{"sent_index": 58, "start_index": 2501, "end_index": 2536, "_text": "Patient should measure weight daily"}
+{"sent_index": 59, "start_index": 2537, "end_index": 2541, "_text": "DIET"}
+{"sent_index": 60, "start_index": 2543, "end_index": 2560, "_text": "Fluid restriction"}
+{"sent_index": 61, "start_index": 2561, "end_index": 2565, "_text": "DIET"}
+{"sent_index": 62, "start_index": 2567, "end_index": 2592, "_text": "House / Low chol/low sat."}
+{"sent_index": 63, "start_index": 2593, "end_index": 2596, "_text": "fat"}
+{"sent_index": 64, "start_index": 2597, "end_index": 2601, "_text": "DIET"}
+{"sent_index": 65, "start_index": 2603, "end_index": 2627, "_text": "House / ADA 2100 cals/dy"}
+{"sent_index": 66, "start_index": 2628, "end_index": 2647, "_text": "DIET: 2 gram Sodium"}
+{"sent_index": 67, "start_index": 2648, "end_index": 2656, "_text": "ACTIVITY"}
+{"sent_index": 68, "start_index": 2658, "end_index": 2678, "_text": "Walking as tolerated"}
+{"sent_index": 69, "start_index": 2679, "end_index": 2710, "_text": "FOLLOW UP APPOINTMENT( S ):\nDr."}
+{"sent_index": 70, "start_index": 2711, "end_index": 2753, "_text": "Eliseo Muros 0/5/06 1:30pm scheduled ,\nDr."}
+{"sent_index": 71, "start_index": 2754, "end_index": 2793, "_text": "Danial Acklin 10/30/06 2:45pm scheduled"}
+{"sent_index": 72, "start_index": 2796, "end_index": 2803, "_text": "ALLERGY"}
+{"sent_index": 73, "start_index": 2805, "end_index": 2823, "_text": "broccoli , Aspirin"}
+{"sent_index": 74, "start_index": 2824, "end_index": 2839, "_text": "ADMIT DIAGNOSIS"}
+{"sent_index": 75, "start_index": 2841, "end_index": 2862, "_text": "ICD placement for HCM"}
+{"sent_index": 76, "start_index": 2863, "end_index": 2939, "_text": "PRINCIPAL DISCHARGE DIAGNOSIS ;Responsible After Study for Causing Admission"}
+{"sent_index": 77, "start_index": 2942, "end_index": 2959, "_text": "s/p ICD placement"}
+{"sent_index": 78, "start_index": 2960, "end_index": 3052, "_text": "OTHER DIAGNOSIS;Conditions , Infections , Complications , affecting Treatment/Stay\nsee below"}
+{"sent_index": 79, "start_index": 3053, "end_index": 3078, "_text": "OPERATIONS AND PROCEDURES"}
+{"sent_index": 80, "start_index": 3080, "end_index": 3087, "_text": "7/13/05"}
+{"sent_index": 81, "start_index": 3089, "end_index": 3149, "_text": "Metronic dual chamber DDI/ICD paced under general anesthesia"}
+{"sent_index": 82, "start_index": 3150, "end_index": 3191, "_text": "OTHER TREATMENTS/PROCEDURES ( NOT IN O.R."}
+{"sent_index": 83, "start_index": 3194, "end_index": 3198, "_text": "none"}
+{"sent_index": 84, "start_index": 3199, "end_index": 3230, "_text": "BRIEF RESUME OF HOSPITAL COURSE"}
+{"sent_index": 85, "start_index": 3232, "end_index": 3248, "_text": "REASON FOR ADMIT"}
+{"sent_index": 86, "start_index": 3250, "end_index": 3263, "_text": "ICD placement"}
+{"sent_index": 87, "start_index": 3264, "end_index": 3267, "_text": "HPI"}
+{"sent_index": 88, "start_index": 3269, "end_index": 3402, "_text": "53yoF w/ HCM s/p medtronic dual chamber DDI/ICD placement under\ngeneral anesthesia ( 2/2 obesity ) admitted for ovenight observation."}
+{"sent_index": 89, "start_index": 3403, "end_index": 3437, "_text": "ICD\nplaced for primary prevention."}
+{"sent_index": 90, "start_index": 3438, "end_index": 3573, "_text": "Had ECHO 5/13 showed septal thickness\n16mm , posterior wall thickness 19mm w/ preserved EF 65%m LV outflow tract\npeak gradient 125mmHg."}
+{"sent_index": 91, "start_index": 3574, "end_index": 3727, "_text": "Holter monitoring 0/2 without any arrythmias\nbut since 14 of May has had increasing difficulties w/ ambulatio n2/2\npalpations up to 20 minutes at a time."}
+{"sent_index": 92, "start_index": 3728, "end_index": 3779, "_text": "One severe presyncopal episode in\nNovember of 2004."}
+{"sent_index": 93, "start_index": 3780, "end_index": 3877, "_text": "Also HF symptoms controlled on lasix , at baseline can work\n6 blocks and up one flight of stairs."}
+{"sent_index": 94, "start_index": 3896, "end_index": 3899, "_text": "PMH"}
+{"sent_index": 95, "start_index": 3901, "end_index": 4069, "_text": "HCM , htn , hyperchol , asthma , PCOD w/ infertility , diabetes ,\nobesity ( 310 lbs ) , loer back pain , migraines , s/p knee replacement ,\ntosillectomy , sinus surgery"}
+{"sent_index": 96, "start_index": 4089, "end_index": 4098, "_text": "Admission"}
+{"sent_index": 97, "start_index": 4099, "end_index": 4103, "_text": "Meds"}
+{"sent_index": 98, "start_index": 4105, "end_index": 4489, "_text": "albuterol , advair 250/50 bid , rhinocort 2 sprays bid ,\natrovent 2 puff qid , singulair 10mg qhs , nexium 40mg daily , lasix\n20mg daily ( inc to 40 or 60 during period ) , kcl 20meq\ndaily , verapamil 120mg daily , patanol 1-2 OU bid prn , loratidine 10mg\ndaily , zocor 20mg qhs , effexor 75mg daily , metformin 1250mg bid ,\nmgoxide 500mg daily , ambien prn , amox prior to procedures"}
+{"sent_index": 99, "start_index": 4509, "end_index": 4512, "_text": "all"}
+{"sent_index": 100, "start_index": 4514, "end_index": 4539, "_text": "aspirin , broccoli , tape"}
+{"sent_index": 101, "start_index": 4559, "end_index": 4561, "_text": "FH"}
+{"sent_index": 102, "start_index": 4563, "end_index": 4575, "_text": "no h/o HOCM."}
+{"sent_index": 103, "start_index": 4576, "end_index": 4604, "_text": "no h/o sudden cardiac death."}
+{"sent_index": 104, "start_index": 4605, "end_index": 4635, "_text": "mother/grandmother w/\ndiabetes"}
+{"sent_index": 105, "start_index": 4636, "end_index": 4638, "_text": "SH"}
+{"sent_index": 106, "start_index": 4640, "end_index": 4665, "_text": "technical writer lives in"}
+{"sent_index": 107, "start_index": 4666, "end_index": 4692, "_text": "Ni single parent of twins."}
+{"sent_index": 108, "start_index": 4693, "end_index": 4717, "_text": "no\ntob/social etoh/ivdu."}
+{"sent_index": 109, "start_index": 4737, "end_index": 4749, "_text": "ADMISSION PE"}
+{"sent_index": 110, "start_index": 4751, "end_index": 4778, "_text": "VS 96.4 74 140/90 20 93% RA"}
+{"sent_index": 111, "start_index": 4779, "end_index": 4782, "_text": "GEN"}
+{"sent_index": 112, "start_index": 4784, "end_index": 4793, "_text": "NAD HEENT"}
+{"sent_index": 113, "start_index": 4795, "end_index": 4924, "_text": "anicteric , eomi , perrl , mmm , op clear NECK: carotid 2+\nw/o bruits , no lan , jvp difficult to appreciate 2/2 thick neck LUNGS"}
+{"sent_index": 114, "start_index": 4926, "end_index": 5137, "_text": "ctab , no c/w/r CV: rr , nl s1 s2 , 3/6 SM at RUSB but heard throughout\nprecordium , inc w/ valsalva ABD: obese , nl bs , soft , nt/nd , hard to\npalpate for masses and hsm EXT: trace edema , warm , dp/pt 2+ b/l."}
+{"sent_index": 115, "start_index": 5138, "end_index": 5180, "_text": "left\nradial pulse 2+ SKIN: no rashes NEURO"}
+{"sent_index": 116, "start_index": 5182, "end_index": 5230, "_text": "a&amp;ox3 cn 2-12 intact , moves all\nextremities"}
+{"sent_index": 117, "start_index": 5257, "end_index": 5269, "_text": "LABS/STUDIES"}
+{"sent_index": 118, "start_index": 5272, "end_index": 5276, "_text": "labs"}
+{"sent_index": 119, "start_index": 5278, "end_index": 5310, "_text": "cbc , bmp , coags wnl\n--EKG NSR."}
+{"sent_index": 120, "start_index": 5311, "end_index": 5330, "_text": "TW flat V5/V6 ( old"}
+{"sent_index": 121, "start_index": 5335, "end_index": 5379, "_text": "CXR ( portable ): cardiomegaly , no e/o ptx."}
+{"sent_index": 122, "start_index": 5380, "end_index": 5443, "_text": "PA/lat CXR AM after no ptx ,\nleads in place , no overt failure."}
+{"sent_index": 123, "start_index": 5470, "end_index": 5576, "_text": "PROCEDURES:\n4/29 s/p Medtronic ICD/DDI PPM placement , cannulated via left cephalic\n( one axillary attempt"}
+{"sent_index": 124, "start_index": 5605, "end_index": 5608, "_text": "A/P"}
+{"sent_index": 125, "start_index": 5609, "end_index": 5611, "_text": "CV"}
+{"sent_index": 126, "start_index": 5615, "end_index": 5626, "_text": "pump: HOCM."}
+{"sent_index": 127, "start_index": 5627, "end_index": 5655, "_text": "Euvolemic initially on exam."}
+{"sent_index": 128, "start_index": 5656, "end_index": 5769, "_text": "O/n pt developed increased\nswelling of her hands and legs b/l , and also w/ slightly more SOB and O2\nrequirement."}
+{"sent_index": 129, "start_index": 5770, "end_index": 5860, "_text": "Unclear whether O2 requirement was 2/2 fluid or 2/2 OSA , AM\nCXR clear w/out e/o overload."}
+{"sent_index": 130, "start_index": 5861, "end_index": 5918, "_text": "Pt diuresed w/ lasix 40mg on day of d/c\nabout net -500cc."}
+{"sent_index": 131, "start_index": 5919, "end_index": 6123, "_text": "Still w/ some swelling on d/c but pt reported that her\nbreathing/activity level was at baseline and she felt comfortable going\nhome and adjusting her lasix dose as she normally does based on her\nswelling."}
+{"sent_index": 132, "start_index": 6124, "end_index": 6178, "_text": "Continued on home cardiac regimen verapamil and zocor."}
+{"sent_index": 133, "start_index": 6181, "end_index": 6187, "_text": "rhythm"}
+{"sent_index": 134, "start_index": 6189, "end_index": 6266, "_text": "s/p Medtronic dual chamber DDI/ICD placement for primary\nprevention for HOCM."}
+{"sent_index": 135, "start_index": 6267, "end_index": 6313, "_text": "Post procedure CXR w/out ptx , leads in place."}
+{"sent_index": 136, "start_index": 6314, "end_index": 6340, "_text": "Pt will\nf/u w/ Dr. Kolat ."}
+{"sent_index": 137, "start_index": 6341, "end_index": 6374, "_text": "On monitor pt sinus w/out events."}
+{"sent_index": 138, "start_index": 6375, "end_index": 6410, "_text": "Routine\nperi-procedure antibiotics."}
+{"sent_index": 139, "start_index": 6411, "end_index": 6415, "_text": "PULM"}
+{"sent_index": 140, "start_index": 6417, "end_index": 6444, "_text": "asthma , cont home regimen."}
+{"sent_index": 141, "start_index": 6445, "end_index": 6603, "_text": "had slight desat o/n requiring 2L O2\nwhich could be 2/2 overload ( see above ) , but also could be 2/2 obstructive\nsleep apnea , consider outpt eval for this."}
+{"sent_index": 142, "start_index": 6604, "end_index": 6606, "_text": "GI"}
+{"sent_index": 143, "start_index": 6608, "end_index": 6616, "_text": "cont ppi"}
+{"sent_index": 144, "start_index": 6617, "end_index": 6621, "_text": "ENDO"}
+{"sent_index": 145, "start_index": 6623, "end_index": 6627, "_text": "ISS."}
+{"sent_index": 146, "start_index": 6628, "end_index": 6666, "_text": "restarted metformin on morning of d/c."}
+{"sent_index": 147, "start_index": 6667, "end_index": 6672, "_text": "NEURO"}
+{"sent_index": 148, "start_index": 6674, "end_index": 6686, "_text": "cont effexor"}
+{"sent_index": 149, "start_index": 6687, "end_index": 6690, "_text": "FEN"}
+{"sent_index": 150, "start_index": 6692, "end_index": 6704, "_text": "cardiac diet"}
+{"sent_index": 151, "start_index": 6705, "end_index": 6714, "_text": "PPx: teds"}
+{"sent_index": 152, "start_index": 6715, "end_index": 6719, "_text": "CODE"}
+{"sent_index": 153, "start_index": 6721, "end_index": 6733, "_text": "has icd now."}
+{"sent_index": 154, "start_index": 6734, "end_index": 6738, "_text": "full"}
+{"sent_index": 155, "start_index": 6739, "end_index": 6758, "_text": "ADDITIONAL COMMENTS"}
+{"sent_index": 156, "start_index": 6761, "end_index": 6843, "_text": "Please monitor your weight and swelling and adjust Lasix dose as your\nnormally do."}
+{"sent_index": 157, "start_index": 6844, "end_index": 6859, "_text": "Please call Dr."}
+{"sent_index": 158, "start_index": 6860, "end_index": 6967, "_text": "Borza if your swelling does not improve\nor you become short of breath or your weight increases &gt;3pounds."}
+{"sent_index": 159, "start_index": 6969, "end_index": 7004, "_text": "Take Keflex for 3 day total course."}
+{"sent_index": 160, "start_index": 7005, "end_index": 7040, "_text": "All other medications are the same."}
+{"sent_index": 161, "start_index": 7041, "end_index": 7060, "_text": "DISCHARGE CONDITION"}
+{"sent_index": 162, "start_index": 7062, "end_index": 7068, "_text": "Stable"}
+{"sent_index": 163, "start_index": 7069, "end_index": 7079, "_text": "TO DO/PLAN"}
+{"sent_index": 164, "start_index": 7082, "end_index": 7098, "_text": "fluid management"}
+{"sent_index": 165, "start_index": 7100, "end_index": 7156, "_text": "consider outpt eval for possible obstructive sleep apnea"}
+{"sent_index": 166, "start_index": 7157, "end_index": 7176, "_text": "No dictated summary"}
+{"sent_index": 167, "start_index": 7177, "end_index": 7258, "_text": "ENTERED BY: BLANQUART , EFRAIN JONATHON RICKEY , M.D. ( DL79 ) 0/10/05 @ 02:11 PM"}
+{"sent_index": 168, "start_index": 7266, "end_index": 7308, "_text": "END OF DISCHARGE ORDERS ******\n[report_end"}
