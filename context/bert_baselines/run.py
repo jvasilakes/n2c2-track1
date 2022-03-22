@@ -80,7 +80,6 @@ def main(args):
     datamodule = load_datamodule_from_config(config)
     datamodule.setup()
     print(datamodule)
-    input()
 
     print("Label Spec")
     print('  ' + str(datamodule.label_spec))
@@ -355,10 +354,14 @@ def format_results_as_markdown_table(results, tasks):
     for avg_fn in ["micro", "macro"]:
         table += "\n|"
         for task in tasks:
-            p = results[f"{avg_fn}_{task}_precision"]
-            r = results[f"{avg_fn}_{task}_recall"]
-            f = results[f"{avg_fn}_{task}_F1"]
-            table += f" {avg_fn: <7} | {p:.3f} | {r:.3f} | {f:.3f} |"
+            try:
+                p = results[f"{avg_fn}_{task}_precision"]
+                r = results[f"{avg_fn}_{task}_recall"]
+                f = results[f"{avg_fn}_{task}_F1"]
+                table += f" {avg_fn: <7} | {p:.3f} | {r:.3f} | {f:.3f} |"
+            except KeyError:
+                # probs that an auxiliary dataset doesn't have a dev split.
+                continue
     table += '\n'
     return table
 
