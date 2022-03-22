@@ -1,5 +1,6 @@
 import os
 import warnings
+from typing import List
 from collections import Counter, defaultdict
 
 import torch
@@ -46,7 +47,6 @@ class n2c2ContextDataset(BratMultiTaskDataset):
             }
     SORTED_ATTRIBUTES = ["Action", "Actor", "Certainty",
                          "Negation", "Temporality"]
-
     START_ENTITY_MARKER = '@'
     END_ENTITY_MARKER = '@'
 
@@ -64,9 +64,50 @@ class n2c2AssertionDataset(BratMultiTaskDataset):
                       "present": 5}       # 4621
     }
     SORTED_ATTRIBUTES = ["Assertion"]
-
     START_ENTITY_MARKER = '@'
     END_ENTITY_MARKER = '@'
+
+
+@register("n2c2Assertion-Presence")
+class n2c2AssertionPresenceDataset(BratMultiTaskDataset):
+    EXAMPLE_TYPE = "Assertion"
+    ENCODINGS = {
+        # Task        label: encoding       num_examples
+        "Assertion": {"absent": 0,        # 1594
+                      "present": 1}       # 4621
+    }
+    SORTED_ATTRIBUTES = ["Assertion"]
+    START_ENTITY_MARKER = '@'
+    END_ENTITY_MARKER = '@'
+
+    def filter_examples(self, examples: List[br.Annotation]):
+        filtered = []
+        for ex in examples:
+            if ex.value in self.ENCODINGS["Assertion"].keys():
+                filtered.append(ex) 
+        return filtered
+
+
+@register("n2c2Assertion-Condition")
+class n2c2AssertionConditionDataset(BratMultiTaskDataset):
+    EXAMPLE_TYPE = "Assertion"
+    ENCODINGS = {
+        # Task        label: encoding       num_examples
+        "Assertion": {"conditional": 0,   # 73
+                      "hypothetical": 1,  # 379
+                      "possible": 2,      # 309
+                      }
+    }
+    SORTED_ATTRIBUTES = ["Assertion"]
+    START_ENTITY_MARKER = '@'
+    END_ENTITY_MARKER = '@'
+
+    def filter_examples(self, examples: List[br.Annotation]):
+        filtered = []
+        for ex in examples:
+            if ex.value in self.ENCODINGS["Assertion"].keys():
+                filtered.append(ex) 
+        return filtered
 
 
 @register("i2b2Event")
@@ -90,7 +131,6 @@ class i2b2EventDataset(BratMultiTaskDataset):
                             },
             }
     SORTED_ATTRIBUTES = ["Certainty", "Event", "Temporality"]
-
     START_ENTITY_MARKER = '@'
     END_ENTITY_MARKER = '@'
 
