@@ -159,6 +159,11 @@ class BratMultiTaskDataset(Dataset):
             self._inverse_encodings = self._invert_encodings()
         if isinstance(encoded_labels, int):
             return self._inverse_encodings[task][encoded_labels]
+        elif isinstance(encoded_labels, dict):
+            encoded = {}
+            for (task, encs) in encoded_labels.items():
+                encoded[task] = self.inverse_transform(task, encs)
+            return encoded
         elif torch.is_tensor(encoded_labels):
             if encoded_labels.dim() == 0:
                 return self._inverse_encodings[task][encoded_labels.item()]
