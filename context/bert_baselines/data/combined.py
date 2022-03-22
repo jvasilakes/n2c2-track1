@@ -67,7 +67,15 @@ class CombinedDataModule(BasicBertDataModule):
                     warnings.simplefilter("ignore")
                     dm.setup()
         self.train = CombinedDataset([dm.train for dm in self.datamodules])
-        self.val = CombinedDataset([dm.val for dm in self.datamodules])
+        val_sets = [dm.val for dm in self.datamodules if dm.val is not None]
+        if len(val_sets) == 0:
+            warnings.warn("No dev sets found.")
+            self.val = None
+        else:
+            if len(val_sets) < len(self.datamodules):
+                warnings.warn("Some datasets do not have a dev set defined.")
+            self.val = CombinedDataset(val_sets)
+
         test_sets = [dm.test for dm in self.datamodules if dm.test is not None]
         if len(test_sets) == 0:
             warnings.warn("No test sets found.")
