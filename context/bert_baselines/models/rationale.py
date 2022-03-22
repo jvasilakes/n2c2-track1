@@ -211,7 +211,6 @@ class BertRationaleClassifier(pl.LightningModule):
                     continue
             # Compute HardKuma gates
             entity_expanded = pooled_entity_output.unsqueeze(1).expand(h.size())  # noqa
-            # TODO: Try just passing h.
             h_with_entity = torch.cat([h, entity_expanded], dim=2)
             z, z_dists = self.kuma_masks[task](h_with_entity)
             # Mask out PAD tokens.
