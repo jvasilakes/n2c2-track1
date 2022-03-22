@@ -20,7 +20,7 @@ def get_supported_loss_functions():
         loss_type = fn._tagged[0]
         if loss_type not in fns_by_type:
             fns_by_type[loss_type] = []
-        fns_by_type[loss_type].append((name, fn()))
+        fns_by_type[loss_type].append((name, fn(), fn.__doc__))
     return fns_by_type
 
 
@@ -58,6 +58,11 @@ class LossLookup(object):
     @staticmethod
     @loss_function("classification", "cross-entropy")
     def get_cross_entropy_loss():
+        """
+        Parameters and their defaults:
+          class_weights: "balanced", "null" (Default null)
+          label_smoothing: float (Default 0.0)
+        """
         return torch.nn.CrossEntropyLoss
 
     @staticmethod
@@ -68,8 +73,8 @@ class LossLookup(object):
         https://aclanthology.org/2020.acl-main.45/
 
         Parameters and their defaults:
-          alpha: float = 1.0
-          gamma: float = 1.0
+          alpha: float (Default 1.0)
+          gamma: float (Default 1.0)
         """
         return SelfAdjDiceLoss
 
@@ -77,11 +82,24 @@ class LossLookup(object):
     @staticmethod
     @loss_function("mask", "ratio")
     def get_ratio_loss():
+        """
+        Parameters and their defaults:
+          ratio: float (Default 1.0)
+        """
         return RatioLoss
 
     @staticmethod
     @loss_function("mask", "controlled-sparsity")
     def get_controlled_sparsity_loss():
+        """
+        Parameters and their defaults:
+            selection_rate: float (Default 1.0)  # target for L0
+            transition_rate: float (Default 0.0) # target for fused lasso
+            lagrange_alpha: float (Default 0.5)  # not used
+            lagrange_lr: float (Default 0.05)    # Lagrangian learning rate
+            lambda_init: float (Default 1.0)     # initial Lagrange value
+            gamma: float (Default 0.5)  # Relative weight of L0 vs. Lasso loss
+        """
         return ControlledSparsityLoss
 
 
@@ -216,7 +234,8 @@ class ControlledSparsityLoss(torch.nn.Module):
 
 if __name__ == "__main__":
     fns_by_type = get_supported_loss_functions()
-    for (loss_type, fn_names_and_classes) in fns_by_type.items():
+    for (loss_type, fn_names_classes_docs) in fns_by_type.items():
         print(loss_type.title())
-        for (name, cls) in fn_names_and_classes:
-            print(f"  {name}: {cls}")
+        print("=" * len(loss_type))
+        for (name, cls, doc) in fn_names_classes_docs:
+            print(f" * {name}: {cls()} {doc}")
