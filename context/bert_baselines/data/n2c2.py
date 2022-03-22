@@ -7,6 +7,8 @@ from torch.utils.data import DataLoader, WeightedRandomSampler
 from transformers import AutoTokenizer
 from sklearn.utils.class_weight import compute_class_weight
 
+import brat_reader as br
+
 from .base import BratMultiTaskDataset, BasicBertDataModule
 
 
@@ -74,14 +76,17 @@ class i2b2EventDataset(BratMultiTaskDataset):
             # Task        label: encoding      num_examples
             "Certainty": {"factual": 0,      # 100
                           "conditional": 1,  # 10 + 7 from "suggestion"
+                          "unknown": 2,
                           },
             "Event": {"start": 0,            # 56 + 12 from "start-continue"
                       "stop": 1,             # 27
                       "continue": 2,         # 21 + 1 from "coninue"
+                      "unknown": 3,
                       },
             "Temporality": {"past": 0,       # 88
                             "future": 1,     # 13
                             "present": 2,    # 11
+                            "unknown": 3,
                             },
             }
     SORTED_ATTRIBUTES = ["Certainty", "Event", "Temporality"]
@@ -89,18 +94,30 @@ class i2b2EventDataset(BratMultiTaskDataset):
     START_ENTITY_MARKER = '@'
     END_ENTITY_MARKER = '@'
 
-    def preprocess_example(self, example):
+    def preprocess_example(self, example: br.Annotation):
         """
         Certainty: suggestion -> conditional
         Event: start-continue -> start
         Event: coninue -> continue
         """
+        # Some attributes are annotated "nm" for not mentioned, but
+        # these are not included in the brat data, so we fill them
+        # in here.
+        for task in self.SORTED_ATTRIBUTES:
+            if task not in example.attributes.keys():
+                attr = br.Attribute(
+                        _id=example.id.replace('E', 'A'),
+                        _type=task,
+                        value="unknown",
+                        reference=example,
+                        _source_file=example._source_file)
+                example.attributes[task] = attr
         if example.attributes["Certainty"].value == "suggestion":
-            example.attributes["Certainty"].value == "conditional"
+            example.attributes["Certainty"].value = "conditional"
         if example.attributes["Event"].value == "start-continue":
-            example.attributes["Event"].value == "start"
+            example.attributes["Event"].value = "start"
         if example.attributes["Event"].value == "coninue":
-            example.attributes["Event"].value == "continue"
+            example.attributes["Event"].value = "continue"
         return example
 
 
@@ -164,11 +181,15 @@ class n2c2DataModule(BasicBertDataModule):
 
         val_path = os.path.join(self.data_dir, "dev")
         val_sent_path = os.path.join(self.sentences_dir, "dev")
-        self.val = self.dataset_class(
-                val_path, val_sent_path,
-                window_size=self.window_size,
-                label_names=self.tasks_to_load,
-                mark_entities=self.mark_entities)
+        if os.path.exists(val_path):
+            self.val = self.dataset_class(
+                    val_path, val_sent_path,
+                    window_size=self.window_size,
+                    label_names=self.tasks_to_load,
+                    mark_entities=self.mark_entities)
+        else:
+            warnings.warn("No dev set found.")
+            self.val = None
 
         test_path = os.path.join(self.data_dir, "test")
         test_sent_path = os.path.join(self.sentences_dir, "test")
@@ -233,11 +254,12 @@ class n2c2DataModule(BasicBertDataModule):
         self._label_spec = spec
         return self._label_spec
 
-    def inverse_transform(self, task, encoded):
+    def inverse_transform(self, task=None, encoded_labels=None):
         """
         Just exposes inverse_transform from the underlying dataset.
         """
-        return self.train.inverse_transform(task, encoded)
+        return self.train.inverse_transform(
+                task=task, encoded_labels=encoded_labels)
 
     @property
     def class_weights(self):
@@ -261,8 +283,11 @@ class n2c2DataModule(BasicBertDataModule):
                           num_workers=4, sampler=self.sampler)
 
     def val_dataloader(self):
-        return DataLoader(self.val, batch_size=self.batch_size,
-                          collate_fn=self.encode_and_collate, num_workers=4)
+        if self.val is not None:
+            return DataLoader(self.val, batch_size=self.batch_size,
+                              collate_fn=self.encode_and_collate,
+                              num_workers=4)
+        return None
 
     def test_dataloader(self):
         if self.test is not None:
