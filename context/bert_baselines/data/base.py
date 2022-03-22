@@ -1,7 +1,7 @@
 import os
 import json
 from glob import glob
-from typing import Dict, Union
+from typing import List, Dict, Union
 
 import torch
 import pytorch_lightning as pl
@@ -99,11 +99,17 @@ class BratMultiTaskDataset(Dataset):
                 "labels": labels,
                 "docid": example.docid}
 
-    def preprocess_example(self, example):
+    def preprocess_example(self, example: br.Annotation):
         """
         Override with your own preprocessing logic.
         """
         return example
+
+    def filter_examples(self, examples: List[br.Annotation]):
+        """
+        Override with your own preprocessing logic.
+        """
+        return examples
 
     def _get_examples_and_texts(self):
         """
@@ -121,7 +127,8 @@ class BratMultiTaskDataset(Dataset):
             anns = br.BratAnnotations.from_file(ann_file)
             examples = anns.get_highest_level_annotations(
                     type=self.EXAMPLE_TYPE)
-            examples = [self.preprocess_example(ex) for ex in examples]
+            examples = self.filter_examples(
+                    [self.preprocess_example(ex) for ex in examples])
             docid = os.path.splitext(os.path.basename(ann_file))[0]
             for ex in examples:
                 ex.update("docid", docid)

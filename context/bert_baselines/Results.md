@@ -40,12 +40,14 @@ Entity markers: use both
 
 ## Certainty
 Bio\_ClinicalBERT  
-+/- 1 sentence window  
+n2c2 2022 + i2b2 2009 multi-dataset learning  
+n2c2 2022: +/- 1 sentence window  
+i2b2 2009: 0 sentence window  
 Entity markers: use first only  
-|         | P     | R     | F1    | Avg F1|
+|         | prec  | rec   | f1    | Avg F1|
 |---------|-------|-------|-------|-------|
-|micro    | 0.910 | 0.910 | 0.910 | 0.911 |
-|macro    | 0.854 | 0.779 | 0.808 | 0.655 |
+|micro    | 0.928 | 0.928 | 0.928 | 0.916 |
+|macro    | 0.899 | 0.796 | 0.841 | 0.674 |
 
 
 ## Negation
