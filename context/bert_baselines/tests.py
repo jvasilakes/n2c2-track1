@@ -6,7 +6,7 @@ import torch
 import pytorch_lightning as pl
 
 from config import ExperimentConfig
-from data import n2c2ContextDataModule
+from data import n2c2DataModule
 from models import BertMultiHeadedSequenceClassifier
 from models.layers import TokenMask, EntityPooler
 
@@ -62,7 +62,7 @@ def test_mask_hidden(config):
     data_kwargs = {
         "mark_entities": False
     }
-    datamodule = n2c2ContextDataModule.from_config(config, **data_kwargs)
+    datamodule = n2c2DataModule.from_config(config, **data_kwargs)
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
         # Ignore "No test set found"
@@ -97,7 +97,7 @@ def test_mask_hidden_marked(config):
     data_kwargs = {
         "mark_entities": True,
     }
-    datamodule = n2c2ContextDataModule.from_config(config, **data_kwargs)
+    datamodule = n2c2DataModule.from_config(config, **data_kwargs)
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
         # Ignore "No test set found"
@@ -139,7 +139,7 @@ def test_pool_entity_embeddings_max(config):
     data_kwargs = {
         "mark_entities": False,
     }
-    datamodule = n2c2ContextDataModule.from_config(config, **data_kwargs)
+    datamodule = n2c2DataModule.from_config(config, **data_kwargs)
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
         # Ignore "No test set found"
@@ -174,7 +174,7 @@ def test_pool_entity_embeddings_mean(config):
     data_kwargs = {
         "mark_entities": False,
     }
-    datamodule = n2c2ContextDataModule.from_config(config, **data_kwargs)
+    datamodule = n2c2DataModule.from_config(config, **data_kwargs)
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
         # Ignore "No test set found"
@@ -210,7 +210,7 @@ def test_pool_entity_embeddings_first(config):
     data_kwargs = {
         "mark_entities": False,
     }
-    datamodule = n2c2ContextDataModule.from_config(config, **data_kwargs)
+    datamodule = n2c2DataModule.from_config(config, **data_kwargs)
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
         # Ignore "No test set found"
@@ -248,7 +248,7 @@ def test_pool_entity_embeddings_last(config):
     data_kwargs = {
         "mark_entities": False,
     }
-    datamodule = n2c2ContextDataModule.from_config(config, **data_kwargs)
+    datamodule = n2c2DataModule.from_config(config, **data_kwargs)
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
         # Ignore "No test set found"
@@ -286,7 +286,7 @@ def test_pool_entity_embeddings_first_last(config):
     data_kwargs = {
         "mark_entities": False,
     }
-    datamodule = n2c2ContextDataModule.from_config(config, **data_kwargs)
+    datamodule = n2c2DataModule.from_config(config, **data_kwargs)
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
         # Ignore "No test set found"
