@@ -253,6 +253,9 @@ class BratAnnotations(object):
     def get_attributes_by_type(self, attr_type):
         return [a for a in self.attributes if a.type == attr_type]
 
+    def get_spans_by_type(self, span_type):
+        return [s for s in self.spans if s.type == span_type]
+
     @property
     def spans(self):
         if self._sorted_spans is None:
@@ -320,15 +323,24 @@ class BratAnnotations(object):
             event.attributes = attrs_by_type
             self._events.append(event)
 
-    def get_highest_level_annotations(self):
+    def get_highest_level_annotations(self, type=None):
         if len(self._events) > 0:
-            return self.events
+            if type is not None:
+                return self.get_events_by_type(type)
+            else:
+                return self.events
         elif len(self._attributes) > 0:
-            return self.attributes
+            if type is not None:
+                return self.get_attributes_by_type(type)
+            else:
+                return self.attributes
         elif len(self._spans) > 0:
-            return self.spans
+            if type is not None:
+                return self.get_spans_by_type(type)
+            else:
+                return self.spans
         else:
-            raise ValueError("Can't find any annotations.")
+            return []
 
     def __str__(self):
         outlines = []
@@ -349,10 +361,11 @@ def parse_brat_span(line):
     # Sometimes things like '&quot;' appear
     line = html.unescape(line)
     uid, label, other = line.split(maxsplit=2)
+    other = other.rstrip(';')
     if ';' not in other:
         start_idx, end_idx, text = other.split(maxsplit=2)
     else:
-        # Occasionally, non-contiguous spans occur in the training data.
+        # Occasionally, non-contiguous spans occur in the n2c2 2022 data.
         # Merge these to be contiguous.
         text = ''
         spans = other.split(';')

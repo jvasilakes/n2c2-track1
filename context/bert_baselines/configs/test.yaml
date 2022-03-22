@@ -1,10 +1,11 @@
 # Experiment
-name: test_cont
-description: test continue training
+name: test_new_data
+description: test after data/ refactor
 logdir: logs/
 random_seed: 0
 
 # Data
+dataset_name: n2c2Context
 data_dir: /home/u14498jv/Documents/Projects/n2c2-track1/n2c2Track1TrainingData-v3/data_v3
 sentences_dir: /home/u14498jv/Documents/Projects/n2c2-track1/n2c2Track1TrainingData-v3/segmented
 tasks_to_load:

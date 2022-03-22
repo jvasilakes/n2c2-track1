@@ -73,6 +73,7 @@ Below are descriptions for some of the less obvious parameters you can specify i
 * `logdir`: The base log directory for this experiment. The actual experiment will be logged to `logdir/name/version_[0-9]+?`, where the version number is determined by Pytorch Lightning.
 
 ### Data options
+* `dataset_name`: `str` corresponding to a Dataset class in `data`. To get available n2c2 dataset names, run `python -m data.n2c2`
 * `data_dir`: `/path/to/n2c2Track1TrainingData/data`
 * `sentences_dir`: `/path/to/n2c2Track1TrainingData/segmented` Assumes JSON lines format as output by `/path/to/n2c2Track1TrainingData/segmented/scripts/run_biomedicus_sentences.py`.
 * `tasks_to_load`: List of the context classification tasks to perform. Valid options are `"all"`, or any subset of `["Action", "Actor", "Certainity", "Negation", "Temporality"]`

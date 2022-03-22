@@ -35,6 +35,7 @@ class ExperimentConfig(object):
                 "random_seed",
             ],
             "Data": [
+                "dataset_name",
                 "data_dir",
                 "sentences_dir",
                 "tasks_to_load",
@@ -111,13 +112,14 @@ class ExperimentConfig(object):
             random_seed: int = 0,
             # Data
             # The kwargs below always specify the main n2c2 dataset
+            dataset_name: str = "n2c2Context",
             data_dir: str = '',
             sentences_dir: str = '',
             tasks_to_load: Union[List[str], str] = "all",
             window_size: int = 0,
             max_train_examples: int = -1,
-            # {dataset_name: dict()} where dict has name args as above.
-            # dataset_name is used to determine which datamodule to use.
+            # {dataset_name: dict()} where dict has the same args as above.
+            # dataset_name is used to determine which dataset to use.
             auxiliary_data: Dict[str, List] = None,
             # Ignored if auxiliary_data is None
             dataset_sample_strategy: str = "proportional",
@@ -151,6 +153,7 @@ class ExperimentConfig(object):
         self.logdir = logdir
         self.random_seed = random_seed
         # Data
+        self.dataset_name = dataset_name
         self.data_dir = data_dir
         self.sentences_dir = sentences_dir
         self.tasks_to_load = tasks_to_load
