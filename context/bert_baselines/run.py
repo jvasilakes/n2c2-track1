@@ -80,7 +80,6 @@ def main(args):
     datamodule = load_datamodule_from_config(config)
     datamodule.setup()
     print(datamodule)
-    input()
 
     print("Label Spec")
     print('  ' + str(datamodule.label_spec))
