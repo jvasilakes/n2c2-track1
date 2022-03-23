@@ -167,15 +167,14 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
             pooled_output = bert_outputs.pooler_output
 
         clf_outputs = {}
-        for (task, clf_head) in self.classifier_heads.items():
+        for (task, task_labels) in labels.items():
             if dataset is not None:
                 # If doing multi-dataset learning, the task will
                 # be formatted like {dataset}:{label},
                 # e.g., "n2c2Context:Action"
                 if dataset != task.split(':')[0]:
                     continue
-            logits = clf_head(pooled_output)
-            task_labels = labels[task]
+            logits = self.classifier_heads[task](pooled_output)
             clf_loss = self.classifier_loss_fns[task](
                     logits.view(-1, self.label_spec[task]),
                     task_labels.view(-1))
