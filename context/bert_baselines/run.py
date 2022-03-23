@@ -334,7 +334,8 @@ def format_results_as_markdown_table(results, tasks):
             "Actor": "Actor",
             "Certainty": "Cert",
             "Negation": "Neg",
-            "Temporality": "Temp"
+            "Temporality": "Temp",
+            "Assertion": "Assert",
             }
     # Header
     table = '|'
