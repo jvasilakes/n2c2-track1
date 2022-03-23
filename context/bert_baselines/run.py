@@ -340,11 +340,15 @@ def format_results_as_markdown_table(results, tasks):
     # Header
     table = '|'
     for task in tasks:
-        try:
-            task_str = task_abbrevs[task]
-        except KeyError:
+        if ':' in task:
             # Probably doing multi-dataset learning.
-            task_str = task_abbrevs[task.split(':')[-1]]
+            task_ = task.split(':')[-1]
+        else:
+            task_ = task
+        try:
+            task_str = task_abbrevs[task_]
+        except KeyError:
+            task_str = task_[:6]
         table += f" {task_str: <7} | {'P': <5} | {'R': <5} | {'F1': <5} |"
 
     # Separator
