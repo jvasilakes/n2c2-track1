@@ -84,7 +84,7 @@ class n2c2AssertionPresenceDataset(BratMultiTaskDataset):
         filtered = []
         for ex in examples:
             if ex.value in self.ENCODINGS["Assertion"].keys():
-                filtered.append(ex) 
+                filtered.append(ex)
         return filtered
 
 
@@ -106,7 +106,7 @@ class n2c2AssertionConditionDataset(BratMultiTaskDataset):
         filtered = []
         for ex in examples:
             if ex.value in self.ENCODINGS["Assertion"].keys():
-                filtered.append(ex) 
+                filtered.append(ex)
         return filtered
 
 
