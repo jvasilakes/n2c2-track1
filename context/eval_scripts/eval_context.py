@@ -23,14 +23,21 @@ def parse_args():
 
 
 def main(args):
-    pred_glob_path = os.path.join(args.predictions_dir, "*.ann")
-    pred_files = glob(pred_glob_path)
-    gold_files = [os.path.join(args.gold_dir, os.path.basename(pred_file))
-                  for pred_file in pred_files]
+    gold_glob_path = os.path.join(args.gold_dir, "*.ann")
+    gold_files = glob(gold_glob_path)
+    # Match gold to pred files
+    pred_and_gold_files = []
+    for gold_path in gold_files:
+        bn = os.path.basename(gold_path)
+        pred_path = os.path.join(args.predictions_dir, bn)
+        if not os.path.isfile(pred_path):
+            print(f"No predictions found for {bn}. Skipping...")
+            continue
+        pred_and_gold_files.append((pred_path, gold_path))
 
     all_preds_by_task = defaultdict(list)
     all_golds_by_task = defaultdict(list)
-    for (pred_f, gold_f) in zip(pred_files, gold_files):
+    for (pred_f, gold_f) in pred_and_gold_files:
         pred_anns = BratAnnotations.from_file(pred_f)
         gold_anns = BratAnnotations.from_file(gold_f)
 
