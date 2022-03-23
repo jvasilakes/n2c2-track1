@@ -2,6 +2,7 @@ import bisect
 import warnings
 import itertools
 from typing import List
+from functools import partial
 
 import torch
 import numpy as np
@@ -67,23 +68,27 @@ class CombinedDataModule(BasicBertDataModule):
                     warnings.simplefilter("ignore")
                     dm.setup()
         self.train = CombinedDataset([dm.train for dm in self.datamodules])
-        val_sets = [dm.val for dm in self.datamodules if dm.val is not None]
-        if len(val_sets) == 0:
+        dm_with_val = [dm for dm in self.datamodules if dm.val is not None]
+        if len(dm_with_val) == 0:
             warnings.warn("No dev sets found.")
             self.val = None
         else:
-            if len(val_sets) < len(self.datamodules):
-                warnings.warn("Some datasets do not have a dev set defined.")
-            self.val = CombinedDataset(val_sets)
+            if len(dm_with_val) < len(self.datamodules):
+                dm_wo_val_names = [dm.name for dm in self.datamodules
+                                   if dm not in dm_with_val]
+                warnings.warn(f"The following datasets do not have a dev set defined: {dm_wo_val_names}")  # noqa
+            self.val = CombinedDataset([dm.val for dm in dm_with_val])
 
-        test_sets = [dm.test for dm in self.datamodules if dm.test is not None]
-        if len(test_sets) == 0:
+        dm_with_test = [dm for dm in self.datamodules if dm.test is not None]
+        if len(dm_with_test) == 0:
             warnings.warn("No test sets found.")
             self.test = None
         else:
-            if len(test_sets) < len(self.datamodules):
-                warnings.warn("Some datasets do not have a test set defined.")
-            self.test = CombinedDataset(test_sets)
+            if len(dm_with_test) < len(self.datamodules):
+                dm_wo_test_names = [dm.name for dm in self.datamodules
+                                    if dm not in dm_with_test]
+                warnings.warn(f"The following datasets do not have a test set defined: {dm_wo_test_names}")  # noqa
+            self.test = CombinedDataset([dm.test for dm in dm_with_test])
 
         # Check that datamodule names don't conflict
         if len(self.datamodules) > 1:
@@ -152,7 +157,8 @@ class CombinedDataModule(BasicBertDataModule):
         sampler = ProportionalSampler(
             self.train, strategy=self.dataset_sample_strategy,
             batch_size=self.batch_size)
-        return DataLoader(self.train, collate_fn=self.encode_and_collate,
+        train_collate_fn = partial(self.encode_and_collate, split="train")
+        return DataLoader(self.train, collate_fn=train_collate_fn,
                           num_workers=4, batch_sampler=sampler)
 
     def val_dataloader(self, predicting=False):
@@ -163,7 +169,8 @@ class CombinedDataModule(BasicBertDataModule):
         if predicting is True:
             sampler = torch.utils.data.sampler.BatchSampler(
                     sampler, 1, drop_last=False)
-        return DataLoader(self.val, collate_fn=self.encode_and_collate,
+        val_collate_fn = partial(self.encode_and_collate, split="val")
+        return DataLoader(self.val, collate_fn=val_collate_fn,
                           num_workers=4, batch_sampler=sampler)
 
     def test_dataloader(self):
@@ -171,11 +178,12 @@ class CombinedDataModule(BasicBertDataModule):
             raise ValueError("Run setup() first!")
         if self.test is not None:
             sampler = IterativeDatasetSampler(self.test, self.batch_size)
-            return DataLoader(self.test, collate_fn=self.encode_and_collate,
+            test_collate_fn = partial(self.encoded_and_collate, split="test")
+            return DataLoader(self.test, collate_fn=test_collate_fn,
                               num_workers=4, batch_sampler=sampler)
         return None
 
-    def encode_and_collate(self, examples):
+    def encode_and_collate(self, examples, split="train"):
         """
         Use the encode_and_collate function from the member datamodules.
         """
@@ -184,7 +192,9 @@ class CombinedDataModule(BasicBertDataModule):
         examples = [example for (_, example) in examples]
         collate_fn = self.datamodules[datamodule_index].encode_and_collate
         collated = collate_fn(examples)
-        collated["dataset"] = self.datamodules[datamodule_index].name
+        split_datamods = [dm for dm in self.datamodules
+                          if getattr(dm, split, None) is not None]
+        collated["dataset"] = split_datamods[datamodule_index].name
         # change the name of the task key in labels to use the dataset name
         keys = list(collated["labels"].keys())
         for key in keys:
