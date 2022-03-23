@@ -209,7 +209,15 @@ class ProportionalSampler(torch.utils.data.sampler.Sampler):
     Samples from each Dataset of a ConcatDataset proportional
     to their sizes. Each batch must come from the same dataset.
 
-    If strategy=='annealed', uses the strategy proposed in
+    strategy: {"fixed:{int}", "proportional", "annealed"}
+
+    When strategy=='fixed:{int}', samples from auxiliary datasets
+    with probability {int} in [0,100]. E.g. 'fixed:50'.
+
+    When strategy=='proportional', samples from each dataset
+    with probability proportional to it's training split size.
+
+    When strategy=='annealed', uses the strategy proposed in
     "BERT and PALs: Projected Attention Layers for
      Efficient Adaptation in Multi-Task Learning"
     (Stickland and Murray, 2019)
@@ -219,31 +227,49 @@ class ProportionalSampler(torch.utils.data.sampler.Sampler):
     def __init__(self, dataset: ConcatDataset,
                  strategy="proportional", batch_size=16, **kwargs):
         self.dataset = dataset
-        self.strategy = strategy
+        self.strategy, self.strategy_kwargs = self.validate_strategy(strategy)
         self.batch_size = batch_size
 
         self.num_datasets = len(dataset.datasets)
         self.max_epochs = 10
         self.epoch = 0
 
+    def validate_strategy(self, strategy_str):
+        strategy_kwargs = {}
+        error_msg = f"Unsupported strategy '{strategy_str}'"
+        if ':' in strategy_str:
+            # It should be fixed
+            fixed, prob = strategy_str.split(':')
+            if fixed != "fixed":
+                raise ValueError(error_msg)
+            try:
+                prob = int(prob)
+                prob = prob / 100
+            except ValueError:
+                raise ValueError(error_msg)
+            strategy = fixed
+            strategy_kwargs = {"probability": prob}
+        else:
+            if strategy_str not in ["proportional", "annealed"]:
+                raise ValueError(error_msg)
+            strategy = strategy_str
+        return strategy, strategy_kwargs
+
     def __iter__(self):
         """
-        Because we're sampling from each dataset according to a
-        probability, we'll probably exhaust one before the rest.
-        To address this, we keep track of all non-exhausted datasets
-        and only sample from them each time.
+        Each batch is sampled from one of the datasets with probability
+        computed according to self.dataset_sample_strategy.
+        An epoch finishes when we exhaust just one of the datasets.
         """
-        not_exhausted = np.arange(self.num_datasets)
         dataset_lengths = [len(ds) for ds in self.dataset.datasets]
         idxs = [torch.randperm(length) for length in dataset_lengths]
         groupers = [grouper(shuffled_idxs, self.batch_size)
                     for shuffled_idxs in idxs]
         while True:
             try:
-                probs = self.get_dataset_probs(
-                    [self.dataset.datasets[i] for i in not_exhausted])
+                probs = self.get_dataset_probs()
                 dataset_idx = np.random.choice(
-                    not_exhausted, p=probs)
+                    np.arange(self.num_datasets), p=probs)
                 batch_idxs = next(groupers[dataset_idx])
                 batch_idxs = [i for i in batch_idxs if i is not None]
                 if dataset_idx > 0:
@@ -251,16 +277,19 @@ class ProportionalSampler(torch.utils.data.sampler.Sampler):
                     batch_idxs = [i + offset for i in batch_idxs]
                 yield batch_idxs
             except StopIteration:
-                not_exhausted = [i for i in not_exhausted if i != dataset_idx]
-                if len(not_exhausted) == 0:
-                    self.epoch += 1
-                    break
+                self.epoch += 1
+                break
 
     def get_dataset_probs(self, datasets=None):
         if datasets is None:
             datasets = self.dataset.datasets
         lengths = [len(ds) for ds in datasets]
-        if self.strategy == "proportional":
+        if self.strategy == "fixed":
+            aux_prob = self.strategy_kwargs["probability"]
+            num_aux = len(datasets) - 1
+            main_dataset_prob = 1.0 - (num_aux * aux_prob)
+            probs = [main_dataset_prob, *[aux_prob] * num_aux]
+        elif self.strategy == "proportional":
             probs = [ln/sum(lengths) for ln in lengths]
         elif self.strategy == "annealed":
             alpha = 1 - (0.8 * ((self.epoch - 1) / (self.max_epochs - 1)))
@@ -268,11 +297,33 @@ class ProportionalSampler(torch.utils.data.sampler.Sampler):
             probs = [ln/sum(lengths) for ln in lengths]
         else:
             raise ValueError(f"Unknown strategy '{self.strategy}'")
-        return probs
+        return np.array(probs)
 
     def __len__(self):
-        lengths = [len(ds) for ds in self.dataset.datasets]
-        return int(sum([np.ceil(ln / self.batch_size) for ln in lengths]))
+        """
+        Computing the length of this iterator is awkward because we sample
+        from each dataset according to a probability and end when we've
+        exhausted just one. This means that the actual length of the iterator
+        is unknown and changes every epoch. This is even more uncertain
+        when dataset_sample_strategy=="annealed", because the probabilities
+        change per epoch.
+
+        The length, then, is the weighted (by probability) average of the
+        lengths of the member datasets minus one standard deviation.
+        This should be a decent approximation and should keep the epoch
+        from ending early (causing PyTorch Lightning to skip validation)
+        most of the time.
+        """
+        # Compute weighted average of lengths
+        lengths = np.array([len(ds) for ds in self.dataset.datasets])
+        probs = self.get_dataset_probs()
+        weighted_avg = np.sum(lengths * probs)
+        epochs = int(np.ceil(weighted_avg / self.batch_size))
+        # Computed weighted standard deviation of lengths
+        weighted_diffs = probs * ((lengths - weighted_avg)**2)
+        weighted_std = np.sqrt(np.sum(weighted_diffs))
+        std_epochs = int(np.ceil(weighted_std / self.batch_size))
+        return epochs - std_epochs
 
 
 class IterativeDatasetSampler(torch.utils.data.sampler.Sampler):
