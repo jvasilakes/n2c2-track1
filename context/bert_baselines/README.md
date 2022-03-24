@@ -79,6 +79,12 @@ Below are descriptions for some of the less obvious parameters you can specify i
 * `tasks_to_load`: List of the context classification tasks to perform. Valid options are `"all"`, or any subset of `["Action", "Actor", "Certainity", "Negation", "Temporality"]`
 * `window_size`: Number of additional sentences before and after the target sentence to use. Default 0.
 * `max_train_examples`: `null` or `int`. Limit the number of training examples. Useful for debugging.
+* `auxiliary_data`: This is a dict keyed by datamodule names in `data.DATAMODULE_LOOKUP` with values exactly the same as the Data Options above. If `auxiliary_data` is not empty, the primary dataset and all auxiliary datasets are loaded into a `data.combined.CombinedDataModule`. Each batch sampled from a `CombinedDataModule` contains examples from a single dataset. Batches/datasets are sampled according to `dataset_sample_strategy`, described below.
+* `dataset_sample_strategy`: Only used if `auxiliary_data` is not empty. Possible values are `concat`, `fixed:{int}`, `proportional`, and `annealed`.
+  - `concat`: Simply concatenate all the datasets and run through them all during training. Shuffles both the example indices within each dataset and the order in which the datasets are sampled.
+  - `fixed:{int}`: Where `{int}` is an integer within 0 to 100 that represents the probability of sampling one of the auxiliary datasets. This probability is applied *per auxiliary dataset*. So, for example, specifying `fixed:10` with two auxiliary datasets means that on average 20% of the training steps per epoch will come from either of the auxiliary datasets.
+  - `proportional`: Sample from each dataset (main + all auxiliaries) with probabilities proportional to their number of training examples.
+  - `annealed`: Like proportional, except the probabilities are annealed per epoch to become uniform after 10 epochs. Introduced by [Stickland and Murray, 2019][1].
 
 ### Model options
 * `model_name`: Model to run, corresponding to entries in `models.MODEL_LOOKUP.keys()`.
@@ -102,3 +108,6 @@ Below are descriptions for some of the less obvious parameters you can specify i
 # Results
 
 See [Results.md](https://github.com/jvasilakes/n2c2-track1/blob/master/context/bert_baselines/Results.md).
+
+
+[1]: https://proceedings.mlr.press/v97/stickland19a.html

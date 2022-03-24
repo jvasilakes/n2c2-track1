@@ -50,6 +50,9 @@ class CombinedDataModule(BasicBertDataModule):
     def __init__(self, datamodules: List[BasicBertDataModule],
                  dataset_sample_strategy="proportional"):
         super().__init__()
+        # Sometimes this module can hit the system open file limit.
+        # This seems to fix that.
+        torch.multiprocessing.set_sharing_strategy('file_system')
         self.datamodules = datamodules
         self.dataset_sample_strategy = dataset_sample_strategy
         # These are populated in setup(), after checking
@@ -154,9 +157,14 @@ class CombinedDataModule(BasicBertDataModule):
     def train_dataloader(self):
         if self._ran_setup is False:
             raise ValueError("Run setup() first!")
-        sampler = ProportionalSampler(
-            self.train, strategy=self.dataset_sample_strategy,
-            batch_size=self.batch_size)
+        if self.dataset_sample_strategy == "concat":
+            sampler = IterativeDatasetSampler(
+                    self.train, self.batch_size,
+                    predicting=False, shuffle=True)
+        else:
+            sampler = ProportionalSampler(
+                self.train, strategy=self.dataset_sample_strategy,
+                batch_size=self.batch_size)
         train_collate_fn = partial(self.encode_and_collate, split="train")
         return DataLoader(self.train, collate_fn=train_collate_fn,
                           num_workers=4, batch_sampler=sampler)
@@ -166,6 +174,12 @@ class CombinedDataModule(BasicBertDataModule):
             raise ValueError("Run setup() first!")
         sampler = IterativeDatasetSampler(
                 self.val, self.batch_size, predicting=predicting)
+        # PyTorch Lightning does some weird stuff with dataset samplers
+        # when running prediction, specifically re-instantiating the
+        # sampler with some assumptions regarding its type. To avoid any
+        # errors but satisfy the requirement that each batch must contain
+        # examples from a single dataset, we have to use a batch size of
+        # 1 and wrap IterativeDatasetSampler in a BatchSampler.
         if predicting is True:
             sampler = torch.utils.data.sampler.BatchSampler(
                     sampler, 1, drop_last=False)
@@ -173,11 +187,21 @@ class CombinedDataModule(BasicBertDataModule):
         return DataLoader(self.val, collate_fn=val_collate_fn,
                           num_workers=4, batch_sampler=sampler)
 
-    def test_dataloader(self):
+    def test_dataloader(self, predicting=False):
         if self._ran_setup is False:
             raise ValueError("Run setup() first!")
         if self.test is not None:
-            sampler = IterativeDatasetSampler(self.test, self.batch_size)
+            sampler = IterativeDatasetSampler(
+                    self.test, self.batch_size, predicting=predicting)
+            # PyTorch Lightning does some weird stuff with dataset samplers
+            # when running prediction, specifically re-instantiating the
+            # sampler with some assumptions regarding its type. To avoid any
+            # errors but satisfy the requirement that each batch must contain
+            # examples from a single dataset, we have to use a batch size of
+            # 1 and wrap IterativeDatasetSampler in a BatchSampler.
+            if predicting is True:
+                sampler = torch.utils.data.sampler.BatchSampler(
+                        sampler, 1, drop_last=False)
             test_collate_fn = partial(self.encoded_and_collate, split="test")
             return DataLoader(self.test, collate_fn=test_collate_fn,
                               num_workers=4, batch_sampler=sampler)
@@ -261,8 +285,7 @@ class ProportionalSampler(torch.utils.data.sampler.Sampler):
         computed according to self.dataset_sample_strategy.
         An epoch finishes when we exhaust just one of the datasets.
         """
-        dataset_lengths = [len(ds) for ds in self.dataset.datasets]
-        idxs = [torch.randperm(length) for length in dataset_lengths]
+        idxs = [torch.randperm(len(ds)) for ds in self.dataset.datasets]
         groupers = [grouper(shuffled_idxs, self.batch_size)
                     for shuffled_idxs in idxs]
         while True:
@@ -328,29 +351,53 @@ class ProportionalSampler(torch.utils.data.sampler.Sampler):
 
 class IterativeDatasetSampler(torch.utils.data.sampler.Sampler):
     """
-    Each batch must come from the same dataset.
+    Just like concatenated datasets except each batch must
+    come from the same dataset.
+
+    If shuffle is True, shuffle the examples within each dataset,
+    as well as the order in which batches are sampled.
     """
     def __init__(self, dataset: ConcatDataset,
-                 batch_size=16, predicting=False):
+                 batch_size=16, predicting=False, shuffle=False):
         self.dataset = dataset
         self.batch_size = batch_size
         self.predicting = predicting
+        self.shuffle = shuffle
+        if self.predicting is True and self.shuffle is True:
+            warnings.warn("You are running prediction but have set shuffle=True. Are you sure you want to do this?")  # noqa
         self.num_datasets = len(dataset.datasets)
 
     def __iter__(self):
-        for (dataset_idx, dataset) in enumerate(self.dataset.datasets):
-            idxs = np.arange(len(dataset))
-            if dataset_idx > 0:
-                idx_offset = self.dataset.cumulative_sizes[dataset_idx - 1]
-            else:
-                idx_offset = 0
-            for batch_idxs in grouper(idxs, self.batch_size):
-                batch_idxs = [i + idx_offset for i in batch_idxs
-                              if i is not None]
+        """
+        Very similar to __iter__ from ProportionalSampler: each batch must
+        be comprised of examples from the same dataset but we exhaust
+        all datasets.
+        """
+        all_idxs = [np.arange(len(ds)) for ds in self.dataset.datasets]
+        if self.shuffle is True:
+            for idxs in all_idxs:
+                np.random.shuffle(idxs)
+        groupers = [grouper(idxs, self.batch_size) for idxs in all_idxs]
+
+        not_exhausted = np.arange(len(self.dataset.datasets))
+        while True:
+            try:
+                dataset_idx = np.random.choice(not_exhausted)
+                batch_idxs = next(groupers[dataset_idx])
+                batch_idxs = [i for i in batch_idxs if i is not None]
+                if dataset_idx > 0:
+                    offset = self.dataset.cumulative_sizes[dataset_idx - 1]
+                    batch_idxs = [i + offset for i in batch_idxs]
                 if self.predicting is True:
                     yield from batch_idxs
                 else:
                     yield batch_idxs
+            except StopIteration:
+                not_exhausted = [i for i in not_exhausted if i != dataset_idx]
+                if len(not_exhausted) == 0:
+                    break
+                else:
+                    continue
 
     def __len__(self):
         lengths = [len(ds) for ds in self.dataset.datasets]
