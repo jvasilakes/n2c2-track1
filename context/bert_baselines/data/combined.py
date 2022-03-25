@@ -11,11 +11,6 @@ from torch.utils.data import ConcatDataset, DataLoader
 from .base import BasicBertDataModule
 
 
-def grouper(iterable, n, fillvalue=None):
-    args = [iter(iterable)] * n
-    return itertools.zip_longest(fillvalue=fillvalue, *args)
-
-
 class CombinedDataset(ConcatDataset):
 
     def __init__(self, *args, **kwargs):
@@ -48,13 +43,15 @@ class CombinedDataModule(BasicBertDataModule):
     """
 
     def __init__(self, datamodules: List[BasicBertDataModule],
-                 dataset_sample_strategy="proportional"):
+                 dataset_sample_strategy="proportional",
+                 dataset_sample_kwargs=None):
         super().__init__()
         # Sometimes this module can hit the system open file limit.
         # This seems to fix that.
         torch.multiprocessing.set_sharing_strategy('file_system')
         self.datamodules = datamodules
         self.dataset_sample_strategy = dataset_sample_strategy
+        self.dataset_sample_kwargs = dataset_sample_kwargs or {}
         # These are populated in setup(), after checking
         # that they are all compatible.
         self.batch_size = None
@@ -163,8 +160,9 @@ class CombinedDataModule(BasicBertDataModule):
                     predicting=False, shuffle=True)
         else:
             sampler = ProportionalSampler(
-                self.train, strategy=self.dataset_sample_strategy,
-                batch_size=self.batch_size)
+                self.train, batch_size=self.batch_size,
+                strategy=self.dataset_sample_strategy,
+                strategy_kwargs=self.dataset_sample_kwargs)
         train_collate_fn = partial(self.encode_and_collate, split="train")
         return DataLoader(self.train, collate_fn=train_collate_fn,
                           num_workers=4, batch_sampler=sampler)
@@ -247,20 +245,36 @@ class ProportionalSampler(torch.utils.data.sampler.Sampler):
     (Stickland and Murray, 2019)
     https://proceedings.mlr.press/v97/stickland19a.html
     """
+    VALID_STRATEGIES = [
+            "length-proportional",
+            "length-annealed",
+            "length-annealed-inv",
+            "weighted",
+            "weighted-annealed",
+            "weighted-annealed-inv",
+            ]
 
-    def __init__(self, dataset: ConcatDataset,
-                 strategy="proportional", batch_size=16, **kwargs):
+    def __init__(self, dataset: ConcatDataset, batch_size=16,
+                 strategy="proportional", strategy_kwargs=None):
         self.dataset = dataset
-        self.strategy, self.strategy_kwargs = self.validate_strategy(strategy)
         self.batch_size = batch_size
+        self.strategy, self.strategy_kwargs = self.validate_strategy(
+                strategy, strategy_kwargs)
 
         self.num_datasets = len(dataset.datasets)
         self.max_epochs = 10
         self.epoch = 0
 
-    def validate_strategy(self, strategy_str):
-        strategy_kwargs = {}
+    def validate_strategy(self, strategy_str, strategy_kwargs):
+        strategy_kwargs = strategy_kwargs or {}
         error_msg = f"Unsupported strategy '{strategy_str}'"
+
+        if strategy_str not in self.VALID_STRATEGIES:
+            raise ValueError(error_msg)
+
+        strategy_cls = self.get_strategy(strategy_str)
+        strategy = strategy_cls(**strategy_kwargs)
+
         if ':' in strategy_str:
             # It should be fixed
             fixed, prob = strategy_str.split(':')
@@ -315,7 +329,11 @@ class ProportionalSampler(torch.utils.data.sampler.Sampler):
         elif self.strategy == "proportional":
             probs = [ln/sum(lengths) for ln in lengths]
         elif self.strategy == "annealed":
-            alpha = 1 - (0.8 * ((self.epoch - 1) / (self.max_epochs - 1)))
+            alpha = 1. - (0.8 * ((self.epoch - 1) / (self.max_epochs - 1)))
+            lengths = [ln**alpha for ln in lengths]
+            probs = [ln/sum(lengths) for ln in lengths]
+        elif self.strategy == "annealed-inv":
+            alpha = 0. + (0.8 * ((self.epoch - 1) / (self.max_epochs - 1)))
             lengths = [ln**alpha for ln in lengths]
             probs = [ln/sum(lengths) for ln in lengths]
         else:
@@ -405,3 +423,175 @@ class IterativeDatasetSampler(torch.utils.data.sampler.Sampler):
 
     def str(self):
         return "IterativeDatasetSampler"
+
+
+class DatasetSampler(torch.utils.data.sampler.Sampler):
+    """
+    The base strategy for sampling from a set of Datasets
+    where every example in a batch must be from the same Dataset.
+
+    Usage:
+      sampler = DatasetSampler([dataset1, dataset2, ...], 16, **kwargs)
+      sampler.setup()
+      for batch_idxs in sampler:
+         ...
+    """
+
+    def __init__(
+            self,
+            dataset: ConcatDataset,
+            batch_size,
+            shuffle_examples=False,
+            exhaust_all=True,
+            name=None):
+        self.name = name or "DatasetSampler"
+        self.dataset = dataset
+        self.batch_size = batch_size
+        self.shuffle_examples = shuffle_examples
+        self.exhaust_all = exhaust_all
+        self._ran_setup = False
+
+    def setup(self):
+        self.valid_dataset_idxs = list(range(len(self.dataset.datasets)))
+        self.batchers = self._get_batchers()
+        self._ran_setup = True
+
+    def __iter__(self):
+        # Reset valid datasets and batchers
+        self.setup()
+        while True:
+            try:
+                dataset_idx = self.sample_dataset_idx()
+                yield self.sample_batch(dataset_idx)
+            except StopIteration:
+                self.rm_dataset(dataset_idx)
+                if self.exhausted is True:
+                    break
+
+    def sample_dataset_idx(self):
+        if self._ran_setup is False:
+            raise ValueError("run DatasetSampler.setup() first!")
+        raise NotImplementedError()
+
+    def sample_batch(self, dataset_idx):
+        if self._ran_setup is False:
+            raise ValueError("run DatasetSampler.setup() first!")
+        batch_idxs = next(self.batchers[dataset_idx])
+        batch_idxs = [i for i in batch_idxs if i is not None]
+        if dataset_idx > 0:
+            offset = self.dataset.cumulative_sizes[dataset_idx - 1]
+            batch_idxs = [i + offset for i in batch_idxs]
+        return batch_idxs
+
+    def _get_batchers(self):
+        batchers = []
+        for dataset in self.dataset.datasets:
+            example_idxs = np.arange(len(dataset))
+            if self.shuffle_examples is True:
+                np.random.shuffle(example_idxs)
+            batcher = self._grouper(example_idxs, self.batch_size)
+            batchers.append(batcher)
+        return batchers
+
+    @staticmethod
+    def _grouper(iterable, n, fillvalue=None):
+        args = [iter(iterable)] * n
+        return itertools.zip_longest(fillvalue=fillvalue, *args)
+
+    def rm_dataset(self, idx):
+        """
+        Remove the dataset at idx from this sampler.
+        """
+        if self._ran_setup is False:
+            raise ValueError("run DatasetSampler.setup() first!")
+        try:
+            self.valid_dataset_idxs.remove(idx)
+        except ValueError:
+            raise IndexError(f"No dataset at index {idx}.")
+
+    @property
+    def exhausted(self):
+        if self._ran_setup is False:
+            raise ValueError("run DatasetSampler.setup() first!")
+        if self.exhaust_all is True:
+            if len(self.valid_dataset_idxs) == 0:
+                return True
+        else:
+            if len(self.valid_dataset_idxs) < len(self.dataset.datasets):
+                return True
+
+
+class SequentialDatasetSampler(DatasetSampler):
+    """
+    Goes through the datasets in order. Note that the examples
+    within each dataset will not be in order if shuffle_examples=True.
+    """
+    def __init__(self, *args, **kwargs):
+        if "name" not in kwargs.keys():
+            kwargs["name"] = "SequentialDatasetSampler"
+        super().__init__(*args, **kwargs)
+
+    def sample_dataset_idx(self):
+        return self.valid_dataset_idxs[0]
+
+
+class RandomDatasetSampler(DatasetSampler):
+
+    def __init__(self, *args, **kwargs):
+        if "name" not in kwargs.keys():
+            kwargs["name"] = "RandomDatasetSampler"
+        super().__init__(*args, **kwargs)
+
+    def sample_dataset_idx(self):
+        return np.random.choice(self.valid_dataset_idxs)
+
+
+# TODO: rename to WeightedDatasetSampler
+class ProportionalDatasetSampler(DatasetSampler):
+    """
+    prop_to: "lengths" or list of positive numbers representing weights.
+             If "lengths", samples proportionally to the number of
+             examples in the datasets.
+    """
+    def __init__(self, *args, prop_to="lengths", **kwargs):
+        if "name" not in kwargs.keys():
+            kwargs["name"] = "ProportionalDatasetSampler"
+        super().__init__(*args, **kwargs)
+        self.prop_to = prop_to
+        self.weights = self._get_weights(prop_to)
+
+    def sample_dataset_idx(self):
+        valid_weights = [self.weights[i] for i in self.valid_dataset_idxs]
+        probs = [w/sum(valid_weights) for w in valid_weights]
+        return np.random.choice(self.valid_dataset_idxs, p=probs)
+
+    def _get_weights(self, prop_to):
+        if isinstance(prop_to, str):
+            if prop_to == "lengths":
+                weights = [len(ds) for ds in self.dataset.datasets]
+        elif isinstance(prop_to, (list, np.ndarray)):
+            if len(prop_to) != len(self.dataset.datasets):
+                raise ValueError(f"Got different number of weights and datasets: {len(prop_to)}, {len(datasets)}")  # noqa
+            weights = [float(w) for w in prop_to]
+            assert [w > 0. for w in weights]
+        else:
+            raise ValueError(f"prop_to should be 'lengths' for list of positive numbers. Got {prop_to}.")  # noqa
+        return weights
+
+
+class AnnealedDatasetSampler(DatasetSampler):
+    """
+    Wraps a ProportionalDatasetSampler.
+    """
+    def __init__(self, sampler: ProportionalDatasetSampler, max_steps=1):
+        self.sampler = sampler
+        self.step = 0
+        self.max_steps = max_steps
+        self.weights = self.sampler.weights
+
+    def sample_dataset_idx(self):
+        alpha = 1. - (0.8 * ((self.step - 1) / (self.max_steps - 1)))
+        valid_weights = [self.weights[i] for i in self.valid_dataset_idxs]
+        valid_weights = [vw**alpha for vw in valid_weights]
+        probs = [vw/sum(valid_weights) for vw in valid_weights]
+        return np.random.choice(self.valid_dataset_idxs, p=probs)
