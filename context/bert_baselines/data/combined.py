@@ -17,6 +17,16 @@ def grouper(iterable, n, fillvalue=None):
     return itertools.zip_longest(fillvalue=fillvalue, *args)
 
 
+SAMPLER_LOOKUP = {}
+
+
+def register_sampler(name):
+    def add_to_lookup(cls):
+        SAMPLER_LOOKUP[name] = cls
+        return cls
+    return add_to_lookup
+
+
 class CombinedDataset(ConcatDataset):
 
     def __init__(self, *args, **kwargs):
@@ -160,18 +170,10 @@ class CombinedDataModule(BasicBertDataModule):
     def train_dataloader(self):
         if self._ran_setup is False:
             raise ValueError("Run setup() first!")
-        # TODO: change to new samplers
-        if self.dataset_sample_strategy == "concat":
-            sampler = SequentialDatasetSampler(
-                self.train, self.batch_size,
-                shuffle_examples=True,
-                exhaust_all=False)
-        # if self.dataset_sample_strategy == "annealed":
-        else:
-            sampler = ProportionalSampler(
-                self.train, batch_size=self.batch_size,
-                strategy=self.dataset_sample_strategy,
-                strategy_kwargs=self.dataset_sample_kwargs)
+        sampler_class = SAMPLER_LOOKUP[self.dataset_sample_strategy]
+        sampler = sampler_class(
+            self.train, self.batch_size, shuffle_examples=True,
+            **self.dataset_sample_kwargs)
         train_collate_fn = partial(self.encode_and_collate, split="train")
         return DataLoader(self.train, collate_fn=train_collate_fn,
                           num_workers=4, batch_sampler=sampler)
@@ -179,8 +181,11 @@ class CombinedDataModule(BasicBertDataModule):
     def val_dataloader(self, predicting=False):
         if self._ran_setup is False:
             raise ValueError("Run setup() first!")
-        sampler = IterativeDatasetSampler(
-                self.val, self.batch_size, predicting=predicting)
+        val_batch_size = self.batch_size
+        if predicting is True:
+            val_batch_size = 1
+        sampler = SequentialDatasetSampler(
+            self.val, val_batch_size, shuffle_examples=False, exhaust_all=True)
         # PyTorch Lightning does some weird stuff with dataset samplers
         # when running prediction, specifically re-instantiating the
         # sampler with some assumptions regarding its type. To avoid any
@@ -198,8 +203,12 @@ class CombinedDataModule(BasicBertDataModule):
         if self._ran_setup is False:
             raise ValueError("Run setup() first!")
         if self.test is not None:
-            sampler = IterativeDatasetSampler(
-                    self.test, self.batch_size, predicting=predicting)
+            test_batch_size = self.batch_size
+            if predicting is True:
+                test_batch_size = 1
+            sampler = SequentialDatasetSampler(
+                self.test, test_batch_size,
+                shuffle_examples=False, exhaust_all=True)
             # PyTorch Lightning does some weird stuff with dataset samplers
             # when running prediction, specifically re-instantiating the
             # sampler with some assumptions regarding its type. To avoid any
@@ -545,6 +554,7 @@ class DatasetSampler(torch.utils.data.sampler.Sampler):
         return itertools.zip_longest(fillvalue=fillvalue, *args)
 
 
+@register_sampler("sequential")
 class SequentialDatasetSampler(DatasetSampler):
     """
     Goes through the datasets in order. Note that the examples
@@ -559,6 +569,7 @@ class SequentialDatasetSampler(DatasetSampler):
         return self.valid_dataset_idxs[0]
 
 
+@register_sampler("random")
 class RandomDatasetSampler(DatasetSampler):
 
     def __init__(self, *args, **kwargs):
@@ -570,6 +581,7 @@ class RandomDatasetSampler(DatasetSampler):
         return np.random.choice(self.valid_dataset_idxs)
 
 
+@register_sampler("weighted")
 class WeightedDatasetSampler(DatasetSampler):
     """
     weights: None or list of positive numbers representing the
@@ -589,6 +601,7 @@ class WeightedDatasetSampler(DatasetSampler):
     def _get_weights(self, weights):
         if weights is None:
             weights = np.ones(len(self.dataset.datasets))
+            warnings.warn("No weights specified for WeightedDatasetSampler. Falling back to Uniform weights.")  # noqa
         elif isinstance(weights, (list, np.ndarray)):
             if len(weights) != len(self.dataset.datasets):
                 raise ValueError(f"Got different number of weights and datasets: {len(prop_to)}, {len(datasets)}")  # noqa
@@ -599,6 +612,7 @@ class WeightedDatasetSampler(DatasetSampler):
         return weights
 
 
+@register_sampler("scheduled")
 class ScheduledWeightedSampler(DatasetSampler):
     """
     Wraps a WeightedDatasetSampler to modify the
@@ -621,9 +635,10 @@ class ScheduledWeightedSampler(DatasetSampler):
     is to set the weights of the sampler to the lengths of each dataset
     and set num_cycles=0.2.
     """
-    def __init__(self, sampler: WeightedDatasetSampler,
-                 max_steps=10, num_cycles=1, shift=0.0, invert=False):
-        self.sampler = sampler
+    def __init__(self, *sampler_args,
+                 max_steps=10, num_cycles=1, shift=0.0, invert=False,
+                 **sampler_kwargs):
+        self.sampler = WeightedDatasetSampler(*sampler_args, **sampler_kwargs)
         self.max_steps = max_steps
         self.num_cycles = num_cycles
         self.shift = shift
@@ -671,3 +686,9 @@ class ScheduledWeightedSampler(DatasetSampler):
         plt.ylim(0.0, 1.0)
         plt.legend()
         plt.show()
+
+
+if __name__ == "__main__":
+    print("Available dataset sampling methods")
+    for (name, cls) in SAMPLER_LOOKUP.items():
+        print(f"  {name}: {cls}")

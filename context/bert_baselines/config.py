@@ -5,6 +5,8 @@ import warnings
 from typing import List, Dict, Union
 from collections import OrderedDict, defaultdict
 
+from data import DATAMODULE_LOOKUP
+
 
 # Be able to yaml.dump an OrderedDict
 # https://gist.github.com/oglops/c70fb69eef42d40bed06
@@ -43,6 +45,7 @@ class ExperimentConfig(object):
                 "max_train_examples",
                 "auxiliary_data",
                 "dataset_sample_strategy",
+                "dataset_sample_kwargs",
             ],
             "Model": [
                 "model_name",
@@ -124,7 +127,8 @@ class ExperimentConfig(object):
             # dataset_name is used to determine which dataset to use.
             auxiliary_data: Dict[str, List] = None,
             # Ignored if auxiliary_data is None
-            dataset_sample_strategy: str = "proportional",
+            dataset_sample_strategy: str = "concat",
+            dataset_sample_kwargs: Dict = None,
             # Model
             model_name: str = '',
             bert_model_name_or_path: str = '',
@@ -163,6 +167,7 @@ class ExperimentConfig(object):
         self.max_train_examples = max_train_examples
         self.auxiliary_data = auxiliary_data or {}
         self.dataset_sample_strategy = dataset_sample_strategy
+        self.dataset_sample_kwargs = dataset_sample_kwargs or {}
         # Model
         self.model_name = model_name
         self.bert_model_name_or_path = bert_model_name_or_path
@@ -204,21 +209,6 @@ class ExperimentConfig(object):
         yaml_str = '  ' + yaml_str.replace('\n', '\n  ')
         return "ExperimentConfig\n----------------\n" + yaml_str
 
-    def _validate_param(self, param_name, valid_values,
-                        default_value, errors="raise"):
-        param_value = getattr(self, param_name)
-        if param_value not in valid_values:
-            if errors == "raise":
-                raise ConfigError(
-                    f"Unsupported {param_name} '{param_value}'. Expected one of {valid_values}.")  # noqa
-            elif errors == "warn":
-                warnings.warn(f"Found unsupported value '{param_value}' for {param_name}. Default '{default_value}'.")  # noqa
-            elif errors == "fix":
-                setattr(self, param_name, default_value)
-                warnings.warn(f"{param_name} set to default `{default_value}` from unsupported value `{param_value}`.")  # noqa
-            else:
-                raise ValueError(f"Unknown errors value {errors}. Expected 'fix' or 'raise'.")  # noqa
-
     def validate(self, errors="raise"):
         valid_entity_pool_fns = ["mean", "max", "first", "last", "first-last"]
         self._validate_param("entity_pool_fn", valid_entity_pool_fns,
@@ -227,6 +217,9 @@ class ExperimentConfig(object):
         valid_sample_strategies = [None, "weighted"]
         self._validate_param("sample_strategy", valid_sample_strategies,
                              default_value=None, errors=errors)
+
+        if self.auxiliary_data != {}:
+            self._validate_auxiliary_data(errors=errors)
 
         used_params = set([key for key in self.__dict__.keys()
                            if not key.startswith('_')])
@@ -242,6 +235,65 @@ class ExperimentConfig(object):
             ExperimentConfig.organized_param_names but not defined:
             {organized_but_not_used}"""
             raise ConfigError(msg)
+
+    def _validate_param(self, param_name, valid_values,
+                        default_value, errors="raise"):
+        param_value = getattr(self, param_name)
+        if param_value not in valid_values:
+            if errors == "raise":
+                raise ConfigError(
+                    f"Unsupported {param_name} '{param_value}'. Expected one of {valid_values}.")  # noqa
+            elif errors == "warn":
+                warnings.warn(f"Found unsupported value '{param_value}' for {param_name}. Default '{default_value}'.")  # noqa
+            elif errors == "fix":
+                setattr(self, param_name, default_value)
+                warnings.warn(f"{param_name} set to default `{default_value}` from unsupported value `{param_value}`.")  # noqa
+            else:
+                raise ValueError(f"Unknown errors value {errors}. Expected 'fix' or 'raise'.")  # noqa
+
+    def _validate_auxiliary_data(self, errors="raise"):
+        required_keys = set([
+            "dataset_name", "data_dir", "sentences_dir",
+            "tasks_to_load", "window_size", "max_train_examples"
+        ])
+        for (datamod, data_kwargs) in self.auxiliary_data.items():
+            if datamod not in DATAMODULE_LOOKUP.keys():
+                raise ValueError(f"Unkown data module name '{datamod}'. Check data/__init__.py.")  # noqa
+            used_keys = set()
+            unused_keys = set()
+            for (key, val) in data_kwargs.items():
+                if key not in required_keys:
+                    unused_keys.add(key)
+                elif key in required_keys:
+                    required_type = type(getattr(self, key))
+                    wrong_type_msg = f"Incorrect type for auxiliary_data kwarg '{datamod}:{key}'. Got '{type(val)}' but expected '{required_type}'."  # noqa
+                    if not isinstance(val, required_type):
+                        if errors == "raise":
+                            raise ValueError(wrong_type_msg)
+                        elif errors == "warn":
+                            warnings.warn(wrong_type_msg)
+                        elif errors == "fix":
+                            warnings.warn("Fixing auxiliary_data kwargs not supported! Do it yourself!")  # noqa
+                            raise ValueError(wrong_type_msg)
+                    used_keys.add(key)
+            if used_keys != required_keys:
+                missing_keys = ', '.join(required_keys.difference(used_keys))
+                miss_keys_msg = f"Missing the following auxiliary_data kwargs: {datamod}:{missing_keys}."  # noqa
+                if errors == "raise":
+                    raise ValueError(miss_keys_msg)
+                elif errors == "warn":
+                    warnings.warn(miss_keys_msg)
+                elif errors == "fix":
+                    warnings.warn("Fixing auxiliary_data kwargs not supported! Do it yourself!")  # noqa
+                    raise ValueError(miss_keys_msg)
+            if len(unused_keys) > 0:
+                unused_keys_str = ', '.join(unused_keys)
+                warnings.warn(f"The following kwargs are not supported and will be ignored {datamod}:{unused_keys_str}")  # noqa
+
+        valid_dataset_strategies = ["concat", "weighted", "scheduled"]
+        self._validate_param(
+            "dataset_sample_strategy", valid_dataset_strategies,
+            default_value="concat", errors=errors)
 
     def update(self, key, value):
         if key in ["tasks_to_load", "classifier_loss_kwargs", "mask_loss_kwargs"]:  # noqa

@@ -119,11 +119,11 @@ def load_datamodule_from_config(config: ExperimentConfig):
     if len(config.auxiliary_data) > 0:
         all_datamods = [datamodule]
         dm_names = [datamodule.name]
-        for (dataset_name, kwargs) in config.auxiliary_data.items():
-            datamodule_cls = DATAMODULE_LOOKUP[dataset_name]
+        for (datakey, kwargs) in config.auxiliary_data.items():
+            datamodule_cls = DATAMODULE_LOOKUP[kwargs["dataset_name"]]
             dm = datamodule_cls.from_config(config, **kwargs)
             if dm.name in dm_names:
-                raise ValueError(f"Already loaded a datamodule '{dm.name}'! Make sure you're not using duplicate datasets or specify a unique name for any entries under `auxiliary_data`.")  # noqa
+                raise ValueError(f"Already loaded a datamodule '{dm.name}'!")
             all_datamods.append(dm)
             dm_names.append(dm.name)
         datamodule = CombinedDataModule(
