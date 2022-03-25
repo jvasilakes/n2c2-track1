@@ -79,6 +79,8 @@ class ExperimentConfig(object):
             if key not in cls.param_names():
                 if errors == "raise":
                     raise ValueError(f"Unsupported config parameter '{key}'")  # noqa
+                elif errors == "warn":
+                    warnings.warn(f"Found unsupported parameter '{key}': {config[key]}'.")  # noqa
                 elif errors == "fix":
                     warnings.warn(f"Ignoring unsupported config parameter '{key}: {config[key]}'.")  # noqa
                     to_del.add(key)
@@ -209,6 +211,8 @@ class ExperimentConfig(object):
             if errors == "raise":
                 raise ConfigError(
                     f"Unsupported {param_name} '{param_value}'. Expected one of {valid_values}.")  # noqa
+            elif errors == "warn":
+                warnings.warn(f"Found unsupported value '{param_value}' for {param_name}. Default '{default_value}'.")  # noqa
             elif errors == "fix":
                 setattr(self, param_name, default_value)
                 warnings.warn(f"{param_name} set to default `{default_value}` from unsupported value `{param_value}`.")  # noqa
@@ -284,6 +288,11 @@ if __name__ == "__main__":
     newconf_parser.add_argument("filepath", type=str,
                                 help="Where to save the config file.")
 
+    val_parser = subparsers.add_parser(
+        "validate", help="Check one or more config files for errors.")
+    val_parser.add_argument("-f", "--files", nargs='+', type=str,
+                            help="""Files to check""")
+
     update_parser = subparsers.add_parser(
         "update",
         help="""Update one or more config files
@@ -296,6 +305,10 @@ if __name__ == "__main__":
     args = parser.parse_args()
     if args.command == "new":
         ExperimentConfig.write_default_config(args.filepath)
+    elif args.command == "validate":
+        for filepath in args.files:
+            print(f"Checking {filepath}")
+            conf = ExperimentConfig.from_yaml_file(filepath, errors="warn")
     elif args.command == "update":
         if args.kwarg is None:
             update_kwargs = {}
