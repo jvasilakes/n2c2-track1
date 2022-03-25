@@ -127,7 +127,9 @@ def load_datamodule_from_config(config: ExperimentConfig):
             all_datamods.append(dm)
             dm_names.append(dm.name)
         datamodule = CombinedDataModule(
-            all_datamods, dataset_sample_strategy=config.dataset_sample_strategy)  # noqa
+            all_datamods,
+            dataset_sample_strategy=config.dataset_sample_strategy,
+            dataset_sample_kwargs=config.dataset_sample_kwargs)
     return datamodule
 
 
