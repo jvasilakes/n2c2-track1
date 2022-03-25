@@ -13,17 +13,17 @@ import brat_reader as br
 from .base import BratMultiTaskDataset, BasicBertDataModule
 
 
-DATASET_REGISTRY = {}
+DATASET_LOOKUP = {}
 
 
-def register(name):
-    def add_to_registry(cls):
-        DATASET_REGISTRY[name] = cls
+def register_dataset(name):
+    def add_to_lookup(cls):
+        DATASET_LOOKUP[name] = cls
         return cls
-    return add_to_registry
+    return add_to_lookup
 
 
-@register("n2c2Context")
+@register_dataset("n2c2Context")
 class n2c2ContextDataset(BratMultiTaskDataset):
     EXAMPLE_TYPE = "Disposition"
     ENCODINGS = {
@@ -51,7 +51,7 @@ class n2c2ContextDataset(BratMultiTaskDataset):
     END_ENTITY_MARKER = '@'
 
 
-@register("n2c2Assertion")
+@register_dataset("n2c2Assertion")
 class n2c2AssertionDataset(BratMultiTaskDataset):
     EXAMPLE_TYPE = "Assertion"
     ENCODINGS = {
@@ -68,7 +68,7 @@ class n2c2AssertionDataset(BratMultiTaskDataset):
     END_ENTITY_MARKER = '@'
 
 
-@register("n2c2Assertion-Presence")
+@register_dataset("n2c2Assertion-Presence")
 class n2c2AssertionPresenceDataset(BratMultiTaskDataset):
     EXAMPLE_TYPE = "Assertion"
     ENCODINGS = {
@@ -88,7 +88,7 @@ class n2c2AssertionPresenceDataset(BratMultiTaskDataset):
         return filtered
 
 
-@register("n2c2Assertion-Condition")
+@register_dataset("n2c2Assertion-Condition")
 class n2c2AssertionConditionDataset(BratMultiTaskDataset):
     EXAMPLE_TYPE = "Assertion"
     ENCODINGS = {
@@ -110,7 +110,7 @@ class n2c2AssertionConditionDataset(BratMultiTaskDataset):
         return filtered
 
 
-@register("i2b2Event")
+@register_dataset("i2b2Event")
 class i2b2EventDataset(BratMultiTaskDataset):
     EXAMPLE_TYPE = "Disposition"
     ENCODINGS = {
@@ -142,7 +142,7 @@ class i2b2EventDataset(BratMultiTaskDataset):
         """
         # Some attributes are annotated "nm" for not mentioned, but
         # these are not included in the brat data, so we fill them
-        # in here.
+        # in as "unknown" here.
         for task in self.SORTED_ATTRIBUTES:
             if task not in example.attributes.keys():
                 attr = br.Attribute(
@@ -276,7 +276,7 @@ class n2c2DataModule(BasicBertDataModule):
         if "_dataset_class" in self.__dict__.keys():
             return self._dataset_class
         else:
-            self._dataset_class = DATASET_REGISTRY[self.dataset_name]
+            self._dataset_class = DATASET_LOOKUP[self.dataset_name]
             return self._dataset_class
 
     @property
@@ -393,5 +393,5 @@ class n2c2DataModule(BasicBertDataModule):
 
 if __name__ == "__main__":
     print("Available Datasets")
-    for (name, cls) in DATASET_REGISTRY.items():
+    for (name, cls) in DATASET_LOOKUP.items():
         print(f"  {name}: {cls}")
