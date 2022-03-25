@@ -6,9 +6,15 @@ from functools import partial
 
 import torch
 import numpy as np
+import matplotlib.pyplot as plt
 from torch.utils.data import ConcatDataset, DataLoader
 
 from .base import BasicBertDataModule
+
+
+def grouper(iterable, n, fillvalue=None):
+    args = [iter(iterable)] * n
+    return itertools.zip_longest(fillvalue=fillvalue, *args)
 
 
 class CombinedDataset(ConcatDataset):
@@ -154,10 +160,13 @@ class CombinedDataModule(BasicBertDataModule):
     def train_dataloader(self):
         if self._ran_setup is False:
             raise ValueError("Run setup() first!")
+        # TODO: change to new samplers
         if self.dataset_sample_strategy == "concat":
-            sampler = IterativeDatasetSampler(
-                    self.train, self.batch_size,
-                    predicting=False, shuffle=True)
+            sampler = SequentialDatasetSampler(
+                self.train, self.batch_size,
+                shuffle_examples=True,
+                exhaust_all=False)
+        # if self.dataset_sample_strategy == "annealed":
         else:
             sampler = ProportionalSampler(
                 self.train, batch_size=self.batch_size,
@@ -435,6 +444,14 @@ class DatasetSampler(torch.utils.data.sampler.Sampler):
       sampler.setup()
       for batch_idxs in sampler:
          ...
+
+    dataset: torch.utils.data.ConcatDataset
+    batch_size: int
+    shuffle_examples: whether to shuffle the examples in each dataset.
+                      Default False.
+    exhaust_all: whether to exhaust all datasets before returning a
+                 StopIteration. If False, raises a StopIteration after
+                 the first dataset is exhausted. Default True.
     """
 
     def __init__(
@@ -466,6 +483,7 @@ class DatasetSampler(torch.utils.data.sampler.Sampler):
             except StopIteration:
                 self.rm_dataset(dataset_idx)
                 if self.exhausted is True:
+                    self.on_exhaustion()
                     break
 
     def sample_dataset_idx(self):
@@ -482,21 +500,6 @@ class DatasetSampler(torch.utils.data.sampler.Sampler):
             offset = self.dataset.cumulative_sizes[dataset_idx - 1]
             batch_idxs = [i + offset for i in batch_idxs]
         return batch_idxs
-
-    def _get_batchers(self):
-        batchers = []
-        for dataset in self.dataset.datasets:
-            example_idxs = np.arange(len(dataset))
-            if self.shuffle_examples is True:
-                np.random.shuffle(example_idxs)
-            batcher = self._grouper(example_idxs, self.batch_size)
-            batchers.append(batcher)
-        return batchers
-
-    @staticmethod
-    def _grouper(iterable, n, fillvalue=None):
-        args = [iter(iterable)] * n
-        return itertools.zip_longest(fillvalue=fillvalue, *args)
 
     def rm_dataset(self, idx):
         """
@@ -519,6 +522,27 @@ class DatasetSampler(torch.utils.data.sampler.Sampler):
         else:
             if len(self.valid_dataset_idxs) < len(self.dataset.datasets):
                 return True
+
+    def on_exhaustion(self):
+        """
+        To be overridden in child classes.
+        """
+        pass
+
+    def _get_batchers(self):
+        batchers = []
+        for dataset in self.dataset.datasets:
+            example_idxs = np.arange(len(dataset))
+            if self.shuffle_examples is True:
+                np.random.shuffle(example_idxs)
+            batcher = self._grouper(example_idxs, self.batch_size)
+            batchers.append(batcher)
+        return batchers
+
+    @staticmethod
+    def _grouper(iterable, n, fillvalue=None):
+        args = [iter(iterable)] * n
+        return itertools.zip_longest(fillvalue=fillvalue, *args)
 
 
 class SequentialDatasetSampler(DatasetSampler):
@@ -546,52 +570,104 @@ class RandomDatasetSampler(DatasetSampler):
         return np.random.choice(self.valid_dataset_idxs)
 
 
-# TODO: rename to WeightedDatasetSampler
-class ProportionalDatasetSampler(DatasetSampler):
+class WeightedDatasetSampler(DatasetSampler):
     """
-    prop_to: "lengths" or list of positive numbers representing weights.
-             If "lengths", samples proportionally to the number of
-             examples in the datasets.
+    weights: None or list of positive numbers representing the
+             unnormalized weight for each dataset.
     """
-    def __init__(self, *args, prop_to="lengths", **kwargs):
+    def __init__(self, *args, weights=None, **kwargs):
         if "name" not in kwargs.keys():
-            kwargs["name"] = "ProportionalDatasetSampler"
+            kwargs["name"] = "WeightedDatasetSampler"
         super().__init__(*args, **kwargs)
-        self.prop_to = prop_to
-        self.weights = self._get_weights(prop_to)
+        self.weights = self._get_weights(weights)
 
     def sample_dataset_idx(self):
         valid_weights = [self.weights[i] for i in self.valid_dataset_idxs]
         probs = [w/sum(valid_weights) for w in valid_weights]
         return np.random.choice(self.valid_dataset_idxs, p=probs)
 
-    def _get_weights(self, prop_to):
-        if isinstance(prop_to, str):
-            if prop_to == "lengths":
-                weights = [len(ds) for ds in self.dataset.datasets]
-        elif isinstance(prop_to, (list, np.ndarray)):
-            if len(prop_to) != len(self.dataset.datasets):
+    def _get_weights(self, weights):
+        if weights is None:
+            weights = np.ones(len(self.dataset.datasets))
+        elif isinstance(weights, (list, np.ndarray)):
+            if len(weights) != len(self.dataset.datasets):
                 raise ValueError(f"Got different number of weights and datasets: {len(prop_to)}, {len(datasets)}")  # noqa
-            weights = [float(w) for w in prop_to]
-            assert [w > 0. for w in weights]
+            weights = np.array(weights).astype(float)
+            assert np.all(weights > 0.)
         else:
-            raise ValueError(f"prop_to should be 'lengths' for list of positive numbers. Got {prop_to}.")  # noqa
+            raise ValueError(f"prop_to should be None or a list of positive numbers. Got {prop_to}.")  # noqa
         return weights
 
 
-class AnnealedDatasetSampler(DatasetSampler):
+class ScheduledWeightedSampler(DatasetSampler):
     """
-    Wraps a ProportionalDatasetSampler.
+    Wraps a WeightedDatasetSampler to modify the
+    weights according to the current epoch.
+
+    max_steps: total number of steps. Equal to number of training epochs.
+    num_cycles: number of times for the weights to cycle between
+                minimum and maximum values in max_steps.
+                E.g. num_cycles=1 means that the weights will end up where
+                they began after max_steps.
+    shift: A float specifying how much to shift the curves.
+    invert: If True, starts from uniform weights.
+            If False, starts from target weights.
+
+    An approximation of the method implemented in
+    "BERT and PALs: Projected Attention Layers for
+     Efficient Adaptation in Multi-Task Learning"
+    (Stickland and Murray, 2019)
+    https://proceedings.mlr.press/v97/stickland19a.html
+    is to set the weights of the sampler to the lengths of each dataset
+    and set num_cycles=0.2.
     """
-    def __init__(self, sampler: ProportionalDatasetSampler, max_steps=1):
+    def __init__(self, sampler: WeightedDatasetSampler,
+                 max_steps=10, num_cycles=1, shift=0.0, invert=False):
         self.sampler = sampler
-        self.step = 0
         self.max_steps = max_steps
-        self.weights = self.sampler.weights
+        self.num_cycles = num_cycles
+        self.shift = shift
+        self.invert = invert
+
+    def setup(self):
+        self.step = 0
+        self.sampler.setup()
+        self._ran_setup = True
 
     def sample_dataset_idx(self):
-        alpha = 1. - (0.8 * ((self.step - 1) / (self.max_steps - 1)))
-        valid_weights = [self.weights[i] for i in self.valid_dataset_idxs]
-        valid_weights = [vw**alpha for vw in valid_weights]
-        probs = [vw/sum(valid_weights) for vw in valid_weights]
-        return np.random.choice(self.valid_dataset_idxs, p=probs)
+        probs = self.get_current_weights()
+        return np.random.choice(self.sampler.valid_dataset_idxs, p=probs)
+
+    def alpha(self, step=None):
+        if step is None:
+            step = self.step
+        num = np.pi * step * self.num_cycles * 2
+        trig_fn = np.cos
+        if self.invert is True:
+            trig_fn = np.sin
+        shift = (self.max_steps - 1) * self.shift
+        return trig_fn(num / (self.max_steps - 1) + shift)
+
+    def get_current_weights(self):
+        valid_weights = [self.sampler.weights[i]
+                         for i in self.valid_dataset_idxs]
+        modded_weights = valid_weights**self.alpha()
+        probs = modded_weights / modded_weights.sum()
+        return probs
+
+    def on_exhaustion(self):
+        self.step += 1
+
+    def plot_schedule(self):
+        """
+        Use this to make sure ahead of time that you're using
+        the schedule you want.
+        """
+        alphas = [self.alpha(s) for s in range(self.max_steps)]
+        weighted = [self.sampler.weights**a for a in alphas]
+        probs = np.array([ws/ws.sum() for ws in weighted])
+        for c in range(probs.shape[1]):
+            plt.plot(probs[:, c], label=f"dataset: {c}")
+        plt.ylim(0.0, 1.0)
+        plt.legend()
+        plt.show()
