@@ -1,9 +1,5 @@
-from .n2c2 import n2c2DataModule
-from .combined import CombinedDataModule
-
-
-DATAMODULE_LOOKUP = {
-    "n2c2Context": n2c2DataModule,
-    "n2c2Assertion": n2c2DataModule,
-    "i2b2Event": n2c2DataModule,
-}
+# These import call the register_dataset and register_sampler hooks in head
+# module, populating {DATASET,DATAMODULE,SAMPLER}_LOOKUP
+from . import n2c2
+from . import combined
+from .utils import DATASET_LOOKUP, DATAMODULE_LOOKUP, SAMPLER_LOOKUP

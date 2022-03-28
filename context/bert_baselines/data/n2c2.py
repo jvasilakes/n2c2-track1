@@ -11,154 +11,7 @@ from sklearn.utils.class_weight import compute_class_weight
 import brat_reader as br
 
 from .base import BratMultiTaskDataset, BasicBertDataModule
-
-
-DATASET_LOOKUP = {}
-
-
-def register_dataset(name):
-    def add_to_lookup(cls):
-        DATASET_LOOKUP[name] = cls
-        return cls
-    return add_to_lookup
-
-
-@register_dataset("n2c2Context")
-class n2c2ContextDataset(BratMultiTaskDataset):
-    EXAMPLE_TYPE = "Disposition"
-    ENCODINGS = {
-            'Action': {'Decrease': 0,
-                       'Increase': 1,
-                       'OtherChange': 2,
-                       'Start': 3,
-                       'Stop': 4,
-                       'UniqueDose': 5,
-                       'Unknown': 6},
-            'Actor': {'Patient': 0, 'Physician': 1, 'Unknown': 2},
-            'Certainty': {'Certain': 0,
-                          'Conditional': 1,
-                          'Hypothetical': 2,
-                          'Unknown': 3},
-            'Negation': {'Negated': 0, 'NotNegated': 1},
-            'Temporality': {'Future': 0,
-                            'Past': 1,
-                            'Present': 2,
-                            'Unknown': 3}
-            }
-    SORTED_ATTRIBUTES = ["Action", "Actor", "Certainty",
-                         "Negation", "Temporality"]
-    START_ENTITY_MARKER = '@'
-    END_ENTITY_MARKER = '@'
-
-
-@register_dataset("n2c2Assertion")
-class n2c2AssertionDataset(BratMultiTaskDataset):
-    EXAMPLE_TYPE = "Assertion"
-    ENCODINGS = {
-        # Task        label: encoding       num_examples
-        "Assertion": {"absent": 0,        # 1594
-                      "associated_with_someone_else": 1,  # 89
-                      "conditional": 2,   # 73
-                      "hypothetical": 3,  # 379
-                      "possible": 4,      # 309
-                      "present": 5}       # 4621
-    }
-    SORTED_ATTRIBUTES = ["Assertion"]
-    START_ENTITY_MARKER = '@'
-    END_ENTITY_MARKER = '@'
-
-
-@register_dataset("n2c2Assertion-Presence")
-class n2c2AssertionPresenceDataset(BratMultiTaskDataset):
-    EXAMPLE_TYPE = "Assertion"
-    ENCODINGS = {
-        # Task        label: encoding       num_examples
-        "Assertion": {"absent": 0,        # 1594
-                      "present": 1}       # 4621
-    }
-    SORTED_ATTRIBUTES = ["Assertion"]
-    START_ENTITY_MARKER = '@'
-    END_ENTITY_MARKER = '@'
-
-    def filter_examples(self, examples: List[br.Annotation]):
-        filtered = []
-        for ex in examples:
-            if ex.value in self.ENCODINGS["Assertion"].keys():
-                filtered.append(ex)
-        return filtered
-
-
-@register_dataset("n2c2Assertion-Condition")
-class n2c2AssertionConditionDataset(BratMultiTaskDataset):
-    EXAMPLE_TYPE = "Assertion"
-    ENCODINGS = {
-        # Task        label: encoding       num_examples
-        "Assertion": {"conditional": 0,   # 73
-                      "hypothetical": 1,  # 379
-                      "possible": 2,      # 309
-                      }
-    }
-    SORTED_ATTRIBUTES = ["Assertion"]
-    START_ENTITY_MARKER = '@'
-    END_ENTITY_MARKER = '@'
-
-    def filter_examples(self, examples: List[br.Annotation]):
-        filtered = []
-        for ex in examples:
-            if ex.value in self.ENCODINGS["Assertion"].keys():
-                filtered.append(ex)
-        return filtered
-
-
-@register_dataset("i2b2Event")
-class i2b2EventDataset(BratMultiTaskDataset):
-    EXAMPLE_TYPE = "Disposition"
-    ENCODINGS = {
-            # Task        label: encoding      num_examples
-            "Certainty": {"factual": 0,      # 100
-                          "conditional": 1,  # 10 + 7 from "suggestion"
-                          "unknown": 2,
-                          },
-            "Event": {"start": 0,            # 56 + 12 from "start-continue"
-                      "stop": 1,             # 27
-                      "continue": 2,         # 21 + 1 from "coninue"
-                      "unknown": 3,
-                      },
-            "Temporality": {"past": 0,       # 88
-                            "future": 1,     # 13
-                            "present": 2,    # 11
-                            "unknown": 3,
-                            },
-            }
-    SORTED_ATTRIBUTES = ["Certainty", "Event", "Temporality"]
-    START_ENTITY_MARKER = '@'
-    END_ENTITY_MARKER = '@'
-
-    def preprocess_example(self, example: br.Annotation):
-        """
-        Certainty: suggestion -> conditional
-        Event: start-continue -> start
-        Event: coninue -> continue
-        """
-        # Some attributes are annotated "nm" for not mentioned, but
-        # these are not included in the brat data, so we fill them
-        # in as "unknown" here.
-        for task in self.SORTED_ATTRIBUTES:
-            if task not in example.attributes.keys():
-                attr = br.Attribute(
-                        _id=example.id.replace('E', 'A'),
-                        _type=task,
-                        value="unknown",
-                        reference=example,
-                        _source_file=example._source_file)
-                example.attributes[task] = attr
-        if example.attributes["Certainty"].value == "suggestion":
-            example.attributes["Certainty"].value = "conditional"
-        if example.attributes["Event"].value == "start-continue":
-            example.attributes["Event"].value = "start"
-        if example.attributes["Event"].value == "coninue":
-            example.attributes["Event"].value = "continue"
-        return example
+from .utils import register_dataset, DATASET_LOOKUP
 
 
 class n2c2DataModule(BasicBertDataModule):
@@ -389,6 +242,144 @@ class n2c2DataModule(BasicBertDataModule):
             class_weights_per_task[task] = torch.tensor(
                     weights, dtype=torch.float)
         return class_weights_per_task
+
+
+@register_dataset("n2c2Context", n2c2DataModule)
+class n2c2ContextDataset(BratMultiTaskDataset):
+    EXAMPLE_TYPE = "Disposition"
+    ENCODINGS = {
+            'Action': {'Decrease': 0,
+                       'Increase': 1,
+                       'OtherChange': 2,
+                       'Start': 3,
+                       'Stop': 4,
+                       'UniqueDose': 5,
+                       'Unknown': 6},
+            'Actor': {'Patient': 0, 'Physician': 1, 'Unknown': 2},
+            'Certainty': {'Certain': 0,
+                          'Conditional': 1,
+                          'Hypothetical': 2,
+                          'Unknown': 3},
+            'Negation': {'Negated': 0, 'NotNegated': 1},
+            'Temporality': {'Future': 0,
+                            'Past': 1,
+                            'Present': 2,
+                            'Unknown': 3}
+            }
+    SORTED_ATTRIBUTES = ["Action", "Actor", "Certainty",
+                         "Negation", "Temporality"]
+    START_ENTITY_MARKER = '@'
+    END_ENTITY_MARKER = '@'
+
+
+@register_dataset("n2c2Assertion", n2c2DataModule)
+class n2c2AssertionDataset(BratMultiTaskDataset):
+    EXAMPLE_TYPE = "Assertion"
+    ENCODINGS = {
+        # Task        label: encoding       num_examples
+        "Assertion": {"absent": 0,        # 1594
+                      "associated_with_someone_else": 1,  # 89
+                      "conditional": 2,   # 73
+                      "hypothetical": 3,  # 379
+                      "possible": 4,      # 309
+                      "present": 5}       # 4621
+    }
+    SORTED_ATTRIBUTES = ["Assertion"]
+    START_ENTITY_MARKER = '@'
+    END_ENTITY_MARKER = '@'
+
+
+@register_dataset("n2c2Assertion-Presence", n2c2DataModule)
+class n2c2AssertionPresenceDataset(BratMultiTaskDataset):
+    EXAMPLE_TYPE = "Assertion"
+    ENCODINGS = {
+        # Task        label: encoding       num_examples
+        "Assertion": {"absent": 0,        # 1594
+                      "present": 1}       # 4621
+    }
+    SORTED_ATTRIBUTES = ["Assertion"]
+    START_ENTITY_MARKER = '@'
+    END_ENTITY_MARKER = '@'
+
+    def filter_examples(self, examples: List[br.Annotation]):
+        filtered = []
+        for ex in examples:
+            if ex.value in self.ENCODINGS["Assertion"].keys():
+                filtered.append(ex)
+        return filtered
+
+
+@register_dataset("n2c2Assertion-Condition", n2c2DataModule)
+class n2c2AssertionConditionDataset(BratMultiTaskDataset):
+    EXAMPLE_TYPE = "Assertion"
+    ENCODINGS = {
+        # Task        label: encoding       num_examples
+        "Assertion": {"conditional": 0,   # 73
+                      "hypothetical": 1,  # 379
+                      "possible": 2,      # 309
+                      }
+    }
+    SORTED_ATTRIBUTES = ["Assertion"]
+    START_ENTITY_MARKER = '@'
+    END_ENTITY_MARKER = '@'
+
+    def filter_examples(self, examples: List[br.Annotation]):
+        filtered = []
+        for ex in examples:
+            if ex.value in self.ENCODINGS["Assertion"].keys():
+                filtered.append(ex)
+        return filtered
+
+
+@register_dataset("i2b2Event", n2c2DataModule)
+class i2b2EventDataset(BratMultiTaskDataset):
+    EXAMPLE_TYPE = "Disposition"
+    ENCODINGS = {
+            # Task        label: encoding      num_examples
+            "Certainty": {"factual": 0,      # 100
+                          "conditional": 1,  # 10 + 7 from "suggestion"
+                          "unknown": 2,
+                          },
+            "Event": {"start": 0,            # 56 + 12 from "start-continue"
+                      "stop": 1,             # 27
+                      "continue": 2,         # 21 + 1 from "coninue"
+                      "unknown": 3,
+                      },
+            "Temporality": {"past": 0,       # 88
+                            "future": 1,     # 13
+                            "present": 2,    # 11
+                            "unknown": 3,
+                            },
+            }
+    SORTED_ATTRIBUTES = ["Certainty", "Event", "Temporality"]
+    START_ENTITY_MARKER = '@'
+    END_ENTITY_MARKER = '@'
+
+    def preprocess_example(self, example: br.Annotation):
+        """
+        Certainty: suggestion -> conditional
+        Event: start-continue -> start
+        Event: coninue -> continue
+        """
+        # Some attributes are annotated "nm" for not mentioned, but
+        # these are not included in the brat data, so we fill them
+        # in as "unknown" here.
+        for task in self.SORTED_ATTRIBUTES:
+            if task not in example.attributes.keys():
+                attr = br.Attribute(
+                        _id=example.id.replace('E', 'A'),
+                        _type=task,
+                        value="unknown",
+                        reference=example,
+                        _source_file=example._source_file)
+                example.attributes[task] = attr
+        if example.attributes["Certainty"].value == "suggestion":
+            example.attributes["Certainty"].value = "conditional"
+        if example.attributes["Event"].value == "start-continue":
+            example.attributes["Event"].value = "start"
+        if example.attributes["Event"].value == "coninue":
+            example.attributes["Event"].value = "continue"
+        return example
 
 
 if __name__ == "__main__":

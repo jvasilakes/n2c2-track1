@@ -6,7 +6,7 @@ import torch
 import pytorch_lightning as pl
 
 from config import ExperimentConfig
-from data import n2c2DataModule
+from data.n2c2 import n2c2DataModule
 from models import BertMultiHeadedSequenceClassifier
 from models.layers import TokenMask, EntityPooler
 
