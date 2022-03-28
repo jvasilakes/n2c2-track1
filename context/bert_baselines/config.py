@@ -6,6 +6,7 @@ from typing import List, Dict, Union
 from collections import OrderedDict, defaultdict
 
 from data import DATAMODULE_LOOKUP
+from data.combined import SAMPLER_LOOKUP
 
 
 # Be able to yaml.dump an OrderedDict
@@ -45,7 +46,7 @@ class ExperimentConfig(object):
                 "max_train_examples",
                 "auxiliary_data",
                 "dataset_sample_strategy",
-                "dataset_sample_kwargs",
+                "dataset_sampler_kwargs",
             ],
             "Model": [
                 "model_name",
@@ -128,7 +129,7 @@ class ExperimentConfig(object):
             auxiliary_data: Dict[str, List] = None,
             # Ignored if auxiliary_data is None
             dataset_sample_strategy: str = "concat",
-            dataset_sample_kwargs: Dict = None,
+            dataset_sampler_kwargs: Dict = None,
             # Model
             model_name: str = '',
             bert_model_name_or_path: str = '',
@@ -167,7 +168,7 @@ class ExperimentConfig(object):
         self.max_train_examples = max_train_examples
         self.auxiliary_data = auxiliary_data or {}
         self.dataset_sample_strategy = dataset_sample_strategy
-        self.dataset_sample_kwargs = dataset_sample_kwargs or {}
+        self.dataset_sampler_kwargs = dataset_sampler_kwargs or {}
         # Model
         self.model_name = model_name
         self.bert_model_name_or_path = bert_model_name_or_path
@@ -290,7 +291,7 @@ class ExperimentConfig(object):
                 unused_keys_str = ', '.join(unused_keys)
                 warnings.warn(f"The following kwargs are not supported and will be ignored {datamod}:{unused_keys_str}")  # noqa
 
-        valid_dataset_strategies = ["concat", "weighted", "scheduled"]
+        valid_dataset_strategies = SAMPLER_LOOKUP.keys()
         self._validate_param(
             "dataset_sample_strategy", valid_dataset_strategies,
             default_value="concat", errors=errors)

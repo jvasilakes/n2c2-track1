@@ -11,7 +11,8 @@ from pytorch_lightning.loggers import TensorBoardLogger
 from pytorch_lightning.callbacks import ModelCheckpoint
 
 from config import ExperimentConfig
-from data import DATAMODULE_LOOKUP, CombinedDataModule
+from data import DATAMODULE_LOOKUP
+from data.combined import CombinedDataModule
 from models import MODEL_LOOKUP
 from models.rationale import format_input_ids_and_masks
 
@@ -129,7 +130,7 @@ def load_datamodule_from_config(config: ExperimentConfig):
         datamodule = CombinedDataModule(
             all_datamods,
             dataset_sample_strategy=config.dataset_sample_strategy,
-            dataset_sample_kwargs=config.dataset_sample_kwargs)
+            dataset_sampler_kwargs=config.dataset_sampler_kwargs)
     return datamodule
 
 

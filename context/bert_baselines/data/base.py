@@ -26,6 +26,7 @@ class BratMultiTaskDataset(Dataset):
         self.window_size = window_size
         self.max_examples = max_examples
         self.mark_entities = mark_entities
+        self._name = None
 
         self.examples, self.docids_to_texts = self._get_examples_and_texts()
         if label_names == "all":
@@ -35,6 +36,18 @@ class BratMultiTaskDataset(Dataset):
                 if name not in self.SORTED_ATTRIBUTES:
                     raise ValueError(f"Unknown attribute {name}")
             self.label_names = sorted(label_names)
+
+    @property
+    def name(self) -> str:
+        if self._name is None:
+            cls_str = str(self.__class__)
+            cls_name = cls_str.split('.')[-1]
+            self._name = cls_name.replace("'>", '')
+        return self._name
+
+    @name.setter
+    def name(self, val):
+        self._name = val
 
     def __len__(self):
         if self.max_examples == -1:

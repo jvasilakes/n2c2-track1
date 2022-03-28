@@ -10,21 +10,12 @@ import matplotlib.pyplot as plt
 from torch.utils.data import ConcatDataset, DataLoader
 
 from .base import BasicBertDataModule
+from .utils import register_sampler, SAMPLER_LOOKUP
 
 
 def grouper(iterable, n, fillvalue=None):
     args = [iter(iterable)] * n
     return itertools.zip_longest(fillvalue=fillvalue, *args)
-
-
-SAMPLER_LOOKUP = {}
-
-
-def register_sampler(name):
-    def add_to_lookup(cls):
-        SAMPLER_LOOKUP[name] = cls
-        return cls
-    return add_to_lookup
 
 
 class CombinedDataset(ConcatDataset):
@@ -60,14 +51,14 @@ class CombinedDataModule(BasicBertDataModule):
 
     def __init__(self, datamodules: List[BasicBertDataModule],
                  dataset_sample_strategy="proportional",
-                 dataset_sample_kwargs=None):
+                 dataset_sampler_kwargs=None):
         super().__init__()
         # Sometimes this module can hit the system open file limit.
         # This seems to fix that.
         torch.multiprocessing.set_sharing_strategy('file_system')
         self.datamodules = datamodules
         self.dataset_sample_strategy = dataset_sample_strategy
-        self.dataset_sample_kwargs = dataset_sample_kwargs or {}
+        self.dataset_sampler_kwargs = dataset_sampler_kwargs or {}
         # These are populated in setup(), after checking
         # that they are all compatible.
         self.batch_size = None
@@ -173,7 +164,7 @@ class CombinedDataModule(BasicBertDataModule):
         sampler_class = SAMPLER_LOOKUP[self.dataset_sample_strategy]
         sampler = sampler_class(
             self.train, self.batch_size, shuffle_examples=True,
-            **self.dataset_sample_kwargs)
+            **self.dataset_sampler_kwargs)
         train_collate_fn = partial(self.encode_and_collate, split="train")
         return DataLoader(self.train, collate_fn=train_collate_fn,
                           num_workers=4, batch_sampler=sampler)
@@ -242,205 +233,6 @@ class CombinedDataModule(BasicBertDataModule):
             collated["labels"][new_key] = collated["labels"][key]
             del collated["labels"][key]
         return collated
-
-
-class ProportionalSampler(torch.utils.data.sampler.Sampler):
-    """
-    Samples from each Dataset of a ConcatDataset proportional
-    to their sizes. Each batch must come from the same dataset.
-
-    strategy: {"fixed:{int}", "proportional", "annealed"}
-
-    When strategy=='fixed:{int}', samples from auxiliary datasets
-    with probability {int} in [0,100]. E.g. 'fixed:50'.
-
-    When strategy=='proportional', samples from each dataset
-    with probability proportional to it's training split size.
-
-    When strategy=='annealed', uses the strategy proposed in
-    "BERT and PALs: Projected Attention Layers for
-     Efficient Adaptation in Multi-Task Learning"
-    (Stickland and Murray, 2019)
-    https://proceedings.mlr.press/v97/stickland19a.html
-    """
-    VALID_STRATEGIES = [
-            "length-proportional",
-            "length-annealed",
-            "length-annealed-inv",
-            "weighted",
-            "weighted-annealed",
-            "weighted-annealed-inv",
-            ]
-
-    def __init__(self, dataset: ConcatDataset, batch_size=16,
-                 strategy="proportional", strategy_kwargs=None):
-        self.dataset = dataset
-        self.batch_size = batch_size
-        self.strategy, self.strategy_kwargs = self.validate_strategy(
-                strategy, strategy_kwargs)
-
-        self.num_datasets = len(dataset.datasets)
-        self.max_epochs = 10
-        self.epoch = 0
-
-    def validate_strategy(self, strategy_str, strategy_kwargs):
-        strategy_kwargs = strategy_kwargs or {}
-        error_msg = f"Unsupported strategy '{strategy_str}'"
-
-        if strategy_str not in self.VALID_STRATEGIES:
-            raise ValueError(error_msg)
-
-        strategy_cls = self.get_strategy(strategy_str)
-        strategy = strategy_cls(**strategy_kwargs)
-
-        if ':' in strategy_str:
-            # It should be fixed
-            fixed, prob = strategy_str.split(':')
-            if fixed != "fixed":
-                raise ValueError(error_msg)
-            try:
-                prob = int(prob)
-                prob = prob / 100
-            except ValueError:
-                raise ValueError(error_msg)
-            strategy = fixed
-            strategy_kwargs = {"probability": prob}
-        else:
-            if strategy_str not in ["proportional", "annealed"]:
-                raise ValueError(error_msg)
-            strategy = strategy_str
-        return strategy, strategy_kwargs
-
-    def __iter__(self):
-        """
-        Each batch is sampled from one of the datasets with probability
-        computed according to self.dataset_sample_strategy.
-        An epoch finishes when we exhaust just one of the datasets.
-        """
-        idxs = [torch.randperm(len(ds)) for ds in self.dataset.datasets]
-        groupers = [grouper(shuffled_idxs, self.batch_size)
-                    for shuffled_idxs in idxs]
-        while True:
-            try:
-                probs = self.get_dataset_probs()
-                dataset_idx = np.random.choice(
-                    np.arange(self.num_datasets), p=probs)
-                batch_idxs = next(groupers[dataset_idx])
-                batch_idxs = [i for i in batch_idxs if i is not None]
-                if dataset_idx > 0:
-                    offset = self.dataset.cumulative_sizes[dataset_idx - 1]
-                    batch_idxs = [i + offset for i in batch_idxs]
-                yield batch_idxs
-            except StopIteration:
-                self.epoch += 1
-                break
-
-    def get_dataset_probs(self, datasets=None):
-        if datasets is None:
-            datasets = self.dataset.datasets
-        lengths = [len(ds) for ds in datasets]
-        if self.strategy == "fixed":
-            aux_prob = self.strategy_kwargs["probability"]
-            num_aux = len(datasets) - 1
-            main_dataset_prob = 1.0 - (num_aux * aux_prob)
-            probs = [main_dataset_prob, *[aux_prob] * num_aux]
-        elif self.strategy == "proportional":
-            probs = [ln/sum(lengths) for ln in lengths]
-        elif self.strategy == "annealed":
-            alpha = 1. - (0.8 * ((self.epoch - 1) / (self.max_epochs - 1)))
-            lengths = [ln**alpha for ln in lengths]
-            probs = [ln/sum(lengths) for ln in lengths]
-        elif self.strategy == "annealed-inv":
-            alpha = 0. + (0.8 * ((self.epoch - 1) / (self.max_epochs - 1)))
-            lengths = [ln**alpha for ln in lengths]
-            probs = [ln/sum(lengths) for ln in lengths]
-        else:
-            raise ValueError(f"Unknown strategy '{self.strategy}'")
-        return np.array(probs)
-
-    def __len__(self):
-        """
-        Computing the length of this iterator is awkward because we sample
-        from each dataset according to a probability and end when we've
-        exhausted just one. This means that the actual length of the iterator
-        is unknown and changes every epoch. This is even more uncertain
-        when dataset_sample_strategy=="annealed", because the probabilities
-        change per epoch.
-
-        The length, then, is the weighted (by probability) average of the
-        lengths of the member datasets minus one standard deviation.
-        This should be a decent approximation and should keep the epoch
-        from ending early (causing PyTorch Lightning to skip validation)
-        most of the time.
-        """
-        # Compute weighted average of lengths
-        lengths = np.array([len(ds) for ds in self.dataset.datasets])
-        probs = self.get_dataset_probs()
-        weighted_avg = np.sum(lengths * probs)
-        epochs = int(np.ceil(weighted_avg / self.batch_size))
-        # Computed weighted standard deviation of lengths
-        weighted_diffs = probs * ((lengths - weighted_avg)**2)
-        weighted_std = np.sqrt(np.sum(weighted_diffs))
-        std_epochs = int(np.ceil(weighted_std / self.batch_size))
-        return epochs - std_epochs
-
-
-class IterativeDatasetSampler(torch.utils.data.sampler.Sampler):
-    """
-    Just like concatenated datasets except each batch must
-    come from the same dataset.
-
-    If shuffle is True, shuffle the examples within each dataset,
-    as well as the order in which batches are sampled.
-    """
-    def __init__(self, dataset: ConcatDataset,
-                 batch_size=16, predicting=False, shuffle=False):
-        self.dataset = dataset
-        self.batch_size = batch_size
-        self.predicting = predicting
-        self.shuffle = shuffle
-        if self.predicting is True and self.shuffle is True:
-            warnings.warn("You are running prediction but have set shuffle=True. Are you sure you want to do this?")  # noqa
-        self.num_datasets = len(dataset.datasets)
-
-    def __iter__(self):
-        """
-        Very similar to __iter__ from ProportionalSampler: each batch must
-        be comprised of examples from the same dataset but we exhaust
-        all datasets.
-        """
-        all_idxs = [np.arange(len(ds)) for ds in self.dataset.datasets]
-        if self.shuffle is True:
-            for idxs in all_idxs:
-                np.random.shuffle(idxs)
-        groupers = [grouper(idxs, self.batch_size) for idxs in all_idxs]
-
-        not_exhausted = np.arange(len(self.dataset.datasets))
-        while True:
-            try:
-                dataset_idx = np.random.choice(not_exhausted)
-                batch_idxs = next(groupers[dataset_idx])
-                batch_idxs = [i for i in batch_idxs if i is not None]
-                if dataset_idx > 0:
-                    offset = self.dataset.cumulative_sizes[dataset_idx - 1]
-                    batch_idxs = [i + offset for i in batch_idxs]
-                if self.predicting is True:
-                    yield from batch_idxs
-                else:
-                    yield batch_idxs
-            except StopIteration:
-                not_exhausted = [i for i in not_exhausted if i != dataset_idx]
-                if len(not_exhausted) == 0:
-                    break
-                else:
-                    continue
-
-    def __len__(self):
-        lengths = [len(ds) for ds in self.dataset.datasets]
-        return int(sum([np.ceil(ln / self.batch_size) for ln in lengths]))
-
-    def str(self):
-        return "IterativeDatasetSampler"
 
 
 class DatasetSampler(torch.utils.data.sampler.Sampler):
@@ -553,6 +345,10 @@ class DatasetSampler(torch.utils.data.sampler.Sampler):
         args = [iter(iterable)] * n
         return itertools.zip_longest(fillvalue=fillvalue, *args)
 
+    def __len__(self):
+        lengths = [len(ds) for ds in self.dataset.datasets]
+        return int(sum([np.ceil(ln / self.batch_size) for ln in lengths]))
+
 
 @register_sampler("sequential")
 class SequentialDatasetSampler(DatasetSampler):
@@ -594,9 +390,13 @@ class WeightedDatasetSampler(DatasetSampler):
         self.weights = self._get_weights(weights)
 
     def sample_dataset_idx(self):
-        valid_weights = [self.weights[i] for i in self.valid_dataset_idxs]
-        probs = [w/sum(valid_weights) for w in valid_weights]
+        probs = self.get_dataset_probs()
         return np.random.choice(self.valid_dataset_idxs, p=probs)
+
+    def get_dataset_probs(self):
+        valid_weights = [self.weights[i] for i in self.valid_dataset_idxs]
+        probs = np.array([w/sum(valid_weights) for w in valid_weights])
+        return probs
 
     def _get_weights(self, weights):
         if weights is None:
@@ -611,9 +411,56 @@ class WeightedDatasetSampler(DatasetSampler):
             raise ValueError(f"prop_to should be None or a list of positive numbers. Got {prop_to}.")  # noqa
         return weights
 
+    def __len__(self):
+        """
+        Computing the length of a WeightedDatasetSampler is awkward because it
+        samples from each dataset according to a probability and can ends when
+        it exhaustes just one. This means that its actual length might be
+        unknown and changes every epoch.
+
+        When exhaust_all==False, the length is the weighted average of the
+        lengths of the member datasets minus one standard deviation.
+        This should be a decent approximation and should keep the epoch
+        from ending early (causing PyTorch Lightning to skip validation)
+        most of the time.
+        """
+        if self.exhaust_all is True:
+            return super().__len__()
+        # Compute weighted average of lengths
+        lengths = np.array([len(ds) for ds in self.dataset.datasets])
+        probs = self.get_dataset_probs()
+        weighted_avg = np.sum(lengths * probs)
+        epochs = int(np.ceil(weighted_avg / self.batch_size))
+        # Computed weighted standard deviation of lengths
+        weighted_diffs = probs * ((lengths - weighted_avg)**2)
+        weighted_std = np.sqrt(np.sum(weighted_diffs))
+        std_epochs = int(np.ceil(weighted_std / self.batch_size))
+        return epochs - std_epochs
+
+
+class DatasetSamplerWrapper(object):
+    """
+    Exposes the wrapped sampler's attributes to the wrapper.
+    """
+
+    def __init__(self, sampler):
+        self.sampler = sampler
+
+    def __getattr__(self, attr):
+        if attr in dir(self):
+            return getattr(self, attr)
+        else:
+            return getattr(self.sampler, attr)
+
+    def __iter__(self):
+        return iter(self.sampler)
+
+    def __len__(self):
+        raise NotImplementedError()
+
 
 @register_sampler("scheduled")
-class ScheduledWeightedSampler(DatasetSampler):
+class ScheduledWeightedSampler(DatasetSamplerWrapper):
     """
     Wraps a WeightedDatasetSampler to modify the
     weights according to the current epoch.
@@ -639,19 +486,32 @@ class ScheduledWeightedSampler(DatasetSampler):
                  max_steps=10, num_cycles=1, shift=0.0, invert=False,
                  **sampler_kwargs):
         self.sampler = WeightedDatasetSampler(*sampler_args, **sampler_kwargs)
+        if max_steps <= 1:
+            raise ValueError("max_steps must be >= 1!")
         self.max_steps = max_steps
         self.num_cycles = num_cycles
         self.shift = shift
         self.invert = invert
+        self.setup()
 
     def setup(self):
         self.step = 0
         self.sampler.setup()
         self._ran_setup = True
 
-    def sample_dataset_idx(self):
-        probs = self.get_current_weights()
+    def sample_dataset_idx(self, step=None):
+        if step is None:
+            step = self.step
+        probs = self.get_dataset_probs(step=step)
         return np.random.choice(self.sampler.valid_dataset_idxs, p=probs)
+
+    def get_dataset_probs(self, step=None):
+        if step is None:
+            step = self.step
+        valid_weights = self.sampler.weights[self.sampler.valid_dataset_idxs]
+        modded_weights = valid_weights**self.alpha(step=step)
+        probs = modded_weights / modded_weights.sum()
+        return probs
 
     def alpha(self, step=None):
         if step is None:
@@ -663,13 +523,6 @@ class ScheduledWeightedSampler(DatasetSampler):
         shift = (self.max_steps - 1) * self.shift
         return trig_fn(num / (self.max_steps - 1) + shift)
 
-    def get_current_weights(self):
-        valid_weights = [self.sampler.weights[i]
-                         for i in self.valid_dataset_idxs]
-        modded_weights = valid_weights**self.alpha()
-        probs = modded_weights / modded_weights.sum()
-        return probs
-
     def on_exhaustion(self):
         self.step += 1
 
@@ -678,14 +531,63 @@ class ScheduledWeightedSampler(DatasetSampler):
         Use this to make sure ahead of time that you're using
         the schedule you want.
         """
-        alphas = [self.alpha(s) for s in range(self.max_steps)]
-        weighted = [self.sampler.weights**a for a in alphas]
-        probs = np.array([ws/ws.sum() for ws in weighted])
+        if self._ran_setup is False:
+            raise ValueError("Run setup() first!")
+        probs = np.array([self.get_dataset_probs(step=s)
+                          for s in range(self.max_steps)])
         for c in range(probs.shape[1]):
-            plt.plot(probs[:, c], label=f"dataset: {c}")
+            dataset_name = self.sampler.dataset.datasets[c].name
+            plt.plot(probs[:, c], label=dataset_name)
         plt.ylim(0.0, 1.0)
         plt.legend()
         plt.show()
+
+    def __len__(self):
+        """
+        See note on WeightedDatasetSampler above.
+        We have to re-implement here so that the correct
+        get_dataset_probs() is called.
+        """
+        if self.exhaust_all is True:
+            return len(self.sampler)
+        # Compute weighted average of lengths
+        lengths = np.array([len(ds) for ds in self.dataset.datasets])
+        probs = self.get_dataset_probs()
+        weighted_avg = np.sum(lengths * probs)
+        epochs = int(np.ceil(weighted_avg / self.batch_size))
+        # Computed weighted standard deviation of lengths
+        weighted_diffs = probs * ((lengths - weighted_avg)**2)
+        weighted_std = np.sqrt(np.sum(weighted_diffs))
+        std_epochs = int(np.ceil(weighted_std / self.batch_size))
+        return epochs - std_epochs
+
+
+@register_sampler("stickland-murray")
+class SticklandMurraySampler(ScheduledWeightedSampler):
+    """
+    The annealed sampling strategy proposed in
+    "BERT and PALs: Projected Attention Layers for
+     Efficient Adaptation in Multi-Task Learning"
+    (Stickland and Murray, 2019)
+    https://proceedings.mlr.press/v97/stickland19a.html
+    """
+    def __init__(self, *sampler_args,
+                 max_steps=10, anneal_rate=0.8, **sampler_kwargs):
+        datasets = sampler_args[0].datasets
+        weights = np.array([len(ds) for ds in datasets])
+        if "weights" in sampler_kwargs.keys():
+            warnings.warn(f"SticklandAndMurraySampler overriding provided weights {sampler_kwargs['weights']} with dataset lengths {weights}.")  # noqa
+        sampler_kwargs["weights"] = weights
+        self.sampler = WeightedDatasetSampler(*sampler_args, **sampler_kwargs)
+        self.max_steps = max_steps
+        self.anneal_rate = anneal_rate
+        self.setup()
+
+    def alpha(self, step=None):
+        if step is None:
+            step = self.step
+        alpha = 1. - (self.anneal_rate * ((step / self.max_steps - 1)))
+        return alpha
 
 
 if __name__ == "__main__":
