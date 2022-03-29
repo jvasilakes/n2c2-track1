@@ -16,9 +16,9 @@ def brat_loader(files_fold, params):
 
     count = 0
     for filef in sorted(file_list):
-        count += 1
-        if count % 10 == 0:
-            break
+        # count += 1
+        # if count % 10 == 0:
+        #     break
         
         if filef.split("/")[-1].startswith("."):
             continue
