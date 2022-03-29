@@ -1,0 +1,17 @@
+task_name: n2c2
+test_data: corpus/0/dev/
+
+# output
+result_dir: experiments/0/clinical_bert/predict-dev/
+#ner_model_dir: experiments/0/clinical_bert/model/
+model_dir: experiments/0/clinical_bert/joint/
+params_dir: experiments/0/clinical_bert/n2c2.clinical.param
+
+# prediction
+predict: True
+pipelines: False
+batch_size: 16
+gpu: 0
+fp16: False
+
+
