@@ -20,7 +20,10 @@ The configurations for each experiment are stored in the folder `experiments/spl
 
 The script also includes the prediction and evaluation steps on the development set. The final scores can be found at `result_org.txt` at the correponding output folders.
 
-Currently, the default number of epochs is 10, you can change it by modifying the `train_crosseval.sh` at the training line with an option like `--epoch 50`.
+Currently, the default number of epochs is 10, you can change it by modifying the `train_crosseval.sh` at line 52 after the yaml option with this `--epoch 50`.
+
+**The training script can be used in csf3 if you uncomment lines 11, 14, 17, and 23**
+
 
 # NER results by 5-fold cross validation
 As of 4th March
