@@ -1,0 +1,18 @@
+task_name: n2c2
+test_data: corpus/0/test/
+
+# output
+result_dir: experiments/0/baseline/predict-test/
+#ner_model_dir: experiments/0/baseline/model/
+model_dir: experiments/0/baseline/model/
+params_dir: experiments/0/baseline/n2c2.baseline.param
+
+# prediction
+predict: True
+pipelines: False
+batch_size: 16
+gpu: 0
+fp16: False
+
+
+
