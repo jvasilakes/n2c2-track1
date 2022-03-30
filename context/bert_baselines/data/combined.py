@@ -1,3 +1,4 @@
+import sys
 import bisect
 import warnings
 import itertools
@@ -7,6 +8,7 @@ from functools import partial
 import torch
 import numpy as np
 import matplotlib.pyplot as plt
+from scipy import stats
 from torch.utils.data import ConcatDataset, DataLoader
 
 from .base import BasicBertDataModule
@@ -267,16 +269,14 @@ class DatasetSampler(torch.utils.data.sampler.Sampler):
         self.batch_size = batch_size
         self.shuffle_examples = shuffle_examples
         self.exhaust_all = exhaust_all
-        self._ran_setup = False
+        self.setup()
 
     def setup(self):
         self.valid_dataset_idxs = list(range(len(self.dataset.datasets)))
         self.batchers = self._get_batchers()
-        self._ran_setup = True
 
     def __iter__(self):
         # Reset valid datasets and batchers
-        self.setup()
         while True:
             try:
                 dataset_idx = self.sample_dataset_idx()
@@ -284,17 +284,14 @@ class DatasetSampler(torch.utils.data.sampler.Sampler):
             except StopIteration:
                 self.rm_dataset(dataset_idx)
                 if self.exhausted is True:
+                    self.setup()
                     self.on_exhaustion()
                     break
 
     def sample_dataset_idx(self):
-        if self._ran_setup is False:
-            raise ValueError("run DatasetSampler.setup() first!")
         raise NotImplementedError()
 
     def sample_batch(self, dataset_idx):
-        if self._ran_setup is False:
-            raise ValueError("run DatasetSampler.setup() first!")
         batch_idxs = next(self.batchers[dataset_idx])
         batch_idxs = [i for i in batch_idxs if i is not None]
         if dataset_idx > 0:
@@ -306,8 +303,6 @@ class DatasetSampler(torch.utils.data.sampler.Sampler):
         """
         Remove the dataset at idx from this sampler.
         """
-        if self._ran_setup is False:
-            raise ValueError("run DatasetSampler.setup() first!")
         try:
             self.valid_dataset_idxs.remove(idx)
         except ValueError:
@@ -315,8 +310,6 @@ class DatasetSampler(torch.utils.data.sampler.Sampler):
 
     @property
     def exhausted(self):
-        if self._ran_setup is False:
-            raise ValueError("run DatasetSampler.setup() first!")
         if self.exhaust_all is True:
             if len(self.valid_dataset_idxs) == 0:
                 return True
@@ -404,63 +397,63 @@ class WeightedDatasetSampler(DatasetSampler):
             warnings.warn("No weights specified for WeightedDatasetSampler. Falling back to Uniform weights.")  # noqa
         elif isinstance(weights, (list, np.ndarray)):
             if len(weights) != len(self.dataset.datasets):
-                raise ValueError(f"Got different number of weights and datasets: {len(prop_to)}, {len(datasets)}")  # noqa
+                raise ValueError(f"Got different number of weights and datasets: {len(weights)}, {len(datasets)}")  # noqa
             weights = np.array(weights).astype(float)
             assert np.all(weights > 0.)
         else:
-            raise ValueError(f"prop_to should be None or a list of positive numbers. Got {prop_to}.")  # noqa
+            raise ValueError(f"weights should be None or a list of positive numbers. Got {weights}.")  # noqa
         return weights
+
+    def _estimate_length(self, lengths, probs):
+        # Total number of steps
+        nsteps = np.ceil(np.array(lengths) / self.batch_size).astype(int)
+        n = nsteps.min()
+        while n < (sys.maxsize / 2):  # A crude ceiling...
+            dists = [stats.binom(n, p) for p in probs]
+            # probabilities of getting between nsteps - 5 and nsteps successes
+            ps = np.array([1. - d.cdf(s - 5) for (d, s) in zip(dists, nsteps)])
+            # N.B. The threshold depends on the batch size, but this shouldn't
+            #  matter too much in practice. E.g. a lower batch size requires
+            #  a higher threshold.
+            if any(ps >= 0.85):
+                return n
+            n += 1
+        raise ValueError("WeightedDatasetSampler._estimate_length() exceeded sys.maxsize/2, which is very large! Check that your dataset probabilities make sense: {probs}")  # noqa
 
     def __len__(self):
         """
         Computing the length of a WeightedDatasetSampler is awkward because it
-        samples from each dataset according to a probability and can ends when
+        samples from each dataset according to a probability and can end when
         it exhaustes just one. This means that its actual length might be
         unknown and changes every epoch.
 
-        When exhaust_all==False, the length is the weighted average of the
-        lengths of the member datasets minus one standard deviation.
-        This should be a decent approximation and should keep the epoch
-        from ending early (causing PyTorch Lightning to skip validation)
-        most of the time.
+        We address this by estimating the number of trials required to exhaust
+        one of the datasets. This is done by computing P[D-c <= X <= D]
+        under a set of binomial distributions of different n and determining
+        the smallest n under which one of the datasets has P[D-c <= X <= D]
+        >= 0.85. In other words, we want to know how many steps it takes to
+        exhaust one of the datasets with probability 0.85 or greater. See
+        _estimate_length for the implementation.
         """
+        if getattr(self, "_len_cache", None) is None:
+            self._len_cache = {}
         if self.exhaust_all is True:
             return super().__len__()
         # Compute weighted average of lengths
         lengths = np.array([len(ds) for ds in self.dataset.datasets])
+        lengths = lengths[self.valid_dataset_idxs]
         probs = self.get_dataset_probs()
-        weighted_avg = np.sum(lengths * probs)
-        epochs = int(np.ceil(weighted_avg / self.batch_size))
-        # Computed weighted standard deviation of lengths
-        weighted_diffs = probs * ((lengths - weighted_avg)**2)
-        weighted_std = np.sqrt(np.sum(weighted_diffs))
-        std_epochs = int(np.ceil(weighted_std / self.batch_size))
-        return epochs - std_epochs
-
-
-class DatasetSamplerWrapper(object):
-    """
-    Exposes the wrapped sampler's attributes to the wrapper.
-    """
-
-    def __init__(self, sampler):
-        self.sampler = sampler
-
-    def __getattr__(self, attr):
-        if attr in dir(self):
-            return getattr(self, attr)
-        else:
-            return getattr(self.sampler, attr)
-
-    def __iter__(self):
-        return iter(self.sampler)
-
-    def __len__(self):
-        raise NotImplementedError()
+        cache_key = tuple([*lengths, *probs])
+        try:
+            nsteps = self._len_cache[cache_key]
+        except KeyError:
+            nsteps = self._estimate_length(lengths, probs)
+            self._len_cache[cache_key] = nsteps
+        return nsteps
 
 
 @register_sampler("scheduled")
-class ScheduledWeightedSampler(DatasetSamplerWrapper):
+class ScheduledWeightedSampler(WeightedDatasetSampler):
     """
     Wraps a WeightedDatasetSampler to modify the
     weights according to the current epoch.
@@ -482,33 +475,29 @@ class ScheduledWeightedSampler(DatasetSamplerWrapper):
     is to set the weights of the sampler to the lengths of each dataset
     and set num_cycles=0.2.
     """
-    def __init__(self, *sampler_args,
-                 max_steps=10, num_cycles=1, shift=0.0, invert=False,
-                 **sampler_kwargs):
-        self.sampler = WeightedDatasetSampler(*sampler_args, **sampler_kwargs)
+    def __init__(self, *sampler_args, max_steps=10,
+                 num_cycles=0, shift=0.0, invert=False, **sampler_kwargs):
+        if "name" not in sampler_kwargs.keys():
+            sampler_kwargs["name"] = "ScheduledWeightedSampler"
+        super().__init__(*sampler_args, **sampler_kwargs)
         if max_steps <= 1:
             raise ValueError("max_steps must be >= 1!")
         self.max_steps = max_steps
         self.num_cycles = num_cycles
         self.shift = shift
         self.invert = invert
-        self.setup()
-
-    def setup(self):
         self.step = 0
-        self.sampler.setup()
-        self._ran_setup = True
 
     def sample_dataset_idx(self, step=None):
         if step is None:
             step = self.step
         probs = self.get_dataset_probs(step=step)
-        return np.random.choice(self.sampler.valid_dataset_idxs, p=probs)
+        return np.random.choice(self.valid_dataset_idxs, p=probs)
 
     def get_dataset_probs(self, step=None):
         if step is None:
             step = self.step
-        valid_weights = self.sampler.weights[self.sampler.valid_dataset_idxs]
+        valid_weights = self.weights[self.valid_dataset_idxs]
         modded_weights = valid_weights**self.alpha(step=step)
         probs = modded_weights / modded_weights.sum()
         return probs
@@ -526,40 +515,22 @@ class ScheduledWeightedSampler(DatasetSamplerWrapper):
     def on_exhaustion(self):
         self.step += 1
 
-    def plot_schedule(self):
+    def plot_schedule(self, steps=None):
         """
         Use this to make sure ahead of time that you're using
         the schedule you want.
         """
-        if self._ran_setup is False:
-            raise ValueError("Run setup() first!")
+        if steps is None:
+            steps = self.max_steps
         probs = np.array([self.get_dataset_probs(step=s)
-                          for s in range(self.max_steps)])
+                          for s in range(steps)])
         for c in range(probs.shape[1]):
-            dataset_name = self.sampler.dataset.datasets[c].name
-            plt.plot(probs[:, c], label=dataset_name)
+            dataset_name = self.dataset.datasets[c].name
+            ls = ['-', '--', ':'][c % 3]
+            plt.plot(probs[:, c], label=dataset_name, linestyle=ls)
         plt.ylim(0.0, 1.0)
         plt.legend()
         plt.show()
-
-    def __len__(self):
-        """
-        See note on WeightedDatasetSampler above.
-        We have to re-implement here so that the correct
-        get_dataset_probs() is called.
-        """
-        if self.exhaust_all is True:
-            return len(self.sampler)
-        # Compute weighted average of lengths
-        lengths = np.array([len(ds) for ds in self.dataset.datasets])
-        probs = self.get_dataset_probs()
-        weighted_avg = np.sum(lengths * probs)
-        epochs = int(np.ceil(weighted_avg / self.batch_size))
-        # Computed weighted standard deviation of lengths
-        weighted_diffs = probs * ((lengths - weighted_avg)**2)
-        weighted_std = np.sqrt(np.sum(weighted_diffs))
-        std_epochs = int(np.ceil(weighted_std / self.batch_size))
-        return epochs - std_epochs
 
 
 @register_sampler("stickland-murray")
@@ -571,17 +542,21 @@ class SticklandMurraySampler(ScheduledWeightedSampler):
     (Stickland and Murray, 2019)
     https://proceedings.mlr.press/v97/stickland19a.html
     """
-    def __init__(self, *sampler_args,
-                 max_steps=10, anneal_rate=0.8, **sampler_kwargs):
+    def __init__(self, *sampler_args, max_steps=10,
+                 anneal_rate=0.8, **sampler_kwargs):
+        if "name" not in sampler_kwargs.keys():
+            sampler_kwargs["name"] = "SticklandMurraySampler"
         datasets = sampler_args[0].datasets
         weights = np.array([len(ds) for ds in datasets])
         if "weights" in sampler_kwargs.keys():
             warnings.warn(f"SticklandAndMurraySampler overriding provided weights {sampler_kwargs['weights']} with dataset lengths {weights}.")  # noqa
         sampler_kwargs["weights"] = weights
-        self.sampler = WeightedDatasetSampler(*sampler_args, **sampler_kwargs)
+        super().__init__(*sampler_args, **sampler_kwargs)
+        if max_steps <= 1:
+            raise ValueError("max_steps must be >= 1!")
         self.max_steps = max_steps
         self.anneal_rate = anneal_rate
-        self.setup()
+        self.step = 0
 
     def alpha(self, step=None):
         if step is None:
