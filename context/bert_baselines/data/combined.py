@@ -278,15 +278,16 @@ class DatasetSampler(torch.utils.data.sampler.Sampler):
     def __iter__(self):
         # Reset valid datasets and batchers
         while True:
+            if self.exhausted is True:
+                self.setup()
+                self.on_exhaustion()
+                break
             try:
                 dataset_idx = self.sample_dataset_idx()
                 yield self.sample_batch(dataset_idx)
+                self.on_sample_batch_end()
             except StopIteration:
                 self.rm_dataset(dataset_idx)
-                if self.exhausted is True:
-                    self.setup()
-                    self.on_exhaustion()
-                    break
 
     def sample_dataset_idx(self):
         raise NotImplementedError()
@@ -317,8 +318,16 @@ class DatasetSampler(torch.utils.data.sampler.Sampler):
             if len(self.valid_dataset_idxs) < len(self.dataset.datasets):
                 return True
 
+    def on_sample_batch_end(self):
+        """
+        Called just after self.sample_batch()
+        To be overridden in child classes.
+        """
+        pass
+
     def on_exhaustion(self):
         """
+        Called as soon as self.exhausted evaluates to True.
         To be overridden in child classes.
         """
         pass
@@ -381,6 +390,7 @@ class WeightedDatasetSampler(DatasetSampler):
             kwargs["name"] = "WeightedDatasetSampler"
         super().__init__(*args, **kwargs)
         self.weights = self._get_weights(weights)
+        self.num_samples_this_epoch = 0
 
     def sample_dataset_idx(self):
         probs = self.get_dataset_probs()
@@ -404,18 +414,42 @@ class WeightedDatasetSampler(DatasetSampler):
             raise ValueError(f"weights should be None or a list of positive numbers. Got {weights}.")  # noqa
         return weights
 
+    @property
+    def exhausted(self):
+        if self.exhaust_all is True:
+            if len(self.valid_dataset_idxs) == 0:
+                return True
+        else:
+            # TODO: len(self) can change mid epoch, which breaks this test.
+            print(self.step)
+            print(self.num_samples_this_epoch, len(self))
+            input()
+            if self.num_samples_this_epoch >= len(self):
+                print("TRUE")
+                return True
+        return False
+
+    def on_sample_batch_end(self):
+        self.num_samples_this_epoch += 1
+
+    def on_exhaustion(self):
+        self.num_samples_this_epoch = 0
+
     def _estimate_length(self, lengths, probs):
         # Total number of steps
         nsteps = np.ceil(np.array(lengths) / self.batch_size).astype(int)
         n = nsteps.min()
         while n < (sys.maxsize / 2):  # A crude ceiling...
             dists = [stats.binom(n, p) for p in probs]
-            # probabilities of getting between nsteps - 5 and nsteps successes
-            ps = np.array([1. - d.cdf(s - 5) for (d, s) in zip(dists, nsteps)])
+            # probabilities of getting between nsteps-var and nsteps successes
+            # P[X > lb] and P[X < nsteps]
+            variances = [int(np.ceil(d.var())) for d in dists]
+            ps = np.array([1. - d.cdf(s - v) for (d, v, s)
+                           in zip(dists, variances, nsteps)])
             # N.B. The threshold depends on the batch size, but this shouldn't
             #  matter too much in practice. E.g. a lower batch size requires
             #  a higher threshold.
-            if any(ps >= 0.85):
+            if any(ps >= 0.95):
                 return n
             n += 1
         raise ValueError("WeightedDatasetSampler._estimate_length() exceeded sys.maxsize/2, which is very large! Check that your dataset probabilities make sense: {probs}")  # noqa
@@ -513,9 +547,10 @@ class ScheduledWeightedSampler(WeightedDatasetSampler):
         return trig_fn(num / (self.max_steps - 1) + shift)
 
     def on_exhaustion(self):
+        super().on_exhaustion()
         self.step += 1
 
-    def plot_schedule(self, steps=None):
+    def plot_schedule(self, steps=None, plot_lengths=False):
         """
         Use this to make sure ahead of time that you're using
         the schedule you want.
@@ -524,10 +559,18 @@ class ScheduledWeightedSampler(WeightedDatasetSampler):
             steps = self.max_steps
         probs = np.array([self.get_dataset_probs(step=s)
                           for s in range(steps)])
+        data_lengths = np.array([len(ds) for ds in self.dataset.datasets])
+        nsteps = np.ceil(data_lengths / self.batch_size).astype(int)
         for c in range(probs.shape[1]):
-            dataset_name = self.dataset.datasets[c].name
-            ls = ['-', '--', ':'][c % 3]
-            plt.plot(probs[:, c], label=dataset_name, linestyle=ls)
+            dataset_name = f"{self.dataset.datasets[c].name} (n={nsteps[c]})"
+            style = ['-', '--', ':'][c % 3]
+            plt.plot(probs[:, c], label=dataset_name, linestyle=style)
+        if plot_lengths is True:
+            lens = [self._estimate_length(data_lengths, self.get_dataset_probs(s))  # noqa
+                    for s in range(steps)]
+            norm_lens = [ln/max(lens) for ln in lens]
+            plt.plot(norm_lens, color="red",
+                     label=f"num_steps (max={max(lens)})")
         plt.ylim(0.0, 1.0)
         plt.legend()
         plt.show()
@@ -561,7 +604,7 @@ class SticklandMurraySampler(ScheduledWeightedSampler):
     def alpha(self, step=None):
         if step is None:
             step = self.step
-        alpha = 1. - (self.anneal_rate * ((step / self.max_steps - 1)))
+        alpha = 1. - (self.anneal_rate * (step / (self.max_steps - 1)))
         return alpha
 
 
