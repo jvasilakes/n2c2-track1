@@ -1,0 +1,49 @@
+# Experiment
+name: bert/mdl/negation_assertion
+description: bert-base-uncased sequence classifier on n2c2_2022 Negation + n2c2_2010, stop epoch once first dataset is exhausted
+  Assertion
+logdir: logs/
+random_seed: 0
+
+# Data
+data_dir: /home/jav/Documents/Projects/n2c2_2022/n2c2-track1/n2c2Track1TrainingData-v3/data_v3
+sentences_dir: /home/jav/Documents/Projects/n2c2_2022/n2c2-track1/n2c2Track1TrainingData-v3/segmented
+tasks_to_load:
+- Negation
+window_size: 0
+max_train_examples: null
+auxiliary_data:
+  n2c2Assertion:
+    data_dir: /home/jav/Documents/Projects/n2c2_2022/n2c2-track1/auxiliary_data/n2c2_2010_concept_assertion_relation/combined/ast_brat/
+    max_train_examples: null
+    name: n2c2Assertion
+    sentences_dir: /home/jav/Documents/Projects/n2c2_2022/n2c2-track1/auxiliary_data/n2c2_2010_concept_assertion_relation/combined/segmented/
+    tasks_to_load:
+    - Assertion
+    window_size: 1
+dataset_sample_strategy: annealed
+
+# Model
+model_name: bert-sequence-classifier
+bert_model_name_or_path: bert-base-uncased
+freeze_pretrained: false
+use_entity_spans: true
+entity_pool_fn: first-last
+mark_entities: true
+max_seq_length: 300
+dropout_prob: 0.2
+
+# Losses
+classifier_loss_fn: cross-entropy
+classifier_loss_kwargs: {}
+mask_loss_fn: ratio
+mask_loss_kwargs: {}
+
+# Training
+batch_size: 12
+sample_strategy: null
+lr: 3.0e-05
+weight_decay: 0.0
+gradient_clip_val: 10.0
+max_epochs: 10
+

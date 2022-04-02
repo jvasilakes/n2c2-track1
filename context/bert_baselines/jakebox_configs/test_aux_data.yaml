@@ -1,0 +1,55 @@
+# Experiment
+name: test_aux_data
+description: test experiment with multiple datasets
+logdir: logs/
+random_seed: 0
+
+# Data
+dataset_name: n2c2Context
+data_dir: /home/jav/Documents/Projects/n2c2_2022/n2c2-track1/n2c2Track1TrainingData-v3/data_v3
+sentences_dir: /home/jav/Documents/Projects/n2c2_2022/n2c2-track1/n2c2Track1TrainingData-v3/segmented
+tasks_to_load:
+- Certainty
+- Negation
+window_size: 0
+max_train_examples: 50
+auxiliary_data:
+  n2c2Assertion:
+    data_dir: /home/jav/Documents/Projects/n2c2_2022/n2c2-track1/auxiliary_data/n2c2_2010_concept_assertion_relation/combined/ast_brat/
+    dataset_name: n2c2Assertion
+    max_train_examples: 10
+    sentences_dir: /home/jav/Documents/Projects/n2c2_2022/n2c2-track1/auxiliary_data/n2c2_2010_concept_assertion_relation/combined/segmented/
+    tasks_to_load:
+    - Assertion
+    window_size: 1
+dataset_sample_strategy: scheduled
+dataset_sampler_kwargs:
+  weights: [0.8, 0.2]
+  num_cycles: 1
+  max_steps: 10
+  exhaust_all: false
+
+# Model
+model_name: bert-sequence-classifier
+bert_model_name_or_path: bert-base-uncased
+freeze_pretrained: false
+use_entity_spans: false
+entity_pool_fn: max
+mark_entities: false
+max_seq_length: 256
+dropout_prob: 0.2
+
+# Losses
+classifier_loss_fn: cross-entropy
+classifier_loss_kwargs: {}
+mask_loss_fn: ratio
+mask_loss_kwargs: {}
+
+# Training
+batch_size: 2
+sample_strategy: null
+lr: 0.001
+weight_decay: 0.0
+gradient_clip_val: 10.0
+max_epochs: 3
+
