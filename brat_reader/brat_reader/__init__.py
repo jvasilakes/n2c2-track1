@@ -1,7 +1,7 @@
 import os
 import html
-import pathlib
 from collections import defaultdict
+from pathlib import Path
 import numpy as np
 
 
@@ -9,7 +9,9 @@ class Annotation(object):
 
     def __init__(self, _id, _source_file):
         self.id = _id
-        self._source_file = self._resolve_file_path(_source_file)
+        self._source_file = _source_file
+        if _source_file is not None:
+            self._source_file = os.path.basename(_source_file)
 
     def update(self, key, value):
         self.__dict__[key] = value
@@ -51,7 +53,7 @@ class Annotation(object):
     @staticmethod
     def _resolve_file_path(path):
         try:
-            here = pathlib.Path(path).resolve()
+            here = Path(path).resolve()
             abspath = str(here.absolute())
         except TypeError:
             abspath = path
@@ -351,8 +353,8 @@ class BratAnnotations(object):
     def save_brat(self, outdir):
         for ann in self.get_highest_level_annotations():
             brat_str = ann.to_brat_str(output_references=True)
-            source_bn = os.path.basename(ann._source_file)
-            outfile = os.path.join(outdir, source_bn)
+            bn = os.path.basename(ann._source_file)
+            outfile = os.path.join(outdir, bn)
             with open(outfile, 'a') as outF:
                 outF.write(brat_str + '\n')
 
