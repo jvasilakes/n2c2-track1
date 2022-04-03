@@ -407,8 +407,8 @@ class WeightedDatasetSampler(DatasetSampler):
         return np.random.choice(self.valid_dataset_idxs, p=probs)
 
     def get_dataset_probs(self):
-        valid_weights = [self.weights[i] for i in self.valid_dataset_idxs]
-        probs = np.array([w/sum(valid_weights) for w in valid_weights])
+        valid_weights = self.weights[self.valid_dataset_idxs]
+        probs = valid_weights / valid_weights.sum()
         return probs
 
     def _get_weights(self, weights):
@@ -425,7 +425,7 @@ class WeightedDatasetSampler(DatasetSampler):
             assert np.all(weights > 0.)
         else:
             raise ValueError(f"weights should be None or a list of positive numbers. Got {weights}.")  # noqa
-        return weights
+        return np.array(weights)
 
     @property
     def exhausted(self):
