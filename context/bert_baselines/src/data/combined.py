@@ -324,8 +324,7 @@ class DatasetSampler(torch.utils.data.sampler.Sampler):
         Called just before running __iter__.
         To be overridden in child classes.
         """
-        self.valid_dataset_idxs = list(range(len(self.dataset.datasets)))
-        self.batchers = self._get_batchers()
+        pass
 
     def on_sample_batch_end(self):
         """
@@ -339,7 +338,8 @@ class DatasetSampler(torch.utils.data.sampler.Sampler):
         Called as soon as self.exhausted evaluates to True.
         To be overridden in child classes.
         """
-        pass
+        self.valid_dataset_idxs = list(range(len(self.dataset.datasets)))
+        self.batchers = self._get_batchers()
 
     def _get_batchers(self):
         batchers = []
