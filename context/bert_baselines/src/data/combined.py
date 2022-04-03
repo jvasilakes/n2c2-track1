@@ -391,8 +391,10 @@ class RandomDatasetSampler(DatasetSampler):
 @register_sampler("weighted")
 class WeightedDatasetSampler(DatasetSampler):
     """
-    weights: None or list of positive numbers representing the
+    weights: None, 'lengths', or list of positive numbers representing the
              unnormalized weight for each dataset.
+             If 'lengths', sets weights equal to the number of
+             examples in each dataset.
     """
     def __init__(self, *args, weights=None, **kwargs):
         if "name" not in kwargs.keys():
@@ -413,6 +415,9 @@ class WeightedDatasetSampler(DatasetSampler):
         if weights is None:
             weights = np.ones(len(self.dataset.datasets))
             warnings.warn("No weights specified for WeightedDatasetSampler. Falling back to Uniform weights.")  # noqa
+        elif weights == "lengths":
+            weights = [len(ds) for ds in self.dataset.datasets]
+            warnings.warn(f"Using dataset lengths as sampler weights: {weights}")  # noqa
         elif isinstance(weights, (list, np.ndarray)):
             if len(weights) != len(self.dataset.datasets):
                 raise ValueError(f"Got different number of weights and datasets: {len(weights)}, {len(datasets)}")  # noqa
@@ -606,11 +611,9 @@ class SticklandMurraySampler(ScheduledWeightedSampler):
         if "name" not in sampler_kwargs.keys():
             sampler_kwargs["name"] = "SticklandMurraySampler"
 
-        # Set weights to the lengths of each dataset.
-        datasets = sampler_args[0].datasets
-        weights = np.array([len(ds) for ds in datasets])
+        weights = "lengths"
         if "weights" in sampler_kwargs.keys():
-            warnings.warn(f"SticklandAndMurraySampler: overriding provided weights {sampler_kwargs['weights']} with dataset lengths {weights}.")  # noqa
+            warnings.warn(f"SticklandAndMurraySampler: overriding provided weights {sampler_kwargs['weights']} with dataset lengths.")  # noqa
         sampler_kwargs["weights"] = weights
         super().__init__(*sampler_args, **sampler_kwargs)
         if max_steps <= 1:
