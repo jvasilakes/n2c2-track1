@@ -13,7 +13,8 @@ tasks_to_load:
 window_size: 0
 max_train_examples: 10
 auxiliary_data: {}
-dataset_sample_strategy: proportional
+dataset_sample_strategy: sequential
+dataset_sampler_kwargs: {}
 
 # Model
 model_name: bert-sequence-classifier

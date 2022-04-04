@@ -1,0 +1,37 @@
+# Experiment
+description: test experiment on CSF
+logdir: /mnt/iusers01/nactem01/u14498jv/scratch/n2c2_track1/context/bert_baseline_logs/
+name: test_csf3
+random_seed: 0
+
+# Data
+data_dir: /mnt/iusers01/nactem01/u14498jv/Projects/n2c2-track1/n2c2Track1TrainingData-v2/data_v2/
+max_train_examples: 50
+sentences_dir: /mnt/iusers01/nactem01/u14498jv/Projects/n2c2-track1/n2c2Track1TrainingData-v2/segmented
+tasks_to_load: all
+window_size: 0
+
+# Model
+bert_model_name_or_path: bert-base-uncased
+dropout_prob: 0.1
+entity_pool_fn: max
+freeze_pretrained: false
+mark_entities: false
+max_seq_length: 256
+model_name: bert-sequence-classifier
+use_entity_spans: false
+
+# Losses
+classifier_loss_fn: cross-entropy
+classifier_loss_kwargs: {}
+mask_loss_fn: ratio
+mask_loss_kwargs: {}
+
+# Training
+batch_size: 10
+gradient_clip_val: 10.0
+lr: 0.001
+max_epochs: 2
+sample_strategy: null
+weight_decay: 0.0
+
