@@ -1,6 +1,7 @@
 # Experiment
-name: clinical_bert/action_entity_marked/version_4/rerun
-description: Bio_ClinicalBERT using entity spans on the Action task only
+name: clinical_bert/mtl/action_negation
+description: Bio_ClinicalBERT using entity spans on the Action and Negation tasks
+  with label smoothing
 logdir: /mnt/iusers01/nactem01/u14498jv/scratch/n2c2_track1/context/bert_baseline_logs/
 random_seed: 0
 
@@ -10,10 +11,11 @@ data_dir: /mnt/iusers01/nactem01/u14498jv/Projects/n2c2-track1/n2c2Track1Trainin
 sentences_dir: /mnt/iusers01/nactem01/u14498jv/Projects/n2c2-track1/n2c2Track1TrainingData-v3/segmented
 tasks_to_load:
 - Action
+- Negation
 window_size: 1
 max_train_examples: null
 auxiliary_data: {}
-dataset_sample_strategy: sequential
+dataset_sample_strategy: proportional
 dataset_sampler_kwargs: {}
 
 # Model
@@ -28,7 +30,8 @@ dropout_prob: 0.2
 
 # Losses
 classifier_loss_fn: cross-entropy
-classifier_loss_kwargs: {}
+classifier_loss_kwargs:
+  label_smoothing: 0.1
 mask_loss_fn: ratio
 mask_loss_kwargs: {}
 
