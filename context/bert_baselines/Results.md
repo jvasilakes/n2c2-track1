@@ -27,6 +27,20 @@ Entity markers: use both
 |micro    | 0.814 | 0.814 | 0.814 | 0.857 |
 |macro    | 0.789 | 0.727 | 0.753 | 0.776 |
 
+### Possible Contenders
+Combined with i2b2 using...  
+dataset concatenation
+|      | prec  | rec   | f1    |
+|------|-------|-------|-------|
+|MICRO | 0.833 | 0.833 | 0.833 |
+|MACRO | 0.821 | 0.819 | 0.818 |
+
+length-weighted annealed dataset sampling
+|      | prec  | rec   | f1    |
+|------|-------|-------|-------|
+|MICRO | 0.824 | 0.824 | 0.824 |
+|MACRO | 0.840 | 0.786 | 0.809 |
+
 
 ## Actor
 bert-base-uncased  
@@ -40,14 +54,14 @@ Entity markers: use both
 
 ## Certainty
 Bio\_ClinicalBERT  
-n2c2 2022 + i2b2 2009 multi-dataset learning  
+n2c2 2022 + i2b2 2009 multi-dataset learning, length-weighted dataset sampling
 n2c2 2022: +/- 1 sentence window  
 i2b2 2009: 0 sentence window  
 Entity markers: use first only  
 |         | prec  | rec   | f1    | Avg F1|
 |---------|-------|-------|-------|-------|
-|micro    | 0.928 | 0.928 | 0.928 | 0.916 |
-|macro    | 0.899 | 0.796 | 0.841 | 0.674 |
+|micro    | 0.914 | 0.914 | 0.914 |       |
+|macro    | 0.884 | 0.789 | 0.830 |       |
 
 
 ## Negation
@@ -69,6 +83,13 @@ Entity markers: use first only
 |---------|-------|-------|-------|-------|
 |micro    | 0.837 | 0.837 | 0.837 | 0.862 |
 |macro    | 0.830 | 0.662 | 0.704 | 0.785 |
+
+### Possible Contender
+Combined with i2b2 using length-weighted annealed dataset sampling
+|      | prec  | rec   | f1    |
+|------|-------|-------|-------|
+|MICRO | 0.864 | 0.864 | 0.864 |
+|MACRO | 0.865 | 0.682 | 0.727 |
 
 
 # Pooled Output Results
