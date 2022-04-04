@@ -1,6 +1,6 @@
 # Experiment
-name: clinical_bert/action_entity_marked/version_4/rerun
-description: Bio_ClinicalBERT using entity spans on the Action task only
+name: bert/actor_entity_marked
+description: bert-base-uncased using marked entity spans
 logdir: /mnt/iusers01/nactem01/u14498jv/scratch/n2c2_track1/context/bert_baseline_logs/
 random_seed: 0
 
@@ -9,8 +9,8 @@ dataset_name: n2c2Context
 data_dir: /mnt/iusers01/nactem01/u14498jv/Projects/n2c2-track1/n2c2Track1TrainingData-v3/data_v3/
 sentences_dir: /mnt/iusers01/nactem01/u14498jv/Projects/n2c2-track1/n2c2Track1TrainingData-v3/segmented
 tasks_to_load:
-- Action
-window_size: 1
+- Actor
+window_size: 0
 max_train_examples: null
 auxiliary_data: {}
 dataset_sample_strategy: sequential
@@ -18,7 +18,7 @@ dataset_sampler_kwargs: {}
 
 # Model
 model_name: bert-sequence-classifier
-bert_model_name_or_path: emilyalsentzer/Bio_ClinicalBERT
+bert_model_name_or_path: bert-base-uncased
 freeze_pretrained: false
 use_entity_spans: true
 entity_pool_fn: first-last
