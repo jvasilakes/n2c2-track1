@@ -107,7 +107,7 @@ def test():
 
     # load model
     model = deepEM.DeepEM(parameters)
-    checkpoint_dir = parameters['ner_model_dir']
+    checkpoint_dir = parameters['model_dir']
     
     utils.handle_checkpoints(model=model,
                              checkpoint_dir=checkpoint_dir,
