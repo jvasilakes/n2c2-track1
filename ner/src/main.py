@@ -25,6 +25,8 @@ from utils import utils
 
 from utils.utils import load_bert_weights
 
+from torch.nn import functional as F
+
 
 def main():
     # check running time
@@ -35,7 +37,7 @@ def main():
     config_path = getattr(inp_args, 'yaml')
 
     # set config path manually    
-    # config_path = 'experiments/0/baseline_roberta/train-ner-vae.yaml'    
+    # config_path = 'experiments/0/baseline/train-ner-vae.yaml'    
 
     with open(config_path, 'r') as stream:
         parameters = utils._ordered_load(stream)
@@ -43,6 +45,7 @@ def main():
     parameters['gpu'] = getattr(inp_args, 'gpu')
     parameters['start_epoch'] = getattr(inp_args, 'start_epoch')
     parameters['epoch'] = getattr(inp_args, 'epoch')
+    # parameters['ensemble'] = getattr(inp_args, 'ensemble')
    
     # print config
     utils._print_config(parameters, config_path)
@@ -138,23 +141,15 @@ def main():
 
     # 2. model
     model = deepEM.DeepEM(parameters)
-
+    
     if parameters['start_epoch'] > 0:
         utils.handle_checkpoints(model=model,
-                checkpoint_dir=parameters['ner_model_dir'],
+                checkpoint_dir=parameters['model_dir'],
                 params={
                     'device': device
                 },
                 resume=True)
-
-    if parameters['start_epoch'] > 0:
-        utils.handle_checkpoints(model=model,
-                    checkpoint_dir=parameters['ner_model_dir'],
-                    params={
-                            'device': device
-                    },
-                    resume=True)
-
+   
     # 3. optimizer
     assert (
             parameters['gradient_accumulation_steps'] >= 1
@@ -196,14 +191,41 @@ def main():
     scheduler = get_linear_schedule_with_warmup(optimizer, num_warmup_steps=parameters['warmup_proportion']*t_total, num_training_steps=t_total) 
     
     if parameters['train']:
-        # 4. training
         if parameters['fp16']:
             model, optimizer = amp.initialize(model, optimizer, opt_level="O1")
 
-        training.train(train_data_loader=train_dataloader, dev_data_loader=dev_dataloader,
-                       train_data=train_data, dev_data=dev_data, params=parameters, model=model,
-                       optimizer=optimizer, 
-                       scheduler=scheduler)
+            training.train(train_data_loader=train_dataloader, dev_data_loader=dev_dataloader,
+                        train_data=train_data, dev_data=dev_data, params=parameters, model=model,
+                        optimizer=optimizer, 
+                        scheduler=scheduler)
+        # if parameters['ensemble']:
+        #     from torchensemble import VotingClassifier
+        #     model = VotingClassifier(
+        #             estimator=model,
+        #             n_estimators=10,
+        #             cuda=True,
+        #     )
+        #     criterion = F.binary_cross_entropy_with_logits
+        #     model.set_criterion(criterion)
+
+        #     # Set the optimizer
+        #     model.set_optimizer(optimizer)
+
+        #     # Train and Evaluate
+        #     model.fit(
+        #         train_dataloader,
+        #         epochs=5,
+        #         test_loader=dev_dataloader,
+        #         save_dir=parameters['result_dir']
+        #     )
+        # else: #normal training            
+        #     if parameters['fp16']:
+        #         model, optimizer = amp.initialize(model, optimizer, opt_level="O1")
+
+        #     training.train(train_data_loader=train_dataloader, dev_data_loader=dev_dataloader,
+        #                 train_data=train_data, dev_data=dev_data, params=parameters, model=model,
+        #                 optimizer=optimizer, 
+        #                 scheduler=scheduler)
 
     print('TRAINING: DONE!')
 
