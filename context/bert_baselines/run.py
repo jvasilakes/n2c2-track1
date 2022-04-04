@@ -172,6 +172,20 @@ def run_train(config, datamodule, logdir="logs/", version=None,
 
     available_gpus = min(1, torch.cuda.device_count())
     enable_progress_bar = not quiet
+    trainer_kwargs = {"check_val_every_n_epoch": 1}
+    # For CombinedDataModules with some samplers, the length can
+    # change from epoch to epoch, which pytorch_lightning doesn't
+    # really support. To get around this we just set the val
+    # check interval to the small train epoch size.
+    if isinstance(datamodule, CombinedDataModule):
+        sampler = datamodule.train_dataloader().batch_sampler
+        if hasattr(sampler, "step"):
+            min_len = None
+            for i in range(sampler.max_steps):
+                sampler.step = i
+                if min_len is None or len(sampler) < min_len:
+                    min_len = len(sampler)
+            trainer_kwargs = {"val_check_interval": min_len}
     # There is a bug with deterministic indexing on the gpu
     #  in the current pytorch version, so we have to turn it off.
     #  https://github.com/pytorch/pytorch/issues/61032
@@ -184,8 +198,7 @@ def run_train(config, datamodule, logdir="logs/", version=None,
             callbacks=[checkpoint_cb],
             enable_progress_bar=enable_progress_bar,
             log_every_n_steps=32,
-            check_val_every_n_epoch=1,
-            reload_dataloaders_every_n_epochs=1,
+            **trainer_kwargs,
             )
     trainer.fit(model, datamodule=datamodule)
     if save_last_epoch is True:
