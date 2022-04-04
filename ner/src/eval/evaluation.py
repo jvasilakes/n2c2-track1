@@ -207,7 +207,7 @@ def save_models(model, params, optimizer, global_steps, epoch, n2c2_scores):
 
     # Save models
     if params['save_ner']:
-        ner_model_path = params['ner_model_dir']
+        ner_model_path = params['model_dir']
         is_save = utils.handle_checkpoints(
             model=model.NER_layer, 
             checkpoint_dir=ner_model_path,
@@ -224,7 +224,7 @@ def save_models(model, params, optimizer, global_steps, epoch, n2c2_scores):
         )
 
     if params['save_all_models']:
-        deepee_model_path = params['ner_model_dir']
+        deepee_model_path = params['model_dir']
         is_save = utils.handle_checkpoints(
             model=model,
             checkpoint_dir=deepee_model_path,
