@@ -1,9 +1,11 @@
 import os
 import json
 from glob import glob
+from collections import defaultdict
 from typing import List, Dict, Union
 
 import torch
+import numpy as np
 import pytorch_lightning as pl
 from torch.utils.data import Dataset, DataLoader
 
@@ -19,13 +21,15 @@ class BratMultiTaskDataset(Dataset):
 
     def __init__(self, data_dir, sentences_dir,
                  label_names="all", window_size=0,
-                 max_examples=-1, mark_entities=False):
+                 max_examples=-1, mark_entities=False,
+                 levitate=False):
         self.data_dir = data_dir
         self.sentences_dir = sentences_dir
         self.label_names = label_names
         self.window_size = window_size
         self.max_examples = max_examples
         self.mark_entities = mark_entities
+        self.levitate = levitate
         self._name = None
 
         self.examples, self.docids_to_texts = self._get_examples_and_texts()
@@ -271,8 +275,125 @@ class BasicBertDataModule(pl.LightningDataModule):
         raise NotImplementedError()
 
     def encode_and_collate(self, examples) -> Dict:
+        batch = {"encodings": None,
+                 "entity_spans": [],
+                 "char_offsets": [],
+                 "texts": [],
+                 "labels": defaultdict(list),
+                 "docids": []
+                 }
+
+        for ex in examples:
+            batch["entity_spans"].append(ex["entity_span"])
+            batch["char_offsets"].append(ex["char_offset"])
+            batch["texts"].append(ex["text"])
+            batch["docids"].append(ex["docid"])
+            for (task, val) in ex["labels"].items():
+                batch["labels"][task].append(val)
+
+        encodings = self.tokenizer(batch["texts"], truncation=True,
+                                   max_length=self.max_seq_length,
+                                   padding="max_length",
+                                   return_offsets_mapping=True,
+                                   return_tensors="pt")
+
+        # Packed-Levitated Marker
+        if self.levitate is True:
+            encodings = self.levitate_encodings(
+                encodings, batch["entity_spans"],
+                window_size=self.num_levitated_tokens)
+
+        batch["encodings"] = encodings
+        batch["entity_spans"] = torch.tensor(batch["entity_spans"])
+        for task in batch["labels"].keys():
+            batch["labels"][task] = torch.tensor(batch["labels"][task])
+        batch["labels"] = dict(batch["labels"])
+        return batch
+
+    def levitate_encodings(self, encodings, entity_spans,
+                           window_size=5, max_span_length=3):
         """
-        Your own, unique function for combining a list of examples
-        into a batch.
+        encodings: output of self.tokenizer(texts)
+        entity_spans: list of (start_index, end_index) tuples.
+        window_size: number of spans to consider +/- the target entity
+        max_span_length: maximum length in number of wordpiece tokens
+                         to treat as a marked span.
         """
-        raise NotImplementedError()
+        for example_idx in range(entity_spans.size(0)):
+            input_ids = encodings["input_ids"][example_idx]
+            attention_mask = encodings["attention_mask"][example_idx]
+            offsets = encodings["offset_mapping"][example_idx]
+            entity_span = entity_spans[example_idx]
+
+            entity_token_idxs = [i for (i, off) in enumerate(offsets)
+                                 if off[0] >= entity_span[0]
+                                 and off[1] <= entity_span[1]]
+            if len(entity_token_idxs) == 0:
+                raise ValueError("Couldn't find entity span!")
+            entity_start = entity_token_idxs[0]
+            entity_end = entity_token_idxs[1]
+
+            # Get tokens in window_size around start/end entity_token_idxs
+            idx_before_entity = max(0, entity_token_idxs[0] - window_size)
+            seq_len_no_pad = (input_ids != 0).sum()
+            idx_after_entity = min(seq_len_no_pad,
+                                   entity_token_idxs[-1] + window_size)
+
+            before_token_idxs = np.arange(idx_before_entity, entity_start)
+            before_span_idxs = self.get_subspan_idxs(
+                before_token_idxs, input_ids, max_length=max_span_length)
+            after_token_idxs = np.arange(entity_end+1, idx_after_entity)
+            after_span_idxs = self.get_subspan_idxs(
+                after_token_idxs, input_ids, max_length=max_span_length)
+
+            # max_num_spans is the number of sublists up to length max_length
+            # E.g., for window_size 5 and max_length 3 there are 5+4+3=12
+            #  possible subspans on each side (12*2=24) of the entity span.
+            max_num_spans = np.arange(window_size+1)[-max_span_length:].sum() * 2  # noqa
+            # Each span has a start and end marker, so multiply by 2 again.
+            max_num_markers = max_num_spans * 2
+            max_seq_length = len(input_ids)
+            max_levitated_seq_length = max_seq_length + max_num_markers
+
+            position_ids = torch.arange(max_levitated_seq_length,
+                                        dtype=torch.long)
+            # attention_mask should be a square matrix with x and y dimentions
+            #  equal to (max_seq_length + max_num_markers)
+            attention_mask = torch.hstack((attention_mask,
+                                           torch.zeros(max_num_markers)))
+            attention_mask = attention_mask.unsqueeze(0)
+            attention_mask = attention_mask.repeat(max_levitated_seq_length, 1)
+
+            # TODO: what should position_ids be for PAD tokens?
+            all_span_idxs = [*before_span_idxs, *after_span_idxs]
+            marker_start_idxs = range(max_seq_length + 1,
+                                      max_levitated_seq_length + 1, 2)
+            for (marker_start, span) in zip(marker_start_idxs, all_span_idxs):
+                # The indices of the markers in position_ids and attention_mask
+                marker_end = marker_start + 1
+                # position ids of the markers to equal those of the start/end
+                # tokens of the span.
+                position_ids[marker_start] = span[0]
+                position_ids[marker_end] = span[-1]
+                # Markers are visible to each other and other markers.
+                attention_mask[marker_start, marker_start] = 1
+                attention_mask[marker_start, marker_end] = 1
+                attention_mask[marker_end, marker_end] = 1
+                attention_mask[marker_end, marker_start] = 1
+
+    def get_subspan_idxs(self, idxs, input_ids, max_length=2, ignore_tokens=[]):  # noqa
+        """
+        Use input_ids to check if we should ignore the token at
+        a given index.
+        """
+        if torch.is_tensor(idxs):
+            idxs = idxs.tolist()
+        subspans = []
+        for j in range(1, len(idxs) + 1):
+            start = max(0, j - max_length)
+            for i in range(start, j):
+                subspan = idxs[i:j]
+                subspan_tokens = input_ids[subspan].tolist()
+                if len(ignore_tokens.intersection(subspan_tokens)) == 0:
+                    subspans.append(subspan)
+        return subspans
