@@ -176,7 +176,7 @@ def run_train(config, datamodule, logdir="logs/", version=None,
     # For CombinedDataModules with some samplers, the length can
     # change from epoch to epoch, which pytorch_lightning doesn't
     # really support. To get around this we just set the val
-    # check interval to the small train epoch size.
+    # check interval to the smallest train epoch size.
     if isinstance(datamodule, CombinedDataModule):
         sampler = datamodule.train_dataloader().batch_sampler
         if hasattr(sampler, "step"):
