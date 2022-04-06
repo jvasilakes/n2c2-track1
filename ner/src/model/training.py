@@ -12,12 +12,6 @@ from eval.evaluation import eval
 from utils import utils
 from utils.utils import debug, _humanized_time
 from utils.utils import extract_scores
-    
-
-# try:
-#     from apex import amp
-# except ImportError:
-#     pass
 
 
 def train(
@@ -120,31 +114,6 @@ def train(
                 if params['gpu'] >= 0:
                     torch.cuda.empty_cache()
             
-
-            # if not params['use_optimizer'] == "AdamW":
-            #     if total_loss != 0:
-            #         if params["fp16"]:
-            #             with amp.scale_loss(total_loss, optimizer) as scaled_loss:
-            #                 scaled_loss.backward()
-            #         else:
-            #             try:
-            #                 total_loss.backward()
-            #             except RuntimeError as err:
-            #                 print('RuntimeError loss.backward(): ', err)
-            #                 # raise
-
-            #     if (step + 1) % params["gradient_accumulation_steps"] == 0:
-            #         # try max-grad-norm from bert-vae
-            #         optimizer.step()
-            #         optimizer.zero_grad()
-            #         # scheduler.step()
-
-            #         global_steps += 1
-
-            #         # Clear GPU unused RAM:
-            #         if params['gpu'] >= 0:
-            #             torch.cuda.empty_cache()
-
         # save for batches
         ep_loss = tr_loss / nb_tr_steps
         # ner_loss = total_loss.item() / nb_tr_steps
@@ -186,6 +155,8 @@ def train(
 
     tb_writer.flush()
     tb_writer.close()
+
+  
 
 def show_results(n2c2_scores, ner_prf_dev_str, ner_prf_dev_sof):
     ner_prf_dev_str.append(

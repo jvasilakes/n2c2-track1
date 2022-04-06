@@ -244,7 +244,7 @@ def write_annotation_file(
                 entity["type"],
                 entity["start"],
                 entity["end"],
-                entity["ref"],
+                entity["ref"].replace('\n', ' '),
             )
             lines.append(entity_annotation)
 

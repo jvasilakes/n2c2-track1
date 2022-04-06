@@ -89,6 +89,7 @@ def _parsing():
     parser.add_argument('--gpu', type=int, default=0, help="GPU id")
     parser.add_argument('--start_epoch', type=int, default=0, help="Start epoch, if start_epoch >0, resume from a pre-trained epoch")
     parser.add_argument('--epoch', type=int, default=10, help="Number of epoch")
+    # parser.add_argument('--ensemble', type=bool, default=True, help="ensemble or not")
     
     args = parser.parse_args()
     return args
