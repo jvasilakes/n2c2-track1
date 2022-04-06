@@ -1,3 +1,4 @@
+import timeit
 import argparse
 import colorama
 import warnings
@@ -50,15 +51,16 @@ def run(config_file):
     del tmp_config
     pl.seed_everything(config.random_seed)
 
-    #test_mask_hidden(config)
-    #test_mask_hidden_marked(config)
-    #test_pool_entity_embeddings_max(config)
-    #test_pool_entity_embeddings_mean(config)
-    #test_pool_entity_embeddings_first(config)
-    #test_pool_entity_embeddings_last(config)
-    #test_pool_entity_embeddings_first_last(config)
+    test_mask_hidden(config)
+    test_mask_hidden_marked(config)
+    test_pool_entity_embeddings_max(config)
+    test_pool_entity_embeddings_mean(config)
+    test_pool_entity_embeddings_first(config)
+    test_pool_entity_embeddings_last(config)
+    test_pool_entity_embeddings_first_last(config)
     test_scheduled_dataset_sampler(config)
     test_stickland_murray_dataset_sampler(config)
+    test_levitate_encodings(config)
 
 
 @test_logger
@@ -462,6 +464,30 @@ def test_stickland_murray_dataset_sampler(config):
          for s in range(sampler.max_steps)]
     )
     assert (gold_lens == sampler_lens).all()
+
+
+def test_levitate_encodings(config, i=0):
+    pl.utilities.seed.reset_seed()
+    data_kwargs = {
+        "mark_entities": True,
+        "batch_size": 2,
+        "max_seq_length": 75,
+    }
+    datamodule = load_datamodule_from_config(config, **data_kwargs)
+    with warnings.catch_warnings():
+        warnings.simplefilter("ignore")
+        # Ignore "No test set found"
+        datamodule.setup()
+    for (batch_idx, batch) in enumerate(datamodule.val_dataloader()):
+        if batch_idx == i:
+            break
+    start = timeit.default_timer()
+    encodings, marker_spans = datamodule.levitate_encodings(
+        batch["encodings"], batch["entity_spans"])
+    end = timeit.default_timer()
+    print(f"levitate_encodings(): {end - start}s")
+    # TODO: come up with some actual tests.
+    return encodings, marker_spans
 
 
 if __name__ == "__main__":
