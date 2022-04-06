@@ -1,5 +1,6 @@
 import os
 import json
+import string
 from glob import glob
 from collections import defaultdict
 from typing import List, Dict, Union
@@ -299,7 +300,7 @@ class BasicBertDataModule(pl.LightningDataModule):
 
         # Packed-Levitated Marker
         if self.levitate is True:
-            encodings = self.levitate_encodings(
+            encodings, batch["levitated_spans"] = self.levitate_encodings(
                 encodings, batch["entity_spans"],
                 window_size=self.num_levitated_tokens)
 
@@ -319,25 +320,50 @@ class BasicBertDataModule(pl.LightningDataModule):
         max_span_length: maximum length in number of wordpiece tokens
                          to treat as a marked span.
         """
-        for example_idx in range(entity_spans.size(0)):
+        new_encodings = {
+            "input_ids": [],
+            "token_type_ids": [],
+            "position_ids": [],
+            "attention_mask": [],
+            # offset_mapping won't change
+            "offset_mapping": encodings["offset_mapping"],
+        }
+        batch_size, max_seq_length = encodings["input_ids"].size()
+        # max_num_spans is the number of sublists up to length max_span_length
+        # E.g., for window_size=5 and max_span_length=3 there are 5+4+3=12
+        #  possible subspans on each side (i.e., x2) of the entity span for a
+        #  total of 24 possible spans.
+        max_num_spans = np.arange(window_size+1)[-max_span_length:].sum() * 2
+        # Each span has a start and end marker, so multiply by 2 again.
+        max_num_markers = max_num_spans * 2
+        max_levitated_seq_length = max_seq_length + max_num_markers
+
+        # Extend the token_type_ids to cover the markers.
+        new_encodings["token_type_ids"] = torch.hstack(
+            (encodings["token_type_ids"],
+             torch.zeros(batch_size, max_num_markers, dtype=torch.long))
+        )
+        # Find and add the levitated markers.
+        all_marker_spans = []
+        for example_idx in range(batch_size):
             input_ids = encodings["input_ids"][example_idx]
             attention_mask = encodings["attention_mask"][example_idx]
             offsets = encodings["offset_mapping"][example_idx]
             entity_span = entity_spans[example_idx]
 
+            # Get indices of the entity tokens from the character offsets.
             entity_token_idxs = [i for (i, off) in enumerate(offsets)
                                  if off[0] >= entity_span[0]
                                  and off[1] <= entity_span[1]]
             if len(entity_token_idxs) == 0:
                 raise ValueError("Couldn't find entity span!")
             entity_start = entity_token_idxs[0]
-            entity_end = entity_token_idxs[1]
+            entity_end = entity_token_idxs[-1]
 
             # Get tokens in window_size around start/end entity_token_idxs
-            idx_before_entity = max(0, entity_token_idxs[0] - window_size)
+            idx_before_entity = max(0, entity_start - window_size)
             seq_len_no_pad = (input_ids != 0).sum()
-            idx_after_entity = min(seq_len_no_pad,
-                                   entity_token_idxs[-1] + window_size)
+            idx_after_entity = min(seq_len_no_pad, entity_end + window_size)
 
             before_token_idxs = np.arange(idx_before_entity, entity_start)
             before_span_idxs = self.get_subspan_idxs(
@@ -346,28 +372,23 @@ class BasicBertDataModule(pl.LightningDataModule):
             after_span_idxs = self.get_subspan_idxs(
                 after_token_idxs, input_ids, max_length=max_span_length)
 
-            # max_num_spans is the number of sublists up to length max_length
-            # E.g., for window_size 5 and max_length 3 there are 5+4+3=12
-            #  possible subspans on each side (12*2=24) of the entity span.
-            max_num_spans = np.arange(window_size+1)[-max_span_length:].sum() * 2  # noqa
-            # Each span has a start and end marker, so multiply by 2 again.
-            max_num_markers = max_num_spans * 2
-            max_seq_length = len(input_ids)
-            max_levitated_seq_length = max_seq_length + max_num_markers
-
             position_ids = torch.arange(max_levitated_seq_length,
                                         dtype=torch.long)
-            # attention_mask should be a square matrix with x and y dimentions
-            #  equal to (max_seq_length + max_num_markers)
+            # attention_mask is a square matrix with x and y dimensions
+            #  equal to max_levitated_seq_length.
             attention_mask = torch.hstack((attention_mask,
                                            torch.zeros(max_num_markers)))
             attention_mask = attention_mask.unsqueeze(0)
             attention_mask = attention_mask.repeat(max_levitated_seq_length, 1)
+            marker_pad_amount = max_levitated_seq_length - max_seq_length
+            input_ids = torch.cat(
+                (input_ids, torch.zeros(marker_pad_amount, dtype=torch.long)))
 
-            # TODO: what should position_ids be for PAD tokens?
             all_span_idxs = [*before_span_idxs, *after_span_idxs]
-            marker_start_idxs = range(max_seq_length + 1,
-                                      max_levitated_seq_length + 1, 2)
+            marker_start_idxs = range(max_seq_length,
+                                      max_levitated_seq_length, 2)
+            num_markers = len(all_span_idxs) * 2
+            unused_token_id = 1  # actualy token is "[unused{unused_token_id}]"
             for (marker_start, span) in zip(marker_start_idxs, all_span_idxs):
                 # The indices of the markers in position_ids and attention_mask
                 marker_end = marker_start + 1
@@ -376,24 +397,47 @@ class BasicBertDataModule(pl.LightningDataModule):
                 position_ids[marker_start] = span[0]
                 position_ids[marker_end] = span[-1]
                 # Markers are visible to each other and other markers.
-                attention_mask[marker_start, marker_start] = 1
-                attention_mask[marker_start, marker_end] = 1
-                attention_mask[marker_end, marker_end] = 1
-                attention_mask[marker_end, marker_start] = 1
+                attention_mask[marker_start, max_seq_length:max_seq_length+num_markers] = 1  # noqa
+                attention_mask[marker_end, max_seq_length:max_seq_length+num_markers] = 1    # noqa
+                # append [unused{i}] tokens for the markers to input_ids
+                input_ids[marker_start] = unused_token_id
+                input_ids[marker_end] = unused_token_id
+                unused_token_id += 1
+                if unused_token_id == 100:
+                    raise ValueError("Ran out of [unused] token_ids! You should probably decrease the number of spans.")  # noqa
 
-    def get_subspan_idxs(self, idxs, input_ids, max_length=2, ignore_tokens=[]):  # noqa
+            new_encodings["input_ids"].append(input_ids)
+            new_encodings["position_ids"].append(position_ids)
+            new_encodings["attention_mask"].append(attention_mask.unsqueeze(0))
+            all_marker_spans.append(all_span_idxs)
+        new_encodings["input_ids"] = torch.vstack(new_encodings["input_ids"])
+        new_encodings["position_ids"] = torch.vstack(
+            new_encodings["position_ids"])
+        new_encodings["attention_mask"] = torch.vstack(
+            new_encodings["attention_mask"])
+        return new_encodings, all_marker_spans
+
+    def get_subspan_idxs(self, idxs, input_ids,
+                         max_length=2, ignore_punct=True):
         """
         Use input_ids to check if we should ignore the token at
         a given index.
         """
+        ignore_token_ids = set()
+        if ignore_punct is True:
+            ignore_tokens = list(string.punctuation)
+            ignore_token_ids = self.tokenizer.convert_tokens_to_ids(ignore_tokens)  # noqa
+            ignore_token_ids = set(ignore_token_ids)
         if torch.is_tensor(idxs):
             idxs = idxs.tolist()
+        if isinstance(idxs, np.ndarray):
+            idxs = list(idxs)
         subspans = []
         for j in range(1, len(idxs) + 1):
             start = max(0, j - max_length)
             for i in range(start, j):
                 subspan = idxs[i:j]
                 subspan_tokens = input_ids[subspan].tolist()
-                if len(ignore_tokens.intersection(subspan_tokens)) == 0:
+                if len(ignore_token_ids.intersection(subspan_tokens)) == 0:
                     subspans.append(subspan)
         return subspans
