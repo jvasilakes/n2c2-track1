@@ -9,6 +9,7 @@ import torch
 import numpy as np
 import pytorch_lightning as pl
 from torch.utils.data import Dataset, DataLoader
+from transformers import AutoTokenizer
 
 import brat_reader as br
 
@@ -30,7 +31,6 @@ class BratMultiTaskDataset(Dataset):
         self.window_size = window_size
         self.max_examples = max_examples
         self.mark_entities = mark_entities
-        self.levitate = levitate
         self._name = None
 
         self.examples, self.docids_to_texts = self._get_examples_and_texts()
@@ -61,9 +61,10 @@ class BratMultiTaskDataset(Dataset):
             return len(self.examples[:self.max_examples])
 
     def __getitem__(self, idx):
-        # Get the sentences in the window
+        # An example is brat_reader.Event or Attribute
         example = self.examples[idx]
         sentences = self.docids_to_texts[example.docid]
+        # Get the sentences in the window
         si = example.sent_index
         start_sent = max([0, si - self.window_size])
         end_sent = min([len(sentences), si + self.window_size + 1])
@@ -77,7 +78,7 @@ class BratMultiTaskDataset(Dataset):
             text += sent["_text"]
             prev_sent = sent
 
-        # Compute the relative offset of the entity in the context
+        # Compute the relative character offset of the entity in the context
         entity_start = example.start_index - context[0]["start_index"]
         entity_end = example.end_index - context[0]["start_index"]
         # Surround the entity spans with '@'. E.g., 'He took @Toradol@'.
@@ -110,7 +111,7 @@ class BratMultiTaskDataset(Dataset):
                 labels[attr_name] = self.ENCODINGS[attr_name][val]
 
         return {"text": text,
-                "entity_span": (entity_start, entity_end),
+                "entity_char_span": (entity_start, entity_end),
                 # For reconstructing original entity span offsets
                 #  in the source document.
                 "char_offset": context[0]["start_index"],
@@ -222,8 +223,19 @@ class BasicBertDataModule(pl.LightningDataModule):
     """
     The base data module for all BERT-based sequence classification datasets.
     """
-    def __init__(self, name=None):
+    def __init__(
+            self,
+            bert_model_name_or_path,
+            max_seq_length=128,
+            use_levitated_markers=False,
+            name=None):
+        self.bert_model_name_or_path = bert_model_name_or_path
+        self.max_seq_length = max_seq_length
+        self.use_levitated_markers = use_levitated_markers
         self._name = name
+
+        self.tokenizer = AutoTokenizer.from_pretrained(
+                self.bert_model_name_or_path, use_fast=True)
 
     @property
     def name(self) -> str:
@@ -276,46 +288,64 @@ class BasicBertDataModule(pl.LightningDataModule):
         raise NotImplementedError()
 
     def encode_and_collate(self, examples) -> Dict:
-        batch = {"encodings": None,
-                 "entity_spans": [],
-                 "char_offsets": [],
-                 "texts": [],
-                 "labels": defaultdict(list),
-                 "docids": []
-                 }
+        batch = {
+            "encodings": None,  # output of BertModel
+            "entity_token_idxs": [],  # indices of entity's wordpiece tokens
+            "entity_char_spans": [],  # (start,end) character indices of entity
+            "texts": [],  # the original text that was transformed into encodings.  # noqa
+            "char_offsets": [], # start character index of the texts in the documents.  # noqa
+            "labels": defaultdict(list),  # dict of task->labels
+            "docids": []  # source documents for examples in this batch
+            # Optional: levitated_spans: []
+        }
 
+        # Collate entity_char_spans, char_offsets, texts, docids, labels
         for ex in examples:
-            batch["entity_spans"].append(ex["entity_span"])
+            batch["entity_char_spans"].append(ex["entity_char_span"])
             batch["char_offsets"].append(ex["char_offset"])
             batch["texts"].append(ex["text"])
             batch["docids"].append(ex["docid"])
             for (task, val) in ex["labels"].items():
                 batch["labels"][task].append(val)
+        batch["entity_char_spans"] = torch.tensor(batch["entity_char_spans"])
+        for task in batch["labels"].keys():
+            batch["labels"][task] = torch.tensor(batch["labels"][task])
+        batch["labels"] = dict(batch["labels"])
 
+        # Get encodings
         encodings = self.tokenizer(batch["texts"], truncation=True,
                                    max_length=self.max_seq_length,
                                    padding="max_length",
                                    return_offsets_mapping=True,
                                    return_tensors="pt")
 
-        # Packed-Levitated Marker
-        if self.levitate is True:
-            encodings, batch["levitated_spans"] = self.levitate_encodings(
-                encodings, batch["entity_spans"],
-                window_size=self.num_levitated_tokens)
+        # Populate entity_token_idxs
+        for (example_i, entity_span) in enumerate(batch["entity_char_spans"]):
+            offsets = encodings["offset_mapping"][example_i]
+            entity_token_idxs = [i for (i, off) in enumerate(offsets)
+                                 if off[0] >= entity_span[0]
+                                 and off[1] <= entity_span[1]]
+            if len(entity_token_idxs) == 0:
+                raise ValueError(f"Couldn't find entity span {entity_span} in document {examples[example_i]['docid']}!")  # noqa
+            batch["entity_token_idxs"].append(entity_token_idxs)
 
+        # TODO: add options for levitated markers in config
+        # Optional: Packed-Levitated Marker modifies the encodings.
+        if self.use_levitated_markers is True:
+            tmp = self.levitate_encodings(
+                encodings, batch["entity_token_idxs"])
+            encodings, batch["levitated_marker_idxs"] = tmp
+
+        # Populate encodings, which will have been modified
+        #  if use_levitated_markers=True.
         batch["encodings"] = encodings
-        batch["entity_spans"] = torch.tensor(batch["entity_spans"])
-        for task in batch["labels"].keys():
-            batch["labels"][task] = torch.tensor(batch["labels"][task])
-        batch["labels"] = dict(batch["labels"])
         return batch
 
-    def levitate_encodings(self, encodings, entity_spans,
+    def levitate_encodings(self, encodings, entity_token_idxs,
                            window_size=5, max_span_length=3):
         """
         encodings: output of self.tokenizer(texts)
-        entity_spans: list of (start_index, end_index) tuples.
+        entity_token_idxs: list of token indices corresponding to the entity
         window_size: number of spans to consider +/- the target entity
         max_span_length: maximum length in number of wordpiece tokens
                          to treat as a marked span.
@@ -344,27 +374,17 @@ class BasicBertDataModule(pl.LightningDataModule):
              torch.zeros(batch_size, max_num_markers, dtype=torch.long))
         )
         # Find and add the levitated markers.
-        all_marker_spans = []
+        levitated_marker_idxs = [[] for _ in range(batch_size)]
         for example_idx in range(batch_size):
             input_ids = encodings["input_ids"][example_idx]
             attention_mask = encodings["attention_mask"][example_idx]
-            offsets = encodings["offset_mapping"][example_idx]
-            entity_span = entity_spans[example_idx]
-
-            # Get indices of the entity tokens from the character offsets.
-            entity_token_idxs = [i for (i, off) in enumerate(offsets)
-                                 if off[0] >= entity_span[0]
-                                 and off[1] <= entity_span[1]]
-            if len(entity_token_idxs) == 0:
-                raise ValueError("Couldn't find entity span!")
-            entity_start = entity_token_idxs[0]
-            entity_end = entity_token_idxs[-1]
+            entity_start = entity_token_idxs[example_idx][0]
+            entity_end = entity_token_idxs[example_idx][-1]
 
             # Get tokens in window_size around start/end entity_token_idxs
             idx_before_entity = max(0, entity_start - window_size)
             seq_len_no_pad = (input_ids != 0).sum()
             idx_after_entity = min(seq_len_no_pad, entity_end + window_size)
-
             before_token_idxs = np.arange(idx_before_entity, entity_start)
             before_span_idxs = self.get_subspan_idxs(
                 before_token_idxs, input_ids, max_length=max_span_length)
@@ -380,42 +400,39 @@ class BasicBertDataModule(pl.LightningDataModule):
                                            torch.zeros(max_num_markers)))
             attention_mask = attention_mask.unsqueeze(0)
             attention_mask = attention_mask.repeat(max_levitated_seq_length, 1)
-            marker_pad_amount = max_levitated_seq_length - max_seq_length
             input_ids = torch.cat(
-                (input_ids, torch.zeros(marker_pad_amount, dtype=torch.long)))
+                (input_ids, torch.zeros(max_num_markers, dtype=torch.long)))
 
             all_span_idxs = [*before_span_idxs, *after_span_idxs]
             marker_start_idxs = range(max_seq_length,
                                       max_levitated_seq_length, 2)
-            num_markers = len(all_span_idxs) * 2
-            unused_token_id = 1  # actualy token is "[unused{unused_token_id}]"
+            start_token_id = 1
+            end_token_id = 2  # actualy token is "[unused{unused_token_id}]"
             for (marker_start, span) in zip(marker_start_idxs, all_span_idxs):
                 # The indices of the markers in position_ids and attention_mask
                 marker_end = marker_start + 1
+                levitated_marker_idxs[example_idx].extend(
+                    [marker_start, marker_end])
                 # position ids of the markers to equal those of the start/end
-                # tokens of the span.
+                # tokens of the corresponding span.
                 position_ids[marker_start] = span[0]
                 position_ids[marker_end] = span[-1]
-                # Markers are visible to each other and other markers.
-                attention_mask[marker_start, max_seq_length:max_seq_length+num_markers] = 1  # noqa
-                attention_mask[marker_end, max_seq_length:max_seq_length+num_markers] = 1    # noqa
+                # Markers are visible to each other only, and can see the text
+                attention_mask[marker_start, [marker_start, marker_end]] = 1
+                attention_mask[marker_end, [marker_start, marker_end]] = 1
                 # append [unused{i}] tokens for the markers to input_ids
-                input_ids[marker_start] = unused_token_id
-                input_ids[marker_end] = unused_token_id
-                unused_token_id += 1
-                if unused_token_id == 100:
-                    raise ValueError("Ran out of [unused] token_ids! You should probably decrease the number of spans.")  # noqa
+                input_ids[marker_start] = start_token_id
+                input_ids[marker_end] = end_token_id
 
             new_encodings["input_ids"].append(input_ids)
             new_encodings["position_ids"].append(position_ids)
             new_encodings["attention_mask"].append(attention_mask.unsqueeze(0))
-            all_marker_spans.append(all_span_idxs)
         new_encodings["input_ids"] = torch.vstack(new_encodings["input_ids"])
         new_encodings["position_ids"] = torch.vstack(
             new_encodings["position_ids"])
         new_encodings["attention_mask"] = torch.vstack(
             new_encodings["attention_mask"])
-        return new_encodings, all_marker_spans
+        return new_encodings, levitated_marker_idxs
 
     def get_subspan_idxs(self, idxs, input_ids,
                          max_length=2, ignore_punct=True):
