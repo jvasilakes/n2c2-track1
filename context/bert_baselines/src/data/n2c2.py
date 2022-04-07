@@ -5,7 +5,6 @@ from collections import Counter, defaultdict
 
 import torch
 from torch.utils.data import DataLoader, WeightedRandomSampler
-from transformers import AutoTokenizer
 from sklearn.utils.class_weight import compute_class_weight
 
 import brat_reader as br
@@ -32,34 +31,43 @@ class n2c2DataModule(BasicBertDataModule):
             "sample_strategy": config.sample_strategy,
             "compute_class_weights": compute_class_weights,
             "mark_entities": config.mark_entities,
+            "use_levitated_markers": config.use_levitated_markers,
         }
         for (key, val) in override_kwargs.items():
             kwargs[key] = val
         return cls(**kwargs)
 
-    def __init__(self, dataset_name, data_dir, sentences_dir, batch_size,
-                 bert_model_name_or_path, tasks_to_load="all",
-                 max_seq_length=128, window_size=0, sample_strategy=None,
-                 max_train_examples=-1, compute_class_weights=None,
-                 mark_entities=False, name=None):
+    def __init__(
+            self, dataset_name, data_dir, sentences_dir,
+            batch_size, bert_model_name_or_path,
+            tasks_to_load="all",
+            max_seq_length=128,
+            window_size=0,
+            sample_strategy=None,
+            max_train_examples=-1,
+            compute_class_weights=None,
+            mark_entities=False,
+            use_levitated_markers=False,
+            name=None):
+
         if name is None:
             name = dataset_name
-        super().__init__(name=name)
+        super().__init__(
+            bert_model_name_or_path,
+            max_seq_length=max_seq_length,
+            use_levitated_markers=use_levitated_markers,
+            name=name)
         self.dataset_name = dataset_name
         self.data_dir = data_dir
         self.sentences_dir = sentences_dir
         self.batch_size = batch_size
         self.bert_model_name_or_path = bert_model_name_or_path
         self.tasks_to_load = tasks_to_load
-        self.max_seq_length = max_seq_length
         self.window_size = window_size
         self.sample_strategy = sample_strategy
         self.max_train_examples = max_train_examples
         self.compute_class_weights = compute_class_weights
         self.mark_entities = mark_entities
-
-        self.tokenizer = AutoTokenizer.from_pretrained(
-                self.bert_model_name_or_path, use_fast=True)
         self._ran_setup = False
 
     def setup(self, stage=None):
@@ -116,13 +124,14 @@ class n2c2DataModule(BasicBertDataModule):
   sentences_dir: {self.sentences_dir},
   batch_size: {self.batch_size},
   bert_model_name_or_path: {self.bert_model_name_or_path},
-  tasks_to_load: {self.tasks_to_load},
   max_seq_length: {self.max_seq_length},
+  tasks_to_load: {self.tasks_to_load},
   window_size: {self.window_size},
   max_train_examples: {self.max_train_examples},
   sample_strategy: {self.sample_strategy},
   class_weights: {self.class_weights},
-  mark_entities: {self.mark_entities}"""
+  mark_entities: {self.mark_entities},
+  use_levitated_markers: {self.use_levitated_markers}"""
 
     @property
     def dataset_class(self):
@@ -188,35 +197,6 @@ class n2c2DataModule(BasicBertDataModule):
                               collate_fn=self.encode_and_collate,
                               num_workers=4)
         return None
-
-    def encode_and_collate(self, examples):
-        batch = {"encodings": None,
-                 "entity_spans": [],
-                 "char_offsets": [],
-                 "texts": [],
-                 "labels": defaultdict(list),
-                 "docids": []
-                 }
-
-        for ex in examples:
-            batch["entity_spans"].append(ex["entity_span"])
-            batch["char_offsets"].append(ex["char_offset"])
-            batch["texts"].append(ex["text"])
-            batch["docids"].append(ex["docid"])
-            for (task, val) in ex["labels"].items():
-                batch["labels"][task].append(val)
-
-        encodings = self.tokenizer(batch["texts"], truncation=True,
-                                   max_length=self.max_seq_length,
-                                   padding="max_length",
-                                   return_offsets_mapping=True,
-                                   return_tensors="pt")
-        batch["encodings"] = encodings
-        batch["entity_spans"] = torch.tensor(batch["entity_spans"])
-        for task in batch["labels"].keys():
-            batch["labels"][task] = torch.tensor(batch["labels"][task])
-        batch["labels"] = dict(batch["labels"])
-        return batch
 
     # Used with WeightedRandomSampler in setup()
     def _compute_sample_weights(self, train_dataset):

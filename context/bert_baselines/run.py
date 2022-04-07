@@ -461,7 +461,7 @@ def batched_predictions_to_brat(preds, datamodule):
                 attrs[task] = attr
 
             # Reconstruct original character offsets
-            start, end = batch["entity_spans"][i]
+            start, end = batch["entity_char_spans"][i]
             entity_text = batch["texts"][i][start:end]
             # There's one entity mention in n2c2 2022 that spans a newline
             #  so we'll fix that here.

@@ -53,6 +53,7 @@ class ExperimentConfig(object):
                 "freeze_pretrained",
                 "use_entity_spans",
                 "entity_pool_fn",
+                "use_levitated_markers",
                 "mark_entities",
                 "max_seq_length",
                 "dropout_prob",
@@ -135,6 +136,7 @@ class ExperimentConfig(object):
             freeze_pretrained: bool = False,
             use_entity_spans: bool = False,
             entity_pool_fn: str = "max",
+            use_levitated_markers: bool = False,
             mark_entities: bool = False,
             max_seq_length: int = 128,
             dropout_prob: float = 0.1,
@@ -174,6 +176,7 @@ class ExperimentConfig(object):
         self.freeze_pretrained = freeze_pretrained
         self.use_entity_spans = use_entity_spans
         self.entity_pool_fn = entity_pool_fn
+        self.use_levitated_markers = use_levitated_markers
         self.mark_entities = mark_entities
         self.max_seq_length = max_seq_length
         self.dropout_prob = dropout_prob
