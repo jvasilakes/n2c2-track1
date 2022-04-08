@@ -261,16 +261,20 @@ class ExperimentConfig(object):
         ])
         for (datamod, data_kwargs) in self.auxiliary_data.items():
             if datamod not in data.DATAMODULE_LOOKUP.keys():
-                raise ValueError(f"Unkown data module name '{datamod}'. Check data/__init__.py.")  # noqa
+                raise ValueError(f"Unknown data module name '{datamod}'. Check data/__init__.py.")  # noqa
             used_keys = set()
             unused_keys = set()
             for (key, val) in data_kwargs.items():
                 if key not in required_keys:
                     unused_keys.add(key)
                 elif key in required_keys:
-                    required_type = type(getattr(self, key))
+                    # TODO: I don't like how hard-coded this is.
                     if key == "max_train_examples":
                         required_type = (int, type(None))
+                    elif key == "tasks_to_load":
+                        required_type = (str, list)
+                    else:
+                        required_type = type(getattr(self, key))
                     wrong_type_msg = f"Incorrect type for auxiliary_data kwarg '{datamod}:{key}'. Got '{type(val)}' but expected '{required_type}'."  # noqa
                     if not isinstance(val, required_type):
                         if errors == "raise":
@@ -334,6 +338,18 @@ class ExperimentConfig(object):
                     params_dict[name] = val
                 yaml.dump(params_dict, outF)
                 outF.write('\n')
+
+    def __eq__(self, other):
+        for name in self.param_names():
+            this_val = getattr(self, name)
+            that_val = getattr(other, name, None)
+            if this_val != that_val:
+                return False
+        return True
+
+    def copy(self):
+        kwargs = {name: getattr(self, name) for name in self.param_names()}
+        return self.__class__(**kwargs)
 
 
 def update_config_file(filepath, **update_kwargs):

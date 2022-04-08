@@ -51,11 +51,52 @@ class CombinedDataModule(BasicBertDataModule):
     to be used by a single model in a multi-task learning
     setup.
     """
+    @staticmethod
+    def check_args_are_equivalent(datamodules, arg_name):
+        arg_values = []
+        for dm in datamodules:
+            try:
+                val = getattr(dm, arg_name)
+            except AttributeError:
+                raise AttributeError(f"Datamodule {dm.name} missing required parameter {arg_name}")  # noqa
+            if len(arg_values) > 0:
+                if val != arg_values[0]:
+                    raise ValueError(f"{arg_name} differs between member datamodules in CombinedDataModule: {arg_values[0]} vs. {val}")  # noqa
+            arg_values.append(val)
+        return arg_values[0]
+
+    @staticmethod
+    def check_args_are_different(datamodules, arg_name):
+        arg_values = []
+        for dm in datamodules:
+            try:
+                val = getattr(dm, arg_name)
+            except AttributeError:
+                raise AttributeError(f"Datamodule {dm.name} missing required parameter {arg_name}")  # noqa
+            if len(arg_values) > 0:
+                if val in arg_values:
+                    raise ValueError(f"All datamodules in CombinedDataModule should have different value for {arg_name}!")  # noqa
+            arg_values.append(val)
+        return arg_values
 
     def __init__(self, datamodules: List[BasicBertDataModule],
                  dataset_sample_strategy="proportional",
                  dataset_sampler_kwargs=None):
-        super().__init__()
+        # Check that the datamodules are all compatible
+        bert_model_name_or_path = self.check_args_are_equivalent(
+                datamodules, "bert_model_name_or_path")
+        max_seq_length = self.check_args_are_equivalent(
+                datamodules, "max_seq_length")
+        batch_size = self.check_args_are_equivalent(
+                datamodules, "batch_size")
+        mark_entities = self.check_args_are_equivalent(
+                datamodules, "mark_entities")
+        use_levitated_markers = self.check_args_are_equivalent(
+                datamodules, "use_levitated_markers")
+        names = self.check_args_are_different(
+                datamodules, "name")
+        super().__init__(bert_model_name_or_path, max_seq_length,
+                         use_levitated_markers)
         # Sometimes this module can hit the system open file limit.
         # This seems to fix that.
         torch.multiprocessing.set_sharing_strategy('file_system')
@@ -64,9 +105,9 @@ class CombinedDataModule(BasicBertDataModule):
         self.dataset_sampler_kwargs = dataset_sampler_kwargs or {}
         # These are populated in setup(), after checking
         # that they are all compatible.
-        self.batch_size = None
-        self.bert_model_name_or_path = None
-        self.mark_entities = None
+        self.batch_size = batch_size
+        self.mark_entities = mark_entities
+        self.names = names
         self._ran_setup = False
 
     def setup(self, stage=None):
@@ -104,30 +145,11 @@ class CombinedDataModule(BasicBertDataModule):
         if len(self.datamodules) > 1:
             if all([dm.name == self.datamodules[0].name]):
                 raise ValueError(f"Member BasicBertDataModules should have different names!")  # noqa
-
-        # Check that all batch sizes are the same
-        batch_sizes = [dm.batch_size for dm in self.datamodules]
-        if all([bs == batch_sizes[0] for bs in batch_sizes]):
-            self.batch_size = batch_sizes[0]
-        else:
-            raise ValueError(f"batch sizes differ! {batch_sizes}")
-        # Check that all bert models are the same
-        berts = [dm.bert_model_name_or_path for dm in self.datamodules]
-        if all([bert == berts[0] for bert in berts]):
-            self.bert_model_name_or_path = berts[0]
-        else:
-            raise ValueError(f"bert models differ! {berts}")
-        # Check that entity marking is the same
-        marks = [dm.mark_entities for dm in self.datamodules]
-        if all([mark == marks[0] for mark in marks]):
-            self.mark_entities = marks[0]
-        else:
-            raise ValueError(f"mark_entites differ! {marks}")
         self._ran_setup = True
 
     def __str__(self):
         return f"""{self.__class__}
-  datamodules: {[dm.name for dm in self.datamodules]},
+  datamodules: {self.names},
   batch_size: {self.batch_size},
   bert_model_name_or_path: {self.bert_model_name_or_path},
   dataset_sample_strategy: {self.dataset_sample_strategy}"""

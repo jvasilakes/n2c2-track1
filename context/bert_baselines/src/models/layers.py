@@ -35,17 +35,23 @@ class TokenEmbeddingPooler(nn.Module):
         token_idxs: list of lists containing token_idxs to pool.
         """
         assert len(token_idxs) == hidden.size(0), "Number of token_idxs not equal to batch size!"  # noqa
-        # Use the token_idxs to create a mask over the token dimension
-        # in hidden, duplicated across the embedding dimension.
-        token_mask = torch.zeros_like(hidden)
-        for (batch_i, idxs) in enumerate(token_idxs):
-            token_mask[batch_i, idxs, :] = 1.
-        # Apply the mask to keep only the specified tokens,
+        # Get a token-wise mask over hidden,
+        token_mask = self.get_token_mask_from_indices(
+                token_idxs, hidden.size())
+        # apply the mask to keep only the specified tokens,
         masked_hidden = hidden * token_mask
         # and pool the embeddings.
         pooled = self.pooler(masked_hidden, token_mask)
         transformed = self.output_layer(pooled)
         return transformed
+
+    def get_token_mask_from_indices(self, token_idxs, hidden_size):
+        # Use the token_idxs to create a mask over the token dimension
+        # in hidden, duplicated across the embedding dimension.
+        token_mask = torch.zeros(hidden_size, dtype=torch.long)
+        for (batch_i, idxs) in enumerate(token_idxs):
+            token_mask[batch_i, idxs, :] = 1
+        return token_mask
 
     @property
     def pooler_functions(self):

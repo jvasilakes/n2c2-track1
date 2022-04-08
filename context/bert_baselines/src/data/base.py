@@ -23,8 +23,7 @@ class BratMultiTaskDataset(Dataset):
 
     def __init__(self, data_dir, sentences_dir,
                  label_names="all", window_size=0,
-                 max_examples=-1, mark_entities=False,
-                 levitate=False):
+                 max_examples=-1, mark_entities=False):
         self.data_dir = data_dir
         self.sentences_dir = sentences_dir
         self.label_names = label_names
@@ -222,16 +221,24 @@ class BratMultiTaskDataset(Dataset):
 class BasicBertDataModule(pl.LightningDataModule):
     """
     The base data module for all BERT-based sequence classification datasets.
+
+    levitate_window_size: number of spans to consider +/- the target entity
+    levitate_max_span_length: maximum length in number of wordpiece tokens
+        to treat as a marked span.
     """
     def __init__(
             self,
             bert_model_name_or_path,
             max_seq_length=128,
             use_levitated_markers=False,
+            levitate_window_size=5,
+            levitate_max_span_length=3,
             name=None):
         self.bert_model_name_or_path = bert_model_name_or_path
         self.max_seq_length = max_seq_length
         self.use_levitated_markers = use_levitated_markers
+        self.levitate_window_size = levitate_window_size
+        self.levitate_max_span_length = levitate_max_span_length
         self._name = name
 
         self.tokenizer = AutoTokenizer.from_pretrained(
@@ -321,10 +328,8 @@ class BasicBertDataModule(pl.LightningDataModule):
 
         # Populate entity_token_idxs
         for (example_i, entity_span) in enumerate(batch["entity_char_spans"]):
-            offsets = encodings["offset_mapping"][example_i]
-            entity_token_idxs = [i for (i, off) in enumerate(offsets)
-                                 if off[0] >= entity_span[0]
-                                 and off[1] <= entity_span[1]]
+            entity_token_idxs = self.get_token_indices_from_char_span(
+                    entity_span, encodings["offset_mapping"][example_i])
             if len(entity_token_idxs) == 0:
                 raise ValueError(f"Couldn't find entity span {entity_span} in document {examples[example_i]['docid']}!")  # noqa
             batch["entity_token_idxs"].append(entity_token_idxs)
@@ -341,14 +346,20 @@ class BasicBertDataModule(pl.LightningDataModule):
         batch["encodings"] = encodings
         return batch
 
-    def levitate_encodings(self, encodings, entity_token_idxs,
-                           window_size=5, max_span_length=3):
+    def get_token_indices_from_char_span(self, char_span, offset_mapping):
+        token_idxs = []
+        for (i, offset) in enumerate(offset_mapping):
+            # zero-length span, usually [0, 0] for [PAD]
+            if offset[0] == offset[1]:
+                continue
+            if offset[0] >= char_span[0] and offset[1] <= char_span[1]:
+                token_idxs.append(i)
+        return token_idxs
+
+    def levitate_encodings(self, encodings, entity_token_idxs):
         """
         encodings: output of self.tokenizer(texts)
         entity_token_idxs: list of token indices corresponding to the entity
-        window_size: number of spans to consider +/- the target entity
-        max_span_length: maximum length in number of wordpiece tokens
-                         to treat as a marked span.
         """
         new_encodings = {
             "input_ids": [],
@@ -356,14 +367,14 @@ class BasicBertDataModule(pl.LightningDataModule):
             "position_ids": [],
             "attention_mask": [],
             # offset_mapping won't change
-            "offset_mapping": encodings["offset_mapping"],
+            "offset_mapping": [],
         }
         batch_size, max_seq_length = encodings["input_ids"].size()
         # max_num_spans is the number of sublists up to length max_span_length
         # E.g., for window_size=5 and max_span_length=3 there are 5+4+3=12
         #  possible subspans on each side (i.e., x2) of the entity span for a
         #  total of 24 possible spans.
-        max_num_spans = np.arange(window_size+1)[-max_span_length:].sum() * 2
+        max_num_spans = np.arange(self.levitate_window_size+1)[-self.levitate_max_span_length:].sum() * 2  # noqa
         # Each span has a start and end marker, so multiply by 2 again.
         max_num_markers = max_num_spans * 2
         max_levitated_seq_length = max_seq_length + max_num_markers
@@ -372,6 +383,10 @@ class BasicBertDataModule(pl.LightningDataModule):
         new_encodings["token_type_ids"] = torch.hstack(
             (encodings["token_type_ids"],
              torch.zeros(batch_size, max_num_markers, dtype=torch.long))
+        )
+        new_encodings["offset_mapping"] = torch.hstack(
+            (encodings["offset_mapping"],
+             torch.zeros(batch_size, max_num_markers, 2, dtype=torch.long))
         )
         # Find and add the levitated markers.
         levitated_marker_idxs = [[] for _ in range(batch_size)]
@@ -382,15 +397,19 @@ class BasicBertDataModule(pl.LightningDataModule):
             entity_end = entity_token_idxs[example_idx][-1]
 
             # Get tokens in window_size around start/end entity_token_idxs
-            idx_before_entity = max(0, entity_start - window_size)
+            idx_before_entity = max(0,
+                                    entity_start - self.levitate_window_size)
             seq_len_no_pad = (input_ids != 0).sum()
-            idx_after_entity = min(seq_len_no_pad, entity_end + window_size)
+            idx_after_entity = min(seq_len_no_pad,
+                                   entity_end + self.levitate_window_size)
             before_token_idxs = np.arange(idx_before_entity, entity_start)
             before_span_idxs = self.get_subspan_idxs(
-                before_token_idxs, input_ids, max_length=max_span_length)
+                before_token_idxs, input_ids,
+                max_length=self.levitate_max_span_length)
             after_token_idxs = np.arange(entity_end+1, idx_after_entity)
             after_span_idxs = self.get_subspan_idxs(
-                after_token_idxs, input_ids, max_length=max_span_length)
+                after_token_idxs, input_ids,
+                max_length=self.levitate_max_span_length)
 
             position_ids = torch.arange(max_levitated_seq_length,
                                         dtype=torch.long)

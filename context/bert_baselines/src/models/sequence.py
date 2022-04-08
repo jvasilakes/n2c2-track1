@@ -112,34 +112,36 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
                 param.requires_grad = False
 
         # For pooling entity and levitated marker embeddings
+        pooler_outsize = None  # Use this for determining classifier insize
         if self.use_entity_spans is False and self.use_levitated_markers is True:  # noqa
             warnings.warn("levitated markers only supported when use_entity_spans=True. Not using levitated markers.")  # noqa
+            self.use_levitated_markers = False
         if self.use_entity_spans is True:
-            insize = outsize = self.bert_config.hidden_size
+            pooler_insize = pooler_outsize = self.bert_config.hidden_size
             if self.entity_pool_fn == "first-last":
-                insize = 2 * insize
+                pooler_insize = 2 * pooler_insize
             self.entity_pooler = TokenEmbeddingPooler(
-                insize, outsize, self.entity_pool_fn)
+                pooler_insize, pooler_outsize, self.entity_pool_fn)
             # For pooling levitated marker embeddings
             if self.use_levitated_markers is True:
                 # TODO: add option to use different pooling
                 #  function for levitated markers
                 self.levitated_marker_pooler = TokenEmbeddingPooler(
-                    insize, outsize, self.entity_pool_fn)
+                    pooler_insize, pooler_outsize, self.entity_pool_fn)
 
         # Classifiers, one per task
         self.classifier_heads = nn.ModuleDict()
         self.classifier_loss_fns = nn.ModuleDict()
-        insize = self.bert_config.hidden_size
+        classifier_insize = pooler_outsize or self.bert_config.hidden_size
         if self.use_levitated_markers is True:
             # b/c we'll concat the pooled representations
             # from entities and markers
-            insize = 2 * insize
+            classifier_insize = 2 * classifier_insize
         for (task, num_labels) in label_spec.items():
             self.classifier_heads[task] = nn.Sequential(
                     # TODO: try adding in a layernorm here.
                     nn.Dropout(self.dropout_prob),
-                    nn.Linear(insize, num_labels)
+                    nn.Linear(classifier_insize, num_labels)
                     )
             clf_loss_fn = get_loss_function(self.classifier_loss_fn)
             kwargs = self.classifier_loss_kwargs[task]
