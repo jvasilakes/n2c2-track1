@@ -1,6 +1,6 @@
 # Experiment
-name: test_new_data
-description: test after data/ refactor
+name: test_levitated_markers
+description: test new PL-markers implementation
 logdir: logs/
 random_seed: 0
 
@@ -20,9 +20,10 @@ dataset_sampler_kwargs: {}
 model_name: bert-sequence-classifier
 bert_model_name_or_path: bert-base-uncased
 freeze_pretrained: false
-use_entity_spans: false
+use_entity_spans: true
 entity_pool_fn: max
-mark_entities: false
+use_levitated_markers: true
+mark_entities: true
 max_seq_length: 256
 dropout_prob: 0.2
 

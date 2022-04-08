@@ -1,4 +1,5 @@
-import timeit
+import os
+import re
 import argparse
 import colorama
 import warnings
@@ -11,8 +12,10 @@ import pytorch_lightning as pl
 from src.config import ExperimentConfig
 from src.data import load_datamodule_from_config, combined
 from src.models import BertMultiHeadedSequenceClassifier
-from src.models.layers import TokenMask, EntityPooler
+from src.models.layers import TokenEmbeddingPooler
 
+
+os.environ["TOKENIZERS_PARALLELISM"] = "true"
 
 logging.getLogger("pytorch_lightning.utilities.seed").setLevel(logging.WARNING)
 
@@ -21,53 +24,97 @@ colorama.init(autoreset=True)
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("config_file", type=str)
+    parser.add_argument("project_home", type=str,
+                        help="Absolute path to n2c2-track1")
     return parser.parse_args()
 
 
 def test_logger(func):
     def wrapper(*args, **kwargs):
         print(func.__name__, end='', flush=True)
+        pl.seed_everything(0)
+        error = None
         try:
             func(*args, **kwargs)
             res_str = "Passed"
             color = colorama.Fore.GREEN
-        except AssertionError:
+        except AssertionError as e:
+            error = e
             res_str = "Failed"
             color = colorama.Fore.RED
         print(color + f" [{res_str}]", flush=True)
+        if error is not None:
+            color = colorama.Fore.RED
+            print(color + f"  ⤷ {error}", flush=True)
     return wrapper
 
 
-def run(config_file):
-    tmp_config = ExperimentConfig.from_yaml_file(config_file)
+def run(project_home):
     # Generate default config and override options
     config = ExperimentConfig()
-    config.data_dir = tmp_config.data_dir
-    config.sentences_dir = tmp_config.sentences_dir
+    config.data_dir = f"{project_home}/n2c2Track1TrainingData-v3/data_v3/"
+    config.sentences_dir = f"{project_home}/n2c2Track1TrainingData-v3/segmented"  # noqa
     config.model_name = "bert-sequence-classifier"
     config.bert_model_name_or_path = "bert-base-uncased"
     config.max_seq_length = 300
-    del tmp_config
-    pl.seed_everything(config.random_seed)
+    config.batch_size = 2
+    config.use_levitated_markers = False
 
-    test_mask_hidden(config)
-    test_mask_hidden_marked(config)
+    # TODO: This test hangs if not run first. I don't know why.
+    test_pool_entity_embeddings_first(config)
     test_pool_entity_embeddings_max(config)
     test_pool_entity_embeddings_mean(config)
-    test_pool_entity_embeddings_first(config)
     test_pool_entity_embeddings_last(config)
     test_pool_entity_embeddings_first_last(config)
-    test_scheduled_dataset_sampler(config)
-    test_stickland_murray_dataset_sampler(config)
+    test_get_token_indices_from_char_span(config)
+    test_mask_hidden(config)
+    test_mask_hidden_marked(config)
+    test_scheduled_dataset_sampler(config, project_home)
+    test_stickland_murray_dataset_sampler(config, project_home)
     test_levitate_encodings(config)
 
 
 @test_logger
-def test_mask_hidden(config):
-    pl.utilities.seed.reset_seed()
+def test_get_token_indices_from_char_span(config):
     data_kwargs = {
-        "mark_entities": False
+        "mark_entities": True,
+        "batch_size": 1,
+    }
+    datamodule = load_datamodule_from_config(config, **data_kwargs)
+    with warnings.catch_warnings():
+        warnings.simplefilter("ignore")
+        # Ignore "No test set found"
+        datamodule.setup()
+    assert datamodule.mark_entities is True
+
+    for ds in [datamodule.train, datamodule.val]:
+        for example in ds:
+            encoded = datamodule.tokenizer(
+                    example["text"], truncation=True,
+                    max_length=datamodule.max_seq_length,
+                    padding="max_length",
+                    return_offsets_mapping=True,
+                    return_tensors="pt")
+            entity_token_idxs = datamodule.get_token_indices_from_char_span(
+                    example["entity_char_span"], encoded["offset_mapping"][0])
+            input_ids = encoded["input_ids"][0]
+            reconstructed_entity = datamodule.tokenizer.decode(
+                    input_ids[entity_token_idxs])
+            # rm all whitespace b/c decode() doesn't always
+            #  reconstruct it correctly
+            reconstructed_entity = re.sub(r'\s+', '', reconstructed_entity)
+            start_char, end_char = example["entity_char_span"]
+            orig_entity = example["text"][start_char:end_char]
+            orig_entity = re.sub(r'\s+', '', orig_entity)
+            assert(reconstructed_entity.lower() == orig_entity.lower())
+    del datamodule
+
+
+@test_logger
+def test_mask_hidden(config):
+    data_kwargs = {
+        "mark_entities": False,
+        "batch_size": 1,
     }
     datamodule = load_datamodule_from_config(config, **data_kwargs)
     with warnings.catch_warnings():
@@ -75,35 +122,39 @@ def test_mask_hidden(config):
         # Ignore "No test set found"
         datamodule.setup()
     assert datamodule.mark_entities is False
+
     model_kwargs = {
         "use_entity_spans": True,
-        "entity_pool_fn": "first",
+        "entity_pool_fn": "first-last",
     }
     model = BertMultiHeadedSequenceClassifier.from_config(
         config, datamodule, **model_kwargs)
     assert model.use_entity_spans is True
-    assert model.entity_pool_fn == "first"
+    assert model.entity_pool_fn == "first-last"
 
-    masker = TokenMask()
+    insize = outsize = model.bert_config.hidden_size
+    pooler = TokenEmbeddingPooler(insize, outsize, model.entity_pool_fn)
     for dl in [datamodule.train_dataloader(), datamodule.val_dataloader()]:
         for batch in dl:
-            h = torch.randn(config.batch_size, config.max_seq_length,
+            this_batch_size = batch["encodings"]["input_ids"].size(0)
+            h = torch.randn(this_batch_size, config.max_seq_length,
                             model.bert_config.hidden_size)
-            offset_mapping = batch["encodings"]["offset_mapping"]
-            entity_spans = batch["entity_spans"]
-            try:
-                masked, token_mask = masker(
-                    h, offset_mapping, entity_spans)
-            # mask_hidden raises ValueError("Entity span not found!")
-            except ValueError:
-                raise AssertionError("Entity span not found.")
+            input_ids = batch["encodings"]["input_ids"][0]
+            entity_ids = input_ids[batch["entity_token_idxs"][0]]
+            token_mask = pooler.get_token_mask_from_indices(
+                    batch["entity_token_idxs"], h.size())
+            masked_ids = input_ids[token_mask[0, :, 0].bool()]
+            assert (masked_ids == entity_ids).all()
+    del datamodule
+    del model
+    del pooler
 
 
 @test_logger
 def test_mask_hidden_marked(config):
-    pl.utilities.seed.reset_seed()
     data_kwargs = {
         "mark_entities": True,
+        "batch_size": 1,
     }
     datamodule = load_datamodule_from_config(config, **data_kwargs)
     with warnings.catch_warnings():
@@ -125,26 +176,25 @@ def test_mask_hidden_marked(config):
     end_marker = datamodule.train.END_ENTITY_MARKER
     start_id = datamodule.tokenizer.convert_tokens_to_ids([start_marker])[0]
     end_id = datamodule.tokenizer.convert_tokens_to_ids([end_marker])[0]
-    masker = TokenMask()
+    insize = outsize = model.bert_config.hidden_size
+    pooler = TokenEmbeddingPooler(insize, outsize, model.entity_pool_fn)
     for dl in [datamodule.train_dataloader(), datamodule.val_dataloader()]:
         for batch in dl:
-            h = torch.randn(1, config.max_seq_length,
+            this_batch_size = batch["encodings"]["input_ids"].size(0)
+            h = torch.randn(this_batch_size, config.max_seq_length,
                             model.bert_config.hidden_size)
-            offset_mapping = batch["encodings"]["offset_mapping"]
-            entity_spans = batch["entity_spans"]
-            try:
-                masked, token_mask = masker(
-                    h, offset_mapping, entity_spans)
-            # mask_hidden raises ValueError("Entity span not found!")
-            except ValueError:
-                raise AssertionError("Entity span not found.")
-            masked_ids = batch["encodings"]["input_ids"][token_mask[:, :, 0]]
+            token_mask = pooler.get_token_mask_from_indices(
+                    batch["entity_token_idxs"], h.size())
+            input_ids = batch["encodings"]["input_ids"][0]
+            masked_ids = input_ids[token_mask[0, :, 0].bool()]
             assert masked_ids[0] == start_id and masked_ids[-1] == end_id
+    del datamodule
+    del model
+    del pooler
 
 
 @test_logger
 def test_pool_entity_embeddings_max(config):
-    pl.utilities.seed.reset_seed()
     data_kwargs = {
         "mark_entities": False,
     }
@@ -164,23 +214,22 @@ def test_pool_entity_embeddings_max(config):
     assert model.use_entity_spans is True
     assert model.entity_pool_fn == "max"
 
-    masker = TokenMask()
     insize = outsize = model.bert_config.hidden_size
-    pooler = EntityPooler(insize, outsize, "max")
+    pooler = TokenEmbeddingPooler(insize, outsize, model.entity_pool_fn)
     for dl in [datamodule.train_dataloader(), datamodule.val_dataloader()]:
         for batch in dl:
-            h = torch.randn(config.batch_size, config.max_seq_length,
+            this_batch_size = batch["encodings"]["input_ids"].size(0)
+            h = torch.randn(this_batch_size, config.max_seq_length,
                             model.bert_config.hidden_size)
-            offset_mapping = batch["encodings"]["offset_mapping"]
-            entity_spans = batch["entity_spans"]
-            masked, token_mask = masker(h, offset_mapping, entity_spans)
-            pooled = pooler.pooler(masked, token_mask)
+            pooled = pooler(h, batch["entity_token_idxs"])
             assert (pooled == torch.tensor(0.)).any() == torch.tensor(False)
+    del datamodule
+    del model
+    del pooler
 
 
 @test_logger
 def test_pool_entity_embeddings_mean(config):
-    pl.utilities.seed.reset_seed()
     data_kwargs = {
         "mark_entities": False,
     }
@@ -200,26 +249,26 @@ def test_pool_entity_embeddings_mean(config):
     assert model.use_entity_spans is True
     assert model.entity_pool_fn == "mean"
 
-    masker = TokenMask()
     insize = outsize = model.bert_config.hidden_size
-    pooler = EntityPooler(insize, outsize, "mean")
+    pooler = TokenEmbeddingPooler(insize, outsize, model.entity_pool_fn)
     for dl in [datamodule.train_dataloader(), datamodule.val_dataloader()]:
         for batch in dl:
-            h = torch.randn(config.batch_size, config.max_seq_length,
+            this_batch_size = batch["encodings"]["input_ids"].size(0)
+            h = torch.randn(this_batch_size, config.max_seq_length,
                             model.bert_config.hidden_size)
-            offset_mapping = batch["encodings"]["offset_mapping"]
-            entity_spans = batch["entity_spans"]
-            masked, token_mask = masker(h, offset_mapping, entity_spans)
-            pooled = pooler.pooler(masked, token_mask)
+            pooled = pooler(h, batch["entity_token_idxs"])
             assert not torch.isnan(pooled).all()
             assert not torch.isinf(pooled).all()
+    del datamodule
+    del model
+    del pooler
 
 
 @test_logger
 def test_pool_entity_embeddings_first(config):
-    pl.utilities.seed.reset_seed()
     data_kwargs = {
         "mark_entities": False,
+        "batch_size": 2,
     }
     datamodule = load_datamodule_from_config(config, **data_kwargs)
     with warnings.catch_warnings():
@@ -237,26 +286,23 @@ def test_pool_entity_embeddings_first(config):
     assert model.use_entity_spans is True
     assert model.entity_pool_fn == "first"
 
-    masker = TokenMask()
     insize = outsize = model.bert_config.hidden_size
-    pooler = EntityPooler(insize, outsize, "first")
-
-    h = torch.arange(config.max_seq_length).unsqueeze(-1).expand(
-        -1, model.bert_config.hidden_size)
-    h = torch.stack([h] * config.batch_size)
+    pooler = TokenEmbeddingPooler(insize, outsize, model.entity_pool_fn)
     for dl in [datamodule.train_dataloader(), datamodule.val_dataloader()]:
         for batch in dl:
-            offset_mapping = batch["encodings"]["offset_mapping"]
-            entity_spans = batch["entity_spans"]
-            masked, token_mask = masker(h, offset_mapping, entity_spans)
-            pooled = pooler.pooler(masked, token_mask)
+            this_batch_size = batch["encodings"]["input_ids"].size(0)
+            h = torch.randn(this_batch_size, config.max_seq_length,
+                            model.bert_config.hidden_size)
+            pooled = pooler(h, batch["entity_token_idxs"])
             assert not torch.isnan(pooled).all()
             assert not torch.isinf(pooled).all()
+    del datamodule
+    del model
+    del pooler
 
 
 @test_logger
 def test_pool_entity_embeddings_last(config):
-    pl.utilities.seed.reset_seed()
     data_kwargs = {
         "mark_entities": False,
     }
@@ -276,26 +322,23 @@ def test_pool_entity_embeddings_last(config):
     assert model.use_entity_spans is True
     assert model.entity_pool_fn == "last"
 
-    masker = TokenMask()
     insize = outsize = model.bert_config.hidden_size
-    pooler = EntityPooler(insize, outsize, "last")
-
-    h = torch.arange(config.max_seq_length).unsqueeze(-1).expand(
-        -1, model.bert_config.hidden_size)
-    h = torch.stack([h] * config.batch_size)
+    pooler = TokenEmbeddingPooler(insize, outsize, model.entity_pool_fn)
     for dl in [datamodule.train_dataloader(), datamodule.val_dataloader()]:
         for batch in dl:
-            offset_mapping = batch["encodings"]["offset_mapping"]
-            entity_spans = batch["entity_spans"]
-            masked, token_mask = masker(h, offset_mapping, entity_spans)
-            pooled = pooler.pooler(masked, token_mask)
+            this_batch_size = batch["encodings"]["input_ids"].size(0)
+            h = torch.randn(this_batch_size, config.max_seq_length,
+                            model.bert_config.hidden_size)
+            pooled = pooler(h, batch["entity_token_idxs"])
             assert not torch.isnan(pooled).all()
             assert not torch.isinf(pooled).all()
+    del datamodule
+    del model
+    del pooler
 
 
 @test_logger
 def test_pool_entity_embeddings_first_last(config):
-    pl.utilities.seed.reset_seed()
     data_kwargs = {
         "mark_entities": False,
     }
@@ -315,34 +358,31 @@ def test_pool_entity_embeddings_first_last(config):
     assert model.use_entity_spans is True
     assert model.entity_pool_fn == "first-last"
 
-    masker = TokenMask()
-    insize = outsize = model.bert_config.hidden_size
-    pooler = EntityPooler(insize, outsize, "first-last")
-
-    h = torch.arange(config.max_seq_length).unsqueeze(-1).expand(
-        -1, model.bert_config.hidden_size)
-    h = torch.stack([h] * config.batch_size)
+    insize = outsize = 2 * model.bert_config.hidden_size
+    pooler = TokenEmbeddingPooler(insize, outsize, model.entity_pool_fn)
     for dl in [datamodule.train_dataloader(), datamodule.val_dataloader()]:
         for batch in dl:
-            offset_mapping = batch["encodings"]["offset_mapping"]
-            entity_spans = batch["entity_spans"]
-            masked, token_mask = masker(h, offset_mapping, entity_spans)
-            pooled = pooler.pooler(masked, token_mask)
+            this_batch_size = batch["encodings"]["input_ids"].size(0)
+            h = torch.randn(this_batch_size, config.max_seq_length,
+                            model.bert_config.hidden_size)
+            pooled = pooler(h, batch["entity_token_idxs"])
             assert not torch.isnan(pooled).all()
             assert not torch.isinf(pooled).all()
+    del datamodule
+    del model
+    del pooler
 
 
 @test_logger
-def test_scheduled_dataset_sampler(config):
-    pl.utilities.seed.reset_seed()
+def test_scheduled_dataset_sampler(config, project_home):
     data_kwargs = {
         "batch_size": 16,
         "max_train_examples": None,
         "auxiliary_data": {
             "n2c2Assertion": {
                 "dataset_name": "n2c2Assertion",
-                "data_dir": "/home/jav/Documents/Projects/n2c2_2022/n2c2-track1/auxiliary_data/n2c2_2010_concept_assertion_relation/combined/ast_brat/",  # noqa
-                "sentences_dir": "/home/jav/Documents/Projects/n2c2_2022/n2c2-track1/auxiliary_data/n2c2_2010_concept_assertion_relation/combined/segmented/",  # noqa
+                "data_dir": f"{project_home}/auxiliary_data/n2c2_2010_concept_assertion_relation/combined/ast_brat/",  # noqa
+                "sentences_dir": f"{project_home}/auxiliary_data/n2c2_2010_concept_assertion_relation/combined/segmented/",  # noqa
                 "max_train_examples": None,
                 "tasks_to_load": ["Assertion"],
                 "window_size": 0,
@@ -395,16 +435,15 @@ def test_scheduled_dataset_sampler(config):
 
 
 @test_logger
-def test_stickland_murray_dataset_sampler(config):
-    pl.utilities.seed.reset_seed()
+def test_stickland_murray_dataset_sampler(config, project_home):
     data_kwargs = {
         "batch_size": 16,
         "max_train_examples": None,
         "auxiliary_data": {
             "n2c2Assertion": {
                 "dataset_name": "n2c2Assertion",
-                "data_dir": "/home/jav/Documents/Projects/n2c2_2022/n2c2-track1/auxiliary_data/n2c2_2010_concept_assertion_relation/combined/ast_brat/",  # noqa
-                "sentences_dir": "/home/jav/Documents/Projects/n2c2_2022/n2c2-track1/auxiliary_data/n2c2_2010_concept_assertion_relation/combined/segmented/",  # noqa
+                "data_dir": f"{project_home}/auxiliary_data/n2c2_2010_concept_assertion_relation/combined/ast_brat/",  # noqa
+                "sentences_dir": f"{project_home}/auxiliary_data/n2c2_2010_concept_assertion_relation/combined/segmented/",  # noqa
                 "max_train_examples": 200,
                 "tasks_to_load": ["Assertion"],
                 "window_size": 0,
@@ -426,7 +465,9 @@ def test_stickland_murray_dataset_sampler(config):
         datamodule.setup()
     assert isinstance(datamodule, combined.CombinedDataModule)
 
-    sampler = datamodule.train_dataloader().batch_sampler
+    with warnings.catch_warnings():
+        warnings.simplefilter("ignore")
+        sampler = datamodule.train_dataloader().batch_sampler
     assert isinstance(sampler, combined.SticklandMurraySampler)
 
     ntrials = 10
@@ -466,30 +507,35 @@ def test_stickland_murray_dataset_sampler(config):
     assert (gold_lens == sampler_lens).all()
 
 
+@test_logger
 def test_levitate_encodings(config, i=0):
-    pl.utilities.seed.reset_seed()
     data_kwargs = {
         "mark_entities": True,
-        "batch_size": 2,
-        "max_seq_length": 75,
+        "use_levitated_markers": True,
+        "batch_size": 1,
     }
-    datamodule = load_datamodule_from_config(config, **data_kwargs)
     with warnings.catch_warnings():
+        datamodule = load_datamodule_from_config(config, **data_kwargs)
         warnings.simplefilter("ignore")
         # Ignore "No test set found"
         datamodule.setup()
-    for (batch_idx, batch) in enumerate(datamodule.val_dataloader()):
-        if batch_idx == i:
-            break
-    start = timeit.default_timer()
-    encodings, marker_spans = datamodule.levitate_encodings(
-        batch["encodings"], batch["entity_spans"])
-    end = timeit.default_timer()
-    print(f"levitate_encodings(): {end - start}s")
-    # TODO: come up with some actual tests.
-    return encodings, marker_spans
+    assert datamodule.use_levitated_markers is True
+    assert datamodule.mark_entities is True
+    for dl in [datamodule.train_dataloader(), datamodule.val_dataloader()]:
+        for batch in dl:
+            assert "levitated_marker_idxs" in batch.keys()
+            marker_idxs = set(batch["levitated_marker_idxs"][0])
+            entity_idxs = set(batch["entity_token_idxs"][0])
+            assert len(marker_idxs.intersection(entity_idxs)) == 0
+            # See src/data/base.BasicBertDataModule.levitate_encodings()
+            #  for an explanation of this computation.
+            max_num_markers = np.arange(datamodule.levitate_window_size+1)[-datamodule.levitate_max_span_length:].sum() * 4  # noqa
+            expected_seq_length = datamodule.max_seq_length + max_num_markers
+            for (key, val) in batch["encodings"].items():
+                # [batch_size, seq_length, [hidden_dim]]
+                assert val.size(1) == expected_seq_length, f"Value of {key} is the wrong size! {expected_seq_length} vs. {val.size(1)}"  # noqa
 
 
 if __name__ == "__main__":
     args = parse_args()
-    run(args.config_file)
+    run(args.project_home)
