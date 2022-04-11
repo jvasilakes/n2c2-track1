@@ -1,15 +1,19 @@
 import argparse
 import colorama
 import warnings
+import logging
 
 import torch
+import numpy as np
 import pytorch_lightning as pl
 
-from config import ExperimentConfig
-from data import n2c2DataModule
-from models import BertMultiHeadedSequenceClassifier
-from models.layers import TokenMask, EntityPooler
+from src.config import ExperimentConfig
+from src.data import load_datamodule_from_config, combined
+from src.models import BertMultiHeadedSequenceClassifier
+from src.models.layers import TokenMask, EntityPooler
 
+
+logging.getLogger("pytorch_lightning.utilities.seed").setLevel(logging.WARNING)
 
 colorama.init(autoreset=True)
 
@@ -22,16 +26,15 @@ def parse_args():
 
 def test_logger(func):
     def wrapper(*args, **kwargs):
-        print(func.__name__, end='')
+        print(func.__name__, end='', flush=True)
         try:
             func(*args, **kwargs)
             res_str = "Passed"
             color = colorama.Fore.GREEN
-        except AssertionError as e:
+        except AssertionError:
             res_str = "Failed"
             color = colorama.Fore.RED
-            print(e)
-        print(color + f" [{res_str}]")
+        print(color + f" [{res_str}]", flush=True)
     return wrapper
 
 
@@ -46,23 +49,25 @@ def run(config_file):
     config.max_seq_length = 300
     del tmp_config
     pl.seed_everything(config.random_seed)
-    print(config)
 
-    test_mask_hidden(config)
-    test_mask_hidden_marked(config)
-    test_pool_entity_embeddings_max(config)
-    test_pool_entity_embeddings_mean(config)
-    test_pool_entity_embeddings_first(config)
-    test_pool_entity_embeddings_last(config)
-    test_pool_entity_embeddings_first_last(config)
+    #test_mask_hidden(config)
+    #test_mask_hidden_marked(config)
+    #test_pool_entity_embeddings_max(config)
+    #test_pool_entity_embeddings_mean(config)
+    #test_pool_entity_embeddings_first(config)
+    #test_pool_entity_embeddings_last(config)
+    #test_pool_entity_embeddings_first_last(config)
+    test_scheduled_dataset_sampler(config)
+    test_stickland_murray_dataset_sampler(config)
 
 
 @test_logger
 def test_mask_hidden(config):
+    pl.utilities.seed.reset_seed()
     data_kwargs = {
         "mark_entities": False
     }
-    datamodule = n2c2DataModule.from_config(config, **data_kwargs)
+    datamodule = load_datamodule_from_config(config, **data_kwargs)
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
         # Ignore "No test set found"
@@ -94,10 +99,11 @@ def test_mask_hidden(config):
 
 @test_logger
 def test_mask_hidden_marked(config):
+    pl.utilities.seed.reset_seed()
     data_kwargs = {
         "mark_entities": True,
     }
-    datamodule = n2c2DataModule.from_config(config, **data_kwargs)
+    datamodule = load_datamodule_from_config(config, **data_kwargs)
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
         # Ignore "No test set found"
@@ -136,10 +142,11 @@ def test_mask_hidden_marked(config):
 
 @test_logger
 def test_pool_entity_embeddings_max(config):
+    pl.utilities.seed.reset_seed()
     data_kwargs = {
         "mark_entities": False,
     }
-    datamodule = n2c2DataModule.from_config(config, **data_kwargs)
+    datamodule = load_datamodule_from_config(config, **data_kwargs)
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
         # Ignore "No test set found"
@@ -171,10 +178,11 @@ def test_pool_entity_embeddings_max(config):
 
 @test_logger
 def test_pool_entity_embeddings_mean(config):
+    pl.utilities.seed.reset_seed()
     data_kwargs = {
         "mark_entities": False,
     }
-    datamodule = n2c2DataModule.from_config(config, **data_kwargs)
+    datamodule = load_datamodule_from_config(config, **data_kwargs)
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
         # Ignore "No test set found"
@@ -207,10 +215,11 @@ def test_pool_entity_embeddings_mean(config):
 
 @test_logger
 def test_pool_entity_embeddings_first(config):
+    pl.utilities.seed.reset_seed()
     data_kwargs = {
         "mark_entities": False,
     }
-    datamodule = n2c2DataModule.from_config(config, **data_kwargs)
+    datamodule = load_datamodule_from_config(config, **data_kwargs)
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
         # Ignore "No test set found"
@@ -245,10 +254,11 @@ def test_pool_entity_embeddings_first(config):
 
 @test_logger
 def test_pool_entity_embeddings_last(config):
+    pl.utilities.seed.reset_seed()
     data_kwargs = {
         "mark_entities": False,
     }
-    datamodule = n2c2DataModule.from_config(config, **data_kwargs)
+    datamodule = load_datamodule_from_config(config, **data_kwargs)
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
         # Ignore "No test set found"
@@ -283,10 +293,11 @@ def test_pool_entity_embeddings_last(config):
 
 @test_logger
 def test_pool_entity_embeddings_first_last(config):
+    pl.utilities.seed.reset_seed()
     data_kwargs = {
         "mark_entities": False,
     }
-    datamodule = n2c2DataModule.from_config(config, **data_kwargs)
+    datamodule = load_datamodule_from_config(config, **data_kwargs)
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
         # Ignore "No test set found"
@@ -317,6 +328,140 @@ def test_pool_entity_embeddings_first_last(config):
             pooled = pooler.pooler(masked, token_mask)
             assert not torch.isnan(pooled).all()
             assert not torch.isinf(pooled).all()
+
+
+@test_logger
+def test_scheduled_dataset_sampler(config):
+    pl.utilities.seed.reset_seed()
+    data_kwargs = {
+        "batch_size": 16,
+        "max_train_examples": None,
+        "auxiliary_data": {
+            "n2c2Assertion": {
+                "dataset_name": "n2c2Assertion",
+                "data_dir": "/home/jav/Documents/Projects/n2c2_2022/n2c2-track1/auxiliary_data/n2c2_2010_concept_assertion_relation/combined/ast_brat/",  # noqa
+                "sentences_dir": "/home/jav/Documents/Projects/n2c2_2022/n2c2-track1/auxiliary_data/n2c2_2010_concept_assertion_relation/combined/segmented/",  # noqa
+                "max_train_examples": None,
+                "tasks_to_load": ["Assertion"],
+                "window_size": 0,
+            },
+        },
+        "dataset_sample_strategy": "scheduled",
+        "dataset_sampler_kwargs": {
+            "weights": [0.9, 0.1],
+            "exhaust_all": False,
+            "num_cycles": 1,
+            "invert": False,
+        },
+    }
+    with warnings.catch_warnings():
+        warnings.simplefilter("ignore")
+        # Ignore type warnings
+        datamodule = load_datamodule_from_config(config, **data_kwargs,
+                                                 errors="warn")
+        # Ignore "No test set found"
+        datamodule.setup()
+    assert isinstance(datamodule, combined.CombinedDataModule)
+
+    sampler = datamodule.train_dataloader().batch_sampler
+    assert isinstance(sampler, combined.ScheduledWeightedSampler)
+
+    ntrials = 10
+    sampler_lens = np.zeros(sampler.max_steps)
+    batch_lens = np.zeros((ntrials, sampler.max_steps))
+    for i in range(ntrials):
+        sampler.reset()
+        for j in range(sampler.max_steps):
+            for (k, batch) in enumerate(sampler):
+                # Could be less than if we exhaust a dataset this step
+                assert len(batch) <= sampler.batch_size
+                assert len(batch) <= datamodule.batch_size
+                if k == 0:
+                    sampler_lens[j] = sampler.target_samples_this_epoch
+                batch_lens[i, j] += 1
+
+    batch_matches_sampler = (batch_lens == sampler_lens).sum(axis=0)
+    assert (batch_matches_sampler == ntrials).all()
+
+    sampler.reset()
+    dataset_lens = [len(ds) for ds in sampler.dataset.datasets]
+    gold_lens = np.array(
+        [sampler._estimate_length(dataset_lens, sampler.get_dataset_probs(s))
+         for s in range(sampler.max_steps)]
+    )
+    assert (gold_lens == sampler_lens).all()
+
+
+@test_logger
+def test_stickland_murray_dataset_sampler(config):
+    pl.utilities.seed.reset_seed()
+    data_kwargs = {
+        "batch_size": 16,
+        "max_train_examples": None,
+        "auxiliary_data": {
+            "n2c2Assertion": {
+                "dataset_name": "n2c2Assertion",
+                "data_dir": "/home/jav/Documents/Projects/n2c2_2022/n2c2-track1/auxiliary_data/n2c2_2010_concept_assertion_relation/combined/ast_brat/",  # noqa
+                "sentences_dir": "/home/jav/Documents/Projects/n2c2_2022/n2c2-track1/auxiliary_data/n2c2_2010_concept_assertion_relation/combined/segmented/",  # noqa
+                "max_train_examples": 200,
+                "tasks_to_load": ["Assertion"],
+                "window_size": 0,
+            },
+        },
+        "dataset_sample_strategy": "stickland-murray",
+        "dataset_sampler_kwargs": {
+            "max_steps": 10,
+            "exhaust_all": False,
+            "anneal_rate": 0.8,
+        },
+    }
+    with warnings.catch_warnings():
+        warnings.simplefilter("ignore")
+        # Ignore type warnings
+        datamodule = load_datamodule_from_config(
+            config, **data_kwargs, errors="warn")
+        # Ignore "No test set found"
+        datamodule.setup()
+    assert isinstance(datamodule, combined.CombinedDataModule)
+
+    sampler = datamodule.train_dataloader().batch_sampler
+    assert isinstance(sampler, combined.SticklandMurraySampler)
+
+    ntrials = 10
+    start_probs = None
+    end_probs = None
+    sampler_lens = np.zeros(sampler.max_steps)
+    batch_lens = np.zeros((ntrials, sampler.max_steps))
+    for i in range(ntrials):
+        sampler.reset()
+        for j in range(sampler.max_steps):
+            for (k, batch) in enumerate(sampler):
+                # Could be less than if we exhaust a dataset this step
+                assert len(batch) <= sampler.batch_size
+                assert len(batch) <= datamodule.batch_size
+                if i == 0 and k == 0:
+                    sampler_lens[j] = sampler.target_samples_this_epoch
+                    start_probs = sampler.get_dataset_probs()
+                batch_lens[i, j] += 1
+        end_probs = sampler.get_dataset_probs()
+        # The probabilities should get closer together
+        start_diff = np.subtract(*start_probs)
+        if len(end_probs) == 1:
+            end_diff = 0.
+        else:
+            end_diff = np.subtract(*end_probs)
+        assert start_diff > end_diff
+
+    batch_matches_sampler = (batch_lens == sampler_lens).sum(axis=0)
+    assert (batch_matches_sampler == ntrials).all()
+
+    sampler.reset()
+    dataset_lens = [len(ds) for ds in sampler.dataset.datasets]
+    gold_lens = np.array(
+        [sampler._estimate_length(dataset_lens, sampler.get_dataset_probs(s))
+         for s in range(sampler.max_steps)]
+    )
+    assert (gold_lens == sampler_lens).all()
 
 
 if __name__ == "__main__":

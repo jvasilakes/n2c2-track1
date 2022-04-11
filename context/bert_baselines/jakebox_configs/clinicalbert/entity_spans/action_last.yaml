@@ -1,0 +1,33 @@
+# Experiment
+description: Bio_ClinicalBERT using entity spans on the Action task only
+logdir: /home/jav/Documents/Projects/n2c2_2022/n2c2-track1/context/bert_baselines/logs/
+name: clinical_bert/action_entity
+random_seed: 0
+
+# Data
+data_dir: /home/jav/Documents/Projects/n2c2_2022/n2c2-track1/n2c2Track1TrainingData-v3/data_v3/
+max_train_examples: null
+sentences_dir: /home/jav/Documents/Projects/n2c2_2022/n2c2-track1/n2c2Track1TrainingData-v3/segmented/
+tasks_to_load:
+- Action
+window_size: 0
+
+# Model
+bert_model_name_or_path: emilyalsentzer/Bio_ClinicalBERT
+dropout_prob: 0.1
+entity_pool_fn: last
+freeze_pretrained: false
+mark_entities: false
+max_seq_length: 256
+model_name: bert-sequence-classifier
+use_entity_spans: true
+
+# Training
+batch_size: 16
+class_weights: none
+gradient_clip_val: 10.0
+lr: 3.0e-05
+max_epochs: 10
+sample_strategy: none
+weight_decay: 0.0
+

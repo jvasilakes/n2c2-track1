@@ -10,12 +10,16 @@ import pytorch_lightning as pl
 from pytorch_lightning.loggers import TensorBoardLogger
 from pytorch_lightning.callbacks import ModelCheckpoint
 
-from config import ExperimentConfig
-from data import DATAMODULE_LOOKUP, CombinedDataModule
-from models import MODEL_LOOKUP
-from models.rationale import format_input_ids_and_masks
-
 import brat_reader as br
+
+from src.config import ExperimentConfig
+from src.data import load_datamodule_from_config
+from src.data.combined import CombinedDataModule
+from src.models import MODEL_LOOKUP
+from src.models.rationale import format_input_ids_and_masks
+
+
+os.environ["TOKENIZERS_PARALLELISM"] = "true"
 
 
 def parse_args():
@@ -43,8 +47,8 @@ def parse_args():
     val_parser.add_argument(
             "config_file", type=str, help="Path to a yaml config file")
     val_parser.add_argument(
-            "--dataset", type=str, default="dev", choices=["train", "dev"],
-            help="Evaluate on this dataset. Default 'dev'.")
+            "--datasplit", type=str, default="dev", choices=["train", "dev"],
+            help="Evaluate on this data split. Default 'dev'.")
     val_parser.add_argument(
             "--output_brat", action="store_true", default=False,
             help="""If set, save brat formatted predictions
@@ -99,7 +103,7 @@ def main(args):
         run_kwargs["save_last_epoch"] = args.save_last_epoch
         run_fn = run_continue_train
     elif args.command in ["validate", "test"]:
-        run_kwargs["dataset"] = args.dataset
+        run_kwargs["datasplit"] = args.datasplit
         version = get_current_experiment_version(args.config_file)
         run_kwargs["version"] = version
         run_kwargs["output_brat"] = args.output_brat
@@ -111,24 +115,6 @@ def main(args):
 
     curr_time = datetime.datetime.now()
     print(f"End: {curr_time}")
-
-
-def load_datamodule_from_config(config: ExperimentConfig):
-    datamodule_cls = DATAMODULE_LOOKUP[config.dataset_name]
-    datamodule = datamodule_cls.from_config(config)
-    if len(config.auxiliary_data) > 0:
-        all_datamods = [datamodule]
-        dm_names = [datamodule.name]
-        for (dataset_name, kwargs) in config.auxiliary_data.items():
-            datamodule_cls = DATAMODULE_LOOKUP[dataset_name]
-            dm = datamodule_cls.from_config(config, **kwargs)
-            if dm.name in dm_names:
-                raise ValueError(f"Already loaded a datamodule '{dm.name}'! Make sure you're not using duplicate datasets or specify a unique name for any entries under `auxiliary_data`.")  # noqa
-            all_datamods.append(dm)
-            dm_names.append(dm.name)
-        datamodule = CombinedDataModule(
-            all_datamods, dataset_sample_strategy=config.dataset_sample_strategy)  # noqa
-    return datamodule
 
 
 def get_next_experiment_version(logdir, experiment_name):
@@ -186,6 +172,20 @@ def run_train(config, datamodule, logdir="logs/", version=None,
 
     available_gpus = min(1, torch.cuda.device_count())
     enable_progress_bar = not quiet
+    trainer_kwargs = {"check_val_every_n_epoch": 1}
+    # For CombinedDataModules with some samplers, the length can
+    # change from epoch to epoch, which pytorch_lightning doesn't
+    # really support. To get around this we just set the val
+    # check interval to the small train epoch size.
+    if isinstance(datamodule, CombinedDataModule):
+        sampler = datamodule.train_dataloader().batch_sampler
+        if hasattr(sampler, "step"):
+            min_len = None
+            for i in range(sampler.max_steps):
+                sampler.step = i
+                if min_len is None or len(sampler) < min_len:
+                    min_len = len(sampler)
+            trainer_kwargs = {"val_check_interval": min_len}
     # There is a bug with deterministic indexing on the gpu
     #  in the current pytorch version, so we have to turn it off.
     #  https://github.com/pytorch/pytorch/issues/61032
@@ -198,6 +198,7 @@ def run_train(config, datamodule, logdir="logs/", version=None,
             callbacks=[checkpoint_cb],
             enable_progress_bar=enable_progress_bar,
             log_every_n_steps=32,
+            **trainer_kwargs,
             )
     trainer.fit(model, datamodule=datamodule)
     if save_last_epoch is True:
@@ -257,7 +258,7 @@ def run_continue_train(config, datamodule, logdir="logs/", version=None,
         print(f"Final training epoch checkpointed at {ckpt_path}")
 
 
-def run_validate(config, datamodule, dataset="dev",
+def run_validate(config, datamodule, datasplit="dev",
                  logdir="logs/", version=None, quiet=False,
                  output_brat=False, output_token_masks=False):
 
@@ -277,21 +278,20 @@ def run_validate(config, datamodule, dataset="dev",
             gpus=available_gpus,
             enable_progress_bar=enable_progress_bar
             )
-    if dataset == "train":
+    if datasplit == "train":
         val_dataloader_fn = datamodule.train_dataloader
-    elif dataset == "dev":
+    elif datasplit == "dev":
         val_dataloader_fn = datamodule.val_dataloader
-    elif dataset == "test":
+    elif datasplit == "test":
         if datamodule.test_dataloader() is None:
             raise OSError("No test data found. Aborting.")
         val_dataloader_fn = datamodule.test_dataloader
     else:
-        raise ValueError(f"Unknown validation dataset '{dataset}'")
+        raise ValueError(f"Unknown validation data split '{datasplit}'")
     val_dataloader = val_dataloader_fn()
     results = trainer.validate(
         model, dataloaders=val_dataloader, verbose=False)[0]
-    tasks = sorted(datamodule.label_spec.keys())
-    md = format_results_as_markdown_table(results, tasks)
+    md = format_results_as_markdown_table(results)
     print(md)
 
     if output_brat is True or output_token_masks is True:
@@ -299,12 +299,13 @@ def run_validate(config, datamodule, dataset="dev",
             val_dataloader = val_dataloader_fn(predicting=True)
         preds = trainer.predict(model, dataloaders=val_dataloader)
     if output_brat is True:
-        pred_anns_by_docid = batched_predictions_to_brat(preds, datamodule)
-        preds_dir = os.path.join(logdir, config.name, f"version_{version}",
-                                 "predictions", dataset)
-        os.makedirs(preds_dir, exist_ok=False)
-        for doc_preds in pred_anns_by_docid:
-            doc_preds.save_brat(preds_dir)
+        anns_by_datatset = batched_predictions_to_brat(preds, datamodule)
+        for (dataset, anns) in anns_by_datatset.items():
+            preds_dir = os.path.join(logdir, config.name, f"version_{version}",
+                                     "predictions", dataset, datasplit)
+            os.makedirs(preds_dir, exist_ok=False)
+            for doc_anns in anns:
+                doc_anns.save_brat(preds_dir)
 
     if output_token_masks is True:
         if config.model_name != "bert-rationale-classifier":
@@ -322,8 +323,26 @@ def run_validate(config, datamodule, dataset="dev",
                     outF.write('\n')
 
 
-def format_results_as_markdown_table(results, tasks):
+def maybe_split_results_by_dataset(results_dict):
+    # TODO: make metric names follow {task}_{avg_fn}_{metric}
+    #       to simplify this code.
+    #       Even better, always output results keyed by dataset
+    did_split = False
+    new_results = defaultdict(dict)
+    for (metric_name, val) in results_dict.items():
+        if ':' in metric_name:
+            did_split = True
+            tmp = metric_name.split('_')
+            metric_idx = [i for i in range(len(tmp)) if ':' in tmp[i]][0]
+            dataset, metric_str = tmp[metric_idx].split(':')
+            tmp[metric_idx] = metric_str
+            new_results[dataset]['_'.join(tmp)] = val
+    return did_split, new_results
+
+
+def format_results_as_markdown_table(results):
     """
+    ### Dataset Name
     |task1 | P  | R | F1 | task2 | P | R | F1 |
     |------|----|---|----|-------|---|---|----|
     |micro |    |   |    | micro |   |   |    |
@@ -337,18 +356,29 @@ def format_results_as_markdown_table(results, tasks):
             "Temporality": "Temp",
             "Assertion": "Assert",
             }
+    did_split, results_by_dataset = maybe_split_results_by_dataset(results)
+    if did_split is True:
+        total_table = ''
+        for (dataset, results) in results_by_dataset.items():
+            dataset_table = format_results_as_markdown_table(results)
+            dataset_table = f"\n### {dataset}\n" + dataset_table
+            total_table += dataset_table
+        return total_table
+
+    tasks = set()
+    for key in results.keys():
+        if key.startswith("micro") or key.startswith("macro"):
+            avg_fn, task, metric = key.split('_')
+            tasks.add(task)
+    tasks = sorted(tasks)
+
     # Header
     table = '|'
     for task in tasks:
-        if ':' in task:
-            # Probably doing multi-dataset learning.
-            task_ = task.split(':')[-1]
-        else:
-            task_ = task
         try:
-            task_str = task_abbrevs[task_]
+            task_str = task_abbrevs[task]
         except KeyError:
-            task_str = task_[:6]
+            task_str = task[:6]
         table += f" {task_str: <7} | {'P': <5} | {'R': <5} | {'F1': <5} |"
 
     # Separator
@@ -356,6 +386,7 @@ def format_results_as_markdown_table(results, tasks):
     for task in tasks:
         table += "---------|-------|-------|-------|"
 
+    # Results
     for avg_fn in ["micro", "macro"]:
         table += "\n|"
         for task in tasks:
@@ -371,6 +402,7 @@ def format_results_as_markdown_table(results, tasks):
     return table
 
 
+# TODO: make this work in the multi-dataset setup.
 def batched_predictions_to_masked_tokens(preds, datamodule):
     masked_by_task = defaultdict(list)
     for batch in preds:
@@ -394,23 +426,36 @@ def batched_predictions_to_masked_tokens(preds, datamodule):
 def batched_predictions_to_brat(preds, datamodule):
     """
     Create a BratAnnotations instance for each grouped of predictions,
-    grouped by doc_id.
+    grouped by dataset and doc_id.
     """
-    events_by_docid = defaultdict(list)
+    events_by_dataset_and_docid = defaultdict(lambda: defaultdict(list))
     for batch in preds:
         # TODO: When using a CombinedDataModule, tasks may be split across
         #       batches for a given example. Group by all docids first,
         #       then iterate over them to create the output documents.
+        #   This is a bit of side-case, however, when we load two tasks
+        #       from the same dataset as separate datasets (i.e., one is
+        #       loaded under auxiliary_data.
+        default_dataset_name = datamodule.train_dataloader().dataset.name
+        dataset = default_dataset_name
         for (i, docid) in enumerate(batch["docids"]):
             attrs = {}
             for (task, task_preds) in batch["predictions"].items():
-                enc_pred = task_preds[i].int().item()
-                decoded_pred = datamodule.inverse_transform(task, enc_pred)
-                num_attrs = len([attr for e in events_by_docid[docid]
-                                 for attr in e.attributes]) + len(attrs)
-                aid = f"A{num_attrs}"
+                encoded_pred = task_preds[i].int().item()
+                decoded_pred = datamodule.inverse_transform(task, encoded_pred)
                 if isinstance(datamodule, CombinedDataModule):
-                    task = task.split(':')[1]
+                    dataset_ = datamodule.get_dataset_from_task(task).name
+                    # so we don't output the datset name in the brat
+                    task = task.split(':')[-1]
+                    if dataset == default_dataset_name:
+                        dataset = dataset_
+                    else:
+                        assert dataset_ == dataset, f"Datasets should not differ within a docid! Got {dataset} and {dataset_} for docid {docid}"  # noqa
+                num_attrs = len(
+                    [attr for e in events_by_dataset_and_docid[dataset][docid]
+                     for attr in e.attributes]
+                ) + len(attrs)
+                aid = f"A{num_attrs}"
                 attr = br.Attribute(_id=aid, _type=task,
                                     value=decoded_pred, reference=None)
                 attrs[task] = attr
@@ -418,7 +463,8 @@ def batched_predictions_to_brat(preds, datamodule):
             # Reconstruct original character offsets
             start, end = batch["entity_spans"][i]
             entity_text = batch["texts"][i][start:end]
-            # There's one entity mention that spans a newline
+            # There's one entity mention in n2c2 2022 that spans a newline
+            #  so we'll fix that here.
             entity_text = entity_text.replace('\n', ' ')
             start += batch["char_offsets"][i]
             end += batch["char_offsets"][i]
@@ -428,21 +474,30 @@ def batched_predictions_to_brat(preds, datamodule):
                 entity_text = entity_text.strip('@')
                 end -= 2
 
-            num_spans = len(set([(e.span.start_index, e.span.end_index)
-                                 for e in events_by_docid[docid]]))
+            num_spans = len(
+                set(
+                    [(e.span.start_index, e.span.end_index)
+                     for e in events_by_dataset_and_docid[dataset][docid]]
+                )
+            )
             sid = f"T{num_spans}"
             span = br.Span(_id=sid, _type="Disposition", start_index=start,
                            end_index=end, text=entity_text)
 
             src_file_str = f"{docid}.ann"
-            eid = f"E{len(events_by_docid[docid])}"
+            if dataset is None:
+                dataset = datamodule.name
+            eid = f"E{len(events_by_dataset_and_docid[dataset][docid])}"
             event = br.Event(_id=eid, _type="Disposition", span=span,
                              attributes=attrs, _source_file=src_file_str)
-            events_by_docid[docid].append(event)
+            events_by_dataset_and_docid[dataset][docid].append(event)
 
-    anns_by_docid = [br.BratAnnotations.from_events(events)
-                     for events in events_by_docid.values()]
-    return anns_by_docid
+    anns_by_dataset = {}
+    for dataset in events_by_dataset_and_docid.keys():
+        anns_by_dataset[dataset] = [
+            br.BratAnnotations.from_events(events)
+            for events in events_by_dataset_and_docid[dataset].values()]
+    return anns_by_dataset
 
 
 if __name__ == "__main__":
