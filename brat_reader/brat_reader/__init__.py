@@ -1,3 +1,4 @@
+import re
 import os
 import html
 import pathlib
@@ -361,14 +362,12 @@ def parse_brat_span(line):
     # Sometimes things like '&quot;' appear
     line = html.unescape(line)
     uid, label, other = line.split(maxsplit=2)
-    other = other.rstrip(';')
-    if ';' not in other:
-        start_idx, end_idx, text = other.split(maxsplit=2)
-    else:
+    # start1 end1;start2 end2
+    if re.match(r'[0-9]+\s[0-9]+\s?;\s?[0-9]+\s[0-9]+', other):
         # Occasionally, non-contiguous spans occur in the n2c2 2022 data.
         # Merge these to be contiguous.
         text = ''
-        spans = other.split(';')
+        spans = other.split(';', maxsplit=1)
         start_idx = None
         for span in spans:
             start_idx_tmp, end_idx_plus = span.split(maxsplit=1)
@@ -379,6 +378,9 @@ def parse_brat_span(line):
                 end_idx, text = end_idx_split
             else:
                 end_idx = end_idx_split[0]
+    # start end
+    else:
+        start_idx, end_idx, text = other.split(maxsplit=2)
 
     return {"_id": uid,
             "_type": label,

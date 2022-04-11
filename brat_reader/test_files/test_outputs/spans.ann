@@ -1,4 +1,5 @@
 T8	NoDisposition 707 721	nitroglycerin.
+T15	NoDisposition 1249 1263	insulin  70/30
 T2	NoDisposition 1386 1396	Glucophage
 T5	NoDisposition 1420 1427	aspirin
 T6	NoDisposition 1464 1471	Zestril
@@ -12,3 +13,5 @@ T9	Disposition 4260 4270	protamine.
 T1	Disposition 6616 6628	beta-blocker
 T0	Disposition 7316 7324	Percocet
 T10	NoDisposition 7457 7463	Celexa
+T14	NoDisposition 8869 8915	lopressor for rate control; no anticoagulation
+T16	NoDisposition 11249 11263	insulin 70/30;
