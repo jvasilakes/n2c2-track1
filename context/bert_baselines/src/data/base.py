@@ -1,6 +1,7 @@
 import os
 import json
 import string
+import warnings
 from glob import glob
 from collections import defaultdict
 from typing import List, Dict, Union
@@ -17,29 +18,54 @@ import brat_reader as br
 class BratMultiTaskDataset(Dataset):
     EXAMPLE_TYPE = None
     ENCODINGS = {}
-    SORTED_ATTRIBUTES = []
-    START_ENTITY_MARKER = '@'
-    END_ENTITY_MARKER = '@'
 
     def __init__(self, data_dir, sentences_dir,
                  label_names="all", window_size=0,
-                 max_examples=-1, mark_entities=False):
+                 max_examples=-1, mark_entities=False,
+                 entity_markers=None):
         self.data_dir = data_dir
         self.sentences_dir = sentences_dir
-        self.label_names = label_names
+        self.label_names = self._validate_label_names(label_names)
         self.window_size = window_size
         self.max_examples = max_examples
         self.mark_entities = mark_entities
+        if self.mark_entities is True:
+            msg = "mark_entities is deprecated. Use entity_markers instead."
+            self.mark_entities = False
+            if entity_markers is None:
+                entity_markers = '@'
+                msg += " Defaulting to '@' entity markers."
+            warnings.warn(msg, DeprecationWarning)
+        self.entity_markers = self._validate_entity_markers(entity_markers)
         self._name = None
 
         self.examples, self.docids_to_texts = self._get_examples_and_texts()
+
+    def _validate_label_names(self, label_names):
         if label_names == "all":
-            self.label_names = self.SORTED_ATTRIBUTES
+            label_names = sorted(list(self.ENCODINGS.keys()))
         else:
-            for name in self.label_names:
-                if name not in self.SORTED_ATTRIBUTES:
+            _tmp_label_names = []
+            for name in label_names:
+                if name not in self.ENCODINGS.keys():
                     raise ValueError(f"Unknown attribute {name}")
-            self.label_names = sorted(label_names)
+                _tmp_label_names.append(name)
+            label_names = sorted(_tmp_label_names)
+        return label_names
+
+    def _validate_entity_markers(self, entity_markers):
+        if entity_markers is None:
+            return entity_markers
+        elif isinstance(entity_markers, str):
+            return (entity_markers, entity_markers)
+        elif isinstance(entity_markers, (list, tuple)):
+            assert all([isinstance(marker, str) for marker in entity_markers]), "Entity markers must be all strings!"  # noqa
+            if len(entity_markers) == 1:
+                return (entity_markers[0], entity_markers[0])
+            elif len(entity_markers) == 2:
+                return entity_markers
+            else:
+                raise ValueError(f"Incorrect number of entity markers speciied {len(self.entity_markers)}. Should be length 1 or 2, or None.")  # noqa
 
     @property
     def name(self) -> str:
@@ -80,34 +106,34 @@ class BratMultiTaskDataset(Dataset):
         # Compute the relative character offset of the entity in the context
         entity_start = example.start_index - context[0]["start_index"]
         entity_end = example.end_index - context[0]["start_index"]
-        # Surround the entity spans with '@'. E.g., 'He took @Toradol@'.
-        if self.mark_entities is True:
+        # Surround the entity spans with the specified markers.
+        #  E.g., self.entity_markers = '@', 'He took @Toradol@'.
+        if self.entity_markers is not None:
             marked_text = text[:entity_start]
-            marked_text += (self.START_ENTITY_MARKER +
+            marked_text += (self.entity_markers[0] +
                             text[entity_start:entity_end] +
-                            self.END_ENTITY_MARKER)
+                            self.entity_markers[1])
             marked_text += text[entity_end:]
             text = marked_text
-            entity_end += 2
+            entity_end += sum([len(marker) for marker in self.entity_markers])
 
         # Encode the labels
         labels = {}
-        for attr_name in self.SORTED_ATTRIBUTES:
-            if attr_name in self.label_names:
-                if isinstance(example, br.Event):
-                    try:
-                        val = example.attributes[attr_name].value
-                    except KeyError as e:
-                        print(e)
-                        print(example)
-                        input()
-                elif isinstance(example, br.Attribute):
-                    if example.type != attr_name:
-                        continue
-                    val = example.value
-                else:
-                    raise ValueError(f"Found unsupported example type '{type(example)}'.")  # noqa
-                labels[attr_name] = self.ENCODINGS[attr_name][val]
+        for attr_name in self.label_names:
+            if isinstance(example, br.Event):
+                try:
+                    val = example.attributes[attr_name].value
+                except KeyError as e:
+                    print(e)
+                    print(example)
+                    input()
+            elif isinstance(example, br.Attribute):
+                if example.type != attr_name:
+                    continue
+                val = example.value
+            else:
+                raise ValueError(f"Found unsupported example type '{type(example)}'.")  # noqa
+            labels[attr_name] = self.ENCODINGS[attr_name][val]
 
         return {"text": text,
                 "entity_char_span": (entity_start, entity_end),
@@ -232,7 +258,7 @@ class BasicBertDataModule(pl.LightningDataModule):
             max_seq_length=128,
             use_levitated_markers=False,
             levitate_window_size=5,
-            levitate_max_span_length=3,
+            levitate_max_span_length=1,
             name=None):
         self.bert_model_name_or_path = bert_model_name_or_path
         self.max_seq_length = max_seq_length
@@ -296,14 +322,14 @@ class BasicBertDataModule(pl.LightningDataModule):
 
     def encode_and_collate(self, examples) -> Dict:
         batch = {
-            "encodings": None,  # output of BertModel
+            "encodings": None,  # output of BertTokenizer
             "entity_token_idxs": [],  # indices of entity's wordpiece tokens
             "entity_char_spans": [],  # (start,end) character indices of entity
             "texts": [],  # the original text that was transformed into encodings.  # noqa
             "char_offsets": [], # start character index of the texts in the documents.  # noqa
             "labels": defaultdict(list),  # dict of task->labels
             "docids": []  # source documents for examples in this batch
-            # Optional: levitated_spans: []
+            # Optional: levitated_marker_idxs: []
         }
 
         # Collate entity_char_spans, char_offsets, texts, docids, labels
@@ -334,7 +360,6 @@ class BasicBertDataModule(pl.LightningDataModule):
                 raise ValueError(f"Couldn't find entity span {entity_span} in document {examples[example_i]['docid']}!")  # noqa
             batch["entity_token_idxs"].append(entity_token_idxs)
 
-        # TODO: add options for levitated markers in config
         # Optional: Packed-Levitated Marker modifies the encodings.
         if self.use_levitated_markers is True:
             tmp = self.levitate_encodings(
@@ -366,7 +391,6 @@ class BasicBertDataModule(pl.LightningDataModule):
             "token_type_ids": [],
             "position_ids": [],
             "attention_mask": [],
-            # offset_mapping won't change
             "offset_mapping": [],
         }
         batch_size, max_seq_length = encodings["input_ids"].size()
@@ -425,8 +449,15 @@ class BasicBertDataModule(pl.LightningDataModule):
             all_span_idxs = [*before_span_idxs, *after_span_idxs]
             marker_start_idxs = range(max_seq_length,
                                       max_levitated_seq_length, 2)
+
+            # Make sure we don't use the same tokens as the entity
+            entity_marker_ids = self.tokenizer.convert_tokens_to_ids(
+                    self.entity_markers)
             start_token_id = 1
-            end_token_id = 2  # actualy token is "[unused{unused_token_id}]"
+            end_token_id = 2  # actual token is "[unused{token_id}]"
+            while start_token_id not in entity_marker_ids and end_token_id not in entity_marker_ids:  # noqa
+                start_token_id += 1
+                end_token_id += 1
             for (marker_start, span) in zip(marker_start_idxs, all_span_idxs):
                 # The indices of the markers in position_ids and attention_mask
                 marker_end = marker_start + 1

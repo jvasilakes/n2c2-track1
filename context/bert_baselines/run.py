@@ -470,9 +470,11 @@ def batched_predictions_to_brat(preds, datamodule):
             end += batch["char_offsets"][i]
 
             # Remove the '@' entity markers if used.
-            if datamodule.mark_entities is True:
-                entity_text = entity_text.strip('@')
-                end -= 2
+            if datamodule.entity_markers is not None:
+                start_marker, end_marker = datamodule.entity_markers
+                entity_text = entity_text.replace(start_marker, '')
+                entity_text = entity_text.replace(end_marker, '')
+                end -= sum([len(em) for em in datamodule.entity_markers])
 
             num_spans = len(
                 set(

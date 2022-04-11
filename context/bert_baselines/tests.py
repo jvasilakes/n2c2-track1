@@ -77,15 +77,17 @@ def run(project_home):
 @test_logger
 def test_get_token_indices_from_char_span(config):
     data_kwargs = {
-        "mark_entities": True,
+        "entity_markers": '@',
         "batch_size": 1,
     }
-    datamodule = load_datamodule_from_config(config, **data_kwargs)
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
+        # Ignore changing type of config parameters
+        datamodule = load_datamodule_from_config(config, **data_kwargs)
         # Ignore "No test set found"
         datamodule.setup()
-    assert datamodule.mark_entities is True
+    msg = "datamodule.entity_markers expected to be '@'"
+    assert datamodule.entity_markers == '@', msg
 
     for ds in [datamodule.train, datamodule.val]:
         for example in ds:
@@ -106,22 +108,25 @@ def test_get_token_indices_from_char_span(config):
             start_char, end_char = example["entity_char_span"]
             orig_entity = example["text"][start_char:end_char]
             orig_entity = re.sub(r'\s+', '', orig_entity)
-            assert(reconstructed_entity.lower() == orig_entity.lower())
+            msg = f"{reconstructed_entity.lower()} != {orig_entity.lower()}"
+            assert reconstructed_entity.lower() == orig_entity.lower(), msg
     del datamodule
 
 
 @test_logger
 def test_mask_hidden(config):
     data_kwargs = {
-        "mark_entities": False,
+        "entity_markers": None,
         "batch_size": 1,
     }
-    datamodule = load_datamodule_from_config(config, **data_kwargs)
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
+        # Ignore changing type of config parameters
+        datamodule = load_datamodule_from_config(config, **data_kwargs)
         # Ignore "No test set found"
         datamodule.setup()
-    assert datamodule.mark_entities is False
+    msg = "datamodule.entity_markers expected to be None"
+    assert datamodule.entity_markers is None, msg
 
     model_kwargs = {
         "use_entity_spans": True,
@@ -153,15 +158,17 @@ def test_mask_hidden(config):
 @test_logger
 def test_mask_hidden_marked(config):
     data_kwargs = {
-        "mark_entities": True,
+        "entity_markers": '@',
         "batch_size": 1,
     }
-    datamodule = load_datamodule_from_config(config, **data_kwargs)
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
+        # Ignore changing type of config parameters
+        datamodule = load_datamodule_from_config(config, **data_kwargs)
         # Ignore "No test set found"
         datamodule.setup()
-    assert datamodule.mark_entities is True
+    msg = "datamodule.entity_markers expected to be '@'"
+    assert datamodule.entity_markers == '@', msg
 
     model_kwargs = {
         "use_entity_spans": True,
@@ -172,8 +179,8 @@ def test_mask_hidden_marked(config):
     assert model.use_entity_spans is True
     assert model.entity_pool_fn == "first-last"
 
-    start_marker = datamodule.train.START_ENTITY_MARKER
-    end_marker = datamodule.train.END_ENTITY_MARKER
+    start_marker = datamodule.train.entity_markers[0]
+    end_marker = datamodule.train.entity_markers[1]
     start_id = datamodule.tokenizer.convert_tokens_to_ids([start_marker])[0]
     end_id = datamodule.tokenizer.convert_tokens_to_ids([end_marker])[0]
     insize = outsize = model.bert_config.hidden_size
@@ -196,14 +203,14 @@ def test_mask_hidden_marked(config):
 @test_logger
 def test_pool_entity_embeddings_max(config):
     data_kwargs = {
-        "mark_entities": False,
+        "entity_markers": None,
     }
     datamodule = load_datamodule_from_config(config, **data_kwargs)
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
         # Ignore "No test set found"
         datamodule.setup()
-    assert datamodule.mark_entities is False
+    assert datamodule.entity_markers is None
 
     model_kwargs = {
         "use_entity_spans": True,
@@ -231,14 +238,14 @@ def test_pool_entity_embeddings_max(config):
 @test_logger
 def test_pool_entity_embeddings_mean(config):
     data_kwargs = {
-        "mark_entities": False,
+        "entity_markers": None,
     }
     datamodule = load_datamodule_from_config(config, **data_kwargs)
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
         # Ignore "No test set found"
         datamodule.setup()
-    assert datamodule.mark_entities is False
+    assert datamodule.entity_markers is None
 
     model_kwargs = {
         "use_entity_spans": True,
@@ -267,7 +274,7 @@ def test_pool_entity_embeddings_mean(config):
 @test_logger
 def test_pool_entity_embeddings_first(config):
     data_kwargs = {
-        "mark_entities": False,
+        "entity_markers": None,
         "batch_size": 2,
     }
     datamodule = load_datamodule_from_config(config, **data_kwargs)
@@ -275,7 +282,7 @@ def test_pool_entity_embeddings_first(config):
         warnings.simplefilter("ignore")
         # Ignore "No test set found"
         datamodule.setup()
-    assert datamodule.mark_entities is False
+    assert datamodule.entity_markers is None
 
     model_kwargs = {
         "use_entity_spans": True,
@@ -304,14 +311,14 @@ def test_pool_entity_embeddings_first(config):
 @test_logger
 def test_pool_entity_embeddings_last(config):
     data_kwargs = {
-        "mark_entities": False,
+        "entity_markers": None,
     }
     datamodule = load_datamodule_from_config(config, **data_kwargs)
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
         # Ignore "No test set found"
         datamodule.setup()
-    assert datamodule.mark_entities is False
+    assert datamodule.entity_markers is None
 
     model_kwargs = {
         "use_entity_spans": True,
@@ -340,14 +347,14 @@ def test_pool_entity_embeddings_last(config):
 @test_logger
 def test_pool_entity_embeddings_first_last(config):
     data_kwargs = {
-        "mark_entities": False,
+        "entity_markers": None,
     }
     datamodule = load_datamodule_from_config(config, **data_kwargs)
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
         # Ignore "No test set found"
         datamodule.setup()
-    assert datamodule.mark_entities is False
+    assert datamodule.entity_markers is None
 
     model_kwargs = {
         "use_entity_spans": True,
@@ -510,17 +517,17 @@ def test_stickland_murray_dataset_sampler(config, project_home):
 @test_logger
 def test_levitate_encodings(config, i=0):
     data_kwargs = {
-        "mark_entities": True,
+        "entity_markers": ["[unused0]", "[unused1]"],
         "use_levitated_markers": True,
         "batch_size": 1,
     }
     with warnings.catch_warnings():
-        datamodule = load_datamodule_from_config(config, **data_kwargs)
         warnings.simplefilter("ignore")
+        datamodule = load_datamodule_from_config(config, **data_kwargs)
         # Ignore "No test set found"
         datamodule.setup()
+    assert datamodule.entity_markers == ["[unused0]", "[unused1]"]
     assert datamodule.use_levitated_markers is True
-    assert datamodule.mark_entities is True
     for dl in [datamodule.train_dataloader(), datamodule.val_dataloader()]:
         for batch in dl:
             assert "levitated_marker_idxs" in batch.keys()
