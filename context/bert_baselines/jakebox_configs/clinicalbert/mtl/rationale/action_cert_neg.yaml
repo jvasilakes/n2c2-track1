@@ -1,0 +1,44 @@
+# Experiment
+name: clinical_bert/mtl/rationale/action_certainty_negation
+description: Rationale model using Bio_ClinicalBERT on Action, Certainty, and Negation
+logdir: logs/
+random_seed: 0
+
+# Data
+data_dir: /home/jav/Documents/Projects/n2c2_2022/n2c2-track1/n2c2Track1TrainingData-v3/data_v3/
+sentences_dir: /home/jav/Documents/Projects/n2c2_2022/n2c2-track1/n2c2Track1TrainingData-v3/segmented
+tasks_to_load:
+  - Action
+  - Certainty
+  - Negation
+window_size: 1
+max_train_examples: null
+auxiliary_data: {}
+dataset_sample_strategy: proportional
+
+# Model
+model_name: bert-rationale-classifier
+bert_model_name_or_path: emilyalsentzer/Bio_ClinicalBERT
+freeze_pretrained: false
+use_entity_spans: true
+entity_pool_fn: first-last
+mark_entities: true
+max_seq_length: 300
+dropout_prob: 0.2
+
+# Losses
+classifier_loss_fn: cross-entropy
+classifier_loss_kwargs: {}
+mask_loss_fn: controlled-sparsity
+mask_loss_kwargs:
+ selection_rate: 0.1
+ transition_rate: 0.2
+ lambda_init: 0.01
+
+# Training
+batch_size: 8
+sample_strategy: null
+lr: 3.0e-05
+weight_decay: 0.0
+gradient_clip_val: 10.0
+max_epochs: 10
