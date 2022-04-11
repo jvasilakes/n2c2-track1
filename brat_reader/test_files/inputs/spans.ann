@@ -12,3 +12,6 @@ T10	NoDisposition 7457 7463	Celexa
 T11	NoDisposition 4200 4207	aspirin
 T12	NoDisposition 4046 4069	packed red blood cells.
 T13	NoDisposition 3534 3540	Celexa
+T14     NoDisposition 8869 8915	lopressor for rate control; no anticoagulation
+T15	NoDisposition 1249 1257;1258 1263	insulin  70/30
+T16	NoDisposition 11249 11257;11258 11263	insulin 70/30;
