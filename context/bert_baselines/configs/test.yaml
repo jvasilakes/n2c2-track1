@@ -1,6 +1,6 @@
 # Experiment
-name: test_levitated_markers
-description: test new PL-markers implementation
+name: test_new_param_names
+description: test switch from mark_entities to entity_markers
 logdir: logs/
 random_seed: 0
 
@@ -22,8 +22,10 @@ bert_model_name_or_path: bert-base-uncased
 freeze_pretrained: false
 use_entity_spans: true
 entity_pool_fn: max
-use_levitated_markers: true
-mark_entities: true
+mark_entities: false
+entity_markers: '@'
+use_levitated_markers: false
+levitated_marker_pool_fn: max
 max_seq_length: 256
 dropout_prob: 0.2
 

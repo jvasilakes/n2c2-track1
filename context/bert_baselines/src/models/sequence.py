@@ -31,6 +31,9 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
         "max", "mean", "first", "last", "first-last".
     use_levitated_markers: bool. Default False. If True, uses packed levitated
         markers.  Only used if use_entity_spans=True.
+    levitated_marker_pool_fn: How to pool the token embeddings of the
+        levitated markers. Possible values are
+        "max", "mean", "first", "last", "first-last".
     dropout_prob: Dropout probability for the classification layer.
     lr: learning rate of the optimizer
     weight_decay: weight decay rate of the optimizer
@@ -60,6 +63,7 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
             "use_entity_spans": config.use_entity_spans,
             "entity_pool_fn": config.entity_pool_fn,
             "use_levitated_markers": config.use_levitated_markers,
+            "levitated_marker_pool_fn": config.levitated_marker_pool_fn,
             "dropout_prob": config.dropout_prob,
             "lr": config.lr,
             "weight_decay": config.weight_decay,
@@ -81,6 +85,7 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
             use_entity_spans=False,
             entity_pool_fn="max",
             use_levitated_markers=False,
+            levitated_marker_pool_fn="max",
             dropout_prob=0.1,
             lr=1e-3,
             weight_decay=0.0,
@@ -94,6 +99,7 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
         self.use_entity_spans = use_entity_spans
         self.entity_pool_fn = entity_pool_fn
         self.use_levitated_markers = use_levitated_markers
+        self.levitated_marker_pool_fn = levitated_marker_pool_fn
         self.dropout_prob = dropout_prob
         self.lr = lr
         self.weight_decay = weight_decay
@@ -124,10 +130,12 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
                 pooler_insize, pooler_outsize, self.entity_pool_fn)
             # For pooling levitated marker embeddings
             if self.use_levitated_markers is True:
-                # TODO: add option to use different pooling
-                #  function for levitated markers
+                lev_pooler_insize = pooler_insize
+                if self.levitated_marker_pool_fn != "first-last":
+                    lev_pooler_insize = pooler_insize // 2
                 self.levitated_marker_pooler = TokenEmbeddingPooler(
-                    pooler_insize//2, pooler_outsize, "max")
+                    lev_pooler_insize, pooler_outsize,
+                    self.levitated_marker_pool_fn)
 
         # Classifiers, one per task
         self.classifier_heads = nn.ModuleDict()
