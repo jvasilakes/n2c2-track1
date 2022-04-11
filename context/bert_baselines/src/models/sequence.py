@@ -127,7 +127,7 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
                 # TODO: add option to use different pooling
                 #  function for levitated markers
                 self.levitated_marker_pooler = TokenEmbeddingPooler(
-                    pooler_insize, pooler_outsize, self.entity_pool_fn)
+                    pooler_insize//2, pooler_outsize, "max")
 
         # Classifiers, one per task
         self.classifier_heads = nn.ModuleDict()

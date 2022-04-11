@@ -38,6 +38,7 @@ class TokenEmbeddingPooler(nn.Module):
         # Get a token-wise mask over hidden,
         token_mask = self.get_token_mask_from_indices(
                 token_idxs, hidden.size())
+        token_mask = token_mask.to(hidden.device)
         # apply the mask to keep only the specified tokens,
         masked_hidden = hidden * token_mask
         # and pool the embeddings.
