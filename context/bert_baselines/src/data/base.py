@@ -1,11 +1,16 @@
 import os
 import json
+import string
+import warnings
 from glob import glob
+from collections import defaultdict
 from typing import List, Dict, Union
 
 import torch
+import numpy as np
 import pytorch_lightning as pl
 from torch.utils.data import Dataset, DataLoader
+from transformers import AutoTokenizer
 
 import brat_reader as br
 
@@ -13,29 +18,54 @@ import brat_reader as br
 class BratMultiTaskDataset(Dataset):
     EXAMPLE_TYPE = None
     ENCODINGS = {}
-    SORTED_ATTRIBUTES = []
-    START_ENTITY_MARKER = '@'
-    END_ENTITY_MARKER = '@'
 
     def __init__(self, data_dir, sentences_dir,
                  label_names="all", window_size=0,
-                 max_examples=-1, mark_entities=False):
+                 max_examples=-1, mark_entities=False,
+                 entity_markers=None):
         self.data_dir = data_dir
         self.sentences_dir = sentences_dir
-        self.label_names = label_names
+        self.label_names = self._validate_label_names(label_names)
         self.window_size = window_size
         self.max_examples = max_examples
         self.mark_entities = mark_entities
+        if self.mark_entities is True:
+            msg = "mark_entities is deprecated. Use entity_markers instead."
+            self.mark_entities = False
+            if entity_markers is None:
+                entity_markers = '@'
+                msg += " Defaulting to '@' entity markers."
+            warnings.warn(msg, DeprecationWarning)
+        self.entity_markers = self._validate_entity_markers(entity_markers)
         self._name = None
 
         self.examples, self.docids_to_texts = self._get_examples_and_texts()
+
+    def _validate_label_names(self, label_names):
         if label_names == "all":
-            self.label_names = self.SORTED_ATTRIBUTES
+            label_names = sorted(list(self.ENCODINGS.keys()))
         else:
-            for name in self.label_names:
-                if name not in self.SORTED_ATTRIBUTES:
+            _tmp_label_names = []
+            for name in label_names:
+                if name not in self.ENCODINGS.keys():
                     raise ValueError(f"Unknown attribute {name}")
-            self.label_names = sorted(label_names)
+                _tmp_label_names.append(name)
+            label_names = sorted(_tmp_label_names)
+        return label_names
+
+    def _validate_entity_markers(self, entity_markers):
+        if entity_markers is None:
+            return entity_markers
+        elif isinstance(entity_markers, str):
+            return (entity_markers, entity_markers)
+        elif isinstance(entity_markers, (list, tuple)):
+            assert all([isinstance(marker, str) for marker in entity_markers]), "Entity markers must be all strings!"  # noqa
+            if len(entity_markers) == 1:
+                return (entity_markers[0], entity_markers[0])
+            elif len(entity_markers) == 2:
+                return entity_markers
+            else:
+                raise ValueError(f"Incorrect number of entity markers speciied {len(self.entity_markers)}. Should be length 1 or 2, or None.")  # noqa
 
     @property
     def name(self) -> str:
@@ -56,9 +86,10 @@ class BratMultiTaskDataset(Dataset):
             return len(self.examples[:self.max_examples])
 
     def __getitem__(self, idx):
-        # Get the sentences in the window
+        # An example is brat_reader.Event or Attribute
         example = self.examples[idx]
         sentences = self.docids_to_texts[example.docid]
+        # Get the sentences in the window
         si = example.sent_index
         start_sent = max([0, si - self.window_size])
         end_sent = min([len(sentences), si + self.window_size + 1])
@@ -72,40 +103,40 @@ class BratMultiTaskDataset(Dataset):
             text += sent["_text"]
             prev_sent = sent
 
-        # Compute the relative offset of the entity in the context
+        # Compute the relative character offset of the entity in the context
         entity_start = example.start_index - context[0]["start_index"]
         entity_end = example.end_index - context[0]["start_index"]
-        # Surround the entity spans with '@'. E.g., 'He took @Toradol@'.
-        if self.mark_entities is True:
+        # Surround the entity spans with the specified markers.
+        #  E.g., self.entity_markers = '@', 'He took @Toradol@'.
+        if self.entity_markers is not None:
             marked_text = text[:entity_start]
-            marked_text += (self.START_ENTITY_MARKER +
+            marked_text += (self.entity_markers[0] +
                             text[entity_start:entity_end] +
-                            self.END_ENTITY_MARKER)
+                            self.entity_markers[1])
             marked_text += text[entity_end:]
             text = marked_text
-            entity_end += 2
+            entity_end += sum([len(marker) for marker in self.entity_markers])
 
         # Encode the labels
         labels = {}
-        for attr_name in self.SORTED_ATTRIBUTES:
-            if attr_name in self.label_names:
-                if isinstance(example, br.Event):
-                    try:
-                        val = example.attributes[attr_name].value
-                    except KeyError as e:
-                        print(e)
-                        print(example)
-                        input()
-                elif isinstance(example, br.Attribute):
-                    if example.type != attr_name:
-                        continue
-                    val = example.value
-                else:
-                    raise ValueError(f"Found unsupported example type '{type(example)}'.")  # noqa
-                labels[attr_name] = self.ENCODINGS[attr_name][val]
+        for attr_name in self.label_names:
+            if isinstance(example, br.Event):
+                try:
+                    val = example.attributes[attr_name].value
+                except KeyError as e:
+                    print(e)
+                    print(example)
+                    input()
+            elif isinstance(example, br.Attribute):
+                if example.type != attr_name:
+                    continue
+                val = example.value
+            else:
+                raise ValueError(f"Found unsupported example type '{type(example)}'.")  # noqa
+            labels[attr_name] = self.ENCODINGS[attr_name][val]
 
         return {"text": text,
-                "entity_span": (entity_start, entity_end),
+                "entity_char_span": (entity_start, entity_end),
                 # For reconstructing original entity span offsets
                 #  in the source document.
                 "char_offset": context[0]["start_index"],
@@ -216,9 +247,28 @@ class BratMultiTaskDataset(Dataset):
 class BasicBertDataModule(pl.LightningDataModule):
     """
     The base data module for all BERT-based sequence classification datasets.
+
+    levitate_window_size: number of spans to consider +/- the target entity
+    levitate_max_span_length: maximum length in number of wordpiece tokens
+        to treat as a marked span.
     """
-    def __init__(self, name=None):
+    def __init__(
+            self,
+            bert_model_name_or_path,
+            max_seq_length=128,
+            use_levitated_markers=False,
+            levitate_window_size=5,
+            levitate_max_span_length=1,
+            name=None):
+        self.bert_model_name_or_path = bert_model_name_or_path
+        self.max_seq_length = max_seq_length
+        self.use_levitated_markers = use_levitated_markers
+        self.levitate_window_size = levitate_window_size
+        self.levitate_max_span_length = levitate_max_span_length
         self._name = name
+
+        self.tokenizer = AutoTokenizer.from_pretrained(
+                self.bert_model_name_or_path, use_fast=True)
 
     @property
     def name(self) -> str:
@@ -271,8 +321,190 @@ class BasicBertDataModule(pl.LightningDataModule):
         raise NotImplementedError()
 
     def encode_and_collate(self, examples) -> Dict:
+        batch = {
+            "encodings": None,  # output of BertTokenizer
+            "entity_token_idxs": [],  # indices of entity's wordpiece tokens
+            "entity_char_spans": [],  # (start,end) character indices of entity
+            "texts": [],  # the original text that was transformed into encodings.  # noqa
+            "char_offsets": [], # start character index of the texts in the documents.  # noqa
+            "labels": defaultdict(list),  # dict of task->labels
+            "docids": []  # source documents for examples in this batch
+            # Optional: levitated_marker_idxs: []
+        }
+
+        # Collate entity_char_spans, char_offsets, texts, docids, labels
+        for ex in examples:
+            batch["entity_char_spans"].append(ex["entity_char_span"])
+            batch["char_offsets"].append(ex["char_offset"])
+            batch["texts"].append(ex["text"])
+            batch["docids"].append(ex["docid"])
+            for (task, val) in ex["labels"].items():
+                batch["labels"][task].append(val)
+        batch["entity_char_spans"] = torch.tensor(batch["entity_char_spans"])
+        for task in batch["labels"].keys():
+            batch["labels"][task] = torch.tensor(batch["labels"][task])
+        batch["labels"] = dict(batch["labels"])
+
+        # Get encodings
+        encodings = self.tokenizer(batch["texts"], truncation=True,
+                                   max_length=self.max_seq_length,
+                                   padding="max_length",
+                                   return_offsets_mapping=True,
+                                   return_tensors="pt")
+
+        # Populate entity_token_idxs
+        for (example_i, entity_span) in enumerate(batch["entity_char_spans"]):
+            entity_token_idxs = self.get_token_indices_from_char_span(
+                    entity_span, encodings["offset_mapping"][example_i])
+            if len(entity_token_idxs) == 0:
+                raise ValueError(f"Couldn't find entity span {entity_span} in document {examples[example_i]['docid']}!")  # noqa
+            batch["entity_token_idxs"].append(entity_token_idxs)
+
+        # Optional: Packed-Levitated Marker modifies the encodings.
+        if self.use_levitated_markers is True:
+            tmp = self.levitate_encodings(
+                encodings, batch["entity_token_idxs"])
+            encodings, batch["levitated_marker_idxs"] = tmp
+
+        # Populate encodings, which will have been modified
+        #  if use_levitated_markers=True.
+        batch["encodings"] = encodings
+        return batch
+
+    def get_token_indices_from_char_span(self, char_span, offset_mapping):
+        token_idxs = []
+        for (i, offset) in enumerate(offset_mapping):
+            # zero-length span, usually [0, 0] for [PAD]
+            if offset[0] == offset[1]:
+                continue
+            if offset[0] >= char_span[0] and offset[1] <= char_span[1]:
+                token_idxs.append(i)
+        return token_idxs
+
+    def levitate_encodings(self, encodings, entity_token_idxs):
         """
-        Your own, unique function for combining a list of examples
-        into a batch.
+        encodings: output of self.tokenizer(texts)
+        entity_token_idxs: list of token indices corresponding to the entity
         """
-        raise NotImplementedError()
+        new_encodings = {
+            "input_ids": [],
+            "token_type_ids": [],
+            "position_ids": [],
+            "attention_mask": [],
+            "offset_mapping": [],
+        }
+        batch_size, max_seq_length = encodings["input_ids"].size()
+        # max_num_spans is the number of sublists up to length max_span_length
+        # E.g., for window_size=5 and max_span_length=3 there are 5+4+3=12
+        #  possible subspans on each side (i.e., x2) of the entity span for a
+        #  total of 24 possible spans.
+        max_num_spans = np.arange(self.levitate_window_size+1)[-self.levitate_max_span_length:].sum() * 2  # noqa
+        # Each span has a start and end marker, so multiply by 2 again.
+        max_num_markers = max_num_spans * 2
+        max_levitated_seq_length = max_seq_length + max_num_markers
+
+        # Extend the token_type_ids to cover the markers.
+        new_encodings["token_type_ids"] = torch.hstack(
+            (encodings["token_type_ids"],
+             torch.zeros(batch_size, max_num_markers, dtype=torch.long))
+        )
+        new_encodings["offset_mapping"] = torch.hstack(
+            (encodings["offset_mapping"],
+             torch.zeros(batch_size, max_num_markers, 2, dtype=torch.long))
+        )
+        # Find and add the levitated markers.
+        levitated_marker_idxs = [[] for _ in range(batch_size)]
+        for example_idx in range(batch_size):
+            input_ids = encodings["input_ids"][example_idx]
+            attention_mask = encodings["attention_mask"][example_idx]
+            entity_start = entity_token_idxs[example_idx][0]
+            entity_end = entity_token_idxs[example_idx][-1]
+
+            # Get tokens in window_size around start/end entity_token_idxs
+            idx_before_entity = max(0,
+                                    entity_start - self.levitate_window_size)
+            seq_len_no_pad = (input_ids != 0).sum()
+            idx_after_entity = min(seq_len_no_pad,
+                                   entity_end + self.levitate_window_size)
+            before_token_idxs = np.arange(idx_before_entity, entity_start)
+            before_span_idxs = self.get_subspan_idxs(
+                before_token_idxs, input_ids,
+                max_length=self.levitate_max_span_length)
+            after_token_idxs = np.arange(entity_end+1, idx_after_entity)
+            after_span_idxs = self.get_subspan_idxs(
+                after_token_idxs, input_ids,
+                max_length=self.levitate_max_span_length)
+
+            position_ids = torch.arange(max_levitated_seq_length,
+                                        dtype=torch.long)
+            # attention_mask is a square matrix with x and y dimensions
+            #  equal to max_levitated_seq_length.
+            attention_mask = torch.hstack((attention_mask,
+                                           torch.zeros(max_num_markers)))
+            attention_mask = attention_mask.unsqueeze(0)
+            attention_mask = attention_mask.repeat(max_levitated_seq_length, 1)
+            input_ids = torch.cat(
+                (input_ids, torch.zeros(max_num_markers, dtype=torch.long)))
+
+            all_span_idxs = [*before_span_idxs, *after_span_idxs]
+            marker_start_idxs = range(max_seq_length,
+                                      max_levitated_seq_length, 2)
+
+            # Make sure we don't use the same tokens as the entity
+            entity_marker_ids = self.tokenizer.convert_tokens_to_ids(
+                    self.entity_markers)
+            start_token_id = 1
+            end_token_id = 2  # actual token is "[unused{token_id}]"
+            while start_token_id not in entity_marker_ids and end_token_id not in entity_marker_ids:  # noqa
+                start_token_id += 1
+                end_token_id += 1
+            for (marker_start, span) in zip(marker_start_idxs, all_span_idxs):
+                # The indices of the markers in position_ids and attention_mask
+                marker_end = marker_start + 1
+                levitated_marker_idxs[example_idx].extend(
+                    [marker_start, marker_end])
+                # position ids of the markers to equal those of the start/end
+                # tokens of the corresponding span.
+                position_ids[marker_start] = span[0]
+                position_ids[marker_end] = span[-1]
+                # Markers are visible to each other only, and can see the text
+                attention_mask[marker_start, [marker_start, marker_end]] = 1
+                attention_mask[marker_end, [marker_start, marker_end]] = 1
+                # append [unused{i}] tokens for the markers to input_ids
+                input_ids[marker_start] = start_token_id
+                input_ids[marker_end] = end_token_id
+
+            new_encodings["input_ids"].append(input_ids)
+            new_encodings["position_ids"].append(position_ids)
+            new_encodings["attention_mask"].append(attention_mask.unsqueeze(0))
+        new_encodings["input_ids"] = torch.vstack(new_encodings["input_ids"])
+        new_encodings["position_ids"] = torch.vstack(
+            new_encodings["position_ids"])
+        new_encodings["attention_mask"] = torch.vstack(
+            new_encodings["attention_mask"])
+        return new_encodings, levitated_marker_idxs
+
+    def get_subspan_idxs(self, idxs, input_ids,
+                         max_length=2, ignore_punct=True):
+        """
+        Use input_ids to check if we should ignore the token at
+        a given index.
+        """
+        ignore_token_ids = set()
+        if ignore_punct is True:
+            ignore_tokens = list(string.punctuation)
+            ignore_token_ids = self.tokenizer.convert_tokens_to_ids(ignore_tokens)  # noqa
+            ignore_token_ids = set(ignore_token_ids)
+        if torch.is_tensor(idxs):
+            idxs = idxs.tolist()
+        if isinstance(idxs, np.ndarray):
+            idxs = list(idxs)
+        subspans = []
+        for j in range(1, len(idxs) + 1):
+            start = max(0, j - max_length)
+            for i in range(start, j):
+                subspan = idxs[i:j]
+                subspan_tokens = input_ids[subspan].tolist()
+                if len(ignore_token_ids.intersection(subspan_tokens)) == 0:
+                    subspans.append(subspan)
+        return subspans

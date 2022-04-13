@@ -10,7 +10,7 @@ from transformers.modeling_outputs import SequenceClassifierOutput
 from sklearn.metrics import precision_recall_fscore_support
 
 from src.models.losses import get_loss_function
-from src.models.layers import EntityPooler
+from src.models.layers import TokenEmbeddingPooler
 
 # Ignore warning that BertModel is not using some layer parameters.
 from transformers import logging
@@ -21,17 +21,22 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
     """
     bert_model_name_or_path: e.g., 'bert-base-uncased'
     label_spec: dict from task names to number of labels. Can be obtained
-                from data.n2c2.n2c2SentencesDataModule.label_spec
+        from data.n2c2.n2c2SentencesDataModule.label_spec
     freeze_pretrained: bool. Default False. If True, freeze the BERT layers.
     use_entity_spans: bool. Default False. If True, use only the pooled
-                      entity embeddings as input to the classifier heads.
-                      If False, use the pooled embeddings of the entire input.
-    entity_pool_fn: How to pool the token embeddings of
-                    the target entity_mention. Possible values are
-                    "max", "mean", "first", "last", "first-last".
+        entity embeddings as input to the classifier heads.
+        If False, use the pooled embeddings of the entire input.
+    entity_pool_fn: How to pool the token embeddings of the target
+        entity_mention. Possible values are
+        "max", "mean", "first", "last", "first-last".
+    use_levitated_markers: bool. Default False. If True, uses packed levitated
+        markers.  Only used if use_entity_spans=True.
+    levitated_marker_pool_fn: How to pool the token embeddings of the
+        levitated markers. Possible values are
+        "max", "mean", "first", "last", "first-last".
     dropout_prob: Dropout probability for the classification layer.
-    lr: learning rate
-    weight_decay: weight decay rate
+    lr: learning rate of the optimizer
+    weight_decay: weight decay rate of the optimizer
     """
 
     @classmethod
@@ -57,6 +62,8 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
             "freeze_pretrained": config.freeze_pretrained,
             "use_entity_spans": config.use_entity_spans,
             "entity_pool_fn": config.entity_pool_fn,
+            "use_levitated_markers": config.use_levitated_markers,
+            "levitated_marker_pool_fn": config.levitated_marker_pool_fn,
             "dropout_prob": config.dropout_prob,
             "lr": config.lr,
             "weight_decay": config.weight_decay,
@@ -77,10 +84,11 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
             freeze_pretrained=False,
             use_entity_spans=False,
             entity_pool_fn="max",
+            use_levitated_markers=False,
+            levitated_marker_pool_fn="max",
             dropout_prob=0.1,
             lr=1e-3,
             weight_decay=0.0,
-            # class_weights=None, Pass these in classifier_loss_kwargs now
             classifier_loss_fn="cross-entropy",
             classifier_loss_kwargs=None,
             ):
@@ -90,6 +98,8 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
         self.freeze_pretrained = freeze_pretrained
         self.use_entity_spans = use_entity_spans
         self.entity_pool_fn = entity_pool_fn
+        self.use_levitated_markers = use_levitated_markers
+        self.levitated_marker_pool_fn = levitated_marker_pool_fn
         self.dropout_prob = dropout_prob
         self.lr = lr
         self.weight_decay = weight_decay
@@ -97,6 +107,7 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
         self.classifier_loss_fn = classifier_loss_fn
         self.classifier_loss_kwargs = classifier_loss_kwargs
 
+        # BERT
         self.bert_config = BertConfig.from_pretrained(
             self.bert_model_name_or_path)
         self.bert_config.hidden_dropout_prob = self.dropout_prob
@@ -106,47 +117,77 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
             for param in self.bert.parameters():
                 param.requires_grad = False
 
+        # Entity and levitated marker embedding poolers
+        if self.use_entity_spans is False and self.use_levitated_markers is True:  # noqa
+            warnings.warn("levitated markers only supported when use_entity_spans=True. Not using levitated markers.")  # noqa
+            self.use_levitated_markers = False
         if self.use_entity_spans is True:
-            insize = outsize = self.bert_config.hidden_size
-            if self.entity_pool_fn == "first-last":
-                insize = 2 * insize
-            self.entity_pooler = EntityPooler(
-                insize, outsize, self.entity_pool_fn)
+            pooler_insize = pooler_outsize = self.bert_config.hidden_size
+            self.entity_pooler = TokenEmbeddingPooler(
+                pooler_insize, pooler_outsize, self.entity_pool_fn)
+            if self.use_levitated_markers is True:
+                self.levitated_marker_pooler = TokenEmbeddingPooler(
+                    pooler_insize, pooler_outsize,
+                    self.levitated_marker_pool_fn)
 
+        # Classifiers, one per task
         self.classifier_heads = nn.ModuleDict()
         self.classifier_loss_fns = nn.ModuleDict()
+        classifier_insize = self.bert_config.hidden_size
+        if self.use_levitated_markers is True:
+            # b/c we'll concat the pooled representations
+            # from entities and markers
+            classifier_insize = 2 * classifier_insize
         for (task, num_labels) in label_spec.items():
             self.classifier_heads[task] = nn.Sequential(
+                    # TODO: try adding in a layernorm here.
                     nn.Dropout(self.dropout_prob),
-                    nn.Linear(self.bert_config.hidden_size, num_labels)
+                    nn.Linear(classifier_insize, num_labels)
                     )
-            # Classifier loss function for this task
             clf_loss_fn = get_loss_function(self.classifier_loss_fn)
             kwargs = self.classifier_loss_kwargs[task]
             self.classifier_loss_fns[task] = clf_loss_fn(**kwargs)
+
         # save __init__ arguments to self.hparams, which is logged by pl
         self.save_hyperparameters()
 
     def forward(
             self,
             input_ids=None,
-            attention_mask=None,
             token_type_ids=None,
             position_ids=None,
+            attention_mask=None,
             head_mask=None,
             inputs_embeds=None,
-            offset_mapping=None,
-            entity_spans=None,
+            entity_token_idxs=None,
+            levitated_marker_idxs=None,
             labels=None,
             dataset=None,
             ):
         """
+        input_ids, attention_mask, token_type_ids, position_ids,
+            head_mask, inputs_embeds: Inputs to BertModel.
+        entity_token_idxs: nested list of wordpiece token indices indicating
+            the position of the entity in the input.
+        levitated_marker_idxs: nested list of wordpiece token indices
+            indicating the positions of the marked spans in the input.
         labels: dict from task names to torch.LongTensor labels of
                 shape (batch_size,).
-        offset_mapping: output from a transformers.PreTrainedTokenizer{Fast}
-                        with return_offsets_mapping=True
-        entity_spans: torch.LongTensor of shape (batch_size, 2) indicating
-                      the character offsets of the target entity in the input.
+
+        Basically, the inputs are encoded and pooled via BERT (pooled_output).
+        The use_entity_spans and use_levitated_markers options affect how
+        pooled_output is computed.
+
+         * use_entity_spans = use_levitated_markers = False:
+                  X--(BERT)-->pooled_output
+         * use_entity_spans = True, use_levitated_markers = False:
+                  X--(BERT)-->last_hidden_state
+                  last_hidden_state--(entity_pooler)-->pooled_output
+         * use_entity_spans = use_levitated_markers = True:
+                  X--(BERT)-->last_hidden_state
+                  last_hidden_state--(entity_pooler)-->entity_pooled
+                  last_hidden_state--(levitated_pooler)-->levitated_pooled
+                  pooled_output <-- [entity_pooled;levitated_pooled]
         """
         bert_outputs = self.bert(
                 input_ids=input_ids,
@@ -160,13 +201,27 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
                 return_dict=True
                 )
 
-        if entity_spans is not None and self.use_entity_spans is True:
-            pooled_output = self.entity_pooler(
-                bert_outputs.last_hidden_state, offset_mapping, entity_spans)
+        if self.use_entity_spans is True:
+            if entity_token_idxs is not None:
+                pooled_output = self.entity_pooler(
+                    bert_outputs.last_hidden_state, entity_token_idxs)
+            else:
+                raise ValueError("use_entity_spans=True but no entity_token_idxs provided in forward()")  # noqa
+            if self.use_levitated_markers is True:
+                if levitated_marker_idxs is not None:
+                    marker_output = self.levitated_marker_pooler(
+                        bert_outputs.last_hidden_state, levitated_marker_idxs)
+                    pooled_output = torch.cat(
+                        (pooled_output, marker_output), dim=1)  # noqa
+                else:
+                    raise ValueError("use_levitated_markers=True but no levitated_marker_idxs provided in forward()")  # noqa
         else:
             pooled_output = bert_outputs.pooler_output
 
         clf_outputs = {}
+        # TODO: this assumes that we're always passing labels
+        #  which wont' be the case during test-time prediction.
+        # for (task, clf_head) in self.classifier_heads.items():
         for (task, task_labels) in labels.items():
             if dataset is not None:
                 # If doing multi-dataset learning, the task will
@@ -190,9 +245,15 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
         if "dataset" in batch.keys():
             # We're doing multi-dataset learning
             dataset = batch["dataset"]
+        levitated_marker_idxs = None
+        if "levitated_marker_idxs" in batch.keys():
+            levitated_marker_idxs = batch["levitated_marker_idxs"]
+        bert_inputs = {k: v for (k, v) in batch["encodings"].items()
+                       if k != "offset_mapping"}
         outputs_by_task = self(
-                **batch["encodings"],
-                entity_spans=batch["entity_spans"],
+                **bert_inputs,
+                entity_token_idxs=batch["entity_token_idxs"],
+                levitated_marker_idxs=levitated_marker_idxs,
                 labels=batch["labels"],
                 dataset=dataset)
         return outputs_by_task
@@ -211,7 +272,8 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
         inputs_with_predictions = {
                 "texts": batch["texts"],
                 "labels": batch["labels"],
-                "entity_spans": batch["entity_spans"],
+                "entity_token_idxs": batch["entity_token_idxs"],
+                "entity_char_spans": batch["entity_char_spans"],
                 "char_offsets": batch["char_offsets"],
                 "docids": batch["docids"],
                 "predictions": {task: [] for task in tasks}

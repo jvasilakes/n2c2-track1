@@ -14,78 +14,52 @@ def register(name):
     return assign_name
 
 
-class TokenMask(nn.Module):
+class TokenEmbeddingPooler(nn.Module):
+    """
+    Pools an encoded input sequence over the hidden dimension
+    according to a list of indices in the time dimension.
+    """
 
-    def __init__(self):
+    def __init__(self, hidden_dim, outsize, pool_fn):
         super().__init__()
-
-    def forward(self, hidden, offset_mapping, entity_spans):
-        """
-        hidden: [batch_size, seq_len, hidden_dim]. The output of a
-                bert or bert-like encoder.
-        offset_mapping: [batch_size, seq_len, 2]. Character start, end
-                        for each token in the input. Returned by
-                        transformers.Tokenizer with return_offsets_mapping=True
-        entity_spans: [batch_size, 2]. Character start, end for the target
-                      entity mentions in this batch.
-        """
-        # We need to replace the (0, 0) spans in the token offsets
-        # (corresponding to special tokens like <SOS>, <PAD>, etc.
-        # with (-1, -1) to avoid masking errors when the
-        # start of the span is 0.
-        offset_mask = offset_mapping == torch.tensor([0, 0]).type_as(offset_mapping)  # noqa
-        offset_mask = offset_mask[:, :, 0] & offset_mask[:, :, 1]
-        offset_mapping[offset_mask, :] = torch.tensor([-1, -1]).type_as(offset_mapping)  # noqa
-        # Keep all tokens whose start char is >= the entity start and
-        #   whose end char is <= the entity end.
-        start_spans = entity_spans[:, 0].unsqueeze(-1).expand(
-                -1, offset_mapping.size(1))
-        end_spans = entity_spans[:, 1].unsqueeze(-1).expand(
-                -1, offset_mapping.size(1))
-        token_mask = (offset_mapping[:, :, 0] >= start_spans) & \
-                     (offset_mapping[:, :, 1] <= end_spans)
-        # Duplicate the mask across the hidden dimension
-        token_mask_ = token_mask.unsqueeze(-1).expand(hidden.size())
-        if len((token_mask.sum(axis=1) == torch.tensor(0.)).nonzero()) > 0:
-            raise ValueError("Entity span not found! Try increasing max_seq_length.")  # noqa
-        masked = hidden * token_mask_
-        return masked, token_mask_
-
-    def string(self):
-        return "MaskLayer()"
-
-
-class EntityPooler(nn.Module):
-
-    def __init__(self, insize, outsize, pool_fn):
-        super().__init__()
-        self.insize = insize
+        self.hidden_dim = hidden_dim
         self.outsize = outsize
         try:
             self.pooler = self.pooler_functions[pool_fn]
             self.pool_fn = pool_fn
         except KeyError:
             raise ValueError(f"Unknown pool function '{pool_fn}'")
-        self.token_mask = TokenMask()
+        insize = hidden_dim
+        if pool_fn == "first-last":
+            insize = 2 * insize
         self.output_layer = nn.Sequential(
-            nn.Linear(self.insize, self.outsize),
+            nn.Linear(insize, self.outsize),
             nn.Tanh())
 
-    def forward(self, hidden, offset_mapping, entity_spans):
+    def forward(self, hidden, token_idxs):
         """
-        hidden: [batch_size, seq_len, hidden_dim]. The output of a
-                bert or bert-like encoder.
-        offset_mapping: [batch_size, seq_len, 2]. Character start, end
-                        for each token in the input. Returned by
-                        transformers.Tokenizer with return_offsets_mapping=True
-        entity_spans: [batch_size, 2]. Character start, end for the target
-                      entity mentions in this batch.
+        hidden: [batch_size, max_seq_length, hidden_dim]
+        token_idxs: list of lists containing token_idxs to pool.
         """
-        masked, token_mask = self.token_mask(
-            hidden, offset_mapping, entity_spans)
-        pooled = self.pooler(masked, token_mask)
+        assert len(token_idxs) == hidden.size(0), "Number of token_idxs not equal to batch size!"  # noqa
+        # Get a token-wise mask over hidden,
+        token_mask = self.get_token_mask_from_indices(
+                token_idxs, hidden.size())
+        token_mask = token_mask.to(hidden.device)
+        # apply the mask to keep only the specified tokens,
+        masked_hidden = hidden * token_mask
+        # and pool the embeddings.
+        pooled = self.pooler(masked_hidden, token_mask)
         transformed = self.output_layer(pooled)
         return transformed
+
+    def get_token_mask_from_indices(self, token_idxs, hidden_size):
+        # Use the token_idxs to create a mask over the token dimension
+        # in hidden, duplicated across the embedding dimension.
+        token_mask = torch.zeros(hidden_size, dtype=torch.long)
+        for (batch_i, idxs) in enumerate(token_idxs):
+            token_mask[batch_i, idxs, :] = 1
+        return token_mask
 
     @property
     def pooler_functions(self):
@@ -152,7 +126,7 @@ class EntityPooler(nn.Module):
         return pooled
 
     def string(self):
-        return f"EntityPooler(insize={self.insize}, outsize={self.outsize}, pool_fn={self.pool_fn})"  # noqa
+        return f"TokenEmbeddingPooler(hidden_dim={self.hidden_dim}, outsize={self.outsize}, pool_fn={self.pool_fn})"  # noqa
 
 
 class KumaGate(nn.Module):

@@ -176,7 +176,7 @@ def run_train(config, datamodule, logdir="logs/", version=None,
     # For CombinedDataModules with some samplers, the length can
     # change from epoch to epoch, which pytorch_lightning doesn't
     # really support. To get around this we just set the val
-    # check interval to the small train epoch size.
+    # check interval to the smallest train epoch size.
     if isinstance(datamodule, CombinedDataModule):
         sampler = datamodule.train_dataloader().batch_sampler
         if hasattr(sampler, "step"):
@@ -461,7 +461,7 @@ def batched_predictions_to_brat(preds, datamodule):
                 attrs[task] = attr
 
             # Reconstruct original character offsets
-            start, end = batch["entity_spans"][i]
+            start, end = batch["entity_char_spans"][i]
             entity_text = batch["texts"][i][start:end]
             # There's one entity mention in n2c2 2022 that spans a newline
             #  so we'll fix that here.
@@ -470,9 +470,11 @@ def batched_predictions_to_brat(preds, datamodule):
             end += batch["char_offsets"][i]
 
             # Remove the '@' entity markers if used.
-            if datamodule.mark_entities is True:
-                entity_text = entity_text.strip('@')
-                end -= 2
+            if datamodule.entity_markers is not None:
+                start_marker, end_marker = datamodule.entity_markers
+                entity_text = entity_text.replace(start_marker, '')
+                entity_text = entity_text.replace(end_marker, '')
+                end -= sum([len(em) for em in datamodule.entity_markers])
 
             num_spans = len(
                 set(

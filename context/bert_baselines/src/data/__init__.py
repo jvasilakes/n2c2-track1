@@ -6,8 +6,11 @@ from src.data.utils import DATASET_LOOKUP, DATAMODULE_LOOKUP, SAMPLER_LOOKUP  # 
 
 
 def load_datamodule_from_config(config, errors="raise", **override_kwargs):
+    if len(override_kwargs) > 0:
+        config = config.copy()
     for (k, v) in override_kwargs.items():
         config.update(k, v, errors=errors)
+    config.validate()
     datamodule_cls = DATAMODULE_LOOKUP[config.dataset_name]
     datamodule = datamodule_cls.from_config(config)
     if len(config.auxiliary_data) > 0:
