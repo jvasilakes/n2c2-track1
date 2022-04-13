@@ -211,6 +211,18 @@ class ExperimentConfig(object):
         if run_validate is True:
             self.validate()
 
+    def _git_info(self):
+        # log commit hash
+        branch = os.popen("git rev-parse --abbrev-ref HEAD").read().strip()
+        commit = os.popen("git log --pretty=format:'%h' -n 1").read().strip()
+        if branch == '':
+            branch = None
+        if commit == '':
+            commit = None
+        if None in (branch, commit):
+            warnings.warn("Error getting current git information. Are you in a git repo?")  # noqa
+        return branch, commit
+
     def __str__(self):
         organized_params_with_values = OrderedDict()
         for (param_type, param_names) in self.organized_param_names().items():
@@ -225,7 +237,9 @@ class ExperimentConfig(object):
         yaml_str = yaml.dump(organized_params_with_values, Dumper=yaml.Dumper,
                              default_flow_style=False)
         yaml_str = '  ' + yaml_str.replace('\n', '\n  ')
-        return "ExperimentConfig\n----------------\n" + yaml_str
+        branch, commit = self._git_info()
+        git_str = f"{branch}:{commit}\n"
+        return "ExperimentConfig\n----------------\n" + git_str + yaml_str
 
     def check_deprecations(self):
         """
