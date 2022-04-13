@@ -15,18 +15,25 @@ def register(name):
 
 
 class TokenEmbeddingPooler(nn.Module):
+    """
+    Pools an encoded input sequence over the hidden dimension
+    according to a list of indices in the time dimension.
+    """
 
-    def __init__(self, insize, outsize, pool_fn):
+    def __init__(self, hidden_dim, outsize, pool_fn):
         super().__init__()
-        self.insize = insize
+        self.hidden_dim = hidden_dim
         self.outsize = outsize
         try:
             self.pooler = self.pooler_functions[pool_fn]
             self.pool_fn = pool_fn
         except KeyError:
             raise ValueError(f"Unknown pool function '{pool_fn}'")
+        insize = hidden_dim
+        if pool_fn == "first-last":
+            insize = 2 * insize
         self.output_layer = nn.Sequential(
-            nn.Linear(self.insize, self.outsize),
+            nn.Linear(insize, self.outsize),
             nn.Tanh())
 
     def forward(self, hidden, token_idxs):
@@ -119,7 +126,7 @@ class TokenEmbeddingPooler(nn.Module):
         return pooled
 
     def string(self):
-        return f"TokenEmbeddingPooler(insize={self.insize}, outsize={self.outsize}, pool_fn={self.pool_fn})"  # noqa
+        return f"TokenEmbeddingPooler(hidden_dim={self.hidden_dim}, outsize={self.outsize}, pool_fn={self.pool_fn})"  # noqa
 
 
 class KumaGate(nn.Module):
