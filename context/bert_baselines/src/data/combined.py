@@ -89,14 +89,20 @@ class CombinedDataModule(BasicBertDataModule):
                 datamodules, "max_seq_length")
         batch_size = self.check_args_are_equivalent(
                 datamodules, "batch_size")
+        mark_entities = self.check_args_are_equivalent(
+                datamodules, "mark_entities")
         entity_markers = self.check_args_are_equivalent(
                 datamodules, "entity_markers")
         use_levitated_markers = self.check_args_are_equivalent(
                 datamodules, "use_levitated_markers")
         names = self.check_args_are_different(
                 datamodules, "name")
-        super().__init__(bert_model_name_or_path, max_seq_length,
-                         use_levitated_markers)
+        super().__init__(
+                bert_model_name_or_path,
+                max_seq_length=max_seq_length,
+                mark_entities=mark_entities,
+                entity_markers=entity_markers,
+                use_levitated_markers=use_levitated_markers)
         # Sometimes this module can hit the system open file limit.
         # This seems to fix that.
         torch.multiprocessing.set_sharing_strategy('file_system')
@@ -106,7 +112,6 @@ class CombinedDataModule(BasicBertDataModule):
         # These are populated in setup(), after checking
         # that they are all compatible.
         self.batch_size = batch_size
-        self.entity_markers = entity_markers
         self.names = names
         self._ran_setup = False
 
