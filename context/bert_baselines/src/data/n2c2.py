@@ -57,6 +57,8 @@ class n2c2DataModule(BasicBertDataModule):
         super().__init__(
             bert_model_name_or_path,
             max_seq_length=max_seq_length,
+            mark_entities=mark_entities,
+            entity_markers=entity_markers,
             use_levitated_markers=use_levitated_markers,
             name=name)
         self.dataset_name = dataset_name
@@ -69,15 +71,6 @@ class n2c2DataModule(BasicBertDataModule):
         self.sample_strategy = sample_strategy
         self.max_train_examples = max_train_examples
         self.compute_class_weights = compute_class_weights
-        self.mark_entities = mark_entities
-        if self.mark_entities is True:
-            msg = "mark_entities is deprecated. Use entity_markers instead."
-            self.mark_entities = False
-            if entity_markers is None:
-                entity_markers = '@'
-                msg += " Defaulting to '@' entity markers."
-            warnings.warn(msg, DeprecationWarning)
-        self.entity_markers = entity_markers
         self._ran_setup = False
 
     def setup(self, stage=None):

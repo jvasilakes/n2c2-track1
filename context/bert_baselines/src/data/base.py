@@ -29,13 +29,6 @@ class BratMultiTaskDataset(Dataset):
         self.window_size = window_size
         self.max_examples = max_examples
         self.mark_entities = mark_entities
-        if self.mark_entities is True:
-            msg = "mark_entities is deprecated. Use entity_markers instead."
-            self.mark_entities = False
-            if entity_markers is None:
-                entity_markers = '@'
-                msg += " Defaulting to '@' entity markers."
-            warnings.warn(msg, DeprecationWarning)
         self.entity_markers = self._validate_entity_markers(entity_markers)
         self._name = None
 
@@ -56,16 +49,11 @@ class BratMultiTaskDataset(Dataset):
     def _validate_entity_markers(self, entity_markers):
         if entity_markers is None:
             return entity_markers
-        elif isinstance(entity_markers, str):
-            return (entity_markers, entity_markers)
-        elif isinstance(entity_markers, (list, tuple)):
-            assert all([isinstance(marker, str) for marker in entity_markers]), "Entity markers must be all strings!"  # noqa
-            if len(entity_markers) == 1:
-                return (entity_markers[0], entity_markers[0])
-            elif len(entity_markers) == 2:
-                return entity_markers
-            else:
-                raise ValueError(f"Incorrect number of entity markers speciied {len(self.entity_markers)}. Should be length 1 or 2, or None.")  # noqa
+        assert isinstance(entity_markers, (list, tuple)), "entity_markers not list or tuple"  # noqa
+        assert len(entity_markers) == 2, "len(entity_markers) != 2"
+        msg = "not all entity_markers are str"
+        assert all([isinstance(marker, str) for marker in entity_markers]), msg
+        return entity_markers
 
     @property
     def name(self) -> str:
@@ -256,12 +244,25 @@ class BasicBertDataModule(pl.LightningDataModule):
             self,
             bert_model_name_or_path,
             max_seq_length=128,
+            mark_entities=False,
+            entity_markers=None,
             use_levitated_markers=False,
             levitate_window_size=5,
             levitate_max_span_length=1,
             name=None):
         self.bert_model_name_or_path = bert_model_name_or_path
         self.max_seq_length = max_seq_length
+
+        self.mark_entities = mark_entities
+        if self.mark_entities is True:
+            msg = "mark_entities is deprecated. Use entity_markers instead."
+            self.mark_entities = False
+            if entity_markers is None:
+                entity_markers = '@'
+                msg += " Defaulting to '@' entity markers."
+            warnings.warn(msg, DeprecationWarning)
+        self.entity_markers = self._validate_entity_markers(entity_markers)
+
         self.use_levitated_markers = use_levitated_markers
         self.levitate_window_size = levitate_window_size
         self.levitate_max_span_length = levitate_max_span_length
@@ -269,6 +270,20 @@ class BasicBertDataModule(pl.LightningDataModule):
 
         self.tokenizer = AutoTokenizer.from_pretrained(
                 self.bert_model_name_or_path, use_fast=True)
+
+    def _validate_entity_markers(self, entity_markers):
+        if entity_markers is None:
+            return entity_markers
+        elif isinstance(entity_markers, str):
+            return (entity_markers, entity_markers)
+        elif isinstance(entity_markers, (list, tuple)):
+            assert all([isinstance(marker, str) for marker in entity_markers]), "Entity markers must be all strings!"  # noqa
+            if len(entity_markers) == 1:
+                return (entity_markers[0], entity_markers[0])
+            elif len(entity_markers) == 2:
+                return entity_markers
+            else:
+                raise ValueError(f"Incorrect number of entity markers speciied {len(self.entity_markers)}. Should be length 1 or 2, or None.")  # noqa
 
     @property
     def name(self) -> str:

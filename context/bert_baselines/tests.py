@@ -86,8 +86,8 @@ def test_get_token_indices_from_char_span(config):
         datamodule = load_datamodule_from_config(config, **data_kwargs)
         # Ignore "No test set found"
         datamodule.setup()
-    msg = "datamodule.entity_markers expected to be '@'"
-    assert datamodule.entity_markers == '@', msg
+    msg = "datamodule.entity_markers expected to be ('@', '@')"
+    assert datamodule.entity_markers == ('@', '@'), msg
 
     for ds in [datamodule.train, datamodule.val]:
         for example in ds:
@@ -134,8 +134,10 @@ def test_mask_hidden(config):
     }
     model = BertMultiHeadedSequenceClassifier.from_config(
         config, datamodule, **model_kwargs)
-    assert model.use_entity_spans is True
-    assert model.entity_pool_fn == "first-last"
+    msg = "model.use_entity_spans is not True"
+    assert model.use_entity_spans is True, msg
+    msg = "entity_pool_fn != 'first-last'"
+    assert model.entity_pool_fn == "first-last", msg
 
     insize = outsize = model.bert_config.hidden_size
     pooler = TokenEmbeddingPooler(insize, outsize, model.entity_pool_fn)
@@ -149,7 +151,8 @@ def test_mask_hidden(config):
             token_mask = pooler.get_token_mask_from_indices(
                     batch["entity_token_idxs"], h.size())
             masked_ids = input_ids[token_mask[0, :, 0].bool()]
-            assert (masked_ids == entity_ids).all()
+            msg = "not all(masked_ids == entity_ids)"
+            assert (masked_ids == entity_ids).all(), msg
     del datamodule
     del model
     del pooler
@@ -167,8 +170,8 @@ def test_mask_hidden_marked(config):
         datamodule = load_datamodule_from_config(config, **data_kwargs)
         # Ignore "No test set found"
         datamodule.setup()
-    msg = "datamodule.entity_markers expected to be '@'"
-    assert datamodule.entity_markers == '@', msg
+    msg = "datamodule.entity_markers expected to be ('@', '@')"
+    assert datamodule.entity_markers == ('@', '@'), msg
 
     model_kwargs = {
         "use_entity_spans": True,
@@ -176,8 +179,10 @@ def test_mask_hidden_marked(config):
     }
     model = BertMultiHeadedSequenceClassifier.from_config(
         config, datamodule, **model_kwargs)
-    assert model.use_entity_spans is True
-    assert model.entity_pool_fn == "first-last"
+    msg = "model.use_entity_spans is not True"
+    assert model.use_entity_spans is True, msg
+    msg = "entity_pool_fn != 'first-last'"
+    assert model.entity_pool_fn == "first-last", msg
 
     start_marker = datamodule.train.entity_markers[0]
     end_marker = datamodule.train.entity_markers[1]
@@ -194,7 +199,8 @@ def test_mask_hidden_marked(config):
                     batch["entity_token_idxs"], h.size())
             input_ids = batch["encodings"]["input_ids"][0]
             masked_ids = input_ids[token_mask[0, :, 0].bool()]
-            assert masked_ids[0] == start_id and masked_ids[-1] == end_id
+            msg = "masked_ids != (start_id, end_id)"
+            assert masked_ids[0] == start_id and masked_ids[-1] == end_id, msg
     del datamodule
     del model
     del pooler
@@ -210,7 +216,8 @@ def test_pool_entity_embeddings_max(config):
         warnings.simplefilter("ignore")
         # Ignore "No test set found"
         datamodule.setup()
-    assert datamodule.entity_markers is None
+    msg = "entity_markers is not None"
+    assert datamodule.entity_markers is None, msg
 
     model_kwargs = {
         "use_entity_spans": True,
@@ -218,8 +225,10 @@ def test_pool_entity_embeddings_max(config):
     }
     model = BertMultiHeadedSequenceClassifier.from_config(
         config, datamodule, **model_kwargs)
-    assert model.use_entity_spans is True
-    assert model.entity_pool_fn == "max"
+    msg = "use_entity_spans is not True"
+    assert model.use_entity_spans is True, msg
+    msg = "entity_pool_fn != 'max'"
+    assert model.entity_pool_fn == "max", msg
 
     insize = outsize = model.bert_config.hidden_size
     pooler = TokenEmbeddingPooler(insize, outsize, model.entity_pool_fn)
@@ -229,7 +238,8 @@ def test_pool_entity_embeddings_max(config):
             h = torch.randn(this_batch_size, config.max_seq_length,
                             model.bert_config.hidden_size)
             pooled = pooler(h, batch["entity_token_idxs"])
-            assert (pooled == torch.tensor(0.)).any() == torch.tensor(False)
+            msg = "some pooled == 0"
+            assert (pooled == torch.tensor(0.)).any() == torch.tensor(False), msg  # noqa
     del datamodule
     del model
     del pooler
@@ -245,7 +255,8 @@ def test_pool_entity_embeddings_mean(config):
         warnings.simplefilter("ignore")
         # Ignore "No test set found"
         datamodule.setup()
-    assert datamodule.entity_markers is None
+    msg = "entity_markers is not None"
+    assert datamodule.entity_markers is None, msg
 
     model_kwargs = {
         "use_entity_spans": True,
@@ -253,7 +264,9 @@ def test_pool_entity_embeddings_mean(config):
     }
     model = BertMultiHeadedSequenceClassifier.from_config(
         config, datamodule, **model_kwargs)
+    msg = "use_entity_spans is not True"
     assert model.use_entity_spans is True
+    msg = "entity_pool_fn != 'mean'"
     assert model.entity_pool_fn == "mean"
 
     insize = outsize = model.bert_config.hidden_size
@@ -264,8 +277,10 @@ def test_pool_entity_embeddings_mean(config):
             h = torch.randn(this_batch_size, config.max_seq_length,
                             model.bert_config.hidden_size)
             pooled = pooler(h, batch["entity_token_idxs"])
-            assert not torch.isnan(pooled).all()
-            assert not torch.isinf(pooled).all()
+            msg = "pooled contains nan"
+            assert not torch.isnan(pooled).all(), msg
+            msg = "pooled contains inf"
+            assert not torch.isinf(pooled).all(), msg
     del datamodule
     del model
     del pooler
@@ -282,7 +297,8 @@ def test_pool_entity_embeddings_first(config):
         warnings.simplefilter("ignore")
         # Ignore "No test set found"
         datamodule.setup()
-    assert datamodule.entity_markers is None
+    msg = "entity_markers is not None"
+    assert datamodule.entity_markers is None, msg
 
     model_kwargs = {
         "use_entity_spans": True,
@@ -290,8 +306,10 @@ def test_pool_entity_embeddings_first(config):
     }
     model = BertMultiHeadedSequenceClassifier.from_config(
         config, datamodule, **model_kwargs)
-    assert model.use_entity_spans is True
-    assert model.entity_pool_fn == "first"
+    msg = "use_entity_spans is not True"
+    assert model.use_entity_spans is True, msg
+    msg = "entity_pool_fn != 'first'"
+    assert model.entity_pool_fn == "first", msg
 
     insize = outsize = model.bert_config.hidden_size
     pooler = TokenEmbeddingPooler(insize, outsize, model.entity_pool_fn)
@@ -301,8 +319,10 @@ def test_pool_entity_embeddings_first(config):
             h = torch.randn(this_batch_size, config.max_seq_length,
                             model.bert_config.hidden_size)
             pooled = pooler(h, batch["entity_token_idxs"])
-            assert not torch.isnan(pooled).all()
-            assert not torch.isinf(pooled).all()
+            msg = "pooled contains nan"
+            assert not torch.isnan(pooled).all(), msg
+            msg = "pooled contains inf"
+            assert not torch.isinf(pooled).all(), msg
     del datamodule
     del model
     del pooler
@@ -318,7 +338,8 @@ def test_pool_entity_embeddings_last(config):
         warnings.simplefilter("ignore")
         # Ignore "No test set found"
         datamodule.setup()
-    assert datamodule.entity_markers is None
+    msg = "entity_markers is not None"
+    assert datamodule.entity_markers is None, msg
 
     model_kwargs = {
         "use_entity_spans": True,
@@ -326,8 +347,10 @@ def test_pool_entity_embeddings_last(config):
     }
     model = BertMultiHeadedSequenceClassifier.from_config(
         config, datamodule, **model_kwargs)
-    assert model.use_entity_spans is True
-    assert model.entity_pool_fn == "last"
+    msg = "use_entity_spans is not True"
+    assert model.use_entity_spans is True, msg
+    msg = "entity_pool_fn != 'last'"
+    assert model.entity_pool_fn == "last", msg
 
     insize = outsize = model.bert_config.hidden_size
     pooler = TokenEmbeddingPooler(insize, outsize, model.entity_pool_fn)
@@ -337,8 +360,10 @@ def test_pool_entity_embeddings_last(config):
             h = torch.randn(this_batch_size, config.max_seq_length,
                             model.bert_config.hidden_size)
             pooled = pooler(h, batch["entity_token_idxs"])
-            assert not torch.isnan(pooled).all()
-            assert not torch.isinf(pooled).all()
+            msg = "pooled contains nan"
+            assert not torch.isnan(pooled).all(), msg
+            msg = "pooled contains inf"
+            assert not torch.isinf(pooled).all(), msg
     del datamodule
     del model
     del pooler
@@ -354,7 +379,8 @@ def test_pool_entity_embeddings_first_last(config):
         warnings.simplefilter("ignore")
         # Ignore "No test set found"
         datamodule.setup()
-    assert datamodule.entity_markers is None
+    msg = "entity_markers is not None"
+    assert datamodule.entity_markers is None, msg
 
     model_kwargs = {
         "use_entity_spans": True,
@@ -362,10 +388,12 @@ def test_pool_entity_embeddings_first_last(config):
     }
     model = BertMultiHeadedSequenceClassifier.from_config(
         config, datamodule, **model_kwargs)
-    assert model.use_entity_spans is True
-    assert model.entity_pool_fn == "first-last"
+    msg = "use_entity_spans is not True"
+    assert model.use_entity_spans is True, msg
+    msg = "entity_pool_fn != 'first-last'"
+    assert model.entity_pool_fn == "first-last", msg
 
-    insize = outsize = 2 * model.bert_config.hidden_size
+    insize = outsize = model.bert_config.hidden_size
     pooler = TokenEmbeddingPooler(insize, outsize, model.entity_pool_fn)
     for dl in [datamodule.train_dataloader(), datamodule.val_dataloader()]:
         for batch in dl:
@@ -373,8 +401,10 @@ def test_pool_entity_embeddings_first_last(config):
             h = torch.randn(this_batch_size, config.max_seq_length,
                             model.bert_config.hidden_size)
             pooled = pooler(h, batch["entity_token_idxs"])
-            assert not torch.isnan(pooled).all()
-            assert not torch.isinf(pooled).all()
+            msg = "pooled contains nan"
+            assert not torch.isnan(pooled).all(), msg
+            msg = "pooled contains inf"
+            assert not torch.isinf(pooled).all(), msg
     del datamodule
     del model
     del pooler
@@ -410,10 +440,12 @@ def test_scheduled_dataset_sampler(config, project_home):
                                                  errors="warn")
         # Ignore "No test set found"
         datamodule.setup()
-    assert isinstance(datamodule, combined.CombinedDataModule)
+    msg = "datamodule is not CombinedDataModule"
+    assert isinstance(datamodule, combined.CombinedDataModule), msg
 
     sampler = datamodule.train_dataloader().batch_sampler
-    assert isinstance(sampler, combined.ScheduledWeightedSampler)
+    msg = "sampler is not ScheduledWeightedSampler"
+    assert isinstance(sampler, combined.ScheduledWeightedSampler), msg
 
     ntrials = 10
     sampler_lens = np.zeros(sampler.max_steps)
@@ -423,14 +455,16 @@ def test_scheduled_dataset_sampler(config, project_home):
         for j in range(sampler.max_steps):
             for (k, batch) in enumerate(sampler):
                 # Could be less than if we exhaust a dataset this step
-                assert len(batch) <= sampler.batch_size
-                assert len(batch) <= datamodule.batch_size
+                msg = "exceeded batch size"
+                assert len(batch) <= sampler.batch_size, msg
+                assert len(batch) <= datamodule.batch_size, msg
                 if k == 0:
                     sampler_lens[j] = sampler.target_samples_this_epoch
                 batch_lens[i, j] += 1
 
     batch_matches_sampler = (batch_lens == sampler_lens).sum(axis=0)
-    assert (batch_matches_sampler == ntrials).all()
+    msg = "batch_lens != sampler_lens"
+    assert (batch_matches_sampler == ntrials).all(), msg
 
     sampler.reset()
     dataset_lens = [len(ds) for ds in sampler.dataset.datasets]
@@ -438,7 +472,8 @@ def test_scheduled_dataset_sampler(config, project_home):
         [sampler._estimate_length(dataset_lens, sampler.get_dataset_probs(s))
          for s in range(sampler.max_steps)]
     )
-    assert (gold_lens == sampler_lens).all()
+    msg = "found incorrect lengths"
+    assert (gold_lens == sampler_lens).all(), msg
 
 
 @test_logger
@@ -470,12 +505,14 @@ def test_stickland_murray_dataset_sampler(config, project_home):
             config, **data_kwargs, errors="warn")
         # Ignore "No test set found"
         datamodule.setup()
-    assert isinstance(datamodule, combined.CombinedDataModule)
+    msg = "datamodule is not CombinedDataModule"
+    assert isinstance(datamodule, combined.CombinedDataModule), msg
 
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
         sampler = datamodule.train_dataloader().batch_sampler
-    assert isinstance(sampler, combined.SticklandMurraySampler)
+    msg = "sampler is not SticklandMurraySampler"
+    assert isinstance(sampler, combined.SticklandMurraySampler), msg
 
     ntrials = 10
     start_probs = None
@@ -487,8 +524,9 @@ def test_stickland_murray_dataset_sampler(config, project_home):
         for j in range(sampler.max_steps):
             for (k, batch) in enumerate(sampler):
                 # Could be less than if we exhaust a dataset this step
-                assert len(batch) <= sampler.batch_size
-                assert len(batch) <= datamodule.batch_size
+                msg = "exceeded batch size"
+                assert len(batch) <= sampler.batch_size, msg
+                assert len(batch) <= datamodule.batch_size, msg
                 if i == 0 and k == 0:
                     sampler_lens[j] = sampler.target_samples_this_epoch
                     start_probs = sampler.get_dataset_probs()
@@ -500,10 +538,12 @@ def test_stickland_murray_dataset_sampler(config, project_home):
             end_diff = 0.
         else:
             end_diff = np.subtract(*end_probs)
-        assert start_diff > end_diff
+        msg = "probabilities do not decrease"
+        assert start_diff > end_diff, msg
 
     batch_matches_sampler = (batch_lens == sampler_lens).sum(axis=0)
-    assert (batch_matches_sampler == ntrials).all()
+    msg = "batch_lens != sampler_lens"
+    assert (batch_matches_sampler == ntrials).all(), msg
 
     sampler.reset()
     dataset_lens = [len(ds) for ds in sampler.dataset.datasets]
@@ -511,7 +551,8 @@ def test_stickland_murray_dataset_sampler(config, project_home):
         [sampler._estimate_length(dataset_lens, sampler.get_dataset_probs(s))
          for s in range(sampler.max_steps)]
     )
-    assert (gold_lens == sampler_lens).all()
+    msg = "found incorrect lengths"
+    assert (gold_lens == sampler_lens).all(), msg
 
 
 @test_logger
@@ -526,21 +567,26 @@ def test_levitate_encodings(config, i=0):
         datamodule = load_datamodule_from_config(config, **data_kwargs)
         # Ignore "No test set found"
         datamodule.setup()
-    assert datamodule.entity_markers == ["[unused0]", "[unused1]"]
-    assert datamodule.use_levitated_markers is True
+    msg = "entity_markers != ['[unused0]', '[unused1]']"
+    assert datamodule.entity_markers == ["[unused0]", "[unused1]"], msg
+    msg = "use_levitated_markers is not True"
+    assert datamodule.use_levitated_markers is True, msg
     for dl in [datamodule.train_dataloader(), datamodule.val_dataloader()]:
         for batch in dl:
-            assert "levitated_marker_idxs" in batch.keys()
+            msg = "batch doesn't contain levitated markers"
+            assert "levitated_marker_idxs" in batch.keys(), msg
             marker_idxs = set(batch["levitated_marker_idxs"][0])
             entity_idxs = set(batch["entity_token_idxs"][0])
-            assert len(marker_idxs.intersection(entity_idxs)) == 0
+            msg = "levitated markers overlap with entity"
+            assert len(marker_idxs.intersection(entity_idxs)) == 0, msg
             # See src/data/base.BasicBertDataModule.levitate_encodings()
             #  for an explanation of this computation.
             max_num_markers = np.arange(datamodule.levitate_window_size+1)[-datamodule.levitate_max_span_length:].sum() * 4  # noqa
             expected_seq_length = datamodule.max_seq_length + max_num_markers
             for (key, val) in batch["encodings"].items():
                 # [batch_size, seq_length, [hidden_dim]]
-                assert val.size(1) == expected_seq_length, f"Value of {key} is the wrong size! {expected_seq_length} vs. {val.size(1)}"  # noqa
+                msg = f"Value of {key} is the wrong size! {expected_seq_length} vs. {val.size(1)}"  # noqa
+                assert val.size(1) == expected_seq_length, msg
 
 
 if __name__ == "__main__":
