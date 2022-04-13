@@ -9,7 +9,7 @@ from transformers import BertConfig, BertModel, AdamW
 from sklearn.metrics import precision_recall_fscore_support
 
 from src.models.losses import get_loss_function
-from src.models.layers import EntityPooler, KumaMask, RecurrentEncoder
+from src.models.layers import TokenEmbeddingPooler, KumaMask, RecurrentEncoder
 from src.models.model_outputs import SequenceClassifierOutputWithTokenMask
 
 
@@ -133,7 +133,7 @@ class BertRationaleClassifier(pl.LightningModule):
         pooler_insize = pooler_outsize = self.bert_config.hidden_size
         if self.entity_pool_fn == "first-last":
             pooler_insize = 2 * pooler_insize
-        self.entity_pooler = EntityPooler(
+        self.entity_pooler = TokenEmbeddingPooler(
             pooler_insize, pooler_outsize, self.entity_pool_fn)
 
         # Build the task-specific model components.

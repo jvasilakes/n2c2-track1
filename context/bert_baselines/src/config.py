@@ -8,6 +8,10 @@ from collections import OrderedDict, defaultdict
 import src.data as data
 
 
+# Don't ignore deprecation warnings
+warnings.simplefilter("default")
+
+
 # Be able to yaml.dump an OrderedDict
 # https://gist.github.com/oglops/c70fb69eef42d40bed06
 def dict_representer(dumper, data):
@@ -54,6 +58,9 @@ class ExperimentConfig(object):
                 "use_entity_spans",
                 "entity_pool_fn",
                 "mark_entities",
+                "entity_markers",
+                "use_levitated_markers",
+                "levitated_marker_pool_fn",
                 "max_seq_length",
                 "dropout_prob",
             ],
@@ -81,22 +88,26 @@ class ExperimentConfig(object):
         for key in config.keys():
             if key not in cls.param_names():
                 if errors == "raise":
-                    raise ValueError(f"Unsupported config parameter '{key}'")  # noqa
+                    raise ConfigError(f"Unsupported config parameter '{key}'")  # noqa
                 elif errors == "warn":
                     warnings.warn(f"Found unsupported parameter '{key}': {config[key]}'.")  # noqa
                 elif errors == "fix":
                     warnings.warn(f"Ignoring unsupported config parameter '{key}: {config[key]}'.")  # noqa
                     to_del.add(key)
-            if key in override_kwargs:
-                config[key] = override_kwargs[key]
         for key in to_del:
             config.pop(key)
+
+        ignored_override = set()
+        for overkey in override_kwargs.keys():
+            if overkey not in cls.param_names():
+                ignored_override.add(overkey)
+            else:
+                config[overkey] = override_kwargs[overkey]
+        if len(ignored_override) > 0:
+            warnings.warn(f"Ignored the following override kwargs: {ignored_override}")  # noqa
+
         conf = cls(**config, run_validate=False)
         conf.validate(errors=errors)
-        unused_override = [key for key in override_kwargs.keys()
-                           if key not in config.keys()]
-        if len(unused_override) > 0:
-            warnings.warn(f"Ignored the following override kwargs: {unused_override}")  # noqa
         return conf
 
     @classmethod
@@ -136,6 +147,9 @@ class ExperimentConfig(object):
             use_entity_spans: bool = False,
             entity_pool_fn: str = "max",
             mark_entities: bool = False,
+            entity_markers: Union[List[str], str, None] = None,
+            use_levitated_markers: bool = False,
+            levitated_marker_pool_fn: str = "max",
             max_seq_length: int = 128,
             dropout_prob: float = 0.1,
             # Losses
@@ -174,7 +188,10 @@ class ExperimentConfig(object):
         self.freeze_pretrained = freeze_pretrained
         self.use_entity_spans = use_entity_spans
         self.entity_pool_fn = entity_pool_fn
+        self.use_levitated_markers = use_levitated_markers
+        self.levitated_marker_pool_fn = levitated_marker_pool_fn
         self.mark_entities = mark_entities
+        self.entity_markers = entity_markers
         self.max_seq_length = max_seq_length
         self.dropout_prob = dropout_prob
         # Losses
@@ -190,8 +207,21 @@ class ExperimentConfig(object):
         self.gradient_clip_val = gradient_clip_val
         self.max_epochs = max_epochs
 
+        self.check_deprecations()
         if run_validate is True:
             self.validate()
+
+    def _git_info(self):
+        # log commit hash
+        branch = os.popen("git rev-parse --abbrev-ref HEAD").read().strip()
+        commit = os.popen("git log --pretty=format:'%h' -n 1").read().strip()
+        if branch == '':
+            branch = None
+        if commit == '':
+            commit = None
+        if None in (branch, commit):
+            warnings.warn("Error getting current git information. Are you in a git repo?")  # noqa
+        return branch, commit
 
     def __str__(self):
         organized_params_with_values = OrderedDict()
@@ -207,12 +237,28 @@ class ExperimentConfig(object):
         yaml_str = yaml.dump(organized_params_with_values, Dumper=yaml.Dumper,
                              default_flow_style=False)
         yaml_str = '  ' + yaml_str.replace('\n', '\n  ')
-        return "ExperimentConfig\n----------------\n" + yaml_str
+        branch, commit = self._git_info()
+        git_str = f"{branch}:{commit}\n"
+        return "ExperimentConfig\n----------------\n" + git_str + yaml_str
+
+    def check_deprecations(self):
+        """
+        Add logic for any deprecated parameters here.
+        """
+        if self.mark_entities is True:
+            msg = "mark_entities is deprecated. Use entity_markers instead."
+            self.mark_entities = False
+            if self.entity_markers is None:
+                msg += " Defaulting to '@' entity markers."
+                self.entity_markers = '@'
+            warnings.warn(msg, DeprecationWarning)
 
     def validate(self, errors="raise"):
-        valid_entity_pool_fns = ["mean", "max", "first", "last", "first-last"]
-        self._validate_param("entity_pool_fn", valid_entity_pool_fns,
+        valid_pool_fns = ["mean", "max", "first", "last", "first-last"]
+        self._validate_param("entity_pool_fn", valid_pool_fns,
                              default_value="mean", errors=errors)
+        self._validate_param("levitated_marker_pool_fn", valid_pool_fns,
+                             default_value="max", errors=errors)
 
         valid_sample_strategies = [None, "weighted"]
         self._validate_param("sample_strategy", valid_sample_strategies,
@@ -249,7 +295,7 @@ class ExperimentConfig(object):
                 setattr(self, param_name, default_value)
                 warnings.warn(f"{param_name} set to default `{default_value}` from unsupported value `{param_value}`.")  # noqa
             else:
-                raise ValueError(f"Unknown errors value {errors}. Expected 'fix' or 'raise'.")  # noqa
+                raise ConfigError(f"Unknown errors value {errors}. Expected 'fix' or 'raise'.")  # noqa
 
     def _validate_auxiliary_data(self, errors="raise"):
         required_keys = set([
@@ -258,36 +304,40 @@ class ExperimentConfig(object):
         ])
         for (datamod, data_kwargs) in self.auxiliary_data.items():
             if datamod not in data.DATAMODULE_LOOKUP.keys():
-                raise ValueError(f"Unkown data module name '{datamod}'. Check data/__init__.py.")  # noqa
+                raise ConfigError(f"Unknown data module name '{datamod}'. Check data/__init__.py.")  # noqa
             used_keys = set()
             unused_keys = set()
             for (key, val) in data_kwargs.items():
                 if key not in required_keys:
                     unused_keys.add(key)
                 elif key in required_keys:
-                    required_type = type(getattr(self, key))
+                    # TODO: I don't like how hard-coded this is.
                     if key == "max_train_examples":
                         required_type = (int, type(None))
+                    elif key == "tasks_to_load":
+                        required_type = (str, list)
+                    else:
+                        required_type = type(getattr(self, key))
                     wrong_type_msg = f"Incorrect type for auxiliary_data kwarg '{datamod}:{key}'. Got '{type(val)}' but expected '{required_type}'."  # noqa
                     if not isinstance(val, required_type):
                         if errors == "raise":
-                            raise ValueError(wrong_type_msg)
+                            raise ConfigError(wrong_type_msg)
                         elif errors == "warn":
                             warnings.warn(wrong_type_msg)
                         elif errors == "fix":
                             warnings.warn("Fixing auxiliary_data kwargs not supported! Do it yourself!")  # noqa
-                            raise ValueError(wrong_type_msg)
+                            raise ConfigError(wrong_type_msg)
                     used_keys.add(key)
             if used_keys != required_keys:
                 missing_keys = ', '.join(required_keys.difference(used_keys))
                 miss_keys_msg = f"Missing the following auxiliary_data kwargs: {datamod}:{missing_keys}."  # noqa
                 if errors == "raise":
-                    raise ValueError(miss_keys_msg)
+                    raise ConfigError(miss_keys_msg)
                 elif errors == "warn":
                     warnings.warn(miss_keys_msg)
                 elif errors == "fix":
                     warnings.warn("Fixing auxiliary_data kwargs not supported! Do it yourself!")  # noqa
-                    raise ValueError(miss_keys_msg)
+                    raise ConfigError(miss_keys_msg)
             if len(unused_keys) > 0:
                 unused_keys_str = ', '.join(unused_keys)
                 warnings.warn(f"The following kwargs are not supported and will be ignored {datamod}:{unused_keys_str}")  # noqa
@@ -298,23 +348,14 @@ class ExperimentConfig(object):
             default_value="sequential", errors=errors)
 
     def update(self, key, value, errors="raise"):
-        if key in ["tasks_to_load", "classifier_loss_kwargs", "mask_loss_kwargs"]:  # noqa
-            raise NotImplementedError(f"updating '{key}' not yet implemented.")
-        param_type = type(getattr(self, key))
         try:
-            cast_value = param_type(value)
-        except TypeError:
-            if param_type == type(None) and value is None:  # noqa
-                # NoneType takes no arguments
-                cast_value = value
-            else:
-                msg = f"Unable to cast value '{value}' to expected type {param_type} for {key}"  # noqa
-                if errors == "raise":
-                    raise ConfigError(msg)
-                else:
-                    warnings.warn(msg + f". Keeping it as '{value}'.")
-                    cast_value = value
-        setattr(self, key, cast_value)
+            curr_val = getattr(self, key)
+        except KeyError:
+            raise ConfigError(f"Unknown config parameter {key}")
+        param_type = type(curr_val)
+        if not isinstance(value, param_type):
+            warnings.warn(f"Changing value of parameter {key} from {curr_val} ({param_type}) to {value} ({type(value)})")  # noqa
+        setattr(self, key, value)
         self.validate(errors=errors)
 
     def save_to_yaml(self, outpath):
@@ -331,6 +372,18 @@ class ExperimentConfig(object):
                     params_dict[name] = val
                 yaml.dump(params_dict, outF)
                 outF.write('\n')
+
+    def __eq__(self, other):
+        for name in self.param_names():
+            this_val = getattr(self, name)
+            that_val = getattr(other, name, None)
+            if this_val != that_val:
+                return False
+        return True
+
+    def copy(self):
+        kwargs = {name: getattr(self, name) for name in self.param_names()}
+        return self.__class__(**kwargs)
 
 
 def update_config_file(filepath, **update_kwargs):

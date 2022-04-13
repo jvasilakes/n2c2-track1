@@ -1,6 +1,6 @@
 # Experiment
-name: test_new_data
-description: test after data/ refactor
+name: test_new_entity_markers
+description: test switch from mark_entities to entity_markers, with levitated markers.
 logdir: logs/
 random_seed: 0
 
@@ -20,9 +20,12 @@ dataset_sampler_kwargs: {}
 model_name: bert-sequence-classifier
 bert_model_name_or_path: bert-base-uncased
 freeze_pretrained: false
-use_entity_spans: false
-entity_pool_fn: max
-mark_entities: false
+use_entity_spans: true
+entity_pool_fn: first-last
+mark_entities: true
+entity_markers: ["[unused0]", "[unused1]"]
+use_levitated_markers: true
+levitated_marker_pool_fn: first-last
 max_seq_length: 256
 dropout_prob: 0.2
 
