@@ -117,30 +117,23 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
             for param in self.bert.parameters():
                 param.requires_grad = False
 
-        # For pooling entity and levitated marker embeddings
-        pooler_outsize = None  # Use this for determining classifier insize
+        # Entity and levitated marker embedding poolers
         if self.use_entity_spans is False and self.use_levitated_markers is True:  # noqa
             warnings.warn("levitated markers only supported when use_entity_spans=True. Not using levitated markers.")  # noqa
             self.use_levitated_markers = False
         if self.use_entity_spans is True:
             pooler_insize = pooler_outsize = self.bert_config.hidden_size
-            if self.entity_pool_fn == "first-last":
-                pooler_insize = 2 * pooler_insize
             self.entity_pooler = TokenEmbeddingPooler(
                 pooler_insize, pooler_outsize, self.entity_pool_fn)
-            # For pooling levitated marker embeddings
             if self.use_levitated_markers is True:
-                lev_pooler_insize = pooler_insize
-                if self.levitated_marker_pool_fn != "first-last":
-                    lev_pooler_insize = pooler_insize // 2
                 self.levitated_marker_pooler = TokenEmbeddingPooler(
-                    lev_pooler_insize, pooler_outsize,
+                    pooler_insize, pooler_outsize,
                     self.levitated_marker_pool_fn)
 
         # Classifiers, one per task
         self.classifier_heads = nn.ModuleDict()
         self.classifier_loss_fns = nn.ModuleDict()
-        classifier_insize = pooler_outsize or self.bert_config.hidden_size
+        classifier_insize = self.bert_config.hidden_size
         if self.use_levitated_markers is True:
             # b/c we'll concat the pooled representations
             # from entities and markers
@@ -180,6 +173,21 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
             indicating the positions of the marked spans in the input.
         labels: dict from task names to torch.LongTensor labels of
                 shape (batch_size,).
+
+        Basically, the inputs are encoded and pooled via BERT (pooled_output).
+        The use_entity_spans and use_levitated_markers options affect how
+        pooled_output is computed.
+
+         * use_entity_spans = use_levitated_markers = False:
+                  X--(BERT)-->pooled_output
+         * use_entity_spans = True, use_levitated_markers = False:
+                  X--(BERT)-->last_hidden_state
+                  last_hidden_state--(entity_pooler)-->pooled_output
+         * use_entity_spans = use_levitated_markers = True:
+                  X--(BERT)-->last_hidden_state
+                  last_hidden_state--(entity_pooler)-->entity_pooled
+                  last_hidden_state--(levitated_pooler)-->levitated_pooled
+                  pooled_output <-- [entity_pooled;levitated_pooled]
         """
         bert_outputs = self.bert(
                 input_ids=input_ids,
@@ -193,7 +201,7 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
                 return_dict=True
                 )
 
-        if self.use_entity_spans is True and entity_token_idxs is not None:
+        if self.use_entity_spans is True:
             if entity_token_idxs is not None:
                 pooled_output = self.entity_pooler(
                     bert_outputs.last_hidden_state, entity_token_idxs)
@@ -211,6 +219,9 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
             pooled_output = bert_outputs.pooler_output
 
         clf_outputs = {}
+        # TODO: this assumes that we're always passing labels
+        #  which wont' be the case during test-time prediction.
+        # for (task, clf_head) in self.classifier_heads.items():
         for (task, task_labels) in labels.items():
             if dataset is not None:
                 # If doing multi-dataset learning, the task will
