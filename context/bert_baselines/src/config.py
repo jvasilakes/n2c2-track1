@@ -213,8 +213,10 @@ class ExperimentConfig(object):
 
     def _git_info(self):
         # log commit hash
-        branch = os.popen("git rev-parse --abbrev-ref HEAD").read().strip()
-        commit = os.popen("git log --pretty=format:'%h' -n 1").read().strip()
+        with os.popen("git rev-parse --abbrev-ref HEAD") as p:
+            branch = p.read().strip()
+        with os.popen("git log --pretty=format:'%h' -n 1") as p:
+            commit = p.read().strip()
         if branch == '':
             branch = None
         if commit == '':
