@@ -54,6 +54,10 @@ def parse_args():
             help="""If set, save brat formatted predictions
                     to the predictions/ directory under the logdir.""")
     val_parser.add_argument(
+            "--output_json", action="store_true", default=False,
+            help="""If set, save json formatted predictions
+                    to the predictions/ directory under the logdir.""")
+    val_parser.add_argument(
             "--output_token_masks", action="store_true", default=False,
             help="""If set, save tokens and stochastic masks to the
                     token_masks/ directory under the logdir.""")
@@ -107,6 +111,7 @@ def main(args):
         version = get_current_experiment_version(args.config_file)
         run_kwargs["version"] = version
         run_kwargs["output_brat"] = args.output_brat
+        run_kwargs["output_json"] = args.output_json
         run_kwargs["output_token_masks"] = args.output_token_masks
         run_fn = run_validate
     else:
@@ -260,7 +265,8 @@ def run_continue_train(config, datamodule, logdir="logs/", version=None,
 
 def run_validate(config, datamodule, datasplit="dev",
                  logdir="logs/", version=None, quiet=False,
-                 output_brat=False, output_token_masks=False):
+                 output_brat=False, output_json=False,
+                 output_token_masks=False):
 
     checkpoint_file, hparams_file = find_checkpoint(
             logdir, config.name, version, ckpt_glob="epoch*.ckpt")
@@ -289,15 +295,16 @@ def run_validate(config, datamodule, datasplit="dev",
     else:
         raise ValueError(f"Unknown validation data split '{datasplit}'")
     val_dataloader = val_dataloader_fn()
-    results = trainer.validate(
-        model, dataloaders=val_dataloader, verbose=False)[0]
-    md = format_results_as_markdown_table(results)
-    print(md)
+    #results = trainer.validate(
+    #    model, dataloaders=val_dataloader, verbose=False)[0]
+    #md = format_results_as_markdown_table(results)
+    #print(md)
 
-    if output_brat is True or output_token_masks is True:
+    if True in (output_brat, output_json, output_token_masks):
         if isinstance(datamodule, CombinedDataModule):
             val_dataloader = val_dataloader_fn(predicting=True)
         preds = trainer.predict(model, dataloaders=val_dataloader)
+
     if output_brat is True:
         anns_by_datatset = batched_predictions_to_brat(preds, datamodule)
         for (dataset, anns) in anns_by_datatset.items():
@@ -306,6 +313,19 @@ def run_validate(config, datamodule, datasplit="dev",
             os.makedirs(preds_dir, exist_ok=False)
             for doc_anns in anns:
                 doc_anns.save_brat(preds_dir)
+
+    if output_json is True:
+        preds_by_dataset = batched_predictions_to_json(preds, datamodule)
+        for (dataset, preds_by_task) in preds_by_dataset.items():
+            preds_dir = os.path.join(logdir, config.name, f"version_{version}",
+                                     "predictions", dataset, "json", datasplit)
+            os.makedirs(preds_dir, exist_ok=False)
+            for (task, preds) in preds_by_task.items():
+                outpath = os.path.join(preds_dir, f"{task}.jsonl")
+                with open(outpath, 'w') as outF:
+                    for datum in preds:
+                        json.dump(datum, outF)
+                        outF.write('\n')
 
     if output_token_masks is True:
         if config.model_name != "bert-rationale-classifier":
@@ -421,6 +441,39 @@ def batched_predictions_to_masked_tokens(preds, datamodule):
                         task, [enc_lab])[0]
                 masked_by_task[task].append(datum)
     return masked_by_task
+
+
+def batched_predictions_to_json(preds, datamodule):
+    preds_by_dataset_and_task = defaultdict(lambda: defaultdict(list))
+    for batch in preds:
+        default_dataset_name = datamodule.train_dataloader().dataset.name
+        dataset = default_dataset_name
+        for (i, docid) in enumerate(batch["docids"]):
+            for (task, preds) in batch["predictions"].items():
+                base_task = task
+                if isinstance(datamodule, CombinedDataModule):
+                    dataset_ = datamodule.get_dataset_from_task(task).name
+                    # so we don't output the dataset name
+                    base_task = task.split(':')[-1]
+                    if dataset == default_dataset_name:
+                        dataset = dataset_
+                    else:
+                        assert dataset_ == dataset, f"Datasets should not differ within a docid! Got {dataset} and {dataset_} for docid {docid}"  # noqa
+                datum = {}
+                datum["docid"] = docid
+                input_ids = batch["input_ids"][i]
+                tokens = datamodule.tokenizer.convert_ids_to_tokens(
+                        input_ids, skip_special_tokens=True)
+                tokens = [tok for (tok, tid) in zip(tokens, input_ids) if tid != 0]  # noqa
+                datum["tokens"] = tokens
+                enc_pred = preds[i].int().item()
+                enc_lab = batch["labels"][task][i].int().item()
+                datum["prediction"] = datamodule.inverse_transform(
+                        task, [enc_pred])[0]
+                datum["label"] = datamodule.inverse_transform(
+                        task, [enc_lab])[0]
+                preds_by_dataset_and_task[dataset][base_task].append(datum)
+    return preds_by_dataset_and_task
 
 
 def batched_predictions_to_brat(preds, datamodule):

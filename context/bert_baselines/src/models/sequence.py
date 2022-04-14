@@ -270,6 +270,7 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
         outputs_by_task = self.get_model_outputs(batch)
         tasks = list(outputs_by_task.keys())
         inputs_with_predictions = {
+                "input_ids": batch["encodings"]["input_ids"],
                 "texts": batch["texts"],
                 "labels": batch["labels"],
                 "entity_token_idxs": batch["entity_token_idxs"],
