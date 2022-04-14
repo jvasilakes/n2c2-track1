@@ -295,10 +295,10 @@ def run_validate(config, datamodule, datasplit="dev",
     else:
         raise ValueError(f"Unknown validation data split '{datasplit}'")
     val_dataloader = val_dataloader_fn()
-    #results = trainer.validate(
-    #    model, dataloaders=val_dataloader, verbose=False)[0]
-    #md = format_results_as_markdown_table(results)
-    #print(md)
+    results = trainer.validate(
+        model, dataloaders=val_dataloader, verbose=False)[0]
+    md = format_results_as_markdown_table(results)
+    print(md)
 
     if True in (output_brat, output_json, output_token_masks):
         if isinstance(datamodule, CombinedDataModule):
