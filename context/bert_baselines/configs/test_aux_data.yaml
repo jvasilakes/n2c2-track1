@@ -1,6 +1,6 @@
 # Experiment
-name: test
-description: test
+name: test_aux_data
+description: test with auxiliary data
 logdir: logs/
 random_seed: 0
 
@@ -11,8 +11,16 @@ sentences_dir: /home/u14498jv/Documents/Projects/n2c2-track1/n2c2Track1TrainingD
 tasks_to_load:
 - Certainty
 window_size: 0
-max_train_examples: 100
-auxiliary_data: {}
+max_train_examples: 20
+auxiliary_data:
+  i2b2Event:
+    data_dir: /home/u14498jv/Documents/Projects/n2c2-track1/auxiliary_data/i2b2_2009/brat/
+    dataset_name: i2b2Event
+    max_train_examples: 10
+    sentences_dir: /home/u14498jv/Documents/Projects/n2c2-track1/auxiliary_data/i2b2_2009/segmented/
+    tasks_to_load:
+    - Certainty
+    window_size: 0
 dataset_sample_strategy: sequential
 dataset_sampler_kwargs: {}
 
@@ -22,7 +30,7 @@ bert_model_name_or_path: bert-base-uncased
 freeze_pretrained: false
 use_entity_spans: true
 entity_pool_fn: first-last
-mark_entities: true
+mark_entities: false
 entity_markers: ["[unused0]", "[unused1]"]
 use_levitated_markers: false
 levitated_marker_pool_fn: first-last
