@@ -26,6 +26,7 @@ def create_app(args):
         "correct": True,
         "incorrect": True,
         "max_examples": 1000,
+        "docids": '',
     })
 
     # Define and register the label matchers.
@@ -51,6 +52,8 @@ def create_app(args):
                         val = int(input_val)
                     except ValueError:
                         val = state[inp]
+                elif inp == "docids":
+                    val = input_val
                 else:
                     val = input_val == "on"
                 state[inp] = val
@@ -60,7 +63,7 @@ def create_app(args):
         d += h3("Filters")
         f = form(method="post")
         for (key, val) in state.items():
-            if key == "max_examples":
+            if key in ("max_examples", "docids"):
                 continue
             inp = input_(_type="checkbox", _id=key, name=key,
                          checked=state.get(key) or False),
@@ -74,12 +77,23 @@ def create_app(args):
         f += lab
         f += inp
         f += br()
+        lab = label("Doc IDS ('' for all)", for_=key)
+        inp = input_(_type="text", _id="docids", name="docids",
+                     placeholder=str(state.get("docids")))
+        f += lab
+        f += inp
+        f += br()
         f += input_(_type="submit", value="Apply")
         f += br()
         f += br()
         d += f
 
         for (i, example) in enumerate(apply_filters(filters, data, state)):
+            if state.get("docids") != '':
+                ids_list = [docid.strip() for docid
+                            in state.get("docids").split(',')]
+                if example["docid"] not in ids_list:
+                    continue
             if i == int(state.get("max_examples")):
                 break
             d += example2html(
