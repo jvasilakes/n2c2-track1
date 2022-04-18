@@ -36,10 +36,32 @@ python main.py --config ../configs/local.yaml --mode train --data ../data/spacy/
               Action  0.8796  0.7602  0.8155    0.8796  0.7602  0.8155
 ```
 
-Compared with mean-pool and also different embs (2) for start and end, but 1 emb with max performs best.
+Compared with mean-pool and also different embs (2) for start and end, but 1 emb with max performs best.<br>
 
+Jake configuration performance:
+```
+Events : Macro_Pr = 0.9075 | Macro_Re = 0.8653 | Macro_F1  = 0.8851 | Micro_F1 = 0.9380 <<<
+Actions: Macro_Pr = 0.5429 | Macro_Re = 0.6297 | Macro_F1  = 0.4502 | Micro_F1 = 0.2855
+Actions: Macro_Pr = 0.7692 | Macro_Re = 0.6297 | Macro_F1  = 0.6180 | Micro_F1 = 0.7736
+```
 
+Across all splits:
+```
+Default: 
+Events : Macro_Pr = 0.9255 | Macro_Re = 0.8975 | Macro_F1  = 0.9108 | Micro_F1 = 0.9491 <<<
+Actions: Macro_Pr = 0.7780 | Macro_Re = 0.7665 | Macro_F1  = 0.7675 | Micro_F1 = 0.8322
+Split0:
+Events : Macro_Pr = 0.8157 | Macro_Re = 0.7143 | Macro_F1  = 0.7371 | Micro_F1 = 0.9249 <<<
+Actions: Macro_Pr = 0.8172 | Macro_Re = 0.7503 | Macro_F1  = 0.7083 | Micro_F1 = 0.7805
+Split1:
+Events : Macro_Pr = 0.8788 | Macro_Re = 0.8459 | Macro_F1  = 0.8617 | Micro_F1 = 0.9389 <<<
+Actions: Macro_Pr = 0.8745 | Macro_Re = 0.6728 | Macro_F1  = 0.6757 | Micro_F1 = 0.7821
+Split2:
+Events : Macro_Pr = 0.9096 | Macro_Re = 0.8885 | Macro_F1  = 0.8987 | Micro_F1 = 0.9504 <<<
+Actions: Macro_Pr = 0.8613 | Macro_Re = 0.9238 | Macro_F1  = 0.8882 | Micro_F1 = 0.8746
+Split3
 
+```
 
 ## Older results with solid markers
 
