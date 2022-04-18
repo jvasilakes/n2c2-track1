@@ -48,7 +48,6 @@ Actions: Macro_Pr = 0.8420 | Macro_Re = 0.4580 | Macro_F1  = 0.4338 | Micro_F1 =
 Events : Macro_Pr = 0.8416 | Macro_Re = 0.8357 | Macro_F1  = 0.8385 | Micro_F1 = 0.9010 <<<
 Actions: Macro_Pr = 0.7004 | Macro_Re = 0.7651 | Macro_F1  = 0.7267 | Micro_F1 = 0.7946
                                 Average: 
-Events: Micro_F1 = 0.9326
-Actions: Micro_F1 = 0.8095
-
+Events : Micro_F1 = 0.9326 | Actions: Micro_F1 = 0.8095
 ```
+Jake average: ```Events : Micro_F1 = 0.9329 | Actions: Micro_F1 = 0.79905```
