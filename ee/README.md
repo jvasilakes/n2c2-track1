@@ -67,7 +67,6 @@ Actions: Macro_Pr = 0.8420 | Macro_Re = 0.4580 | Macro_F1  = 0.4338 | Micro_F1 =
 
 | Set | Task | Macro Pr | Macro Re | Macro f1 | Micro f1 |
 |-------|--------|----------|----------|----------|----------|
-
 | Default | Event  | 0.9255  |  0.8975 |  0.9108  |  0.9491  |
 | Default | Action | 0.7780  |  0.7665  |  0.7675  |  0.8322  |
 | Split0 | Event  | 0.8157  |  0.7143  |  0.7371  |  0.9249 |
@@ -77,8 +76,8 @@ Actions: Macro_Pr = 0.8420 | Macro_Re = 0.4580 | Macro_F1  = 0.4338 | Micro_F1 =
 | Split2 | Event  | 0.9096 | 0.8885 | 0.8987 | 0.9504 |
 | Split2 | Action | 0.8613 | 0.9238 | 0.8882 | 0.8746  |
 
-| Split1 | Event  | 0.8744 | 0.8858 | 0.8799 | 0.9312|
-| Split1 | Action | 0.8420 | 0.4580 | 0.4338 | 0.7929 |
+| Split3 | Event  | 0.8744 | 0.8858 | 0.8799 | 0.9312|
+| Split3 | Action | 0.8420 | 0.4580 | 0.4338 | 0.7929 |
 
 
 ## Older results with solid markers
