@@ -62,23 +62,15 @@ Actions: Macro_Pr = 0.8613 | Macro_Re = 0.9238 | Macro_F1  = 0.8882 | Micro_F1 =
 Split3:
 Events : Macro_Pr = 0.8744 | Macro_Re = 0.8858 | Macro_F1  = 0.8799 | Micro_F1 = 0.9312 <<<
 Actions: Macro_Pr = 0.8420 | Macro_Re = 0.4580 | Macro_F1  = 0.4338 | Micro_F1 = 0.7929
+Split4:
+Events : Macro_Pr = 0.8416 | Macro_Re = 0.8357 | Macro_F1  = 0.8385 | Micro_F1 = 0.9010 <<<
+Actions: Macro_Pr = 0.7004 | Macro_Re = 0.7651 | Macro_F1  = 0.7267 | Micro_F1 = 0.7946
+Average: 
+Events: Micro_F1 = 0.9326
+Actions: Micro_F1 = 0.8095
 
 ```
 
-| Set | Task | Macro Pr | Macro Re | Macro f1 | Micro f1 |
-|-------|--------|----------|----------|----------|----------|
-| Default | Event  | 0.9255  |  0.8975 |  0.9108  |  0.9491  |
-| Default | Action | 0.7780  |  0.7665  |  0.7675  |  0.8322  |
-| Split0 | Event  | 0.8157  |  0.7143  |  0.7371  |  0.9249 |
-| Split0 | Action | 0.8172  |  0.7503  |  0.7083  |  0.7805  |
-| Split1 | Event  | 0.8788 | 0.8459 | 0.8617 | 0.9389 |
-| Split1 | Action | 0.8745 | 0.6728 | 0.6757 | 0.7821  |
-| Split2 | Event  | 0.9096 | 0.8885 | 0.8987 | 0.9504 |
-| Split2 | Action | 0.8613 | 0.9238 | 0.8882 | 0.8746  |
-| Split3 | Event  | 0.8744 | 0.8858 | 0.8799 | 0.9312|
-| Split3 | Action | 0.8420 | 0.4580 | 0.4338 | 0.7929 |
-| Average | Event  | 0.8744 | 0.8858 | 0.8799 | 0.9312|
-| Average | Event  | 0.8744 | 0.8858 | 0.8799 | 0.9312|
 
 
 ## Older results with solid markers
