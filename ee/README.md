@@ -10,17 +10,20 @@ python datasets.py --config ../configs/local.yaml --data ../data/spacy/ --bert c
 ```
 You can change the parameters on the config file. 
 
-To run the model:
-
-```
-python main.py --config ../configs/local.yaml --mode train --data ../data/spacy/ --bert clinical --use_verbs 
-```
+Training the model: 
+```python main.py --config ../configs/local.yaml --mode train --train_data ../data/default/spacy/ --outdir ../evaluation/default/ --bert blue --model_folder ../saved_models/```
 
 Alternatively you can use: 
 ```sh xec_n2c2_splits.sh <base,clinical,blue>```
 
+## Evaluating the predictions:
+To evalutate the predictions you have to give the two folders (gold, predicted) to the eval script:<br>
+```python eval_script_v3.py ../data/default/brat/dev/ ../predictions/test/```
 
 
+
+
+<!-- 
 ## Older results with solid markers
 
 ### Clinical Bert: entities marked with '@', epoch: 06 (Best event f1)
@@ -148,3 +151,4 @@ actions y_pred size (212, 7) y_pred sum 202.0
 Actions: Macro_Pr = 0.8512 | Macro_Re = 0.6853 | Macro_F1  = 0.7122 | Micro_F1 = 0.7773
 actions y_pred size (1010, 7) y_pred sum 298.0
 Actions: Macro_Pr = 0.7323 | Macro_Re = 0.6853 | Macro_F1  = 0.6362 | Micro_F1 = 0.6332 -->
+ -->
