@@ -12,21 +12,20 @@ You can change the parameters on the config file.
 
 ## Training the model: 
 ```
-python main.py --config ../configs/local.yaml --mode train --train_data ../data/default/spacy/ --outdir ../evaluation/default/ --bert blue --model_folder ../saved_models/
+python main.py --config ../configs/local.yaml --mode train --split default --bert blue 
 ```
 Do not that there is a change compared to previous models and verbs are the dault option. To disable them use ```--no_verbs```.<br>
-## Testing the model:
-```
-python main.py --config ../configs/local.yaml --mode predict --test_data ../data/default/spacy/dev_data.txt --outdir ../evaluation/default/ --bert blue --model_folder ../saved_models/blue/
-```
-Model folder is the folder that contains the model. According to the parameters in config, the code will automatically load e.g. the ```bert.model``` file in the subfolder that matches the hyperparametrs (e.g. ```bs=32_lr=4e-05_wd=1e-06_c=10```)
-
 
 Alternatively you can use: 
 ```sh xec_n2c2_splits.sh <base,clinical,blue>```
+That runs the specified model on all the splits.
 
 ## Evaluating the predictions:
 To evalutate the predictions you have to give the two folders (gold, predicted) to the eval script:<br>
-```python eval_script_v3.py ../data/default/brat/dev/ ../predictions/test/```
+```
+python main.py --config ../configs/local.yaml --mode predict --test_path ../data/default/spacy/dev_data.txt --bert blue --model_folder ../results/blue_default/
+```
+The results predictions will be under ```predictions/test/``` of the model folder specified.
+
 
 
