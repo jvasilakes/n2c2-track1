@@ -1,0 +1,159 @@
+Setting the seed to 2021
+Train data: 6125
+Dev data: 1010
+
+Parameters:
+            - Verbs             True
+            - Bert model        base
+            - batch_size        32
+            - grad accumulation 1
+            - Learning rate     4e-05
+            - Dropout           0.3
+            - Ent markers start [unused0]	end [unused1] 
+            
+            - Freeze Encoder    False	Autoscalling: True  
+            - Encoder Dim       768	Layers 12
+            - Hidden dim        768
+            - Weight Decay      1e-06
+            - Gradient Clip     10
+            - Max seq len       300
+            - Epoch             10	Warmup Epochs     0
+            - Early stop        True	Patience = 5
+            - Train/Dev         ../data/spacy/train_data.txt, ../data/spacy/dev_data.txt
+            - Save folder       ../saved_models/
+            
+
+======== START TRAINING: 14-03-22_15:44:54 ========
+
+Step 0         LOSS =     0.6981
+---------- Epoch: 01 ----------
+	TRAIN / LOSS =     0.3248  Time 0h 00m 54s  Dispotion counts: 1128/670/1362/6125
+Events : Macro_Pr = 0.6073 | Macro_Re = 0.4367 | Macro_F1  = 0.4695 | Micro_F1 = 0.7879 <<<
+Actions: Macro_Pr = 0.1085 | Macro_Re = 0.0782 | Macro_F1  = 0.0767 | Micro_F1 = 0.1278
+Actions: Macro_Pr = 0.4249 | Macro_Re = 0.0782 | Macro_F1  = 0.1098 | Micro_F1 = 0.2376
+	DEV   / LOSS =     0.2606  Time 0h 00m 02s  Dispotion counts: 201/180/232/1010
+Events : Macro_Pr = 0.8609 | Macro_Re = 0.6114 | Macro_F1  = 0.6507 | Micro_F1 = 0.8554 <<<
+Actions: Macro_Pr = 0.7233 | Macro_Re = 0.4287 | Macro_F1  = 0.4070 | Micro_F1 = 0.3385
+Actions: Macro_Pr = 0.7964 | Macro_Re = 0.4287 | Macro_F1  = 0.4522 | Micro_F1 = 0.5662
+Saving checkpoint
+current best epoch: 1
+-----Saving predictions for current epoch 1 -----
+
+Step 192       LOSS =     0.1520
+---------- Epoch: 02 ----------
+	TRAIN / LOSS =     0.1567  Time 0h 00m 54s  Dispotion counts: 1128/1069/1288/6125
+Events : Macro_Pr = 0.8641 | Macro_Re = 0.7674 | Macro_F1  = 0.8082 | Micro_F1 = 0.9160 <<<
+Actions: Macro_Pr = 0.7440 | Macro_Re = 0.4281 | Macro_F1  = 0.3315 | Micro_F1 = 0.3823
+Actions: Macro_Pr = 0.8710 | Macro_Re = 0.4281 | Macro_F1  = 0.4334 | Micro_F1 = 0.7637
+	DEV   / LOSS =     0.2190  Time 0h 00m 02s  Dispotion counts: 201/179/218/1010
+Events : Macro_Pr = 0.8490 | Macro_Re = 0.6489 | Macro_F1  = 0.6872 | Micro_F1 = 0.8794 <<<
+Actions: Macro_Pr = 0.7238 | Macro_Re = 0.5715 | Macro_F1  = 0.4582 | Micro_F1 = 0.4830
+Actions: Macro_Pr = 0.8353 | Macro_Re = 0.5715 | Macro_F1  = 0.5539 | Micro_F1 = 0.7129
+Saving checkpoint
+current best epoch: 2
+-----Saving predictions for current epoch 2 -----
+
+Step 384       LOSS =     0.1270
+---------- Epoch: 03 ----------
+	TRAIN / LOSS =     0.0860  Time 0h 00m 54s  Dispotion counts: 1128/1110/1216/6125
+Events : Macro_Pr = 0.9326 | Macro_Re = 0.8940 | Macro_F1  = 0.9123 | Micro_F1 = 0.9587 <<<
+Actions: Macro_Pr = 0.6165 | Macro_Re = 0.5145 | Macro_F1  = 0.3833 | Micro_F1 = 0.5881
+Actions: Macro_Pr = 0.7736 | Macro_Re = 0.5145 | Macro_F1  = 0.5007 | Micro_F1 = 0.8702
+	DEV   / LOSS =     0.1910  Time 0h 00m 02s  Dispotion counts: 201/183/213/1010
+Events : Macro_Pr = 0.8983 | Macro_Re = 0.7895 | Macro_F1  = 0.8347 | Micro_F1 = 0.9125 <<<
+Actions: Macro_Pr = 0.6128 | Macro_Re = 0.5573 | Macro_F1  = 0.4864 | Micro_F1 = 0.5797
+Actions: Macro_Pr = 0.7203 | Macro_Re = 0.5573 | Macro_F1  = 0.5597 | Micro_F1 = 0.7348
+Saving checkpoint
+current best epoch: 3
+-----Saving predictions for current epoch 3 -----
+
+Step 576       LOSS =     0.0774
+---------- Epoch: 04 ----------
+	TRAIN / LOSS =     0.0513  Time 0h 00m 54s  Dispotion counts: 1128/1103/1163/6125
+Events : Macro_Pr = 0.9680 | Macro_Re = 0.9488 | Macro_F1  = 0.9582 | Micro_F1 = 0.9808 <<<
+Actions: Macro_Pr = 0.7415 | Macro_Re = 0.5858 | Macro_F1  = 0.4796 | Micro_F1 = 0.6253
+Actions: Macro_Pr = 0.9287 | Macro_Re = 0.5858 | Macro_F1  = 0.6028 | Micro_F1 = 0.9199
+	DEV   / LOSS =     0.1923  Time 0h 00m 02s  Dispotion counts: 201/186/218/1010
+Events : Macro_Pr = 0.8443 | Macro_Re = 0.8116 | Macro_F1  = 0.8273 | Micro_F1 = 0.9081 <<<
+Actions: Macro_Pr = 0.4579 | Macro_Re = 0.5791 | Macro_F1  = 0.4906 | Micro_F1 = 0.5746
+Actions: Macro_Pr = 0.5693 | Macro_Re = 0.5791 | Macro_F1  = 0.5664 | Micro_F1 = 0.7333
+current best epoch: 3
+
+Step 768       LOSS =     0.0252
+---------- Epoch: 05 ----------
+	TRAIN / LOSS =     0.0342  Time 0h 00m 54s  Dispotion counts: 1128/1112/1145/6125
+Events : Macro_Pr = 0.9837 | Macro_Re = 0.9734 | Macro_F1  = 0.9785 | Micro_F1 = 0.9897 <<<
+Actions: Macro_Pr = 0.7302 | Macro_Re = 0.6648 | Macro_F1  = 0.5850 | Micro_F1 = 0.7336
+Actions: Macro_Pr = 0.9201 | Macro_Re = 0.6648 | Macro_F1  = 0.7000 | Micro_F1 = 0.9469
+	DEV   / LOSS =     0.1961  Time 0h 00m 02s  Dispotion counts: 201/194/223/1010
+Events : Macro_Pr = 0.8881 | Macro_Re = 0.8255 | Macro_F1  = 0.8529 | Micro_F1 = 0.9198 <<<
+Actions: Macro_Pr = 0.5543 | Macro_Re = 0.6012 | Macro_F1  = 0.5499 | Micro_F1 = 0.5930
+Actions: Macro_Pr = 0.7082 | Macro_Re = 0.6012 | Macro_F1  = 0.6292 | Micro_F1 = 0.7409
+Saving checkpoint
+current best epoch: 5
+-----Saving predictions for current epoch 5 -----
+
+Step 960       LOSS =     0.0232
+---------- Epoch: 06 ----------
+	TRAIN / LOSS =     0.0237  Time 0h 00m 54s  Dispotion counts: 1128/1115/1139/6125
+Events : Macro_Pr = 0.9909 | Macro_Re = 0.9832 | Macro_F1  = 0.9871 | Micro_F1 = 0.9927 <<<
+Actions: Macro_Pr = 0.7367 | Macro_Re = 0.7384 | Macro_F1  = 0.6403 | Micro_F1 = 0.7676
+Actions: Macro_Pr = 0.9672 | Macro_Re = 0.7384 | Macro_F1  = 0.7739 | Micro_F1 = 0.9664
+	DEV   / LOSS =     0.2051  Time 0h 00m 02s  Dispotion counts: 201/201/228/1010
+Events : Macro_Pr = 0.8908 | Macro_Re = 0.8017 | Macro_F1  = 0.8364 | Micro_F1 = 0.9083 <<<
+Actions: Macro_Pr = 0.5421 | Macro_Re = 0.6215 | Macro_F1  = 0.5505 | Micro_F1 = 0.5664
+Actions: Macro_Pr = 0.6818 | Macro_Re = 0.6215 | Macro_F1  = 0.6303 | Micro_F1 = 0.7431
+current best epoch: 5
+
+Step 1152      LOSS =     0.0125
+---------- Epoch: 07 ----------
+	TRAIN / LOSS =     0.0158  Time 0h 00m 53s  Dispotion counts: 1128/1123/1137/6125
+Events : Macro_Pr = 0.9947 | Macro_Re = 0.9905 | Macro_F1  = 0.9926 | Micro_F1 = 0.9963 <<<
+Actions: Macro_Pr = 0.7025 | Macro_Re = 0.7927 | Macro_F1  = 0.6442 | Micro_F1 = 0.7667
+Actions: Macro_Pr = 0.9729 | Macro_Re = 0.7927 | Macro_F1  = 0.8103 | Micro_F1 = 0.9791
+	DEV   / LOSS =     0.2357  Time 0h 00m 02s  Dispotion counts: 201/197/223/1010
+Events : Macro_Pr = 0.8814 | Macro_Re = 0.7388 | Macro_F1  = 0.7787 | Micro_F1 = 0.9051 <<<
+Actions: Macro_Pr = 0.5098 | Macro_Re = 0.6233 | Macro_F1  = 0.5455 | Micro_F1 = 0.6057
+Actions: Macro_Pr = 0.6913 | Macro_Re = 0.6233 | Macro_F1  = 0.6369 | Micro_F1 = 0.7465
+current best epoch: 5
+
+Step 1344      LOSS =     0.0112
+---------- Epoch: 08 ----------
+	TRAIN / LOSS =     0.0114  Time 0h 00m 53s  Dispotion counts: 1128/1123/1130/6125
+Events : Macro_Pr = 0.9977 | Macro_Re = 0.9933 | Macro_F1  = 0.9955 | Micro_F1 = 0.9979 <<<
+Actions: Macro_Pr = 0.6636 | Macro_Re = 0.8187 | Macro_F1  = 0.6195 | Micro_F1 = 0.7153
+Actions: Macro_Pr = 0.9816 | Macro_Re = 0.8187 | Macro_F1  = 0.8281 | Micro_F1 = 0.9885
+	DEV   / LOSS =     0.2398  Time 0h 00m 02s  Dispotion counts: 201/189/219/1010
+Events : Macro_Pr = 0.9004 | Macro_Re = 0.7745 | Macro_F1  = 0.8201 | Micro_F1 = 0.9083 <<<
+Actions: Macro_Pr = 0.5015 | Macro_Re = 0.6378 | Macro_F1  = 0.5398 | Micro_F1 = 0.5817
+Actions: Macro_Pr = 0.6859 | Macro_Re = 0.6378 | Macro_F1  = 0.6395 | Micro_F1 = 0.7552
+current best epoch: 5
+
+Step 1536      LOSS =     0.0095
+---------- Epoch: 09 ----------
+	TRAIN / LOSS =     0.0082  Time 0h 00m 51s  Dispotion counts: 1128/1124/1129/6125
+Events : Macro_Pr = 0.9982 | Macro_Re = 0.9942 | Macro_F1  = 0.9962 | Micro_F1 = 0.9987 <<<
+Actions: Macro_Pr = 0.6777 | Macro_Re = 0.8126 | Macro_F1  = 0.6302 | Micro_F1 = 0.7199
+Actions: Macro_Pr = 0.9984 | Macro_Re = 0.8126 | Macro_F1  = 0.8327 | Micro_F1 = 0.9906
+	DEV   / LOSS =     0.2432  Time 0h 00m 02s  Dispotion counts: 201/193/222/1010
+Events : Macro_Pr = 0.8891 | Macro_Re = 0.7815 | Macro_F1  = 0.8225 | Micro_F1 = 0.9081 <<<
+Actions: Macro_Pr = 0.5166 | Macro_Re = 0.6392 | Macro_F1  = 0.5491 | Micro_F1 = 0.5906
+Actions: Macro_Pr = 0.7040 | Macro_Re = 0.6392 | Macro_F1  = 0.6471 | Micro_F1 = 0.7581
+current best epoch: 5
+
+Step 1728      LOSS =     0.0030
+---------- Epoch: 10 ----------
+	TRAIN / LOSS =     0.0071  Time 0h 00m 52s  Dispotion counts: 1128/1124/1128/6125
+Events : Macro_Pr = 0.9991 | Macro_Re = 0.9959 | Macro_F1  = 0.9975 | Micro_F1 = 0.9990 <<<
+Actions: Macro_Pr = 0.6809 | Macro_Re = 0.8323 | Macro_F1  = 0.6376 | Micro_F1 = 0.7263
+Actions: Macro_Pr = 0.9946 | Macro_Re = 0.8323 | Macro_F1  = 0.8416 | Micro_F1 = 0.9945
+	DEV   / LOSS =     0.2544  Time 0h 00m 02s  Dispotion counts: 201/191/221/1010
+Events : Macro_Pr = 0.8947 | Macro_Re = 0.7769 | Macro_F1  = 0.8208 | Micro_F1 = 0.9085 <<<
+Actions: Macro_Pr = 0.5453 | Macro_Re = 0.6716 | Macro_F1  = 0.5806 | Micro_F1 = 0.5974
+Actions: Macro_Pr = 0.7675 | Macro_Re = 0.6716 | Macro_F1  = 0.6891 | Micro_F1 = 0.7610
+current best epoch: 5
+
+======== END TRAINING: 14-03-22_15:54:34 ========
+
+Best epoch: 5
+

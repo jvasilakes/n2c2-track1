@@ -54,10 +54,6 @@ class BaseTrainer:
         return main_model
 
     def set_optimizer(self, main_model):
-#         optimizer = optim.Adam(main_model.parameters(),
-#                                lr=self.config['lr'],
-#                                weight_decay=self.config['weight_decay'],
-#                                amsgrad=True)
         optimizer = AdamW(main_model.parameters(),
                                lr=self.config['lr'],
                                weight_decay=self.config['weight_decay'])
@@ -111,11 +107,9 @@ class BaseTrainer:
                     'best_score': self.best_score,
                     'optimizer': self.optimizer.state_dict()}, self.save_path)
 
-    def load_checkpoint(self, some_model=None):
-        if some_model is not None:
-            path = os.path.join(self.config['pretrained_model'], 'bag_re.model')
-        else:
-            path = os.path.join(self.config['model_folder'], 'bag_re.model')
+    def load_checkpoint(self, model_folder):
+        path = os.path.join(model_folder, 'bert.model')
+        print('Loading model from path', path)
         checkpoint = torch.load(path)
 
         self.vocabs = checkpoint['vocabs']
@@ -134,15 +128,15 @@ class BaseTrainer:
 
         self.model.load_state_dict(pretrained_dict, strict=False)
 
-        self.model.w_vocab = self.vocabs['w_vocab']
-        self.model.p_vocab = self.vocabs['p_vocab']
-        self.model.r_vocab = self.vocabs['r_vocab']
-
-        # freeze
-        if self.config['freeze_pretrained']:
-            for p_name, p_value in self.model.named_parameters():
-                if p_name in pretrained_dict:
-                    p_value.requires_grad = False
+        # self.model.events = self.vocabs['events']
+        # self.model.actions = self.vocabs['actions']
+        # self.model.r_vocab = self.vocabs['r_vocab']
+        # vocabs = {'events': {}, 'actions': {}})
+        # # freeze
+        # if self.config['freeze_pretrained']:
+        #     for p_name, p_value in self.model.named_parameters():
+        #         if p_name in pretrained_dict:
+        #             p_value.requires_grad = False
 
         self.model.to(self.device)
 
