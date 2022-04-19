@@ -24,3 +24,4 @@ Then you run the official script:
 ```
 python eval_script_v3.py ../data/default/brat/dev ../results/blue_default/predictions/test/
 ```
+
