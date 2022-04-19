@@ -20,3 +20,7 @@ To evalutate the predictions you have to give the two folders (gold, predicted) 
 python main.py --config ../configs/local.yaml --mode predict --test_path ../data/default/spacy/dev_data.txt --bert blue --model_folder ../results/blue_default/
 ```
 The results predictions will be under ```predictions/test/``` of the model folder specified.
+Then you run the official script:
+```
+python eval_script_v3.py ../data/default/brat/dev ../results/blue_default/predictions/test/
+```
