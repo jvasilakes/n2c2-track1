@@ -2,7 +2,8 @@ EE task - 19/3/2022
 
 Currecnt version uses PLM along with 10 verbs. Concat with i2b2 does not seem to improve performance.<br>
 You can change the parameters you want on the config file.<br>
-If you want to run the model on different splits, you have to obtain the train_data/dev_data.txt that requires 2 steps if preprocessing.
+If you want to run the model on different splits, you have to obtain the train_data/dev_data.txt that requires 2 steps if preprocessing.<br>
+After getting Nhung's output I will adjust it to run automatically.
 
 ## Training the model: 
 ```
