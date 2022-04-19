@@ -6,7 +6,7 @@ If you want to run the model on different splits, you have to obtain the train_d
 
 ## Training the model: 
 ```
-python main.py --config ../configs/local.yaml --mode train --split default --bert blue 
+python main.py --config ../configs/local.yaml --mode train --split default --bert <base,blue,clinical> 
 ```
 Do note that there is a change compared to previous models and verbs are the default option. To disable them use ```--no_verbs```.<br>
 The predictions (on dev), log and the saved model are saved at ```results/<model>_<split>/``` folder.
