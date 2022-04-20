@@ -2,19 +2,19 @@ from brat_reader import BratAnnotations
 import os
 import argparse
 
-def maxVoting(folderIn, folderOut):
-    predictions = {}    
+def max_voting(folderIn, folderOut):    
     for subFolder in os.listdir(folderIn): #split
         voters = os.listdir(os.path.join(folderIn, subFolder))
-        numberOfVoter =  len(voters)
+        numberOfVoter = len(voters)        
+        predictions = {}    
         for voter in voters:            
             if not os.path.exists(os.path.join(folderIn, subFolder, voter, 'predict-dev-org')):
                 numberOfVoter -= 1
                 continue
             for file in os.listdir(os.path.join(folderIn, subFolder, voter, 'predict-dev-org')):
-                if '.txt' in file: continue
                 file_predicts = {}
                 span_texts = {}
+                if '.txt' in file: continue                
                 if file in predictions:
                     file_predicts, span_texts = predictions[file]
                 anns = BratAnnotations.from_file(os.path.join(folderIn, subFolder, voter, 'predict-dev-org', file))
@@ -39,15 +39,19 @@ def maxVoting(folderIn, folderOut):
                                 + ' ' + str(end) + '\t' + predictions[file][1][(start,end)] + '\n')
                         entityId += 1
 
+# def weighted_majority(folderIn, folderOut, folderGold, round):
+
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--indir', type=str, help='--indir', default='ner/experiments')
-    parser.add_argument('--outdir', type=str,help='--outdir', default='ner/ensemble')
+    parser.add_argument('--indir',type=str, help='--indir', default='ner/experiments')
+    parser.add_argument('--outdir',type=str, help='--outdir', default='ner/ensemble-all')
     args = parser.parse_args()
 
     input_dir = getattr(args, 'indir')
     output_dir = getattr(args, 'outdir')
 
-    maxVoting(input_dir, output_dir)
+    max_voting(input_dir, output_dir)
 
+if __name__ == '__main__':
+    main()
