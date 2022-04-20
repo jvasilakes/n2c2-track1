@@ -2,6 +2,13 @@
 ## Install required libraries
 Please install the required libraries in the `requirements.txt` file
 
+## Run the test set where we only have .txt files
+- Firstly, we have to modify the script `run_test.sh` with the folder to the test data 
+- Secondly, please run the following command from the root folder of the project
+```bash
+bash ner/run_test.sh
+```
+
 ## Pre-process the data and download RoBERTa
 You have to run the following command from the root folder of the project since I hard-code the path of the corpus
 ```bash
