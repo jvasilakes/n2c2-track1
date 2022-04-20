@@ -156,27 +156,29 @@ def spliter(line, _len=len):
     return offsets
 
 
-def process_entities(entities1, triggers1, sentences1, params, dirpath):
-    entities0 = entities1['pmids']
-    triggers0 = triggers1['pmids']
-
+def process_entities(entities1, triggers1, sentences1, params):
+    
     input0 = OrderedDict()
-
     sentences0 = sentences1['doc_data']
     levels = []
+    
+    if params['predict'] != 1: #train and dev
+        entities0 = entities1['pmids']
+        triggers0 = triggers1['pmids']
 
-    for pmid in entities0:
-        entities = entities0[pmid]
-        triggers = triggers0[pmid]
+    for pmid in sentences0:       
         sentences = sentences0[pmid]
+        terms = []
+        if params['predict'] != 1: #train and dev
+            entities = entities0[pmid]
+            triggers = triggers0[pmid]
+            terms = entities['terms']
+            terms.extend(triggers['terms'])
 
-        terms = entities['terms']
-        terms.extend(triggers['terms'])
-
-        nest_level, terms = count_nest_level(terms, params)
-        # nest_level, terms = utils.count_nest_level(terms)
-        # terms, file_discard_count = utils.dicard_invalid_nes(terms, sentences)
-        levels.append(nest_level)
+            nest_level, terms = count_nest_level(terms, params)
+            # nest_level, terms = utils.count_nest_level(terms)
+            # terms, file_discard_count = utils.dicard_invalid_nes(terms, sentences)
+            levels.append(nest_level)
 
         abst_text = '\n'.join([sent['sentence'] for sent in sentences])
         spans = []
@@ -199,7 +201,7 @@ def process_entities(entities1, triggers1, sentences1, params, dirpath):
             offsets = sentence['offsets']
             # words = sentence['words']
             # chars = sentence['chars']
-            # sent = sentence['sentence']
+            # sent = sentence['sentence']         
 
             # nner
             # tags, terms_sentence = utils.assign_label(offsets, terms)
@@ -276,24 +278,27 @@ def process_entities(entities1, triggers1, sentences1, params, dirpath):
 
                 readable_ents[eid]['toks'] = toks
 
-    max_nest_level = max(levels)
-    max_nest_level += 1
+    if params['predict'] != 1: #train and dev
+        max_nest_level = max(levels)
+        max_nest_level += 1
 
     for pmid in sentences1['doc_data']:
         in_sentences = sentences1['doc_data'][pmid]
         out_sentences = []
-        label_count = len(in_sentences[0]['tags'])
-        pad_level = max_nest_level - label_count
+        if params['predict'] != 1: #train and dev
+            label_count = len(in_sentences[0]['tags'])
+            pad_level = max_nest_level - label_count
 
         for xx, sentence in enumerate(in_sentences):
-            tags = sentence['tags']
-            pad_label = [['O'] * len(tags[0])]
-            tags.extend(pad_label * pad_level)
+            if params['predict'] != 1: #train and dev
+                tags = sentence['tags']
+                pad_label = [['O'] * len(tags[0])]
+                tags.extend(pad_label * pad_level)
 
-            # nner
-            tags_terms = sentence['tags_terms']
-            pad_label = [['O'] * len(tags_terms[0])]
-            tags_terms.extend(pad_label * pad_level)
+                # nner
+                tags_terms = sentence['tags_terms']
+                pad_label = [['O'] * len(tags_terms[0])]
+                tags_terms.extend(pad_label * pad_level)
 
             out_sentences.append(sentence)
 

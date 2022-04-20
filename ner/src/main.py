@@ -94,7 +94,7 @@ def main():
 
     
     # Force predict = False
-    parameters['predict'] = False
+    parameters['predict'] = -1
 
     train_data = prepdata.prep_input_data(parameters['train_data'], parameters)
     dev_data = prepdata.prep_input_data(parameters['dev_data'], parameters)
@@ -194,7 +194,7 @@ def main():
         if parameters['fp16']:
             model, optimizer = amp.initialize(model, optimizer, opt_level="O1")
 
-            training.train(train_data_loader=train_dataloader, dev_data_loader=dev_dataloader,
+        training.train(train_data_loader=train_dataloader, dev_data_loader=dev_dataloader,
                         train_data=train_data, dev_data=dev_data, params=parameters, model=model,
                         optimizer=optimizer, 
                         scheduler=scheduler)

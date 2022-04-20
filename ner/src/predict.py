@@ -74,7 +74,7 @@ def test():
     config_path = getattr(inp_args, 'yaml')
 
     # debug
-    # config_path = "experiments/0/baseline/predict-dev.yaml"
+    # config_path = "experiments/0/baseline/predict-test.yaml"
     
     # load params
     with open(config_path, 'r') as stream:

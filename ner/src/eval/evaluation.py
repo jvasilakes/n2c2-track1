@@ -3,8 +3,8 @@ import os
 import torch
 from tqdm import tqdm
 
-from eval.evalRE import estimate_ent
-from scripts.pipeline_process import gen_ner_ann_files, gen_rel_ann_files
+from eval.evalRE import estimate_ent, gen_annotation_ent
+# from scripts.pipeline_process import gen_ner_ann_files, gen_rel_ann_files
 from utils import utils
 from utils.utils import _humanized_time, debug
 
@@ -59,13 +59,13 @@ def eval(model, eval_dir, result_dir, eval_dataloader, eval_data,
         ]
 
         with torch.no_grad():
-            if not params['predict']:
+            if params['predict'] == 0: #train
                 ner_out, _ = model(tensors, epoch)
-            else:
+            else: #dev, test
                 ner_out, e_golds = model(tensors)
                
         ner_preds = ner_out['preds']
-        if not params['predict']:  # Debug only
+        if params['predict'] == 0:  # Debug only
                 # Case train REL only
             if params['skip_ner'] and params['rel_epoch'] >= (params['epoch'] - 1) and params['#use_gold_ner']:
                     ner_terms = ner_out['gold_terms']
@@ -77,14 +77,7 @@ def eval(model, eval_dir, result_dir, eval_dataloader, eval_data,
                 ner_preds = ner_out['golds']
             else:
                 ner_terms = ner_out['terms']
-        else:
-                # if params['gold_eval'] or params['pipelines'] or params['predict_rel']:
-                #     if params['pipelines'] and params['pipe_flag'] == 0:
-                #         ner_terms = ner_out['terms']
-                #     else:
-                #         ner_terms = ner_out['gold_terms']
-                #         ner_preds = ner_out['golds']
-                # else:
+        else:           
             ner_terms = ner_out['terms']
 
         all_ner_terms.append(ner_terms)
@@ -139,25 +132,21 @@ def eval(model, eval_dir, result_dir, eval_dataloader, eval_data,
             torch.cuda.empty_cache()
 
     
-    if params['predict'] and params['pipelines']:
-        if params['pipe_flag'] == 0:
-            gen_ner_ann_files(fidss, ent_anns, params)
-            return
-        elif params['pipe_flag'] == 1:
-            gen_rel_ann_files(fidss, ent_anns, None, params)
-            return
-
-     # n2c2: entity and relation
-    n2c2_scores = estimate_ent(ref_dir=eval_dir,
-                                result_dir=result_dir,
-                                fids=fidss,
-                                ent_anns=ent_anns,                              
-                                params=params)
-        # Print scores
-    show_scores(params, n2c2_scores)
+    if params['predict'] == 1: #test
+        gen_annotation_ent(fidss, ent_anns, params, result_dir)
     
-    # saving models
-    if not params['predict']:
+    n2c2_scores = None
+    if params['predict'] != 1: # train and dev
+        # n2c2: entity and relation
+        n2c2_scores = estimate_ent(ref_dir=eval_dir,
+                                    result_dir=result_dir,
+                                    fids=fidss,
+                                    ent_anns=ent_anns,                              
+                                    params=params)
+        # Print scores
+        show_scores(params, n2c2_scores)
+        
+        # saving models    
         if epoch > params['save_st_ep']:
             save_models(model, params, optimizer, global_steps, epoch, n2c2_scores)
 

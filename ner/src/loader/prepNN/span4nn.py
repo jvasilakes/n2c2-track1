@@ -163,10 +163,10 @@ def get_batch_data(fid, entities, terms, valid_starts, sw_sentence, words, words
 
             # Ignore spans containing incomplete words
             valid_span = True
-            if not (params['predict'] and (params['pipelines'] and params['pipe_flag'] != 0)):
+            if not (params['predict'] == 1 and (params['pipelines'] and params['pipe_flag'] != 0)):
                 if span_start not in valid_starts or (span_end + 1) not in valid_starts:
                     # Ensure that there is no entity label here
-                    if not (params['predict'] and (params['pipelines'] and params['pipe_flag'] != 0)):
+                    if not (params['predict'] == 1 and (params['pipelines'] and params['pipe_flag'] != 0)):
                         # TODO: temporarily comment to fix bug, check again
                         assert (span_start, span_end) not in entities
 

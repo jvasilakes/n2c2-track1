@@ -17,7 +17,7 @@ def brat_loader(files_fold, params):
     count = 0
     for filef in sorted(file_list):
         # count += 1
-        # if count % 10 == 0:
+        # if count % 2 == 0:
         #     break
         
         if filef.split("/")[-1].startswith("."):
@@ -45,10 +45,10 @@ def brat_loader(files_fold, params):
         typesR = []
         infoR = OrderedDict()
 
-        if '0098' in filename:
-            print('Debug')
+        # if '0098' in filename:
+        #     print('Debug')
         
-        if os.path.exists(os.path.join(ffolder, "".join([filename, ".ann"]))):
+        if params['predict'] != 1 and os.path.exists(os.path.join(ffolder, "".join([filename, ".ann"]))):
             with open(os.path.join(ffolder, "".join([filename, ".ann"])), encoding="UTF-8") as infile:
                 for line in infile:
 
@@ -145,7 +145,7 @@ def brat_loader(files_fold, params):
                 frelations['counted_types'] = typesR2
 
         # check empty
-        if len(idsT) == len(idsTR) == 0 and not (params['pretrain_vae']):
+        if len(idsT) == len(idsTR) == 0 and not (params['pretrain_vae']) and params['predict'] != 1:
             continue
 
         else:
