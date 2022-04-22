@@ -20,12 +20,12 @@ class BratMultiTaskDataset(Dataset):
     ENCODINGS = {}
 
     def __init__(self, data_dir, sentences_dir,
-                 label_names="all", window_size=0,
-                 max_examples=-1, mark_entities=False,
-                 entity_markers=None):
+                 label_names="all", load_labels=True, window_size=0,
+                 max_examples=-1, mark_entities=False, entity_markers=None):
         self.data_dir = data_dir
         self.sentences_dir = sentences_dir
         self.label_names = self._validate_label_names(label_names)
+        self.load_labels = load_labels
         self.window_size = window_size
         self.max_examples = max_examples
         self.mark_entities = mark_entities
@@ -107,28 +107,27 @@ class BratMultiTaskDataset(Dataset):
 
         # Encode the labels
         labels = {}
-        for attr_name in self.label_names:
-            if isinstance(example, br.Event):
-                try:
-                    val = example.attributes[attr_name].value
-                except KeyError as e:
-                    print(e)
-                    print(example)
-                    input()
-            elif isinstance(example, br.Attribute):
-                if example.type != attr_name:
-                    continue
-                val = example.value
-            else:
-                raise ValueError(f"Found unsupported example type '{type(example)}'.")  # noqa
-            labels[attr_name] = self.ENCODINGS[attr_name][val]
+        if self.load_labels is True:
+            for attr_name in self.label_names:
+                if isinstance(example, br.Event):
+                    try:
+                        val = example.attributes[attr_name].value
+                    except KeyError:
+                        raise KeyError(f"Didn't find attribute {attr_name} in {example.attributes}")  # noqa
+                elif isinstance(example, br.Attribute):
+                    if example.type != attr_name:
+                        continue
+                    val = example.value
+                else:
+                    raise ValueError(f"Found unsupported example type '{type(example)}'.")  # noqa
+                labels[attr_name] = self.ENCODINGS[attr_name][val]
 
         return {"text": text,
                 "entity_char_span": (entity_start, entity_end),
                 # For reconstructing original entity span offsets
                 #  in the source document.
                 "char_offset": context[0]["start_index"],
-                "labels": labels,
+                "labels": labels or None,
                 "docid": example.docid}
 
     def preprocess_example(self, example: br.Annotation):
@@ -347,18 +346,30 @@ class BasicBertDataModule(pl.LightningDataModule):
             # Optional: levitated_marker_idxs: []
         }
 
-        # Collate entity_char_spans, char_offsets, texts, docids, labels
+        # Collate entity_char_spans, char_offsets, texts, docids
         for ex in examples:
             batch["entity_char_spans"].append(ex["entity_char_span"])
             batch["char_offsets"].append(ex["char_offset"])
             batch["texts"].append(ex["text"])
             batch["docids"].append(ex["docid"])
-            for (task, val) in ex["labels"].items():
-                batch["labels"][task].append(val)
         batch["entity_char_spans"] = torch.tensor(batch["entity_char_spans"])
-        for task in batch["labels"].keys():
-            batch["labels"][task] = torch.tensor(batch["labels"][task])
-        batch["labels"] = dict(batch["labels"])
+
+        # Collate labels
+        # batch["labels"] == None if all example["labels"] == None
+        for ex in examples:
+            if ex["labels"] is None:
+                batch["labels"] = None
+            else:
+                for (task, val) in ex["labels"].items():
+                    if batch["labels"] is None:
+                        msg = "Found some examples with labels and some without!"  # noqa
+                        raise ValueError(msg)
+                    batch["labels"][task].append(val)
+        if batch["labels"] is not None:
+            for task in batch["labels"].keys():
+                batch["labels"][task] = torch.tensor(batch["labels"][task])
+            # convert defaultdict to regular dict
+            batch["labels"] = dict(batch["labels"])
 
         # Get encodings
         encodings = self.tokenizer(batch["texts"], truncation=True,
