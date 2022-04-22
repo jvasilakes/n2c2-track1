@@ -24,7 +24,7 @@ use_entity_spans: true
 entity_pool_fn: first-last
 mark_entities: true
 entity_markers: ["[unused0]", "[unused1]"]
-use_levitated_markers: false
+use_levitated_markers: true
 levitated_marker_pool_fn: first-last
 max_seq_length: 256
 dropout_prob: 0.2
