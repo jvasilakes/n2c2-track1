@@ -24,6 +24,9 @@ class Annotation(object):
     def __eq__(self, other):
         raise NotImplementedError()
 
+    def __hash__(self):
+        raise NotImplementedError()
+
     def __repr__(self):
         field_strings = []
         for (k, v) in self.__dict__.items():
@@ -91,6 +94,15 @@ class Span(Annotation):
             self.text == other.text,
         ])
 
+    def __hash__(self):
+        return hash((
+            self.type,
+            self.start_index,
+            self.end_index,
+            self.text,
+        ))
+
+
     def to_brat_str(self, output_references=False):
         # output_references is unused but simplifies to_brat_str for Attribute
         return f"{self.id}\t{self.type} {self.start_index} {self.end_index}\t{self.text}"  # noqa
@@ -119,6 +131,13 @@ class Attribute(Annotation):
             # other, so we'll use IDs to avoid endless recursion.
             self.reference.id == other.reference.id,
         ])
+
+    def __hash__(self):
+        return hash((
+            self.type,
+            self.value,
+            self.reference.id,
+        ))
 
     @property
     def span(self):
