@@ -3,15 +3,13 @@ seed: 2021
 log_interval: 300
 
 # DATA params
-orig_dir: ../data/original_v3/
-biom_dir: ../data/segmented/
-spacy_dir: ../data/spacy/
-pred_dir: ../predictions/
+data_dir: ../data/
+#pred_dir: ../results/predictions/
 dev_miss: ../dev_miss.txt
-output_folder: ../saved_models/
+results_folder: ../results/
 logs: ../logs/
 ## Log params
-exp_name: 'n2c2'
+#exp_name: 'n2c2'
 model_name: 'bert'
 # Hyper-parameters
 batch_size: 32
