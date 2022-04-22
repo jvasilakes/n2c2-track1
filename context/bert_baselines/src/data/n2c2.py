@@ -74,6 +74,10 @@ class n2c2DataModule(BasicBertDataModule):
         self._ran_setup = False
 
     def setup(self, stage=None):
+        load_labels = True
+        if stage == "predict":
+            load_labels = False
+            warnings.warn("Predict mode ON: not loading gold-labels.")
         train_path = os.path.join(self.data_dir, "train")
         train_sent_path = os.path.join(self.sentences_dir, "train")
         self.train = self.dataset_class(
@@ -82,7 +86,8 @@ class n2c2DataModule(BasicBertDataModule):
                 label_names=self.tasks_to_load,
                 max_examples=self.max_train_examples,
                 mark_entities=self.mark_entities,
-                entity_markers=self.entity_markers)
+                entity_markers=self.entity_markers,
+                load_labels=load_labels)
 
         val_path = os.path.join(self.data_dir, "dev")
         val_sent_path = os.path.join(self.sentences_dir, "dev")
@@ -92,7 +97,8 @@ class n2c2DataModule(BasicBertDataModule):
                     window_size=self.window_size,
                     label_names=self.tasks_to_load,
                     mark_entities=self.mark_entities,
-                    entity_markers=self.entity_markers)
+                    entity_markers=self.entity_markers,
+                    load_labels=load_labels)
         else:
             warnings.warn("No dev set found.")
             self.val = None
@@ -105,7 +111,8 @@ class n2c2DataModule(BasicBertDataModule):
                     window_size=self.window_size,
                     label_names=self.tasks_to_load,
                     mark_entities=self.mark_entities,
-                    entity_markers=self.entity_markers)
+                    entity_markers=self.entity_markers,
+                    load_labels=load_labels)
         else:
             warnings.warn("No test set found.")
             self.test = None
