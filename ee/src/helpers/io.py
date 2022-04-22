@@ -1,11 +1,12 @@
 import os
+from os.path import exists, join
 import sys
 import yaml
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.pyplot import figure
 
-def setup_log(params, folder_name=None, mode='train'):
+def setup_log(config, folder_name=None, mode='train'):
     """
     Setup .log file to record training process and results.
     Args:
@@ -13,21 +14,20 @@ def setup_log(params, folder_name=None, mode='train'):
     Returns:
         model_folder (str): model directory
     """
-    if folder_name:
-        model_folder = os.path.join(params['output_folder'], folder_name)
+    config['pred_dir'] = join(folder_name, 'predictions')
+    if mode == 'train': #prediction on dev
+        config['pred_dir'] = join(config['pred_dir'], 'dev')
     else:
-        model_folder = os.path.join(params['output_folder'], 'temp')
-
-    experiment_name = exp_name(params)
-    model_folder = os.path.join(model_folder, experiment_name)
-
-    if not os.path.exists(model_folder):
-        os.makedirs(model_folder)
-    log_file = os.path.join(model_folder, mode + '.log')
+        config['pred_dir'] = join(config['pred_dir'], 'test')
+    experiment_name = exp_name(config)
+    # model_folder = os.path.join(config['model_folder'], experiment_name)
+    if not os.path.exists(folder_name):
+        os.makedirs(folder_name)
+    log_file = os.path.join(folder_name, mode + '.log')
 
     f = open(log_file, 'w')
     sys.stdout = Tee(sys.stdout, f)
-    return model_folder, experiment_name
+    return experiment_name
 
 def load_config(file):
     with open(file, 'r') as stream:
@@ -83,18 +83,19 @@ def print_preds(tracker, loader, config, epoch, mode='dev'):
     ievent= dataset.ievent_vocab
     iaction = dataset.iaction_vocab
     file_dict = {}
+
     for i, s in enumerate(samples):
         tmp = dataset[s][3].split('/')
         trig, fname = tmp[0:len(tmp)-1],tmp[-1]
         pos = dataset[s][4]
         if fname in file_dict:
             file_dict[fname].append((trig, pos, event_pred[i], action_pred[i]))
-            
         else:
-            file_dict[fname] = [(trig,  pos, event_pred[i], action_pred[i])]      
-            
+            file_dict[fname] = [(trig,  pos, event_pred[i], action_pred[i])]
     for fname, res_list in file_dict.items():
-        with open(config['pred_dir']+mode+'/'+fname+".ann", "w") as tmp_file:
+        if not exists(config['pred_dir']):
+            os.makedirs(config['pred_dir'])
+        with open(join(config['pred_dir'], fname+".ann"), "w") as tmp_file:
             # Move read cursor to the start of file.
             count = 0
             for trig, pos, e_preds, a_preds in res_list:
@@ -130,7 +131,7 @@ def print_cases(samples, preds, dev_loader, config, epoch):
         fout.write("Epoch {}\n".format(epoch))
     
 def print_start(epoch, state, mode, secs, disp_count):
-    if mode == 'train':
+    if mode == 'train' or mode =='test':
         print('---------- Epoch: {:02d} ----------'.format(epoch))    
     template = '\t{:<5} / LOSS = {:10.4f}  Time {}  Dispotion counts: {}/{}/{}/{}'
     print(template.format(mode.upper(), state['total'] if state['total'] else 0.0, 
@@ -181,8 +182,8 @@ def print_options(params):
             
             - Epoch             {}\tWarmup Epochs     {}
             - Early stop        {}\tPatience = {}
-            - Train/Dev         {}, {}
             - Save folder       {}
+            - Mode              {}
             '''.format(
                     params['use_verbs'], params['bert'], params['batch_size'],  
                     params['accumulate_batches'], params['lr'],  params['dropout'],
@@ -194,8 +195,17 @@ def print_options(params):
                     params['weight_decay'], params['clip'],
                     params['epochs'], params['warmup_epochs'], 
                     params['early_stop'], params['patience'],
-                    params['train_data'], params['dev_data'], params['output_folder'],
+                    params['model_folder'], params['mode']
                     ))
+    if params['mode'] == 'train':
+        print('''Data:
+                - Train/Dev         {}, {}
+                '''.format(params['train_data'], params['dev_data']))
+    elif params['mode'] == 'predict':
+        print('''Data:
+                - Test         {}
+            '''.format(params['test_data']))
+
 def plt_figure(self, epoch, classes, metric, y_title):
 
     plt.style.use('ggplot')

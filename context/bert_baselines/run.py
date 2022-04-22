@@ -43,35 +43,42 @@ def parse_args():
             help="Save checkpoint after last training epoch.")
 
     val_parser = subparsers.add_parser(
-            "validate", help="Evaluate a trained model on the dev set.")
+            "validate", help="Evaluate a trained model.")
     val_parser.add_argument(
             "config_file", type=str, help="Path to a yaml config file")
     val_parser.add_argument(
-            "--datasplit", type=str, default="dev", choices=["train", "dev"],
+            "--datasplit", type=str, default="dev",
+            choices=["train", "dev", "test"],
             help="Evaluate on this data split. Default 'dev'.")
-    val_parser.add_argument(
-            "--output_brat", action="store_true", default=False,
-            help="""If set, save brat formatted predictions
-                    to the predictions/ directory under the logdir.""")
-    val_parser.add_argument(
+
+    pred_parser = subparsers.add_parser(
+            "predict", help="Run prediction on the specified data split.")
+    pred_parser.add_argument(
+            "config_file", type=str, help="Path to a yaml config file.")
+    pred_parser.add_argument(
+            "--datasplit", type=str, default="dev",
+            choices=["train", "dev", "test"],
+            help="Predict on this data split. Default 'dev'.")
+    pred_parser.add_argument(
             "--output_json", action="store_true", default=False,
             help="""If set, save json formatted predictions
                     to the predictions/ directory under the logdir.""")
-    val_parser.add_argument(
+    pred_parser.add_argument(
             "--output_token_masks", action="store_true", default=False,
             help="""If set, save tokens and stochastic masks to the
-                    token_masks/ directory under the logdir.""")
-
-    test_parser = subparsers.add_parser(
-            "test", help="Evaluate a trained model on the test set.")
-    test_parser.add_argument(
-            "config_file", type=str, help="Path to a yaml config file")
-    test_parser.add_argument(
-            "--output_brat", action="store_true", default=False,
-            help="""If set, save brat formatted predictions
-                    to the predictions/ directory under the logdir.""")
+                    token_masks/ directory under the logdir.
+                    Only valid for bert-rationale-model.""")
 
     return parser.parse_args()
+
+
+def load_datamodule(config, stage):
+    datamodule = load_datamodule_from_config(config)
+    datamodule.setup(stage=stage)
+    print(datamodule)
+    print("Label Spec")
+    print('  ' + str(datamodule.label_spec))
+    return datamodule
 
 
 def main(args):
@@ -85,13 +92,6 @@ def main(args):
 
     pl.seed_everything(config.random_seed, workers=True)
 
-    datamodule = load_datamodule_from_config(config)
-    datamodule.setup()
-    print(datamodule)
-
-    print("Label Spec")
-    print('  ' + str(datamodule.label_spec))
-    run_args = [config, datamodule]
     run_kwargs = {
             "logdir": logdir,
             "quiet": args.quiet,
@@ -106,17 +106,21 @@ def main(args):
         run_kwargs["version"] = version
         run_kwargs["save_last_epoch"] = args.save_last_epoch
         run_fn = run_continue_train
-    elif args.command in ["validate", "test"]:
+    elif args.command == "validate":
         run_kwargs["datasplit"] = args.datasplit
         version = get_current_experiment_version(args.config_file)
         run_kwargs["version"] = version
-        run_kwargs["output_brat"] = args.output_brat
+        run_fn = run_validate
+    elif args.command == "predict":
+        run_kwargs["datasplit"] = args.datasplit
+        version = get_current_experiment_version(args.config_file)
+        run_kwargs["version"] = version
         run_kwargs["output_json"] = args.output_json
         run_kwargs["output_token_masks"] = args.output_token_masks
-        run_fn = run_validate
+        run_fn = run_predict
     else:
         raise argparse.ArgumentError(f"Unknown command {args.command}")
-    run_fn(*run_args, **run_kwargs)
+    run_fn(config, **run_kwargs)
 
     curr_time = datetime.datetime.now()
     print(f"End: {curr_time}")
@@ -157,8 +161,10 @@ def find_checkpoint(logdir, model_name, version, ckpt_glob="*.ckpt"):
     return checkpoint_file, hparams_file
 
 
-def run_train(config, datamodule, logdir="logs/", version=None,
+def run_train(config, logdir="logs/", version=None,
               save_last_epoch=False, quiet=False):
+
+    datamodule = load_datamodule(config, stage=None)
 
     version_dir = os.path.join(logdir, config.name, f"version_{version}")
     os.makedirs(version_dir, exist_ok=False)
@@ -215,8 +221,10 @@ def run_train(config, datamodule, logdir="logs/", version=None,
         print(f"Final training epoch checkpointed at {ckpt_path}")
 
 
-def run_continue_train(config, datamodule, logdir="logs/", version=None,
+def run_continue_train(config, logdir="logs/", version=None,
                        save_last_epoch=False, quiet=False):
+    datamodule = load_datamodule(config, stage=None)
+
     checkpoint_file, hparams_file = find_checkpoint(
             logdir, config.name, version, ckpt_glob="last-train-epoch=*.ckpt")  # noqa
     model_class = MODEL_LOOKUP[config.model_name]
@@ -263,10 +271,10 @@ def run_continue_train(config, datamodule, logdir="logs/", version=None,
         print(f"Final training epoch checkpointed at {ckpt_path}")
 
 
-def run_validate(config, datamodule, datasplit="dev",
-                 logdir="logs/", version=None, quiet=False,
-                 output_brat=False, output_json=False,
-                 output_token_masks=False):
+def run_validate(config, datasplit="dev",
+                 logdir="logs/", version=None, quiet=False):
+
+    datamodule = load_datamodule(config, stage=None)
 
     checkpoint_file, hparams_file = find_checkpoint(
             logdir, config.name, version, ckpt_glob="epoch*.ckpt")
@@ -300,19 +308,54 @@ def run_validate(config, datamodule, datasplit="dev",
     md = format_results_as_markdown_table(results)
     print(md)
 
-    if True in (output_brat, output_json, output_token_masks):
-        if isinstance(datamodule, CombinedDataModule):
-            val_dataloader = val_dataloader_fn(predicting=True)
-        preds = trainer.predict(model, dataloaders=val_dataloader)
 
-    if output_brat is True:
-        anns_by_datatset = batched_predictions_to_brat(preds, datamodule)
-        for (dataset, anns) in anns_by_datatset.items():
-            preds_dir = os.path.join(logdir, config.name, f"version_{version}",
-                                     "predictions", dataset, datasplit)
-            os.makedirs(preds_dir, exist_ok=False)
-            for doc_anns in anns:
-                doc_anns.save_brat(preds_dir)
+def run_predict(config, datasplit="dev",
+                logdir="logs/", version=None, quiet=False,
+                output_json=False, output_token_masks=False):
+
+    datamodule = load_datamodule(config, stage="predict")
+
+    checkpoint_file, hparams_file = find_checkpoint(
+            logdir, config.name, version, ckpt_glob="epoch*.ckpt")
+
+    model_class = MODEL_LOOKUP[config.model_name]
+    model = model_class.load_from_checkpoint(
+            checkpoint_path=checkpoint_file,
+            hparams_file=hparams_file)
+    model.eval()
+
+    available_gpus = min(1, torch.cuda.device_count())
+    enable_progress_bar = not quiet
+    trainer = pl.Trainer(
+            logger=False,  # Disable tensorboard logging
+            gpus=available_gpus,
+            enable_progress_bar=enable_progress_bar
+            )
+    if datasplit == "train":
+        pred_dataloader_fn = datamodule.train_dataloader
+    elif datasplit == "dev":
+        pred_dataloader_fn = datamodule.val_dataloader
+    elif datasplit == "test":
+        if datamodule.test_dataloader() is None:
+            raise OSError("No test data found. Aborting.")
+        pred_dataloader_fn = datamodule.test_dataloader
+    else:
+        raise ValueError(f"Unknown validation data split '{datasplit}'")
+
+    pred_dataloader_kwargs = {}
+    if isinstance(datamodule, CombinedDataModule):
+        pred_dataloader_kwargs = {"predicting": True}
+    pred_dataloader = pred_dataloader_fn(**pred_dataloader_kwargs)
+    preds = trainer.predict(model, dataloaders=pred_dataloader)
+
+    # Output to brat
+    anns_by_datatset = batched_predictions_to_brat(preds, datamodule)
+    for (dataset, anns) in anns_by_datatset.items():
+        preds_dir = os.path.join(logdir, config.name, f"version_{version}",
+                                 "predictions", dataset, "brat", datasplit)
+        os.makedirs(preds_dir, exist_ok=False)
+        for doc_anns in anns:
+            doc_anns.save_brat(preds_dir)
 
     if output_json is True:
         preds_by_dataset = batched_predictions_to_json(preds, datamodule)
@@ -330,8 +373,10 @@ def run_validate(config, datamodule, datasplit="dev",
     if output_token_masks is True:
         if config.model_name != "bert-rationale-classifier":
             raise ValueError("--output_token_masks only compatible with bert-rationale-classifier.")  # noqa
-        mask_dir = os.path.join(logdir, config.name, f"version_{version}",
-                                "token_masks", dataset)
+        raise NotImplementedError("Still working on this...")
+        mask_dir = os.path.join(
+                logdir, config.name, f"version_{version}",
+                "predictions", dataset, "token_masks", datasplit)
         os.makedirs(mask_dir, exist_ok=False)
         masked_by_task = batched_predictions_to_masked_tokens(
                 preds, datamodule)
@@ -467,9 +512,9 @@ def batched_predictions_to_json(preds, datamodule):
                 tokens = [tok for (tok, tid) in zip(tokens, input_ids) if tid != 0]  # noqa
                 datum["tokens"] = tokens
                 enc_pred = preds[i].int().item()
-                enc_lab = batch["labels"][task][i].int().item()
                 datum["prediction"] = datamodule.inverse_transform(
                         task, [enc_pred])[0]
+                enc_lab = batch["labels"][task][i].int().item()
                 datum["label"] = datamodule.inverse_transform(
                         task, [enc_lab])[0]
                 preds_by_dataset_and_task[dataset][base_task].append(datum)
