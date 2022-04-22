@@ -9,10 +9,14 @@ import numpy as np
 class Annotation(object):
 
     def __init__(self, _id, _source_file):
-        self.id = _id
+        self._id = _id
         self._source_file = _source_file
         if _source_file is not None:
             self._source_file = os.path.basename(_source_file)
+
+    @property
+    def id(self):
+        return self._id
 
     def update(self, key, value):
         self.__dict__[key] = value
@@ -68,16 +72,19 @@ class Span(Annotation):
     def __init__(self, _id, _type, start_index, end_index,
                  text, _source_file=None):
         super().__init__(_id=_id, _source_file=_source_file)
-        self.type = _type
+        self._type = _type
         self.start_index = start_index
         self.end_index = end_index
         self.text = text
+
+    @property
+    def type(self):
+        return self._type
 
     def __eq__(self, other):
         if not isinstance(other, Span):
             return False
         return all([
-            self.id == other.id,
             self.type == other.type,
             self.start_index == other.start_index,
             self.end_index == other.end_index,
@@ -92,23 +99,38 @@ class Span(Annotation):
 class Attribute(Annotation):
     def __init__(self, _id, _type, value, reference, _source_file=None):
         super().__init__(_id=_id, _source_file=_source_file)
-        self.type = _type
+        self._type = _type
         self.value = value
         self.reference = reference
         if not isinstance(self.reference, (Span, Event, type(None))):
             raise ValueError(f"Attribute reference must be instance of Span, Event, or None. Got {type(self.reference)}.")  # noqa
 
+    @property
+    def type(self):
+        return self._type
+
     def __eq__(self, other):
         if not isinstance(other, Attribute):
             return False
         return all([
-            self.id == other.id,
             self.type == other.type,
             self.value == other.value,
             # Attributes and events can point to each
             # other, so we'll use IDs to avoid endless recursion.
             self.reference.id == other.reference.id,
         ])
+
+    @property
+    def span(self):
+        if self.reference is None:
+            span = None
+        elif isinstance(self.reference, Span):
+            span = self.reference
+        elif isinstance(self.reference, Event):
+            span = self.reference.span
+        else:
+            raise ValueError(f"reference must be Span, Event, or None. Got {type(self.reference)}.")  # noqa
+        return span
 
     @property
     def start_index(self):
@@ -148,17 +170,20 @@ class Attribute(Annotation):
 class Event(Annotation):
     def __init__(self, _id, _type, span, attributes=None, _source_file=None):
         super().__init__(_id=_id, _source_file=_source_file)
-        self.type = _type
+        self._type = _type
         self.span = span
         self.attributes = attributes or {}
         for attr in self.attributes.values():
             attr.reference = self
 
+    @property
+    def type(self):
+        return self._type
+
     def __eq__(self, other):
         if not isinstance(other, Event):
             return False
         return all([
-            self.id == other.id,
             self.type == other.type,
             self.span == other.span,
             self.attributes == other.attributes,
