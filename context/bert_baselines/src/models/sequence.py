@@ -219,20 +219,21 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
             pooled_output = bert_outputs.pooler_output
 
         clf_outputs = {}
-        # TODO: this assumes that we're always passing labels
-        #  which wont' be the case during test-time prediction.
-        # for (task, clf_head) in self.classifier_heads.items():
-        for (task, task_labels) in labels.items():
+        for (task, clf_head) in self.classifier_heads.items():
             if dataset is not None:
                 # If doing multi-dataset learning, the task will
                 # be formatted like {dataset}:{label},
                 # e.g., "n2c2Context:Action"
                 if dataset != task.split(':')[0]:
                     continue
-            logits = self.classifier_heads[task](pooled_output)
-            clf_loss = self.classifier_loss_fns[task](
-                    logits.view(-1, self.label_spec[task]),
-                    task_labels.view(-1))
+            logits = clf_head(pooled_output)
+            if labels is not None:
+                task_labels = labels[task]
+                clf_loss = self.classifier_loss_fns[task](
+                        logits.view(-1, self.label_spec[task]),
+                        task_labels.view(-1))
+            else:
+                clf_loss = None
             clf_outputs[task] = SequenceClassifierOutput(
                     loss=clf_loss,
                     logits=logits,
@@ -272,7 +273,6 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
         inputs_with_predictions = {
                 "input_ids": batch["encodings"]["input_ids"],
                 "texts": batch["texts"],
-                "labels": batch["labels"],
                 "entity_token_idxs": batch["entity_token_idxs"],
                 "entity_char_spans": batch["entity_char_spans"],
                 "char_offsets": batch["char_offsets"],

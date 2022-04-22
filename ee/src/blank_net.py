@@ -36,6 +36,8 @@ class BlankNet(nn.Module):
             self.lang_encoder = BertModel.from_pretrained('bert-base-uncased') 
         elif config['bert'] =='clinical':
             self.lang_encoder = AutoModel.from_pretrained("emilyalsentzer/Bio_ClinicalBERT")
+        elif config['bert'] =='blue':
+            self.lang_encoder = AutoModel.from_pretrained("bionlp/bluebert_pubmed_mimic_uncased_L-12_H-768_A-12")
         else:
             print('Invalid BERT model')
             exit(1)

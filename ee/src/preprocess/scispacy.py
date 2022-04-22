@@ -2,16 +2,19 @@ import os
 from os.path import isfile, join
 import argparse
 from glob import glob
-
+import json
+import re
 import spacy
 import scispacy  # noqa
 from tqdm import tqdm
-from helpers.io import *
-import json
-import re
+import sys
+
+sys.path.append('../helpers')
+from io import *
+
 
 def main(args):
-    config = load_config(args.config)
+#     config = load_config(args.config)
     paths = [args.datadir+'train/', args.datadir +'dev/']
     nlp = spacy.load("en_core_sci_scibert")
 #     nlp.max_length = 1000000 
@@ -67,7 +70,7 @@ def clean_token(s_tok):
     
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--config', type=str)
+#     parser.add_argument('--config', type=str)
     parser.add_argument('--outdir', type=str)
     parser.add_argument('--datadir', type=str)
     args = parser.parse_args()

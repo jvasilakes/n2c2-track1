@@ -52,6 +52,13 @@ class Trainer(BaseTrainer):
         pr, re, f1, _ = precision_recall_fscore_support(y_true, y_pred, average='macro', zero_division=1)
         return {'micro_f1':mi_f1, 'macro_pr':pr , 'macro_re':re, 'macro_f1':f1,'pred':y_pred}
 
+    def predict(self, tracker):
+        y_sigmoid_ev = np.vstack([entry[0] for entry in tracker['events']])
+        y_pred_ev = np.array(y_sigmoid_ev > self.config['threshold'], dtype=float)
+        y_sigmoid_ac = np.vstack([entry[0] for entry in tracker['actions']])
+        y_pred_ac = np.array(y_sigmoid_ac > self.config['threshold'], dtype=float)
+        tracker['event_preds'] = y_pred_ev
+        tracker['action_preds'] = y_pred_ac
 
     def calculate_performance(self, epoch, tracker, time_, mode='train'):
         tracker['total'] = np.mean(tracker['total'])
@@ -175,7 +182,6 @@ class Trainer(BaseTrainer):
         t1 = time()
         self.model = self.model.eval()
         tracker = self.init_tracker()
-
         with torch.no_grad():
             for batch_idx, batch in enumerate(self.iterators[iter_name]):
                 tracker['total_samples'] += len(batch['names'])

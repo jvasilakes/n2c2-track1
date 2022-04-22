@@ -28,18 +28,11 @@ Entity markers: use both
 |macro    | 0.789 | 0.727 | 0.753 | 0.776 |
 
 ### Possible Contenders
-Combined with i2b2 using...  
-dataset concatenation
+Combined with i2b2 using dataset concatenation
 |      | prec  | rec   | f1    |
 |------|-------|-------|-------|
-|MICRO | 0.833 | 0.833 | 0.833 |
-|MACRO | 0.821 | 0.819 | 0.818 |
-
-length-weighted annealed dataset sampling
-|      | prec  | rec   | f1    |
-|------|-------|-------|-------|
-|MICRO | 0.824 | 0.824 | 0.824 |
-|MACRO | 0.840 | 0.786 | 0.809 |
+|MICRO | 0.828 | 0.828 | 0.828 |
+|MACRO | 0.834 | 0.830 | 0.824 |
 
 
 ## Actor
