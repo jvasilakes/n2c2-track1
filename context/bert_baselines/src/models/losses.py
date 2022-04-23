@@ -77,6 +77,11 @@ class LossLookup(object):
         """
         return SelfAdjDiceLoss
 
+    @staticmethod
+    @loss_function("stochastic", "kl-div-categorical")
+    def get_kl_div_categorical_loss():
+        return KLDivCategorial
+
     # === STOCHASTIC MASKS ===
     @staticmethod
     @loss_function("mask", "ratio")
@@ -100,6 +105,21 @@ class LossLookup(object):
             gamma: float (Default 0.5)  # Relative weight of L0 vs. Lasso loss
         """
         return ControlledSparsityLoss
+
+
+class KLDivCategorial(torch.nn.Module):
+    """
+    KL Divergence between a categorical and uniform distribution.
+    """
+    def __init__(self):
+        super().__init__()
+        self.eps = 1e-12
+
+    def forward(self, alphas):
+        log_dim = torch.log(torch.tensor(alphas.size(-1)))
+        neg_entropy = alphas * torch.log(alphas + self.eps)
+        kl_div = log_dim + neg_entropy
+        return kl_div.mean()
 
 
 class RatioLoss(torch.nn.Module):
