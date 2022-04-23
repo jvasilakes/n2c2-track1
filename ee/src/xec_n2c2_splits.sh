@@ -16,9 +16,10 @@ echo -e "PLM: start training with $1\n"
 ## $1: clinical, base, blue
 ## $2:
 # Applying scispacy
-python main.py --config ../configs/local.yaml --mode train --split default --outdir ../evaluation/default/ --bert blue
-python main.py --config ../configs/local.yaml --mode train --split split0 --outdir ../evaluation/default/ --bert blue
-python main.py --config ../configs/local.yaml --mode train --split split1 --outdir ../evaluation/default/ --bert blue
-python main.py --config ../configs/local.yaml --mode train --split split2 --outdir ../evaluation/default/ --bert blue
-python main.py --config ../configs/local.yaml --mode train --split split3 --outdir ../evaluation/default/ --bert blue
-python main.py --config ../configs/local.yaml --mode train --split split4 --outdir ../evaluation/default/ --bert blue
+python main.py --config ../configs/local.yaml --mode train --split default --bert ${1}
+python main.py --config ../configs/local.yaml --mode train --split split0 --bert ${1}
+python main.py --config ../configs/local.yaml --mode train --split split1 --bert ${1}
+python main.py --config ../configs/local.yaml --mode train --split split2 --bert ${1}
+python main.py --config ../configs/local.yaml --mode train --split split3 --bert ${1}
+python main.py --config ../configs/local.yaml --mode train --split split4 --bert ${1}
+python main.py --config ../configs/local.yaml --mode train --split ensemble --bert ${1}
