@@ -56,9 +56,9 @@ class TokenEmbeddingPooler(nn.Module):
     def get_token_mask_from_indices(self, token_idxs, hidden_size):
         # Use the token_idxs to create a mask over the token dimension
         # in hidden, duplicated across the embedding dimension.
-        token_mask = torch.zeros(hidden_size, dtype=torch.long)
+        token_mask = torch.zeros(hidden_size)
         for (batch_i, idxs) in enumerate(token_idxs):
-            token_mask[batch_i, idxs, :] = 1
+            token_mask[batch_i, idxs, :] = 1.
         return token_mask
 
     @property
@@ -80,11 +80,15 @@ class TokenEmbeddingPooler(nn.Module):
         # hidden dimensions if the non-masked values are all negative.
         masked[torch.logical_not(token_mask)] = -torch.inf
         pooled = torch.max(masked, axis=1)[0]
+        # In case all are -inf
+        pooled = torch.nan_to_num(pooled)
         return pooled
 
     @register("mean")
     def mean_pooler(self, masked, token_mask):
         pooled = masked.sum(axis=1) / token_mask.sum(axis=1)
+        # In case we divided by zero
+        pooled = torch.nan_to_num(pooled)
         return pooled
 
     @register("first")
