@@ -1,4 +1,5 @@
 import os
+import re
 import json
 import argparse
 import datetime
@@ -226,7 +227,7 @@ def run_continue_train(config, logdir="logs/", version=None,
     datamodule = load_datamodule(config, stage=None)
 
     checkpoint_file, hparams_file = find_checkpoint(
-            logdir, config.name, version, ckpt_glob="last-train-epoch=*.ckpt")  # noqa
+            logdir, config.name, version, ckpt_glob="*epoch=*.ckpt")  # noqa
     model_class = MODEL_LOOKUP[config.model_name]
     model = model_class.load_from_checkpoint(
             checkpoint_path=checkpoint_file,
@@ -243,8 +244,11 @@ def run_continue_train(config, logdir="logs/", version=None,
     available_gpus = min(1, torch.cuda.device_count())
     enable_progress_bar = not quiet
     ckpt_bn = os.path.basename(checkpoint_file)
-    prev_epochs = os.path.splitext(ckpt_bn)[0].split('=')[-1]
-    prev_epochs = int(prev_epochs)
+    prev_epochs_match = re.match(r'epoch=([0-9]+)', ckpt_bn)
+    if prev_epochs_match is not None:
+        prev_epochs = int(prev_epochs_match.group(1))
+    else:
+        raise OSError("Couldn't find valid checkpoint file.")
     max_epochs = prev_epochs + 1 + config.max_epochs
     # There is a bug with deterministic indexing on the gpu
     #  in pytorch 1.10, so we have to turn it off.
@@ -489,6 +493,9 @@ def batched_predictions_to_masked_tokens(preds, datamodule):
 
 
 def batched_predictions_to_json(preds, datamodule):
+    """
+    Used by utils/predviewer.py
+    """
     preds_by_dataset_and_task = defaultdict(lambda: defaultdict(list))
     for batch in preds:
         default_dataset_name = datamodule.train_dataloader().dataset.name
