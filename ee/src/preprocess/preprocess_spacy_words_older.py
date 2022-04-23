@@ -154,7 +154,6 @@ def adjust_offsets(old_sents, new_sents, old_entities, f):
         cur += len(s) + 1
 
     ent_sequences = []
-    restart = False
     for ts in terms.values():
         for term in ts:
             new_ts = newtext_break[term[0]:term[1]].replace(" ", "").replace("\n", "")
@@ -172,30 +171,18 @@ def adjust_offsets(old_sents, new_sents, old_entities, f):
             # Find sentence number of each entity
             sent_no = []
             for s_no, sr in enumerate(new_sent_range):
-                target = set(np.arange(sr[0], sr[1]))
-                # if set(np.arange(term[0], term[1])).issubset(target):
-                if term[0] in target or term[1] in target:
+                if set(np.arange(term[0], term[1])).issubset(set(np.arange(sr[0], sr[1]))):
                     sent_no += [s_no]
 
-            if len(sent_no) == 2:
-                print('Cross sentence entity!')
-                new_sent_range[sent_no[0]] = (new_sent_range[sent_no[0]][0], new_sent_range[sent_no[1]][1])
-                new_sents[sent_no[0]] = ' '.join([new_sents[sent_no[0]], new_sents[sent_no[1]]])
-                del new_sent_range[sent_no[1]]
-                del new_sents[sent_no[1]]
-                restart = True
-
-            # assert (len(sent_no) == 1), '{} ({}, {}) -- {} -- {} <> {}'.format(sent_no, term[0], term[1],
-            #                                                                    new_sent_range,
-            #                                                                    newtext_break[term[0]:term[1]], term[3])
+            assert (len(sent_no) == 1), '{} ({}, {}) -- {} -- {} <> {}'.format(sent_no, term[0], term[1],
+                                                                               new_sent_range,
+                                                                               newtext_break[term[0]:term[1]], term[3])
             new_entity = {'id': term[4], 'name': newtext[term[0]:term[1]], 'st': int(term[0]),
                           'end': int(term[1]), 'cl': term[2], 'sent_no': sent_no[0], 'old_pos': term[5]}
 
             new_entities.append(new_entity)
-    if restart:
-        return adjust_offsets(old_sents, new_sents, old_entities, f)
-    else:
-        return new_entities, new_sents
+
+    return new_entities, new_sents
 
 
 ### Convert dataset to Pubtator
@@ -206,7 +193,7 @@ def check_overlap(ord_dict, f):
     prev_en = -1
     for i, (st, en) in enumerate(ord_dict):
         if st < prev_en:
-            print("We have overlapping entities here", f, 'prev_en:', prev_en, 'st:', st)
+            print("We have overlapping issue here", f)
             return True
         prev_en = en
     return False
@@ -231,11 +218,11 @@ def preprocess_spacy_words(txt_files_path, ann_files_path, spacy_files_path, win
                         'action': [], 'temporality': [], 'negation': []}
                 with open(join(txt_files_path, f + ".txt"), 'r') as infile:
                     lines = infile.readlines()
-                if os.path.isfile(join(ann_files_path, f + '.ann')):
-                    with open(join(ann_files_path, f + '.ann'), 'r') as annfile:
-                        for line in annfile.readlines():
-                            cat, parsed = parse_annotation_line(line)
-                            data[cat].append(parsed)
+
+                with open(join(ann_files_path, f + '.ann'), 'r') as annfile:
+                    for line in annfile.readlines():
+                        cat, parsed = parse_annotation_line(line)
+                        data[cat].append(parsed)
 
                 with open(join(spacy_files_path, f + "_spacy.json"), 'r') as senfile:
                     new_sentences = [json.loads(line.strip()) for line in senfile]
@@ -259,9 +246,9 @@ def preprocess_spacy_words(txt_files_path, ann_files_path, spacy_files_path, win
                         unique[(ent['st'], ent['end'])] = [ent]
                 stats['unique_entity_count'] += len(unique.keys())
                 overlap = check_overlap(OrderedDict(sorted(unique.items())), f)
-                # if overlap:
-                #     exit
-                ##
+                if overlap:
+                    exit
+                ###
                 max_sent = len(split_sentences)
                 offsets = get_offsets(split_sentences)
                 ## Adding verb information
