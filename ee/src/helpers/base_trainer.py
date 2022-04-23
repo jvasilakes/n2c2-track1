@@ -122,9 +122,9 @@ class BaseTrainer:
                            (k in model_dict) and (model_dict[k].shape == checkpoint['model_params'][k].shape)}
 
         print('Loading pre-trained model')
-        for d in pretrained_dict.keys():
-            print(' ', d)
-        print()
+        # for d in pretrained_dict.keys():
+        #     print(' ', d)
+        # print()
 
         self.model.load_state_dict(pretrained_dict, strict=False)
 

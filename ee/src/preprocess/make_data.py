@@ -11,6 +11,7 @@ def main(args):
     data_path = [args.datadir + "train/", args.datadir + "dev/"]
 
     stats = {}
+    preprocess_spacy(txt_files_path, ann_files_path, spacy_files_path, window):
     for i, path in enumerate(data_path):
         stats[path.split('/')[-2]] = preprocess_spacy(path, args.spacydir, 1)
 
