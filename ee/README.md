@@ -15,7 +15,7 @@ The predictions (on dev), log and the saved model are saved at ```results/<model
 To run the model on all splits use: 
 ```sh xec_n2c2_splits.sh <base,clinical,blue>```
 
-## Evaluating the predictions:
+<!-- ## Evaluating the predictions:
 ```
 python main.py --config ../configs/local.yaml --mode predict --test_path ../data/default/spacy/dev_data.txt --bert blue --model_folder ../results/blue_default/
 ```
@@ -24,9 +24,9 @@ To evalutate the predictions you have to give the two folders (gold, predicted) 
 ```
 python eval_script_v3.py ../data/default/brat/dev ../results/blue_default/predictions/test/
 ```
+ -->
 
-
-## predicting with the model
+## Predicting with the model
 ```
 sh xec_n2c2_predict.sh  blue ensemble/ dev/ ner_predictions/ preprocess
 ```
