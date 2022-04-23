@@ -13,6 +13,7 @@ from torch.utils.data import Dataset, DataLoader
 from transformers import AutoTokenizer
 
 import brat_reader as br
+from src.data.word_filters import POSFilter
 
 
 class BratMultiTaskDataset(Dataset):
@@ -236,25 +237,28 @@ class BasicBertDataModule(pl.LightningDataModule):
     The base data module for all BERT-based sequence classification datasets.
 
     levitate_window_size: number of spans to consider +/- the target entity
-    levitate_max_span_length: maximum length in number of wordpiece tokens
-        to treat as a marked span.
+    levitated_pos_tags: list of UPOS tags to specify which levitated words
+                        to use. E.g., levitated_pos_tags=["AUX", "VERB"]
+                        will keep all verbs and auxiliaries. If None, does
+                        not filter words.
     """
     def __init__(
             self,
             bert_model_name_or_path,
             max_seq_length=128,
+            tasks_to_load="all",
             mark_entities=False,
             entity_markers=None,
             use_levitated_markers=False,
             levitate_window_size=5,
-            levitate_max_span_length=1,
+            levitated_pos_tags=None,
             name=None):
         self.bert_model_name_or_path = bert_model_name_or_path
         self.max_seq_length = max_seq_length
 
         self.mark_entities = mark_entities
         if self.mark_entities is True:
-            msg = "mark_entities is deprecated. Use entity_markers instead."
+            msg = "mark_entities is deprecated. Using entity_markers instead."
             self.mark_entities = False
             if entity_markers is None:
                 entity_markers = '@'
@@ -264,11 +268,17 @@ class BasicBertDataModule(pl.LightningDataModule):
 
         self.use_levitated_markers = use_levitated_markers
         self.levitate_window_size = levitate_window_size
-        self.levitate_max_span_length = levitate_max_span_length
+        self.levitated_pos_tags = levitated_pos_tags
         self._name = name
 
         self.tokenizer = AutoTokenizer.from_pretrained(
                 self.bert_model_name_or_path, use_fast=True)
+
+        if self.levitated_pos_tags is not None:
+            self.word_filter = POSFilter("en_core_sci_scibert", self.tokenizer,
+                                         keep_tags=self.levitated_pos_tags)
+        else:
+            self.word_filter = None
 
     def _validate_entity_markers(self, entity_markers):
         if entity_markers is None:
@@ -420,13 +430,10 @@ class BasicBertDataModule(pl.LightningDataModule):
             "offset_mapping": [],
         }
         batch_size, max_seq_length = encodings["input_ids"].size()
-        # max_num_spans is the number of sublists up to length max_span_length
-        # E.g., for window_size=5 and max_span_length=3 there are 5+4+3=12
-        #  possible subspans on each side (i.e., x2) of the entity span for a
-        #  total of 24 possible spans.
-        max_num_spans = np.arange(self.levitate_window_size+1)[-self.levitate_max_span_length:].sum() * 2  # noqa
-        # Each span has a start and end marker, so multiply by 2 again.
-        max_num_markers = max_num_spans * 2
+        # There are up to self.levitate_window_size spans on each
+        # side of the entity, and each span has a start and end marker,
+        # so the max number of markers is the window size times 4.
+        max_num_markers = self.levitate_window_size * 4
         max_levitated_seq_length = max_seq_length + max_num_markers
 
         # Extend the token_type_ids to cover the markers.
@@ -434,6 +441,7 @@ class BasicBertDataModule(pl.LightningDataModule):
             (encodings["token_type_ids"],
              torch.zeros(batch_size, max_num_markers, dtype=torch.long))
         )
+        # Extend the offset_mapping to cover the markers.
         new_encodings["offset_mapping"] = torch.hstack(
             (encodings["offset_mapping"],
              torch.zeros(batch_size, max_num_markers, 2, dtype=torch.long))
@@ -443,38 +451,17 @@ class BasicBertDataModule(pl.LightningDataModule):
         for example_idx in range(batch_size):
             input_ids = encodings["input_ids"][example_idx]
             attention_mask = encodings["attention_mask"][example_idx]
-            entity_start = entity_token_idxs[example_idx][0]
-            entity_end = entity_token_idxs[example_idx][-1]
 
-            # Get tokens in window_size around start/end entity_token_idxs
-            idx_before_entity = max(0,
-                                    entity_start - self.levitate_window_size)
-            seq_len_no_pad = (input_ids != 0).sum()
-            idx_after_entity = min(seq_len_no_pad,
-                                   entity_end + self.levitate_window_size)
-            before_token_idxs = np.arange(idx_before_entity, entity_start)
-            before_span_idxs = self.get_subspan_idxs(
-                before_token_idxs, input_ids,
-                max_length=self.levitate_max_span_length)
-            after_token_idxs = np.arange(entity_end+1, idx_after_entity)
-            after_span_idxs = self.get_subspan_idxs(
-                after_token_idxs, input_ids,
-                max_length=self.levitate_max_span_length)
-
-            position_ids = torch.arange(max_levitated_seq_length,
-                                        dtype=torch.long)
             # attention_mask is a square matrix with x and y dimensions
             #  equal to max_levitated_seq_length.
             attention_mask = torch.hstack((attention_mask,
                                            torch.zeros(max_num_markers)))
             attention_mask = attention_mask.unsqueeze(0)
             attention_mask = attention_mask.repeat(max_levitated_seq_length, 1)
+            position_ids = torch.arange(max_levitated_seq_length,
+                                        dtype=torch.long)
             input_ids = torch.cat(
                 (input_ids, torch.zeros(max_num_markers, dtype=torch.long)))
-
-            all_span_idxs = [*before_span_idxs, *after_span_idxs]
-            marker_start_idxs = range(max_seq_length,
-                                      max_levitated_seq_length, 2)
 
             # Make sure we don't use the same tokens as the entity
             entity_marker_ids = self.tokenizer.convert_tokens_to_ids(
@@ -484,7 +471,22 @@ class BasicBertDataModule(pl.LightningDataModule):
             while start_token_id not in entity_marker_ids and end_token_id not in entity_marker_ids:  # noqa
                 start_token_id += 1
                 end_token_id += 1
-            for (marker_start, span) in zip(marker_start_idxs, all_span_idxs):
+
+            # Get all tokens before and after the entity mention,
+            # up to self.levitate_window_size.
+            lev_span_idxs = self.get_levitated_spans(
+                input_ids, entity_token_idxs[example_idx],
+                word_filter=self.word_filter)
+            #if len(lev_span_idxs) == 0:
+            #    seq_len_no_pad = (input_ids != 0).sum()
+            #    input_text = self.tokenizer.decode(input_ids[:seq_len_no_pad])
+            #    warnings.warn(f"No levitated spans found for '{input_text}'")
+
+            # Each levitated marker has a start and end token,
+            # so we iterate by 2 indices starting from the end of the input.
+            marker_start_idxs = range(max_seq_length,
+                                      max_levitated_seq_length, 2)
+            for (marker_start, span) in zip(marker_start_idxs, lev_span_idxs):
                 # The indices of the markers in position_ids and attention_mask
                 marker_end = marker_start + 1
                 levitated_marker_idxs[example_idx].extend(
@@ -496,7 +498,6 @@ class BasicBertDataModule(pl.LightningDataModule):
                 # Markers are visible to each other only, and can see the text
                 attention_mask[marker_start, [marker_start, marker_end]] = 1
                 attention_mask[marker_end, [marker_start, marker_end]] = 1
-                # append [unused{i}] tokens for the markers to input_ids
                 input_ids[marker_start] = start_token_id
                 input_ids[marker_end] = end_token_id
 
@@ -509,6 +510,58 @@ class BasicBertDataModule(pl.LightningDataModule):
         new_encodings["attention_mask"] = torch.vstack(
             new_encodings["attention_mask"])
         return new_encodings, levitated_marker_idxs
+
+    def get_levitated_spans(self, input_ids, entity_token_idxs,
+                            word_filter=None):
+        """
+        Gets word spans (collapsing wordpiece tokens) within a
+        window of the entity mention in the input.
+        Returns wordpiece token indices for each word span.
+        """
+        entity_start = entity_token_idxs[0]
+        entity_end = entity_token_idxs[-1]
+
+        # Get all the tokens before and after the entity mention
+        before_token_idxs = np.arange(0, entity_start)
+        seq_len_no_pad = (input_ids != 0).sum()
+        after_token_idxs = np.arange(entity_end+1, seq_len_no_pad)
+
+        # Get token spans across wordpiece boundaries
+        before_token_spans = self.collapse_wordpiece(
+            before_token_idxs, input_ids, rm_special_tokens=True)
+        after_token_spans = self.collapse_wordpiece(
+            after_token_idxs, input_ids, rm_special_tokens=True)
+
+        # Optionally filter spans using a word_filter class instance
+        if word_filter is not None:
+            before_token_spans = word_filter(before_token_spans, input_ids)
+            after_token_spans = word_filter(after_token_spans, input_ids)
+
+        # Keep only the spans in the window
+        before_token_spans = before_token_spans[-self.levitate_window_size:]
+        after_token_spans = after_token_spans[:self.levitate_window_size]
+        return [*before_token_spans, *after_token_spans]
+
+    def collapse_wordpiece(self, token_idxs, input_ids,
+                           rm_special_tokens=True):
+        special_tokens = list(self.tokenizer.special_tokens_map.values())
+        tokens = self.tokenizer.convert_ids_to_tokens(input_ids)
+        out_token_spans = []
+        current_token_span = []
+        for token_idx in token_idxs:
+            token = tokens[token_idx]
+            if rm_special_tokens is True:
+                if token in special_tokens:
+                    continue
+            if token.startswith("##"):
+                current_token_span.append(token_idx)
+            else:
+                if current_token_span != []:
+                    out_token_spans.append(current_token_span)
+                current_token_span = [token_idx]
+        if current_token_span != []:
+            out_token_spans.append(current_token_span)
+        return out_token_spans
 
     def get_subspan_idxs(self, idxs, input_ids,
                          max_length=2, ignore_punct=True):

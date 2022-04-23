@@ -33,6 +33,7 @@ class n2c2DataModule(BasicBertDataModule):
             "mark_entities": config.mark_entities,
             "entity_markers": config.entity_markers,
             "use_levitated_markers": config.use_levitated_markers,
+            "levitated_pos_tags": config.levitated_pos_tags,
         }
         for (key, val) in override_kwargs.items():
             kwargs[key] = val
@@ -50,6 +51,7 @@ class n2c2DataModule(BasicBertDataModule):
             mark_entities=False,
             entity_markers=None,
             use_levitated_markers=False,
+            levitated_pos_tags=None,
             name=None):
 
         if name is None:
@@ -60,6 +62,7 @@ class n2c2DataModule(BasicBertDataModule):
             mark_entities=mark_entities,
             entity_markers=entity_markers,
             use_levitated_markers=use_levitated_markers,
+            levitated_pos_tags=levitated_pos_tags,
             name=name)
         self.dataset_name = dataset_name
         self.data_dir = data_dir
@@ -144,7 +147,8 @@ class n2c2DataModule(BasicBertDataModule):
   sample_strategy: {self.sample_strategy},
   class_weights: {self.class_weights},
   entity_markers: {self.entity_markers},
-  use_levitated_markers: {self.use_levitated_markers}"""
+  use_levitated_markers: {self.use_levitated_markers}
+  levitated_pos_tags: {self.levitated_pos_tags}"""
 
     @property
     def dataset_class(self):

@@ -581,7 +581,7 @@ def test_levitate_encodings(config, i=0):
             assert len(marker_idxs.intersection(entity_idxs)) == 0, msg
             # See src/data/base.BasicBertDataModule.levitate_encodings()
             #  for an explanation of this computation.
-            max_num_markers = np.arange(datamodule.levitate_window_size+1)[-datamodule.levitate_max_span_length:].sum() * 4  # noqa
+            max_num_markers = datamodule.levitate_window_size * 4
             expected_seq_length = datamodule.max_seq_length + max_num_markers
             for (key, val) in batch["encodings"].items():
                 # [batch_size, seq_length, [hidden_dim]]
