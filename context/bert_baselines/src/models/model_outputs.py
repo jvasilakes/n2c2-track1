@@ -14,3 +14,14 @@ class SequenceClassifierOutputWithTokenMask(ModelOutput):
     hidden_states: Optional[Tuple[torch.FloatTensor]] = None
     attentions: Optional[Tuple[torch.FloatTensor]] = None
     mask: Optional[torch.FloatTensor] = None
+
+
+@dataclass
+class StochasticClassifierOutput(ModelOutput):
+
+    loss: Optional[torch.FloatTensor] = None
+    stochastic_loss: Optional[torch.FloatTensor] = None
+    logits: torch.FloatTensor = None
+    hidden_states: Optional[Tuple[torch.FloatTensor]] = None
+    attentions: Optional[Tuple[torch.FloatTensor]] = None
+    mask: Optional[torch.FloatTensor] = None

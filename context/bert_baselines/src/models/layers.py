@@ -181,6 +181,37 @@ class KumaMask(nn.Module):
         return z, z_dists
 
 
+class GumbelClassifier(nn.Module):
+    """
+    Like a standard classifier, but with some randomness.
+    Logits are computed by sampling from a Gumbel Softmax
+    distribution, which is a continuous approximation of a
+    categorical distribution.
+    """
+    def __init__(self, insize, latent_size, label_dim, temperature=0.1):
+        super().__init__()
+        self.insize = insize
+        self.label_dim = label_dim
+        self.temperature = temperature
+        self.eps = 1e-12
+        self.alpha_net = nn.Linear(insize, label_dim)
+
+    def forward(self, inputs, sample=True):
+        alphas = nn.functional.softmax(self.alpha_net(inputs), dim=-1)
+        logits = self.gumbel_softmax(alphas, sample=sample)
+        return logits, alphas
+
+    def gumbel_softmax(self, alphas, sample=True):
+        if sample is True:
+            unif = torch.rand(alphas.size()).type_as(alphas)
+            gumbel = -torch.log(-torch.log(unif + self.eps) + self.eps)
+            log_alphas = torch.log(alphas + self.eps)
+            logits = (log_alphas + gumbel) / self.temperature
+        else:
+            raise NotImplementedError("GumbelSoftmax sample=False")
+        return logits
+
+
 class RecurrentEncoder(nn.Module):
 
     def __init__(self, insize, hidden_size, cell="rnn"):
