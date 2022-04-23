@@ -25,3 +25,14 @@ To evalutate the predictions you have to give the two folders (gold, predicted) 
 python eval_script_v3.py ../data/default/brat/dev ../results/blue_default/predictions/test/
 ```
 
+
+## predicting with the model
+```
+sh xec_n2c2_predict.sh  blue ensemble/ dev/ ner_predictions/ preprocess
+```
+1st argument is model type: <base, clinical, blue <br>
+2nd is the split under the data/ folder: e.g. default, split0 or ensemble<br>
+3rd is the locations of the .txt files<br>
+4th is the predicted .ann files<br>
+5th is the preprocessing to create test_data.txt inside the split/spacy/folder<br>
+The model is loaded from ```../results/<model_type>_<split>/bert.model```
