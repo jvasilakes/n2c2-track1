@@ -69,7 +69,7 @@ def clean_tokenizer(tokens):
 
 def print_single(f, no, category, pos, trig):
     
-    f.write('T{}\t{} {}\t{}\n'.format(no, category, pos, trig))
+    f.write('T{}\t{} {}\t{}\n'.format(no, category, pos, ' '.join(trig)))
     f.write('E{}\t{}:T{}\n'.format(no, category, no))
 
     return no + 1
