@@ -62,6 +62,7 @@ class ExperimentConfig(object):
                 "use_levitated_markers",
                 "levitated_marker_pool_fn",
                 "levitated_pos_tags",
+                "levitated_word_list",
                 "max_seq_length",
                 "dropout_prob",
             ],
@@ -152,6 +153,7 @@ class ExperimentConfig(object):
             use_levitated_markers: bool = False,
             levitated_marker_pool_fn: str = "max",
             levitated_pos_tags: Union[List[str], None] = None,
+            levitated_word_list: str = None,
             max_seq_length: int = 128,
             dropout_prob: float = 0.1,
             # Losses
@@ -193,6 +195,7 @@ class ExperimentConfig(object):
         self.use_levitated_markers = use_levitated_markers
         self.levitated_marker_pool_fn = levitated_marker_pool_fn
         self.levitated_pos_tags = levitated_pos_tags
+        self.levitated_word_list = levitated_word_list
         self.mark_entities = mark_entities
         self.entity_markers = entity_markers
         self.max_seq_length = max_seq_length
