@@ -13,7 +13,7 @@ from torch.utils.data import Dataset, DataLoader
 from transformers import AutoTokenizer
 
 import brat_reader as br
-from src.data.word_filters import POSFilter
+from src.data.word_filters import POSFilter, ListFilter
 
 
 class BratMultiTaskDataset(Dataset):
@@ -239,8 +239,11 @@ class BasicBertDataModule(pl.LightningDataModule):
     levitate_window_size: number of spans to consider +/- the target entity
     levitated_pos_tags: list of UPOS tags to specify which levitated words
                         to use. E.g., levitated_pos_tags=["AUX", "VERB"]
-                        will keep all verbs and auxiliaries. If None, does
-                        not filter words.
+                        will keep all verbs and auxiliaries. If None, does not
+                        filter words. Incompatible with levitated_word_list.
+    levitated_word_list: file containing a list of words, one per line, to
+                         mark if they are found in the input. Incompatible
+                         with levitated_pos_tags.
     """
     def __init__(
             self,
@@ -252,6 +255,7 @@ class BasicBertDataModule(pl.LightningDataModule):
             use_levitated_markers=False,
             levitate_window_size=5,
             levitated_pos_tags=None,
+            levitated_word_list=None,
             name=None):
         self.bert_model_name_or_path = bert_model_name_or_path
         self.max_seq_length = max_seq_length
@@ -269,14 +273,22 @@ class BasicBertDataModule(pl.LightningDataModule):
         self.use_levitated_markers = use_levitated_markers
         self.levitate_window_size = levitate_window_size
         self.levitated_pos_tags = levitated_pos_tags
+        self.levitated_word_list = levitated_pos_tags
         self._name = name
 
         self.tokenizer = AutoTokenizer.from_pretrained(
                 self.bert_model_name_or_path, use_fast=True)
 
         if self.levitated_pos_tags is not None:
-            self.word_filter = POSFilter("en_core_sci_scibert", self.tokenizer,
-                                         keep_tags=self.levitated_pos_tags)
+            if self.levitated_word_list is not None:
+                raise ValueError("levitated_pos_tags and levitated_word_list are incompatible. Choose one.")  # noqa
+            self.word_filter = POSFilter(
+                    "en_core_sci_scibert", self.tokenizer,
+                    keep_tags=self.levitated_pos_tags)
+        elif self.levitated_word_list is not None:
+            self.word_filter = ListFilter(
+                    "en_core_sci_scibert", self.tokenizer,
+                    word_list_file=self.levitated_word_list)
         else:
             self.word_filter = None
 
@@ -477,10 +489,6 @@ class BasicBertDataModule(pl.LightningDataModule):
             lev_span_idxs = self.get_levitated_spans(
                 input_ids, entity_token_idxs[example_idx],
                 word_filter=self.word_filter)
-            #if len(lev_span_idxs) == 0:
-            #    seq_len_no_pad = (input_ids != 0).sum()
-            #    input_text = self.tokenizer.decode(input_ids[:seq_len_no_pad])
-            #    warnings.warn(f"No levitated spans found for '{input_text}'")
 
             # Each levitated marker has a start and end token,
             # so we iterate by 2 indices starting from the end of the input.
