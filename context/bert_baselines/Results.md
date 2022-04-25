@@ -27,12 +27,12 @@ Entity markers: use both
 |micro    | 0.814 | 0.814 | 0.814 | 0.857 |
 |macro    | 0.789 | 0.727 | 0.753 | 0.776 |
 
-### Possible Contenders
-Combined with i2b2 using dataset concatenation
-|      | prec  | rec   | f1    |
-|------|-------|-------|-------|
-|MICRO | 0.828 | 0.828 | 0.828 |
-|MACRO | 0.834 | 0.830 | 0.824 |
+### It's a tie (sort of)
+Same as above but combined with i2b2 using dataset concatenation
+|      | prec  | rec   | f1    | Avg F1|
+|------|-------|-------|-------|-------|
+|MICRO | 0.828 | 0.828 | 0.828 | 0.853 |
+|MACRO | 0.834 | 0.830 | 0.824 | 0.776 |
 
 
 ## Actor
@@ -53,19 +53,39 @@ i2b2 2009: 0 sentence window
 Entity markers: use first only  
 |         | prec  | rec   | f1    | Avg F1|
 |---------|-------|-------|-------|-------|
-|micro    | 0.914 | 0.914 | 0.914 |       |
-|macro    | 0.884 | 0.789 | 0.830 |       |
+|micro    | 0.914 | 0.914 | 0.914 | 0.918 |
+|macro    | 0.884 | 0.789 | 0.830 | 0.678 |
+
+### Previous Best
+Same as above but without additional data
+
+|         | prec  | rec   | f1    | Avg F1|
+|---------|-------|-------|-------|-------|
+|micro    | 0.891 | 0.891 | 0.891 | 0.911 |
+|macro    | 0.800 | 0.751 | 0.769 | 0.655 |
 
 
 ## Negation
+
 Bio\_ClinicalBERT  
 Action + Negation multi-task setup  
 +/- 1 sentence window  
 Entity markers: use both  
+Combined with i2b2 Certainty task using dataset concatenation (0 sentence window)
+|         | prec  | rec   | f1    | Avg F1|
+|---------|-------|-------|-------|-------|
+| micro   | 0.986 | 0.986 | 0.986 | 0.977 |
+| macro   | 0.993 | 0.625 | 0.697 | 0.717 |
+
+
+### Previous Best
+
+Same as above but without additional data.
 |         | prec  | rec   | f1    | Avg F1|
 |---------|-------|-------|-------|-------|
 | micro   | 0.986 | 0.986 | 0.986 | 0.978 |
 | macro   | 0.993 | 0.625 | 0.697 | 0.589 |
+
 
 
 ## Temporality
@@ -74,15 +94,15 @@ Bio\_ClinicalBERT
 Entity markers: use first only  
 |         | P     | R     | F1    | Avg F1|
 |---------|-------|-------|-------|-------|
-|micro    | 0.837 | 0.837 | 0.837 | 0.862 |
+|micro    | 0.837 | 0.837 | 0.837 | 0.863 |
 |macro    | 0.830 | 0.662 | 0.704 | 0.785 |
 
 ### Possible Contender
 Combined with i2b2 using length-weighted annealed dataset sampling
-|      | prec  | rec   | f1    |
-|------|-------|-------|-------|
-|MICRO | 0.864 | 0.864 | 0.864 |
-|MACRO | 0.865 | 0.682 | 0.727 |
+|      | prec  | rec   | f1    | Avg F1|
+|------|-------|-------|-------|-------|
+|MICRO | 0.864 | 0.864 | 0.864 | 0.853 |
+|MACRO | 0.865 | 0.682 | 0.727 | 0.760 |
 
 
 # Pooled Output Results
