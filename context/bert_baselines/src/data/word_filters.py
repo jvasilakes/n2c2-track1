@@ -3,8 +3,6 @@ from spacy.tokens import Doc
 import scispacy  # noqa F401
 
 
-
-
 class WordFilter(object):
     def __init__(self, spacy_model_str, bert_tokenizer):
         self.nlp = spacy.load(spacy_model_str)
@@ -74,3 +72,34 @@ class POSFilter(WordFilter):
 
     def __str__(self):
         return f"POSFilter(keep_tags={self.keep_tags})"
+
+
+class ListFilter(WordFilter):
+    """
+    Filter tokens using a pre-specified word list.
+    """
+    def __init__(self, spacy_model_str, bert_tokenizer, word_list_file=None):
+        super().__init__(spacy_model_str, bert_tokenizer)
+        if word_list_file is None:
+            warnings.warn(f"No word_list_file specified to ListFilter. Keeping everything.")  # noqa
+        self.word_list_file = word_list_file
+        self.word_list = None
+        if self.word_list_file is not None:
+            self.world_list = self._load_word_list()
+
+    def _load_word_list(self):
+        words = []
+        with open(self.word_list_file, 'r') as inF:
+            for line in inF:
+                word = line.strip().lower()
+                words.append(word)
+        return words
+
+    def keep(self, spacy_token):
+        if self.word_list is None:
+            return True
+        if str(spacy_token) in self.word_list:
+            return True
+
+    def __str__(self):
+        return f"ListFilter(word_list_file={self.word_list_file})"
