@@ -19,7 +19,6 @@ fi
 outdir=cv_split_configs
 mkdir -p $outdir
 
-#for fname in $(ls -1 *.yaml); do
 for fname in ${args[@]}
 do
 
@@ -34,7 +33,9 @@ do
   fi
 
   # Assume there are 5 splits
+  echo "Creating configs for splits and saving them to configs/current_best/cv_split_configs"
   for i in {0..4}; do
+    echo "$i"
     # copy the source file with a suffix specifying the split number
     newname=cv_split_configs/${fname/.yaml/${i}.yaml}
     cp $fname $newname
@@ -44,10 +45,13 @@ do
     model_ver=$(ls -l $fname | grep -Po "version_[0-9]+")
     # Update the config file with the cv_splits and new model name
     # CV split runs get put under a specific model version.
-    python ../../config.py update -f $newname \
+    #python ../../config.py update -f $newname \
+    cd ../../
+    python -m src.config update -f configs/current_best/$newname \
          -k data_dir "/mnt/iusers01/nactem01/u14498jv/Projects/n2c2-track1/n2c2Track1TrainingData-v3/cv_splits/${i}/" \
          -k sentences_dir "/mnt/iusers01/nactem01/u14498jv/Projects/n2c2-track1/n2c2Track1TrainingData-v3/cv_splits/${i}/segmented" \
          -k name "${model_name}/${model_ver}/cv_split_runs/${i}"
+    cd configs/current_best
   done
   # config.py update keeps the originals, but we don't need them.
   rm ${outdir}/*.yaml.orig

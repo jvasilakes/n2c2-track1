@@ -1,7 +1,7 @@
 # Experiment
-name: clinical_bert/mdl/n2c2_i2b2_certainty/version_2/cv_split_runs/0
+name: clinical_bert/mdl/n2c2cert_i2b2cert/version_2/cv_split_runs/0
 description: Bio_ClinicalBERT using entity spans on the Certainty task from n2c2 2022
-  and i2b2 2009
+  and i2b2 2009 with length-weighted dataset sampling.
 logdir: /mnt/iusers01/nactem01/u14498jv/scratch/n2c2_track1/context/bert_baseline_logs/
 random_seed: 0
 
@@ -22,7 +22,10 @@ auxiliary_data:
     tasks_to_load:
     - Certainty
     window_size: 0
-dataset_sample_strategy: annealed
+dataset_sample_strategy: weighted
+dataset_sampler_kwargs:
+  exhaust_all: false
+  weights: lengths
 
 # Model
 model_name: bert-sequence-classifier
@@ -30,14 +33,17 @@ bert_model_name_or_path: emilyalsentzer/Bio_ClinicalBERT
 freeze_pretrained: false
 use_entity_spans: true
 entity_pool_fn: first
-mark_entities: true
+mark_entities: false
+entity_markers: '@'
+use_levitated_markers: false
+levitated_marker_pool_fn: max
+levitated_pos_tags: null
 max_seq_length: 300
 dropout_prob: 0.2
 
 # Losses
 classifier_loss_fn: cross-entropy
-classifier_loss_kwargs:
-  label_smoothing: 0.0
+classifier_loss_kwargs: {}
 mask_loss_fn: ratio
 mask_loss_kwargs: {}
 
