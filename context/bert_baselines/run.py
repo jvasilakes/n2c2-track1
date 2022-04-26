@@ -3,6 +3,7 @@ import re
 import json
 import argparse
 import datetime
+import warnings
 from glob import glob
 from collections import defaultdict
 
@@ -317,7 +318,11 @@ def run_predict(config, datasplit="dev",
                 logdir="logs/", version=None, quiet=False,
                 output_json=False, output_token_masks=False):
 
-    datamodule = load_datamodule(config, stage="predict")
+    stage = None
+    if datasplit == "test":
+        # Don't load labels, because there aren't any.
+        stage = "predict"
+    datamodule = load_datamodule(config, stage=stage)
 
     checkpoint_file, hparams_file = find_checkpoint(
             logdir, config.name, version, ckpt_glob="epoch*.ckpt")
@@ -357,6 +362,9 @@ def run_predict(config, datasplit="dev",
     for (dataset, anns) in anns_by_datatset.items():
         preds_dir = os.path.join(logdir, config.name, f"version_{version}",
                                  "predictions", dataset, "brat", datasplit)
+        if os.path.isdir(preds_dir):
+            warnings.warn("brat predictions directory already exists at {preds_dir}. Skipping...")  # noqa
+            continue
         os.makedirs(preds_dir, exist_ok=False)
         for doc_anns in anns:
             doc_anns.save_brat(preds_dir)
@@ -366,6 +374,9 @@ def run_predict(config, datasplit="dev",
         for (dataset, preds_by_task) in preds_by_dataset.items():
             preds_dir = os.path.join(logdir, config.name, f"version_{version}",
                                      "predictions", dataset, "json", datasplit)
+            if os.path.isdir(preds_dir):
+                warnings.warn("JSON predictions directory already exists at {preds_dir}. Skipping...")  # noqa
+                continue
             os.makedirs(preds_dir, exist_ok=False)
             for (task, preds) in preds_by_task.items():
                 outpath = os.path.join(preds_dir, f"{task}.jsonl")

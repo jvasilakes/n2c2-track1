@@ -279,6 +279,8 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
                 "docids": batch["docids"],
                 "predictions": {task: [] for task in tasks}
                 }
+        if "labels" in batch.keys():
+            inputs_with_predictions["labels"] = batch["labels"]
         for (task, outputs) in outputs_by_task.items():
             softed = nn.functional.softmax(outputs.logits, dim=1)
             preds = torch.argmax(softed, dim=1)
