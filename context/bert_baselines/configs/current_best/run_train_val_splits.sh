@@ -34,11 +34,11 @@ do
     exit 1
   fi
   # Predict
-  python ../../run.py validate ${logged_config} --output_brat
+  python ../../run.py predict ${logged_config}
   # Validate and log results to logdir/eval_dev.txt
   datadir=$(grep "^data_dir:" $config | awk '{print $2}')
   python ../../../eval_scripts/eval_context.py \
 		--log_file ${logdir}/eval_dev.txt \
-		${logdir}/predictions/dev \
+		${logdir}/predictions/n2c2ContextDataset/brat/dev \
 		${datadir}/dev
 done
