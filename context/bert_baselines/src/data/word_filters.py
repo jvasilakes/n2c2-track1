@@ -85,7 +85,7 @@ class ListFilter(WordFilter):
         self.word_list_file = word_list_file
         self.word_list = None
         if self.word_list_file is not None:
-            self.world_list = self._load_word_list()
+            self.word_list = self._load_word_list()
 
     def _load_word_list(self):
         words = []
