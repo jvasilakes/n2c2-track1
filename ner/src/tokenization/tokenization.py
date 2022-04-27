@@ -959,8 +959,7 @@ def main():
     output_dir = getattr(args, 'outdir')
 
     # input_dir = 'data/corpora/MedMentions/st21pv-org/'
-    # output_dir = 'data/corpora/MedMentions/st21pv/'
-
+    # output_dir = 'data/corpora/MedMentions/st21pv/'    
     # Step 1:
     # Collect token which contain entity as substring
     for fn in glob(os.path.join(input_dir, "*")):
