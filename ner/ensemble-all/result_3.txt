@@ -1,0 +1,42 @@
+Files skipped in /mnt/disk/nhung/n2c2-2022/Jake_github/n2c2-track1/n2c2Track1TrainingData-v3/cv_splits/3/dev:
+112-02.ann, 258-04.ann
+
+******************** Evaluation n2c2 2022 Track 1 ********************
+************* Contextualized Medication Event Extraction *************
+
+*********************** Medication Extraction ************************
+                      ------- strict -------    ------ lenient -------   ------- strict -------    ------ lenient -------
+                      Prec.   Rec.    F(b=1)    Prec.   Rec.    F(b=1)   TP      FP      FN      TP      FP      FN    
+                Drug  0.9745  0.9555  0.9649    0.9802  0.9611  0.9705  1031   27     48       1037   21     42   
+
+
+************************ Event Classification ************************
+                      ------- strict -------    ------ lenient -------
+                      Prec.   Rec.    F(b=1)    Prec.   Rec.    F(b=1)
+         Disposition  0.0000  0.0000  0.0000    0.0000  0.0000  0.0000
+       Nodisposition  0.0000  0.0000  0.0000    0.0000  0.0000  0.0000
+        Undetermined  0.0000  0.0000  0.0000    0.0000  0.0000  0.0000
+                      ------------------------------------------------
+     Overall (micro)  0.0000  0.0000  0.0000    0.0000  0.0000  0.0000
+     Overall (macro)  0.0000  0.0000  0.0000    0.0000  0.0000  0.0000
+
+
+*********************** Context Classification ***********************
+                      ------- strict -------    ------ lenient -------
+                      Prec.   Rec.    F(b=1)    Prec.   Rec.    F(b=1)
+              Action  0.0000  0.0000  0.0000    0.0000  0.0000  0.0000
+         Temporality  0.0000  0.0000  0.0000    0.0000  0.0000  0.0000
+           Certainty  0.0000  0.0000  0.0000    0.0000  0.0000  0.0000
+               Actor  0.0000  0.0000  0.0000    0.0000  0.0000  0.0000
+            Negation  0.0000  0.0000  0.0000    0.0000  0.0000  0.0000
+                      ------------------------------------------------
+     Overall (micro)  0.0000  0.0000  0.0000    0.0000  0.0000  0.0000
+     Overall (macro)  0.0000  0.0000  0.0000    0.0000  0.0000  0.0000
+
+
+                      ------- strict -------    ------ lenient -------
+                      Prec.   Rec.    F(b=1)    Prec.   Rec.    F(b=1)
+            Combined  0.0000  0.0000  0.0000    0.0000  0.0000  0.0000
+
+
+                                   48 files evaluated               
