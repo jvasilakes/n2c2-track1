@@ -1,0 +1,61 @@
+T1	Drug 965 980	anticoagulation
+T2	Drug 1267 1275	steroids
+T3	Drug 2277 2280	IVF
+T4	Drug 2285 2293	morphine
+T5	Drug 2605 2613	coumadin
+T6	Drug 2748 2758	prednisone
+T7	Drug 3369 3382	Acetaminophen
+T8	Drug 3384 3391	Tylenol
+T9	Drug 3421 3430	Albuterol
+T10	Drug 3440 3449	Albuterol
+T11	Drug 3494 3503	Albuterol
+T12	Drug 3576 3582	Maalox
+T13	Drug 3634 3644	Amiodarone
+T14	Drug 3661 3674	Ascorbic Acid
+T15	Drug 3692 3701	Bisacodyl
+T16	Drug 3703 3711	Dulcolax
+T17	Drug 3749 3760	Clopidogrel
+T18	Drug 3762 3768	Plavix
+T19	Drug 3786 3801	Docusate Sodium
+T20	Drug 3803 3809	Colace
+T21	Drug 3828 3843	Ferrous Sulfate
+T22	Drug 3859 3869	Furosemide
+T23	Drug 3871 3876	Lasix
+T24	Drug 3894 3909	Insulin Regular
+T25	Drug 4196 4207	Ipratropium
+T26	Drug 4253 4268	Magnesium Oxide
+T27	Drug 4286 4305	Metoprolol Tartrate
+T28	Drug 4307 4316	Lopressor
+T29	Drug 4335 4346	Mirtazapine
+T30	Drug 4364 4374	Omeprazole
+T31	Drug 4390 4401	Ondansetron
+T32	Drug 4419 4425	Zofran
+T33	Drug 4471 4480	Oxycodone
+T34	Drug 4510 4524	Pentoxifylline
+T35	Drug 4526 4533	Trental
+T36	Drug 4552 4562	Prednisone
+T37	Drug 4576 4586	Quetiapine
+T38	Drug 4588 4596	Seroquel
+T39	Drug 4631 4641	Sennosides
+T40	Drug 4643 4648	Senna
+T41	Drug 4693 4704	Simethicone
+T42	Drug 4721 4735	Spironolactone
+T43	Drug 4737 4746	Aldactone
+T44	Drug 4763 4776	Verapamil Hcl
+T45	Drug 4792 4807	Warfarin Sodium
+T46	Drug 4809 4817	Coumadin
+T47	Drug 10332 10347	anticoagulation
+T48	Drug 10934 10937	IVF
+T49	Drug 11084 11087	IVF
+T50	Drug 11458 11474	iron supplements
+T51	Drug 11646 11651	PRBCs
+T52	Drug 11939 11947	coumadin
+T53	Drug 12035 12043	Coumadin
+T54	Drug 12097 12106	lopressor
+T55	Drug 12108 12117	verapamil
+T56	Drug 12137 12147	Prednisone
+T57	Drug 12175 12185	Amiodarone
+T58	Drug 12238 12242	Amio
+T59	Drug 12262 12270	coumadin
+T60	Drug 12272 12275	PPI
+T61	Drug 3531 3574	Aluminum/Magnesium Hydroxide +  Simethicone
