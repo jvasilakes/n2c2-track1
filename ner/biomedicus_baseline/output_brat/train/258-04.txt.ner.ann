@@ -1,6 +1,0 @@
-T1	NERPrediction 262 270	Medicine
-T2	NERPrediction 683 685	O2
-T3	NERPrediction 710 713	air
-T4	NERPrediction 1057 1068	medications
-T5	NERPrediction 1799 1811	electrolytes
-T6	NERPrediction 1833 1841	troponin

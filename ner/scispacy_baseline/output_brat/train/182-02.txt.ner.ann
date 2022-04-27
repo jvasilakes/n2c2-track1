@@ -1,7 +1,0 @@
-T0	NERPrediction 31 35	NAME
-T1	NERPrediction 73 76	DOB
-T2	NERPrediction 854 861	alcohol
-T3	NERPrediction 1741 1761	seborrheic keratosis
-T4	NERPrediction 1874 1884	seborrheic
-T5	NERPrediction 2116 2127	cholesterol
-T6	NERPrediction 2184 2195	cholesterol

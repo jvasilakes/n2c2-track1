@@ -1,0 +1,18 @@
+task_name: n2c2
+test_data: corpus/1/test/
+
+# output
+result_dir: experiments/1/baseline_roberta/predict-test/
+#ner_model_dir: experiments/1/baseline_roberta/model/
+model_dir: experiments/1/baseline_roberta/joint/
+params_dir: experiments/1/baseline_roberta/n2c2.baseline_rob.param
+
+# prediction
+predict: True
+pipelines: False
+batch_size: 16
+gpu: 0
+fp16: False
+
+
+
