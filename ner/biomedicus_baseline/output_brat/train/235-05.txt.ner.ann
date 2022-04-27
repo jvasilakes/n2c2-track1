@@ -1,9 +1,0 @@
-T1	NERPrediction 548 561	nitroglycerin
-T2	NERPrediction 652 658	sugars
-T3	NERPrediction 1710 1720	medication
-T4	NERPrediction 1840 1843	ACE
-T5	NERPrediction 1840 1853	ACE inhibitor
-T6	NERPrediction 1869 1879	lisinopril
-T7	NERPrediction 1869 1886	lisinopril 2.5 mg
-T8	NERPrediction 1973 1976	LDL
-T9	NERPrediction 2011 2014	LDL

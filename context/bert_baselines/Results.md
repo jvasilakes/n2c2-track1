@@ -101,8 +101,16 @@ Entity markers: use first only
 Combined with i2b2 using length-weighted annealed dataset sampling
 |      | prec  | rec   | f1    | Avg F1|
 |------|-------|-------|-------|-------|
-|MICRO | 0.864 | 0.864 | 0.864 | 0.853 |
-|MACRO | 0.865 | 0.682 | 0.727 | 0.760 |
+|micro | 0.864 | 0.864 | 0.864 | 0.853 |
+|macro | 0.865 | 0.682 | 0.727 | 0.760 |
+
+### Possible Contender
+Combined with i2b2 using length-weighted annealed dataset sampling
+PL-markers with AUX, VERB
+|      | prec  | rec   | f1    | Avg F1|
+|------|-------|-------|-------|-------|
+|micro | 0.855 | 0.855 | 0.855 | 0.859 |
+|macro | 0.849 | 0.684 | 0.724 | 0.797 |
 
 
 # Pooled Output Results

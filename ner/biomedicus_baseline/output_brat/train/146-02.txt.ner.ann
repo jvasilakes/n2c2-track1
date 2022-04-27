@@ -1,8 +1,0 @@
-T1	NERPrediction 897 914	, ibuprofen 800mg
-T2	NERPrediction 899 908	ibuprofen
-T3	NERPrediction 899 914	ibuprofen 800mg
-T4	NERPrediction 928 932	food
-T5	NERPrediction 934 942	Percocet
-T6	NERPrediction 957 960	-6h
-T7	NERPrediction 958 960	6h
-T8	NERPrediction 975 984	Neurontin

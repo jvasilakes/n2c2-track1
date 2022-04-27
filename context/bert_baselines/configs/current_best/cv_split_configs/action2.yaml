@@ -1,6 +1,7 @@
 # Experiment
-name: clinical_bert/action_entity_marked/version_4/cv_split_runs/2
-description: Bio_ClinicalBERT using entity spans on the Action task only
+name: clinical_bert/mdl/n2c2action_i2b2event/version_1/cv_split_runs/2
+description: Bio_ClinicalBERT using entity spans on the Action task from n2c2 2022
+  and the Event task from i2b2 2009, concatenated datasets
 logdir: /mnt/iusers01/nactem01/u14498jv/scratch/n2c2_track1/context/bert_baseline_logs/
 random_seed: 0
 
@@ -12,8 +13,18 @@ tasks_to_load:
 - Action
 window_size: 1
 max_train_examples: null
-auxiliary_data: {}
-dataset_sample_strategy: proportional
+auxiliary_data:
+  i2b2Event:
+    data_dir: /mnt/iusers01/nactem01/u14498jv/Projects/n2c2-track1/auxiliary_data/i2b2_2009/brat/
+    dataset_name: i2b2Event
+    max_train_examples: null
+    sentences_dir: /mnt/iusers01/nactem01/u14498jv/Projects/n2c2-track1/auxiliary_data/i2b2_2009/segmented/
+    tasks_to_load:
+    - Event
+    window_size: 0
+dataset_sample_strategy: sequential
+dataset_sampler_kwargs:
+  exhaust_all: true
 
 # Model
 model_name: bert-sequence-classifier
@@ -21,7 +32,11 @@ bert_model_name_or_path: emilyalsentzer/Bio_ClinicalBERT
 freeze_pretrained: false
 use_entity_spans: true
 entity_pool_fn: first-last
-mark_entities: true
+mark_entities: false
+entity_markers: '@'
+use_levitated_markers: false
+levitated_marker_pool_fn: max
+levitated_pos_tags: null
 max_seq_length: 300
 dropout_prob: 0.2
 
@@ -37,5 +52,5 @@ sample_strategy: null
 lr: 3.0e-05
 weight_decay: 0.0
 gradient_clip_val: 10.0
-max_epochs: 10
+max_epochs: 20
 
