@@ -39,6 +39,7 @@ class ExperimentConfig(object):
                 "description",
                 "logdir",
                 "random_seed",
+                "monitor",
             ],
             "Data": [
                 "dataset_name",
@@ -128,6 +129,7 @@ class ExperimentConfig(object):
             description: str = '',
             logdir: str = "logs/",
             random_seed: int = 0,
+            monitor: str = "avg_macro_f1",
             # Data
             # The kwargs below always specify the main n2c2 dataset
             dataset_name: str = "n2c2Context",
@@ -176,6 +178,7 @@ class ExperimentConfig(object):
         self.description = description
         self.logdir = logdir
         self.random_seed = random_seed
+        self.monitor = monitor
         # Data
         self.dataset_name = dataset_name
         self.data_dir = data_dir
@@ -262,6 +265,10 @@ class ExperimentConfig(object):
             warnings.warn(msg, DeprecationWarning)
 
     def validate(self, errors="raise"):
+        valid_monitors = ["avg_macro_f1", "avg_micro_f1", "avg_val_loss"]
+        self._validate_param("monitor", valid_monitors,
+                             default_value="avg_macro_f1", errors=errors)
+
         valid_pool_fns = ["mean", "max", "first", "last", "first-last"]
         self._validate_param("entity_pool_fn", valid_pool_fns,
                              default_value="mean", errors=errors)
@@ -362,7 +369,13 @@ class ExperimentConfig(object):
             raise ConfigError(f"Unknown config parameter {key}")
         param_type = type(curr_val)
         if not isinstance(value, param_type):
-            warnings.warn(f"Changing value of parameter {key} from {curr_val} ({param_type}) to {value} ({type(value)})")  # noqa
+            try:
+                value = param_type(value)
+            except (ValueError, TypeError) as e:
+                if errors == "raise":
+                    raise e
+                elif errors == "warn":
+                    warnings.warn(f"Changing value of parameter {key} from {curr_val} ({param_type}) to {value} ({type(value)})")  # noqa
         setattr(self, key, value)
         self.validate(errors=errors)
 

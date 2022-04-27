@@ -1,3 +1,4 @@
+import os
 import argparse
 
 from src.ensembling import ENSEMBLE_LOOKUP
@@ -22,6 +23,8 @@ def main(args):
     ensembler = ensembler_cls(
             args.model_dirs, args.dataset, args.datasplit, args.task)
     predictions = ensembler.run()
+
+    os.makedirs(args.outdir, exist_ok=False)
     for (fname, anns) in predictions.items():
         anns.save_brat(args.outdir)
 
