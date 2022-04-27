@@ -64,7 +64,7 @@ def get_offsets(sentences):
     return offsets
 
 
-def adjust_offsets(old_sents, new_sents, old_entities, f):
+def adjust_offsets(old_sents, new_sents, old_entities, f, merges):
     """
     Adjust offsets based on tokenization
     Args:
@@ -171,19 +171,32 @@ def adjust_offsets(old_sents, new_sents, old_entities, f):
 
             # Find sentence number of each entity
             sent_no = []
+            term_range = set(np.arange(term[0], term[1]))
+
+            # print('term[0] {} term[1] {} term_range {} term {}'.format(term[0], term[1], term_range, newtext_break[term[0]:term[1]]))
             for s_no, sr in enumerate(new_sent_range):
                 target = set(np.arange(sr[0], sr[1]))
-                # if set(np.arange(term[0], term[1])).issubset(target):
-                if term[0] in target or term[1] in target:
+
+                if not term_range.isdisjoint(target):
+                # if term_range.issubset(target):
+                # print(sr[0], sr[1])
+                # if int(sr[0]) in term_range or int(sr[1]) in term_range:
+                #     print('Assign sentence sr[0]{} sr[1] {}'.format(sr[0],sr[1]))
                     sent_no += [s_no]
 
-            if len(sent_no) == 2:
-                print('Cross sentence entity!')
-                new_sent_range[sent_no[0]] = (new_sent_range[sent_no[0]][0], new_sent_range[sent_no[1]][1])
-                new_sents[sent_no[0]] = ' '.join([new_sents[sent_no[0]], new_sents[sent_no[1]]])
-                del new_sent_range[sent_no[1]]
-                del new_sents[sent_no[1]]
+
+            if len(sent_no) > 1: #2,3
+                print('Cross sentence entity! Merging {}!'.format(len(sent_no)))
+                for i in range(1, len(sent_no)):
+                    new_sent_range[sent_no[0]] = (new_sent_range[sent_no[0]][0], new_sent_range[sent_no[i]][1])
+                    new_sents[sent_no[0]] = ' '.join([new_sents[sent_no[0]], new_sents[sent_no[i]]])
+
+                for i in range(1, len(sent_no)):   #sentences are supposed to be consecutive
+                    del new_sent_range[sent_no[1]]
+                    del new_sents[sent_no[1]]
+                merges += [sent_no]
                 restart = True
+
 
             # assert (len(sent_no) == 1), '{} ({}, {}) -- {} -- {} <> {}'.format(sent_no, term[0], term[1],
             #                                                                    new_sent_range,
@@ -193,9 +206,9 @@ def adjust_offsets(old_sents, new_sents, old_entities, f):
 
             new_entities.append(new_entity)
     if restart:
-        return adjust_offsets(old_sents, new_sents, old_entities, f)
+        return adjust_offsets(old_sents, new_sents, old_entities, f, merges)
     else:
-        return new_entities, new_sents
+        return new_entities, new_sents, merges
 
 
 ### Convert dataset to Pubtator
@@ -242,7 +255,7 @@ def preprocess_spacy_words(txt_files_path, ann_files_path, spacy_files_path, win
                 ## Processing
                 orig_sentences = ''.join(lines).split('\n')
                 split_sentences = [sent['_text'] for sent in new_sentences]
-                new_entities, split_sentences = adjust_offsets(orig_sentences, split_sentences, data['entities'], f)
+                new_entities, split_sentences, merges = adjust_offsets(orig_sentences, split_sentences, data['entities'], f, [])
                 data['entities'], data['sents'] = new_entities, split_sentences
                 stats['no_sents'] += len(split_sentences)
                 stats['len_sents'] += sum([len(s) for s in split_sentences])
@@ -266,8 +279,20 @@ def preprocess_spacy_words(txt_files_path, ann_files_path, spacy_files_path, win
                 offsets = get_offsets(split_sentences)
                 ## Adding verb information
                 sent_verbs = {}
-                for sent in new_sentences:
-                    sent_verbs[sent["sent_index"]] = sent["verbs"]
+
+                # first account for merges
+                sent_verb_dir = {}
+
+                for mer in merges: # should be a continuous range of sentences
+                    off = 0
+                    for i in range(1, len(mer)):
+                        off += len(new_sentences[mer[i-1]]["_text"]) + 1
+                        new_sentences[mer[0]]["_text"] = ' '.join([new_sentences[mer[0]]["_text"], new_sentences[mer[i]]["_text"]])
+                        new_sentences[mer[0]]["verbs"] += [{"t": verb["t"], "st": verb["st"]+off, "en": verb["en"]+off} for verb in new_sentences[mer[i]]["verbs"]]
+                    for i in range(1, len(mer)):
+                        del new_sentences[mer[1]] # since they are consecutive
+                for i, sent in enumerate(new_sentences):
+                    sent_verbs[i] = sent["verbs"] # basically ignoring sent_index
                 for st, end in unique.keys():  # Each is gonna be a sample
                     entries = unique[(st, end)]
                     sent_no = entries[0]['sent_no']
@@ -279,6 +304,13 @@ def preprocess_spacy_words(txt_files_path, ann_files_path, spacy_files_path, win
                     words = txt.split(' ')
                     original_words = txt.split(' ')
                     i, count = 0, 0
+                    ## debug
+                    # print(words)
+                    # print('entries', entries, )
+                    # print('offset', offset)
+                    # print('st - offset', st- offset)
+                    # print('end - offset', end - offset)
+                    ##
                     while count < st - offset:
                         count += len(words[i]) + 1
                         i += 1
