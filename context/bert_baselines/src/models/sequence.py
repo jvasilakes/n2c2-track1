@@ -209,6 +209,10 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
                 raise ValueError("use_entity_spans=True but no entity_token_idxs provided in forward()")  # noqa
             if self.use_levitated_markers is True:
                 if levitated_marker_idxs is not None:
+                    if [] in levitated_marker_idxs:
+                        idxs = [i for (i, lev_idxs) in enumerate(levitated_marker_idxs) if len(lev_idxs) == 0]
+                        for idx in idxs:
+                            levitated_marker_idxs[idx] = [0]
                     marker_output = self.levitated_marker_pooler(
                         bert_outputs.last_hidden_state, levitated_marker_idxs)
                     pooled_output = torch.cat(

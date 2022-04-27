@@ -1,0 +1,35 @@
+T1	Drug 979 995	anti-coagulation
+T2	Drug 1273 1283	Vancomycin
+T3	Drug 1316 1326	Vancomycin
+T4	Drug 1331 1341	Gentamicin
+T5	Drug 1359 1367	Rifampin
+T6	Drug 2228 2241	beta blockade
+T7	Drug 2588 2598	daptomycin
+T8	Drug 2603 2610	Bactrim
+T9	Drug 2949 2956	Bactrim
+T10	Drug 3680 3687	Bactrim
+T11	Drug 3726 3736	daptomycin
+T12	Drug 4700 4707	Heparin
+T13	Drug 4789 4802	ascorbic acid
+T14	Drug 4819 4826	aspirin
+T15	Drug 4843 4851	atenolol
+T16	Drug 4865 4872	Bactrim
+T17	Drug 4885 4893	Coumadin
+T18	Drug 4914 4919	Lasix
+T19	Drug 4933 4940	Lipitor
+T20	Drug 4957 4965	Protonix
+T21	Drug 4981 4990	Silvadene
+T22	Drug 4992 4996	zinc
+T23	Drug 6629 6641	anti-biotics
+T24	Drug 6942 6949	Bactrim
+T25	Drug 7044 7052	coumadin
+T26	Drug 7141 7149	coumadin
+T27	Drug 7316 7321	lasix
+T28	Drug 7769 7772	ASA
+T29	Drug 7774 7782	atenolol
+T30	Drug 7787 7794	lipitor
+T31	Drug 7813 7826	ACE-inhibitor
+T32	Drug 7907 7914	Bactrim
+T33	Drug 8009 8018	kayexlate
+T34	Drug 8092 8099	Bactrim
+T35	Drug 8230 8238	Coumadin

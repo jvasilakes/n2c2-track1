@@ -273,7 +273,7 @@ class BasicBertDataModule(pl.LightningDataModule):
         self.use_levitated_markers = use_levitated_markers
         self.levitate_window_size = levitate_window_size
         self.levitated_pos_tags = levitated_pos_tags
-        self.levitated_word_list = levitated_pos_tags
+        self.levitated_word_list = levitated_word_list
         self._name = name
 
         self.tokenizer = AutoTokenizer.from_pretrained(

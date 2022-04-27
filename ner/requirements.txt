@@ -1,0 +1,17 @@
+torch==1.7.1
+transformers==4.11.2
+yamlordereddictloader==0.4.0
+pyyaml
+tqdm
+requests
+cchardet
+regex
+bs4
+six
+boto3
+numpy==1.19.5
+loguru
+sklearn
+seaborn==0.11.2
+tensorboard==2.4.1
+kaleido
