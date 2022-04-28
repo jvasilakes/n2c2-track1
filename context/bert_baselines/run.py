@@ -181,10 +181,11 @@ def run_train(config, logdir="logs/", version=None,
     monitor_mode = "max"
     if "loss" in config.monitor:
         monitor_mode = "min"
+    filename_fmt = f"{{epoch:02d}}-{{{monitor_mode}:.2f}}"
     checkpoint_cb = ModelCheckpoint(
             monitor=config.monitor,
             mode=monitor_mode,
-            filename="{epoch:02d}-{config.monitor:.2f}")
+            filename=filename_fmt)
 
     available_gpus = min(1, torch.cuda.device_count())
     enable_progress_bar = not quiet
