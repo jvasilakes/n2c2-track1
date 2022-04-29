@@ -1,34 +1,26 @@
 # Action
 
 ## Micro F1
+Tuned to micro F1
 ```
+avg_micro_f1/bluebert/mdl/n2c2action_i2b2event/version_1/eval_dev.txt << Submission 1
+0.833 | 0.833 | 0.833
+
 clinical_bert/mdl/n2c2action_i2b2event/version_1/eval_dev.txt
-0.833 | 0.833 | 0.833 |
-Avg over Random Seeds
-0.8072 | 0.8072 | 0.8072
-Retuned to micro f1
-to be run
-
-bluebert/mdl/n2c2action_i2b2event/version_1/eval_dev.txt << Submission 1
-0.828 | 0.828 | 0.828
-Avg over Random Seeds
-0.8228 | 0.8228 | 0.8228
-Retuned to micro f1
-
-clinical_bert/action_entity_marked/version_1/eval_dev.txt
-0.814 | 0.814 | 0.814 
+0.833 | 0.833 | 0.833
 
 CV
-bluebert/action_entity_marker/version_1 << Submission 3
+avg_micro_f1/bluebert/mdl/n2c2action_i2b2event/version_1 << Submission 3
+0.8848 | 0.8848 | 0.8848
+
+avg_micro_f1/bluebert/action_entity_marker/version_1
+0.8784 | 0.8784 | 0.8784
+
+bluebert/action_entity_marker/version_1
 0.8736 | 0.8736 | 0.8736
-Retuned to micro f1
-to be run
 
-clinical_bert/action_entity_marked.orig/version_4
-0.8572 | 0.8572 | 0.8572
-
-clinical_bert/mdl/n2c2action_i2b2event/version_1
-0.8526 | 0.8526 | 0.8526
+avg_micro_f1/clinical_bert/mtl/action_negation/version_1
+0.8608 | 0.8608 | 0.8608
 ```
 
 ## Macro F1
@@ -64,13 +56,17 @@ bluebert/action_entity_marker/version_1
 
 ## Micro F1
 ```
-bert/actor_entity_marked/version_1/eval_dev.txt << Submission 1
-0.923 | 0.923 | 0.923 |`
+bert/actor_entity_marked/version_1/eval_dev.txt
+0.923 | 0.923 | 0.923
 Retuned to micro f1
-to be run
+avg_micro_f1/bert/actor_entity_marked/version_1/eval_dev.txt  << Submission 1
+0.923 | 0.923 | 0.923
 
 CV
-bert/actor_entity_marked/version_1 << Submission 3
+avg_micro_f1/bert/actor_entity_marked/version_1 << Submission 3
+0.9322 | 0.9322 | 0.9322
+
+bert/actor_entity_marked/version_1
 0.9184 | 0.9184 | 0.9184
 ```
 
@@ -89,10 +85,11 @@ bert/actor_entity_marked/version_1
 
 ## Micro F1
 ```
-clinical_bert/mdl/n2c2cert_i2b2cert/version_2/eval_dev.txt << Submission 1
+clinical_bert/mdl/n2c2cert_i2b2cert/version_2/eval_dev.txt
 0.914 | 0.914 | 0.914 |
 Retuned to micro f1
-to be run
+avg_micro_f1/clinical_bert/mdl/n2c2cert_i2b2cert/version_1/eval_dev.txt << Submission 1
+0.914 | 0.914 | 0.914
 
 bert/certainty_entity_marked/version_3/eval_dev.txt
 0.910 | 0.910 | 0.910 |
@@ -104,7 +101,10 @@ bert/mdl/n2c2cert_i2b2cert/version_1/eval_dev.txt
 0.905 | 0.905 | 0.905
 
 CV
-clinical_bert/mdl/n2c2cert_i2b2cert/version_2 << Submission 3
+avg_micro_f1/clinical_bert/mdl/n2c2cert_i2b2cert/version_1 << Submission 3
+0.926 | 0.926 | 0.926
+
+clinical_bert/mdl/n2c2cert_i2b2cert/version_2
 0.9184 | 0.9184 | 0.9184
 
 bert/certainty_entity_marked/version_3
@@ -142,7 +142,8 @@ bert/certainty_entity_marked/version_3/
 clinical_bert/mtl/action_negation/version_3/eval_dev.txt << Submission 1
 0.986 | 0.986 | 0.986 |
 Retuned to micro f1
-to be run
+avg_micro_f1/clinical_bert/mtl/action_negation/version_1/eval_dev.txt
+0.982 | 0.982 | 0.982
 
 clinical_bert/mtl/action_negation/version_1/eval_dev.txt
 0.986 | 0.986 | 0.986 |
@@ -157,7 +158,8 @@ CV
 clinical_bert/mtl/action_negation/version_3  << Submission 3
 0.9782 | 0.9782 | 0.9782
 Retuned to micro f1
-to be run
+avg_micro_f1/clinical_bert/mtl/action_negation/version_1
+0.9768 | 0.9768 | 0.9768
 
 clinical_bert/mdl/n2c2action_negation_i2b2event/version_1
 0.9778 | 0.9778 | 0.9778
@@ -205,7 +207,8 @@ bert/negation/version_1
 clinical_bert/mdl/n2c2_i2b2_temporality/version_3/eval_dev.txt  << Submission 1
 0.864 | 0.864 | 0.864 |
 Retuned on micro f1
-to be run
+avg_micro_f1/clinical_bert/mdl/n2c2_i2b2_temporality/version_1/eval_dev.txt
+0.855 | 0.855 | 0.855
 
 clinical_bert/pl_markers/n2c2_i2b2_temporality/version_2/eval_dev.txt
 0.855 | 0.855 | 0.855 |
@@ -217,14 +220,14 @@ bluebert/temporality_entity_marked/version_1/eval_dev.txt
 0.851 | 0.851 | 0.851 |
 
 CV
+avg_micro_f1/clinical_bert/temporality_entity_marked/version_1  << Submission 3
+0.8722 | 0.8722 | 0.8722
+
+avg_micro_f1/clinical_bert/mdl/n2c2_i2b2_temporality/version_1
+0.8662 | 0.8662 | 0.8662 
+
 clinical_bert/temporality_entity_marked/version_3 << Submission 3
 0.8626 | 0.8626 | 0.8626
-
-clinical_bert/pl_markers/n2c2_i2b2_temporality/version_2
-0.8586 | 0.8586 | 0.8586
-
-clinical_bert/mdl/n2c2_i2b2_temporality/version_3
-0.8534 | 0.8534 | 0.8534
 ```
 
 ## Macro F1
