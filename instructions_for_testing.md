@@ -56,9 +56,22 @@ which corresponds to a subdirectory of `${n2c2_track1_home}/ner/experiments/`.
 cd ${n2c2_track1_home}
 bash ner/run_test.sh
 ```
-
 **Output**: `experiments/${ner_model}/predict-test-org`
 **Output Description**: brat-formatted files, one per input file, containing detected medication spans.
+
+### Step 3: run ensemble
+
+ * Assuming that we have predictions from different models in a folder `${n2c2_track1_home}/ner/experiments/test_predictions`
+ * Ensure that in that folder we have predictions produced by a different model in a different folder, such as `${n2c2_track1_home}/ner/experiments/test_predictions/${ner_model}/predict-test-org`. This folder is the output from Step 2.
+ * Run the following command line
+```
+cd ${n2c2_track1_home}/ner
+mdkir ${n2c2_track1_home}/ner/experiments/test_ensemble
+python src/ensemble.py --indir ${n2c2_track1_home}/ner/experiments/test_predictions --outdir ${n2c2_track1_home}/ner/experiments/test_ensemble --type test
+``` 
+**Output**: `${n2c2_track1_home}/ner/experiments/test_ensemble`
+**Output Description**: brat-formatted files, one per input file, containing detected medication spans.
+
 
 
 
