@@ -52,16 +52,16 @@ def max_voting_test(folderIn, folderOut):
     numberOfVoter = len(voters)        
     predictions = {}    
     for voter in voters:            
-        if not os.path.exists(os.path.join(folderIn, voter, 'predict-dev-org')):
+        if not os.path.exists(os.path.join(folderIn, voter, 'predict-test-org')):
             numberOfVoter -= 1
             continue
-        for file in os.listdir(os.path.join(folderIn, voter, 'predict-dev-org')):
+        for file in os.listdir(os.path.join(folderIn, voter, 'predict-test-org')):
             file_predicts = {}
             span_texts = {}
             if '.txt' in file: continue                
             if file in predictions:
                 file_predicts, span_texts = predictions[file]
-            anns = BratAnnotations.from_file(os.path.join(folderIn, voter, 'predict-dev-org', file))
+            anns = BratAnnotations.from_file(os.path.join(folderIn, voter, 'predict-test-org', file))
             for span in anns.spans:
                 start = span.start_index
                 end = span.end_index
@@ -113,7 +113,7 @@ def main():
     the folder 'predict-dev-org' contains the predictions with original offsets from the input .txt files
     the folder 'predict-dev-org' was created by running predict.py on the dev set
 
-    to ensemble for the testing set: input_dir should have the structure of input_dir/model_name/predict-dev-org
+    to ensemble for the testing set: input_dir should have the structure of input_dir/model_name/predict-test-org
     '''
     
     parser = argparse.ArgumentParser()
