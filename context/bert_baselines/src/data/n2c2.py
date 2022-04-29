@@ -80,48 +80,12 @@ class n2c2DataModule(BasicBertDataModule):
         self._ran_setup = False
 
     def setup(self, stage=None):
-        load_labels = True
+        # These will be set by self._setup() or self._setup_predict()
+        self.train = self.val = self.test = self.predict = None
         if stage == "predict":
-            load_labels = False
-            warnings.warn("Predict mode ON: not loading gold-labels.")
-        train_path = os.path.join(self.data_dir, "train")
-        train_sent_path = os.path.join(self.sentences_dir, "train")
-        self.train = self.dataset_class(
-                train_path, train_sent_path,
-                window_size=self.window_size,
-                label_names=self.tasks_to_load,
-                max_examples=self.max_train_examples,
-                mark_entities=self.mark_entities,
-                entity_markers=self.entity_markers,
-                load_labels=load_labels)
-
-        val_path = os.path.join(self.data_dir, "dev")
-        val_sent_path = os.path.join(self.sentences_dir, "dev")
-        if os.path.exists(val_path):
-            self.val = self.dataset_class(
-                    val_path, val_sent_path,
-                    window_size=self.window_size,
-                    label_names=self.tasks_to_load,
-                    mark_entities=self.mark_entities,
-                    entity_markers=self.entity_markers,
-                    load_labels=load_labels)
+            self._setup_predict()
         else:
-            warnings.warn("No dev set found.")
-            self.val = None
-
-        test_path = os.path.join(self.data_dir, "test")
-        test_sent_path = os.path.join(self.sentences_dir, "test")
-        if os.path.exists(test_path):
-            self.test = self.dataset_class(
-                    test_path, test_sent_path,
-                    window_size=self.window_size,
-                    label_names=self.tasks_to_load,
-                    mark_entities=self.mark_entities,
-                    entity_markers=self.entity_markers,
-                    load_labels=load_labels)
-        else:
-            warnings.warn("No test set found.")
-            self.test = None
+            self._setup()
 
         if self.sample_strategy is None:
             self.sampler = None
@@ -135,6 +99,86 @@ class n2c2DataModule(BasicBertDataModule):
             raise ValueError(msg)
 
         self._ran_setup = True
+
+    def _setup_predict(self):
+        warnings.warn("Predict mode ON: not loading gold-labels.")
+        self.predict = self.dataset_class(
+                self.data_dir, self.sentences_dir,
+                window_size=self.window_size,
+                label_names=self.tasks_to_load,
+                mark_entities=self.mark_entities,
+                entity_markers=self.entity_markers,
+                load_labels=False)
+
+    def _setup(self):
+        train_path = os.path.join(self.data_dir, "train")
+        train_sent_path = os.path.join(self.sentences_dir, "train")
+        self.train = self.dataset_class(
+                train_path, train_sent_path,
+                window_size=self.window_size,
+                label_names=self.tasks_to_load,
+                max_examples=self.max_train_examples,
+                mark_entities=self.mark_entities,
+                entity_markers=self.entity_markers,
+                load_labels=True)
+
+        val_path = os.path.join(self.data_dir, "dev")
+        val_sent_path = os.path.join(self.sentences_dir, "dev")
+        if os.path.exists(val_path):
+            self.val = self.dataset_class(
+                    val_path, val_sent_path,
+                    window_size=self.window_size,
+                    label_names=self.tasks_to_load,
+                    mark_entities=self.mark_entities,
+                    entity_markers=self.entity_markers,
+                    load_labels=True)
+        else:
+            warnings.warn("No dev set found.")
+            self.val = None
+
+        test_path = os.path.join(self.data_dir, "test")
+        test_sent_path = os.path.join(self.sentences_dir, "test")
+        if os.path.exists(test_path):
+            self.test = self.dataset_class(
+                    test_path, test_sent_path,
+                    window_size=self.window_size,
+                    label_names=self.tasks_to_load,
+                    mark_entities=self.mark_entities,
+                    entity_markers=self.entity_markers,
+                    load_labels=True)
+        else:
+            warnings.warn("No test set found.")
+            self.test = None
+
+    def train_dataloader(self):
+        shuffle = True if self.sampler is None else False
+        return DataLoader(self.train, batch_size=self.batch_size,
+                          shuffle=shuffle, collate_fn=self.encode_and_collate,
+                          num_workers=4, sampler=self.sampler)
+
+    def val_dataloader(self):
+        if self.val is not None:
+            return DataLoader(self.val, batch_size=self.batch_size,
+                              collate_fn=self.encode_and_collate,
+                              num_workers=4)
+        warnings.warn("No val data found.")
+        return None
+
+    def test_dataloader(self):
+        if self.test is not None:
+            return DataLoader(self.test, batch_size=self.batch_size,
+                              collate_fn=self.encode_and_collate,
+                              num_workers=4)
+        warnings.warn("No test data found.")
+        return None
+
+    def predict_dataloader(self):
+        if self.predict is not None:
+            return DataLoader(self.predict, batch_size=self.batch_size,
+                              collate_fn=self.encode_and_collate,
+                              num_workers=4)
+        warnings.warn("No predict data loaded")
+        return None
 
     def __str__(self):
         return f"""{self.__class__}
@@ -169,7 +213,7 @@ class n2c2DataModule(BasicBertDataModule):
             return self._label_spec
 
         spec = {task: len(encs) for (task, encs)
-                in self.train.ENCODINGS.items()}
+                in self.dataset_class.ENCODINGS.items()}
         if self.tasks_to_load != "all":
             spec = {task: n for (task, n) in spec.items()
                     if task in self.tasks_to_load}
@@ -180,7 +224,9 @@ class n2c2DataModule(BasicBertDataModule):
         """
         Just exposes inverse_transform from the underlying dataset.
         """
-        return self.train.inverse_transform(
+        datasets = [self.train, self.val, self.test, self.predict]
+        not_none_dataset = [ds for ds in datasets if ds is not None][0]
+        return not_none_dataset.inverse_transform(
                 task=task, encoded_labels=encoded_labels)
 
     @property
@@ -197,26 +243,6 @@ class n2c2DataModule(BasicBertDataModule):
         else:
             raise ValueError(f"Unsupported class weighting {self.compute_class_weights}")  # noqa
         return self._class_weights
-
-    def train_dataloader(self):
-        shuffle = True if self.sampler is None else False
-        return DataLoader(self.train, batch_size=self.batch_size,
-                          shuffle=shuffle, collate_fn=self.encode_and_collate,
-                          num_workers=4, sampler=self.sampler)
-
-    def val_dataloader(self):
-        if self.val is not None:
-            return DataLoader(self.val, batch_size=self.batch_size,
-                              collate_fn=self.encode_and_collate,
-                              num_workers=4)
-        return None
-
-    def test_dataloader(self):
-        if self.test is not None:
-            return DataLoader(self.test, batch_size=self.batch_size,
-                              collate_fn=self.encode_and_collate,
-                              num_workers=4)
-        return None
 
     # Used with WeightedRandomSampler in setup()
     def _compute_sample_weights(self, train_dataset):
