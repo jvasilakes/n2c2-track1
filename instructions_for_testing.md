@@ -6,6 +6,14 @@ The pipeline contains three main sections:
  2. [Event Extraction](#event-extraction)
  3. [Context Classification](#context-classification)
 
+There are 3 data releases in the evaluation:
+
+ 1. End-to-end (NER, NER+Event, NER+Event+Context), given plain text files.
+ 2. Event, Event+Context given gold-standard NER.
+ 3. Context given gold-standard events.
+
+For each release, we can submit up to 3 runs.
+
 
 ## Preliminaries
 
@@ -16,7 +24,7 @@ The test data will be a set of plain text files.
 First, do the following:
 
  1. A quick manual review of the text files to check for obvious problems, e.g. empty documents, documents in other languages, etc.
- 2. Copy/move all text files to `${n2c2_track1_home}/n2c2TestData/test/0`.
+ 2. Copy/move all text files to `${n2c2_track1_home}/n2c2TestData/test/${release_number}`.
  3. Count all text files to ensure we have the same number as the organizers released: `ls -1 ${n2c2_track1_home}/n2c2TestData/test/0/*.txt | wc -l`
  4. Run and validate sentence splitting:
 
@@ -64,10 +72,13 @@ bash ner/run_test.sh
  * Assuming that we have predictions from different models in a folder `${n2c2_track1_home}/ner/experiments/test_predictions`
  * Ensure that in that folder we have predictions produced by a different model in a different folder, such as `${n2c2_track1_home}/ner/experiments/test_predictions/${ner_model}/predict-test-org`. This folder is the output from Step 2.
  * Run the following command line
+
 ```
 cd ${n2c2_track1_home}/ner
-mdkir ${n2c2_track1_home}/ner/experiments/test_ensemble
-python src/ensemble.py --indir ${n2c2_track1_home}/ner/experiments/test_predictions --outdir ${n2c2_track1_home}/ner/experiments/test_ensemble --type test
+mkdir ${n2c2_track1_home}/ner/experiments/test_ensemble
+python src/ensemble.py --indir ${n2c2_track1_home}/ner/experiments/test_predictions \
+		       --outdir ${n2c2_track1_home}/ner/experiments/test_ensemble \
+		       --type test
 ``` 
 **Output**: `${n2c2_track1_home}/ner/experiments/test_ensemble`
 **Output Description**: brat-formatted files, one per input file, containing detected medication spans.
@@ -113,26 +124,33 @@ Separate models have been trained for each subtask. We run prediction for each a
 Prediction follows the same template for all tasks. Let `${task}` be one of `action, actor, certainty, negation, temporality`.
 
 
-**Model Location**: See `${n2c2_track1_home}/context/bert_baselines/submissions/{1,2,3}/${task}.txt`
+**Model Location**: See `/net/scratch2/mbassnt3/n2c2_2022/models_for_submission/` on csf3.
 
 #### If using a single model (submissions 1 and 2)
 ```
-python run.py predict --datasplit test ${model_location}/config.yaml
+python run.py predict ${model_location}/config.yaml \
+                      --datasplit test \
+                      --datadir ${n2c2_track1_home}/ee/saved_models/${bert_model}_${train_split}/predictions/test \
+                      --sentences_dir ${n2c2_track1_home}/n2c2TestData/test/segmented/
 ```
 **Output**: `${model_location}/predictions/n2c2ContextDataset/brat/test`
 
 
 
-#### If using an ensemble of models (submissions 3)
+#### If using an ensemble of models (submission 3)
 ```
-ensemble_outdir=/mnt/iusers01/nactem01/u14498jv/scratch/n2c2_track1/context/bert_baseline_logs/ensemble_predictions/
-bash predict_ensemble.sh test \
-                         ${n2c2_track1_home}/context/bert_baselines/submissions/3/${task}.txt \
-                         ${ensemble_outdir}/test/${task}/${version}/
-```
-`${version}` is automatically determined by `predict_ensemble.sh` and is printed to standard out when running the script.
+submissions_dir=/net/scratch2/mbassnt3/n2c2_2022/submissions/release_{1,2,3}/submission_{1,2,3}/
 
-**Output**: `${ensemble_outdir}/test/${task}/${version}/`
+bash utils/predict_ensemble.sh --task ${task} --split test \
+                               --modeldir ${submissions_dir}/context/models/${task}/ \
+                               --anndir ${n2c2_track1_home}/ee/saved_models/${bert_model}_${train_split}/predictions/test \
+                               --sentsdir ${n2c2_track1_home}/n2c2TestData/test/segmented/ \
+                               --outdir ${submission_dir}/context/predictions/
+```
+
+**Output**: `${submission_dir}/context/predictions/test/${task}/${version}/ann`
+
+`${version}` is automatically determined by `predict_ensemble.sh` and is printed to standard out when running the script.
 
 
 
@@ -140,28 +158,11 @@ bash predict_ensemble.sh test \
 ## Merging predictions for submission
 
 Once all models have been run, merge the brat files with the following command.
-Let `sub_num` be one of `1, 2, 3`.
 
 ```
-submission_outdir=/mnt/iusers01/nactem01/u14498jv/scratch/n2c2_track1/context/bert_baseline_logs/submission/${sub_num}
+predictions_dir=/net/scratch2/mbassnt3/n2c2_2022/submissions/release_{1,2,3}/submission_{1,2,3}/context/predictions/test/
 ${n2c2_track1_home}/context/bert_baselines/utils/merge_brat_predictions.py \
-                --pred_dirs ${outdir_action_sub_num} \
-                            ${outdir_actor_sub_num} \
-                            ${outdir_certainty_sub_num} \
-                            ${outdir_negation_sub_num} \
-                            ${outdir_temporality_sub_num} \
-                --outdir ${submission_outdir}
+                --pred_dirs ${predictions_dir}/{Action,Actor,Certainty,Negation,Temporality} \
+                --outdir ${predictions_dir}/all
 ```
-Where `outdir_${task}_sub_num` corresponds to the test predictions for the given task and submission. For example, for Submission
-2 on Action,
-
-```
-outdir_action_2=${model_location_action}/predictions/n2c2ContextDataset/brat/test/
-```
-
-For Submission 3 on Negation,
-```
-outdir_negation_3=${ensemble_outdir}/test/negation/${version}/
-```
-
-**Output**: `/mnt/iusers01/nactem01/u14498jv/scratch/n2c2_track1/context/bert_baseline_logs/submission/{1,2,3}/`
+**Output**: `/net/scratch2/mbassnt3/n2c2_2022/submissions/release_{1,2,3}/submission_{1,2,3}/context/predictions/test/all/`
