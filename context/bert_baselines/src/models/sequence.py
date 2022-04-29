@@ -313,7 +313,7 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
                 labels_by_task[task].extend(metrics["labels"].detach().cpu().numpy())  # noqa
 
         val_losses = []
-        macro_f1s = []
+        f1s = defaultdict(list)
         for task in losses_by_task.keys():
             losses_by_task[task] = np.array(losses_by_task[task]).mean()
             preds_by_task[task] = np.array(preds_by_task[task])
@@ -327,15 +327,15 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
                     p, r, f1, _ = precision_recall_fscore_support(
                             labels_by_task[task], preds_by_task[task],
                             average=avg_fn)
-                    if avg_fn == "macro":
-                        macro_f1s.append(f1)
+                    f1s[avg_fn].append(f1)
                 res = {f"{avg_fn}_{task}_precision": p,
                        f"{avg_fn}_{task}_recall": r,
                        f"{avg_fn}_{task}_F1": f1}
                 self.log_dict(res, prog_bar=False)
 
         self.log_dict({"avg_val_loss": np.mean(val_losses),
-                       "avg_macro_f1": np.mean(macro_f1s)}, prog_bar=True)
+                       "avg_macro_f1": np.mean(f1s["macro"]),
+                       "avg_micro_f1": np.mean(f1s["micro"])}, prog_bar=True)
 
     def configure_optimizers(self):
         params = self.parameters()

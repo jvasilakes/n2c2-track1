@@ -24,14 +24,16 @@ First, do the following:
 
 **Input**: `${n2c2_track1_home}/n2c2TestData/test`
 **Input Description**: plain text files.
+**Model Location**:
 
 ### Step 1: set the prediction model
 
+Set `ner_model` to **Model Location**.
 For example, we'll predict using roberta trained on the first CV split.
 ```
 ner_model=0/baseline_roberta
 ```
-This corresponds to a subdirectory of `${n2c2_track1_home}/ner/experiments/`.
+which corresponds to a subdirectory of `${n2c2_track1_home}/ner/experiments/`.
 
 
 ### Step 2: run prediction
@@ -66,16 +68,27 @@ python src/ensemble.py --indir ${n2c2_track1_home}/ner/experiments/test_predicti
 
 **Input**: `${n2c2_track1_home}/ner/experiments/${model}/predict-test-org`
 
-sh xec_n2c2_predict.sh blue experiments/${ner_model}/predict-test-org preprocess
+**Model Location**: `${n2c2_track1_home}/ee/saved_models/`
 
+Set the following to specify the event extraction model in accordance with **Model Location** above.
+For example, we'll evaluate BlueBERT trained on the ensemble split.
+```
+bert_model="blue"
+train_split="ensemble"
+```
 
-**Output**: 
+```
+cd ${n2c2_track1_home}/ee/src
+sh xec_n2c2_predict.sh ${bert_model} ${train_split} ${n2c2_track1_home}/ner/experiments/${ner_model}/predict-test-org preprocess
+```
+
+**Output**: `${n2c2_track1_home}/ee/saved_models/${bert_model}_${train_split}/predictions/test`
 **Output Description**: brat-formatted files, one per input file, containing detected Disposition and NoDisposition events.
 
 
 ## Context Classification
 
-**Input**: 
+**Input**: `${n2c2_track1_home}/ee/saved_models/${bert_model}_${train_split}/predictions/test`
 
 Context classification is further broken into 5 simultaneous tasks:
 
@@ -85,29 +98,60 @@ Context classification is further broken into 5 simultaneous tasks:
  * [Negation](#negation)
  * [Temporality](#temporality)
 
-**Output**:
-**Output Description**:
 
 ### Action
 
-**Model Location**:
+**Model Location Action**: See `${n2c2_track1_home}/context/bert_baselines/submissions/{1,2,3}/action.txt`
+
+```
+python run.py predict ${model_location_action}/config.yaml
+```
+**Output**: `${model_location_action}/predictions/n2c2ContextDataset/brat/test`, where `model_location` is defined below.
 
 
 ### Actor
 
-**Model Location**:
+**Model Location Actor**: See `${n2c2_track1_home}/context/bert_baselines/submissions/{1,2,3}/actor.txt`
+
+```
+python run.py predict ${model_location_actor}/config.yaml
+```
+**Output**: `${model_location_actor}/predictions/n2c2ContextDataset/brat/test`, where `model_location` is defined below.
 
 
 ### Certainty
 
-**Model Location**:
+**Model Location Certainty**: See `${n2c2_track1_home}/context/bert_baselines/submissions/{1,2,3}/certainty.txt`
 
+```
+python run.py predict ${model_location_certainty}/config.yaml
+```
+**Output**: `${model_location_certainty}/predictions/n2c2ContextDataset/brat/test`, where `model_location` is defined below.
 
 ### Negation
 
-**Model Location**:
+**Model Location Negation**: See `${n2c2_track1_home}/context/bert_baselines/submissions/{1,2,3}/negation.txt`
 
+```
+python run.py predict ${model_location_negation}/config.yaml
+```
+**Output**: `${model_location_negation}/predictions/n2c2ContextDataset/brat/test`, where `model_location` is defined below.
 
 ### Temporality
 
-**Model Location**:
+**Model Location Temporality**: See `${n2c2_track1_home}/context/bert_baselines/submissions/{1,2,3}/temporality.txt`
+
+```
+python run.py predict ${model_location_temporality}/config.yaml
+```
+**Output**: `${model_location_temporality}/predictions/n2c2ContextDataset/brat/test`, where `model_location` is defined below.
+
+
+## Merging predictions
+
+Once all models have been run, merge the brat files.
+
+```
+${n2c2_track1_home}/context/bert_baselines/utils/merge_brat_predictions.py n2c2ContextDataset test --model_dirs ${model_location_action} ${model_location_actor} ${model_location_certainty} ${model_location_negation} ${model_location_temporality} --outdir ${outdir}
+```
+**Output**: 
