@@ -76,7 +76,7 @@ bert/actor_entity_marked/version_1/eval_dev.txt << Submission 2
 0.762 | 0.656 | 0.700 |
 
 CV
-bert/actor_entity_marked/version_1
+bert/actor_entity_marked/version_1 << Submission 3
 0.7538 | 0.7322 | 0.7206
 ```
 
@@ -226,7 +226,7 @@ avg_micro_f1/clinical_bert/temporality_entity_marked/version_1  << Submission 3
 avg_micro_f1/clinical_bert/mdl/n2c2_i2b2_temporality/version_1
 0.8662 | 0.8662 | 0.8662 
 
-clinical_bert/temporality_entity_marked/version_3 << Submission 3
+clinical_bert/temporality_entity_marked/version_3
 0.8626 | 0.8626 | 0.8626
 ```
 

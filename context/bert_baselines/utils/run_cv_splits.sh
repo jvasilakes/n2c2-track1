@@ -1,5 +1,5 @@
 MODEL_DIR=$1
-$2 --quiet
+$2 # --quiet
 
 for config in $(ls -1 ${MODEL_DIR}/cv_split_configs/*.yaml); do
   logbasedir=$(grep "^logdir:" $config | awk '{print $2}')
