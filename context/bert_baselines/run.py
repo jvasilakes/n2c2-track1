@@ -62,6 +62,15 @@ def parse_args():
             choices=["train", "dev", "test"],
             help="Predict on this data split. Default 'dev'.")
     pred_parser.add_argument(
+            "--datadir", type=str, default=None,
+            help="""Path to directory containing .txt
+                    files to run prediction on. If specified,
+                    --sentences_dir must also be specified.""")
+    pred_parser.add_argument(
+            "--sentences_dir", type=str, default=None,
+            help="""Path to directory containing sentence segmentations.
+                    Only valid when --datadir is not None.""")
+    pred_parser.add_argument(
             "--output_json", action="store_true", default=False,
             help="""If set, save json formatted predictions
                     to the predictions/ directory under the logdir.""")
@@ -74,8 +83,8 @@ def parse_args():
     return parser.parse_args()
 
 
-def load_datamodule(config, stage):
-    datamodule = load_datamodule_from_config(config)
+def load_datamodule(config, stage, **override_kwargs):
+    datamodule = load_datamodule_from_config(config, **override_kwargs)
     datamodule.setup(stage=stage)
     print(datamodule)
     print("Label Spec")
@@ -117,6 +126,8 @@ def main(args):
         run_kwargs["datasplit"] = args.datasplit
         version = get_current_experiment_version(args.config_file)
         run_kwargs["version"] = version
+        run_kwargs["datadir"] = args.datadir
+        run_kwargs["sentences_dir"] = args.sentences_dir
         run_kwargs["output_json"] = args.output_json
         run_kwargs["output_token_masks"] = args.output_token_masks
         run_fn = run_predict
@@ -319,14 +330,21 @@ def run_validate(config, datasplit="dev",
 
 
 def run_predict(config, datasplit="dev",
+                datadir=None, sentences_dir=None,
                 logdir="logs/", version=None, quiet=False,
                 output_json=False, output_token_masks=False):
 
     stage = None
-    if datasplit == "test":
-        # Don't load labels, because there aren't any.
+    data_kwargs = {}
+    if datadir is not None:
+        if sentences_dir is None:
+            raise ValueError("Must specify either both or neither of --datadir, --sentences_dir")  # noqa
+        # This tells the dataloader not to look for gold labels.
+        ann_glob = os.path.join(datadir, "*.ann")
+        assert len(ann_glob) > 0, f"No .ann files found at {ann_glob}"
         stage = "predict"
-    datamodule = load_datamodule(config, stage=stage)
+        data_kwargs = {"data_dir": datadir, "sentences_dir": sentences_dir}
+    datamodule = load_datamodule(config, stage=stage, **data_kwargs)
 
     checkpoint_file, hparams_file = find_checkpoint(
             logdir, config.name, version, ckpt_glob="epoch*.ckpt")
@@ -344,16 +362,17 @@ def run_predict(config, datasplit="dev",
             gpus=available_gpus,
             enable_progress_bar=enable_progress_bar
             )
-    if datasplit == "train":
-        pred_dataloader_fn = datamodule.train_dataloader
-    elif datasplit == "dev":
-        pred_dataloader_fn = datamodule.val_dataloader
-    elif datasplit == "test":
-        if datamodule.test_dataloader() is None:
-            raise OSError("No test data found. Aborting.")
-        pred_dataloader_fn = datamodule.test_dataloader
+    if stage == "predict":
+        pred_dataloader_fn = datamodule.predict_dataloader
     else:
-        raise ValueError(f"Unknown validation data split '{datasplit}'")
+        if datasplit == "train":
+            pred_dataloader_fn = datamodule.train_dataloader
+        elif datasplit == "dev":
+            pred_dataloader_fn = datamodule.val_dataloader
+        elif datasplit == "test":
+            if datamodule.test_dataloader() is None:
+                raise OSError("No test data found. Aborting.")
+            pred_dataloader_fn = datamodule.test_dataloader
 
     pred_dataloader_kwargs = {}
     if isinstance(datamodule, CombinedDataModule):
@@ -374,6 +393,10 @@ def run_predict(config, datasplit="dev",
             doc_anns.save_brat(preds_dir)
 
     if output_json is True:
+        if stage == "predict":
+            # We don't have gold labels so this won't work.
+            raise ValueError("--output_json requires gold labels, which were not loaded.")  ## noqa
+
         preds_by_dataset = batched_predictions_to_json(preds, datamodule)
         for (dataset, preds_by_task) in preds_by_dataset.items():
             preds_dir = os.path.join(logdir, config.name, f"version_{version}",
@@ -556,7 +579,7 @@ def batched_predictions_to_brat(preds, datamodule):
         #   This is a bit of side-case, however, when we load two tasks
         #       from the same dataset as separate datasets (i.e., one is
         #       loaded under auxiliary_data.
-        default_dataset_name = datamodule.train_dataloader().dataset.name
+        default_dataset_name = datamodule.dataset_name + "Dataset"
         dataset = default_dataset_name
         for (i, docid) in enumerate(batch["docids"]):
             attrs = {}
