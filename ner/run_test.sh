@@ -42,16 +42,18 @@ python3 $NER_DIR/src/tokenization/tokenization.py --indir $ORG_CORPUS --outdir $
 echo "Predict the test set ..."
 cd $NER_DIR
 
-# for model in "baseline" "baseline_roberta" "clinical_bert"
-for model in "baseline"
+for model in $(ls -d experiments/*/) 
+#for model in "baseline"
     do              
         echo "Running $model"  
-        python -u src/predict.py --yaml  experiments/$model/predict-test.yaml > experiments/$model/predict-test.log
+        python -u src/predict.py --yaml  $model/predict-test.yaml > $model/predict-test.log
 
         echo "Convert back to the original offsets "
-        python src/scripts/postprocess.py $TEST_CORPUS/0 experiments/$model/predict-test/ent-last/ent-ann experiments/$model/predict-test-org        
+        python src/scripts/postprocess.py $TEST_CORPUS/0 $model/predict-test/ent-last/ent-ann $model/predict-test-org        
 
     done
 
-
+#to run ensemble using max voting
+# mkdir -p experiments/ensemble
+# python src/ensemble.py --indir experiments --outdir experiments/ensemble --type test
 cd $HOME
