@@ -115,7 +115,22 @@ class CombinedDataModule(BasicBertDataModule):
         self.names = names
         self._ran_setup = False
 
+    # TODO: move this logic to BasicBertDataModule
     def setup(self, stage=None):
+        self.train = self.val = self.test = self.predict = None
+        if stage == "predict":
+            self._setup_predict()
+        else:
+            self._setup()
+
+    def _setup_predict(self):
+        warnings.warn("Predict mode ON: not loading gold labels.")
+        for dm in self.datamodules:
+            if dm._ran_setup is False:
+                dm.setup(stage="predict")
+        self.predict = CombinedDataset([dm.predict for dm in self.datamodules])
+
+    def _setup(self):
         for dm in self.datamodules:
             if dm._ran_setup is False:
                 # Ignore warnings about missing test splits.

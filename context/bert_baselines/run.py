@@ -343,7 +343,9 @@ def run_predict(config, datasplit="dev",
         ann_glob = os.path.join(datadir, "*.ann")
         assert len(ann_glob) > 0, f"No .ann files found at {ann_glob}"
         stage = "predict"
-        data_kwargs = {"data_dir": datadir, "sentences_dir": sentences_dir}
+        data_kwargs = {"data_dir": datadir,
+                       "sentences_dir": sentences_dir,
+                       "auxiliary_data": {}}
     datamodule = load_datamodule(config, stage=stage, **data_kwargs)
 
     checkpoint_file, hparams_file = find_checkpoint(
@@ -536,7 +538,10 @@ def batched_predictions_to_json(preds, datamodule):
     """
     preds_by_dataset_and_task = defaultdict(lambda: defaultdict(list))
     for batch in preds:
-        default_dataset_name = datamodule.train_dataloader().dataset.name
+        tmp = [getattr(datamodule, split, None) for split in
+               ["train", "val", "test", "predict"]
+               if getattr(datamodule, split, None) is not None]
+        default_dataset_name = tmp[0].name
         dataset = default_dataset_name
         for (i, docid) in enumerate(batch["docids"]):
             for (task, preds) in batch["predictions"].items():
@@ -579,13 +584,26 @@ def batched_predictions_to_brat(preds, datamodule):
         #   This is a bit of side-case, however, when we load two tasks
         #       from the same dataset as separate datasets (i.e., one is
         #       loaded under auxiliary_data.
-        default_dataset_name = datamodule.dataset_name + "Dataset"
+        tmp = [getattr(datamodule, split, None) for split in
+               ["train", "val", "test", "predict"]
+               if getattr(datamodule, split, None) is not None]
+        default_dataset_name = tmp[0].name
         dataset = default_dataset_name
+        task_warning_seen = False
         for (i, docid) in enumerate(batch["docids"]):
             attrs = {}
             for (task, task_preds) in batch["predictions"].items():
                 encoded_pred = task_preds[i].int().item()
-                decoded_pred = datamodule.inverse_transform(task, encoded_pred)
+                # TODO: This try - except is a hack. Fix it!
+                try:
+                    decoded_pred = datamodule.inverse_transform(
+                        task, encoded_pred)
+                except KeyError:
+                    msg = f"{task} not supported by datamodule {datamodule.name}"  # noqa
+                    if task_warning_seen is False:
+                        warnings.warn(msg)
+                        task_warning_seen = True
+                    continue
                 if isinstance(datamodule, CombinedDataModule):
                     dataset_ = datamodule.get_dataset_from_task(task).name
                     # so we don't output the datset name in the brat
