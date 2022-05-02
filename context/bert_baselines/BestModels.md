@@ -13,7 +13,10 @@ clinical_bert/mdl/n2c2action_i2b2event/version_1/eval_dev.txt
 0.833 | 0.833 | 0.833
 
 CV
-avg_micro_f1/bluebert/mdl/n2c2action_i2b2event/version_1 << Submission 3
+bluebert/pl_markers/mdl/n2c2action_i2b2event/version_2/avg_micro_f1/version_1  << Submission 3
+0.8868 | 0.8868 | 0.8868
+
+avg_micro_f1/bluebert/mdl/n2c2action_i2b2event/version_1
 0.8848 | 0.8848 | 0.8848
 
 bluebert/pl_markers/mdl/n2c2action_i2b2event/version_1/avg_micro_f1/version_1
