@@ -24,19 +24,19 @@ The test data will be a set of plain text files.
 First, do the following:
 
  1. A quick manual review of the text files to check for obvious problems, e.g. empty documents, documents in other languages, etc.
- 2. Copy/move all text files to `${n2c2_track1_home}/n2c2TestData/test/${release_number}`.
- 3. Count all text files to ensure we have the same number as the organizers released: `ls -1 ${n2c2_track1_home}/n2c2TestData/test/0/*.txt | wc -l`
+ 2. Copy/move all text files to `${n2c2_track1_home}/n2c2TestData/${release_number}`.
+ 3. Count all text files to ensure we have the same number as the organizers released: `ls -1 ${n2c2_track1_home}/n2c2TestData/${release_number}/*.txt | wc -l`
  4. Run and validate sentence splitting:
 
 ```
 python ${n2c2_track1_home}/scripts/run_biomedicus_sentences.py \
 		--biomedicus_data_dir ~/.biomedicus/data/sentences/ \
-		--indir ${n2c2_track1_home}/n2c2TestData/test/0 \
-                --outdir ${n2c2_track1_home}/n2c2TestData/test/segmented/ \
+		--indir ${n2c2_track1_home}/n2c2TestData/release_1 \
+                --outdir ${n2c2_track1_home}/n2c2TestData/segmented/release_1/ \
 
 python ${n2c2_track1_home}/scripts/validate_segmentations.py \
-		--segments_dir ${n2c2_track1_home}/n2c2TestData/test/segmented/ \
-		--text_dir ${n2c2_track1_home}/n2c2TestData/test/0 \
+		--segments_dir ${n2c2_track1_home}/n2c2TestData/segmented/release_1/ \
+		--text_dir ${n2c2_track1_home}/n2c2TestData/release_1/ \
 ```
 
 # NER
