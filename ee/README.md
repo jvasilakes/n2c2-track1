@@ -6,14 +6,15 @@ If you want to run the model on different splits, you have to obtain the train_d
 After getting Nhung's output I will adjust it to run automatically.
 
 ## Training the model: 
-```
-python main.py --config ../configs/local.yaml --mode train --split default --bert <base,blue,clinical> 
-```
+```sh xec_n2c2_train.sh <blue,base,clinical> <default/,split0-4>  <scispacy, make, > ```
 Do note that there is a change compared to previous models and verbs are the default option. To disable them use ```--no_verbs```.<br>
 The predictions (on dev), log and the saved model are saved at ```results/<model>_<split>/``` folder.
 
 To run the model on all splits use: 
-```sh xec_n2c2_splits.sh <base,clinical,blue>```
+```sh xec_n2c2_splits.sh <train,test> <scispacy, make>```
+scispacy: rerun the whole preprocessing<br>
+make: only make the training files<br>
+nothing: assume train_data.txt and dev_data.txt exist.
 
 ## Evaluating the predictions:
 ```
