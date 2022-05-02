@@ -29,7 +29,7 @@
 
 # Training model
 HOME=$PWD
-ORG_CORPUS=n2c2Track1TrainingData-v3/test
+ORG_CORPUS=org_corpus/test
 NER_DIR=$HOME/ner
 TEST_CORPUS=$NER_DIR/corpus/test
 
@@ -42,7 +42,8 @@ python3 $NER_DIR/src/tokenization/tokenization.py --indir $ORG_CORPUS --outdir $
 echo "Predict the test set ..."
 cd $NER_DIR
 
-for model in $(ls -d experiments/*/) 
+#it is noted that we predict the testing set based on models trained on the organiser's split (data_v3)
+for model in $(ls -d experiments/data_v3/*) 
 #for model in "baseline"
     do              
         echo "Running $model"  
@@ -54,6 +55,6 @@ for model in $(ls -d experiments/*/)
     done
 
 #to run ensemble using max voting
-# mkdir -p experiments/ensemble
-# python src/ensemble.py --indir experiments --outdir experiments/ensemble --type test
+mkdir -p test_ensemble
+python src/ensemble.py --indir experiments/data_v3 --outdir test_ensemble --type test
 cd $HOME
