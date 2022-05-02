@@ -186,6 +186,7 @@ class Trainer(BaseTrainer):
             for batch_idx, batch in enumerate(self.iterators[iter_name]):
                 tracker['total_samples'] += len(batch['names'])
 
+
                 for keys in batch.keys():
                     if keys not in ['names', 'old_pos']:
                         batch[keys] = batch[keys].to(self.device)

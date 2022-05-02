@@ -1,25 +1,40 @@
-#!/bin/sh
+#!/bin/bash --login
 
-#$ -l mem256
-# Load any required modulefiles
+#$ -cwd
+# Number of GPU's to be used
+#$ -l nvidia_v100=1
+
+# Load the latest CUDA library
+# module load libs/cuda
+
+# Enable proxy connection
 # module load tools/env/proxy2        # Uses http://proxy.man.ac.uk:3128
+MODE=$2 #scispacy, make, nothing
 conda activate dsre-vae
 pwd
 
-echo -e "PLM: start training with $1\n"
 
-#OUT="re_${1}_dev.txt"
-#ERR="re_${1}_dev.err"
-#
-#python train_relation.py --yaml ../config_pipeline.yaml --data $1 --scenario $2 --dataset $3  > $OUT 2> $ERR
-#
-## $1: clinical, base, blue
-## $2:
-# Applying scispacy
-python main.py --config ../configs/local.yaml --mode train --split default --bert ${1}
-python main.py --config ../configs/local.yaml --mode train --split split0 --bert ${1}
-python main.py --config ../configs/local.yaml --mode train --split split1 --bert ${1}
-python main.py --config ../configs/local.yaml --mode train --split split2 --bert ${1}
-python main.py --config ../configs/local.yaml --mode train --split split3 --bert ${1}
-python main.py --config ../configs/local.yaml --mode train --split split4 --bert ${1}
-python main.py --config ../configs/local.yaml --mode train --split ensemble --bert ${1}
+if [ "$1" == "train" ];
+then
+  sh xec_n2c2_train.sh blue default/ $MODE
+  sh xec_n2c2_train.sh blue split0/ $MODE
+  sh xec_n2c2_train.sh blue split1/ $MODE
+  sh xec_n2c2_train.sh blue split2/ $MODE
+  sh xec_n2c2_train.sh blue split3/ $MODE
+  sh xec_n2c2_train.sh blue split4/ $MODE
+  ## clinical
+  sh xec_n2c2_train.sh clinical default/ $MODE
+  sh xec_n2c2_train.sh clinical split0/ $MODE
+  sh xec_n2c2_train.sh clinical split1/ $MODE
+  sh xec_n2c2_train.sh clinical split2/ $MODE
+  sh xec_n2c2_train.sh clinical split3/ $MODE
+  sh xec_n2c2_train.sh clinical split4/ $MODE
+elif [ "$1" == "test" ];
+then
+  sh xec_n2c2_predict.sh blue default/ ner_predictions/ preprocess
+  sh xec_n2c2_predict.sh blue split0/ ner_predictions/ preprocess
+  sh xec_n2c2_predict.sh blue split1/ ner_predictions/ preprocess
+  sh xec_n2c2_predict.sh blue split2/ ner_predictions/ preprocess
+  sh xec_n2c2_predict.sh blue split3/ ner_predictions/ preprocess
+  sh xec_n2c2_predict.sh blue split4/ ner_predictions/ preprocess
+fi

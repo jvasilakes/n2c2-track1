@@ -42,9 +42,11 @@ class BertDataset(Dataset):
                 ## {text: ..., trig:{'s','e','name'}, events:[NoDispotion, Dispotition], fname,
                 ##  verbs: [{'t','st','en'}], action:{}}
                 sentences = sample['text']
-                orig_pos = sample['trig']['old_pos']
+                orig_pos = sample['trig']['orig_off'] #['old_pos']
+
                 pos = (sample['trig']['s'], sample['trig']['e'])
-                ident =  sample['trig']['name'] +'/'+ sample['fname']
+                # ident = sample['trig']['name'] +'/'+ sample['fname']
+                ident = sample['trig']['orig_name'] + '/' + sample['fname']
                 ## Adding special tokens
                 to_add = {(verb['st'],verb['en']): verb['t'] for verb in sample['verbs']} if use_verbs else {}
 #                 to_add[pos] = '@'
