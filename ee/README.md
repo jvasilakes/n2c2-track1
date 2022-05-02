@@ -11,7 +11,7 @@ Do note that there is a change compared to previous models and verbs are the def
 The predictions (on dev), log and the saved model are saved at ```results/<model>_<split>/``` folder.
 
 To run the model on all splits use: 
-```sh xec_n2c2_splits.sh <train,test> <scispacy, make>```<br>
+```sh xec_n2c2_splits.sh <train,test> <scispacy, make, >```<br>
 scispacy: rerun the whole preprocessing<br>
 make: only make the training files<br>
 nothing: assume train_data.txt and dev_data.txt exist.
