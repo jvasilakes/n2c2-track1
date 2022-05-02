@@ -362,12 +362,13 @@ class BratAnnotations(object):
                     break  # To the next this_event
 
         new_events = []
+        num_attrs = 0
         # For each of the above pairs of events, merge their attributes
         for (this_event, that_event) in events_with_same_span_and_type:
             new_event = this_event.copy()
             num_events = len(new_events)
-            new_event.id = f"E{num_events+1}"
-            new_event.span.id = f"T{num_events+1}"
+            new_event.id = f"E{num_events}"
+            new_event.span.id = f"T{num_events}"
             new_event.attributes = {}
 
             these_attr_types = set(this_event.attributes.keys())
@@ -389,7 +390,9 @@ class BratAnnotations(object):
                 else:
                     new_attr = that_attr.copy()
                 new_attr.reference = new_event
+                new_attr.id = f"A{num_attrs}"
                 new_event.attributes[attr_type] = new_attr
+                num_attrs += 1
 
             new_events.append(new_event)
 
@@ -399,8 +402,8 @@ class BratAnnotations(object):
                 new_event = event.copy()
                 num_events = len(new_events)
                 # This updates event references as well
-                new_event.id = f"E{num_events+1}"
-                new_event.span.id = f"T{num_events+1}"
+                new_event.id = f"E{num_events}"
+                new_event.span.id = f"T{num_events}"
                 new_events.append(new_event)
 
         return BratAnnotations.from_events(new_events)
