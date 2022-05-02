@@ -38,7 +38,7 @@ def main(args):
     # Merged the collected predictions
     os.makedirs(args.outdir, exist_ok=False)
     for (fname, all_anns) in fname_to_anns.items():
-        merged_anns = merge_brat(all_anns)
+        merged_anns = merge_brat(all_anns, conflicts=args.conflicts)
         bn = os.path.basename(fname)
         merged_anns.save_brat(args.outdir, bn)
 
@@ -47,7 +47,7 @@ def merge_brat(anns: list, conflicts="error"):
     if conflicts == "keep_earlier":
         conflicts = "keep_this"
     elif conflicts == "keep_later":
-        conflicts = "keep other"
+        conflicts = "keep_other"
     merged_anns = anns[0]
     for ann in anns[1:]:
         merged_anns = merged_anns.merge(ann, conflicts=conflicts)
