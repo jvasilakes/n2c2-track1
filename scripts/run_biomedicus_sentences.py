@@ -70,7 +70,7 @@ def set_seed(seed):
 
 
 def main(args):
-    set_seed(0)
+    set_seed(10)
 
     if args.infile is None and args.indir is None:
         raise argparse.ArgumentError(
