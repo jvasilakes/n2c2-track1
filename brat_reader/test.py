@@ -94,9 +94,28 @@ def test_merge_events():
     assert gold_anns == reread_anns
 
 
+def test_merge_events_dilantin():
+    if os.path.isfile("test_files/test_outputs/events_merge_dilantin.ann"):
+        os.remove("test_files/test_outputs/events_merge_dilantin.ann")
+    anns1 = brat_reader.BratAnnotations.from_file(
+        "test_files/inputs/events_merge_dilantin1.ann")
+    anns2 = brat_reader.BratAnnotations.from_file(
+        "test_files/inputs/events_merge_dilantin2.ann")
+    merged = anns1.merge(anns2)
+    merged.save_brat("test_files/test_outputs/",
+                     filename="events_merge_dilantin.ann")
+
+    reread_anns = brat_reader.BratAnnotations.from_file(
+            "test_files/test_outputs/events_merge_dilantin.ann")
+    gold_anns = brat_reader.BratAnnotations.from_file(
+            "test_files/gold_outputs/events_merge_dilantin.ann")
+    assert gold_anns == reread_anns
+
+
 if __name__ == "__main__":
     test_spans()
     test_attributes()
     test_events()
     test_merge_events()
+    test_merge_events_dilantin()
     print("PASSED!")
