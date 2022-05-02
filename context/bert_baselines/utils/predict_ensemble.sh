@@ -44,7 +44,7 @@ echo SENTENCESDIR: $SENTENCESDIR
 echo OUTDIR: $OUTDIR
 
 # Find all model subdirectories
-model_dirs=$(find -L ${MODELDIR} -name config.yaml -exec dirname {} \; | grep -v "random_seed_runs")
+model_dirs=$(find -L ${MODELDIR} -name config.yaml -exec dirname {} \; | grep -v "random_seed_runs" | grep _v "avg_micro_f1")
 
 # Run prediction on the specified data using each model.
 for model_dir in ${model_dirs}; do
