@@ -65,6 +65,7 @@ cd ${n2c2_track1_home}
 bash ner/run_test.sh
 ```
 **Output**: `experiments/${ner_model}/predict-test-org`
+
 **Output Description**: brat-formatted files, one per input file, containing detected medication spans.
 
 ### Step 3: run ensemble
@@ -75,15 +76,26 @@ bash ner/run_test.sh
 
 ```
 cd ${n2c2_track1_home}/ner
-mkdir ${n2c2_track1_home}/ner/experiments/test_ensemble
+mkdir ${n2c2_track1_home}/ner/test_ensemble
 python src/ensemble.py --indir ${n2c2_track1_home}/ner/experiments/test_predictions \
-		       --outdir ${n2c2_track1_home}/ner/experiments/test_ensemble \
+		       --outdir ${n2c2_track1_home}/ner/test_ensemble \
 		       --type test
 ``` 
+
 **Output**: `${n2c2_track1_home}/ner/experiments/test_ensemble`
+
 **Output Description**: brat-formatted files, one per input file, containing detected medication spans.
 
+### Three NER submissions
 
+ * It is noted that on `csf3`, everything is already arranged. We just need to run the following command line from this folder `/net/scratch2/mbassnt3/n2c2_2022` to generate predictions on the testing set.
+
+```
+bash ner/run_test.sh
+```
+ * Submission 1: an ensemble of 6 models (BERT base, Clinical BERT, BioRoBERTa and their version with i2b2-2009 training data). All of these  models were trained on the organiser's training set. 
+ * Submission 2: ClinicalBERT trained on the organiser's training set
+ * Submission 3: BioRoBERTa trained on the organiser's training set combined with the i2b2-2009 train set
 
 
 # Event Extraction
