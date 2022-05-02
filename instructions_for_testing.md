@@ -41,7 +41,7 @@ python ${n2c2_track1_home}/scripts/validate_segmentations.py \
 
 # NER
 
-**Input**: `${n2c2_track1_home}/n2c2TestData/test`
+**Input**: `${n2c2_track1_home}/n2c2TestData/release_1`
 **Input Description**: plain text files.
 **Model Location**:
 
