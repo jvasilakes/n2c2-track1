@@ -6,7 +6,7 @@ If you want to run the model on different splits, you have to obtain the train_d
 After getting Nhung's output I will adjust it to run automatically.
 
 ## Training the model: 
-```sh xec_n2c2_train.sh <blue,base,clinical> <default/,split0-4>  <scispacy, make, > ```
+```sh xec_n2c2_train.sh <blue,base,clinical> <default/,split0-4>  <scispacy, make, > ``` <br>
 Do note that there is a change compared to previous models and verbs are the default option. To disable them use ```--no_verbs```.<br>
 The predictions (on dev), log and the saved model are saved at ```results/<model>_<split>/``` folder.
 
