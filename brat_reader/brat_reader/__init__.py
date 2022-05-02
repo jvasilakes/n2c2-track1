@@ -351,12 +351,15 @@ class BratAnnotations(object):
         seen_events = set()
         for this_event in self.events:
             for that_event in other.events:
+                if that_event in seen_events:
+                    continue
                 if this_event.span == that_event.span:
                     if this_event.type == that_event.type:
                         events_with_same_span_and_type.append(
                                 (this_event, that_event))
                         seen_events.add(this_event)
                         seen_events.add(that_event)
+                    break  # To the next this_event
 
         new_events = []
         # For each of the above pairs of events, merge their attributes
