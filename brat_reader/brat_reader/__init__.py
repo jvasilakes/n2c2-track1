@@ -330,8 +330,10 @@ class BratAnnotations(object):
         return self._sorted_events
 
     # TODO: generalize this to the set operations: union, difference, etc.
-    def merge(self, other):
+    def merge(self, other, conflicts="error"):
         """
+        conflicts: "error", "keep_this", "keep_other"
+
         Merge two BratAnnotations instances. E.g., concatenating
         two different files or merging complementary annotations
         for the same input file.
@@ -346,6 +348,8 @@ class BratAnnotations(object):
         as a single attribute. Different attribute values with the same span
         same type raises an Exception.
         """
+        if conflicts not in ["error", "keep_this", "keep_other"]:
+            raise ValueError(f"Unsupported value for conflicts '{conflicts}'")
         # Get all events in both anns that have the same span and type.
         events_with_same_span_and_type = []
         seen_events = set()
@@ -383,8 +387,13 @@ class BratAnnotations(object):
                 if this_attr is not None and that_attr is not None:
                     # check that they are are equal
                     if this_attr.value != that_attr.value:
-                        fname = os.path.basename(this_event._source_file)
-                        raise ValueError(f"Incompatible attributes found for events {this_event.id}, {that_event.id} (in {fname}): {this_attr} != {that_attr}")  # noqa
+                        if conflicts == "error":
+                            fname = os.path.basename(this_event._source_file)
+                            raise ValueError(f"Incompatible attributes found for events {this_event.id}, {that_event.id} (in {fname}): {this_attr} != {that_attr}")  # noqa
+                        elif conflicts == "keep_this":
+                            that_attr = None
+                        elif conflicts == "keep_other":
+                            this_attr = None
                 if this_attr is not None:
                     new_attr = this_attr.copy()
                 else:
