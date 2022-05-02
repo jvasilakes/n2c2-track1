@@ -69,7 +69,8 @@ def clean_tokenizer(tokens):
 
 def print_single(f, no, category, pos, trig):
     
-    f.write('T{}\t{} {}\t{}\n'.format(no, category, pos, ' '.join(trig)))
+    # f.write('T{}\t{} {}\t{}\n'.format(no, category, pos, ' '.join(trig)))
+    f.write('T{}\t{} {}\t{}\n'.format(no, category, pos, '/'.join(trig)))
     f.write('E{}\t{}:T{}\n'.format(no, category, no))
 
     return no + 1
@@ -86,8 +87,9 @@ def print_preds(tracker, loader, config, epoch, mode='dev'):
 
     for i, s in enumerate(samples):
         tmp = dataset[s][3].split('/')
-        trig, fname = tmp[0:len(tmp)-1],tmp[-1]
+        trig, fname = tmp[0:len(tmp)-1], tmp[-1]
         pos = dataset[s][4]
+
         if fname in file_dict:
             file_dict[fname].append((trig, pos, event_pred[i], action_pred[i]))
         else:
@@ -101,7 +103,7 @@ def print_preds(tracker, loader, config, epoch, mode='dev'):
             for trig, pos, e_preds, a_preds in res_list:
                 if e_preds[0] == 1:
                     count = print_single(tmp_file, count, ievent[0], pos, trig) 
-                if e_preds[1] == 1:
+                if e_preds[1] == 1 or not e_preds[0] and not e_preds[2] :
                     count = print_single(tmp_file, count, ievent[1], pos, trig)
                 if e_preds[2] == 1: #Disposition
                     for j, pred in enumerate(a_preds):

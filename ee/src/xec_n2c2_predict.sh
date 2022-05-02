@@ -1,8 +1,15 @@
-#!/bin/sh
+#!/bin/bash --login
 
-#$ -l mem256
-# Load any required modulefiles
+#$ -cwd
+# Number of GPU's to be used
+#$ -l nvidia_v100=1
+
+# Load the latest CUDA library
+# module load libs/cuda
+
+# Enable proxy connection
 # module load tools/env/proxy2        # Uses http://proxy.man.ac.uk:3128
+
 conda activate dsre-vae
 pwd
 MODEL=$1 #blue
