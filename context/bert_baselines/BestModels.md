@@ -3,7 +3,10 @@
 ## Micro F1
 Tuned to micro F1
 ```
-avg_micro_f1/bluebert/mdl/n2c2action_i2b2event/version_1/eval_dev.txt << Submission 1
+bluebert/pl_markers/mdl/n2c2action_i2b2event/version_1/eval_dev.txt << Submission 1
+0.837 | 0.837 | 0.837 |
+
+avg_micro_f1/bluebert/mdl/n2c2action_i2b2event/version_1/eval_dev.txt
 0.833 | 0.833 | 0.833
 
 clinical_bert/mdl/n2c2action_i2b2event/version_1/eval_dev.txt
@@ -12,6 +15,9 @@ clinical_bert/mdl/n2c2action_i2b2event/version_1/eval_dev.txt
 CV
 avg_micro_f1/bluebert/mdl/n2c2action_i2b2event/version_1 << Submission 3
 0.8848 | 0.8848 | 0.8848
+
+bluebert/pl_markers/mdl/n2c2action_i2b2event/version_1/avg_micro_f1/version_1
+0.8838 | 0.8838 | 0.8838
 
 avg_micro_f1/bluebert/action_entity_marker/version_1
 0.8784 | 0.8784 | 0.8784
@@ -39,7 +45,10 @@ clinical_bert/mdl/n2c2action_i2b2event/version_3/eval_dev.txt
 
 
 CV
-bluebert/pl_markers/mdl/n2c2action_i2b2event/version_1  << Submission 3
+bluebert/pl_markers/mdl/n2c2action_i2b2event/version_2 << Submission 3
+0.8066 | 0.8024 | 0.7956
+
+bluebert/pl_markers/mdl/n2c2action_i2b2event/version_1
 0.8318 | 0.7798 | 0.7896
 
 clinical_bert/pl_markers/action_entity_marked/version_1
@@ -92,9 +101,6 @@ bert/actor_entity_marked/version_1 << Submission 3
 
 ## Micro F1
 ```
-clinical_bert/mdl/n2c2cert_i2b2cert/version_2/eval_dev.txt
-0.914 | 0.914 | 0.914 |
-Retuned to micro f1
 avg_micro_f1/clinical_bert/mdl/n2c2cert_i2b2cert/version_1/eval_dev.txt << Submission 1
 0.914 | 0.914 | 0.914
 
@@ -162,8 +168,8 @@ clinical_bert/mdl/n2c2action_negation_i2b2certainty/version_1/eval_dev.txt
 0.986 | 0.986 | 0.986 |
 
 CV
-avg_micro_f1/clinical_bert/mtl/action_negation/version_1 << Submission 3
-0.9768 | 0.9768 | 0.9768
+clinical_bert/mtl/action_negation/version_3  << Submission 3
+0.9782 | 0.9782 | 0.9782
 
 clinical_bert/mdl/n2c2action_negation_i2b2event/version_1
 0.9778 | 0.9778 | 0.9778
@@ -213,9 +219,6 @@ bert/negation/version_1
 ```
 clinical_bert/mdl/n2c2_i2b2_temporality/version_3/eval_dev.txt  << Submission 1
 0.864 | 0.864 | 0.864 |
-Retuned on micro f1
-avg_micro_f1/clinical_bert/mdl/n2c2_i2b2_temporality/version_1/eval_dev.txt
-0.855 | 0.855 | 0.855
 
 clinical_bert/pl_markers/n2c2_i2b2_temporality/version_2/eval_dev.txt
 0.855 | 0.855 | 0.855 |
