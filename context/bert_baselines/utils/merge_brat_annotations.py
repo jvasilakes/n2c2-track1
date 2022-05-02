@@ -13,6 +13,15 @@ def parse_args():
                                 brat annotation files.""")
     parser.add_argument("--outdir", type=str, required=True,
                         help="Where to save the merged files.")
+    parser.add_argument("--conflicts", type=str, default="error",
+                        choices=["error", "keep_earlier", "keep_later"],
+                        help="""If there is an attribute conflict, how to
+                                resolve it.
+                                'error': raise an error.
+                                'keep_earlier': use the attribute which is
+                                seen first from the files in --pred_dirs.
+                                'keep_later': use the attribute which is
+                                seen last from the files in --pred_dirs.""")
     return parser.parse_args()
 
 
@@ -34,10 +43,14 @@ def main(args):
         merged_anns.save_brat(args.outdir, bn)
 
 
-def merge_brat(anns: list):
+def merge_brat(anns: list, conflicts="error"):
+    if conflicts == "keep_earlier":
+        conflicts = "keep_this"
+    elif conflicts == "keep_later":
+        conflicts = "keep other"
     merged_anns = anns[0]
     for ann in anns[1:]:
-        merged_anns = merged_anns.merge(ann)
+        merged_anns = merged_anns.merge(ann, conflicts=conflicts)
     return merged_anns
 
 
