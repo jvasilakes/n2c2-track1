@@ -16,7 +16,7 @@ for i in {0..4}; do
   model_name=$(grep "^name:" ${outdir}/split${i}.yaml | awk '{print $2}')
 
   # get the model version from the symlink of the source file
-  model_ver=$(ls -d ${MODEL_DIR} | grep -Po "version_[0-9]+")
+  model_ver=$(ls -d ${MODEL_DIR} | grep -Po "version_[0-9]+" | head -n 1)
 
   # Update the config file with the cv_splits and new model name
   # CV split runs get put under a specific model version.  

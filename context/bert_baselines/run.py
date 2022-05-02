@@ -388,7 +388,7 @@ def run_predict(config, datasplit="dev",
         preds_dir = os.path.join(logdir, config.name, f"version_{version}",
                                  "predictions", dataset, "brat", datasplit)
         if os.path.isdir(preds_dir):
-            warnings.warn("brat predictions directory already exists at {preds_dir}. Skipping...")  # noqa
+            warnings.warn(f"brat predictions directory already exists at {preds_dir}. Skipping...")  # noqa
             continue
         os.makedirs(preds_dir, exist_ok=False)
         for doc_anns in anns:
