@@ -175,6 +175,9 @@ Once all models have been run, merge the brat files with the following command.
 predictions_dir=/net/scratch2/mbassnt3/n2c2_2022/submissions/release_{1,2,3}/submission_{1,2,3}/context/predictions/test/
 ${n2c2_track1_home}/context/bert_baselines/utils/merge_brat_predictions.py \
                 --pred_dirs ${predictions_dir}/{Action,Actor,Certainty,Negation,Temporality} \
-                --outdir ${predictions_dir}/all
+                --outdir ${predictions_dir}/all --conflicts keep_earlier
 ```
+The `--conflicts` argument tells the merger how to choose attributes predicted by more than one model. E.g., the negation model
+also predicts Action, but we want to ignore it. We thus want to keep the earlier predictions in the arguments to `--pred_dirs`.
+
 **Output**: `/net/scratch2/mbassnt3/n2c2_2022/submissions/release_{1,2,3}/submission_{1,2,3}/context/predictions/test/all/`
