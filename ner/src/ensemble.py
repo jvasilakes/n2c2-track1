@@ -2,6 +2,16 @@ from brat_reader import BratAnnotations
 import os
 import argparse
 
+focus_model = ["baseline",
+                "baseline_roberta",
+                "clinical_bert",
+                #"bluebert",
+                "baseline+i2b2_train",
+                 "baseline_roberta+i2b2_train",
+                 "clinical_bert+i2b2_train",
+                # "bluebert+i2b2_train"
+                ]
+
 def max_voting_splits(folderIn, folderOut):    
     '''
     '''
@@ -13,6 +23,10 @@ def max_voting_splits(folderIn, folderOut):
             if not os.path.exists(os.path.join(folderIn, subFolder, voter, 'predict-dev-org')):
                 numberOfVoter -= 1
                 continue
+            if voter not in focus_model:
+                numberOfVoter -= 1
+                continue
+
             for file in os.listdir(os.path.join(folderIn, subFolder, voter, 'predict-dev-org')):
                 file_predicts = {} #key: offset, value: number of votes
                 span_texts = {} #key: offset, value: surface text
@@ -55,6 +69,9 @@ def max_voting_test(folderIn, folderOut):
         if not os.path.exists(os.path.join(folderIn, voter, 'predict-test-org')):
             numberOfVoter -= 1
             continue
+        if voter not in focus_model:
+            numberOfVoter -= 1
+            continue
         for file in os.listdir(os.path.join(folderIn, voter, 'predict-test-org')):
             file_predicts = {}
             span_texts = {}
@@ -72,6 +89,7 @@ def max_voting_test(folderIn, folderOut):
                     file_predicts[(start, end)] += 1
             if file not in predictions:
                 predictions[file] = (file_predicts, span_texts)
+    print('Total voters: ', numberOfVoter)
     if not os.path.exists(folderOut):
         os.mkdir(folderOut)
     for file in predictions:
