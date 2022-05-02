@@ -18,6 +18,10 @@ class Annotation(object):
     def id(self):
         return self._id
 
+    @id.setter
+    def id(self, val):
+        self._id = val
+
     def update(self, key, value):
         self.__dict__[key] = value
 
@@ -101,7 +105,6 @@ class Span(Annotation):
             self.end_index,
             self.text,
         ))
-
 
     def to_brat_str(self, output_references=False):
         # output_references is unused but simplifies to_brat_str for Attribute
@@ -199,6 +202,9 @@ class Event(Annotation):
     def type(self):
         return self._type
 
+    def __hash__(self):
+        return hash((self.id))
+
     def __eq__(self, other):
         if not isinstance(other, Event):
             return False
@@ -221,8 +227,10 @@ class Event(Annotation):
         outlines = [event_str]
         if output_references is True:
             outlines.insert(0, self.span.to_brat_str())
+            sorted_attrs = sorted(self.attributes.values(),
+                                  key=lambda a: a.type)
             attr_strs = [a.to_brat_str(output_references=False)
-                         for a in self.attributes.values()]
+                         for a in sorted_attrs]
             outlines.extend(attr_strs)
         brat_str = '\n'.join(outlines)
         return brat_str
@@ -321,6 +329,79 @@ class BratAnnotations(object):
             self._sorted_events = self._sort_events_by_span_index()
         return self._sorted_events
 
+    # TODO: generalize this to the set operations: union, difference, etc.
+    def merge(self, other):
+        """
+        Merge two BratAnnotations instances. E.g., concatenating
+        two different files or merging complementary annotations
+        for the same input file.
+
+        Two span instances with the same start/end indices are treated
+        as a single span.
+
+        Two event instances with the same span and the same type have
+        their attributes merged.
+
+        Two attribute instances with the same span, type, and value are treated
+        as a single attribute. Different attribute values with the same span
+        same type raises an Exception.
+        """
+        # Get all events in both anns that have the same span and type.
+        events_with_same_span_and_type = []
+        seen_events = set()
+        for this_event in self.events:
+            for that_event in other.events:
+                if this_event.span == that_event.span:
+                    if this_event.type == that_event.type:
+                        events_with_same_span_and_type.append(
+                                (this_event, that_event))
+                        seen_events.add(this_event)
+                        seen_events.add(that_event)
+
+        new_events = []
+        # For each of the above pairs of events, merge their attributes
+        for (this_event, that_event) in events_with_same_span_and_type:
+            new_event = this_event.copy()
+            num_events = len(new_events)
+            new_event.id = f"E{num_events+1}"
+            new_event.span.id = f"T{num_events+1}"
+            new_event.attributes = {}
+
+            these_attr_types = set(this_event.attributes.keys())
+            those_attr_types = set(that_event.attributes.keys())
+            all_attr_types = these_attr_types.union(those_attr_types)
+            for attr_type in all_attr_types:
+                this_attr = that_attr = None
+                if attr_type in this_event.attributes.keys():
+                    this_attr = this_event.attributes[attr_type]
+                if attr_type in that_event.attributes.keys():
+                    that_attr = that_event.attributes[attr_type]
+                if this_attr is not None and that_attr is not None:
+                    # check that they are are equal
+                    if this_attr.value != that_attr.value:
+                        fname = os.path.basename(this_event._source_file)
+                        raise ValueError(f"Incompatible attributes found for events {this_event.id}, {that_event.id} (in {fname}): {this_attr} != {that_attr}")  # noqa
+                if this_attr is not None:
+                    new_attr = this_attr.copy()
+                else:
+                    new_attr = that_attr.copy()
+                new_attr.reference = new_event
+                new_event.attributes[attr_type] = new_attr
+
+            new_events.append(new_event)
+
+        # Add in non-overlapping events
+        for event in self.events + other.events:
+            if event not in seen_events:
+                new_event = event.copy()
+                num_events = len(new_events)
+                # This updates event references as well
+                new_event.id = f"E{num_events+1}"
+                new_event.span.id = f"T{num_events+1}"
+                new_events.append(new_event)
+
+        return BratAnnotations.from_events(new_events)
+
     def _sort_spans_by_index(self):
         return sorted(self._spans, key=lambda s: s.start_index)
 
@@ -395,11 +476,12 @@ class BratAnnotations(object):
             outlines.append(ann.to_brat_str(output_references=True))
         return '\n'.join(outlines)
 
-    def save_brat(self, outdir):
+    def save_brat(self, outdir, filename=None):
         for ann in self.get_highest_level_annotations():
             brat_str = ann.to_brat_str(output_references=True)
-            bn = os.path.basename(ann._source_file)
-            outfile = os.path.join(outdir, bn)
+            if filename is None:
+                filename = os.path.basename(ann._source_file)
+            outfile = os.path.join(outdir, filename)
             with open(outfile, 'a') as outF:
                 outF.write(brat_str + '\n')
 

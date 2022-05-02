@@ -1,0 +1,20 @@
+T8	NoDisposition 4923 4932	Vitamin E
+E8	NoDisposition:T8 
+T9	Disposition 4947 4954	aspirin
+E9	Disposition:T9 
+A5      Action E9 Stop
+A6      Temporality E9 Past
+T11	NoDisposition 6938 6952	benzodiazepine
+E11	NoDisposition:T11 
+T12	Disposition 8766 8783	Zolpidem tartrate
+E12	Disposition:T12 
+T13	Undetermined 8946 8963	Zolpidem tartrate
+E13	Undetermined:T13 
+T17	Disposition 9664 9666	O2
+E17	Disposition:T17 
+T19	NoDisposition 6956 6966	barbituate
+E19	NoDisposition:T19 
+A3	Action E12 Start
+A4	Temporality E12 Present
+A11	Action E17 Start
+A12	Temporality E17 Future
