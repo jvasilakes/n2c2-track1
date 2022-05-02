@@ -38,7 +38,7 @@ def max_voting_splits(folderIn, folderOut):
                 if predictions[file][0][offset] >= numberOfVoter/2:
                     annotations[offset] = predictions[file][1][offset]
             results = get_longest_annotation(annotations)
-            with open (os.path.join(folderOut, file), 'w') as write:
+            with open (os.path.join(folderOut, subFolder, file), 'w') as write:
                 entityId = 1
                 for (start,end) in results:
                     write.write('T' + str(entityId) + '\tDrug ' + str(start) 
