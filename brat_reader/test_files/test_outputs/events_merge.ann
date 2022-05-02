@@ -10,17 +10,17 @@ T5	NoDisposition 6956 6966	barbituate
 E5	NoDisposition:T5
 T1	Disposition 8766 8783	Zolpidem tartrate
 E1	Disposition:T1
-A4	Action E1 Start
-A5	Actor E1 Physician
+A3	Action E1 Start
+A4	Actor E1 Physician
 A2	Certainty E1 Certain
 A6	Negation E1 NotNegated
-A3	Temporality E1 Present
+A5	Temporality E1 Present
 T6	Undetermined 8946 8963	Zolpidem tartrate
 E6	Undetermined:T6
 T2	Disposition 9664 9666	O2
 E2	Disposition:T2
-A9	Action E2 Start
-A10	Actor E2 Physician
+A8	Action E2 Start
+A9	Actor E2 Physician
 A7	Certainty E2 Conditional
 A11	Negation E2 NotNegated
-A8	Temporality E2 Future
+A10	Temporality E2 Future
