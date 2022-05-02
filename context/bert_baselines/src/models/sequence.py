@@ -209,6 +209,8 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
                 raise ValueError("use_entity_spans=True but no entity_token_idxs provided in forward()")  # noqa
             if self.use_levitated_markers is True:
                 if levitated_marker_idxs is not None:
+                    # TODO: If I don't pass in at least 1 marker, gradients explode
+                    # and the next batch BERT outputs NaNs.
                     if [] in levitated_marker_idxs:
                         idxs = [i for (i, lev_idxs) in enumerate(levitated_marker_idxs) if len(lev_idxs) == 0]
                         for idx in idxs:
