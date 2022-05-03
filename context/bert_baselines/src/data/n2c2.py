@@ -226,6 +226,10 @@ class n2c2DataModule(BasicBertDataModule):
         """
         datasets = [self.train, self.val, self.test, self.predict]
         not_none_dataset = [ds for ds in datasets if ds is not None][0]
+        if ':' in task:
+            dataset_name, task = task.split(':')
+            if dataset_name != self.name:
+                raise KeyError(f"Task dataset '{dataset_name}' does not match this dataset '{self.name}'")  # noqa
         return not_none_dataset.inverse_transform(
                 task=task, encoded_labels=encoded_labels)
 
