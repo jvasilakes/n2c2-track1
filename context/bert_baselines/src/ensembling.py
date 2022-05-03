@@ -21,6 +21,7 @@ class BratEnsembler(object):
     def __init__(self, model_dirs, dataset="n2c2ContextDataset",
                  datasplit="dev", task="Action"):
         self.model_dirs = self.validate(model_dirs, dataset, datasplit)
+        print(f"Ensembling {len(self.model_dirs)} models.")
         self.dataset = dataset
         self.datasplit = datasplit
         self.task = task
