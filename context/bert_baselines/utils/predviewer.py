@@ -19,24 +19,31 @@ def parse_args():
 
 def create_app(args):
     app = Flask(__name__)
-    app.config["data"] = [json.loads(line.strip())
-                          for line in open(args.filepath)]
+    data = [json.loads(line.strip())
+            for line in open(args.filepath)]
+    app.config["data"] = data
     app.config["state"] = OrderedDict({
         "collapse wordpiece": True,
-        "correct": True,
-        "incorrect": True,
         "max_examples": 1000,
         "docids": '',
     })
 
-    # Define and register the label matchers.
     filters = Filters()
-    labels = sorted(set([d["label"] for d in app.config["data"]]))
-    for lab in labels:
-        filters.register_match_fn("label", lab, name=f"label_{lab}")
-        filters.register_match_fn("prediction", lab, name=f"prediction_{lab}")
-        app.config["state"][f"label_{lab}"] = True
-        app.config["state"][f"prediction_{lab}"] = True
+    # Check if gold labels were saved.
+    if "label" in app.config["data"][0].keys():
+        # If so, define and register the label matchers.
+        app.config["state"]["correct"] = True
+        app.config["state"]["incorrect"] = True
+        labels = sorted(set([d["label"] for d in app.config["data"]]))
+        for lab in labels:
+            filters.register_match_fn("label", lab, name=f"label_{lab}")
+            app.config["state"][f"label_{lab}"] = True
+
+    # Always load the predictions though
+    preds = sorted(set([d["prediction"] for d in app.config["data"]]))
+    for pred in preds:
+        filters.register_match_fn("prediction", pred, name=f"prediction_{pred}")
+        app.config["state"][f"prediction_{pred}"] = True
 
     # The main page
     @app.route("/", methods=("GET", "POST"))
@@ -105,24 +112,34 @@ def create_app(args):
 
 def example2html(example, collapse_wordpiece=False):
     docid = example["docid"]
-    gold = example["label"]
     pred = example["prediction"]
+    gold = None
+    if "label" in example.keys():
+        gold = example["label"]
 
-    head = b(f"ID: {docid} | Gold: '{gold}' | Predicted: '{pred}'")
+    header_str = f"ID: {docid} | Prediction: '{pred}'"
+    if gold is not None:
+        header_str += f" | Gold: '{gold}'"
+    header = b(header_str)
 
-    if gold == pred:
-        txt = " ✓ "
-        background_color = "#00ff00"
+
+    if gold is not None:
+        if gold == pred:
+            txt = " ✓ "
+            background_color = "#00ff00"  # Green
+        else:
+            txt = " X "
+            background_color = "#ff0000"  # Red
     else:
-        txt = " X "
-        background_color = "#ff0000"
+        txt = " P "
+        background_color = "#ffff00"  # Yellow
     sign = span(txt, _class="highlight",
                 style=f"background-color:{background_color}")
 
     tokens = get_tokens(example["tokens"],
                         collapse_wordpiece=collapse_wordpiece)
     text = p(tokens)
-    return div(sign, head, text)
+    return div(sign, header, text)
 
 
 def get_tokens(tokens, collapse_wordpiece=False):
@@ -156,7 +173,11 @@ def apply_filters(filters, data, state):
         for (group_name, filter_group) in filters.items():
             group_results = []
             for (key, filt) in filter_group.items():
-                if state[key] is True:
+                try:
+                    current = state[key]
+                except KeyError:
+                    current = True
+                if current is True:
                     group_results.append(filt(d))
             filter_results.append(any(group_results))
         if all(filter_results) is True:
@@ -230,11 +251,15 @@ class Filters(object):
 
     @register("answers", "correct")
     def correct(self, example):
-        return example["label"] == example["prediction"]
+        if "label" in example:
+            return example["label"] == example["prediction"]
+        return True
 
     @register("answers", "incorrect")
     def incorrect(self, example):
-        return example["label"] != example["prediction"]
+        if "label" in example:
+            return example["label"] != example["prediction"]
+        return True
 
 
 if __name__ == "__main__":
