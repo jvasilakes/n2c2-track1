@@ -59,7 +59,6 @@ def parse_args():
             "config_file", type=str, help="Path to a yaml config file.")
     pred_parser.add_argument(
             "--datasplit", type=str, default="dev",
-            choices=["train", "dev", "test"],
             help="Predict on this data split. Default 'dev'.")
     pred_parser.add_argument(
             "--datadir", type=str, default=None,
@@ -70,6 +69,10 @@ def parse_args():
             "--sentences_dir", type=str, default=None,
             help="""Path to directory containing sentence segmentations.
                     Only valid when --datadir is not None.""")
+    pred_parser.add_argument(
+            "--outdir", type=str, default=None,
+            help="""Directory at which to save the predictions.
+                    If None, outputs to the model directory.""")
     pred_parser.add_argument(
             "--output_json", action="store_true", default=False,
             help="""If set, save json formatted predictions
@@ -128,6 +131,7 @@ def main(args):
         run_kwargs["version"] = version
         run_kwargs["datadir"] = args.datadir
         run_kwargs["sentences_dir"] = args.sentences_dir
+        run_kwargs["outdir"] = args.outdir
         run_kwargs["output_json"] = args.output_json
         run_kwargs["output_token_masks"] = args.output_token_masks
         run_fn = run_predict
@@ -331,7 +335,7 @@ def run_validate(config, datasplit="dev",
 
 def run_predict(config, datasplit="dev",
                 datadir=None, sentences_dir=None,
-                logdir="logs/", version=None, quiet=False,
+                outdir=None, logdir="logs/", version=None, quiet=False,
                 output_json=False, output_token_masks=False):
 
     stage = None
@@ -382,11 +386,16 @@ def run_predict(config, datasplit="dev",
     pred_dataloader = pred_dataloader_fn(**pred_dataloader_kwargs)
     preds = trainer.predict(model, dataloaders=pred_dataloader)
 
+    if outdir is None:
+        outdir = os.path.join(logdir, config.name, f"version_{version}",
+                              "predictions")
     # Output to brat
     anns_by_datatset = batched_predictions_to_brat(preds, datamodule)
     for (dataset, anns) in anns_by_datatset.items():
-        preds_dir = os.path.join(logdir, config.name, f"version_{version}",
-                                 "predictions", dataset, "brat", datasplit)
+        preds_dir = os.path.join(outdir, dataset, "brat", datasplit)
+        print(f"-----------------------------------")
+        print(f"Saving brat predictions to:\n{preds_dir}")
+        print(f"-----------------------------------")
         if os.path.isdir(preds_dir):
             warnings.warn(f"brat predictions directory already exists at {preds_dir}. Skipping...")  # noqa
             continue
@@ -397,8 +406,10 @@ def run_predict(config, datasplit="dev",
     if output_json is True:
         preds_by_dataset = batched_predictions_to_json(preds, datamodule)
         for (dataset, preds_by_task) in preds_by_dataset.items():
-            preds_dir = os.path.join(logdir, config.name, f"version_{version}",
-                                     "predictions", dataset, "json", datasplit)
+            preds_dir = os.path.join(outdir, dataset, "json", datasplit)
+            print(f"-----------------------------------")
+            print(f"Saving json predictions to:\n{preds_dir}")
+            print(f"-----------------------------------")
             if os.path.isdir(preds_dir):
                 warnings.warn("JSON predictions directory already exists at {preds_dir}. Skipping...")  # noqa
                 continue
