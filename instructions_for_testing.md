@@ -122,7 +122,9 @@ sh xec_n2c2_predict.sh ${bert_model} ${train_split} ${n2c2_track1_home}/ner/expe
 
 # Context Classification
 
-**Input**: `${n2c2_track1_home}/ee/saved_models/${bert_model}_${train_split}/predictions/test`
+**Input**: `${shared_submission_dir}/release_{1,2,3}/submission_{1,2,3}/ee/predictions/`
+
+Where `shared_submission_dir=/net/scratch2/mbassnt3/n2c2_2022/submissions/`
 
 Context classification is further broken into 5 simultaneous tasks:
 
@@ -136,48 +138,48 @@ Separate models have been trained for each subtask. We run prediction for each a
 Prediction follows the same template for all tasks. Let `${task}` be one of `action, actor, certainty, negation, temporality`.
 
 
-**Model Location**: See `/net/scratch2/mbassnt3/n2c2_2022/models_for_submission/` on csf3.
+**Model Location**: See `${shared_submission_dir}/release_{1,2,3}/submission_{1,2,3}/models/`
 
 #### If using a single model (submissions 1 and 2)
 ```
 python run.py predict ${model_location}/config.yaml \
-                      --datasplit test \
-                      --datadir ${n2c2_track1_home}/ee/saved_models/${bert_model}_${train_split}/predictions/test \
-                      --sentences_dir ${n2c2_track1_home}/n2c2TestData/test/segmented/
+                      --datasplit test_release{1,2,3}_submission_{1,2,3} \
+                      --datadir ${shared_submission_dir}/release_{1,2,3}/submission_{1,2,3}/ee/predictions/ \
+                      --sentences_dir ${n2c2_track1_home}/n2c2TestData/segmented/release_1/
 ```
-**Output**: `${model_location}/predictions/n2c2ContextDataset/brat/test`
+**Output**: `${shared_submission_dir}/release_{1,2,3}/submission_{1,2,3}/context/predictions/${task}`
 
 
 
 #### If using an ensemble of models (submission 3)
 ```
-submissions_dir=/net/scratch2/mbassnt3/n2c2_2022/submissions/release_{1,2,3}/submission_{1,2,3}/
-
-bash utils/predict_ensemble.sh --task ${task} --split test \
+bash utils/predict_ensemble.sh --task ${task} --split test_release{1,2,3}_submission_{1,2,3} \
                                --modeldir ${submissions_dir}/context/models/${task}/ \
                                --anndir ${n2c2_track1_home}/ee/saved_models/${bert_model}_${train_split}/predictions/test \
                                --sentsdir ${n2c2_track1_home}/n2c2TestData/test/segmented/ \
                                --outdir ${submission_dir}/context/predictions/
 ```
 
-**Output**: `${submission_dir}/context/predictions/test/${task}/${version}/ann`
+**Output**: `${submission_dir}/context/predictions/test/${task}/version_${version}/predictions`
 
 `${version}` is automatically determined by `predict_ensemble.sh` and is printed to standard out when running the script.
 
+The ensembled models are logged at `${submission_dir}/context/predictions/test/${task}/version_${version}/ensembled_models.txt`.
 
 
 
-## Merging predictions for submission
+
+# Merging predictions for submission
 
 Once all models have been run, merge the brat files with the following command.
 
 ```
-predictions_dir=/net/scratch2/mbassnt3/n2c2_2022/submissions/release_{1,2,3}/submission_{1,2,3}/context/predictions/test/
 ${n2c2_track1_home}/context/bert_baselines/utils/merge_brat_predictions.py \
-                --pred_dirs ${predictions_dir}/{Action,Actor,Certainty,Negation,Temporality} \
-                --outdir ${predictions_dir}/all --conflicts keep_earlier
+                --pred_dirs ${shared_submission_dir}/release_{1,2,3}/submission_{1,2,3}/ee/predictions/ \
+                            ${shared_submission_dir}/release_{1,2,3}/submission_{1,2,3}/context/predictions/{action,actor,certainty,negation,temporality}/
+                --outdir ${shared_submission_dir}/release_{1,2,3}/submission_{1,2,3}/merged/ --conflicts keep_earlier
 ```
 The `--conflicts` argument tells the merger how to choose attributes predicted by more than one model. E.g., the negation model
 also predicts Action, but we want to ignore it. We thus want to keep the earlier predictions in the arguments to `--pred_dirs`.
 
-**Output**: `/net/scratch2/mbassnt3/n2c2_2022/submissions/release_{1,2,3}/submission_{1,2,3}/context/predictions/test/all/`
+**Output**: `/net/scratch2/mbassnt3/n2c2_2022/submissions/release_{1,2,3}/submission_{1,2,3}/merged/`
