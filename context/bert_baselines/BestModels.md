@@ -104,7 +104,10 @@ bert/actor_entity_marked/version_1 << Submission 3
 
 ## Micro F1
 ```
-avg_micro_f1/clinical_bert/mdl/n2c2cert_i2b2cert/version_1/eval_dev.txt << Submission 1
+clinical_bert/mdl/n2c2cert_i2b2cert/version_2/eval_dev.txt  << Submission 1
+0.914 | 0.914 | 0.914
+
+avg_micro_f1/clinical_bert/mdl/n2c2cert_i2b2cert/version_1/eval_dev.txt
 0.914 | 0.914 | 0.914
 
 bert/certainty_entity_marked/version_3/eval_dev.txt
