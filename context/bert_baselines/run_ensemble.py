@@ -9,8 +9,7 @@ def parse_args():
     parser.add_argument("--model_dirs", nargs='+', required=True,
                         help="Paths to models to ensemble.")
     parser.add_argument("--dataset", type=str, default="n2c2ContextDataset")
-    parser.add_argument("--datasplit", default="dev",
-                        choices=["train", "dev", "test"])
+    parser.add_argument("--datasplit", type=str, default="dev")
     parser.add_argument("--task", type=str, default="Action")
     parser.add_argument("--outdir", type=str, required=True)
     parser.add_argument("--ensemble_method", default="max-voting",
