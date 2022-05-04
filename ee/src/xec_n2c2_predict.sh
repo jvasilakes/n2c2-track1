@@ -25,14 +25,17 @@ SPACY_DATA="../data/${2}spacy/test_data.txt" #../data/ensemble/spacy/test_data.t
 MODEL_FOLDER="../results/${MODEL}_${SPLIT}"
 PRED_FILES="${MODEL_FOLDER}predictions/test/"
 GOLD_FILES="../data/${2}${3}"
-echo -e "PLM: predicting with ${MODEL}, split: ${SPLIT} txt files: ${TXT_FILES}, ann files: ${ANN_FILES}\n Results in ${MODEL_FOLDER}"
+
 
 if [ "$5" == "preprocess" ];
 then
   cd preprocess
+  echo -e ">> PLM: preprocessing txt files in ${TXT_FILES} with ann in ${ANN_FILES}\n"
   python scispacy.py --datadir $TXT_FILES --outdir $SPACY_FILES
   python preprocess_spacy_words.py --txt_files $TXT_FILES --ann_files $ANN_FILES --spacy_files $SPACY_FILES
+  echo -e ">> PLM: data saved in ${SPACY_DATA} \n"
   cd ..
 fi
+echo -e "PLM: predicting with ${MODEL}, split: ${SPLIT} data ${SPACY_DATA} > Results in ${MODEL_FOLDER}\n"
 python main.py --config ../configs/local.yaml --mode predict --test_path $SPACY_DATA --bert $MODEL --model_folder $MODEL_FOLDER
 python eval_script_v3.py $GOLD_FILES $PRED_FILES
