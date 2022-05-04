@@ -21,6 +21,7 @@ class BratEnsembler(object):
     def __init__(self, model_dirs, dataset="n2c2ContextDataset",
                  datasplit="dev", task="Action"):
         self.model_dirs = self.validate(model_dirs, dataset, datasplit)
+        print(f"Ensembling {len(self.model_dirs)} models.")
         self.dataset = dataset
         self.datasplit = datasplit
         self.task = task
@@ -72,16 +73,6 @@ class BratEnsembler(object):
 
     def validate(self, model_dirs, dataset, datasplit):
         for mdir in model_dirs:
-            ckpt_dir = os.path.join(mdir, "checkpoints")
-            if not os.path.isdir(ckpt_dir):
-                raise OSError(f"No checkpoint directory found at {ckpt_dir}")
-            ckpt_glob = os.path.join(ckpt_dir, "*.ckpt")
-            ckpt_files = glob(ckpt_glob)
-            if len(ckpt_files) == 0:
-                raise OSError(f"No checkpoints found at {ckpt_glob}")
-            if len(ckpt_files) > 1:
-                raise OSError(f"Multiple checkpoints found at {ckpt_glob}. I don't know which to use.")  # noqa
-
             pred_dir = os.path.join(
                     mdir, f"predictions/{dataset}/brat/{datasplit}")
             if not os.path.isdir(pred_dir):

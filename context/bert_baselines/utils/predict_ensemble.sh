@@ -44,7 +44,7 @@ echo SENTENCESDIR: $SENTENCESDIR
 echo OUTDIR: $OUTDIR
 
 # Find all model subdirectories
-model_dirs=$(find -L ${MODELDIR} -name config.yaml -exec dirname {} \; | grep -v "random_seed_runs" | grep _v "avg_micro_f1")
+model_dirs=$(find -L ${MODELDIR} -name config.yaml -exec dirname {} \; | grep -v "random_seed_runs" | grep -v "avg_micro_f1")
 
 # Run prediction on the specified data using each model.
 for model_dir in ${model_dirs}; do
@@ -55,8 +55,9 @@ for model_dir in ${model_dirs}; do
   python run.py predict ${model_dir}/config.yaml \
                         --datasplit ${DATASPLIT} \
                         --datadir ${ANNDIR} \
-                        --sentences_dir ${SENTENCESDIR}
-  echo "python run.py predict ${model_dir}/config.yaml --datasplit ${DATASPLIT} --datadir ${ANNDIR} --sentences_dir ${SENTENCESDIR}"
+                        --sentences_dir ${SENTENCESDIR} \
+                        --output_json
+  echo "python run.py predict ${model_dir}/config.yaml --datasplit ${DATASPLIT} --datadir ${ANNDIR} --sentences_dir ${SENTENCESDIR}" --output_json
 done
  
 
@@ -68,7 +69,7 @@ let version=${version}+1
 # Ensemble the predictions using max voting.
 model_dirs_cmdline=$(echo ${model_dirs} | xargs)
 python run_ensemble.py --dataset n2c2ContextDataset \
-                       --datasplit test --task ${TASK} \
+                       --datasplit ${DATASPLIT} --task ${TASK} \
                        --model_dirs ${model_dirs_cmdline} \
                        --outdir ${OUTDIR}/${DATASPLIT}/${TASK}/version_${version}/predictions/
 echo "Ensembled predictions saved to ${OUTDIR}/${DATASPLIT}/${TASK}/version_${version}/"
