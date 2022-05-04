@@ -5,7 +5,7 @@ import yaml
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.pyplot import figure
-
+import shutil
 def setup_log(config, folder_name=None, mode='train'):
     """
     Setup .log file to record training process and results.
@@ -84,6 +84,9 @@ def print_preds(tracker, loader, config, epoch, mode='dev'):
     ievent= dataset.ievent_vocab
     iaction = dataset.iaction_vocab
     file_dict = {}
+    if exists(config['pred_dir']):
+        shutil.rmtree(config['pred_dir'])
+    os.makedirs(config['pred_dir'])
 
     for i, s in enumerate(samples):
         tmp = dataset[s][3].split('/')
@@ -95,8 +98,6 @@ def print_preds(tracker, loader, config, epoch, mode='dev'):
         else:
             file_dict[fname] = [(trig,  pos, event_pred[i], action_pred[i])]
     for fname, res_list in file_dict.items():
-        if not exists(config['pred_dir']):
-            os.makedirs(config['pred_dir'])
         with open(join(config['pred_dir'], fname+".ann"), "w") as tmp_file:
             # Move read cursor to the start of file.
             count = 0
