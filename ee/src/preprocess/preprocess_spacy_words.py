@@ -21,7 +21,7 @@ genia_splitter = os.path.join("../common", "geniass")
 temp_dict = {'T': 'entities', 'E': 'events', 'Certainty': 'certainty', 'Actor': 'actor',
              'Action': 'action', 'Temporality': 'temporality', 'Negation': 'negation'}
 ###############################
-spacy_ign = ["_", "#", "\n", '"', "@", '-']
+spacy_ign = ["_", "#", "\n", '"', "@", '-', '\t']
 
 
 def spacy_replace(s):
