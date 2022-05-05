@@ -1,9 +1,8 @@
-EE task - 19/3/2022
+EE task - 4/5/2022
 
 Currecnt version uses PLM along with 10 verbs. Concat with i2b2 does not seem to improve performance.<br>
 You can change the parameters you want on the config file.<br>
-If you want to run the model on different splits, you have to obtain the train_data/dev_data.txt that requires 2 steps if preprocessing.<br>
-After getting Nhung's output I will adjust it to run automatically.
+
 
 ## Training the model: 
 ```sh xec_n2c2_train.sh <blue,base,clinical> <default/,split0-4>  <scispacy, make, > ``` <br>
@@ -15,6 +14,18 @@ To run the model on all splits use:
 scispacy: rerun the whole preprocessing<br>
 make: only make the training files<br>
 nothing: assume train_data.txt and dev_data.txt exist.
+
+
+
+## predictin with the model:
+```
+sh xec_n2c2_predict_ensemble_splits.sh <blue, clinical> dev_default/ dev/ <preprocess, > 
+```
+This model predicts accoring to the trained ```bert.model``` across all splits.<br>
+More specifically ```dev_default/``` is a folder with the ner predictions, existing inside all data/split files and ```dev/``` are the golden labels.<br>
+If there are no golden labels just use ```dev_default/``` or whichever folder you are valuating on 2 times. <br>
+All predictions are saved under results/<model>_<split>/predictions/test/.<br>
+Then the ensemble averages these predictions.
 
 ## Evaluating the predictions:
 ```
