@@ -1,3 +1,51 @@
+# Performance on the test sets
+## Release 2 (events + context)
+### Submission 1
+                      ------- strict -------    ------ lenient -------
+                      Prec.   Rec.    F(b=1)    Prec.   Rec.    F(b=1)
+         Disposition  0.8333  0.8517  0.8424    0.8333  0.8517  0.8424
+       Nodisposition  0.9554  0.9532  0.9543    0.9554  0.9532  0.9543
+        Undetermined  0.5915  0.6885  0.6364    0.5915  0.6885  0.6364
+                      ------------------------------------------------
+     Overall (micro)  0.9044  0.9167  0.9105    0.9044  0.9167  0.9105
+     Overall (macro)  0.7934  0.8312  0.8110    0.7934  0.8312  0.8110
+### Submission 2
+
+                      ------- strict -------    ------ lenient -------
+                      Prec.   Rec.    F(b=1)    Prec.   Rec.    F(b=1)
+         Disposition  0.8615  0.8044  0.8320    0.8615  0.8044  0.8320
+       Nodisposition  0.9604  0.9698  0.9651    0.9604  0.9698  0.9651
+        Undetermined  0.6418  0.7049  0.6719    0.6418  0.7049  0.6719
+                      ------------------------------------------------
+     Overall (micro)  0.9197  0.9218  0.9208    0.9197  0.9218  0.9208
+     Overall (macro)  0.8212  0.8264  0.8230    0.8212  0.8264  0.8230
+### Submission 3
+                      ------- strict -------    ------ lenient -------
+                      Prec.   Rec.    F(b=1)    Prec.   Rec.    F(b=1)
+         Disposition  0.8526  0.8391  0.8458    0.8526  0.8391  0.8458
+       Nodisposition  0.9538  0.9502  0.9520    0.9538  0.9502  0.9520
+        Undetermined  0.6031  0.6475  0.6245    0.6031  0.6475  0.6245
+                      ------------------------------------------------
+     Overall (micro)  0.9099  0.9093  0.9096    0.9099  0.9093  0.9096
+     Overall (macro)  0.8031  0.8123  0.8074    0.8031  0.8123  0.8074
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Performance on the dev sets/splits
+
 ## Lastest version: Packed levitated markers with 10 verbs
 
 ```
