@@ -68,7 +68,16 @@ echo -e "PLM: predicting with ${MODEL}, split: split3/ data ../data/split3/spacy
 python main.py --config ../configs/local.yaml --mode predict --test_path "../data/split3/spacy/${PRED::-1}_data.txt" --bert ${MODEL} --model_folder "../results/${MODEL}_split3/"
 echo -e "PLM: predicting with ${MODEL}, split: split4/ data ../data/split4/spacy/${PRED::-1}_data.txt > Results in ../results/blue_split4/\n"
 python main.py --config ../configs/local.yaml --mode predict --test_path "../data/split4/spacy/${PRED::-1}_data.txt" --bert ${MODEL} --model_folder "../results/${MODEL}_split4/"
-python ensemble.py --pred_dir_list ../results/${MODEL}_default/predictions/test/ ../results/${MODEL}_split0/predictions/test/ ../results/${MODEL}_split1/predictions/test/ ../results/${MODEL}_split2/predictions/test/ ../results/${MODEL}_split3/predictions/test/ ../results/${MODEL}_split4/predictions/test/ --ensemble_out ../results/ensemble_${MODEL}/predictions/test/
+
+if [ "$5" == "single" ];
+then
+echo -e "Running single label ensemble\n"
+python ensemble_single_label.py --pred_dir_list ../results/${MODEL}_default/predictions/test/ ../results/${MODEL}_split0/predictions/test/ ../results/${MODEL}_split1/predictions/test/ ../results/${MODEL}_split2/predictions/test/ ../results/${MODEL}_split3/predictions/test/ ../results/${MODEL}_split4/predictions/test/ --ensemble_out ../results/ensemble_${MODEL}/predictions/test/
+else
+echo -e "Running multi label ensemble\n"
+python ensemble_high_recall.py --pred_dir_list ../results/${MODEL}_default/predictions/test/ ../results/${MODEL}_split0/predictions/test/ ../results/${MODEL}_split1/predictions/test/ ../results/${MODEL}_split2/predictions/test/ ../results/${MODEL}_split3/predictions/test/ ../results/${MODEL}_split4/predictions/test/ --ensemble_out ../results/ensemble_${MODEL}/predictions/test/
+
+fi
 echo -e ">> Ensemble performance\n"
 python eval_script_v3.py $GOLD_FILES $PRED_FILES
 

@@ -104,7 +104,7 @@ def print_preds(tracker, loader, config, epoch, mode='dev'):
             for trig, pos, e_preds, a_preds in res_list:
                 if e_preds[0] == 1:
                     count = print_single(tmp_file, count, ievent[0], pos, trig) 
-                if e_preds[1] == 1 or not e_preds[0] and not e_preds[2] :
+                if e_preds[1] == 1: # or not e_preds[0] and not e_preds[2] :
                     count = print_single(tmp_file, count, ievent[1], pos, trig)
                 if e_preds[2] == 1: #Disposition
                     for j, pred in enumerate(a_preds):
