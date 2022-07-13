@@ -236,12 +236,56 @@ class Event(Annotation):
         return brat_str
 
 
+class Relation(Annotation):
+    def __init__(self, _id, _type, arg1, arg2,
+                 attributes=None, _source_file=None):
+        super().__init__(_id=_id, _source_file=_source_file)
+        self._type = _type
+        self.arg1 = arg1
+        self.arg2 = arg2
+        self.attributes = attributes or {}
+        for attr in self.attributes.values():
+            attr.reference = self
+
+    @property
+    def type(self):
+        return self._type
+
+    def __hash__(self):
+        return hash((self.id))
+
+    def __eq__(self, other):
+        if not isinstance(other, Relation):
+            return False
+        return all([
+            self.arg1 == other.arg1,
+            self.type == other.type,
+            self.arg2 == other.arg2,
+            self.attributes == other.attributes,
+        ])
+
+    def to_brat_str(self, output_references=False):
+        rel_str = f"{self.id}\t{self.type} Arg1:{self.arg1.id} Arg2:{self.arg2.id}"  # noqa
+        outlines = [rel_str]
+        if output_references is True:
+            outlines.insert(0, self.arg1.to_brat_str())
+            outlines.insert(1, self.arg2.to_brat_str())
+            sorted_attrs = sorted(self.attributes.values(),
+                                  key=lambda a: a.type)
+            attr_strs = [a.to_brat_str(output_references=False)
+                         for a in sorted_attrs]
+            outlines.extend(attr_strs)
+        brat_str = '\n'.join(outlines)
+        return brat_str
+
+
 class BratAnnotations(object):
 
     @classmethod
     def from_file(cls, fpath):
         spans = []
         events = []
+        relations = []
         attributes = []
         with open(fpath, 'r') as inF:
             for line in inF:
@@ -255,31 +299,48 @@ class BratAnnotations(object):
                     data = parse_brat_event(line)
                     data["_source_file"] = fpath
                     events.append(data)
+                elif ann_type == 'R':
+                    data = parse_brat_relation(line)
+                    data["_source_file"] = fpath
+                    relations.append(data)
                 elif ann_type == 'A':
                     data = parse_brat_attribute(line)
                     data["_source_file"] = fpath
                     attributes.append(data)
                 else:
                     raise ValueError(f"Unsupported ann_type '{ann_type}'.")
-        annotations = cls(spans=spans, events=events, attributes=attributes)
+        annotations = cls(spans=spans, events=events, relations=relations,
+                          attributes=attributes)
         return annotations
 
     @classmethod
     def from_events(cls, events_iter):
-        annotations = cls(spans=[], events=[], attributes=[])
-        annotations._events = list(events_iter)
+        spans = []
+        events = []
+        attributes = []
+        for event in events_iter:
+            events.append(event)
+            spans.append(event.span)
+            attributes.extend(list(event.attributes.values()))
+        annotations = cls(spans=[], events=[], relations=[], attributes=[])
+        annotations._spans = spans
+        annotations._events = events
+        annotations._attributes = attributes
         return annotations
 
-    def __init__(self, spans, events, attributes):
+    def __init__(self, spans, events, relations, attributes):
         self._raw_spans = spans
         self._raw_events = events
+        self._raw_relations = relations
         self._raw_attributes = attributes
         self._spans = []  # Will hold Span instances
         self._attributes = []  # Will hold Attribute instances
+        self._relations = []  # Will hold Relation instances
         self._events = []  # Will hold Event instances
         self._resolve()
         self._sorted_spans = None
         self._sorted_attributes = None
+        self._sorted_relations = None
         self._sorted_events = None
 
     def __eq__(self, other):
@@ -305,6 +366,9 @@ class BratAnnotations(object):
     def get_events_by_type(self, event_type):
         return [e for e in self.events if e.type == event_type]
 
+    def get_relations_by_type(self, relation_type):
+        return [e for e in self.events if e.type == relation_type]
+
     def get_attributes_by_type(self, attr_type):
         return [a for a in self.attributes if a.type == attr_type]
 
@@ -322,6 +386,12 @@ class BratAnnotations(object):
         if self._sorted_attributes is None:
             self._sorted_attributes = self._sort_attributes_by_span_index()
         return self._sorted_attributes
+
+    @property
+    def relations(self):
+        if self._sorted_relations is None:
+            self._sorted_relations = self._sort_relations_by_arg1_index()
+        return self._sorted_relations
 
     @property
     def events(self):
@@ -377,7 +447,7 @@ class BratAnnotations(object):
 
             these_attr_types = set(this_event.attributes.keys())
             those_attr_types = set(that_event.attributes.keys())
-            all_attr_types = these_attr_types.union(those_attr_types)
+            all_attr_types = sorted(these_attr_types.union(those_attr_types))
             for attr_type in all_attr_types:
                 this_attr = that_attr = None
                 if attr_type in this_event.attributes.keys():
@@ -430,6 +500,9 @@ class BratAnnotations(object):
         for attr in self._attributes:
             if isinstance(attr.reference, Span):
                 span_indices.append(attr.reference.start_index)
+            elif isinstance(attr.reference, Relation):
+                span = attr.reference.arg1
+                span_indices.append(span.start_index)
             elif isinstance(attr.reference, Event):
                 span = attr.reference.span
                 span_indices.append(span.start_index)
@@ -438,6 +511,9 @@ class BratAnnotations(object):
 
     def _sort_events_by_span_index(self):
         return sorted(self._events, key=lambda e: e.span.start_index)
+
+    def _sort_relations_by_arg1_index(self):
+        return sorted(self._relations, key=lambda e: e.arg1.start_index)
 
     def _resolve(self):
         span_lookup = {}
@@ -454,6 +530,20 @@ class BratAnnotations(object):
             attribute = Attribute(**raw_attr, reference=ref)
             attribute_lookup[ref_id].append(attribute)
             self._attributes.append(attribute)
+
+        for raw_relation in self._raw_relations:
+            arg1_id = raw_relation.pop("arg1_id")
+            arg2_id = raw_relation.pop("arg2_id")
+            arg1 = span_lookup.get(arg1_id)
+            arg2 = span_lookup.get(arg2_id)
+            relation = Relation(**raw_relation, arg1=arg1, arg2=arg2,
+                                attributes=None)
+            attrs = attribute_lookup[raw_relation["_id"]]
+            for attr in attrs:
+                attr.reference = relation
+            attrs_by_type = {attr.type: attr for attr in attrs}
+            relation.attributes = attrs_by_type
+            self._relations.append(relation)
 
         for raw_event in self._raw_events:
             ref_id = raw_event.pop("ref_span_id")
@@ -472,6 +562,11 @@ class BratAnnotations(object):
                 return self.get_events_by_type(type)
             else:
                 return self.events
+        elif len(self._relations) > 0:
+            if type is not None:
+                return self.get_relations_by_type(type)
+            else:
+                return self.relations
         elif len(self._attributes) > 0:
             if type is not None:
                 return self.get_attributes_by_type(type)
@@ -487,18 +582,24 @@ class BratAnnotations(object):
 
     def __str__(self):
         outlines = []
-        for ann in self.get_highest_level_annotations():
-            outlines.append(ann.to_brat_str(output_references=True))
+        # for ann in self.get_highest_level_annotations():
+        #     outlines.append(ann.to_brat_str(output_references=True))
+        # return '\n'.join(outlines)
+        for anntype in [self.spans, self.relations, self.events, self.attributes]:  # noqa
+            for ann in anntype:
+                outlines.append(ann.to_brat_str(output_references=False))
         return '\n'.join(outlines)
 
     def save_brat(self, outdir, filename=None):
-        for ann in self.get_highest_level_annotations():
-            brat_str = ann.to_brat_str(output_references=True)
-            if filename is None:
-                filename = os.path.basename(ann._source_file)
-            outfile = os.path.join(outdir, filename)
-            with open(outfile, 'a') as outF:
-                outF.write(brat_str + '\n')
+        filename = filename
+        for anntype in [self.spans, self.relations, self.events, self.attributes]:  # noqa
+            for ann in anntype:
+                brat_str = ann.to_brat_str(output_references=False)
+                if filename is None:
+                    filename = os.path.basename(ann._source_file)
+                outfile = os.path.join(outdir, filename)
+                with open(outfile, 'a') as outF:
+                    outF.write(brat_str + '\n')
 
 
 def parse_brat_span(line):
@@ -540,6 +641,18 @@ def parse_brat_event(line):
     return {"_id": uid,
             "_type": label,
             "ref_span_id": ref}
+
+
+def parse_brat_relation(line):
+    fields = line.split()
+    assert len(fields) == 4
+    uid, _type, arg1, arg2 = fields
+    arg1_id = arg1.split(':')[-1]
+    arg2_id = arg2.split(':')[-1]
+    return {"_id": uid,
+            "_type": _type,
+            "arg1_id": arg1_id,
+            "arg2_id": arg2_id}
 
 
 def parse_brat_attribute(line):
