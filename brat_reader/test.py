@@ -20,7 +20,6 @@ def test_spans():
 
     gold_anns = brat_reader.BratAnnotations.from_file(
         "test_files/gold_outputs/spans.ann")
-    assert gold_anns == anns
     assert gold_anns == reread_anns
 
     gold_str = open("test_files/gold_outputs/spans.ann").read()
@@ -46,7 +45,6 @@ def test_attributes():
 
     gold_anns = brat_reader.BratAnnotations.from_file(
         "test_files/gold_outputs/attributes.ann")
-    assert gold_anns == anns
     assert gold_anns == reread_anns
 
     gold_str = open("test_files/gold_outputs/attributes.ann").read()
@@ -72,7 +70,6 @@ def test_events():
 
     gold_anns = brat_reader.BratAnnotations.from_file(
         "test_files/gold_outputs/events.ann")
-    assert gold_anns == anns
     assert gold_anns == reread_anns
 
     gold_str = open("test_files/gold_outputs/events.ann").read()
@@ -80,8 +77,69 @@ def test_events():
     assert gold_str == ann_str
 
 
+def test_relations():
+    if os.path.isfile("test_files/test_outputs/relations.ann"):
+        os.remove("test_files/test_outputs/relations.ann")
+    anns = brat_reader.BratAnnotations.from_file(
+            "test_files/inputs/relations.ann")
+    assert len(anns._raw_spans) > 0
+    assert len(anns._raw_relations) > 0
+    anns.save_brat("test_files/test_outputs/")
+
+    reread_anns = brat_reader.BratAnnotations.from_file(
+        "test_files/test_outputs/relations.ann")
+    assert len(anns._raw_spans) > 0
+    assert len(anns._raw_relations) > 0
+
+    gold_anns = brat_reader.BratAnnotations.from_file(
+        "test_files/gold_outputs/relations.ann")
+    assert gold_anns == reread_anns
+
+    gold_str = open("test_files/gold_outputs/relations.ann").read()
+    ann_str = open("test_files/test_outputs/relations.ann").read()
+    assert gold_str == ann_str
+
+
+def test_merge_events():
+    if os.path.isfile("test_files/test_outputs/events_merge.ann"):
+        os.remove("test_files/test_outputs/events_merge.ann")
+    anns1 = brat_reader.BratAnnotations.from_file(
+        "test_files/inputs/events_merge1.ann")
+    anns2 = brat_reader.BratAnnotations.from_file(
+        "test_files/inputs/events_merge2.ann")
+    merged = anns1.merge(anns2)
+    merged.save_brat("test_files/test_outputs/", filename="events_merge.ann")
+
+    reread_anns = brat_reader.BratAnnotations.from_file(
+            "test_files/test_outputs/events_merge.ann")
+    gold_anns = brat_reader.BratAnnotations.from_file(
+            "test_files/gold_outputs/events_merge.ann")
+    assert gold_anns == reread_anns
+
+
+def test_merge_events_dilantin():
+    if os.path.isfile("test_files/test_outputs/events_merge_dilantin.ann"):
+        os.remove("test_files/test_outputs/events_merge_dilantin.ann")
+    anns1 = brat_reader.BratAnnotations.from_file(
+        "test_files/inputs/events_merge_dilantin1.ann")
+    anns2 = brat_reader.BratAnnotations.from_file(
+        "test_files/inputs/events_merge_dilantin2.ann")
+    merged = anns1.merge(anns2)
+    merged.save_brat("test_files/test_outputs/",
+                     filename="events_merge_dilantin.ann")
+
+    reread_anns = brat_reader.BratAnnotations.from_file(
+            "test_files/test_outputs/events_merge_dilantin.ann")
+    gold_anns = brat_reader.BratAnnotations.from_file(
+            "test_files/gold_outputs/events_merge_dilantin.ann")
+    assert gold_anns == reread_anns
+
+
 if __name__ == "__main__":
     test_spans()
     test_attributes()
     test_events()
+    test_relations()
+    test_merge_events()
+    test_merge_events_dilantin()
     print("PASSED!")

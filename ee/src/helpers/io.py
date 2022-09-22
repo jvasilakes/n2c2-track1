@@ -5,7 +5,7 @@ import yaml
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.pyplot import figure
-
+import shutil
 def setup_log(config, folder_name=None, mode='train'):
     """
     Setup .log file to record training process and results.
@@ -69,7 +69,8 @@ def clean_tokenizer(tokens):
 
 def print_single(f, no, category, pos, trig):
     
-    f.write('T{}\t{} {}\t{}\n'.format(no, category, pos, ' '.join(trig)))
+    # f.write('T{}\t{} {}\t{}\n'.format(no, category, pos, ' '.join(trig)))
+    f.write('T{}\t{} {}\t{}\n'.format(no, category, pos, '/'.join(trig)))
     f.write('E{}\t{}:T{}\n'.format(no, category, no))
 
     return no + 1
@@ -83,25 +84,27 @@ def print_preds(tracker, loader, config, epoch, mode='dev'):
     ievent= dataset.ievent_vocab
     iaction = dataset.iaction_vocab
     file_dict = {}
+    if exists(config['pred_dir']):
+        shutil.rmtree(config['pred_dir'])
+    os.makedirs(config['pred_dir'])
 
     for i, s in enumerate(samples):
         tmp = dataset[s][3].split('/')
-        trig, fname = tmp[0:len(tmp)-1],tmp[-1]
+        trig, fname = tmp[0:len(tmp)-1], tmp[-1]
         pos = dataset[s][4]
+
         if fname in file_dict:
             file_dict[fname].append((trig, pos, event_pred[i], action_pred[i]))
         else:
             file_dict[fname] = [(trig,  pos, event_pred[i], action_pred[i])]
     for fname, res_list in file_dict.items():
-        if not exists(config['pred_dir']):
-            os.makedirs(config['pred_dir'])
         with open(join(config['pred_dir'], fname+".ann"), "w") as tmp_file:
             # Move read cursor to the start of file.
             count = 0
             for trig, pos, e_preds, a_preds in res_list:
                 if e_preds[0] == 1:
                     count = print_single(tmp_file, count, ievent[0], pos, trig) 
-                if e_preds[1] == 1:
+                if e_preds[1] == 1: # or not e_preds[0] and not e_preds[2] :
                     count = print_single(tmp_file, count, ievent[1], pos, trig)
                 if e_preds[2] == 1: #Disposition
                     for j, pred in enumerate(a_preds):

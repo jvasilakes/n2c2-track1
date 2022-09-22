@@ -59,7 +59,6 @@ def parse_args():
             "config_file", type=str, help="Path to a yaml config file.")
     pred_parser.add_argument(
             "--datasplit", type=str, default="dev",
-            choices=["train", "dev", "test"],
             help="Predict on this data split. Default 'dev'.")
     pred_parser.add_argument(
             "--datadir", type=str, default=None,
@@ -70,6 +69,10 @@ def parse_args():
             "--sentences_dir", type=str, default=None,
             help="""Path to directory containing sentence segmentations.
                     Only valid when --datadir is not None.""")
+    pred_parser.add_argument(
+            "--outdir", type=str, default=None,
+            help="""Directory at which to save the predictions.
+                    If None, outputs to the model directory.""")
     pred_parser.add_argument(
             "--output_json", action="store_true", default=False,
             help="""If set, save json formatted predictions
@@ -128,6 +131,7 @@ def main(args):
         run_kwargs["version"] = version
         run_kwargs["datadir"] = args.datadir
         run_kwargs["sentences_dir"] = args.sentences_dir
+        run_kwargs["outdir"] = args.outdir
         run_kwargs["output_json"] = args.output_json
         run_kwargs["output_token_masks"] = args.output_token_masks
         run_fn = run_predict
@@ -331,7 +335,7 @@ def run_validate(config, datasplit="dev",
 
 def run_predict(config, datasplit="dev",
                 datadir=None, sentences_dir=None,
-                logdir="logs/", version=None, quiet=False,
+                outdir=None, logdir="logs/", version=None, quiet=False,
                 output_json=False, output_token_masks=False):
 
     stage = None
@@ -362,7 +366,7 @@ def run_predict(config, datasplit="dev",
     trainer = pl.Trainer(
             logger=False,  # Disable tensorboard logging
             gpus=available_gpus,
-            enable_progress_bar=enable_progress_bar
+            enable_progress_bar=enable_progress_bar,
             )
     if stage == "predict":
         pred_dataloader_fn = datamodule.predict_dataloader
@@ -382,11 +386,16 @@ def run_predict(config, datasplit="dev",
     pred_dataloader = pred_dataloader_fn(**pred_dataloader_kwargs)
     preds = trainer.predict(model, dataloaders=pred_dataloader)
 
+    if outdir is None:
+        outdir = os.path.join(logdir, config.name, f"version_{version}",
+                              "predictions")
     # Output to brat
     anns_by_datatset = batched_predictions_to_brat(preds, datamodule)
     for (dataset, anns) in anns_by_datatset.items():
-        preds_dir = os.path.join(logdir, config.name, f"version_{version}",
-                                 "predictions", dataset, "brat", datasplit)
+        preds_dir = os.path.join(outdir, dataset, "brat", datasplit)
+        print(f"-----------------------------------")
+        print(f"Saving brat predictions to:\n{preds_dir}")
+        print(f"-----------------------------------")
         if os.path.isdir(preds_dir):
             warnings.warn(f"brat predictions directory already exists at {preds_dir}. Skipping...")  # noqa
             continue
@@ -395,14 +404,12 @@ def run_predict(config, datasplit="dev",
             doc_anns.save_brat(preds_dir)
 
     if output_json is True:
-        if stage == "predict":
-            # We don't have gold labels so this won't work.
-            raise ValueError("--output_json requires gold labels, which were not loaded.")  ## noqa
-
         preds_by_dataset = batched_predictions_to_json(preds, datamodule)
         for (dataset, preds_by_task) in preds_by_dataset.items():
-            preds_dir = os.path.join(logdir, config.name, f"version_{version}",
-                                     "predictions", dataset, "json", datasplit)
+            preds_dir = os.path.join(outdir, dataset, "json", datasplit)
+            print(f"-----------------------------------")
+            print(f"Saving json predictions to:\n{preds_dir}")
+            print(f"-----------------------------------")
             if os.path.isdir(preds_dir):
                 warnings.warn("JSON predictions directory already exists at {preds_dir}. Skipping...")  # noqa
                 continue
@@ -543,13 +550,25 @@ def batched_predictions_to_json(preds, datamodule):
                if getattr(datamodule, split, None) is not None]
         default_dataset_name = tmp[0].name
         dataset = default_dataset_name
+        task_warning_seen = set()
         for (i, docid) in enumerate(batch["docids"]):
-            for (task, preds) in batch["predictions"].items():
+            for (task, task_preds) in batch["predictions"].items():
                 base_task = task
+                encoded_pred = task_preds[i].int().item()
+                # TODO: This try - except is a hack. Fix it!
+                try:
+                    decoded_pred = datamodule.inverse_transform(
+                        task, encoded_pred)
+                except KeyError:
+                    msg = f"{task} not supported by datamodule {datamodule.name}"  # noqa
+                    if msg not in task_warning_seen:
+                        warnings.warn(msg)
+                        task_warning_seen.add(msg)
+                    continue
                 if isinstance(datamodule, CombinedDataModule):
                     dataset_ = datamodule.get_dataset_from_task(task).name
-                    # so we don't output the dataset name
-                    base_task = task.split(':')[-1]
+                    # so we don't output the datset name in the brat
+                    task = task.split(':')[-1]
                     if dataset == default_dataset_name:
                         dataset = dataset_
                     else:
@@ -561,12 +580,11 @@ def batched_predictions_to_json(preds, datamodule):
                         input_ids, skip_special_tokens=True)
                 tokens = [tok for (tok, tid) in zip(tokens, input_ids) if tid != 0]  # noqa
                 datum["tokens"] = tokens
-                enc_pred = preds[i].int().item()
-                datum["prediction"] = datamodule.inverse_transform(
-                        task, [enc_pred])[0]
-                enc_lab = batch["labels"][task][i].int().item()
-                datum["label"] = datamodule.inverse_transform(
-                        task, [enc_lab])[0]
+                datum["prediction"] = decoded_pred
+                if batch["labels"] is not None:
+                    enc_lab = batch["labels"][task][i].int().item()
+                    datum["label"] = datamodule.inverse_transform(
+                            task, [enc_lab])[0]
                 preds_by_dataset_and_task[dataset][base_task].append(datum)
     return preds_by_dataset_and_task
 
@@ -589,7 +607,7 @@ def batched_predictions_to_brat(preds, datamodule):
                if getattr(datamodule, split, None) is not None]
         default_dataset_name = tmp[0].name
         dataset = default_dataset_name
-        task_warning_seen = False
+        task_warning_seen = set()
         for (i, docid) in enumerate(batch["docids"]):
             attrs = {}
             for (task, task_preds) in batch["predictions"].items():
@@ -600,9 +618,9 @@ def batched_predictions_to_brat(preds, datamodule):
                         task, encoded_pred)
                 except KeyError:
                     msg = f"{task} not supported by datamodule {datamodule.name}"  # noqa
-                    if task_warning_seen is False:
+                    if msg not in task_warning_seen:
                         warnings.warn(msg)
-                        task_warning_seen = True
+                        task_warning_seen.add(msg)
                     continue
                 if isinstance(datamodule, CombinedDataModule):
                     dataset_ = datamodule.get_dataset_from_task(task).name
@@ -612,6 +630,11 @@ def batched_predictions_to_brat(preds, datamodule):
                         dataset = dataset_
                     else:
                         assert dataset_ == dataset, f"Datasets should not differ within a docid! Got {dataset} and {dataset_} for docid {docid}"  # noqa
+                elif ':' in task:
+                    # E.g., we trained using multiple datasets but are
+                    # predicting on only one.
+                    task = task.split(':')[-1]
+
                 num_attrs = len(
                     [attr for e in events_by_dataset_and_docid[dataset][docid]
                      for attr in e.attributes]

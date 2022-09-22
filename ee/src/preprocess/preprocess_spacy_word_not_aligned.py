@@ -21,7 +21,7 @@ genia_splitter = os.path.join("../common", "geniass")
 temp_dict = {'T': 'entities', 'E': 'events', 'Certainty': 'certainty', 'Actor': 'actor',
              'Action': 'action', 'Temporality': 'temporality', 'Negation': 'negation'}
 ###############################
-spacy_ign = ["_", "#", "\n", '"', "@", '-', '\t']
+spacy_ign = ["_", "#", "\n", '"', "@", '-']
 
 
 def spacy_replace(s):
@@ -38,9 +38,8 @@ def parse_annotation_line(line):
             end = x[1].split(' ')[-1]
         else:
             cl, st, end = x[1].split(' ')
-        orig_off = ' '.join(x[1].split(' ')[1:])
 
-        annot = {'id': x[0], 'name': '\t'.join(x[2:]), 'st': int(st), 'end': int(end), 'cl': cl, 'orig_off': orig_off}  # sent_no word_id bio
+        annot = {'id': x[0], 'name': '\t'.join(x[2:]), 'st': int(st), 'end': int(end), 'cl': cl}  # sent_no word_id bio
         return temp_dict['T'], annot
 
     elif x[0][0] == 'E':  # ( ev_id (cl:tr_id) )
@@ -51,9 +50,6 @@ def parse_annotation_line(line):
     elif x[0][0] == 'A':  # ( a_id type ev_id cat)
         #         typ = x[1].split(' ')[0]
         typ, eid, cl = x[1].split(' ')
-
-        # if typ == 'Event':
-        #     typ = 'Action'
         annot = {'aid': x[0], 'type': typ, 'eid': eid, 'cl': cl}
         return temp_dict[typ], annot
     else:
@@ -88,9 +84,9 @@ def adjust_offsets(old_sents, new_sents, old_entities, f, merges):
         end = e['end']
         old_pos = str(start) + ' ' + str(end)
         if (start, end) not in terms:
-            terms[(start, end)] = [[start, end, e['cl'], e['name'], e['id'], old_pos, e['orig_off'], e['name']]]
+            terms[(start, end)] = [[start, end, e['cl'], e['name'], e['id'], old_pos]]
         else:
-            terms[(start, end)].append([start, end, e['cl'], e['name'], e['id'], old_pos, e['orig_off'], e['name']])
+            terms[(start, end)].append([start, end, e['cl'], e['name'], e['id'], old_pos])
 
     orgidx, newidx = 0, 0
     orglen, newlen = len(original), len(newtext)
@@ -205,8 +201,8 @@ def adjust_offsets(old_sents, new_sents, old_entities, f, merges):
             # assert (len(sent_no) == 1), '{} ({}, {}) -- {} -- {} <> {}'.format(sent_no, term[0], term[1],
             #                                                                    new_sent_range,
             #                                                                    newtext_break[term[0]:term[1]], term[3])
-            new_entity = {'id': term[4], 'name': newtext[term[0]:term[1]], 'st': int(term[0]), 'end': int(term[1]), 'cl': term[2],
-                          'sent_no': sent_no[0], 'old_pos': term[5], 'orig_off': term[6], 'orig_name': term[7]}
+            new_entity = {'id': term[4], 'name': newtext[term[0]:term[1]], 'st': int(term[0]),
+                          'end': int(term[1]), 'cl': term[2], 'sent_no': sent_no[0], 'old_pos': term[5]}
 
             new_entities.append(new_entity)
     if restart:
@@ -339,8 +335,8 @@ def preprocess_spacy_words(txt_files_path, ann_files_path, spacy_files_path, win
                     new_en = i
 
                     sample = {'text': ' '.join(words)}
-                    sample['trig'] = {'s': new_st, 'e': new_en, 'name': entries[0]['name'], 'old_pos': entries[0]['old_pos'],
-                                      'orig_off': entries[0]['orig_off'], 'orig_name': entries[0]['orig_name']}
+                    sample['trig'] = {'s': new_st, 'e': new_en, 'name': entries[0]['name'],
+                                      'old_pos': entries[0]['old_pos']}
                     check(words, new_st, new_en, entries[0]['name'], original_words)
 
                     ids = [entry['id'] for entry in entries]

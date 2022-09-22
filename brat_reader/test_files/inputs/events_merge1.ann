@@ -1,0 +1,12 @@
+T9	Disposition 4947 4954	aspirin
+E9	Disposition:T9 
+T12	Disposition 8766 8783	Zolpidem tartrate
+E12	Disposition:T12 
+T17	Disposition 9664 9666	O2
+E17	Disposition:T17 
+A1	Certainty E12 Certain
+A2	Actor E12 Physician
+A9	Certainty E17 Conditional
+A10	Actor E17 Physician
+A13	Negation E17 NotNegated
+A14	Negation E12 NotNegated

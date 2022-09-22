@@ -1,25 +1,19 @@
-#!/bin/sh
+#!/bin/bash --login
 
-#$ -l mem256
-# Load any required modulefiles
+#$ -cwd
+# Number of GPU's to be used
+#$ -l nvidia_v100=1
+
+# Load the latest CUDA library
+# module load libs/cuda
+
+# Enable proxy connection
 # module load tools/env/proxy2        # Uses http://proxy.man.ac.uk:3128
+MODEL=$1 # <blue, clinical, base>
+SPLIT=$2 # <default, split0-4>
+MODE=$3 # <scispacy, make, nothing>
 conda activate dsre-vae
 pwd
+sh xec_n2c2_train.sh $MODEL $SPLIT $MODE
+sh xec_n2c2_predict.sh $MODEL $SPLIT dev/ ner_predictions/ preprocess
 
-echo -e "PLM: start training with $1\n"
-
-#OUT="re_${1}_dev.txt"
-#ERR="re_${1}_dev.err"
-#
-#python train_relation.py --yaml ../config_pipeline.yaml --data $1 --scenario $2 --dataset $3  > $OUT 2> $ERR
-#
-## $1: clinical, base, blue
-## $2:
-# Applying scispacy
-python main.py --config ../configs/local.yaml --mode train --split default --bert ${1}
-python main.py --config ../configs/local.yaml --mode train --split split0 --bert ${1}
-python main.py --config ../configs/local.yaml --mode train --split split1 --bert ${1}
-python main.py --config ../configs/local.yaml --mode train --split split2 --bert ${1}
-python main.py --config ../configs/local.yaml --mode train --split split3 --bert ${1}
-python main.py --config ../configs/local.yaml --mode train --split split4 --bert ${1}
-python main.py --config ../configs/local.yaml --mode train --split ensemble --bert ${1}

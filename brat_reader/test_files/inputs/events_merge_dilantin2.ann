@@ -1,0 +1,27 @@
+T0	Disposition 3874 3882	Dilantin
+E0	Disposition:T0
+A0	Action E0 Decrease
+T1	Disposition 3874 3882	Dilantin
+E1	Disposition:T1
+A1	Action E1 Decrease
+T2	Disposition 4043 4046	AED
+E2	Disposition:T2
+A2	Action E2 Stop
+T3	Disposition 4366 4374	Dilantin
+E3	Disposition:T3
+A3	Action E3 Decrease
+T4	Disposition 4366 4374	Dilantin
+E4	Disposition:T4
+A4	Action E4 Decrease
+T5	Disposition 4437 4445	Dilantin
+E5	Disposition:T5
+A5	Action E5 Stop
+T6	Disposition 4562 4570	Dilantin
+E6	Disposition:T6
+A6	Action E6 Stop
+T7	Disposition 5268 5276	Dilantin
+E7	Disposition:T7
+A7	Action E7 Decrease
+T8	Disposition 5268 5276	Dilantin
+E8	Disposition:T8
+A8	Action E8 Decrease

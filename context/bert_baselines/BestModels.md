@@ -13,7 +13,10 @@ clinical_bert/mdl/n2c2action_i2b2event/version_1/eval_dev.txt
 0.833 | 0.833 | 0.833
 
 CV
-avg_micro_f1/bluebert/mdl/n2c2action_i2b2event/version_1 << Submission 3
+bluebert/pl_markers/mdl/n2c2action_i2b2event/version_2/avg_micro_f1/version_1  << Submission 3
+0.8868 | 0.8868 | 0.8868
+
+avg_micro_f1/bluebert/mdl/n2c2action_i2b2event/version_1
 0.8848 | 0.8848 | 0.8848
 
 bluebert/pl_markers/mdl/n2c2action_i2b2event/version_1/avg_micro_f1/version_1
@@ -101,7 +104,10 @@ bert/actor_entity_marked/version_1 << Submission 3
 
 ## Micro F1
 ```
-avg_micro_f1/clinical_bert/mdl/n2c2cert_i2b2cert/version_1/eval_dev.txt << Submission 1
+clinical_bert/mdl/n2c2cert_i2b2cert/version_2/eval_dev.txt  << Submission 1
+0.914 | 0.914 | 0.914
+
+avg_micro_f1/clinical_bert/mdl/n2c2cert_i2b2cert/version_1/eval_dev.txt
 0.914 | 0.914 | 0.914
 
 bert/certainty_entity_marked/version_3/eval_dev.txt
@@ -168,7 +174,13 @@ clinical_bert/mdl/n2c2action_negation_i2b2certainty/version_1/eval_dev.txt
 0.986 | 0.986 | 0.986 |
 
 CV
-clinical_bert/mtl/action_negation/version_3  << Submission 3
+clinical_bert/pl_markers/mdl/n2c2action_negation_i2b2certainty/version_3
+0.9806 | 0.9806 | 0.9806
+
+clinical_bert/pl_markers/mdl/n2c2action_negation_i2b2certainty/version_2 << Submission 3
+0.9806 | 0.9806 | 0.9806
+
+clinical_bert/mtl/action_negation/version_3
 0.9782 | 0.9782 | 0.9782
 
 clinical_bert/mdl/n2c2action_negation_i2b2event/version_1
@@ -202,14 +214,11 @@ clinical_bert/pl_markers/mdl/n2c2action_negation_i2b2certainty/version_1  << Sub
 clinical_bert/mdl/n2c2action_negation_i2b2certainty/version_1
 0.8076 | 0.6844 | 0.7172
 
-clinical_bert/mdl/n2c2action_negation_i2b2event/version_1
-0.7396 | 0.6494 | 0.6694
+clinical_bert/pl_markers/mdl/n2c2action_negation_i2b2certainty/version_3
+0.7582 | 0.6986 | 0.7116
 
-clinical_bert/mtl/action_negation/version_3
-0.6564 | 0.566 | 0.589
-
-bert/negation/version_1
-0.5884 | 0.5166 | 0.5226
+clinical_bert/pl_markers/mdl/n2c2action_negation_i2b2certainty/version_2
+0.7582 | 0.6986 | 0.7116
 ```
 
 
