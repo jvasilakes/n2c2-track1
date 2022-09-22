@@ -98,7 +98,8 @@ def load_data(config):
         dev_loader_ = DataLoader(dataset=dev_data_, batch_size=config['batch_size'],
                                shuffle=True,
                                collate_fn=Collates(),
-                               num_workers=0)
+                               num_workers=0,
+                               drop_last=False)
         return train_loader_, dev_loader_, train_data_
 
     else:
@@ -109,7 +110,8 @@ def load_data(config):
         test_loader_ = DataLoader(dataset=test_data_, batch_size=config['batch_size'],
                                  shuffle=False,
                                  collate_fn=Collates(),
-                                 num_workers=0)
+                                 num_workers=0,
+                                 drop_last=False)
         return [], test_loader_, []
 
 def load_trainer(train_loader_, dev_loader_, train_data_, config, device):
