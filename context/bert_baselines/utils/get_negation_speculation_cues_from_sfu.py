@@ -16,6 +16,7 @@ def parse_args():
 def main(args):
     topics = ['MOVIES', 'HOTELS', 'PHONES', 'BOOKS',
               'COOKWARE', 'MUSIC', 'CARS', 'COMPUTERS']
+    os.makedirs(args.outdir, exist_ok=False)
 
     all_neg_cues = set()
     all_spec_cues = set()
