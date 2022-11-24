@@ -269,7 +269,8 @@ class ExperimentConfig(object):
         self._validate_param("monitor", valid_monitors,
                              default_value="avg_macro_f1", errors=errors)
 
-        valid_pool_fns = ["mean", "max", "first", "last", "first-last"]
+        valid_pool_fns = ["mean", "max", "first", "last", "first-last",
+                          "attention"]
         self._validate_param("entity_pool_fn", valid_pool_fns,
                              default_value="mean", errors=errors)
         self._validate_param("levitated_marker_pool_fn", valid_pool_fns,

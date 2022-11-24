@@ -257,6 +257,8 @@ class BasicBertDataModule(pl.LightningDataModule):
             levitated_pos_tags=None,
             levitated_word_list=None,
             name=None):
+
+        super().__init__()
         self.bert_model_name_or_path = bert_model_name_or_path
         self.max_seq_length = max_seq_length
 
