@@ -203,13 +203,20 @@ class CombinedDataModule(BasicBertDataModule):
                 return getattr(dm, split)
         raise KeyError(target_task)
 
-    def train_dataloader(self):
+    def train_dataloader(self, predicting=False):
         if self._ran_setup is False:
             raise ValueError("Run setup() first!")
-        sampler_class = SAMPLER_LOOKUP[self.dataset_sample_strategy]
-        sampler = sampler_class(
-            self.train, self.batch_size, shuffle_examples=True,
-            **self.dataset_sampler_kwargs)
+        if predicting is True:
+            sampler = SequentialDatasetSampler(
+                self.train, self.batch_size, shuffle_examples=False,
+                exhaust_all=True)
+            sampler = torch.utils.data.sampler.BatchSampler(
+                sampler, 1, drop_last=False)
+        else:
+            sampler_class = SAMPLER_LOOKUP[self.dataset_sample_strategy]
+            sampler = sampler_class(
+                self.train, self.batch_size, shuffle_examples=True,
+                **self.dataset_sampler_kwargs)
         train_collate_fn = partial(self.encode_and_collate, split="train")
         return DataLoader(self.train, collate_fn=train_collate_fn,
                           num_workers=4, batch_sampler=sampler)
