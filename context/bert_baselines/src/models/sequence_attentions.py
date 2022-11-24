@@ -6,18 +6,18 @@ import torch.nn as nn
 import numpy as np
 import pytorch_lightning as pl
 from transformers import BertConfig, BertModel, AdamW
-from transformers.modeling_outputs import SequenceClassifierOutput
 from sklearn.metrics import precision_recall_fscore_support
 
 from src.models.losses import get_loss_function
-from src.models.layers import TokenEmbeddingPooler
+from src.models.layers import TokenEmbeddingPooler, TokenEmbeddingPoolerWithAttentions  # noqa
+from src.models.model_outputs import SequenceClassifierOutputWithTokenMask
 
 # Ignore warning that BertModel is not using some layer parameters.
 from transformers import logging
 logging.set_verbosity_error()
 
 
-class BertMultiHeadedSequenceClassifier(pl.LightningModule):
+class BertSequenceClassifierWithAttentions(pl.LightningModule):
     """
     bert_model_name_or_path: e.g., 'bert-base-uncased'
     label_spec: dict from task names to number of labels. Can be obtained
@@ -117,28 +117,25 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
             for param in self.bert.parameters():
                 param.requires_grad = False
 
-        # Entity and levitated marker embedding poolers
-        if self.use_entity_spans is False and self.use_levitated_markers is True:  # noqa
-            warnings.warn("levitated markers only supported when use_entity_spans=True. Not using levitated markers.")  # noqa
-            self.use_levitated_markers = False
-        if self.use_entity_spans is True:
-            pooler_insize = pooler_outsize = self.bert_config.hidden_size
-            self.entity_pooler = TokenEmbeddingPooler(
-                pooler_insize, pooler_outsize, self.entity_pool_fn)
-            if self.use_levitated_markers is True:
-                self.levitated_marker_pooler = TokenEmbeddingPooler(
-                    pooler_insize, pooler_outsize,
-                    self.levitated_marker_pool_fn)
+        # Entity pooler
+        if self.use_entity_spans is False or self.use_levitated_markers is False:  # noqa
+            raise ValueError("SequenceWithAttention requires use_entity_spans and use_levitated_markers")  # noqa
+        pooler_insize = pooler_outsize = self.bert_config.hidden_size
+        self.entity_pooler = TokenEmbeddingPooler(
+            pooler_insize, pooler_outsize, self.entity_pool_fn)
 
-        # Classifiers, one per task
+        # Levitated marker pooler and classifiers, one per task
+        self.levitated_marker_poolers = nn.ModuleDict()
         self.classifier_heads = nn.ModuleDict()
         self.classifier_loss_fns = nn.ModuleDict()
         classifier_insize = self.bert_config.hidden_size
-        if self.use_levitated_markers is True:
-            # b/c we'll concat the pooled representations
-            # from entities and markers
-            classifier_insize = 2 * classifier_insize
+        # b/c we'll concat the pooled representations
+        # from entities and markers
+        classifier_insize = 2 * classifier_insize
         for (task, num_labels) in label_spec.items():
+            self.levitated_marker_poolers[task] = TokenEmbeddingPoolerWithAttentions(  # noqa
+                pooler_insize, pooler_outsize,
+                self.levitated_marker_pool_fn)
             self.classifier_heads[task] = nn.Sequential(
                     # TODO: try adding in a layernorm here.
                     nn.Dropout(self.dropout_prob),
@@ -201,34 +198,26 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
                 return_dict=True
                 )
 
-        if self.use_entity_spans is True:
-            if entity_token_idxs is not None:
-                pooled_output = self.entity_pooler(
-                    bert_outputs.last_hidden_state, entity_token_idxs)
-            else:
-                raise ValueError("use_entity_spans=True but no entity_token_idxs provided in forward()")  # noqa
-            if self.use_levitated_markers is True:
-                if levitated_marker_idxs is not None:
-                    # TODO: If I don't pass in at least 1 marker, gradients
-                    # explode and the next batch BERT outputs NaNs.
-                    if [] in levitated_marker_idxs:
-                        idxs = [i for (i, lev_idxs)
-                                in enumerate(levitated_marker_idxs)
-                                if len(lev_idxs) == 0]
-                        for idx in idxs:
-                            levitated_marker_idxs[idx] = [0]
-                    kwargs = {}
-                    if self.levitated_marker_pool_fn == "attention":
-                        kwargs = {"subject_hidden": pooled_output}
-                    marker_output, extra_data = self.levitated_marker_pooler(
-                        bert_outputs.last_hidden_state, levitated_marker_idxs, **kwargs)  # noqa
-                    pooled_output = torch.cat(
-                        (pooled_output, marker_output), dim=1)  # noqa
-                else:
-                    raise ValueError("use_levitated_markers=True but no levitated_marker_idxs provided in forward()")  # noqa
+        if entity_token_idxs is not None:
+            pooled_output = self.entity_pooler(
+                bert_outputs.last_hidden_state, entity_token_idxs)
         else:
-            pooled_output = bert_outputs.pooler_output
+            raise ValueError("no entity_token_idxs provided in forward()")
+        if levitated_marker_idxs is not None:
+            # TODO: If I don't pass in at least 1 marker, gradients
+            # explode and the next batch BERT outputs NaNs.
+            if [] in levitated_marker_idxs:
+                idxs = [i for (i, lev_idxs)
+                        in enumerate(levitated_marker_idxs)
+                        if len(lev_idxs) == 0]
+                for idx in idxs:
+                    levitated_marker_idxs[idx] = [0]
+        else:
+            raise ValueError("no levitated_marker_idxs provided to forward()")
 
+        # Get per-task pooled output
+        subject_pooled = self.entity_pooler(
+            bert_outputs.last_hidden_state, entity_token_idxs)
         clf_outputs = {}
         for (task, clf_head) in self.classifier_heads.items():
             if dataset is not None:
@@ -237,6 +226,13 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
                 # e.g., "n2c2Context:Action"
                 if dataset != task.split(':')[0]:
                     continue
+
+            tmp = self.levitated_marker_poolers[task](
+                bert_outputs.last_hidden_state, levitated_marker_idxs,
+                subject_pooled)
+            marker_output, levitated_attentions = tmp
+            pooled_output = torch.cat((subject_pooled, marker_output), dim=1)
+
             logits = clf_head(pooled_output)
             if labels is not None:
                 task_labels = labels[task]
@@ -245,11 +241,12 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
                         task_labels.view(-1))
             else:
                 clf_loss = None
-            clf_outputs[task] = SequenceClassifierOutput(
+            clf_outputs[task] = SequenceClassifierOutputWithTokenMask(
                     loss=clf_loss,
                     logits=logits,
                     hidden_states=bert_outputs.hidden_states,
-                    attentions=bert_outputs.attentions)
+                    attentions=bert_outputs.attentions,
+                    mask=levitated_attentions)
         return clf_outputs
 
     def get_model_outputs(self, batch):
@@ -288,7 +285,8 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
                 "entity_char_spans": batch["entity_char_spans"],
                 "char_offsets": batch["char_offsets"],
                 "docids": batch["docids"],
-                "predictions": {task: [] for task in tasks}
+                "predictions": {task: [] for task in tasks},
+                "token_masks": {task: [] for task in tasks}
                 }
         if "labels" in batch.keys():
             inputs_with_predictions["labels"] = batch["labels"]
@@ -296,6 +294,11 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
             softed = nn.functional.softmax(outputs.logits, dim=1)
             preds = torch.argmax(softed, dim=1)
             inputs_with_predictions["predictions"][task] = preds
+            output_masks = torch.zeros_like(outputs.mask)
+            for (i, mask) in enumerate(outputs.mask):
+                position_ids = batch["encodings"]["position_ids"][i]
+                output_masks[i][position_ids] = mask
+            inputs_with_predictions["token_masks"][task] = output_masks
         return inputs_with_predictions
 
     def validation_step(self, batch, batch_idx, dataloader_idx=0):

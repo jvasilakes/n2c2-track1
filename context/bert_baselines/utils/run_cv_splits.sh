@@ -1,5 +1,5 @@
 MODEL_DIR=$1
-$2 # --quiet
+QUIET=$2 # --quiet
 
 for config in $(ls -1 ${MODEL_DIR}/cv_split_configs/*.yaml); do
   logbasedir=$(grep "^logdir:" $config | awk '{print $2}')
@@ -14,7 +14,7 @@ for config in $(ls -1 ${MODEL_DIR}/cv_split_configs/*.yaml); do
   echo "============================================"
 
   # Train
-  python run.py $2 train $config
+  python run.py $QUIET train $config
 
   # Predict
   logged_config=${logdir}/config.yaml
@@ -23,7 +23,7 @@ for config in $(ls -1 ${MODEL_DIR}/cv_split_configs/*.yaml); do
     exit 1
   fi
 
-  python run.py $2 predict ${logged_config}
+  python run.py $QUIET predict ${logged_config}
 
   # Validate and log results to logdir/eval_dev.txt
   datadir=$(grep "^data_dir:" $config | awk '{print $2}')

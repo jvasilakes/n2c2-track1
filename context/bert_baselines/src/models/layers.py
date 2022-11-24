@@ -32,11 +32,13 @@ class TokenEmbeddingPooler(nn.Module):
         insize = hidden_dim
         if pool_fn == "first-last":
             insize = 2 * insize
+        elif pool_fn == "attention":
+            self.alignment_model = nn.Linear(2 * insize, 1)
         self.output_layer = nn.Sequential(
             nn.Linear(insize, self.outsize),
             nn.Tanh())
 
-    def forward(self, hidden, token_idxs):
+    def forward(self, hidden, token_idxs, **pooler_kwargs):
         """
         hidden: [batch_size, max_seq_length, hidden_dim]
         token_idxs: list of lists containing token_idxs to pool.
@@ -49,7 +51,7 @@ class TokenEmbeddingPooler(nn.Module):
         # apply the mask to keep only the specified tokens,
         masked_hidden = hidden * token_mask
         # and pool the embeddings.
-        pooled = self.pooler(masked_hidden, token_mask)
+        pooled = self.pooler(masked_hidden, token_mask, **pooler_kwargs)
         transformed = self.output_layer(pooled)
         return transformed
 
@@ -131,6 +133,93 @@ class TokenEmbeddingPooler(nn.Module):
 
     def string(self):
         return f"TokenEmbeddingPooler(hidden_dim={self.hidden_dim}, outsize={self.outsize}, pool_fn={self.pool_fn})"  # noqa
+
+
+class TokenEmbeddingPoolerWithAttentions(nn.Module):
+    """
+    Pools an encoded input sequence over the hidden dimension
+    according to a list of indices in the time dimension.
+    Uses attention mechanism between the subject and levitated
+    markers.
+    """
+
+    def __init__(self, hidden_dim, outsize, pool_fn):
+        super().__init__()
+        self.hidden_dim = hidden_dim
+        self.outsize = outsize
+        try:
+            self.pooler = self.pooler_functions[pool_fn]
+            self.pool_fn = pool_fn
+        except KeyError:
+            raise ValueError(f"Unknown pool function '{pool_fn}'")
+        insize = hidden_dim
+        if pool_fn == "first-last":
+            insize = 2 * insize
+        elif pool_fn == "attention":
+            self.alignment_model = nn.Linear(2 * insize, 1)
+        self.output_layer = nn.Sequential(
+            nn.Linear(insize, self.outsize),
+            nn.Tanh())
+
+    def forward(self, hidden, token_idxs, subject_hidden):
+        """
+        hidden: [batch_size, max_seq_length, hidden_dim]
+        token_idxs: list of lists containing token_idxs to pool.
+        subject_hidden: [batch_size, hidden_dim]
+        """
+        assert len(token_idxs) == hidden.size(0), "Number of token_idxs not equal to batch size!"  # noqa
+        # Get a token-wise mask over hidden,
+        token_mask = self.get_token_mask_from_indices(
+                token_idxs, hidden.size())
+        token_mask = token_mask.to(hidden.device)
+        # apply the mask to keep only the specified tokens,
+        masked_hidden = hidden * token_mask
+        # and pool the embeddings.
+        pooled, attentions = self.pooler(masked_hidden, token_mask,
+                                         subject_hidden)
+        transformed = self.output_layer(pooled)
+        return transformed, attentions
+
+    def get_token_mask_from_indices(self, token_idxs, hidden_size):
+        # Use the token_idxs to create a mask over the token dimension
+        # in hidden, duplicated across the embedding dimension.
+        token_mask = torch.zeros(hidden_size)
+        for (batch_i, idxs) in enumerate(token_idxs):
+            token_mask[batch_i, idxs, :] = 1.
+        return token_mask
+
+    @property
+    def pooler_functions(self):
+        if "_pooler_registry" in self.__dict__.keys():
+            return self._pooler_registry
+        else:
+            self._pooler_registry = {}
+            for name in dir(self):
+                var = getattr(self, name)
+                if hasattr(var, "_tagged"):
+                    registry_name = var._tagged
+                    self._pooler_registry[registry_name] = var
+            return self._pooler_registry
+
+    @register("attention")
+    def attention_pooler(self, masked, token_mask, subject_hidden):
+        subject_hidden_rep = subject_hidden.unsqueeze(1).repeat(1, masked.size(1), 1)  # noqa
+        subject_hidden_rep = subject_hidden_rep * token_mask
+        alignment_inputs = torch.cat((subject_hidden_rep, masked), dim=2)
+        attention_scores = self.alignment_model(alignment_inputs)
+        batch_size = masked.size(0)
+        # normalize over the levitated markers
+        attention_weights = torch.zeros_like(attention_scores)
+        attn_mask = token_mask[:, :, 0].bool()
+        for ex_i in range(batch_size):
+            masked_scores = torch.masked_select(attention_scores[ex_i],
+                                                attn_mask[ex_i].unsqueeze(1))
+            probs = torch.softmax(masked_scores, 0)
+            attention_weights[ex_i][attn_mask[ex_i]] = probs.unsqueeze(1)
+        # scale the levitated marker representations by the attention_weights
+        # and sum over the levitated markers
+        pooled = (masked * attention_weights).sum(1)
+        return pooled, attention_weights
 
 
 class KumaGate(nn.Module):

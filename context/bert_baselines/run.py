@@ -422,9 +422,9 @@ def run_predict(config, datasplit="dev",
                         outF.write('\n')
 
     if output_token_masks is True:
-        if config.model_name != "bert-rationale-classifier":
-            raise ValueError("--output_token_masks only compatible with bert-rationale-classifier.")  # noqa
-        raise NotImplementedError("Still working on this...")
+        #if config.model_name != "bert-rationale-classifier":
+        #    raise ValueError("--output_token_masks only compatible with bert-rationale-classifier.")  # noqa
+        #raise NotImplementedError("Still working on this...")
         mask_dir = os.path.join(
                 logdir, config.name, f"version_{version}",
                 "predictions", dataset, "token_masks", datasplit)
@@ -523,12 +523,12 @@ def batched_predictions_to_masked_tokens(preds, datamodule):
     masked_by_task = defaultdict(list)
     for batch in preds:
         for (i, docid) in enumerate(batch["docids"]):
-            for (task, zmasks) in batch["zmask"].items():
+            for (task, masks) in batch["token_masks"].items():
                 datum = {}
                 datum["docid"] = docid
                 input_ids = batch["input_ids"][i]
                 datum["tokens_with_masks"] = format_input_ids_and_masks(
-                        input_ids, zmasks[i], datamodule.tokenizer)
+                        input_ids, masks[i], datamodule.tokenizer)
                 enc_pred = batch["predictions"][task][i].int().item()
                 enc_lab = batch["labels"][task][i].int().item()
                 datum["prediction"] = datamodule.train.inverse_transform(
@@ -645,7 +645,7 @@ def batched_predictions_to_brat(preds, datamodule):
                 attrs[task] = attr
 
             # Reconstruct original character offsets
-            start, end = batch["entity_char_spans"][i]
+            start, end = batch["entity_char_spans"][i].clone()
             entity_text = batch["texts"][i][start:end]
             # There's one entity mention in n2c2 2022 that spans a newline
             #  so we'll fix that here.
@@ -667,10 +667,11 @@ def batched_predictions_to_brat(preds, datamodule):
                 )
             )
             sid = f"T{num_spans}"
-            span = br.Span(_id=sid, _type="Disposition", start_index=start,
-                           end_index=end, text=entity_text)
-
             src_file_str = f"{docid}.ann"
+            span = br.Span(_id=sid, _type="Disposition", start_index=start,
+                           end_index=end, text=entity_text,
+                           _source_file=src_file_str)
+
             if dataset is None:
                 dataset = datamodule.name
             eid = f"E{len(events_by_dataset_and_docid[dataset][docid])}"

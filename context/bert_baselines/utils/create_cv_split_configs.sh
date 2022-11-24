@@ -1,4 +1,5 @@
 MODEL_DIR=$1
+DATA_DIR=$2
 
 # We'll put the new config files here.
 outdir=${MODEL_DIR}/cv_split_configs
@@ -22,8 +23,8 @@ for i in {0..4}; do
   # CV split runs get put under a specific model version.  
   # this creates a backup at ${outdir}/split${i}.yaml.orig
   python -m src.config update -f ${outdir}/split${i}.yaml \
-       -k data_dir "/mnt/iusers01/nactem01/u14498jv/Projects/n2c2-track1/n2c2Track1TrainingData-v3/cv_splits/${i}/" \
-       -k sentences_dir "/mnt/iusers01/nactem01/u14498jv/Projects/n2c2-track1/n2c2Track1TrainingData-v3/cv_splits/${i}/segmented" \
+       -k data_dir "${DATA_DIR}/cv_splits/${i}/" \
+       -k sentences_dir "${DATA_DIR}/cv_splits/${i}/segmented" \
        -k name "${model_name}/${model_ver}/cv_split_runs/${i}"
 done
 rm ${outdir}/*.yaml.orig
