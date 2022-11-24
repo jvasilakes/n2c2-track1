@@ -297,9 +297,21 @@ class BertSequenceClassifierWithAttentions(pl.LightningModule):
             output_masks = torch.zeros_like(outputs.mask)
             for (i, mask) in enumerate(outputs.mask):
                 position_ids = batch["encodings"]["position_ids"][i]
-                output_masks[i][position_ids] = mask
+                levitated_marker_idxs = batch["levitated_marker_idxs"][i]
+                output_masks[i] = self.move_levitated_mask_to_tokens(
+                    mask, position_ids, levitated_marker_idxs)
             inputs_with_predictions["token_masks"][task] = output_masks
         return inputs_with_predictions
+
+    def move_levitated_mask_to_tokens(self, mask, position_ids, levitated_marker_idxs):  # noqa
+        """
+        Move the masks for the levitated markers to the tokens they represent.
+        """
+        levitated_positions = position_ids[levitated_marker_idxs]
+        for li in levitated_positions.unique():
+            single_span_idxs = torch.where(levitated_positions == li)
+            mask[li] = mask[levitated_marker_idxs][single_span_idxs].sum()
+        return mask
 
     def validation_step(self, batch, batch_idx, dataloader_idx=0):
         outputs_by_task = self.get_model_outputs(batch)

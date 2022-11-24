@@ -531,9 +531,9 @@ def batched_predictions_to_masked_tokens(preds, datamodule):
                         input_ids, masks[i], datamodule.tokenizer)
                 enc_pred = batch["predictions"][task][i].int().item()
                 enc_lab = batch["labels"][task][i].int().item()
-                datum["prediction"] = datamodule.train.inverse_transform(
+                datum["prediction"] = datamodule.inverse_transform(
                         task, [enc_pred])[0]
-                datum["label"] = datamodule.train.inverse_transform(
+                datum["label"] = datamodule.inverse_transform(
                         task, [enc_lab])[0]
                 masked_by_task[task].append(datum)
     return masked_by_task
