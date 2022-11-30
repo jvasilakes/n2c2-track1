@@ -220,7 +220,7 @@ class BertMultiHeadedSequenceClassifier(pl.LightningModule):
                     kwargs = {}
                     if self.levitated_marker_pool_fn == "attention":
                         kwargs = {"subject_hidden": pooled_output}
-                    marker_output, extra_data = self.levitated_marker_pooler(
+                    marker_output = self.levitated_marker_pooler(
                         bert_outputs.last_hidden_state, levitated_marker_idxs, **kwargs)  # noqa
                     pooled_output = torch.cat(
                         (pooled_output, marker_output), dim=1)  # noqa
