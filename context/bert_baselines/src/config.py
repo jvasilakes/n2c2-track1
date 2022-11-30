@@ -270,7 +270,8 @@ class ExperimentConfig(object):
                              default_value="avg_macro_f1", errors=errors)
 
         valid_pool_fns = ["mean", "max", "first", "last", "first-last",
-                          "attention"]
+                          "attention-softmax", "attention-gumbel",
+                          "attention-sparsegen"]
         self._validate_param("entity_pool_fn", valid_pool_fns,
                              default_value="mean", errors=errors)
         self._validate_param("levitated_marker_pool_fn", valid_pool_fns,
