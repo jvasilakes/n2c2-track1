@@ -6,6 +6,8 @@ import probabll.distributions as probd
 from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence
 from probabll.distributions.stretchrectify import StretchedAndRectifiedDistribution  # noqa
 
+import src.models.projections as projections
+
 
 def register(name):
     def assign_name(func):
@@ -155,8 +157,7 @@ class TokenEmbeddingPoolerWithAttentions(nn.Module):
         insize = hidden_dim
         if pool_fn == "first-last":
             insize = 2 * insize
-        elif pool_fn == "attention":
-            self.alignment_model = nn.Linear(2 * insize, 1)
+        self.alignment_model = nn.Linear(2 * insize, 1)
         self.output_layer = nn.Sequential(
             nn.Linear(insize, self.outsize),
             nn.Tanh())
@@ -201,8 +202,14 @@ class TokenEmbeddingPoolerWithAttentions(nn.Module):
                     self._pooler_registry[registry_name] = var
             return self._pooler_registry
 
-    @register("attention")
-    def attention_pooler(self, masked, token_mask, subject_hidden):
+    def generic_attention_pooler(self, masked, token_mask, subject_hidden,
+                                 projection_fn):
+        """
+        Implements attention between a "subject" span and one or more "object"
+        spans.
+        projection_fn is a function which maps the attention scores to the
+            simplex. E.g., softmax.
+        """
         subject_hidden_rep = subject_hidden.unsqueeze(1).repeat(1, masked.size(1), 1)  # noqa
         subject_hidden_rep = subject_hidden_rep * token_mask
         alignment_inputs = torch.cat((subject_hidden_rep, masked), dim=2)
@@ -214,12 +221,32 @@ class TokenEmbeddingPoolerWithAttentions(nn.Module):
         for ex_i in range(batch_size):
             masked_scores = torch.masked_select(attention_scores[ex_i],
                                                 attn_mask[ex_i].unsqueeze(1))
-            probs = torch.softmax(masked_scores, 0)
+            probs = projection_fn(masked_scores)
             attention_weights[ex_i][attn_mask[ex_i]] = probs.unsqueeze(1)
         # scale the levitated marker representations by the attention_weights
         # and sum over the levitated markers
         pooled = (masked * attention_weights).sum(1)
         return pooled, attention_weights
+
+    @register("attention-softmax")
+    def softmax_pooler(self, masked, token_mask, subject_hidden):
+        projection_fn = torch.nn.Softmax(dim=0)
+        return self.generic_attention_pooler(
+            masked, token_mask, subject_hidden, projection_fn)
+
+    @register("attention-gumbel")
+    def gumbel_pooler(self, masked, token_mask, subject_hidden):
+        # tau=0.1 encourages sparse attention weights.
+        projection_fn = projections.GumbelSoftmax(dim=0, tau=0.1)
+        return self.generic_attention_pooler(
+            masked, token_mask, subject_hidden, projection_fn)
+
+    @register("attention-sparsegen")
+    def sparsegen_pooler(self, masked, token_mask, subject_hidden):
+        # lam=0.2 encourages sparse attention weights.
+        projection_fn = projections.SparsegenLin(dim=0, lam=0.5)
+        return self.generic_attention_pooler(
+            masked, token_mask, subject_hidden, projection_fn)
 
 
 class KumaGate(nn.Module):
