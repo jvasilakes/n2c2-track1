@@ -16,6 +16,9 @@ def parse_args():
         "filepath", type=str,
         help="""Path to JSON lines file containing mask info,
                 e.g., output by run.py validate --output_token_masks""")
+    parser.add_argument(
+        "--port", type=int, default=5000,
+        help="Localhost port on which to serve the application.")
     return parser.parse_args()
 
 
@@ -242,4 +245,4 @@ class Filters(object):
 if __name__ == "__main__":
     args = parse_args()
     app = create_app(args)
-    app.run()
+    app.run(port=args.port)
