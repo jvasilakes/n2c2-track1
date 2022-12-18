@@ -64,6 +64,7 @@ class BertSequenceClassifierWithAttentions(pl.LightningModule):
             "entity_pool_fn": config.entity_pool_fn,
             "use_levitated_markers": config.use_levitated_markers,
             "levitated_marker_pool_fn": config.levitated_marker_pool_fn,
+            "levitated_pooler_kwargs": config.levitated_pooler_kwargs,
             "dropout_prob": config.dropout_prob,
             "lr": config.lr,
             "weight_decay": config.weight_decay,
@@ -86,6 +87,7 @@ class BertSequenceClassifierWithAttentions(pl.LightningModule):
             entity_pool_fn="max",
             use_levitated_markers=False,
             levitated_marker_pool_fn="max",
+            levitated_pooler_kwargs=None,
             dropout_prob=0.1,
             lr=1e-3,
             weight_decay=0.0,
@@ -100,6 +102,7 @@ class BertSequenceClassifierWithAttentions(pl.LightningModule):
         self.entity_pool_fn = entity_pool_fn
         self.use_levitated_markers = use_levitated_markers
         self.levitated_marker_pool_fn = levitated_marker_pool_fn
+        self.levitated_pooler_kwargs = levitated_pooler_kwargs or {}
         self.dropout_prob = dropout_prob
         self.lr = lr
         self.weight_decay = weight_decay
@@ -135,7 +138,8 @@ class BertSequenceClassifierWithAttentions(pl.LightningModule):
         for (task, num_labels) in label_spec.items():
             self.levitated_marker_poolers[task] = TokenEmbeddingPoolerWithAttentions(  # noqa
                 pooler_insize, pooler_outsize,
-                self.levitated_marker_pool_fn)
+                self.levitated_marker_pool_fn,
+                **self.levitated_pooler_kwargs)
             self.classifier_heads[task] = nn.Sequential(
                     # TODO: try adding in a layernorm here.
                     nn.Dropout(self.dropout_prob),

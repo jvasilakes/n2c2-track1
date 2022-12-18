@@ -68,6 +68,12 @@ class GumbelSoftmax(nn.Module):
         self.tau = tau
         self.softmax = torch.nn.Softmax(dim=self.dim)
 
+    def __str__(self):
+        return f"GumbelSoftmax(dim={self.dim}, tau={self.tau})"
+
+    def __repr__(self):
+        return f"GumbelSoftmax(dim={self.dim}, tau={self.tau})"
+
     def forward(self, inputs):
         """
         Args:
@@ -113,6 +119,12 @@ class SparsegenLin(nn.Module):
         assert lam < 1
         self.lam = lam
 
+    def __str__(self):
+        return f"SparsegenLin(dim={self.dim}, lam={self.lam})"
+
+    def __repr__(self):
+        return f"SparsegenLin(dim={self.dim}, lam={self.lam})"
+
     def forward(self, inputs):
         """Forward function.
         Args:
@@ -138,7 +150,7 @@ class SparsegenLin(nn.Module):
         # http://stanford.edu/~jduchi/projects/DuchiShSiCh08.html
         zs = torch.sort(input=inputs, dim=dim, descending=True)[0]
         ks = torch.arange(start=1, end=number_of_logits + 1, step=1,
-                         dtype=inputs.dtype).view(1, -1)
+                          dtype=inputs.dtype).view(1, -1)
         ks = ks.expand_as(zs).to(zs.device)
 
         # Determine sparsity of projection

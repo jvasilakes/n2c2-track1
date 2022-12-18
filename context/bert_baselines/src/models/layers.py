@@ -145,13 +145,15 @@ class TokenEmbeddingPoolerWithAttentions(nn.Module):
     markers.
     """
 
-    def __init__(self, hidden_dim, outsize, pool_fn):
+    def __init__(self, hidden_dim, outsize, pool_fn, **projection_kwargs):
         super().__init__()
         self.hidden_dim = hidden_dim
         self.outsize = outsize
         try:
-            self.pooler = self.pooler_functions[pool_fn]
             self.pool_fn = pool_fn
+            self.pooler = self.pooler_functions[pool_fn]
+            # Used when __init__ on the attention pooler projection function.
+            self.projection_kwargs = projection_kwargs
         except KeyError:
             raise ValueError(f"Unknown pool function '{pool_fn}'")
         insize = hidden_dim
@@ -230,20 +232,25 @@ class TokenEmbeddingPoolerWithAttentions(nn.Module):
 
     @register("attention-softmax")
     def softmax_pooler(self, masked, token_mask, subject_hidden):
-        projection_fn = torch.nn.Softmax(dim=0)
+        projection_fn = torch.nn.Softmax(dim=0, **self.projection_kwargs)
         return self.generic_attention_pooler(
             masked, token_mask, subject_hidden, projection_fn)
 
     @register("attention-gumbel")
     def gumbel_pooler(self, masked, token_mask, subject_hidden):
-        # tau=0.1 encourages sparse attention weights.
-        projection_fn = projections.GumbelSoftmax(dim=0, tau=0.1)
+        # projection_kwargs = {"tau": float}
+        projection_fn = projections.GumbelSoftmax(
+            dim=0, **self.projection_kwargs)
+        print(projection_fn); input()
         return self.generic_attention_pooler(
             masked, token_mask, subject_hidden, projection_fn)
 
     @register("attention-sparsegen")
-    def sparsegen_pooler(self, masked, token_mask, subject_hidden):
-        projection_fn = projections.SparsegenLin(dim=0, lam=0.5)
+    def sparsegen_pooler(self, masked, token_mask, subject_hidden, lam=0.0):
+        # projection_kwargs = {"lam": float}
+        projection_fn = projections.SparsegenLin(
+            dim=0, **self.projection_kwargs)
+        print(projection_fn); input()
         return self.generic_attention_pooler(
             masked, token_mask, subject_hidden, projection_fn)
 
