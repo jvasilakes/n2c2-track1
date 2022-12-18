@@ -95,6 +95,9 @@ class SparsegenLin(nn.Module):
 
     Implementation modified from
     https://github.com/KrisKorrel/sparsemax-pytorch
+
+    As lam --> 1, output approaches one-hot vector.
+    As lam --> -inf, output approaches uniform.
     """
 
     def __init__(self, dim=None, lam=0.0):
