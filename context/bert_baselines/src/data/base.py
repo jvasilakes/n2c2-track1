@@ -280,6 +280,8 @@ class BasicBertDataModule(pl.LightningDataModule):
 
         self.tokenizer = AutoTokenizer.from_pretrained(
                 self.bert_model_name_or_path, use_fast=True)
+        self.tokenizer.add_special_tokens(
+            {"additional_special_tokens": self.entity_markers})
 
         if self.levitated_pos_tags is not None:
             if self.levitated_word_list is not None:
@@ -482,7 +484,7 @@ class BasicBertDataModule(pl.LightningDataModule):
                     self.entity_markers)
             start_token_id = 1
             end_token_id = 2  # actual token is "[unused{token_id}]"
-            while start_token_id not in entity_marker_ids and end_token_id not in entity_marker_ids:  # noqa
+            while start_token_id in entity_marker_ids or end_token_id in entity_marker_ids:  # noqa
                 start_token_id += 1
                 end_token_id += 1
 
