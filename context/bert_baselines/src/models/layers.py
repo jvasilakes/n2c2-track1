@@ -243,7 +243,6 @@ class TokenEmbeddingPoolerWithAttentions(nn.Module):
 
     @register("attention-sparsegen")
     def sparsegen_pooler(self, masked, token_mask, subject_hidden):
-        # lam=0.2 encourages sparse attention weights.
         projection_fn = projections.SparsegenLin(dim=0, lam=0.5)
         return self.generic_attention_pooler(
             masked, token_mask, subject_hidden, projection_fn)
