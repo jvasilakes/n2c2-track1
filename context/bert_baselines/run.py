@@ -393,9 +393,9 @@ def run_predict(config, datasplit="dev",
     anns_by_datatset = batched_predictions_to_brat(preds, datamodule)
     for (dataset, anns) in anns_by_datatset.items():
         preds_dir = os.path.join(outdir, dataset, "brat", datasplit)
-        print(f"-----------------------------------")
+        print("-----------------------------------")
         print(f"Saving brat predictions to:\n{preds_dir}")
-        print(f"-----------------------------------")
+        print("-----------------------------------")
         if os.path.isdir(preds_dir):
             warnings.warn(f"brat predictions directory already exists at {preds_dir}. Skipping...")  # noqa
             continue
@@ -407,9 +407,9 @@ def run_predict(config, datasplit="dev",
         preds_by_dataset = batched_predictions_to_json(preds, datamodule)
         for (dataset, preds_by_task) in preds_by_dataset.items():
             preds_dir = os.path.join(outdir, dataset, "json", datasplit)
-            print(f"-----------------------------------")
+            print("-----------------------------------")
             print(f"Saving json predictions to:\n{preds_dir}")
-            print(f"-----------------------------------")
+            print("-----------------------------------")
             if os.path.isdir(preds_dir):
                 warnings.warn("JSON predictions directory already exists at {preds_dir}. Skipping...")  # noqa
                 continue
@@ -422,9 +422,10 @@ def run_predict(config, datasplit="dev",
                         outF.write('\n')
 
     if output_token_masks is True:
-        #if config.model_name != "bert-rationale-classifier":
-        #    raise ValueError("--output_token_masks only compatible with bert-rationale-classifier.")  # noqa
-        #raise NotImplementedError("Still working on this...")
+        # TODO
+        # if config.model_name != "bert-rationale-classifier":
+        #     raise ValueError("--output_token_masks only compatible with bert-rationale-classifier.")  # noqa
+        # raise NotImplementedError("Still working on this...")
         mask_dir = os.path.join(
                 logdir, config.name, f"version_{version}",
                 "predictions", dataset, "token_masks", datasplit)
