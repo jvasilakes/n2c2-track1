@@ -61,6 +61,7 @@ class ExperimentConfig(object):
                 "mark_entities",
                 "entity_markers",
                 "use_levitated_markers",
+                "levitated_window_size",
                 "levitated_marker_pool_fn",
                 "levitated_pooler_kwargs",
                 "levitated_pos_tags",
@@ -154,6 +155,8 @@ class ExperimentConfig(object):
             mark_entities: bool = False,
             entity_markers: Union[List[str], str, None] = None,
             use_levitated_markers: bool = False,
+            # Ignored if pos_tags or word_list specified.
+            levitated_window_size: int = 5,
             levitated_marker_pool_fn: str = "max",
             levitated_pooler_kwargs: dict = None,
             levitated_pos_tags: Union[List[str], None] = None,
@@ -198,6 +201,7 @@ class ExperimentConfig(object):
         self.use_entity_spans = use_entity_spans
         self.entity_pool_fn = entity_pool_fn
         self.use_levitated_markers = use_levitated_markers
+        self.levitated_window_size = levitated_window_size
         self.levitated_marker_pool_fn = levitated_marker_pool_fn
         self.levitated_pooler_kwargs = levitated_pooler_kwargs or {}
         self.levitated_pos_tags = levitated_pos_tags

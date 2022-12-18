@@ -33,6 +33,7 @@ class n2c2DataModule(BasicBertDataModule):
             "mark_entities": config.mark_entities,
             "entity_markers": config.entity_markers,
             "use_levitated_markers": config.use_levitated_markers,
+            "levitated_window_size": config.levitated_window_size,
             "levitated_pos_tags": config.levitated_pos_tags,
             "levitated_word_list": config.levitated_word_list,
         }
@@ -52,6 +53,7 @@ class n2c2DataModule(BasicBertDataModule):
             mark_entities=False,
             entity_markers=None,
             use_levitated_markers=False,
+            levitated_window_size=5,  # 5 wordpiece tokens
             levitated_pos_tags=None,
             levitated_word_list=None,
             name=None):
@@ -64,6 +66,7 @@ class n2c2DataModule(BasicBertDataModule):
             mark_entities=mark_entities,
             entity_markers=entity_markers,
             use_levitated_markers=use_levitated_markers,
+            levitated_window_size=levitated_window_size,
             levitated_pos_tags=levitated_pos_tags,
             levitated_word_list=levitated_word_list,
             name=name)

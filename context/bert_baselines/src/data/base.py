@@ -236,7 +236,7 @@ class BasicBertDataModule(pl.LightningDataModule):
     """
     The base data module for all BERT-based sequence classification datasets.
 
-    levitate_window_size: number of spans to consider +/- the target entity
+    levitated_window_size: number of spans to consider +/- the target entity
     levitated_pos_tags: list of UPOS tags to specify which levitated words
                         to use. E.g., levitated_pos_tags=["AUX", "VERB"]
                         will keep all verbs and auxiliaries. If None, does not
@@ -253,7 +253,7 @@ class BasicBertDataModule(pl.LightningDataModule):
             mark_entities=False,
             entity_markers=None,
             use_levitated_markers=False,
-            levitate_window_size=5,
+            levitated_window_size=5,
             levitated_pos_tags=None,
             levitated_word_list=None,
             name=None):
@@ -273,7 +273,7 @@ class BasicBertDataModule(pl.LightningDataModule):
         self.entity_markers = self._validate_entity_markers(entity_markers)
 
         self.use_levitated_markers = use_levitated_markers
-        self.levitate_window_size = levitate_window_size
+        self.levitated_window_size = levitated_window_size
         self.levitated_pos_tags = levitated_pos_tags
         self.levitated_word_list = levitated_word_list
         self._name = name
@@ -446,10 +446,10 @@ class BasicBertDataModule(pl.LightningDataModule):
             "offset_mapping": [],
         }
         batch_size, max_seq_length = encodings["input_ids"].size()
-        # There are up to self.levitate_window_size spans on each
+        # There are up to self.levitated_window_size spans on each
         # side of the entity, and each span has a start and end marker,
         # so the max number of markers is the window size times 4.
-        max_num_markers = self.levitate_window_size * 4
+        max_num_markers = self.levitated_window_size * 4
         max_levitated_seq_length = max_seq_length + max_num_markers
 
         # Extend the token_type_ids to cover the markers.
@@ -489,7 +489,7 @@ class BasicBertDataModule(pl.LightningDataModule):
                 end_token_id += 1
 
             # Get all tokens before and after the entity mention,
-            # up to self.levitate_window_size.
+            # up to self.levitated_window_size.
             lev_span_idxs = self.get_levitated_spans(
                 input_ids, entity_token_idxs[example_idx],
                 word_filter=self.word_filter)
@@ -550,8 +550,8 @@ class BasicBertDataModule(pl.LightningDataModule):
             after_token_spans = word_filter(after_token_spans, input_ids)
 
         # Keep only the spans in the window
-        before_token_spans = before_token_spans[-self.levitate_window_size:]
-        after_token_spans = after_token_spans[:self.levitate_window_size]
+        before_token_spans = before_token_spans[-self.levitated_window_size:]
+        after_token_spans = after_token_spans[:self.levitated_window_size]
         return [*before_token_spans, *after_token_spans]
 
     def collapse_wordpiece(self, token_idxs, input_ids,
