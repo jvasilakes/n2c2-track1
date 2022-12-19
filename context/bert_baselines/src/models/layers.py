@@ -241,7 +241,6 @@ class TokenEmbeddingPoolerWithAttentions(nn.Module):
         # projection_kwargs = {"tau": float}
         projection_fn = projections.GumbelSoftmax(
             dim=0, **self.projection_kwargs)
-        print(projection_fn); input()
         return self.generic_attention_pooler(
             masked, token_mask, subject_hidden, projection_fn)
 
@@ -250,7 +249,6 @@ class TokenEmbeddingPoolerWithAttentions(nn.Module):
         # projection_kwargs = {"lam": float}
         projection_fn = projections.SparsegenLin(
             dim=0, **self.projection_kwargs)
-        print(projection_fn); input()
         return self.generic_attention_pooler(
             masked, token_mask, subject_hidden, projection_fn)
 
