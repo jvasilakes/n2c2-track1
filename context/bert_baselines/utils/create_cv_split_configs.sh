@@ -1,5 +1,5 @@
 MODEL_DIR=$1
-DATA_DIR=$2
+DATA_DIR=$2 # Dir containing cv_splits/
 
 # We'll put the new config files here.
 outdir=${MODEL_DIR}/cv_split_configs

@@ -1,11 +1,12 @@
 MODEL_DIR=$1
+NSEEDS=$2
 
 # We'll put the new config files here.
 outdir=${MODEL_DIR}/random_seed_configs
 mkdir -p $outdir
 
-echo "Creating configs for 5 random seeds and saving them to ${outdir}"
-for i in {0..4}; do
+echo "Creating configs for ${NSEEDS} random seeds and saving them to ${outdir}"
+for i in $(seq 1 ${NSEEDS}); do
   seed=$RANDOM
   echo "${seed}"
 
@@ -17,7 +18,7 @@ for i in {0..4}; do
   model_name=$(grep "^name:" ${outfile} | awk '{print $2}')
 
   # get the model version from the path of the source file.
-  model_ver=$(ls -d ${MODEL_DIR} | grep -Po "version_[0-9]+")
+  model_ver=$(basename $MODEL_DIR)
 
   # Update the config file with the new random seed and name for logging.
   python -m src.config update -f ${outfile} \
