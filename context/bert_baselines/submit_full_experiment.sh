@@ -24,6 +24,10 @@ if [ -d "${outdir}" ]; then
 fi
 mkdir -p $outdir
 
+# Save this precise config file just to make sure
+# the script runs using the correct one.
+cp $CONFIG ${outdir}/config.yaml
+
 # Generate a submission script
 echo "#!/bin/bash
 
@@ -37,7 +41,7 @@ echo "#!/bin/bash
 module load gcc/9.3.0 python/3.10/3.10.4 cuda/11.3/11.3.1 cudnn/8.2/8.2.4
 source /home/ace14853wv/venv/n2c2/bin/activate
 
-bash utils/run_full_experiment.sh $CONFIG --quiet $NSEEDS" > ${outdir}/submit.sh
+bash utils/run_full_experiment.sh ${outdir}/config.yaml --quiet $NSEEDS" > ${outdir}/submit.sh
 
 # Submit it
 qsub -g gae50975 ${outdir}/submit.sh
