@@ -9,7 +9,7 @@ fi
 
 NAME=$1
 CONFIG=$2
-NSEEDS=4
+NSEEDS=2
 
 if [ ! -f "${CONFIG}" ]; then
   echo "Couldn't locate config file '${CONFIG}'. Aborting."
