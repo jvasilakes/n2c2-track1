@@ -38,6 +38,7 @@ echo "#!/bin/bash
 #$ -cwd
 #$ -N ${NAME}
 
+source /etc/profile.d/modules.sh
 module load gcc/9.3.0 python/3.10/3.10.4 cuda/11.3/11.3.1 cudnn/8.2/8.2.4
 source /home/ace14853wv/venv/n2c2/bin/activate
 
