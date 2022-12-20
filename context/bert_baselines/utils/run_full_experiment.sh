@@ -1,6 +1,6 @@
 CONFIG=$1
 QUIET=$2 # --quiet
-NSEEDS=2
+NSEEDS=$3
 
 if [ -z ${CONFIG} ]; then
   echo "Usage: $0 config_file [--quiet]"
