@@ -50,11 +50,17 @@ def main(args):
         for task in tasklist:
             preds = []
             for e in pred_anns:
-                val = e.attributes[task].value
+                try:
+                    val = e.attributes[task].value
+                except AttributeError:
+                    val = "null"
                 preds.append(val)
             golds = []
             for e in gold_anns:
-                val = e.attributes[task].value
+                try:
+                    val = e.attributes[task].value
+                except AttributeError:
+                    val = "null"
                 golds.append(val)
             all_preds_by_task[task].extend(preds)
             all_golds_by_task[task].extend(golds)
@@ -62,13 +68,13 @@ def main(args):
     for task in all_preds_by_task.keys():
         preds = all_preds_by_task[task]
         golds = all_golds_by_task[task]
-        labels = sorted(set(golds))
+        labels = sorted(set([g for g in golds if g != "null"]))
         with warnings.catch_warnings():
             warnings.simplefilter("ignore")
             micro_p, micro_r, micro_f, _ = precision_recall_fscore_support(
-                    golds, preds, average="micro")
+                    golds, preds, average="micro", labels=labels)
             macro_p, macro_r, macro_f, _ = precision_recall_fscore_support(
-                    golds, preds, average="macro")
+                    golds, preds, average="macro", labels=labels)
             lab_p, lab_r, lab_f, lab_s = precision_recall_fscore_support(
                     golds, preds, average=None, labels=labels)
 
@@ -94,18 +100,37 @@ def align_annotations(preds, golds, mode="lenient"):
     # We're only predicting over Disposition events
     pred_disp = preds.get_events_by_type("Disposition")
     gold_disp = golds.get_events_by_type("Disposition")
-    gold_idxs = [(g.start_index, g.end_index) for g in gold_disp]
-    out_preds = [None for _ in gold_disp]
-    for (i, p) in enumerate(pred_disp):
-        for gis in gold_idxs:
-            if mode == "lenient":
-                idx_range = range(*gis)
-                if p.start_index in idx_range or p.end_index in idx_range:
-                    out_preds[i] = p
-            elif mode == "strict":
-                if (p.start_index, p.end_index) == gis:
-                    out_preds[i] = p
-    return out_preds, gold_disp
+    aligned_preds = []
+    aligned_golds = []
+    matched_golds = set()
+    for p in pred_disp:
+        matched = False
+        for g in gold_disp:
+            if indices_overlap(p, g, mode=mode) is True:
+                aligned_preds.append(p)
+                aligned_golds.append(g)
+                matched = True
+                matched_golds.add(g)
+                break
+        if matched is False:
+            aligned_preds.append(p)
+            aligned_golds.append(None)
+    for g in gold_disp:
+        if g not in matched_golds:
+            aligned_preds.append(None)
+            aligned_golds.append(g)
+    return aligned_preds, aligned_golds
+
+
+def indices_overlap(a, b, mode="lenient"):
+    if mode == "lenient":
+        idx_range = range(b.start_index, b.end_index)
+        if a.start_index in idx_range or a.end_index in idx_range:
+            return True
+    elif mode == "strict":
+        if (a.start_index, a.end_index) == (b.start_index, b.end_index):
+            return True
+    return False
 
 
 def format_per_label_results(precs, recs, fs, supports, labels=[]):
