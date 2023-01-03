@@ -190,7 +190,7 @@ def get_highlighted_tokens(tokens_with_masks, collapse_wordpiece=False,
 
     curr_tok_is_subj = False
     for (tok, z) in tokens_with_masks:
-        if tok in ["[unused0]", "[unused1]"]:
+        if tok in ["[unused0]", "[unused1]", "[unused2]"]:
             curr_tok_is_subj = not curr_tok_is_subj
             continue
 
