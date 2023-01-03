@@ -19,6 +19,9 @@ def parse_args():
                                 labels in brat format.""")
     parser.add_argument("--log_file", type=str, default=None,
                         help="Where to save detailed evaluation information.")
+    parser.add_argument("--mode", type=str, default="lenient",
+                        choices=["strict", "lenient"],
+                        help="Span matching mode: strict or lenient.")
     return parser.parse_args()
 
 
@@ -42,14 +45,15 @@ def main(args):
         gold_anns = BratAnnotations.from_file(gold_f)
 
         tasklist = sorted(set([a["_type"] for a in pred_anns._raw_attributes]))
+        pred_anns, gold_anns = align_annotations(pred_anns, gold_anns,
+                                                 mode=args.mode)
         for task in tasklist:
-            # We're only predicting over Disposition events
             preds = []
-            for e in pred_anns.get_events_by_type("Disposition"):
+            for e in pred_anns:
                 val = e.attributes[task].value
                 preds.append(val)
             golds = []
-            for e in gold_anns.get_events_by_type("Disposition"):
+            for e in gold_anns:
                 val = e.attributes[task].value
                 golds.append(val)
             all_preds_by_task[task].extend(preds)
@@ -74,6 +78,7 @@ def main(args):
         per_label_table = format_per_label_results(
                 lab_p, lab_r, lab_f, lab_s, labels=labels)
 
+        print(f"Mode: {args.mode}")
         if args.log_file is None:
             print(f"### {task}")
             print(avg_table, end='')
@@ -83,6 +88,24 @@ def main(args):
                 outF.write(f"### {task}\n")
                 outF.write(avg_table)
                 outF.write(per_label_table)
+
+
+def align_annotations(preds, golds, mode="lenient"):
+    # We're only predicting over Disposition events
+    pred_disp = preds.get_events_by_type("Disposition")
+    gold_disp = golds.get_events_by_type("Disposition")
+    gold_idxs = [(g.start_index, g.end_index) for g in gold_disp]
+    out_preds = [None for _ in gold_disp]
+    for (i, p) in enumerate(pred_disp):
+        for gis in gold_idxs:
+            if mode == "lenient":
+                idx_range = range(*gis)
+                if p.start_index in idx_range or p.end_index in idx_range:
+                    out_preds[i] = p
+            elif mode == "strict":
+                if (p.start_index, p.end_index) == gis:
+                    out_preds[i] = p
+    return out_preds, gold_disp
 
 
 def format_per_label_results(precs, recs, fs, supports, labels=[]):
