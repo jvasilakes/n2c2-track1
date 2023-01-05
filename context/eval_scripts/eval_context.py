@@ -106,6 +106,8 @@ def align_annotations(preds, golds, mode="lenient"):
     for p in pred_disp:
         matched = False
         for g in gold_disp:
+            if g in matched_golds:
+                continue
             if indices_overlap(p, g, mode=mode) is True:
                 aligned_preds.append(p)
                 aligned_golds.append(g)
