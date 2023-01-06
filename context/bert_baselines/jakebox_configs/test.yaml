@@ -1,8 +1,9 @@
 # Experiment
-name: test
-description: test experiment with levitated markers
+name: test/sparsegen
+description: testing utils/run_full_experiment.sh
 logdir: logs/
 random_seed: 0
+monitor: avg_macro_f1
 
 # Data
 dataset_name: n2c2Context
@@ -23,10 +24,16 @@ freeze_pretrained: false
 use_entity_spans: true
 entity_pool_fn: first-last
 mark_entities: false
-entity_markers: ["[unused0]", "[unused1]"]
+entity_markers:
+- '[unused0]'
+- '[unused1]'
 use_levitated_markers: true
-levitated_marker_pool_fn: attention
-levitated_pos_tags: ["AUX", "VERB"]
+levitated_window_size: 7
+levitated_marker_pool_fn: attention-sparsegen
+levitated_pooler_kwargs:
+  lam: 0.2
+levitated_pos_tags: null
+levitated_word_list: null
 max_seq_length: 300
 dropout_prob: 0.2
 
@@ -39,8 +46,7 @@ mask_loss_kwargs: {}
 # Training
 batch_size: 10
 sample_strategy: null
-lr: 3.0e-5
+lr: 3.0e-05
 weight_decay: 0.0
 gradient_clip_val: 10.0
-max_epochs: 2
-
+max_epochs: 1

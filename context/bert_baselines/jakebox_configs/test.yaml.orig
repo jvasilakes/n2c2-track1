@@ -1,6 +1,6 @@
 # Experiment
-name: test_aux_data
-description: test experiment with multiple datasets
+name: test/sparsegen
+description: test experiment with levitated markers
 logdir: logs/
 random_seed: 0
 monitor: avg_macro_f1
@@ -10,36 +10,29 @@ dataset_name: n2c2Context
 data_dir: /home/jav/Documents/Projects/n2c2_2022/n2c2-track1/n2c2Track1TrainingData-v3/data_v3
 sentences_dir: /home/jav/Documents/Projects/n2c2_2022/n2c2-track1/n2c2Track1TrainingData-v3/segmented
 tasks_to_load:
-- Certainty
-- Negation
+- Action
 window_size: 0
 max_train_examples: 50
-auxiliary_data:
-  i2b2Event:
-    data_dir: /home/jav/Documents/Projects/n2c2_2022/n2c2-track1/auxiliary_data/i2b2_2009/brat/
-    dataset_name: i2b2Event
-    max_train_examples: 10
-    sentences_dir: /home/jav/Documents/Projects/n2c2_2022/n2c2-track1/auxiliary_data/i2b2_2009/segmented/
-    tasks_to_load:
-    - Event
-    window_size: 0
+auxiliary_data: {}
 dataset_sample_strategy: sequential
-dataset_sampler_kwargs:
-  exhaust_all: true
+dataset_sampler_kwargs: {}
 
 # Model
-model_name: bert-sequence-classifier
+model_name: bert-sequence-attentions
 bert_model_name_or_path: bert-base-uncased
 freeze_pretrained: false
-use_entity_spans: false
-entity_pool_fn: max
+use_entity_spans: true
+entity_pool_fn: first-last
 mark_entities: false
-entity_markers: null
-use_levitated_markers: false
-levitated_marker_pool_fn: max
+entity_markers:
+- '[unused0]'
+- '[unused1]'
+use_levitated_markers: true
+levitated_marker_pool_fn: attention-sparsegen
+levitated_pooler_kwargs: {lam: 0.2}
 levitated_pos_tags: null
 levitated_word_list: null
-max_seq_length: 256
+max_seq_length: 300
 dropout_prob: 0.2
 
 # Losses
@@ -49,9 +42,10 @@ mask_loss_fn: ratio
 mask_loss_kwargs: {}
 
 # Training
-batch_size: 12
+batch_size: 10
 sample_strategy: null
-lr: 0.001
+lr: 3.0e-05
 weight_decay: 0.0
 gradient_clip_val: 10.0
-max_epochs: 1
+max_epochs: 2
+
