@@ -3,7 +3,6 @@ name: test_aux_data
 description: test experiment with multiple datasets
 logdir: logs/
 random_seed: 0
-monitor: avg_macro_f1
 
 # Data
 dataset_name: n2c2Context
@@ -15,17 +14,20 @@ tasks_to_load:
 window_size: 0
 max_train_examples: 50
 auxiliary_data:
-  i2b2Event:
-    data_dir: /home/jav/Documents/Projects/n2c2_2022/n2c2-track1/auxiliary_data/i2b2_2009/brat/
-    dataset_name: i2b2Event
+  n2c2Assertion:
+    data_dir: /home/jav/Documents/Projects/n2c2_2022/n2c2-track1/auxiliary_data/n2c2_2010_concept_assertion_relation/combined/ast_brat/
+    dataset_name: n2c2Assertion
     max_train_examples: 10
-    sentences_dir: /home/jav/Documents/Projects/n2c2_2022/n2c2-track1/auxiliary_data/i2b2_2009/segmented/
+    sentences_dir: /home/jav/Documents/Projects/n2c2_2022/n2c2-track1/auxiliary_data/n2c2_2010_concept_assertion_relation/combined/segmented/
     tasks_to_load:
-    - Event
-    window_size: 0
-dataset_sample_strategy: sequential
+    - Assertion
+    window_size: 1
+dataset_sample_strategy: scheduled
 dataset_sampler_kwargs:
-  exhaust_all: true
+  weights: [0.8, 0.2]
+  num_cycles: 1
+  max_steps: 10
+  exhaust_all: false
 
 # Model
 model_name: bert-sequence-classifier
@@ -34,11 +36,6 @@ freeze_pretrained: false
 use_entity_spans: false
 entity_pool_fn: max
 mark_entities: false
-entity_markers: null
-use_levitated_markers: false
-levitated_marker_pool_fn: max
-levitated_pos_tags: null
-levitated_word_list: null
 max_seq_length: 256
 dropout_prob: 0.2
 
@@ -49,9 +46,10 @@ mask_loss_fn: ratio
 mask_loss_kwargs: {}
 
 # Training
-batch_size: 12
+batch_size: 2
 sample_strategy: null
 lr: 0.001
 weight_decay: 0.0
 gradient_clip_val: 10.0
-max_epochs: 1
+max_epochs: 3
+
