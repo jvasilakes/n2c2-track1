@@ -1,14 +1,15 @@
 usage() {
-  echo "Usage: $(basename $0) experiment_name config_file"
+  echo "Usage: $(basename $0) experiment_name config_file [hold_jid]"
   exit 1
 }
 
-if [ "$#" -ne 2 ]; then
+if [ "$#" -lt 2 ]; then
   usage
 fi
 
 NAME=$1
 CONFIG=$2
+HOLDJID=$3  # wait for this job to finish before running.
 NSEEDS=2
 
 if [ ! -f "${CONFIG}" ]; then
@@ -32,7 +33,7 @@ cp $CONFIG ${outdir}/config.yaml
 echo "#!/bin/bash
 
 #$ -l rt_F=1
-#$ -l h_rt=3:00:00
+#$ -l h_rt=15:00:00
 #$ -o ${outdir}/output.log
 #$ -e ${outdir}/error.log
 #$ -cwd
@@ -45,4 +46,10 @@ source /home/ace14853wv/venv/n2c2/bin/activate
 bash utils/run_full_experiment.sh ${outdir}/config.yaml --quiet $NSEEDS" > ${outdir}/submit.sh
 
 # Submit it
-qsub -g gae50975 ${outdir}/submit.sh
+if [ -z "${HOLDJID}" ]; then
+  HOLDOPT=""
+else
+  HOLDOPT="-hold_jid ${HOLDJID}"
+fi
+echo "qsub -g gae50975 ${HOLDOPT} ${outdir}/submit.sh"
+qsub -g gae50975 ${HOLDOPT} ${outdir}/submit.sh
