@@ -281,7 +281,7 @@ class BasicBertDataModule(pl.LightningDataModule):
         self.tokenizer = AutoTokenizer.from_pretrained(
                 self.bert_model_name_or_path, use_fast=True)
         self.tokenizer.add_special_tokens(
-            {"additional_special_tokens": self.entity_markers})
+            {"additional_special_tokens": list(set(self.entity_markers))})
 
         if self.levitated_pos_tags is not None:
             if self.levitated_word_list is not None:
