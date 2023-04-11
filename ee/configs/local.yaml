@@ -17,19 +17,20 @@ epochs: 10
 warmup_epochs: 0
 ## Markers params
 max_tok_len: 300
-max_pair_len: 10
+#max_verbs : 10 set in io.py
 ent_tok0: '[unused0]'
 ent_tok1: '[unused1]'
+
 ## Bert params
 dummy_data: False
 hidden_dim: 768 
-intermediate_dim: 2304 #3*768
+#intermediate_dim: 2304 #3*768
 # max_sent_len: 50
 enc_dim: 768
 enc_layers: 12
 dropout: 0.3
 lr: 0.00004
-weight_decay: 0.000001
+weight_decay: 0.001
 clip: 10
 ## Train params
 patience: 5
@@ -38,7 +39,8 @@ threshold: 0.5
 event_weight: 0.5
 # FLAGS
 early_stop: True
+pipeline: False
 # include_positions: True
-freeze_pretrained: False
-autoscalling: True
-
+# sort_verbs: False     always False
+# pool_fn: 'max'        set in io.poy
+# single_marker: True   set in io.py

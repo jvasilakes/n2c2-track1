@@ -6,6 +6,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.pyplot import figure
 import shutil
+
+
+
+
 def setup_log(config, folder_name=None, mode='train'):
     """
     Setup .log file to record training process and results.
@@ -104,7 +108,7 @@ def print_preds(tracker, loader, config, epoch, mode='dev'):
             for trig, pos, e_preds, a_preds in res_list:
                 if e_preds[0] == 1:
                     count = print_single(tmp_file, count, ievent[0], pos, trig) 
-                if e_preds[1] == 1: # or not e_preds[0] and not e_preds[2] :
+                if e_preds[1] == 1 or config['pipeline'] and not e_preds[0] and not e_preds[2]:
                     count = print_single(tmp_file, count, ievent[1], pos, trig)
                 if e_preds[2] == 1: #Disposition
                     for j, pred in enumerate(a_preds):
@@ -115,6 +119,7 @@ def print_preds(tracker, loader, config, epoch, mode='dev'):
                     if np.sum(a_preds) == 0: ## meaning no action identified
                         count = print_single(tmp_file, count, ievent[2], pos, trig)
 #                         print(fname)
+
 
 
                         
@@ -144,10 +149,10 @@ def print_start(epoch, state, mode, secs, disp_count):
 def print_performance(epoch, state, typ, mon, secs, name='train', disp_count = None):
 
     if typ== 'events':    
-        template = 'Events : Macro_Pr = {:.04f} | Macro_Re = {:.04f} | Macro_F1  = {:.04f} | Micro_F1 = {:.04f} <<<'
+        template = 'Events : Macro_Pr = {:.04f} | Macro_Re = {:.04f} | Macro_F1  = {:.04f} | Micro_Pr = {:.04f} | Micro_Re = {:.04f} | Micro_F1 = {:.04f} <<<'
     else:
-        template = 'Actions: Macro_Pr = {:.04f} | Macro_Re = {:.04f} | Macro_F1  = {:.04f} | Micro_F1 = {:.04f}'
-    print(template.format(mon['macro_pr'],mon['macro_re'], mon['macro_f1'], mon['micro_f1']))
+        template = 'Actions: Macro_Pr = {:.04f} | Macro_Re = {:.04f} | Macro_F1  = {:.04f} | Micro_Pr = {:.04f} | Micro_Re = {:.04f} | Micro_F1 = {:.04f}'
+    print(template.format(mon['macro_pr'],mon['macro_re'], mon['macro_f1'], mon['micro_pr'], mon['micro_re'], mon['micro_f1']))
 
 class Tee(object):
     """
@@ -168,34 +173,27 @@ class Tee(object):
             
 def print_options(params):
     print('''\nParameters:
-            - Verbs             {}
-            - Bert model        {}
-            - batch_size        {}
-            - grad accumulation {}
-            - Learning rate     {}
-            - Dropout           {}
-            - Ent markers start {}\tend {} 
-            - Max seq len       {}\t Max verbs {}
+            - Approach   {}
+            - Marker single     {}\t Verbs             {}
+            - MTL               {}\t Bert model        {}
             
-            - Freeze Encoder    {}\tAutoscalling: {}  
-            - Encoder Dim       {}\tLayers {}
-            - Hidden dim        {}
-            - Weight Decay      {}
-            - Gradient Clip     {}
+            # optimise
+            - batch_size        {}\t grad accumulation {}
+            - Learning rate     {}\t Dropout           {}
+            - Weight Decay      {}\t Gradient Clip     {}
             
-            - Epoch             {}\tWarmup Epochs     {}
-            - Early stop        {}\tPatience = {}
-            - Save folder       {}
-            - Mode              {}
+
+            - Max seq len       {}\t Max verbs         {}
+            - Epoch             {}\t Warmup Epochs     {}
+            - Early stop        {}\t Patience          {}
+            - Save folder       {}\t Mode              {}
             '''.format(
-                    params['use_verbs'], params['bert'], params['batch_size'],  
+                    params['approach'],  params['single_marker'],
+                    params['use_verbs'], not params['no_mtl'],
+                    params['bert'], params['batch_size'],
                     params['accumulate_batches'], params['lr'],  params['dropout'],
-                    params['ent_tok0'],params['ent_tok1'], 
-                    params['max_tok_len'], params['max_pair_len'],
-                    params['freeze_pretrained'], params['autoscalling'],
-                    params['enc_dim'], params['enc_layers'], 
-                    params['hidden_dim'], 
                     params['weight_decay'], params['clip'],
+                    params['max_tok_len'], params['max_verbs'],
                     params['epochs'], params['warmup_epochs'], 
                     params['early_stop'], params['patience'],
                     params['model_folder'], params['mode']
@@ -219,3 +217,46 @@ def plt_figure(self, epoch, classes, metric, y_title):
     plt.ylabel('Classes')
     plt.xlabel(y_title)
     plt.savefig('../figures/epoch'+str(epoch)+'.png', dpi=80, bbox_inches='tight')
+
+def setup(args, config):
+    config['mode'] = args.mode
+    config['bert'] = args.bert
+    config['approach'] = args.approach
+    #
+    config['use_verbs'] = not config['approach'] in ['baseline', 'baseline_mtl']
+
+    config['no_mtl'] = config['approach'] in ['baseline', 'LCM_no_mtl']
+    if config['no_mtl']:
+        config['event_weight'] = 1.0
+
+    config['use_verb_categories'] = args.approach == "types"
+    config['only_typed_verbs'] = False  # args.only_typed_verbs
+
+    ## single
+    config['single_marker'] = args.approach == "types"
+    config['pool_fn'] = 'attention-softmax' if config['approach'] in ['LCM_attention', 'types_attention'] else 'max'
+    if not config['use_verbs']:
+        config['max_verbs'] = 0
+    elif config['single_marker']:
+        config['max_verbs'] = 20
+    else:
+        config['max_verbs'] = 10
+    if args.mode == 'train':
+        config['train_data'] = config['data_dir'] + join(args.split, 'spacy/train_data.txt')
+        config['dev_data'] = config['data_dir'] + join(args.split, 'spacy/dev_data.txt')
+    elif args.mode == 'predict':
+        config['test_data'] = args.test_path
+
+    # config['pred_dir'] = join(config['pred_dir'], args.bert+'_'+args.train_split)
+    config["intermediate_dim"] = 3 * config["hidden_dim"] if config['use_verbs'] else 2 * config["hidden_dim"]
+
+    if args.model_folder: # all the results folder
+        config['model_folder'] = args.model_folder
+    else:
+        config['model_folder'] = join(config['results_folder'], args.bert+'_'+args.split)
+
+    # config['pred_data'] = args.outdir
+    config['exp_name'] = args.bert
+
+
+

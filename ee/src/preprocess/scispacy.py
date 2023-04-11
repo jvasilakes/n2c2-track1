@@ -16,9 +16,10 @@ def main(args):
 #     config = load_config(args.config)
 
     nlp = spacy.load("en_core_sci_scibert")
-#     nlp.max_length = 1000000
-#     paths = [args.datadir+'train/', args.datadir +'dev/']
-#     for path in paths:
+    # new code
+    english_tagger_pipeline = spacy.load('en_dual_none_contextual')
+    # Adds the English PyMUSAS rule based tagger to the main spaCy pipeline
+    nlp.add_pipe('pymusas_rule_based_tagger', source=english_tagger_pipeline)
 #
     if not os.path.exists(args.outdir):
         os.makedirs(args.outdir)
@@ -50,7 +51,7 @@ def main(args):
                     end = curr + len(cl_tok)
                     if tok.pos_ =='VERB':
 #                             print('cl tok <%s> is verb with tag <%s> ' % (cl_tok, tok.tag_))
-                        Verbs.append({'t':cl_tok, 'st':curr, 'en':end})
+                        Verbs.append({'t':cl_tok, 'type': tok._.pymusas_tags, 'st':curr, 'en':end})
                     curr = end + 1
                 for verb in Verbs:
                     if base_sent[verb['st']:verb['en']]!=verb['t']:

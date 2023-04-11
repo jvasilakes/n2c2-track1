@@ -292,7 +292,7 @@ def preprocess_spacy_words(txt_files_path, ann_files_path, spacy_files_path, win
                     for i in range(1, len(mer)):
                         off += len(new_sentences[mer[i-1]]["_text"]) + 1
                         new_sentences[mer[0]]["_text"] = ' '.join([new_sentences[mer[0]]["_text"], new_sentences[mer[i]]["_text"]])
-                        new_sentences[mer[0]]["verbs"] += [{"t": verb["t"], "st": verb["st"]+off, "en": verb["en"]+off} for verb in new_sentences[mer[i]]["verbs"]]
+                        new_sentences[mer[0]]["verbs"] += [{"t": verb["t"], "type": verb["type"], "st": verb["st"]+off, "en": verb["en"]+off} for verb in new_sentences[mer[i]]["verbs"]]
                     for i in range(1, len(mer)):
                         del new_sentences[mer[1]] # since they are consecutive
                 for i, sent in enumerate(new_sentences):
@@ -360,7 +360,8 @@ def preprocess_spacy_words(txt_files_path, ann_files_path, spacy_files_path, win
                         for verb in verbs_sent:
                             if special > 0 and curr + verb["st"] > special:
                                 off = 1
-                            verbs.append({"t": verb["t"], "st": verb["st"] + curr + off, "en": verb["en"] + curr + off})
+
+                            verbs.append({"t": verb["t"], "type": verb["type"], "st": verb["st"] + curr + off, "en": verb["en"] + curr + off})
                         curr += len(split_sentences[sent_no]) + 1
 
                     i, count = 0, 0
@@ -376,7 +377,7 @@ def preprocess_spacy_words(txt_files_path, ann_files_path, spacy_files_path, win
                             count += len(words[i]) + 1
                             i += 1
                         new_en = i
-                        sample['verbs'].append({"t": verb["t"], "st": new_st, "en": new_en})
+                        sample['verbs'].append({"t": verb["t"], "type": ' '.join(verb["type"]), "st": new_st, "en": new_en})
 
                     for verb in sample['verbs']:  # check
                         if ' '.join(words[verb['st']: verb['en']]) != verb['t']:

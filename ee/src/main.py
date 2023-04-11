@@ -29,25 +29,6 @@ def set_seed(seed):
     torch.backends.cudnn.benchmark = False
     torch.backends.cudnn.deterministic = True
 
-def setup(args, config):
-    config['mode'] = args.mode
-    config['bert'] = args.bert
-    config['use_verbs'] = not args.no_verbs
-    if args.mode == 'train':
-        config['train_data'] = config['data_dir'] + join(args.split, 'spacy/train_data.txt')
-        config['dev_data'] = config['data_dir'] + join(args.split,'spacy/dev_data.txt')
-    elif args.mode == 'predict':
-        config['test_data'] = args.test_path
-
-    # config['pred_dir'] = join(config['pred_dir'], args.bert+'_'+args.train_split)
-
-    if args.model_folder: # all the results folder
-        config['model_folder'] = args.model_folder
-    else:
-        config['model_folder'] = join(config['results_folder'], args.bert+'_'+args.split)
-
-    # config['pred_data'] = args.outdir
-    config['exp_name'] = args.bert
 
 
 def main(args):
@@ -71,47 +52,47 @@ def main(args):
         print_preds(tracker, trainer.iterators['test'], config, 0, 'test')
     print('Terminating-- Please look for predictions, log and saved model in', config['model_folder'])
 
-def load_data(config):
 
-#     tokenizer = AutoTokenizer.from_pretrained('roberta-large')
+def load_data(config):
+    #     tokenizer = AutoTokenizer.from_pretrained('roberta-large')
     if config['bert'] == 'base':
-        tokenizer = AutoTokenizer.from_pretrained('../bert_models/bert-base-uncased') ##P
-        
-    elif config['bert'] =='clinical':
+        tokenizer = AutoTokenizer.from_pretrained('../bert_models/bert-base-uncased')  ##P
+
+    elif config['bert'] == 'clinical':
         tokenizer = AutoTokenizer.from_pretrained("emilyalsentzer/Bio_ClinicalBERT")
 
-    elif config['bert'] =='blue':
+    elif config['bert'] == 'blue':
         tokenizer = AutoTokenizer.from_pretrained("bionlp/bluebert_pubmed_mimic_uncased_L-12_H-768_A-12")
 
     if config['mode'] == 'train':
-        train_data_ = BertDataset(config['train_data'],mode='train',tokenizer = tokenizer,
-                                  use_verbs= config['use_verbs'], config=config)
-        print('Train data:',len(train_data_))
+        train_data_ = BertDataset(config['train_data'], mode='train', tokenizer=tokenizer,
+                                  use_verbs=config['use_verbs'], config=config)
+        print('Train data:', len(train_data_))
         train_loader_ = DataLoader(train_data_, batch_size=config['batch_size'],
-                               shuffle=True,
-                               collate_fn=Collates(),
-                               num_workers=0)
-        dev_data_ = BertDataset(config['dev_data'],mode='dev',tokenizer = tokenizer,
-                                use_verbs= config['use_verbs'], config=config)
+                                   shuffle=True,
+                                   collate_fn=Collates(),
+                                   num_workers=0)
+        dev_data_ = BertDataset(config['dev_data'], mode='dev', tokenizer=tokenizer,
+                                use_verbs=config['use_verbs'], config=config)
         print('Dev data:', len(dev_data_))
 
         dev_loader_ = DataLoader(dataset=dev_data_, batch_size=config['batch_size'],
-                               shuffle=True,
-                               collate_fn=Collates(),
-                               num_workers=0,
-                               drop_last=False)
+                                 shuffle=True,
+                                 collate_fn=Collates(),
+                                 num_workers=0,
+                                 drop_last=False)
         return train_loader_, dev_loader_, train_data_
 
     else:
         test_data_ = BertDataset(config['test_data'], mode='test', tokenizer=tokenizer,
-                                use_verbs=config['use_verbs'], config=config)
+                                 use_verbs=config['use_verbs'], config=config)
         print('Test data:', len(test_data_))
 
         test_loader_ = DataLoader(dataset=test_data_, batch_size=config['batch_size'],
-                                 shuffle=False,
-                                 collate_fn=Collates(),
-                                 num_workers=0,
-                                 drop_last=False)
+                                  shuffle=False,
+                                  collate_fn=Collates(),
+                                  num_workers=0,
+                                  drop_last=False)
         return [], test_loader_, []
 
 def load_trainer(train_loader_, dev_loader_, train_data_, config, device):
@@ -148,6 +129,6 @@ if __name__ == "__main__":
     parser.add_argument('--test_path', type=str, help='Path to test_data.txt file')
     parser.add_argument('--split', type=str)
     parser.add_argument('--bert', type=str,  required=True, choices=['base', 'clinical', 'blue'])
-    parser.add_argument('--no_verbs', action='store_true', help='No verbs usgae')
+    parser.add_argument('--approach', type=str, required=True, choices=['LCM', 'LCM_attention', 'LCM_no_mtl', 'types', 'types_attention', 'baseline', 'baseline_mtl'])
     args = parser.parse_args()
     main(args)

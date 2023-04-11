@@ -1,33 +1,21 @@
-#!/bin/bash --login
+#!/bin/bash
 
-#$ -cwd
-# Number of GPU's to be used
-#$ -l nvidia_v100=1
-
-# Load the latest CUDA library
-# module load libs/cuda
-
-# Enable proxy connection
-# module load tools/env/proxy2        # Uses http://proxy.man.ac.uk:3128
-
-conda activate dsre-vae
-pwd
+#your command lines to run your model
 MODEL=$1 #blue
-SPLIT=$2 #ensemble/
-# $3 = dev/
-# $4 = ner_predictions/
+SPLIT=$2 #default/, split0-4/
+# $3 = #test_pred/
+# $4 = scispasy, run
 DATA="../../data/${2}"
 TXT_FILES="${DATA}${3}"
-
-ANN_FILES=${DATA}${4}
-SPACY_FILES="${DATA}spacy/test/" #../../data/ensemble/spacy/test/
-SPACY_DATA="../data/${2}spacy/test_data.txt" #../data/ensemble/spacy/test_data.txt
+ANN_FILES=${DATA}${3}
+SPACY_FILES="${DATA}spacy/$3" #../../data/split0/spacy/test_pred/
+SPACY_DATA="../data/${2}spacy/${3::-1}_data.txt" #../data/ensemble/spacy/test_data.txt
 MODEL_FOLDER="../results/${MODEL}_${SPLIT}"
 PRED_FILES="${MODEL_FOLDER}predictions/test/"
-GOLD_FILES="../data/${2}${3}"
+GOLD_FILES="../data/${2}test/"
 
 
-if [ "$5" == "preprocess" ];
+if [ "$4" == "scispacy" ];
 then
   cd preprocess
   echo -e ">> PLM: preprocessing txt files in ${TXT_FILES} with ann in ${ANN_FILES}\n"
@@ -37,5 +25,5 @@ then
   cd ..
 fi
 echo -e "PLM: predicting with ${MODEL}, split: ${SPLIT} data ${SPACY_DATA} > Results in ${MODEL_FOLDER}\n"
-python main.py --config ../configs/local.yaml --mode predict --test_path $SPACY_DATA --bert $MODEL --model_folder $MODEL_FOLDER
+python main.py --config ../configs/local.yaml --mode predict --test_path $SPACY_DATA --bert $MODEL --model_folder $MODEL_FOLDER --approach types
 python eval_script_v3.py $GOLD_FILES $PRED_FILES

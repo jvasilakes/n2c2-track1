@@ -1,6 +1,7 @@
 #!/usr/local/bin/python
-
 """
+>>This script was provided the by n2c2 2022-track-1 organizers <<
+
 To run this file, please use:
 
 python <gold standard folder> <system output folder>
@@ -8,7 +9,6 @@ python <gold standard folder> <system output folder>
 e.g.: python gold_annotations system_annotations
 
 Please note that you must use Python 3 to get the correct results with this script
-
 
 """
 

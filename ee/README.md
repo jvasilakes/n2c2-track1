@@ -1,39 +1,37 @@
-EE task - 4/5/2022
-
-Currecnt version uses PLM along with 10 verbs. Concat with i2b2 does not seem to improve performance.<br>
-You can change the parameters you want on the config file.<br>
-
+## Configure  env
+To install the required dependencies:
+```
+pip install -r requirements.txt
+```
+Note that we run the experiments using ```Python 3.10.4```
 
 ## Training the model: 
-```sh xec_n2c2_train.sh <blue,base,clinical> <default/,split0-4>  <scispacy, make, > ``` <br>
-Do note that there is a change compared to previous models and verbs are the default option. To disable them use ```--no_verbs```.<br>
+```
+sh xec_n2c2_train.sh <blue, base, clinical> <default, split0-4>  <scispacy, make, run> <types, baseline_mtl, LCM> 
+```
 The predictions (on dev), log and the saved model are saved at ```results/<model>_<split>/``` folder.
 
-To run the model on all splits use: 
-```sh xec_n2c2_splits.sh <train,test> <scispacy, make, >```<br>
+To run the model on all splits use:
+```
+sh xec_n2c2_splits.sh <blue, base, clinical> <scispacy, make, run> <types, baseline_mtl, LCM>
+```
 scispacy: rerun the whole preprocessing<br>
 make: only make the training files<br>
-nothing: assume train_data.txt and dev_data.txt exist.
+run: assume train_data.txt and dev_data.txt exist.
 
 
-
-## predictin with the model:
+## Predicting with the model:
 ```
-sh xec_n2c2_predict_ensemble_splits.sh <blue, clinical> dev_default/ dev/ <preprocess, > 
+sh xec_n2c2_predict.sh <blue, base, clinical> <data_folder> <scispacy, run> 
 ```
-This model predicts accoring to the trained ```bert.model``` across all splits.<br>
-More specifically ```dev_default/``` is a folder with the ner predictions, existing inside all data/split files and ```dev/``` are the golden labels.<br>
-If there are no golden labels just use ```dev_default/``` or whichever folder you are valuating on 2 times. <br>
-All predictions are saved under results/<model>_<split>/predictions/test/.<br>
-Then the ensemble averages these predictions.
-
-## Evaluating the predictions:
+This model predicts accoring to the trained ```bert.model``` which should be saved in ```results/<model>_<split>/```.<br>
+All predictions are saved under ```results/<model>_<split>/predictions/test/```.<br>
+If you want to predict directly with a model then:
 ```
-python main.py --config ../configs/local.yaml --mode predict --test_path ../data/default/spacy/dev_data.txt --bert blue --model_folder ../results/blue_default/
+python main.py --config ../configs/local.yaml --mode predict --test_path <path_to_data.txt> --bert blue --model_folder <path_to_saved_model_folder> --approach types
 ```
-The results predictions will be under ```predictions/test/``` of the model folder specified.<br>
+The resulting predictions will be under ```predictions/test/``` of the model folder specified.<br>
 To evalutate the predictions you have to give the two folders (gold, predicted) to the eval script:<br>
 ```
-python eval_script_v3.py ../data/default/brat/dev ../results/blue_default/predictions/test/
+python eval_script_v3.py <path_to_golden_labels_folder> <path_to_predicted_labels_folder>
 ```
-

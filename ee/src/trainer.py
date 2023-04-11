@@ -1,10 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on 03-Mar-2020
 
-author: fenia
-"""
 
 import torch
 from torch import nn, optim
@@ -48,9 +44,10 @@ class Trainer(BaseTrainer):
         
     def calculate_stats(self, y_true, y_sigmoid, typ, keyword=''):
         y_pred =  np.array(y_sigmoid > self.config['threshold'], dtype=float)
-        mi_f1 = f1_score(y_true, y_pred, average='micro')
+        #mi_f1 = f1_score(y_true, y_pred, average='micro')
+        mi_pr, mi_re, mi_f1, _ = precision_recall_fscore_support(y_true, y_pred, average='micro', zero_division=1)
         pr, re, f1, _ = precision_recall_fscore_support(y_true, y_pred, average='macro', zero_division=1)
-        return {'micro_f1':mi_f1, 'macro_pr':pr , 'macro_re':re, 'macro_f1':f1,'pred':y_pred}
+        return {'micro_pr':mi_pr, 'micro_re':mi_re, 'micro_f1':mi_f1, 'macro_pr':pr , 'macro_re':re, 'macro_f1':f1,'pred':y_pred}
 
     def predict(self, tracker):
         y_sigmoid_ev = np.vstack([entry[0] for entry in tracker['events']])
@@ -110,6 +107,7 @@ class Trainer(BaseTrainer):
             
             dev_tracker, time_ = self.eval_epoch(iter_name='dev')
             dev_perf = self.calculate_performance(epoch, dev_tracker, time_, mode='dev')
+            # self.primary_metric += [dev_perf['macro_f1']]
             self.primary_metric += [dev_perf['micro_f1']]
    
             stop = self.epoch_checking_larger(epoch, self.primary_metric[-1])
