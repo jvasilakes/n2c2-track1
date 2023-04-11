@@ -9,16 +9,15 @@ Note that we run the experiments using ```Python 3.10.4```
 ```
 sh xec_n2c2_train.sh <blue, base, clinical> <default, split0-4>  <scispacy, make, run> <types, baseline_mtl, LCM> 
 ```
-The predictions (on dev), log and the saved model are saved at ```results/<model>_<split>/``` folder.
-
+`scispacy`: rerun the whole preprocessing<br>
+`make`: only make the training files<br>
+`run`: assume train_data.txt and dev_data.txt exist.<br>
+The predictions (on dev), log and the saved model are saved at ```results/<model>_<split>/``` folder.<br>
+`types`: the typed model | `LCM`: levitated context markers | `baseline_mtl`: baseline model<br>
 To run the model on all splits use:
 ```
 sh xec_n2c2_splits.sh <blue, base, clinical> <scispacy, make, run> <types, baseline_mtl, LCM>
 ```
-scispacy: rerun the whole preprocessing<br>
-make: only make the training files<br>
-run: assume train_data.txt and dev_data.txt exist.
-
 
 ## Predicting with the model:
 ```
