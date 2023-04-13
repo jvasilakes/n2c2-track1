@@ -82,7 +82,7 @@ def serialize(obj, filename):
 
 def _parsing():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--yaml', type=str, default='experiments/0/clinical_bert/train-ner.yaml', help='yaml file')
+    parser.add_argument('--yaml', type=str, default='ner/experiments/data_v3/clinical_bert/train-ner.yaml', help='yaml file')
     parser.add_argument('--gpu', type=int, default=0, help="GPU id")
     # parser.add_argument('--start_epoch', type=int, default=0, help="Start epoch, if start_epoch >0, resume from a pre-trained epoch")
     # parser.add_argument('--epoch', type=int, default=10, help="Number of epoch")

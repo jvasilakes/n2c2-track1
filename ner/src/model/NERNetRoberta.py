@@ -168,24 +168,7 @@ class NERSpanRobertaModel(RobertaPreTrainedModel):
         batch_means = np.split(means, sentence_sections)
 
         return combined_embeddings, (batch_start, batch_ends, batch_means)
-    
-    def get_group_embeddings(self, batch_start, batch_mean, batch_end, group_indices):
-        #this is to pad the batch info in numpy
-        all_start, all_mean, all_end = [], [], []
-        for id, (start, mean, end) in enumerate(zip(batch_start, batch_mean, batch_end)):                        
-            index_mask = group_indices[id][group_indices[id] > -1]
-            start = torch.tensor(start, dtype=torch.float32, device=self.params["device"])
-            all_start += start[index_mask]
-            mean = torch.tensor(mean, dtype=torch.float32, device=self.params["device"])
-            all_mean += mean[index_mask]
-            end = torch.tensor(end, dtype=torch.float32, device=self.params["device"])
-            all_end += end[index_mask]
-        all_start = torch.vstack(all_start).to(self.params["device"]) 
-        all_mean = torch.vstack(all_mean).to(self.params["device"]) 
-        all_end = torch.vstack(all_end).to(self.params["device"]) 
-        return all_start, all_mean, all_end
-
-
+   
     def forward(self,            
             all_ids,
             all_token_masks,
@@ -198,14 +181,11 @@ class NERSpanRobertaModel(RobertaPreTrainedModel):
         # embeddings = self.dropout(embeddings)  # (B, S, H) (B, 128, 768)
         all_span_masks = (all_entity_masks > -1) # (B, max_spans) --> skip padding ones
         valid_masks = all_entity_masks[all_span_masks] > 0  # (all_valid_spans, ) -> skip invalid
-        org_embeddings, _ = self.roberta(input_ids=all_ids, 
-                attention_mask=all_attention_masks
-            )  # (B, S, H) (B, 128, 768)            
+        org_embeddings, _ = self.roberta(input_ids=all_ids, attention_mask=all_attention_masks)  # (B, S, H) (B, 128, 768)            
         feature_vector, _ = self.get_span_embeddings(org_embeddings, all_token_masks, 
                             all_entity_masks, device)
         gold_labels = all_span_labels[all_span_masks][valid_masks]  # (all_valid_spans, num_entities) 
         
-
         entity_preds = self.entity_classifier(feature_vector)  
         all_preds = torch.sigmoid(entity_preds)  # (all_valid_spans, num_entities)     
         # Clear values at invalid positions        
@@ -215,12 +195,7 @@ class NERSpanRobertaModel(RobertaPreTrainedModel):
                     # entity_preds[all_entity_masks], all_span_labels[all_entity_masks]
                     entity_preds[valid_masks], gold_labels
                 )
-            # loss = F.binary_cross_entropy_with_logits(
-            #         entity_preds[all_entity_masks], all_span_labels[all_entity_masks]            
-            #     )
-            # temp = ent_start_states[all_entity_masks2]
-            # assert len(combined_embeddings[all_entity_masks]) == len(temp)
-
+        
         _, all_preds_top_indices = torch.topk(all_preds, k=self.ner_label_limit, dim=-1)
         # Convert binary value to label ids
         all_preds = (all_preds > self.thresholds) * self.label_ids

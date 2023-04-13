@@ -6,13 +6,13 @@ dev_data: ner/corpus/data_v3/dev/
 test_data: ner/corpus/data_v3/dev/
 
 # bert
-bert_model: ner/pre-trained-model/roberta-pm-m3
+bert_model: ner/pre-trained-model/roberta-pm-m3/RoBERTa-large-PM-M3-Voc-hf
 
 
 encoder_model_type: roberta
-encoder_config_name: ner/pre-trained-model/roberta-pm-m3
-encoder_tokenizer_name: ner/pre-trained-model/roberta-pm-m3
-encoder_model_name_or_path: ner/pre-trained-model/roberta-pm-m3
+encoder_config_name: ner/pre-trained-model/roberta-pm-m3/RoBERTa-large-PM-M3-Voc-hf
+encoder_tokenizer_name: ner/pre-trained-model/roberta-pm-m3/RoBERTa-large-PM-M3-Voc-hf
+encoder_model_name_or_path: ner/pre-trained-model/roberta-pm-m3/RoBERTa-large-PM-M3-Voc-hf
 do_lower_case: False
 
 # output
@@ -26,7 +26,7 @@ save_model: True
 save_st_ep: -1
 
 # hyperparameters
-epoch: 10
+epoch: 5
 start_epoch: 0
 batchsize: 16
 dropout: 0.3
