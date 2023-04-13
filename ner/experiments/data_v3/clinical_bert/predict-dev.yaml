@@ -1,0 +1,14 @@
+task_name: n2c2
+test_data: ner/corpus/data_v3/dev/
+
+# output
+result_dir: ner/experiments/data_v3/clinical_bert/predict-dev/
+model_dir: ner/experiments/data_v3/clinical_bert/joint/
+params_dir: ner/experiments/data_v3/clinical_bert/n2c2.clinical.param
+
+# prediction
+predict: 1
+gpu: 0
+fp16: False
+
+

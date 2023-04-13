@@ -1,0 +1,67 @@
+task_name: n2c2
+
+# data
+train_data: ner/corpus/data_v3/train/
+dev_data: ner/corpus/data_v3/dev/
+test_data: ner/corpus/data_v3/dev/
+
+# bert
+bert_model: emilyalsentzer/Bio_ClinicalBERT
+
+
+encoder_model_type: bert
+encoder_config_name: emilyalsentzer/Bio_ClinicalBERT
+encoder_tokenizer_name: emilyalsentzer/Bio_ClinicalBERT
+encoder_model_name_or_path: emilyalsentzer/Bio_ClinicalBERT
+do_lower_case: False
+
+# output
+result_dir: ner/experiments/data_v3/clinical_bert/
+model_dir: ner/experiments/data_v3/clinical_bert/joint/
+params_dir: ner/experiments/data_v3/clinical_bert/n2c2.clinical.param
+
+# saving
+save_params: True
+save_model: True
+save_st_ep: -1
+
+# hyperparameters
+epoch: 10
+start_epoch: 0
+batchsize: 16
+dropout: 0.3
+gpu: 0
+fp16: False
+
+gradient_accumulation_steps: 1
+warmup_proportion: 0.1
+max_seq: 128
+min_w_freq: 1
+unk_w_prob: 0.01
+stats: True
+include_nested: True
+
+ner_reduce: False
+ner_reduced_size: 500
+do_reduce: False
+
+# ner
+ner_label_limit: 1
+ner_threshold: 0.5
+max_grad_norm: 1.0
+max_entity_width: 14
+ner_learning_rate: 3e-5
+seed: 42
+
+# evaluation
+ner_eval_corpus: n2c2
+eval_script_path: ner/eval_scripts/n2c2.py
+
+# prediction
+predict: -1
+t_batch_size: 16
+t_gpu: 0
+t_fp16: False
+block_size: 1000
+
+

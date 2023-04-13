@@ -29,16 +29,16 @@
 
 # Training model
 # HOME=$PWD
-ORG_CORPUS=../n2c2Track1TrainingData-v3/cv_splits
+ORG_CORPUS=n2c2Track1TrainingData-v3/cv_splits
 # NER_DIR=$HOME/ner
-TRAIN_CORPUS=corpus
+TRAIN_CORPUS=ner/corpus
 
-EXP_DIR=experiments/
+EXP_DIR=ner/experiments/
 
-for i in {0..4}
+# for i in "0" "1" "2" "3" "4" "data-v3"
+for i in "data-v3"
 do
-    folderi=$EXP_DIR$i
-    # for model in "baseline" "baseline_roberta" "clinical_bert"
+    folderi=$EXP_DIR$i    
     for model in "baseline"
     do
         #remove old results
@@ -49,15 +49,15 @@ do
 
         echo "Running $folderi/$model"
                 
-        python -u src/main.py --yaml $folderi/$model/train-ner-vae.yaml > $folderi/$model/train-ner-vae.log
+        python -u ner/src/main.py --yaml $folderi/$model/train-ner-vae.yaml > $folderi/$model/train-ner-vae.log
 
         echo "Predict and evaluate on the development set"
-        python -u src/predict.py --yaml  $folderi/$model/predict-dev.yaml > $folderi/$model/predict-dev.log
+        python -u ner/src/predict.py --yaml  $folderi/$model/predict-dev.yaml > $folderi/$model/predict-dev.log
 
         echo "Convert back to the original offsets and do evaluation"
-        python src/scripts/postprocess.py $TRAIN_CORPUS/$i/dev $folderi/$model/predict-dev/ent-last/ent-ann $folderi/$model/predict-dev-org
+        python ner/src/scripts/postprocess.py $TRAIN_CORPUS/$i/dev $folderi/$model/predict-dev/ent-last/ent-ann $folderi/$model/predict-dev-org
 
-        python eval_scripts/n2c2.py $ORG_CORPUS/$i/dev $folderi/$model/predict-dev-org > $folderi/$model/result_org.txt
+        python ner/eval_scripts/n2c2.py $ORG_CORPUS/$i/dev $folderi/$model/predict-dev-org > $folderi/$model/result_org.txt
 
     done
 done
