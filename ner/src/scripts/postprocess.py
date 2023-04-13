@@ -65,6 +65,8 @@ def retrieve_offset_a2(refdir, preddir, outdir, corpus_name, dev_test):
             os.path.join(refdir, os.path.basename(cur_fn).replace(".a2", ".txt.ori"))
         )
 
+        reference = reference.replace('\n', ' ')
+
         # gold_entities = offset_mapping["entities"]
 
         processed_lines = []
@@ -216,6 +218,7 @@ def retrieve_offset_ann(refdir, preddir, output_ann_dir):
         reference = read_text(
             os.path.join(refdir, os.path.basename(cur_fn).replace(".ann", ".txt.ori"))
         )
+        reference = reference.replace('\n', ' ')
 
         # gold_entities = offset_mapping["entities"]
 

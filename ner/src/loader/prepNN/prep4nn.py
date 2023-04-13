@@ -23,7 +23,7 @@ def data2network(data_struct, data_type, tokenizer_encoder, params):
 
     all_sentences = []
 
-    events_map = collections.defaultdict()
+    # events_map = collections.defaultdict()
 
     for xx, sid in enumerate(data_struct['input']):
 
@@ -71,41 +71,10 @@ def data2network(data_struct, data_type, tokenizer_encoder, params):
 
         all_sentences.append(sentence_vector)
 
-
-    if params['vae_sort_len']:
-        all_sentences = sort_len(all_sentences)
-
-    # if params['vae_max_len'] > 0:
-    #     all_sentences = filter_len(all_sentences, params['vae_max_len'])
-
-    return all_sentences, events_map
+    return all_sentences
 
 
-def sort_len(all_sentences):
-    # print('SORT SENTENCE LENGTH')
-
-    corpus = [(t, len(t['subwords'])) for t in all_sentences]
-    corpus.sort(key=operator.itemgetter(1), reverse=True)
-    texts = [x for x, _ in corpus][:2000000]
-
-    # print('DONE SORT')
-
-    return texts
-
-
-def filter_len(all_sentences, max_len):
-    # print('SORT SENTENCE LENGTH')
-
-    corpus = [(t, len(t['subwords'])) for t in all_sentences if len(t['subwords']) <= max_len]
-    corpus.sort(key=operator.itemgetter(1))
-    texts = [x for x, _ in corpus][:2000000]
-
-    # print('DONE SORT')
-
-    return texts
-
-
-def torch_data_2_network(cdata2network, tokenizer_encoder, events_map, params, do_get_nn_data):
+def torch_data_2_network(cdata2network, tokenizer_encoder, params, do_get_nn_data):
     """ Convert object-type data to torch.tensor type data, aim to use with Pytorch
     """
     etypes = [data['etypes2'] for data in cdata2network]
@@ -118,8 +87,7 @@ def torch_data_2_network(cdata2network, tokenizer_encoder, events_map, params, d
     # eventss = [data['events'] for data in cdata2network]
 
     fids = [data['fid'] for data in cdata2network]
-    wordss = [data['words'] for data in cdata2network]
-    word_ids = [data['word_ids'] for data in cdata2network]
+    wordss = [data['words'] for data in cdata2network]    
     offsetss = [data['offsets'] for data in cdata2network]
     sub_to_words = [data['sub_to_word'] for data in cdata2network]
     subwords = [data['subwords'] for data in cdata2network]
@@ -129,23 +97,19 @@ def torch_data_2_network(cdata2network, tokenizer_encoder, events_map, params, d
 
     # list of sentences
     split_line_text_ = [data['split_line_text'] for data in cdata2network]
-
-    # tokenizer = BertTokenizer.from_pretrained(
-    #     params['bert_model'], do_lower_case=False
-    # )
-
+    
     # User-defined data
-    if not params["predict"]:
-        id_tag_mapping = params["mappings"]["nn_mapping"]["id_tag_mapping"]
-        trigger_ids = params["mappings"]["nn_mapping"]["trTypes_Ids"]
+    if params["predict"] == -1: #only for training
+        id_tag_mapping = params["mappings"]["nn_mapping"]["id_tag_mapping"]        
 
         mlb = MultiLabelBinarizer()
         mlb.fit([sorted(id_tag_mapping)[1:]])  # [1:] skip label O
+        trigger_ids = params["mappings"]["nn_mapping"]["trTypes_Ids"]
 
         params["mappings"]["nn_mapping"]["mlb"] = mlb
         params["mappings"]["nn_mapping"]["num_labels"] = len(mlb.classes_)
 
-        params["max_span_width"] = max(params["max_entity_width"], params["max_trigger_width"])
+        params["max_span_width"] = params["max_entity_width"]
 
         params["mappings"]["nn_mapping"]["full_labels"] = sorted([v for k, v in id_tag_mapping.items() if k > 0])
         params["mappings"]["nn_mapping"]["trigger_labels"] = sorted(
@@ -154,16 +118,14 @@ def torch_data_2_network(cdata2network, tokenizer_encoder, events_map, params, d
         params["mappings"]["nn_mapping"]["num_triggers"] = len(params["mappings"]["nn_mapping"]["trigger_labels"])
         params["mappings"]["nn_mapping"]["num_entities"] = params["mappings"]["nn_mapping"]["num_labels"] - \
                                                            params["mappings"]["nn_mapping"]["num_triggers"]
-
+    # raw_data.update({'params': params})
     if do_get_nn_data:
-        nn_data = get_nn_data(fids, entitiess, termss, valid_startss, sw_sentences, wordss, word_ids, sub_to_words,
-                              split_line_text_, tokenizer_encoder, events_map,
-                              params)
+        nn_data = get_nn_data(entitiess, valid_startss, sw_sentences, split_line_text_, tokenizer_encoder, params)
 
         return {'nn_data': nn_data, 'etypes': etypes, 'fids': fids, 'words': wordss, 'offsets': offsetss,
                 'sub_to_words': sub_to_words, 'subwords': subwords, 'entities': entitiess}
     else:
         return {'termss': termss, 'sw_sentences': sw_sentences,
-                'tokenizer': tokenizer_encoder, 'events_map': events_map, 'params': params, 'etypes': etypes, 'fids': fids,
+                'tokenizer': tokenizer_encoder, 'params': params, 'etypes': etypes, 'fids': fids,
                 'words': wordss, 'offsets': offsetss, 'sub_to_words': sub_to_words, 'subwords': subwords,
                 'entities': entitiess}

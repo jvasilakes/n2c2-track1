@@ -16,8 +16,8 @@ def brat_loader(files_fold, params):
 
     count = 0
     for filef in sorted(file_list):
-        # count += 1
-        # if count % 2 == 0:
+        count += 1
+        # if count % 20 == 0:
         #     break
         
         if filef.split("/")[-1].startswith("."):
@@ -28,8 +28,7 @@ def brat_loader(files_fold, params):
         # store data for each document
         ftriggers = OrderedDict()
         fentities = OrderedDict()
-        frelations = OrderedDict()
-        fevents = OrderedDict()
+        frelations = OrderedDict()        
 
         idsTR = []
         typesTR = []
@@ -75,8 +74,8 @@ def brat_loader(files_fold, params):
                     elif line.startswith('T'):
                         line = line.rstrip().split('\t')
                         eid = line[0]
-                        if eid == 'T176' or eid == 'T177':
-                            print('Debug')
+                        # if eid == 'T176' or eid == 'T177':
+                        #     print('Debug')
                         e1 = line[1].split()
                         etype = e1[0]
                         pos1 = e1[1]
@@ -145,23 +144,23 @@ def brat_loader(files_fold, params):
                 frelations['counted_types'] = typesR2
 
         # check empty
-        if len(idsT) == len(idsTR) == 0 and not (params['pretrain_vae']) and params['predict'] != 1:
-            continue
+        # if len(idsT) == len(idsTR) == 0 and not (params['pretrain_vae']) and params['predict'] != 1:
+        #     continue
 
-        else:
-            entities[filename] = fentities
-            triggers[filename] = ftriggers
-            relations[filename] = frelations
+        # else:
+        entities[filename] = fentities
+        triggers[filename] = ftriggers
+        relations[filename] = frelations
 
-            lowerc = params['lowercase']
-            with open(ffolder + filename + '.txt', encoding="UTF-8") as infile:
-                lines = []
-                for line in infile:
-                    line = line.strip()
-                    if len(line) > 0:
-                        if lowerc:
-                            line = line.lower()
-                        lines.append(line)
-                sentences[filename] = lines
-
+        lowerc = params['do_lower_case']
+        with open(ffolder + filename + '.txt', encoding="UTF-8") as infile:
+            lines = []
+            for line in infile:
+                line = line.strip()
+                if len(line) > 0:
+                    if lowerc:
+                        line = line.lower()
+                    lines.append(line)
+            sentences[filename] = lines
+        # print(filename)
     return triggers, entities, relations, sentences

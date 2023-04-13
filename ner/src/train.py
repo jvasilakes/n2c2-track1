@@ -1,6 +1,6 @@
 import os
 import random
-from sched import scheduler
+
 import time
 
 import numpy as np
@@ -20,13 +20,12 @@ from loader.prepNN import prep4nn
 
 # from bert.optimization import BertAdam
 from transformers import AdamW, get_linear_schedule_with_warmup
-from model import deepEM
+from model import SpanNER
 from utils import utils
 
 from utils.utils import load_bert_weights
 
 from torch.nn import functional as F
-
 
 def main():
     # check running time
@@ -34,7 +33,7 @@ def main():
 
     # set config path by command line
     inp_args = utils._parsing()
-    config_path = getattr(inp_args, 'yaml')
+    config_path = inp_args['yaml']
 
     # set config path manually    
     # config_path = 'experiments/0/baseline/train-ner-vae.yaml'    
@@ -42,10 +41,7 @@ def main():
     with open(config_path, 'r') as stream:
         parameters = utils._ordered_load(stream)
 
-    parameters['gpu'] = getattr(inp_args, 'gpu')
-    parameters['start_epoch'] = getattr(inp_args, 'start_epoch')
-    parameters['epoch'] = getattr(inp_args, 'epoch')
-    # parameters['ensemble'] = getattr(inp_args, 'ensemble')
+    parameters.update(inp_args)
    
     # print config
     utils._print_config(parameters, config_path)
@@ -58,15 +54,6 @@ def main():
         # torch.cuda.set_device(parameters['gpu'])
     else:
         device = torch.device("cpu")
-
-    if parameters['local_rank'] == -1 or parameters['no_cuda']:
-        device = torch.device("cuda" if torch.cuda.is_available() and not parameters['no_cuda'] else "cpu")
-        parameters['n_gpu'] = torch.cuda.device_count()
-    else:  # Initializes the distributed backend which will take care of sychronizing nodes/GPUs
-        torch.cuda.set_device(parameters['local_rank'])
-        device = torch.device("cuda", parameters['local_rank'])
-        torch.distributed.init_process_group(backend='nccl')
-        parameters['n_gpu'] = 1
 
     print('device', device)
 
@@ -81,18 +68,8 @@ def main():
 
     torch.backends.cudnn.deterministic = True
     torch.backends.cudnn.benchmark = False
-    # torch.set_deterministic(True)
-
-    # Init needed params
-    parameters['max_ev_per_batch'] = 0
-    parameters['max_ev_per_layer'] = 0
-    parameters['max_rel_per_ev'] = 0
-    parameters['max_ev_per_tr'] = 0
-
-    # load bert-vae models
     tokenizer_encoder = load_bert_weights(parameters)
 
-    
     # Force predict = False
     parameters['predict'] = -1
 
@@ -107,8 +84,8 @@ def main():
                                                                 parameters['mappings']['tag2type_map'],
                                                                 parameters['trTypes_Ids'])
 
-    train, train_events_map = prep4nn.data2network(train_data, 'train', tokenizer_encoder, parameters)
-    dev, dev_events_map = prep4nn.data2network(dev_data, 'demo', tokenizer_encoder, parameters)
+    train = prep4nn.data2network(train_data, 'train', tokenizer_encoder, parameters)
+    dev = prep4nn.data2network(dev_data, 'val', tokenizer_encoder, parameters)
 
     if len(train) == 0:
         raise ValueError("Train set empty.")
@@ -116,11 +93,9 @@ def main():
         raise ValueError("Test set empty.")
 
     train_data = prep4nn.torch_data_2_network(cdata2network=train, tokenizer_encoder=tokenizer_encoder,
-                                            events_map=train_events_map,
                                             params=parameters,
                                             do_get_nn_data=True)
     dev_data = prep4nn.torch_data_2_network(cdata2network=dev, tokenizer_encoder=tokenizer_encoder,                                                
-                                            events_map=dev_events_map,
                                             params=parameters,
                                             do_get_nn_data=True)
 
@@ -140,7 +115,7 @@ def main():
     dev_dataloader = DataLoader(dev_data_ids, sampler=dev_sampler, batch_size=parameters['batchsize'])
 
     # 2. model
-    model = deepEM.DeepEM(parameters)
+    model = SpanNER.SpanNER(parameters)
     
     if parameters['start_epoch'] > 0:
         utils.handle_checkpoints(model=model,
@@ -164,69 +139,20 @@ def main():
     model.to(device)
 
     # Prepare optimizer
-
-    if parameters['bert_warmup_lr']:
-        t_total = num_train_steps
-    else:
-        t_total = -1
-
-    ner_params = utils.partialize_optimizer_models_parameters(model, parameters)
-    param_optimizers = ner_params
-    optimizer_grouped_parameters = utils.gen_optimizer_grouped_parameters(param_optimizers, "ner", parameters)
-
-
-    # optimizer = BertAdam(
-    #     optimizer_grouped_parameters,
-    #     lr=parameters['ner_learning_rate'],
-    #     warmup=parameters['warmup_proportion'],
-    #     t_total=t_total
-    # )
-    # scheduler = None
-
+    t_total = num_train_steps
+    optimizer_grouped_parameters = utils.gen_optimizer_grouped_parameters(list(model.named_parameters()), "ner", parameters)
     optimizer = AdamW(
         optimizer_grouped_parameters,
         lr=parameters['ner_learning_rate'],
         correct_bias=False)
-
     scheduler = get_linear_schedule_with_warmup(optimizer, num_warmup_steps=parameters['warmup_proportion']*t_total, num_training_steps=t_total) 
     
-    if parameters['train']:
-        if parameters['fp16']:
-            model, optimizer = amp.initialize(model, optimizer, opt_level="O1")
-
-        training.train(train_data_loader=train_dataloader, dev_data_loader=dev_dataloader,
-                        train_data=train_data, dev_data=dev_data, params=parameters, model=model,
-                        optimizer=optimizer, 
-                        scheduler=scheduler)
-        # if parameters['ensemble']:
-        #     from torchensemble import VotingClassifier
-        #     model = VotingClassifier(
-        #             estimator=model,
-        #             n_estimators=10,
-        #             cuda=True,
-        #     )
-        #     criterion = F.binary_cross_entropy_with_logits
-        #     model.set_criterion(criterion)
-
-        #     # Set the optimizer
-        #     model.set_optimizer(optimizer)
-
-        #     # Train and Evaluate
-        #     model.fit(
-        #         train_dataloader,
-        #         epochs=5,
-        #         test_loader=dev_dataloader,
-        #         save_dir=parameters['result_dir']
-        #     )
-        # else: #normal training            
-        #     if parameters['fp16']:
-        #         model, optimizer = amp.initialize(model, optimizer, opt_level="O1")
-
-        #     training.train(train_data_loader=train_dataloader, dev_data_loader=dev_dataloader,
-        #                 train_data=train_data, dev_data=dev_data, params=parameters, model=model,
-        #                 optimizer=optimizer, 
-        #                 scheduler=scheduler)
-
+    training.train(train_data_loader=train_dataloader, dev_data_loader=dev_dataloader,
+                train_data=train_data, dev_data=dev_data, params=parameters, model=model,
+                optimizer=optimizer, 
+                scheduler=scheduler,
+        )
+        
     print('TRAINING: DONE!')
 
     # calculate running time

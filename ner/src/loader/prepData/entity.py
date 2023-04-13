@@ -176,8 +176,6 @@ def process_entities(entities1, triggers1, sentences1, params):
             terms.extend(triggers['terms'])
 
             nest_level, terms = count_nest_level(terms, params)
-            # nest_level, terms = utils.count_nest_level(terms)
-            # terms, file_discard_count = utils.dicard_invalid_nes(terms, sentences)
             levels.append(nest_level)
 
         abst_text = '\n'.join([sent['sentence'] for sent in sentences])

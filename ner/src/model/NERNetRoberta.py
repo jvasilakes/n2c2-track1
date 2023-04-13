@@ -1,6 +1,4 @@
 # -*- coding: utf-8 -*-
-from doctest import OutputChecker
-from sqlite3 import paramstyle
 import numpy as np
 import torch
 import torch.nn as nn
@@ -18,12 +16,9 @@ class NERSpanRobertaModel(RobertaPreTrainedModel):
         self.num_entities = params["mappings"]["nn_mapping"]["num_entities"]        
         self.max_span_width = params["max_span_width"] 
         self.roberta = RobertaModel(config)
-            
         self.dropout = nn.Dropout(config.hidden_dropout_prob)
-
-        self.entity_classifier = nn.Linear(config.hidden_size * 3, self.num_entities)
-                
-        #since we still need label_ids to evaluate VAE later ...
+        self.entity_classifier = nn.Linear(config.hidden_size * 3, self.num_entities)                
+       
         self.register_buffer(
                 "label_ids",
                 torch.tensor(
@@ -34,44 +29,17 @@ class NERSpanRobertaModel(RobertaPreTrainedModel):
         # self.apply(self.init_bert_weights)
         self.params = params
 
-       
-
-    def forward(
-            self,            
-            all_ids,
-            all_token_masks,
-            all_attention_masks,
-            all_entity_masks,
-            all_trigger_masks,
-            all_span_labels,                                       
-    ):
-        device = all_ids.device
-        max_span_width = self.max_span_width
-
-        #########################
-        ## Encoder -- RoBERTa
-        #########################
-
-        bert_embeddings, sentence_embedding = self.roberta(
-                all_ids, attention_mask=all_attention_masks
-            )  # (B, S, H) (B, 128, 768)
-
-        # bert_embeddings = outputs.last_hidden_state
-        # sentence_embedding = outputs.pooler_output
-
-        embeddings = bert_embeddings
-
-        # ! REDUCE
-        # embeddings = self.dropout(embeddings)  # (B, S, H) (B, 128, 768)
-
+    def get_span_embeddings(self, embeddings, all_token_masks, nn_entity_masks, device):
+        '''
+        Enumerate all possible spans and return their corresponding embeddings
+        span embeddings = start word emb + end word emb + mean of all word emb
+        '''
         flattened_token_masks = all_token_masks.flatten()  # (B * S, )
-
         flattened_embedding_indices = torch.arange(
             flattened_token_masks.size(0), device=device
         ).masked_select(
             flattened_token_masks
         )  # (all_actual_tokens, )
-
         # bert
         flattened_embeddings = torch.index_select(
             embeddings.view(-1, embeddings.size(-1)), 0, flattened_embedding_indices
@@ -80,20 +48,14 @@ class NERSpanRobertaModel(RobertaPreTrainedModel):
         span_starts = (
             torch.arange(flattened_embeddings.size(0), device=device)
                 .view(-1, 1)
-                .repeat(1, max_span_width)
+                .repeat(1, self.max_span_width)
         )  # (all_actual_tokens, max_span_width)
 
-        flattened_span_starts = (
-            span_starts.flatten()
-        )  # (all_actual_tokens * max_span_width, )
+        flattened_span_starts = (span_starts.flatten())  # (all_actual_tokens * max_span_width, )
 
-        span_ends = span_starts + torch.arange(max_span_width, device=device).view(
-            1, -1
-        )  # (all_actual_tokens, max_span_width)
+        span_ends = span_starts + torch.arange(self.max_span_width, device=device).view(1, -1)  # (all_actual_tokens, max_span_width)
 
-        flattened_span_ends = (
-            span_ends.flatten()
-        )  # (all_actual_tokens * max_span_width, )
+        flattened_span_ends = (span_ends.flatten())  # (all_actual_tokens * max_span_width, )
 
         sentence_indices = (
             torch.arange(embeddings.size(0), device=device)
@@ -148,17 +110,17 @@ class NERSpanRobertaModel(RobertaPreTrainedModel):
 
         # For computing embedding mean
         mean_indices = flattened_span_starts.view(-1, 1) + torch.arange(
-            max_span_width, device=device
+            self.max_span_width, device=device
         ).view(
             1, -1
         )  # (all_valid_spans, max_span_width)
 
         mean_indices_criteria = torch.gt(
-            mean_indices, flattened_span_ends.view(-1, 1).repeat(1, max_span_width)
+            mean_indices, flattened_span_ends.view(-1, 1).repeat(1, self.max_span_width)
         )  # (all_valid_spans, max_span_width)
 
         mean_indices = torch.min(
-            mean_indices, flattened_span_ends.view(-1, 1).repeat(1, max_span_width)
+            mean_indices, flattened_span_ends.view(-1, 1).repeat(1, self.max_span_width)
         )  # (all_valid_spans, max_span_width)
 
         span_mean_embeddings = torch.index_select(
@@ -192,101 +154,78 @@ class NERSpanRobertaModel(RobertaPreTrainedModel):
                 ),
                 dim=1,
             )  # (all_valid_spans, H * 3 + distance_dim)
-       
-        all_span_masks = (all_entity_masks > -1) | (
-                all_trigger_masks > -1
-        )  # (B, max_spans)
-
-        all_entity_masks = all_entity_masks[all_span_masks] > 0  # (all_valid_spans, )
-
+        #split the combined embeddings to the batch: batch_size x num of span x 768
+        all_span_masks = (nn_entity_masks > -1) # (B, max_spans)
         sentence_sections = all_span_masks.sum(dim=-1).cumsum(dim=-1)  # (B, )
-
-        # The number of possible spans is all_valid_spans = K * (2 * N - K + 1) / 2
-        # K: max_span_width
-        # N: number of tokens
-        actual_span_labels = all_span_labels[all_span_masks]  # (all_valid_spans, num_entities)
-
-        all_golds = (actual_span_labels > 0) * self.label_ids
-
-        # Stupid trick
-        all_golds, _ = torch.sort(all_golds, dim=-1, descending=True)
-        all_golds = torch.narrow(all_golds, 1, 0, self.ner_label_limit)
-        all_golds = all_golds.detach().cpu().numpy()
-
-        
-        ############################
-        ##Entity classification 
-        ############################
-        
-        # ! REDUCE
-        if self.params['ner_reduce']:
-            combined_embeddings = self.reduce(combined_embeddings)
-
-        entity_preds = self.entity_classifier(
-            combined_embeddings
-        )  # (all_valid_spans, num_entities)
+        sentence_sections = sentence_sections.detach().cpu().numpy()[:-1]
        
-        # reduce for only relation and event layers
-        if self.params['do_reduce']:
-            combined_embeddings = self.do_reduce(combined_embeddings)
+        starts = span_start_embeddings.detach().cpu().numpy() 
+        ends = span_end_embeddings.detach().cpu().numpy() 
+        means = span_mean_embeddings.detach().cpu().numpy() 
+       
+        batch_start = np.split(starts, sentence_sections)
+        batch_ends = np.split(ends, sentence_sections)
+        batch_means = np.split(means, sentence_sections)
 
-        actual_entity_labels = actual_span_labels
+        return combined_embeddings, (batch_start, batch_ends, batch_means)
+    
+    def get_group_embeddings(self, batch_start, batch_mean, batch_end, group_indices):
+        #this is to pad the batch info in numpy
+        all_start, all_mean, all_end = [], [], []
+        for id, (start, mean, end) in enumerate(zip(batch_start, batch_mean, batch_end)):                        
+            index_mask = group_indices[id][group_indices[id] > -1]
+            start = torch.tensor(start, dtype=torch.float32, device=self.params["device"])
+            all_start += start[index_mask]
+            mean = torch.tensor(mean, dtype=torch.float32, device=self.params["device"])
+            all_mean += mean[index_mask]
+            end = torch.tensor(end, dtype=torch.float32, device=self.params["device"])
+            all_end += end[index_mask]
+        all_start = torch.vstack(all_start).to(self.params["device"]) 
+        all_mean = torch.vstack(all_mean).to(self.params["device"]) 
+        all_end = torch.vstack(all_end).to(self.params["device"]) 
+        return all_start, all_mean, all_end
 
-        # criterion = nn.CrossEntropyLoss(weight=self.class_weights)
 
-        # return F.binary_cross_entropy_with_logits(
-        #     preds, actual_span_labels, weight=self.class_weights
-        # )  # Computes loss
+    def forward(self,            
+            all_ids,
+            all_token_masks,
+            all_attention_masks,
+            all_entity_masks,
+            all_span_labels,            
+    ):
+        device = all_ids.device                
+        # ! REDUCE
+        # embeddings = self.dropout(embeddings)  # (B, S, H) (B, 128, 768)
+        all_span_masks = (all_entity_masks > -1) # (B, max_spans) --> skip padding ones
+        valid_masks = all_entity_masks[all_span_masks] > 0  # (all_valid_spans, ) -> skip invalid
+        org_embeddings, _ = self.roberta(input_ids=all_ids, 
+                attention_mask=all_attention_masks
+            )  # (B, S, H) (B, 128, 768)            
+        feature_vector, _ = self.get_span_embeddings(org_embeddings, all_token_masks, 
+                            all_entity_masks, device)
+        gold_labels = all_span_labels[all_span_masks][valid_masks]  # (all_valid_spans, num_entities) 
+        
 
-        all_preds = torch.sigmoid(entity_preds)  # (all_valid_spans, num_entities)
-
+        entity_preds = self.entity_classifier(feature_vector)  
+        all_preds = torch.sigmoid(entity_preds)  # (all_valid_spans, num_entities)     
         # Clear values at invalid positions        
-        all_preds[~all_entity_masks, : ] = 0
-
+        all_preds[~valid_masks, : ] = 0        
         # Compute entity loss
         entity_loss = F.binary_cross_entropy_with_logits(
-                entity_preds[all_entity_masks], actual_entity_labels[all_entity_masks]
-            )
-        _, all_preds_top_indices = torch.topk(all_preds, k=self.ner_label_limit, dim=-1)
+                    # entity_preds[all_entity_masks], all_span_labels[all_entity_masks]
+                    entity_preds[valid_masks], gold_labels
+                )
+            # loss = F.binary_cross_entropy_with_logits(
+            #         entity_preds[all_entity_masks], all_span_labels[all_entity_masks]            
+            #     )
+            # temp = ent_start_states[all_entity_masks2]
+            # assert len(combined_embeddings[all_entity_masks]) == len(temp)
 
+        _, all_preds_top_indices = torch.topk(all_preds, k=self.ner_label_limit, dim=-1)
         # Convert binary value to label ids
         all_preds = (all_preds > self.thresholds) * self.label_ids
-        
         all_preds = torch.gather(all_preds, dim=1, index=all_preds_top_indices)
-
-        all_preds = all_preds.detach().cpu().numpy()       
-
-        all_aligned_preds = []        
-        for _, (preds, golds) in enumerate(zip(all_preds, all_golds)):            
-            aligned_preds = []
-            pred_set = set(preds) - {0}
-            gold_set = set(golds) - {0}
-            shared = pred_set & gold_set
-            diff = pred_set - shared
-            for gold in golds:
-                if gold in shared:
-                    aligned_preds.append(gold)
-                else:
-                    aligned_preds.append(diff.pop() if diff else 0)
-            all_aligned_preds.append(aligned_preds)
-
-        all_aligned_preds = np.array(all_aligned_preds)
-
-        # For checking, will be commented if passes for all tests
-        # assert (
-        #     np.sort(all_aligned_preds, axis=-1) == np.sort(all_preds, axis=-1)
-        # ).all()
-
-        return (
-            entity_loss,
-            all_aligned_preds,
-            all_golds,
-            sentence_sections,
-            all_span_masks,
-            bert_embeddings,
-            combined_embeddings,
-            sentence_embedding,           
-        )
+            
+        return entity_loss, all_preds 
     
-    
-    
+   

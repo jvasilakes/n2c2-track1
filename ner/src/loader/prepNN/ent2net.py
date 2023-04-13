@@ -12,9 +12,9 @@ def entity2network(sentence_data, words, params, tokenizer_encoder):
     tags_terms = sentence_data['tags_terms']
 
     # nner: Using subwords:
-    if params['predict'] == 1 and params['pipelines']:
-        if params['pipe_flag'] > 0:
-            tokenizer = None
+    # if params['predict'] == 1:
+    #     if params['pipe_flag'] > 0:
+    #         tokenizer = None
 
     sw_sentence, sub_to_word, subwords, valid_starts = convert_to_sub_words(words,
                                                                             list(map(list, zip(*tags))),

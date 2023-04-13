@@ -6,7 +6,7 @@ import time
 import os
 import pickle
 import numpy as np
-from torch.utils.tensorboard import SummaryWriter
+# from torch.utils.tensorboard import SummaryWriter
 
 from eval.evaluation import eval
 from utils import utils
@@ -22,10 +22,10 @@ def train(
         params,
         model,
         optimizer,
-        scheduler=None,       
+        scheduler=None,              
 ):
 
-    tb_writer = SummaryWriter(params['result_dir'])
+    # tb_writer = SummaryWriter(params['result_dir'])
     is_params_saved = False
     global_steps = 0
 
@@ -53,11 +53,6 @@ def train(
 
     model.zero_grad()
 
-    # print('==============Model parameters=============\n')
-    # for name, param in model.named_parameters():
-    #     if param.requires_grad:
-    #         print(name)
-    
     params['best_epoch'] = 0
     scores = []
     for epoch in trange(st_ep, int(params["epoch"]), desc="Epoch"):
@@ -85,7 +80,7 @@ def train(
             # e_start = time.time()
             tensors = utils.get_tensors(tr_data_ids, train_data, params)           
             
-            ner_preds, _ = model(tensors, epoch)
+            ner_preds = model(tensors)
             
             # loss                
             total_loss = ner_preds['loss']
@@ -120,8 +115,7 @@ def train(
         tr_batch_losses_.append(float("{0:.2f}".format(ep_loss)))
         # print()
         debug(f"[2] Train loss: {ep_loss}\n")
-        debug(f"[3] Global steps: {global_steps}\n")
-        tb_writer.add_scalar('train/ner_loss', ep_loss, epoch)            
+        debug(f"[3] Global steps: {global_steps}\n")           
         print("+" * 10 + "RUN EVALUATION" + "+" * 10)
        
         n2c2_scores = eval(
@@ -131,15 +125,12 @@ def train(
                 eval_dataloader=dev_data_loader,
                 eval_data=dev_data,                                
                 params=params,
-                epoch=epoch,
-                optimizer=optimizer,
-                global_steps=global_steps,
+                epoch=epoch,               
         )
 
         if n2c2_scores is not None:
             # show scores
             show_results(n2c2_scores, ner_prf_dev_str, ner_prf_dev_sof)
-            tb_writer.add_scalar('train/f1-score',n2c2_scores['NER']['micro']['st_f'],epoch)
             scores.append(n2c2_scores['NER']['micro']['st_f'])
 
             if max(scores) <= n2c2_scores['NER']['micro']['st_f']:
@@ -153,9 +144,7 @@ def train(
             debug(f"Early stop after 10 epoch from the best epoch")
             return
 
-    tb_writer.flush()
-    tb_writer.close()
-
+    return max(scores)
   
 
 def show_results(n2c2_scores, ner_prf_dev_str, ner_prf_dev_sof):
