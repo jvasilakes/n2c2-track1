@@ -1,9 +1,0 @@
-T1	NERPrediction 700 705	Cipro
-T2	NERPrediction 710 716	Flagyl
-T3	NERPrediction 775 779	drug
-T4	NERPrediction 819 824	drugs
-T5	NERPrediction 828 835	alcohol
-T6	NERPrediction 1039 1041	O2
-T7	NERPrediction 1065 1068	air
-T8	NERPrediction 1589 1599	Creatinine
-T9	NERPrediction 1608 1615	glucose

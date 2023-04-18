@@ -1,7 +1,0 @@
-T1	NERPrediction 347 350	His
-T2	NERPrediction 2038 2045	aspirin
-T3	NERPrediction 2045 2059	, beta-blocker
-T4	NERPrediction 2047 2059	beta-blocker
-T5	NERPrediction 2076 2079	ACE
-T6	NERPrediction 2076 2089	ACE inhibitor
-T7	NERPrediction 2134 2145	cholesterol
