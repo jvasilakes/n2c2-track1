@@ -133,3 +133,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+#data
+n2c2Track1TrainingData-v3/
