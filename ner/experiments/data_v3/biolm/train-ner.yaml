@@ -35,7 +35,6 @@ fp16: False
 
 gradient_accumulation_steps: 1
 warmup_proportion: 0.1
-max_seq: 128
 min_w_freq: 1
 unk_w_prob: 0.01
 stats: True
@@ -49,9 +48,10 @@ do_reduce: False
 ner_label_limit: 1
 ner_threshold: 0.5
 max_grad_norm: 1.0
-max_entity_width: 14
-ner_learning_rate: 3e-5
-seed: 42
+ner_learning_rate: 1.20431296740725e-05
+max_span_width: 14
+max_seq: 256
+seed: 63
 
 # evaluation
 ner_eval_corpus: n2c2
